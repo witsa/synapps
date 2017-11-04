@@ -10,7 +10,7 @@
 
 1. Ouvrez le Maker
 
-![RedyProPC](assets/tuto01device.PNG)
+![Sélection UTL](assets/tuto01device.PNG)
 
 2. Entrez l'adresse de l'UTL (Redy ou Redy Pro PC)
 
