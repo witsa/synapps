@@ -2,7 +2,7 @@
 
 ## Prerequis
 
-[Installation](/install.md)
+[Installation](../install.md)
 
 ## Création de la SynApp
 
@@ -98,6 +98,6 @@ Avant de continuer, revenez dans l'edition de la SynApp et parcourez tous les pr
 
 Ensuite, vous pouvez:
 1. créer une SynApp connectée à des ressources du Redy: [Tutorial 2: liaisons aux ressources de l'UTL](tuto02BindingSources.md)
-2. consulter la [description des concepts de SynApp](/concepts/index.md)
-3. consulter la [description du designer de SynApp](/designer.md)
-4. consulter la [documentation des acteurs](/actors/index.md)
+2. consulter la [description des concepts de SynApp](../concepts/index.md)
+3. consulter la [description du designer de SynApp](../designer.md)
+4. consulter la [documentation des acteurs](../actors/index.md)
