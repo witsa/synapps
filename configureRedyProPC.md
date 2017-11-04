@@ -2,4 +2,8 @@
 
 ## Activer/désactiver le mode Hébergement RIA local
 
-TODO
+*TODO*
+
+## Configuration du cross-origin
+
+*TODO*

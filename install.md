@@ -9,12 +9,12 @@ Le minimum pour construire et déployer une SynApp est:
 ### Maker
 
 Le Maker est l'outil de construction et de déploiement de SynApps. Il est distributé sous la forme de:
-* **WebApp**: via le cloud WIT (voir EV/EF)
+* **WebApp** via le cloud WIT (voir EV/EF)
 
-* Executable **Windows** *(1)*. Installeur:
-    ```
-     \\\wit-file\Software\K4\Synapps\Maker\win32\SynApps-1.2.0 Setup.exe 
-    ```
+* Executable **Windows** *(1)* avec un installeur:
+```
+    \\\wit-file\Software\K4\Synapps\Maker\win32\SynApps-1.2.0 Setup.exe 
+```
 
 *(1)* des versions Mac et Linux seront également disponibles ultérieurement
 
@@ -33,7 +33,7 @@ Exécuter REDY-PC.exe et double cliquer pour ouvrir le navigateur
 ### Redy
 
 Les UTLs Redy en version 9.3.0 et supérieurs sont déja compatibles SynApps *(2)*.
-Si votre UTL est dans une version inférieur, une version Beta *(3)* du Redy compatible est disponible ci:
+Si votre UTL est dans une version inférieur, une version Beta *(3)* du Redy compatible est disponible ici:
 ```
 \\WIT-FILE\Software\K4\OpenRedy\Builds\Redy\Redy-9.3.0-20171019.1\REDY\REDY.K4APP
 ```
@@ -45,6 +45,6 @@ Si votre UTL est dans une version inférieur, une version Beta *(3)* du Redy com
 
 ## Etapes suivantes
 
-Vous avez un SynApps Maker (Windows ou cloud RIA) et un Redy Pro PC (ou Redy) compatible avec SynApps (version >=9.3), nous pouvons commencer la création d'une première SynApp connectée au Redy !
+Vous avez un SynApps Maker (Windows ou cloud RIA) et un Redy Pro PC (ou Redy) compatible avec SynApps (version >=9.3), nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le Redy !
 
 [Tutorial 1: "Helloworld", première SynApp](tutos/tuto01Helloworld.md)

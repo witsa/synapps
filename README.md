@@ -24,8 +24,14 @@ SynApps = WIT app + synoptic builder for Redy
 
 Actuellement Maker et Runtime ne sont pas accessibles publiquement:
 
-* **Maker**: \\\wit-file\Software\K4\Synapps\Maker
-* **Runtime**: \\\wit-file\Software\K4\Synapps\Runtime
+* **Maker**:
+```
+\\\wit-file\Software\K4\Synapps\Maker
+ ```
+* **Runtime**:
+```
+\\\wit-file\Software\K4\Synapps\Runtime
+```
 
 ## Etapes suivantes
 
