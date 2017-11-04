@@ -2,7 +2,7 @@
 
 ## Prerequis
 
-[Installation](install.md)
+[Installation](/install.md)
 
 ## Création de la SynApp
 
@@ -10,7 +10,7 @@
 
 1. Ouvrez le Maker
 
-![RedyProPC](assets/tuto01device.PNG)
+![RedyProPC](/assets/tuto01device.PNG)
 
 2. Entrez l'adresse de l'UTL (Redy ou Redy Pro PC)
 
@@ -29,7 +29,7 @@ Saisir les identifiants de connection du Redy identiques à ceux de l'applicatio
 ### Création de la SynApp
 
 Saisir les informations de création dans le formulaire de la SynApp:
-![RedyProPC](assets/tuto01new.PNG)
+![RedyProPC](/assets/tuto01new.PNG)
 
 ### Ouverture du Maker
 
