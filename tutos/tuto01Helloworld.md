@@ -82,7 +82,7 @@ Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
 * *Executer* principal: la SynApp est éxécuté dans le navigateur courant
 
-![Exécuter](/assets/tuto01execute.PNG)
+![Exécuter](../assets/tuto01execute.PNG)
 
 * *Executer* secondaire: la SynApp est éxécuté dans un nouveau navigateur
 
