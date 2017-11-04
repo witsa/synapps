@@ -1,4 +1,4 @@
-# Une première SynApp déployée *Helloworld*
+# Tutorial 1: "Helloworld", première SynApp
 
 ## Prerequis
 
@@ -97,7 +97,7 @@ Vous avez construit puis déployé sur un Redy une première SynApp !
 Avant de continuer, revenez dans l'edition de la SynApp et parcourez tous les propriétés des 3 acteurs. Regardez notamment les propriétés *spécifiques*, essayez de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation.
 
 Ensuite, vous pouvez:
-1. créer une SynApp connectée à des ressources du Redy: [Tutorial 2: liaisons aux ressources de l'UTL](tuto02BindingSources.md)
+1. créer une SynApp connectée à des ressources du Redy: [Tutorial 2: liaison aux ressources de l'UTL](tuto02BindingSources.md)
 2. consulter la [description des concepts de SynApp](../concepts/index.md)
 3. consulter la [description du designer de SynApp](../designer.md)
 4. consulter la [documentation des acteurs](../actors/index.md)
