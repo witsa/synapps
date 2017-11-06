@@ -1,3 +1,5 @@
+[Home](/sitemap.md)
+
 # Description de l'IDE du Maker
 
 ## Zones
