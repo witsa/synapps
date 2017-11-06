@@ -1,6 +1,6 @@
 [Home](../sitemap.md) > [Redy](index.md)
 
-# Configurer un Redy Pro PC
+# Configurer un Redy PC
 
 ## Activer/désactiver le mode Hébergement RIA local
 

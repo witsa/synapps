@@ -16,7 +16,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 
 ![Sélection UTL](assets/tuto01device.PNG)
 
-2. Entrez l'adresse de l'UTL (Redy ou Redy Pro PC)
+2. Entrez l'adresse de l'UTL (Redy ou Redy PC)
 
 Exemples:
 * http://127.0.0.1
@@ -76,7 +76,7 @@ Déployer la SynApp sur le Redy en cliquant *Déployer* dans la barre de command
 
 La SynApp est déployée sur le Redy dans *:easy.SynApps*
 
-[En savoir plus sur les objets crées dans le Redy](/redy/explore.md)
+[En savoir plus sur les objets crées dans le Redy](../../redy/explore.md)
 
 **Attention**: le paramétrage de l'UTL dévra être sauvegardé sinon, en cas de redémarrage, votre SynApp ne sera pas conservée
 
@@ -98,10 +98,6 @@ Ce mode est a priviliégier pour faire cohabiter le mode *exécution* et *editio
 
 Vous avez construit puis déployé sur un Redy une première SynApp !
 
-Avant de continuer, revenez dans l'edition de la SynApp et parcourez tous les propriétés des 3 acteurs. Regardez notamment les propriétés *spécifiques*, essayez de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation.
+* Avant de continuer, revenez dans l'edition de la SynApp et parcourez tous les propriétés des 3 acteurs. Regardez notamment les propriétés *spécifiques*, essayez de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation.
 
-Ensuite, vous pouvez:
-1. créer une SynApp connectée à des ressources du Redy: [Tutorial 2: liaison aux ressources de l'UTL](/tutos/tuto02/index.md)
-2. consulter la [description des concepts de SynApp](/concepts/index.md)
-3. consulter la [description du designer de SynApp](/designer.md)
-4. consulter la [documentation des acteurs](../actors/index.md)
+* [Tutorial 2: liaison aux ressources de l'UTL](../tuto02/index.md)
