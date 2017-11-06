@@ -1,5 +1,5 @@
 [Home](../sitemap.md) > [Redy](index.md)
 
-# Installation Redy Pro PC
+# Installation Redy PC
 
 *TODO*

@@ -6,7 +6,7 @@
 
 Le minimum pour construire et déployer une SynApp est:
 * un Maker qui est l'outil de construction et de déploiement de SynApps
-* un Redy ou un Redy Pro PC version 9.3 et supérieur sur lequel sera déployé la SynApp
+* un Redy ou un Redy PC version 9.3 et supérieur sur lequel sera déployé la SynApp
 
 ### Maker
 
@@ -20,17 +20,17 @@ Le Maker est l'outil de construction et de déploiement de SynApps. Il est distr
 
 *(1)* des versions Mac et Linux seront également disponibles ultérieurement
 
-### Redy Pro PC 
+### Redy PC 
 
-Dans un premier temps, nous suggérons d'utiliser un Redy Pro PC. Vous pouvez-récupérer la dernière version sur WIT-File puis l'installer localement
+Dans un premier temps, nous suggérons d'utiliser un Redy PC. Vous pouvez-récupérer la dernière version sur WIT-File puis l'installer localement
 ```
 \\WIT-FILE\Software\K4\OpenRedy\Builds\Redy\Redy-9.3.0-20171019.1\REDY-PC\REDY-PC.exe
 ```
-[Installer un Redy Pro PC](/redy/installProPC.md)
+[Installer un Redy PC](redy/installPC.md)
 
 Exécuter REDY-PC.exe et double cliquer pour ouvrir le navigateur
 
-![RedyProPC](assets/RedyProPCexe.PNG)
+![RedyPC](assets/redyPCexe.png)
 
 ### Redy
 
@@ -41,12 +41,12 @@ Si votre UTL est dans une version inférieur, une version Beta *(3)* du Redy com
 ```
 *(2)* Les versions de SynApps évoluent régulierement. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer l'utilisation du cloud et obtenir la dernière version du runtime Synapps
 
-[Configurer le mode *Hébergement RIA local* d'un Redy Pro PC](/redy/configure.md)
+[Configurer le mode *Hébergement RIA local* d'un Redy PC](redy/configure.md)
 
 *(3)* Attention: **NE PAS DEPLOYER** cette version sur un site de production
 
 ## Etapes suivantes
 
-Vous avez un SynApps Maker (Windows ou cloud RIA) et un Redy Pro PC (ou Redy) compatible avec SynApps (version >=9.3), nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le Redy !
+Vous avez un SynApps Maker (Windows ou cloud RIA) et un Redy PC (ou Redy) compatible avec SynApps (version >=9.3), nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le Redy !
 
 [Tutorial 1: "Helloworld", première SynApp](tutos/tuto01/index.md)

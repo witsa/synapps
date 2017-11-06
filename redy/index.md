@@ -2,8 +2,8 @@
 
 # Redy
 
-1. [Installer un Redy Pro PC](/redy/installProPC.md)
+1. [Installer un Redy PC](installPC.md)
 
-2. [Configurer un Redy Pro PC](/redy/configure.md)
+2. [Configurer un Redy PC](configure.md)
 
-3. [En savoir plus sur les objets crées dans le Redy](/redy/explore.md)
+3. [En savoir plus sur les objets crées dans le Redy](explore.md)

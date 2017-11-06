@@ -10,7 +10,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp liée en lecture et �
 
 ## Prerequis
 
-* [Tutorial 1: "Helloworld", première SynApp](/tutos/tuto01/index.md)
+* [Tutorial 1: "Helloworld", première SynApp](../tuto01/index.md)
 
 * Installer le paramétrage [tuto02.WK4](tuto02.WK4) sur le Redy. Il contient les ressources nécessaires à la réalisation du tutorial
 

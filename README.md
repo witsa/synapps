@@ -1,6 +1,6 @@
-[Home](/sitemap.md)
+[Home](sitemap.md)
 
-![SynApps](assets/LogoSynApps128.png)
+![SynApps](assets/logoSynApps128.png)
 
 # Home
 
