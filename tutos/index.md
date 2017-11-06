@@ -1,4 +1,4 @@
-[Home](/sitemap.md)
+[Home](../sitemap.md)
 
 # Tutoriaux
 

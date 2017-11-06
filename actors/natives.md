@@ -1,4 +1,4 @@
-[Home](/sitemap.md) > [Acteurs](/actors/index.md)
+[Home](../sitemap.md) > [Acteurs](index.md)
 
 # Acteurs natifs
 

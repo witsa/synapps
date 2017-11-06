@@ -1,4 +1,4 @@
-[Home](/sitemap.md) > [Redy](/redy/index.md)
+[Home](../sitemap.md) > [Redy](index.md)
 
 # Configurer un Redy Pro PC
 
