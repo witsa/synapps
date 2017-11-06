@@ -5,7 +5,7 @@
 * [Installation](install.md)
 
 * [Tutoriaux](tutos/index.md)
-  1. [Tutorial 1: "Helloworld", première SynApp](tutos/tuto01/index.md)
+  1. [Tutorial 1: première SynApp "Helloworld"](tutos/tuto01/index.md)
   2. [Tutorial 2: liaison aux ressources de l'UTL](tutos/tuto02/index.md)
 
 * [Acteurs](actors/index.md)
@@ -17,6 +17,6 @@
 * [Concepts de SynApps](concepts/index.md)
 
 * [Redy](redy/index.md)
-1. [Installation du Redy PC](redy/installPC.md)
+1. [Installation des Redy & Redy PC](redy/install.md)
 2. [Configuration du Redy](redy/configure.md)
 3. [En savoir plus sur les objets crées dans le Redy](redy/explore.md)

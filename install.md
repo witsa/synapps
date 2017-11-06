@@ -26,7 +26,7 @@ Dans un premier temps, nous suggérons d'utiliser un Redy PC. Vous pouvez-récup
 ```
 \\WIT-FILE\Software\K4\OpenRedy\Builds\Redy\Redy-9.3.0-20171019.1\REDY-PC\REDY-PC.exe
 ```
-[Installer un Redy PC](redy/installPC.md)
+[Installer un Redy PC](redy/install.md)
 
 Exécuter REDY-PC.exe et double cliquer pour ouvrir le navigateur
 
@@ -49,4 +49,4 @@ Si votre UTL est dans une version inférieur, une version Beta *(3)* du Redy com
 
 Vous avez un SynApps Maker (Windows ou cloud RIA) et un Redy PC (ou Redy) compatible avec SynApps (version >=9.3), nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le Redy !
 
-[Tutorial 1: "Helloworld", première SynApp](tutos/tuto01/index.md)
+[Tutorial 1: première SynApp "Helloworld"](tutos/tuto01/index.md)
