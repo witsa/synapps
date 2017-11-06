@@ -1,4 +1,6 @@
-# Les concepts de SynApps
+[Home](/sitemap.md)
+
+# Concepts
 
 ## Scenes
 

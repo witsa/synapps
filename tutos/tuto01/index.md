@@ -1,4 +1,8 @@
+[Home](/sitemap.md) > [Tutoriaux](/tutos/index.md)
+
 # Tutorial 1: "Helloworld", première SynApp
+
+L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur le Redy
 
 ## Prerequis
 
@@ -22,16 +26,16 @@ Exemples:
 
 Dans le cas ou l'UTL est installée localement sur le port 80: http://127.0.0.1
 
-3. Connection sur l'UTL
+3. Connection à l'UTL
 
-Saisir les identifiants de connection du Redy identiques à ceux de l'application d'exploitation
+Saisir les identifiants de connection du Redy. Ils sont identiques à ceux de l'application d'exploitation
 
 ### Création de la SynApp
 
 Saisir les informations de création dans le formulaire de la SynApp:
 ![Création SynApp](assets/tuto01new.PNG)
 
-### Ouverture du Maker
+### Edition dans le Maker
 
 L'environnement du Maker ainsi que tous les concepts seront décrits ultérieurement. Pour l'instant nous allons juste ajouter 3 acteurs dans la *scene1*:
 
@@ -72,7 +76,7 @@ Déployer la SynApp sur le Redy en cliquant *Déployer* dans la barre de command
 
 La SynApp est déployée sur le Redy dans *:easy.SynApps*
 
-[En savoir plus sur les objets crées dans le Redy](/exploreRedy.md)
+[En savoir plus sur les objets crées dans le Redy](/redy/explore.md)
 
 **Attention**: le paramétrage de l'UTL dévra être sauvegardé sinon, en cas de redémarrage, votre SynApp ne sera pas conservée
 
@@ -97,7 +101,7 @@ Vous avez construit puis déployé sur un Redy une première SynApp !
 Avant de continuer, revenez dans l'edition de la SynApp et parcourez tous les propriétés des 3 acteurs. Regardez notamment les propriétés *spécifiques*, essayez de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation.
 
 Ensuite, vous pouvez:
-1. créer une SynApp connectée à des ressources du Redy: [Tutorial 2: liaison aux ressources de l'UTL](tuto02BindingSources.md)
-2. consulter la [description des concepts de SynApp](../concepts/index.md)
-3. consulter la [description du designer de SynApp](../designer.md)
+1. créer une SynApp connectée à des ressources du Redy: [Tutorial 2: liaison aux ressources de l'UTL](/tutos/tuto02/index.md)
+2. consulter la [description des concepts de SynApp](/concepts/index.md)
+3. consulter la [description du designer de SynApp](/designer.md)
 4. consulter la [documentation des acteurs](../actors/index.md)
