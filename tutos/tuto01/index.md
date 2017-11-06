@@ -1,4 +1,4 @@
-[Home](/sitemap.md) > [Tutoriaux](/tutos/index.md)
+[Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
 # Tutorial 1: "Helloworld", première SynApp
 
@@ -6,7 +6,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 
 ## Prerequis
 
-[Installation](../install.md)
+[Installation](../../install.md)
 
 ## Création de la SynApp
 

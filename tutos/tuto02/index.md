@@ -1,4 +1,4 @@
-[Home](/sitemap.md) > [Tutoriaux](/tutos/index.md)
+[Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
 # Tutorial 2: lier les acteurs aux ressources du Redy
 
