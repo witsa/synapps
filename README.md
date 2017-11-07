@@ -37,4 +37,5 @@ Actuellement Maker et Runtime ne sont pas accessibles publiquement:
 
 ## Etapes suivantes
 
-[Installation](install.md)
+* [Plan du site](sitemap.md)
+* [Installation](install.md)
