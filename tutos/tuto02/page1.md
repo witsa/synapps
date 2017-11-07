@@ -1,26 +1,6 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)> [Tutorial 2-2/2](page2.md)
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-# Tutorial 2: lier les acteurs aux ressources du Redy **1/3** *(6 nov 17)*
-
-L'objectif de ce tutorial est la réalisation d'une SynApp liée en lecture et écriture à des ressources du Redy:
-
-* La **lecture** sera une valeur analogique, lue par la SynApp toutes les 10 secondes, liée à un acteur jauge. Le nom de la ressource sera également affiché dans un acteur texte
-
-* l'**écriture** sera une ressource digital commandée par un bouton bi-état de type On/Off
-
-## Prerequis
-
-* [Tutorial 1: première SynApp "Helloworld"](../tuto01/index.md)
-
-* Installer le paramétrage [tuto02.PK4](PK4/tuto02.PK4) avec le [gestionnaire de projets](../../redy/installPK4.md) du Redy. Il contient les 2 ressources nécessaires dans le dossier du Redy *Tutorial1*:
-1. Une variable analogique *VariableAnalogiqueTuto* sinusoidale variant de 0 à 100
-2. Une consigne digitale *ConsigneLogiqueTuto*
-
-## Création de la SynApp
-
-Créer la SynApp *tuto02* avec le Maker depuis le bouton *créer* de la *barre de commande*
-
-![Créer une SynApp](assets/createSynApp.png)
+# Tutorial 2: lier les acteurs aux ressources du Redy **2/4** *(6 nov 17)*
 
 ## Construction et configuration des acteurs
 

@@ -1,8 +1,6 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial 2-1/2](index.md)
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-# Tutorial 2: lier les acteurs aux ressources du Redy **2/3** *(6 nov 17)*
-
-Suite du [tutorial 2: lier les acteurs aux ressources du Redy **1/2**](index.md)
+# Tutorial 2: lier les acteurs aux ressources du Redy **3/4** *(6 nov 17)*
 
 Dans la première partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concepte important de SynApps: les **liaisons** pour notamment 
 * lier cetaines propriétés des acteurs avec des ressources du Redy: liaisons vers des **source de données**
@@ -92,6 +90,8 @@ Vérifier que tout fonctionne comme attendu: sélectionner l'acteur *gaugeAnalog
 * *Couleur premier plan*
 
 La zone de prévisuallisation doit restituer les changements sur l'ensemble des acteurs
+
+ ![Vérification liaison interne](assets/bindingInternalCheck2.png)
 
 **Déployer la SynApp**
 
