@@ -1,6 +1,6 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md)> [Tutorial 2-2/2](page2.md)
 
-# Tutorial 2: lier les acteurs aux ressources du Redy **1/2** *(6 nov 17)*
+# Tutorial 2: lier les acteurs aux ressources du Redy **1/3** *(6 nov 17)*
 
 L'objectif de ce tutorial est la réalisation d'une SynApp liée en lecture et écriture à des ressources du Redy:
 
