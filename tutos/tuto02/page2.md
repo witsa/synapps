@@ -47,11 +47,11 @@ L'acteur *stackRoot* étant sélectionné, cliquer sur le bouton d'édition de l
 
 ![Création liaison interne](assets/bindingInternalEditDesc.png)
 
-L'éditeur de liaison interne est composé de trois parties principales (consulter [description du Maker](designer.md) pour en savoir plus):
+L'éditeur de liaison interne est composé de trois parties principales:
 
-* Sélecteur d'objet: sélectionner la jauge *gaugeAnalogic*
-* Sélecteur de propriété: sélectionner la propriété *Couleur premier plan*
-* Récapitulatif de la liaison: vérifier la description et cliquer sur **Lier** en bas à droite
+* **Sélecteur d'objet**: sélectionner la jauge *gaugeAnalogic*
+* **Sélecteur de propriété**: sélectionner la propriété *Couleur premier plan*
+* **Récapitulatif de la liaison**: vérifier la description et cliquer sur **Lier** en bas à droite
 
 ![Résumé liaison interne](assets/bindingInternalEditSummary.png)
 

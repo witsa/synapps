@@ -94,6 +94,4 @@ La zone de prévisualisation finale doit ressembler à cela !
 
 **Déployer la SynApp** pour ne pas perdre vos modifications
 
-*Remarque:* penser à **déployer régulièrement**. Au cas ou la session de connection est expirée, un popup de reconnection apparait. Il faut s'authentifier puis redéployer
-
 Suite du [tutorial](page2.md)
