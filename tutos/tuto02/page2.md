@@ -2,7 +2,7 @@
 
 # Tutorial 2: lier les acteurs aux ressources du Redy **3/4** *(6 nov 17)*
 
-Dans la première partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concepte important de SynApps: les **liaisons** pour notamment 
+Dans la première partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
 * lier cetaines propriétés des acteurs avec des ressources du Redy: liaisons vers des **source de données**
 
 Exemple: la valeur analogique de *variableAnalogicTuto* avec la valeur de la jauge *gaugeAnalogic*
@@ -51,7 +51,7 @@ L'éditeur de liaison interne est composé de trois parties principales:
 
 * **Sélecteur d'objet**: sélectionner la jauge *gaugeAnalogic*
 * **Sélecteur de propriété**: sélectionner la propriété *Couleur premier plan*
-* **Récapitulatif de la liaison**: vérifier la description et cliquer sur **Lier** en bas à droite
+* **Récapitulatif de la liaison**: vérifier la description et cliquer sur **[Lier]** en bas à droite
 
 ![Résumé liaison interne](assets/bindingInternalEditSummary.png)
 
@@ -60,7 +60,7 @@ L'éditeur de liaison interne est composé de trois parties principales:
  La propriété *Couleur bordure* de *stackRoot* est désormais liée à la propriété *Couleur premier plan* de *gaugeAnalogic*.
  
  Pour la propriété *Couleur bordure* de *stackRoot*, vous remarquez:
- * qu'elle **n'est plus modifiable manuellement car lié**
+ * qu'elle **n'est plus modifiable manuellement car liée**
  * le bouton d'édition de la liaison est de couleur **orange** pour indiquer une liaison *interne*
  * un **tooltip résumant la liaison** apparait en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
  
@@ -89,9 +89,9 @@ Vérifier que tout fonctionne comme attendu: sélectionner l'acteur *gaugeAnalog
 * *Max*
 * *Couleur premier plan*
 
-La zone de prévisuallisation doit restituer les changements sur l'ensemble des acteurs
+La zone de prévisualisation doit restituer les changements sur l'ensemble des acteurs
 
- ![Vérification liaison interne](assets/bindingInternalCheck2.png)
+![Vérification liaison interne](assets/bindingInternalCheck2.png)
 
 **Déployer la SynApp**
 
