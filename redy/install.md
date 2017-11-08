@@ -36,6 +36,3 @@ Attention: **NE PAS DEPLOYER** cette version sur un site de production
 La version 9.3.1 devrait être déployée à partir du 17/11/17.
 
 Se reporter à la documentation de la [mise à jour du Redy](http://www.wit.fr/?page_id=14117&download-info=mise-a-jour-dun-redy-faq-70)
-
-
-

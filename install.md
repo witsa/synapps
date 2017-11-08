@@ -26,7 +26,7 @@ Dans un premier temps, nous suggérons d'utiliser un Redy PC. Vous pouvez-récup
 ```
 \\WIT-FILE\Software\K4\OpenRedy\Builds\Redy\Redy-9.3.0-20171019.1\REDY-PC\REDY-PC.exe
 ```
-[Installer un Redy PC](redy/install.md)
+Procédure détaillée pour [installer un Redy PC](redy/install.md)
 
 Exécuter REDY-PC.exe et double cliquer pour ouvrir le navigateur
 
@@ -39,6 +39,8 @@ Si votre UTL est dans une version inférieur, une version Beta *(3)* du Redy com
 ```
 \\WIT-FILE\Software\K4\OpenRedy\Builds\Redy\Redy-9.3.0-20171019.1\REDY\REDY.K4APP
 ```
+Procédure détaillée pour [mettre à jour le .K4APP d'un Redy](redy/install.md)
+
 *(2)* Les versions de SynApps évoluent régulierement. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer l'utilisation du cloud et obtenir la dernière version du runtime Synapps
 
 [Configurer le mode *Hébergement RIA local* d'un Redy PC](redy/configure.md)

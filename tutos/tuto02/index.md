@@ -14,5 +14,6 @@ Le tutorial se décompose en quatre parties
 
 * Partie 1 [prérequis, installation et création](page0.md) (10min)
 * Partie 2 [construction et configuration statique des acteurs](page1.md) (10min)
-* Partie 3 [définition des liaisons internes](page2.md) (10min)
-* Partie 4 [définition des liaisons librairies](page3.md) (10min)
+* Partie 3 [définition des liaisons *internes*](page2.md) (10min)
+* Partie 4 [définition des liaisons *sources de données*](page3.md) (10min)
+* Partie 5 [définition des liaisons *librairies*](page3.md) (10min)
