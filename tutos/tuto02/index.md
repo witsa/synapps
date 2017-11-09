@@ -1,19 +1,32 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)> [Tutorial 2-2/2](page2.md)
+[Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
-# Tutorial 2: lier les acteurs aux ressources du Redy **1/2** *(6 nov 17)*
+# Tutorial 2: les liaisons *[6 nov 17]*
 
 ## Objectif
 
-L'objectif de ce tutorial est la réalisation d'une SynApp **opérationnelle** et **connectée** à des ressource du Redy. Ce tutorial permettra d'avoir une **vision d'ensemble** des **concepts importants**
+L'objectif de ce tutorial est la réalisation d'une SynApp **opérationnelle** et **connectée** mettant en oeuvre les liaisons internes et vers les ressources du Redy.
+Ce tutorial permettra d'avoir une **vision d'ensemble** des **concepts importants** autour de SynApps et du Maker
 
 ## Parties
 
-Le tutorial se décompose en quatre parties
+Le tutorial se décompose en 6 parties
 
-*Remarque:* penser à **déployer régulièrement**. Au cas ou la session de connection est expirée, un popup de reconnection apparait. Il faut s'authentifier puis redéployer
+* Partie 1 [prérequis, **installation** et création](page0.md) (10min)
 
-* Partie 1 [prérequis, installation et création](page0.md) (10min)
-* Partie 2 [construction et configuration statique des acteurs](page1.md) (10min)
-* Partie 3 [définition des liaisons *internes*](page2.md) (10min)
-* Partie 4 [définition des liaisons *sources de données*](page3.md) (10min)
-* Partie 5 [définition des liaisons *librairies*](page3.md) (10min)
+* Partie 2 [construction et configuration **statique** des acteurs](page1.md) (10min)
+
+* Partie 3 [définition des **liaisons internes**](page2.md) (10min)
+
+* Partie 4 [définition des **liaisons sources de données en lecture**](page3.md) (10min)
+
+* Partie 5 [définition des **liaisons sources de données en écriture**](page4.md) (10min)
+
+* Partie 6 [définition des **liaisons librairies**](page5.md) (10min)
+
+*Remarques:*
+
+* Penser à **déployer régulièrement**. Dans le cas ou la session de connection est expirée, un popup de reconnection apparait. Il faut s'authentifier puis redéployer
+
+* Après tout déploiement, vous pouvez **éxécuter** la SynApp en mode:
+  * *Principal* (1 seule fenêtre)
+  * *Secondaire* (1 fenêtre pour le Runtime & 1 fenêtre pour le maker). Mode recommandé. Voir [tutorial 1](../tuto01.md) pour rappel

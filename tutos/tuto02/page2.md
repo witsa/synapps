@@ -1,8 +1,8 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-# Tutorial 2: lier les acteurs aux ressources du Redy **3/4** *(6 nov 17)*
+# Tutorial 2: les liaisons *[6 nov 17] - **3/6** 
 
-Dans la première partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
+Dans la deuxième partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
 * lier cetaines propriétés des acteurs avec des ressources du Redy: liaisons vers des **source de données**
 
 Exemple: la valeur analogique de *variableAnalogicTuto* avec la valeur de la jauge *gaugeAnalogic*

@@ -1,6 +1,6 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-# Tutorial 2: lier les acteurs aux ressources du Redy **1/4** *(6 nov 17)*
+# Tutorial 2: les liaisons *[6 nov 17] - **1/6** 
 
 ## Prerequis
 
