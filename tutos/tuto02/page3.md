@@ -1,12 +1,12 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-# Tutorial 2: lier les acteurs aux ressources du Redy **3/4** *(6 nov 17)*
+# Tutorial 2: les liaisons *[6 nov 17] - **4/6** 
 
-## Liaisons **sources de données**
+## Liaisons **sources de données** en lecture
 
-Dans la seconde partie de ce tutorial, les liaisons *internes* entre acteurs ont été définies. Cela a permis de rationnaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources de l'UTL
+Dans la troisième partie de ce tutorial, les liaisons *internes* entre acteurs ont été définies. Cela a permis de rationnaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources de l'UTL
 
-La prochaine étape va donc consister à configurer les liaisons entre les acteurs et ces ressources: les **source de données**
+La prochaine étape va donc consister à configurer les liaisons entre les acteurs et ses ressources: les **sources de données**
 
 Exemple: la valeur de la variable analogique de *variableAnalogicTuto* liée avec la valeur de la jauge *gaugeAnalogic*
 
@@ -184,7 +184,7 @@ La zone de prévisuallisation doit restituer les changements sur l'ensemble des 
 
 Observer le résultat dans SynApp. La zone de prévisualisation doit restituer les changements sur la resource du Redy
 
-![Vérification liaison interne](assets/bindingDatasourceCheck2.png)
+![Vérification liaison source de donnée](assets/bindingDatasourceCheck2.png)
 
 *Remarques:*
 * les liaisons vers *WMax*, *Unit* et *Title* sont en *mode initialisation* et donc ne devraient, en théorie, pas être rafraichies mais juste chargées à l'initialisation de l'acteur. Cependant la source de donnée *dsR00002* récupère la valeur *Output* en *mode rafraichie*. A cette occasion, la ressource complète est récupérée et donc automatiquement appliquée sur toutes les liaisons la concernant quelquesoit le mode défini
