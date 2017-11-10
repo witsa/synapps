@@ -1,32 +1,32 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-# Tutorial 2: les liaisons *[10 nov 17] - **6/6** 
+# Tutorial 2: les liaisons **6/6** *[10 nov 17]*
 
 ## Liaisons **librairies**
 
-Dans les parties [précédentes](part5.md) de ce tutorial, les acteurs ont été liés:
-* disposés dans la scène
+Dans les parties [précédentes](part5.md) du tutoriel, les acteurs ont été:
+* disposés dans une scène
 * liés en **interne** à d'autres acteurs
 * liés à des **sources de données** en *lecture* et *ecriture*
 
+Pour cette dernière partie, nous adressons le concept des **librairies** qui permettent de centraliser des données simplement et ainsi favoriser leurs réutisabilité dans les propriétés d'acteurs
+
 ### Les librairies
 
-Pour ce dernier tutorial, nous adressons le concept des **librairies** qui permettent de centraliser des valeurs simplement et ainsi favoriser la réutisabilité dans les propriétés d'acteurs
-
 Les librairies sont classifiées en trois **catégories**:
-* **Couleurs**: librarie de couleurs
-* **Images**: librairie d'images
-* **Contenu**: librairie d'autre types de contenu: *texte*, *javascript*, *json*, etc.
-
+* **Couleurs**: librarie de *couleurs*
+* **Images**: librairie d'*images*
+* **Contenu**: librairie d'autre types de contenu: *texte*, *javascript*, *json*, etc
 ![Paramètres de la ressource](assets/part6_1.png)
 
-Chaque élément d'une librairie est stocké dans le Redy dans un **noeud dédié**
-
+Tout élément d'une librairie est stocké dans le Redy dans un **noeud dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc
 ![Paramètres de la ressource](assets/part6_2.png)
 
-Cela permet notamment de venir modifier ces valeurs depuis du e@sy-script. Ce qui implique qu'il suffit de sortir n'importe quel contenu d'un acteur dans des *librairiries* pour permettre sa modification depuis du script UTL. [En savoir plus sur les objets crées dans le Redy](../../redy/explore.md)
+Cela implique également qu'une méthode simple pour venir éditer un élément de configuration de Synapps depuis le Redy est de sortir ce contenu de l'acteur dans une *librairie*: _texte_, _couleur_, _valeur numérique_, _etc_
 
-Dans la copie d'écran ci-dessus, il suffit de modifier le valeur du label *color1* pour changer la couleur des acteurs qui sont liés à cet élément de librairie
+[En savoir plus sur les objets crées dans le Redy](../../redy/explore.md)
+
+*Exemple:* dans la copie d'écran ci-dessus, il suffit de modifier la valeur du label *color1* pour changer la couleur des acteurs qui sont liés à cet élément de librairie
 
 *Remarque:* les librairies ne sont chargées qu'à l'initialisation de la SynApp
 
@@ -34,9 +34,7 @@ Dans la copie d'écran ci-dessus, il suffit de modifier le valeur du label *colo
 
 Point important concernant les **images**. Le mécanisme de chargement des images dans SynApps est plus **optimisé** lorsqu'elles sont définies dans des **librairies** car elles profitent des fonctionnalités de **cache de navigateurs**
 
-*A retenir:* définir **systématiquement** les images dans des librairies sauf pour les trés petites images (en taille) qui ne présentent pas d'intéret de réutisabilité
-
-La prochaine étape va donc consister à ajouter des 
+_A retenir:_ définir **systématiquement** les images dans des librairies sauf pour les trés petites images (en taille) qui ne présentent pas d'intéret de réutisabilité
 
 ### Création des liaisons **librairies**
 
@@ -85,7 +83,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 ### Conclusion
 
-Le tutorial 2 est **terminé** ! la SynApp créée est simple mais a permis d'appréhender un des conceptes importants de SynApps, les **liaisons**
+Le tutorial 2 est **terminé** ! la SynApp créée est simple mais a permis d'appréhender un des concepts importants de SynApps, les **liaisons**
 
 Sans attendre les prochains tutoriaux, vous pouvez:
 * parcourir le Maker,
