@@ -80,7 +80,7 @@ La SynApp est déployée sur le Redy dans *:easy.SynApps*
 
 **Attention**: le paramétrage de l'UTL dévra être sauvegardé sinon, en cas de redémarrage, votre SynApp ne sera pas conservée
 
-### Exécution de la SynApp
+### Exécution de la SynApp depuis le Maker
 
 Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
@@ -94,10 +94,18 @@ Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
 Ce mode est a priviliégier pour faire cohabiter le mode *exécution* et *edition* sur 2 écrans différents par exemple. Dans ce cas, à chaque déploiement, le mode *exécution* est rafraichi
 
+### Exécution de la SynApp depuis le Redy
+
+Naviguer dans l'exploitation du Redy, un nouvel onglet **SynApps** est désormais **accessible**
+
+![RedyExécuter dans nouvelle fenêtre](assets/index_1.png)
+
+_Remarque:_ l'onglet *SynApps* **n'est pas visible** tant qu'aucune SynApp n'est **déployée** dans le Redy
+
 ## Etapes suivantes
 
 Vous avez construit puis déployé sur un Redy une première SynApp !
 
-* Avant de continuer, revenez dans l'edition de la SynApp et parcourez tous les propriétés des 3 acteurs. Regardez notamment les propriétés *spécifiques*, essayez de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation.
+* Avant de continuer, revenez dans l'edition de la SynApp et parcourez toutes les propriétés des 3 acteurs. Regardez notamment les propriétés *spécifiques*, essayez de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation
 
 * [Tutorial 2: liaison aux ressources de l'UTL](../tuto02/index.md)
