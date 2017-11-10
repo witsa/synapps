@@ -4,9 +4,9 @@
 
 ## Liaisons **sources de données** en écriture
 
-Dans la quatrième partie de ce tutorial, les acteurs ont été liés à une *source de donnée* en **lecture** mais actuellement aucune **intéraction** avec l'utilisateur, ni **commande** avec une ressource du Redy n'est configurée
+Dans la quatrième partie de ce tutorial, les acteurs ont été liés à une *source de donnée* en **lecture** mais actuellement aucune **intéraction** avec l'utilisateur, ni **commande** avec une ressource du Redy ne sont configurées
 
-La prochaine étape va donc consister à ajouter des **acteurs d'intéractions** avec l'utilisateur et les **lier en écriture** vers une ressource de type consigne digitale du Redy *ConsigneLogiqueTuto*
+La prochaine étape va donc consister à ajouter des **acteurs d'intéractions** avec l'utilisateur et les **lier en écriture** vers la ressource du Redy *ConsigneLogiqueTuto* de type consigne digitale
 
 ### Ajout acteur **Commutateur bouton**
 
@@ -24,7 +24,6 @@ La prochaine étape va donc consister à ajouter des **acteurs d'intéractions**
 Actuellement le contexte de l'acteur *switchButtonCmd* est hérité de l'acteur *stackRoot*. Nous devons définir une nouvelle source de donnée pour cet acteur vers la ressource *ConsigneLogiqueTuto* du Redy
 
 1. L'acteur *switchButtonCmd* étant sélectionné, éditer sa *source de données*
-
 ![Edition source de données](assets/page4_1.png)
 
 2. Dans l'explorateur, créer une nouvelle *source de données* WOS vers la ressource
@@ -34,15 +33,12 @@ Actuellement le contexte de l'acteur *switchButtonCmd* est hérité de l'acteur 
 ![Création source de données](assets/page4_2.png)
 
 3. La propriété *Source* de l'acteur *switchButtonCmd* est désormais définie sur **dsR00003** et le *Contexte* est sur la ressource *ConsigneLogiqueTuto*
-
 ![Création source de données](assets/page4_3.png)
 
 4. Lier la propriété additionnelle *Spécifiques.Valeur* de l'acteur *switchButtonCmd* à la propriété *Valeur* du chemin *SetPoint* du contexte en accès *lecture à l'initialisation* et **Ecriture**
-
 ![Edition liaison vers TrueStr](assets/page4_4.png)
 
 5. Lier la propriété additionnelle *Spécifiques.Texte On* de l'acteur *switchButtonCmd* à la propriété *Valeur* du chemin *TrueStr* du contexte en accès *lecture à l'initialisation*
-
 ![Edition liaison vers SetPoint](assets/page4_6.png)
 
 5. Lier la propriété additionnelle *Spécifiques.Texte Off* de l'acteur *switchButtonCmd* à la propriété *Valeur* du chemin *FalseStr* du contexte en accès *lecture à l'initialisation*
@@ -60,7 +56,6 @@ Vérifier que tout fonctionne comme attendu:
 ![Vérification liaison interne](assets/page4_7.png)
 
 2. **Déployer** puis **éxécuter** la SynApp
-
 ![Vérification liaison interne](assets/page4_8.png)
 
 3. Cliquer sur le *bouton commutateur* et vérifier que l'état *Jour*/*Nuit* **change**
@@ -69,28 +64,16 @@ Vérifier que tout fonctionne comme attendu:
 * *Libellé True*: remplacé *Jour* par **Oui**
 * *Libellé False*: remplacer *Nuit* par **Non**
 * Valider, modifier la *Consigne au Set* et revalider
-
 ![Paramètres de la ressource](assets/page4_9.png)
 
 5. Constater que les libellés *True*/*false* demeurent toujours inchangés à *Jour*/*Nuit* et pas *Oui*/*Non*
 
 6. Forcer le rafraichissement de SynApps (F5) et constater que les libellés refletent désormais bien les nouveaux libellés *Oui*/*Non*
 
-*Remarques:*
+*Remarque:*
 * les liaisons vers *TrueStr*, *FalseStr* sont en *mode initialisation* et donc leurs changement de valeur ne sont pas rafraichies sur l'acteur *commutateur bouton*.
 Le rafrachissement de SynApps (F5) force la réinitialisation de l'acteur, les changements sont alors pris en compte
 
 **Repasser en mode Maker**
 
-Suite du [tutorial](page5.md)
-
-
-
-
-
-
-
-
-
-
-
+Suite du [tutorial](part6.md)
