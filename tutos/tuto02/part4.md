@@ -21,14 +21,11 @@ Un *source de donnée* peut être vu comme une **passerelle de communication** e
 * Elle a **connaissance** de tous les **acteurs** qui dépendent de cette donnée et les **notifie** de tous les changements
 
 1. L'acteur *stackRoot* étant sélectionné, ouvrir l'onglet *source de données* et cliquer sur le bouton d'édition
-
 ![Création liaison source de données](assets/actorDatasource.png)
 
-2. Définir une nouvelle **source de donnée**
-
-L'éditeur de source de données permet de:
-* **sélectionner** une *source de donnée* éxistante
-* **définir** une nouvelle *source de donnée*
+2. Définir une nouvelle **source de donnée**, l'éditeur de permet de:
+  * **sélectionner** une *source de donnée* éxistante
+  * **définir** une nouvelle *source de donnée*
 
 *Remarques:*
 
@@ -147,7 +144,7 @@ Modifier la période de rafraichissement de la source de donnée dsR00002 à 3 s
 
 Revenir sur la scène *scene1* et observer les mouvements de la jauge toutes les 3 secondes en fonction des changements de valeur *Output* de *variableAnalogicTuto*.
 
-*Remarque:* la valeur dans *textBottom* change également car une liaison interne a déja été définie [précédemment](page3.md)
+*Remarque:* la valeur dans *textBottom* change également car une liaison interne a déja été définie [précédemment](part4.md)
 
 ![Vérification liaison interne](assets/bindingDatasourceCheck.png)
 
@@ -195,4 +192,4 @@ Observer le résultat dans SynApp. La zone de prévisualisation doit restituer l
 
 **Déployer la SynApp**
 
-Suite du [tutorial](page3.md)
+Suite du [tutorial](part5.md)

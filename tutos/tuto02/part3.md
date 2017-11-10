@@ -95,10 +95,4 @@ La zone de prévisualisation doit restituer les changements sur l'ensemble des a
 
 **Déployer la SynApp**
 
-Suite du [tutorial](page3.md)
-
-
-
-
-
-
+Suite du [tutorial](part4.md)

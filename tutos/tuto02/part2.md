@@ -94,4 +94,4 @@ La zone de prévisualisation finale doit ressembler à cela !
 
 **Déployer la SynApp** pour ne pas perdre vos modifications
 
-Suite du [tutorial](page2.md)
+Suite du [tutorial](part3.md)
