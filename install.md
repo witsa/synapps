@@ -5,47 +5,49 @@
 ## Prerequis
 
 Le minimum pour construire et déployer une SynApp est:
-* un Maker qui est l'outil de construction et de déploiement de SynApps
-* un Redy ou un Redy PC version 9.3 et supérieur sur lequel sera déployé la SynApp
+* un **Maker** qui est l'outil de construction et de déploiement de SynApps
+* un **Redy** ou un **Redy PC** en version **9.3.1** et **supérieur** sur lequel sera déployé la *SynApp*
 
 ### Maker
 
-Le Maker est l'outil de construction et de déploiement de SynApps. Il est distributé sous la forme de:
-* **WebApp** via le cloud WIT (voir EV/EF)
+Le Maker est l'outil de construction et de déploiement de SynApps. Il est distribué sous la forme de:
 
-* Executable **Windows** *(1)* avec un installeur:
-```
-    \\\wit-file\Software\K4\Synapps\Maker\win32\SynApps-1.2.0 Setup.exe 
-```
+1. **WebApp** via le cloud WIT: voir **équipe SynApps** pour les modalités d'accès. Voir également la [matrice de compatibilité des navigateurs](browers.md)
 
-*(1)* des versions Mac et Linux seront également disponibles ultérieurement
+2. Executable **Windows** avec un installeur:
+```
+\\WIT-FILE\Echange\SynApps\Maker\win32\SynApps-1.2.1 Setup.exe
+```
+_Remarque:_ des versions **Mac** et **Linux** du maker seront également disponibles ultérieurement
 
 ### Redy PC 
 
 Dans un premier temps, nous suggérons d'utiliser un Redy PC. Vous pouvez-récupérer la dernière version sur WIT-File puis l'installer localement
 ```
-\\WIT-FILE\Software\K4\OpenRedy\Builds\Redy\Redy-9.3.0-20171019.1\REDY-PC\REDY-PC.exe
+\\WIT-FILE\Echange\SynApps\Redy\REDY-PC-Setup.exe
 ```
 Procédure détaillée pour [installer un Redy PC](redy/install.md)
 
-Exécuter REDY-PC.exe et double cliquer pour ouvrir le navigateur
+Exécuter **REDY-PC.exe** et double cliquer pour ouvrir le navigateur
 
 ![RedyPC](assets/redyPCexe.png)
 
 ### Redy
 
-Les UTLs Redy en version 9.3.0 et supérieurs sont déja compatibles SynApps *(2)*.
-Si votre UTL est dans une version inférieur, une version Beta *(3)* du Redy compatible est disponible ici:
+Les UTLs Redy en version 9.3.1 et supérieures sont déja compatibles SynApps
+Si votre UTL est dans une version inférieur, une version Beta du Redy compatible est disponible ici:
 ```
-\\WIT-FILE\Software\K4\OpenRedy\Builds\Redy\Redy-9.3.0-20171019.1\REDY\REDY.K4APP
+\\WIT-FILE\Echange\SynApps\Redy\REDY-931B.K4PCK
 ```
 Procédure détaillée pour [mettre à jour le .K4APP d'un Redy](redy/install.md)
 
-*(2)* Les versions de SynApps évoluent régulierement. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer l'utilisation du cloud et obtenir la dernière version du runtime Synapps
+Attention: **NE PAS DEPLOYER** cette version sur un site de production
 
-[Configurer le mode *Hébergement RIA local* d'un Redy PC](redy/configure.md)
+### Désactiver le mode RIA local
 
-*(3)* Attention: **NE PAS DEPLOYER** cette version sur un site de production
+Les versions de SynApps **évoluent régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement du *runtime Synapps* dans le cloud RIA et obtenir la **dernière version**
+
+[Désactiver le mode *Hébergement RIA local* d'un Redy PC](redy/configure.md)
 
 ## Etapes suivantes
 

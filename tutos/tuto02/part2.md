@@ -1,12 +1,12 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-# Tutorial 2: les liaisons *[6 nov 17] - **2/6** 
+# Tutorial 2: les liaisons **2/6** *[6 nov 17]*
 
 ## Construction et configuration des acteurs
 
 La SynApp sera constituée d'une seule scène avec un acteur disposition de type *empilement*
 
-*Remarque:* le premier acteur de toute scène est appelé l'**acteur principal** et est obligatoirement de type *disposition*.
+*Remarque:* le premier acteur de toute scène est appelé l'**acteur principal** et est obligatoirement de type *disposition* car il conditionne la disposition des acteurs qu'il contient: les **acteurs enfants**
 
 1. Dans la scéne courante *scene1*, définir l'acteur principal avec un *empilement* :cliquer sur [+] pour ajouter un acteur *Dispositions* > *Empilement*
 

@@ -9,8 +9,8 @@
   2. [Tutorial 2: liaison aux ressources de l'UTL](tutos/tuto02/index.md)
 
 * [Acteurs](actors/index.md)
-  1. [Description des acteurs natifs](natives.md)
-  2. [Construction, utilisation et partage des acteurs composites](composites.md)
+  1. [Description des acteurs natifs](actors/natives.md)
+  2. [Construction, utilisation et partage des acteurs composites](actors/composites.md)
 
 * [Description du Maker](designer.md)
 
