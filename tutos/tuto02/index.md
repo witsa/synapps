@@ -27,5 +27,5 @@ Le tutorial se décompose en **6 parties** pour une durée d'environ **1H**
 * Penser à **déployer régulièrement**. Dans le cas ou la session de connection est expirée, un popup de reconnection apparait. Il faut s'authentifier puis redéployer
 
 * Après tout déploiement, vous pouvez **éxécuter** la SynApp en mode:
-  * *Principal*: 1 seule fenêtre
-  * *Secondaire*:1 fenêtre pour le Runtime & 1 fenêtre pour le maker. Ce mode est recommandé surtout avec deux écrans, voir [tutorial 1](../tuto01.md) pour détail
+  * *Principal*: une seule fenêtre
+  * *Secondaire*: Runtime & Maker dans deux fenêtre différentes. Ce mode est recommandé surtout avec deux écrans, voir [tutorial 1](../tuto01.md) pour plus de détail

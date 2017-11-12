@@ -2,7 +2,7 @@
 
 # Tutorial 1: première SynApp "Helloworld" *(4 nov 17)*
 
-L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur le Redy
+L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur un Redy
 
 ## Prerequis
 
@@ -106,6 +106,6 @@ _Remarque:_ l'onglet *SynApps* **n'est pas visible** tant qu'aucune SynApp n'est
 
 Vous avez construit puis déployé sur un Redy une première SynApp !
 
-* Avant de continuer, revenez dans l'edition de la SynApp et parcourez toutes les propriétés des 3 acteurs. Regardez notamment les propriétés *spécifiques*, essayez de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation
+* Avant de continuer, revenir dans l'edition de la SynApp et parcourir toutes les propriétés des 3 acteurs. Regarder notamment les propriétés *spécifiques*, essayer de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation
 
-* [Tutorial 2: liaison aux ressources de l'UTL](../tuto02/index.md)
+* [Tutorial 2: les liaisons](../tuto02/index.md)

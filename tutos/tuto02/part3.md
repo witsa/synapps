@@ -38,49 +38,40 @@ En résumé:
 ### Création des liaisons **internes**
 
 1. La couleur de brodure de l'acteur *stackRoot* est actuellement définie manuellement, nous allons la lier avec la couleur  de la jauge *gaugeAnalogic*.
-
+![Création liaison interne](assets/editBindingInternal.png)
 L'acteur *stackRoot* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Couleur de fond* et sélectionner **Interne**
 
-![Création liaison interne](assets/editBindingInternal.png)
-
-2. Sélectionner la propriété **source**
-
-![Création liaison interne](assets/bindingInternalEditDesc.png)
-
+2. Description de l'éditeur de liaison interne
+![Description liaison interne](assets/bindingInternalEditDesc.png)
 L'éditeur de liaison interne est composé de trois parties principales:
+    * **Sélecteur d'objet**: sélectionner la jauge *gaugeAnalogic*
+    * **Sélecteur de propriété**: sélectionner la propriété *Couleur premier plan*
+    * **Récapitulatif de la liaison**: vérifier la description et cliquer sur **[Lier]** en bas à droite
 
-* **Sélecteur d'objet**: sélectionner la jauge *gaugeAnalogic*
-* **Sélecteur de propriété**: sélectionner la propriété *Couleur premier plan*
-* **Récapitulatif de la liaison**: vérifier la description et cliquer sur **[Lier]** en bas à droite
+    Consulter [description du Maker](../../designer.md) pour en savoir plus concernant l'éditeur de liaison interne
 
 ![Résumé liaison interne](assets/bindingInternalEditSummary.png)
 
- Consulter [description du Maker](../../designer.md) pour en savoir plus concernant l'éditeur de liaison interne
+3. La propriété *Couleur bordure* de *stackRoot* est désormais liée à la propriété *Couleur premier plan* de *gaugeAnalogic*, vous remarquez:
+    * qu'elle **n'est plus modifiable manuellement car liée**
+    * le bouton d'édition de la liaison est de couleur **orange** pour indiquer une liaison *interne*
+    * un **tooltip résumant la liaison** apparait en déplaçant le curseur de la souris sur le bouton d'édition de la liaison 
+    ![Remarques liaison interne](assets/bindingInternalSummary.png)
 
- La propriété *Couleur bordure* de *stackRoot* est désormais liée à la propriété *Couleur premier plan* de *gaugeAnalogic*.
- 
- Pour la propriété *Couleur bordure* de *stackRoot*, vous remarquez:
- * qu'elle **n'est plus modifiable manuellement car liée**
- * le bouton d'édition de la liaison est de couleur **orange** pour indiquer une liaison *interne*
- * un **tooltip résumant la liaison** apparait en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
- 
- ![Remarques liaison interne](assets/bindingInternalSummary.png)
-
- 3. Vérification de la liaison *interne*
+4. Vérification de la liaison *interne*
 
 Modifier la propriété *Couleur premier plan* de *gaugeAnalogic* dans l'onglet *Spécifiques* et vérifier que la couleur de bordure de *stackRoot* est également modifiée
+![Vérification liaison interne](assets/bindingInternalCheck.png)
 
- ![Vérification liaison interne](assets/bindingInternalCheck.png)
+5. De la même manière, lier la propriété *Aspect.couleur de fond* de l'acteur *textTop* à la propriété *Spécifiques.Couleur premier plan* de l'acteur *gaugeAnalogic*
 
- 3. De la même manière, lier la propriété *Aspect.couleur de fond* de l'acteur *textTop* à la propriété *Spécifiques.Couleur premier plan* de l'acteur *gaugeAnalogic*
+6. Lier la propriété additionnelle *Spécifiques.value* de l'acteur *textBottom* à la propriété *Spécifiques.Valeur* de l'acteur *gaugeAnalogic*
 
-4. Lier la propriété additionnelle *Spécifiques.value* de l'acteur *textBottom* à la propriété *Spécifiques.Valeur* de l'acteur *gaugeAnalogic*
-
-5. Lier la propriété additionnelle *Spécifiques.max* de l'acteur *textBottom* à la propriété *Spécifiques.Max* de l'acteur *gaugeAnalogic*
+7. Lier la propriété additionnelle *Spécifiques.max* de l'acteur *textBottom* à la propriété *Spécifiques.Max* de l'acteur *gaugeAnalogic*
 
 Toutes les liaisons **internes** sont désormais définies.
 
-7. Pour améliorer le rendu, modifier la propriété *Aspect.Opacité* de l'acteur *textTop* à 50%
+8. Pour améliorer le rendu, modifier la propriété *Aspect.Opacité* de l'acteur *textTop* à 50%
 
 ### Vérification des liaisons **internes**
 
