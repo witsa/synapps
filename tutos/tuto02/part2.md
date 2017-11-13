@@ -63,7 +63,7 @@ Un fenêtre modale d'édition du contenu s'ouvre
 
 Saisir:
 ```
-{{nom}} [{{unit}}]
+\{\{nom\}\} \[\{\{unit\}\}\]
 ```
 Les doubles crochets ouvrant et fermant permettent de définir une *propriété additionnelle*. Dans notre cas, deux *propriétés additionnelles* sont créées:
 * **nom**: qui contiendra le nom de la ressource *variableAnalogiqueTuto*

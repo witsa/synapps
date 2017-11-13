@@ -39,7 +39,7 @@ Si votre UTL est dans une version inférieur, une version Beta du Redy compatibl
 ```
 \\WIT-FILE\Echange\SynApps\Redy\REDY-931B.K4PCK
 ```
-Procédure détaillée pour [mettre à jour le .K4APP d'un Redy](redy/install.md)
+Procédure détaillée pour [mettre à jour le .K4PCK d'un Redy](redy/install.md)
 
 Attention: **NE PAS DEPLOYER** cette version sur un site de production
 

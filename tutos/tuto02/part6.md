@@ -19,7 +19,7 @@ Les librairies sont classifiées en trois **catégories**:
 * **Contenu**: librairie d'autre types de contenu: *texte*, *javascript*, *json*, etc
 ![Paramètres de la ressource](assets/part6_1.png)
 
-Tout élément d'une librairie est stocké dans le Redy dans un **noeud dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc
+Tout élément d'une librairie est stocké dans le Redy dans un **nod dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc
 ![Paramètres de la ressource](assets/part6_2.png)
 
 Cela implique également qu'une méthode simple pour venir éditer un élément de configuration de Synapps depuis le Redy est de sortir ce contenu de l'acteur dans une *librairie*: _texte_, _couleur_, _valeur numérique_, _etc_
