@@ -62,9 +62,8 @@ Un fenêtre modale d'édition du contenu s'ouvre
 ![Edition bordure](assets/editContentModal.png)
 
 Saisir:
-```handlebars
-{{nom}} [{{unit}}]
-```
+![Code snapshot](assets/codeSnapshot1.png)
+
 Les doubles crochets ouvrant et fermant permettent de définir une *propriété additionnelle*. Dans notre cas, deux *propriétés additionnelles* sont créées:
 * **nom**: qui contiendra le nom de la ressource *variableAnalogiqueTuto*
 * **unit**: qui contiendra l'unité de cette même ressource
@@ -84,9 +83,8 @@ Vérifier le résultat sur le *contenu* dans la zone de prévisualisation en mod
   * *Spécifique* > *Contenu*: **{{value}}/{{max}}**
 
 Procéder de la même façon que pour l'acteur *textTop* mais ici le contenu sera composé de la valeur et du max avec ce format:
-```
-{{value}}/{{max}}
-```
+![Code snapshot](assets/codeSnapshot2.png)
+
 Cette fois ci, choisir **nombre** comme type pour les deux *propriétés additionnelles* **value** et **max** créées. Initialiser les propriétés avec les valeurs respectivent 75 et 100
 
 La zone de prévisualisation finale doit ressembler à cela !
