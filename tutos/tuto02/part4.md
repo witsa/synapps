@@ -47,7 +47,6 @@ L'explorateur des ressources du Redy s'ouvre sur le chemin par défaut:
 
 5. Sélectionner la variable analogique **R00002** *VariableAnalogicTuto*
 ![Sélectionner R00002](assets/selectNod3.png)
-
 La variable analogique *VariableAnalogicTuto* a pour chemin
 ```
 :easy.RESS.R00001.R00002
