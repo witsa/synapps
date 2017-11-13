@@ -78,8 +78,7 @@ Vérifier que tout fonctionne comme attendu: sélectionner l'acteur *gaugeAnalog
 * *Couleur premier plan*
 
 La zone de prévisualisation doit restituer les changements sur l'ensemble des acteurs
-
-![Vérification liaison interne](assets/bindingInternalCheck2.png)
+![Vérification liaison interne](assets/bindingInternalCheck3.png)
 
 **Déployer la SynApp**
 
