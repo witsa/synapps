@@ -10,7 +10,7 @@ La prochaine étape va donc consister à configurer les liaisons entre les acteu
 
 _Exemple:_ la valeur de la variable analogique de *variableAnalogicTuto* liée avec la valeur de la jauge *gaugeAnalogic*
 
-### Définition de la source de donnée de l'acteur
+### Description source de donnée de l'acteur
 
 De la même façon que pour les liaisons *internes*, nous pourrions définir la liaison vers la *source de donnée* directement depuis la propriété *valeur* de la jauge *gaugeAnalogic*. Cependant, l'acteur *stackRoot* et ses trois enfants, *textTop*, *gaugeAnalogic* et *textBottom* vont être liés à la même *source de donnée*. Nous allons donc définir la *source de donnée* sur l'acteur le plus haut hiérarchiquement, cad *stackRoot*
 
@@ -20,19 +20,19 @@ Un *source de donnée* peut être vu comme une **passerelle de communication** e
 * Elle sait **requeter** et **envoyer** des données de et vers l'UTL
 * Elle a **connaissance** de tous les **acteurs** qui dépendent de cette donnée et les **notifie** de tous les changements
 
+Actuellement un seul **type** de *source de donnée* est disponible: le **WOS** mais ultérieurement le catalogue devrait s'élargir avec d'**autres types de source de données**, soit provenant du **Redy** mais aussi d'**autres services ou plateformes externes**.
+Exemple: un service de fourniture de données météo, le WIT-DataCenter (+1), etc
+
+Certains acteurs **natifs** vont chercher directement des données autres que celles provenant du *WOS*. Par exemple, l'acteur *journal* mais dans ce cas il n'est pas nécessaire de définir la *source de donnée* car les mécanismes d'accès à ces données sont directement implémentés dans SynApps au sein de l'acteur
+
+### Définition source de donnée de l'acteur
+
 1. L'acteur *stackRoot* étant sélectionné, ouvrir l'onglet *source de données* et cliquer sur le bouton d'édition
 ![Création liaison source de données](assets/actorDatasource.png)
 
 2. Définir une nouvelle **source de donnée**, l'éditeur de permet de:
   * **sélectionner** une *source de donnée* éxistante
   * **définir** une nouvelle *source de donnée*
-
-*Remarques:*
-
-* Actuellement un seul **type** de *source de donnée* est disponible: le **WOS** mais ultérieurement le catalogue devrait s'élargir avec d'**autres types de source de données**, soit provenant du **Redy** mais aussi d'**autres services ou plateformes externes**.
-Exemple: un service de fourniture de données météo, le WIT-DataCenter (+1), etc
-
-* Certains acteurs **natifs** vont chercher directement des données autres que celles provenant du *WOS*. Par exemple, l'acteur *journal* mais dans ce cas il n'est pas nécessaire de définir la *source de donnée* car les mécanismes d'accès à ces données sont directement implémentés dans SynApps au sein de l'acteur
 
 3. Actuellement aucune *source de donnée* n'est définie. Cliquer sur le bouton **[+Créer]** à côté du type de source souhaité: **WOS** ... le seul disponible à ce jour (voir remarques ci-dessus)
 ![Sélecteur source de données](assets/datasourceExplorerDesc.png)
@@ -73,18 +73,14 @@ Exemple pour l'acteur jauge *gaugeAnalogic*
 
 ### Création des liaisons **sources de données**
 
-1. La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie manuellement, nous allons la lier avec la ressource du Redy *variableAnalogicTuto*
+La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie manuellement, nous allons la lier avec la ressource du Redy *variableAnalogicTuto*
 
-L'acteur *gaugeAnalogic* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Spécifiques.Valeur* et sélectionner **Source de données**
-
+1. L'acteur *gaugeAnalogic* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Spécifiques.Valeur* et sélectionner **Source de données**
 ![Création liaison source de données](assets/editBindingDatasource.png)
-
 La fénêtre d'édition des liaisons vers les sources de données s'ouvre
 
 2. Configurer la liaison
-
 ![Description liaison  interne](assets/bindingDatasourceExplorerDesc.png)
-
 L'éditeur de liaison de *source de données* est composé de trois parties principales:
 
 * **Source de données**:
@@ -124,30 +120,26 @@ La propriété *Valeur* de *gaugeAnalogic* est désormais liée à la propriét�
 
 ![Tooltip liaison source de donnée](assets/bindingDatasourceSummary.png)
 
-3. Vérification de la liaison *source de donnée*
+### Vérification de la liaison **sources de données**
 
-Modifier la période de rafraichissement de la source de donnée dsR00002 à 3 secondes
-
+Modifier la période de rafraichissement de la source de donnée *dsR00002* à 3 secondes
 ![Tooltip liaison source de donnée](assets/datasourceEdit.png)
-
 ![Tooltip liaison source de donnée](assets/datasourceChangePeriod.png)
 
 Revenir sur la scène *scene1* et observer les mouvements de la jauge toutes les 3 secondes en fonction des changements de valeur *Output* de *variableAnalogicTuto*.
 
 *Remarque:* la valeur dans *textBottom* change également car une liaison interne a déja été définie [précédemment](part4.md)
-
 ![Vérification liaison interne](assets/bindingDatasourceCheck.png)
 
-3. De la même manière, lier la propriété additionnelle *Spécifiques.Max* de l'acteur *gaugeAnalogic* à la propriété *Valeur* du chemin *WMax* du contexte en *mode initialisation*. *WMax* peut changer dans le Redy mais il est largemment acceptable de ne récupérer sa valeur qu'à l'initialisation
+### Définition des autres liaisons aux **sources de données**
 
+1. De la même manière, lier la propriété additionnelle *Spécifiques.Max* de l'acteur *gaugeAnalogic* à la propriété *Valeur* du chemin *WMax* du contexte en *mode initialisation*. *WMax* peut changer dans le Redy mais il est largemment acceptable de ne récupérer sa valeur qu'à l'initialisation
 ![Edition liaison vers Max](assets/bindingDatasourceEditMax.png)
 
-4. Lier la propriété additionnelle *Spécifiques.nom* de l'acteur *textTop* à la propriété *Valeur* du chemin *Title* du contexte en *mode initialisation*
-
+2. Lier la propriété additionnelle *Spécifiques.nom* de l'acteur *textTop* à la propriété *Valeur* du chemin *Title* du contexte en *mode initialisation*
 ![Edition liaison vers Title](assets/bindingDatasourceEditTitle.png)
 
-5. Lier la propriété additionnelle *Spécifiques.unit* de l'acteur *textTop* à la propriété *Valeur* du chemin *Unit* du contexte en *mode initialisation*
-
+3. Lier la propriété additionnelle *Spécifiques.unit* de l'acteur *textTop* à la propriété *Valeur* du chemin *Unit* du contexte en *mode initialisation*
 ![Edition liaison vers Unit](assets/bindingDatasourceEditUnit.png)
 
 Toutes les liaisons des **sources de données** sont désormais définies
