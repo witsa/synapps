@@ -62,8 +62,8 @@ Un fenêtre modale d'édition du contenu s'ouvre
 ![Edition bordure](assets/editContentModal.png)
 
 Saisir:
-```
-\{\{nom\}\} \[\{\{unit\}\}\]
+```handlebars
+{{nom}} [{{unit}}]
 ```
 Les doubles crochets ouvrant et fermant permettent de définir une *propriété additionnelle*. Dans notre cas, deux *propriétés additionnelles* sont créées:
 * **nom**: qui contiendra le nom de la ressource *variableAnalogiqueTuto*
