@@ -51,9 +51,10 @@ La variable analogique *VariableAnalogicTuto* a pour chemin
 ```
 :easy.RESS.R00001.R00002
 ```
+
 6. Cliquer sur **[Créer]** pour créer la *source de donnée*:
-    * La source de donnée **dsR00002** *(1)* est créée et également définie comme la *source de donnée* **principale** de l'acteur *stackRoot*. 
-    * Le label par défaut d'une *source de donnée* est construit par concaténation des caractères **ds** + le **label** du nod
+    * La source de donnée **dsR00002** est créée et également définie comme la *source de donnée* **principale** de l'acteur *stackRoot*
+    * Le *label* par défaut d'une *source de donnée* est construit par concaténation des caractères **ds** + le **label** du nod
 
 7. La propriété *Source* de l'acteur *stackRoot* est désormais définie sur **dsR00002**
 ![Sélectionner R00002](assets/actorDatasource2.png)
@@ -62,21 +63,23 @@ La variable analogique *VariableAnalogicTuto* a pour chemin
         * **source de donnée** = moyen d'accès à une donnée
         * **contexte** = donnée retourné par une source
     
-    En fait, la relation entre *contexte* et *source de donnée* n'est pas forcemment si directe mais cela sort du périmêtre de ce tuto. Pour l'instant, juste retenir que les laisons de type *source de donnée* des propriétés d'un acteur sont en fait définies par défaut par rapport à son **contexte**
+    En fait, la relation entre *contexte* et *source de donnée* n'est pas forcemment si directe mais cela sort du périmêtre de ce tuto. Pour l'instant, juste retenir que les laisons de type *source de donnée* des propriétés d'un acteur sont en fait définies par défaut par rapport au **contexte** de cet acteur
 
 8. La source de donnée principale de l'acteur *stackRoot* est définie. Sélectionner, tour à tour,les trois acteurs enfants et constater:
 * ils partagent tous le même *contexte*
 * leurs source sont *Contexte parent* **stackRoot** 
+
+    Exemple pour l'acteur jauge *gaugeAnalogic*
 ![contexte de gaugeAnalogic](assets/actorDatasource3.png)
-Exemple pour l'acteur jauge *gaugeAnalogic*
 
 ### Création des liaisons **sources de données**
 
 La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie manuellement, nous allons la lier avec la ressource du Redy *variableAnalogicTuto*
 
 1. L'acteur *gaugeAnalogic* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Spécifiques.Valeur* et sélectionner **Source de données**
+
+    La fénêtre d'édition des liaisons vers les sources de données s'ouvre
 ![Création liaison source de données](assets/editBindingDatasource.png)
-La fénêtre d'édition des liaisons vers les sources de données s'ouvre
 
 2. Configurer la liaison
 ![Description liaison  interne](assets/bindingDatasourceExplorerDesc.png)
