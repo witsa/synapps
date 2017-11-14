@@ -24,7 +24,7 @@ _Remarque:_ des versions **Mac** et **Linux** du maker seront également disponi
 
 Dans un premier temps, nous suggérons d'utiliser un Redy PC. Vous pouvez-récupérer la dernière version sur WIT-File puis l'installer localement
 ```
-\\WIT-FILE\Echange\SynApps\Redy\REDY-PC-Setup.exe
+\\WIT-FILE\Logiciels\REDY\REDY-PC-Setup.exe
 ```
 Procédure détaillée pour [installer un Redy PC](redy/install.md)
 
@@ -37,7 +37,7 @@ Exécuter **REDY-PC.exe** et double cliquer pour ouvrir le navigateur
 Les UTLs Redy en version 9.3.1 et supérieures sont déja compatibles SynApps
 Si votre UTL est dans une version inférieur, une version Beta du Redy compatible est disponible ici:
 ```
-\\WIT-FILE\Echange\SynApps\Redy\REDY-931B.K4PCK
+\\WIT-FILE\Logiciels\REDY\REDY.K4PCK
 ```
 Procédure détaillée pour [mettre à jour le .K4PCK d'un Redy](redy/install.md)
 
