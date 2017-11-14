@@ -61,11 +61,11 @@ La variable analogique *VariableAnalogicTuto* a pour chemin
     * Remarquer également la propriété **Contexte** est *variableAnalogiqueTuto* *:easy.RESS.R00001.R00002*
     * Le **contexte** est la **donnée principale** de l'acteur. Il faut bien distinguer la différence entre **source de donnée** et **contexte**:
         * **source de donnée** = moyen d'accès à une donnée
-        * **contexte** = donnée retourné par une source
+        * **contexte** = donnée retournée par une source
     
     En fait, la relation entre *contexte* et *source de donnée* n'est pas forcemment si directe mais cela sort du périmêtre de ce tuto. Pour l'instant, juste retenir que les laisons de type *source de donnée* des propriétés d'un acteur sont en fait définies par défaut par rapport au **contexte** de cet acteur
 
-8. La source de donnée principale de l'acteur *stackRoot* est définie. Sélectionner, tour à tour,les trois acteurs enfants et constater:
+8. La source de donnée principale de l'acteur *stackRoot* est définie. Sélectionner, tour à tour, les trois acteurs enfants et constater:
 * ils partagent tous le même *contexte*
 * leurs source sont *Contexte parent* **stackRoot** 
 
