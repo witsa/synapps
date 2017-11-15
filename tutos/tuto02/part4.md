@@ -87,7 +87,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 * **Source de données**:
 
-  * *Source*: laisser sur *Contexte de l'acteur* **gaugeAnalogic**. Cet ici qu'une **source de donnée spécifique** peut éventuellement être définie
+  * *Source*: laisser sur *Contexte de l'acteur* **gaugeAnalogic**. C'est ici qu'une **source de donnée spécifique** peut éventuellement être définie
 
   * *Chemin relatif*: **Saisir** directement **Output** dans le champs de saisie ou **sélectionner** le chemin avec l'explorateur à sa droite. *Output* est le *nod* contenant la valeur analogique
 
