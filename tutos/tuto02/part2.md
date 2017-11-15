@@ -68,7 +68,7 @@ Les doubles crochets ouvrant et fermant permettent de définir une *propriété 
 * **nom**: qui contiendra le nom de la ressource *variableAnalogiqueTuto*
 * **unit**: qui contiendra l'unité de cette même ressource
 
-En sauvegardant, l'inspecteur propose la création de ces deux propriétés
+Sauvegarder puis fermer la fenêtre, l'inspecteur d'acteur propose la création de ces deux propriétés
 ![Edition bordure](assets/editContentNewProps.png)
 
 Créer les deux *propriétés additionnelles* en cliquant sur le [+] et en choisissant **text** comme type de propriété
@@ -79,10 +79,7 @@ Vérifier le résultat sur le *contenu* dans la zone de prévisualisation en mod
 ![Edition bordure](assets/editContentNewProps3.png)
 ![Edition bordure](assets/editContentPreview.png)
 
-7. Sélectionner l'acteur *textBottom* et modifier les propriétés suivantes:
-  * *Spécifique* > *Contenu*: **{{value}}/{{max}}**
-
-Procéder de la même façon que pour l'acteur *textTop* mais ici le contenu sera composé de la valeur et du max avec ce format:
+7. Sélectionner l'acteur *textBottom* et modifier la propriété *Spécifique* > *Contenu*. Procéder de la même façon que pour l'acteur *textTop* mais ici le contenu sera composé de la valeur et du max avec ce format:
 ![Code snapshot](assets/codeSnapshot2.png)
 
 Cette fois ci, choisir **nombre** comme type pour les deux *propriétés additionnelles* **value** et **max** créées. Initialiser les propriétés avec les valeurs respectivent 75 et 100

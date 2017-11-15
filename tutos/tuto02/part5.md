@@ -12,10 +12,10 @@ La prochaine étape va donc consister à ajouter des **acteurs d'intéractions**
 
 1. L'acteur *stackRoot* étant sélectionné, ajouter un acteur enfant de type *Interactions* > *Commutateur bouton* et renommer le label avec *switchButtonCmd*
 
-2. Modifier l'aspect de l'acteur commutateur bouton *switchButtonCmd* avec les propriétés suivantes:
-  * *Aspect* > *Taille*: **Large**
-  * *Aspect* > *Style On*: **Succès**
-  * *Aspect* > *Style Off*: **Danger**
+2. Modifier l'acteur commutateur bouton *switchButtonCmd* avec les propriétés *Spécifiques* suivantes:
+  * *Spécifiques* > *Taille*: **Large**
+  * *Spécifiques* > *Style On*: **Succès**
+  * *Spécifiques* > *Style Off*: **Danger**
 
 3. Tester le visuel en cliquant sur la *checkbox* de propriété *Spécifiques* > *Valeur* à plusieurs reprises
 
