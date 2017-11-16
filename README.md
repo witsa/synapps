@@ -4,7 +4,7 @@
 
 # Home
 
-## SynApps = WIT App & Synoptic Redy build by & for everyone ...
+## SynApps = WIT Redy app & synoptic builder by & for everyone ...
 
 1. Cette version constitue la première version « **publique interne** », cad utilisable par tout le **monde WIT**
 
