@@ -4,7 +4,7 @@
 
 # Home
 
-## SynApps = WIT Redy app & synoptic builder by & for everyone ...
+## SynApps = WIT app builder for Redy by & for everyone ...
 
 1. Cette version constitue la première version « **publique interne** », cad utilisable par tout le **monde WIT**
 
@@ -27,7 +27,7 @@ Ces modes de distributions présentent de nombreux avantages:
 | Mode                            | Maker | Runtime |
 |---------------------------------|-------|---------|
 | Web cloud                       |  [x]  |   [x]   |
-| Web embarqué dans Redy          |       |         |
+| Web embarqué dans Redy          |  [ ]  |   [x]   |
 | Windows                         |  [x]  |   [x]   |
 | Android (APK)                   |  [ ]  |   [x]   |
 | IOS                             |  [ ]  |   [x]   |

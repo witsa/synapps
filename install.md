@@ -47,7 +47,7 @@ Attention: **NE PAS DEPLOYER** cette version sur un site de production
 
 Les versions de SynApps **évoluent régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *runtime Synapps* depuis le cloud RIA
 
-[Désactiver le mode *Hébergement RIA local* d'un Redy PC](redy/configure.md)
+[Désactiver le mode *Hébergement RIA local* du Redy](redy/configure.md)
 
 ## Etapes suivantes
 
