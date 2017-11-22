@@ -4,7 +4,7 @@
 
 ## Objectif
 
-L'objectif de ce tutorial est la réalisation d'une SynApp **opérationnelle** et **connectée** mettant en oeuvre les mécanismes de **liaisons** _internes_, _librairies_ et vers les ressources du Redy. Il permettra d'avoir une **vision d'ensemble** des **concepts importants** autour de SynApps et du Maker
+L'objectif de ce tutorial est la réalisation d'une SynApp **opérationnelle** et **connectée** mettant en oeuvre les mécanismes de **liaisons** _internes_, _librairies_ et vers les ressources du REDY. Il permettra d'avoir une **vision d'ensemble** des **concepts importants** autour de SynApps et du Maker
 
 ## Parties
 

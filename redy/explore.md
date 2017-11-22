@@ -1,5 +1,5 @@
-[Home](../sitemap.md) > [Redy](index.md)
+[Home](../sitemap.md) > [REDY](index.md)
 
-# Exploration des objets SynApps dans le Redy
+# Exploration des objets SynApps dans le REDY
 
 *TODO*
