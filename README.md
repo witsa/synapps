@@ -4,7 +4,7 @@
 
 # Home
 
-## SynApps = WIT app builder for Redy by & for everyone ...
+## SynApps = WIT app builder for REDY by everyone ...
 
 1. Cette version constitue la première version « **publique interne** », cad utilisable par tout le **monde WIT**
 
@@ -16,7 +16,7 @@
 
 ## Modes de déploiement
 
-Les modes de distributions des maker et runtime sont essentiellement Web sur notre cloud « RIA » ainsi qu’embarqué dans le Redy concernant le runtime uniquement
+Les modes de distributions des maker et runtime sont essentiellement Web sur notre cloud « RIA » ainsi qu’embarqué dans le REDY concernant le runtime uniquement
 
 **A titre expérimental**, nous avons également déployé des versions hybrides (= WebApp embarquée dans natif) opérationnelles sur Windows et Android. 
 Ces modes de distributions présentent de nombreux avantages: 
@@ -27,7 +27,7 @@ Ces modes de distributions présentent de nombreux avantages:
 | Mode                            | Maker | Runtime |
 |---------------------------------|-------|---------|
 | Web cloud                       |  [x]  |   [x]   |
-| Web embarqué dans Redy          |  [ ]  |   [x]   |
+| Web embarqué dans REDY          |  [ ]  |   [x]   |
 | Windows                         |  [x]  |   [x]   |
 | Android (APK)                   |  [ ]  |   [x]   |
 | IOS                             |  [ ]  |   [x]   |

@@ -1,5 +1,5 @@
 
-[Home](../sitemap.md) > [Redy](index.md)
+[Home](../sitemap.md) > [REDY](index.md)
 
 # Installation projet PK4
 

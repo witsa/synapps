@@ -21,7 +21,7 @@ Les acteurs sont classés par **catégorie** afin de faciliter la recherche:
 
 1. **Disposition**: acteurs disposants des acteurs enfants
 
-2. **Métiers**: acteurs avec des fonctionnalités métiers souvent associés à une ressource du Redy. Exemple: *journal*, *grapheur*
+2. **Métiers**: acteurs avec des fonctionnalités métiers souvent associés à une ressource du REDY. Exemple: *journal*, *grapheur*
 
 3. **Intéractions**: acteurs d'intéraction avec l'utilisateur. Exemple: *bouton*, *texte de saisie*
 

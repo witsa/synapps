@@ -19,12 +19,12 @@ Les librairies sont classifiées en trois **catégories**:
 * **Contenu**: librairie d'autre types de contenu: *texte*, *javascript*, *json*, etc
 ![Paramètres de la ressource](assets/part6_1.png)
 
-Tout élément d'une librairie est stocké dans le Redy dans un **nod dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc
+Tout élément d'une librairie est stocké dans le REDY dans un **nod dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc
 ![Paramètres de la ressource](assets/part6_2.png)
 
-Cela implique également qu'une méthode simple pour venir éditer un élément de configuration de Synapps depuis le Redy est de sortir ce contenu de l'acteur dans une *librairie*: _texte_, _couleur_, _valeur numérique_, _etc_
+Cela implique également qu'une méthode simple pour venir éditer un élément de configuration de Synapps depuis le REDY est de sortir ce contenu de l'acteur dans une *librairie*: _texte_, _couleur_, _valeur numérique_, _etc_
 
-[En savoir plus sur les objets crées dans le Redy](../../redy/explore.md)
+[En savoir plus sur les objets crées dans le REDY](../../redy/explore.md)
 
 *Exemple:* dans la copie d'écran ci-dessus, il suffit de modifier la valeur du label *color1* pour changer la couleur des acteurs qui sont liés à cet élément de librairie
 
@@ -72,7 +72,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 4. Revenir sur la scène *scene1* et observer que la couleur est bien appliquée sur les acteurs
 
-5. Modifier également la couleur dans la **configuration du Redy** avec la valeur **red** en utilisant l'explorateur de nod sur
+5. Modifier également la couleur dans la **configuration du REDY** avec la valeur **red** en utilisant l'explorateur de nod sur
 ```
 :easy.SynApps.Tuto02.Libraries.Color
 ```

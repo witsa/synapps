@@ -3,7 +3,7 @@
 # Tutorial 2: les liaisons **3/6** *[7 nov 17]*
 
 Dans la deuxième partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
-* lier cetaines propriétés des acteurs avec des ressources du Redy: liaisons vers des **source de données**
+* lier cetaines propriétés des acteurs avec des ressources du REDY: liaisons vers des **source de données**
 
 Exemple: la valeur analogique de *variableAnalogicTuto* avec la valeur de la jauge *gaugeAnalogic*
 

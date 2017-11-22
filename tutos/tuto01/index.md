@@ -2,7 +2,7 @@
 
 # Tutorial 1: première SynApp "Helloworld" *(4 nov 17)*
 
-L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur un Redy
+L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur un REDY
 
 ## Prerequis
 
@@ -15,7 +15,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 1. Ouvrez le Maker
 ![Sélection UTL](assets/tuto01device.PNG)
 
-2. Entrez l'adresse de l'UTL (Redy ou Redy PC), exemples:
+2. Entrez l'adresse de l'UTL (REDY ou REDY PC), exemples:
   * http://127.0.0.1
   * http://localhost:8080
   * redy.domain.com
@@ -25,7 +25,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 
 3. Connection à l'UTL
 
-Saisir les identifiants de connection du Redy. Ils sont identiques à ceux de l'application d'exploitation
+Saisir les identifiants de connection du REDY. Ils sont identiques à ceux de l'application d'exploitation
 
 ### Création de la SynApp
 
@@ -62,11 +62,11 @@ La zone de prévisualisation finale doit ressembler à cela ! (sinon recommencer
 
 ### Déploiement de la SynApp
 
-Déployer la SynApp sur le Redy en cliquant *Déployer* dans la barre de commande en haut à droite
+Déployer la SynApp sur le REDY en cliquant *Déployer* dans la barre de commande en haut à droite
 ![Déployer](assets/tuto01deploy.PNG)
 
-La SynApp est déployée sur le Redy dans *:easy.SynApps*
-[En savoir plus sur les objets crées dans le Redy](../../redy/explore.md)
+La SynApp est déployée sur le REDY dans *:easy.SynApps*
+[En savoir plus sur les objets crées dans le REDY](../../redy/explore.md)
 
 **Attention**: le paramétrage de l'UTL dévra être sauvegardé sinon, en cas de redémarrage, votre SynApp ne sera pas conservée
 
@@ -82,16 +82,16 @@ Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
 Ce mode est a priviliégier pour faire cohabiter le mode *exécution* et *edition* sur deux écrans différents par exemple. Dans ce cas, à chaque déploiement depuis le *maker*, le mode *exécution* est rafraichi
 
-### Exécution de la SynApp depuis le Redy
+### Exécution de la SynApp depuis le REDY
 
-Naviguer dans l'exploitation du Redy, un nouvel onglet **SynApps** est désormais **accessible**
+Naviguer dans l'exploitation du REDY, un nouvel onglet **SynApps** est désormais **accessible**
 ![RedyExécuter dans nouvelle fenêtre](assets/index_1.png)
 
-_Remarque:_ l'onglet *SynApps* est **visible** uniquement quand au moins une SynApp est **déployée** dans le Redy
+_Remarque:_ l'onglet *SynApps* est **visible** uniquement quand au moins une SynApp est **déployée** dans le REDY
 
 ## Etapes suivantes
 
-Vous avez construit puis déployé sur un Redy une première SynApp !
+Vous avez construit puis déployé sur un REDY une première SynApp !
 
 * Avant de continuer, revenir dans l'edition de la SynApp et parcourir toutes les propriétés des 3 acteurs. Regarder notamment les propriétés *spécifiques*, essayer de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation
 

@@ -1,10 +1,10 @@
-[Home](../sitemap.md) > [Redy](index.md)
+[Home](../sitemap.md) > [REDY](index.md)
 
-# Configurer un Redy
+# Configurer un REDY
 
 ## Désactiver le mode Hébergement RIA local
 
-Le runtime de SynApps est embarqué dans le Redy mais prour profiter des dernières versions, il est recommander de travailler en mode **Cloud RIA** dans la mesure du possible
+Le runtime de SynApps est embarqué dans le REDY mais prour profiter des dernières versions, il est recommander de travailler en mode **Cloud RIA** dans la mesure du possible
 
 1. Ouvrir *Configuration* > *Système*
 
@@ -12,7 +12,7 @@ Le runtime de SynApps est embarqué dans le Redy mais prour profiter des derniè
 
 3. Valider
 
-![RedyPC](assets/configure_1.png)
+![REDY PC](assets/configure_1.png)
 
 ## Configuration du cross-origin
 

@@ -4,7 +4,7 @@
 
 ## Liaisons **sources de données** en lecture
 
-Dans la troisième partie du tutorial, des liaisons *internes* entre acteurs ont été définies. Cela a permis de rationnaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources du Redy
+Dans la troisième partie du tutorial, des liaisons *internes* entre acteurs ont été définies. Cela a permis de rationnaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources du REDY
 
 La prochaine étape va donc consister à configurer les liaisons entre les acteurs et ses ressources: les **sources de données**
 
@@ -16,11 +16,11 @@ De la même façon que pour les liaisons *internes*, nous pourrions définir la 
 
 De façon général, il est conseillé de systématiquement definir la **source de donnée au niveau d'un acteur**. Dans ce cas, on parle de la **source de donnée principale** de l'acteur. Rien n'empéchera dans une propriété particulière de l'acteur d'aller chercher une autre source mais, dans la majorité des cas, une acteur et ses éventuels enfants sont liés à une seule ressource
 
-Un *source de donnée* peut être vu comme une **passerelle de communication** entre SynApp et le Redy:
+Un *source de donnée* peut être vu comme une **passerelle de communication** entre SynApp et le REDY:
 * Elle sait **requeter** et **envoyer** des données de et vers l'UTL
 * Elle a **connaissance** de tous les **acteurs** qui dépendent de cette donnée et les **notifie** de tous les changements
 
-Actuellement un seul **type** de *source de donnée* est disponible: le **WOS** mais ultérieurement le catalogue devrait s'élargir avec d'**autres types de source de données**, soit provenant du **Redy** mais aussi d'**autres services ou plateformes externes**.
+Actuellement un seul **type** de *source de donnée* est disponible: le **WOS** mais ultérieurement le catalogue devrait s'élargir avec d'**autres types de source de données**, soit provenant du **REDY** mais aussi d'**autres services ou plateformes externes**.
 Exemple: un service de fourniture de données météo, le WIT-DataCenter (+1), etc
 
 Certains acteurs **natifs** vont chercher directement des données autres que celles provenant du *WOS*. Par exemple, l'acteur *journal* mais dans ce cas il n'est pas nécessaire de définir la *source de donnée* car les mécanismes d'accès à ces données sont directement implémentés dans SynApps au sein de l'acteur
@@ -36,7 +36,7 @@ Certains acteurs **natifs** vont chercher directement des données autres que ce
 
 3. Actuellement aucune *source de donnée* n'est définie. Cliquer sur le bouton **[+Créer]** à côté du type de source souhaité: **WOS** ... le seul disponible à ce jour (voir remarques ci-dessus)
 ![Sélecteur source de données](assets/datasourceExplorerDesc.png)
-L'explorateur des ressources du Redy s'ouvre sur le chemin par défaut:
+L'explorateur des ressources du REDY s'ouvre sur le chemin par défaut:
 ```
 :easy.RESS
 ```
@@ -74,7 +74,7 @@ La variable analogique *VariableAnalogicTuto* a pour chemin
 
 ### Création des liaisons **sources de données**
 
-La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie manuellement, nous allons la lier avec la ressource du Redy *variableAnalogicTuto*
+La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie manuellement, nous allons la lier avec la ressource du REDY *variableAnalogicTuto*
 
 1. L'acteur *gaugeAnalogic* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Spécifiques.Valeur* et sélectionner **Source de données**
 
@@ -113,7 +113,7 @@ Consulter [description du Maker](../../designer.md) pour en savoir plus concerna
 
 Cliquer sur **[lier]** en haut
 
-La propriété *Valeur* de *gaugeAnalogic* est désormais liée à la propriété *Valeur* de la donnée du Redy *variableAnalogicTuto.Output*, vous remarquez:
+La propriété *Valeur* de *gaugeAnalogic* est désormais liée à la propriété *Valeur* de la donnée du REDY *variableAnalogicTuto.Output*, vous remarquez:
 * qu'elle **n'est plus modifiable manuellement car liée**
 
 * le bouton d'édition de la liaison est de couleur **bleu foncé** pour indiquer une liaison *source de données*
@@ -135,7 +135,7 @@ Revenir sur la scène *scene1* et observer les mouvements de la jauge toutes les
 
 ### Définition des autres liaisons aux **sources de données**
 
-1. De la même manière, lier la propriété additionnelle *Spécifiques.Max* de l'acteur *gaugeAnalogic* à la propriété *Valeur* du chemin *WMax* du contexte en *mode initialisation*. *WMax* peut changer dans le Redy mais il est largemment acceptable de ne récupérer sa valeur qu'à l'initialisation
+1. De la même manière, lier la propriété additionnelle *Spécifiques.Max* de l'acteur *gaugeAnalogic* à la propriété *Valeur* du chemin *WMax* du contexte en *mode initialisation*. *WMax* peut changer dans le REDY mais il est largemment acceptable de ne récupérer sa valeur qu'à l'initialisation
 ![Edition liaison vers Max](assets/bindingDatasourceEditMax.png)
 
 2. Lier la propriété additionnelle *Spécifiques.nom* de l'acteur *textTop* à la propriété *Valeur* du chemin *Title* du contexte en *mode initialisation*
@@ -148,7 +148,7 @@ Toutes les liaisons des **sources de données** sont désormais définies
 
 ### Vérification des liaisons **sources de données**
 
-Vérifier que tout fonctionne comme attendu: connectez-vous sur le Redy et modifier le paramétrage de la ressource:
+Vérifier que tout fonctionne comme attendu: connectez-vous sur le REDY et modifier le paramétrage de la ressource:
 ```
 :easy.RESS.R00001.R00002
 ```
@@ -163,7 +163,7 @@ Vérifier que tout fonctionne comme attendu: connectez-vous sur le Redy et modif
  ![Vérification liaison interne](assets/redyForced.png)
 La zone de prévisuallisation doit restituer les changements sur l'ensemble des acteurs
 
-Observer le résultat dans SynApp. La zone de prévisualisation doit restituer les changements sur la resource du Redy
+Observer le résultat dans SynApp. La zone de prévisualisation doit restituer les changements sur la resource du REDY
 
 ![Vérification liaison source de donnée](assets/bindingDatasourceCheck2.png)
 
@@ -172,7 +172,7 @@ Observer le résultat dans SynApp. La zone de prévisualisation doit restituer l
 
 * le mode **initialisation** est donc juste une indication de **non nécessité de rafraichissement** mais ne préjuge en aucun cas du moment ou les propriétés de l'acteur seront rafraichies
 
-*Pour résumer:* le principe est toujours de **présenter les ressources du Redy les plus récentes** !
+*Pour résumer:* le principe est toujours de **présenter les ressources du REDY les plus récentes** !
 
 **Déployer la SynApp**
 

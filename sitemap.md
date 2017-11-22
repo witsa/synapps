@@ -16,7 +16,7 @@
 
 * [Concepts de SynApps](concepts/index.md)
 
-* [Redy](redy/index.md)
-1. [Installation des Redy & Redy PC](redy/install.md)
-2. [Configuration du Redy](redy/configure.md)
-3. [En savoir plus sur les objets crées dans le Redy](redy/explore.md)
+* [REDY](redy/index.md)
+1. [Installation des REDY & REDY PC](redy/install.md)
+2. [Configuration du REDY](redy/configure.md)
+3. [En savoir plus sur les objets crées dans le REDY](redy/explore.md)

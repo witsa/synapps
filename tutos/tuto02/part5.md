@@ -4,9 +4,9 @@
 
 ## Liaisons **sources de données** en écriture
 
-Dans la quatrième partie de ce tutorial, les acteurs ont été liés à une *source de donnée* en **lecture** mais actuellement aucune **intéraction** avec l'utilisateur, ni **commande** avec une ressource du Redy ne sont configurées
+Dans la quatrième partie de ce tutorial, les acteurs ont été liés à une *source de donnée* en **lecture** mais actuellement aucune **intéraction** avec l'utilisateur, ni **commande** avec une ressource du REDY ne sont configurées
 
-La prochaine étape va donc consister à ajouter des **acteurs d'intéractions** avec l'utilisateur et les **lier en écriture** vers la ressource du Redy *ConsigneLogiqueTuto* de type consigne digitale
+La prochaine étape va donc consister à ajouter des **acteurs d'intéractions** avec l'utilisateur et les **lier en écriture** vers la ressource du REDY *ConsigneLogiqueTuto* de type consigne digitale
 
 ### Ajout acteur **Commutateur bouton**
 
@@ -21,7 +21,7 @@ La prochaine étape va donc consister à ajouter des **acteurs d'intéractions**
 
 ### Définition de la source de donnée de l'acteur
 
-Actuellement le contexte de l'acteur *switchButtonCmd* est hérité de l'acteur *stackRoot*. Nous devons définir une nouvelle source de donnée pour cet acteur vers la ressource *ConsigneLogiqueTuto* du Redy
+Actuellement le contexte de l'acteur *switchButtonCmd* est hérité de l'acteur *stackRoot*. Nous devons définir une nouvelle source de donnée pour cet acteur vers la ressource *ConsigneLogiqueTuto* du REDY
 
 1. L'acteur *switchButtonCmd* étant sélectionné, éditer sa *source de données*
 ![Edition source de données](assets/page4_1.png)
@@ -49,7 +49,7 @@ Toutes les liaisons des acteurs vers la **source de donnée** sont désormais d�
 
 Vérifier que tout fonctionne comme attendu: 
 
-1. Connectez-vous sur le Redy et afficher le paramétrage de la ressource:
+1. Connectez-vous sur le REDY et afficher le paramétrage de la ressource:
 ```
 :easy.RESS.R00001.R00003
 ```
