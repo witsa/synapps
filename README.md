@@ -36,6 +36,12 @@ Ces modes de distributions présentent de nombreux avantages:
 
 Actuellement **Maker** et **Runtime** sont distribués uniquement en interne
 
+## Changelog
+
+Version actuelle **1.3.0**
+
+Consulter la [changelog](changelog.md)
+
 ## Etapes suivantes
 
 * [Plan du site](sitemap.md)

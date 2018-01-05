@@ -16,7 +16,7 @@ Le Maker est l'outil de construction et de déploiement de SynApps. Il est distr
 
 2. Executable **Windows** avec un installeur:
 ```
-\\WIT-FILE\Echange\SynApps\Maker\win32\SynApps-1.2.1 Setup.exe
+\\WIT-FILE\Echange\SynApps\Maker\win32\SynApps-X.X.X Setup.exe
 ```
 _Remarque:_ des versions **Mac** et **Linux** du maker seront également disponibles ultérieurement
 
