@@ -3,6 +3,7 @@
 * [Home](README.md)
 
 * [Installation](install.md)
+  1. [Installation sur Android](install/android.md)
 
 * [Changelog](changelog.md)
 

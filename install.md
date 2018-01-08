@@ -20,6 +20,12 @@ Le Maker est l'outil de construction et de déploiement de SynApps. Il est distr
 ```
 _Remarque:_ des versions **Mac** et **Linux** du maker seront également disponibles ultérieurement
 
+### Runtime
+
+1. **WebApp** idem maker
+
+2. **Android** vous pouvez acceder à vos SynApps depuis un terminal _Android_ [installer SynApps sur Android](install/android.md)
+
 ### REDY PC
 
 Dans un premier temps, nous suggérons d'utiliser un REDY PC. Vous pouvez-récupérer la dernière version sur WIT-File puis l'installer localement
