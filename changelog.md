@@ -2,6 +2,10 @@
 
 # Changelog
 
+## Février 2018 (version 1.3.1 à 1.3.3)
+
+Correction de bugs et améliorations diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.3+)
+
 ## Janvier 2018 (version 1.3.0)
 
 ### Acteur **slider**
