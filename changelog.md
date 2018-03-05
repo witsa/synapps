@@ -14,10 +14,12 @@ A noter, qu'il est dans ce cas possible de profiter de certaines améliorations 
 
 ### Tailles de **prévisualisation**
 Vous pouvez désormais **basculer d'une taille de prévisualisation à une autre** simplement
-![Synoptique](changelog/1.3.4/preview2.png)
+
+![preview selecteur](changelog/1.3.4/previewSelector.png)
 
 Les tailles sont gérées dans la partie **administration de la SynApps** ou en utilisant le menu _gérer_ ci-dessus. Vous pouvez alors sélectionner les tailles d'écrans **standards** prédéfinis et même ajouter des tailles **personnalisées**
-![Synoptique](changelog/1.3.4/preview1.png)
+
+![gestion taille](changelog/1.3.4/previewManage.png)
 
 ### Optimisation du chargement des  **sources de données**
 Le mécanisme de chargement des sources de données de type _WOS_ a été modifié en profondeur. En effet certaines ressources avaient des tailles de chargement trop longues car la totalité de la ressource était requetée. Désormais seul les nœuds nécessaires aux liaisons vers les acteurs sont chargés. La ressource est donc chargée partiellement selon les besoins de la SynApp. Ce mécanisme a permis de **diminuer les temps de chargement de façon très importante** (ratio de 7 à 8)
