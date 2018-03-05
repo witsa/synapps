@@ -2,6 +2,32 @@
 
 # Changelog
 
+## Mars 2018 (version 1.3.4)
+
+### Acteur **synoptique**
+
+Ajout de l'acteur de rendu des synoptiques permettant de rendre un synoptique existant dans SynApps
+
+![Synoptique](changelog/1.3.4/synoptic.PNG)
+_Remarque:_ dans la mesure du possible, il est recommandé de réaliser les Synoptiques **directement avec SynApps**. Cependant, pour intégrer des Synoptiques déjà réalisés ou dans des cas particuliers, non couvert a ce jour par SynApps, il peut être envisagé leurs intégrations.
+A noter, qu'il est dans ce cas possible de profiter de certaines améliorations du rendu apportées par SynApps. Par exemple la _boite à vue_ pour **adapter la taille des synoptiques** aux écrans ...
+
+### Tailles de **prévisualisation**
+Vous pouvez désormais **basculer d'une taille de prévisualisation à une autre** simplement
+![Synoptique](changelog/1.3.4/preview2.PNG)
+
+Les tailles sont gérées dans la partie **administration de la SynApps** ou en utilisant le menu _gérer_ ci-dessus. Vous pouvez alors sélectionner les tailles d'écrans **standards** prédéfinis et même ajouter des tailles **personnalisées**
+![Synoptique](changelog/1.3.4/preview1.PNG)
+
+### Optimisation du chargement des  **sources de données**
+Le mécanisme de chargement des sources de données de type _WOS_ a été modifié en profondeur. En effet certaines ressources avaient des tailles de chargement trop longues car la totalité de la ressource était requetée. Désormais seul les nœuds nécessaires aux liaisons vers les acteurs sont chargés. La ressource est donc chargée partiellement selon les besoins de la SynApp. Ce mécanisme a permis de **diminuer les temps de chargement de façon très importante** (ratio de 7 à 8)
+
+### Acteur **répartition**
+Modification du formulaire de configuration de l'acteur _répartition_ avec la possibilité de **définir** et **appliquer** des **palettes de couleurs** aux secteurs
+![Synoptique](changelog/1.3.4/palette.PNG)
+
++Correction de **15 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.4+)
+
 ## Février 2018 (version 1.3.1 à 1.3.3)
 
 Correction de bugs et améliorations diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.3+)
