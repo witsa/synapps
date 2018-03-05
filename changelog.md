@@ -8,7 +8,7 @@
 
 Ajout de l'acteur de rendu des synoptiques permettant de rendre un synoptique existant dans SynApps
 
-![Synoptique](changelog/1.3.4/synoptic.png)
+![Synoptique](changelog/1.3.4/synoptics.png)
 _Remarque:_ dans la mesure du possible, il est recommandé de réaliser les Synoptiques **directement avec SynApps**. Cependant, pour intégrer des Synoptiques déjà réalisés ou dans des cas particuliers, non couvert a ce jour par SynApps, il peut être envisagé leurs intégrations.
 A noter, qu'il est dans ce cas possible de profiter de certaines améliorations du rendu apportées par SynApps. Par exemple la _boite à vue_ pour **adapter la taille des synoptiques** aux écrans ...
 
@@ -26,7 +26,7 @@ Le mécanisme de chargement des sources de données de type _WOS_ a été modifi
 
 ### Acteur **répartition**
 Modification du formulaire de configuration de l'acteur _répartition_ avec la possibilité de **définir** et **appliquer** des **palettes de couleurs** aux secteurs
-![Synoptique](changelog/1.3.4/palette.png)
+![Synoptique](changelog/1.3.4/palettes.png)
 
 +Correction de **15 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.4+)
 
