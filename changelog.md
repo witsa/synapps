@@ -2,6 +2,10 @@
 
 # Changelog
 
+## Avril 2018 (version 1.3.5)
+
+Correction de **16 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.5+)
+
 ## Mars 2018 (version 1.3.4)
 
 ### Acteur **synoptique**
