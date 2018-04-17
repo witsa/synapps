@@ -6,7 +6,7 @@
 
 ### Référencement et génération de favicons
 
-Il est désormais possible de référencer ou définir des **favicons** par SynApp pour tous les types de devices: _IOs_, _Android_. Cela permet notamment d'avoir une icone spécifique lorsque la SynApp est ajoutée sur l'écran d'acceuil du smartphone ou sur le bureau  Windows, Max, etc.
+Il est désormais possible de référencer ou définir des **favicons** par SynApp pour tous les types de devices: _IOs_, _Android_. Cela permet notamment d'avoir une icone spécifique lorsque la SynApp est ajoutée sur l'écran d'acceuil du smartphone ou sur le bureau  Windows, Mac, etc.
 
 ![Favicons](changelog/1.3.5/favicons.png)
 
