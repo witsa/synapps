@@ -4,7 +4,32 @@
 
 ## Avril 2018 (version 1.3.5)
 
-Correction de **16 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.5+)
+### Limitation des actions utilisateurs
+
+L'information lecture/écriture autorisée sur un nod pour l'utilisateur courant est désormais disponible pour toutes les sources de données de type _WOS_.
+
+Désormais, il est donc possible de définir le comportement d'un acteur en fonction des niveaux d'autorisation d'une ressource. Il suffit de lier une propriété de cet acteur à la propriété lecture ou écriture de la ressource dans la source de donnée.
+_Par exemple:_ rendre inactif ou non visible un slider de commande d'un ressource analogique du WOS.
+
+Dans tous les cas, cela demeure de la responsabilité du réalisateur de la SynApp de définir le comportement des acteurs en fonction des droits sur les ressources.
+
+![source de donnée](changelog/1.3.5/datasource.png)
+
+### Ergonomie de la liaison vers les sources de données
+
+L'ergonomie de la liaison des propriétés d'un acteur vers les sources de données a évolué et permet de définir de gauche à droite:
+1. Le contexte
+2. La propriété de la ressource liée
+3. L'accès en lecture/écriture et l'action de liaison
+
+![source de donnée](changelog/1.3.5/datasource2.png)
+
+### Définir une image dans un bouton
+
+Explication du mécanisme permettant de définir une image dans un bouton _poussoir_ ou de _navigation_
+[issue 93](https://github.com/witsa/synapps/issues/93)
+
++Correction de **16 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.5+)
 
 ## Mars 2018 (version 1.3.4)
 
