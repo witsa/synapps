@@ -4,6 +4,12 @@
 
 ## Avril 2018 (version 1.3.5)
 
+### Référencement et génération de favicons
+
+Il est désormais possible de référencer ou définir des **favicons** par SynApp pour tous les types de devices: _IOs_, _Android_. Cela permet notamment d'avoir une icone spécifique lorsque la SynApp est ajoutée sur l'écran d'acceuil du smartphone ou sur le bureau  Windows, Max, etc.
+
+![Favicons](changelog/1.3.5/favicons.png)
+
 ### Limitation des actions utilisateurs
 
 L'information lecture/écriture autorisée sur un nod pour l'utilisateur courant est désormais disponible pour toutes les sources de données de type _WOS_.
