@@ -2,11 +2,38 @@
 
 # Changelog
 
+## Mai 2018 (version 1.3.6)
+
+### Compatibilité e@sy-Pilot
+
+SynApps est compatible avec la prochaine version d'e@sy-Pilot 9.5.2.
+
+![Favicons](changelog/1.3.6/logo-easy-pilot.png)
+
+Le mode de fonctionnement est identique à celui du REDY
+
+### Limitation acteur IFrame
+
+Prendre connaissance des limitations de l'acteur IFrame avec des contenus accedant DOM parent
+[Issue 113](https://github.com/witsa/synapps/issues/113)
+
+### Disparition de _librairies_ et _sources de données_
+
+Correction du problème de disparition des ressources SynApps de type _sources de données_ et _librairies_ sur le REDY
+[Issue 108](https://github.com/witsa/synapps/issues/108)
+
+### Evolution de l'acteur journal
+De nouvelles propriétés peuvent être affichées dans l'acteur journal: _zone_, _consigne_ et _diffusion_.
+Le tooltip au survol de la ressource donne également les informations _note_ et _description_
+[Issue 55](https://github.com/witsa/synapps/issues/55)
+
++Correction de **13 bugs et améliorations** divers [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.6)
+
 ## Avril 2018 (version 1.3.5)
 
 ### Référencement et génération de favicons
 
-Il est désormais possible de référencer ou définir des **favicons** par SynApp pour tous les types de devices: _IOs_, _Android_. Cela permet notamment d'avoir une icone spécifique lorsque la SynApp est ajoutée sur l'écran d'acceuil du smartphone ou sur le bureau  Windows, Max, etc.
+Il est désormais possible de référencer ou définir des **favicons** par SynApp pour tous les types de devices: _IOs_, _Android_. Cela permet notamment d'avoir une icone spécifique lorsque la SynApp est ajoutée sur l'écran d'acceuil du smartphone ou sur le bureau  Windows, Mac, etc.
 
 ![Favicons](changelog/1.3.5/favicons.png)
 
