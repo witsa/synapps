@@ -2,7 +2,7 @@
 
 # Changelog
 
-## Mai 2018 (version 1.3.6)
+## Mai 2018 - version **1.3.6**
 
 ### Compatibilité e@sy-Pilot
 
@@ -29,7 +29,7 @@ Le tooltip au survol de la ressource donne également les informations _note_ et
 
 +Correction de **13 bugs et améliorations** divers [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.6)
 
-## Avril 2018 (version 1.3.5)
+## Avril 2018 - version **1.3.5**
 
 ### Référencement et génération de favicons
 
@@ -64,7 +64,7 @@ Explication du mécanisme permettant de définir une image dans un bouton _pouss
 
 +Correction de **16 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.5+)
 
-## Mars 2018 (version 1.3.4)
+## Mars 2018 - version **1.3.4**
 
 ### Acteur **synoptique**
 
@@ -94,11 +94,11 @@ Modification du formulaire de configuration de l'acteur _répartition_ avec la p
 
 +Correction de **15 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.4+)
 
-## Février 2018 (version 1.3.1 à 1.3.3)
+## Février 2018 - version **1.3.1** à **1.3.3**
 
 Correction de bugs et améliorations diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.3+)
 
-## Janvier 2018 (version 1.3.0)
+## Janvier 2018 - version **1.3.0**
 
 ### Acteur **slider**
 
