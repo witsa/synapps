@@ -10,6 +10,7 @@
 * [Tutoriaux](tutos/index.md)
   1. [Tutorial 1: première SynApp "Helloworld"](tutos/tuto01/index.md)
   2. [Tutorial 2: liaison aux ressources de l'UTL](tutos/tuto02/index.md)
+  3. [Tutorial 3: les acteurs dispositions](tutos/tuto03/index.md)
 
 * [Acteurs](actors/index.md)
   1. [Description des acteurs natifs](actors/natives.md)

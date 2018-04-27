@@ -64,7 +64,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
     * un **tooltip résumant la liaison** apparait en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
     ![Tooltip liaison librairie](assets/part6_6.png)
 
-### verification des liaisons **librairies**
+### Verification des liaisons **librairies**
 
 3. Vérifier la laison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
 ![Sélection de la librairie](assets/part6_7.png)
