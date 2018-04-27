@@ -66,7 +66,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 ### verification des liaisons **librairies**
 
-3. Vérification la laison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
+3. Vérifier la laison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
 ![Sélection de la librairie](assets/part6_7.png)
 ![Modification de la librairie](assets/part6_8.png)
 
@@ -78,7 +78,16 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 ```
 ![Explorateur de nod](assets/part6_9.png)
 
-6. Revenir sur la scène *scene1* de SynApps, rafraichir (F5) et observer que la couleur est bien appliquée sur les acteurs
+6. Modifier le numéro de _build_ de la SynApp pour forcer son rechargement
+    ```
+    :easy.SynApps.Tuto02.Build
+    ```
+    ![Build](assets/build.png) 
+    _Remarque:_ La configuration SynApp est cachée dans le navigateur pour optimiser son temps de chargement. Le numéro de _build_ de la SynApp cachée est comparé à celui stocké sur le REDY. Lorsqu'ils different, la SynApp est rechargée puis cachée dans le navigateur.
+
+    A chaque fois que vous modifiez une SynApp depuis le MAKER, le numéro de build change automatiquement. Par contre, si vous **modifiez une des ressources de SynApp directement depuis le REDY**, avec l'explorateur de Nod par exemple, il faut **manuellement modifier le numéro de _build_** pour forcer le rafraichissement de la SynApp dans les MAKER et RUNTIME
+
+7. Revenir sur la scène *scene1* de SynApps, rafraichir (F5) et observer que la couleur est bien appliquée sur les acteurs
 ![Explorateur de nod](assets/part6_10.png)
 
 ### Conclusion
@@ -89,9 +98,6 @@ Sans attendre les prochains tutoriaux, vous pouvez:
 * parcourir le Maker,
 * essayer d'autres acteurs
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker avec par ordre de préférence:
-1. GitHub [gestionnaire d'issues](https://github.com/witsa/synapps/issues)
-2. Discord #wup-synapps
-3. Par mail à l'équipe de dev
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant](../tuto03/index.md)
