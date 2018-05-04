@@ -169,9 +169,9 @@ Créer une **nouvelle scène** dans la SynApp créée précédemment **tuto03** 
     * Modifier la _Période_ à <code>5</code> secondes
     ![Empilement](assets/part2_datasourceB.png)
 
-18. Ajouter un moyen visuel de distinguer les éléments de la zone 1
+17. Ajouter un moyen visuel de distinguer les éléments de la zone 1
 
-15. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _text_ **text14** qui permetttra de définir un moyen visuel de distinguer les éléments de la **zone 1**
+18. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _text_ **text14** qui permetttra de définir un moyen visuel de distinguer les éléments de la **zone 1**
 
     * modifier la propriété _Spécifiques > Contenu_ avec la valeur <code>Zone 1</code>
     * modifier la propriété _Aspect > Couleur de fond_ avec un gris clair <code>#e7e7e7</code>
@@ -190,7 +190,7 @@ Créer une **nouvelle scène** dans la SynApp créée précédemment **tuto03** 
     * La zone de prévisualisation doit alors ressembler à ceci:
     ![Empilement](assets/part2_preview2.png)
 
-17. **Déployer** et **Exécuter** la SynApp:
+19. **Déployer** et **Exécuter** la SynApp:
 
     * Modifier la **position du curseur**:
         * vérifier que la **couleur des 4 lumières** changent de concert en fonction de la position du curseur
@@ -205,16 +205,17 @@ Créer une **nouvelle scène** dans la SynApp créée précédemment **tuto03** 
 
  Tout fonctionne correctement ? **à vous de jouer**, recommencez toutes les opérations pour la **zone 2** qui sera associée à la ressource consigne analogique **LightZone2**
 
-    Quelques suggestions ...
-    * **Ne pas vous aider de ce tutorial !**
-    * Utiliser la  **Dupplication** des acteurs de la _zone 1_ et les déplacer vers la _zone 2_
+Quelques suggestions ...
 
-    * Modifier la **source de donnée principale** des 2 acteurs _jauge_ et _curseur_. Tous les liaisons des propriétés des acteurs de type _source de données_ seront automatiquement configurées car **relatives à leurs sources de donnée principale**
+* **Ne pas vous aider de ce tutorial !**
+* Utiliser la  **Dupplication** des acteurs de la _zone 1_ et les déplacer vers la _zone 2_
 
-    * Modifier les **les liaisons internes** entre acteurs de la _zone 2_
+* Modifier la **source de donnée principale** des 2 acteurs _jauge_ et _curseur_. Tous les liaisons des propriétés des acteurs de type _source de données_ seront automatiquement configurées car **relatives à leurs sources de donnée principale**
 
-    Et le résultat !
-   ![Empilement](assets/part2_final.png)
+* Modifier les **les liaisons internes** entre acteurs de la _zone 2_
+
+Et le résultat !
+![Empilement](assets/part2_final.png)
 
 ## Que retenir ?
 
@@ -237,9 +238,3 @@ Cela aurait également permis une dupplication simplifiée de la _zone 1_ vers l
 Le tutorial suivant est complémentaire à celui-ci puisque nous allons utiliser l'acteur **_boite à vue_** qui permet d'**adapter** des acteurs à une taille d'écran !
 
 [Tutorial acteur disposition **_boite à vue_**](part3.md)
-
-
-
-
-
-
