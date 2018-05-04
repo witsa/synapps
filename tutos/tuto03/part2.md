@@ -4,12 +4,163 @@
 
 ![Empilement](assets/actor_canvas.png)
 
+La deuxième partie de ce tutorial est consacrée à l'acteur **_toile_** qui permet de **superposer** des acteurs enfants et repondre au besoin de construction de synoptiques notamment !
+
+La scène sera constituée d'un fond de plan et permettra de gérer les lumières d'une salle de réunion.
+
 ## Prerequis
 
 Créer une **nouvelle scène** dans la SynApp créée précédemment **tuto03** . Modifier le _label_ de la scène en **sceneCanvas** et le _nom_ avec **Toile** puis déployer.
-
 ![Empilement](assets/part2_scenes.png)
 
 ## Construction de la scène
 
-En cours
+1. Dans la scène courante _sceneCanvas_ définissez l'acteur principal avec un acteur **toile**
+![Empilement](assets/part2_canvas.png)
+
+    Modifier la taille de la grille de la toile
+
+    * la propriété _Spécifique > Grille horizontale_ avec la valeur **50px**
+    * la propriété _Spécifique > Grille verticale_ avec la valeur **50px**
+
+    _Remarque:_ la grille permet d'**aligner** les acteurs enfants selon la **taille de la maille**. Ici: _50px*50px_
+    ![Empilement](assets/part2_grid.png)
+
+2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous. 
+    * Click droit sur l'image et _Enregistrer sous_ dans un dossier local
+    ![Empilement](assets/part2_backgroundPlan.png)
+
+    * Ouvrir le dossier local contenant l'image
+    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifique > Image_ 
+   ![Empilement](assets/part2_image.png)
+    * Modifier la propriété _Gabarit > Hauteur_ à la valeur par défaut
+    ![Empilement](assets/part2_defaultValue.png)
+    * Modifier également la propriété _Gabarit > Largeur_ à la valeur par défaut
+
+3. La _zone de prévisualisation_ doit ressembler à ceci
+    ![Empilement](assets/part2_previewPlan.png)
+
+    _Remarque:_ pour adapter la taille de la _zone de prévisualisation_ au contenu:
+    * positionner le curseur souris sur la zone de prévisualisation et utiliser le **scroll haut**/**bas** de la souris pour **zoomer**/**dezoomer** ou
+    * modifier manuellement le facteur de zoom 
+    ![Empilement](assets/part2_zoom.png)
+
+4. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _empilement_ **stack3** qui représentera le contour du point lumineux et le configurer:
+
+    * définir la propriété _Aspect > Couleur de fond_ avec une couleur gris clair **##e7e7e7**
+    * la propriété _Aspect > Bordure > Style bordure_ à **Solide**
+    * la propriété _Aspect > Bordure > Epaisseur bordure_ à **10px**
+    * la propriété _Aspect > Bordure > Rayon bordure_ à **50px**
+    * la propriété _Aspect > Bordure > Couleur bordure_  avec une couleur gris foncé **#555555**
+
+5. **Sélectionner** l'acteur _empilement_ **stack3** et **ajouter** un acteur enfant de type _empilement_ **stack4** qui représentera la couleur dont l'opacité variera en fonction de l'intensité lumineuse:
+
+    * définir la propriété _Aspect > Couleur de fond avec une couleur jaune **#ffe583**
+    * ajouter cette couleur dans la librairie avec le nom **colorLight**, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutorial 2 sur les liaisons aux librairies](../tuto02/part6/index.md))
+    ![Empilement](assets/part2_lightLibrary.png)
+    * la propriété _Aspect > Bordure > Rayon bordure_ à **50px**
+    * la propriété _Position > Align. vertical_ à **Etendre**
+    * la propriété _Position > Align. horizontal_ à **Etendre**
+    * la propriété _Gabarit > Hauteur_ à la valeur par défaut **[vide]**
+    ![Empilement](assets/part2_light.png)
+
+6. **Positionner** l'acteur _empilement_ **stack3** sur la toile directement en déplaçant l'acteur avec le clique souris
+
+    * ouvrir l'onglet _Position_ dans l'inspecteur de l'acteur
+    * déplacer l'acteur avec la souris maintenue cliquée
+    * observer ques les propriétés _Position > Position gauche_ et _Position > Position haut_ changent en même temps avec un pas de **50px** correspondant à la taille de la grille de la toile
+    * modifier la propriété _Position > Alignement _ à **200px**
+    * modifier la propriété _Position > Position haut_ à **200px**
+
+    ![Empilement](assets/part2_light2.png)
+    _Remarque:_ dans la zone de prévisualisation, les tailles **100px * 100px** ainsi que positions sont indiquées **200px, 200px**
+
+    ![Empilement](assets/part2_light3.png)
+
+7. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _curseur_ **slider5** qui permettra de commander la consigne analogique de la première zone lumineuse:
+
+    * modifier la propriété _Spécifiques > Valeur_ avec la valeur **75**
+    * modifier la propriété _Spécifiques > Bar_ avec **Après curseur**
+    * lier la propriété _Spécifiques > Couleur fond bar_ à la librairie **colorLight**
+    * modifier la propriété _Position > Position gauche_ à **150px**
+    * modifier la propriété _Position > Position haut_ à **620px**
+    ![Empilement](assets/part2_slider1.png)
+    * definir la source de donnée propriété _Source de données > Source_
+    ![Empilement](assets/part2_datasource1.png)
+    * créer une nouvelle source de donnée
+    ![Empilement](assets/part2_datasource2.png)
+    * sélectionner la consigne analogique **LightZone1**
+    ![Empilement](assets/part2_datasource3.png)
+    * renommer la source de donnée **dsLightZone1** puis **créer**
+    ![Empilement](assets/part2_datasource4.png)
+    * lier la propriété _Spécifiques > Valeur_ à une source de donnée
+    ![Empilement](assets/part2_slider2.png)
+    * Dans l'explorateur de liaison, modifier le _Chemin_ avec la valeur <code>setpoint</code>, sélectionner _Ecriture_ puis **Lier**
+    ![Empilement](assets/part2_datasource5.png)
+    * La _valeur_ du curseur **slider5** est désormais lié en _lecture_/_écriture_ sur la ressource consigne analogique **LightZone1**
+    ![Empilement](assets/part2_slider3.png)
+
+8. **Sélectionner** l'acteur _empilement_ **stack4** et lier son _opacité_ à la valeur de l'acteur _curseur_ **slider5** qui permettra de commander la consigne analogique de la première zone lumineuse:
+
+    * lier en _interne_ la propriété _Aspect > Opacité_ avec 
+    la propriété _Spécifiques > Valeur_ de l'acteur **slider5**
+![Empilement](assets/part2_lightBind.png)
+    (voir [Tutorial 2 sur les liaisons internes](../tuto02/part5/index.md))
+![Empilement](assets/part2_lightBind2.png)
+
+9. **Exécuter** la SynApp et vérifier que:
+    * la couleur de la lumière change en fonction de la position du curseur
+    * la valeur _SetPoint_ de la ressource **LightZone1** dans le paramétrage du REDY reflète bien la position du curseur
+    ![Empilement](assets/part2_redy.png)
+
+10. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack6** et **positionner** ce dernier en _position gauche_ **350px** et _position haut_ **200px**
+
+11. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack8** et **positionner** ce dernier en _position gauche_ **200px** et _position haut_ **450px**
+
+12. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack10** et **positionner** ce dernier en _position gauche_ **350px** et _position haut_ **450px**
+![Empilement](assets/part2_light4.png)
+
+13. **Exécuter** la SynApp et vérifier que les couleurs des quatre lumières changent en fonction de la position du curseur
+
+14. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _jauge_ **gauge12** qui permettra de visualiser la valeur de l'intensité lumineuse:
+
+    * positionner ce dernier en _position gauche_ **175px** et _position haut_ **300px**
+    * lier en _interne_ la propriété _Spécifiques > Valeur_ avec 
+    la propriété _Spécifiques > Valeur_ de l'acteur **slider5**
+    * lier en _interne_ la propriété _Spécifiques > Min_ avec 
+    la propriété _Spécifiques > Min_ de l'acteur **slider5**
+
+    ![Empilement](assets/part2_gauge.png)
+
+15. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _text_ **text13** qui permettra de connaitre la valeur de l'intensité lumineuse ainsi que son unité:
+
+    * positionner ce dernier en _position gauche_ **260px** et _position haut_ **380px**
+    * definir la source de donnée propriété _Source de données > Source_
+    ![Empilement](assets/part2_text.png)
+    * sélectionner la source de donnée existante **dsLightZone1**
+    ![Empilement](assets/part2_datasource6.png)
+    * définir la propriété _Spécifiques > Contenu avec la valeur <code>{{variation}} {{unit}}</code>
+    * créer les deux propriétés _spécifiques_ proposées **variation** de type _Nombre_ et **unit** de type _Text_
+    ![Empilement](assets/part2_props.png)
+    * lier en _Interne_  la propriété _Spécifiques > variation_ avec 
+    la propriété _Spécifiques > Valeur_ de l'acteur **gauge12**
+    * lier en _Source de données_  la propriété _Spécifiques > unit_
+    * Dans la modale de _définition de la liaison_, **ouvrir** l'_explorateur de chemin relatif_
+    ![Empilement](assets/part2_datasource7.png)
+    * Dans la zone de recherche de ressource dans l'_explorateur de chemin relatif_, commencez à taper <code>un</code> (début de _unit_) puis sélectionner le _Label_ **Unit** et cliquer sur **Sélectionner**
+    ![Empilement](assets/part2_datasource8.png)
+    * Dans la modale de _définition de la liaison_ **Lier**
+    ![Empilement](assets/part2_datasource9.png)
+    * La zone de prévisualisation doit alors ressembler à ceci:
+    ![Empilement](assets/part2_canvas2.png)
+
+16. **Exécuter** la SynApp et vérifier que les couleurs des quatre lumières changent en fonction de la position du curseur
+
+9. **Exécuter** la SynApp et vérifier que:
+    * la couleur de la lumière change en fonction de la position du curseur
+    * la valeur _SetPoint_ de la ressource **LightZone1** dans le paramétrage du REDY reflète bien la position du curseur
+    ![Empilement](assets/part2_redy.png)
+
+
+
+
