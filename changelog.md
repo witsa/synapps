@@ -2,6 +2,10 @@
 
 # Changelog
 
+## Mai 2018 - version **1.3.7**
+
++[**4 bugs et améliorations**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.7)
+
 ## Mai 2018 - version **1.3.6**
 
 ### Compatibilité e@sy-Pilot
@@ -27,7 +31,7 @@ De nouvelles propriétés peuvent être affichées dans l'acteur journal: _zone_
 Le tooltip au survol de la ressource donne également les informations _note_ et _description_
 [Issue 55](https://github.com/witsa/synapps/issues/55)
 
-+Correction de **13 bugs et améliorations** divers [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.6)
++[**13 bugs et améliorations**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.6)
 
 ## Avril 2018 - version **1.3.5**
 
@@ -62,7 +66,7 @@ L'ergonomie de la liaison des propriétés d'un acteur vers les sources de donn�
 Explication du mécanisme permettant de définir une image dans un bouton _poussoir_ ou de _navigation_
 [issue 93](https://github.com/witsa/synapps/issues/93)
 
-+Correction de **16 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.5+)
++[**16 bugs et améliorations**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.5+)
 
 ## Mars 2018 - version **1.3.4**
 
