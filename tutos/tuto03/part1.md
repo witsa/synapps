@@ -4,6 +4,8 @@
 
 ![Empilement](assets/actor_stack.png)
 
+La première partie de ce tutorial est consacrée à l'acteur **_empilement_** qui permet d'**empiler** des acteurs enfants **horizontalement** ou **verticalement** et repondre au besoin de restitution adaptative
+
 ## Prerequis
 
 Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la première scène en **sceneStack** et le _nom_ avec **Empilement** puis déployer.
@@ -14,14 +16,14 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
 1. Dans la scène courante _sceneStack_ définissez l'acteur principal avec un acteur **empilement**
 
-2. **Ajouter** un acteur enfants de type texte et modifier son alignement horizontal et vertical pour qu'il s'étende sur toute la surface disponible de l'acteur Empilement
+2. **Ajouter** un acteur enfant de type texte et modifier son alignement horizontal et vertical pour qu'il s'étende sur toute la surface disponible de l'acteur Empilement
 
     * la propriété _Position > Align. vertical_ à **Etendre** 
     * la propriété _Position > Align. horizontal_ à **Etendre**
 
     ![Empilement](assets/part1_align.png)
 
-3. **Duppliquer** 3x l'acteur avec le bouton _Dupliquer_ ci-dessous. Vous aurez alors 4 acteurs _Texte_ enfant de l'acteur _Empilement_
+3. **Dupliquer** 3x l'acteur avec le bouton _Dupliquer_ ci-dessous. Vous aurez alors 4 acteurs _Texte_ enfant de l'acteur _Empilement_
 
     ![Empilement](assets/part1_cloneText.png)
 
@@ -118,7 +120,7 @@ Les valeurs possible sont:
   * **auto**: Le comportement est laissé à la discrétion de l'agent utilisateur. Les navigateurs comme Firefox affichent des ascenseurs si le contenu dépasse dans l'acteur _disposition_
   * **nouvelle ligne**: non disponible pour l'instant
 
-  Pour plus d'information concernant les dépassements vous pouvez vous reporter à la description sur [developer.mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/overflow)
+  Pour plus d'informations concernant les dépassements vous pouvez vous reporter à la description sur [developer.mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/overflow)
 
 # Que retenir ?
 
