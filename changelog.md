@@ -4,6 +4,22 @@
 
 ## Mai 2018 - version **1.3.7**
 
+### Transformation des acteurs [issue 131](https://github.com/witsa/synapps/issues/131)
+
+Ajout de 2 propriétés de transformation dans la catégorie _Position_ de l'inspecteur d'acteur:
+
+* **Rotation**: effectue une rotations en degré
+* **Echelle**: effectue une mise à l'échelle de
+
+![Favicons](changelog/1.3.7/transform.png)
+
+
+### Nom interne des noms propriétés des acteur [issue 129](https://github.com/witsa/synapps/issues/129)
+
+Les noms internes des propriétés d'acteur sont importants notamment car ils sont utilisés dans les scripts. Ils sont désormais visible dans le tooltip ci-dessous
+
+![Favicons](changelog/1.3.7/property.png)
+
 +[**4 bugs et améliorations**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.7)
 
 ## Mai 2018 - version **1.3.6**
