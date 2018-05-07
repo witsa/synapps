@@ -3,7 +3,7 @@
 
 # Installation projet PK4
 
-![Tooltip liaison librairie](assets/installPK4_1.png)
+![Tooltip liaison librairie](assets/install_2.png)
 
 1. Sélectionner le fichier _[YOUR].PK4_ avec le bouton **Choisissez un fichier**
 
