@@ -2,9 +2,9 @@
 
 # Prérequis
 
-Tous les tutoriaux sont basés sur un même paramétrage [SynApps_Tutorials.PK4](../configs/SynApps_Tutorials.PK4) de REDY
+Tous les tutoriaux sont basés sur un même paramétrage [SynApps_Tutorials.PK4](config/SynApps_Tutorials.PK4) de REDY
 
-Installer ce paramétrage avec le [gestionnaire de projets](../../redy/installPK4.md) du REDY
+Installer ce paramétrage avec le [gestionnaire de projets](../redy/installPK4.md) du REDY
 
 
 # Tutoriaux

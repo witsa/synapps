@@ -6,9 +6,9 @@
 
 * [Tutorial 1: première SynApp "Helloworld"](../tuto01/index.md)
 
-* Installer le paramétrage [tuto02.PK4](configs/tuto02.PK4) avec le [gestionnaire de projets](../../redy/installPK4.md) du REDY. Il contient deux ressources préconfigurées nécessaires dans le chemin du REDY *Tutorial1*:
-1. Une **variable analogique** *VariableAnalogiqueTuto* sinusoidale variant de 0 à 100
-2. Une **consigne digitale** *ConsigneLogiqueTuto*
+* Le paramétrage [SynApps_Tutorials.PK4](../config/SynApps_Tutorials.PK4) installé sur le REDY. Il contient deux ressources préconfigurées nécessaires dans le dossier <code>Tutorial2</code>:
+    1. Une **variable analogique** <code>VariableAnalogiqueTuto</code> sinusoidale variant de 0 à 100
+    2. Une **consigne digitale** <code>ConsigneLogiqueTuto</code>
 
 ## Création de la SynApp
 
