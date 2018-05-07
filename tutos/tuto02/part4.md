@@ -42,7 +42,7 @@ L'explorateur des ressources du REDY s'ouvre sur le chemin par défaut:
 ```
 ![Sélectionner nod](assets/selectNod.png)
 
-4. Sélectionner le dossier de ressource **R00001** *Tutorial1*
+4. Sélectionner le dossier de ressource **R00001** *Tutorial2*
 ![Sélectionner R00001](assets/selectNod2.png)
 
 5. Sélectionner la variable analogique **R00002** *VariableAnalogicTuto*

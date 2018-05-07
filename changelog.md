@@ -9,7 +9,7 @@
 Ajout de 2 propriétés de transformation dans la catégorie _Position_ de l'inspecteur d'acteur:
 
 * **Rotation**: effectue une rotations en degré
-* **Echelle**: effectue une mise à l'échelle de
+* **Echelle**: effectue une mise à l'échelle
 
 ![Favicons](changelog/1.3.7/transform.png)
 
@@ -92,10 +92,12 @@ Ajout de l'acteur de rendu des synoptiques permettant de rendre un synoptique ex
 
 ![Synoptique](changelog/1.3.4/synoptics.png)
 
-_Remarque:_ dans la mesure du possible, il est recommandé de réaliser les Synoptiques **directement avec SynApps**. Cependant, pour intégrer des Synoptiques déjà réalisés ou dans des cas particuliers, non couvert a ce jour par SynApps, il peut être envisagé leurs intégrations.
-A noter, qu'il est dans ce cas possible de profiter de certaines améliorations du rendu apportées par SynApps. Par exemple la _boite à vue_ pour **adapter la taille des synoptiques** aux écrans ...
+_Remarque:_ dans la mesure du possible, il est recommandé de réaliser les Synoptiques **directement avec SynApps**. Cependant, pour intégrer des Synoptiques déjà réalisés ou dans des cas particuliers, non couvert a ce jour par SynApps, il peut être envisagé leurs intégrations. Attention: **certains Synoptiques ne fonctionnent pas** dans SynApps  car ils nécessitent des ressources de la page qui ne sont pas accessibles. Voir les explication dans [issue 113](https://github.com/witsa/synapps/issues/113)
+
+A noter qu'il est possible de profiter de certaines améliorations du rendu apportées par SynApps. Par exemple la _boite à vue_ pour **adapter la taille des synoptiques** aux écrans ...
 
 ### Tailles de **prévisualisation**
+
 Vous pouvez désormais **basculer d'une taille de prévisualisation à une autre** simplement
 
 ![preview selecteur](changelog/1.3.4/previewSelector.png)

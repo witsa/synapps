@@ -10,24 +10,27 @@ La scène sera constituée d'un fond de plan et permettra de gérer les lumière
 
 ## Prerequis
 
-Créer une **nouvelle scène** dans la SynApp créée précédemment **tuto03** . Modifier le _label_ de la scène en **sceneCanvas** et le _nom_ avec **Toile** puis déployer.
+Le paramétrage [SynApps_Tutorials.PK4](../configs/SynApps_Tutorials.PK4) installé sur le REDY. Il contient deux **consigne analogique** préconfigurées <code>LightZone1</code> et <code>LightZone2</code>  dans le dossier <code>Tutorial3</code>. Elles représentent deux zones de lumières à commander avec des valeurs pouvant varier de <code>0</code> à <code>100%</code>
+
+Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en <code>sceneCanvas</code> et le _nom_ avec <code>Toile</code> puis déployer.
 ![Empilement](assets/part2_scenes.png)
 
 ## Construction de la scène de la zone 1
 
 1. Dans la scène courante _sceneCanvas_ définissez l'acteur principal avec un acteur **toile**
-![Empilement](assets/part2_canvas.png)
+
+    ![Empilement](assets/part2_canvas.png)
 
     Modifier la taille de la grille de la toile
 
-    * la propriété _Spécifique > Grille horizontale_ avec la valeur <code>50px</code>
-    * la propriété _Spécifique > Grille verticale_ avec la valeur <code>50px</code>
+    * propriété _Spécifique > Grille horizontale_ avec la valeur <code>50px</code>
+    * propriété _Spécifique > Grille verticale_ avec la valeur <code>50px</code>
 
     _Remarque:_ la grille permet d'**aligner** les acteurs enfants selon la **taille de la maille**. Ici: _50px*50px_
     ![Empilement](assets/part2_grid.png)
 
 2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous. 
-    * Click droit sur l'image et _Enregistrer sous_ dans un dossier local
+    * Click droit sur l'image ci-dessous et _Enregistrer sous_ dans un dossier local
     ![Empilement](assets/part2_backgroundPlan.png)
 
     * Ouvrir le dossier local contenant l'image
@@ -89,7 +92,7 @@ Créer une **nouvelle scène** dans la SynApp créée précédemment **tuto03** 
     ![Empilement](assets/part2_datasource1.png)
     * créer une nouvelle source de donnée
     ![Empilement](assets/part2_datasource2.png)
-    * sélectionner la consigne analogique **LightZone1**
+    * sélectionner la consigne analogique <code>LightZone1</code> dans le dossier des ressources <code>Tutorial2</code>
     ![Empilement](assets/part2_datasource3.png)
     * renommer la source de donnée <code>dsLightZone1</code> puis **créer**
     ![Empilement](assets/part2_datasource4.png)
@@ -138,7 +141,7 @@ Créer une **nouvelle scène** dans la SynApp créée précédemment **tuto03** 
     ![Empilement](assets/part2_datasource6.png)
     * lier en _Source de données_  la propriété _Spécifiques > Valeur_
     * Dans la modale de _définition de la liaison_, définir le _Chemin_ avec la valeur <code>setpoint</code>, la _Lecture_ en mode <code>Rafraichie</code> et **Lier**
-    ![Empilement](assets/part2_gauge3.png)    
+    ![Empilement](assets/part2_gauge3.png)
 
     * La zone de prévisualisation doit alors ressembler à ceci:
     ![Empilement](assets/part2_gauge.png)
