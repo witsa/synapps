@@ -10,7 +10,7 @@ La scène sera constituée d'un fond de plan et permettra de gérer les lumière
 
 ## Prerequis
 
-Le paramétrage [SynApps_Tutorials.PK4](../configs/SynApps_Tutorials.PK4) installé sur le REDY. Il contient deux **consigne analogique** préconfigurées <code>LightZone1</code> et <code>LightZone2</code>  dans le dossier <code>Tutorial3</code>. Elles représentent deux zones de lumières à commander avec des valeurs pouvant varier de <code>0</code> à <code>100%</code>
+Le paramétrage [SynApps_Tutorials.PK4](../config/SynApps_Tutorials.PK4) installé sur le REDY. Il contient deux **consigne analogique** préconfigurées <code>LightZone1</code> et <code>LightZone2</code>  dans le dossier <code>Tutorial3</code>. Elles représentent deux zones de lumières à commander avec des valeurs pouvant varier de <code>0</code> à <code>100%</code>
 
 Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en <code>sceneCanvas</code> et le _nom_ avec <code>Toile</code> puis déployer.
 ![Empilement](assets/part2_scenes.png)
