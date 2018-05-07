@@ -57,6 +57,6 @@ Les versions de SynApps **évoluent régulierement**. Il est préferrable de dé
 
 ## Etapes suivantes
 
-Vous avez le **Maker** de *SynApps* (Windows ou cloud RIA) et un **REDY PC** (ou REDY) compatible avec SynApps **>=9.31**, nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le REDY !
+Vous avez le **Maker** de *SynApps* (Windows ou cloud RIA) et un **REDY PC** (ou REDY) compatible avec SynApps **>=9.31**, nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le REDY en suivant le _Tutorial 1_: **première SynApp “Helloworld”** !
 
-[Tutorial 1: première SynApp "Helloworld"](tutos/tuto01/index.md)
+[Tutoriaux](tutos/index.md)
