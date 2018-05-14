@@ -26,7 +26,7 @@ La SynApp sera constituée d'une seule scène avec un acteur disposition de type
 
 4. Resélectionner l'acteur *stackRoot* et ajouter un troisième acteur enfant de type *Affichage* > *Texte* et renommer le label avec *textBottom*
 
-5. Nous allons modifier maintenant l'alignement et la taille du texte des acteurs *textTop* et *textBottom*. Mais plutot que de modifier chacun des 2 acteurs, nous allons modifier ces propriétés au niveau de l'acteur principal car ces propriétés sont hérités par les enfants.
+5. Nous allons modifier maintenant l'alignement et la taille du texte des acteurs *textTop* et *textBottom*. Mais plutot que de modifier chacun des 2 acteurs, nous allons définir ces propriétés au niveau de l'acteur principal car ces propriétés sont hérités par les enfants.
 
 *Remarque:* de façon général, il est préférrable de définir les propriétés communes le **plus haut possible dans la hiérarchie** des acteurs, ceci afin d'éviter de redéfinir plusieurs fois des valeurs identiques sur chacun des acteurs.
 

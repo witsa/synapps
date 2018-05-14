@@ -152,14 +152,14 @@ Ces statistiques contiennent notamment des informations concernant les erreurs s
 
 ### Optimisation des temps de chargement
 
-Les SynApps sont désormais cachées dans le navigateur et ne sont chargées sur le Redy que lorsque de nouvelles versions sont déployées. Ce mécanisme s'appuie sur le numéro de _build_ de la SynApp cachée:
+Les SynApps sont désormais cachées dans le navigateur et ne sont chargées sur le REDY que lorsque de nouvelles versions sont déployées. Ce mécanisme s'appuie sur le numéro de _build_ de la SynApp cachée:
 ![Statistiques](changelog/1.3.0/build.PNG)
-comparé à celui du numéro de build dans le Redy:
+comparé à celui du numéro de build dans le REDY:
 ![Statistiques](changelog/1.3.0/build2.PNG)
 En cas de différence, la SynApp est complètement rechargée dans le navigateur de l'utilisateur.
-_Remarque:_ si vous modifier une proriété de la SynApp directement dans le Redy sans passer par le Maker alors vous devez **modifier le numéro de build dans le redy** pour forcer le rafraichissement de la SynApp.
+_Remarque:_ si vous modifiez une proriété de la SynApp directement dans le REDY sans passer par le Maker alors vous devez **modifier le numéro de build dans le REDY** pour forcer le rafraichissement de la SynApp.
 
-Les configurations des SynApps sont désormais **gzippées** dans le Redy pour diminuer la quantité de données téléchargées et le temps de chargement.
+Les configurations des SynApps sont désormais **gzippées** dans le REDY pour diminuer la quantité de données téléchargées et le temps de chargement.
 
 ### Maker
 
