@@ -24,7 +24,7 @@ Ils sont actuellement au nombre de 5:
 ![Boite de vue](assets/actor_viewbox.png)
 
 ## [Modal](part4.md)
-**Ouvrir** une fenêtre modale pour optenir ou fournir une informtion à l'utilisateur
+**Ouvrir** une fenêtre modale pour optenir ou fournir une information à l'utilisateur
 
 ![Modal](assets/actor_modal.png)
 
