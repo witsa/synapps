@@ -126,7 +126,7 @@ L'acteur modale a une taille fixe dans ce tutorial, mais il est tout à fait pos
 
 L'acteur modale doit être utilisé avec discernement, dans le cadre mentionné ci-dessus. Il est parfois préférrable de faire naviguer l'utilisateur sur une nouvelle scène: se sera l'objet du prochain [Tutoriel suivant](../tuto04/index.md) sur la navigation
 
-### Conclusion
+## Conclusion
 
 Le **tutorial 3** sur les acteurs _dispositions_ est **terminé**. Certains sont plus utilisés que d'autres mais ils sont tous trés importants car ils savent disposer des acteurs enfants. Ils peuvent bien sur être combinés entre eux afin de construire des applications **ambitieuses adaptées** à tous les types d'écrans
 

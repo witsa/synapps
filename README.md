@@ -44,5 +44,6 @@ Consulter la [changelog](changelog.md)
 
 ## Etapes suivantes
 
-* [Plan du site](sitemap.md)
 * [Installation](install.md)
+* [Tutoriaux](tutos/index.md)
+* [Plan du site](sitemap.md)

@@ -95,4 +95,4 @@ Vous avez construit puis déployé sur un REDY une première SynApp !
 
 * Avant de continuer, revenir dans l'edition de la SynApp et parcourir toutes les propriétés des 3 acteurs. Regarder notamment les propriétés *spécifiques*, essayer de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation
 
-* [Tutorial 2: les liaisons](../tuto02/index.md)
+* [Tutorial suivant sur les _liaisons_](../tuto02/index.md)

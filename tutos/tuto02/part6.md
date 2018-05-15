@@ -90,7 +90,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 7. Revenir sur la scène *scene1* de SynApps, rafraichir (F5) et observer que la couleur est bien appliquée sur les acteurs
 ![Explorateur de nod](assets/part6_10.png)
 
-### Conclusion
+## Conclusion
 
 Le tutorial 2 est **terminé** ! la SynApp créée est simple mais a permis d'appréhender un des concepts importants de SynApps, les **liaisons**
 
@@ -100,4 +100,4 @@ Sans attendre les prochains tutoriaux, vous pouvez:
 
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
 
-[Tutoriel suivant](../tuto03/index.md)
+[Tutoriel suivant sur les acteurs _disposition_](../tuto03/index.md)
