@@ -23,8 +23,8 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 
     Modifier la taille de la grille de la toile
 
-    * propriété _Spécifique > Grille horizontale_ avec la valeur <code>50px</code>
-    * propriété _Spécifique > Grille verticale_ avec la valeur <code>50px</code>
+    * propriété _Spécifiques > Grille horizontale_ avec la valeur <code>50px</code>
+    * propriété _Spécifiques > Grille verticale_ avec la valeur <code>50px</code>
 
     _Remarque:_ la grille permet d'**aligner** les acteurs enfants selon la **taille de la maille**. Ici: _50px*50px_
     ![Empilement](assets/part2_grid.png)
@@ -34,7 +34,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     ![Empilement](assets/part2_backgroundPlan.png)
 
     * Ouvrir le dossier local contenant l'image
-    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifique > Image_ 
+    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifiques > Image_ 
    ![Empilement](assets/part2_image.png)
     * Modifier la propriété _Gabarit > Hauteur_ à la valeur par défaut
     ![Empilement](assets/part2_defaultValue.png)

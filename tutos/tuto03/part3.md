@@ -28,7 +28,7 @@ Le mode **visible** de la _boite à vue_ permet d'adapter les acteurs enfants **
     ![Empilement](assets/part3_building.png)
 
     * Ouvrir le dossier local contenant l'image
-    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifique > Image_ 
+    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifiques > Image_ 
    ![Empilement](assets/part3_image.png)
     * Modifier la propriété _Gabarit > Hauteur_ à la valeur par défaut
     ![Empilement](assets/part2_defaultValue.png)
