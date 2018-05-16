@@ -29,31 +29,30 @@ Nous allons construire une scène simple qui affiche une fenêtre modale indépe
 
 3. **Sélectionner** l'acteur _empilement_ <code>stack1</code> et **ajouter** un acteur enfant de type **Modal** (Dispositions dans l'_explorateur d'acteur_)
 
-* Définir la propriété _Gabarit > Hauteur_ à <code>400px</code>
-* Définir la propriété _Gabarit > Largeur_ à <code>600px</code>
-* Définir la propriété _Aspect > Largeur_ à <code>600px</code>
+    * Définir la propriété _Gabarit > Hauteur_ à <code>400px</code>
+    * Définir la propriété _Gabarit > Largeur_ à <code>600px</code>
 
 4. **Observer** que la _zone de prévisualisation_ est composés de deux éléments:
-* La scène à proprement parlé en haut
-* Le contenu de l'acteur modale en bas
-    ![Empilement](assets/part4_preview.png)
+    * La scène à proprement parlé en haut
+    * Le contenu de l'acteur modale en bas
+        ![Empilement](assets/part4_preview.png)
 
 5. **Sélectionner** l'acteur _modal_ <code>modalLayout3</code> et **ajouter** un acteur enfant de type **Text** (Affichages dans l'_explorateur d'acteur_)
 
-* Définir la propriété _Spécifiques > Contenu_ à <code>Ceci est le contenu de la fenêtre modale !</code>
-* Définir la propriété _Aspect > Police > Taille_ à <code>50px</code>
+    * Définir la propriété _Spécifiques > Contenu_ à <code>Ceci est le contenu de la fenêtre modale !</code>
+    * Définir la propriété _Aspect > Police > Taille_ à <code>50px</code>
 
     ![Empilement](assets/part4_preview2.png)
 
-6 . **Sélectionner** l'acteur _modal_ <code>modalLayout3</code> et lier son ouverture à la valeur de l'acteur _commutateur bouton_
+6. **Sélectionner** l'acteur _modal_ <code>modalLayout3</code> et lier son ouverture à la valeur de l'acteur _commutateur bouton_
 
-* Lier en _interne_ la propriété _Spécifiques > Afficher_ à la propriété _Spécifiques > Valeur_ de l'acteur <code>switchButton2</code>
+    * Lier en _interne_ la propriété _Spécifiques > Afficher_ à la propriété _Spécifiques > Valeur_ de l'acteur <code>switchButton2</code>
 
-    ![Empilement](assets/part4_bind.png)
-    Le tooltip de la propriété _Afficher_ est alors celui-ci
-    ![Empilement](assets/part4_bind2.png)
+        ![Empilement](assets/part4_bind.png)
+        Le tooltip de la propriété _Afficher_ est alors celui-ci
+        ![Empilement](assets/part4_bind2.png)
 
-* Définir la propriété _Aspect > Couleur de fond_ à _Orange_ <code>#ff8000</code>
+    * Définir la propriété _Aspect > Couleur de fond_ à _Orange_ <code>#ff8000</code>
 
 7. **Déployer** et **Exécuter** la SynApp. Cliquer sur le commutateur, la fenêtre modale s'affiche au centre de l'écran
     ![Empilement](assets/part4_execute.png)

@@ -149,7 +149,7 @@ _Remarque:_ les Synapps avec des caractères spéciaux déployées en version 1.
 
 Interprétation Graphiques des Navigateurs #28
 Fix [Interprétation Graphiques des Navigateurs #28](https://github.com/witsa/synapps/issues/28).
-Ajput de tooltip sur les polices informant l'utilisateur du rendu des polices génériques différent selon le navigateur et l'OS
+Ajout de tooltips sur les polices informant l'utilisateur du rendu des polices génériques différent selon le navigateur et l'OS
 
 ### Statistiques d'usages
 
