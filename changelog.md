@@ -2,6 +2,10 @@
 
 # Changelog
 
+## Mai 2018 - version **1.3.8**
+
+[**3 bugs mineurs corrigés**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.8)
+
 ## Mai 2018 - version **1.3.7**
 
 ### Transformation des acteurs [issue 131](https://github.com/witsa/synapps/issues/131)
@@ -12,7 +16,6 @@ Ajout de 2 propriétés de transformation dans la catégorie _Position_ de l'ins
 * **Echelle**: effectue une mise à l'échelle
 
 ![Favicons](changelog/1.3.7/transform.png)
-
 
 ### Nom interne des noms propriétés des acteur [issue 129](https://github.com/witsa/synapps/issues/129)
 
@@ -43,6 +46,7 @@ Correction du problème de disparition des ressources SynApps de type _sources d
 [Issue 108](https://github.com/witsa/synapps/issues/108)
 
 ### Evolution de l'acteur journal
+
 De nouvelles propriétés peuvent être affichées dans l'acteur journal: _zone_, _consigne_ et _diffusion_.
 Le tooltip au survol de la ressource donne également les informations _note_ et _description_
 [Issue 55](https://github.com/witsa/synapps/issues/55)
@@ -71,6 +75,7 @@ Dans tous les cas, cela demeure de la responsabilité du réalisateur de la SynA
 ### Ergonomie de la liaison vers les sources de données
 
 L'ergonomie de la liaison des propriétés d'un acteur vers les sources de données a évolué et permet de définir de gauche à droite:
+
 1. Le contexte
 2. La propriété de la ressource liée
 3. L'accès en lecture/écriture et l'action de liaison
@@ -107,9 +112,11 @@ Les tailles sont gérées dans la partie **administration de SynApps** ou en uti
 ![gestion taille](changelog/1.3.4/previewManage.png)
 
 ### Optimisation du chargement des  **sources de données**
+
 Le mécanisme de chargement des sources de données de type _WOS_ a été modifié en profondeur. En effet certaines ressources avaient des tailles de chargement trop longues car la totalité de la ressource était requetée. Désormais seuls les nœuds **nécessaires aux liaisons** vers les acteurs sont chargés. La ressource est donc obtenue partiellement selon les besoins de la SynApp. Ce mécanisme a permis de **diminuer les temps de chargement de façon très importante** (ratio de 7 à 8)
 
 ### Acteur **répartition**
+
 Modification du formulaire de configuration de l'acteur _répartition_ avec la possibilité de **définir** et **appliquer** des **palettes de couleurs** aux secteurs
 
 ![Synoptique](changelog/1.3.4/palettes.png)
