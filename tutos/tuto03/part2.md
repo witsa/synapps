@@ -72,7 +72,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * ouvrir l'onglet _Position_ dans l'inspecteur de l'acteur
     * déplacer l'acteur avec la souris maintenue cliquée
     * observer ques les propriétés _Position > Position gauche_ et _Position > Position haut_ changent en même temps avec un pas de <code>50px</code> correspondant à la taille de la grille de la toile
-    * modifier la propriété _Position > Alignement _ à <code>200px</code>
+    * modifier la propriété _Position > Alignement_ à <code>200px</code>
     * modifier la propriété _Position > Position haut_ à <code>200px</code>
 
     ![Empilement](assets/part2_light2.png)
@@ -87,6 +87,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * lier la propriété _Spécifiques > Couleur fond bar_ à la librairie <code>colorLight</code>
     * modifier la propriété _Position > Position gauche_ à <code>150px</code>
     * modifier la propriété _Position > Position haut_ à <code>620px</code>
+    * modifier la propriété _Gabarit > Largeur_ à <code>400px</code>
     ![Empilement](assets/part2_slider1.png)
     * definir la source de donnée propriété _Source de données > Source_
     ![Empilement](assets/part2_datasource1.png)
@@ -149,11 +150,12 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 15. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _text_ **text13** qui permettra de connaitre la valeur de l'intensité lumineuse ainsi que son unité:
 
     * positionner ce dernier en _position gauche_ <code>260px</code> et _position haut_ <code>380px</code>
+    * définir la propriété _Aspect > Police > Taille_ à <code>50px</code>
     * definir la source de donnée propriété _Source de données > Source_
     ![Empilement](assets/part2_text.png)
     * sélectionner la source de donnée existante **dsLightZone1**
     ![Empilement](assets/part2_datasource6.png)
-    * définir la propriété _Spécifiques > Contenu avec la valeur <code>{{variation}} {{unit}}</code>
+    * définir la propriété _Spécifiques > Contenu_ avec la valeur <code>{{variation}} {{unit}}</code>
     * créer les deux propriétés _spécifiques_ proposées **variation** de type _Nombre_ et **unit** de type _Text_
     ![Empilement](assets/part2_props.png)
     * lier en _Source de données_  la propriété _Spécifiques > unit_

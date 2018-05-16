@@ -18,8 +18,8 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
 2. **Ajouter** un acteur enfant de type texte et modifier son alignement horizontal et vertical pour qu'il s'étende sur toute la surface disponible de l'acteur Empilement
 
-    * la propriété _Position > Align. vertical_ à **Etendre** 
-    * la propriété _Position > Align. horizontal_ à **Etendre**
+    * définir la propriété _Position > Align. vertical_ à <code>Etendre</code>
+    * définir la propriété _Position > Align. horizontal_ à <code>Etendre</code>
 
     ![Empilement](assets/part1_align.png)
 
@@ -34,8 +34,8 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 4. **Augmenter** la taille du texte des 4 acteurs peu visible car trop petite. On pourrait répéter cette modification dans la taille de police des 4 acteurs mais il est **préferrable de modifier cette proprité directement sur l'acteur Empilement** parent _stack1_. La taille du texte est alors automatiquement appliqué sur les enfants.
 
     Sélectionner l'acteur _Empilement_ **stack1** et modifier:
-    * la propriété _Aspect > Police > Taille_ à **100px**
-    * la propriété _Aspect > Police > Alignement texte_ à **Centre**
+    * la propriété _Aspect > Police > Taille_ à <code>100px</code>
+    * la propriété _Aspect > Police > Alignement texte_ à <code>Centre</code>
 
     ![Empilement](assets/part1_police.png)
 
@@ -44,27 +44,28 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
     ![Empilement](assets/part1_textsPreview2.png)
 
 5. **Changer** la couleur de fond des 4 acteurs _texte_. Sélectionner l'acteur _text2_ et modifier:
- * la propriété _Aspect > Couleur de fond_ avec une couleur
+
+    * la propriété _Aspect > Couleur de fond_ avec une couleur
 
      ![Empilement](assets/part1_bgColor.png)
 
-     Répéter l'opération pour les 3 autres acteurs _texte_ avec des couleurs de fond **différentes**
+    Répéter l'opération pour les 3 autres acteurs _texte_ avec des couleurs de fond **différentes**
 
     ![Empilement](assets/part1_bgColors.png)
 
-5. Les couleurs de fond choisies étant plutot foncées,**changer** la couleur de la police des 4 acteurs textes avec du _blanc_. Cette couleur devra être appliquée aux 4 acteurs, donc même stratégie que ci-dessus: modifier la couleur sur l'acteur _Empilement_ **stack1**
+6. Les couleurs de fond choisies étant plutot foncées,**changer** la couleur de la police des 4 acteurs textes avec du _blanc_. Cette couleur devra être appliquée aux 4 acteurs, donc même stratégie que ci-dessus: modifier la couleur sur l'acteur _Empilement_ **stack1**
 
-    * la propriété _Aspect > Couleur_ à **blanc** 
+    * la propriété _Aspect > Couleur_ à blanc <code>#ffffff</code>
 
     ![Empilement](assets/part1_policeColor.png)
 
-6. **Exécuter** la SynApp pour observer le résultat puis modifier la taille du navigateur et vérifier que les 4 acteurs _texte_ se répartissent équitablement l'espace
+7. **Exécuter** la SynApp pour observer le résultat puis modifier la taille du navigateur et vérifier que les 4 acteurs _texte_ se répartissent équitablement l'espace
 
 ## Configuration de l'acteur _empilement_
 
 1. **Modifier** l'orientation de l'acteur _Empilement_ pour qu'il rende les acteurs enfants texte à l'**horizontal**
 
-    * la propriété _Spécifiques > Orientation_ à **Horizontale** et observer le résultat
+    * la propriété _Spécifiques > Orientation_ à <code>Horizontale</code> et observer le résultat
 
     ![Empilement](assets/part1_horizontal.png)
 
@@ -77,7 +78,9 @@ les 2 premiers acteurs _texte_ soient empilés horizontalement, les 2 derniers r
 
 1. **Sélectionner** l'acteur _empilement_ **stack1** et **ajouter** un nouvel acteur _empilement_ **stack6** et le configurer à l'horizontal
 
-   * la propriété _Spécifiques > Orientation_ à **Horizontale**
+    * la propriété _Spécifiques > Orientation_ à <code>Horizontale</code>
+    * la propriété _Position > Align. vertical_ à <code>Etendre</code>
+    * la propriété _Gabarit > Hauteur_ à la valeur par défaut <code>[vide]</code>
 
 2. **Déplacer** l'acteur _empilement_ **stack6** en première position en utilisant le bouton _Déplacer_
 
@@ -101,8 +104,6 @@ les 2 premiers acteurs _texte_ soient empilés horizontalement, les 2 derniers r
 
 6. **Exécuter** la SynApp pour observer le résultat puis modifier la taille du navigateur
 
-
-
 ## Les dépassements
 
 Les acteurs dispositions ont d'autres propriétés spécifiques secondaires: le comportement en cas de dépassement horizontal ou vertical des acteurs enfants
@@ -111,18 +112,18 @@ Les acteurs dispositions ont d'autres propriétés spécifiques secondaires: le 
 
 Les valeurs possible sont:
 
-  * **visible**: l'acteur n'est pas rogné. Le contenu peut éventuellement être affiché en dehors de l'acteur _disposition_
+* **visible**: l'acteur n'est pas rogné. Le contenu peut éventuellement être affiché en dehors de l'acteur _disposition_
 
-  * **caché**: l'acteur est rogné si besoin pour s'inscrire dans l'acteur _disposition_
+* **caché**: l'acteur est rogné si besoin pour s'inscrire dans l'acteur _disposition_
 
-  * **barre de scroll**: le contenu est rogné pour s'inscrire dans l'acteur _disposition_ et les navigateurs de bureau affichent des barres de défilement dans tous les cas. Cela évite d'avoir des barres qui apparaissent et disparaissent sans cesse avec du contenu dynamique.
+* **barre de scroll**: le contenu est rogné pour s'inscrire dans l'acteur _disposition_ et les navigateurs de bureau affichent des barres de défilement dans tous les cas. Cela évite d'avoir des barres qui apparaissent et disparaissent sans cesse avec du contenu dynamique.
 
-  * **auto**: Le comportement est laissé à la discrétion de l'agent utilisateur. Les navigateurs comme Firefox affichent des ascenseurs si le contenu dépasse dans l'acteur _disposition_
-  * **nouvelle ligne**: non disponible pour l'instant
+* **auto**: Le comportement est laissé à la discrétion de l'agent utilisateur. Les navigateurs comme Firefox affichent des ascenseurs si le contenu dépasse dans l'acteur _disposition_
+* **nouvelle ligne**: non disponible pour l'instant
 
   Pour plus d'informations concernant les dépassements vous pouvez vous reporter à la description sur [developer.mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/overflow)
 
-# Que retenir ?
+# Que retenir
 
 Vous avez réalisé la construction de la scène avec 2 acteurs dispositions de type _empilement_:
 
