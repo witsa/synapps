@@ -169,8 +169,64 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
 7. Toujours En mode exécution, **Cliquer** sur la scene B. **Copier l'url courante dans un nouvel onglet du navigateur**: la SynApp s'ouvre sur la **scene A** et pas sur la B ! Cela signifie qu'il n'est pas possible, pour l'instant, de définir un raccourci vers une scène particulière de la SynApp. 
 
-    Dans une application, il est trés important de pouvoir définir des **accès rapide via des raccourcis** vers des scènes
+    Dans une application, il est trés important de pouvoir définir des **accès rapide via des raccourcis** vers des scènes spécifiques
 
-## Définition de raccourci
+## Définition des **paramêtres de la scène** principale
 
+1. **Sélectioner** la scène principale <code>sceneMaster</code> pour définir qu'elle est pilotée par des paramêtres. Ici par le numéro de scène scendaire
+
+    * cliquer sur _Gestion des propriétés paramêtres_ dans l'inspecteur de scène
+    ![Empilement](assets/sceneMaster2.png)
+
+2. **Ajouter** une propriété de type **Texte**
+    ![Empilement](assets/sceneProp.png)
+
+    * définir _Label_ par <code>selectedScene</code>
+    * définir _Nom de la propriété_ par <code>Scène sélectionnée</code>
+    * cliquer sur _Terminer_
+    ![Empilement](assets/sceneProp2.png)
+    * Une nouvelle propriété _Scène sélectionnée_ apparait dans l'inspecteur de la scène
+    ![Empilement](assets/sceneProp3.png)
+    * définir _Scène sélectionnée_ par <code>sceneA</code>
+    ![Empilement](assets/sceneProp4.png)
+
+3. **Sélectionner** l'acteur _text_ **textFooter** pour afficher la valeur de la propriété de scène ci-dessus en pied de page
+
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Scène sélectionnée: {{currentScene}}</code>
+    * créer la propriété proposée <code>currentScene</code>
+    ![Empilement](assets/textFooterProp.png)
+    * liéer en interne cette propriété
+    ![Empilement](assets/textFooterProp2.png)
+    * sélectionner l'objet _Scène principale_ et la propriété _Scène sélectionnée_ et **lier**
+    ![Empilement](assets/bindInternal.png)
+
+4. **Déployer** et **exécuter** la SynApp. L'**url** de la SynApp contient désormais la propriété de scéne créée _selectedScene_
+    ![Empilement](assets/execute2.png)
+    <code>.../scene/sceneMaster?sceneProps=%7B%22selectedScene%22%3A%22sceneA%22%7D</code>
+
+    * remplacer <code>sceneA</code> dans le chemin ci-dessus par <code>sceneB</code>
+    <code>.../scene/sceneMaster?sceneProps=%7B%22selectedScene%22%3A%22sceneB%22%7D</code>
+    * le pied de page de la scène affiche bien la valeur saisie
+    ![Empilement](assets/execute3.png)
+
+    Par contre, la SynApp **ne navigue pas sur la scene B** et reste sur la scene A car, comme nous avons lié le texte du pied de page à la propriété _Scène sélectionnée_ de la scène principale, nous devons également lier la propriété _scène_ de l'acteur écran
+
+5. **Sélectionner** l'acteur _écran_ **screenMiddle** pour lier sa scène
+
+    * Lier la propriété _Spécifique > Scène_ en interne vers l'objet _Scène principale_ et la propriété _Scène sélectionnée_
+    ![Empilement](assets/bindInternal2.png)
+
+6. **Déployer** et **exécuter** la SynApp
+
+    * cliquer sur les 3 boutons pour commander la navigation et vérifier que l'**URL** ainsi que le **pied de page** suivent bien la scène sélectionnée
+    ![Empilement](assets/execute4.png)
+
+    * modifier directement l'URL avec un **autre clé de scene** et vérifier que la **navigation** et le **pied de page** suivent bien la scène définie
+    ![Empilement](assets/execute4.png)
+
+    * naviguer sur la **scène B** et **copier l'URL** dans un nouvel onglet du navigateur. La SynApp **s'ouvre sur la scène B**
+
+    La navigation principale est désormais opérationnelle
+
+## Construction de la naavgation secondaire de la scène C
 
