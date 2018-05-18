@@ -4,7 +4,7 @@
 
 Dans ce tutorial, nous allons détailler un des premiers type d'acteurs utilisé lorsqu'une nouvelle scène est créée: les acteurs _dispositions_. En effet, l'**acteur principal d'une scène est toujours un acteur disposition** car il permet de définir la manière dont vont se rendre l'ensemble des acteurs enfants qui composent cette scène.
 
-_Remarque:_ les dispositions sont les seuls acteurs qui contiennent des acteurs enfants. 
+_Remarque:_ les dispositions sont les seuls acteurs qui contiennent des acteurs enfants.
 
 Ils sont actuellement au nombre de 5:
 
