@@ -1,6 +1,6 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)
-
 # Tutorial 2: les liaisons *[6 nov 17]*
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
 ## Objectif
 

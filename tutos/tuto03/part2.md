@@ -1,8 +1,8 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
 # Tutorial 3: l'acteur de disposition **toile**
 
 ![Empilement](assets/actor_canvas.png)
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 La deuxième partie de ce tutorial est consacrée à l'acteur **_toile_** qui permet de **superposer** des acteurs enfants et repondre au besoin de **construction de synoptiques** notamment !
 

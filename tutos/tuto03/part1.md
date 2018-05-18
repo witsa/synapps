@@ -1,8 +1,8 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
 # Tutorial 3: l'acteur de disposition **empilement**
 
 ![Empilement](assets/actor_stack.png)
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 La première partie de ce tutorial est consacrée à l'acteur **_empilement_** qui permet d'**empiler** des acteurs enfants **horizontalement** ou **verticalement** et repondre au besoin de restitution adaptative
 

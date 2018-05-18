@@ -1,6 +1,6 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
 # Tutorial 2: les liaisons **2/6** *[6 nov 17]*
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 ## Construction et configuration des acteurs
 

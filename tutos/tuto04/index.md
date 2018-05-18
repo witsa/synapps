@@ -11,8 +11,8 @@ Nous allons mettre en oeuvre 2 nouveaux acteurs
 
 ## Description
 
-L'objectif du tutorial est la construction d'une SynApp navigable avec **3 scènes**. Chaque scène naviguée pourra être accédée avec un **raccourci** ou favoris dans le navigateur. La dernière scène contiendra également une navigation.
-La scène princiaple sera composée d'un **menu**, de la **scène centrale** et d'un **pied de page**
+L'objectif du tutorial est la construction d'une SynApp navigable avec **3 scènes**. Chaque scène naviguée pourra être accédée avec un **raccourci** ou favoris dans le navigateur. La dernière scène contiendra également une navigation scondaire.
+La scène principale sera composée d'un **menu**, de la **scène centrale** et d'un **pied de page**
 
 ![Empilement](assets/description.png)
 
@@ -108,6 +108,8 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     ![Empilement](assets/previewA.png)
 
 4. **Cloner** la scène <code>sceneA</code>
+
+    ![Empilement](assets/clone.png)
 
     * renommer le _Label_ en <code>sceneB</code>
     * définir la propriété _Nom_ avec le texte <code>Scène B</code>
@@ -228,5 +230,82 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
     La navigation principale est désormais opérationnelle
 
-## Construction de la naavgation secondaire de la scène C
+## Construction de la **navigation secondaire** de la scène C
 
+1. **Cloner** la scène <code>sceneC</code>
+
+    * renommer le _Label_ en <code>sceneC_1</code>
+    * définir la propriété _Nom_ avec le texte <code>Scène C 1</code>
+    * définir la propriété _Dossier_ avec le texte <code>Scènes.Scène C</code>
+
+    ![Empilement](assets/sceneC1.png)
+
+2. **Sélectionner** l'acteur _text_ <code>text2</code>
+
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Scène C > 1</code>
+
+3. **Sélectionner** l'acteur _empilement_ <code>stack1</code> et **ajouter** un acteur _navigation_
+
+    * renommer le _Label_ en <code>buttonNavBack</code>
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Retour</code>
+    * définir la propriété _Spécifiques > Scène_ avec la scène <code>Scène C</code>
+    * définir la propriété _Position > Align. horizontal_ avec <code>Gauche</code>
+    * déplacer l'acteur en première position de <code>stack1</code>
+    ![Empilement](assets/actors.png)
+    ![Empilement](assets/previewC1.png)
+
+    _Remarque:_ la propriété _Spécifiques > Acteur de visualisation_ est laissée vide car nous voulons naviguer sur la zone courante.
+
+4. **Cloner** 3 fois la scène <code>sceneC_1</code> en scène <code>sceneC_2</code>, <code>sceneC_3</code> et <code>sceneC_4</code> en renommant les noms de scène et textes (_étapes 1 et 2_)
+    ![Empilement](assets/scenesC.png)
+
+5. **Sélectionner** la scène _ <code>sceneC</code>
+
+6. **Sélectionner** l'acteur _empilement_ <code>stack1</code> et **ajouter** un acteur _empilement_
+
+    * modifier la propriété _Spécifiques > Orientation_ en  <code>Horizontal</code>
+    * modifier la propriété _Position > Align. vertical_ en  <code>Etendre</code>
+    * modifier la propriété _Gabarit > Hauteur_ à la valeur par défaut <code>[vide]</code>
+
+7. **Ajouter** un acteur _navigation_
+
+    * renommer le _Label_ en <code>buttonNavSceneC1</code>
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Scène C1</code>
+    * définir la propriété _Position > Align. vertical_ avec <code>Centré</code>
+    * définir la propriété _Position > Align. horizontal_ avec <code>Centré</code>
+    * définir la propriété _Spécifiques > Scène_ avec la scène <code>Scène C 1</code>
+    ![Empilement](assets/previewC.png)
+
+8. **Cloner** l'acteur <code>buttonNavSceneC1</code>
+
+    * renommer le _Label_ en <code>buttonNavSceneC2</code>
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Scène C2</code>
+    * définir la propriété _Spécifiques > Scène_ avec la scène <code>Scène C 2</code>
+
+9. **Cloner** l'acteur _empilement_ <code>stack3</code> contenant les 2 acteurs _navigation_ et procéder à la configuration précédente (_étape 8_) pour naviguer vers les scènes _scène C 3_ et _scène C 4_
+
+    ![Empilement](assets/actors2.png)
+    ![Empilement](assets/sceneC.png)
+
+10. **Déployer** et **exécuter** la SynApp
+
+    * naviguer sur la scène C puis dans les scènes C1, C2, C3 et C4 en cliquant sur retour pour retourner dans la scène C
+
+## Que retenir
+
+Vous avez mis en oeuvre la navigation de 2 manières:
+
+* En passant par un **acteur ecran** dans lequel s'ouvre la scène sélectionnée
+* En **directe** la scène sélectionnée remplace la scène courante
+
+Vous avez défini des **propriétés de scènes** qui permettent de **piloter les scènes** et **définir des raccourcis** vers des scènes spécifiques. Ces propriétés sont **liables** par tous les acteurs constitutifs de cette scène
+
+Enfin, vous avez ranger les scènes dans des **dossiers** pour les retrouver plus facilement !
+
+## Conclusion
+
+Le **tutorial 4** sur les acteurs _navigation_ est **terminé**. La maitrise de la navigation est extrémement importante pour construire des applications ambitieuses !
+
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+
+[Tutoriel suivant sur les acteurs composites](../tuto05/index.md)

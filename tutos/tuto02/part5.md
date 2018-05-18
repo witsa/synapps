@@ -1,6 +1,6 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
 # Tutorial 2: les liaisons **5/6** *[9 nov 17]*
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 ## Liaisons **sources de données** en écriture
 

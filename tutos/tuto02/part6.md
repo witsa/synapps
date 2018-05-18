@@ -1,10 +1,11 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
 # Tutorial 2: les liaisons **6/6** *[10 nov 17]*
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 ## Liaisons **librairies**
 
 Dans les parties [précédentes](part5.md) du tutoriel, les acteurs ont été:
+
 * disposés dans une scène
 * liés en **interne** à d'autres acteurs
 * liés à des **sources de données** en *lecture* et *ecriture*
@@ -14,9 +15,11 @@ Pour cette dernière partie, nous adressons le concept des **librairies** qui pe
 ### Les librairies
 
 Les librairies sont classifiées en trois **catégories**:
+
 * **Couleurs**: librarie de *couleurs*
 * **Images**: librairie d'*images*
 * **Contenu**: librairie d'autre types de contenu: *texte*, *javascript*, *json*, etc
+
 ![Paramètres de la ressource](assets/part6_1.png)
 
 Tout élément d'une librairie est stocké dans le REDY dans un **nod dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc

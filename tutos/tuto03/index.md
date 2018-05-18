@@ -1,6 +1,6 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)
-
 # Tutorial 3: les acteurs dispositions
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
 Dans ce tutorial, nous allons détailler un des premiers type d'acteurs utilisé lorsqu'une nouvelle scène est créée: les acteurs _dispositions_. En effet, l'**acteur principal d'une scène est toujours un acteur disposition** car il permet de définir la manière dont vont se rendre l'ensemble des acteurs enfants qui composent cette scène.
 
