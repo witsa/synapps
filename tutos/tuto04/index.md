@@ -192,9 +192,9 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     * définir _Scène sélectionnée_ par <code>sceneA</code>
     ![Empilement](assets/sceneProp4.png)
 
-3. **Sélectionner** l'acteur _text_ **textFooter** pour afficher la valeur de la propriété de scène ci-dessus en pied de page
+3. **Sélectionner** l'acteur _text_ <code>textFooter</code> pour afficher la valeur de la propriété de scène ci-dessus en pied de page
 
-    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Scène sélectionnée: {{currentScene}}</code>
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte ![Empilement](assets/workaround.png)
     * créer la propriété proposée <code>currentScene</code>
     ![Empilement](assets/textFooterProp.png)
     * liéer en interne cette propriété
@@ -202,7 +202,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     * sélectionner l'objet _Scène principale_ et la propriété _Scène sélectionnée_ et **lier**
     ![Empilement](assets/bindInternal.png)
 
-4. **Déployer** et **exécuter** la SynApp. L'**url** de la SynApp contient désormais la propriété de scéne créée _selectedScene_
+4. **Déployer** et **exécuter** la SynApp. L'**URL** de la SynApp contient désormais la propriété de scéne créée _selectedScene_
     ![Empilement](assets/execute2.png)
     <code>.../scene/sceneMaster?sceneProps=%7B%22selectedScene%22%3A%22sceneA%22%7D</code>
 
