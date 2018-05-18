@@ -1,8 +1,8 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
 # Tutorial 3: l'acteur de disposition **Boite de vue**
 
 ![Empilement](assets/actor_viewbox.png)
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 La troisième partie de ce tutorial est consacrée à l'acteur **_boite de vue_** qui permet d'**adapter** des acteurs enfants à la taille de l'écran de restitution:
 * **sans déformation** et conserver le ratio _hauteur_ * _largeur_

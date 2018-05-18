@@ -1,8 +1,8 @@
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
 # Tutorial 3: l'acteur de disposition **Modal**
 
 ![Icone modal](assets/actor_modal.png)
+
+[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 La quatrième partie de ce tutorial est consacrée à l'acteur **_modal_** qui permet d'**ouvrir** une fenêtre modale pour optenir ou fournir une information à l'utilisateur
 
@@ -113,7 +113,7 @@ Deux autres propriétés permettent de personnaliser le comportement et le rendu
 
 2. La propriété _Spécifiques > Fermer sur clique en dehors_ permet de fermer la fenêtre modale lorsque l'utilisateur clique sur la scène. En cas de déselection de cette propriété, il est nécessaire de prévoir un mécanisme de fermeture dans le contenu de l'acteur _modal_
 
-## Que retenir ?
+## Que retenir
 
 Vous avez mis en oeuvre l'acteur _modal_ **indépendant** et **attaché** à un acteur de la scène avec des possibilités de placement variés
 
