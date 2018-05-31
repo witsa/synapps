@@ -40,7 +40,7 @@ Actuellement **Maker** et **Runtime** sont distribués uniquement en interne
 
 ## Changelog
 
-Version actuelle **1.3.8**
+Version actuelle **1.3.9**
 
 Consulter la [changelog](changelog.md)
 

@@ -2,6 +2,23 @@
 
 # Changelog
 
+## Juin 2018 - version **1.3.9**
+
+### Permettre le nettoyage du cache navigateur [issue 154](https://github.com/witsa/synapps/issues/154)
+
+Ajout d'un **bouton de nettoyage du cache** à côté du numéro de build dans l'administration de la SynApp afin de **forcer** le prochain chargement des SynApps depuis le REDY
+![Favicons](changelog/1.3.9/cache.png)
+
+### Correction erreur sur acteurs métiers avec session expirée [issue 160](https://github.com/witsa/synapps/issues/160)
+
+Correction d'une erreur dans les **acteurs métiers journal et états** lors d'une navigation ou d'un rafraichissement automatique avec **session expirée**
+
+### Abscence de scroll bar dans le MAKER sur écrans avec une faible résolution [issue 155](https://github.com/witsa/synapps/issues/155)
+
+Ajout de **barres de défilements** dans 2 fenêtres modales: _explorateur d'acteurs_ et _éditeur de propriétés_ de SynApps MAKER sur les écrans de faible résolution
+
+[**7 bugs mineurs corrigés**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.9)
+
 ## Mai 2018 - version **1.3.8**
 
 [**3 bugs mineurs corrigés**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.8)
