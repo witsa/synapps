@@ -216,10 +216,9 @@ Seul l'ossature du visuel est finalisée, les propriétés personnalisées et le
     ![Empilement](assets/preview2.png)
     * constater que nous avons personnalisé les 2 instances d'un même composite
 
-## Finalisation du **composite**
+## Définition des **propriétés spécifiques** du composite
 
-Nous allons définir les propriétés personnalisées du composite pour pouvoir configurer notamment le mode de fonctionnement été/hiver, marche/arrêt, les températures ambiante et de consigne.
-Nous lierons ensuite ces propriétés aux acteurs internes qui le constitue
+Nous allons définir les propriétés personnalisées du composite pour pouvoir configurer notamment le mode de fonctionnement été/hiver, marche/arrêt, les températures ambiante et de consigne
 
 1. **Sélectionner** le composite _Climatiseur_
 
@@ -231,3 +230,80 @@ Nous lierons ensuite ces propriétés aux acteurs internes qui le constitue
     * définir le _Label_ avec le texte _onoff_
     * définir le _Nom de la propriété_ avec le texte _Marche/Arrêt_
     * définir la _Description_ avec le texte _Climatiseur en Marche/Arrêt_
+
+4. **ajouter** une propriété de type _Nombre_ qui permettra de définir la température de consigne
+
+    * définir le _Label_ avec le texte _tempCmd_
+    * définir le _Nom de la propriété_ avec le texte _Température consigne_
+    * définir la _Description_ avec le texte _Température commandée_
+
+5. **ajouter** une propriété de type _Nombre_ qui permettra de définir la température de consigne
+
+    * définir le _Label_ avec le texte _tempCurrent_
+    * définir le _Nom de la propriété_ avec le texte _Température ambiante_
+    * définir la _Description_ avec le texte _Température mesurée par le climatiseur_
+
+6. **ajouter** une propriété de type _Liste de choix_ qui permettra de définir le mode de fonctionnement été ou hiver
+
+    * définir le _Label_ avec le texte _modeClim_
+    * définir le _Nom de la propriété_ avec le texte _Mode_
+    * définir la _Description_ avec le texte _Mode de fonctionnement_
+    * Dans la liste de choix définir les 2 éléments été et hiver avec les labels respectifs <code>SUMMER</code> et <code>WINTER</code>
+    ![Empilement](assets/listMode.png)
+
+7. **Vérifier** la définition des 4 propriétés spécifiques et **fermer** le _Gestionnaire de propriétés spécifiques_ en cliquant sur _Terminé_
+    ![Empilement](assets/compositeProps.png)
+
+8. **Définir** les valeurs par défaut des 4 propriétés spécifiques créées
+
+    * définir la propriété _Spécifiques > Marche/Arrêt_ en <code>sélectionné</code>
+    * définir la propriété _Spécifiques > Température consigne_ avec la valeur <code>20</code>
+    * définir la propriété _Spécifiques > Température ambiante_ avec la valeur <code>23</code>
+    * définir la propriété _Spécifiques > Mode ambiante_ avec la sélection <code>Eté</code>
+
+## Liaisons des **propriétés spécifiques** du composite aux acteurs
+
+Quatre propriétés spécifiques du composite ont été créées et doivent maintenant être **liées aux acteurs internes** du composite et ainsi définir le comportement du composite en fonction des valeurs définies dans ces propriétés
+
+1. **Selectionner** l'acteur <code>switchImageOnOff</code>
+
+    * lier la propriété _Spécifiques > Valeur_ en _interne_ à la propriété _Spécifiques > Marche/Arrêt_ du composite
+    ![Empilement](assets/bindInternal.png)
+    ![Empilement](assets/bindInternal2.png)
+
+2. **Selectionner** l'acteur <code>htmlTempCurrent</code>
+
+    * lier la propriété _Spécifiques > Température courante_ en _interne_ à la propriété _Spécifiques > Température courante_ du composite (même opération que la propriété précédente)
+
+3. **Selectionner** l'acteur <code>htmlTempCmd</code>
+
+    * lier la propriété _Spécifiques > Température consigne_ en _interne_ à la propriété _Spécifiques > Température consigne_ du composite
+
+4. **Selectionner** l'acteur <code>switchImageMode</code>
+
+    * lier la propriété _Spécifiques > Valeur_ en _interne_ à la propriété _Spécifiques > Mode_ du composite
+
+    **_Important:_** jusqu'a présent les **données liéés** étaient de **même nature**
+    * _Marche/Arrêt_ du composite et _valeur_ de _switchImageOnOff_ de type **booléen**
+    * _Température courante_ du composite et _Température courante_ de _htmlTempCurrent_ de type **nombre**
+    * dans le cas de _switchImageMode_ la propriété _Valeur_ est de type **booléen** et la propriété _Mode_ du composite est de type **texte**: <code>SUMMER</code> ou <code>WINTER</code>. Il faut donc procéder à une **conversion** ou **transformation** de la valeur **texte** en **booléen**
+
+    * Définir une fonction de transformation en lecture pour transformer le _Mode_ **texte** en _Valeur_ **booléen**
+    ![Empilement](assets/transform.png)
+    * Définir la fonction
+    ```javascript
+    return context.value==="SUMMER"
+    ```
+    ![Empilement](assets/aceJs.png)
+
+    Les scripts seront détaillés dans le [Tutorial 6: événements et javascript](../tuto06/index.md) mais simplement savoir que dans une fonction de transformation _context.value_ contient la **valeur de la source de la liaison**: ici, la valeur de la proriété _Mode_ du composite.
+
+    <code>_return context.value==="SUMMER"</code> retourne la valeur booléénne <code>true</code> si le mode est <code>SUMMER</code>, sinon <code>false</code> (pour <code>WINTER</code>)
+
+5. **Sélectionner** le composite (sans acteurs sélectionnés) et **tester** son fonctionnement
+
+    * Modifier la propriété _Spécifiques > Marche/Arrêt_ et vérifier que l'image correspondante dans la _zone de prévisualisation_ bascule bien du _rouge_ au clignotant _vert/gris_
+    * Modifier la propriété _Spécifiques > Température consigne_ et vérifier que la consigne dans la _zone de prévisualisation_ change
+    * Modifier la propriété _Spécifiques > Température ambiante_ et vérifier qu'elle change dans la _zone de prévisualisation_
+    * Modifier la propriété _Spécifiques > Mode_ et vérifier que l'image correspondante dans la _zone de prévisualisation_ bascule bien de _été_ à _hiver_
+      ![Empilement](assets/compositeTest.png)
