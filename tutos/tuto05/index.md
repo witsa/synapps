@@ -306,4 +306,29 @@ Quatre propriétés spécifiques du composite ont été créées et doivent main
     * Modifier la propriété _Spécifiques > Température consigne_ et vérifier que la consigne dans la _zone de prévisualisation_ change
     * Modifier la propriété _Spécifiques > Température ambiante_ et vérifier qu'elle change dans la _zone de prévisualisation_
     * Modifier la propriété _Spécifiques > Mode_ et vérifier que l'image correspondante dans la _zone de prévisualisation_ bascule bien de _été_ à _hiver_
-      ![Empilement](assets/compositeTest.png)
+    ![Empilement](assets/compositeTest.png)
+    ![Empilement](assets/preview3.png)
+
+## Configuration des propriétés spécifiques du composite dans la scène
+
+La définition du composite est finalisée, nous allons maintenant définir les valeurs de ses propriétés spécifiques dans la scène
+
+1. **Sélectionner** la scène _climatiseurs_
+
+2. **Sélectionner** l'acteur <code>compositeClimEast</code>
+
+    * définir la propriété _Spécifiques > Marche/Arrêt_ <code>sélectionné</code>
+    * définir la propriété _Spécifiques > Température consigne_ avec la valeur <code>21</code>
+    * définir la propriété _Spécifiques > Température ambiante_ avec la valeur <code>19</code>
+    * définir la propriété _Spécifiques > Mode ambiante_ avec la sélection <code>Eté</code>
+    ![compositeClimEast](assets/compositeClimEast.png)
+
+3. **Sélectionner** l'acteur <code>compositeClimWest</code>
+
+    * définir la propriété _Spécifiques > Marche/Arrêt_ <code>non sélectionné</code>
+    * définir la propriété _Spécifiques > Température consigne_ avec la valeur <code>25</code>
+    * définir la propriété _Spécifiques > Température ambiante_ avec la valeur <code>19</code>
+    * définir la propriété _Spécifiques > Mode ambiante_ avec la sélection <code>Hiver</code>
+
+4. **Verifier**
+    ![preview](assets/preview4.png)
