@@ -261,7 +261,7 @@ Nous allons définir les propriétés personnalisées du composite pour pouvoir 
     * définir la propriété _Spécifiques > Température ambiante_ avec la valeur <code>23</code>
     * définir la propriété _Spécifiques > Mode ambiante_ avec la sélection <code>Eté</code>
 
-## Liaisons des **propriétés spécifiques** du composite aux acteurs
+## Liaisons des **propriétés spécifiques** du composite aux acteurs internes
 
 Quatre propriétés spécifiques du composite ont été créées et doivent maintenant être **liées aux acteurs internes** du composite et ainsi définir le comportement du composite en fonction des valeurs définies dans ces propriétés
 
@@ -311,13 +311,12 @@ Quatre propriétés spécifiques du composite ont été créées et doivent main
 
 ## Configuration des propriétés spécifiques du composite dans la scène
 
-La définition du composite est finalisée, nous allons maintenant définir les valeurs de ses propriétés spécifiques dans la scène
+La définition du composite est finalisée, nous allons maintenant lier les valeurs des propriétés spécifiques de ses instances dans la scène vers une ressource du REDY de type _Régulation ventilo-convecteur 2T_
 
 1. **Sélectionner** la scène _climatiseurs_
 
 2. **Sélectionner** l'acteur <code>compositeClimEast</code>
 
-    * définir la propriété _Spécifiques > Marche/Arrêt_ <code>sélectionné</code>
     * définir la propriété _Spécifiques > Température consigne_ avec la valeur <code>21</code>
     * définir la propriété _Spécifiques > Température ambiante_ avec la valeur <code>19</code>
     * définir la propriété _Spécifiques > Mode ambiante_ avec la sélection <code>Eté</code>
@@ -328,7 +327,69 @@ La définition du composite est finalisée, nous allons maintenant définir les 
     * définir la propriété _Spécifiques > Marche/Arrêt_ <code>non sélectionné</code>
     * définir la propriété _Spécifiques > Température consigne_ avec la valeur <code>25</code>
     * définir la propriété _Spécifiques > Température ambiante_ avec la valeur <code>19</code>
-    * définir la propriété _Spécifiques > Mode ambiante_ avec la sélection <code>Hiver</code>
+    * définir la propriété _Spécifiques > Mode_ avec la sélection <code>Hiver</code>
 
-4. **Verifier**
+4. **Verifier** que les 2 instances du composite, <code>compositeClimEast</code>, <code>compositeClimWest</code> représentent les valeurs définies
     ![preview](assets/preview4.png)
+
+Le composite fonctionne et les valeurs définies pour les 2 instances du composite dans la scène peuvent sans difficultés être liées à une ressource de type _Régulation ventilo-convecteur 2T_ via une source de donnée, consulter le [tutorial 2 sur les liaisons](../tuto06/index.md).
+
+Cela pose cependant **plusieurs problèmes**:
+
+* A chaque fois que l'acteur _Climatiseur_ sera ajouté dans une scène, il faudra
+    1. definir sa source de donnée principale de type _Régulation ventilo-convecteur 2T_ et
+    2. lier les 4 propriétés _Spécifiques_ _Marche/Arrêt_, _Température consigne_, _Température ambiante_ ainsi que _Mode_ ...
+* Cela ne favorise ni la réutisabilité, ni la maintenabilité
+* L'utilisateur qui utilise le composite dans la scène n'est pas forcemment l'auteur du composite: il ne sait peut-être pas, ni comment, ni quels chemins relatifs de la ressources doivent être liées aux propriétés
+
+C'est le principe de la **boite noir**, l'utilisateur veut juste ajouter un composite sur la scène, définir sa ressource et tout doit fonctionner ! Et c'est possible avec les composites que nous appelons alors **Metiers**
+
+## Composite Metier lié à une ressource du REDY
+
+Plutôt que de modifier le composite éxistant, nous allons créer un nouveau composite
+
+1. **Sélectionner** l'onglet composites et **créer** un nouvel acteur composite
+
+    ![Empilement](assets/composites.png)
+
+    * modifier le _label_ du composite en <code>compositeClim2</code> et le _nom_ avec <code>Climatiseur métier</code>
+    * modifier la _description_ du composite en <code>Acteur de visualisation et de contrôle d'un climatiseur avec ressource Régulation ventilo-convecteur 2T</code>
+    * modifier la _catégorie_ du composite avec la sélection <code>Métier</code>. Cela permet de retrouver le composite dans cette catégorie dans l'_explorateur d'acteurs_
+    * Récupérer l'image ci-dessous
+
+        ![Empilement](assets/climBus.jpg)
+    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Logo_
+    ![Empilement](assets/compositeClim2_inspector.png)
+
+    * définir la propriété _Source de données > Source_
+    ![compositeDatasource](assets/compositeDatasource.png)
+
+    **Important:** nous définissons une source de donnée sur le composite afin d'avoir une **ressource de travail** pour configurer les liaisons. Cette ressource pourra et devra  être modifié au moment de l'ajout d'une instance de ce composite dans la scène
+
+    * créer la source de donnée WOS ![createDatasource](assets/createDatasource.png)
+    * parcourir le chemin vers la ressource <code> VTCAtlanticEst</code> dans le dossier <code> Tutorial5</code>
+    ```text
+    : / easy / RESS / R00005 / R0003
+    ```
+    * modifier le nom de la source de donnée par <code>dsVTCAtlanticEst</code> puis cliquer sur **Créer**
+        ![defineDatasource](assets/defineDatasource.png)
+
+    * modifier la _Classe de la donnée_ pour indiquer la classe de ressource que sait consommer le composite. Cela facilitera la configuration du composite lors de l'ajout dans une scène en indiquant à l'utilisateur le type de ressource à définir. Sélectionner **Classe de la donnée** pour contraindre le composite à une ressource de type _ventilo-convecteur 2T_
+
+        ![defineDatasource](assets/compositeClass.png)
+        ![defineDatasource](assets/compositeClass2.png)
+
+2. **Définir** l'acteur principal avec un acteur _empilement_
+
+3. **Ajouter** un acteur enfant de type _Climatiseur_
+
+    * renommer le _Label_ avec <code>compositeClimDrived</code>
+    * réinitialiser la propriété _Gabarit > Hauteur_ avec la valeur par défaut <code>[Vide]</code>
+    * définir la propriété _Position > Align. vertical_ a <code>Etendre</code>
+    * définir la propriété _Position > Align. horizontal_ a <code>Etendre</code>
+    * lier la propriété _Spécifiques > Marche/Arrêt_ en Source de données
+    ![bindDatasource](assets/bindComposite2.png)
+    * saisir <code>VC_Stop</code> dans le _Chemin_ ou utiliser l'_explorateur de chemin relatif_
+    * sélectionner la propriété _Valeur_ et la liaison en lecture _Rafraichie_ et **Lier**
+    ![bindDatasource2](assets/bindDatasource2.png)
+    * lier la propriété _Spécifiques > Température consigne_ en Source de données
