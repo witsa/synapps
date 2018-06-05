@@ -65,14 +65,16 @@ L'objectif du tutorial est la construction d'un acteur composite standard permet
         ![Empilement](assets/clim.jpg)
 
     * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Logo_
-            ![Empilement](assets/logo.png)
+
+        ![Empilement](assets/logo.png)
+
         _Remarques:_ le logo permet d'identifier visuellement le composite dans l'_explorateur d'acteurs_. Il est également possible de faire une copie d'écran du composite avec l'icone **appareil photo** ci-dessus: à tester mais le résultat sera toujours mieux avec une image adaptée
 
     * définir la propriété _Aspect > Police > Taille_ à <code>50px</code>
 
     _Important:_ les propriétés définies **directement** sur le composite sont des **valeurs par défaut** qui seront **initialisées** lors de l'ajout du composite dans la scène.
     Elles sont alors modifiables ce qui permet la personnalisation du composite.
-    Ici, nous définissons la police par défaut à <code>50px</code> directement sur le composite. Cette taille sera modifiable lors de l'ajout du composite dans le scène.
+    Ici, nous définissons la police par défaut à <code>50px</code> directement sur le composite. Cette taille sera modifiable lors de l'ajout du composite dans la scène.
     Cet aspect est extrémement important: un composite peut être considéré comme une **boite noir** avec des **propriétés publiques personnalisables**. Editer le composite revient à ouvrir la boite et définir son comportement. Nous reviendrons sur cet aspect ultérieurement dans le tutorial
 
 2. **Définissez** l'acteur principal avec un acteur _empilement_
@@ -499,7 +501,7 @@ Nous avons configuré la scène avec 2 intances de composite _compositeClim_. Ho
 
 ## **Partage** du composite
 
-Nous avons réalisé 2 acteurs composites qui repondent au besoin de la SynApp. Hors, il est fort probable que nous souhaitons **réutiliser** le composite dans d'autre SynApps et le **partager** avec d'autres utilisateurs
+Nous avons réalisé 2 acteurs composites qui repondent au besoin de la SynApp. Hors, il est fort probable que nous souhaitions **réutiliser** le composite dans d'autre SynApps et le **partager** avec d'autres utilisateurs
 
 Ultérieurement, SynApps MAKER disposera d'un mécanisme  permettant d'**importer** et **exporter** tout ou partie des objets d'une SynApp et d'un composite notamment
 En attendant, il est tout de même possible d'exporter, et d'importer un composite en tant que fichier de paramétrage partiel .WK4 depuis la Configuration du REDY
@@ -515,7 +517,7 @@ Nous allons créer une nouvelle SynApp et importer le composite <code>compositeC
     ```text
     :easy.SynApps.tuto05.Composites.compositeClim
     ```
-    ![bindDatasource3](assets/bindDatasource3.png)
+    ![bindDatasource3](assets/redyExplorator.png)
 
 4. **Cliquer** sur le bouton **Exporter**
 
