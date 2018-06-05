@@ -5,9 +5,9 @@
 Dans ce tutorial, nous allons mettre un oeuvre l'acteur **composite** qui permet de construire de **nouveaux acteurs** à partir d'acteurs éxistants. Ces derniers peuvent être soit des acteurs:
 
 * **Natifs**: disponibles dans toute SynApp
-* **Composites**: construits avec le MAKER, ils sont un usage avancé et nécessite une bonne compréhension du fonctionnement de SynApps
+* **Composites**: construits avec le MAKER, ils correspondent à un usage avancé et nécessitent une bonne compréhension du fonctionnement de SynApps
 
-Quelque soit la nature de l'acteur, **son usage est identique**, la distinction permet donc uniquement de les différencier techniquement
+Quelque soit la nature de l'acteur, son **usage est identique**, la distinction permet donc uniquement de les différencier dans leurs mécanismes de fabrication
 
 Le composite est un élément **fondamental** de toute SynApp, car il favorise:
 
