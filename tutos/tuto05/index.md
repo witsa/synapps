@@ -32,7 +32,11 @@ L'objectif du tutorial est la construction d'un acteur composite standard permet
 
 ## Prerequis
 
-Créer une nouvelle SynApp **tuto05** avec le _MAKER_. Modifier le _label_ de la première scène en <code>sceneClims</code> et le _nom_ avec <code>scène climatiseurs</code> puis déployer.
+* Le paramétrage [SynApps_Tutorials.PK4](../config/SynApps_Tutorials.PK4) installé sur le REDY. Il contient trois ressources préconfigurées nécessaires dans le dossier <code>Tutorial5</code>:
+    1. Deux ressource **Régulation ventilo-convecteur 2T** <code>VTCAtlanticEst</code> et <code>VTCAtlanticWest</code>
+    2. Une ressource  **Compteur/Décompteur** <code>Simulateur de changement temp. ambiante</code>
+
+* Créer une nouvelle SynApp **tuto05** avec le _MAKER_. Modifier le _label_ de la première scène en <code>sceneClims</code> et le _nom_ avec <code>scène climatiseurs</code> puis déployer.
 
 ## Construction de la **scène climatiseurs**
 
@@ -393,3 +397,175 @@ Plutôt que de modifier le composite éxistant, nous allons créer un nouveau co
     * sélectionner la propriété _Valeur_ et la liaison en lecture _Rafraichie_ et **Lier**
     ![bindDatasource2](assets/bindDatasource2.png)
     * lier la propriété _Spécifiques > Température consigne_ en Source de données
+
+    _Remarque:_ la valeur du chemin de la ressource <code>VC_Stop</code> retourne <code>true</code> lorsque le climatiseur est arreté et <code>false</code> lorsqu'il est en marche. Hors la propriété _Spécifiques > Marche/Arrêt_ doit avoir la valeur <code>true</code> pour indiquer que le climatiseur est en marche: il faut donc **inverser** la valeur provenant de la source de données avec un **fonction de transformation**
+
+    * editer le script de transformation lecture
+    ![transform2](assets/transform2.png)
+    * écrire la fonction suivante
+        ```javascript
+        return !context.value
+        ```
+        Pour rappel _context.value_ retourne la valeur de la source = valeur du noeud <code>VC_Stop</code>
+
+        Le caratere _!_ signifie <code>not</code> et va donc inverser la valeur de la ressource, ce qui est le comportement souhaité
+
+    * lier la propriété _Spécifiques > Température consigne_ en Source de données avec le chemin <code>VC_At</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
+
+    _Remarque:_ la consigne est accessible en écriture mais ne sera pas commandé par l'acteur _compositeClim2_. C'est un choix que nous avons fait quant au périmêtre métier du composite. Nous commenderons la consigne depuis la scène, la liaison n'est donc pas autorisée en écriture.
+
+    * lier la propriété _Spécifiques > Température ambiante_ en Source de données avec le chemin <code>VC_Sp</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
+    VC_Sp
+
+    * lier la propriété _Spécifiques > Mode_ en Source de données avec le chemin <code>VC_Cold</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
+
+    _Remarque:_ la valeur du chemin de la ressource <code>VC_Cold</code> retourne <code>true</code> lorsque le climatiseur est en mode _hiver_ et <code>false</code> en mode _été_. Hors la propriété _Spécifiques > Mode_ doit avoir la valeur <code>WINTER</code> ou <code>SUMMER</code>: il faut donc **modifier** la valeur provenant de la source de données avec un **fonction de transformation**
+
+    * editer le script de transformation lecture de _Mode_ avec la fonction suivante
+        ```javascript
+        return context.value ? "WINTER" : "SUMMER";
+        ```
+        Pour rappel _context.value_ retourne la valeur de la source = valeur du noeud <code>VC_Cold</code>
+
+        Le caratere _?_ est une instruction conditionnelle qui retournera <code>WINTER</code> lorsque _context.value_ est <code>true</code> sion <code>SUMMER</code>
+
+La définition du composite métier est finalisée ! Les valeurs _Spécifiques_ _Marche/Arrêt_, _Température consigne_, _Température ambiante_ et _Mode_ ainsi que la représentation dans la _zone de prévisualisation_ doivent désormains refleter les données de la ressource _VTCAtlanticEst_
+
+Modifier les valeurs directement dans le paramétrage de la Ressource du REDY puis attendre (max 30 secondes ou forcer le rechargement avec F5) le rafraissement de la source de donnée pour vérifier que le composite reflète bien les modifications
+
+![compositeClim2_inspector2](assets/compositeClim2_inspector2.png)
+![preview5](assets/preview5.png)
+
+## Modification de la scène par remplacement du composite métier
+
+Nous avons configuré la scène avec 2 intances de composite _compositeClim_. Hors nous avons désormais un composite métier _compositeClim2_ qui sait exploiter des ressources _Régulation ventilo-convecteur 2T_. Nous allons donc supprimer ces 2 instances, les remplacer par notre composite métier puis associer les 2 ressources
+
+1. **Sélectionner** la scène _climatiseurs_
+
+2. **Sélectionner** l'acteur <code>compositeClimEast</code> et le supprimer ![preview5](assets/actor_delete.png)
+
+3. **Sélectionner** l'acteur <code>compositeClimWest</code> et le supprimer également
+
+4. **Sélectionner** l'acteur _toile_ <code>canvas1</code> et **ajouter** un acteur enfant de type _Climatiseur métier_ (dans la catégrorie _Métiers_ de l'explorateur d'acteurs)
+
+    * renommer le _Label_ avec <code>compositeClimEast</code>
+    * modifier la propriété _Gabarit > Hauteur_ avec la taille <code>300px</code>
+    * modifier la propriété _Gabarit > Largeur_ avec la taille <code>300px</code>
+    * modifier la propriété _Position > Position gauche_ avec la taille <code>200px</code>
+    * modifier la propriété _Position > Position haut_ avec la taille <code>240px</code>
+
+5. **Dupliquer** l'acteur _Climatiseur_ <code>compositeClimEast</code>
+
+    * renommer le _Label_ avec <code>compositeClimWest</code>
+    * modifier la propriété _Position > Position gauche_ avec la taille <code>600px</code>
+    * modifier la propriété _Source de données > Source_
+    ![actorDatasource2](assets/actorDatasource2.png)
+    * créer une nouvelle source de donnée _WOS_
+    ![createDatasource2](assets/createDatasource2.png)
+    * parcourir le chemin vers la ressource <code> VTCAtlanticWest</code> dans le dossier <code> Tutorial5</code>
+    ```text
+    : / easy / RESS / R00005 / R0004
+    ```
+    * modifier le nom de la source de donnée par <code>dsVTCAtlanticWest</code> puis cliquer sur **Créer**
+        ![defineDatasource2](assets/defineDatasource2.png)
+    * vérifier que l'acteur représente bien les valeurs de la ressource du REDY <code>VTCAtlanticWest</code>
+
+6. **Sélectionner** l'acteur _toile_ <code>canvas1</code> et **ajouter** un acteur enfant de type _Curseur_
+
+    * renommer le _Label_ avec <code>sliderEast</code>
+    * définir la propriété _Gabarit > Largeur_ avec la taille <code>400px</code>
+    * définir la propriété _Position > Position gauche_ avec la valeur <code>120px</code>
+    * définir la propriété _Position > Position haut_ avec la valeur <code>630px</code>
+    * définir la propriété _Source de données > Source_ avec la source de donnée <code>dsVTCAtlanticEst</code>
+    * définir la propriété _Spécifiques > Min_ avec la valeur <code>15</code>
+    * définir la propriété _Spécifiques > Max_ avec la valeur <code>35</code>
+    * définir la propriété _Spécifiques > Bar_ avec la sélection <code>Avant curseur</code>
+    * définir la propriété _Spécifiques > Couleur bar_ avec la couleur <code>#ff8000</code>
+    * définir la propriété _Spécifiques > Interval_ avec la valeur <code>0.5</code>
+    * lier la propriété  _Spécifiques > Valeur_ en source de donnée avec le chemin <code>VC_At</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_ et **écriture**
+    ![bindDatasource3](assets/bindDatasource3.png)
+
+7. **Dupliquer** l'acteur <code>sliderEast</code>
+
+    * renommer le _Label_ avec <code>sliderWest</code>
+    * définir la propriété _Gabarit > Largeur_ avec la taille <code>400px</code>
+    * définir la propriété _Position > Position gauche_ avec la valeur <code>600px</code>
+    * définir la propriété _Source de données > Source_ avec la source de donnée <code>dsVTCAtlanticWest</code>
+
+8. **Déployer**, **éxécuter** et **vérifier** que:
+
+    * vous pouvez commander les consignes de température des 2 ressources
+    * les températures de consigne sur les 2 instances du composite _Climatiseur métier_ changent en conséquence
+
+## **Partage** du composite
+
+Nous avons réalisé 2 acteurs composites qui repondent au besoin de la SynApp. Hors, il est fort probable que nous souhaitons **réutiliser** le composite dans d'autre SynApps et le **partager** avec d'autres utilisateurs
+
+Ultérieurement, SynApps MAKER disposera d'un mécanisme  permettant d'**importer** et **exporter** tout ou partie des objets d'une SynApp et d'un composite notamment
+En attendant, il est tout de même possible d'exporter, et d'importer un composite en tant que fichier de paramétrage partiel .WK4 depuis la Configuration du REDY
+
+Nous allons créer une nouvelle SynApp et importer le composite <code>compositeClim</code> créé dans la SynApp <code>tuto05</code>
+
+1. Lister les SynApps et créer une nouvelle SynApps que vous appelerez <code>Test Import</code>
+    ![bindDatasource3](assets/listSynApps.png)]
+
+2. **Naviguer** dans l'interface de **Configuration** du REDY et l'onglet **Explorateur**
+
+3. **Sélectionner** le chemin du compoite
+    ```text
+    :easy.SynApps.tuto05.Composites.compositeClim
+    ```
+    ![bindDatasource3](assets/bindDatasource3.png)
+
+4. **Cliquer** sur le bouton **Exporter**
+
+5. **Sélectionner** le chemin du dossiers des compoite dans la nouvelle SynApp <code>Test Import</code>
+    ```text
+    :easy.SynApps.Test_Import.Composites
+    ```
+
+6. **Cliquer** sur le bouton _Choisir un fichier_, **sélectionner** le fichier _.WK4_ exporté précédemment, et **Ajouter**
+    ![redyImport](assets/redyImport.png)
+
+7. **Vérifier** que le composite est bien importé
+    ![redyImport2](assets/redyImport2.png)
+
+8. **Retourner** dans SynApps MAKER et nettoyer le cache pour forcer le rechargement du paramétrage de la SynApp depuis le REDY
+
+    _Remarque:_ souvenez vous, SynApps **cache les configurations** des SynApps pour des questions d'**optimisation** du temps de chargement. Il se base notamment sur un **numéro de build** pour savoir si la SynApp a été mise à jour et dans ce cas **forcer le rechargement** de la SynApp depuis le REDY
+
+    Ici, nous avons importé un paramétrage depuis le REDY, le numéro de build de la SynApp <code>Test Import</code> est donc resté inchangé, c'est pourquoi, nous nettoyons le cache des SynApps dans le navigateur
+
+9. **Rafraichir** la SynApp avec F5
+
+10. **Sélectionner** l'onglet composites et vérifier la présence du composite <code>Climatiseur</code> dans la SynApp <code>Test Import</code>
+
+Vous pouvez alors créer une scène et utiliser le composite !
+
+## Que retenir
+
+Vous avez mis en oeuvre un des concepts fondamentaux de SynApps: les **acteurs composites**
+
+Ils permettent de construire de nouveaux acteurs à partir d'acteurs **natifs** ou d'autres **composites** et ainsi avoir une construction plus modulaire qui favorise **maintenabilité** et **réutisabilité** !
+
+Ils permettent également d'avoir des profils utilisateurs de **SynApps MAKER** de niveaux différents:
+
+* **avancés**: capable de **construire** des acteurs composites plus ou moins évolués
+* **standards**: capable de d'**utiliser** ces acteurs composites sans avoir besoin de comprendre comment ils fonctionnent. Principe de la **boite noir** !
+
+Nous avons vu comment **personnaliser les propriétés** par défaut de l'acteur composite, par exemple la couleur de fond.
+Nous avons également défini de **nouvelles propriétés**  qui permettent de personnaliser l'instance d'acteur composite, par exemple, _Mode_ et _Températures_
+
+Nous avons vu également comment construire des acteurs **métiers** qui savent exploiter une source de donnée particulière, par exemple une ressource du REDY. En tant qu'utilisateur du composite, il a suffit de définir la source de données de l'acteur composite _Climatiseur métier_ pour que ce dernier soit pleinement **opérationnel** !
+
+Enfin, en attendant un mécanisme d'import/export natif depuis SynApps MAKER, nous avons **importé** un composite via le **paramétrage partiel** du REDY
+
+## Conclusion
+
+Le **tutorial 5** sur les acteurs _composites_ est **terminé**. La maitrise de la création est extrémement importante pour construire des applications ambitieuses, maintenables et réutilisables !
+
+Il est important de bien définir le **périmêtre fonctionnel** de chaque composite et exposer notamment de façon intelligible ses **propriétés personnalisées**. La **description** est également importante pour donner des indications à celui qui va utiliser le composite
+
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+
+[Tutoriel suivant sur les événements et fonctions](../tuto06/index.md)
