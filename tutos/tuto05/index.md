@@ -2,26 +2,26 @@
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-Dans ce tutorial, nous allons mettre un oeuvre l'acteur **composite** qui a ceci de particulier: la construction de **nouveaux acteurs** à partir d'acteurs éxistants. Ces derniers peuvent être soit des acteurs:
+Dans ce tutorial, nous allons mettre un oeuvre l'acteur **composite** qui permet de construire de **nouveaux acteurs** à partir d'acteurs éxistants. Ces derniers peuvent être soit des acteurs:
 
-* **natifs**: disponibles dans toute SynApp
-* **composites**: construits avec le MAKER, ils sont un usage avancé et nécessite une bonne compréhension du fonctionnement de SynApps
+* **Natifs**: disponibles dans toute SynApp
+* **Composites**: construits avec le MAKER, ils sont un usage avancé et nécessite une bonne compréhension du fonctionnement de SynApps
 
-Quelque soit la nature de l'acteur, **son usage est identique**,la distinction permet donc uniquement de les différencier techniquement
+Quelque soit la nature de l'acteur, **son usage est identique**, la distinction permet donc uniquement de les différencier techniquement
 
 Le composite est un élément **fondamental** de toute SynApp, car il favorise:
 
-* **réutisabilité**: au sein d'une même SynApp et vers d'autres SynApp et utilisateurs via des mécanismes d'import/export
+* **Réutisabilité**: au sein d'une même SynApp et vers d'autres SynApp et utilisateurs via des mécanismes d'import/export
 
-* **maintenabilité**: la modification d'un acteur composite est propagée automatiquement à l'ensemble des scènes qui l'utilise
+* **Maintenabilité**: la modification d'un acteur composite est propagée automatiquement à l'ensemble des scènes qui l'utilise
 
-* **modularité**: construction de scènes complexes par compositions d'acteurs simples et imbriqués
+* **Modularité**: construction de scènes complexes par compositions d'acteurs simples et imbriqués
 
 Ils peuvent être classés dans deux grandes catégories:
 
-* **standard**: ils ont une fonction de représentation indépendante d'une source de donnée. Par exemple: une jauge
+* **Standard**: ils ont une fonction de représentation indépendante d'une source de donnée. Par exemple: une jauge
 
-* **métiers**: ils ont besoin d'une source de données pour fonctionner ou ils utilisent en interne une ressource du REDY. Par exemple: l'acteur journal
+* **Métiers**: ils ont besoin d'une source de données pour fonctionner ou ils utilisent en interne une ressource du REDY. Par exemple: l'acteur journal
 
 ![Empilement](assets/nature.png)
 _Classement des acteurs par nature et catégorie_
