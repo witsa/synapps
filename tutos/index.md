@@ -17,3 +17,5 @@ Installer ce paramétrage avec le [gestionnaire de projets](../redy/installPK4.m
 3. [Tutorial 3: les acteurs dispositions](tuto03/index.md)
 
 4. [Tutorial 4: la navigation](tuto04/index.md)
+
+5. [Tutorial 5: les acteurs composites](tuto05/index.md)
