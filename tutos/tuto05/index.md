@@ -568,6 +568,8 @@ Le **tutorial 5** sur les acteurs _composites_ est **terminé**. La maitrise de 
 
 Il est important de bien définir le **périmêtre fonctionnel** de chaque composite et exposer notamment de façon intelligible ses **propriétés personnalisées**. La **description** est également importante pour donner des indications à celui qui va utiliser le composite
 
+L'acteur composite est une fonctionnalité majeure de SynApps et permet de construire un éco-système d'acteurs métiers réutilisables et ainsi priviligier **qualité** et **productivité** !
+
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les événements et fonctions](../tuto06/index.md)
