@@ -12,7 +12,7 @@
     <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> \{{tempCurrent}}°C</span>
     ```
     
- ```html
+    ```html
     <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {{{tempCurrent}}}°C</span>
     ```
 
