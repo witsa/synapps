@@ -13,7 +13,10 @@
     ```
     
     ```html
+    {% raw %}
+    Hello, my name is {{name}}
     <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {{{tempCurrent}}}°C</span>
+    {% endraw %}
     ```
 
 You can use the [editor on GitHub](https://github.com/witsa/synapps/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
