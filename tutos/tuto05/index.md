@@ -87,7 +87,7 @@ L'objectif du tutorial est la construction d'un acteur composite standard permet
     * renommer le _Label_ avec <code>htmlTempCurrent</code>
     * définir la propriété _Spécifiques > Contenu_ avec le texte
     ```html
-    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {{tempCurrent}}°C</span>
+    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {% raw %}{{tempCurrent}}{% endraw %}°C</span>
     ```
     _Remarques:_
     * l'acteur _html_ est identique à l'acteur _text_ mais est adapté au contenu HTML
@@ -174,7 +174,7 @@ L'objectif du tutorial est la construction d'un acteur composite standard permet
     * renommer le _Label_ avec <code>htmlTempCmd</code>
     * définir la propriété _Spécifiques > Contenu_ avec le texte
     ```html
-    <span style="white-space: nowrap;"><i class="icon-target"></i> {{tempCmd}}</span>
+    <span style="white-space: nowrap;"><i class="icon-target"></i>{% raw %}{{tempCmd}}{% endraw %}</span>
     ```
     _Remarques:_
     * l'acteur _html_ est identique à l'acteur _text_ mais est adapté au contenu HTML
