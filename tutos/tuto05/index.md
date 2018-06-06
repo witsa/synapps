@@ -243,7 +243,7 @@ Nous allons définir les propriétés personnalisées du composite pour pouvoir 
     * définir le _Nom de la propriété_ avec le texte _Température consigne_
     * définir la _Description_ avec le texte _Température commandée_
 
-5. **ajouter** une propriété de type _Nombre_ qui permettra de définir la température de consigne
+5. **ajouter** une propriété de type _Nombre_ qui permettra de définir la température ambiante
 
     * définir le _Label_ avec le texte _tempCurrent_
     * définir le _Nom de la propriété_ avec le texte _Température ambiante_
