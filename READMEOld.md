@@ -1,16 +1,4 @@
 ## Welcome to GitHub Pages
-
-    ```html
-    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {{tempCurrent}}°C</span>
-    ```
-
-    ```html
-    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> /{{tempCurrent}}°C</span>
-    ```
-
-    ```html
-    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> \{{tempCurrent}}°C</span>
-    ```
     
     ```html
     {% raw %}
@@ -18,6 +6,11 @@
     <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {{{tempCurrent}}}°C</span>
     {% endraw %}
     ```
+
+    ```html
+    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {% raw %}{{tempCurrent}}{% endraw %}°C</span>
+    ```
+
 
 You can use the [editor on GitHub](https://github.com/witsa/synapps/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
