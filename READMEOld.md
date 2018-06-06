@@ -1,5 +1,17 @@
 ## Welcome to GitHub Pages
 
+    ```html
+    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> {{tempCurrent}}°C</span>
+    ```
+
+    ```html
+    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> /{{tempCurrent}}°C</span>
+    ```
+
+    ```html
+    <span style="white-space: nowrap;"><i class="icon-temperature-thermometer"></i> \{{tempCurrent}}°C</span>
+    ```
+
 You can use the [editor on GitHub](https://github.com/witsa/synapps/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
