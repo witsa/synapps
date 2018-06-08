@@ -28,7 +28,7 @@ _Classement des acteurs par nature et catégorie_
 
 ## Description
 
-L'objectif du tutorial est la construction d'un acteur composite standard permettant de visualiser/gérer une climatiseur
+L'objectif du tutorial est la construction d'acteurs composites permettant de visualiser une ressource de type climatiseur
 
 ## Prerequis
 
@@ -42,7 +42,7 @@ L'objectif du tutorial est la construction d'un acteur composite standard permet
 
 1. Dans la scène courante <code>sceneClims</code> définissez l'acteur principal avec un acteur **toile**
 
-2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous. 
+2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous
     * Click droit sur l'image ci-dessous et _Enregistrer sous_ dans un dossier local
     ![Empilement](assets/backgroundPlan.png)
 
