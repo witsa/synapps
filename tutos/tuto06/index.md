@@ -281,8 +281,14 @@ La console de log est vite remplie des événements générés. Nous allons ajou
     }
     ```
 
-    * ligne 2: _textareaOutput.set('value', '')_ remplace le contenu de la console de log pour la chaine vide
+    * ligne 2: _textareaOutput.set('value', '')_ remplace le contenu de la console de log par une chaine vide
 
-7. **Déployer**, **éxécuter** et **vérifier** que le bouton de nettoyage est opérationnel
+3. **Déployer**, **éxécuter** et **vérifier** que le bouton de nettoyage est opérationnel
 
-    ![event_init](assets/execute3.png)
+    ![execute3](assets/execute3.png)
+
+## Debugging sous Chrome
+
+Il est parfois trés utile de pouvoir débugger une fonction javascript pour résoudre un dysfonctionnement ou une erreur.
+SynApp une application qui s'éxécute dans le navigateur et nous pouvons donc utiliser ses fonctionnalités avancés pour débugger le code éxécuté dans SynApp !
+La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous utiliserons ici **Chrome** pour les besoins de ce tutorial
