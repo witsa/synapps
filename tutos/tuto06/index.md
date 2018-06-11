@@ -292,3 +292,76 @@ La console de log est vite remplie des événements générés. Nous allons ajou
 Il est parfois trés utile de pouvoir débugger une fonction javascript pour résoudre un dysfonctionnement ou une erreur.
 SynApp une application qui s'éxécute dans le navigateur et nous pouvons donc utiliser ses fonctionnalités avancés pour débugger le code éxécuté dans SynApp !
 La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous utiliserons ici **Chrome** pour les besoins de ce tutorial
+
+1. **Exécuter** la SynApp et appuyer sur **F12** pour ouvrir la console _Developer Tools_
+
+    _Remarque:_ dans la mesure du possible, il est préferrable d'utiliser 2 écrans: le premier pour la SynApp, le second pour la console _Developer Tools_. Configurer le _Dock side_ pour choisir le mode d'affichage
+
+    ![tools_dock](assets/tools_dock.png)
+
+2. **Sélectionner** l'onglet _Sources > Network_ de la console
+    ![tools_sources](assets/tools_sources.png)
+
+3. Pour info, le dossier _appria.wit.fr_ contient le runtime du SynApps qui ne peut pas être exploité
+
+4. **Ouvrir** le second dossier _synapps-scripts_. Celui-ci nous intéresse car il contient tous les événements implémenté dans la SynApp ! Ils sont classés par nom relativement explicites: _onClick_, _onInit_, _onMouseDown_, _onMouseEnter_, _onMouseLeave_, _onMouseUp_, _onRender_
+
+    ![tools_events](assets/tools_events.png)
+
+5. **Ouvrir**  le dossier des événements _onInit_ qui contien la fonction javascript implémenté par l'événement _Ev. "Initialisation"_ de l'acteur <code>textareaOutput</code>
+
+    ![tools_js](assets/tools_js.png)
+
+    _Remarque:_ une SynApp peut avoir beaucoup de scripts définis dans plusieurs acteurs et scènes. Un formalisme est donc défini afin d'**identifier rapidement le script recherché**:
+
+    Dans <code>actor-textarea-textareaOutput-sceneEvents.js</code>
+
+    * <code>actor</code> signifie que le script est associé à un objet de type acteur
+    * <code>textarea</code> correspond au type _zone de texte_ de l'acteur (en anglais)
+    * <code>textareaOutput</code> correspond au label de l'objet
+    * <code>sceneEvents</code> correspond à la scène de l'objet
+
+6. **Ouvrir** le dossier des événements _onClick_ qui contien les 4 fonctions javascript implémenté par l'événement _Ev. "Clic souris"_ dans la scène
+
+    ![tools_js](assets/tools_onclick.png)
+
+    Le **formalisme de nommage** des évènements permet d'**identifier aisemment** les 4 fonctions et les acteurs auquelles elles se rapportent
+
+7. **Sélectionner** la fonction javascript <code>actor-buttonPush-buttonPushClear-sceneEvents.js</code>. Son contenu s'affiche dans la zone centrale
+
+    ![tools_fxclick](assets/tools_fxclick.png)
+
+8. **Ajouter** un point d'arret sur la ligne 4 en cliquant sur celle-ci
+
+    ![tools_beakpoint](assets/tools_beakpoint.png)
+
+9. **Cliquer** sur le bouton de nettoyage de la SynApp pour éxécuter l'événement _Ev "Clic souris"_. Le code javascript est alors éxécuté jusqu'au point d'arrêt et le navigateur indique _Paused in debugger_
+
+    ![tools_debug](assets/tools_debug.png)
+    ![tools_paused](assets/tools_paused.png)
+
+10. **Ouvrir** la console si pas encore ouverte
+
+    ![tools_debug](assets/tools_console.png)
+
+11. **copier** le javascript suivant dans la console + entrée
+
+    ```javascript
+    textareaOutput.get('value')
+    ```
+    Le contenu de la propriété _Valeur_ est alors affichée dans la console !
+
+    ![tools_debug](assets/tools_console2.png)
+
+    * La totalité des propriétés de l'acteur peuvent être évaluées de la même manière. Pour connaitre la couleur de fond, copier dans la console:
+
+        ```javascript
+        textareaOutput.get('backgroundColor')
+        ```
+
+    * Vous pouvez également modifier les valeurs des propriétés. Pour modifier la couleur de fond de l'acteur en jaune, copier dans la console
+
+        ```javascript
+        textareaOutput.set('backgroundColor', 'yellow')
+        ```
+        puis appuyer sur **F8** pour sortir du point d'arrêt
