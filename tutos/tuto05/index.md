@@ -352,7 +352,7 @@ C'est le principe de la **boite noir**, l'utilisateur veut juste ajouter un comp
 
 ## Composite Metier lié à une ressource du REDY
 
-Nous pourrions transformer le composte précédemnt créé en composite métier, cad capable d'exploiter directement une ressource de type <code>Régulation ventilo-convecteur 2T</code>. Mais, plutôt que de modifier le composite éxistant, nous allons en créer un nouveau, **métier**, capable d'exploiter directement la ressource ci-dessus. Bien sur, il contiendra et exploitera dans ses acteurs internes, le composite précédemment créé.
+Nous pourrions modifier le composite standard précédement créé en composite métier, capable d'exploiter directement une ressource de type <code>Régulation ventilo-convecteur 2T</code>. Mais, plutôt que de modifier le composite éxistant, nous allons en créer un nouveau, **métier**, capable d'exploiter directement la ressource ci-dessus. Bien sur, il contiendra et exploitera dans ses acteurs internes, le composite précédemment créé
 
 Notre **objectif** ici est double:
 
