@@ -28,7 +28,7 @@ _Classement des acteurs par nature et catégorie_
 
 ## Description
 
-L'objectif du tutorial est la construction d'un acteur composite standard permettant de visualiser/gérer une climatiseur
+L'objectif du tutorial est la construction d'acteurs composites permettant de visualiser une ressource de type climatiseur
 
 ## Prerequis
 
@@ -42,7 +42,7 @@ L'objectif du tutorial est la construction d'un acteur composite standard permet
 
 1. Dans la scène courante <code>sceneClims</code> définissez l'acteur principal avec un acteur **toile**
 
-2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous. 
+2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous
     * Click droit sur l'image ci-dessous et _Enregistrer sous_ dans un dossier local
     ![Empilement](assets/backgroundPlan.png)
 
@@ -132,7 +132,7 @@ L'objectif du tutorial est la construction d'un acteur composite standard permet
 7. **Sélectionner** l'acteur _toile_ <code>canvasClim</code> et **ajouter** un acteur enfant de type _commutateur image_ qui affichera le mode hiver/été
 
     * renommer le _Label_ avec <code>switchImageMode</code>
-    * récupérer les 2 images ![Hot](assets/hot.png) ![Cold](assets/cold.png)
+    * récupérer les 2 images ![Cold](assets/cold.png) ![Hot](assets/hot.png)
     * réinitialiser la propriété _Gabarit > Hauteur_ à la valeur par défaut <code>[vide]</code>
     * réinitialiser également la propriété _Gabarit > Largeur_ à la valeur par défaut <code>[vide]</code>
     * modifier la propriété _Spécifiques > Texte On_ avec le texte <code>Chaud</code>
@@ -352,7 +352,12 @@ C'est le principe de la **boite noir**, l'utilisateur veut juste ajouter un comp
 
 ## Composite Metier lié à une ressource du REDY
 
-Plutôt que de modifier le composite éxistant, nous allons créer un nouveau composite
+Nous pourrions transformer le composte précédemnt créé en composite métier, cad capable d'exploiter directement une ressource de type <code>Régulation ventilo-convecteur 2T</code>. Mais, plutôt que de modifier le composite éxistant, nous allons en créer un nouveau, **métier**, capable d'exploiter directement la ressource ci-dessus. Bien sur, il contiendra et exploitera dans ses acteurs internes, le composite précédemment créé.
+
+Notre **objectif** ici est double:
+
+* **Montrer** comment les acteurs composites peuvent s'intégrer de façon **modulaire**
+* **Conserver** l'acteur composite initial **standard** pour permettre sa configuration directement dans une scène, voir dans un autre composite métier, lorsque la source de donnée n'est pas une ressource de type <code>Régulation ventilo-convecteur 2T</code>
 
 1. **Sélectionner** l'onglet composites et **créer** un nouvel acteur composite
 
@@ -412,12 +417,11 @@ Plutôt que de modifier le composite éxistant, nous allons créer un nouveau co
 
         Le caratere _!_ signifie <code>not</code> et va donc inverser la valeur de la ressource, ce qui est le comportement souhaité
 
-    * lier la propriété _Spécifiques > Température consigne_ en Source de données avec le chemin <code>VC_At</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
+    * lier la propriété _Spécifiques > Température consigne_ en Source de données avec le chemin <code>VC_Sp</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
 
     _Remarque:_ la consigne est accessible en écriture mais ne sera pas commandé par l'acteur _compositeClim2_. C'est un choix que nous avons fait quant au périmêtre métier du composite. Nous commenderons la consigne depuis la scène, la liaison n'est donc pas autorisée en écriture.
 
-    * lier la propriété _Spécifiques > Température ambiante_ en Source de données avec le chemin <code>VC_Sp</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
-    VC_Sp
+    * lier la propriété _Spécifiques > Température ambiante_ en Source de données avec le chemin <code>VC_At</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
 
     * lier la propriété _Spécifiques > Mode_ en Source de données avec le chemin <code>VC_Cold</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_
 
@@ -484,7 +488,7 @@ Nous avons configuré la scène avec 2 intances de composite _compositeClim_. Ho
     * définir la propriété _Spécifiques > Bar_ avec la sélection <code>Avant curseur</code>
     * définir la propriété _Spécifiques > Couleur bar_ avec la couleur <code>#ff8000</code>
     * définir la propriété _Spécifiques > Interval_ avec la valeur <code>0.5</code>
-    * lier la propriété  _Spécifiques > Valeur_ en source de donnée avec le chemin <code>VC_At</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_ et **écriture**
+    * lier la propriété  _Spécifiques > Valeur_ en source de donnée avec le chemin <code>VC_Sp</code>, la propriété _valeur_ et la liaison en lecture _Rafraichie_ et **écriture**
     ![bindDatasource3](assets/bindDatasource3.png)
 
 7. **Dupliquer** l'acteur <code>sliderEast</code>
