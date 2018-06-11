@@ -364,4 +364,133 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
         ```javascript
         textareaOutput.set('backgroundColor', 'yellow')
         ```
-        puis appuyer sur **F8** pour sortir du point d'arrêt
+        puis appuyer sur **F8** pour sortir du point d'arrêt, la couleur de fond a changé !
+
+        ![tools_debug](assets/bg_yellow.png)
+
+        _Remarque:_ la couleur d'origine configurée dans la SynApp revient après rechargement
+
+12. **Cliquer** sur le bouton de nettoyage pour rentrer de nouveau en debug et **copier** le javascript suivant dans la console + entrée
+
+    ```javascript
+    textareaOutput.inspect()
+    ```
+
+    La fonction _inspect()_ permet de visualiser la totalité des valeurs des propriétés d'un objet de SynApps. Ici l'acteur <code>textareaOutput</code>
+
+    ![tools_debug](assets/tools_inspect.png)
+
+13. **Inspecter** tous les types d'objets pour connaitre leurs propriétés
+
+    * **host**: informations systèmes du REDY
+
+        ```javascript
+        context.host.inspect()
+        ```
+
+        ![tools_debug](assets/tools_host.png)
+
+    * **synoStage**: scène courante
+
+        ```javascript
+        context.synoStage.inspect()
+        ```
+
+        ![tools_debug](assets/tools_synoStage.png)
+
+    * **synapp**: synApp courante
+
+        ```javascript
+        context.synapp.inspect()
+        ```
+
+        ![tools_debug](assets/tools_synapp.png)
+
+    * **session**: session utilisateur courant
+
+        ```javascript
+        context.session.inspect()
+        ```
+
+        ![tools_debug](assets/tools_session.png)
+
+         _Remarque:_ l'objet _session_ contient une fonction _logOff()_ qui déconnecte l'utilisateur courant. Nous allons utiliser cette fonctionnalité dans la partie suivante pour construire un composite affichant l'utilisateur courant et un bouton de déconnection
+
+Vous avez vu comment **débugger** les événements SynApps avec le navigateur Chrome, **afficher** et **modifier** les propriétés des objets SynApps
+
+## Mise en pratique avec composite session utilisateur
+
+Nous allons construire un composite affichant le nom de l'utilisateur connecté et un bouton de déconnection.
+
+1. **Sélectionner** l'onglet _Composites_ et **créer** un nouveau composite
+
+    * modifier le _label_ du composite en <code>sessionLogger</code> et le _nom_ avec <code>Session utilisateur</code>
+    * modifier la _description_ du composite en <code>Affiche l'utilisateur connecté et permet la déconnexion</code>
+    * modifier la _catégorie_ du composite avec la sélection <code>Métier</code>
+    * Récupérer l'image ci-dessous
+
+        ![Empilement](assets/logo_logOff.png)
+    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Logo_
+    * modifier la propriété _Aspect > Police > Taille_ en <code>40px</code>
+    * modifier la propriété _Position > Align. vertical_ en <code>Auto</code>
+
+        ![Empilement](assets/composite_inspector.png)
+
+2. **Définir** l'acteur principal avec un acteur _empilement_
+
+    * renommer le _label_ en <code>stackRoot</code>
+    * modifier la propriété _Spécifiques > Orientation_ en <code>Horizontal</code>
+    * modifier la propriété _Position > Align. vertical_ en <code>Auto</code>
+
+3. **Ajouter** un acteur enfant de type _html_
+
+    * renommer le _Label_ avec <code>htmlSession</code>
+    * modifier la propriété _Spécifiques > Contenu_ en 
+    ```html
+    <code><i class="icon-user"></i> {% raw %}{{user}}{% endraw %}</code>
+    ```
+    * **compléter** le contenu en créant la propriété additionnele _user_. Vous pouvez également donner des informations additionnelles sur la propriété, comme le nom et la description, dans _Additionnelles > Gestion des propriétés additionnelles_
+    * **lier** la propriété en interne à l'objet _Session > Utilisateur > Nom complet_
+
+        ![Empilement](assets/bind_session.png)
+    * modifier la propriété _Position > Align. vertical_ en <code>Centré</code>
+
+4. **Sélectionner** l'acteur <code>stackRoot</code> et **ajouter** un acteur enfant de type _Bouton poussoir_
+
+    * renommer le _Label_ avec <code>buttonLogOff</code>
+    * modifier la propriété _Spécifiques > Contenu_ en 
+    ```html
+    <code><i class="icon-off"></i></code>
+    ```
+    * modifier la propriété _Position > Align. horizontal_ en <code>Droite</code>
+    * définir l'événement _Commun > Ev. "Clic souris"_
+    ```javascript
+    context.session.logOff();
+    ```
+    Comme nous l'avons vu précédemment, la fonction _logOff_ sur l'objet SynApp _session_ permet de **forcer la déconnection** de l'utilisateur
+
+5. **Vérifier** le composite _Session utilisateur_ dans la _zone de prévisualisation_
+    ![Empilement](assets/preview2.png)
+
+6. **Sélectionner** la scène <code>Scène événements</code>
+
+7. **Sélectionner** l'acteur <code>stackEvents</code>
+
+8. **Ajouter** l'acteur composite créé _Session utilisateur_
+
+    * modifier la propriété _Position > Align. horizontal_ en <code>Centré</code>
+    * réinitialiser la propriété _Gabarit > Hauteur_ à <code>[Vide]</code>
+    * définir l'événement _Commun > Ev. "Clic souris"_
+    ```javascript
+    var textareaOutput = context.synoStage.findByLabel('textareaOutput');
+    textareaOutput.log(context.target, "Déconnection");
+    ```
+
+    _Remarque:_ ce script, identique que pour les acteurs _A_, _B_ et _C_, **log** dans la console l'événement de **déconnection**
+
+9. **Déployer** et **éxécuter** la SynApp
+
+    * cliquer sur le bouton de déconnection, l'utilisateur est **déconnecté** et l'événement **Déconnection** est loggé dans la console
+
+    ![Empilement](assets/execute4.png)
+
