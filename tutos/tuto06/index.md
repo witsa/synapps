@@ -561,8 +561,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
     * définir le script de transormation en lecture suivant
          ```javascript
-        return context.value === null ? '@ -': context.value
-        }
+        return context.value === null ? '@ -': context.value;
         ```
         La  fonction retourne '@ -' si le mail n'est pas défini
 
