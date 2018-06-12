@@ -40,7 +40,7 @@ La maitrise de la définition des événements est un élément important de tou
 
 ## Construction de l'ossature de la **scène événements**
 
-Nous allons construire une scène qui contiendra plusieurs acteur qui vont générer des événements. Ces derniers seront loggés dans une console de sortie
+Nous allons construire une scène qui contiendra plusieurs acteurs qui vont générer des événements. Ces derniers seront loggés dans une console de sortie
 
 _Remarque:_ la définition des labels des acteurs est d'autant plus importante avec les événements car ils sont largemment utilisés dans les scripts pour notamment identifier des acteurs
 
@@ -406,7 +406,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
         context.synapp.inspect()
         ```
 
-        ![tools_debug](assets/tools_synapp.png)
+        ![tools_debug](assets/tools_synApp.png)
 
     * **session**: session utilisateur courant
 
@@ -451,7 +451,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
     ```html
     <code><i class="icon-user"></i> {% raw %}{{user}}{% endraw %}</code>
     ```
-    * **compléter** le contenu en créant la propriété additionnele _user_. Vous pouvez également donner des informations additionnelles sur la propriété, comme le nom et la description, dans _Additionnelles > Gestion des propriétés additionnelles_
+    * **compléter** le contenu en créant la propriété additionnelle _user_. Vous pouvez également donner des informations additionnelles sur la propriété, comme le nom et la description, dans _Additionnelles > Gestion des propriétés additionnelles_
     * **lier** la propriété en interne à l'objet _Session > Utilisateur > Nom complet_
 
         ![Empilement](assets/bind_session.png)
