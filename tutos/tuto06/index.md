@@ -34,6 +34,8 @@ La maitrise de la définition des événements est un élément important de tou
 
 ## Prerequis
 
+* Le paramétrage [SynApps_Tutorials.PK4](../config/SynApps_Tutorials.PK4) installé sur le REDY. Il contient les profils utilisateurs, _Administrateur_ et _Installateur_ utilisés dans ce tutorial
+
 * Créer une nouvelle SynApp **tuto06** avec le _MAKER_. Modifier le _label_ de la première scène en <code>sceneEvents</code> et le _nom_ avec <code>scène événements</code> puis déployer
 
 ## Construction de l'ossature de la **scène événements**
@@ -454,6 +456,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
         ![Empilement](assets/bind_session.png)
     * modifier la propriété _Position > Align. vertical_ en <code>Centré</code>
+    * modifier la propriété _Gabarit > Marge > Marge int. droit_ en <code>20px</code>
 
 4. **Sélectionner** l'acteur <code>stackRoot</code> et **ajouter** un acteur enfant de type _Bouton poussoir_
 
@@ -488,9 +491,142 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
     _Remarque:_ ce script, identique que pour les acteurs _A_, _B_ et _C_, **log** dans la console l'événement de **déconnection**
 
-9. **Déployer** et **éxécuter** la SynApp
+9. **Déplacer** l'acteur _Session utilisateur_ en première position sous <code>stackEvents</code>
+
+    ![actors_order](assets/actors_order.png)
+
+10. **Déployer** et **éxécuter** la SynApp
 
     * cliquer sur le bouton de déconnection, l'utilisateur est **déconnecté** et l'événement **Déconnection** est loggé dans la console
 
-    ![Empilement](assets/execute4.png)
+    ![execute4](assets/execute4.png)
+
+    Le composite _Session utilisateur_ est opérationnel mais nous allons le faire évoluer par afficher un "toolTip" contenant le **mail** et le **niveau** de l'utilisateur connecté: _administrateur_, _installateur_, _exploitant_ connecté
+
+11. **Revenir** dans le MAKER et sélectionner le composite _Session utilisateur_
+
+12. **Sélectionner** l'acteur <code>stackRoot</code> et **ajouter** un acteur _modal_
+
+    * renommer le _Label_ avec <code>modalTooltip</code>
+    * déselectionner la propriété _Spécifiques > Griser_
+    * déselectionner la propriété _Spécifiques > Fermer sur clique en dehors_
+    * sélectionner la propriété _Spécifiques > Position horizontale_ sur <code>Gauche</code>
+    * sélectionner la propriété _Spécifiques > Position verticale_ sur <code>Haut</code>
+    * définir la propriété _Spécifiques > Acteur attaché_ sur <code>htmlSession</code>
+    * sélectionner la propriété _Spécifiques > Attachement horizontale_ sur <code>Gauche</code>
+    * sélectionner la propriété _Spécifiques > Attachement verticale_ sur <code>Bas</code>
+    * lier la propriété _Aspect > Police > Taille_ à la propriété _taille_ du composite
+
+        ![bind_size](assets/bind_size.png)
+    * définir les 4 propriétés _Gabarit > Marge > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec <code>50px</code>
+
+    * tester le placement correcte de la modale en sélectionnant la propriété _Spécifiques > Test modale_
+
+        ![bind_size](assets/preview3.png)
+
+13. **Ajouter** un acteur enfant _Texte_
+
+    * renommer le _Label_ avec <code>textTooltip</code>
+    * définir la propriété _Spécifiques > Contenu_
+
+    ```html
+    <span class="glyphicon glyphicon-lock"></span>{% raw %}{{level}}{% endraw %}<br/>{% raw %}{{mail}}{% endraw %}
+    ```
+    * compléter le contenu en créant les propriétés additionnelles proposées _level_ et _mail_. Vous pouvez également donner des informations additionnelles sur ces propriétés, comme les noms et descriptions, dans _Additionnelles > Gestion des propriétés additionnelles_
+
+        ![properties](assets/properties.png)
+
+    * lier la propriété _user_ en interne à l'objet _Session > Niveau_
+    * éditer le script de lecture de la liaison
+            ![properties](assets/script_transform.png)
+    * définir le script de transormation en lecture suivant
+         ```javascript
+        var level = context.value;
+        switch(level) {
+            case 4:
+                return "Administrateur";
+            case 3:
+                return "Installateur";
+            case 2:
+                return "Exploitant";
+            case 1:
+                return "Visiteur";
+            default:
+                return "?";
+        }
+        ```
+        _Remarque:_ la fonction transform le niveau 1, 2, 3 ou 4 de l'utilisateur en texte explicite
+
+    * lier la propriété _mail_ en interne à l'objet _Session > User > Mail_
+
+    * définir le script de transormation en lecture suivant
+         ```javascript
+        return context.value === null ? '@ -': context.value
+        }
+        ```
+        La  fonction retourne '@ -' si le mail n'est pas défini
+
+        _Remarque:_ les fonctions de transformations ont dans leurs **contextes** une propriété supplémentaire _value_ par rapport aux événements. Dans le cas d'un **script de transformation** en:
+        * **lecture**: _context.value_ correspond à la valeur de la propriété de l'objet source. ici le _mail_
+        * **écriture**: _context.value_ correspond à la valeur de la propriété de l'acteur. Ici, elle n'est pas définie car on ne fait que lire la source
+
+        ![composite_inspector2](assets/composite_inspector2.png)
+
+14. **Sélectionner** l'acteur <code>htmlSession</code> pour définir les événements qui vont **afficher** et **cacher** la modale
+
+    * définir l'événement _Ev. "Entrée souris"_ avec la fonction javascript
+
+        ```javascript
+        var modalTooltip = context.synoStage.findByLabel("modalTooltip");
+        modalTooltip.set('isShown', true);
+        ```
+        _Remarque:_ la propriété _isShown_ est le nom interne de la propriété _Afficher_
+        ![prop_isShown](assets/prop_isShown.png)
+
+    * définir l'événement _Ev. "Sortie souris"_ avec la fonction javascript
+
+        ```javascript
+        var modalTooltip = context.synoStage.findByLabel("modalTooltip");
+        modalTooltip.set('isShown', false);
+        ```
+        _Remarque:_ les fonctions ci-dessus sur les 2 événements _Entrée souris_ et _Sortie souris_ sont sensiblement identiques, dans un cas on défini la valeur <code>true</code> et dans l'autre <code>false</code>. Nous aurions pu définir une fonction commune _displayModal(value)_ déclarée dans l'événement _initialisation_ comme pour la fonction log() de _textareaOutput_ et l'appeler depuis les 2 fonctions
+
+15. **Déployer** et **éxécuter** la SynApp
+
+    * survoler le nom de l'utilisateur connecté, niveau et mail sont affichés dans le tooltip
+
+        ![execute6](assets/execute6.png)
+
+    * cliquer sur le bouton de déconnection et connectez-vous avec un compte installateur, _login:_<code>install</code> et _mot de passe:_ <code>.</code>
+
+        ![execute5](assets/execute5.png)
+
+## Que retenir
+
+Vous avez mis en oeuvre un un usage avancé de SynApps: les **événements et fonctions javascripts**
+
+Ils permettent de réaliser des actions impossibles à définir avec l'interface d'édition du MAKER. Cela nécessite quelques connaissances de fonctions javascripts, mais vous l'aurez constaté, avec quelques instructions de base, il est possible de définir des comportements trés évolués.
+
+Le javacript peut être défini dans deux éléments distinctes de SynApps:
+
+* Les **événements** des acteurs
+* Les scripts de **transformation** en lecture et écriture des liaisons
+
+_Remarque:_ pour ces dernierr, lorsqu'une liaison est définie en **lecture** et **écriture**, vers une source de donnée par exemple, toute fonction de **transformation en lecture** doit avoir son **équivalent en écriture**
+
+Vous avez utilisé les **Developer Tools** du navigateur pour:
+
+* **débugger** les scripts définis dans SynApps MAKER,
+* placer des **points d'arrêts** et entrer en mode pas à pas
+* **inspecter** et **interragir** avec des objets: session, acteur, scène, etc
+
+Enfin, vous avez réalisé un composite métier réutilisable, permettant de gérer les sessions utilisateur, mettant en oeuvre plusieurs types d'événements et scripts !
+
+## Conclusion
+
+Le **tutorial 6** sur les événements et fonctions javascripts est **terminé**. Ils sont un usage avancé de SynApps mais pour construire des applications évoluées leurs maitrises devient rapidement indispensable !
+
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+
+[Tutoriel suivant sur les acteurs métiers du REDY](../tuto07/index.md)
 

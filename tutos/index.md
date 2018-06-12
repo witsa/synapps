@@ -19,3 +19,5 @@ Installer ce paramétrage avec le [gestionnaire de projets](../redy/installPK4.m
 4. [Tutorial 4: la navigation](tuto04/index.md)
 
 5. [Tutorial 5: les acteurs composites](tuto05/index.md)
+
+6. [Tutorial 6: les événements et fonctions javascripts](tuto06/index.md)
