@@ -2,4 +2,12 @@
 
 [Home](../sitemap.md) > [REDY](index.md)
 
-_TODO_
+## Chemin de la SynApp
+
+Les configurations des SynApps est déployée sur le REDY dans le chemin:
+
+```TEXT
+:easy.SynApps
+```
+
+![Explorateur](assets/explore.png)
