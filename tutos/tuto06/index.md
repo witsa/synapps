@@ -92,7 +92,7 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
     ![preview](assets/inspector_events2.png)
     * éditer l'événement _Ev. "Click souris"_
     ![preview](assets/inspector_event_click.png)
-    * copier la fonction javascript suivante dans la _zone d'édition_
+    * copier la fonction javascript suivante dans la _zone d'édition_. Elle sera expliquée ci-après
     ```javascript
     var evtName = "Click souris";
     var textareaOutput = context.synoStage.findByLabel('textareaOutput');
@@ -174,7 +174,7 @@ L'objectif est donc de déclarer une fonction _log(...)_ dans l'acteur <code>tex
 * _actor_: l'acteur à l'origine de l'événement
 * _evtName_: le nom de l'événement
 
-_A savoir:_ Les **fonctions doivent être déclarées** dans l'événement _initialisation_ qui est le **premier** événement à s'éxécuter dans le cycle de vie de l'acteur
+_A savoir:_ les **fonctions doivent être déclarées** dans l'événement _initialisation_ qui est le **premier** événement à s'éxécuter dans le cycle de vie de l'acteur
 
 1. **Sélectionner** l'acteur <code>textareaOutput</code> pour déclarer la fonction _log(...)_
 
@@ -253,9 +253,7 @@ _A savoir:_ Les **fonctions doivent être déclarées** dans l'événement _init
 
     _Remarques:_
 
-    * l'événement _Rendu_ apparait en premier car il est éxécuté au moment du rendu des 3 acteurs sur la scène. Cet événement est **appelé à chaque fois que le visuel de l'acteur change**: ici, en l'occurence, il ne change pas et est donc appelé une seule fois par acteur
-
-    VOIR AVEC MANU
+    * l'événement _Rendu_ apparait en premier car il est éxécuté au moment du rendu des 3 acteurs sur la scène
 
     * l'événement _Clic enfoncé_ est généré au moment même ou l'utilisateur clique sur la souris, idem pour _Clic relaché_ au moment du relachement. Ces 2 événements sont toujours suivi de l'événement _Clic souris__. La pluspart du temps, seul ce dernier doit être implémenté
 
