@@ -60,4 +60,4 @@ Nous recommendons fortemment de découvrir SynApps avec les [Tutoriaux](tutos/in
 
 ## A vous de jouer !
 
-Avant de continuer avec les tutoriaux, veuillez **mettre en place l'environnement** dans une première phase d'[installation](install.md)
+Avant de continuer avec les tutoriaux, **mettre en place l'environnement** dans une première phase d'[installation](install.md)
