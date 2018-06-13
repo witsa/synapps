@@ -1,6 +1,6 @@
-[Home](../sitemap.md) > [REDY](index.md)
-
 # Configurer un REDY
+
+[Home](../sitemap.md) > [REDY](index.md)
 
 ## Désactiver le mode Hébergement RIA local
 
@@ -16,4 +16,4 @@ Le RUNTIME de SynApps est embarqué dans le REDY mais prour profiter des derniè
 
 ## Configuration du cross-origin
 
-*TODO*
+### TODO

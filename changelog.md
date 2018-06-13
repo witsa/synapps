@@ -1,6 +1,6 @@
-[Home](sitemap.md)
-
 # Changelog
+
+[Home](sitemap.md)
 
 ## Juin 2018 - version **1.3.9**
 

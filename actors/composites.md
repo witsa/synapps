@@ -1,5 +1,5 @@
-[Home](../sitemap.md) > [Acteurs](index.md)
-
 # Acteurs composites
 
-*TODO*
+[Home](../sitemap.md) > [Acteurs](index.md)
+
+## En cours
