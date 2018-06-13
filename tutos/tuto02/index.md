@@ -4,7 +4,7 @@
 
 ## Objectif
 
-L'objectif de ce tutorial est la réalisation d'une SynApp **opérationnelle** et **connectée** mettant en oeuvre les mécanismes de **liaisons** _internes_, _librairies_ et vers les ressources du REDY. Il permettra d'avoir une **vision d'ensemble** des **concepts importants** autour de SynApps et du Maker
+L'objectif de ce tutorial est la réalisation d'une SynApp **opérationnelle** et **connectée** mettant en oeuvre les mécanismes de **liaisons** _internes_, _librairies_ et vers les ressources du REDY. Il permettra d'avoir une **vision d'ensemble** des **concepts importants** autour de SynApps et du MAKER
 
 ## Parties
 
@@ -28,4 +28,4 @@ Le tutorial se décompose en **6 parties** pour une durée d'environ **1H**
 
 * Après tout déploiement, vous pouvez **éxécuter** la SynApp en mode:
   * *Principal*: une seule fenêtre
-  * *Secondaire*: Runtime & Maker dans deux fenêtre différentes. Ce mode est recommandé surtout avec deux écrans, voir [tutorial 1](../../tutos/index.md) pour plus de détail
+  * *Secondaire*: RUNTIME & MAKER dans deux fenêtre différentes. Ce mode est recommandé surtout avec deux écrans, voir [tutorial 1](../../tutos/index.md) pour plus de détail

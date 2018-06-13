@@ -54,7 +54,7 @@ Le mode **visible** de la _boite à vue_ permet d'adapter les acteurs enfants **
 
     ![Empilement](assets/part3_preview3.png)
 
-5. **Exécuter** la SynApp et modifier la taille du navigateur pour vérifier que l'image s'adapte également en mode **runtime**
+5. **Exécuter** la SynApp et modifier la taille du navigateur pour vérifier que l'image s'adapte également en mode **RUNTIME**
 
     ![Empilement](assets/part3_execute1.png)
 
@@ -80,7 +80,7 @@ Le mode **remplir** de la _boite à vue_ est identique au mode _visible_ except�
 
     ![Empilement](assets/part3_preview4.png)
 
-4. **Exécuter** la SynApp et modifier la taille du navigateur pour vérifier que l'image s'adapte également en mode **runtime**
+4. **Exécuter** la SynApp et modifier la taille du navigateur pour vérifier que l'image s'adapte également en mode **RUNTIME**
 
     ![Empilement](assets/part3_execute2.png)
 

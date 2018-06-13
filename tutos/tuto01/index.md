@@ -12,7 +12,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 
 ### Sélection de l'UTL
 
-1. Ouvrez le Maker
+1. Ouvrez le MAKER
 
     ![Sélection UTL](assets/tuto01device.PNG)
 
@@ -34,9 +34,9 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 Saisir les informations de création dans le formulaire de la SynApp:
 ![Création SynApp](assets/tuto01new.PNG)
 
-### Edition dans le Maker
+### Edition dans le MAKER
 
-L'environnement du Maker ainsi que tous les concepts seront décrits ultérieurement. Pour l'instant nous allons juste ajouter trois acteurs dans la *scene1*:
+L'environnement du MAKER ainsi que tous les concepts seront décrits ultérieurement. Pour l'instant nous allons juste ajouter trois acteurs dans la *scene1*:
 
 1. Cliquer sur **[+]** dans l'onglet acteur en bas à gauche de l'éditeur
 
@@ -76,7 +76,7 @@ La SynApp est déployée sur le REDY dans *:easy.SynApps*
 
 **Attention**: le paramétrage de l'UTL dévra être sauvegardé sinon, en cas de redémarrage, votre SynApp ne sera pas conservée
 
-### Exécution de la SynApp depuis le Maker
+### Exécution de la SynApp depuis le MAKER
 
 Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
@@ -88,7 +88,7 @@ Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
     ![RedyExécuter dans nouvelle fenêtre](assets/tuto01executeOutside.PNG)
 
-    Ce mode est a priviliégier pour faire cohabiter le mode *exécution* et *edition* sur deux écrans différents par exemple. Dans ce cas, à chaque déploiement depuis le *maker*, le mode *exécution* est rafraichi
+    Ce mode est a priviliégier pour faire cohabiter le mode *exécution* et *edition* sur deux écrans différents par exemple. Dans ce cas, à chaque déploiement depuis le *MAKER*, le mode *exécution* est rafraichi
 
 ### Exécution de la SynApp depuis le REDY
 

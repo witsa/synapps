@@ -4,7 +4,7 @@
 
 ## APK
 
-Actuellement, SynApp n'est pas déployé sur le Google Play Store. Vous pouvez tout de même installer le Runtime de SynApps directement avec le fichier `android-armv7-release.apk`
+Actuellement, SynApp n'est pas déployé sur le Google Play Store. Vous pouvez tout de même installer le RUNTIME de SynApps directement avec le fichier `android-armv7-release.apk`
 
 ### Autoriser les sources inconnes
 
@@ -19,5 +19,5 @@ _Remarque:_ lorque l'installation de l'APK est terminée, il est recommandé de 
 Télécharger, voir **équipe SynApps** pour les modalités d'accès, le fichier APK depuis votre terminal ou copier sur votre terminal et suivez les instructions
 
 ```
-\\WIT-FILE\Echange\SynApps\Runtime\android\android-armv7-release.apk
+\\WIT-FILE\Echange\SynApps\RUNTIME\android\android-armv7-release.apk
 ```

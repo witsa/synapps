@@ -170,9 +170,9 @@ Ajout de tooltips sur les polices informant l'utilisateur du rendu des polices g
 
 ### Statistiques d'usages
 
-Ajout de statistiques d'usages de SynApps Maker et Runtime
+Ajout de statistiques d'usages de SynApps MAKER et RUNTIME
 ![Statistiques](changelog/1.3.0/stats.PNG)
-Ces statistiques contiennent notamment des informations concernant les erreurs sur le Maker ou le Runtime. Elles peuvent être désactivées à tout moment depuis le Maker
+Ces statistiques contiennent notamment des informations concernant les erreurs sur le MAKER ou le RUNTIME. Elles peuvent être désactivées à tout moment depuis le MAKER
 
 ### Optimisation des temps de chargement
 
@@ -181,11 +181,11 @@ Les SynApps sont désormais cachées dans le navigateur et ne sont chargées sur
 comparé à celui du numéro de build dans le REDY:
 ![Statistiques](changelog/1.3.0/build2.PNG)
 En cas de différence, la SynApp est complètement rechargée dans le navigateur de l'utilisateur.
-_Remarque:_ si vous modifiez une proriété de la SynApp directement dans le REDY sans passer par le Maker alors vous devez **modifier le numéro de build dans le REDY** pour forcer le rafraichissement de la SynApp.
+_Remarque:_ si vous modifiez une proriété de la SynApp directement dans le REDY sans passer par le MAKER alors vous devez **modifier le numéro de build dans le REDY** pour forcer le rafraichissement de la SynApp.
 
 Les configurations des SynApps sont désormais **gzippées** dans le REDY pour diminuer la quantité de données téléchargées et le temps de chargement.
 
-### Maker
+### MAKER
 
 Fix [Acteur non déplaçable dans la liste #30](https://github.com/witsa/synapps/issues/30).
 Problème corrigé
@@ -193,9 +193,9 @@ Problème corrigé
 Amélioration [Rangement des scènes #29](https://github.com/witsa/synapps/issues/29).
 Les scènes, ainsi que que les composites, peuvent désormais être triés
 
-### Runtime
+### RUNTIME
 
-Fix [Une SynApp sans scène génère une erreur sur le runtime #32](https://github.com/witsa/synapps/issues/32).
+Fix [Une SynApp sans scène génère une erreur sur le RUNTIME #32](https://github.com/witsa/synapps/issues/32).
 Un popup d'erreur indique l'abscence de scène à l'utilisateur
 
 ### Divers

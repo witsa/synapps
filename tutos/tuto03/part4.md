@@ -129,6 +129,6 @@ L'acteur modale doit être utilisé avec discernement, dans le cadre mentionné 
 
 Le **tutorial 3** sur les acteurs _dispositions_ est **terminé**. Certains sont plus utilisés que d'autres mais ils sont tous trés importants car ils savent disposer des acteurs enfants. Ils peuvent bien sur être combinés entre eux afin de construire des applications **ambitieuses adaptées** à tous les types d'écrans
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur la navigation](../tuto04/index.md)

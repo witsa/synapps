@@ -48,7 +48,7 @@ L'éditeur de liaison interne est composé de trois parties principales:
     * **Sélecteur de propriété**: sélectionner la propriété *Couleur premier plan*
     * **Récapitulatif de la liaison**: vérifier la description et cliquer sur **[Lier]** en bas à droite
 ![Résumé liaison interne](assets/bindingInternalEditSummary.png)
-Consulter [description du Maker](../../designer.md) pour en savoir plus concernant l'éditeur de liaison interne
+Consulter [description du MAKER](../../designer.md) pour en savoir plus concernant l'éditeur de liaison interne
 
 3. La propriété *Couleur bordure* de *stackRoot* est désormais liée à la propriété *Couleur premier plan* de *gaugeAnalogic*, vous remarquez:
     * qu'elle **n'est plus modifiable manuellement car liée**

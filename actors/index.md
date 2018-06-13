@@ -9,7 +9,7 @@ Les acteurs peuvent être de 2 types:
 
 [Description des acteurs natifs](natives.md)
 
-* **Composites**: construit par des utilisateurs avancés dans le Maker à partir d'acteurs natifs ou également avec d'autres acteurs composites. Ils permettent d'adresser un besoin de restitution **complexe** ou **métier** qui pourra être **réutilisé** et **partagé** pour d'autres SynApps
+* **Composites**: construit par des utilisateurs avancés dans le MAKER à partir d'acteurs natifs ou également avec d'autres acteurs composites. Ils permettent d'adresser un besoin de restitution **complexe** ou **métier** qui pourra être **réutilisé** et **partagé** pour d'autres SynApps
 
 [Construction, utilisation et partage des acteurs composites](composites.md)
 

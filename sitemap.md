@@ -19,7 +19,7 @@
   1. [Description des acteurs natifs](actors/natives.md)
   2. [Construction, utilisation et partage des acteurs composites](actors/composites.md)
 
-* [Description du Maker](designer.md)
+* [Description du MAKER](designer.md)
 
 * [Concepts de SynApps](concepts/index.md)
 
