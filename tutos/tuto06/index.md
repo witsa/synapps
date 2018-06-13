@@ -3,11 +3,11 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 SynApps est conçu pour construire des applicatinos avec le minimum de connaissances en développement et
-il est tout a fait possible de ne pas à avoir à saisir une seule ligne de javascript pour arriver à un rendu adapté
+il est tout a fait possible de construire des applications sans saisir une seule ligne de javascript pour arriver à un rendu adapté. Cependant, comme nous allons le voir, il est parfois nécessaire d'écrir du code pour des uages plus avancés
 
-Dans les précédents tutoriaux, nous avons commencé à définir des **fonctions de transformations** en lecture sur des liaisons pour adapter un type de valeur source à un type attendu par l'acteur. Exemple: une valeur booléenne <code>true</code> ou <code>false</code> vers une chaine de caractère. Nous reviendrons dans ce tutorial sur les fonctions de transformation en lecture et en écriture de liaison
+Dans les précédents tutoriaux, nous avons déja utilisé quelques instructions javascripts pour définir des **fonctions de transformations** en lecture sur des liaisons et adapter un type de valeur source à un type attendu par l'acteur. Exemple: une valeur booléenne <code>true</code> ou <code>false</code> vers une chaine de caractère. 
 
-Dans l'inspecteur d'acteur, nous avons largemment manipulé les **Propriétés** mais, vous l'avez peut-être aperçu, un autre onglet permet de définir des **Evénements**.
+Nous reviendrons dans ce tutorial sur les fonctions de transformation en lecture et en écriture de liaison, mais au préalable nous allons mettre en oeuvre les **Evénements**. Dans l'inspecteur d'acteur, nous avons largemment manipulé les **Propriétés** mais, vous l'avez peut-être aperçu, un autre onglet permet de définir des evénements
 
 ![inspector_events](assets/inspector_events.png)
 
@@ -588,7 +588,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
         var modalTooltip = context.synoStage.findByLabel("modalTooltip");
         modalTooltip.set('isShown', false);
         ```
-        _Remarque:_ les fonctions ci-dessus sur les 2 événements _Entrée souris_ et _Sortie souris_ sont sensiblement identiques, dans un cas on défini la valeur <code>true</code> et dans l'autre <code>false</code>. Nous aurions pu définir une fonction commune _displayModal(value)_ déclarée dans l'événement _initialisation_ comme pour la fonction log() de _textareaOutput_ et l'appeler depuis les 2 fonctions
+        _Remarque:_ les fonctions ci-dessus sur les 2 événements _Entrée souris_ et _Sortie souris_ sont sensiblement identiques, dans un cas on défini la valeur <code>true</code> et dans l'autre <code>false</code>. Nous aurions également pu définir une fonction commune _displayModal(value)_ déclarée dans l'événement _initialisation_ comme pour la fonction log() de _textareaOutput_ et l'appeler depuis les 2 fonctions
 
 15. **Déployer** et **éxécuter** la SynApp
 
@@ -596,30 +596,30 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
         ![execute6](assets/execute6.png)
 
-    * cliquer sur le bouton de déconnection et connectez-vous avec un compte installateur, _login:_<code>install</code> et _mot de passe:_ <code>.</code>
+    * cliquer sur le bouton de déconnection et connectez-vous avec un compte installateur, _login:_ <code>install</code> et _mot de passe:_ <code>.</code>
 
         ![execute5](assets/execute5.png)
 
 ## Que retenir
 
-Vous avez mis en oeuvre un un usage avancé de SynApps: les **événements et fonctions javascripts**
+Vous avez mis en oeuvre les **événements et fonctions javascripts** qui sont un usage avancé de SynApps
 
-Ils permettent de réaliser des actions impossibles à définir avec l'interface d'édition du MAKER. Cela nécessite quelques connaissances de fonctions javascripts, mais vous l'aurez constaté, avec quelques instructions de base, il est possible de définir des comportements trés évolués.
+Ils permettent de réaliser des actions impossibles à définir avec l'interface d'édition du MAKER. Cela nécessite quelques connaissances de fonctions javascripts, mais vous l'aurez constaté, avec quelques instructions de base, il est rapidement possible de définir des comportements évolués
 
 Le javacript peut être défini dans deux éléments distinctes de SynApps:
 
 * Les **événements** des acteurs
 * Les scripts de **transformation** en lecture et écriture des liaisons
 
-_Remarque:_ pour ces dernierr, lorsqu'une liaison est définie en **lecture** et **écriture**, vers une source de donnée par exemple, toute fonction de **transformation en lecture** doit avoir son **équivalent en écriture**
+_Remarque:_ pour ces dernierr, lorsqu'une liaison est définie en **lecture ET écriture**, vers une source de donnée par exemple, toute fonction de **transformation en lecture** doit avoir son **équivalent en écriture**
 
-Vous avez utilisé les **Developer Tools** du navigateur pour:
+Vous avez utilisé les **Developer Tools** du navigateur **Chrome** pour:
 
 * **débugger** les scripts définis dans SynApps MAKER,
 * placer des **points d'arrêts** et entrer en mode pas à pas
 * **inspecter** et **interragir** avec des objets: session, acteur, scène, etc
 
-Enfin, vous avez réalisé un composite métier réutilisable, permettant de gérer les sessions utilisateur, mettant en oeuvre plusieurs types d'événements et scripts !
+Enfin, vous avez réalisé un composite métier réutilisable: gérant les sessions utilisateur. Pour cela, nous avons mis en oeuvre plusieurs types d'événements et scripts au coeur du composite. L'intégration dans la scène est alors extrêmement simple et peut même être réalisé par un utilisateur sans connaissances avancées dans SynApps notamment sur les _événements_: principe de la **boite noir** et de la **modularité** des composites !
 
 ## Conclusion
 
@@ -628,4 +628,3 @@ Le **tutorial 6** sur les événements et fonctions javascripts est **terminé**
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les acteurs métiers du REDY](../tuto07/index.md)
-
