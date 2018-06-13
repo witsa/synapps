@@ -73,6 +73,7 @@ _Remarque:_ la définition des labels des acteurs est d'autant plus importante a
     * définir la propriété _Aspect > Couleur de fond_ avec la couleur <code>#d6d6d6</code>
     * définir la propriété _Aspect > Police > Style_ avec la sélection <code>Italic</code>
     * définir la propriété _Aspect > Police > Taille_ avec la taille <code>30px</code>
+    * définir la propriété _Gabarit > Largeur_ avec la taille <code>50%</code>
     * modifier les 4 propriétés _Gabarit > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec la taille <code>50px</code>
 
 5. **Vérifier** la _liste des acteurs_ ainsi que la _zone de prévisualisation_
