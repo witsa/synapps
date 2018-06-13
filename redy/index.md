@@ -8,4 +8,4 @@
 
 3. [Installer un projet PK4](installPK4.md)
 
-3. [En savoir plus sur les objets crées dans le REDY](explore.md)
+4. [En savoir plus sur les ressources crées dans l'explorateur REDY](explore.md)

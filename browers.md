@@ -1,12 +1,10 @@
-[Home](sitemap.md)
-
 # Matrice de compatibilité des navigateurs
 
-**en cours...**
+[Home](sitemap.md)
 
 ## Windows toute version
 
-Chrome/Firefox
+Chrome/Firefox/Edge
 
 ## Apple
 
@@ -15,8 +13,3 @@ IOs 10 & Safari 10
 ## Android
 
 Chrome
-
-
-
-
-

@@ -7,6 +7,8 @@
 
 * [Changelog](changelog.md)
 
+* [Compatibilité des versions RUNTIME & MAKER](versions.md)
+
 * [Tutoriaux](tutos/index.md)
   1. [Tutorial 1: première SynApp "Helloworld"](tutos/tuto01/index.md)
   2. [Tutorial 2: les liaisons](tutos/tuto02/index.md)
@@ -20,8 +22,6 @@
   2. [Construction, utilisation et partage des acteurs composites](actors/composites.md)
 
 * [Description du MAKER](designer.md)
-
-* [Concepts de SynApps](concepts/index.md)
 
 * [REDY](redy/index.md)
 1. [Installation des REDY & REDY PC](redy/install.md)

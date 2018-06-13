@@ -44,14 +44,17 @@ _A retenir:_ définir **systématiquement** les images dans des librairies sauf 
 La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie manuellement. Nous allons la publier dans la *librairie couleur* et créer la liaison avec la propriété *Couleur de premier plan* de l'acteur
 
 1. L'acteur *gaugeAnalogic* étant sélectionné, editer la liaison de la propriété *Spécifiques.Couleur de fond* et sélectionner **Librairie**
-![Edition source de données](assets/part6_3.png)
-La modale d'édition des liaisons vers les librairie s'ouvre
+
+    ![Edition source de données](assets/part6_3.png)
+    La modale d'édition des liaisons vers les librairie s'ouvre
 
 2. Description de l'éditeur de liaison des libraries
-![Description liaison  interne](assets/part6_4.png)
-L'éditeur de liaison de *source de données* est composé de trois parties principales:
+
+    ![Description liaison  interne](assets/part6_4.png)
+    L'éditeur de liaison de *source de données* est composé de trois parties principales:
+
     * **Sélecteur de librairie éxistante**: sélectionner un type et lier la propriété de l'acteur à une librairie éxistante
-    
+
     * **Création de nouvelle librairie**: créer un nouvel élément de librairie avec la valeur actuelle de la propriété de l'acteur et lier la propriété de l'acteur
 
     * **Récapitulatif de la liaison**: vérifier la description et cliquer sur **[Lier]** en bas à droite
@@ -59,7 +62,8 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
     Consulter [description du MAKER](../../designer.md) pour en savoir plus concernant l'éditeur de liaison *source de donnée*
 
 3. Dans *Types*, sélectionner *Couleurs*, sélectionner **color1** dans *Nouvel élément*. Changer le *label* pour **colorGauge** puis **[lier]** en bas à droite
-![Résumé liaison librairie](assets/part6_5.png)
+
+    ![Résumé liaison librairie](assets/part6_5.png)
 
 4. La propriété *Couleur premier plan* de *gaugeAnalogic* est désormais liée à la librairie *colorGauge*, vous remarquez:
     * qu'elle **n'est plus modifiable manuellement car liée**
@@ -69,35 +73,39 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 ### Verification des liaisons **librairies**
 
-3. Vérifier la laison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
-![Sélection de la librairie](assets/part6_7.png)
-![Modification de la librairie](assets/part6_8.png)
+1. Vérifier la laison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
 
-4. Revenir sur la scène *scene1* et observer que la couleur est bien appliquée sur les acteurs
+    ![Sélection de la librairie](assets/part6_7.png)
+    ![Modification de la librairie](assets/part6_8.png)
 
-5. Modifier également la couleur dans la **configuration du REDY** avec la valeur **red** en utilisant l'explorateur de nod sur
-```
-:easy.SynApps.Tuto02.Libraries.Color
-```
-![Explorateur de nod](assets/part6_9.png)
+2. Revenir sur la scène *scene1* et observer que la couleur est bien appliquée sur les acteurs
 
-6. Modifier le numéro de _build_ de la SynApp pour forcer son rechargement
+3. Modifier également la couleur dans la **configuration du REDY** avec la valeur **red** en utilisant l'explorateur de nod sur
+
+    ```TEXT
+    :easy.SynApps.Tuto02.Libraries.Color
     ```
-    :easy.SynApps.Tuto02.Build
-    ```
-    ![Build](assets/build.png) 
+    ![Explorateur de nod](assets/part6_9.png)
+
+4. Modifier le numéro de _build_ de la SynApp pour forcer son rechargement
+
+    ```:easy.SynApps.Tuto02.Build```
+
+    ![Build](assets/build.png)
     _Remarque:_ La configuration SynApp est cachée dans le navigateur pour optimiser son temps de chargement. Le numéro de _build_ de la SynApp cachée est comparé à celui stocké sur le REDY. Lorsqu'ils different, la SynApp est rechargée puis cachée dans le navigateur.
 
     A chaque fois que vous modifiez une SynApp depuis le MAKER, le numéro de build change automatiquement. Par contre, si vous **modifiez une des ressources de SynApp directement depuis le REDY**, avec l'explorateur de Nod par exemple, il faut **manuellement modifier le numéro de _build_** pour forcer le rafraichissement de la SynApp dans les MAKER et RUNTIME
 
-7. Revenir sur la scène *scene1* de SynApps, rafraichir (F5) et observer que la couleur est bien appliquée sur les acteurs
-![Explorateur de nod](assets/part6_10.png)
+5. Revenir sur la scène *scene1* de SynApps, rafraichir (F5) et observer que la couleur est bien appliquée sur les acteurs
+
+    ![Explorateur de nod](assets/part6_10.png)
 
 ## Conclusion
 
 Le tutorial 2 est **terminé** ! la SynApp créée est simple mais a permis d'appréhender un des concepts importants de SynApps, les **liaisons**
 
 Sans attendre les prochains tutoriaux, vous pouvez:
+
 * parcourir le MAKER,
 * essayer d'autres acteurs
 

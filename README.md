@@ -1,10 +1,10 @@
+# Home
+
 [Home](sitemap.md)
 
 ![SynApps](assets/LogoSynApps128.png)
 
-# Home
-
-## **SynApps**: tool to **build ambitious apps** for WIT REDY
+## **SynApps**: WIT tool to **build ambitious apps** for **REDY**
 
 1. SynApps est le **nouveau outil** de construction d'applications web connectées au REDY. Il respecte les **standards** du WEB notamment dans sa capacité à s'adapter aux différentes tailles d'écrans et smartphones. Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
 
@@ -44,7 +44,7 @@ Les **modalités commerciales** de SynApps seront précisées en Octobre 2018 à
 
 ## Changelog
 
-Consulter le contenu des différentes versions dans la [changelog](changelog.md). La version actuelle **1.3.9**
+Le contenu des différentes versions de SynApps sont consultables dans la [changelog](changelog.md). La version actuelle **1.3.9**
 
 ## Issues
 
@@ -60,4 +60,4 @@ Nous recommendons fortemment de découvrir SynApps avec les [Tutoriaux](tutos/in
 
 ## A vous de jouer !
 
-Avant de continuer avec les tutoriaux, veuillez **mettre en place l'environnement** avec une première phase d'[installation](install.md)
+Avant de continuer avec les tutoriaux, veuillez **mettre en place l'environnement** dans une première phase d'[installation](install.md)

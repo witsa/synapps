@@ -1,11 +1,12 @@
-[Home](../sitemap.md)
-
 # Acteurs
+
+[Home](../sitemap.md)
 
 ## Types
 
 Les acteurs peuvent être de 2 types:
-* **Natifs**: sont intégrés nativement dans SynApps. Ils constituent les briques de bases à la construction des SynApps et acteurs composites
+
+* **Natifs**: intégrés nativement dans SynApps. Ils constituent les briques de bases à la construction des SynApps et acteurs composites
 
 [Description des acteurs natifs](natives.md)
 
@@ -30,4 +31,3 @@ Les acteurs sont classés par **catégorie** afin de faciliter la recherche:
 5. **Charts**: acteurs permettant de présenter des données sous forme de chart: *jauge*, *répartition*
 
 6. **Autres**: acteurs non classifiables dans les catégories précédentes
-
