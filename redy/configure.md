@@ -4,7 +4,7 @@
 
 ## Désactiver le mode Hébergement RIA local
 
-Le runtime de SynApps est embarqué dans le REDY mais prour profiter des dernières versions, il est recommander de travailler en mode **Cloud RIA** dans la mesure du possible
+Le RUNTIME de SynApps est embarqué dans le REDY mais prour profiter des dernières versions, il est recommander de travailler en mode **Cloud RIA** dans la mesure du possible
 
 1. Ouvrir *Configuration* > *Système*
 

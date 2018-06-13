@@ -109,7 +109,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 ![Résumé liaison source de donnée](assets/bindingDatasourceEdit.png)
 
-Consulter [description du Maker](../../designer.md) pour en savoir plus concernant l'éditeur de liaison *source de donnée*
+Consulter [description du MAKER](../../designer.md) pour en savoir plus concernant l'éditeur de liaison *source de donnée*
 
 Cliquer sur **[lier]** en haut
 

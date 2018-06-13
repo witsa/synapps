@@ -306,6 +306,6 @@ Enfin, vous avez ranger les scènes dans des **dossiers** pour les retrouver plu
 
 Le **tutorial 4** sur les acteurs _navigation_ est **terminé**. La maitrise de la navigation est extrémement importante pour construire des applications ambitieuses !
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les acteurs composites](../tuto05/index.md)

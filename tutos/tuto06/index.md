@@ -280,7 +280,6 @@ La console de log est vite remplie des événements générés. Nous allons ajou
     ```javascript
     var textareaOutput = context.synoStage.findByLabel('textareaOutput');
     textareaOutput.set('value', '');
-    }
     ```
 
     * ligne 2: _textareaOutput.set('value', '')_ remplace le contenu de la console de log par une chaine vide
@@ -304,7 +303,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
 2. **Sélectionner** l'onglet _Sources > Network_ de la console
     ![tools_sources](assets/tools_sources.png)
 
-3. Pour info, le dossier _appria.wit.fr_ contient le runtime du SynApps qui ne peut pas être exploité
+3. Pour info, le dossier _appria.wit.fr_ contient le RUNTIME du SynApps qui ne peut pas être exploité
 
 4. **Ouvrir** le second dossier _synapps-scripts_. Celui-ci nous intéresse car il contient tous les événements implémenté dans la SynApp ! Ils sont classés par nom relativement explicites: _onClick_, _onInit_, _onMouseDown_, _onMouseEnter_, _onMouseLeave_, _onMouseUp_, _onRender_
 
@@ -625,6 +624,6 @@ Enfin, vous avez réalisé un composite métier réutilisable: gérant les sessi
 
 Le **tutorial 6** sur les événements et fonctions javascripts est **terminé**. Ils sont un usage avancé de SynApps mais pour construire des applications évoluées leurs maitrises devient rapidement indispensable !
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les acteurs métiers du REDY](../tuto07/index.md)

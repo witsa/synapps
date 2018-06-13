@@ -56,7 +56,7 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
     * **Récapitulatif de la liaison**: vérifier la description et cliquer sur **[Lier]** en bas à droite
 
-    Consulter [description du Maker](../../designer.md) pour en savoir plus concernant l'éditeur de liaison *source de donnée*
+    Consulter [description du MAKER](../../designer.md) pour en savoir plus concernant l'éditeur de liaison *source de donnée*
 
 3. Dans *Types*, sélectionner *Couleurs*, sélectionner **color1** dans *Nouvel élément*. Changer le *label* pour **colorGauge** puis **[lier]** en bas à droite
 ![Résumé liaison librairie](assets/part6_5.png)
@@ -98,9 +98,9 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 Le tutorial 2 est **terminé** ! la SynApp créée est simple mais a permis d'appréhender un des concepts importants de SynApps, les **liaisons**
 
 Sans attendre les prochains tutoriaux, vous pouvez:
-* parcourir le Maker,
+* parcourir le MAKER,
 * essayer d'autres acteurs
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les acteurs _disposition_](../tuto03/index.md)

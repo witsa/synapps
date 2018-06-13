@@ -574,6 +574,6 @@ Il est important de bien définir le **périmêtre fonctionnel** de chaque compo
 
 L'acteur composite est une fonctionnalité majeure de SynApps et permet de construire un éco-système d'acteurs métiers réutilisables et ainsi priviligier **qualité** et **productivité** !
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps Runtime & Maker sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les événements et fonctions](../tuto06/index.md)

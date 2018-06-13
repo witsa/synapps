@@ -5,24 +5,24 @@
 ## Prerequis
 
 Le minimum pour construire et déployer une SynApp est:
-* un **Maker** qui est l'outil de construction et de déploiement de SynApps
+* un **MAKER** qui est l'outil de construction et de déploiement de SynApps
 * un **REDY** ou un **REDY PC** en version **9.3.1** et **supérieure** sur lequel sera déployé la *SynApp*
 
-### Maker
+### MAKER
 
-Le Maker est l'outil de construction et de déploiement de SynApps. Il est distribué sous la forme de:
+Le MAKER est l'outil de construction et de déploiement de SynApps. Il est distribué sous la forme de:
 
 1. **WebApp** via le cloud WIT: voir **équipe SynApps** pour les modalités d'accès. Voir également la [matrice de compatibilité des navigateurs](browers.md)
 
 2. Executable **Windows** avec un installeur:
 ```
-\\WIT-FILE\Echange\SynApps\Maker\win32\SynApps-X.X.X Setup.exe
+\\WIT-FILE\Echange\SynApps\MAKER\win32\SynApps-X.X.X Setup.exe
 ```
-_Remarque:_ des versions **Mac** et **Linux** du maker seront également disponibles ultérieurement
+_Remarque:_ des versions **Mac** et **Linux** du MAKER seront également disponibles ultérieurement
 
-### Runtime
+### RUNTIME
 
-1. **WebApp** idem maker
+1. **WebApp** idem MAKER
 
 2. **Android** vous pouvez acceder à vos SynApps depuis un terminal _Android_ [installer SynApps sur Android](install/android.md)
 
@@ -51,12 +51,12 @@ Attention: **NE PAS DEPLOYER** cette version sur un site de production
 
 ### Désactiver le mode RIA local
 
-Les versions de SynApps **évoluent régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *runtime Synapps* depuis le cloud RIA
+Les versions de SynApps **évoluent régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *RUNTIME Synapps* depuis le cloud RIA
 
 [Désactiver le mode *Hébergement RIA local* du REDY](redy/configure.md)
 
 ## Etapes suivantes
 
-Vous avez le **Maker** de *SynApps* (Windows ou cloud RIA) et un **REDY PC** (ou REDY) compatible avec SynApps **>=9.31**, nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le REDY en suivant le _Tutorial 1_: **première SynApp “Helloworld”** !
+Vous avez le **MAKER** de *SynApps* (Windows ou cloud RIA) et un **REDY PC** (ou REDY) compatible avec SynApps **>=9.31**, nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le REDY en suivant le _Tutorial 1_: **première SynApp “Helloworld”** !
 
 [Tutoriaux](tutos/index.md)

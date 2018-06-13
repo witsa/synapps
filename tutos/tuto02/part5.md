@@ -74,6 +74,6 @@ Vérifier que tout fonctionne comme attendu:
 * les liaisons vers *TrueStr*, *FalseStr* sont en *mode initialisation* et donc leurs changement de valeur ne sont pas rafraichies sur l'acteur *commutateur bouton*.
 Le rafrachissement de SynApps (F5) force la réinitialisation de l'acteur, les changements sont alors pris en compte
 
-**Repasser en mode Maker**
+**Repasser en mode MAKER**
 
 Suite du [tutorial](part6.md)

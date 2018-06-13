@@ -4,48 +4,60 @@
 
 # Home
 
-## SynApps is WIT App builder for REDY
+## **SynApps**: tool to **build ambitious apps** for WIT REDY
 
-1. Cette version constitue la première version « **publique interne** », cad utilisable par tout le **monde WIT**
+1. SynApps est le **nouveau outil** de construction d'applications web connectées au REDY. Il respecte les **standards** du WEB notamment dans sa capacité à s'adapter aux différentes tailles d'écrans et smartphones. Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
 
-2. Elle est constituée de 2 web apps: 
-    * un **maker**: outil de *construction* et de *déploiement*
-    * un **runtime**: app d'exécution des SynApps
+2. Les utilisateurs ciblés par les applications générées par SynApps sont **tous les occupants** du batiment équipés par nos gammes d'UTL REDY (et pas seulement les responsables d'exploitation): SynApps s'inscrit dans une démarche **Smart Building** et à pour ambition de répondre à ces **nouveaux usages**
 
-3. SynApps est désormais officiellement supporté et nous assurons notamment la pérennité des SynApps créées dans les UTLs
+3. SynApps est constitué de 2 web apps distinctes:
+    * Le **MAKER**: outil de *construction* et de *déploiement*
+    * Le **RUNTIME**: app d'exécution des SynApps
+
+4. SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à Octobre 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions.
+
+    _Attention:_ **aucune SynApp ne doit être déployé en production sur site** sans en informer WIT: nous vous invitons à **contacter notre support** pour toute question relative à ce sujet
 
 ## Modes de déploiement
 
-Les modes de distributions des maker et runtime sont essentiellement Web sur notre cloud « RIA » ainsi qu’embarqué dans le REDY concernant le runtime uniquement
+A ce jour, les modes de distributions des MAKER et RUNTIME sont Web sur notre cloud « RIA » ainsi qu’embarqué dans le REDY concernant le RUNTIME uniquement
 
-**A titre expérimental**, nous avons également déployé des versions hybrides (= WebApp embarquée dans natif) opérationnelles sur Windows et Android
+A terme, **SynApps MAKER** sera distribué sous la forme d'un éxécutable, avec installeur, sur les principales plateformes desktop, notamment _Windows_, _Mac_ et _Linux_ et ne sera plus accessible via notre cloud. La raison principale étant de donner un accès aux *ressources* locales: dossiers, images
 
-Ces modes de distributions présentent de nombreux avantages:
+De même, **SynApps RUNTIME** sera probablement distribué, en plus des modes: embarqué dans le REDY + cloud, pour les plateformes, _Windows_, _Android_ et _IOS_, sous la forme d'une application **hybride** (= WebApp embarquée dans natif). L'objectif étant de mieux maitriser l'environnement d'éxécution  et notamment la **compatibilité** sur des systèmes et navigateurs plus anciens ainsi que de proposer Synapps dans les store googlePlay et appStore
 
-* environnements d’exécutions * **compatibilité** sur des systèmes et navigateurs plus anciens
-* accès aux **ressources** du device
-* déploiement simplifié dans un **store**
-
-| Mode                            | Maker | Runtime |
+| Mode                            | MAKER | RUNTIME |
 |---------------------------------|-------|---------|
-| Web cloud                       |  [x]  |   [x]   |
+| Web cloud RIA                   |  [x]  |   [x]   |
 | Web embarqué dans REDY          |  [ ]  |   [x]   |
 | Windows                         |  [x]  |   [x]   |
+| Linux                           |  [x]  |   [x]   |
+| Mac                             |  [x]  |   [x]   |
 | Android (APK)                   |  [ ]  |   [x]   |
 | IOS                             |  [ ]  |   [x]   |
 
 ## Distributions
 
-Actuellement **Maker** et **Runtime** sont distribués uniquement en interne
+Actuellement **MAKER** et **RUNTIME** sont distribués uniquement en interne. Vous pouvez nous contacter si vous souhaitez participer à la phase de BETA PREVIEW
+
+Les **modalités commerciales** de SynApps seront précisées en Octobre 2018 à l'issue de la phase d'évaluation
 
 ## Changelog
 
-Version actuelle **1.3.9**
+Consulter le contenu des différentes versions dans la [changelog](changelog.md). La version actuelle **1.3.9**
 
-Consulter la [changelog](changelog.md)
+## Issues
 
-## Etapes suivantes
+Les **bugs** relevés, **questions** ou **demandes d'évolutions** doivent remonter via le [gestionnaire d'issues GitHub](https://github.com/witsa/synapps/issues). Il est d'un accès simple et permet notamment d'être notifié, suivre l'évolution des issues, et partager auprès des autres utilisateurs
 
-* [Installation](install.md)
-* [Tutoriaux](tutos/index.md)
-* [Plan du site](sitemap.md)
+Essayer d'être le plus **exhaustif** possible et communiquer, quand c'est possible, étapes de reproduction d'un bug, copies d'écrans et description détaillée !
+
+Dans un second temps, vous pouvez également contacter le **support** WIT
+
+## Tutoriaux
+
+Nous recommendons fortemment de découvrir SynApps avec les [Tutoriaux](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriaux proposés vous aurez une **vision avancée** de Synapps et serez à même de réaliser des **applications** webs évoluées pour **toutes les plateformes**
+
+## A vous de jouer !
+
+Avant de continuer avec les tutoriaux, veuillez **mettre en place l'environnement** avec une première phase d'[installation](install.md)
