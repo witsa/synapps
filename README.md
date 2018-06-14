@@ -14,7 +14,7 @@
     * Le **MAKER**: outil de *construction* et de *déploiement*
     * Le **RUNTIME**: app d'exécution des SynApps
 
-4. SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à Octobre 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions.
+4. SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à Octobre 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
 
     _Attention:_ **aucune SynApp ne doit être déployé en production sur site** sans en informer WIT: nous vous invitons à **contacter notre support** pour toute question relative à ce sujet
 
@@ -24,17 +24,18 @@ A ce jour, les modes de distributions des MAKER et RUNTIME sont Web sur notre cl
 
 A terme, **SynApps MAKER** sera distribué sous la forme d'un éxécutable, avec installeur, sur les principales plateformes desktop, notamment _Windows_, _Mac_ et _Linux_ et ne sera plus accessible via notre cloud. La raison principale étant de donner un accès aux *ressources* locales: dossiers, images
 
-De même, **SynApps RUNTIME** sera probablement distribué, en plus des modes: embarqué dans le REDY + cloud, pour les plateformes, _Windows_, _Android_ et _IOS_, sous la forme d'une application **hybride** (= WebApp embarquée dans natif). L'objectif étant de mieux maitriser l'environnement d'éxécution  et notamment la **compatibilité** sur des systèmes et navigateurs plus anciens ainsi que de proposer Synapps dans les store googlePlay et appStore
+De même, **SynApps RUNTIME**  sera également distribué pour les plateformes, _Windows_, _Android_ et _IOS_, sous la forme d'une application **hybride** (= WebApp embarquée dans natif) installée ou déployée dans les stores _Google Play_, _App Store_ et _Windows_
 
-| Mode                            | MAKER | RUNTIME |
-|---------------------------------|-------|---------|
-| Web cloud RIA                   |  [x]  |   [x]   |
-| Web embarqué dans REDY          |  [ ]  |   [x]   |
-| Windows                         |  [x]  |   [x]   |
-| Linux                           |  [x]  |   [x]   |
-| Mac                             |  [x]  |   [x]   |
-| Android (APK)                   |  [ ]  |   [x]   |
-| IOS                             |  [ ]  |   [x]   |
+| Mode                            | MAKER | RUNTIME |  DISPONIBILITE   |
+|---------------------------------|-------|---------|------------------|
+| Web cloud RIA                   |  [x]  |   [x]   | Oui              |
+| Web embarqué dans REDY          |  [ ]  |   [x]   | Oui              |
+| Windows                         |  [x]  |   [x]   | Octobre 2018     |
+| Linux                           |  [x]  |   [x]   | Date non définie |
+| Mac                             |  [x]  |   [x]   | Date non définie |
+| Android (APK: fichier installé) |  [ ]  |   [x]   | Fin 2018         |
+| Android (Store)                 |  [ ]  |   [x]   | Date non définie |
+| IOS (Store)                     |  [ ]  |   [x]   | Date non définie |
 
 ## Distributions
 
@@ -56,8 +57,8 @@ Dans un second temps, vous pouvez également contacter le **support** WIT
 
 ## Tutoriaux
 
-Nous recommendons fortemment de découvrir SynApps avec les [Tutoriaux](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriaux proposés vous aurez une **vision avancée** de Synapps et serez à même de réaliser des **applications** webs évoluées pour **toutes les plateformes**
+Nous recommendons fortemment de découvrir SynApps avec les [tutoriaux](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriaux proposés vous aurez une **vision avancée** de SynApps et serez à même de réaliser des **applications** webs évoluées **multi-plateformes**
 
 ## A vous de jouer !
 
-Avant de continuer avec les tutoriaux, **mettre en place l'environnement** dans une première phase d'[installation](install.md)
+Mais au préalable: [installer l'environnement](install.md)
