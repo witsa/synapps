@@ -8,7 +8,7 @@ Le minimum pour construire et déployer une SynApp est:
 
 * Le **MAKER** qui est l'outil de construction et de déploiement de SynApps
 
-* Un **REDY** ou un **REDY PC** en version **9.3.1** et **supérieure** sur lequel sera déployé la *SynApp*
+* Un **REDY** ou un **REDY PC** en version **9.5.1** et **supérieure** sur lequel sera déployé la *SynApp*
 
 ## MAKER
 
@@ -18,7 +18,7 @@ Le MAKER est l'outil de construction et de déploiement de SynApps. Il est distr
 
 2. Executable **Windows** avec un installeur:
 
-    La version **Windows** de SynApps MAKER est programmée en octobre 2018
+    La version **Windows** de SynApps MAKER est programmée pour octobre 2018
 
 ## RUNTIME
 
@@ -28,8 +28,8 @@ Le MAKER est l'outil de construction et de déploiement de SynApps. Il est distr
 
 ## REDY PC
 
-Dans un premier temps, nous suggérons d'utiliser un REDY PC. Vous pouvez-récupérer la dernière version sur le site WIT
-[Téléchargement REDY PC](https://www.wit.fr/?page_id=14117&download-info=redy-pc)
+Dans un premier temps, nous suggérons d'utiliser un REDY PC. Vous pouvez-récupérer la dernière version dans la zone téléchargement du site WIT:
+[télécharger REDY PC](https://www.wit.fr/?page_id=14117&download-info=redy-pc)
 
 Procédure détaillée pour [installer un REDY PC](redy/install.md)
 
@@ -47,7 +47,7 @@ Procédure détaillée pour [mettre à jour le .K4PCK d'un REDY](redy/install.md
 
 ## Mode RIA local
 
-Les versions de SynApps **évoluent régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *RUNTIME Synapps* depuis le cloud RIA
+Les versions de SynApps **évoluent régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *RUNTIME SynApps* depuis le cloud RIA
 
 [Désactiver le mode *Hébergement RIA local* du REDY](redy/configure.md)
 

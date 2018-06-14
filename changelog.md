@@ -160,7 +160,7 @@ Modification de l'acteur IFrame pour permettre de définir des urls composées �
 
 Fix [Symbole € #22](https://github.com/witsa/synapps/issues/22).
 Les caractères spéciaux sont désormais correctement encodés. Ex: €.
-_Remarque:_ les Synapps avec des caractères spéciaux déployées en version 1.2.1 et inférieure devront être modifiées en 1.3.0
+_Remarque:_ les SynApps avec des caractères spéciaux déployées en version 1.2.1 et inférieure devront être modifiées en 1.3.0
 
 ### Polices génériques
 
