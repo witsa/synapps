@@ -54,6 +54,7 @@ _Remarque:_ la définition des labels des acteurs est d'autant plus importante a
     * renommer le _Label_ avec <code>stackEvents</code>
     * réinitialiser la propriété _Gabarit > Largeur_ avec la taille <code>[vide]</code>
     * définir la propriété _Position > Align. vertical_ en <code>Etendre</code>
+    * définir la propriété _Position > Align. horizontal_ en <code>Etendre</code>
     * définir la propriété _Aspect > Police > Taille_ avec la taille <code>50px</code>
 
 3. **Ajouter** un acteur enfant de type **_texte_** qui sera le premier acteur à générer des événements
