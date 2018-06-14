@@ -6,23 +6,24 @@
 
 ## **SynApps**: construisez des apps **multiplateformes** avec le **REDY**
 
-1. SynApps est le **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB de manière à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones. Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
+SynApps est le **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB de manière à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones. Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
 
 ![SynApps](assets/WHomeApp.gif)
 
-2. Les utilisateurs ciblés par les applications générées par SynApps sont **tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'UTLs REDY: SynApps s'inscrit dans une démarche **Smart Building** et à pour ambition de répondre à ces **nouveaux usages**
+Les utilisateurs ciblés par les applications générées par SynApps sont **tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'UTLs REDY: SynApps s'inscrit dans une démarche **Smart Building** et à pour ambition de répondre à ces **nouveaux usages**
 
-3. SynApps est constitué de 2 web apps distinctes:
-    * Le **MAKER**: outil de *construction* et de *déploiement*
-    * Le **RUNTIME**: app d'exécution des SynApps
+SynApps est constitué de 2 web apps distinctes:
 
-4. SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à Octobre 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
+* Le **MAKER**: outil de *construction* et de *déploiement*
+* Le **RUNTIME**: app d'exécution des SynApps
 
-    _Attention:_ **aucune SynApp ne doit être déployée en production sur site** sans en informer WIT: nous vous invitons à **contacter notre support** pour toute question relative à ce sujet
+SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à Octobre 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
+
+_Attention:_ **aucune SynApp ne doit être déployée en production sur site** sans en informer WIT: nous vous invitons à **contacter notre support** pour toute question relative à ce sujet
 
 ## Modes de déploiement
 
-A ce jour, le **MAKER** et le **RUNTIME** sont des applications Web hébergées sur notre cloud « RIA ». Seul le **RUNTIME** est embarqué dans le REDY.
+A ce jour, **MAKER** et le **RUNTIME** sont des applications Web hébergées sur notre cloud « RIA ». Seul le **RUNTIME** est embarqué dans le REDY.
 
 A terme, **SynApps MAKER** sera distribué sous la forme d'un éxécutable, avec installeur, sur les principales plateformes desktop, notamment _Windows_, _Mac_ et _Linux_ et ne sera plus accessible via notre cloud. La raison principale étant de donner un accès aux *ressources* locales: dossiers, images.
 

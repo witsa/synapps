@@ -25,7 +25,7 @@ Les librairies sont classifiées en trois **catégories**:
 Tout élément d'une librairie est stocké dans le REDY dans un **nod dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc
 ![Paramètres de la ressource](assets/part6_2.png)
 
-Cela implique également qu'une méthode simple pour venir éditer un élément de configuration de Synapps depuis le REDY est de sortir ce contenu de l'acteur dans une *librairie*: _texte_, _couleur_, _valeur numérique_, _etc_
+Cela implique également qu'une méthode simple pour venir éditer un élément de configuration de SynApps depuis le REDY est de sortir ce contenu de l'acteur dans une *librairie*: _texte_, _couleur_, _valeur numérique_, _etc_
 
 [En savoir plus sur les objets crées dans le REDY](../../redy/explore.md)
 
