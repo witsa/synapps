@@ -4,11 +4,11 @@
 
 ![SynApps](assets/LogoSynApps128.png)
 
-## **SynApps**: construisez des apps **multiplateformes** pour le **REDY**
+## **SynApps**: construisez des apps **multiplateformes** avec le **REDY**
 
-1. SynApps est le **nouvel outil** de construction d'applications web pour le REDY. Il respecte les **standards** du WEB de manière à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones. Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
+1. SynApps est le **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB de manière à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones. Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
 
-2. Les utilisateurs ciblés par les applications générées par SynApps sont **tous les occupants** du bâtiment équipés par nos gammes d'UTL REDY (et pas seulement les responsables d'exploitation): SynApps s'inscrit dans une démarche **Smart Building** et à pour ambition de répondre à ces **nouveaux usages**
+2. Les utilisateurs ciblés par les applications générées par SynApps sont **tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'UTLs REDY: SynApps s'inscrit dans une démarche **Smart Building** et à pour ambition de répondre à ces **nouveaux usages**
 
 3. SynApps est constitué de 2 web apps distinctes:
     * Le **MAKER**: outil de *construction* et de *déploiement*
