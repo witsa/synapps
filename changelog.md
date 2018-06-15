@@ -4,6 +4,15 @@
 
 ## Juin 2018 - version **1.3.9**
 
+### Logo des SynApps mis à jour non persisté [issue 202](https://github.com/witsa/synapps/issues/202)
+
+Le Logo mis à jour sur la SynApp ne semblait pas déployé dans le REDY. En fait le problème était lié au cache du navigateur. Un fix a été mis en place en attendant une amélioration des directives de cache du REDY
+
+### Amélioration du suivi du contexte des erreurs [issue 201](https://github.com/witsa/synapps/issues/201)
+
+En cas d'erreur dans le _SynApps MAKER_, le contexte d'appel a été ajouté en dessous du **message technique** pour aider à l'identification du problème
+![errors_oups](./assets/errors_oups.png)
+
 ### Permettre le nettoyage du cache navigateur [issue 154](https://github.com/witsa/synapps/issues/154)
 
 Ajout d'un **bouton de nettoyage du cache** à côté du numéro de build dans l'administration de la SynApp afin de **forcer** le prochain chargement des SynApps depuis le REDY
