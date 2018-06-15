@@ -23,11 +23,11 @@ _Attention:_ **aucune SynApp ne doit être déployée en production sur site** s
 
 ## Modes de déploiement
 
-A ce jour, **MAKER** et le **RUNTIME** sont des applications Web hébergées sur notre cloud « RIA ». Seul le **RUNTIME** est embarqué dans le REDY.
+A ce jour, **MAKER** et le **RUNTIME** sont des applications Web hébergées sur notre cloud « RIA ». Seul le **RUNTIME** est embarqué dans le REDY
 
-A terme, **SynApps MAKER** sera distribué sous la forme d'un éxécutable, avec installeur, sur les principales plateformes desktop, notamment _Windows_, _Mac_ et _Linux_ et ne sera plus accessible via notre cloud. La raison principale étant de donner un accès aux *ressources* locales: dossiers, images.
+A terme, **SynApps MAKER** sera distribué sous la forme d'un éxécutable, avec installeur, sur les principales plateformes desktop, notamment _Windows_, _Mac_ et _Linux_ et ne sera plus accessible via notre cloud. La raison principale étant de donner un accès aux *ressources* locales: dossiers, images
 
-De même, **SynApps RUNTIME**  sera également distribué pour les plateformes, _Windows_, _Android_ et _IOS_, sous la forme d'une application **hybride** (= WebApp embarquée dans natif) installée ou déployée dans les stores _Google Play_, _App Store_ et _Windows_
+De même, **SynApps RUNTIME** sera également distribué pour les plateformes, _Windows_, _Android_ et _IOS_, sous la forme d'une application **hybride** (= WebApp embarquée dans natif) installée ou déployée dans les stores _Google Play_, _App Store_ et _Windows_
 
 | Mode                            | MAKER | RUNTIME |  DISPONIBILITE   |
 |---------------------------------|-------|---------|------------------|
@@ -44,13 +44,13 @@ De même, **SynApps RUNTIME**  sera également distribué pour les plateformes, 
 
 Actuellement **MAKER** et **RUNTIME** sont distribués uniquement en interne. Vous pouvez nous contacter si vous souhaitez participer à la phase de `BETA PREVIEW`.
 
-Les **modalités commerciales** de SynApps seront précisées en Octobre 2018 à l'issue de la phase d'évaluation.
+Les **modalités commerciales** de SynApps seront précisées en Octobre 2018 à l'issue de la phase d'évaluation
 
-## Propriété et confidentialité des données
+## Propriété et confidentialité
 
 Toutes les SynApps produites sont déployées sur vos REDY/REDY-PC et toutes les données produites via SynApps MAKER restent donc **votre propriété**
 
-_Remarque:_ pendant la phase de `BETA PREVIEW` nous envoyons des statistiques d'**usages** ainsi que bugs éventuels de SynApps MAKER sur la plateforme _Google Analytics_ afin de nous aider à améliorer le produit. Ces statistiques ne contiennent **en aucune manière** les configurations de vos SynApp ou infos provenant de vos UTLs
+_Remarque:_ pendant la phase de `BETA PREVIEW` nous envoyons des statistiques d'**usages** ainsi que bugs éventuels de SynApps MAKER sur la plateforme _Google Analytics_ afin de nous aider à améliorer le produit. Ces statistiques ne contiennent **en aucune manière** les configurations de vos SynApps ou infos provenant de vos UTLs
 
 ## Changelog
 
@@ -62,7 +62,7 @@ Les **bugs** relevés, **questions** ou **demandes d'évolutions** doivent remon
 
 Essayer d'être le plus **exhaustif** possible et communiquer, quand c'est possible, étapes de reproduction d'un bug, copies d'écrans et description détaillée!
 
-Dans un second temps, vous pouvez également contacter le **support** WIT.
+Dans un second temps, vous pouvez également contacter le **support** WIT
 
 ## Tutoriaux
 
