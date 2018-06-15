@@ -4,7 +4,7 @@
 
 ## Chemin de la SynApp
 
-Les configurations des SynApps est déployée sur le REDY dans le chemin:
+Les paramétrages des SynApps sont déployés sur le REDY dans le chemin:
 
 ```TEXT
 :easy.SynApps
