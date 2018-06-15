@@ -46,6 +46,12 @@ Actuellement **MAKER** et **RUNTIME** sont distribués uniquement en interne. Vo
 
 Les **modalités commerciales** de SynApps seront précisées en Octobre 2018 à l'issue de la phase d'évaluation.
 
+## Propriété
+
+Toutes les SynApps produites sont déployées sur vos REDY/REDY-PC et toutes les données produites via SynApps MAKER restent donc **votre propriété**
+
+_Remarque:_ pendant la phase de `BETA PREVIEW` nous envoyons des statistiques d'**usages** ainsi que bugs éventuels de SynApps MAKER sur la plateforme _Google Analytics_ afin de nous aider à améliorer le produit. Ces statistiques ne contiennent **en aucune manière** les configurations de vos SynApp ou infos provenant de vos UTLs
+
 ## Changelog
 
 Le contenu des différentes versions de SynApps sont consultables dans la [changelog](changelog.md). La version actuelle `1.3.9`
