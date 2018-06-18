@@ -12,11 +12,11 @@ La SynApp sera constituée d'une seule scène avec un acteur disposition de type
 
 2. Par défaut, le *label* de l'acteur est *stack1*. Cliquer sur le bouton d'édition du *label* dans l'*inspecteur* d'acteur
 
-![Editer le Label](assets/editLabel.png)
+![Editer le Label](assets/editLabel2.png)
 
  et le renommer avec un nom plus explicite: *stackRoot*
 
-![Changer le label](assets/changeLabel.png)
+![Changer le label](assets/changeLabel2.png)
 
 *Remarque:* il est vivement conseillé de modifier systématiquement les *labels* afin de leurs donner un nom **explicite** et **définitif**. Les *labels* sont en effet utilisés dans différents sections de SynApps: *scripts*, *liaisons* et en cas de renommage, la SynApp pourrait ne plus fonctionner correctement
 
