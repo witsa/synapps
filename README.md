@@ -48,9 +48,9 @@ Les **modalités commerciales** de SynApps seront précisées en Octobre 2018 à
 
 ## Propriété et confidentialité
 
-Toutes les SynApps produites sont déployées sur vos REDY/REDY-PC et toutes les données produites via SynApps MAKER restent donc **votre propriété**
+Toutes les SynApps sont déployées sur vos REDY/REDY-PC, les données produites via SynApps MAKER restent donc **votre propriété**
 
-_Remarque:_ pendant la phase de `BETA PREVIEW` nous envoyons des statistiques d'**usages** ainsi que bugs éventuels de SynApps MAKER sur la plateforme _Google Analytics_ afin de nous aider à améliorer le produit. Ces statistiques ne contiennent **en aucune manière** les configurations de vos SynApps ou infos provenant de vos UTLs
+_Remarque:_ pendant la phase de `BETA PREVIEW` nous envoyons des statistiques d'**usages** ainsi que bugs de SynApps MAKER sur la plateforme _Google Analytics_ afin de nous aider à améliorer le produit. Ces statistiques ne contiennent **en aucune manière** les configurations de vos SynApps ou infos provenant de vos UTLs
 
 ## Changelog
 
