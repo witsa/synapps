@@ -144,31 +144,36 @@ Revenir sur la scène *scene1* et observer les mouvements de la jauge toutes les
 ### Définition des autres liaisons aux **sources de données**
 
 1. De la même manière, lier la propriété additionnelle *Spécifiques.Max* de l'acteur *gaugeAnalogic* à la propriété *Valeur* du chemin *WMax* du contexte en *mode initialisation*. *WMax* peut changer dans le REDY mais il est largemment acceptable de ne récupérer sa valeur qu'à l'initialisation
-![Edition liaison vers Max](assets/bindingDatasourceEditMax.png)
+
+    ![Edition liaison vers Max](assets/bindingDatasourceEditMax.png)
 
 2. Lier la propriété additionnelle *Spécifiques.nom* de l'acteur *textTop* à la propriété *Valeur* du chemin *Title* du contexte en *mode initialisation*
-![Edition liaison vers Title](assets/bindingDatasourceEditTitle.png)
+
+    ![Edition liaison vers Title](assets/bindingDatasourceEditTitle.png)
 
 3. Lier la propriété additionnelle *Spécifiques.unit* de l'acteur *textTop* à la propriété *Valeur* du chemin *Unit* du contexte en *mode initialisation*
-![Edition liaison vers Unit](assets/bindingDatasourceEditUnit.png)
+
+    ![Edition liaison vers Unit](assets/bindingDatasourceEditUnit.png)
 
 Toutes les liaisons des **sources de données** sont désormais définies
 
 ### Vérification des liaisons **sources de données**
 
 Vérifier que tout fonctionne comme attendu: connectez-vous sur le REDY et modifier le paramétrage de la ressource:
-```
+
+```TEXT
 :easy.RESS.R00001.R00002
 ```
+
 * Modifier le nom de la ressource
 
-![Vérification liaison interne](assets/redyIdentity.png)
+![Vérification liaison interne](assets/redyIdentity2.png)
 
 * Passer en mode *Forcé manuel*
 * Modifier le Seuil maximum à *120*
 * Modifier la Valeur à plusieurs reprises en validant: *30, 110, 50, etc*
 
- ![Vérification liaison interne](assets/redyForced.png)
+ ![Vérification liaison interne](assets/redyForced2.png)
 La zone de prévisuallisation doit restituer les changements sur l'ensemble des acteurs
 
 Observer le résultat dans SynApp. La zone de prévisualisation doit restituer les changements sur la resource du REDY
@@ -176,6 +181,7 @@ Observer le résultat dans SynApp. La zone de prévisualisation doit restituer l
 ![Vérification liaison source de donnée](assets/bindingDatasourceCheck2.png)
 
 *Remarques:*
+
 * les liaisons vers *WMax*, *Unit* et *Title* sont en *mode initialisation* et donc ne devraient, en théorie, pas être rafraichies mais juste chargées à l'initialisation de l'acteur. Cependant la source de donnée *dsR00002* récupère la valeur *Output* en *mode rafraichie*. A cette occasion, la ressource complète est récupérée et donc automatiquement appliquée sur toutes les liaisons la concernant quelquesoit le mode défini
 
 * le mode **initialisation** est donc juste une indication de **non nécessité de rafraichissement** mais ne préjuge en aucun cas du moment ou les propriétés de l'acteur seront rafraichies
