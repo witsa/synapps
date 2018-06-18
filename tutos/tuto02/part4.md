@@ -17,57 +17,64 @@ De la même façon que pour les liaisons *internes*, nous pourrions définir la 
 De façon général, il est conseillé de systématiquement definir la **source de donnée au niveau d'un acteur**. Dans ce cas, on parle de la **source de donnée principale** de l'acteur. Rien n'empéchera dans une propriété particulière de l'acteur d'aller chercher une autre source mais, dans la majorité des cas, une acteur et ses éventuels enfants sont liés à une seule ressource
 
 Un *source de donnée* peut être vu comme une **passerelle de communication** entre SynApp et le REDY:
+
 * Elle sait **requeter** et **envoyer** des données de et vers l'UTL
 * Elle a **connaissance** de tous les **acteurs** qui dépendent de cette donnée et les **notifie** de tous les changements
 
 Actuellement un seul **type** de *source de donnée* est disponible: le **WOS** mais ultérieurement le catalogue devrait s'élargir avec d'**autres types de source de données**, soit provenant du **REDY** mais aussi d'**autres services ou plateformes externes**.
-Exemple: un service de fourniture de données météo, le WIT-DataCenter (+1), etc
+Exemple: un service de fourniture de données météo, le WIT-DataCenter, etc
 
 Certains acteurs **natifs** vont chercher directement des données autres que celles provenant du *WOS*. Par exemple, l'acteur *journal* mais dans ce cas il n'est pas nécessaire de définir la *source de donnée* car les mécanismes d'accès à ces données sont directement implémentés dans SynApps au sein de l'acteur
 
 ### Définition source de donnée de l'acteur
 
 1. L'acteur *stackRoot* étant sélectionné, ouvrir l'onglet *source de données* et cliquer sur le bouton d'édition
-![Création liaison source de données](assets/actorDatasource.png)
+
+    ![Création liaison source de données](assets/actorDatasource.png)
 
 2. Définir une nouvelle **source de donnée**, l'éditeur de permet de:
-  * **sélectionner** une *source de donnée* éxistante
-  * **définir** une nouvelle *source de donnée*
+
+    * **sélectionner** une *source de donnée* éxistante
+    * **définir** une nouvelle *source de donnée*
 
 3. Actuellement aucune *source de donnée* n'est définie. Cliquer sur le bouton **[+Créer]** à côté du type de source souhaité: **WOS** ... le seul disponible à ce jour (voir remarques ci-dessus)
-![Sélecteur source de données](assets/datasourceExplorerDesc.png)
-L'explorateur des ressources du REDY s'ouvre sur le chemin par défaut:
-```
-:easy.RESS
-```
-![Sélectionner nod](assets/selectNod.png)
+
+    ![Sélecteur source de données](assets/datasourceExplorerDesc.png)
+    L'explorateur des ressources du REDY s'ouvre sur le chemin par défaut:
+    ```TEXT
+    :easy.RESS
+    ```
+    ![Sélectionner nod](assets/selectNod.png)
 
 4. Sélectionner le dossier de ressource **R00001** *Tutorial2*
-![Sélectionner R00001](assets/selectNod2.png)
+
+    ![Sélectionner R00001](assets/selectNod2.png)
 
 5. Sélectionner la variable analogique **R00002** *VariableAnalogicTuto*
-![Sélectionner R00002](assets/selectNod3.png)
-La variable analogique *VariableAnalogicTuto* a pour chemin
-```
-:easy.RESS.R00001.R00002
-```
+
+    ![Sélectionner R00002](assets/selectNod3.png)
+    La variable analogique *VariableAnalogicTuto* a pour chemin
+    ```TEXT
+    :easy.RESS.R00001.R00002
+    ```
 
 6. Cliquer sur **[Créer]** pour créer la *source de donnée*:
     * La source de donnée **dsR00002** est créée et également définie comme la *source de donnée* **principale** de l'acteur *stackRoot*
     * Le *label* par défaut d'une *source de donnée* est construit par concaténation des caractères **ds** + le **label** du nod
 
 7. La propriété *Source* de l'acteur *stackRoot* est désormais définie sur **dsR00002**
-![Sélectionner R00002](assets/actorDatasource2.png)
+
+    ![Sélectionner R00002](assets/actorDatasource2.png)
     * Remarquer également la propriété **Contexte** est *variableAnalogiqueTuto* *:easy.RESS.R00001.R00002*
     * Le **contexte** est la **donnée principale** de l'acteur. Il faut bien distinguer la différence entre **source de donnée** et **contexte**:
         * **source de donnée** = moyen d'accès à une donnée
         * **contexte** = donnée retournée par une source
-    
+
     En fait, la relation entre *contexte* et *source de donnée* n'est pas forcemment si directe mais cela sort du périmêtre de ce tuto. Pour l'instant, juste retenir que les laisons de type *source de donnée* des propriétés d'un acteur sont en fait définies par défaut par rapport au **contexte** de cet acteur
 
 8. La source de donnée principale de l'acteur *stackRoot* est définie. Sélectionner, tour à tour, les trois acteurs enfants et constater:
 * ils partagent tous le même *contexte*
-* leurs source sont *Contexte parent* **stackRoot** 
+* leurs source sont *Contexte parent* **stackRoot**
 
     Exemple pour l'acteur jauge *gaugeAnalogic*
 ![contexte de gaugeAnalogic](assets/actorDatasource3.png)
@@ -82,7 +89,8 @@ La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie ma
 ![Création liaison source de données](assets/editBindingDatasource.png)
 
 2. Configurer la liaison
-![Description liaison  interne](assets/bindingDatasourceExplorerDesc.png)
+
+    ![Description liaison  interne](assets/bindingDatasourceExplorerDesc.png)
 L'éditeur de liaison de *source de données* est composé de trois parties principales:
 
 * **Source de données**:
