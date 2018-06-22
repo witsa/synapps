@@ -4,7 +4,7 @@
 
 ## Prérequis
 
-Tous les tutoriaux sont basés sur un même paramétrage [SynApps_Tutorials.PK4](config/SynApps_Tutorials.PK4) de REDY
+Tous les tutoriaux sont basés sur un même paramétrage [SynApps_Tutorials.BK4](config/SynApps_Tutorials.BK4) de REDY
 
 Installer ce paramétrage avec le [gestionnaire de projets](../redy/installPK4.md) du REDY
 
@@ -21,3 +21,5 @@ Installer ce paramétrage avec le [gestionnaire de projets](../redy/installPK4.m
 5. [Tutorial 5: les acteurs composites](tuto05/index.md)
 
 6. [Tutorial 6: les événements et fonctions javascripts](tuto06/index.md)
+
+7. [Tutorial 7: les acteurs métiers natifs du REDY](tuto07/index.md)

@@ -16,6 +16,7 @@
   4. [Tutorial 4: la navigation](tutos/tuto04/index.md)
   5. [Tutorial 5: les acteurs composites](tutos/tuto05/index.md)
   6. [Tutorial 6: les événements et fonctions javascripts](tutos/tuto06/index.md)
+  7. [Tutorial 7: les acteurs métiers natifs du REDY](tutos/tuto07/index.md)
 
 * [Acteurs](actors/index.md)
   1. [Description des acteurs natifs](actors/natives.md)

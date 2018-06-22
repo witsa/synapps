@@ -2,10 +2,9 @@
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-SynApps est conçu pour construire des applicatinos avec le minimum de connaissances en développement et
-il est tout a fait possible de construire des applications sans saisir une seule ligne de javascript pour arriver à un rendu adapté. Cependant, comme nous allons le voir, il est parfois nécessaire d'écrir du code pour des uages plus avancés
+SynApps est conçu pour construire des applications avec le minimum de connaissances en développement et un rendu adapté est possible sans saisir une seule ligne de javascript. Cependant, comme nous allons le voir, il est parfois nécessaire d'écrire du code pour des usages plus avancés
 
-Dans les précédents tutoriaux, nous avons déja utilisé quelques instructions javascripts pour définir des **fonctions de transformations** en lecture sur des liaisons et adapter un type de valeur source à un type attendu par l'acteur. Exemple: une valeur booléenne <code>true</code> ou <code>false</code> vers une chaine de caractère. 
+Dans les précédents tutoriaux, nous avons déja utilisé quelques instructions javascripts pour définir des **fonctions de transformations** en lecture sur des liaisons et ainsi adapter un type de valeur source à un type attendu par l'acteur. Exemple: une valeur booléenne ```true``` ou ```false``` vers une chaine de caractère
 
 Nous reviendrons dans ce tutorial sur les fonctions de transformation en lecture et en écriture de liaison, mais au préalable nous allons mettre en oeuvre les **Evénements**. Dans l'inspecteur d'acteur, nous avons largemment manipulé les **Propriétés** mais, vous l'avez peut-être aperçu, un autre onglet permet de définir des evénements
 
@@ -34,9 +33,9 @@ La maitrise de la définition des événements est un élément important de tou
 
 ## Prerequis
 
-* Le paramétrage [SynApps_Tutorials.PK4](../config/SynApps_Tutorials.PK4) installé sur le REDY. Il contient les profils utilisateurs, _Administrateur_ et _Installateur_ utilisés dans ce tutorial
+* Le paramétrage [SynApps_Tutorials.BK4](../config/SynApps_Tutorials.BK4) installé sur le REDY. Il contient les profils utilisateurs, _Administrateur_ et _Installateur_ utilisés dans ce tutorial
 
-* Créer une nouvelle SynApp **tuto06** avec le _MAKER_. Modifier le _label_ de la première scène en <code>sceneEvents</code> et le _nom_ avec <code>scène événements</code> puis déployer
+* Créer une nouvelle SynApp **tuto06** avec le _MAKER_. Modifier le _label_ de la première scène en ```sceneEvents``` et le _nom_ avec ```scène événements``` puis déployer
 
 ## Construction de l'ossature de la **scène événements**
 
@@ -46,36 +45,36 @@ _Remarque:_ la définition des labels des acteurs est d'autant plus importante a
 
 1. **Définir** l'acteur principal avec un acteur _empilement_
 
-    * renommer le _Label_ avec <code>stackRoot</code>
-    * modifier la propriété _Spécifiques > Orientation_ en <code>Horizontal</code>
+    * renommer le _Label_ avec ```stackRoot```
+    * modifier la propriété _Spécifiques > Orientation_ en ```Horizontal```
 
 2. **Ajouter** un acteur enfant de type **_empilement_** qui contiendra les acteurs qui vont générer des événements
 
-    * renommer le _Label_ avec <code>stackEvents</code>
-    * réinitialiser la propriété _Gabarit > Largeur_ avec la taille <code>[vide]</code>
-    * définir la propriété _Position > Align. vertical_ en <code>Etendre</code>
-    * définir la propriété _Position > Align. horizontal_ en <code>Etendre</code>
-    * définir la propriété _Aspect > Police > Taille_ avec la taille <code>50px</code>
+    * renommer le _Label_ avec ```stackEvents```
+    * réinitialiser la propriété _Gabarit > Largeur_ avec la taille ```[vide]```
+    * définir la propriété _Position > Align. vertical_ en ```Etendre```
+    * définir la propriété _Position > Align. horizontal_ en ```Etendre```
+    * définir la propriété _Aspect > Police > Taille_ avec la taille ```50px```
 
 3. **Ajouter** un acteur enfant de type **_texte_** qui sera le premier acteur à générer des événements
 
-    * renommer le _Label_ avec <code>textActorA</code>
-    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Acteur A</code>
-    * modifier la propriété _Aspect > Couleur de fond_ avec la couleur <code>#009fe3</code>
-    * modifier la propriété _Aspect > Couleur_ avec la couleur <code>#ffffff</code>
-    * modifier les 2 propriétés _Position > Align. vertical_, _Position > Align. horizontal_ en <code>Centré</code>
-    * modifier les 4 propriétés _Gabarit > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec la taille <code>50px</code>
+    * renommer le _Label_ avec ```textActorA```
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte ```Acteur A```
+    * modifier la propriété _Aspect > Couleur de fond_ avec la couleur ```#009fe3```
+    * modifier la propriété _Aspect > Couleur_ avec la couleur ```#ffffff```
+    * modifier les 2 propriétés _Position > Align. vertical_, _Position > Align. horizontal_ en ```Centré```
+    * modifier les 4 propriétés _Gabarit > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec la taille ```50px```
 
-4. **Sélectionner** l'acteur <code>stackRoot</code> et **ajouter** un acteur enfant de type _Zone de texte_ (dans la catégorie **Intéractions** de l'_explorateur d'acteurs_) qui jouera le rôle de console de sortie des événements
+4. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur enfant de type _Zone de texte_ (dans la catégorie **Intéractions** de l'_explorateur d'acteurs_) qui jouera le rôle de console de sortie des événements
 
-    * renommer le _Label_ avec <code>textareaOutput</code>
-    * réinitialiser la propriété _Spécifiques > Valeur_ avec le texte <code>[Vide]</code>
-    * définir la propriété _Spécifiques > Texte d'aide_ avec le texte <code>Console des événements</code>
-    * définir la propriété _Aspect > Couleur de fond_ avec la couleur <code>#d6d6d6</code>
-    * définir la propriété _Aspect > Police > Style_ avec la sélection <code>Italic</code>
-    * définir la propriété _Aspect > Police > Taille_ avec la taille <code>30px</code>
-    * définir la propriété _Gabarit > Largeur_ avec la taille <code>50%</code>
-    * modifier les 4 propriétés _Gabarit > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec la taille <code>50px</code>
+    * renommer le _Label_ avec ```textareaOutput```
+    * réinitialiser la propriété _Spécifiques > Valeur_ avec le texte ```[Vide]```
+    * définir la propriété _Spécifiques > Texte d'aide_ avec le texte ```Console des événements```
+    * définir la propriété _Aspect > Couleur de fond_ avec la couleur ```#d6d6d6```
+    * définir la propriété _Aspect > Police > Style_ avec la sélection ```Italic```
+    * définir la propriété _Aspect > Police > Taille_ avec la taille ```30px```
+    * définir la propriété _Gabarit > Largeur_ avec la taille ```50%```
+    * modifier les 4 propriétés _Gabarit > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec la taille ```50px```
 
 5. **Vérifier** la _liste des acteurs_ ainsi que la _zone de prévisualisation_
 
@@ -86,7 +85,7 @@ _Remarque:_ la définition des labels des acteurs est d'autant plus importante a
 
 Nous allons définir un premier événement _click_ sur l'acteur A et le logger dans la console
 
-1. **Sélectionner** l'acteur <code>textActorA</code>
+1. **Sélectionner** l'acteur ```textActorA```
 
     * cliquer dans l'onglet _Evénements_ de l'_inspecteur d'acteur_
     * cliquer sur _commun_ pour ouvrir la liste des événemnts
@@ -121,9 +120,9 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
         ```javascript
         var textareaOutput = context.synoStage.findByLabel('textareaOutput');
         ```
-        L'instruction _contexte.synotage_ retourne la scène courante <code>sceneEvents</code> de l'acteur à l'origine de l'événement
+        L'instruction _contexte.synotage_ retourne la scène courante ```sceneEvents``` de l'acteur à l'origine de l'événement
 
-        La fonction _findByLabel(...)_ retourne l'acteur avec le label <code>textareaOutput</code> dans la scène
+        La fonction _findByLabel(...)_ retourne l'acteur avec le label ```textareaOutput``` dans la scène
 
         la variable _textareaOutput_ contient donc l'acteur du même nom
 
@@ -132,9 +131,9 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
         ```javascript
         var output = textareaOutput.get('value');
         ```
-        La fonction _get(...)_ retourne la valeur de la propriété <code>value</code> de l'acteur <code>textareaOutput</code>
+        La fonction _get(...)_ retourne la valeur de la propriété ```value``` de l'acteur ```textareaOutput```
 
-        _Remarque:_ la propriété <code>value</code> correspond à la propriété _Spécifiques > Valeur_ dans l'_inspecteur d'acteur_. En effet, toutes les propriétés ont un nom **intelligible** pour l'utilisateur du MAKER et un nom **interne** (en anglais) utilisé dans les scripts. Pour connaître le nom interne d'une propriété, il suffit de survoler le bouton de liaison de la propriété comme ci-dessous
+        _Remarque:_ la propriété ```value``` correspond à la propriété _Spécifiques > Valeur_ dans l'_inspecteur d'acteur_. En effet, toutes les propriétés ont un nom **intelligible** pour l'utilisateur du MAKER et un nom **interne** (en anglais) utilisé dans les scripts. Pour connaître le nom interne d'une propriété, il suffit de survoler le bouton de liaison de la propriété comme ci-dessous
 
         ![property_name](assets/property_name.png)
 
@@ -144,9 +143,9 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
         var newOutput = context.target.get('content') + ' > '+ evtName + "\n" + currentOutput;
         ```
 
-        L'instruction _context.target_ retourne l'acteur à l'origine de l'événement <code>textActorA</code>
+        L'instruction _context.target_ retourne l'acteur à l'origine de l'événement ```textActorA```
 
-        La fonction _get('content')_ retourne la valeur de la propriété <code>Contenu</code> de l'acteur <code>textActorA</code>, soit <code>Actor A</code>
+        La fonction _get('content')_ retourne la valeur de la propriété ```Contenu``` de l'acteur ```textActorA```, soit ```Actor A```
 
         ![property_name2](assets/property_name2.png)
 
@@ -158,7 +157,7 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
         textareaOutput.set("value", newOutput);
         ```
 
-        La fonction _set(...)_ modifie la valeur de la propriété <code>value</code> de l'acteur <code>textareaOutput</code> qui prend la valeur de _newOutput_, soit <code>Actor A > Click souris\n...</code>
+        La fonction _set(...)_ modifie la valeur de la propriété ```value``` de l'acteur ```textareaOutput``` qui prend la valeur de _newOutput_, soit ```Actor A > Click souris\n...```
 
 ## Généralisation du log sur autres événements et acteurs
 
@@ -170,14 +169,14 @@ var evtName = "XXXX"; // Remplacer XXXX par le nom de l'événement
 
 Mais cela n'est pas vraiment maintenable: la moindre modification devrait être reproduite sur toutes les implémentations des événements
 
-L'objectif est donc de déclarer une fonction _log(...)_ dans l'acteur <code>textareaOutput</code> et appeler cette fonction depuis tous les événements de l'acteur <code>textActorA</code>. Cette fonction prendra 2 paramêtres:
+L'objectif est donc de déclarer une fonction _log(...)_ dans l'acteur ```textareaOutput``` et appeler cette fonction depuis tous les événements de l'acteur ```textActorA```. Cette fonction prendra 2 paramêtres:
 
 * _actor_: l'acteur à l'origine de l'événement
 * _evtName_: le nom de l'événement
 
 _A savoir:_ les **fonctions doivent être déclarées** dans l'événement _initialisation_ qui est le **premier** événement à s'éxécuter dans le cycle de vie de l'acteur
 
-1. **Sélectionner** l'acteur <code>textareaOutput</code> pour déclarer la fonction _log(...)_
+1. **Sélectionner** l'acteur ```textareaOutput``` pour déclarer la fonction _log(...)_
 
     * Editer l'événement _Commun > Ev. "initialisation"_
 
@@ -201,11 +200,11 @@ _A savoir:_ les **fonctions doivent être déclarées** dans l'événement _init
         }
         ```
 
-        L'instruction _context.target.log = function ..._ permet de définir une fonction _log(...)_ qui est définie sur l'acteur courant, _context.target_, <code>textareaOutput</code>
+        L'instruction _context.target.log = function ..._ permet de définir une fonction _log(...)_ qui est définie sur l'acteur courant, _context.target_, ```textareaOutput```
 
         La fonction a été adaptée par rapport à la définition précédente et prend en paramêtre _actor_ et _evtName_ respectivement l'acteur à l'origine de l'événement et le nom de l'événement
 
-2. **Sélectionner** l'acteur <code>textActorA</code> pour modifier l'événement _Clic souris_ et appeler la fonction _log()_
+2. **Sélectionner** l'acteur ```textActorA``` pour modifier l'événement _Clic souris_ et appeler la fonction _log()_
 
     * Editer l'événement _Commun > Ev. "Click souris"_ et remplacer avec le javascript suivant
 
@@ -223,7 +222,7 @@ _A savoir:_ les **fonctions doivent être déclarées** dans l'événement _init
 
 3. **Déployer**, **éxécuter** et **cliquer** sur _Acteur A_, pour vérifier que la console log toujours l'événement
 
-4. **Sélectionner** l'acteur <code>textActorA</code> pour implémenter les autres événements
+4. **Sélectionner** l'acteur ```textActorA``` pour implémenter les autres événements
 
     * copier le javascript suivant
 
@@ -232,21 +231,21 @@ _A savoir:_ les **fonctions doivent être déclarées** dans l'événement _init
         textareaOutput.log(context.target, "XXX");
         ```
 
-    * éditer l'événement _Commun > Ev. "Rendu"_ et coller le javascript copier ci-dessus en remplaçant la chaine de caractère <code>XXX</code> par <code>Rendu</code>
+    * éditer l'événement _Commun > Ev. "Rendu"_ et coller le javascript copier ci-dessus en remplaçant la chaine de caractère ```XXX``` par ```Rendu```
 
     * reproduire l'opération ci-dessus pour les événements _Ev. "Entrée souris"_, _Ev. "Sortie souris"_, _Ev. "Clic enfoncé"_, _Ev. "Clic relaché"_
 
-5. **Cloner** l'acteur <code>textActorA</code>
+5. **Cloner** l'acteur ```textActorA```
 
-    * renommer le _Label_ avec <code>textActorB</code>
-    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Actor B</code>
-    * modifier la propriété _Aspect > Couleur de fond_ avec la couleur <code>#9400d3</code>
+    * renommer le _Label_ avec ```textActorB```
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte ```Actor B```
+    * modifier la propriété _Aspect > Couleur de fond_ avec la couleur ```#9400d3```
 
-6. **Cloner** l'acteur <code>textActorB</code>
+6. **Cloner** l'acteur ```textActorB```
 
-    * renommer le _Label_ avec <code>textActorC</code>
-    * modifier la propriété _Spécifiques > Contenu_ avec le texte <code>Actor C</code>
-    * modifier la propriété _Aspect > Couleur de fond_ avec la couleur <code>#ff8000</code>
+    * renommer le _Label_ avec ```textActorC```
+    * modifier la propriété _Spécifiques > Contenu_ avec le texte ```Actor C```
+    * modifier la propriété _Aspect > Couleur de fond_ avec la couleur ```#ff8000```
 
 7. **Déployer**, **éxécuter** et **intéragir** avec les acteurs _Acteur A, B et C_, pour vérifier que la console log tous les événements implémentés: _Rendu_, _Entrée souris_, _Sortie souris_,  _Clic enfoncé_, _Clic relaché_ et _Clic souris_
 
@@ -262,20 +261,20 @@ _A savoir:_ les **fonctions doivent être déclarées** dans l'événement _init
 
 La console de log est vite remplie des événements générés. Nous allons ajouter un bouton de nettoyage qui videra le contenu de la console
 
-1. **Revenir** sur le MAKER et **sélectionner** l'acteur <code>stackRoot</code>
+1. **Revenir** sur le MAKER et **sélectionner** l'acteur ```stackRoot```
 
 2. **Ajouter** un acteur _Bouton poussoir_
 
-    * renommer le _Label_ avec <code>buttonPushClear</code>
+    * renommer le _Label_ avec ```buttonPushClear```
     * modifier la propriété _Spécifiques > Contenu_ avec le HTML
     ```html
     <span class="glyphicon glyphicon-erase" aria-hidden="true"></span>
     ```
     _Remarque:_ ce code restitue une image de type gomme provenant de la librairie bootstrap
 
-    * modifier la propriété _Spécifiques > Couleur model_ avec la sélection <code>Danger</code>
-    * modifier la propriété _Aspect > Police > Taille_ avec la taille <code>50px</code>
-    * modifier la propriété _Position > Align. vertical_ avec la position <code>Haut</code>
+    * modifier la propriété _Spécifiques > Couleur model_ avec la sélection ```Danger```
+    * modifier la propriété _Aspect > Police > Taille_ avec la taille ```50px```
+    * modifier la propriété _Position > Align. vertical_ avec la position ```Haut```
     * éditer l'événement _Commun > Ev. "Clic souris"_ avec le javascript
     ```javascript
     var textareaOutput = context.synoStage.findByLabel('textareaOutput');
@@ -309,18 +308,18 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
 
     ![tools_events](assets/tools_events.png)
 
-5. **Ouvrir**  le dossier des événements _onInit_ qui contien la fonction javascript implémenté par l'événement _Ev. "Initialisation"_ de l'acteur <code>textareaOutput</code>
+5. **Ouvrir**  le dossier des événements _onInit_ qui contien la fonction javascript implémenté par l'événement _Ev. "Initialisation"_ de l'acteur ```textareaOutput```
 
     ![tools_js](assets/tools_js.png)
 
     _Remarque:_ une SynApp peut avoir beaucoup de scripts définis dans plusieurs acteurs et scènes. Un formalisme est donc défini afin d'**identifier rapidement le script recherché**:
 
-    Dans <code>actor-textarea-textareaOutput-sceneEvents.js</code>
+    Dans ```actor-textarea-textareaOutput-sceneEvents.js```
 
-    * <code>actor</code> signifie que le script est associé à un objet de type acteur
-    * <code>textarea</code> correspond au type _zone de texte_ de l'acteur (en anglais)
-    * <code>textareaOutput</code> correspond au label de l'objet
-    * <code>sceneEvents</code> correspond à la scène de l'objet
+    * ```actor``` signifie que le script est associé à un objet de type acteur
+    * ```textarea``` correspond au type _zone de texte_ de l'acteur (en anglais)
+    * ```textareaOutput``` correspond au label de l'objet
+    * ```sceneEvents``` correspond à la scène de l'objet
 
 6. **Ouvrir** le dossier des événements _onClick_ qui contien les 4 fonctions javascript implémenté par l'événement _Ev. "Clic souris"_ dans la scène
 
@@ -328,7 +327,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
 
     Le **formalisme de nommage** des évènements permet d'**identifier aisemment** les 4 fonctions et les acteurs auquelles elles se rapportent
 
-7. **Sélectionner** la fonction javascript <code>actor-buttonPush-buttonPushClear-sceneEvents.js</code>. Son contenu s'affiche dans la zone centrale
+7. **Sélectionner** la fonction javascript ```actor-buttonPush-buttonPushClear-sceneEvents.js```. Son contenu s'affiche dans la zone centrale
 
     ![tools_fxclick](assets/tools_fxclick.png)
 
@@ -377,7 +376,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
     textareaOutput.inspect()
     ```
 
-    La fonction _inspect()_ permet de visualiser la totalité des valeurs des propriétés d'un objet de SynApps. Ici l'acteur <code>textareaOutput</code>
+    La fonction _inspect()_ permet de visualiser la totalité des valeurs des propriétés d'un objet de SynApps. Ici l'acteur ```textareaOutput```
 
     ![tools_debug](assets/tools_inspect.png)
 
@@ -425,46 +424,46 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
 1. **Sélectionner** l'onglet _Composites_ et **créer** un nouveau composite
 
-    * modifier le _label_ du composite en <code>sessionLogger</code> et le _nom_ avec <code>Session utilisateur</code>
-    * modifier la _description_ du composite en <code>Affiche l'utilisateur connecté et permet la déconnexion</code>
-    * modifier la _catégorie_ du composite avec la sélection <code>Métier</code>
+    * modifier le _label_ du composite en ```sessionLogger``` et le _nom_ avec ```Session utilisateur```
+    * modifier la _description_ du composite en ```Affiche l'utilisateur connecté et permet la déconnexion```
+    * modifier la _catégorie_ du composite avec la sélection ```Métier```
     * Récupérer l'image ci-dessous
 
         ![Empilement](assets/logo_logOff.png)
     * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Logo_
-    * modifier la propriété _Aspect > Police > Taille_ en <code>40px</code>
-    * modifier la propriété _Position > Align. vertical_ en <code>Auto</code>
+    * modifier la propriété _Aspect > Police > Taille_ en ```40px```
+    * modifier la propriété _Position > Align. vertical_ en ```Auto```
 
         ![Empilement](assets/composite_inspector.png)
 
 2. **Définir** l'acteur principal avec un acteur _empilement_
 
-    * renommer le _label_ en <code>stackRoot</code>
-    * modifier la propriété _Spécifiques > Orientation_ en <code>Horizontal</code>
-    * modifier la propriété _Position > Align. vertical_ en <code>Auto</code>
+    * renommer le _label_ en ```stackRoot```
+    * modifier la propriété _Spécifiques > Orientation_ en ```Horizontal```
+    * modifier la propriété _Position > Align. vertical_ en ```Auto```
 
 3. **Ajouter** un acteur enfant de type _html_
 
-    * renommer le _Label_ avec <code>htmlSession</code>
+    * renommer le _Label_ avec ```htmlSession```
     * modifier la propriété _Spécifiques > Contenu_ en 
     ```html
-    <code><i class="icon-user"></i> {% raw %}{{user}}{% endraw %}</code>
+    <i class="icon-user"></i> {% raw %}{{user}}{% endraw %}
     ```
     * **compléter** le contenu en créant la propriété additionnelle _user_. Vous pouvez également donner des informations additionnelles sur la propriété, comme le nom et la description, dans _Additionnelles > Gestion des propriétés additionnelles_
     * **lier** la propriété en interne à l'objet _Session > Utilisateur > Nom complet_
 
         ![Empilement](assets/bind_session.png)
-    * modifier la propriété _Position > Align. vertical_ en <code>Centré</code>
-    * modifier la propriété _Gabarit > Marge > Marge int. droit_ en <code>20px</code>
+    * modifier la propriété _Position > Align. vertical_ en ```Centré```
+    * modifier la propriété _Gabarit > Marge > Marge int. droit_ en ```20px```
 
-4. **Sélectionner** l'acteur <code>stackRoot</code> et **ajouter** un acteur enfant de type _Bouton poussoir_
+4. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur enfant de type _Bouton poussoir_
 
-    * renommer le _Label_ avec <code>buttonLogOff</code>
+    * renommer le _Label_ avec ```buttonLogOff```
     * modifier la propriété _Spécifiques > Contenu_ en 
     ```html
-    <code><i class="icon-off"></i></code>
+    <i class="icon-off"></i>
     ```
-    * modifier la propriété _Position > Align. horizontal_ en <code>Droite</code>
+    * modifier la propriété _Position > Align. horizontal_ en ```Droite```
     * définir l'événement _Commun > Ev. "Clic souris"_
     ```javascript
     context.session.logOff();
@@ -474,14 +473,14 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 5. **Vérifier** le composite _Session utilisateur_ dans la _zone de prévisualisation_
     ![Empilement](assets/preview2.png)
 
-6. **Sélectionner** la scène <code>Scène événements</code>
+6. **Sélectionner** la scène ```Scène événements```
 
-7. **Sélectionner** l'acteur <code>stackEvents</code>
+7. **Sélectionner** l'acteur ```stackEvents```
 
 8. **Ajouter** l'acteur composite créé _Session utilisateur_
 
-    * modifier la propriété _Position > Align. horizontal_ en <code>Centré</code>
-    * réinitialiser la propriété _Gabarit > Hauteur_ à <code>[Vide]</code>
+    * modifier la propriété _Position > Align. horizontal_ en ```Centré```
+    * réinitialiser la propriété _Gabarit > Hauteur_ à ```[Vide]```
     * définir l'événement _Commun > Ev. "Clic souris"_
     ```javascript
     var textareaOutput = context.synoStage.findByLabel('textareaOutput');
@@ -490,7 +489,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
     _Remarque:_ ce script, identique que pour les acteurs _A_, _B_ et _C_, **log** dans la console l'événement de **déconnection**
 
-9. **Déplacer** l'acteur _Session utilisateur_ en première position sous <code>stackEvents</code>
+9. **Déplacer** l'acteur _Session utilisateur_ en première position sous ```stackEvents```
 
     ![actors_order](assets/actors_order.png)
 
@@ -504,20 +503,20 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
 11. **Revenir** dans le MAKER et sélectionner le composite _Session utilisateur_
 
-12. **Sélectionner** l'acteur <code>stackRoot</code> et **ajouter** un acteur _modal_
+12. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur _modal_
 
-    * renommer le _Label_ avec <code>modalTooltip</code>
+    * renommer le _Label_ avec ```modalTooltip```
     * déselectionner la propriété _Spécifiques > Griser_
     * déselectionner la propriété _Spécifiques > Fermer sur clique en dehors_
-    * sélectionner la propriété _Spécifiques > Position horizontale_ sur <code>Gauche</code>
-    * sélectionner la propriété _Spécifiques > Position verticale_ sur <code>Haut</code>
-    * définir la propriété _Spécifiques > Acteur attaché_ sur <code>htmlSession</code>
-    * sélectionner la propriété _Spécifiques > Attachement horizontale_ sur <code>Gauche</code>
-    * sélectionner la propriété _Spécifiques > Attachement verticale_ sur <code>Bas</code>
+    * sélectionner la propriété _Spécifiques > Position horizontale_ sur ```Gauche```
+    * sélectionner la propriété _Spécifiques > Position verticale_ sur ```Haut```
+    * définir la propriété _Spécifiques > Acteur attaché_ sur ```htmlSession```
+    * sélectionner la propriété _Spécifiques > Attachement horizontale_ sur ```Gauche```
+    * sélectionner la propriété _Spécifiques > Attachement verticale_ sur ```Bas```
     * lier la propriété _Aspect > Police > Taille_ à la propriété _taille_ du composite
 
         ![bind_size](assets/bind_size.png)
-    * définir les 4 propriétés _Gabarit > Marge > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec <code>50px</code>
+    * définir les 4 propriétés _Gabarit > Marge > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec ```50px```
 
     * tester le placement correcte de la modale en sélectionnant la propriété _Spécifiques > Test modale_
 
@@ -525,7 +524,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
 13. **Ajouter** un acteur enfant _Texte_
 
-    * renommer le _Label_ avec <code>textTooltip</code>
+    * renommer le _Label_ avec ```textTooltip```
     * définir la propriété _Spécifiques > Contenu_
 
     ```html
@@ -570,7 +569,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
         ![composite_inspector2](assets/composite_inspector2.png)
 
-14. **Sélectionner** l'acteur <code>htmlSession</code> pour définir les événements qui vont **afficher** et **cacher** la modale
+14. **Sélectionner** l'acteur ```htmlSession``` pour définir les événements qui vont **afficher** et **cacher** la modale
 
     * définir l'événement _Ev. "Entrée souris"_ avec la fonction javascript
 
@@ -587,7 +586,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
         var modalTooltip = context.synoStage.findByLabel("modalTooltip");
         modalTooltip.set('isShown', false);
         ```
-        _Remarque:_ les fonctions ci-dessus sur les 2 événements _Entrée souris_ et _Sortie souris_ sont sensiblement identiques, dans un cas on défini la valeur <code>true</code> et dans l'autre <code>false</code>. Nous aurions également pu définir une fonction commune _displayModal(value)_ déclarée dans l'événement _initialisation_ comme pour la fonction log() de _textareaOutput_ et l'appeler depuis les 2 fonctions
+        _Remarque:_ les fonctions ci-dessus sur les 2 événements _Entrée souris_ et _Sortie souris_ sont sensiblement identiques, dans un cas on défini la valeur ```true``` et dans l'autre ```false```. Nous aurions également pu définir une fonction commune _displayModal(value)_ déclarée dans l'événement _initialisation_ comme pour la fonction log() de _textareaOutput_ et l'appeler depuis les 2 fonctions
 
 15. **Déployer** et **éxécuter** la SynApp
 
@@ -595,7 +594,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
         ![execute6](assets/execute6.png)
 
-    * cliquer sur le bouton de déconnection et connectez-vous avec un compte installateur, _login:_ <code>install</code> et _mot de passe:_ <code>.</code>
+    * cliquer sur le bouton de déconnection et connectez-vous avec un compte installateur, _login:_ ```install``` et _mot de passe:_ ```.```
 
         ![execute5](assets/execute5.png)
 

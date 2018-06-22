@@ -8,51 +8,51 @@ La quatrième partie de ce tutorial est consacrée à l'acteur **_modal_** qui p
 
 ## Prerequis
 
-Ajouter une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en <code>sceneModal</code> et le _nom_ avec <code>Modal</code> puis déployer
+Ajouter une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en ```sceneModal``` et le _nom_ avec ```Modal``` puis déployer
 ![Scène modale](assets/part4_scenes.png)
 
 ## Construction de la scène avec modale **indépendante**
 
 Nous allons construire une scène simple qui affiche une fenêtre modale indépendante, au centre de l'écran, sur activation d'un commutateur
 
-1. Dans la scène courante <code>sceneModal</code> définissez l'acteur principal avec un acteur **empilement**
+1. Dans la scène courante ```sceneModal``` définissez l'acteur principal avec un acteur **empilement**
 
 2. **Ajouter** un acteur enfant de type **Commutateur bouton** (Interactions dans l'_explorateur d'acteur_):
 
-    * Définir la propriété _Gabarit > Hauteur_ à <code>100px</code>
-    * Définir la propriété _Gabarit > Largeur_ à <code>200px</code>
+    * Définir la propriété _Gabarit > Hauteur_ à ```100px```
+    * Définir la propriété _Gabarit > Largeur_ à ```200px```
     * Déselectionner la propriété _Spécifiques > Valeur_
-    * Définir la propriété _Spécifiques > Texte On_ à <code>Ouvert</code>
-    * Définir la propriété _Spécifiques > Texte Off_ à <code>Fermé</code>
-    * Définir la propriété _Spécifiques > Taille_ à <code>Large</code>
+    * Définir la propriété _Spécifiques > Texte On_ à ```Ouvert```
+    * Définir la propriété _Spécifiques > Texte Off_ à ```Fermé```
+    * Définir la propriété _Spécifiques > Taille_ à ```Large```
     ![Empilement](assets/part4_switch.png)
 
-3. **Sélectionner** l'acteur _empilement_ <code>stack1</code> et **ajouter** un acteur enfant de type **Modal** (Dispositions dans l'_explorateur d'acteur_)
+3. **Sélectionner** l'acteur _empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Modal** (Dispositions dans l'_explorateur d'acteur_)
 
-    * Définir la propriété _Gabarit > Hauteur_ à <code>400px</code>
-    * Définir la propriété _Gabarit > Largeur_ à <code>600px</code>
+    * Définir la propriété _Gabarit > Hauteur_ à ```400px```
+    * Définir la propriété _Gabarit > Largeur_ à ```600px```
 
 4. **Observer** que la _zone de prévisualisation_ est composés de deux éléments:
     * La scène à proprement parlé en haut
     * Le contenu de l'acteur modale en bas
         ![Empilement](assets/part4_preview.png)
 
-5. **Sélectionner** l'acteur _modal_ <code>modalLayout3</code> et **ajouter** un acteur enfant de type **Text** (Affichages dans l'_explorateur d'acteur_)
+5. **Sélectionner** l'acteur _modal_ ```modalLayout3``` et **ajouter** un acteur enfant de type **Text** (Affichages dans l'_explorateur d'acteur_)
 
-    * Définir la propriété _Spécifiques > Contenu_ à <code>Ceci est le contenu de la fenêtre modale !</code>
-    * Définir la propriété _Aspect > Police > Taille_ à <code>50px</code>
+    * Définir la propriété _Spécifiques > Contenu_ à ```Ceci est le contenu de la fenêtre modale !```
+    * Définir la propriété _Aspect > Police > Taille_ à ```50px```
 
     ![Empilement](assets/part4_preview2.png)
 
-6. **Sélectionner** l'acteur _modal_ <code>modalLayout3</code> et lier son ouverture à la valeur de l'acteur _commutateur bouton_
+6. **Sélectionner** l'acteur _modal_ ```modalLayout3``` et lier son ouverture à la valeur de l'acteur _commutateur bouton_
 
-    * Lier en _interne_ la propriété _Spécifiques > Afficher_ à la propriété _Spécifiques > Valeur_ de l'acteur <code>switchButton2</code>
+    * Lier en _interne_ la propriété _Spécifiques > Afficher_ à la propriété _Spécifiques > Valeur_ de l'acteur ```switchButton2```
 
         ![Empilement](assets/part4_bind.png)
         Le tooltip de la propriété _Afficher_ est alors celui-ci
         ![Empilement](assets/part4_bind2.png)
 
-    * Définir la propriété _Aspect > Couleur de fond_ à _Orange_ <code>#ff8000</code>
+    * Définir la propriété _Aspect > Couleur de fond_ à _Orange_ ```#ff8000```
 
 7. **Déployer** et **Exécuter** la SynApp. Cliquer sur le commutateur, la fenêtre modale s'affiche au centre de l'écran
     ![Empilement](assets/part4_execute.png)
@@ -61,36 +61,36 @@ Nous allons construire une scène simple qui affiche une fenêtre modale indépe
 
 Dans la partie précédente, la fenêtre modale s'affiche au centre de l'écran de manière indépendante. Cela correspont à un cas d'usage fréquent mais il est parfois nécessaire que la modale soit relative à un acteur de la scène: ne pas masquer une zone par exemple. Dans ce cas, on parle de **modale attachée**.
 
-1. **Sélectionner** l'acteur _empilement_ <code>stack1</code> et **ajouter** un acteur enfant de type **Texte** (Affichage dans l'_explorateur d'acteur_)
+1. **Sélectionner** l'acteur _empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Texte** (Affichage dans l'_explorateur d'acteur_)
     ![Empilement](assets/part4_actors.png)
 
-    * Définir la propriété _Spécifiques > Contenu_ à <code>Ceci est l'acteur d'attachement !</code>
-    * Définir la propriété _Aspect > Couleur de fond_ à _Bleu_ <code>#0000ff</code>
-    * Définir la propriété _Aspect > Couleur_ à _Blanc_ <code>#ffffff</code>
-    * Définir la propriété _Aspect > Police > Taille_ à <code>50px</code>
-    * Définir la propriété _Position > Align. vertical_ à <code>Centré</code>
-    * Définir la propriété _Position > Align. horizontal_ à <code>Centré</code>
-    * Définir la propriété _Gabarit > Largeur_ à <code>350px</code>
+    * Définir la propriété _Spécifiques > Contenu_ à ```Ceci est l'acteur d'attachement !```
+    * Définir la propriété _Aspect > Couleur de fond_ à _Bleu_ ```#0000ff```
+    * Définir la propriété _Aspect > Couleur_ à _Blanc_ ```#ffffff```
+    * Définir la propriété _Aspect > Police > Taille_ à ```50px```
+    * Définir la propriété _Position > Align. vertical_ à ```Centré```
+    * Définir la propriété _Position > Align. horizontal_ à ```Centré```
+    * Définir la propriété _Gabarit > Largeur_ à ```350px```
     ![Empilement](assets/part4_preview4.png)
 
-2. **Sélectionner** l'acteur _modal_ <code>modalLayout3</code> et l'attacher à l'acteur _text_ précédemment créé:
+2. **Sélectionner** l'acteur _modal_ ```modalLayout3``` et l'attacher à l'acteur _text_ précédemment créé:
 
-    * Définir la propriété _Spécifiques > Acteur attaché_ avec l'acteur <code>text5</code>
+    * Définir la propriété _Spécifiques > Acteur attaché_ avec l'acteur ```text5```
 
-      _Remarque:_ si l'acteur <code>text5</code> n'est **pas visible** dans la liste, rafraichissez la page avec **F5** _(BUG en cours de correction)_
+      _Remarque:_ si l'acteur ```text5``` n'est **pas visible** dans la liste, rafraichissez la page avec **F5** _(BUG en cours de correction)_
       ![Empilement](assets/part4_layout.png)
 
-    * Sélectionner la propriété _Spécifiques > Test modale_ pour constater que la position de l'acteur _modal_ dans la scène est désormais centrée par rapport à l'acteur <code>text5</code>
+    * Sélectionner la propriété _Spécifiques > Test modale_ pour constater que la position de l'acteur _modal_ dans la scène est désormais centrée par rapport à l'acteur ```text5```
       ![Empilement](assets/part4_preview5.png)
 
       _Remarque:_ la propriété _Test modale_ permet der **prévisualiser le positionnement** de la fenêtre modale dans la scène **sans son contenu**
 
-3. **Modifier** le positionnement de la _modal_ <code>modalLayout3</code> pour qu'elle s'ouvre à **droite** de l'acteur _text_ <code>text5</code> et **aligner** par le haut:
+3. **Modifier** le positionnement de la _modal_ ```modalLayout3``` pour qu'elle s'ouvre à **droite** de l'acteur _text_ ```text5``` et **aligner** par le haut:
 
-    * Définir la propriété _Spécifiques > Position horizontale_ à <code>Gauche</code>
-    * Définir la propriété _Spécifiques > Position verticale_ à <code>Haut</code>
-    * Définir la propriété _Spécifiques > Attachement horizontale_ à <code>Droite</code>
-    * Définir la propriété _Spécifiques > Attachement verticale_ à <code>Haut</code>
+    * Définir la propriété _Spécifiques > Position horizontale_ à ```Gauche```
+    * Définir la propriété _Spécifiques > Position verticale_ à ```Haut```
+    * Définir la propriété _Spécifiques > Attachement horizontale_ à ```Droite```
+    * Définir la propriété _Spécifiques > Attachement verticale_ à ```Haut```
 
     ![Empilement](assets/part4_preview6.png)
 
