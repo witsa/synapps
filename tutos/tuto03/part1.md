@@ -18,8 +18,8 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
 2. **Ajouter** un acteur enfant de type texte et modifier son alignement horizontal et vertical pour qu'il s'étende sur toute la surface disponible de l'acteur Empilement
 
-    * définir la propriété _Position > Align. vertical_ à <code>Etendre</code>
-    * définir la propriété _Position > Align. horizontal_ à <code>Etendre</code>
+    * définir la propriété _Position > Align. vertical_ à ```Etendre```
+    * définir la propriété _Position > Align. horizontal_ à ```Etendre```
 
     ![Empilement](assets/part1_align.png)
 
@@ -34,8 +34,8 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 4. **Augmenter** la taille du texte des 4 acteurs peu visible car trop petite. On pourrait répéter cette modification dans la taille de police des 4 acteurs mais il est **préferrable de modifier cette proprité directement sur l'acteur Empilement** parent _stack1_. La taille du texte est alors automatiquement appliqué sur les enfants.
 
     Sélectionner l'acteur _Empilement_ **stack1** et modifier:
-    * la propriété _Aspect > Police > Taille_ à <code>100px</code>
-    * la propriété _Aspect > Police > Alignement texte_ à <code>Centre</code>
+    * la propriété _Aspect > Police > Taille_ à ```100px```
+    * la propriété _Aspect > Police > Alignement texte_ à ```Centre```
 
     ![Empilement](assets/part1_police.png)
 
@@ -55,7 +55,7 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
 6. Les couleurs de fond choisies étant plutot foncées,**changer** la couleur de la police des 4 acteurs textes avec du _blanc_. Cette couleur devra être appliquée aux 4 acteurs, donc même stratégie que ci-dessus: modifier la couleur sur l'acteur _Empilement_ **stack1**
 
-    * la propriété _Aspect > Couleur_ à blanc <code>#ffffff</code>
+    * la propriété _Aspect > Couleur_ à blanc ```#ffffff```
 
     ![Empilement](assets/part1_policeColor.png)
 
@@ -65,7 +65,7 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
 1. **Modifier** l'orientation de l'acteur _Empilement_ pour qu'il rende les acteurs enfants texte à l'**horizontal**
 
-    * la propriété _Spécifiques > Orientation_ à <code>Horizontale</code> et observer le résultat
+    * la propriété _Spécifiques > Orientation_ à ```Horizontale``` et observer le résultat
 
     ![Empilement](assets/part1_horizontal.png)
 
@@ -78,9 +78,9 @@ les 2 premiers acteurs _texte_ soient empilés horizontalement, les 2 derniers r
 
 1. **Sélectionner** l'acteur _empilement_ **stack1** et **ajouter** un nouvel acteur _empilement_ **stack6** et le configurer à l'horizontal
 
-    * la propriété _Spécifiques > Orientation_ à <code>Horizontale</code>
-    * la propriété _Position > Align. vertical_ à <code>Etendre</code>
-    * la propriété _Gabarit > Hauteur_ à la valeur par défaut <code>[vide]</code>
+    * la propriété _Spécifiques > Orientation_ à ```Horizontale```
+    * la propriété _Position > Align. vertical_ à ```Etendre```
+    * la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[vide]```
 
 2. **Déplacer** l'acteur _empilement_ **stack6** en première position en utilisant le bouton _Déplacer_
 

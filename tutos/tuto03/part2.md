@@ -10,9 +10,9 @@ La scène sera constituée d'un fond de plan et permettra de gérer deux zones d
 
 ## Prerequis
 
-Le paramétrage [SynApps_Tutorials.PK4](../config/SynApps_Tutorials.PK4) installé sur le REDY. Il contient deux **consignes analogiques** préconfigurées <code>LightZone1</code> et <code>LightZone2</code> dans le dossier <code>Tutorial3</code>. Elles représentent deux zones de lumières à commander avec des valeurs pouvant varier de <code>0</code> à <code>100%</code>
+Le paramétrage [SynApps_Tutorials.PK4](../config/SynApps_Tutorials.PK4) installé sur le REDY. Il contient deux **consignes analogiques** préconfigurées ```LightZone1``` et ```LightZone2``` dans le dossier ```Tutorial3```. Elles représentent deux zones de lumières à commander avec des valeurs pouvant varier de ```0``` à ```100%```
 
-Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en <code>sceneCanvas</code> et le _nom_ avec <code>Toile</code> puis déployer.
+Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en ```sceneCanvas``` et le _nom_ avec ```Toile``` puis déployer.
 ![Empilement](assets/part2_scenes.png)
 
 ## Construction de la scène de la zone 1
@@ -23,8 +23,8 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 
     Modifier la taille de la grille de la toile
 
-    * propriété _Spécifiques > Grille horizontale_ avec la valeur <code>50px</code>
-    * propriété _Spécifiques > Grille verticale_ avec la valeur <code>50px</code>
+    * propriété _Spécifiques > Grille horizontale_ avec la valeur ```50px```
+    * propriété _Spécifiques > Grille verticale_ avec la valeur ```50px```
 
     _Remarque:_ la grille permet d'**aligner** les acteurs enfants selon la **taille de la maille**. Ici: _50px*50px_
     ![Empilement](assets/part2_grid.png)
@@ -50,56 +50,56 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 
 4. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _empilement_ **stack3** qui représentera le contour du point lumineux et le configurer:
 
-    * définir la propriété _Aspect > Couleur de fond_ avec une couleur gris clair <code>#e7e7e7</code>
-    * la propriété _Aspect > Bordure > Style bordure_ à <code>Solide</code>
-    * la propriété _Aspect > Bordure > Epaisseur bordure_ à <code>10px</code>
-    * la propriété _Aspect > Bordure > Rayon bordure_ à <code>50px</code>
-    * la propriété _Aspect > Bordure > Couleur bordure_  avec une couleur gris foncé <code>#555555</code>
+    * définir la propriété _Aspect > Couleur de fond_ avec une couleur gris clair ```#e7e7e7```
+    * la propriété _Aspect > Bordure > Style bordure_ à ```Solide```
+    * la propriété _Aspect > Bordure > Epaisseur bordure_ à ```10px```
+    * la propriété _Aspect > Bordure > Rayon bordure_ à ```50px```
+    * la propriété _Aspect > Bordure > Couleur bordure_  avec une couleur gris foncé ```#555555```
 
 5. **Sélectionner** l'acteur _empilement_ **stack3** et **ajouter** un acteur enfant de type _empilement_ **stack4** qui représentera la couleur dont l'opacité variera en fonction de l'intensité lumineuse:
 
-    * définir la propriété _Aspect > Couleur de fond avec une couleur jaune <code>#ffe583</code>
-    * ajouter cette couleur dans la librairie avec le nom <code>colorLight</code>, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutorial 2 sur les liaisons aux librairies](../tuto02/part6/index.md))
+    * définir la propriété _Aspect > Couleur de fond avec une couleur jaune ```#ffe583```
+    * ajouter cette couleur dans la librairie avec le nom ```colorLight```, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutorial 2 sur les liaisons aux librairies](../tuto02/part6/index.md))
     ![Empilement](assets/part2_lightLibrary.png)
-    * la propriété _Aspect > Bordure > Rayon bordure_ à <code>50px</code>
-    * la propriété _Position > Align. vertical_ à <code>Etendre</code>
-    * la propriété _Position > Align. horizontal_ à <code>Etendre</code>
-    * la propriété _Gabarit > Hauteur_ à la valeur par défaut <code>[vide]</code>
+    * la propriété _Aspect > Bordure > Rayon bordure_ à ```50px```
+    * la propriété _Position > Align. vertical_ à ```Etendre```
+    * la propriété _Position > Align. horizontal_ à ```Etendre```
+    * la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[vide]```
     ![Empilement](assets/part2_light.png)
 
 6. **Positionner** l'acteur _empilement_ **stack3** sur la toile directement en déplaçant l'acteur avec le clique souris
 
     * ouvrir l'onglet _Position_ dans l'inspecteur de l'acteur
     * déplacer l'acteur avec la souris maintenue cliquée
-    * observer ques les propriétés _Position > Position gauche_ et _Position > Position haut_ changent en même temps avec un pas de <code>50px</code> correspondant à la taille de la grille de la toile
-    * modifier la propriété _Position > Alignement_ à <code>200px</code>
-    * modifier la propriété _Position > Position haut_ à <code>200px</code>
+    * observer ques les propriétés _Position > Position gauche_ et _Position > Position haut_ changent en même temps avec un pas de ```50px``` correspondant à la taille de la grille de la toile
+    * modifier la propriété _Position > Alignement_ à ```200px```
+    * modifier la propriété _Position > Position haut_ à ```200px```
 
     ![Empilement](assets/part2_light2.png)
-    _Remarque:_ dans la zone de prévisualisation, les tailles <code>100px * 100px</code> ainsi que positions sont indiquées <code>200px, 200px</code>
+    _Remarque:_ dans la zone de prévisualisation, les tailles ```100px * 100px``` ainsi que positions sont indiquées ```200px, 200px```
 
     ![Empilement](assets/part2_light3.png)
 
 7. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _curseur_ **slider5** qui permettra de commander la consigne analogique de la première zone lumineuse:
 
-    * modifier la propriété _Spécifiques > Valeur_ avec la valeur <code>75</code>
-    * modifier la propriété _Spécifiques > Bar_ avec <code>Après curseur</code>
-    * lier la propriété _Spécifiques > Couleur fond bar_ à la librairie <code>colorLight</code>
-    * modifier la propriété _Position > Position gauche_ à <code>150px</code>
-    * modifier la propriété _Position > Position haut_ à <code>620px</code>
-    * modifier la propriété _Gabarit > Largeur_ à <code>400px</code>
+    * modifier la propriété _Spécifiques > Valeur_ avec la valeur ```75```
+    * modifier la propriété _Spécifiques > Bar_ avec ```Après curseur```
+    * lier la propriété _Spécifiques > Couleur fond bar_ à la librairie ```colorLight```
+    * modifier la propriété _Position > Position gauche_ à ```150px```
+    * modifier la propriété _Position > Position haut_ à ```620px```
+    * modifier la propriété _Gabarit > Largeur_ à ```400px```
     ![Empilement](assets/part2_slider1.png)
     * definir la source de donnée propriété _Source de données > Source_
     ![Empilement](assets/part2_datasource1.png)
     * créer une nouvelle source de donnée
     ![Empilement](assets/part2_datasource2.png)
-    * sélectionner la consigne analogique <code>LightZone1</code> dans le dossier des ressources <code>Tutorial2</code>
+    * sélectionner la consigne analogique ```LightZone1``` dans le dossier des ressources ```Tutorial2```
     ![Empilement](assets/part2_datasource3.png)
-    * renommer la source de donnée <code>dsLightZone1</code> puis **créer**
+    * renommer la source de donnée ```dsLightZone1``` puis **créer**
     ![Empilement](assets/part2_datasource4.png)
     * lier la propriété _Spécifiques > Valeur_ à une source de donnée
     ![Empilement](assets/part2_slider2.png)
-    * Dans l'explorateur de liaison, modifier le _Chemin_ avec la valeur <code>setpoint</code>, sélectionner _Ecriture_ puis **Lier**
+    * Dans l'explorateur de liaison, modifier le _Chemin_ avec la valeur ```setpoint```, sélectionner _Ecriture_ puis **Lier**
     ![Empilement](assets/part2_datasource5.png)
     * La _valeur_ du curseur **slider5** est désormais lié en _lecture_/_écriture_ sur la ressource consigne analogique **LightZone1**
     ![Empilement](assets/part2_slider3.png)
@@ -116,32 +116,32 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * la valeur _SetPoint_ de la ressource **LightZone1** dans le paramétrage du REDY reflète bien la position du curseur
     ![Empilement](assets/part2_redy.png)
 
-10. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack6** et **positionner** ce dernier en _position gauche_ <code>350px</code> et _position haut_ <code>200px</code>
+10. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack6** et **positionner** ce dernier en _position gauche_ ```350px``` et _position haut_ ```200px```
 
-11. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack8** et **positionner** ce dernier en _position gauche_ <code>200px</code> et _position haut_ <code>450px</code>
+11. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack8** et **positionner** ce dernier en _position gauche_ ```200px``` et _position haut_ ```450px```
 
-12. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack10** et **positionner** ce dernier en _position gauche_ <code>350px</code> et _position haut_ <code>450px</code>
+12. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack10** et **positionner** ce dernier en _position gauche_ ```350px``` et _position haut_ ```450px```
 ![Empilement](assets/part2_light4.png)
 
 13. **Exécuter** la SynApp et vérifier que les couleurs des quatre lumières changent en fonction de la position du curseur
 
 14. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _jauge_ **gauge12** qui permettra de visualiser la valeur de l'intensité lumineuse:
 
-    * positionner ce dernier en _position gauche_ <code>175px</code> et _position haut_ <code>300px</code>
+    * positionner ce dernier en _position gauche_ ```175px``` et _position haut_ ```300px```
     * lier en _interne_ la propriété _Spécifiques > Min_ avec la propriété _Spécifiques > Min_ de l'acteur **slider5**
     * lier en _interne_ la propriété _Spécifiques > Max_ avec la propriété _Spécifiques > Max_ de l'acteur **slider5**
     * lier en _interne_ la propriété _Spécifiques > Valeur_ avec la propriété _Spécifiques > Valeur_ de l'acteur **slider5**
 
     **Important:**
     Nous aurions également pu lier en _interne_ la propriété _Spécifiques > Valeur_ de la jauge avec la propriété _Spécifiques > Valeur_ de l'acteur **slider5** mais ce que nous voulons visualiser ici n'est pas la valeur de la commande effectuée via le curseur mais la valeur de la ressource _consigne analogique_ **LightZone5**. Celle-ci n'est pas forcemment identique car la ressource REDY peut corriger la valeur commandée.
-    _Par exemple:_ commande de la consigne avec la valeur décimale <code>50,85</code> arrondi par la ressource à <code>50</code> car pas de décimales.
+    _Par exemple:_ commande de la consigne avec la valeur décimale ```50,85``` arrondi par la ressource à ```50``` car pas de décimales.
    
     * definir la source de donnée propriété _Source de données > Source_
     ![Empilement](assets/part2_gauge2.png)
     * sélectionner la source de donnée existante **dsLightZone1**
     ![Empilement](assets/part2_datasource6.png)
     * lier en _Source de données_  la propriété _Spécifiques > Valeur_
-    * Dans la modale de _définition de la liaison_, définir le _Chemin_ avec la valeur <code>setpoint</code>, la _Lecture_ en mode <code>Rafraichie</code> et **Lier**
+    * Dans la modale de _définition de la liaison_, définir le _Chemin_ avec la valeur ```setpoint```, la _Lecture_ en mode ```Rafraichie``` et **Lier**
     ![Empilement](assets/part2_gauge3.png)
 
     * La zone de prévisualisation doit alors ressembler à ceci:
@@ -149,19 +149,19 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 
 15. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _text_ **text13** qui permettra de connaitre la valeur de l'intensité lumineuse ainsi que son unité:
 
-    * positionner ce dernier en _position gauche_ <code>260px</code> et _position haut_ <code>380px</code>
-    * définir la propriété _Aspect > Police > Taille_ à <code>50px</code>
+    * positionner ce dernier en _position gauche_ ```260px``` et _position haut_ ```380px```
+    * définir la propriété _Aspect > Police > Taille_ à ```50px```
     * definir la source de donnée propriété _Source de données > Source_
     ![Empilement](assets/part2_text.png)
     * sélectionner la source de donnée existante **dsLightZone1**
     ![Empilement](assets/part2_datasource6.png)
-    * définir la propriété _Spécifiques > Contenu_ avec la valeur <code>{{variation}} {{unit}}</code>
+    * définir la propriété _Spécifiques > Contenu_ avec la valeur ```{{variation}} {{unit}}```
     * créer les deux propriétés _spécifiques_ proposées **variation** de type _Nombre_ et **unit** de type _Text_
     ![Empilement](assets/part2_props.png)
     * lier en _Source de données_  la propriété _Spécifiques > unit_
     * Dans la modale de _définition de la liaison_, **ouvrir** l'_explorateur de chemin relatif_
     ![Empilement](assets/part2_datasource7.png)
-    * Dans la zone de recherche de ressource dans l'_explorateur de chemin relatif_, commencez à taper <code>un</code> (début de _unit_) puis sélectionner le _Label_ **Unit** et cliquer sur **Sélectionner**
+    * Dans la zone de recherche de ressource dans l'_explorateur de chemin relatif_, commencez à taper ```un``` (début de _unit_) puis sélectionner le _Label_ **Unit** et cliquer sur **Sélectionner**
     ![Empilement](assets/part2_datasource8.png)
     * Dans la modale de _définition de la liaison_ **Lier**
     ![Empilement](assets/part2_datasource9.png)
@@ -169,27 +169,27 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     ![Empilement](assets/part2_canvas2.png)
 
 16. **Modifier** la fréquence de rafraichissement de la ressource
-    * Sélectionner la source de données <code>dsLightZone1</code>
+    * Sélectionner la source de données ```dsLightZone1```
     ![Empilement](assets/part2_datasourceA.png)
-    * Modifier la _Période_ à <code>5</code> secondes
+    * Modifier la _Période_ à ```5``` secondes
     ![Empilement](assets/part2_datasourceB.png)
 
 17. Ajouter un moyen visuel de distinguer les éléments de la zone 1
 
 18. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _text_ **text14** qui permetttra de définir un moyen visuel de distinguer les éléments de la **zone 1**
 
-    * modifier la propriété _Spécifiques > Contenu_ avec la valeur <code>Zone 1</code>
-    * modifier la propriété _Aspect > Couleur de fond_ avec un gris clair <code>#e7e7e7</code>
-    * modifier la propriété _Aspect > Opacité_ à <code>20</code>
-    * modifier la propriété _Aspect > Police > Alignement texte_ à <code>Centre</code>
-    * modifier la propriété _Aspect > Police > Taille_ à <code>80px</code>
-    * modifier la propriété _Aspect > Bordure > Style bordure_ à <code>Hachuré</code>
-    * modifier la propriété _Aspect > Bordure > Epaisseur bordure_ à <code>5px</code>
-    * modifier la propriété _Aspect > Bordure > Rayon bordure_ à <code>50px</code>
-    * modifier la propriété _Position > Position gauche_ à <code>130px</code>
-    * modifier la propriété _Position > Position haut_ à <code>70px</code>
-    * modifier la propriété _Gabarit > Hauteur_ à <code>550px</code>
-    * modifier la propriété _Gabarit > Largeur_ à <code>440px</code>
+    * modifier la propriété _Spécifiques > Contenu_ avec la valeur ```Zone 1```
+    * modifier la propriété _Aspect > Couleur de fond_ avec un gris clair ```#e7e7e7```
+    * modifier la propriété _Aspect > Opacité_ à ```20```
+    * modifier la propriété _Aspect > Police > Alignement texte_ à ```Centre```
+    * modifier la propriété _Aspect > Police > Taille_ à ```80px```
+    * modifier la propriété _Aspect > Bordure > Style bordure_ à ```Hachuré```
+    * modifier la propriété _Aspect > Bordure > Epaisseur bordure_ à ```5px```
+    * modifier la propriété _Aspect > Bordure > Rayon bordure_ à ```50px```
+    * modifier la propriété _Position > Position gauche_ à ```130px```
+    * modifier la propriété _Position > Position haut_ à ```70px```
+    * modifier la propriété _Gabarit > Hauteur_ à ```550px```
+    * modifier la propriété _Gabarit > Largeur_ à ```440px```
     * déplacer l'ordre (z-index) de l'acteur afin qu'il ne recouvre que l'acteur image **image2**. Il doit être placé entre **image2** et **stack3**
       ![Empilement](assets/part2_order.png)
     * La zone de prévisualisation doit alors ressembler à ceci:
@@ -235,7 +235,7 @@ Vous avez composé une scène de type _toile_ et représenté un synoptique simp
 
     Les acteurs **composites** permettent de résoudre ce problème et seront exploités dans un prochain tutorial
 
-* Nous aurions pu également utiliser 2 acteurs _toiles_ enfants de **canvas1** pour les _zones 1 & 2_. Les 2 _toiles_ auraient disposés les acteurs enfants dans leurs zones respectives. Les 2 sources de données <code>dsLightZone1</code> et <code>dsLightZone2</code> auraient également été définies sur les 2 toiles et ainsi héritées directement sur leurs enfants !
+* Nous aurions pu également utiliser 2 acteurs _toiles_ enfants de **canvas1** pour les _zones 1 & 2_. Les 2 _toiles_ auraient disposés les acteurs enfants dans leurs zones respectives. Les 2 sources de données ```dsLightZone1``` et ```dsLightZone2``` auraient également été définies sur les 2 toiles et ainsi héritées directement sur leurs enfants !
 Cela aurait également permis une dupplication simplifiée de la _zone 1_ vers la _zone 2_
 
 * La scène est relativement statique et ne s'adapte pas en l'état a toutes les tailles d'écrans. Même si il est toujours possible d'utiliser des tailles relatives, on arrive rapidement à des limites pour ce type de restitution. Le tutorial suivant adresse cette problématique ...

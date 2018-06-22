@@ -12,16 +12,16 @@ Deux modes sont possibles: **visible** et **remplir** détaillés ci-après
 
 ## Prerequis
 
-Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en <code>sceneViewbox</code> et le _nom_ avec <code>Boite de vue</code> puis déployer.
+Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en ```sceneViewbox``` et le _nom_ avec ```Boite de vue``` puis déployer.
 ![Empilement](assets/part3_scenes.png)
 
 ## Mise en oeuvre de la boite à vue en mode **visible**
 
 Le mode **visible** de la _boite à vue_ permet d'adapter les acteurs enfants **sans déformation**, avec le **maximum d'espace** disponible mais en restant **visible**
 
-1. Dans la scène courante <code>sceneViewbox</code> définissez l'acteur principal avec un acteur **boite de vue**
+1. Dans la scène courante ```sceneViewbox``` définissez l'acteur principal avec un acteur **boite de vue**
 
-    * Définir la propriété _Gabarit > Hauteur_ avec la valeur par défaut <code>[vide]</code>
+    * Définir la propriété _Gabarit > Hauteur_ avec la valeur par défaut ```[vide]```
 
 2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous. 
     * Click droit sur l'image ci-dessous et _Enregistrer sous_ dans un dossier local
@@ -32,13 +32,13 @@ Le mode **visible** de la _boite à vue_ permet d'adapter les acteurs enfants **
    ![Empilement](assets/part3_image.png)
     * Modifier la propriété _Gabarit > Hauteur_ à la valeur par défaut
     ![Empilement](assets/part2_defaultValue.png)
-    * Modifier également la propriété _Gabarit > Largeur_ à la valeur par défaut <code>[vide]</code>
+    * Modifier également la propriété _Gabarit > Largeur_ à la valeur par défaut ```[vide]```
 
     L'image **s'adapte automatiquement** dans la _zone de prévisualisation_
 
     ![Empilement](assets/part3_preview1.png)
 
-3. **Modifier** la _zone de prévisualisation_ en mode <code>Portrait</code>
+3. **Modifier** la _zone de prévisualisation_ en mode ```Portrait```
 
     ![Empilement](assets/part3_rotate.png)
 
@@ -46,7 +46,7 @@ Le mode **visible** de la _boite à vue_ permet d'adapter les acteurs enfants **
 
     ![Empilement](assets/part3_preview2.png)
 
-4. **Modifier** les tailles dans la _zone de prévisualisation_ en <code>Hauteur</code> et <code>Largeur</code>
+4. **Modifier** les tailles dans la _zone de prévisualisation_ en ```Hauteur``` et ```Largeur```
 
     ![Empilement](assets/part3_size.png)
 
@@ -62,17 +62,17 @@ Le mode **visible** de la _boite à vue_ permet d'adapter les acteurs enfants **
 
 Le mode **remplir** de la _boite à vue_ est identique au mode _visible_ excepté que les **espaces vides sont suprrimés** et donc certaines parties des acteurs enfants peuvent être **masquées**
 
-1. Réinitialiser la zone de prévisualisation en <code>1080 x 1920</code>
+1. Réinitialiser la zone de prévisualisation en ```1080 x 1920```
 
    ![Empilement](assets/part3_size2.png)
 
-2. Sélectionner l'acteur _boite à vue_ <code>viewBox1</code> et changer le mode:
+2. Sélectionner l'acteur _boite à vue_ ```viewBox1``` et changer le mode:
 
-    * Modifier la propriété _Spécifiques > Type de vue_ avec <code>Remplir</code>
+    * Modifier la propriété _Spécifiques > Type de vue_ avec ```Remplir```
 
     L'image **s'adapte automatiquement** dans la _zone de prévisualisation_ et est en partie **tronquée** en **haut** et en **bas** pour **occuper tout l'espace**
 
-3. **Modifier** la _zone de prévisualisation_ en mode <code>Portrait</code>
+3. **Modifier** la _zone de prévisualisation_ en mode ```Portrait```
 
     ![Empilement](assets/part3_rotate.png)
 
