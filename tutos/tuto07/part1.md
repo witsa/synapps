@@ -1,19 +1,13 @@
-# Tutorial 7: les acteurs métiers du REDY
+# Tutorial 7: les acteurs métiers natifs du REDY
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
-Dans ce tutorial, nous allons utiliser les acteurs métiers natifs spécifiques au REDY. Certains mécanismes vus dans les précédents tutoriaux, _événements_, _dispositions_ vont être mis en oeuvre afin d'exploiter au mieux ces acteurs métiers
-
-## Prerequis
-
-* Créer une nouvelle SynApp **tuto07** avec le _MAKER_
-
-## Ossature de la scène
 
 L'acteur journal est un des plus utilisé et fonctionne simplement sans la moindre configuration. Plusieurs propriétés _spécifiques_ permettent de personnaliser et filtrer son rendu. Ces propriétés sont **explicites** et nous ne rentrerons pas dans le détail de chacune d'entre elles !
 ![journal_properties](assets/journal_properties.png)
 
 Nous allons plutot intégrer le journal dans une **scène évoluée** contenant une barre de commande permettant de configurer le **comportement** et les **filtres** du journal
+
+## Ossature de la scène
 
 1. **Modifier** le _label_ de la première scène en ```sceneJournal``` et le _nom_ avec ```Journal avancé``` puis déployer
 
@@ -307,3 +301,32 @@ Les liaisons sont configurées, le journal avancé est terminé
 ![execute2](assets/execute2.png)
 
 ![execute3](assets/execute3.png)
+
+## Que retenir
+
+Nous avons utilisé un acteur journal qui fonctionne sans **aucune configuration** et nous l'avons complété avec des filtres personnalisés pour enrichir son fonctionnement et répondre à un besoin particulier. Nous avons d'ailleurs utilisé un autre acteur métier natif: le filtre **Ensembles**
+
+Nous avons mis en oeuvre de nombreux concepts et mécanismes vus dans les précédents tutoriaux: les fenêtres **modales**, les **empilements**, les **événements** et **fonctions de transformation***, le **débugging**
+
+Vous pourriez faire évoluer la scène pour répondre précisemment à vos besoins. Par exemple: ajouter de nouveaux filtres dans la fenêtre modale:
+
+* **Groupes**, **Zones** et **Equipements**: propriété _Spécifiques > Equipements_, _Zones_ et _Groupes_ du journal
+* **Nombre maximum d'événements** affichés dans la page: propriété _Spécifiques > nombre d'événements_ du journal
+* etc
+
+Quand la scène correspondra completement à vos besoins, vous souhaiterez pouvoir réutiliser cette scène dans d'autres SynApps: la solution est son intégration dans un **composite**
+
+A ce sujet, tester la **création d'un composite** directement depuis la scène:
+
+* Sélectionner ```stackRoot``` et cliquer sur le bouton de génération de composite
+    ![composite](assets/composite.png)
+
+* Vous pouvez désormais **réutiliser** ce composite dans n'importe quelle SynApp et le **partager** avec d'autres utilisateurs !
+
+## Conclusion
+
+La **première partie du tutorial 7** portant sur l' acteur métier natif journal est **terminé**, l'intérêt de ces acteurs réside dans le fait qu'ils sont simples d'utilisation car ils embarquent tout le comportement métier
+
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+
+[Tutoriel suivant](part2.md)
