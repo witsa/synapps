@@ -1,4 +1,4 @@
-# Tutorial 7: les acteurs métiers natifs du REDY
+# Tutorial 7: les acteurs métiers natifs du REDY - Part 1: **Journal**
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
