@@ -325,7 +325,7 @@ A ce sujet, tester la **création d'un composite** directement depuis la scène:
 
 ## Conclusion
 
-La **première partie du tutorial 7** portant sur l' acteur métier natif journal est **terminé**, l'intérêt de ces acteurs réside dans le fait qu'ils sont simples d'utilisation car ils embarquent tout le comportement métier
+La **première partie du tutorial 7** portant sur l' acteur métier natif journal est **terminée**, l'intérêt de ces acteurs réside dans le fait qu'ils sont simples d'utilisation car ils embarquent tout le comportement métier
 
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 

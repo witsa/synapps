@@ -87,4 +87,54 @@ Plutot que de configurer une nouvelle scène, nous allons dupliquer la scène du
 
 11. **Sélectionner** l'acteur ```etats``` et définir les liaisons
 
-    * Lier la propriété _Spécifiques > Filtre du nom_ avec la propriété _Spécifiques > Valeur_ de ```textboxSearch```
+    * Lier en _interne_ la propriété _Spécifiques > Filtre du nom_ avec la propriété _Spécifiques > Valeur_ de ```textboxSearch```
+
+    * Lier en _interne_ la propriété _Spécifiques > Mode_ à la propriété _Spécifiques > Valeur_ de l'acteur ```switchButtonMode``` en lecture uniquement
+
+    * Editer le _Script de lecture_ de la propriété _Spécifiques > Mode_ avec le javascript le javascript
+        ```javascript
+        return context.value ? 'GRID' : 'THUMBNAILS';
+        ```
+    _Remarque:_ la propriété _Mode_ de l'acteur état attend une valeur de type texte avec les valeurs ```GRID``` ou ```THUMBNAILS``` pour afficher respectivement les états sous la forme d'un _tableau_ ou de _vignettes_. Actuellent, rien ne permet de savoir que ces valeurs sont attendues ! nous proposerons rapidement une mécanisme pour connaître les valeurs possibles sur les listes fermées
+
+    * Lier en _interne_ la propriété _Spécifiques > Période_ à la propriété _Spécifiques > Valeur_ de l'acteur ```sliderPeriod``` en lecture uniquement
+
+    * Editer le _Script de lecture_ de la propriété _Spécifiques > Période_ pour arrondir à un entier la valeur du curseur avec le javascript
+        ```javascript
+        return Math.round(context.value);
+        ```
+
+    * Lier en _interne_ la propriété _Spécifiques > Ensemble_ à la propriété _Spécifiques > Ensemble_ de l'acteur ```setFilter``` en lecture uniquement
+
+Les liaisons sont configurées, la scène états  avancés est terminé
+
+## Test et éxécution
+
+**Déployer**, **éxécuter** et **vérifier** que tout fonctionne correctement
+
+* Basculement entre mode de représentation tableau et vignettes
+* Nombre de ressources
+* Zone de recherche
+* Sélection/déselection de l'ensemble
+* Nombre d'ensembles
+* Période de rafraichissement actuelle
+
+![execute2](assets/execute4.png)
+
+## Que retenir
+
+Nous avons mis en oeuvre l'acteur états qui fonctionne sans **aucune configuration** en adaptant la scène journal. Il est parfois plus rapide de partir d'une scène éxistante et l'adapté au besoin plutot que de repartir d'une scène vide !
+
+Comme pour le journal, vous pourrez faire évoluer la scène pour répondre précisemment à vos besoins. Par exemple: ajouter de nouveaux filtres dans la fenêtre modale:
+
+* **Groupes**, **Zones** et **Equipements**: propriété _Spécifiques > Equipements_, _Zones_ et _Groupes_ de l'acteur états
+* **Nombre maximum d'événements** affichés dans la page: propriété _Spécifiques > nombre d'événements_ du journal
+* etc
+
+## Conclusion
+
+La **deuxième partie du tutorial 7** portant sur l' acteur métier natif états est **terminée**. Nous avons construit 2 scènes avancées avec le **journal** et les **états**. Ils manquent encore quelques acteurs métiers natifs pour réaliser une application d'exploitation simple: les acteurs **agenda** et **grapheurs**
+
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+
+[Tutoriel suivant](part3.md)
