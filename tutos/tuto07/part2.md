@@ -123,7 +123,7 @@ Les liaisons sont configurées, la scène états  avancés est terminé
 
 ## Que retenir
 
-Nous avons mis en oeuvre l'acteur états qui fonctionne sans **aucune configuration** en adaptant la scène journal. Il est parfois plus rapide de partir d'une scène éxistante et l'adapté au besoin plutot que de repartir d'une scène vide !
+Nous avons mis en oeuvre l'acteur états qui fonctionne sans **aucune configuration** en adaptant la scène journal. Il est parfois plus rapide de partir d'une scène éxistante et l'adapter au besoin plutot que de partir d'une scène vide !
 
 Comme pour le journal, vous pourrez faire évoluer la scène pour répondre précisemment à vos besoins. Par exemple: ajouter de nouveaux filtres dans la fenêtre modale:
 
