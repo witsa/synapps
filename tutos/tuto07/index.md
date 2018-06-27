@@ -1,4 +1,5 @@
-# Tutorial 7: les acteurs métiers natifs du REDY
+# Tutorial 7: les acteurs métiers natifs du REDY - **<span style='color:orange'>Avancé</span>**
+
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
@@ -17,4 +18,4 @@ Le tutorial se décompose en **plusieurs parties** pour une durée d'environ **1
 
 * Partie 1 [Acteur journal](part1.md) (30min)
 * Partie 2 [Acteur états](part2.md) (30min)
-* ...
+* Partie 3 [Acteur agenda et grapheur](part3.md) (10min)

@@ -84,7 +84,6 @@ L'ossature de la barre de commande est terminée
 1. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur enfant de type _Journal_
 
     * renommer le _Label_ avec ```journal```
-    * modifier la propriété _Spécifiques > Contenu_ avec le code HTML
     * définir la propriété _Position > Align. vertical_ avec la sélection ```Etendre```
 
 L'ossature du journal est terminée !
@@ -94,7 +93,7 @@ L'ossature du journal est terminée !
 1. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur enfant de type _Modal_
 
     * renommer le _Label_ avec ```modalFilter```
-    * lier en _interne_ la propriété _Spécifiques > Police > Taille_ avec la même propriété dans l'acteur ```stackRoot``` en _lecture_
+    * lier en _interne_ la propriété _Aspect > Police > Taille_ avec la même propriété dans l'acteur ```stackRoot``` en _lecture_
     ![bind_size](assets/bind_size.png)
     _Remarque:_ dans une modale, la taille du texte n'est pas héritée du parent
 
@@ -126,7 +125,7 @@ L'ossature du journal est terminée !
       <span class="glyphicon glyphicon-download-alt"></span> Ensembles <span class="badge" style="font-size:1em;">{% raw %}{{count}}{% endraw %}</span>
       ```
     * modifier la propriété _Gabarit > Marge > Marge ext. basse_ avec la taille ```30px```
-    * compléter le contenu en créant la propriété additionnelle _count_ de type _nombre_ le nombre d'ensembles définis dans le REDY
+    * compléter le contenu en créant la propriété additionnelle _count_ de type _nombre_ qui contiendra le nombre d'ensembles définis dans le REDY
     * modifier la propriété _Apect > Couleur de fond_ avec la couleur ```#e0e0e0```
     * définir les 2 propriétés _Gabarit > Marge > Marge ext. haute_ et _Marge ext. basse_ avec la taille ```20px```
     * définir les 4 propriétés _Gabarit > Marge > Marge int. gauche_, _Marge int. droite_, _Marge int. haut_, _Marge int. bas_ avec la taille ```10px```
@@ -142,6 +141,7 @@ L'ossature du journal est terminée !
       ```html
       <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Période de rafraichissement <span class="badge"style="font-size:1em;">{% raw %}{{period}}{% endraw %}</span>
       ```
+    * compléter le contenu en créant la propriété additionnelle _period_ de type _nombre_. Vous pouvez également donner des informations additionnelles sur cette propriété, comme le nom et la description, dans _Additionnelles > Gestion des propriétés additionnelles_
 
 7. **Sélectionner** l'acteur ```stackFilters``` et **ajouter** un acteur enfant de type _Curseur_ qui permettra de modifier la période de rafraichissement du journal
 

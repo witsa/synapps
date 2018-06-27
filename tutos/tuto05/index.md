@@ -1,4 +1,4 @@
-# Tutorial 5: les acteurs **composites**
+# Tutorial 5: les acteurs **composites** - **<span style='color:orange'>Avancé</span>**
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
