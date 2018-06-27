@@ -9,13 +9,13 @@ Nous allons intégrer l'acteur états dans une adaptation de la **scène évolu�
 
 ## Configuration de la scène
 
-Plutot que de configurer une nouvelle scène, nous allons dupliquer la scène du journal précédente et l'adapter à l'acteur état
+Plutot que de configurer une nouvelle scène, nous allons dupliquer la scène du journal précédente et l'adapter à l'acteur états
 
 1. **Cloner** la scène ```sceneJournal``` et renommer le _label_ de la scène en ```sceneEtat``` et le _nom_ avec ```Etats avancés``` puis déployer
 
     ![clone_scene](assets/clone_scene.png)
 
-2. **Sélectionner** l'acteur ```sceneJournal``` et supprimer le
+2. **Sélectionner** l'acteur ```journal``` et supprimer le
 
     _Remarque:_ une erreur de script apparait car une fonction de transformation en lecture essaye de localiser le journal
 
@@ -59,8 +59,8 @@ Plutot que de configurer une nouvelle scène, nous allons dupliquer la scène du
 8. **Sélectionner** l'acteur ```stackCmd``` et **ajouter** un acteur enfant de type _Boite de texte_ qui permettra de définir une zone de recherche dans les états
 
     * renommer le _Label_ avec ```textboxSearch```
-    * réinitialiser la propriété _Gabarit > Largeur_ avec la valeur par défaut ```[vide]```
     * remonter la position de l'acteur entre ```switchButtonMode``` et ```buttonFilters```
+
       ![props_invalid](assets/actor_order.png)
     * modifier la propriété _Position > Align. horizontal_ en ```centré```
     * réinitialiser la propriété _Spécifiques > Valeur_ avec ```[vide]```

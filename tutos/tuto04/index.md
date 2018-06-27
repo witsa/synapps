@@ -1,4 +1,4 @@
-# Tutorial 4: la navigation
+# Tutorial 4: la navigation - **<span style='color:green'>Débutant</span>**
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 

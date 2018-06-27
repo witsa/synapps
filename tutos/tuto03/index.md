@@ -1,4 +1,4 @@
-# Tutorial 3: les acteurs dispositions
+# Tutorial 3: les acteurs dispositions - **<span style='color:green'>Débutant</span>**
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md)
 

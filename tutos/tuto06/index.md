@@ -1,4 +1,5 @@
-# Tutorial 6: les événements et fonctions javascripts
+# Tutorial 6: les événements et fonctions javascripts - **<span style='color:red'>Expert</span>**
+
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 

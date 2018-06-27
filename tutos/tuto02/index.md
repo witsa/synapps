@@ -1,4 +1,4 @@
-# Tutorial 2: les liaisons *[6 nov 17]*
+# Tutorial 2: les liaisons - **<span style='color:green'>Débutant</span>**
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
