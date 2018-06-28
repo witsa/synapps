@@ -14,8 +14,8 @@ L'objectif final sera la réalisation d'une application d'exploitation simple av
 
 ## Parties
 
-Le tutorial se décompose en **plusieurs parties** pour une durée d'environ **1H**
+Le tutorial se décompose en **plusieurs parties** pour une durée d'environ **1H20**
 
 * Partie 1 [Acteur journal](part1.md) (30min)
 * Partie 2 [Acteur états](part2.md) (30min)
-* Partie 3 [Acteur agenda et grapheur](part3.md) (10min)
+* Partie 3 [Agenda, Grapheur et plus](part3.md) (20min)
