@@ -1,4 +1,4 @@
-# Tutorial 7: les acteurs métiers natifs du REDY - Part 3: **Agenda** et **Grapheur**
+# Tutorial 7: les acteurs métiers natifs du REDY - Part 3: **Agenda**, **Grapheur** et **plus...**
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
