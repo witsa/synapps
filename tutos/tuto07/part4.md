@@ -241,11 +241,28 @@ Nous allons définir les comportements des titres, icônes et barre horizontal a
 
 ## Que retenir
 
-Nous avons mis en oeuvre 3 acteurs métiers:
+Nous avons réalisé une **application d'exploitation simple** contenant des acteurs métiers natifs augmentés avec des filtres pour améliorer l'expérience utilisateur
+
+Nous avons également intégré le **tableau de bord multi-énergies** du REDY avec un acteur IFrame intégrant l'URL d'exploitation du tableau de bord dans le REDY composé avec notamment la session utilisateur
+
+Enfin, nous avons mis en place une **navigation avancée** avec des scripts de transformation permettant d'améliorer le visuel de la scène sélectionnée
+
+Nous avons utilisé des **librairies d'icones** qui sont embarquées dans SynApps et qui peux être affiché simplement dans acteurs HTML ou de type bouton avec le code ci-dessous
+
+```HTML
+<span class="[icon]"></span>
+```
+
+Vous pouvez visualiser les icones disponibles:
+
+1. [Boostrap](https://getbootstrap.com/docs/3.3/components/)
+2. [WebHostingHub](https://www.webhostinghub.com/glyphs/)
 
 ## Conclusion
 
-Nous allons maintenant intégrer les 5 scènes créées dans une nouvelle scène de navigation pour **finaliser** l'application d'exploitation !
+Le principal intérêt des acteurs métiers natifs sont leur **simplicité** d'usage: peu ou pas de configuration pour fonctionner !
+
+Vous pouvez également créer vos propres acteurs métiers réutilisables avec les composites et ainsi améliorer votre **productivité**, voir [tutoriel sur les composites](../tuto05/index.md)
 
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
