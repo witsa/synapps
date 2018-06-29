@@ -255,8 +255,8 @@ Nous avons utilisé des **librairies d'icones** qui sont embarquées dans SynApp
 
 Vous pouvez visualiser les icones disponibles:
 
-1. [Boostrap](https://getbootstrap.com/docs/3.3/components/)
-2. [WebHostingHub](https://www.webhostinghub.com/glyphs/)
+1. [Boostrap](https://getbootstrap.com/docs/3.3/components/){:target="_blank"}
+2. [WebHostingHub](https://www.webhostinghub.com/glyphs/){:target="_blank"}
 
 ## Conclusion
 
