@@ -247,7 +247,7 @@ Nous avons également intégré le **tableau de bord multi-énergies** du REDY a
 
 Enfin, nous avons mis en place une **navigation avancée** avec des scripts de transformation permettant d'améliorer le visuel de la scène sélectionnée
 
-Nous avons utilisé des **librairies d'icones** qui sont embarquées dans SynApps et qui peux être affiché simplement dans acteurs HTML ou de type bouton avec le code ci-dessous
+Nous avons utilisé des **librairies d'icones** qui sont embarquées dans SynApps et qui peuvent être affichées simplement dans des acteurs avec contenu HTML avec le code ci-dessous
 
 ```HTML
 <span class="[icon]"></span>
