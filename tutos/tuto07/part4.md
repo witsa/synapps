@@ -51,7 +51,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
         <span class="{% raw %}{{icon}}{% endraw %}" aria-hidden="true"></span> {% raw %}{{title}}{% endraw %}
         ```
     * compléter le contenu en créant les propriétés additionnelle _icon_ et _title_ de type _texte_
-    * modifier la propriété _Spécifiques > icon_ avec le texte ```glyphicon glyphicon-flash```
+    * modifier la propriété _Spécifiques > icon_ avec le texte ```icon-appointment-agenda```
     * modifier la propriété _Spécifiques > title_ avec le texte ```title```
     * modifier la propriété _Aspect > Police > Taille_ avec le texte ```5em```
     * modifier la propriété _Position > Align. vertical_ en ```Centré```
@@ -96,7 +96,10 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
         {% raw %}{{title}}{% endraw %}
         ```
     * compléter le contenu en créant les propriétés additionnelle _icon_ et _title_ de type _texte_
-    * modifier la propriété _Spécifiques > icon_ avec le texte ```glyphicon glyphicon-flash```
+    * modifier la propriété _Spécifiques > icon_ avec le texte ```icon-appointment-agenda```
+
+    _Remarque:_ ```icon-appointment-agenda``` est défini dans une librairie d'icones intégrée à SynApps provenant de [WebHostingHub](https://www.webhostinghub.com/glyphs/){:target="_blank"}
+
     * modifier la propriété _Spécifiques > title_ avec le texte ```Journal```
     * lier en _librairie_ le contenu en créant un nouvel élément de librairie ```contentButtonNav```
 
@@ -114,7 +117,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 12. **Dupliquer** l'acteur navigation pour configurer la navigation sur les états
 
     * renommer le _Label_ avec ```buttonNavState```
-    * modifier la propriété _Spécifiques > icon_ avec ```glyphicon glyphicon-th-list```
+    * modifier la propriété _Spécifiques > icon_ avec ```icon-abacus```
     * modifier la propriété _Spécifiques > title_ avec ```Etats```
     * modifier la propriété _Spécifiques > Scène_ avec la scène ```Etats avancé```
     * modifier la propriété _Aspect > Couleur de fond_ avec la couleur ```#9400d3```
@@ -122,7 +125,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 13. **Dupliquer** l'acteur navigation pour configurer la navigation sur l'agenda
 
     * renommer le _Label_ avec ```buttonNavAgenda```
-    * modifier la propriété _Spécifiques > icon_ avec ```glyphicon glyphicon-calendar```
+    * modifier la propriété _Spécifiques > icon_ avec ```icon-calendarthree```
     * modifier la propriété _Spécifiques > title_ avec ```Agenda```
     * modifier la propriété _Spécifiques > Scène_ avec la scène ```Agenda```
     * modifier la propriété _Aspect > Couleur de fond_ avec la couleur ```#0000ff```
@@ -130,7 +133,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 14. **Dupliquer** l'acteur navigation pour configurer la navigation sur le grapheur
 
     * renommer le _Label_ avec ```buttonNavGraph```
-    * modifier la propriété _Spécifiques > icon_ avec ```icon-finance```
+    * modifier la propriété _Spécifiques > icon_ avec ```icon-stocks```
     * modifier la propriété _Spécifiques > title_ avec ```Grapheur```
     * modifier la propriété _Spécifiques > Scène_ avec la scène ```Grapheur```
     * modifier la propriété _Aspect > Couleur de fond_ avec la couleur ```#5bc0de```
