@@ -18,7 +18,7 @@ Les acteurs peuvent être de 2 types:
 
 ## Categories
 
-Les acteurs sont classés par **catégorie** afin de faciliter la recherche: 
+Les acteurs sont classés par **catégorie** afin de faciliter la recherche:
 
 1. **Disposition**: acteurs disposants des acteurs enfants
 

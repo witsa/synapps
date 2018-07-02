@@ -266,4 +266,4 @@ Vous pouvez également créer vos propres acteurs métiers réutilisables avec l
 
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
-[Tutoriel suivant sur les tailles et gabarits](../tuto08/index.md)
+Revenir sur la [liste des tutoriaux](../index.md)
