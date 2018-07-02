@@ -92,7 +92,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
     * renommer le _Label_ avec ```buttonNavJrnl```
     * modifier la propriété _Spécifiques > Contenu_ avec
         ```HTML
-        <span class="{{icon}}" aria-hidden="true"></span><br/>
+        <span class="{% raw %}{{icon}}{% endraw %}" aria-hidden="true"></span><br/>
         {% raw %}{{title}}{% endraw %}
         ```
     * compléter le contenu en créant les propriétés additionnelle _icon_ et _title_ de type _texte_
