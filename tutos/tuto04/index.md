@@ -24,7 +24,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
 ## Construction de la **scène principale**
 
-1. Dans la scène courante _sceneMaster_ **définissez** l'acteur principal avec un acteur _empilement_
+1. Dans la scène courante _sceneMaster_ **définissez** l'acteur principal avec un acteur _Empilement_
 
     * Renommer le _Label_ avec ```stackRoot```
     ![Empilement](assets/stackRoot.png)
@@ -36,14 +36,14 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
     Cela rend la la SynApp plus **maintenable** notamment dans ce tutorial car des acteurs vont référencés les clés d'autres acteurs
 
-2. **Ajouter** un acteur enfant de type _empilement_ qui contiendra le menu de navigation
+2. **Ajouter** un acteur enfant de type _Empilement_ qui contiendra le menu de navigation
 
     * renommer le _Label_ avec ```stackMenu```
     * définir la propriété _Spécifique > Orientation_ à ```Horizontale```
     * définir la propriété _Aspect > Police > Alignement texte_ à ```Centre```
     * définir la propriété _Gabarit > Hauteure_ à ```10%```
 
-3. **Sélectionner** l'acteur _empilement_ ```stackRoot``` et **Ajouter** un acteur enfant de type _écran_ (dans la catégorie _Affichage_ de l'explorateur d'acteurs) qui contiendra la scène courante
+3. **Sélectionner** l'acteur _Empilement_ ```stackRoot``` et **Ajouter** un acteur enfant de type _écran_ (dans la catégorie _Affichage_ de l'explorateur d'acteurs) qui contiendra la scène courante
 
     * renommer le _Label_ avec ```screenMiddle```
     * réinitialiser la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[Vide]```
@@ -52,7 +52,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     _Remarque:_ ne pas préter attention au **message d'avertissement** sur la propriété _Spécifiques > Scène_. Elle sera définie ultérieurement
     ![Empilement](assets/warning.png)
 
-4. **Sélectionner** l'acteur _empilement_ ```stackRoot``` et **Ajouter** un acteur enfant de type _empilement_ qui contiendra le pied de page
+4. **Sélectionner** l'acteur _Empilement_ ```stackRoot``` et **Ajouter** un acteur enfant de type _Empilement_ qui contiendra le pied de page
 
     * renommer le _Label_ avec ```stackFooter```
     * définir la propriété _Aspect > Couleur de fond_ à un gris clair ```#e0e0e0```
@@ -86,7 +86,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
     ![Empilement](assets/scenes.png)
 
-2. **Ajouter** un acteur enfant de type _empilement_
+2. **Ajouter** un acteur enfant de type _Empilement_
 
     * définir la propriété _Aspect > Couleur_ en _blanc_ à ```#ffffff```
     * définir la propriété _Aspect > Couleur de fond_ en _orange_ à ```#ff8000```
@@ -114,7 +114,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     * renommer le _Label_ en ```sceneB```
     * définir la propriété _Nom_ avec le texte ```Scène B```
 
-5. **Sélectionner** l'acteur _empilement_ ```stack1```
+5. **Sélectionner** l'acteur _Empilement_ ```stack1```
 
     * supprimer la liaison de la propriété _Aspect > Couleur de fond_
     ![Empilement](assets/bindRemove.png)
@@ -139,7 +139,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     * définir la propriété _Spécifiques > Scène_ en sélectionnant la scène ```sceneA```. La scène A est alors affichée dans l'écran principal
     ![Empilement](assets/preview.png)
 
-4. **Sélectionner** l'acteur _empilement_ ```stackMenu``` et **Ajouter** un acteur enfant de type _navigation_ (dans la catégorie _Interactions_ de l'explorateur d'acteurs) qui va naviguer sur la scene A dans l'acteur écran de la scène
+4. **Sélectionner** l'acteur _Empilement_ ```stackMenu``` et **Ajouter** un acteur enfant de type _navigation_ (dans la catégorie _Interactions_ de l'explorateur d'acteurs) qui va naviguer sur la scene A dans l'acteur écran de la scène
 
     * renommer le _Label_ avec ```buttonNavSceneA```
     * lier la propriété _Aspect > Couleur de fond_ à l'élément de librairie couleur ```colorSceneA```
@@ -244,7 +244,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
     * modifier la propriété _Spécifiques > Contenu_ avec le texte ```Scène C > 1```
 
-3. **Sélectionner** l'acteur _empilement_ ```stack1``` et **ajouter** un acteur _navigation_
+3. **Sélectionner** l'acteur _Empilement_ ```stack1``` et **ajouter** un acteur _navigation_
 
     * renommer le _Label_ en ```buttonNavBack```
     * modifier la propriété _Spécifiques > Contenu_ avec le texte ```Retour```
@@ -261,7 +261,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
 5. **Sélectionner** la scène _ ```sceneC```
 
-6. **Sélectionner** l'acteur _empilement_ ```stack1``` et **ajouter** un acteur _empilement_
+6. **Sélectionner** l'acteur _Empilement_ ```stack1``` et **ajouter** un acteur _Empilement_
 
     * modifier la propriété _Spécifiques > Orientation_ en  ```Horizontal```
     * modifier la propriété _Position > Align. vertical_ en  ```Etendre```
@@ -282,7 +282,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     * modifier la propriété _Spécifiques > Contenu_ avec le texte ```Scène C2```
     * définir la propriété _Spécifiques > Scène_ avec la scène ```Scène C 2```
 
-9. **Cloner** l'acteur _empilement_ ```stack3``` contenant les 2 acteurs _navigation_ et procéder à la configuration précédente (_étape 8_) pour naviguer vers les scènes _scène C 3_ et _scène C 4_
+9. **Cloner** l'acteur _Empilement_ ```stack3``` contenant les 2 acteurs _navigation_ et procéder à la configuration précédente (_étape 8_) pour naviguer vers les scènes _scène C 3_ et _scène C 4_
 
     ![Empilement](assets/actors2.png)
     ![Empilement](assets/sceneC.png)

@@ -44,12 +44,12 @@ Nous allons construire une scène qui contiendra plusieurs acteurs qui vont gén
 
 _Remarque:_ la définition des labels des acteurs est d'autant plus importante avec les événements car ils sont largemment utilisés dans les scripts pour notamment identifier des acteurs
 
-1. **Définir** l'acteur principal avec un acteur _empilement_
+1. **Définir** l'acteur principal avec un acteur _Empilement_
 
     * renommer le _Label_ avec ```stackRoot```
     * modifier la propriété _Spécifiques > Orientation_ en ```Horizontal```
 
-2. **Ajouter** un acteur enfant de type **_empilement_** qui contiendra les acteurs qui vont générer des événements
+2. **Ajouter** un acteur enfant de type **_Empilement_** qui contiendra les acteurs qui vont générer des événements
 
     * renommer le _Label_ avec ```stackEvents```
     * réinitialiser la propriété _Gabarit > Largeur_ avec la taille ```[vide]```
@@ -437,7 +437,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
         ![Empilement](assets/composite_inspector.png)
 
-2. **Définir** l'acteur principal avec un acteur _empilement_
+2. **Définir** l'acteur principal avec un acteur _Empilement_
 
     * renommer le _label_ en ```stackRoot```
     * modifier la propriété _Spécifiques > Orientation_ en ```Horizontal```

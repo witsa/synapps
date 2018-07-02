@@ -77,7 +77,7 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     Ici, nous définissons la police par défaut à ```50px``` directement sur le composite. Cette taille sera modifiable lors de l'ajout du composite dans la scène.
     Cet aspect est extrémement important: un composite peut être considéré comme une **boite noir** avec des **propriétés publiques personnalisables**. Editer le composite revient à ouvrir la boite et définir son comportement. Nous reviendrons sur cet aspect ultérieurement dans le tutorial
 
-2. **Définissez** l'acteur principal avec un acteur _empilement_
+2. **Définissez** l'acteur principal avec un acteur _Empilement_
 
     * Renommer le _Label_ avec ```stackClim```
     * définir la propriété _Aspect > Couleur_ à un bleu clair ```#45aadb```
@@ -169,7 +169,7 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     * modifier la propriété _Position > Position gauche_ avec la taille ```70px```
     * modifier la propriété _Position > Position bas_ avec la taille ```10px```
 
-10. **Sélectionner** l'acteur _empilement_ ```stackClim``` et **ajouter** un acteur enfant de type _html_ qui contiendra la température de consigne
+10. **Sélectionner** l'acteur _Empilement_ ```stackClim``` et **ajouter** un acteur enfant de type _html_ qui contiendra la température de consigne
 
     * renommer le _Label_ avec ```htmlTempCmd```
     * définir la propriété _Spécifiques > Contenu_ avec le texte
@@ -390,7 +390,7 @@ Notre **objectif** ici est double:
         ![defineDatasource](assets/compositeClass.png)
         ![defineDatasource](assets/compositeClass2.png)
 
-2. **Définir** l'acteur principal avec un acteur _empilement_
+2. **Définir** l'acteur principal avec un acteur _Empilement_
 
 3. **Ajouter** un acteur enfant de type _Climatiseur_
 
