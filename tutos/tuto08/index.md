@@ -127,7 +127,7 @@ L'environnement de test est opérationnel et la SynApp est en mode **éxécution
 
     ![execute2](assets/execute2.png)
 
-3. **Tourner** la SynApp en mode _paysage_, la zone centrale est alors tronquée !
+3. **Tourner** la SynApp en mode _paysage_ et **constater** que le bord rouge du bas de la zone disparait
 
     ![execute3](assets/execute3.png)
 
@@ -139,15 +139,15 @@ Bien que la taille en pixel soit la plus simple à appréhender, nous recommando
 
 * Acteur enfant dont la taille doit absolument rester fixe. Par exemple: un logo qui doit avoir un aspect fixe
 
-* SynApp réalisé pour un écran d'accueil à la résolution précise
+* SynApp réalisée pour un écran d'accueil à la résolution précise
 
-De façon générale, lorsque vous définissez une taille en pixels, cela doit être justifié !
+De façon générale, lorsque vous définissez une taille en pixels, cela doit être pour une raison justifiée !
 
 ### Tailles pourcentage **%**
 
 Permet de définir des tailles en pourcent par rapport à l'acteur parent
 
-1. **Définir** la hauteur à ```50%``` et laisser l  largeur à ```100%```
+1. **Définir** la hauteur à ```50%``` et laisser la largeur à ```100%```
 
 2. **Passer** du mode _paysage_ au mode _portrait_ et **constater** que la hauteur de la zone est de 50% relativement à la hauteur de la **zone grise**
 
