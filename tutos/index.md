@@ -37,3 +37,5 @@ Les tutoriaux sont classés par **niveaux de difficultés** et les niveaux <span
 6. [Tutorial 6: les événements et fonctions javascripts - <span style='color:red'>Expert</span>](tuto06/index.md)
 
 7. [Tutorial 7: les acteurs métiers natifs du REDY - <span style='color:orange'>Avancé</span>](tuto07/index.md)
+
+8. [Tutorial 8: les tailles - <span style='color:green'>Débutant</span>](tuto08/index.md)

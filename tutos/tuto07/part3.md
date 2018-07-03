@@ -10,7 +10,7 @@ Nous allons également intégrer le **tableau de bord multi-énergies** du REDY 
 
 1. **Créer** une nouvelle scène et **renommer** le _label_ de la première scène en ```sceneGrapher``` et le _nom_ avec ```Grapheur``` puis déployer
 
-2. **Définir** l'acteur principal avec un acteur _empilement_ qui contiendra uniquement le grapheur
+2. **Définir** l'acteur principal avec un acteur _Empilement_ qui contiendra uniquement le grapheur
 
     * renommer le _Label_ avec ```stackRoot```
 
@@ -24,7 +24,7 @@ Nous allons également intégrer le **tableau de bord multi-énergies** du REDY 
 
 1. **Créer** une nouvelle scène et **renommer** le _label_ de la première scène en ```sceneAgenda``` et le _nom_ avec ```Agenda``` puis déployer
 
-2. **Définir** l'acteur principal avec un acteur _empilement_ qui contiendra uniquement le grapheur
+2. **Définir** l'acteur principal avec un acteur _Empilement_ qui contiendra uniquement le grapheur
 
     * renommer le _Label_ avec ```stackRoot```
 
@@ -42,7 +42,7 @@ _Remarque:_ il est déconseillé d'intégrer directement du contenu extérieur v
 
 1. **Créer** une nouvelle scène et **renommer** le _label_ de la première scène en ```sceneDashboard``` et le _nom_ avec ```Tableau de bord énergies``` puis déployer
 
-2. **Définir** l'acteur principal avec un acteur _empilement_ qui contiendra uniquement le grapheur
+2. **Définir** l'acteur principal avec un acteur _Empilement_ qui contiendra uniquement le grapheur
 
     * renommer le _Label_ avec ```stackRoot```
 

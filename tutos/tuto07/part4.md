@@ -32,11 +32,11 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 
 4. **Modifier** également le dossier des 4 autres scènes ```sceneEtat```, ```sceneGrapher```, ```sceneAgenda``` et ```sceneDashboard```
 
-5. **Sélectionner** la scène ```sceneHome``` et **définir** l'acteur principal avec un acteur _empilement_ qui contiendra uniquement le grapheur
+5. **Sélectionner** la scène ```sceneHome``` et **définir** l'acteur principal avec un acteur _Empilement_ qui contiendra uniquement le grapheur
 
     * renommer le _Label_ avec ```stackRoot```
 
-6. **Ajouter** un acteur enfant de type _empilement_ qui contiendra la zone de titre avec la navigation
+6. **Ajouter** un acteur enfant de type _Empilement_ qui contiendra la zone de titre avec la navigation
 
     * renommer le _Label_ avec ```stackHeader```
     * modifier la propriété _Spécifiques > Orientation_ en ```Horizontal```
@@ -269,4 +269,4 @@ Vous pouvez également créer vos propres acteurs métiers réutilisables avec l
 
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
-Revenir sur la [liste des tutoriaux](../index.md)
+[Tutoriel suivant sur les tailles](../tuto08/index.md)

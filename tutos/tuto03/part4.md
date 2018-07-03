@@ -27,7 +27,7 @@ Nous allons construire une scène simple qui affiche une fenêtre modale indépe
     * Définir la propriété _Spécifiques > Taille_ à ```Large```
     ![Empilement](assets/part4_switch.png)
 
-3. **Sélectionner** l'acteur _empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Modal** (Dispositions dans l'_explorateur d'acteur_)
+3. **Sélectionner** l'acteur _Empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Modal** (Dispositions dans l'_explorateur d'acteur_)
 
     * Définir la propriété _Gabarit > Hauteur_ à ```400px```
     * Définir la propriété _Gabarit > Largeur_ à ```600px```
@@ -61,7 +61,7 @@ Nous allons construire une scène simple qui affiche une fenêtre modale indépe
 
 Dans la partie précédente, la fenêtre modale s'affiche au centre de l'écran de manière indépendante. Cela correspont à un cas d'usage fréquent mais il est parfois nécessaire que la modale soit relative à un acteur de la scène: ne pas masquer une zone par exemple. Dans ce cas, on parle de **modale attachée**.
 
-1. **Sélectionner** l'acteur _empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Texte** (Affichage dans l'_explorateur d'acteur_)
+1. **Sélectionner** l'acteur _Empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Texte** (Affichage dans l'_explorateur d'acteur_)
     ![Empilement](assets/part4_actors.png)
 
     * Définir la propriété _Spécifiques > Contenu_ à ```Ceci est l'acteur d'attachement !```

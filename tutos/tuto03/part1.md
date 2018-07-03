@@ -4,7 +4,7 @@
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
-La première partie de ce tutorial est consacrée à l'acteur **_empilement_** qui permet d'**empiler** des acteurs enfants **horizontalement** ou **verticalement** et repondre au besoin de restitution adaptative
+La première partie de ce tutorial est consacrée à l'acteur **_Empilement_** qui permet d'**empiler** des acteurs enfants **horizontalement** ou **verticalement** et repondre au besoin de restitution adaptative
 
 ## Prerequis
 
@@ -61,7 +61,7 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
 7. **Exécuter** la SynApp pour observer le résultat puis modifier la taille du navigateur et vérifier que les 4 acteurs _texte_ se répartissent équitablement l'espace
 
-## Configuration de l'acteur _empilement_
+## Configuration de l'acteur _Empilement_
 
 1. **Modifier** l'orientation de l'acteur _Empilement_ pour qu'il rende les acteurs enfants texte à l'**horizontal**
 
@@ -69,20 +69,20 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
     ![Empilement](assets/part1_horizontal.png)
 
-2. **Repositionner** l'acteur _empilement_ à la **verticale**
+2. **Repositionner** l'acteur _Empilement_ à la **verticale**
 
-## Ajout d'un acteur _empilement_ enfant
+## Ajout d'un acteur _Empilement_ enfant
 
 Nous allons modifier la scène pour que
 les 2 premiers acteurs _texte_ soient empilés horizontalement, les 2 derniers restant empilés verticalement
 
-1. **Sélectionner** l'acteur _empilement_ **stack1** et **ajouter** un nouvel acteur _empilement_ **stack6** et le configurer à l'horizontal
+1. **Sélectionner** l'acteur _Empilement_ **stack1** et **ajouter** un nouvel acteur _Empilement_ **stack6** et le configurer à l'horizontal
 
     * la propriété _Spécifiques > Orientation_ à ```Horizontale```
     * la propriété _Position > Align. vertical_ à ```Etendre```
     * la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[vide]```
 
-2. **Déplacer** l'acteur _empilement_ **stack6** en première position en utilisant le bouton _Déplacer_
+2. **Déplacer** l'acteur _Empilement_ **stack6** en première position en utilisant le bouton _Déplacer_
 
     ![Déplacer acteur](assets/part1_moveActor.png)
 
@@ -91,7 +91,7 @@ les 2 premiers acteurs _texte_ soient empilés horizontalement, les 2 derniers r
     ![Couper acteur](assets/part1_cutActor1.png)
     ![Couper acteur](assets/part1_cutActor2.png)
 
-    et le coller sur l'acteur _empilement_ **stack6**
+    et le coller sur l'acteur _Empilement_ **stack6**
 
     ![Couper acteur](assets/part1_pasteActor.png)
 
@@ -125,7 +125,7 @@ Les valeurs possible sont:
 
 # Que retenir
 
-Vous avez réalisé la construction de la scène avec 2 acteurs dispositions de type _empilement_:
+Vous avez réalisé la construction de la scène avec 2 acteurs dispositions de type _Empilement_:
 
 * le principe des **empilements imbriqués est un principe de base** de la construction de la scène d'une SynApp. Il est adapté au mode de fonctionnement des navigateurs HTML et permet de construire **des interfaces adaptatives**.
 

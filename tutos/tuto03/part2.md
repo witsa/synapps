@@ -48,7 +48,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * modifier manuellement le facteur de zoom 
     ![Empilement](assets/part2_zoom.png)
 
-4. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _empilement_ **stack3** qui représentera le contour du point lumineux et le configurer:
+4. **Sélectionner** l'acteur _toile_ **canvas1** et **ajouter** un acteur enfant de type _Empilement_ **stack3** qui représentera le contour du point lumineux et le configurer:
 
     * définir la propriété _Aspect > Couleur de fond_ avec une couleur gris clair ```#e7e7e7```
     * la propriété _Aspect > Bordure > Style bordure_ à ```Solide```
@@ -56,7 +56,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * la propriété _Aspect > Bordure > Rayon bordure_ à ```50px```
     * la propriété _Aspect > Bordure > Couleur bordure_  avec une couleur gris foncé ```#555555```
 
-5. **Sélectionner** l'acteur _empilement_ **stack3** et **ajouter** un acteur enfant de type _empilement_ **stack4** qui représentera la couleur dont l'opacité variera en fonction de l'intensité lumineuse:
+5. **Sélectionner** l'acteur _Empilement_ **stack3** et **ajouter** un acteur enfant de type _Empilement_ **stack4** qui représentera la couleur dont l'opacité variera en fonction de l'intensité lumineuse:
 
     * définir la propriété _Aspect > Couleur de fond avec une couleur jaune ```#ffe583```
     * ajouter cette couleur dans la librairie avec le nom ```colorLight```, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutorial 2 sur les liaisons aux librairies](../tuto02/part6/index.md))
@@ -67,7 +67,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[vide]```
     ![Empilement](assets/part2_light.png)
 
-6. **Positionner** l'acteur _empilement_ **stack3** sur la toile directement en déplaçant l'acteur avec le clique souris
+6. **Positionner** l'acteur _Empilement_ **stack3** sur la toile directement en déplaçant l'acteur avec le clique souris
 
     * ouvrir l'onglet _Position_ dans l'inspecteur de l'acteur
     * déplacer l'acteur avec la souris maintenue cliquée
@@ -104,7 +104,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * La _valeur_ du curseur **slider5** est désormais lié en _lecture_/_écriture_ sur la ressource consigne analogique **LightZone1**
     ![Empilement](assets/part2_slider3.png)
 
-8. **Sélectionner** l'acteur _empilement_ **stack4** et lier son _opacité_ à la valeur de l'acteur _curseur_ **slider5** qui permettra de commander la consigne analogique de la première zone lumineuse:
+8. **Sélectionner** l'acteur _Empilement_ **stack4** et lier son _opacité_ à la valeur de l'acteur _curseur_ **slider5** qui permettra de commander la consigne analogique de la première zone lumineuse:
 
     * lier en _interne_ la propriété _Aspect > Opacité_ avec la propriété _Spécifiques > Valeur_ de l'acteur **slider5**
 ![Empilement](assets/part2_lightBind.png)
@@ -116,11 +116,11 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
     * la valeur _SetPoint_ de la ressource **LightZone1** dans le paramétrage du REDY reflète bien la position du curseur
     ![Empilement](assets/part2_redy.png)
 
-10. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack6** et **positionner** ce dernier en _position gauche_ ```350px``` et _position haut_ ```200px```
+10. **Cloner** l'acteur _Empilement_ **stack3** en un nouvel acteur **stack6** et **positionner** ce dernier en _position gauche_ ```350px``` et _position haut_ ```200px```
 
-11. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack8** et **positionner** ce dernier en _position gauche_ ```200px``` et _position haut_ ```450px```
+11. **Cloner** l'acteur _Empilement_ **stack3** en un nouvel acteur **stack8** et **positionner** ce dernier en _position gauche_ ```200px``` et _position haut_ ```450px```
 
-12. **Cloner** l'acteur _empilement_ **stack3** en un nouvel acteur **stack10** et **positionner** ce dernier en _position gauche_ ```350px``` et _position haut_ ```450px```
+12. **Cloner** l'acteur _Empilement_ **stack3** en un nouvel acteur **stack10** et **positionner** ce dernier en _position gauche_ ```350px``` et _position haut_ ```450px```
 ![Empilement](assets/part2_light4.png)
 
 13. **Exécuter** la SynApp et vérifier que les couleurs des quatre lumières changent en fonction de la position du curseur
@@ -226,7 +226,7 @@ Et le résultat !
 
 Vous avez composé une scène de type _toile_ et représenté un synoptique simple:
 
-* Cet acteur est un de ceux les **plus utilisés** avec l'acteur _empilement_ pour construire des scènes de type synoptique composés d'acteurs superposés et **bien comprendre son mode de fonctionnement** constitue une des clés de SynApps.
+* Cet acteur est un de ceux les **plus utilisés** avec l'acteur _Empilement_ pour construire des scènes de type synoptique composés d'acteurs superposés et **bien comprendre son mode de fonctionnement** constitue une des clés de SynApps.
 
 * Beaucoup d'acteurs sont dupliqués dans ce tutorial au moins 2x et même 8x pour les lumières. Même si le mécanisme est plutot simple, cela ne favorise pas:
     * **réutisabilité**: cloner est seulement un raccourci pour refaire rapidement mais les acteurs vivent ensuite indépendemment

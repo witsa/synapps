@@ -11,14 +11,14 @@ Nous allons plutot intégrer le journal dans une **scène évoluée** contenant 
 
 1. **Modifier** le _label_ de la première scène en ```sceneJournal``` et le _nom_ avec ```Journal avancé``` puis déployer
 
-2. **Définir** l'acteur principal avec un acteur _empilement_ qui contiendra la barre de commande, le journal à proprement parlé ainsi qu'une modale de configuration
+2. **Définir** l'acteur principal avec un acteur _Empilement_ qui contiendra la barre de commande, le journal à proprement parlé ainsi qu'une modale de configuration
 
     * renommer le _Label_ avec ```stackRoot```
     * modifier la propriété _Aspect > Police > Taille_ en ```20px```
 
 ### Barre de commandes
 
-1. **Ajouter** un acteur enfant de type _empilement_ qui contiendra les éléments de la barre de commande
+1. **Ajouter** un acteur enfant de type _Empilement_ qui contiendra les éléments de la barre de commande
 
     * renommer le _Label_ avec ```stackCmd```
     * modifier la propriété _Spécifiques > Orientation_ en ```Horizontale```

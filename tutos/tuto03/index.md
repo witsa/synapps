@@ -42,4 +42,4 @@ Dans ce tutorial, nous allons détailler le mode de fonctionnement des 4 premier
 
 La première partie de ce tutorial est consacrée à l'acteur empilement qui permet d'empiler des acteurs enfants horizontalement ou verticalement et repondre au besoin de restitution adaptatives
 
-[Tutorial acteur disposition **_empilement_**](part1.md)
+[Tutorial acteur disposition **_Empilement_**](part1.md)
