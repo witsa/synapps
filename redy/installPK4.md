@@ -1,11 +1,11 @@
 
-# Installation projet PK4
+# Installation projet PK4/BK4
 
 [Home](../sitemap.md) > [REDY](index.md)
 
 ![Tooltip liaison librairie](assets/install_2.png)
 
-1. Sélectionner le fichier _[YOUR].PK4_ avec le bouton **Choisissez un fichier**
+1. Sélectionner le fichier _[YOUR].PK4_ our _[YOUR].BK4_ avec le bouton **Choisissez un fichier**
 
 2. Cliquer sur **Enregistrer**
 

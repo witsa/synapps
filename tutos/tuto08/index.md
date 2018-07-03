@@ -1,4 +1,4 @@
-# Tutorial 8: les tailles et gabarits - **<span style='color:green'>Débutant</span>**
+# Tutorial 8: les tailles - **<span style='color:green'>Débutant</span>**
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
@@ -61,7 +61,13 @@ Nous allons construire une scène simple afin de mettre en évidence le comporte
     * modifier la propriété _Spécifiques > Valeur_ en ```100%```
     * modifier la propriété _Spécifiques > Texte d'aide_ en ```Largeur du texte```
 
-9. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur enfant de type _Texte_ auquel seront appliquées les tailles définies par l'utilisateur
+9. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur enfant de type _Empilement_
+
+    * renommer le _Label_ avec ```stackInner```
+    * modifier la propriété _Aspect > Couleur de fond_ en ```#e0e0e0```
+    * modifier la propriété _Position > Align. vertical_ en ```Etendre```
+
+10. **Sélectionner** l'acteur ```stackInner``` et **ajouter** un acteur enfant de type _Texte_ auquel seront appliquées les tailles définies par l'utilisateur
 
     * renommer le _Label_ avec ```textSize```
     * modifier la propriété _Spécifiques > Contenu_ avec le code HTML
@@ -90,25 +96,43 @@ Nous allons construire une scène simple afin de mettre en évidence le comporte
 
 La SynApp est terminée ! nous allons tester l'effet des différentes tailles sur l'acteur _texte_ du centre
 
-## Test du comportement des tailles
+## Simulation device de type smartphone
 
 Nous allons simuler le rendu sur un petit écran pour mieux comprendre l'influence des tailles sur le rendu de l'acteur central
 
-1. En mode éxécution, **appuyer** sur F12 pour ouvrir les DevTools (outils développeurs) de Chrome
+1. En mode éxécution, **appuyer** sur F12 pour ouvrir les _DevTools_ (outils développeurs) de Chrome
 
 2. **Cliquer** sur l'icone permettant de choisir un type de _device_ de rendu
 
-    ![props_invalid](assets/devtools.png)
+    ![devtools](assets/devtools.png)
 
 3. **Sélectionner** le _device_ que vous souhaitez dans la fenêtre principale du navigateur. Par exemple _iPhone 6/7/8_
 
-    ![props_invalid](assets/execute.png)
+    ![execute](assets/execute.png)
 
-    _Remarque:_ si vous le souhaitez, cliquer sur les 3 points verticaux en haut à droite puis sélectionnez **Show device frame** pour faire apparaitre le téléphone
+    _Remarque:_ si vous souhaite faire apparaitre le contour du téléphone, cliquer sur les 3 points verticaux en haut à droite puis sélectionnez **Show device frame**
 
-## Taille en pixel
+## Test des tailles
 
-La taille en pixel est la plus simple à appréhender et permet définir une taille fixe. Nous recommandons d'éviter ce type de taille excepté dans quelques cas:
+L'environnement de test est opérationnel et la SynApp est en mode **éxécution** !
+
+### Tailles en **pixel**
+
+1. **Tourner** la SynApp en mode _portrait_
+
+    ![execute2](assets/portrait.png)
+
+2. **Définir** la hauteur à ```300px``` et laisser la largeur à ```100%```
+
+    ![execute2](assets/execute2.png)
+
+3. **Tourner** la SynApp en mode _paysage_, la zone centrale est alors tronquée !
+
+    ![execute3](assets/execute3.png)
+
+La zone centrale est tronquée, la SynApp n'est pas adaptative !
+
+Bien que la taille en pixel soit la plus simple à appréhender, nous recommandons d'éviter ce type de taille pour construire des applications **responsives** excepté dans quelques cas:
 
 * Scène de type synoptique avec fond de plan dans une disposition _toile_, pour rappel [tutorial 3 sur l'acteur de disposition **toile**](../tuto03/part2.md). Tous les acteurs de la scène doivent être défnis en valeur absolu en pixels. L'adaptabilité du synoptique pourra alors être apporté par l'acteur boite à vue, pour rappel [tutorial 3 sur l'acteur de disposition **boite à vue**](../tuto03/part3.md)
 
@@ -116,7 +140,120 @@ La taille en pixel est la plus simple à appréhender et permet définir une tai
 
 * SynApp réalisé pour un écran d'accueil à la résolution précise
 
-De manière générale, l'acteur principal d'une scène ne doit jamais être défini avec une taille fixe
+De façon générale, lorsque vous définissez une taille en pixels, cela doit être justifié !
 
-1. **Créér** une nouvelle 
+### Tailles pourcentage **%**
 
+Permet de définir des tailles en pourcent par rapport à l'acteur parent
+
+1. **Définir** la hauteur à ```50%``` et laisser l  largeur à ```100%```
+
+2. **Passer** du mode _paysage_ au mode _portrait_ et **constater** que la hauteur de la zone est de 50% relativement à la hauteur de la **zone grise**
+
+    ![execute4](assets/execute4.png)
+
+    _Remarque:_ lorsque vous définissez des tailles en %, elles sont relatives par rapport à l'acteur parent immédiat. Ici, il s'agit de l'acteur ```stackInner``` en gris
+
+### Tailles viewport height **vh** et viewport width **vw**
+
+Permet de définir des tailles en pourcent par rapport à la taille de la fenêtre
+
+1. **Définir** la hauteur à ```50vh``` et laisser la largeur à ```100%```
+
+2. **Passer** du mode _paysage_ au mode _portrait_ et **constater** que la hauteur de la zone est de 50% relativement à la hauteur de la **fenêtre**
+
+    ![execute5](assets/execute5.png)
+
+    _Remarque:_ lorsque vous définissez des tailles avec **vh**, elles sont relatives par rapport à la **taille de la fenêtre** à la différence du %
+
+3. **Définir** la largeur à ```80vw``` et laisser la Hauteur à ```30vw```
+
+4. **constater** que la largeur de la zone est de 80% relativement à la largeur de la **fenêtre**
+
+    ![execute6](assets/execute6.png)
+
+    _Remarque:_ **vh** correspond à la hauteur de la fenêtre et **vw** correspond à la largeur de la fenêtre
+
+**vh** et **vw** sont trés utiles pour définir des tailles en % par rapport aux tailles de fenêtres sur des écrans _desktop_ non orientables
+
+### Tailles **vmin** et **vmax**
+
+Permet de définir des tailles en pourcentage par rapport à, respectivement, la plus petite et la plus grande taille de la fenêtre. L'interêt étant de conserver la même taille quelque soit l'orientation, portrait ou paysage, sur un écran orientable
+
+1. **Définir** la hauteur à ```50vmin``` et la largeur à ```100%```
+
+2. **Passer** du mode _paysage_ au mode _portrait_ et **constater** que la hauteur de la zone est de 50% relativement à la plus petite des tailles: la **largeur** de la **fenêtre**
+
+    ![execute7](assets/execute7.png)
+
+    _Remarque:_ **vh** correspond à la hauteur de la fenêtre et **vw** correspond à la largeur de la fenêtre
+
+3. **Définir** la hauteur à ```30vmax``` et laisser la largeur à ```100%```
+
+4. **constater** que la hauteur de la zone est de 30% relativement à la plus grande des tailles: la **hauteur** de la **fenêtre**
+
+    ![execute8](assets/execute8.png)
+
+**vmin** et **vmax** sont trés utiles pour définir des tailles en % par rapport aux tailles de fenêtres sur des écrans _smartphone_ et _tablette_ orientables. La taille est conservée quelquesoit l'orientation
+
+### Tailles **em**
+
+Permet de définir une taille en fonction de celle de la police. **em** est adapté pour les acteurs qui contiennent du texte afin d'adapter au mieux la dimension à la taille de la police
+
+1. **Définir** la hauteur à ```3em``` et laisser la largeur à ```100%```
+
+2. **constater** que la hauteur de la zone est 3x plus grande que la taille de la police. Le nombre, qui peut être décimal, devant **em** est donc un coefficient multiplicateur par rapport à la taille de la police
+
+    ![execute9](assets/execute9.png)
+
+3. **Passer** en mode portrait et **constater** que la hauteur est conservée
+
+    _Remarque:_ tout comme **vmin** et **vmax**, **em** permet de **conserver** la taille entre l'orientation portrait et paysage mais est adapté pour représenter parfaitement les contenus texte
+
+## Que retenir
+
+Nous avons passé en revu les différents types de tailles:
+
+* **px**: L'unité de longueur ```px``` est absolue. Elle dépend de la résolution du périphérique d'affichage
+
+* **%**: L'unité de longueur ```%``` est relative à la taille de l'acteur parent
+
+* **em**: L'unité de longueur ```code``` est relative à la taille de la police de l'acteur
+
+* **vh**: L'unité de longueur ```vh``` est relative à la hauteur de la fenêtre. ```1vh``` est égale à ```1%``` de la hauteur de la fenètre
+
+* **vw**: L'unité de longueur ```vw``` est relative à la largeur de la fenêtre. ```1vw``` est égale à ```1%``` de la largeur de la fenètre
+
+* **vmin**: L'unité de longueur ```vmin``` est relative à la plus petite des dimensions de la fenêtre. ```1vmin``` est égale à ```1%``` de la plus petite des dimensions de la fenêtre
+
+* **vmax**: L'unité de longueur ```vmax``` est relative à la plus grande des dimensions de la fenêtre. ```1vmax``` est égale à ```1%``` de la plus grande des dimensions de la fenêtre
+
+Selon le **type de device** de restitution, certain types sont plus adaptés que d'autre:
+
+1. **vh** et **vw** pour le desktop
+2. **vmin** et **vmax** pour les smartphones et tablettes
+3. **px** est a éviter sauf dans certains cas trés limités
+
+Dans ce tutorial, les tailles ont été mis en oeuvre dans les propriétés _Gabarit > Hauteur_ et _Gabarit > Largeur_ mais le principe reste le même pour les autres propriétés des acteurs avec des tailles:
+
+* _Gabarit > Marge > Extérieurs_
+* _Gabarit > Marge > Intérieurs_
+* _Aspect > Police > Taille_
+* _Aspect > Police > Hauteur ligne_
+* _Aspect > Bordure > Epaisseur bordure_
+* _Aspect > Bordure > Rayon bordure_
+
+Vous pouvez essayer d'autres tailles que celles définies dans le tutorial pour pousse
+
+## Conclusion
+
+La **tutorial 8** portant sur les tailles est **terminée**
+
+La bonne utilisation des tailles est un facteur clé pour construire des applications adaptatives, une des promesses majeures de SynApps !
+
+[![Source Blog Stéphanie Walter](https://cdn.dribbble.com/users/84109/screenshots/1488076/content-is-like-water-800.jpg)](http://google.com.au/)
+[Source Blog Stéphanie Walter](https://blog.stephaniewalter.fr/en/freebies-giveaways/)
+
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+
+Revenir sur la [liste des tutoriaux](../index.md)
