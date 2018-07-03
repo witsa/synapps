@@ -2,14 +2,15 @@
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
-Un des éléments fondateur de SynApps est la capacité à construire des applications adaptatives: on parle également de **responsive design** ou **site web adaptatif**
+Un des éléments fondateur de SynApps est sa capacité à construire des applications adaptatives: on parle également de **responsive design** ou **site web adaptatif**
 
 [Wikipédia](https://fr.wikipedia.org/wiki/Site_web_adaptatif){:target="_blank"}
 
 Il est important de bien comprendre comment définir les tailles des acteurs pour construire des SynApps qui s'adaptent au mieux aux différentes dimensions d'écrans
 
-_Remarque:_ cela ne veut pas dire qu'une application réalisée pour un mode desktop sera parfaitement adaptée à un smartphone. Il est même recommendé réaliser des applications différentes pour les devices de type desktop/tablette et smartphone
-Par contre, en respectant les indications de ce tutoriel, votre application s'adaptera parfaitement aux différentes tailles d'écrans pour ces deux types de restitution
+_Remarque:_ cela ne veut pas dire qu'une application réalisée pour un mode desktop sera parfaitement adaptée à un smartphone. Il est même recommendé de réaliser des applications différentes pour les devices de type desktop/tablette et smartphone
+
+En respectant les indications de ce tutoriel, votre application s'adaptera parfaitement aux différentes tailles d'écrans pour ces deux types de restitution
 
 ## Prérequis
 
