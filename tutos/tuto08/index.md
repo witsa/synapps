@@ -249,13 +249,13 @@ Enfin nous avons utilisé les **Dev Tools** de Chrome pour simuler un device de 
 
 La **tutorial 8** portant sur les tailles est **terminée**
 
-La bonne utilisation des tailles est un facteur clé pour construire des applications adaptatives, une des promesses majeures de SynApps !
-
 Vous ne devez pas hésiter à **tester** votre SynApp avec les outils de développement des navigateurs qui permmettent de vérifier rapidement le rendu dans différentes tailles et orientations d'écrans: n'hésitez pas à **changer le device** de restitution _iPad_, _Nexus_, etc
 
 Vous pouvez même utiliser le device **Responsive** qui permet de modifier manuellement la largeur et la hauteur !
 
 ![execute9](assets/responsive.png)
+
+La bonne utilisation des tailles est un facteur clé pour construire des applications adaptatives, une des promesses majeures de SynApps !
 
 [![Source Blog Stéphanie Walter](https://cdn.dribbble.com/users/84109/screenshots/1488076/content-is-like-water-800.jpg)](http://google.com.au/)
 [Source Blog Stéphanie Walter](https://blog.stephaniewalter.fr/en/freebies-giveaways/)
