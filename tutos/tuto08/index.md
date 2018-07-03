@@ -2,14 +2,14 @@
 
 [Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
-Un des éléments fondateur de SynApps est la capacité à construire des applications adaptatives: on parle également de **responsive design** ou site web adaptatif
+Un des éléments fondateur de SynApps est la capacité à construire des applications adaptatives: on parle également de **responsive design** ou **site web adaptatif**
 
 [Wikipédia](https://fr.wikipedia.org/wiki/Site_web_adaptatif){:target="_blank"}
 
 Il est important de bien comprendre comment définir les tailles des acteurs pour construire des SynApps qui s'adaptent au mieux aux différentes dimensions d'écrans
 
-_Remarque:_ cela ne veut pas dire qu'une application réalisée pour un mode desktop sera parfaitement adaptée à un smartphone. Dans ce cas, il est préferrable de réaliser 2 applications différentes pour le mode desktop/tablette et smartphone
-Par contre, en respectant les indications de ce tutoriel, votre application s'adaptera parfaitement aux différentes tailles d'écrans de ces deux types de restitution
+_Remarque:_ cela ne veut pas dire qu'une application réalisée pour un mode desktop sera parfaitement adaptée à un smartphone. Il est même recommendé réaliser des applications différentes pour les devices de type desktop/tablette et smartphone
+Par contre, en respectant les indications de ce tutoriel, votre application s'adaptera parfaitement aux différentes tailles d'écrans pour ces deux types de restitution
 
 ## Prérequis
 
@@ -21,7 +21,7 @@ Nous allons construire une scène simple afin de mettre en évidence le comporte
 
 1. **Modifier** le _label_ de la première scène en ```sceneSizes``` et le _nom_ avec ```Test des tailles``` puis déployer
 
-2. **Définir** l'acteur principal avec un acteur _Empilement_ qui contiendra la barre de commande, le journal à proprement parlé ainsi qu'une modale de configuration
+2. **Définir** l'acteur principal avec un acteur _Empilement_
 
     * renommer le _Label_ avec ```stackRoot```
     * modifier la propriété _Aspect > Police > Taille_ en ```3em```
@@ -88,11 +88,11 @@ Nous allons construire une scène simple afin de mettre en évidence le comporte
     * définir la propriété _Aspect > Bordure > Epaisseur bordure_ en ```10px```
     * définir la propriété _Aspect > Bordure > Couleur bordure_ en ```#ff0000```
 
-10. **Vérifier** la zone de prévisualisation
+11. **Vérifier** la zone de prévisualisation
 
     ![props_invalid](assets/preview.png)
 
-11. **Déployer** et **éxécuter**
+12. **Déployer** et **éxécuter**
 
 La SynApp est terminée ! nous allons tester l'effet des différentes tailles sur l'acteur _texte_ du centre
 
@@ -110,7 +110,7 @@ Nous allons simuler le rendu sur un petit écran pour mieux comprendre l'influen
 
     ![execute](assets/execute.png)
 
-    _Remarque:_ si vous souhaite faire apparaitre le contour du téléphone, cliquer sur les 3 points verticaux en haut à droite puis sélectionnez **Show device frame**
+    _Remarque:_ si vous souhaitez faire apparaitre le contour du téléphone, cliquer sur les 3 points verticaux en haut à droite puis sélectionnez **Show device frame**
 
 ## Test des tailles
 
@@ -243,13 +243,19 @@ Dans ce tutorial, les tailles ont été mis en oeuvre dans les propriétés _Gab
 * _Aspect > Bordure > Epaisseur bordure_
 * _Aspect > Bordure > Rayon bordure_
 
-Vous pouvez essayer d'autres tailles que celles définies dans le tutorial pour pousse
+Enfin nous avons utilisé les **Dev Tools** de Chrome pour simuler un device de type smartphone
 
 ## Conclusion
 
 La **tutorial 8** portant sur les tailles est **terminée**
 
 La bonne utilisation des tailles est un facteur clé pour construire des applications adaptatives, une des promesses majeures de SynApps !
+
+Vous ne devez pas hésiter à **tester** votre SynApp avec les outils de développement des navigateurs qui permmettent de vérifier rapidement le rendu dans différentes tailles et orientations d'écrans: n'hésitez pas à **changer le device** de restitution _iPad_, _Nexus_, etc
+
+Vous pouvez même utiliser le device **Responsive** qui permet de modifier manuellement la largeur et la hauteur !
+
+![execute9](assets/responsive.png)
 
 [![Source Blog Stéphanie Walter](https://cdn.dribbble.com/users/84109/screenshots/1488076/content-is-like-water-800.jpg)](http://google.com.au/)
 [Source Blog Stéphanie Walter](https://blog.stephaniewalter.fr/en/freebies-giveaways/)
