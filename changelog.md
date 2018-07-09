@@ -2,7 +2,13 @@
 
 [Home](sitemap.md)
 
-## Juin 2018 - version **1.3.9**
+## Juin - Juillet 2018 - version **1.3.9**
+
+### Ecran de login adaptatif sur smartphone [issue #239](https://github.com/witsa/synapps/issues/239)
+
+Le rendu du login est désormais adapté aux mode desktop et smartphone
+
+![login](changelog/1.3.9/login.png)
 
 ### Logo des SynApps mis à jour non persisté [issue 202](https://github.com/witsa/synapps/issues/202)
 

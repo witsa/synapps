@@ -259,7 +259,7 @@ Vous pouvez même utiliser le device **Responsive** qui permet de modifier manue
 La bonne utilisation des tailles est un facteur clé pour construire des applications adaptatives, une des promesses majeures de SynApps !
 
 [![Source Blog Stéphanie Walter](https://cdn.dribbble.com/users/84109/screenshots/1488076/content-is-like-water-800.jpg)](http://google.com.au/)
-[Source Blog Stéphanie Walter](https://blog.stephaniewalter.fr/en/freebies-giveaways/)
+[Source Blog Stéphanie Walter](https://blog.stephaniewalter.fr/en/freebies-giveaways/){:target="_blank"}
 
 Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
