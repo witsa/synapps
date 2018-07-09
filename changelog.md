@@ -6,7 +6,7 @@
 
 ### Ecran de login adaptatif sur smartphone [issue #239](https://github.com/witsa/synapps/issues/239)
 
-Le rendu du login est désormais adapté aux mode desktop et smartphone
+Le rendu du login est désormais adapté aux modes desktop et smartphone
 
 ![login](changelog/1.3.9/login.png)
 
