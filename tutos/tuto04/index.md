@@ -257,7 +257,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     _Remarque:_ la propriété _Spécifiques > Acteur de visualisation_ est laissée vide car nous voulons naviguer sur la zone courante.
 
 4. **Cloner** 3 fois la scène ```sceneC_1``` en scène ```sceneC_2```, ```sceneC_3``` et ```sceneC_4``` en renommant les noms de scène et textes (_étapes 1 et 2_)
-    ![Empilement](assets/scenesC.png)
+    ![Empilement](assets/scenesC1.png)
 
 5. **Sélectionner** la scène _ ```sceneC```
 
@@ -300,7 +300,7 @@ Vous avez mis en oeuvre la navigation de 2 manières:
 
 Vous avez défini des **propriétés de scènes** qui permettent de **piloter les scènes** et **définir des raccourcis** vers des scènes spécifiques. Ces propriétés sont **liables** par tous les acteurs constitutifs de cette scène
 
-Enfin, vous avez ranger les scènes dans des **dossiers** pour les retrouver plus facilement !
+Enfin, vous avez rangé les scènes dans des **dossiers** pour les retrouver plus facilement !
 
 ## Conclusion
 

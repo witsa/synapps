@@ -68,7 +68,7 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
 
         ![Empilement](assets/logo.png)
 
-        _Remarques:_ le logo permet d'identifier visuellement le composite dans l'_explorateur d'acteurs_. Il est également possible de faire une copie d'écran du composite avec l'icone **appareil photo** ci-dessus: à tester mais le résultat sera toujours mieux avec une image adaptée
+        _Remarques:_ le logo permet d'identifier visuellement le composite dans l'_explorateur d'acteurs_. Il est également possible de faire une copie d'écran du composite avec l'icone **appareil photo** ci-dessus: à tester mais le résultat sera toujours meilleur avec une image adaptée
 
     * définir la propriété _Aspect > Police > Taille_ à ```50px```
 
