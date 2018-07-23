@@ -209,7 +209,7 @@ Permet de définir une taille en fonction de celle de la police. **em** est adap
 
 3. **Passer** en mode portrait et **constater** que la hauteur est conservée
 
-    _Remarque:_ tout comme **vmin** et **vmax**, **em** permet de **conserver** la taille entre l'orientation portrait et paysage mais est adapté pour représenter parfaitement les contenus texte
+    _Remarque:_ tout comme **vmin** et **vmax**, **em** permet de **conserver** la taille entre l'orientation portrait et paysage mais est plus adapté pour représenter parfaitement les contenus texte
 
 ## Que retenir
 
@@ -248,7 +248,7 @@ Enfin nous avons utilisé les **Dev Tools** de Chrome pour simuler un device de 
 
 ## Conclusion
 
-La **tutorial 8** portant sur les tailles est **terminée**
+Le **tutorial 8** portant sur les tailles est **terminé**
 
 Vous ne devez pas hésiter à **tester** votre SynApp avec les outils de développement des navigateurs qui permmettent de vérifier rapidement le rendu dans différentes tailles et orientations d'écrans: n'hésitez pas à **changer le device** de restitution _iPad_, _Nexus_, etc
 

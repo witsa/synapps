@@ -12,7 +12,7 @@ Installer ce paramétrage avec le [gestionnaire de projets](../redy/installPK4.m
 
 L'**ambition** de SynApps est la création d'applications **sans connaissances en développement**.
 
-Pour des usages avancés, des connaissances plus techniques pourront être nécessaire comme le langage javascript et HTML
+Pour des usages avancés, des connaissances plus techniques pourront être nécessaires comme le langage _javascript_ et _HTML_
 
 Les tutoriaux sont classés par **niveaux de difficultés** et les niveaux <span style='color:green'>débutants</span> suffisent déja à réaliser des SynApps pertinentes. Si vous souhaitez approfondir, les niveaux <span style='color:orange'>avancés</span> et <span style='color:red'>experts</span> permettent d'aller plus loin et envisager des SynApps plus ambitieuses
 
