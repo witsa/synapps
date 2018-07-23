@@ -378,7 +378,7 @@ Notre **objectif** ici est double:
     **Important:** nous définissons une source de donnée sur le composite afin d'avoir une **ressource de travail** pour configurer les liaisons. Cette ressource pourra et devra  être modifié au moment de l'ajout d'une instance de ce composite dans la scène
 
     * créer la source de donnée WOS ![createDatasource](assets/createDatasource.png)
-    * parcourir le chemin vers la ressource ``` VTCAtlanticEst``` dans le dossier ``` Tutorial5```
+    * parcourir le chemin vers la ressource ```VTCAtlanticEst``` dans le dossier ```Tutorial5```
     ```text
     : / easy / RESS / R00005 / R0003
     ```
@@ -468,7 +468,7 @@ Nous avons configuré la scène avec 2 intances de composite _compositeClim_. Ho
     ![actorDatasource2](assets/actorDatasource2.png)
     * créer une nouvelle source de donnée _WOS_
     ![createDatasource2](assets/createDatasource2.png)
-    * parcourir le chemin vers la ressource ``` VTCAtlanticWest``` dans le dossier ``` Tutorial5```
+    * parcourir le chemin vers la ressource ```VTCAtlanticWest``` dans le dossier ```Tutorial5```
     ```text
     : / easy / RESS / R00005 / R0004
     ```
@@ -530,7 +530,7 @@ Nous allons créer une nouvelle SynApp et importer le composite ```compositeClim
     :easy.SynApps.Test_Import.Composites
     ```
 
-6. **Cliquer** sur le bouton _Choisir un fichier_, **sélectionner** le fichier _.WK4_ exporté précédemment, et **Ajouter**
+6. **Cliquer** sur le bouton _Choisir un fichier_, **sélectionner** le fichier _.WK4_ exporté précédemment, et **ajouter**
     ![redyImport](assets/redyImport.png)
 
 7. **Vérifier** que le composite est bien importé
