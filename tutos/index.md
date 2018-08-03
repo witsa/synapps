@@ -18,7 +18,7 @@ Les tutoriaux sont classés par **niveaux de difficultés** et les niveaux <span
 
 | Niveau   | |
 |----------|-|
-| **<span style='color:green'>Débutant</span>**  | _vous pouvez déja faire beaucoup et arréter vous la si cela vous suffit_ |
+| **<span style='color:green'>Débutant</span>**  | _vous pouvez déja faire beaucoup et arrétez vous la si cela vous suffit_ |
 | **<span style='color:orange'>Avancé</span>**  | _vous êtes à l'aise avec les tutoriaux, poussez l'expérience plus loin_ |
 | **<span style='color:red'>Expert</span>**  |  _ouvrez la boite_ |
 

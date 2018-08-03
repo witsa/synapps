@@ -74,7 +74,7 @@ Nous allons construire une scène simple afin de mettre en évidence le comporte
     * modifier la propriété _Spécifiques > Contenu_ avec le code HTML
 
     ```HTML
-    <span class="badge" style="font-size:1em;">{{width}}</span> x <span class="badge" style="font-size:1em;">{{height}}</span>
+    <span class="badge" style="font-size:1em;">{% raw %}{{width}}{% endraw %}</span> x <span class="badge" style="font-size:1em;">{% raw %}{{height}}{% endraw %}</span>
     ```
     * compléter le contenu en créant les propriétés additionnelle _width_ et _height_ de type _texte_
     * lier la propriété _Spécifiques > width_ créée à la propriété _Largeur_ du même acteur
