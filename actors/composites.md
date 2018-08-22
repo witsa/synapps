@@ -6,4 +6,4 @@ Construit par des utilisateurs avancés dans le MAKER à partir d'acteurs natifs
 
 ## Contruction
 
-Voir [tutorial 5 sur les acteurs **composites**](../tutos/tuto5/index.md)
+Voir [tutorial 5 sur les acteurs **composites**](../tutos/tuto05/index.md)
