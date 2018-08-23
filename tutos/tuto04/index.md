@@ -199,7 +199,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
     ![Empilement](assets/textFooterProp.png)
     * liéer en interne cette propriété
     ![Empilement](assets/textFooterProp2.png)
-    * sélectionner l'objet _Scène principale_ et la propriété _Scène sélectionnée_ et **lier**
+    * sélectionner l'objet _Scène principale_ et la propriété _Scène sélectionnée_ et **lier** en _lecture_ uniquement
     ![Empilement](assets/bindInternal.png)
 
 4. **Déployer** et **exécuter** la SynApp. L'**URL** de la SynApp contient désormais la propriété de scéne créée _selectedScene_
@@ -220,8 +220,11 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
 5. **Sélectionner** l'acteur _écran_ **screenMiddle** pour lier sa scène
 
-    * Lier la propriété _Spécifique > Scène_ en interne vers l'objet _Scène principale_ et la propriété _Scène sélectionnée_
+    * Lier la propriété _Spécifique > Scène_ en interne vers l'objet _Scène principale_ et la propriété _Scène sélectionnée_ en _lecture_ et _écriture_
     ![Empilement](assets/bindInternal2.png)
+
+    _Remarque:_
+    **Lecture** et **écriture** car nous voulons que la modification de scène sur la scène principale soit propagée vers la scène de l'acteur écran et vice-versa !
 
 6. **Déployer** et **exécuter** la SynApp
 
