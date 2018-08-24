@@ -175,7 +175,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
 ## Définition des **paramêtres de la scène** principale
 
-1. **Sélectioner** la scène principale ```sceneMaster``` pour définir qu'elle est pilotée par des paramêtres. Ici par le numéro de scène scendaire
+1. **Sélectionner** la scène principale ```sceneMaster``` pour définir qu'elle est pilotée par des paramêtres. Ici par le numéro de scène secondaire
 
     * cliquer sur _Gestion des propriétés paramêtres_ dans l'inspecteur de scène
     ![Empilement](assets/sceneMaster2.png)
