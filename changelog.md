@@ -6,23 +6,23 @@
 
 ## Amélioration stratégie de requétage des sources de données selon configuration réseau [#272](https://github.com/witsa/synapps/issues/272)
 
-SynApps privilégie les micro requêtes en nombres pour récupérer les ressources (nods) du REDY via les sources de données. Cependant, dans certains cas le temps de chargement de ces ressources est trés long notamment lorsque:
+SynApps privilégie les micro requêtes en nombre pour récupérer les ressources (nods) du REDY via les sources de données. Cependant, dans certains cas le temps de chargement de ces ressources est très long notamment lorsque:
 
 - Le REDY est sollicité côté process
-- Infrastructure réseau limite les requêtes en parallèle.
+- L'infrastructure réseau limite les requêtes en parallèle.
 
   _Exemple:_ mode de fonctionnement proxy chainant les requêtes
 
 Pour répondre a cette problématique, 2 stratégies sont désormais proposées à définir selon configuration sur site
 
-- **Macro-requête**: 1 requête par source de données. En recours lorsque REDY trés sollicité ou infrastructure réseau limitant les requêtes parallèle
-- **Micro-requête**: 1 requête par ressource liée. A privilégier lorsque REDY peu ou normalement sollicité et infrastructure réseau autorisant les requêtes parallèle
+- **Macro-requête**: 1 requête par source de données. En recours lorsque le REDY est trés sollicité ou infrastructure réseau limitant les requêtes parallèles
+- **Micro-requête**: 1 requête par ressource liée. A privilégier lorsque REDY peu ou normalement sollicité et infrastructure réseau autorisant les requêtes parallèles
 
 Actuellement, cette stratégie est définie globalement dans l'administration de la SynApp
 
 ![login](changelog/1.3.10/strategy.png)
 
-En cas doute, sur la configuration à adopter, il est conseillé est de **benchmarker** selon les 2 stratégies
+En cas doute, sur la configuration à adopter, il est conseillé de **benchmarker** selon les 2 stratégies
 
 _Important:_ stratégie disponible à partir de **SynApps 1.3.10** et **REDY 9.8.1**
 
