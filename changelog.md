@@ -2,6 +2,45 @@
 
 [Home](sitemap.md)
 
+## Septembre 2018 - version **1.3.10**
+
+## Amélioration stratégie de requétage des sources de données selon configuration réseau [#272](https://github.com/witsa/synapps/issues/272)
+
+SynApps privilégie les micro requêtes en nombres pour récupérer les ressources (nods) du REDY via les sources de données. Cependant, dans certains cas le temps de chargement de ces ressources est trés long notamment lorsque:
+
+- Le REDY est sollicité côté process
+- Infrastructure réseau limite les requêtes en parallèle.
+
+  _Exemple:_ mode de fonctionnement proxy chainant les requêtes
+
+Pour répondre a cette problématique, 2 stratégies sont désormais proposées à définir selon configuration sur site
+
+- **Macro-requête**: 1 requête par source de données. En recours lorsque REDY trés sollicité ou infrastructure réseau limitant les requêtes parallèle
+- **Micro-requête**: 1 requête par ressource liée. A privilégier lorsque REDY peu ou normalement sollicité et infrastructure réseau autorisant les requêtes parallèle
+
+Actuellement, cette stratégie est définie globalement dans l'administration de la SynApp
+
+![login](changelog/1.3.10/strategy.png)
+
+En cas doute, sur la configuration à adopter, il est conseillé est de **benchmarker** selon les 2 stratégies
+
+_Important:_ stratégie disponible à partir de **SynApps 1.3.10** et **REDY 9.8.1**
+
+## Runtime avec compte exploitant incomplet [#273](https://github.com/witsa/synapps/issues/273)
+
+SynApps RUNTIME avec un compte exploitant est désormais complètement opérationnel. Les propriétés label et libellé sont désormais **chargées** et **liables**.
+Cela permet notamment d'afficher le profil utilisateur dans la SynApp
+
+## Langue systeme du REDY modifiée à la connection sur SynApps [#270](https://github.com/witsa/synapps/issues/270)
+
+A la connection dans SynApps la langue système de l'utilisateur était systématiquement réinitialisée à FR
+
+## Commande envoyée par un acteur ne prend pas en compte la valeur corrigée par le REDY [#271](https://github.com/witsa/synapps/issues/271)
+
+L'acteur à l'origine d'une commande vers le REDY n'était pas mis à jour lorsque la valeur était corrigée. Par exemple: commande marnage hors seuils
+
+[**+ 3 autres issues mineures**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.4.0)
+
 ## Juin - Juillet 2018 - version **1.3.9**
 
 ### Ecran de login adaptatif sur smartphone [issue #239](https://github.com/witsa/synapps/issues/239)
