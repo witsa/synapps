@@ -17,7 +17,7 @@ SynApps est constitué de 2 web apps distinctes:
 * Le **MAKER**: outil de *construction* et de *déploiement*
 * Le **RUNTIME**: app d'exécution des SynApps
 
-SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à Octobre 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
+SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à fin 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
 
 _Attention:_ **aucune SynApp ne doit être déployée en production sur site** sans en informer WIT: nous vous invitons à **contacter notre support** pour toute question relative à ce sujet
 
@@ -33,7 +33,7 @@ De même, **SynApps RUNTIME** sera également distribué pour les plateformes, _
 |---------------------------------|-------|---------|------------------|
 | Web cloud RIA                   |  [x]  |   [x]   | Oui              |
 | Web embarqué dans REDY          |  [ ]  |   [x]   | Oui              |
-| Windows                         |  [x]  |   [x]   | Octobre 2018     |
+| Windows                         |  [x]  |   [x]   | Novembre 2018    |
 | Linux                           |  [x]  |   [x]   | Date non définie |
 | Mac                             |  [x]  |   [x]   | Date non définie |
 | Android (APK: fichier installé) |  [ ]  |   [x]   | Fin 2018         |
@@ -44,7 +44,7 @@ De même, **SynApps RUNTIME** sera également distribué pour les plateformes, _
 
 Actuellement **MAKER** et **RUNTIME** sont distribués uniquement en interne. Vous pouvez nous contacter si vous souhaitez participer à la phase de `BETA PREVIEW`.
 
-Les **modalités commerciales** de SynApps seront précisées en Octobre 2018 à l'issue de la phase d'évaluation
+Les **modalités commerciales** de SynApps seront précisées fin 2018 à l'issue de la phase d'évaluation
 
 ## Propriété et confidentialité
 
