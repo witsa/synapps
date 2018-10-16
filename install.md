@@ -18,13 +18,15 @@ Le MAKER est l'outil de construction et de déploiement de SynApps. Il est distr
 
 2. Executable **Windows** avec un installeur:
 
-    La version **Windows** de SynApps MAKER est programmée pour octobre 2018
+    La version **Windows** de SynApps MAKER est programmée pour Novembre 2018
 
 ## RUNTIME
 
 1. **WebApp** idem MAKER
 
-2. **Android** vous pouvez acceder à vos SynApps depuis un terminal _Android_ [installer SynApps sur Android](install/android.md)
+2. **Android** vous pouvez éxécuter vos SynApps depuis un smartphone _Android_ [installer SynApps sur Android](install/android.md)
+
+3. **iOs** vous pouvez éxécuter vos SynApps depuis un smartphone _iOs_ [installer SynApps sur iOs](install/ios.md)
 
 ## REDY PC
 
