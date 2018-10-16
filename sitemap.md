@@ -9,6 +9,8 @@
 
 * [Compatibilité des versions RUNTIME & MAKER](versions.md)
 
+* [Matrice de compatibilité recommandée des OS et navigateurs](browers.md)
+
 * [Tutoriaux](tutos/index.md)
   1. [Tutorial 1: première SynApp "Helloworld"](tutos/tuto01/index.md)
   2. [Tutorial 2: les liaisons](tutos/tuto02/index.md)

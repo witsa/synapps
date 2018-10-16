@@ -1,4 +1,4 @@
-# Matrice de compatibilité recommandé des navigateurs
+# Matrice de compatibilité recommandée des OS et navigateurs
 
 [Home](sitemap.md)
 
