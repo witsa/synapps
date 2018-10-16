@@ -4,7 +4,7 @@
 
 * [Installation](install.md)
   1. [Installation RUNTIME sur **Android**](install/android.md)
-  2. [Installation RUNTIME sur **iOs**](install/android.md)
+  2. [Installation RUNTIME sur **iOs**](install/ios.md)
 
 * [Changelog](changelog.md)
 
