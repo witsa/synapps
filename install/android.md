@@ -1,4 +1,4 @@
-# Installation Android
+# Installation de SynApps RUNTIME sur **Android**
 
 [Home](../sitemap.md)
 

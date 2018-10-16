@@ -1,4 +1,4 @@
-# Installation iOs
+# Installation de SynApps RUNTIME sur **iOs**
 
 [Home](../sitemap.md)
 
