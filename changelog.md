@@ -2,9 +2,25 @@
 
 [Home](sitemap.md)
 
+## Janvier 2019 - version **1.4.2**
+
+### Corrections et améliorations diverses ([détails ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.4.2))
+
+---
+
+## Novembre 2018 - version **1.4.1**
+
+### Réduction de la taille du Runtime
+
+Nous avons effectué une refonte de nos sources afin de séparer complètement ce qui concerne le runtime et ce qui concerne le maker. Ce qui a permis d'obtenir une application Runtime 30% plus légère donc plus rapide à charger dans le navigateur.
+
+### Autres corrections et améliorations ([détails ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.4.0))
+
+---
+
 ## Septembre 2018 - version **1.3.10**
 
-## Amélioration stratégie de requétage des sources de données selon configuration réseau [#272](https://github.com/witsa/synapps/issues/272)
+### Amélioration stratégie de requétage des sources de données selon configuration réseau [#272](https://github.com/witsa/synapps/issues/272)
 
 SynApps privilégie les micro requêtes en nombre pour récupérer les ressources (nods) du REDY via les sources de données. Cependant, dans certains cas le temps de chargement de ces ressources est très long notamment lorsque:
 
@@ -26,20 +42,22 @@ En cas doute, sur la configuration à adopter, il est conseillé de **benchmarke
 
 _Important:_ stratégie disponible à partir de **SynApps 1.3.10** et **REDY 9.8.1**
 
-## Runtime avec compte exploitant incomplet [#273](https://github.com/witsa/synapps/issues/273)
+### Runtime avec compte exploitant incomplet [#273](https://github.com/witsa/synapps/issues/273)
 
 SynApps RUNTIME avec un compte exploitant est désormais complètement opérationnel. Les propriétés label et libellé sont désormais **chargées** et **liables**.
 Cela permet notamment d'afficher le profil utilisateur dans la SynApp
 
-## Langue systeme du REDY modifiée à la connection sur SynApps [#270](https://github.com/witsa/synapps/issues/270)
+### Langue systeme du REDY modifiée à la connection sur SynApps [#270](https://github.com/witsa/synapps/issues/270)
 
 A la connection dans SynApps la langue système de l'utilisateur était systématiquement réinitialisée à FR
 
-## Commande envoyée par un acteur ne prend pas en compte la valeur corrigée par le REDY [#271](https://github.com/witsa/synapps/issues/271)
+### Commande envoyée par un acteur ne prend pas en compte la valeur corrigée par le REDY [#271](https://github.com/witsa/synapps/issues/271)
 
 L'acteur à l'origine d'une commande vers le REDY n'était pas mis à jour lorsque la valeur était corrigée. Par exemple: commande marnage hors seuils
 
 [**+ 3 autres issues mineures**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.4.0)
+
+---
 
 ## Juin - Juillet 2018 - version **1.3.9**
 
@@ -73,9 +91,13 @@ Ajout de **barres de défilements** dans 2 fenêtres modales: _explorateur d'act
 
 [**7 bugs mineurs corrigés**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.9)
 
+---
+
 ## Mai 2018 - version **1.3.8**
 
 [**3 bugs mineurs corrigés**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.8)
+
+---
 
 ## Mai 2018 - version **1.3.7**
 
@@ -95,6 +117,8 @@ Les noms internes des propriétés d'acteur sont importants notamment car ils so
 ![Favicons](changelog/1.3.7/property.png)
 
 +[**4 bugs et améliorations**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.7)
+
+---
 
 ## Mai 2018 - version **1.3.6**
 
@@ -123,6 +147,8 @@ Le tooltip au survol de la ressource donne également les informations _note_ et
 [Issue 55](https://github.com/witsa/synapps/issues/55)
 
 +[**13 bugs et améliorations**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.6)
+
+---
 
 ## Avril 2018 - version **1.3.5**
 
@@ -160,6 +186,8 @@ Explication du mécanisme permettant de définir une image dans un bouton _pouss
 
 +[**16 bugs et améliorations**](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.5+)
 
+---
+
 ## Mars 2018 - version **1.3.4**
 
 ### Acteur **synoptique**
@@ -194,9 +222,13 @@ Modification du formulaire de configuration de l'acteur _répartition_ avec la p
 
 +Correction de **15 bugs et améliorations** diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.4+)
 
+---
+
 ## Février 2018 - version **1.3.1** à **1.3.3**
 
 Correction de bugs et améliorations diverses [detail ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.3.3+)
+
+---
 
 ## Janvier 2018 - version **1.3.0**
 
