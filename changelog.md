@@ -2,6 +2,27 @@
 
 [Home](sitemap.md)
 
+## Fevrier 2019 - version **1.4.3**
+
+### Ajout de la navigation par script
+
+Il est maintenant possible de déclencher une navigation par script : la méthode `displayScene(scene)` sur l'objet `synapp` du contexte le permet. Il suffit de lui passer le label de la scène de destination en argument. 
+
+```js
+context.synapp.displayScene('home');
+```
+
+### `[MAKER]` correction de l'acteur modal
+
+Il n'était plus possible de modifier un acteur modal dans le **MAKER** : une erreur survenait dès le changement d'une propriété comme la couleur d'arrière plan. Cette version corrige ce problème.
+[#297](https://github.com/witsa/synapps/issues/297)
+
+### correction de l'acteur textarea
+
+Les liaisons en ecriture du contenu d'un acteur textarea n'étaient pas effectives. Cette version corrige ce problème.
+
+---
+
 ## Janvier 2019 - version **1.4.2**
 
 ### Corrections et améliorations diverses ([détails ici](https://github.com/witsa/synapps/issues?utf8=%E2%9C%93&q=milestone%3A1.4.2))
