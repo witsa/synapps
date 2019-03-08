@@ -2,6 +2,42 @@
 
 [Home](sitemap.md)
 
+## Mars 2019 - version **1.4.4**
+
+### Sécurisation des liaisons internes :
+
+#### Création de composite depuis un acteur
+
+Il est maintenant impossible de créer un composite depuis un groupe d'acteurs si cela entraine des ruptures de liaisons internes avec d'autres acteurs ou la scène/composite.
+
+Un message indique quelles liaisons sont incriminées. Il s'agit alors de préparer la création du composite en éléminant ces dépendances.
+
+#### Suppression d'acteur
+
+Aussi, lorsqu'on supprime un acteur ou un groupe d'acteurs, toutes les liaisons internes qui les ciblaient sont supprimées.
+
+Un message indique encore les liaisons incriminées.
+
+#### Suppression d'une propriété additionnelle ou paramètre de scène
+
+Enfin, lorsqu'on supprime un propriété additionnelle ou un paramètre de scène, toutes les liaisons internes qui les ciblaient sont supprimées.
+
+Un message indiquera les liaisons incriminées.
+
+
+#### Changement de clé d'une propriété additionnelle ou paramètre
+
+Les liaisons éventuelles vers une propriété additionnelle ou paramètre dont ont change la clé sont mise à jour.
+
+### Démultiplication des propriétés de complétion.
+
+Le problème de démultiplication des propriétés additionnelles pour completer un contenu est corrigé.
+
+### Quelques corrections et améliorations divers...
+
+
+---
+
 ## Fevrier 2019 - version **1.4.3**
 
 ### Ajout de la navigation par script
