@@ -2,6 +2,48 @@
 
 [Home](sitemap.md)
 
+
+## Juillet 2019 - version **1.4.8**
+
+### Correction `undefined` dans les liasons de données.
+
+Un texte `undefined` apparaissait dans les champs liés avec une donnée de REDY pendant une fraction de sedonde, juste avant d'être correctement valorisée. C'est maintenant corigé : plus besoin de rajouter un script de transformation pour corrigé cette valeur.
+
+### Correction connexion impossible après perte de session avec REDY 11.0.x
+
+Avec les versions 11.0.x du REDY, la perte de session utilisateur entrainait une impossibilité de reconnexion. Seule la suppression du cache navigateur permettait de se reconnecter. C'est maintenant corrigé.
+
+
+### Quelques corrections et améliorations divers...
+
+---
+
+## Juin 2019 - version **1.4.7**
+
+### Ajout Liaison vers le nombre d'enfants d'un noeud WOS
+
+Un champ contenant le nombre d'enfant d'un noeud WOS est maintenant disponible dans les attributs des liaisons de données.
+
+### Correction mode macro-requête
+
+Une correction du mode macro-requete a été réalisée pour empêcher des disparitions de certaines données lorsqu'elles étaient configurées en mode `initialisation`.
+
+### Quelques corrections et améliorations divers...
+
+---
+
+## Mai 2019 - version **1.4.6**
+
+### Quelques corrections et améliorations divers...
+
+---
+
+## Avril 2019 - version **1.4.5**
+
+### Quelques corrections et améliorations divers...
+
+---
+
 ## Mars 2019 - version **1.4.4**
 
 ### Sécurisation des liaisons internes :
