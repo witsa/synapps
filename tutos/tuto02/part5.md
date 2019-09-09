@@ -68,11 +68,11 @@ Vérifier que tout fonctionne comme attendu:
 
 5. Constater que les libellés *True*/*false* demeurent toujours inchangés à *Jour*/*Nuit* et pas *Oui*/*Non*
 
-6. Forcer le rafraichissement de SynApps (F5) et constater que les libellés refletent désormais bien les nouveaux libellés *Oui*/*Non*
+6. Forcer le rafraîchissement de SynApps (F5) et constater que les libellés reflètent désormais bien les nouveaux libellés *Oui*/*Non*
 
 *Remarque:*
-* les liaisons vers *TrueStr*, *FalseStr* sont en *mode initialisation* et donc leurs changement de valeur ne sont pas rafraichies sur l'acteur *commutateur bouton*.
-Le rafrachissement de SynApps (F5) force la réinitialisation de l'acteur, les changements sont alors pris en compte
+* les liaisons vers *TrueStr*, *FalseStr* sont en *mode initialisation* et donc leurs changement de valeur ne sont pas rafraîchies sur l'acteur *commutateur bouton*.
+Le rafraîchissement de SynApps (F5) force la réinitialisation de l'acteur, les changements sont alors pris en compte
 
 **Repasser en mode MAKER**
 

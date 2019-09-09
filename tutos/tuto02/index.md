@@ -24,7 +24,7 @@ Le tutorial se décompose en **6 parties** pour une durée d'environ **1H**
 
 *Remarques:*
 
-* Penser à **déployer régulièrement**. Dans le cas ou la session de connection est expirée, un popup de reconnection apparait. Il faut s'authentifier puis redéployer
+* Penser à **déployer régulièrement**. Dans le cas ou la session de connection est expirée, un popup de reconnection apparaît. Il faut s'authentifier puis redéployer
 
 * Après tout déploiement, vous pouvez **éxécuter** la SynApp en mode:
   * *Principal*: une seule fenêtre
