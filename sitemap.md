@@ -26,6 +26,8 @@
   1. [Description des acteurs natifs](actors/natives.md)
   2. [Construction, utilisation et partage des acteurs composites](actors/composites.md)
 
+* [Pratiques](practices/index.md) *(...en construction...)*
+
 * [Description du MAKER](designer.md)
 
 * [REDY](redy/index.md)

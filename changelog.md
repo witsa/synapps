@@ -5,13 +5,13 @@
 
 ## Juillet 2019 - version **1.4.8**
 
-### Correction `undefined` dans les liasons de données.
+### Correction `undefined` dans les liaisons de données.
 
-Un texte `undefined` apparaissait dans les champs liés avec une donnée de REDY pendant une fraction de sedonde, juste avant d'être correctement valorisée. C'est maintenant corigé : plus besoin de rajouter un script de transformation pour corrigé cette valeur.
+Un texte `undefined` apparaissait dans les champs liés avec une donnée de REDY pendant une fraction de seconde, juste avant d'être correctement valorisée. C'est maintenant corrigé : plus besoin de rajouter un script de transformation pour corrigé cette valeur.
 
 ### Correction connexion impossible après perte de session avec REDY 11.0.x
 
-Avec les versions 11.0.x du REDY, la perte de session utilisateur entrainait une impossibilité de reconnexion. Seule la suppression du cache navigateur permettait de se reconnecter. C'est maintenant corrigé.
+Avec les versions 11.0.x du REDY, la perte de session utilisateur entraînait une impossibilité de reconnexion. Seule la suppression du cache navigateur permettait de se reconnecter. C'est maintenant corrigé.
 
 
 ### Quelques corrections et améliorations divers...
@@ -26,7 +26,7 @@ Un champ contenant le nombre d'enfant d'un noeud WOS est maintenant disponible d
 
 ### Correction mode macro-requête
 
-Une correction du mode macro-requete a été réalisée pour empêcher des disparitions de certaines données lorsqu'elles étaient configurées en mode `initialisation`.
+Une correction du mode macro-requête a été réalisée pour empêcher des disparitions de certaines données lorsqu'elles étaient configurées en mode `initialisation`.
 
 ### Quelques corrections et améliorations divers...
 
@@ -50,9 +50,9 @@ Une correction du mode macro-requete a été réalisée pour empêcher des dispa
 
 #### Création de composite depuis un acteur
 
-Il est maintenant impossible de créer un composite depuis un groupe d'acteurs si cela entraine des ruptures de liaisons internes avec d'autres acteurs ou la scène/composite.
+Il est maintenant impossible de créer un composite depuis un groupe d'acteurs si cela entraîne des ruptures de liaisons internes avec d'autres acteurs ou la scène/composite.
 
-Un message indique quelles liaisons sont incriminées. Il s'agit alors de préparer la création du composite en éléminant ces dépendances.
+Un message indique quelles liaisons sont incriminées. Il s'agit alors de préparer la création du composite en éliminant ces dépendances.
 
 #### Suppression d'acteur
 
@@ -80,7 +80,7 @@ Le problème de démultiplication des propriétés additionnelles pour completer
 
 ---
 
-## Fevrier 2019 - version **1.4.3**
+## Février 2019 - version **1.4.3**
 
 ### Ajout de la navigation par script
 
@@ -126,7 +126,7 @@ SynApps privilégie les micro requêtes en nombre pour récupérer les ressource
 - Le REDY est sollicité côté process
 - L'infrastructure réseau limite les requêtes en parallèle.
 
-  _Exemple:_ mode de fonctionnement proxy chainant les requêtes
+  _Exemple:_ mode de fonctionnement proxy chaînant les requêtes
 
 Pour répondre a cette problématique, 2 stratégies sont désormais proposées à définir selon configuration sur site
 
@@ -184,7 +184,7 @@ Ajout d'un **bouton de nettoyage du cache** à côté du numéro de build dans l
 
 Correction d'une erreur dans les **acteurs métiers journal et états** lors d'une navigation ou d'un rafraichissement automatique avec **session expirée**
 
-### Abscence de scroll bar dans le MAKER sur écrans avec une faible résolution [issue 155](https://github.com/witsa/synapps/issues/155)
+### Absence de scroll bar dans le MAKER sur écrans avec une faible résolution [issue 155](https://github.com/witsa/synapps/issues/155)
 
 Ajout de **barres de défilements** dans 2 fenêtres modales: _explorateur d'acteurs_ et _éditeur de propriétés_ de SynApps MAKER sur les écrans de faible résolution
 
@@ -231,7 +231,7 @@ Le mode de fonctionnement est identique à celui du REDY
 
 ### Limitation acteur IFrame
 
-Prendre connaissance des limitations de l'acteur IFrame avec des contenus accedant DOM parent
+Prendre connaissance des limitations de l'acteur IFrame avec des contenus accédant DOM parent
 [Issue 113](https://github.com/witsa/synapps/issues/113)
 
 ### Disparition de _librairies_ et _sources de données_
@@ -253,7 +253,7 @@ Le tooltip au survol de la ressource donne également les informations _note_ et
 
 ### Référencement et génération de favicons
 
-Il est désormais possible de référencer ou définir des **favicons** par SynApp pour tous les types de devices: _IOs_, _Android_. Cela permet notamment d'avoir une icone spécifique lorsque la SynApp est ajoutée sur l'écran d'acceuil du smartphone ou sur le bureau  Windows, Mac, etc.
+Il est désormais possible de référencer ou définir des **favicons** par SynApp pour tous les types de devices: _IOs_, _Android_. Cela permet notamment d'avoir une icône spécifique lorsque la SynApp est ajoutée sur l'écran d'accueil du smartphone ou sur le bureau  Windows, Mac, etc.
 
 ![Favicons](changelog/1.3.5/favicons.png)
 
@@ -311,7 +311,7 @@ Les tailles sont gérées dans la partie **administration de SynApps** ou en uti
 
 ### Optimisation du chargement des  **sources de données**
 
-Le mécanisme de chargement des sources de données de type _WOS_ a été modifié en profondeur. En effet certaines ressources avaient des tailles de chargement trop longues car la totalité de la ressource était requetée. Désormais seuls les nœuds **nécessaires aux liaisons** vers les acteurs sont chargés. La ressource est donc obtenue partiellement selon les besoins de la SynApp. Ce mécanisme a permis de **diminuer les temps de chargement de façon très importante** (ratio de 7 à 8)
+Le mécanisme de chargement des sources de données de type _WOS_ a été modifié en profondeur. En effet certaines ressources avaient des tailles de chargement trop longues car la totalité de la ressource était requettée. Désormais seuls les nœuds **nécessaires aux liaisons** vers les acteurs sont chargés. La ressource est donc obtenue partiellement selon les besoins de la SynApp. Ce mécanisme a permis de **diminuer les temps de chargement de façon très importante** (ratio de 7 à 8)
 
 ### Acteur **répartition**
 

@@ -4,7 +4,7 @@
 
 ## Liaisons **sources de données** en lecture
 
-Dans la troisième partie du tutorial, des liaisons *internes* entre acteurs ont été définies. Cela a permis de rationnaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources du REDY
+Dans la troisième partie du tutorial, des liaisons *internes* entre acteurs ont été définies. Cela a permis de rationaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources du REDY
 
 La prochaine étape va donc consister à configurer les liaisons entre les acteurs et ses ressources: les **sources de données**
 
@@ -14,7 +14,7 @@ _Exemple:_ la valeur de la variable analogique de *variableAnalogicTuto* liée a
 
 De la même façon que pour les liaisons *internes*, nous pourrions définir la liaison vers la *source de donnée* directement depuis la propriété *valeur* de la jauge *gaugeAnalogic*. Cependant, l'acteur *stackRoot* et ses trois enfants, *textTop*, *gaugeAnalogic* et *textBottom* vont être liés à la même *source de donnée*. Nous allons donc définir la *source de donnée* sur l'acteur le plus haut hiérarchiquement, cad *stackRoot*
 
-De façon général, il est conseillé de systématiquement definir la **source de donnée au niveau d'un acteur**. Dans ce cas, on parle de la **source de donnée principale** de l'acteur. Rien n'empéchera dans une propriété particulière de l'acteur d'aller chercher une autre source mais, dans la majorité des cas, une acteur et ses éventuels enfants sont liés à une seule ressource
+De façon général, il est conseillé de systématiquement définir la **source de donnée au niveau d'un acteur**. Dans ce cas, on parle de la **source de donnée principale** de l'acteur. Rien n'empêchera dans une propriété particulière de l'acteur d'aller chercher une autre source mais, dans la majorité des cas, une acteur et ses éventuels enfants sont liés à une seule ressource
 
 Un *source de donnée* peut être vu comme une **passerelle de communication** entre SynApp et le REDY:
 
@@ -70,7 +70,7 @@ Certains acteurs **natifs** vont chercher directement des données autres que ce
         * **source de donnée** = moyen d'accès à une donnée
         * **contexte** = donnée retournée par une source
 
-    En fait, la relation entre *contexte* et *source de donnée* n'est pas forcemment si directe mais cela sort du périmêtre de ce tuto. Pour l'instant, juste retenir que les laisons de type *source de donnée* des propriétés d'un acteur sont en fait définies par défaut par rapport au **contexte** de cet acteur
+    En fait, la relation entre *contexte* et *source de donnée* n'est pas forcément si directe mais cela sort du périmètre de ce tuto. Pour l'instant, juste retenir que les liaisons de type *source de donnée* des propriétés d'un acteur sont en fait définies par défaut par rapport au **contexte** de cet acteur
 
 8. La source de donnée principale de l'acteur *stackRoot* est définie. Sélectionner, tour à tour, les trois acteurs enfants et constater:
 * ils partagent tous le même *contexte*
@@ -85,7 +85,7 @@ La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie ma
 
 1. L'acteur *gaugeAnalogic* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Spécifiques.Valeur* et sélectionner **Source de données**
 
-    La fénêtre d'édition des liaisons vers les sources de données s'ouvre
+    La fenêtre d'édition des liaisons vers les sources de données s'ouvre
 ![Création liaison source de données](assets/editBindingDatasource.png)
 
 2. Configurer la liaison
@@ -103,17 +103,17 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 * **Accès**: 
 
-  * **Lecture**: laisser sélectionné et *écriture* non sélectionné. La variable analogique *variableAnalogicTuto* est accedée en lecture 
+  * **Lecture**: laisser sélectionné et *écriture* non sélectionné. La variable analogique *variableAnalogicTuto* est accédée en lecture 
 
-  * **Mode**: sélectionner *Rafraichie*. La valeur sera rafraichie toutes les X secondes. L'autre valeur possible est *Initialisation* dans ce cas la valeur est récupéré une seule fois au moment de l'initialisation de l'acteur
+  * **Mode**: sélectionner *Rafraîchie*. La valeur sera rafraîchie toutes les X secondes. L'autre valeur possible est *Initialisation* dans ce cas la valeur est récupéré une seule fois au moment de l'initialisation de l'acteur
 
-  * **Ecriture**: laisser non sélectionné. La variable analogique *variableAnalogicTuto* ne doit pas être modifié par l'acteur
+  * **Écriture**: laisser non sélectionné. La variable analogique *variableAnalogicTuto* ne doit pas être modifié par l'acteur
   
 *Remarques:* 
 
-* Ne sélectionner le *mode rafraichie* que sur des propriétés de nod qui changent. Par exemple, le *mode initialisation* est suffisant pour définir la liaison vers le nom d'une ressource
+* Ne sélectionner le *mode rafraîchie* que sur des propriétés de nod qui changent. Par exemple, le *mode initialisation* est suffisant pour définir la liaison vers le nom d'une ressource
 
-* La période de rafraichissement du *mode rafraichie* peut être modifiée directement au niveau de la *source de donnée*: onglet *source* en haut à gauche de SynApps
+* La période de rafraîchissement du *mode rafraîchie* peut être modifiée directement au niveau de la *source de donnée*: onglet *source* en haut à gauche de SynApps
 
 ![Résumé liaison source de donnée](assets/bindingDatasourceEdit.png)
 
@@ -126,13 +126,13 @@ La propriété *Valeur* de *gaugeAnalogic* est désormais liée à la propriét�
 
 * le bouton d'édition de la liaison est de couleur **bleu foncé** pour indiquer une liaison *source de données*
 
-* un **tooltip résumant la liaison** apparait en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
+* un **tooltip résumant la liaison** apparaît en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
 
 ![Tooltip liaison source de donnée](assets/bindingDatasourceSummary.png)
 
 ### Vérification de la liaison **sources de données**
 
-Modifier la période de rafraichissement de la source de donnée *dsR00002* à 3 secondes
+Modifier la période de rafraîchissement de la source de donnée *dsR00002* à 3 secondes
 ![Tooltip liaison source de donnée](assets/datasourceEdit.png)
 ![Tooltip liaison source de donnée](assets/datasourceChangePeriod.png)
 
@@ -174,7 +174,7 @@ Vérifier que tout fonctionne comme attendu: connectez-vous sur le REDY et modif
 * Modifier la Valeur à plusieurs reprises en validant: *30, 110, 50, etc*
 
  ![Vérification liaison interne](assets/redyForced2.png)
-La zone de prévisuallisation doit restituer les changements sur l'ensemble des acteurs
+La zone de pré-visualisation doit restituer les changements sur l'ensemble des acteurs
 
 Observer le résultat dans SynApp. La zone de prévisualisation doit restituer les changements sur la resource du REDY
 
@@ -182,9 +182,9 @@ Observer le résultat dans SynApp. La zone de prévisualisation doit restituer l
 
 *Remarques:*
 
-* les liaisons vers *WMax*, *Unit* et *Title* sont en *mode initialisation* et donc ne devraient, en théorie, pas être rafraichies mais juste chargées à l'initialisation de l'acteur. Cependant la source de donnée *dsR00002* récupère la valeur *Output* en *mode rafraichie*. A cette occasion, la ressource complète est récupérée et donc automatiquement appliquée sur toutes les liaisons la concernant quelquesoit le mode défini
+* les liaisons vers *WMax*, *Unit* et *Title* sont en *mode initialisation* et donc ne devraient, en théorie, pas être rafraîchies mais juste chargées à l'initialisation de l'acteur. Cependant la source de donnée *dsR00002* récupère la valeur *Output* en *mode rafraîchie*. A cette occasion, la ressource complète est récupérée et donc automatiquement appliquée sur toutes les liaisons la concernant quelquesoit le mode défini
 
-* le mode **initialisation** est donc juste une indication de **non nécessité de rafraichissement** mais ne préjuge en aucun cas du moment ou les propriétés de l'acteur seront rafraichies
+* le mode **initialisation** est donc juste une indication de **non nécessité de rafraîchissement** mais ne préjuge en aucun cas du moment ou les propriétés de l'acteur seront rafraîchies
 
 *Pour résumer:* le principe est toujours de **présenter les ressources du REDY les plus récentes** !
 

@@ -8,15 +8,15 @@ Dans les parties [précédentes](part5.md) du tutoriel, les acteurs ont été:
 
 * disposés dans une scène
 * liés en **interne** à d'autres acteurs
-* liés à des **sources de données** en *lecture* et *ecriture*
+* liés à des **sources de données** en *lecture* et *écriture*
 
-Pour cette dernière partie, nous adressons le concept des **librairies** qui permettent de centraliser des données simplement et ainsi favoriser leurs réutisabilité dans les propriétés d'acteurs
+Pour cette dernière partie, nous adressons le concept des **librairies** qui permettent de centraliser des données simplement et ainsi favoriser leurs ré-utilisabilité dans les propriétés d'acteurs
 
 ### Les librairies
 
 Les librairies sont classifiées en trois **catégories**:
 
-* **Couleurs**: librarie de *couleurs*
+* **Couleurs**: librairie de *couleurs*
 * **Images**: librairie d'*images*
 * **Contenu**: librairie d'autre types de contenu: *texte*, *javascript*, *json*, etc
 
@@ -37,13 +37,13 @@ Cela implique également qu'une méthode simple pour venir éditer un élément 
 
 Point important concernant les **images**. Le mécanisme de chargement des images dans SynApps est plus **optimisé** lorsqu'elles sont définies dans des **librairies** car elles profitent des fonctionnalités de **cache de navigateurs**
 
-_A retenir:_ définir **systématiquement** les images dans des librairies sauf pour les trés petites images (en taille) qui ne présentent pas d'intéret de réutisabilité
+_A retenir:_ définir **systématiquement** les images dans des librairies sauf pour les trés petites images (en taille) qui ne présentent pas d'intérêt de ré-utilisabilité
 
 ### Création des liaisons **librairies**
 
 La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie manuellement. Nous allons la publier dans la *librairie couleur* et créer la liaison avec la propriété *Couleur de premier plan* de l'acteur
 
-1. L'acteur *gaugeAnalogic* étant sélectionné, editer la liaison de la propriété *Spécifiques.Couleur de fond* et sélectionner **Librairie**
+1. L'acteur *gaugeAnalogic* étant sélectionné, éditer la liaison de la propriété *Spécifiques.Couleur de fond* et sélectionner **Librairie**
 
     ![Edition source de données](assets/part6_3.png)
     La modale d'édition des liaisons vers les librairie s'ouvre
@@ -68,12 +68,12 @@ La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie
 4. La propriété *Couleur premier plan* de *gaugeAnalogic* est désormais liée à la librairie *colorGauge*, vous remarquez:
     * qu'elle **n'est plus modifiable manuellement car liée**
     * le bouton d'édition de la liaison est de couleur **vert** pour indiquer une liaison *librairie*
-    * un **tooltip résumant la liaison** apparait en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
+    * un **tooltip résumant la liaison** apparaît en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
     ![Tooltip liaison librairie](assets/part6_6.png)
 
 ### Verification des liaisons **librairies**
 
-1. Vérifier la laison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
+1. Vérifier la liaison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
 
     ![Sélection de la librairie](assets/part6_7.png)
     ![Modification de la librairie](assets/part6_8.png)
@@ -94,9 +94,9 @@ La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie
     ![Build](assets/build.png)
     _Remarque:_ La configuration SynApp est cachée dans le navigateur pour optimiser son temps de chargement. Le numéro de _build_ de la SynApp cachée est comparé à celui stocké sur le REDY. Lorsqu'ils different, la SynApp est rechargée puis cachée dans le navigateur.
 
-    A chaque fois que vous modifiez une SynApp depuis le MAKER, le numéro de build change automatiquement. Par contre, si vous **modifiez une des ressources de SynApp directement depuis le REDY**, avec l'explorateur de Nod par exemple, il faut **manuellement modifier le numéro de _build_** pour forcer le rafraichissement de la SynApp dans les MAKER et RUNTIME
+    A chaque fois que vous modifiez une SynApp depuis le MAKER, le numéro de build change automatiquement. Par contre, si vous **modifiez une des ressources de SynApp directement depuis le REDY**, avec l'explorateur de Nod par exemple, il faut **manuellement modifier le numéro de _build_** pour forcer le rafraîchissement de la SynApp dans les MAKER et RUNTIME
 
-5. Revenir sur la scène *scene1* de SynApps, rafraichir (F5) et observer que la couleur est bien appliquée sur les acteurs
+5. Revenir sur la scène *scene1* de SynApps, rafraîchir (F5) et observer que la couleur est bien appliquée sur les acteurs
 
     ![Explorateur de nod](assets/part6_10.png)
 

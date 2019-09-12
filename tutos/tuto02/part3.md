@@ -3,7 +3,7 @@
 [Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 Dans la deuxième partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
-* lier cetaines propriétés des acteurs avec des ressources du REDY: liaisons vers des **source de données**
+* lier certaines propriétés des acteurs avec des ressources du REDY: liaisons vers des **source de données**
 
 Exemple: la valeur analogique de *variableAnalogicTuto* avec la valeur de la jauge *gaugeAnalogic*
 
@@ -37,7 +37,7 @@ En résumé:
 
 ### Création des liaisons **internes**
 
-1. La couleur de brodure de l'acteur *stackRoot* est actuellement définie manuellement, nous allons la lier avec la couleur  de la jauge *gaugeAnalogic*.
+1. La couleur de bordure de l'acteur *stackRoot* est actuellement définie manuellement, nous allons la lier avec la couleur  de la jauge *gaugeAnalogic*.
 ![Création liaison interne](assets/editBindingInternal.png)
 L'acteur *stackRoot* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Couleur de fond* et sélectionner **Interne**
 
@@ -53,7 +53,7 @@ Consulter [description du MAKER](../../designer.md) pour en savoir plus concerna
 3. La propriété *Couleur bordure* de *stackRoot* est désormais liée à la propriété *Couleur premier plan* de *gaugeAnalogic*, vous remarquez:
     * qu'elle **n'est plus modifiable manuellement car liée**
     * le bouton d'édition de la liaison est de couleur **orange** pour indiquer une liaison *interne*
-    * un **tooltip résumant la liaison** apparait en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
+    * un **tooltip résumant la liaison** apparaît en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
     
     ![Remarques liaison interne](assets/bindingInternalSummary.png)
 

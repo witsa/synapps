@@ -22,13 +22,13 @@ La SynApp sera constituée d'une seule scène avec un acteur disposition de type
 
 3. L'acteur *stackRoot* étant sélectionné, ajouter un premier acteur enfant de type *Affichage* > *Texte* et renommer le label avec *textTop*
 
-3. Resélectionner l'acteur *stackRoot* et ajouter un deuxième acteur enfant de type *Charts* > *Jauge* et renommer le label avec *gaugeAnalogic*
+3. Re-sélectionner l'acteur *stackRoot* et ajouter un deuxième acteur enfant de type *Charts* > *Jauge* et renommer le label avec *gaugeAnalogic*
 
-4. Resélectionner l'acteur *stackRoot* et ajouter un troisième acteur enfant de type *Affichage* > *Texte* et renommer le label avec *textBottom*
+4. Re-sélectionner l'acteur *stackRoot* et ajouter un troisième acteur enfant de type *Affichage* > *Texte* et renommer le label avec *textBottom*
 
-5. Nous allons modifier maintenant l'alignement et la taille du texte des acteurs *textTop* et *textBottom*. Mais plutot que de modifier chacun des 2 acteurs, nous allons définir ces propriétés au niveau de l'acteur principal car ces propriétés sont hérités par les enfants.
+5. Nous allons modifier maintenant l'alignement et la taille du texte des acteurs *textTop* et *textBottom*. Mais plutôt que de modifier chacun des 2 acteurs, nous allons définir ces propriétés au niveau de l'acteur principal car ces propriétés sont hérités par les enfants.
 
-*Remarque:* de façon général, il est préférrable de définir les propriétés communes le **plus haut possible dans la hiérarchie** des acteurs, ceci afin d'éviter de redéfinir plusieurs fois des valeurs identiques sur chacun des acteurs.
+*Remarque:* de façon général, il est préférable de définir les propriétés communes le **plus haut possible dans la hiérarchie** des acteurs, ceci afin d'éviter de redéfinir plusieurs fois des valeurs identiques sur chacun des acteurs.
 
 L'acteur *stackRoot* étant sélectionné, modifier les propriétés suivantes dans l'*inspecteur d'objets*:
   * *Aspect* > *Alignement texte*: **Centre**, le texte sera centré
@@ -38,7 +38,7 @@ Vous observez que les tailles et alignements des textes des acteurs *textTop* et
 
 6. Modifier également la bordure de l'acteur *stackRoot* avec les propriétés suivantes:
   * *Aspect* > *Style bordure*: **Solide**
-  * *Aspect* > *Epaisseur bordure*: **10px**
+  * *Aspect* > *Épaisseur bordure*: **10px**
   * *Aspect* > *Rayon bordure*: **50px**
   * *Aspect* > *Couleur bordure*: **#0000ff**
 
@@ -82,7 +82,7 @@ Vérifier le résultat sur le *contenu* dans la zone de prévisualisation en mod
 7. Sélectionner l'acteur *textBottom* et modifier la propriété *Spécifique* > *Contenu*. Procéder de la même façon que pour l'acteur *textTop* mais ici le contenu sera composé de la valeur et du max avec ce format:
 ![Code snapshot](assets/codeSnapshot2.png)
 
-Cette fois ci, choisir **nombre** comme type pour les deux *propriétés additionnelles* **value** et **max** créées. Initialiser les propriétés avec les valeurs respectivent 75 et 100
+Cette fois ci, choisir **nombre** comme type pour les deux *propriétés additionnelles* **value** et **max** créées. Initialiser les propriétés avec les valeurs respectivement 75 et 100
 
 La zone de prévisualisation finale doit ressembler à cela !
 ![Prévisualisation](assets/preview.png)

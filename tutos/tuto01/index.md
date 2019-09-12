@@ -59,7 +59,7 @@ L'environnement du MAKER ainsi que tous les concepts seront décrits ultérieure
 
 6. Sélectionner l'acteur *stack1*, cliquer de nouveau sur [+] pour ajouter un deuxième acteur enfant de type *Charts* > *Jauge*
 
-7. Modifier l'acteur jauge *gauge3* pour qu'il prenne tout l'espace vertical: l'acteur *gauge3* étant sélectionné, éditer les propriétés *Position* > *Alignement vertical* et *Alignement horizontal* avec *Etendre*
+7. Modifier l'acteur jauge *gauge3* pour qu'il prenne tout l'espace vertical: l'acteur *gauge3* étant sélectionné, éditer les propriétés *Position* > *Alignement vertical* et *Alignement horizontal* avec *Étendre*
 
     ![Modification position jauge](assets/tuto01actorGaugePosition.PNG)
 
@@ -88,7 +88,7 @@ Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
     ![RedyExécuter dans nouvelle fenêtre](assets/tuto01executeOutside.PNG)
 
-    Ce mode est a priviliégier pour faire cohabiter le mode *exécution* et *edition* sur deux écrans différents par exemple. Dans ce cas, à chaque déploiement depuis le *MAKER*, le mode *exécution* est rafraichi
+    Ce mode est a privilégier pour faire cohabiter le mode *exécution* et *edition* sur deux écrans différents par exemple. Dans ce cas, à chaque déploiement depuis le *MAKER*, le mode *exécution* est rafraîchi
 
 ### Exécution de la SynApp depuis le REDY
 
@@ -97,7 +97,7 @@ Naviguer dans l'exploitation du REDY, un nouvel onglet **SynApps** est désormai
 
 _Remarque:_ l'onglet *SynApps* est **visible** uniquement quand au moins une SynApp est **déployée** dans le REDY
 
-## Etapes suivantes
+## Étapes suivantes
 
 Vous avez construit puis déployé sur un REDY une première SynApp !
 

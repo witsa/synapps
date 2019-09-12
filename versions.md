@@ -9,7 +9,7 @@ Le RUNTIME de SynApps est disponible soit:
 
 La source d'éxécution est conditionnée par le [mode **Hébergement RIA** du REDY](redy/configure.md).
 
-Pendant la phase de BETA PREVIEW, les versions de SynApps vont **évoluer régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *RUNTIME SynApps* depuis le cloud RIA
+Pendant la phase de BETA PREVIEW, les versions de SynApps vont **évoluer régulièrement**. Il est préferable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *RUNTIME SynApps* depuis le cloud RIA
 
 Mais si vous souhaitez tout de même travailler avec la version embarquée de SynApps RUNTIME alors celle est conditionnée par la version logicielle du REDY (voir matrice ci-dessous)
 

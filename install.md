@@ -2,7 +2,7 @@
 
 [Home](sitemap.md)
 
-## Prerequis
+## Prérequis
 
 Le minimum pour construire et déployer une SynApp est:
 
@@ -49,7 +49,7 @@ Procédure détaillée pour [mettre à jour le .K4PCK d'un REDY](redy/install.md
 
 ## Mode RIA local
 
-Les versions de SynApps **évoluent régulierement**. Il est préferrable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *RUNTIME SynApps* depuis le cloud RIA
+Les versions de SynApps **évoluent régulierement**. Il est préferable de désactiver le mode *Hébergement RIA local* pour forcer le chargement de la **dernière version** du *RUNTIME SynApps* depuis le cloud RIA
 
 [Désactiver le mode *Hébergement RIA local* du REDY](redy/configure.md)
 

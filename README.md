@@ -17,7 +17,7 @@ SynApps est constitué de 2 web apps distinctes:
 * Le **MAKER**: outil de *construction* et de *déploiement*
 * Le **RUNTIME**: app d'exécution des SynApps
 
-SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à fin 2018. Il va encore évoluer largemment mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
+SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à fin 2018. Il va encore évoluer largement mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
 
 _Attention:_ **aucune SynApp ne doit être déployée en production sur site** sans en informer WIT: nous vous invitons à **contacter notre support** pour toute question relative à ce sujet
 
@@ -66,7 +66,13 @@ Dans un second temps, vous pouvez également contacter le **support** WIT
 
 ## Tutoriaux
 
-Nous recommendons **fortemment** de découvrir SynApps avec les [tutoriaux](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriaux proposés vous aurez une **vision avancée** de SynApps et serez à même de réaliser des **applications** webs évoluées **multi-plateformes**
+Nous recommandons **fortement** de découvrir SynApps avec les [tutoriaux](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriaux proposés vous aurez une **vision avancée** de SynApps et serez à même de réaliser des **applications** webs évoluées **multi-plateformes**
+
+
+## Pratiques et équipements nomades *(...en construction...)*
+
+Vous trouverez des [bonnes et les mauvaises pratiques](practices/index.md) que l'on peut avoir avec SynApps et mêmes des éléments fondamentaux à savoir à propos du design d'application dédiée aux équipements nomades.
+
 
 ## A vous de jouer !
 
