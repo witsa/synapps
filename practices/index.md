@@ -28,7 +28,7 @@ Toujours sur papier, Préparez votre SynApp en la découpant en plusieurs scène
 
 Il sera toujours plus facile de réunir des fonctionnalités sur une même scène que de les diviser plus tard.
 
-Cela va permettre aussi de pouvoir réutiliser des fonctionnalités similaires sur plusieurs endroits de la SynApp sans avoir à les refaire à chaque fois.
+Cela va permettre aussi de réutiliser des fonctionnalités similaires sur plusieurs endroits de la SynApp sans avoir à les refaire à chaque fois.
 
 C'est encore plus important avec les interfaces dédiées aux plateformes nomades où la fonction de l'écran doit être facilement identifiable et accessible.
 

@@ -2,7 +2,7 @@
 
 [Home](sitemap.md)
 
-## Prerequis
+## Prérequis
 
 Le minimum pour construire et déployer une SynApp est:
 
