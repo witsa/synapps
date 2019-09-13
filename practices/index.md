@@ -3,7 +3,7 @@
 L'ambition de cette partie est de répertorier les pratiques et usages autour de la construction de SynApp qui sont à reproduire et ceux qui sont à proscrire.
 
 
-## Avant d'ouvrir le Maker : Dessiner !
+## Avant d'ouvrir le Maker : Dessinez !
 
 Quelques éléments sur les étapes à réaliser **avant** d'ouvrir le Maker afin de construire la SynApp sereinement.
 
@@ -34,9 +34,9 @@ C'est encore plus important avec les interfaces dédiées aux plateformes nomade
 
 ### La Mise en Scène des acteurs.
 
-> Découpez vos scènes en acteurs. 
+> Découpez vos scènes zone avec les acteurs de disposition. 
 
-Chaque zone de la scène, dédiée à une sous-fonction devrait être un acteur disposition (un empilement en général).
+Chaque zone de la scène, dédiée à une sous-fonction devrait être réunie dans un acteur de disposition (un empilement en général).
 Ce sera utile par la suite pour réaliser des modifications de disposition sans avoir à tout retoucher.
 
 Il faut vraiment profiter des arborescences d'acteurs pour bien organiser les différentes portions d'une scène :
@@ -65,11 +65,18 @@ L'idéal et de les regrouper par les scènes qui les utiliseront ou zones de sc�
 
 ## Dans le Maker
 
-### Les toiles
-
-
 
 ### acteurs
+
+#### Les toiles
+
+Il faut utiliser les toiles dans le cas où des acteurs doivent se superposer (une image de fond et des acteurs dessus par exemple).
+
+> N'utilisez jamais d'unité relative dans les toiles.
+
+Les unités relatives (em, vmin, vh, vmax, vw) sont à proscrire dans les toiles. Utilisez uniquement le px. S'il faut adapter la toile à l'écran, placez la toile dans une boite à vue.
+
+
 
 *(...)*
 
