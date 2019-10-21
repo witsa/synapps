@@ -4,7 +4,7 @@
 
 ## Prérequis
 
-Tous les tutoriaux sont basés sur un même paramétrage [SynApps_Tutorials.BK4](config/SynApps_Tutorials.BK4) de REDY
+Tous les tutoriaux sont basés sur un même paramétrage [SynApps_Tutorials.BRY](config/SynApps_Tutorials.BRY) de REDY
 
 Installer ce paramétrage avec le [gestionnaire de projets](../redy/installPK4.md) du REDY
 

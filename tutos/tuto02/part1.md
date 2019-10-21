@@ -6,7 +6,7 @@
 
 * [Tutorial 1: première SynApp "Helloworld"](../tuto01/index.md)
 
-* Le paramétrage [SynApps_Tutorials.BK4](../config/SynApps_Tutorials.BK4) installé sur le REDY. Il contient deux ressources pré-configurées nécessaires dans le dossier ```Tutorial2```:
+* Le paramétrage [SynApps_Tutorials.BRY](../config/SynApps_Tutorials.BRY) installé sur le REDY. Il contient deux ressources pré-configurées nécessaires dans le dossier ```Tutorial2```:
     1. Une **variable analogique** ```VariableAnalogiqueTuto``` sinusoïdale variant de 0 à 100
     2. Une **consigne digitale** ```ConsigneLogiqueTuto```
 

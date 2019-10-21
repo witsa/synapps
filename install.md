@@ -31,7 +31,7 @@ Le MAKER est l'outil de construction et de déploiement de SynApps. Il est distr
 ## REDY PC
 
 Dans un premier temps, nous suggérons d'utiliser un REDY PC. Vous pouvez-récupérer la dernière version dans la zone téléchargement du site WIT:
-[télécharger REDY PC](https://www.wit.fr/?page_id=14117&download-info=redy-pc)
+[télécharger REDY PC](https://www.wit.fr/telechargement-par-produits/download-info/redy-pc-logiciel/)
 
 Procédure détaillée pour [installer un REDY PC](redy/install.md)
 
@@ -43,7 +43,7 @@ Exécuter **REDY-PC.exe** et double cliquer pour ouvrir le navigateur
 
 Les UTLs REDY en version **9.5.1** et supérieures sont déja compatibles SynApps. Si votre UTL est dans une version inférieur, une version du REDY compatible est disponible ici:
 
-[Téléchargement soft REDY](https://www.wit.fr/?page_id=14117&download-info=soft-redy)
+[Téléchargement soft REDY](https://www.wit.fr/telechargement-par-produits/download-tag/redy,logiciel/)
 
 Procédure détaillée pour [mettre à jour le .K4PCK d'un REDY](redy/install.md)
 

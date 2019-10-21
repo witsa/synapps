@@ -32,7 +32,7 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
 
 ## Prerequis
 
-* Le paramétrage [SynApps_Tutorials.BK4](../config/SynApps_Tutorials.BK4) installé sur le REDY. Il contient trois ressources préconfigurées nécessaires dans le dossier ```Tutorial5```:
+* Le paramétrage [SynApps_Tutorials.BRY](../config/SynApps_Tutorials.BRY) installé sur le REDY. Il contient trois ressources préconfigurées nécessaires dans le dossier ```Tutorial5```:
     1. Deux ressource **Régulation ventilo-convecteur 2T** ```VTCAtlanticEst``` et ```VTCAtlanticWest```
     2. Une ressource  **Compteur/Décompteur** ```Simulateur de changement temp. ambiante```
 
