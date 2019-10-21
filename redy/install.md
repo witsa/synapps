@@ -10,9 +10,9 @@ Récupérer la dernière version de l'installeur du *REDY-PC* sur le site WIT pu
 
 Installer REDY-PC-Setup puis éxécuter *REDY-PC.exe*
 
-Vérifier que la version est **9.5.1** ou **supérieure**
+Vérifier que la version est **12.0.1** ou **supérieure**
 
-![REDY PC](assets/install_1.png)
+![REDY PC](/assets/redyPCexe.png)
 
 Double cliquer pour ouvrir le navigateur sur l'application d'exploitation du REDY et vérifier que tout fonctionne
 
@@ -22,6 +22,6 @@ Récupérer la dernière version sur WIT-File puis l'installer dans l'UTL _(*)_
 
 [Téléchargement soft REDY](https://www.wit.fr/telechargement-par-produits/download-tag/redy,logiciel/)
 
-Vérifier que la version est **9.5.1** ou **supérieure**
+Vérifier que la version est **12.0.1** ou **supérieure**
 
 Se reporter à la documentation de la [mise à jour du REDY](https://www.wit.fr/telechargement-par-produits/download-info/faq-70-mise-a-jour-dun-redy/)

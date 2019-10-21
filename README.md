@@ -54,7 +54,7 @@ _Remarque:_ pendant la phase de `BETA PREVIEW` nous envoyons des statistiques d'
 
 ## Changelog
 
-Le contenu des différentes versions de SynApps sont consultables dans la [changelog](changelog.md). La version actuelle est `1.3.9`
+Le contenu des différentes versions de SynApps sont consultables dans la [changelog](changelog.md).
 
 ## Issues
 

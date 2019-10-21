@@ -2,6 +2,8 @@
 
 [Home](sitemap.md)
 
+> Attention ! Cette page n'est plus à jour.
+
 Le RUNTIME de SynApps est disponible soit:
 
 * en ressource embarquée dans le REDY

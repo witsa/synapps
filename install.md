@@ -8,7 +8,7 @@ Le minimum pour construire et déployer une SynApp est:
 
 * Le **MAKER** qui est l'outil de construction et de déploiement de SynApps
 
-* Un **REDY** ou un **REDY PC** en version **9.5.1** et **supérieure** sur lequel sera déployé la *SynApp*
+* Un **REDY** ou un **REDY PC** en version **12.0.1** et **supérieure** sur lequel sera déployé la *SynApp*
 
 ## MAKER
 
@@ -41,7 +41,7 @@ Exécuter **REDY-PC.exe** et double cliquer pour ouvrir le navigateur
 
 ## REDY
 
-Les UTLs REDY en version **9.5.1** et supérieures sont déja compatibles SynApps. Si votre UTL est dans une version inférieur, une version du REDY compatible est disponible ici:
+Les UTLs REDY en version **12.0.1** et supérieures sont déja compatibles SynApps. Si votre UTL est dans une version inférieur, une version du REDY compatible est disponible ici:
 
 [Téléchargement soft REDY](https://www.wit.fr/telechargement-par-produits/download-tag/redy,logiciel/)
 
@@ -57,8 +57,8 @@ Les versions de SynApps **évoluent régulierement**. Il est préferable de dés
 
 Voir la note concernant la [compatibilité des versions de SynApps MAKER et RUNTIME](versions.md) surtout si vous décidez de fonctionner en mode local (RUNTIME embarqué dans le REDY)
 
-## Etapes suivantes
+## Étapes suivantes
 
-Vous avez le **MAKER** de *SynApps* (Windows ou cloud RIA) et un **REDY PC** (ou REDY) compatible avec SynApps **>=9.5.1**, nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le REDY en suivant le _Tutorial 1_: **première SynApp “Helloworld”** !
+Vous avez le **MAKER** de *SynApps* (Windows ou cloud RIA) et un **REDY PC** (ou REDY) compatible avec SynApps **>=12.0.1**, nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le REDY en suivant le _Tutorial 1_: **première SynApp “Helloworld”** !
 
 [Tutoriaux](tutos/index.md)
