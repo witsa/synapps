@@ -1,4 +1,4 @@
-[Accueil](/readme.md) / [REDY](index.md)
+[Accueil](../readme.md) / [REDY](index.md)
 
 # Configurer un REDY
 

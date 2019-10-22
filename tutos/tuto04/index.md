@@ -1,4 +1,4 @@
-[Accueil](/readme.md) / [Tutoriaux](../index.md)
+[Accueil](../../readme.md) / [Tutoriaux](../index.md)
 
 # Tutorial 4: la navigation - **<span style='color:green'>Débutant</span>**
 

@@ -1,4 +1,4 @@
-[Accueil](/readme.md)
+[Accueil](./readme.md)
 
 # Plan du site
 

@@ -1,4 +1,4 @@
-[Accueil](/readme.md)
+[Accueil](./readme.md)
 
 # Matrice de compatibilité recommandée des OS et navigateurs
 

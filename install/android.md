@@ -1,4 +1,4 @@
-[Accueil](/readme.md)
+[Accueil](../readme.md)
 
 # Installation de SynApps RUNTIME sur **Android**
 
