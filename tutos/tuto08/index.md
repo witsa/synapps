@@ -1,4 +1,4 @@
-[Accueil](/readme.md) / [Tutoriaux](../index.md)
+[Accueil](../../readme.md) / [Tutoriaux](../index.md)
 
 # Tutorial 8: les tailles - **<span style='color:green'>Débutant</span>**
 

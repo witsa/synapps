@@ -1,4 +1,4 @@
-[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
+[Accueil](../../readme.md) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
 
 # Tutorial 7: les acteurs métiers natifs du REDY - Part 2: **Etats**
 
