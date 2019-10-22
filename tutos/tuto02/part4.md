@@ -1,4 +1,4 @@
-[Accueil](../../readme.md) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
+[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
 
 # Tutorial 2: les liaisons **4/6** *[8 nov 17]*
 

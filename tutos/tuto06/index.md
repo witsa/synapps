@@ -1,4 +1,4 @@
-[Accueil](../../readme.md) / [Tutoriaux](../index.md)
+[Accueil](../../) / [Tutoriaux](../index.md)
 
 # Tutorial 6: les événements et fonctions javascripts - **<span style='color:red'>Expert</span>**
 

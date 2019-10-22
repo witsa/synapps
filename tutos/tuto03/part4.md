@@ -1,4 +1,4 @@
-[Accueil](../../readme.md) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
+[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
 
 # Tutorial 3: l'acteur de disposition **Modal**
 
