@@ -1,7 +1,5 @@
 # Home
 
-[Home](sitemap.md)
-
 ![SynApps](assets/LogoSynApps128.png)
 
 ## **SynApps**: construisez des apps **multiplateformes** avec le **REDY**

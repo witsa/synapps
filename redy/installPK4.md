@@ -1,7 +1,6 @@
+[Accueil](/readme.md) / [REDY](index.md)
 
 # Installation projet PK4/BK4
-
-[Home](../sitemap.md) > [REDY](index.md)
 
 ![Tooltip liaison librairie](assets/install_2.png)
 

@@ -1,6 +1,6 @@
-# Configurer un REDY
+[Accueil](/readme.md) / [REDY](index.md)
 
-[Home](../sitemap.md) > [REDY](index.md)
+# Configurer un REDY
 
 ## Désactiver le mode Hébergement RIA local
 

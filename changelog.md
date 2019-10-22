@@ -1,7 +1,6 @@
+[Accueil](/readme.md)
+
 # Changelog
-
-[Home](sitemap.md)
-
 
 ## Juillet 2019 - version **1.4.8**
 

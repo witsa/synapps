@@ -1,6 +1,6 @@
-# Tutorial 8: les tailles - **<span style='color:green'>Débutant</span>**
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)
+# Tutorial 8: les tailles - **<span style='color:green'>Débutant</span>**
 
 Un des éléments fondateur de SynApps est sa capacité à construire des applications adaptatives: on parle également de **responsive design** ou **site web adaptatif**
 

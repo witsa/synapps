@@ -1,6 +1,6 @@
-# Tutorial 2: les liaisons **3/6** *[7 nov 17]*
+[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
+# Tutorial 2: les liaisons **3/6** *[7 nov 17]*
 
 Dans la deuxième partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
 * lier certaines propriétés des acteurs avec des ressources du REDY: liaisons vers des **source de données**

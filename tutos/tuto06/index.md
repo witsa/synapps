@@ -1,7 +1,6 @@
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
+
 # Tutorial 6: les événements et fonctions javascripts - **<span style='color:red'>Expert</span>**
-
-
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 SynApps est conçu pour construire des applications avec le minimum de connaissances en développement et un rendu adapté est possible sans saisir une seule ligne de javascript. Cependant, comme nous allons le voir, il est parfois nécessaire d'écrire du code pour des usages plus avancés
 

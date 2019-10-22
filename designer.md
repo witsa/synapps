@@ -1,6 +1,7 @@
+[Accueil](/readme.md)
+
 # Description de l'IDE du MAKER
 
-[Home](sitemap.md)
 
 ## Zones
 

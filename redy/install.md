@@ -1,8 +1,8 @@
+[Accueil](/readme.md) / [REDY](index.md)
+
 # Installation
 
 ## Installation REDY-PC
-
-[Home](../sitemap.md) > [REDY](index.md)
 
 Récupérer la dernière version de l'installeur du *REDY-PC* sur le site WIT puis l'installer localement
 

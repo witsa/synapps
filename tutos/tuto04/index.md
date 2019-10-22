@@ -1,6 +1,6 @@
-# Tutorial 4: la navigation - **<span style='color:green'>Débutant</span>**
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
+# Tutorial 4: la navigation - **<span style='color:green'>Débutant</span>**
 
 Dans ce tutorial, nous allons détailler une fonction fondamentale de toute application: la **navigation** entre scènes.
 

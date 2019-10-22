@@ -1,7 +1,6 @@
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
+
 # Tutorial 7: les acteurs métiers natifs du REDY - **<span style='color:orange'>Avancé</span>**
-
-
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)
 
 ## Objectif
 

@@ -1,6 +1,6 @@
-# Versions SynApps MAKER et RUNTIME
+[Accueil](/readme.md)
 
-[Home](sitemap.md)
+# Versions SynApps MAKER et RUNTIME
 
 > Attention ! Cette page n'est plus à jour.
 

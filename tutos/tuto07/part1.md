@@ -1,6 +1,6 @@
-# Tutorial 7: les acteurs métiers natifs du REDY - Part 1: **Journal**
+[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
+# Tutorial 7: les acteurs métiers natifs du REDY - Part 1: **Journal**
 
 L'acteur journal est un des plus utilisé et fonctionne simplement sans la moindre configuration. Plusieurs propriétés _spécifiques_ permettent de personnaliser et filtrer son rendu. Ces propriétés sont **explicites** et nous ne rentrerons pas dans le détail de chacune d'entre elles !
 ![journal_properties](assets/journal_properties.png)

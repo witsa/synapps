@@ -1,6 +1,7 @@
+[Accueil](/readme.md)
+
 # Installation de SynApps RUNTIME sur **iOs**
 
-[Home](../sitemap.md)
 
 ## SynApp sur l'écran d'accueil
 

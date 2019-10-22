@@ -1,6 +1,6 @@
-# Tutorial 5: les acteurs **composites** - **<span style='color:orange'>Avancé</span>**
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
+# Tutorial 5: les acteurs **composites** - **<span style='color:orange'>Avancé</span>**
 
 Dans ce tutorial, nous allons mettre un oeuvre l'acteur **composite** qui permet de construire de **nouveaux acteurs** à partir d'acteurs éxistants. Ces derniers peuvent être soit des acteurs:
 
