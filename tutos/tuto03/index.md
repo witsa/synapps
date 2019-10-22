@@ -1,4 +1,4 @@
-[Accueil](../../readme.md) / [Tutoriaux](../index.md)
+[Accueil](../../) / [Tutoriaux](../index.md)
 
 # Tutorial 3: les acteurs dispositions - **<span style='color:green'>Débutant</span>**
 

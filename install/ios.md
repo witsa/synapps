@@ -1,4 +1,4 @@
-[Accueil](../readme.md)
+[Accueil](../)
 
 # Installation de SynApps RUNTIME sur **iOs**
 

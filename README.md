@@ -1,3 +1,5 @@
+[Plan du site](./sitemap.md)
+
 # Home
 
 ![SynApps](assets/LogoSynApps128.png)

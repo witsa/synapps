@@ -1,4 +1,4 @@
-[Accueil](../../readme.md) / [Tutoriaux](../index.md)
+[Accueil](../../) / [Tutoriaux](../index.md)
 
 # Tutorial 1: première SynApp "Helloworld" - **<span style='color:green'>Débutant</span>**
 

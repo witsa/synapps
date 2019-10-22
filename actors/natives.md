@@ -1,4 +1,4 @@
-[Accueil](../readme.md) / [Acteurs](index.md)
+[Accueil](../) / [Acteurs](index.md)
 
 # Acteurs natifs
 
