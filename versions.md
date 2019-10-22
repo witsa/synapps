@@ -1,6 +1,8 @@
+[Accueil](/readme.md)
+
 # Versions SynApps MAKER et RUNTIME
 
-[Home](sitemap.md)
+> Attention ! Cette page n'est plus à jour.
 
 Le RUNTIME de SynApps est disponible soit:
 

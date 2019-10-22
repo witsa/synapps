@@ -1,6 +1,6 @@
-# Tutorial 2: les liaisons - **<span style='color:green'>Débutant</span>**
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)
+# Tutorial 2: les liaisons - **<span style='color:green'>Débutant</span>**
 
 ## Objectif
 

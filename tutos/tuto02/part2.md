@@ -1,6 +1,6 @@
-# Tutorial 2: les liaisons **2/6** *[6 nov 17]*
+[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
+# Tutorial 2: les liaisons **2/6** *[6 nov 17]*
 
 ## Construction et configuration des acteurs
 

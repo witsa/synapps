@@ -1,8 +1,8 @@
+[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
+
 # Tutorial 7: les acteurs métiers natifs du REDY - Part 3: **Agenda**, **Grapheur** et **plus...**
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
-
-Dans ce tutorial, nous allons utiliser les acteurs **grapheurs** et **agenda** qui ne nécessitent pas une configuration particuliere. Nous allons les intégrer simplement dans 2 scènes sans barres de commandes
+Dans ce tutorial, nous allons utiliser les acteurs **grapheurs** et **agenda** qui ne nécessitent pas une configuration particulière. Nous allons les intégrer simplement dans 2 scènes sans barres de commandes
 
 Nous allons également intégrer le **tableau de bord multi-énergies** du REDY !
 

@@ -1,6 +1,6 @@
 # Tutorial 1: première SynApp "Helloworld" - **<span style='color:green'>Débutant</span>**
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md)
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
 
 L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur un REDY
 

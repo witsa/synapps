@@ -1,18 +1,18 @@
+[Accueil](/readme.md) / [REDY](index.md)
+
 # Installation
 
 ## Installation REDY-PC
 
-[Home](../sitemap.md) > [REDY](index.md)
-
 Récupérer la dernière version de l'installeur du *REDY-PC* sur le site WIT puis l'installer localement
 
-[Téléchargement REDY PC](https://www.wit.fr/?page_id=14117&download-info=redy-pc)
+[Téléchargement REDY PC](https://www.wit.fr/telechargement-par-produits/download-info/redy-pc-logiciel/)
 
 Installer REDY-PC-Setup puis éxécuter *REDY-PC.exe*
 
-Vérifier que la version est **9.5.1** ou **supérieure**
+Vérifier que la version est **12.0.1** ou **supérieure**
 
-![REDY PC](assets/install_1.png)
+![REDY PC](/assets/redyPCexe.png)
 
 Double cliquer pour ouvrir le navigateur sur l'application d'exploitation du REDY et vérifier que tout fonctionne
 
@@ -20,8 +20,8 @@ Double cliquer pour ouvrir le navigateur sur l'application d'exploitation du RED
 
 Récupérer la dernière version sur WIT-File puis l'installer dans l'UTL _(*)_
 
-[Téléchargement soft REDY](https://www.wit.fr/?page_id=14117&download-info=soft-redy)
+[Téléchargement soft REDY](https://www.wit.fr/telechargement-par-produits/download-tag/redy,logiciel/)
 
-Vérifier que la version est **9.5.1** ou **supérieure**
+Vérifier que la version est **12.0.1** ou **supérieure**
 
-Se reporter à la documentation de la [mise à jour du REDY](http://www.wit.fr/?page_id=14117&download-info=mise-a-jour-dun-redy-faq-70)
+Se reporter à la documentation de la [mise à jour du REDY](https://www.wit.fr/telechargement-par-produits/download-info/faq-70-mise-a-jour-dun-redy/)

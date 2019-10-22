@@ -1,6 +1,6 @@
-# Tutorial 7: les acteurs métiers natifs du REDY - Part 4: **Navigation**
+[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
 
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
+# Tutorial 7: les acteurs métiers natifs du REDY - Part 4: **Navigation**
 
 Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les intégrer dans une nouvelle scène principale avec la navigation
 

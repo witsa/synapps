@@ -1,6 +1,6 @@
-# Installation de SynApps RUNTIME sur **Android**
+[Accueil](/readme.md)
 
-[Home](../sitemap.md)
+# Installation de SynApps RUNTIME sur **Android**
 
 ## WebApp sur bureau
 

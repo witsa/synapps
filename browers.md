@@ -1,6 +1,6 @@
-# Matrice de compatibilité recommandée des OS et navigateurs
+[Accueil](/readme.md)
 
-[Home](sitemap.md)
+# Matrice de compatibilité recommandée des OS et navigateurs
 
 |  OS                                |      Version      | Chrome  | Firefox |  Edge  | Safari |
 |------------------------------------|-------------------|---------|---------|--------|--------|

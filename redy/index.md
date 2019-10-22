@@ -1,6 +1,6 @@
-# REDY
+[Accueil](/readme.md)
 
-[Home](../sitemap.md)
+# REDY
 
 1. [Mettre à jour un REDY, installer un REDY PC](install.md)
 

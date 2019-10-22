@@ -1,7 +1,6 @@
+[Accueil](/readme.md) / [Tutoriaux](../index.md)
+
 # Tutorial 6: les événements et fonctions javascripts - **<span style='color:red'>Expert</span>**
-
-
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 SynApps est conçu pour construire des applications avec le minimum de connaissances en développement et un rendu adapté est possible sans saisir une seule ligne de javascript. Cependant, comme nous allons le voir, il est parfois nécessaire d'écrire du code pour des usages plus avancés
 
@@ -34,7 +33,7 @@ La maitrise de la définition des événements est un élément important de tou
 
 ## Prerequis
 
-* Le paramétrage [SynApps_Tutorials.BK4](../config/SynApps_Tutorials.BK4) installé sur le REDY. Il contient les profils utilisateurs, _Administrateur_ et _Installateur_ utilisés dans ce tutorial
+* Le paramétrage [SynApps_Tutorials.BRY](../config/SynApps_Tutorials.BRY) installé sur le REDY. Il contient les profils utilisateurs, _Administrateur_ et _Installateur_ utilisés dans ce tutorial
 
 * Créer une nouvelle SynApp **tuto06** avec le _MAKER_. Modifier le _label_ de la première scène en ```sceneEvents``` et le _nom_ avec ```scène événements``` puis déployer
 

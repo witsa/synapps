@@ -1,6 +1,6 @@
-# Plan du site
+[Accueil](/readme.md)
 
-* [Home](README.md)
+# Plan du site
 
 * [Installation](install.md)
   1. [Installation RUNTIME sur **Android**](install/android.md)

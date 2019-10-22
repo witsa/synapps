@@ -1,8 +1,8 @@
+[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
+
 # Tutorial 3: l'acteur de disposition **toile**
 
 ![Empilement](assets/actor_canvas.png)
-
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 La deuxième partie de ce tutorial est consacrée à l'acteur **_toile_** qui permet de **superposer** des acteurs enfants et repondre au besoin de **construction de synoptiques** notamment !
 
@@ -10,7 +10,7 @@ La scène sera constituée d'un fond de plan et permettra de gérer deux zones d
 
 ## Prerequis
 
-Le paramétrage [SynApps_Tutorials.BK4](../config/SynApps_Tutorials.BK4) installé sur le REDY. Il contient deux **consignes analogiques** préconfigurées ```LightZone1``` et ```LightZone2``` dans le dossier ```Tutorial3```. Elles représentent deux zones de lumières à commander avec des valeurs pouvant varier de ```0``` à ```100%```
+Le paramétrage [SynApps_Tutorials.BRY](../config/SynApps_Tutorials.BRY) installé sur le REDY. Il contient deux **consignes analogiques** préconfigurées ```LightZone1``` et ```LightZone2``` dans le dossier ```Tutorial3```. Elles représentent deux zones de lumières à commander avec des valeurs pouvant varier de ```0``` à ```100%```
 
 Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en ```sceneCanvas``` et le _nom_ avec ```Toile``` puis déployer.
 ![Empilement](assets/part2_scenes.png)

@@ -1,8 +1,8 @@
+[Accueil](/readme.md) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
+
 # Tutorial 3: l'acteur de disposition **Modal**
 
 ![Icone modal](assets/actor_modal.png)
-
-[Home](../../sitemap.md) > [Tutoriaux](../index.md) > [Tutorial](index.md)
 
 La quatrième partie de ce tutorial est consacrée à l'acteur **_modal_** qui permet d'**ouvrir** une fenêtre modale pour optenir ou fournir une information à l'utilisateur
 

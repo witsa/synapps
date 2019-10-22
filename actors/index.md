@@ -1,6 +1,7 @@
+[Accueil](/readme.md)
+
 # Acteurs
 
-[Home](../sitemap.md)
 
 ## Types
 
