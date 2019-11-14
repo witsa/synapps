@@ -2,6 +2,16 @@
 
 # Changelog
 
+## Novembre 2019 - version **1.4.9**
+
+### Quelques changements avec les langues du **Runtime**
+- Préparation du support de l'espagnol et du catalan
+- correction de l'italien : les acteurs état et journal sont bien traduits maintenant
+
+> A noter que le **Maker** est uniquement en français.
+
+---
+
 ## Juillet 2019 - version **1.4.8**
 
 ### Correction `undefined` dans les liaisons de données.
@@ -96,7 +106,7 @@ Il n'était plus possible de modifier un acteur modal dans le **MAKER** : une er
 
 ### correction de l'acteur textarea
 
-Les liaisons en ecriture du contenu d'un acteur textarea n'étaient pas effectives. Cette version corrige ce problème.
+Les liaisons en écriture du contenu d'un acteur textarea n'étaient pas effectives. Cette version corrige ce problème.
 
 ---
 
