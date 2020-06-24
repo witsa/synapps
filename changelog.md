@@ -2,6 +2,12 @@
 
 # Changelog
 
+## Juin 2020 - version **1.4.10**
+
+### Ajout : liaison de donnée sur l'identifiant d'une variable WOS
+
+Il est possible maintenant de se lier à l'identifiant unique d'une variable WOS.
+
 ## Novembre 2019 - version **1.4.9**
 
 ### Quelques changements avec les langues du **Runtime**
@@ -93,7 +99,7 @@ Le problème de démultiplication des propriétés additionnelles pour completer
 
 ### Ajout de la navigation par script
 
-Il est maintenant possible de déclencher une navigation par script : la méthode `displayScene(scene)` sur l'objet `synapp` du contexte le permet. Il suffit de lui passer le label de la scène de destination en argument. 
+Il est maintenant possible de déclencher une navigation par script : la méthode `displayScene(scene)` sur l'objet `synapp` du contexte le permet. Il suffit de lui passer le label de la scène de destination en argument.
 
 ```js
 context.synapp.displayScene('home');
