@@ -1,0 +1,13 @@
+{
+  "name": "synapps-studio-releases",
+  "config": {
+    "stable": {
+      "version": "1.0.0-beta.4",
+      "revision": "2021-03-01T15:11:00"
+    },
+    "beta": {
+      "version": "1.0.0-beta.4",
+      "revision": "2021-03-01T15:11:00"
+    }
+  }
+}
