@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Actor.BaseActor</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Actor.BaseActor.html">Actor.BaseActor</a></li>
+                                <li><a href="../classes/Actor.DataSource.html">Actor.DataSource</a></li>
+                                <li><a href="../classes/Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+                                <li><a href="../classes/Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+                                <li><a href="../classes/Actor.Display.Html.html">Actor.Display.Html</a></li>
+                                <li><a href="../classes/Actor.Event.BaseContext.html">Actor.Event.BaseContext</a></li>
+                                <li><a href="../classes/Actor.Event.PropertyChangedContext.html">Actor.Event.PropertyChangedContext</a></li>
+                                <li><a href="../classes/BaseHost.html">BaseHost</a></li>
+                                <li><a href="../classes/BaseSession.html">BaseSession</a></li>
+                                <li><a href="../classes/Behavior.Actor.Jokerable.html">Behavior.Actor.Jokerable</a></li>
+                                <li><a href="../classes/Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+                                <li><a href="../classes/Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+                                <li><a href="../classes/Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+                                <li><a href="../classes/Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+                                <li><a href="../classes/Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+                                <li><a href="../classes/Binding.Setup.Basic.html">Binding.Setup.Basic</a></li>
+                                <li><a href="../classes/Binding.Setup.Internal.html">Binding.Setup.Internal</a></li>
+                                <li><a href="../classes/Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+                                <li><a href="../classes/Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+                                <li><a href="../classes/RedyHost.html">RedyHost</a></li>
+                                <li><a href="../classes/RedySession.html">RedySession</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/Synapps-UI.html">Synapps-UI</a></li>
+                                <li><a href="../modules/Synapps-UI-REDY.html">Synapps-UI-REDY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Actor.BaseActor Class</h1>
+<div class="box meta">
+        <div class="uses">
+            Uses
+            <ul class="inline commas">
+                    <li><a href="WithEvents.html">WithEvents</a></li>
+                    <li><a href="WithAdditionals.html">WithAdditionals</a></li>
+                    <li><a href="WithProperties.html">WithProperties</a></li>
+                    <li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+                    <li><a href="SourceOfInternalBinding.html">SourceOfInternalBinding</a></li>
+            </ul>
+        </div>
+
+
+
+            Module: <a href="../modules/Synapps-UI.html">Synapps-UI</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Acteur de base.</p>
+
+</div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+            <li class="api-class-tab attrs"><a href="#attrs">Attributes</a></li>
+            <li class="api-class-tab events"><a href="#events">Events</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                            <li class="index-item method">
+                                <a href="#method_changeStyleName">changeStyleName</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_createBasicBinding">createBasicBinding</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_createInternalBinding">createInternalBinding</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getBinding">getBinding</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_registerInDefinitions">registerInDefinitions</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeBinding">removeBinding</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_runEvent">runEvent</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties">
+                            <li class="index-item property">
+                                <a href="#property_properties.classNames">properties.classNames</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_properties.height">properties.height</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_properties.maxHeight">properties.maxHeight</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_properties.minHeight">properties.minHeight</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_properties.textDecoration">properties.textDecoration</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section attrs">
+                    <h3>Attributes</h3>
+
+                    <ul class="index-list attrs">
+                            <li class="index-item attr">
+                                <a href="#attr_actor">actor</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_dataContext">dataContext</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_isDestroyed">isDestroyed</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_isDestroying">isDestroying</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_isLeadActor">isLeadActor</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_key">key</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_leadActor">leadActor</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_parent">parent</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_rootScene">rootScene</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_scene">scene</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_stage">stage</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_styleName">styleName</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_synapp">synapp</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_type">type</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_uniqPath">uniqPath</a>
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section events">
+                    <h3>Events</h3>
+
+                    <ul class="index-list events">
+                            <li class="index-item event">
+                                <a href="#event_additionals/[additionalName]/binding/onReadTransform">additionals/[additionalName]/binding/onReadTransform</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_additionals/[additionalName]/binding/onWriteTransform">additionals/[additionalName]/binding/onWriteTransform</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_additionals/[additionalName]/onValueChanged">additionals/[additionalName]/onValueChanged</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onClick">onClick</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onComputeLayout">onComputeLayout</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onDestroy">onDestroy</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onInit">onInit</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onMouseDown">onMouseDown</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onMouseEnter">onMouseEnter</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onMouseLeave">onMouseLeave</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onMouseMove">onMouseMove</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onMouseUp">onMouseUp</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onPostInit">onPostInit</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onPropertyChanged">onPropertyChanged</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_onRender">onRender</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_properties/[propertyName]/binding/onReadTransform">properties/[propertyName]/binding/onReadTransform</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_properties/[propertyName]/binding/onWriteTransform">properties/[propertyName]/binding/onWriteTransform</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_properties/[propertyName]/onValueChanged">properties/[propertyName]/onValueChanged</a>
+
+                            </li>
+                    </ul>
+                </div>
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_changeStyleName" class="method item">
+    <h3 class="name"><code>changeStyleName</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>styleName</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Changer le nom du style de l'acteur.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">styleName</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Nom du style à appliquer.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_createBasicBinding" class="method item">
+    <h3 class="name"><code>createBasicBinding</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>targetValuePath</code>
+                </li>
+                <li class="arg">
+                        <code>setup</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[saveInSetup=true]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Binding</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Création d'une liaison basique.</p>
+<p>La source est prise dans le contexte de donnée.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">targetValuePath</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Chemin de la cible</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">setup</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[saveInSetup=true]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Binding</span>:
+                    <p>la liaison créée.</p>
+
+            </div>
+        </div>
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <p>Le <code>setup</code> est un objet</p>
+<pre class="code prettyprint"><code>actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
+</code></pre>
+<p>La propriété largeur de l'acteur est maintenant liée au champ <code>widthOfPanel</code> de son contexte de donnée.</p>
+
+            </div>
+        </div>
+</div>
+<div id="method_createInternalBinding" class="method item">
+    <h3 class="name"><code>createInternalBinding</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>targetValuePath</code>
+                </li>
+                <li class="arg">
+                        <code>setup</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[saveInSetup=true]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Création d'une liaison interne.</p>
+<p>La source est prise dans le contexte de donnée.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">targetValuePath</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Chemin de la cible</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">setup</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[saveInSetup=true]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <p>Le <code>setup</code> est un objet différent en fonction du type de source.</p>
+<p>Pour un acteur :</p>
+<pre class="code prettyprint"><code>{ sourceKey: '&lt;clé acteur&gt;', path: 'le chemin de la valeur de la source' }
+</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_getBinding" class="method item">
+    <h3 class="name"><code>getBinding</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>targetValuePath</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Binding</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">targetValuePath</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Chemin de la cible</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Binding</span>:
+                    <p>la liaison demandée ou null si non trouvée.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_registerInDefinitions" class="method item private">
+    <h3 class="name"><code>registerInDefinitions</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>definition</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+        <span class="flag static">static</span>
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Enregistre la définition de l'acteur dans le dictionnaire des acteurs.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">definition</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                    <code class="param-name">type</code>
+                                    <span class="type">String</span>
+
+                                <div class="param-description">
+                                    <ul>
+<li>La clé unique du type de l'acteur (ex: &quot;input/button&quot;);</li>
+</ul>
+
+                                </div>
+
+                            </li>
+                            <li class="param">
+                                    <code class="param-name">componentName</code>
+                                    <span class="type">String</span>
+
+                                <div class="param-description">
+                                    <ul>
+<li>Nom complet du composant EmberJS (ex: &quot;synapps-ui/actors/input/button&quot;).</li>
+</ul>
+
+                                </div>
+
+                            </li>
+                            <li class="param">
+                                    <code class="param-name">prototypeSetup</code>
+                                    <span class="type">String</span>
+
+                                <div class="param-description">
+                                    <ul>
+<li>Object qui contient les définitions des propriétés de l'acteur.</li>
+</ul>
+
+                                </div>
+
+                            </li>
+                            <li class="param">
+                                    <code class="param-name optional">[platform=native]</code>
+                                    <span class="type">String</span>
+                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+
+                                <div class="param-description">
+                                    <ul>
+<li>Nom de la plateforme à laquelle l'acteur appartient.</li>
+</ul>
+
+                                </div>
+
+                            </li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_removeBinding" class="method item">
+    <h3 class="name"><code>removeBinding</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>targetValuePath</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Suppression d'une liaison sur un chemin cible.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">targetValuePath</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Chemin vers la cible</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_runEvent" class="method item">
+    <h3 class="name"><code>runEvent</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>eventName</code>
+                </li>
+                <li class="arg">
+                        <code>args</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Exécute un évènement.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">eventName</code>
+                        <span class="type"></span>
+
+
+                    <div class="param-description">
+                        <p>Nom de l'évènement</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">args</code>
+                        <span class="type"></span>
+
+
+                    <div class="param-description">
+                        <p>Arguments</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property_properties.classNames" class="property item">
+    <h3 class="name"><code>properties.classNames</code></h3>
+    <span class="type">String</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Nom de class CSS séparées par une virgule à ajouter à l'acteur.
+Modificateur : Rendu.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> &#x27;&#x27;</p>
+
+
+</div>
+<div id="property_properties.height" class="property item">
+    <h3 class="name"><code>properties.height</code></h3>
+    <span class="type">String</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Hauteur de l'acteur
+Modificateur : Gabarit.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> &#x27;auto&#x27;</p>
+
+
+</div>
+<div id="property_properties.maxHeight" class="property item">
+    <h3 class="name"><code>properties.maxHeight</code></h3>
+    <span class="type">String</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Hauteur maximale de l'acteur
+Modificateur : Gabarit.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> &#x27;auto&#x27;</p>
+
+
+</div>
+<div id="property_properties.minHeight" class="property item">
+    <h3 class="name"><code>properties.minHeight</code></h3>
+    <span class="type">String</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Hauteur minimale de l'acteur
+Modificateur : Gabarit.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> &#x27;auto&#x27;</p>
+
+
+</div>
+<div id="property_properties.textDecoration" class="property item">
+    <h3 class="name"><code>properties.textDecoration</code></h3>
+    <span class="type">String</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Décoration du texte.
+Modificateur : CSS.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> &#x27;inherit&#x27;</p>
+
+
+</div>
+            </div>
+
+            <div id="attrs" class="api-class-tabpanel">
+                <h2 class="off-left">Attributes</h2>
+
+                    <div id="attr_actor" class="attr item">
+                        <a name="config_actor"></a> 
+                        <h3 class="name"><code>actor</code></h3>
+                        <span class="type">Element</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>L'élément DOM de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_dataContext" class="attr item inherited">
+                        <a name="config_dataContext"></a> 
+                        <h3 class="name"><code>dataContext</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Behavior.DataContextual.html#attr_dataContext">Behavior.DataContextual</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Contexte de donnée.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_isDestroyed" class="attr item">
+                        <a name="config_isDestroyed"></a> 
+                        <h3 class="name"><code>isDestroyed</code></h3>
+                        <span class="type">Boolean</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Vrai quand l'acteur est détruit.</p>
+                    
+                        </div>
+                    
+                            <p><strong>Default:</strong> false</p>
+                    
+                    
+                    </div>
+                    <div id="attr_isDestroying" class="attr item">
+                        <a name="config_isDestroying"></a> 
+                        <h3 class="name"><code>isDestroying</code></h3>
+                        <span class="type">Boolean</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Vrai quand l'acteur est en train d'être détruit.</p>
+                    
+                        </div>
+                    
+                            <p><strong>Default:</strong> false</p>
+                    
+                    
+                    </div>
+                    <div id="attr_isLeadActor" class="attr item">
+                        <a name="config_isLeadActor"></a> 
+                        <h3 class="name"><code>isLeadActor</code></h3>
+                        <span class="type">Boolean</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Est-ce un acteur principal ?</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_key" class="attr item">
+                        <a name="config_key"></a> 
+                        <h3 class="name"><code>key</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>La clé unique de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_leadActor" class="attr item">
+                        <a name="config_leadActor"></a> 
+                        <h3 class="name"><code>leadActor</code></h3>
+                        <span class="type"><a href="../classes/Actor.BaseActor.html" class="crosslink">Actor.BaseActor</a></span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Récupération de l'acteur principal.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_parent" class="attr item">
+                        <a name="config_parent"></a> 
+                        <h3 class="name"><code>parent</code></h3>
+                        <span class="type"><a href="../classes/Actor.BaseActor.html" class="crosslink">Actor.BaseActor</a></span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Acteur parent.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_rootScene" class="attr item">
+                        <a name="config_rootScene"></a> 
+                        <h3 class="name"><code>rootScene</code></h3>
+                        <span class="type">Scene</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Scene racine de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_scene" class="attr item">
+                        <a name="config_scene"></a> 
+                        <h3 class="name"><code>scene</code></h3>
+                        <span class="type">Stage</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Première scène parente de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_stage" class="attr item">
+                        <a name="config_stage"></a> 
+                        <h3 class="name"><code>stage</code></h3>
+                        <span class="type">Stage</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Scene ou Composite parent de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_styleName" class="attr item">
+                        <a name="config_styleName"></a> 
+                        <h3 class="name"><code>styleName</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Le nom du style de l'acteur.</p>
+                    <p>Pour changer de style, il faut utiliser <a href="../classes/Actor.BaseActor.html#method_changeStyleName" class="crosslink">changeStyleName</a></p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_synapp" class="attr item">
+                        <a name="config_synapp"></a> 
+                        <h3 class="name"><code>synapp</code></h3>
+                        <span class="type">Stage</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>La Synapp.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_type" class="attr item">
+                        <a name="config_type"></a> 
+                        <h3 class="name"><code>type</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Type de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_uniqPath" class="attr item">
+                        <a name="config_uniqPath"></a> 
+                        <h3 class="name"><code>uniqPath</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Chemin unique de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+            </div>
+
+            <div id="events" class="api-class-tabpanel">
+                <h2 class="off-left">Events</h2>
+
+                    <div id="event_additionals/[additionalName]/binding/onReadTransform" class="events item">
+                        <h3 class="name"><code>additionals/[additionalName]/binding/onReadTransform</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit à la lecture de la source d'une liaison vers une additionnelle <code>additionalName</code>.
+                    Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type">Actor.Event.OnBindingTransformContext</span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_additionals/[additionalName]/binding/onWriteTransform" class="events item">
+                        <h3 class="name"><code>additionals/[additionalName]/binding/onWriteTransform</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit à écriture de la source d'une liaison vers une additionnelle <code>additionalName</code>.
+                    Il est possible de transformer la valeur lue pour écrire autre chose dans la source.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type">Actor.Event.OnBindingTransformContext</span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_additionals/[additionalName]/onValueChanged" class="events item">
+                        <h3 class="name"><code>additionals/[additionalName]/onValueChanged</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque la valeur de l'additionnelle <code>additionalName</code> change.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.PropertyChangedContext.html" class="crosslink">Actor.Event.PropertyChangedContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onClick" class="events item">
+                        <h3 class="name"><code>onClick</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit au click sur acteur.</p>
+                    <p>La contexte contient l'évènement de souris dans le champ <code>mouseEvent</code>.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onComputeLayout" class="events item">
+                        <h3 class="name"><code>onComputeLayout</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque l'acteur calcul son gabarit.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onDestroy" class="events item">
+                        <h3 class="name"><code>onDestroy</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit au moment de la destruction d'un acteur.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onInit" class="events item">
+                        <h3 class="name"><code>onInit</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque l'acteur est initialisé.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onMouseDown" class="events item">
+                        <h3 class="name"><code>onMouseDown</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque un bouton de la souris est appuyé au dessus de l'acteur .</p>
+                    <p>La contexte contient l'évènement de souris dans le champ <code>mouseEvent</code>.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onMouseEnter" class="events item">
+                        <h3 class="name"><code>onMouseEnter</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque la souris entre dans acteur.</p>
+                    <p>La contexte contient l'évènement de souris dans le champ <code>mouseEvent</code>.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onMouseLeave" class="events item">
+                        <h3 class="name"><code>onMouseLeave</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque la souris sort de l' acteur.</p>
+                    <p>La contexte contient l'évènement de souris dans le champ <code>mouseEvent</code>.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onMouseMove" class="events item">
+                        <h3 class="name"><code>onMouseMove</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque la souris se déplace au dessus de l' acteur.</p>
+                    <p>La contexte contient l'évènement de souris dans le champ <code>mouseEvent</code>.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onMouseUp" class="events item">
+                        <h3 class="name"><code>onMouseUp</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque un bouton de la souris est relâché au dessus de l'acteur .</p>
+                    <p>La contexte contient l'évènement de souris dans le champ <code>mouseEvent</code>.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onPostInit" class="events item">
+                        <h3 class="name"><code>onPostInit</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit avant le premier rendu mais apres que tous les acteurs de la scène soient initialisés.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onPropertyChanged" class="events item">
+                        <h3 class="name"><code>onPropertyChanged</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque n'importe quelle valeur d'une propriété ou d'une additionnelle change.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.PropertyChangedContext.html" class="crosslink">Actor.Event.PropertyChangedContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_onRender" class="events item">
+                        <h3 class="name"><code>onRender</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit à chaque rendu de l'acteur dans l'interface.
+                    Un champs <code>isFirstRender</code> est à <code>true</code> dans le contexte au premier rendu.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_properties/[propertyName]/binding/onReadTransform" class="events item">
+                        <h3 class="name"><code>properties/[propertyName]/binding/onReadTransform</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit à la lecture de la source d'une liaison vers une propriété <code>propertyName</code>.
+                    Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type">Actor.Event.OnBindingTransformContext</span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_properties/[propertyName]/binding/onWriteTransform" class="events item">
+                        <h3 class="name"><code>properties/[propertyName]/binding/onWriteTransform</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit à l'écriture de la source d'une liaison vers une propriété <code>propertyName</code>.
+                    Il est possible de transformer la valeur lue pour écrire autre chose dans la source.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type">Actor.Event.OnBindingTransformContext</span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_properties/[propertyName]/onValueChanged" class="events item">
+                        <h3 class="name"><code>properties/[propertyName]/onValueChanged</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Se produit lorsque la valeur de propriété <code>propertyName</code> change.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">context</code>
+                                            <span class="type"><a href="../classes/Actor.Event.PropertyChangedContext.html" class="crosslink">Actor.Event.PropertyChangedContext</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+            </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

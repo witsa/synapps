@@ -1,0 +1,2853 @@
+{
+    "project": {},
+    "files": {
+        "synapps-ui-redy\\addon\\behaviors\\wos-relative-variable-able.js": {
+            "name": "synapps-ui-redy\\addon\\behaviors\\wos-relative-variable-able.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source-prototype-setup.js": {
+            "name": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source-prototype-setup.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source.js": {
+            "name": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source.js",
+            "modules": {},
+            "classes": {
+                "Actor.DataSource.WosRelativeVariableSource": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-variable-source-prototype-setup.js": {
+            "name": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-variable-source-prototype-setup.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-variable-source.js": {
+            "name": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-variable-source.js",
+            "modules": {},
+            "classes": {
+                "Actor.DataSource.WosVariableSource": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui-redy\\addon\\redy-host.js": {
+            "name": "synapps-ui-redy\\addon\\redy-host.js",
+            "modules": {
+                "Synapps-UI-REDY": 1
+            },
+            "classes": {
+                "RedyHost": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui-redy\\addon\\redy-session.js": {
+            "name": "synapps-ui-redy\\addon\\redy-session.js",
+            "modules": {},
+            "classes": {
+                "RedySession": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\accessories\\base.js": {
+            "name": "synapps-ui\\addon\\accessories\\base.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\bases\\host.js": {
+            "name": "synapps-ui\\addon\\bases\\host.js",
+            "modules": {
+                "Synapps-UI": 1
+            },
+            "classes": {
+                "BaseHost": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\bases\\session.js": {
+            "name": "synapps-ui\\addon\\bases\\session.js",
+            "modules": {},
+            "classes": {
+                "BaseSession": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\bases\\user-agent.js": {
+            "name": "synapps-ui\\addon\\bases\\user-agent.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\bases\\user.js": {
+            "name": "synapps-ui\\addon\\bases\\user.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\behaviors\\data-contextual.js": {
+            "name": "synapps-ui\\addon\\behaviors\\data-contextual.js",
+            "modules": {},
+            "classes": {
+                "Behavior.DataContextual": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\behaviors\\destroyable.js": {
+            "name": "synapps-ui\\addon\\behaviors\\destroyable.js",
+            "modules": {},
+            "classes": {
+                "Behavior.Destroyable": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\behaviors\\with-additionals.js": {
+            "name": "synapps-ui\\addon\\behaviors\\with-additionals.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\behaviors\\with-properties.js": {
+            "name": "synapps-ui\\addon\\behaviors\\with-properties.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\bindings\\basic.js": {
+            "name": "synapps-ui\\addon\\bindings\\basic.js",
+            "modules": {},
+            "classes": {
+                "Binding.BasicBinding": 1,
+                "Binding.Setup.Basic": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\bindings\\internal.js": {
+            "name": "synapps-ui\\addon\\bindings\\internal.js",
+            "modules": {},
+            "classes": {
+                "Binding.InternalBinding": 1,
+                "Binding.Setup.Internal": 1,
+                "Binding.Setup.Actor": 1,
+                "Binding.Setup.Relative": 1,
+                "Binding.Setup.Stage": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\components\\actors\\display\\html-prototype-setup.js": {
+            "name": "synapps-ui\\addon\\components\\actors\\display\\html-prototype-setup.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\components\\actors\\display\\html.js": {
+            "name": "synapps-ui\\addon\\components\\actors\\display\\html.js",
+            "modules": {},
+            "classes": {
+                "Actor.Display.Html": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Actor.Display": 1
+            }
+        },
+        "synapps-ui\\addon\\components\\actors\\input\\cursor.js": {
+            "name": "synapps-ui\\addon\\components\\actors\\input\\cursor.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\components\\actors\\base-actor-prototype-setup.js": {
+            "name": "synapps-ui\\addon\\components\\actors\\base-actor-prototype-setup.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\components\\actors\\base-actor.js": {
+            "name": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "modules": {},
+            "classes": {
+                "Actor.BaseActor": 1,
+                "Actor.Event.BaseContext": 1,
+                "Actor.Event.PropertyChangedContext": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Actor": 1
+            }
+        },
+        "synapps-ui\\addon\\components\\actors\\data-source-prototype-setup.js": {
+            "name": "synapps-ui\\addon\\components\\actors\\data-source-prototype-setup.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\components\\actors\\data-source.js": {
+            "name": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "modules": {},
+            "classes": {
+                "Actor.DataSource": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\components\\behaviors\\jokerable.js": {
+            "name": "synapps-ui\\addon\\components\\behaviors\\jokerable.js",
+            "modules": {},
+            "classes": {
+                "Behavior.Actor.Jokerable": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Behavior.Actor": 1
+            }
+        },
+        "synapps-ui\\addon\\services\\data-stores\\base-setup.js": {
+            "name": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\services\\setup-migration.js": {
+            "name": "synapps-ui\\addon\\services\\setup-migration.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\tools\\debounce.js": {
+            "name": "synapps-ui\\addon\\tools\\debounce.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "synapps-ui\\addon\\tools\\throttle.js": {
+            "name": "synapps-ui\\addon\\tools\\throttle.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Synapps-UI-REDY": {
+            "name": "Synapps-UI-REDY",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "Actor.DataSource.WosRelativeVariableSource": 1,
+                "Actor.DataSource.WosVariableSource": 1,
+                "RedyHost": 1,
+                "RedySession": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "synapps-ui-redy\\addon\\redy-session.js",
+            "line": 9,
+            "description": "Représente l'ULI hôte."
+        },
+        "Synapps-UI": {
+            "name": "Synapps-UI",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "BaseHost": 1,
+                "BaseSession": 1,
+                "Behavior.DataContextual": 1,
+                "Behavior.Destroyable": 1,
+                "Binding.BasicBinding": 1,
+                "Binding.Setup.Basic": 1,
+                "Binding.InternalBinding": 1,
+                "Binding.Setup.Internal": 1,
+                "Binding.Setup.Actor": 1,
+                "Binding.Setup.Relative": 1,
+                "Binding.Setup.Stage": 1,
+                "Actor.Display.Html": 1,
+                "Actor.BaseActor": 1,
+                "Actor.Event.BaseContext": 1,
+                "Actor.Event.PropertyChangedContext": 1,
+                "Actor.DataSource": 1,
+                "Behavior.Actor.Jokerable": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Actor.Display": 1,
+                "Actor": 1,
+                "Behavior.Actor": 1
+            },
+            "tag": "module",
+            "file": "synapps-ui\\addon\\components\\behaviors\\jokerable.js",
+            "line": 7
+        }
+    },
+    "classes": {
+        "Actor.DataSource.WosRelativeVariableSource": {
+            "name": "Actor.DataSource.WosRelativeVariableSource",
+            "shortname": "Actor.DataSource.WosRelativeVariableSource",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI-REDY",
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source.js",
+            "line": 8,
+            "description": "Acteur fournisseur relatif de variable WOS. Permet d'indiquer à un fournisseur parent d'aller chercher  une variable supplémentaire dans sa requête. Il est possible de s'attacher à un fournisseur de variable ou bien un autre fournisseur relatif par l'intermédiaire de la propriété `relativeTo` ou en passant l'acteur dans le contexte de donnée.",
+            "extends": "Actor.BaseActor"
+        },
+        "Actor.DataSource.WosVariableSource": {
+            "name": "Actor.DataSource.WosVariableSource",
+            "shortname": "Actor.DataSource.WosVariableSource",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI-REDY",
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-variable-source.js",
+            "line": 7,
+            "description": "Acteur fournisseur de variable WOS. Permet de paramétrer les requêtes et d'exposer une variable pour des liaisons ou accessible par script. Il peut être complété par des fournisseurs relatifs de variable WOS pour effectuer des requêtes groupées.",
+            "extends": "Actor.DataSource"
+        },
+        "RedyHost": {
+            "name": "RedyHost",
+            "shortname": "RedyHost",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI-REDY",
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 15,
+            "description": "Représente l'ULI hôte.",
+            "extends": "BaseHost"
+        },
+        "RedySession": {
+            "name": "RedySession",
+            "shortname": "RedySession",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI-REDY",
+            "namespace": "",
+            "file": "synapps-ui-redy\\addon\\redy-session.js",
+            "line": 9,
+            "extends": "BaseSession"
+        },
+        "BaseHost": {
+            "name": "BaseHost",
+            "shortname": "BaseHost",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bases\\host.js",
+            "line": 9,
+            "extends": "SourceOfInternalBinding"
+        },
+        "BaseSession": {
+            "name": "BaseSession",
+            "shortname": "BaseSession",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bases\\session.js",
+            "line": 10,
+            "description": "Objet de base pour stocker les informations d'une session.",
+            "extends": "SourceOfInternalBinding"
+        },
+        "Behavior.DataContextual": {
+            "name": "Behavior.DataContextual",
+            "shortname": "Behavior.DataContextual",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [
+                "Actor.BaseActor"
+            ],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\behaviors\\data-contextual.js",
+            "line": 8,
+            "description": "Possède un context de donnée. L'héritage se fait en suivant le parent (chemin : `parent`)."
+        },
+        "Behavior.Destroyable": {
+            "name": "Behavior.Destroyable",
+            "shortname": "Behavior.Destroyable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [
+                "Binding.BasicBinding"
+            ],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\behaviors\\destroyable.js",
+            "line": 4,
+            "description": "Object destructible."
+        },
+        "Binding.BasicBinding": {
+            "name": "Binding.BasicBinding",
+            "shortname": "Binding.BasicBinding",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 21,
+            "uses": [
+                "Behavior.Destroyable"
+            ]
+        },
+        "Binding.Setup.Basic": {
+            "name": "Binding.Setup.Basic",
+            "shortname": "Binding.Setup.Basic",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 269,
+            "description": "Setup de liaison basique."
+        },
+        "Binding.InternalBinding": {
+            "name": "Binding.InternalBinding",
+            "shortname": "Binding.InternalBinding",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 6,
+            "extends": "Binding.BasicBinding"
+        },
+        "Binding.Setup.Internal": {
+            "name": "Binding.Setup.Internal",
+            "shortname": "Binding.Setup.Internal",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 74,
+            "description": "Setup de liaison interne.",
+            "extends": "Binding.Setup.Basic"
+        },
+        "Binding.Setup.Actor": {
+            "name": "Binding.Setup.Actor",
+            "shortname": "Binding.Setup.Actor",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 93,
+            "description": "Setup de liaison interne vers un acteur. `sourceType='actor'`",
+            "extends": "Binding.Setup.Internal"
+        },
+        "Binding.Setup.Relative": {
+            "name": "Binding.Setup.Relative",
+            "shortname": "Binding.Setup.Relative",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 106,
+            "description": "Setup de liaison interne relative.",
+            "extends": "Binding.Setup.Internal"
+        },
+        "Binding.Setup.Stage": {
+            "name": "Binding.Setup.Stage",
+            "shortname": "Binding.Setup.Stage",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "",
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 124,
+            "description": "Setup de liaison interne vers la scène ou le composite parent.\n\nAttention, dans la définition du `path`, il faut utiliser `properties.specific1` plutôt que `additionals.specific1` pour accéder à la propriété spécifique `specific1` du composite parent.",
+            "extends": "Binding.Setup.Internal"
+        },
+        "Actor.Display.Html": {
+            "name": "Actor.Display.Html",
+            "shortname": "Actor.Display.Html",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "Actor.Display",
+            "file": "synapps-ui\\addon\\components\\actors\\display\\html.js",
+            "line": 10,
+            "description": "Acteur HTML. Permet de rendre de l'HTML dans l'interface.",
+            "extends": "Actor.BaseActor",
+            "uses": [
+                "Behavior.Actor.Jokerable"
+            ]
+        },
+        "Actor.BaseActor": {
+            "name": "Actor.BaseActor",
+            "shortname": "Actor.BaseActor",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "Actor",
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 72,
+            "description": "Acteur de base.",
+            "uses": [
+                "WithEvents",
+                "WithAdditionals",
+                "WithProperties",
+                "Behavior.DataContextual",
+                "SourceOfInternalBinding"
+            ]
+        },
+        "Actor.Event.BaseContext": {
+            "name": "Actor.Event.BaseContext",
+            "shortname": "Event.BaseContext",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "Actor",
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1545,
+            "description": "Contexte d'évènement."
+        },
+        "Actor.Event.PropertyChangedContext": {
+            "name": "Actor.Event.PropertyChangedContext",
+            "shortname": "Event.PropertyChangedContext",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "Actor",
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1658,
+            "extends": "Actor.Event.BaseContext"
+        },
+        "Actor.DataSource": {
+            "name": "Actor.DataSource",
+            "shortname": "Actor.DataSource",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Synapps-UI",
+            "namespace": "Actor",
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 10,
+            "description": "Classe de base pour fournisseur de donnée. Permet de paramétrer les requêtes et d'exposer une donnée pour des liaisons ou accessible par script.",
+            "extends": "Actor.BaseActor"
+        },
+        "Behavior.Actor.Jokerable": {
+            "name": "Behavior.Actor.Jokerable",
+            "shortname": "Behavior.Actor.Jokerable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [
+                "Actor.Display.Html"
+            ],
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor",
+            "file": "synapps-ui\\addon\\components\\behaviors\\jokerable.js",
+            "line": 7,
+            "description": "Permet d'ajouter des jokers sur un contenu. Par défaut sur `properties.content`.",
+            "exemple": "`valeur : {{value}}°C`"
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "synapps-ui-redy\\addon\\behaviors\\wos-relative-variable-able.js",
+            "line": 84,
+            "description": "Donnée exposée.",
+            "itemtype": "attribute",
+            "name": "data",
+            "type": "{any}",
+            "class": "Actor.DataSource.WosRelativeVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source-prototype-setup.js",
+            "line": 3,
+            "description": "Chemin relatif vers la variable WOS ou un des ses champs. Le chemin sera complété par le fournisseur défini dans la propriété `relativeTo` ou récupéré dans le contexte.",
+            "itemtype": "property",
+            "name": "properties.relativePath",
+            "type": "{string}",
+            "default": "''",
+            "example": [
+                "\n`R00001:name` ou `:value` ou `R00001`"
+            ],
+            "class": "Actor.DataSource.WosRelativeVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source-prototype-setup.js",
+            "line": 16,
+            "description": "Clé de l'acteur fournisseur de variable WOS ou d'un autre fournisseur relatif qui sert de référence au chemin défini dans la propriété `relativePath`.",
+            "itemtype": "property",
+            "name": "properties.relativeTo",
+            "type": "{string}",
+            "default": "null",
+            "class": "Actor.DataSource.WosRelativeVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source-prototype-setup.js",
+            "line": 27,
+            "description": "Écriture dès changement de la donnée activée?",
+            "itemtype": "property",
+            "name": "properties.writeOnChange",
+            "type": "{Boolean}",
+            "default": "false",
+            "class": "Actor.DataSource.WosRelativeVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source-prototype-setup.js",
+            "line": 37,
+            "description": "Mode de lecture de la variable.",
+            "itemtype": "property",
+            "name": "properties.dataReadMode",
+            "type": "{string}",
+            "default": "'onetime'",
+            "example": [
+                "\n- `always` : Récupération de la donnée à chaque fois que le fournisseur racine effectue une requête,\n- `onetime`: Récupération de la donnée qu'une fois par le fournisseur racine. Ce sera fait dès que possible."
+            ],
+            "class": "Actor.DataSource.WosRelativeVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source.js",
+            "line": 16,
+            "description": "Se produit lorsque la donnée est stockée dans l'acteur.\nDans le contexte, on retrouve la donnée dans le champ `data`.",
+            "itemtype": "event",
+            "name": "onDidDataStore",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.DataSource.WosRelativeVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-relative-variable-source.js",
+            "line": 27,
+            "description": "Se produit lorsque la requête d'écriture s'est terminée.\nDans le context,e on retrouve la donnée dans le champ `data` ou une erreur dans le champ `error`.",
+            "itemtype": "event",
+            "name": "onWriteDone",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.DataSource.WosRelativeVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-variable-source-prototype-setup.js",
+            "line": 6,
+            "description": "Mode de requête de la donnée.",
+            "itemtype": "property",
+            "name": "properties.mode",
+            "type": "{string}",
+            "default": "'auto'",
+            "example": [
+                "\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode {{#crossLink \"Actor.DataSource/request:method\"}}{{/crossLink}} ou {{#crossLink \"Actor.DataSource/requestDebounce:method\"}}{{/crossLink}},\n- `relative`: Le comportement est automatique dès que des sources relatives sont attachées à cet acteur."
+            ],
+            "class": "Actor.DataSource.WosVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\components\\actors\\wos\\wos-variable-source-prototype-setup.js",
+            "line": 22,
+            "description": "Chemin de la variable WOS ou un des ses champs.",
+            "itemtype": "property",
+            "name": "properties.path",
+            "type": "{string}",
+            "default": "''",
+            "example": [
+                "\n`:easy.RESS.R00001:name` ou `:easy.RESS.R00001.R00002:value` ou `:easy.RESS.R00001`"
+            ],
+            "class": "Actor.DataSource.WosVariableSource"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 23,
+            "description": "La session pour cet hôte.",
+            "itemtype": "attribute",
+            "name": "session",
+            "readonly": "",
+            "type": "{RedySession}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 111,
+            "description": "Nom de l'ULI",
+            "itemtype": "attribute",
+            "name": "name",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 122,
+            "description": "WID de l'ULI",
+            "itemtype": "attribute",
+            "name": "wid",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 133,
+            "description": "hard de l'ULI",
+            "itemtype": "attribute",
+            "name": "hard",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 144,
+            "description": "Type d'ULI",
+            "itemtype": "attribute",
+            "name": "type",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 155,
+            "description": "Version d'ULI",
+            "itemtype": "attribute",
+            "name": "version",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 166,
+            "description": "Date de version d'ULI. Format : Date ISO.",
+            "itemtype": "attribute",
+            "name": "versionDate",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 177,
+            "description": "URL des application RIA qu'utilise l'ULI.",
+            "itemtype": "attribute",
+            "name": "riaUrl",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 188,
+            "description": "Logo de l'ULI.",
+            "itemtype": "attribute",
+            "name": "picture",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 199,
+            "description": "Profil de l'ULI.",
+            "itemtype": "attribute",
+            "name": "profil",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-host.js",
+            "line": 210,
+            "description": "Adds de l'ULI.",
+            "itemtype": "attribute",
+            "name": "optAdds",
+            "readonly": "",
+            "type": "{string}",
+            "class": "RedyHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-session.js",
+            "line": 18,
+            "description": "Login et mot de passe encodé.",
+            "class": "RedySession",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-session.js",
+            "line": 28,
+            "description": "SID d'entrée",
+            "class": "RedySession",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui-redy\\addon\\redy-session.js",
+            "line": 48,
+            "description": "Identifiants applicatifs du client.",
+            "class": "RedySession",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui\\addon\\accessories\\base.js",
+            "line": 23,
+            "description": "Enregistre la définition de l'accessoire dans le dictionnaire des accessoires.",
+            "params": [
+                {
+                    "name": "definition",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "type",
+                            "description": "- La clé unique du type de l'accessoire (ex: \"data-source/wos-relative-variable\");",
+                            "type": "String"
+                        },
+                        {
+                            "name": "prototypeSetup",
+                            "description": "- Object qui contient les définitions des propriétés de l'accessoire.",
+                            "type": "String"
+                        },
+                        {
+                            "name": "platform",
+                            "description": "- Nom de la plateforme à laquelle l'accessoire appartient.",
+                            "type": "String",
+                            "optional": true,
+                            "optdefault": "native"
+                        }
+                    ]
+                }
+            ],
+            "class": "BaseHost",
+            "module": "Synapps-UI-REDY"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\host.js",
+            "line": 20,
+            "description": "Url du domaine de l'hôte.",
+            "itemtype": "attribute",
+            "name": "domain",
+            "readonly": "",
+            "type": "{string}",
+            "class": "BaseHost",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\host.js",
+            "line": 29,
+            "description": "La session pour cet hôte.",
+            "itemtype": "attribute",
+            "name": "session",
+            "readonly": "",
+            "type": "{BaseSession}",
+            "class": "BaseHost",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\host.js",
+            "line": 39,
+            "description": "La clé unique de l'hôte. Utilisée dans Studio.",
+            "itemtype": "attribute",
+            "name": "key",
+            "readonly": "",
+            "type": "{string}",
+            "access": "private",
+            "tagname": "",
+            "class": "BaseHost",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\session.js",
+            "line": 29,
+            "description": "Token.",
+            "class": "BaseSession",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\session.js",
+            "line": 39,
+            "description": "Date d'expiration. Format : Date ISO.",
+            "itemtype": "attribute",
+            "name": "expirationDate",
+            "readonly": "",
+            "type": "{String}",
+            "class": "BaseSession",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\session.js",
+            "line": 48,
+            "description": "Est authentifié?",
+            "itemtype": "attribute",
+            "name": "isAuthenticated",
+            "readonly": "",
+            "type": "{Boolean}",
+            "class": "BaseSession",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\session.js",
+            "line": 58,
+            "description": "Est en train de s'authentifier?",
+            "itemtype": "attribute",
+            "name": "isAuthenticating",
+            "readonly": "",
+            "type": "{Boolean}",
+            "class": "BaseSession",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\session.js",
+            "line": 78,
+            "description": "L'utilisateur de la session.",
+            "itemtype": "attribute",
+            "name": "user",
+            "readonly": "",
+            "type": "{User}",
+            "class": "BaseSession",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\user-agent.js",
+            "line": 17,
+            "description": "Objet de base pour stocker les informations d'un utilisateur.",
+            "class": "Behavior.DataContextual",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bases\\user.js",
+            "line": 7,
+            "description": "Objet de base pour stocker les informations d'un utilisateur.",
+            "class": "Behavior.DataContextual",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\behaviors\\data-contextual.js",
+            "line": 46,
+            "description": "Contexte de donnée.",
+            "itemtype": "attribute",
+            "name": "dataContext",
+            "class": "Behavior.DataContextual",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\behaviors\\destroyable.js",
+            "line": 19,
+            "description": "Vrai quand l'objet est détruit.",
+            "itemtype": "attribute",
+            "name": "isDestroyed",
+            "readonly": "",
+            "default": "false",
+            "type": "{Boolean}",
+            "class": "Behavior.Destroyable",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\behaviors\\destroyable.js",
+            "line": 31,
+            "description": "Vrai quand l'objet est en train d'être détruit.",
+            "itemtype": "attribute",
+            "name": "isDestroying",
+            "readonly": "",
+            "default": "false",
+            "type": "{Boolean}",
+            "class": "Behavior.Destroyable",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\behaviors\\with-additionals.js",
+            "line": 7,
+            "description": "Attribut un champ contenant un prototypé qui permet de définir des propriétés additionnelles.\nLe cache du prototypé est le setup.",
+            "params": [
+                {
+                    "name": "Class",
+                    "description": "La classe à étendre.",
+                    "type": "Class"
+                }
+            ],
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\behaviors\\with-properties.js",
+            "line": 5,
+            "description": "Étend une classe en lui donnant un champ prototypé nommé properties.\nLe cache du prototypé est le setup.",
+            "params": [
+                {
+                    "name": "Class",
+                    "description": "La classe à étendre.",
+                    "type": "Class"
+                }
+            ],
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 85,
+            "description": "La cible de la liaison.",
+            "itemtype": "attribute",
+            "name": "target",
+            "readonly": "",
+            "type": "{any}",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 95,
+            "description": "La chemin vers la valeur depuis la cible.",
+            "itemtype": "attribute",
+            "name": "targetValuePath",
+            "readonly": "",
+            "type": "{string}",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 105,
+            "description": "La liaison est-elle active ?",
+            "itemtype": "attribute",
+            "name": "isActive",
+            "readonly": "",
+            "type": "{Boolean}",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 115,
+            "description": "la lecture est-elle permise ?",
+            "itemtype": "attribute",
+            "name": "canRead",
+            "readonly": "",
+            "type": "{Boolean}",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 125,
+            "description": "l'écriture est-elle permise ?",
+            "itemtype": "attribute",
+            "name": "canWrite",
+            "readonly": "",
+            "type": "{Boolean}",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 135,
+            "description": "Le mode de lecture.",
+            "itemtype": "attribute",
+            "name": "readMode",
+            "type": "{Boolean}",
+            "example": [
+                "\n- `always` pour chaque changement\n- `onetime` pour qu'une seule lecture."
+            ],
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 161,
+            "description": "Le chemin vers la valeur source.",
+            "itemtype": "attribute",
+            "name": "path",
+            "type": "{Boolean}",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 217,
+            "description": "Active la liaison. La valeur de la source est observée. Si elle change, le champ cible est alimenté. Si l'écriture est permise, le champ cible est écouté également pour alimenté le champ source.",
+            "itemtype": "method",
+            "name": "activate",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 239,
+            "description": "Désactive la liaison. Plus d'écoute.",
+            "itemtype": "method",
+            "name": "deactivate",
+            "class": "Binding.BasicBinding",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 274,
+            "description": "Chemin pour trouver la valeur sur la source.",
+            "itemtype": "attribute",
+            "name": "path",
+            "required": 1,
+            "type": "{String}",
+            "example": [
+                " `properties.width` ou `additionals.prop1`"
+            ],
+            "class": "Binding.Setup.Basic",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 282,
+            "description": "Mode de lecture de la valeur cible :",
+            "example": [
+                "\n- `always` pour chaque changement\n- `onetime` pour qu'une seule lecture."
+            ],
+            "itemtype": "attribute",
+            "name": "readMode",
+            "optional": 1,
+            "default": "always",
+            "type": "{string}",
+            "class": "Binding.Setup.Basic",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\basic.js",
+            "line": 295,
+            "description": "Permettre l'écriture dans la cible",
+            "itemtype": "attribute",
+            "name": "canWrite",
+            "optional": 1,
+            "default": "false",
+            "type": "{Boolean}",
+            "class": "Binding.Setup.Basic",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 80,
+            "description": "Type de source Acteur.",
+            "itemtype": "attribute",
+            "name": "sourceType",
+            "required": 1,
+            "type": "{String}",
+            "example": [
+                "\n\n- `actor` pour créer une liaison vers un acteur : {{#crossLink \"Binding.Setup.Actor\"}}{{/crossLink}}\n- `relative` pour créer une liaison relative : {{#crossLink \"Binding.Setup.Relative\"}}{{/crossLink}}\n- `stage` pour créer une liaison vers la scène courante ou le composite parent : {{#crossLink \"Binding.Setup.Stage\"}}{{/crossLink}}"
+            ],
+            "class": "Binding.Setup.Internal",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 99,
+            "description": "Clé de l'acteur source.",
+            "itemtype": "attribute",
+            "name": "sourceKey",
+            "required": 1,
+            "type": "{String}",
+            "class": "Binding.Setup.Actor",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\bindings\\internal.js",
+            "line": 112,
+            "description": "Chemin pour trouver la source de la liaison.",
+            "itemtype": "attribute",
+            "name": "sourcePath",
+            "optional": 1,
+            "default": "self",
+            "example": [
+                "\n- `self` pour l'acteur lui même.\n- `parent` pour le parent de l'acteur.\n- `parent.parent` pour le parent du parent de l'acteur."
+            ],
+            "type": "{String}",
+            "class": "Binding.Setup.Relative",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\display\\html-prototype-setup.js",
+            "line": 5,
+            "description": "Contenu HTML\nModificateur : Gabarit.",
+            "itemtype": "property",
+            "name": "properties.content",
+            "default": "''",
+            "type": "{String}",
+            "class": "Actor.Display.Html",
+            "module": "Synapps-UI"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\input\\cursor.js",
+            "line": 157,
+            "description": "fix javascript problem about value with decimal. Ex 2.00000000001",
+            "params": [
+                {
+                    "name": "val",
+                    "description": "",
+                    "type": "*"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor.Display"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor-prototype-setup.js",
+            "line": 3,
+            "description": "Nom de class CSS séparées par une virgule à ajouter à l'acteur.\nModificateur : Rendu.",
+            "itemtype": "property",
+            "name": "properties.classNames",
+            "default": "''",
+            "type": "{String}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor.Display"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor-prototype-setup.js",
+            "line": 15,
+            "description": "Hauteur de l'acteur\nModificateur : Gabarit.",
+            "itemtype": "property",
+            "name": "properties.height",
+            "default": "'auto'",
+            "type": "{String}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor.Display"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor-prototype-setup.js",
+            "line": 27,
+            "description": "Hauteur minimale de l'acteur\nModificateur : Gabarit.",
+            "itemtype": "property",
+            "name": "properties.minHeight",
+            "default": "'auto'",
+            "type": "{String}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor.Display"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor-prototype-setup.js",
+            "line": 39,
+            "description": "Hauteur maximale de l'acteur\nModificateur : Gabarit.",
+            "itemtype": "property",
+            "name": "properties.maxHeight",
+            "default": "'auto'",
+            "type": "{String}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor.Display"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor-prototype-setup.js",
+            "line": 183,
+            "description": "Décoration du texte.\nModificateur : CSS.",
+            "itemtype": "property",
+            "name": "properties.textDecoration",
+            "default": "'inherit'",
+            "type": "{String}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor.Display"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 84,
+            "description": "Enregistre la définition de l'acteur dans le dictionnaire des acteurs.",
+            "static": 1,
+            "itemtype": "method",
+            "name": "registerInDefinitions",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "definition",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "type",
+                            "description": "- La clé unique du type de l'acteur (ex: \"input/button\");",
+                            "type": "String"
+                        },
+                        {
+                            "name": "componentName",
+                            "description": "- Nom complet du composant EmberJS (ex: \"synapps-ui/actors/input/button\").",
+                            "type": "String"
+                        },
+                        {
+                            "name": "prototypeSetup",
+                            "description": "- Object qui contient les définitions des propriétés de l'acteur.",
+                            "type": "String"
+                        },
+                        {
+                            "name": "platform",
+                            "description": "- Nom de la plateforme à laquelle l'acteur appartient.",
+                            "type": "String",
+                            "optional": true,
+                            "optdefault": "native"
+                        }
+                    ]
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 109,
+            "description": "Vrai quand l'acteur est détruit.",
+            "itemtype": "attribute",
+            "name": "isDestroyed",
+            "readonly": "",
+            "default": "false",
+            "type": "{Boolean}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 118,
+            "description": "Vrai quand l'acteur est en train d'être détruit.",
+            "itemtype": "attribute",
+            "name": "isDestroying",
+            "readonly": "",
+            "default": "false",
+            "type": "{Boolean}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 186,
+            "description": "La clé unique de l'acteur.",
+            "itemtype": "attribute",
+            "name": "key",
+            "readonly": "",
+            "type": "{string}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 196,
+            "description": "Scene ou Composite parent de l'acteur.",
+            "itemtype": "attribute",
+            "name": "stage",
+            "readonly": "",
+            "type": "{Stage}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 206,
+            "description": "Scene racine de l'acteur.",
+            "itemtype": "attribute",
+            "name": "rootScene",
+            "readonly": "",
+            "type": "{Scene}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 217,
+            "description": "Première scène parente de l'acteur.",
+            "itemtype": "attribute",
+            "name": "scene",
+            "readonly": "",
+            "type": "{Stage}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 227,
+            "description": "La Synapp.",
+            "itemtype": "attribute",
+            "name": "synapp",
+            "readonly": "",
+            "type": "{Stage}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 237,
+            "description": "Le nom du style de l'acteur.\n\nPour changer de style, il faut utiliser {{#crossLink \"Actor.BaseActor/changeStyleName:method\"}}{{/crossLink}}",
+            "itemtype": "attribute",
+            "name": "styleName",
+            "readonly": "",
+            "type": "{String}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 249,
+            "description": "L'élément DOM de l'acteur.",
+            "itemtype": "attribute",
+            "name": "actor",
+            "readonly": "",
+            "type": "{Element}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 260,
+            "description": "Acteur parent.",
+            "itemtype": "attribute",
+            "name": "parent",
+            "readonly": "",
+            "type": "{Actor.BaseActor}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 271,
+            "description": "Type de l'acteur.",
+            "itemtype": "attribute",
+            "name": "type",
+            "readonly": "",
+            "type": "{string}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 282,
+            "description": "Est-ce un acteur principal ?",
+            "itemtype": "attribute",
+            "name": "isLeadActor",
+            "readonly": "",
+            "type": "{Boolean}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 297,
+            "description": "Chemin unique de l'acteur.",
+            "itemtype": "attribute",
+            "name": "uniqPath",
+            "readonly": "",
+            "type": "{string}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 324,
+            "description": "Récupération de l'acteur principal.",
+            "itemtype": "attribute",
+            "name": "leadActor",
+            "readonly": "",
+            "type": "{Actor.BaseActor}",
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 444,
+            "description": "Se produit lorsque l'acteur est initialisé.",
+            "itemtype": "event",
+            "name": "onInit",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 456,
+            "description": "Exécute un évènement.",
+            "itemtype": "method",
+            "name": "runEvent",
+            "params": [
+                {
+                    "name": "eventName",
+                    "description": "Nom de l'évènement",
+                    "type": "*"
+                },
+                {
+                    "name": "args",
+                    "description": "Arguments",
+                    "type": "*"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 532,
+            "description": "Création d'une liaison basique.\n\nLa source est prise dans le contexte de donnée.",
+            "example": [
+                "\n  Le `setup` est un objet\n```\nactor.createBasicBinding('properties.width, { path: 'widthOfPanel' });\n```\nLa propriété largeur de l'acteur est maintenant liée au champ `widthOfPanel` de son contexte de donnée."
+            ],
+            "itemtype": "method",
+            "name": "createBasicBinding",
+            "params": [
+                {
+                    "name": "targetValuePath",
+                    "description": "Chemin de la cible",
+                    "type": "String"
+                },
+                {
+                    "name": "setup",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "saveInSetup",
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true,
+                    "optdefault": "true"
+                }
+            ],
+            "return": {
+                "description": "la liaison créée.",
+                "type": "Binding"
+            },
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 568,
+            "itemtype": "method",
+            "name": "getBinding",
+            "params": [
+                {
+                    "name": "targetValuePath",
+                    "description": "Chemin de la cible",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "la liaison demandée ou null si non trouvée.",
+                "type": "Binding"
+            },
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 579,
+            "description": "Création d'une liaison interne.\n\nLa source est prise dans le contexte de donnée.",
+            "example": [
+                "\n  Le `setup` est un objet différent en fonction du type de source.\n\n  Pour un acteur :\n```\n{ sourceKey: '<clé acteur>', path: 'le chemin de la valeur de la source' }\n```"
+            ],
+            "itemtype": "method",
+            "name": "createInternalBinding",
+            "params": [
+                {
+                    "name": "targetValuePath",
+                    "description": "Chemin de la cible",
+                    "type": "String"
+                },
+                {
+                    "name": "setup",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "saveInSetup",
+                    "description": "",
+                    "type": "Boolean",
+                    "optional": true,
+                    "optdefault": "true"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 647,
+            "description": "Suppression d'une liaison sur un chemin cible.",
+            "itemtype": "method",
+            "name": "removeBinding",
+            "params": [
+                {
+                    "name": "targetValuePath",
+                    "description": "Chemin vers la cible",
+                    "type": "String"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 691,
+            "description": "Changer le nom du style de l'acteur.",
+            "itemtype": "method",
+            "name": "changeStyleName",
+            "params": [
+                {
+                    "name": "styleName",
+                    "description": "Nom du style à appliquer.",
+                    "type": "String"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 827,
+            "description": "Se produit lorsque l'acteur calcul son gabarit.",
+            "itemtype": "event",
+            "name": "onComputeLayout",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 951,
+            "description": "Se produit lorsque n'importe quelle valeur d'une propriété ou d'une additionnelle change.",
+            "itemtype": "event",
+            "name": "onPropertyChanged",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.PropertyChangedContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 961,
+            "description": "Se produit lorsque la valeur de propriété `propertyName` change.",
+            "itemtype": "event",
+            "name": "properties/[propertyName]/onValueChanged",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.PropertyChangedContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 968,
+            "description": "Se produit lorsque la valeur de l'additionnelle `additionalName` change.",
+            "itemtype": "event",
+            "name": "additionals/[additionalName]/onValueChanged",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.PropertyChangedContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 994,
+            "description": "Se produit à la lecture de la source d'une liaison vers une propriété `propertyName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la cible.",
+            "itemtype": "event",
+            "name": "properties/[propertyName]/binding/onReadTransform",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.OnBindingTransformContext"
+                }
+            ],
+            "return": {
+                "description": "la valeur lue par défaut.",
+                "type": "Any"
+            },
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1003,
+            "description": "Se produit à la lecture de la source d'une liaison vers une additionnelle `additionalName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la cible.",
+            "itemtype": "event",
+            "name": "additionals/[additionalName]/binding/onReadTransform",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.OnBindingTransformContext"
+                }
+            ],
+            "return": {
+                "description": "la valeur lue par défaut.",
+                "type": "Any"
+            },
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1019,
+            "description": "Se produit à l'écriture de la source d'une liaison vers une propriété `propertyName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la source.",
+            "itemtype": "event",
+            "name": "properties/[propertyName]/binding/onWriteTransform",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.OnBindingTransformContext"
+                }
+            ],
+            "return": {
+                "description": "la valeur lue par défaut.",
+                "type": "Any"
+            },
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1028,
+            "description": "Se produit à écriture de la source d'une liaison vers une additionnelle `additionalName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la source.",
+            "itemtype": "event",
+            "name": "additionals/[additionalName]/binding/onWriteTransform",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.OnBindingTransformContext"
+                }
+            ],
+            "return": {
+                "description": "la valeur lue par défaut.",
+                "type": "Any"
+            },
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1176,
+            "description": "Se produit à chaque rendu de l'acteur dans l'interface.\nUn champs `isFirstRender` est à `true` dans le contexte au premier rendu.",
+            "itemtype": "event",
+            "name": "onRender",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1248,
+            "description": "Se produit avant le premier rendu mais apres que tous les acteurs de la scène soient initialisés.",
+            "itemtype": "event",
+            "name": "onPostInit",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1368,
+            "description": "Se produit au moment de la destruction d'un acteur.",
+            "itemtype": "event",
+            "name": "onDestroy",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1401,
+            "description": "Se produit au click sur acteur.\n\nLa contexte contient l'évènement de souris dans le champ `mouseEvent`.",
+            "itemtype": "event",
+            "name": "onClick",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1416,
+            "description": "Se produit lorsque la souris entre dans acteur.\n\nLa contexte contient l'évènement de souris dans le champ `mouseEvent`.",
+            "itemtype": "event",
+            "name": "onMouseEnter",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1431,
+            "description": "Se produit lorsque la souris sort de l' acteur.\n\nLa contexte contient l'évènement de souris dans le champ `mouseEvent`.",
+            "itemtype": "event",
+            "name": "onMouseLeave",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1446,
+            "description": "Se produit lorsque la souris se déplace au dessus de l' acteur.\n\nLa contexte contient l'évènement de souris dans le champ `mouseEvent`.",
+            "itemtype": "event",
+            "name": "onMouseMove",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1461,
+            "description": "Se produit lorsque un bouton de la souris est relâché au dessus de l'acteur .\n\nLa contexte contient l'évènement de souris dans le champ `mouseEvent`.",
+            "itemtype": "event",
+            "name": "onMouseUp",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1476,
+            "description": "Se produit lorsque un bouton de la souris est appuyé au dessus de l'acteur .\n\nLa contexte contient l'évènement de souris dans le champ `mouseEvent`.",
+            "itemtype": "event",
+            "name": "onMouseDown",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.BaseActor",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1550,
+            "description": "Scene ou composite de l'acteur.",
+            "itemtype": "attribute",
+            "name": "stage",
+            "readonly": "",
+            "type": "{Stage}",
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1557,
+            "description": "Scene de l'acteur.",
+            "itemtype": "attribute",
+            "name": "scene",
+            "readonly": "",
+            "type": "{Scene}",
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1564,
+            "description": "Scene racine de l'acteur.",
+            "itemtype": "attribute",
+            "name": "rootScene",
+            "readonly": "",
+            "type": "{Scene}",
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1571,
+            "description": "Synapp",
+            "itemtype": "attribute",
+            "name": "synapp",
+            "readonly": "",
+            "type": "{Synapp}",
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1578,
+            "description": "Magasins de données.",
+            "itemtype": "attribute",
+            "name": "dataStores",
+            "readonly": "",
+            "type": "{Object}",
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1585,
+            "description": "Nom de l'évènement.",
+            "itemtype": "attribute",
+            "name": "eventName",
+            "readonly": "",
+            "type": "{String}",
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1593,
+            "description": "Acteur à l'origine de l'évènement.",
+            "itemtype": "attribute",
+            "name": "target",
+            "readonly": "",
+            "type": "{Actor.BaseActor}",
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1600,
+            "description": "La valeur est elle vide ?",
+            "itemtype": "method",
+            "name": "utils.isEmpty",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "la valeur à tester",
+                    "type": "Any"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1607,
+            "description": "La valeur est elle null/vide ?",
+            "itemtype": "method",
+            "name": "utils.isNone",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "la valeur à tester",
+                    "type": "Any"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1614,
+            "description": "La valeur est elle présente ?",
+            "itemtype": "method",
+            "name": "utils.isPresent",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "la valeur à tester",
+                    "type": "Any"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1621,
+            "description": "Obtient la valeur d'un objet suivant un chemin.",
+            "itemtype": "method",
+            "name": "utils.get",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "L'objet",
+                    "type": "Object"
+                },
+                {
+                    "name": "path",
+                    "description": "Le chemin",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "value la valeur suivant le chemin sur l'objet.",
+                "type": "String"
+            },
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1629,
+            "description": "Assigne la valeur à un objet suivant un chemin.\n\nPermet de déclencher les mises à jours de liaison ou évènement de changement de propriété.",
+            "itemtype": "method",
+            "name": "utils.set",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "L'objet",
+                    "type": "Object"
+                },
+                {
+                    "name": "path",
+                    "description": "Le chemin",
+                    "type": "Object"
+                },
+                {
+                    "name": "value",
+                    "description": "la valeur à placer.",
+                    "type": "Any"
+                }
+            ],
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1640,
+            "description": "Assigne des valeurs à un objet suivant plusieurs chemin.\n\nPermet de déclencher les mises à jours de liaison ou évènement de changement de propriété.",
+            "itemtype": "method",
+            "name": "utils.setProperties",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "L'objet",
+                    "type": "Object"
+                },
+                {
+                    "name": "props",
+                    "description": "Les valeurs à placer.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1650,
+            "description": "Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété suivant un chemin.",
+            "itemtype": "method",
+            "name": "utils.notifyPropertyChange",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "L'objet",
+                    "type": "Object"
+                },
+                {
+                    "name": "path",
+                    "description": "Le chemin à notifier",
+                    "type": "Object"
+                }
+            ],
+            "class": "Actor.Event.BaseContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1663,
+            "description": "Nouvelle valeur.",
+            "itemtype": "attribute",
+            "name": "newValue",
+            "readonly": "",
+            "type": "{any}",
+            "class": "Actor.Event.PropertyChangedContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1670,
+            "description": "Ancienne valeur.",
+            "itemtype": "attribute",
+            "name": "oldValue",
+            "readonly": "",
+            "type": "{any}",
+            "class": "Actor.Event.PropertyChangedContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1677,
+            "description": "Chemin de la propriété.",
+            "itemtype": "attribute",
+            "name": "propertyPath",
+            "readonly": "",
+            "type": "{string}",
+            "class": "Actor.Event.PropertyChangedContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\base-actor.js",
+            "line": 1684,
+            "description": "Nom de la propriété.",
+            "itemtype": "attribute",
+            "name": "name",
+            "readonly": "",
+            "type": "{string}",
+            "class": "Actor.Event.PropertyChangedContext",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source-prototype-setup.js",
+            "line": 3,
+            "description": "Mode de requête de la donnée.",
+            "itemtype": "property",
+            "name": "properties.mode",
+            "type": "{string}",
+            "default": "'auto'",
+            "example": [
+                "\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode {{#crossLink \"Actor.DataSource/request:method\"}}{{/crossLink}} ou {{#crossLink \"Actor.DataSource/requestDebounce:method\"}}{{/crossLink}}."
+            ],
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source-prototype-setup.js",
+            "line": 19,
+            "description": "Auto rafraîchissement activé?",
+            "itemtype": "property",
+            "name": "properties.autoRefresh",
+            "type": "{Boolean}",
+            "default": "true",
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source-prototype-setup.js",
+            "line": 29,
+            "description": "Délai en seconde de rafraîchissement.",
+            "itemtype": "property",
+            "name": "properties.autoRefreshDelay",
+            "type": "{Number}",
+            "default": "30",
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source-prototype-setup.js",
+            "line": 39,
+            "description": "Écriture dès changement de la donnée activée?",
+            "itemtype": "property",
+            "name": "properties.writeOnChange",
+            "type": "{Boolean}",
+            "default": "false",
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 40,
+            "description": "Donnée exposée.",
+            "itemtype": "attribute",
+            "name": "data",
+            "type": "{any}",
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 72,
+            "description": "Requête en cours ?",
+            "itemtype": "attribute",
+            "name": "isRequesting",
+            "type": "{Boolean}",
+            "default": "false",
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 178,
+            "description": "Effectue une requête retardée. Tant que la méthode est répétée en moins de 300ms, elle ne partira pas.",
+            "itemtype": "method",
+            "name": "requestDebounce",
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 187,
+            "description": "Effectue une requête.",
+            "itemtype": "method",
+            "name": "request",
+            "return": {
+                "description": "La donnée.",
+                "type": "Any"
+            },
+            "async": 1,
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 200,
+            "description": "Se produit lorsque la requête s'est terminée.\nDans le contexte, on retrouve la donnée dans le champ `data` ou une erreur dans le champ `error`.",
+            "itemtype": "event",
+            "name": "onRequestDone",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 221,
+            "description": "Effectue une requête d'écriture.",
+            "itemtype": "method",
+            "name": "write",
+            "return": {
+                "description": "La donnée.",
+                "type": "Any"
+            },
+            "async": 1,
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\actors\\data-source.js",
+            "line": 234,
+            "description": "Se produit lorsque la requête d'écriture s'est terminée.\nDans le contexte, on retrouve la donnée dans le champ `data` ou une erreur dans le champ `error`.",
+            "itemtype": "event",
+            "name": "onWriteDone",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Actor.Event.BaseContext"
+                }
+            ],
+            "class": "Actor.DataSource",
+            "module": "Synapps-UI",
+            "namespace": "Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\components\\behaviors\\jokerable.js",
+            "line": 95,
+            "description": "Le texte une fois complété.",
+            "itemtype": "attribute",
+            "name": "completedContent",
+            "readonly": "",
+            "type": "{String}",
+            "class": "Behavior.Actor.Jokerable",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 5,
+            "description": "Vérifie qu'il est possible de charger du setup.",
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 12,
+            "description": "Charge les setups de synapp.",
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 20,
+            "description": "Charge le setup d'une synapp.",
+            "params": [
+                {
+                    "name": "synappLabel",
+                    "description": "Label de la synapp.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 28,
+            "description": "Charge le setup d'une scene.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 37,
+            "description": "Charge le setup des fournisseurs de données globales.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 46,
+            "description": "Charge les setups des composites.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 56,
+            "description": "Charge les couleurs de la synapp.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 65,
+            "description": "Charge les constantes de la synapp.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 74,
+            "description": "Charge les images de la synapp.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 83,
+            "description": "Charge les styles de la synapp.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\data-stores\\base-setup.js",
+            "line": 92,
+            "description": "Charge les textes de la synapp dans la bonne langue.",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Clé de la synapp.",
+                    "type": "String"
+                },
+                {
+                    "name": "setupVersion",
+                    "description": "Version de setup.",
+                    "type": "String"
+                },
+                {
+                    "name": "lang",
+                    "description": "Clé de la langue.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\setup-migration.js",
+            "line": 14,
+            "description": "équivalences des types d'acteur.",
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\services\\setup-migration.js",
+            "line": 51,
+            "description": "ordre dans lequel les liaisons sont écrites.",
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\tools\\debounce.js",
+            "line": 1,
+            "description": "Retourne un méthode qui retarde les répétitions d'exécution d'une autre méthode.",
+            "params": [
+                {
+                    "name": "func",
+                    "description": "Fonction a exécuter",
+                    "type": "Function"
+                },
+                {
+                    "name": "delay",
+                    "description": "Délai d'attente avant l'exécution en ms.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "Méthode retardée.",
+                "type": "Function"
+            },
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        },
+        {
+            "file": "synapps-ui\\addon\\tools\\throttle.js",
+            "line": 1,
+            "description": "Retourne un méthode qui filtre les répétitions d'exécution suivant une fréquence de temps.",
+            "params": [
+                {
+                    "name": "func",
+                    "description": "Fonction à filtrer",
+                    "type": "Function"
+                },
+                {
+                    "name": "limit",
+                    "description": "Fréquence limite de répétition en ms.",
+                    "type": "Number"
+                }
+            ],
+            "class": "",
+            "module": "Synapps-UI",
+            "namespace": "Behavior.Actor"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " synapps-ui\\addon\\components\\actors\\base-actor.js:532"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " synapps-ui\\addon\\components\\actors\\base-actor.js:568"
+        },
+        {
+            "message": "unknown tag: exemple",
+            "line": " synapps-ui\\addon\\components\\behaviors\\jokerable.js:7"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " synapps-ui\\addon\\tools\\debounce.js:1"
+        },
+        {
+            "message": "Missing item type\nLogin et mot de passe encodé.",
+            "line": " synapps-ui-redy\\addon\\redy-session.js:18"
+        },
+        {
+            "message": "Missing item type\nSID d'entrée",
+            "line": " synapps-ui-redy\\addon\\redy-session.js:28"
+        },
+        {
+            "message": "Missing item type\nIdentifiants applicatifs du client.",
+            "line": " synapps-ui-redy\\addon\\redy-session.js:48"
+        },
+        {
+            "message": "Missing item type\nEnregistre la définition de l'accessoire dans le dictionnaire des accessoires.",
+            "line": " synapps-ui\\addon\\accessories\\base.js:23"
+        },
+        {
+            "message": "Missing item type\nToken.",
+            "line": " synapps-ui\\addon\\bases\\session.js:29"
+        },
+        {
+            "message": "Missing item type\nObjet de base pour stocker les informations d'un utilisateur.",
+            "line": " synapps-ui\\addon\\bases\\user-agent.js:17"
+        },
+        {
+            "message": "Missing item type\nObjet de base pour stocker les informations d'un utilisateur.",
+            "line": " synapps-ui\\addon\\bases\\user.js:7"
+        },
+        {
+            "message": "Missing item type\nAttribut un champ contenant un prototypé qui permet de définir des propriétés additionnelles.\nLe cache du prototypé est le setup.",
+            "line": " synapps-ui\\addon\\behaviors\\with-additionals.js:7"
+        },
+        {
+            "message": "Missing item type\nÉtend une classe en lui donnant un champ prototypé nommé properties.\nLe cache du prototypé est le setup.",
+            "line": " synapps-ui\\addon\\behaviors\\with-properties.js:5"
+        },
+        {
+            "message": "Missing item type\nfix javascript problem about value with decimal. Ex 2.00000000001",
+            "line": " synapps-ui\\addon\\components\\actors\\input\\cursor.js:157"
+        },
+        {
+            "message": "Missing item type\nVérifie qu'il est possible de charger du setup.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:5"
+        },
+        {
+            "message": "Missing item type\nCharge les setups de synapp.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:12"
+        },
+        {
+            "message": "Missing item type\nCharge le setup d'une synapp.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:20"
+        },
+        {
+            "message": "Missing item type\nCharge le setup d'une scene.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:28"
+        },
+        {
+            "message": "Missing item type\nCharge le setup des fournisseurs de données globales.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:37"
+        },
+        {
+            "message": "Missing item type\nCharge les setups des composites.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:46"
+        },
+        {
+            "message": "Missing item type\nCharge les couleurs de la synapp.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:56"
+        },
+        {
+            "message": "Missing item type\nCharge les constantes de la synapp.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:65"
+        },
+        {
+            "message": "Missing item type\nCharge les images de la synapp.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:74"
+        },
+        {
+            "message": "Missing item type\nCharge les styles de la synapp.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:83"
+        },
+        {
+            "message": "Missing item type\nCharge les textes de la synapp dans la bonne langue.",
+            "line": " synapps-ui\\addon\\services\\data-stores\\base-setup.js:92"
+        },
+        {
+            "message": "Missing item type\néquivalences des types d'acteur.",
+            "line": " synapps-ui\\addon\\services\\setup-migration.js:14"
+        },
+        {
+            "message": "Missing item type\nordre dans lequel les liaisons sont écrites.",
+            "line": " synapps-ui\\addon\\services\\setup-migration.js:51"
+        },
+        {
+            "message": "Missing item type\nRetourne un méthode qui retarde les répétitions d'exécution d'une autre méthode.",
+            "line": " synapps-ui\\addon\\tools\\debounce.js:1"
+        },
+        {
+            "message": "Missing item type\nRetourne un méthode qui filtre les répétitions d'exécution suivant une fréquence de temps.",
+            "line": " synapps-ui\\addon\\tools\\throttle.js:1"
+        }
+    ]
+}
