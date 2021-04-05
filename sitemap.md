@@ -34,3 +34,6 @@
 1. [Installation des REDY & REDY PC](redy/install.md)
 2. [Configuration du REDY](redy/configure.md)
 3. [En savoir plus sur les objets crées dans le REDY](redy/explore.md)
+
+----
+[API Sript](script-api/index.html)
