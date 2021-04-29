@@ -1270,7 +1270,7 @@
         },
         {
             "file": "synapps-ui\\addon\\components\\actors\\input\\cursor.js",
-            "line": 157,
+            "line": 159,
             "description": "fix javascript problem about value with decimal. Ex 2.00000000001",
             "params": [
                 {
@@ -2787,7 +2787,7 @@
         },
         {
             "message": "Missing item type\nfix javascript problem about value with decimal. Ex 2.00000000001",
-            "line": " synapps-ui\\addon\\components\\actors\\input\\cursor.js:157"
+            "line": " synapps-ui\\addon\\components\\actors\\input\\cursor.js:159"
         },
         {
             "message": "Missing item type\nVérifie qu'il est possible de charger du setup.",
