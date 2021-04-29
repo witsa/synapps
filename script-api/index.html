@@ -3,99 +3,130 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./assets/css/cssgrids-min.css">
     <link rel="stylesheet" href="./assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="./assets/css/main.css" id="site_styles">
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+    <link rel="icon" href="./assets/favicon.ico">
     <script src="./assets/vendor/yui-min.js"></script>
 </head>
-<body>
+<body class="yui3-skin-sam">
 
 <div id="doc">
-    <header class="main-header">
-        <div class="content">
-            <div class="project-title">
-            </div>
-            <ul class="jump-links">
-                <li><a href="#index" class="index-jump-link">index</a></li>
-                <li><a href="#top" class="top-jump-link">top</a></li>
-            </ul>
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="./assets/css/logo.png" title="" width="117" height="52"></h1>
         </div>
-    </header>
-    <div id="bd" class="main-body">
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
 
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="./classes/Actor.BaseActor.html">Actor.BaseActor</a></li>
-                            <li><a class="type" href="./classes/Actor.DataSource.html">Actor.DataSource</a></li>
-                            <li><a class="type" href="./classes/Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
-                            <li><a class="type" href="./classes/Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
-                            <li><a class="type" href="./classes/Actor.Display.Html.html">Actor.Display.Html</a></li>
-                            <li><a class="type" href="./classes/Actor.Event.BaseContext.html">Actor.Event.BaseContext</a></li>
-                            <li><a class="type" href="./classes/Actor.Event.PropertyChangedContext.html">Actor.Event.PropertyChangedContext</a></li>
-                            <li><a class="type" href="./classes/BaseHost.html">BaseHost</a></li>
-                            <li><a class="type" href="./classes/BaseSession.html">BaseSession</a></li>
-                            <li><a class="type" href="./classes/Behavior.Actor.Jokerable.html">Behavior.Actor.Jokerable</a></li>
-                            <li><a class="type" href="./classes/Behavior.DataContextual.html">Behavior.DataContextual</a></li>
-                            <li><a class="type" href="./classes/Behavior.Destroyable.html">Behavior.Destroyable</a></li>
-                            <li><a class="type" href="./classes/Binding.BasicBinding.html">Binding.BasicBinding</a></li>
-                            <li><a class="type" href="./classes/Binding.InternalBinding.html">Binding.InternalBinding</a></li>
-                            <li><a class="type" href="./classes/Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
-                            <li><a class="type" href="./classes/Binding.Setup.Basic.html">Binding.Setup.Basic</a></li>
-                            <li><a class="type" href="./classes/Binding.Setup.Internal.html">Binding.Setup.Internal</a></li>
-                            <li><a class="type" href="./classes/Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
-                            <li><a class="type" href="./classes/Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
-                            <li><a class="type" href="./classes/RedyHost.html">RedyHost</a></li>
-                            <li><a class="type" href="./classes/RedySession.html">RedySession</a></li>
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
                         </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="./modules/Synapps-UI.html">Synapps-UI</a></li>
-                            <li><a class="module" href="./modules/Synapps-UI-REDY.html">Synapps-UI-REDY</a></li>
-                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="./classes/Actor.BaseActor.html">Actor.BaseActor</a></li>
+                                <li><a href="./classes/Actor.DataSource.html">Actor.DataSource</a></li>
+                                <li><a href="./classes/Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+                                <li><a href="./classes/Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+                                <li><a href="./classes/Actor.Display.Html.html">Actor.Display.Html</a></li>
+                                <li><a href="./classes/Actor.Event.BaseContext.html">Actor.Event.BaseContext</a></li>
+                                <li><a href="./classes/Actor.Event.PropertyChangedContext.html">Actor.Event.PropertyChangedContext</a></li>
+                                <li><a href="./classes/BaseHost.html">BaseHost</a></li>
+                                <li><a href="./classes/BaseSession.html">BaseSession</a></li>
+                                <li><a href="./classes/Behavior.Actor.Jokerable.html">Behavior.Actor.Jokerable</a></li>
+                                <li><a href="./classes/Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+                                <li><a href="./classes/Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+                                <li><a href="./classes/Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+                                <li><a href="./classes/Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+                                <li><a href="./classes/Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+                                <li><a href="./classes/Binding.Setup.Basic.html">Binding.Setup.Basic</a></li>
+                                <li><a href="./classes/Binding.Setup.Internal.html">Binding.Setup.Internal</a></li>
+                                <li><a href="./classes/Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+                                <li><a href="./classes/Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+                                <li><a href="./classes/RedyHost.html">RedyHost</a></li>
+                                <li><a href="./classes/RedySession.html">RedySession</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="./modules/Synapps-UI.html">Synapps-UI</a></li>
+                                <li><a href="./modules/Synapps-UI-REDY.html">Synapps-UI-REDY</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+    <div class="apidocs">
+        <div id="docs-main" class="content">
+            <p>
+            Browse to a module or class using the sidebar to view its API documentation.
+            </p>
 
-        <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <div class="index-content">
-                    <p>
-                        Browse to a module or class using the sidebar to view its API documentation.
-                    </p>
-                
-                    <h2>Keyboard Shortcuts</h2>
-                
-                    <ul>
-                        <li><p>Press <kbd>s</kbd> to focus the API search box.</p></li>
-                
-                        <li><p>Use <kbd>Up</kbd> and <kbd>Down</kbd> to select classes, modules, and search results.</p></li>
-                
-                        <li class="mac-only"><p>With the API search box or sidebar focused, use <kbd><span class="cmd">&#x2318;</span>-Left</kbd> or <kbd><span class="cmd">&#x2318;</span>-Right</kbd> to switch sidebar tabs.</p></li>
-                
-                        <li class="pc-only"><p>With the API search box or sidebar focused, use <kbd>Ctrl+Left</kbd> and <kbd>Ctrl+Right</kbd> to switch sidebar tabs.</p></li>
-                    </ul>
-                </div>            </div>
+            <h2>Keyboard Shortcuts</h2>
+
+            <ul>
+                <li><p>Press <kbd>s</kbd> to focus the API search box.</p></li>
+
+                <li><p>Use <kbd>Up</kbd> and <kbd>Down</kbd> to select classes, modules, and search results.</p></li>
+
+                <li class="mac-only"><p>With the API search box or sidebar focused, use <kbd><span class="cmd">&#x2318;</span>-Left</kbd> or <kbd><span class="cmd">&#x2318;</span>-Right</kbd> to switch sidebar tabs.</p></li>
+
+                <li class="pc-only"><p>With the API search box or sidebar focused, use <kbd>Ctrl+Left</kbd> and <kbd>Ctrl+Right</kbd> to switch sidebar tabs.</p></li>
+            </ul>
         </div>
+    </div>
 
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script src="./assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>
-<script src="./assets/vendor/jquery.min.js"></script>
-<script src="./assets/js/jquery-offscreen-trigger.js"></script>
 <script src="./assets/js/yui-prettify.js"></script>
 <script src="./assets/../api.js"></script>
 <script src="./assets/js/api-filter.js"></script>

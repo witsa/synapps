@@ -3,319 +3,321 @@
 <head>
     <meta charset="utf-8">
     <title>Binding.Setup.Stage</title>
+    <link rel="stylesheet" href="../assets/css/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <link rel="icon" href="../assets/favicon.ico">
     <script src="../assets/vendor/yui-min.js"></script>
 </head>
-<body>
+<body class="yui3-skin-sam">
 
 <div id="doc">
-    <header class="main-header">
-        <div class="content">
-            <div class="project-title">
-            </div>
-            <ul class="jump-links">
-                <li><a href="#index" class="index-jump-link">index</a></li>
-                <li><a href="#top" class="top-jump-link">top</a></li>
-            </ul>
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
         </div>
-    </header>
-    <div id="bd" class="main-body">
-
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="../classes/Actor.BaseActor.html">Actor.BaseActor</a></li>
-                            <li><a class="type" href="../classes/Actor.DataSource.html">Actor.DataSource</a></li>
-                            <li><a class="type" href="../classes/Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
-                            <li><a class="type" href="../classes/Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
-                            <li><a class="type" href="../classes/Actor.Display.Html.html">Actor.Display.Html</a></li>
-                            <li><a class="type" href="../classes/Actor.Event.BaseContext.html">Actor.Event.BaseContext</a></li>
-                            <li><a class="type" href="../classes/Actor.Event.PropertyChangedContext.html">Actor.Event.PropertyChangedContext</a></li>
-                            <li><a class="type" href="../classes/BaseHost.html">BaseHost</a></li>
-                            <li><a class="type" href="../classes/BaseSession.html">BaseSession</a></li>
-                            <li><a class="type" href="../classes/Behavior.Actor.Jokerable.html">Behavior.Actor.Jokerable</a></li>
-                            <li><a class="type" href="../classes/Behavior.DataContextual.html">Behavior.DataContextual</a></li>
-                            <li><a class="type" href="../classes/Behavior.Destroyable.html">Behavior.Destroyable</a></li>
-                            <li><a class="type" href="../classes/Binding.BasicBinding.html">Binding.BasicBinding</a></li>
-                            <li><a class="type" href="../classes/Binding.InternalBinding.html">Binding.InternalBinding</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Basic.html">Binding.Setup.Basic</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Internal.html">Binding.Setup.Internal</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
-                            <li><a class="type" href="../classes/RedyHost.html">RedyHost</a></li>
-                            <li><a class="type" href="../classes/RedySession.html">RedySession</a></li>
-                        </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="../modules/Synapps-UI.html">Synapps-UI</a></li>
-                            <li><a class="module" href="../modules/Synapps-UI-REDY.html">Synapps-UI-REDY</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
         </div>
+    </div>
+    <div id="bd" class="yui3-g">
 
-        <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <h1>Binding.Setup.Stage Class</h1>
-                <div class="box meta">
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
                 
-                        <div class="extends">
-                            Extends <a href="../classes/Binding.Setup.Internal.html" class="crosslink">Binding.Setup.Internal</a>
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
                         </div>
                 
-                
-                            Module: <a href="../modules/Synapps-UI.html">Synapps-UI</a>
-                
-                </div>
-                
-                
-                <div class="box intro">
-                    <p>Setup de liaison interne vers la scène ou le composite parent.</p>
-                <p>Attention, dans la définition du <code>path</code>, il faut utiliser <code>properties.specific1</code> plutôt que <code>additionals.specific1</code> pour accéder à la propriété spécifique <code>specific1</code> du composite parent.</p>
-                
-                </div>
-                
-                <!-- Class member index -->
-                
-                <a name="index" class="anchor-link"></a>
-                <div class="index">
-                <h2>Index</h2>
-                
-                    <div id="api-options">
-                        Show:
-                        <label for="api-show-inherited">
-                            <input type="checkbox" id="api-show-inherited">
-                            Inherited
-                        </label>
-                
-                        <label for="api-show-protected">
-                            <input type="checkbox" id="api-show-protected">
-                            Protected
-                        </label>
-                
-                        <label for="api-show-private">
-                            <input type="checkbox" id="api-show-private">
-                            Private
-                        </label>
-                        <label for="api-show-deprecated">
-                            <input type="checkbox" id="api-show-deprecated">
-                            Deprecated
-                        </label>
-                
-                    </div>
-                
-                
-                
-                    <div class="index-section attrs">
-                        <h3>Attributes</h3>
-                
-                        <ul class="index-list attrs extends">
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_canWrite">canWrite</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_path">path</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_readMode">readMode</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_sourceType">sourceType</a>
-                                </li>
-                        </ul>
-                    </div>
-                
-                
-                
-                </div>
-                
-                
-                <div class="class-detail">
-                
-                
-                    <div class="attrs-detail">
-                        <h2>Attributes</h2>
-                
-                            <div id="attr_canWrite" class="attr item inherited">
-                                <a name="config_canWrite"></a> 
-                                <h3 class="name"><code>canWrite</code></h3>
-                                <span class="type">Boolean</span>
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag optional">optional</span>
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Binding.Setup.Basic.html#attr_canWrite">Binding.Setup.Basic</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Permettre l'écriture dans la cible</p>
-                            
-                                </div>
-                            
-                                    <p><strong>Default:</strong> false</p>
-                            
-                            
-                            </div>
-                            <div id="attr_path" class="attr item inherited">
-                                <a name="config_path"></a> 
-                                <h3 class="name"><code>path</code></h3>
-                                <span class="type">String</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag required">required</span>
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Binding.Setup.Basic.html#attr_path">Binding.Setup.Basic</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Chemin pour trouver la valeur sur la source.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                                    <div class="example">
-                                        <h4>Example:</h4>
-                            
-                                        <div class="example-content">
-                                            <p><code>properties.width</code> ou <code>additionals.prop1</code></p>
-                            
-                                        </div>
-                                    </div>
-                            </div>
-                            <div id="attr_readMode" class="attr item inherited">
-                                <a name="config_readMode"></a> 
-                                <h3 class="name"><code>readMode</code></h3>
-                                <span class="type">String</span>
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag optional">optional</span>
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Binding.Setup.Basic.html#attr_readMode">Binding.Setup.Basic</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Mode de lecture de la valeur cible :</p>
-                            
-                                </div>
-                            
-                                    <p><strong>Default:</strong> always</p>
-                            
-                            
-                                    <div class="example">
-                                        <h4>Example:</h4>
-                            
-                                        <div class="example-content">
-                                            <ul>
-                            <li><code>always</code> pour chaque changement</li>
-                            <li><code>onetime</code> pour qu'une seule lecture.</li>
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Actor.BaseActor.html">Actor.BaseActor</a></li>
+                                <li><a href="../classes/Actor.DataSource.html">Actor.DataSource</a></li>
+                                <li><a href="../classes/Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+                                <li><a href="../classes/Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+                                <li><a href="../classes/Actor.Display.Html.html">Actor.Display.Html</a></li>
+                                <li><a href="../classes/Actor.Event.BaseContext.html">Actor.Event.BaseContext</a></li>
+                                <li><a href="../classes/Actor.Event.PropertyChangedContext.html">Actor.Event.PropertyChangedContext</a></li>
+                                <li><a href="../classes/BaseHost.html">BaseHost</a></li>
+                                <li><a href="../classes/BaseSession.html">BaseSession</a></li>
+                                <li><a href="../classes/Behavior.Actor.Jokerable.html">Behavior.Actor.Jokerable</a></li>
+                                <li><a href="../classes/Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+                                <li><a href="../classes/Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+                                <li><a href="../classes/Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+                                <li><a href="../classes/Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+                                <li><a href="../classes/Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+                                <li><a href="../classes/Binding.Setup.Basic.html">Binding.Setup.Basic</a></li>
+                                <li><a href="../classes/Binding.Setup.Internal.html">Binding.Setup.Internal</a></li>
+                                <li><a href="../classes/Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+                                <li><a href="../classes/Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+                                <li><a href="../classes/RedyHost.html">RedyHost</a></li>
+                                <li><a href="../classes/RedySession.html">RedySession</a></li>
                             </ul>
-                            
-                                        </div>
-                                    </div>
-                            </div>
-                            <div id="attr_sourceType" class="attr item inherited">
-                                <a name="config_sourceType"></a> 
-                                <h3 class="name"><code>sourceType</code></h3>
-                                <span class="type">String</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag required">required</span>
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Binding.Setup.Internal.html#attr_sourceType">Binding.Setup.Internal</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Type de source Acteur.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                                    <div class="example">
-                                        <h4>Example:</h4>
-                            
-                                        <div class="example-content">
-                                            <ul>
-                            <li><code>actor</code> pour créer une liaison vers un acteur : <a href="../classes/Binding.Setup.Actor.html" class="crosslink">Binding.Setup.Actor</a></li>
-                            <li><code>relative</code> pour créer une liaison relative : <a href="../classes/Binding.Setup.Relative.html" class="crosslink">Binding.Setup.Relative</a></li>
-                            <li><code>stage</code> pour créer une liaison vers la scène courante ou le composite parent : <a href="../classes/Binding.Setup.Stage.html" class="crosslink">Binding.Setup.Stage</a></li>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/Synapps-UI.html">Synapps-UI</a></li>
+                                <li><a href="../modules/Synapps-UI-REDY.html">Synapps-UI-REDY</a></li>
                             </ul>
-                            
-                                        </div>
-                                    </div>
-                            </div>
+                        </div>
                     </div>
-                
-                
-                
-                
                 </div>
-                
             </div>
         </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Binding.Setup.Stage Class</h1>
+<div class="box meta">
 
+        <div class="extends">
+            Extends <a href="../classes/Binding.Setup.Internal.html" class="crosslink">Binding.Setup.Internal</a>
+        </div>
+
+
+            Module: <a href="../modules/Synapps-UI.html">Synapps-UI</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Setup de liaison interne vers la scène ou le composite parent.</p>
+<p>Attention, dans la définition du <code>path</code>, il faut utiliser <code>properties.specific1</code> plutôt que <code>additionals.specific1</code> pour accéder à la propriété spécifique <code>specific1</code> du composite parent.</p>
+
+</div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab attrs"><a href="#attrs">Attributes</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+
+
+                <div class="index-section attrs">
+                    <h3>Attributes</h3>
+
+                    <ul class="index-list attrs extends">
+                            <li class="index-item attr inherited">
+                                <a href="#attr_canWrite">canWrite</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_path">path</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_readMode">readMode</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_sourceType">sourceType</a>
+                            </li>
+                    </ul>
+                </div>
+
+        </div>
+
+
+
+            <div id="attrs" class="api-class-tabpanel">
+                <h2 class="off-left">Attributes</h2>
+
+                    <div id="attr_canWrite" class="attr item inherited">
+                        <a name="config_canWrite"></a> 
+                        <h3 class="name"><code>canWrite</code></h3>
+                        <span class="type">Boolean</span>
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag optional">optional</span>
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Binding.Setup.Basic.html#attr_canWrite">Binding.Setup.Basic</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Permettre l'écriture dans la cible</p>
+                    
+                        </div>
+                    
+                            <p><strong>Default:</strong> false</p>
+                    
+                    
+                    </div>
+                    <div id="attr_path" class="attr item inherited">
+                        <a name="config_path"></a> 
+                        <h3 class="name"><code>path</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag required">required</span>
+                    
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Binding.Setup.Basic.html#attr_path">Binding.Setup.Basic</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Chemin pour trouver la valeur sur la source.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                            <div class="example">
+                                <h4>Example:</h4>
+                    
+                                <div class="example-content">
+                                    <p><code>properties.width</code> ou <code>additionals.prop1</code></p>
+                    
+                                </div>
+                            </div>
+                    </div>
+                    <div id="attr_readMode" class="attr item inherited">
+                        <a name="config_readMode"></a> 
+                        <h3 class="name"><code>readMode</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag optional">optional</span>
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Binding.Setup.Basic.html#attr_readMode">Binding.Setup.Basic</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Mode de lecture de la valeur cible :</p>
+                    
+                        </div>
+                    
+                            <p><strong>Default:</strong> always</p>
+                    
+                    
+                            <div class="example">
+                                <h4>Example:</h4>
+                    
+                                <div class="example-content">
+                                    <ul>
+                    <li><code>always</code> pour chaque changement</li>
+                    <li><code>onetime</code> pour qu'une seule lecture.</li>
+                    </ul>
+                    
+                                </div>
+                            </div>
+                    </div>
+                    <div id="attr_sourceType" class="attr item inherited">
+                        <a name="config_sourceType"></a> 
+                        <h3 class="name"><code>sourceType</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag required">required</span>
+                    
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Binding.Setup.Internal.html#attr_sourceType">Binding.Setup.Internal</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Type de source Acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                            <div class="example">
+                                <h4>Example:</h4>
+                    
+                                <div class="example-content">
+                                    <ul>
+                    <li><code>actor</code> pour créer une liaison vers un acteur : <a href="../classes/Binding.Setup.Actor.html" class="crosslink">Binding.Setup.Actor</a></li>
+                    <li><code>relative</code> pour créer une liaison relative : <a href="../classes/Binding.Setup.Relative.html" class="crosslink">Binding.Setup.Relative</a></li>
+                    <li><code>stage</code> pour créer une liaison vers la scène courante ou le composite parent : <a href="../classes/Binding.Setup.Stage.html" class="crosslink">Binding.Setup.Stage</a></li>
+                    </ul>
+                    
+                                </div>
+                            </div>
+                    </div>
+            </div>
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>
-<script src="../assets/vendor/jquery.min.js"></script>
-<script src="../assets/js/jquery-offscreen-trigger.js"></script>
 <script src="../assets/js/yui-prettify.js"></script>
 <script src="../assets/../api.js"></script>
 <script src="../assets/js/api-filter.js"></script>

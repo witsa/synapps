@@ -3,1069 +3,1030 @@
 <head>
     <meta charset="utf-8">
     <title>Actor.Event.PropertyChangedContext</title>
+    <link rel="stylesheet" href="../assets/css/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <link rel="icon" href="../assets/favicon.ico">
     <script src="../assets/vendor/yui-min.js"></script>
 </head>
-<body>
+<body class="yui3-skin-sam">
 
 <div id="doc">
-    <header class="main-header">
-        <div class="content">
-            <div class="project-title">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Actor.BaseActor.html">Actor.BaseActor</a></li>
+                                <li><a href="../classes/Actor.DataSource.html">Actor.DataSource</a></li>
+                                <li><a href="../classes/Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+                                <li><a href="../classes/Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+                                <li><a href="../classes/Actor.Display.Html.html">Actor.Display.Html</a></li>
+                                <li><a href="../classes/Actor.Event.BaseContext.html">Actor.Event.BaseContext</a></li>
+                                <li><a href="../classes/Actor.Event.PropertyChangedContext.html">Actor.Event.PropertyChangedContext</a></li>
+                                <li><a href="../classes/BaseHost.html">BaseHost</a></li>
+                                <li><a href="../classes/BaseSession.html">BaseSession</a></li>
+                                <li><a href="../classes/Behavior.Actor.Jokerable.html">Behavior.Actor.Jokerable</a></li>
+                                <li><a href="../classes/Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+                                <li><a href="../classes/Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+                                <li><a href="../classes/Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+                                <li><a href="../classes/Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+                                <li><a href="../classes/Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+                                <li><a href="../classes/Binding.Setup.Basic.html">Binding.Setup.Basic</a></li>
+                                <li><a href="../classes/Binding.Setup.Internal.html">Binding.Setup.Internal</a></li>
+                                <li><a href="../classes/Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+                                <li><a href="../classes/Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+                                <li><a href="../classes/RedyHost.html">RedyHost</a></li>
+                                <li><a href="../classes/RedySession.html">RedySession</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/Synapps-UI.html">Synapps-UI</a></li>
+                                <li><a href="../modules/Synapps-UI-REDY.html">Synapps-UI-REDY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="jump-links">
-                <li><a href="#index" class="index-jump-link">index</a></li>
-                <li><a href="#top" class="top-jump-link">top</a></li>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Actor.Event.PropertyChangedContext Class</h1>
+<div class="box meta">
+
+        <div class="extends">
+            Extends <a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a>
+        </div>
+
+
+            Module: <a href="../modules/Synapps-UI.html">Synapps-UI</a>
+
+</div>
+
+
+<div class="box intro">
+    
+</div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab attrs"><a href="#attrs">Attributes</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                            <li class="index-item method inherited">
+                                <a href="#method_utils.get">utils.get</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_utils.isEmpty">utils.isEmpty</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_utils.isNone">utils.isNone</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_utils.isPresent">utils.isPresent</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_utils.notifyPropertyChange">utils.notifyPropertyChange</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_utils.set">utils.set</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_utils.setProperties">utils.setProperties</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+                <div class="index-section attrs">
+                    <h3>Attributes</h3>
+
+                    <ul class="index-list attrs extends">
+                            <li class="index-item attr inherited">
+                                <a href="#attr_dataStores">dataStores</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_eventName">eventName</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_name">name</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_newValue">newValue</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_oldValue">oldValue</a>
+                            </li>
+                            <li class="index-item attr">
+                                <a href="#attr_propertyPath">propertyPath</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_rootScene">rootScene</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_scene">scene</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_stage">stage</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_synapp">synapp</a>
+                            </li>
+                            <li class="index-item attr inherited">
+                                <a href="#attr_target">target</a>
+                            </li>
+                    </ul>
+                </div>
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_utils.get" class="method item inherited">
+    <h3 class="name"><code>utils.get</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>path</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Actor.Event.BaseContext.html#method_utils.get">Actor.Event.BaseContext</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Obtient la valeur d'un objet suivant un chemin.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">obj</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>L'objet</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">path</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>Le chemin</p>
+
+                    </div>
+
+                </li>
             </ul>
         </div>
-    </header>
-    <div id="bd" class="main-body">
 
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="../classes/Actor.BaseActor.html">Actor.BaseActor</a></li>
-                            <li><a class="type" href="../classes/Actor.DataSource.html">Actor.DataSource</a></li>
-                            <li><a class="type" href="../classes/Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
-                            <li><a class="type" href="../classes/Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
-                            <li><a class="type" href="../classes/Actor.Display.Html.html">Actor.Display.Html</a></li>
-                            <li><a class="type" href="../classes/Actor.Event.BaseContext.html">Actor.Event.BaseContext</a></li>
-                            <li><a class="type" href="../classes/Actor.Event.PropertyChangedContext.html">Actor.Event.PropertyChangedContext</a></li>
-                            <li><a class="type" href="../classes/BaseHost.html">BaseHost</a></li>
-                            <li><a class="type" href="../classes/BaseSession.html">BaseSession</a></li>
-                            <li><a class="type" href="../classes/Behavior.Actor.Jokerable.html">Behavior.Actor.Jokerable</a></li>
-                            <li><a class="type" href="../classes/Behavior.DataContextual.html">Behavior.DataContextual</a></li>
-                            <li><a class="type" href="../classes/Behavior.Destroyable.html">Behavior.Destroyable</a></li>
-                            <li><a class="type" href="../classes/Binding.BasicBinding.html">Binding.BasicBinding</a></li>
-                            <li><a class="type" href="../classes/Binding.InternalBinding.html">Binding.InternalBinding</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Basic.html">Binding.Setup.Basic</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Internal.html">Binding.Setup.Internal</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
-                            <li><a class="type" href="../classes/Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
-                            <li><a class="type" href="../classes/RedyHost.html">RedyHost</a></li>
-                            <li><a class="type" href="../classes/RedySession.html">RedySession</a></li>
-                        </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="../modules/Synapps-UI.html">Synapps-UI</a></li>
-                            <li><a class="module" href="../modules/Synapps-UI-REDY.html">Synapps-UI-REDY</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+                    <p>value la valeur suivant le chemin sur l'objet.</p>
+
             </div>
         </div>
 
-        <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <h1>Actor.Event.PropertyChangedContext Class</h1>
-                <div class="box meta">
-                
-                        <div class="extends">
-                            Extends <a href="../classes/Actor.Event.BaseContext.html" class="crosslink">Actor.Event.BaseContext</a>
-                        </div>
-                
-                
-                            Module: <a href="../modules/Synapps-UI.html">Synapps-UI</a>
-                
-                </div>
-                
-                
-                <div class="box intro">
+
+</div>
+<div id="method_utils.isEmpty" class="method item inherited">
+    <h3 class="name"><code>utils.isEmpty</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Actor.Event.BaseContext.html#method_utils.isEmpty">Actor.Event.BaseContext</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>La valeur est elle vide ?</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">Any</span>
+
+
+                    <div class="param-description">
+                        <p>la valeur à tester</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_utils.isNone" class="method item inherited">
+    <h3 class="name"><code>utils.isNone</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Actor.Event.BaseContext.html#method_utils.isNone">Actor.Event.BaseContext</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>La valeur est elle null/vide ?</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">Any</span>
+
+
+                    <div class="param-description">
+                        <p>la valeur à tester</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_utils.isPresent" class="method item inherited">
+    <h3 class="name"><code>utils.isPresent</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Actor.Event.BaseContext.html#method_utils.isPresent">Actor.Event.BaseContext</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>La valeur est elle présente ?</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">Any</span>
+
+
+                    <div class="param-description">
+                        <p>la valeur à tester</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_utils.notifyPropertyChange" class="method item inherited">
+    <h3 class="name"><code>utils.notifyPropertyChange</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>path</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Actor.Event.BaseContext.html#method_utils.notifyPropertyChange">Actor.Event.BaseContext</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété suivant un chemin.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">obj</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>L'objet</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">path</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>Le chemin à notifier</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_utils.set" class="method item inherited">
+    <h3 class="name"><code>utils.set</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>path</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Actor.Event.BaseContext.html#method_utils.set">Actor.Event.BaseContext</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assigne la valeur à un objet suivant un chemin.</p>
+<p>Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">obj</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>L'objet</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">path</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>Le chemin</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">Any</span>
+
+
+                    <div class="param-description">
+                        <p>la valeur à placer.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_utils.setProperties" class="method item inherited">
+    <h3 class="name"><code>utils.setProperties</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>props</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Actor.Event.BaseContext.html#method_utils.setProperties">Actor.Event.BaseContext</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assigne des valeurs à un objet suivant plusieurs chemin.</p>
+<p>Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">obj</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>L'objet</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">props</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>Les valeurs à placer.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+
+            <div id="attrs" class="api-class-tabpanel">
+                <h2 class="off-left">Attributes</h2>
+
+                    <div id="attr_dataStores" class="attr item inherited">
+                        <a name="config_dataStores"></a> 
+                        <h3 class="name"><code>dataStores</code></h3>
+                        <span class="type">Object</span>
                     
-                </div>
-                
-                <!-- Class member index -->
-                
-                <a name="index" class="anchor-link"></a>
-                <div class="index">
-                <h2>Index</h2>
-                
-                    <div id="api-options">
-                        Show:
-                        <label for="api-show-inherited">
-                            <input type="checkbox" id="api-show-inherited">
-                            Inherited
-                        </label>
-                
-                        <label for="api-show-protected">
-                            <input type="checkbox" id="api-show-protected">
-                            Protected
-                        </label>
-                
-                        <label for="api-show-private">
-                            <input type="checkbox" id="api-show-private">
-                            Private
-                        </label>
-                        <label for="api-show-deprecated">
-                            <input type="checkbox" id="api-show-deprecated">
-                            Deprecated
-                        </label>
-                
-                    </div>
-                
-                
-                
-                    <div class="index-section attrs">
-                        <h3>Attributes</h3>
-                
-                        <ul class="index-list attrs extends">
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_dataStores">dataStores</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_eventName">eventName</a>
-                                </li>
-                                <li class="index-item attr">
-                                    <a href="#attr_name">name</a>
-                                </li>
-                                <li class="index-item attr">
-                                    <a href="#attr_newValue">newValue</a>
-                                </li>
-                                <li class="index-item attr">
-                                    <a href="#attr_oldValue">oldValue</a>
-                                </li>
-                                <li class="index-item attr">
-                                    <a href="#attr_propertyPath">propertyPath</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_rootScene">rootScene</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_scene">scene</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_stage">stage</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_synapp">synapp</a>
-                                </li>
-                                <li class="index-item attr inherited">
-                                    <a href="#attr_target">target</a>
-                                </li>
-                        </ul>
-                    </div>
-                
-                
-                    <div class="index-section methods">
-                        <h3>Methods</h3>
-                
-                        <ul class="index-list methods extends">
-                
-                
-                                <li class="index-item method inherited">
-                                    <a href="#method_utils.get">utils.get</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_utils.isEmpty">utils.isEmpty</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_utils.isNone">utils.isNone</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_utils.isPresent">utils.isPresent</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_utils.notifyPropertyChange">utils.notifyPropertyChange</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_utils.set">utils.set</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_utils.setProperties">utils.setProperties</a>
-                
-                                </li>
-                        </ul>
-                    </div>
-                
-                </div>
-                
-                
-                <div class="class-detail">
-                
-                
-                    <div class="attrs-detail">
-                        <h2>Attributes</h2>
-                
-                            <div id="attr_dataStores" class="attr item inherited">
-                                <a name="config_dataStores"></a> 
-                                <h3 class="name"><code>dataStores</code></h3>
-                                <span class="type">Object</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#attr_dataStores">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Magasins de données.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_eventName" class="attr item inherited">
-                                <a name="config_eventName"></a> 
-                                <h3 class="name"><code>eventName</code></h3>
-                                <span class="type">String</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#attr_eventName">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Nom de l'évènement.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_name" class="attr item">
-                                <a name="config_name"></a> 
-                                <h3 class="name"><code>name</code></h3>
-                                <span class="type">String</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Nom de la propriété.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_newValue" class="attr item">
-                                <a name="config_newValue"></a> 
-                                <h3 class="name"><code>newValue</code></h3>
-                                <span class="type">Any</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Nouvelle valeur.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_oldValue" class="attr item">
-                                <a name="config_oldValue"></a> 
-                                <h3 class="name"><code>oldValue</code></h3>
-                                <span class="type">Any</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Ancienne valeur.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_propertyPath" class="attr item">
-                                <a name="config_propertyPath"></a> 
-                                <h3 class="name"><code>propertyPath</code></h3>
-                                <span class="type">String</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Chemin de la propriété.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_rootScene" class="attr item inherited">
-                                <a name="config_rootScene"></a> 
-                                <h3 class="name"><code>rootScene</code></h3>
-                                <span class="type">Scene</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#attr_rootScene">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Scene racine de l'acteur.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_scene" class="attr item inherited">
-                                <a name="config_scene"></a> 
-                                <h3 class="name"><code>scene</code></h3>
-                                <span class="type">Scene</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#attr_scene">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Scene de l'acteur.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_stage" class="attr item inherited">
-                                <a name="config_stage"></a> 
-                                <h3 class="name"><code>stage</code></h3>
-                                <span class="type">Stage</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#attr_stage">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Scene ou composite de l'acteur.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_synapp" class="attr item inherited">
-                                <a name="config_synapp"></a> 
-                                <h3 class="name"><code>synapp</code></h3>
-                                <span class="type">Synapp</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#attr_synapp">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Synapp</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                            <div id="attr_target" class="attr item inherited">
-                                <a name="config_target"></a> 
-                                <h3 class="name"><code>target</code></h3>
-                                <span class="type"><a href="../classes/Actor.BaseActor.html" class="crosslink">Actor.BaseActor</a></span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag readonly">readonly</span>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#attr_target">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="description">
-                                    <p>Acteur à l'origine de l'évènement.</p>
-                            
-                                </div>
-                            
-                            
-                            
-                            </div>
-                    </div>
-                
-                
-                    <div class="methods-detail">
-                        <h2>Methods</h2>
-                
-                            <a name="method_utils.get" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>utils.get</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>obj</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>path</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type">String</span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#method_utils.get" class="type">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Obtient la valeur d'un objet suivant un chemin.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">obj</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>L'objet</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">path</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>Le chemin</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type">String</span>:
-                                                    <p>value la valeur suivant le chemin sur l'objet.</p>
-                            
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_utils.isEmpty" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>utils.isEmpty</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>value</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type">Boolean</span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#method_utils.isEmpty" class="type">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>La valeur est elle vide ?</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">value</code>
-                                                        <span class="type">Any</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>la valeur à tester</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type">Boolean</span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_utils.isNone" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>utils.isNone</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>value</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type">Boolean</span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#method_utils.isNone" class="type">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>La valeur est elle null/vide ?</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">value</code>
-                                                        <span class="type">Any</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>la valeur à tester</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type">Boolean</span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_utils.isPresent" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>utils.isPresent</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>value</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type">Boolean</span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#method_utils.isPresent" class="type">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>La valeur est elle présente ?</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">value</code>
-                                                        <span class="type">Any</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>la valeur à tester</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type">Boolean</span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_utils.notifyPropertyChange" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>utils.notifyPropertyChange</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>obj</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>path</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#method_utils.notifyPropertyChange" class="type">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété suivant un chemin.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">obj</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>L'objet</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">path</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>Le chemin à notifier</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="method_utils.set" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>utils.set</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>obj</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>path</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>value</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#method_utils.set" class="type">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Assigne la valeur à un objet suivant un chemin.</p>
-                            <p>Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">obj</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>L'objet</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">path</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>Le chemin</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">value</code>
-                                                        <span class="type">Any</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>la valeur à placer.</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="method_utils.setProperties" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>utils.setProperties</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>obj</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>props</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Actor.Event.BaseContext.html#method_utils.setProperties" class="type">Actor.Event.BaseContext</a>:
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Assigne des valeurs à un objet suivant plusieurs chemin.</p>
-                            <p>Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">obj</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>L'objet</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">props</code>
-                                                        <span class="type">Object</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <p>Les valeurs à placer.</p>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                            
-                                </div>
-                            </div>
-                
-                        <div class="no-visible-items-message">
-                            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Actor.Event.BaseContext.html#attr_dataStores">Actor.Event.BaseContext</a>:
+                            </p>
+                    
+                    
                         </div>
-                
+                    
+                        <div class="description">
+                            <p>Magasins de données.</p>
+                    
+                        </div>
+                    
+                    
+                    
                     </div>
-                
-                
+                    <div id="attr_eventName" class="attr item inherited">
+                        <a name="config_eventName"></a> 
+                        <h3 class="name"><code>eventName</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Actor.Event.BaseContext.html#attr_eventName">Actor.Event.BaseContext</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Nom de l'évènement.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_name" class="attr item">
+                        <a name="config_name"></a> 
+                        <h3 class="name"><code>name</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Nom de la propriété.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_newValue" class="attr item">
+                        <a name="config_newValue"></a> 
+                        <h3 class="name"><code>newValue</code></h3>
+                        <span class="type">Any</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Nouvelle valeur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_oldValue" class="attr item">
+                        <a name="config_oldValue"></a> 
+                        <h3 class="name"><code>oldValue</code></h3>
+                        <span class="type">Any</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Ancienne valeur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_propertyPath" class="attr item">
+                        <a name="config_propertyPath"></a> 
+                        <h3 class="name"><code>propertyPath</code></h3>
+                        <span class="type">String</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Chemin de la propriété.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_rootScene" class="attr item inherited">
+                        <a name="config_rootScene"></a> 
+                        <h3 class="name"><code>rootScene</code></h3>
+                        <span class="type">Scene</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Actor.Event.BaseContext.html#attr_rootScene">Actor.Event.BaseContext</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Scene racine de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_scene" class="attr item inherited">
+                        <a name="config_scene"></a> 
+                        <h3 class="name"><code>scene</code></h3>
+                        <span class="type">Scene</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Actor.Event.BaseContext.html#attr_scene">Actor.Event.BaseContext</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Scene de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_stage" class="attr item inherited">
+                        <a name="config_stage"></a> 
+                        <h3 class="name"><code>stage</code></h3>
+                        <span class="type">Stage</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Actor.Event.BaseContext.html#attr_stage">Actor.Event.BaseContext</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Scene ou composite de l'acteur.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_synapp" class="attr item inherited">
+                        <a name="config_synapp"></a> 
+                        <h3 class="name"><code>synapp</code></h3>
+                        <span class="type">Synapp</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Actor.Event.BaseContext.html#attr_synapp">Actor.Event.BaseContext</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Synapp</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="attr_target" class="attr item inherited">
+                        <a name="config_target"></a> 
+                        <h3 class="name"><code>target</code></h3>
+                        <span class="type"><a href="../classes/Actor.BaseActor.html" class="crosslink">Actor.BaseActor</a></span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <span class="flag readonly">readonly</span>
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Actor.Event.BaseContext.html#attr_target">Actor.Event.BaseContext</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Acteur à l'origine de l'évènement.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+            </div>
+
+    </div>
+</div>
+                    </div>
                 </div>
-                
             </div>
         </div>
-
     </div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>
-<script src="../assets/vendor/jquery.min.js"></script>
-<script src="../assets/js/jquery-offscreen-trigger.js"></script>
 <script src="../assets/js/yui-prettify.js"></script>
 <script src="../assets/../api.js"></script>
 <script src="../assets/js/api-filter.js"></script>
