@@ -1,4 +1,4 @@
 theme: jekyll-theme-slate
 title: Solution Synapps
 description: Construisez des apps standards, adaptatives et multi-plateformes connectées aux REDY.
-keep_files: [ 'script-api' ]
+keep_files: [ script-api/ ]
