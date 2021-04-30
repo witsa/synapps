@@ -1,0 +1,1879 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>base-actor.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					FooDoc
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#changeStyleName">changeStyleName</a></li>
+											<li><a href="global.html#createBasicBinding">createBasicBinding</a></li>
+											<li><a href="global.html#createInternalBinding">createInternalBinding</a></li>
+											<li><a href="global.html#getBinding">getBinding</a></li>
+											<li><a href="global.html#removeBinding">removeBinding</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor_Composite.html">Actor#Composite</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Event.html#.BaseContext">Event.BaseContext</a></li>
+											<li><a href="Event.html#.PropertyChangedContext">Event.PropertyChangedContext</a></li>
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Event.html">Event</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">base-actor.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">/* eslint-disable ember/no-empty-glimmer-component-classes */
+/* eslint-disable ember/no-global-jquery */
+/* eslint-disable ember/no-jquery */
+/* global $*/
+import { assert, runInDebug } from '@ember/debug';
+import { action, computed, defineProperty, get, set } from '@ember/object';
+import { alias, readOnly } from '@ember/object/computed';
+import { run } from '@ember/runloop';
+import { inject as service } from '@ember/service';
+import { isEmpty, isNone } from '@ember/utils';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import logger from 'logger';
+import Accessory from 'synapps-ui/accessories/base';
+import DataContextual from 'synapps-ui/behaviors/data-contextual';
+import SourceOfInternalBinding from 'synapps-ui/behaviors/source-of-internal-binding';
+import V1EventScript from 'synapps-ui/behaviors/v1-event-script';
+import WithAdditionals from 'synapps-ui/behaviors/with-additionals';
+import WithProperties from 'synapps-ui/behaviors/with-properties';
+import BasicBinding from 'synapps-ui/bindings/basic';
+import InternalBinding from 'synapps-ui/bindings/internal';
+import basePrototypeSetup from 'synapps-ui/components/actors/base-actor-prototype-setup';
+import actorDefinitions from 'synapps-ui/components/actors/definitions';
+import Styling from 'synapps-ui/components/actors/styling';
+import WithEvents from 'synapps-ui/components/behaviors/with-events';
+import Flexibility from 'synapps-ui/components/flexibility';
+import BindingsRegister from 'synapps-ui/registers/bindings';
+import hasOwnProperty from 'synapps-ui/tools/has-own-property';
+
+const isAuto = s => s === 'auto' || isNone(s);
+
+function getValue(computedStyle, propName) {
+  const size = parseFloat(computedStyle[propName]);
+  return isNaN(size) ? 0 : size;
+}
+
+var resizeObserver = new ResizeObserver(function(entries) {
+  requestAnimationFrame(() => {
+    if (!Array.isArray(entries) || !entries.length) {
+      return;
+    }
+
+    run(() => {
+      for (const entry of entries) {
+        if (!entry.target._synappActor) return;
+        entry.target._synappActor._recomputeLayout();
+      }
+    });
+  });
+});
+
+const Events = {
+  onInit: 'onInit',
+  onPostInit: 'onPostInit',
+  onRender: 'onRender',
+  onComputeLayout: 'onComputeLayout',
+  onDestroy: 'onDestroy',
+}
+
+runInDebug(() => {
+  window.ActorCount = 0;
+})
+
+@WithEvents
+@WithAdditionals
+@WithProperties
+@DataContextual()
+@SourceOfInternalBinding
+@V1EventScript
+class BaseActorComponent extends Component {}
+
+/**
+ * Acteur de base.
+ * @memberof Actor
+ * @hideconstructor
+ * @extends WithEvents
+ * @extends WithAdditionals
+ * @extends WithProperties
+ * @extends Behavior.DataContextual
+ * @extends SourceOfInternalBinding
+ */
+class BaseActor extends BaseActorComponent {
+
+  static actorDefinitions = actorDefinitions;
+  static componentName;
+  static basePrototypeSetup = basePrototypeSetup;
+
+  /**
+   * Enregistre la définition de l'acteur dans le dictionnaire des acteurs.
+   *
+   * @static
+   * @method registerInDefinitions
+   * @private
+   * @param {Object} definition
+   * @param {string} definition.type - La clé unique du type de l'acteur (ex: "input/button");
+   * @param {string} definition.componentName - Nom complet du composant EmberJS (ex: "synapps-ui/actors/input/button").
+   * @param {string} definition.prototypeSetup - Object qui contient les définitions des propriétés de l'acteur.
+   * @param {string} [definition.platform=native] - Nom de la plateforme à laquelle l'acteur appartient.
+   */
+  static registerInDefinitions({ type, componentName, prototypeSetup, platform = 'native' }) {
+    assert('[BaseActor][registerInDefinitions] type is required.', type);
+    assert('[BaseActor][registerInDefinitions] prototypeSetup is required.', prototypeSetup);
+    assert('[BaseActor][registerInDefinitions] componentName is required.', componentName);
+    this.type = type;
+    this.platform = platform;
+    this.componentName = componentName;
+    this.styling = new Styling({ prototypeSetup, Actor: this });
+    this.actorDefinitions.set(type, this);
+    this.typeCssClass = type.replace(/\//g, '-');
+  }
+
+
+  /**
+   * Vrai quand l'acteur est détruit.
+   *
+   * @member Actor.BaseActor#isDestroyed
+   * @readonly
+   * @default false
+   * @type {Boolean}
+   */
+
+  /**
+   * Vrai quand l'acteur est en train d'être détruit.
+   *
+   * @member
+   * @name Actor.BaseActor#isDestroying
+   * @readonly
+   * @default false
+   * @type {Boolean}
+   */
+
+  /**
+   * @ignore
+   */
+  static classNames = ['synapps-ui', 'actor'];
+
+  @service('data-stores')
+  dataStores;
+
+  @service
+  notify;
+
+  _bindingsRegister = new BindingsRegister(this);
+
+  @tracked
+  _accessories = {};
+
+  @tracked
+  _key = null;
+
+  _styleName = 'default';
+
+  _actor = null;
+
+  @tracked
+  _parent = null;
+
+  @tracked
+  _rootScene = null;
+
+  @tracked
+  _scene = null;
+
+  @tracked
+  _stage = null;
+
+  @tracked
+  _isReady = false;
+
+  @tracked
+  _isPostInit = false;
+
+  _reRenderWatchdog = 0;
+
+  _isLeadActor = false;
+
+  _isInitialized = false;
+
+  _isFirstRender = true;
+
+  _initialClassNames;
+
+  _initialStyle;
+
+  get bindingsRegister() {
+    return this._bindingsRegister;
+  }
+
+  get accessories() {
+    return this._accessories;
+  }
+
+
+  /**
+   La clé unique de l'acteur.
+   @attribute key
+   @readonly
+   @type {string}
+   */
+  get key() {
+    return this._key;
+  }
+
+  /**
+  Scene ou Composite parent de l'acteur.
+  @attribute stage
+  @readonly
+  @type {Stage}
+  */
+  get stage() {
+    return this._stage;
+  }
+
+  /**
+  Scene racine de l'acteur.
+  @attribute rootScene
+  @readonly
+  @type {Scene}
+  */
+  get rootScene() {
+    return this._rootScene;
+  }
+
+
+  /**
+  Première scène parente de l'acteur.
+  @attribute scene
+  @readonly
+  @type {Stage}
+  */
+  get scene() {
+    return this._scene;
+  }
+
+  /**
+  La Synapp.
+  @attribute synapp
+  @readonly
+  @type {Stage}
+  */
+  get synapp() {
+    return this._rootScene.synapp;
+  }
+
+  /**
+  Le nom du style de l'acteur.
+
+  Pour changer de style, il faut utiliser {{#crossLink "Actor.BaseActor/changeStyleName:method"}}{{/crossLink}}
+  @attribute styleName
+  @readonly
+  @type {String}
+  */
+  get styleName() {
+    return this._styleName;
+  }
+
+  /**
+  L'élément DOM de l'acteur.
+
+  @attribute actor
+  @readonly
+  @type {Element}
+  */
+  get actor() {
+    return this._actor;
+  }
+
+  /**
+  Acteur parent.
+
+  @attribute parent
+  @readonly
+  @type {Actor.BaseActor}
+  */
+  get parent() {
+    return this._parent;
+  }
+
+  /**
+  Type de l'acteur.
+
+  @attribute type
+  @readonly
+  @type {string}
+  */
+  get type() {
+    return this.constructor.type;
+  }
+
+  /**
+  Est-ce un acteur principal ?
+
+  @attribute isLeadActor
+  @readonly
+  @type {Boolean}
+  */
+  get isLeadActor() {
+    return this._isLeadActor;
+  }
+
+  get styling() {
+    return this.constructor.styling;
+  }
+
+  /**
+  Chemin unique de l'acteur.
+
+  @attribute uniqPath
+  @readonly
+  @type {string}
+  */
+  get uniqPath() {
+    return `${this.stage.uniqPath}/${this.key}`;
+  }
+
+  get uniqClass() {
+    return this.uniqPath.replace(/~/, '').replace(/\//g, '_');
+  }
+
+  get isReady() {
+    return this._isReady;
+  }
+
+  get isPostInit() {
+    return this._isPostInit;
+  }
+
+  get BaseAccessory() {
+    return Accessory;
+  }
+
+  /**
+  Récupération de l'acteur principal.
+
+  @attribute leadActor
+  @readonly
+  @type {Actor.BaseActor}
+  */
+  get leadActor() {
+    return this.isLeadActor || !this.parent ? this : this.parent.isLeadActor;
+  }
+
+
+  @computed('properties.toolTip')
+  get title() {
+    return this.properties.toolTip;
+  }
+
+  /**
+   * ne pas utiliser
+   */
+  constructor(owner, args) {
+    super(owner, args);
+
+    assert('[synapps-ui][actors][base] no setup in args.', args.setup);
+    this._init(args);
+    this._isInitialized = true;
+
+    runInDebug(() => {
+      window.ActorCount++;
+      //logger.debug('constructor - ActorCount:', window.ActorCount, this.uniqPath);
+    });
+  }
+
+  _init({ setup, stage, scene, rootScene, dataContext, isLeadActor = false, onDidAdd }) {
+    try {
+      assert('[synapps-ui][actors][base] no key in actor definition.', setup.key);
+      assert('[synapps-ui][actors][base] no stage in args.' + setup.key, stage);
+
+      this._key = setup.key;
+      this._stage = stage;
+
+      this._setup = setup;
+
+      this._isLeadActor = isLeadActor;
+
+      if (dataContext) {
+        this.dataContext = dataContext;
+      } else if (setup.dataContext) {
+        this.dataContext = setup.dataContext;
+      }
+
+      if (rootScene) {
+        this._rootScene = rootScene;
+      }
+
+      if (scene) {
+        this._scene = scene;
+      }
+
+      if (onDidAdd) {
+        onDidAdd(this);
+      }
+
+      if (!setup.styleName) {
+        setup.styleName = 'default';
+      }
+
+      if (!setup.bindings) {
+        setup.bindings = {};
+      }
+
+      if (!setup.accessories) {
+        setup.accessories = {};
+      }
+
+      this._extractPropertiesFromSetup(setup);
+
+      this._extractAdditionalsFromSetup(setup)
+
+      this._extractEventsFromSetup(setup);
+
+      this._extractAccessoriesFromSetup(setup);
+
+      this.stage.actorsRegister.record({ record: this });
+
+      this._onInit();
+
+    } catch (e) {
+      logger.error(e);
+    }
+  }
+
+  _isAscendant(objectUi) {
+    if (!this.parent) return false
+    if (this.parent === objectUi) return true;
+    return this.parent._isAscendant(objectUi);
+  }
+
+  _extractAccessoriesFromSetup(setup) {
+    Object.entries(setup.accessories).forEach(([key, accessorySetup]) => {
+      this.createAccessory(key, accessorySetup);
+    });
+  }
+
+  _extractBindingsFromSetup(setup) {
+    setup.bindings = setup.bindings || {};
+    Object.entries(setup.bindings).forEach(([targetPath, bindingSetup]) => {
+      if (bindingSetup.sourceType) {
+        this.createInternalBinding(targetPath, bindingSetup);
+      } else {
+        this.createBasicBinding(targetPath, bindingSetup);
+      }
+    });
+  }
+
+  _extractPropertiesFromSetup(setup) {
+    setup.properties = setup.properties || {};
+    this._styleName = setup.styleName;
+    set(this, '_properties', this.styling.createProperties(this.styleName, this));
+    this.properties._cache = setup.properties;
+    this._setupPropertiesEvents();
+  }
+
+  /**
+   * Se produit lorsque l'acteur est initialisé.
+   *
+   * @event Actor.BaseActor#onInit
+   * @param {Event.BaseContext} context Contexte de l'évènement.
+   */
+
+  /**
+   * @ignore
+   */
+  _onInit() {
+    this.runEvent(Events.onInit);
+    this._invokeOnAccessories('onActorInit');
+  }
+
+  /**
+   * Exécute un évènement.
+   * @param {String} eventName Nom de l'évènement
+   * @param {Object} args Arguments à passer dans l'objet de contexte.
+   */
+  runEvent(eventName, args) {
+    return super.runEvent(eventName, {
+      stage: this.stage,
+      scene: this.scene,
+      rootScene: this.rootScene,
+      synapp: this.stage.synapp,
+      dataStores: this.dataStores,
+      ...args
+    });
+  }
+
+  _buildPropertyEventPath(propertyPath, eventType) {
+    return `${propertyPath.replace(/\./g, '/')}/${eventType}`;
+  }
+
+  _runPropertyEvent(propertyPath, eventType, value, args) {
+    const eventName = this._buildPropertyEventPath(propertyPath, eventType);
+    return this._hasEvent(eventName) ? this.runEvent(eventName, args) : value;
+  }
+
+  _createPropertyEvent(propertyPath, eventType, eventScriptLines) {
+    const eventName = this._buildPropertyEventPath(propertyPath, eventType);
+    return this.createEvent(eventName, eventScriptLines);
+  }
+
+  _removePropertyEvent(propertyPath, eventType) {
+    const eventName = this._buildPropertyEventPath(propertyPath, eventType);
+    this.removeEvent(eventName);
+  }
+
+  createPropertyValueChangeEvent(propertyPath, eventScriptLines) {
+    return this._createPropertyEvent(propertyPath, 'onValueChanged', eventScriptLines);
+  }
+
+  removePropertyValueChangedEvent(propertyPath) {
+    this._removePropertyEvent(propertyPath, 'onValueChanged');
+  }
+
+  createBindingReadTransformEvent(propertyPath, eventScriptLines) {
+    return this._createPropertyEvent(propertyPath, 'binding/onReadTransform', eventScriptLines);
+  }
+
+  removeBindingReadTransformEvent(propertyPath) {
+    this._removePropertyEvent(propertyPath, 'binding/onReadTransform');
+  }
+
+  createBindingWriteTransformEvent(propertyPath, eventScriptLines) {
+    return this._createPropertyEvent(propertyPath, 'binding/onWriteTransform', eventScriptLines);
+  }
+
+  removeBindingWriteTransformEvent(propertyPath) {
+    this._removePropertyEvent(propertyPath, 'binding/onWriteTransform');
+  }
+
+  _reset() {
+    this.properties.destroy();
+
+    if (this.additionals) {
+      this.additionals.destroy();
+    }
+
+    this.bindingsRegister.clear();
+
+    if (this.accessories) {
+      this._invokeOnAccessories('destroy');
+      this._accessories = {};
+    }
+  }
+
+
+  /**
+   * Création d'une liaison basique.
+   *
+   * La source est prise dans le contexte de donnée.
+   *
+   *
+   @example
+   Le `setup` est un objet
+```
+actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
+```
+   * La propriété largeur de l'acteur est maintenant liée au champ `widthOfPanel` de son contexte de donnée.
+   *
+   * @method createBasicBinding
+   * @param {string} targetValuePath Chemin de la cible
+   * @param {Object} setup
+   * @param {Boolean} [saveInSetup=true]
+   * @returns {Binding} la liaison créée.
+   */
+  createBasicBinding(targetValuePath, setup, saveInSetup = true) {
+    const binding = new BasicBinding({
+      target: this,
+      targetValuePath,
+      onReadTransform: this._onBindingReadTransform,
+      onWriteTransform: this._onBindingWriteTransform,
+      ...setup
+    });
+    if (saveInSetup) {
+      this.args.setup.bindings[targetValuePath] = setup;
+    }
+
+    this.bindingsRegister.recordBinding(binding);
+    binding.activate();
+    return binding;
+  }
+
+  /**
+   * @method getBinding
+   * @param {string} targetValuePath Chemin de la cible
+   * @returns {Binding} la liaison demandée ou null si non trouvée.
+   */
+  getBinding(targetValuePath) {
+    return this.bindingsRegister.findByKey(targetValuePath);
+  }
+
+  // TODO doc
+
+  /**
+   * Création d'une liaison interne.
+   *
+   * La source est prise dans le contexte de donnée.
+   *
+   *
+   @example
+   Le `setup` est un objet différent en fonction du type de source.
+
+   Pour un acteur :
+```
+{ sourceKey: '&lt;clé acteur>', path: 'le chemin de la valeur de la source' }
+```
+   *
+   *
+   * @method createInternalBinding
+   * @param {string} targetValuePath Chemin de la cible
+   * @param {Object} setup
+   * @param {Boolean} [saveInSetup=true]
+   */
+  createInternalBinding(targetValuePath, { sourceKey, sourcePath, sourceType, path = null, ...others }, saveInSetup = true) {
+    assert('[Actor][Base][createInternalBinding] sourceType is required.', sourceType);
+    let source = null;
+    try {
+      source = InternalBinding.resolveInternalSource({ sourceType, sourceKey, sourcePath, target: this, targetValuePath, path, ...others });
+    } catch (e) {
+      // rien à faire ici.
+    }
+
+    if (!source) {
+      logger.error(`[Actor][Base][createInternalBinding] failed to resolve source [${sourceType}]${sourceKey?`[${sourceKey}]`:''}${sourcePath?`[${sourcePath}]`:''}.`);
+      return null;
+    }
+
+    const basePath = InternalBinding.getBasePath({ sourceType, sourceKey, sourcePath, target: this, targetValuePath, ...others });
+    let resolvedPath = path;
+    if (!isEmpty(basePath)) {
+      resolvedPath = `${basePath}${isEmpty(path) ? '' : `.${path}`}`;
+    }
+
+    const binding = new InternalBinding({
+      target: this,
+      targetValuePath,
+      dataContext: source,
+      path: isEmpty(resolvedPath) ? null : resolvedPath,
+      onReadTransform: this._onBindingReadTransform,
+      onWriteTransform: this._onBindingWriteTransform,
+      ...others
+    });
+    if (saveInSetup) {
+      this.args.setup.bindings[targetValuePath] = {
+        sourceType,
+        ...others
+      };
+      if (sourceKey) {
+        this.args.setup.bindings[targetValuePath].sourceKey = sourceKey;
+      }
+
+      if (sourcePath) {
+        this.args.setup.bindings[targetValuePath].sourcePath = sourcePath;
+      }
+    }
+
+    this.bindingsRegister.recordBinding(binding);
+    binding.activate();
+    return binding;
+  }
+
+  /**
+   * Suppression d'une liaison sur un chemin cible.
+   *
+   * @method removeBinding
+   * @param {string} targetValuePath Chemin vers la cible
+   */
+  removeBinding(targetValuePath) {
+    const binding = this.bindingsRegister.findByKey({ targetValuePath });
+    binding.deactivate();
+    this.bindingsRegister.unrecordBinding(binding);
+    delete this.setup.bindings[targetValuePath];
+    binding.destroy();
+    delete this.args.setup.bindings[targetValuePath];
+  }
+
+  createAccessory(key, setup, saveInSetup = true) {
+    assert('[BaseActor][createAccessory] key is required.', key);
+    assert('[BaseActor][createAccessory] setup is required.', setup);
+    assert('[BaseActor][createAccessory] setup.type is required.', setup.type);
+    const type = setup.type;
+
+    if (!Accessory.accessoryDefs.has(type)) return;
+
+    const AccessoryClass = Accessory.accessoryDefs.get(type);
+
+    if (hasOwnProperty(this.accessories, key)) return;
+    const accessory = new AccessoryClass({ key, actor: this, setup });
+    this.accessories[key] = accessory;
+    this.setup.accessories = this.setup.accessories || {};
+    if (saveInSetup) {
+      this.setup.accessories[key] = setup;
+    }
+
+    return accessory;
+  }
+
+  removeAccessory(key) {
+    if (!hasOwnProperty(this.accessories, key)) return;
+    const accessory = this.accessories[key];
+    delete this.setup.accessories[key];
+    accessory.destroy();
+    delete this.accessories[key];
+  }
+
+  /**
+  Changer le nom du style de l'acteur.
+
+  @method changeStyleName
+  @param {String} styleName Nom du style à appliquer.
+  */
+  changeStyleName(styleName) {
+    if (styleName === this.styleName) return;
+    this.actor.classList.remove(this.styleName);
+    this.actor.classList.add(styleName);
+    this.properties.destroy();
+
+    this.args.setup.styleName = styleName;
+
+    this._extractPropertiesFromSetup(this.args.setup);
+    this._invalidateProperties();
+  }
+
+  _doStyling() {
+    if (this.isDestroying || this.isDestroyed) return;
+
+    if (!this.isReady) {
+      // logger.debug(`_doStyling aborted on not ready actor [${this.key}]`);
+      return;
+    }
+
+    const style = this._doComputeStyle({ properties: this.properties });
+
+    if (!this._initialStyle) {
+      const s = this.actor.attributes['style'];
+      if (!s) {
+        this._initialStyle = '';
+      } else {
+        this._initialStyle = s;
+      }
+    }
+
+    this.actor.style = {};
+    Object.assign(this.actor.style, this._initialStyle, style)
+
+    if (hasOwnProperty(style, '--opacity')) {
+      this.actor.style.setProperty('--opacity', style['--opacity']);
+    }
+
+    if (hasOwnProperty(style, '--rotate')) {
+      this.actor.style.setProperty('--rotate', style['--rotate']);
+    }
+
+    if (hasOwnProperty(style, '--translate-x')) {
+      this.actor.style.setProperty('--translate-x', style['--translate-x']);
+    }
+
+    if (hasOwnProperty(style, '--translate-y')) {
+      this.actor.style.setProperty('--translate-y', style['--translate-y']);
+    }
+
+    if (hasOwnProperty(style, '--scaling')) {
+      this.actor.style.setProperty('--scaling', style['--scaling']);
+    }
+  }
+
+  _doRender(withComputeLayout = true) {
+    if (this.isDestroying || this.isDestroyed) return;
+    if (!this.isReady) {
+      // logger.debug(`_doRender aborted on not ready actor [${this.key}]`);
+      return;
+    }
+
+    if (this._reRenderWatchdog > 0) {
+      this._isFirstRender = false;
+    }
+
+    this._onWillRender();
+    this._doStyling();
+    if (this._reRenderWatchdog > 50) {
+      logger.warn('[SynappsUI][Actors][Base][_doRender] re-render watchdog exceeded with actor #' + this.uniqPath + '.');
+      this._reRenderWatchdog = 0;
+      return;
+    }
+
+    this._reRenderWatchdog++;
+    if (withComputeLayout) {
+      this._doComputeLayout(!this._isFirstRender);
+    }
+
+    this._onDidRender();
+    this._reRenderWatchdog = 1;
+  }
+
+  _recomputeLayout() {
+
+    if (this.isDestroyed || this.isDestroying) return;
+    if (!this.isReady) return;
+    // logger.debug('resize!', this.uniqPath);
+    this._doComputeLayout();
+
+    if (
+      this.parent
+      &amp;&amp; !this.parent.isDestroyed &amp;&amp; !this.parent.isDestroying
+      // &amp;&amp; !entries.find(e => this.parent === e.target._synappActor)
+    ) {
+      this.parent._doComputeLayout();
+    }
+
+    if (this.isParent) {
+      for (const childUi of this.childUis) {
+        if (
+          !childUi.isDestroyed &amp;&amp; !childUi.isDestroying
+          // &amp;&amp; !entries.find(e => childUi === e.target._synappActor)
+        ) {
+          childUi._doComputeLayout();
+        }
+      }
+    }
+  }
+
+  _doComputeLayout(withRunEvent = true) {
+
+    if (this.isDestroyed || this.isDestroying) return;
+
+    // Doit être Fait deux fois : une première fois en remontant,
+    // une deuxième en descendant.
+
+    if (this._isDoingComputeLayout) return;
+    if (!this.actor) return;
+    this._isDoingComputeLayout = true;
+
+    if (
+      this.properties.fontSize !== 'inherit'
+      &amp;&amp; typeof this.properties.fontSize === 'string'
+      &amp;&amp; this.properties.fontSize.includes('%')
+    ) {
+      this.actor.style.setProperty('font-size', `${$(this.parent.actor).height() * parseFloat(this.properties.fontSize)/100}px`);
+    }
+
+    if (withRunEvent) {
+      /**
+       * Se produit lorsque l'acteur calcul son gabarit.
+       *
+       * @event onComputeLayout
+       * @param {Actor.Event.BaseContext} context
+       */
+      this.runEvent(Events.onComputeLayout);
+      this._invokeOnAccessories('onActorComputeLayout')
+    }
+
+    this._isDoingComputeLayout = false;
+
+    this._sendAllSizesToPreviewer();
+  }
+
+  _sendSizeToPreviewer() {
+    const element = this.actor;
+    if (!element) return;
+    if (!this.args.previewer) return;
+    const elementComputedStyle = getComputedStyle(element);
+    const parents = [];
+    let parent = element.parentNode;
+    while (parent &amp;&amp; parent instanceof Element) {
+      parents.unshift(getComputedStyle(parent));
+      parent = parent.parentNode;
+    }
+
+    const size = {
+      height: element.offsetHeight - getValue(elementComputedStyle, 'paddingTop') - getValue(elementComputedStyle, 'paddingBottom'),
+      width: element.offsetWidth - getValue(elementComputedStyle, 'paddingLeft') - getValue(elementComputedStyle, 'paddingRight'),
+      paddingRight: getValue(elementComputedStyle, 'paddingRight'),
+      paddingLeft: getValue(elementComputedStyle, 'paddingLeft'),
+      paddingTop: getValue(elementComputedStyle, 'paddingTop'),
+      paddingBottom: getValue(elementComputedStyle, 'paddingBottom'),
+      marginRight: getValue(elementComputedStyle, 'marginRight'),
+      marginLeft: getValue(elementComputedStyle, 'marginLeft'),
+      marginTop: getValue(elementComputedStyle, 'marginTop'),
+      marginBottom: getValue(elementComputedStyle, 'marginBottom'),
+      borderWidth: elementComputedStyle.borderWidth,
+      transform: elementComputedStyle.transform,
+      parentTransforms: parents.map(p => p.transform).filter(t => t !== 'none'),
+      display: elementComputedStyle.display,
+    };
+
+    const rect = element.getBoundingClientRect();
+
+    this.args.previewer.postMessage('from-runtime:size-change', {
+      key: this.key,
+      size,
+      rect,
+    });
+  }
+
+  _sendAllSizesToPreviewer() {
+    if (!this.args.previewer) return;
+    if (this.args.previewer.isDestroyed || this.args.previewer.isDestroying) return;
+    this.args.previewer.sendAllSizesDebounced();
+  }
+
+  _doLayoutResize() {
+    if (this.isDestroying || this.isDestroyed) return;
+    if (!this.isReady) {
+      // logger.debug(`_doLayoutResize aborted on not ready actor [${this.key}]`);
+      return;
+    }
+
+    this._doRender(false);
+
+    this._invokeOnAccessories('onActorDoLayoutResize');
+  }
+
+  _doAfterPropertyChanged({ prototyped, modifier, name, /*propertyPath,*/ newValue, oldValue, ...args }) {
+    if (this.isDestroyed || this.isDestroying) return;
+    // logger.debug('_doAfterPropertyChanged', this.uniqPath, name, newValue, oldValue);
+    // TODO: Ici, cela va déclencher potentiellement des changements sur d'autres propriétés à cause des liaisons. Il va falloir mettre en queue la modification en gardant la plus générale et une fois les invalidations traitées, réaliser cette modification pour finir par lancer les callbacks de chaque propriété impactée
+    this._invalidate(prototyped, name);
+    switch (modifier) {
+      case 'css':
+        this._doStyling();
+        break;
+
+      case 'render':
+        this._doRender();
+        break;
+
+      case 'layout':
+        this._doLayoutResize();
+        if (this.parent &amp;&amp; this.parent.type === 'layout/view-box') {
+          // certaines modification n'entraîne pas de resize. Donc, on le fait à la main.
+          if ([
+              'verticalAlignment',
+              'horizontalAlignment',
+              'marginTop',
+              'marginBottom',
+              'marginRight',
+              'marginLeft',
+              'paddingTop',
+              'paddingBottom',
+              'paddingRight',
+              'paddingLeft',
+              'borderWidth',
+            ].includes(name)) {
+            this._recomputeLayout();
+          }
+        }
+
+        break;
+
+      default:
+        break;
+    }
+
+    this._onAfterPropertyChanged({ prototyped, modifier, name, newValue, oldValue, ...args });
+    // TODO: il va falloir aussi contrôler un déclenchement en boucle de changements de propriétés mais seulement dans studio.
+
+    this._sendAllSizesToPreviewer();
+  }
+
+  _doAfterAdditionalChanged(...args) {
+    this._doAfterPropertyChanged(...args);
+  }
+
+  _onAfterPropertyChanged({ modifier, name, propertyPath, newValue, ...args }) {
+
+    /**
+     * Se produit lorsque n'importe quelle valeur d'une propriété ou d'une additionnelle change.
+     *
+     * @event onPropertyChanged
+     * @param {Actor.Event.PropertyChangedContext} context
+     */
+
+    this.runEvent('onPropertyChanged', { modifier, propertyPath, name, newValue, ...args });
+    this._invokeOnAccessories('onActorPropertyChanged', { modifier, propertyPath, name, newValue, ...args });
+
+    /**
+     * Se produit lorsque la valeur de propriété `propertyName` change.
+     *
+     * @event properties/[propertyName]/onValueChanged
+     * @param {Actor.Event.PropertyChangedContext} context
+     */
+
+    /**
+     * Se produit lorsque la valeur de l'additionnelle `additionalName` change.
+     *
+     * @event additionals/[additionalName]/onValueChanged
+     * @param {Actor.Event.PropertyChangedContext} context
+     */
+
+    this._runPropertyEvent(propertyPath, 'onValueChanged', newValue, { modifier, newValue, name, propertyPath, ...args });
+    this._invokeOnAccessories('onActorValueChanged', { modifier, newValue, name, propertyPath, ...args });
+
+    if (propertyPath === 'properties.toolTip') {
+      this._setupTitle();
+    }
+  }
+
+  _invalidate(prototyped, name) {
+    if (prototyped._isAdditionals) {
+      this._invalidateAdditionals(name);
+    } else {
+      this._invalidateProperties(name);
+    }
+  }
+
+  @action
+  _onBindingReadTransform({ value, binding }) {
+
+    /**
+     * Se produit à la lecture de la source d'une liaison vers une propriété `propertyName`.
+     * Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.
+     *
+     * @event properties/[propertyName]/binding/onReadTransform
+     * @param {Actor.Event.OnBindingTransformContext} context
+     * @return {any} la valeur lue par défaut.
+     */
+
+    /**
+     * Se produit à la lecture de la source d'une liaison vers une additionnelle `additionalName`.
+     * Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.
+     *
+     * @event additionals/[additionalName]/binding/onReadTransform
+     * @param {Actor.Event.OnBindingTransformContext} context
+     * @return {any} la valeur lue par défaut.
+     */
+    let returnValue = this._runPropertyEvent(binding.targetValuePath, 'binding/onReadTransform', value, { value, binding, propertyPath: binding.targetValuePath });
+    const args = this._composeOnAccessories('onActorBindingReadTransform', { value: returnValue, binding, propertyPath: binding.targetValuePath })
+    return args.value;
+  }
+
+  @action
+  _onBindingWriteTransform({ value, binding }) {
+
+    /**
+     * Se produit à l'écriture de la source d'une liaison vers une propriété `propertyName`.
+     * Il est possible de transformer la valeur lue pour écrire autre chose dans la source.
+     *
+     * @event properties/[propertyName]/binding/onWriteTransform
+     * @param {Actor.Event.OnBindingTransformContext} context
+     * @return {any} la valeur lue par défaut.
+     */
+
+    /**
+     * Se produit à écriture de la source d'une liaison vers une additionnelle `additionalName`.
+     * Il est possible de transformer la valeur lue pour écrire autre chose dans la source.
+     *
+     * @event additionals/[additionalName]/binding/onWriteTransform
+     * @param {Actor.Event.OnBindingTransformContext} context
+     * @return {any} la valeur lue par défaut.
+     */
+    const returnValue = this._runPropertyEvent(binding.targetValuePath, 'binding/onWriteTransform', value, { value, binding, propertyPath: binding.targetValuePath });
+    const args = this._composeOnAccessories('onActorBindingWriteTransform', { value: returnValue, binding, propertyPath: binding.targetValuePath })
+    return args.value;
+  }
+
+  _onWillRender() {
+    this._setupClassList();
+  }
+
+  _doComputeStyle({ properties, style = {}, isAlreadyWrite = false }) {
+    if (this.isDestroyed || this.isDestroying) return;
+
+    const hasToSetupVisible = this.styling.hasToSetup('visible', properties, isAlreadyWrite);
+    const visible = properties.visible;
+    if (hasToSetupVisible &amp;&amp; !visible) {
+      style.display = 'none';
+      if (!isAlreadyWrite) {
+        // pas besoin d'aller plus loin dans la définition du style.
+        return style;
+      }
+    }
+
+    this.styling.setupStyleKey(style, "width", properties, isAlreadyWrite, v => typeof v === 'number' ? `${v}px` : v);
+    this.styling.setupStyleKey(style, "minWidth", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "maxWidth", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "height", properties, isAlreadyWrite, v => typeof v === 'number' ? `${v}px` : v);
+    this.styling.setupStyleKey(style, "minHeight", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "maxHeight", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "fontStyle", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "fontVariant", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "textDecoration", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "fontWeight", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "fontFamily", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "fontSize", properties, isAlreadyWrite,
+      v => {
+        if (typeof v === 'string' &amp;&amp; v.includes('%')) {
+          return isAlreadyWrite || !this.parent || !this.parent.actor ? ''
+            : `${$(this.parent.actor).height() * parseFloat(v)/100}px`;
+        }
+
+        return v;
+      });
+    this.styling.setupStyleKey(style, "lineHeight", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "borderWidth", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "borderStyle", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "borderColor", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "borderRadius", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "color", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "backgroundColor", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "boxShadow", properties, isAlreadyWrite);
+
+    // if (!this.parent /*&amp;&amp; !isAlreadyWrite*/ ) {
+    //   // on fait comme s'il était flexible.
+    //   Flexibility._doComputeStyle({ objectUi: this, properties, isAlreadyWrite, style, orientation: 'vertical' });
+    // }
+
+    this._disposeInParent({ properties, style, isAlreadyWrite });
+
+    this.styling.setupStyleKey(style, "paddingTop", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "paddingBottom", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "paddingLeft", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "paddingRight", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "textAlign", properties, isAlreadyWrite);
+
+    if (this.styling.hasToSetup('opacity', properties, isAlreadyWrite)) {
+      style['--opacity'] = properties.opacity / 100;
+    }
+
+    if (this.styling.hasToSetup('rotate', properties, isAlreadyWrite)) {
+      let rotate = properties.rotate;
+      if (!isEmpty(rotate)) {
+        rotate = parseFloat(rotate);
+        if (!isNaN(rotate) /*&amp;&amp; rotate !== 0*/ ) {
+          style['--rotate'] = `${rotate}deg`
+        }
+      }
+    }
+
+    if (this.styling.hasToSetup('translateX', properties, isAlreadyWrite)) {
+      let translateX = properties.translateX;
+      if (!isEmpty(translateX)) {
+        style['--translate-x'] = `${translateX}`
+      }
+    }
+
+    if (this.styling.hasToSetup('translateY', properties, isAlreadyWrite)) {
+      let translateY = properties.translateY;
+      if (!isEmpty(translateY)) {
+        style['--translate-y'] = `${translateY}`
+      }
+    }
+
+    if (this.styling.hasToSetup('scaling', properties, isAlreadyWrite)) {
+      let scaling = properties.scaling;
+      if (!isEmpty(scaling)) {
+        scaling = parseFloat(scaling);
+        if (!isNaN(scaling) /*&amp;&amp; scaling !== 1*/ ) {
+          style['--scaling'] = `${scaling}`
+        }
+      }
+    }
+
+
+    if (!isAlreadyWrite) {
+      this._invokeOnAccessories('onActorDoComputeStyle', { style });
+    }
+
+    return style;
+  }
+
+  _setupMarginsStyle({ properties, style, isAlreadyWrite = false }) {
+    this.styling.setupStyleKey(style, "marginTop", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "marginBottom", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "marginLeft", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "marginRight", properties, isAlreadyWrite);
+  }
+
+  _disposeInParent({ properties, style, isAlreadyWrite = false }) {
+    if (!this.parent) {
+      // lead Actor de scène
+      // on fait comme s'il était dans un Flexible.
+      Flexibility.disposeChildStyle({ childUi: this, properties, style, isAlreadyWrite });
+    } else {
+      // in a layout. Dispose actor in it.
+      this.parent._disposeChildStyle({ childUi: this, properties, style, isAlreadyWrite });
+    }
+  }
+
+  _endingRender() {
+    //
+  }
+
+  _onDidRender() {
+    if (this.isDestroyed || this.isDestroying) return;
+    if (this._isDoingRender) return;
+    this._isDoingRender = true;
+    const isFirstRender = this._isFirstRender;
+
+    this._endingRender();
+
+    /**
+     * Se produit à chaque rendu de l'acteur dans l'interface.
+     * Un champs `isFirstRender` est à `true` dans le contexte au premier rendu.
+     *
+     * @event onRender
+     * @param {Actor.Event.BaseContext} context
+     */
+    this.runEvent(Events.onRender, { isFirstRender });
+    this._invokeOnAccessories('onActorRender', { isFirstRender });
+    this._isDoingRender = false;
+  }
+
+  _getLayoutAncestor(objectUi) {
+
+    // il faut remonter jusqu'au layout le plus haut qui arrête la propagation de changement de taille.
+    // C'est à partir de lui que le redimensionnement s'opéreront.
+    if (
+
+      // il n'existe pas.
+      !objectUi
+
+      ||
+
+      // pas de parent.
+      !objectUi.parent
+
+      ||
+
+      // un parent mais c'est une toile.
+      objectUi.parent.type === 'layout/canvas'
+
+      ||
+
+      // objectUi est de taille fixe.
+      objectUi._isFixedSize()
+
+      ||
+
+      // objectUi est une boite à vue
+      objectUi.type === 'layout/view-box'
+    ) {
+      return objectUi;
+    }
+
+    return this._getLayoutAncestor(objectUi.parent);
+  }
+
+  _isFixedSize() {
+    const sizeInUnit = (size, unit) => size.includes(unit);
+    const sizeInFixedUnit = size => sizeInUnit(size, 'px') || parseFloat(size) === size || sizeInUnit(size, 'cm');
+
+    return (
+      !isAuto(this.properties.width)
+      &amp;&amp; !isAuto(this.properties.height)
+      &amp;&amp; sizeInFixedUnit(this.properties.width)
+      &amp;&amp; sizeInFixedUnit(this.properties.height)
+    );
+  }
+
+  _setupTitle() {
+    if (!isNone(this.title)) {
+      this.actor.title = this.title;
+    }
+  }
+
+  _doPostInit() {
+    if (this.isDestroyed || this.isDestroying) return;
+
+    this._extractBindingsFromSetup(this.args.setup);
+
+    this._setupTitle();
+
+    /**
+     * Se produit avant le premier rendu mais apres que tous les acteurs de la scène soient initialisés.
+     *
+     * @event onPostInit
+     * @param {Actor.Event.BaseContext} context
+     */
+    this.runEvent(Events.onPostInit);
+    this._invokeOnAccessories('onActorPostInit');
+
+    if (this.args.onDidPostInit) {
+      this.args.onDidPostInit(this);
+    }
+
+    this._isPostInit = true;
+
+  }
+
+  _setupClassList() {
+    if (!this._initialClassNames) {
+      // récupèration de la liste des classes css mis en dur sur l'acteur.
+      this._initialClassNames = [...this.actor.classList];
+    }
+
+    const classNames = [...this.constructor.classNames, ...(!isEmpty(this.properties.classNames) ? this.properties.classNames.split(' ') : [])];
+
+    this.actor.classList.remove(...this.actor.classList);
+    this.actor.classList.add(
+      ...classNames,
+      ...this._initialClassNames,
+      this.constructor.typeCssClass,
+      this.styleName,
+      `actor-${this.key}`,
+      this.uniqClass,
+    );
+  }
+
+  @action
+  _didElementInsert(actor) {
+    this._actor = actor;
+
+    actor._synappActor = this;
+    resizeObserver.observe(actor);
+
+    this.actor.addEventListener('click', this._onClick);
+    this.actor.addEventListener('mouseenter', this._onMouseEnter);
+    this.actor.addEventListener('mouseleave', this._onMouseLeave);
+    this.actor.addEventListener('mousemove', this._onMouseMove);
+    this.actor.addEventListener('mouseup', this._onMouseUp);
+    this.actor.addEventListener('mousedown', this._onMouseDown);
+
+    this._doPostInit();
+  }
+
+  @action
+  _didSetupChange({ objectUi, setup /*, ...others*/ }) {
+    if (setup === this._setup) return;
+    logger.debug('_didSetupChange', objectUi.key);
+    this._reset();
+
+    this._init({
+      setup,
+      stage: this.stage,
+      scene: this.scene,
+      rootScene: this.rootScene,
+      dataContext: this.dataContext,
+      isLeadActor: this.isLeadActor,
+      onDidAdd: this.args.onDidAdd,
+    });
+
+    // this.actor.classList.add(this.styleName);
+    this._doRender();
+    this._invalidateProperties();
+    this._invalidateAdditionals();
+  }
+
+  @action
+  _modifierWillRemove(actor) {
+    try {
+      // sécurisation des processus de suppression d'acteur.
+      this._onWillRemove(actor);
+    } catch (error) {
+      logger.debug('[ActorBase][_onWillRemove()]', error);
+    }
+
+    actor.removeEventListener('click', this._onClick);
+    actor.removeEventListener('mouseenter', this._onMouseEnter);
+    actor.removeEventListener('mouseleave', this._onMouseLeave);
+    actor.removeEventListener('mousemove', this._onMouseMove);
+    actor.removeEventListener('mouseup', this._onMouseUp);
+    actor.removeEventListener('mousedown', this._onMouseDown);
+  }
+
+  _invokeOnAccessories(methodName, args) {
+    Object.values(this.accessories).forEach(accessory => {
+      accessory[methodName](args);
+    });
+  }
+
+  _composeOnAccessories(methodName, args) {
+    let accArgs = args;
+    Object.values(this.accessories).forEach(accessory => {
+      accArgs = accessory[methodName](accArgs);
+    });
+    return accArgs;
+  }
+
+  _onWillRemove( /*actor*/ ) {
+
+  }
+
+  willDestroy() {
+    if (this.isDestroyed) return;
+
+    runInDebug(() => {
+      window.ActorCount--;
+      // logger.debug('willDestroy - ActorCount:', window.ActorCount, this.uniqPath);
+    });
+
+    this._invokeOnAccessories('onActorDestroy');
+
+    /**
+     * Se produit au moment de la destruction d'un acteur.
+     *
+     * @event onDestroy
+     * @param {Actor.Event.BaseContext} context
+     */
+    this.runEvent(Events.onDestroy);
+
+    super.willDestroy();
+
+    this._actor._synappActor = null;
+    resizeObserver.unobserve(this._actor);
+    this._actor = null;
+
+    if (this.args.onDidRemove) {
+      this.args.onDidRemove(this);
+    }
+
+    if (this.stage &amp;&amp; this.stage.actorsRegister) {
+      this.stage.actorsRegister.unrecord({ record: this });
+    }
+
+    this.bindingsRegister.destroy();
+    this._bindingsRegister = null;
+
+    if (this.accessories) {
+      this._invokeOnAccessories('destroy');
+      this._accessories = null;
+    }
+  }
+
+  @action
+  _onClick(mouseEvent) {
+    /**
+     * Se produit au click sur acteur.
+     *
+     * La contexte contient l'évènement de souris dans le champ `mouseEvent`.
+     *
+     * @event onClick
+     * @param {Actor.Event.BaseContext} context
+     */
+    const result = this.runEvent('onClick', { mouseEvent });
+    this._invokeOnAccessories('onActorClick', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onMouseEnter(mouseEvent) {
+    /**
+     * Se produit lorsque la souris entre dans acteur.
+     *
+     * La contexte contient l'évènement de souris dans le champ `mouseEvent`.
+     *
+     * @event onMouseEnter
+     * @param {Actor.Event.BaseContext} context
+     */
+    const result = this.runEvent('onMouseEnter', { mouseEvent });
+    this._invokeOnAccessories('onActorMouseEnter', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onMouseLeave(mouseEvent) {
+    /**
+     * Se produit lorsque la souris sort de l' acteur.
+     *
+     * La contexte contient l'évènement de souris dans le champ `mouseEvent`.
+     *
+     * @event onMouseLeave
+     * @param {Actor.Event.BaseContext} context
+     */
+    const result = this.runEvent('onMouseLeave', { mouseEvent });
+    this._invokeOnAccessories('onActorMouseLeave', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onMouseMove(mouseEvent) {
+    /**
+     * Se produit lorsque la souris se déplace au dessus de l' acteur.
+     *
+     * La contexte contient l'évènement de souris dans le champ `mouseEvent`.
+     *
+     * @event onMouseMove
+     * @param {Actor.Event.BaseContext} context
+     */
+    const result = this.runEvent('onMouseMove', { mouseEvent });
+    this._invokeOnAccessories('onActorMouseMove', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onMouseUp(mouseEvent) {
+    /**
+     * Se produit lorsque un bouton de la souris est relâché au dessus de l'acteur .
+     *
+     * La contexte contient l'évènement de souris dans le champ `mouseEvent`.
+     *
+     * @event onMouseUp
+     * @param {Actor.Event.BaseContext} context
+     */
+    const result = this.runEvent('onMouseUp', { mouseEvent });
+    this._invokeOnAccessories('onActorMouseUp', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onMouseDown(mouseEvent) {
+    /**
+     * Se produit lorsque un bouton de la souris est appuyé au dessus de l'acteur .
+     *
+     * La contexte contient l'évènement de souris dans le champ `mouseEvent`.
+     *
+     * @event onMouseDown
+     * @param {Actor.Event.BaseContext} context
+     */
+    const result = this.runEvent('onMouseDown', { mouseEvent });
+    this._invokeOnAccessories('onActorMouseDown', { mouseEvent });
+    return result;
+  }
+
+  // [MIGRATION V1]
+
+  _getEventContextV1Class() {
+
+    const BaseClass = super._getEventContextV1Class();
+
+
+    const Class = class extends BaseClass {
+
+      @readOnly('_objectUi.key')
+      key;
+
+      @readOnly('_objectUi.key')
+      label;
+
+      @readOnly('_objectUi.setup.oldType')
+      type;
+
+      @computed('_objectUi.actor')
+      get dom() {
+        return $(this._objectUi.actor);
+      }
+
+      isIt(key) {
+        return this._objectUi.key === key;
+      }
+
+      @alias('datasourceVariable')
+      datasource;
+
+    }
+
+    for (const key in this.properties.prototypeSetup) {
+      if (hasOwnProperty(this.properties.prototypeSetup, key)) {
+        defineProperty(Class.prototype, key, alias(`_objectUi.properties.${key}`));
+      }
+    }
+
+    return Class;
+  }
+}
+
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'actor',
+  resolveSource: function resolveSource({ sourceKey, target }) {
+    return target.stage.getActor(sourceKey);
+  }
+});
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'relative',
+  resolveSource: function resolveSource({ sourcePath, target }) {
+    const path = !sourcePath || (sourcePath == 'self') ? '' : sourcePath;
+    return isEmpty(path) ? target : get(target, path);
+  }
+});
+
+export default BaseActor;
+
+/**
+ * Les évènements
+ * @namespace Event
+ */
+
+/**
+ * Contexte de base d'un évènement.
+ * @interface Event.BaseContext
+ */
+
+/**
+ * Scène ou composite portant l'acteur émetteur de l'évènement.
+ * @member
+ * @name Event.BaseContext#stage
+ * @readonly
+ * @type Stage
+ */
+
+/**
+ * Première scène trouvée en remontant dans l'arborescence depuis l'acteur émetteur de l'évènement.
+ * @member Event.BaseContext#scene
+ * @readonly
+ * @type Scene
+ */
+
+/**
+ * Scene racine de l'acteur.
+ * @attribute rootScene
+ * @readonly
+ * @type {Scene}
+ */
+
+/**
+ * Synapp
+ * @attribute synapp
+ * @readonly
+ * @type {Synapp}
+ */
+
+/**
+ * Magasins de données.
+ * @attribute dataStores
+ * @readonly
+ * @type {Object}
+ */
+
+/**
+ * Nom de l'évènement.
+ * @attribute eventName
+ * @readonly
+ * @type {String}
+ */
+
+
+/**
+ * Acteur à l'origine de l'évènement.
+ * @attribute target
+ * @readonly
+ * @type {Actor.BaseActor}
+ */
+
+/**
+ * La valeur est elle vide ?
+ * @method utils.isEmpty
+ * @param {any} value la valeur à tester
+ * @return {Boolean}
+ */
+
+/**
+ * La valeur est elle null/vide ?
+ * @method utils.isNone
+ * @param {any} value la valeur à tester
+ * @return {Boolean}
+ */
+
+/**
+ * La valeur est elle présente ?
+ * @method utils.isPresent
+ * @param {any} value la valeur à tester
+ * @return {Boolean}
+ */
+
+/**
+ * Obtient la valeur d'un objet suivant un chemin.
+ * @method utils.get
+ * @param {Object} obj L'objet
+ * @param {Object} path Le chemin
+ * @return {string} value la valeur suivant le chemin sur l'objet.
+ */
+
+/**
+ * Assigne la valeur à un objet suivant un chemin.
+ *
+ * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.
+ *
+ * @method utils.set
+ * @param {Object} obj L'objet
+ * @param {Object} path Le chemin
+ * @param {any} value la valeur à placer.
+ */
+
+/**
+ * Assigne des valeurs à un objet suivant plusieurs chemin.
+ *
+ * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.
+ *
+ * @method utils.setProperties
+ * @param {Object} obj L'objet
+ * @param {Object} props Les valeurs à placer.
+ */
+
+/**
+ * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété suivant un chemin.
+ *
+ * @method utils.notifyPropertyChange
+ * @param {Object} obj L'objet
+ * @param {Object} path Le chemin à notifier
+ */
+
+/**
+ * @interface Event.PropertyChangedContext
+ * @extends Event.BaseContext
+ */
+
+/**
+ * Nouvelle valeur.
+ * @member Event.BaseContext#newValue
+ * @readonly
+ * @type {any}
+ */
+
+/**
+ * Ancienne valeur.
+ * @member Event.PropertyChangedContext#oldValue
+ * @readonly
+ * @type {any}
+ */
+
+/**
+ * Chemin de la propriété.
+ * @member Event.PropertyChangedContext#propertyPath
+ * @readonly
+ * @type {string}
+ */
+
+/**
+ * Nom de la propriété.
+ * @member Event.PropertyChangedContext#name
+ * @readonly
+ * @type {string}
+ */
+
+/**
+ * @namespace Actor
+ */
+
+/**
+ * Contexte de l'évènement.
+ * @typedef {Object} Event.BaseContext
+ * @property {(Scene|Actor#Composite)}  stage - Scène ou composite portant l'acteur émetteur de l'évènement.
+ * @property {Scene}  scene - Première scène trouvée en remontant dans l'arborescence depuis l'acteur émetteur de l'évènement.
+ */
+
+/**
+ * Contexte de l'évènement de changement de valeur d'une propriété.
+ * @typedef {Event.BaseContext} Event.PropertyChangedContext
+ * @property {*}  oldValue - Ancienne valeur
+ * @property {*}  newValue - Nouvelle valeur
+ * @property {String}  name - Nom de la propriété.
+ * @property {String}  propertyPath - Chemin de la propriété.
+ */
+
+/**
+ * @interface Stage
+ */
+
+/**
+ * Acteur composite.
+ * @class Actor#Composite
+ * @extends Stage
+ * @extends Actor.BaseActor
+ * @hideconstructor
+ */
+
+/**
+ * Scène
+ * @class Scene
+ * @extends Stage
+ */
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 30th Apr 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
