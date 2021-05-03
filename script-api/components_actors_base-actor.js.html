@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>base-actor.js</title>
+		<title>components/actors/base-actor.js</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -13,7 +13,7 @@
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Synapps Script API","systemSummary":"Documentation de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -24,7 +24,7 @@
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
-					FooDoc
+					Synapps Script API
 				</a>
 				<!-- displayed on small devices -->
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
@@ -38,26 +38,43 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="global.html#_fixValue">_fixValue</a></li>
 											<li><a href="global.html#changeStyleName">changeStyleName</a></li>
-											<li><a href="global.html#createBasicBinding">createBasicBinding</a></li>
-											<li><a href="global.html#createInternalBinding">createInternalBinding</a></li>
-											<li><a href="global.html#getBinding">getBinding</a></li>
+											<li><a href="global.html#data">data</a></li>
+											<li><a href="global.html#isRequesting">isRequesting</a></li>
 											<li><a href="global.html#removeBinding">removeBinding</a></li>
+											<li><a href="global.html#request">request</a></li>
+											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
+											<li><a href="global.html#write">write</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
-											<li><a href="Actor_Composite.html">Actor#Composite</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
+											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
 											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="WithProperties.html">WithProperties</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
 									<ul class="dropdown-menu">
-											<li><a href="Event.html#.BaseContext">Event.BaseContext</a></li>
-											<li><a href="Event.html#.PropertyChangedContext">Event.PropertyChangedContext</a></li>
 											<li><a href="Stage.html">Stage</a></li>
 									</ul>
 								</li>
@@ -65,7 +82,19 @@
 									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
+											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-home.html">home</a></li>
+											<li><a href="tutorial-other.html">other</a></li>
 									</ul>
 								</li>
 				</ul>
@@ -86,7 +115,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">source</span>
-				<h1><span class="name">base-actor.js</span></h1>
+				<h1><span class="name">components/actors/base-actor.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -166,6 +195,10 @@ runInDebug(() => {
 class BaseActorComponent extends Component {}
 
 /**
+ * @namespace Actor
+ */
+
+/**
  * Acteur de base.
  * @memberof Actor
  * @hideconstructor
@@ -184,14 +217,15 @@ class BaseActor extends BaseActorComponent {
   /**
    * Enregistre la définition de l'acteur dans le dictionnaire des acteurs.
    *
-   * @static
-   * @method registerInDefinitions
-   * @private
+   * @function Actor.BaseActor.registerInDefinitions
    * @param {Object} definition
    * @param {string} definition.type - La clé unique du type de l'acteur (ex: "input/button");
    * @param {string} definition.componentName - Nom complet du composant EmberJS (ex: "synapps-ui/actors/input/button").
    * @param {string} definition.prototypeSetup - Object qui contient les définitions des propriétés de l'acteur.
-   * @param {string} [definition.platform=native] - Nom de la plateforme à laquelle l'acteur appartient.
+   * @param {string} [definition.platform="native"] - Nom de la plateforme à laquelle l'acteur appartient.
+   * @private
+   * @ignore
+   * @static
    */
   static registerInDefinitions({ type, componentName, prototypeSetup, platform = 'native' }) {
     assert('[BaseActor][registerInDefinitions] type is required.', type);
@@ -211,7 +245,6 @@ class BaseActor extends BaseActorComponent {
    *
    * @member Actor.BaseActor#isDestroyed
    * @readonly
-   * @default false
    * @type {Boolean}
    */
 
@@ -221,7 +254,6 @@ class BaseActor extends BaseActorComponent {
    * @member
    * @name Actor.BaseActor#isDestroying
    * @readonly
-   * @default false
    * @type {Boolean}
    */
 
@@ -230,6 +262,13 @@ class BaseActor extends BaseActorComponent {
    */
   static classNames = ['synapps-ui', 'actor'];
 
+
+  /**
+   * Obtient les magasins de données de la synapp.
+   * @attribute ataStores
+   * @type {Ember.Service}
+   * @readonly
+   */
   @service('data-stores')
   dataStores;
 
@@ -282,14 +321,20 @@ class BaseActor extends BaseActorComponent {
     return this._bindingsRegister;
   }
 
+
+  /**
+   * Obtient la liste des accessoires. &lt;br> La gestion des accessoire s'effectue avec les méthodes : {@link Actor.BaseActor#createAccessory}
+   * @attribute
+   * @type {Object}
+   * @readonly
+   */
   get accessories() {
     return this._accessories;
   }
 
-
   /**
    La clé unique de l'acteur.
-   @attribute key
+   @attribute
    @readonly
    @type {string}
    */
@@ -299,7 +344,7 @@ class BaseActor extends BaseActorComponent {
 
   /**
   Scene ou Composite parent de l'acteur.
-  @attribute stage
+  @attribute
   @readonly
   @type {Stage}
   */
@@ -309,7 +354,7 @@ class BaseActor extends BaseActorComponent {
 
   /**
   Scene racine de l'acteur.
-  @attribute rootScene
+  @attribute
   @readonly
   @type {Scene}
   */
@@ -320,9 +365,9 @@ class BaseActor extends BaseActorComponent {
 
   /**
   Première scène parente de l'acteur.
-  @attribute scene
+  @attribute
   @readonly
-  @type {Stage}
+  @type {Scene}
   */
   get scene() {
     return this._scene;
@@ -330,9 +375,9 @@ class BaseActor extends BaseActorComponent {
 
   /**
   La Synapp.
-  @attribute synapp
+  @attribute
   @readonly
-  @type {Stage}
+  @type {Synapp}
   */
   get synapp() {
     return this._rootScene.synapp;
@@ -340,9 +385,9 @@ class BaseActor extends BaseActorComponent {
 
   /**
   Le nom du style de l'acteur.
-
-  Pour changer de style, il faut utiliser {{#crossLink "Actor.BaseActor/changeStyleName:method"}}{{/crossLink}}
-  @attribute styleName
+  &lt;br>
+  Pour changer de style, il faut utiliser {@link Actor.BaseActor#changeStyleName}
+  @attribute
   @readonly
   @type {String}
   */
@@ -353,7 +398,7 @@ class BaseActor extends BaseActorComponent {
   /**
   L'élément DOM de l'acteur.
 
-  @attribute actor
+  @attribute
   @readonly
   @type {Element}
   */
@@ -362,9 +407,9 @@ class BaseActor extends BaseActorComponent {
   }
 
   /**
-  Acteur parent.
+  Acteur parent. &lt;br> Peut être absent si l'acteur est le principal.
 
-  @attribute parent
+  @attribute
   @readonly
   @type {Actor.BaseActor}
   */
@@ -375,7 +420,7 @@ class BaseActor extends BaseActorComponent {
   /**
   Type de l'acteur.
 
-  @attribute type
+  @attribute
   @readonly
   @type {string}
   */
@@ -386,7 +431,7 @@ class BaseActor extends BaseActorComponent {
   /**
   Est-ce un acteur principal ?
 
-  @attribute isLeadActor
+  @attribute
   @readonly
   @type {Boolean}
   */
@@ -401,7 +446,7 @@ class BaseActor extends BaseActorComponent {
   /**
   Chemin unique de l'acteur.
 
-  @attribute uniqPath
+  @attribute
   @readonly
   @type {string}
   */
@@ -409,6 +454,12 @@ class BaseActor extends BaseActorComponent {
     return `${this.stage.uniqPath}/${this.key}`;
   }
 
+  /**
+   * Classe `CSS` unique de l'acteur.
+   * @attribute
+   * @readonly
+   * @type {string}
+   */
   get uniqClass() {
     return this.uniqPath.replace(/~/, '').replace(/\//g, '_');
   }
@@ -421,14 +472,20 @@ class BaseActor extends BaseActorComponent {
     return this._isPostInit;
   }
 
+  /**
+   * Obtient la classe de base des accessoire.
+   * @attribute
+   * @readonly
+   * @type {BaseAccessory}
+   */
   get BaseAccessory() {
     return Accessory;
   }
 
   /**
-  Récupération de l'acteur principal.
+  Obtient l'acteur principal de la scène aou composite présentant l'acteur.
 
-  @attribute leadActor
+  @attribute
   @readonly
   @type {Actor.BaseActor}
   */
@@ -444,6 +501,8 @@ class BaseActor extends BaseActorComponent {
 
   /**
    * ne pas utiliser
+   * @hideconstructor
+   * @private
    */
   constructor(owner, args) {
     super(owner, args);
@@ -643,19 +702,18 @@ class BaseActor extends BaseActorComponent {
    *
    * La source est prise dans le contexte de donnée.
    *
-   *
-   @example
-   Le `setup` est un objet
-```
-actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
-```
+   * @example
+   * Le `setup` est un objet
+   * ```
+   * actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
+   * ```
    * La propriété largeur de l'acteur est maintenant liée au champ `widthOfPanel` de son contexte de donnée.
    *
-   * @method createBasicBinding
+   * @method
    * @param {string} targetValuePath Chemin de la cible
-   * @param {Object} setup
+   * @param {JSON.BasicBinding} setup
    * @param {Boolean} [saveInSetup=true]
-   * @returns {Binding} la liaison créée.
+   * @returns {Binding.BasicBinding} la liaison créée.
    */
   createBasicBinding(targetValuePath, setup, saveInSetup = true) {
     const binding = new BasicBinding({
@@ -675,7 +733,7 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
   }
 
   /**
-   * @method getBinding
+   * @method
    * @param {string} targetValuePath Chemin de la cible
    * @returns {Binding} la liaison demandée ou null si non trouvée.
    */
@@ -683,24 +741,21 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
     return this.bindingsRegister.findByKey(targetValuePath);
   }
 
-  // TODO doc
-
   /**
    * Création d'une liaison interne.
    *
-   * La source est prise dans le contexte de donnée.
+   * Le type de source permet à la liaison d'aller cherche la bonne source à placer dans le contexte de donnée de la liaison.
    *
    *
-   @example
-   Le `setup` est un objet différent en fonction du type de source.
-
-   Pour un acteur :
+   * @example
+   * Le `setup` est un objet différent en fonction du type de source.
+   *
+   * Pour un acteur :
 ```
 { sourceKey: '&lt;clé acteur>', path: 'le chemin de la valeur de la source' }
 ```
    *
-   *
-   * @method createInternalBinding
+   * @method
    * @param {string} targetValuePath Chemin de la cible
    * @param {Object} setup
    * @param {Boolean} [saveInSetup=true]
@@ -768,6 +823,14 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
     delete this.args.setup.bindings[targetValuePath];
   }
 
+  /**
+   * @todo
+   * Création d'un accessoire
+   * @param {*} key
+   * @param {*} setup
+   * @param {*} saveInSetup
+   * @returns {Accessory} L'accessoire créé.
+   */
   createAccessory(key, setup, saveInSetup = true) {
     assert('[BaseActor][createAccessory] key is required.', key);
     assert('[BaseActor][createAccessory] setup is required.', setup);
@@ -789,6 +852,10 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
     return accessory;
   }
 
+  /**
+   *
+   * @param {string} key
+   */
   removeAccessory(key) {
     if (!hasOwnProperty(this.accessories, key)) return;
     const accessory = this.accessories[key];
@@ -936,8 +1003,8 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
       /**
        * Se produit lorsque l'acteur calcul son gabarit.
        *
-       * @event onComputeLayout
-       * @param {Actor.Event.BaseContext} context
+       * @event Actor.BaseActor#onComputeLayout
+       * @param {Event.BaseContext} context
        */
       this.runEvent(Events.onComputeLayout);
       this._invokeOnAccessories('onActorComputeLayout')
@@ -1060,8 +1127,8 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
     /**
      * Se produit lorsque n'importe quelle valeur d'une propriété ou d'une additionnelle change.
      *
-     * @event onPropertyChanged
-     * @param {Actor.Event.PropertyChangedContext} context
+     * @event Actor.BaseActor#onPropertyChanged
+     * @param {Event.PropertyChangedContext} context
      */
 
     this.runEvent('onPropertyChanged', { modifier, propertyPath, name, newValue, ...args });
@@ -1070,15 +1137,15 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
     /**
      * Se produit lorsque la valeur de propriété `propertyName` change.
      *
-     * @event properties/[propertyName]/onValueChanged
-     * @param {Actor.Event.PropertyChangedContext} context
+     * @event Actor.BaseActor#properties/[propertyName]/onValueChanged
+     * @param {Event.PropertyChangedContext} context
      */
 
     /**
      * Se produit lorsque la valeur de l'additionnelle `additionalName` change.
      *
-     * @event additionals/[additionalName]/onValueChanged
-     * @param {Actor.Event.PropertyChangedContext} context
+     * @event Actor.BaseActor#additionals/[additionalName]/onValueChanged
+     * @param {Event.PropertyChangedContext} context
      */
 
     this._runPropertyEvent(propertyPath, 'onValueChanged', newValue, { modifier, newValue, name, propertyPath, ...args });
@@ -1104,8 +1171,8 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
      * Se produit à la lecture de la source d'une liaison vers une propriété `propertyName`.
      * Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.
      *
-     * @event properties/[propertyName]/binding/onReadTransform
-     * @param {Actor.Event.OnBindingTransformContext} context
+     * @event Actor.BaseActor#properties/[propertyName]/binding/onReadTransform
+     * @param {Event.OnBindingTransformContext} context
      * @return {any} la valeur lue par défaut.
      */
 
@@ -1113,8 +1180,8 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
      * Se produit à la lecture de la source d'une liaison vers une additionnelle `additionalName`.
      * Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.
      *
-     * @event additionals/[additionalName]/binding/onReadTransform
-     * @param {Actor.Event.OnBindingTransformContext} context
+     * @event Actor.BaseActor#additionals/[additionalName]/binding/onReadTransform
+     * @param {Event.OnBindingTransformContext} context
      * @return {any} la valeur lue par défaut.
      */
     let returnValue = this._runPropertyEvent(binding.targetValuePath, 'binding/onReadTransform', value, { value, binding, propertyPath: binding.targetValuePath });
@@ -1129,8 +1196,8 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
      * Se produit à l'écriture de la source d'une liaison vers une propriété `propertyName`.
      * Il est possible de transformer la valeur lue pour écrire autre chose dans la source.
      *
-     * @event properties/[propertyName]/binding/onWriteTransform
-     * @param {Actor.Event.OnBindingTransformContext} context
+     * @event Actor.BaseActor#properties/[propertyName]/binding/onWriteTransform
+     * @param {Event.OnBindingTransformContext} context
      * @return {any} la valeur lue par défaut.
      */
 
@@ -1138,8 +1205,8 @@ actor.createBasicBinding('properties.width, { path: 'widthOfPanel' });
      * Se produit à écriture de la source d'une liaison vers une additionnelle `additionalName`.
      * Il est possible de transformer la valeur lue pour écrire autre chose dans la source.
      *
-     * @event additionals/[additionalName]/binding/onWriteTransform
-     * @param {Actor.Event.OnBindingTransformContext} context
+     * @event Actor.BaseActor#additionals/[additionalName]/binding/onWriteTransform
+     * @param {Event.OnBindingTransformContext} context
      * @return {any} la valeur lue par défaut.
      */
     const returnValue = this._runPropertyEvent(binding.targetValuePath, 'binding/onWriteTransform', value, { value, binding, propertyPath: binding.targetValuePath });
@@ -1653,133 +1720,41 @@ InternalBinding.registerInInternalSourceDefs({
 
 export default BaseActor;
 
+
 /**
- * Les évènements
- * @namespace Event
+ * @interface Stage
  */
 
 /**
- * Contexte de base d'un évènement.
- * @interface Event.BaseContext
+ * Acteur composite.
+ * @class Actor.Composite
+ * @extends Stage
+ * @extends Actor.BaseActor
+ * @hideconstructor
  */
 
 /**
- * Scène ou composite portant l'acteur émetteur de l'évènement.
- * @member
- * @name Event.BaseContext#stage
- * @readonly
- * @type Stage
- */
-
-/**
- * Première scène trouvée en remontant dans l'arborescence depuis l'acteur émetteur de l'évènement.
- * @member Event.BaseContext#scene
- * @readonly
- * @type Scene
- */
-
-/**
- * Scene racine de l'acteur.
- * @attribute rootScene
- * @readonly
- * @type {Scene}
- */
-
-/**
- * Synapp
- * @attribute synapp
- * @readonly
- * @type {Synapp}
- */
-
-/**
- * Magasins de données.
- * @attribute dataStores
- * @readonly
- * @type {Object}
- */
-
-/**
- * Nom de l'évènement.
- * @attribute eventName
- * @readonly
- * @type {String}
+ * Scène
+ * @class Scene
+ * @extends Stage
  */
 
 
 /**
- * Acteur à l'origine de l'évènement.
- * @attribute target
- * @readonly
- * @type {Actor.BaseActor}
+ * Définition des setups JSON.
+ * @namespace JSON
  */
 
-/**
- * La valeur est elle vide ?
- * @method utils.isEmpty
- * @param {any} value la valeur à tester
- * @return {Boolean}
- */
 
 /**
- * La valeur est elle null/vide ?
- * @method utils.isNone
- * @param {any} value la valeur à tester
- * @return {Boolean}
- */
-
-/**
- * La valeur est elle présente ?
- * @method utils.isPresent
- * @param {any} value la valeur à tester
- * @return {Boolean}
- */
-
-/**
- * Obtient la valeur d'un objet suivant un chemin.
- * @method utils.get
- * @param {Object} obj L'objet
- * @param {Object} path Le chemin
- * @return {string} value la valeur suivant le chemin sur l'objet.
- */
-
-/**
- * Assigne la valeur à un objet suivant un chemin.
- *
- * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.
- *
- * @method utils.set
- * @param {Object} obj L'objet
- * @param {Object} path Le chemin
- * @param {any} value la valeur à placer.
- */
-
-/**
- * Assigne des valeurs à un objet suivant plusieurs chemin.
- *
- * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.
- *
- * @method utils.setProperties
- * @param {Object} obj L'objet
- * @param {Object} props Les valeurs à placer.
- */
-
-/**
- * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété suivant un chemin.
- *
- * @method utils.notifyPropertyChange
- * @param {Object} obj L'objet
- * @param {Object} path Le chemin à notifier
- */
-
-/**
- * @interface Event.PropertyChangedContext
+ * Contexte des changements de valeur de propriété. {@link Event.BaseContext}
+ * @class Event.PropertyChangedContext
  * @extends Event.BaseContext
  */
 
 /**
  * Nouvelle valeur.
- * @member Event.BaseContext#newValue
+ * @member Event.PropertyChangedContext#newValue
  * @readonly
  * @type {any}
  */
@@ -1804,52 +1779,13 @@ export default BaseActor;
  * @readonly
  * @type {string}
  */
-
-/**
- * @namespace Actor
- */
-
-/**
- * Contexte de l'évènement.
- * @typedef {Object} Event.BaseContext
- * @property {(Scene|Actor#Composite)}  stage - Scène ou composite portant l'acteur émetteur de l'évènement.
- * @property {Scene}  scene - Première scène trouvée en remontant dans l'arborescence depuis l'acteur émetteur de l'évènement.
- */
-
-/**
- * Contexte de l'évènement de changement de valeur d'une propriété.
- * @typedef {Event.BaseContext} Event.PropertyChangedContext
- * @property {*}  oldValue - Ancienne valeur
- * @property {*}  newValue - Nouvelle valeur
- * @property {String}  name - Nom de la propriété.
- * @property {String}  propertyPath - Chemin de la propriété.
- */
-
-/**
- * @interface Stage
- */
-
-/**
- * Acteur composite.
- * @class Actor#Composite
- * @extends Stage
- * @extends Actor.BaseActor
- * @hideconstructor
- */
-
-/**
- * Scène
- * @class Scene
- * @extends Stage
- */
 </code></pre>
 		</section>
 			</div>
 		</div>
 	</div>
 	<footer>
-				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 30th Apr 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 3rd May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

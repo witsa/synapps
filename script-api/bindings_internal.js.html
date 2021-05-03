@@ -1,9 +1,10 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Event</title>
+		<title>bindings/internal.js</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -13,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Synapps Script API","systemSummary":"Documentation de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -113,63 +114,153 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">namespace</span>
-				<h1><span class="name">Event</span></h1>
+				<span class="kind">source</span>
+				<h1><span class="name">bindings/internal.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="list_namespace.html">Namespaces</a></li>
-							<li class="active">Event</li>
-						</ol>
-					<section>
-							<dl class="symbol primary">
-								<dt class="symbol-title namespace">
-			<h2 class="namespace"><span class="name">Event</span></h2>
-</dt>
-<dd class="symbol-details namespace" style="max-height: 9999px;">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Les évènements</p></div>
-			</div>	</div>
-</dd>
-							</dl>
-							<article class="secondary">
-									<h3>Classes</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContext" class="class public"><a href="Event.BaseContext.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContextUtils" class="class public"><a href="Event.BaseContextUtils.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContextUtils</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="PropertyChangedContext" class="class public"><a href="Event.PropertyChangedContext.html"><span class="signature-new">new&nbsp;</span><span class="name">PropertyChangedContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-									</dl>
-							</article>
-					</section>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { assert } from '@ember/debug';
+import logger from 'logger';
+import BasicBinding from 'synapps-ui/bindings/basic';
+import internalSourceDefs from 'synapps-ui/bindings/internal-source-defs';
+
+/**
+ * @class
+ * @memberof Binding
+ * @extends Binding.BasicBinding
+ */
+class InternalBinding extends BasicBinding {
+
+  didChangeDataContext({ oldValue, newValue }) {
+    // logger.debug("didChangeDataContext", this.target.uniqPath, oldValue, newValue);
+    if (oldValue &amp;&amp; oldValue.inBindingsRegister) {
+      // on enlève la reference du binding.
+      // assert('[InternalBinding][didChangeDataContext] oldValue must have inBindingsRegister field.', oldValue.inBindingsRegister);
+      oldValue.inBindingsRegister.unrecordBinding(this);
+    }
+
+    if (newValue &amp;&amp; newValue.inBindingsRegister) {
+      // on ajoute la reference du binding.
+      // assert('[InternalBinding][didChangeDataContext] newValue must have inBindingsRegister field.', newValue.inBindingsRegister);
+      newValue.inBindingsRegister.recordBinding(this);
+    }
+  }
+
+  static internalSourceDefs = internalSourceDefs;
+  static registerInInternalSourceDefs({
+    sourceType,
+    platform = 'native',
+    resolveSource,
+    getBasePath,
+  }) {
+    assert('[InternalBinding][registerInInternalSourceDefs] sourceType is required.', sourceType);
+    const internalSourceDef = {
+      sourceType,
+      platform,
+      resolveSource,
+      getBasePath,
+    };
+
+    this.internalSourceDefs.set(sourceType, internalSourceDef);
+  }
+
+  static resolveInternalSource({ sourceType, target, ...others }) {
+    assert('[InternalBinding][resolveInternalSource] target is required.', target);
+    assert('[InternalBinding][resolveInternalSource] sourceType is required.', sourceType);
+
+    if (!this.internalSourceDefs.has(sourceType)) {
+      logger.warn(`[InternalBinding][resolveInternalSource] sourceType [${sourceType}] is unknown.`, this.internalSourceDefs.has(sourceType));
+      return null;
+    }
+
+    const internalSourceDef = this.internalSourceDefs.get(sourceType);
+
+    return internalSourceDef.resolveSource({ sourceType, target, ...others });
+  }
+
+  static getBasePath({ sourceType, ...others }) {
+    assert('[InternalBinding][getBasePath] sourceType is required.', sourceType);
+
+    if (!this.internalSourceDefs.has(sourceType)) {
+      logger.warn(`[InternalBinding][getBasePath] sourceType [${sourceType}] is unknown.`, this.internalSourceDefs.has(sourceType));
+      return null;
+    }
+
+    const internalSourceDef = this.internalSourceDefs.get(sourceType);
+
+    return internalSourceDef.getBasePath ? internalSourceDef.getBasePath({ sourceType, ...others }) : null;
+  }
+}
+
+export default InternalBinding;
+
+/**
+ * @typedef JSON.InternalBinding
+ *
+ * @property {string} sourceType Type de source.
+ * - `actor` = liaison avec un acteur,
+ * - `redy/wos-relative-variable` = liaison une variable WOS,
+ * - `stage` = scène ou composite
+ *  - `color` = Couleur
+ * - `picture` = Image
+ * - `constant` = Constante
+ * - `text` = texte
+ * - `synapp` = la synapp
+ * - `user-agent` = l'équipement
+ * - `host` = l'hôte
+ * - `session` = la session
+ * - `user` = l'utilisateur
+ * @property {string|null} [path=null] Chemin d'accès à la valeur source. La valeur `null` indique la valeur source est le contexte de donnée lui-même. &lt;br>Exemple:  `properties.width` ou `additionals.prop1`
+ * @property {boolean} [canWrite=false] L'écriture est autorisée?
+ * @property {*|null} [dataContext=null] Le contexte de donnée pris comme origine de la valeur source. Elle sera obtenue vial le chemin.
+ * @property {Binding.ReadModes} [readMode=always] Mode de lecture de la valeur cible.
+ */
+
+/**
+ * Setup de liaison interne vers un acteur. `sourceType='actor'`
+ * @class Binding.Setup.Actor
+ * @extends Binding.Setup.Internal
+ */
+
+/**
+ * Clé de l'acteur source.
+ * @attribute sourceKey
+ * @required
+ * @type {String}
+ */
+
+/**
+ * Setup de liaison interne relative.
+ * @class Binding.Setup.Relative
+ * @extends Binding.Setup.Internal
+ */
+
+/**
+ * Chemin pour trouver la source de la liaison.
+ * @attribute sourcePath
+ * @optional
+ * @default self
+ * @example
+ * - `self` pour l'acteur lui même.
+ * - `parent` pour le parent de l'acteur.
+ * - `parent.parent` pour le parent du parent de l'acteur.
+ * @type {String}
+ */
+
+/**
+ * Setup de liaison interne vers la scène ou le composite parent.
+ *
+ * Attention, dans la définition du `path`, il faut utiliser `properties.specific1` plutôt que `additionals.specific1` pour accéder à la propriété spécifique `specific1` du composite parent.
+ * @class Binding.Setup.Stage
+ * @extends Binding.Setup.Internal
+ */
+</code></pre>
+		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -200,3 +291,4 @@
 	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->

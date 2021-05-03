@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>Actor.Properties.Display.IframeProperties</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Synapps Script API","systemSummary":"Documentation de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = true;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					Synapps Script API
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#_fixValue">_fixValue</a></li>
+											<li><a href="global.html#changeStyleName">changeStyleName</a></li>
+											<li><a href="global.html#data">data</a></li>
+											<li><a href="global.html#isRequesting">isRequesting</a></li>
+											<li><a href="global.html#removeBinding">removeBinding</a></li>
+											<li><a href="global.html#request">request</a></li>
+											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
+											<li><a href="global.html#write">write</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
+											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="WithProperties.html">WithProperties</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
+											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-home.html">home</a></li>
+											<li><a href="tutorial-other.html">other</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">class</span>
+				<h1><span class="ancestors"><a href="Actor.html">Actor</a><a href="Actor.Properties.html">.Properties</a><a href="Actor.Properties.Display.html">.Display</a>.</span><span class="name">IframeProperties</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-9 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_class.html">Classes</a></li>
+							<li class="active"><a href="Actor.html">Actor</a><a href="Actor.Properties.html">.Properties</a><a href="Actor.Properties.Display.html">.Display</a>.IframeProperties</li>
+						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-inherited" type="checkbox" value="" checked>
+									Inherited
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+						</div>
+					<section>
+							<dl class="symbol primary">
+								<dt class="symbol-title class">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">IframeProperties</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+</dt>
+<dd class="symbol-details class" style="max-height: 9999px;">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+									<h3>Members</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="url" class="member public"><span class="name">url</span><span class="signature-type"> :String</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>URL de la page WEB à afficher.<br>
+			Peut être complété par des jokers.<br>
+			Modificateur : <strong>CSS</strong>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="allowScripts" class="member public"><span class="name">allowScripts</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les scrips</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="allowSameOrigin" class="member public"><span class="name">allowSameOrigin</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Traiter comme même origine</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="allowModals" class="member public"><span class="name">allowModals</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les modales</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="allowPopups" class="member public"><span class="name">allowPopups</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les popups</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="allowForms" class="member public"><span class="name">allowForms</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les formulaires</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="classNames" class="member public inherited"><span class="name">classNames</span><span class="signature-type"> :String</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Nom de class CSS séparées par une virgule à ajouter à l'acteur.<br>
+			Modificateur : <strong>Rendu</strong>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#classNames">Actor.Properties.BaseActorProperties#classNames</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="height" class="member public inherited"><span class="name">height</span><span class="signature-type"> :String</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur de l'acteur<br>
+			Modificateur : <strong>Gabarit</strong>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;auto&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#height">Actor.Properties.BaseActorProperties#height</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="minHeight" class="member public inherited"><span class="name">minHeight</span><span class="signature-type"> :String</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur minimale de l'acteur<br>
+			Modificateur : <strong>Gabarit</strong>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;auto&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#minHeight">Actor.Properties.BaseActorProperties#minHeight</a></p>
+								</div>
+							</div>
+			
+							<!-- overrides -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Overrides</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#minHeight">Actor.Properties.BaseActorProperties#minHeight</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="maxHeight" class="member public inherited"><span class="name">maxHeight</span><span class="signature-type"> :String</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur maximale de l'acteur<br>
+			Modificateur : <strong>Gabarit</strong>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;none&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#maxHeight">Actor.Properties.BaseActorProperties#maxHeight</a></p>
+								</div>
+							</div>
+			
+							<!-- overrides -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Overrides</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#maxHeight">Actor.Properties.BaseActorProperties#maxHeight</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="width" class="member public inherited"><span class="name">width</span><span class="signature-type"> :String</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Largeur de l'acteur<br>
+			Modificateur : <strong>Gabarit</strong>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;auto&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#width">Actor.Properties.BaseActorProperties#width</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+									<h3>Methods</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="reset" class="function public inherited"><span class="name">reset</span><span class="signature-params">( <span class="signature-param">name</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Réinitialise à sa valeur par défaut une propriété par son nom.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>name</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>Nom de la propriété à réinitialiser.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="PrototypedBase.html#reset">PrototypedBase#reset</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+							</article>
+					</section>
+			</div>
+				<div class="col-md-3 side-content">
+					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
+				</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 3rd May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>

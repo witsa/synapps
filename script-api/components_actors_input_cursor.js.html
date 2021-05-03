@@ -1,9 +1,10 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Event</title>
+		<title>components/actors/input/cursor.js</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -13,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Synapps Script API","systemSummary":"Documentation de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -113,63 +114,264 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">namespace</span>
-				<h1><span class="name">Event</span></h1>
+				<span class="kind">source</span>
+				<h1><span class="name">components/actors/input/cursor.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="list_namespace.html">Namespaces</a></li>
-							<li class="active">Event</li>
-						</ol>
-					<section>
-							<dl class="symbol primary">
-								<dt class="symbol-title namespace">
-			<h2 class="namespace"><span class="name">Event</span></h2>
-</dt>
-<dd class="symbol-details namespace" style="max-height: 9999px;">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Les évènements</p></div>
-			</div>	</div>
-</dd>
-							</dl>
-							<article class="secondary">
-									<h3>Classes</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContext" class="class public"><a href="Event.BaseContext.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContextUtils" class="class public"><a href="Event.BaseContextUtils.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContextUtils</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="PropertyChangedContext" class="class public"><a href="Event.PropertyChangedContext.html"><span class="signature-new">new&nbsp;</span><span class="name">PropertyChangedContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-									</dl>
-							</article>
-					</section>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { action, computed, notifyPropertyChange } from '@ember/object';
+import { later, throttle } from '@ember/runloop';
+import { isPresent } from '@ember/utils';
+import { tracked } from '@glimmer/tracking';
+import BaseActor from 'synapps-ui/components/actors/input/base-input';
+import prototypeSetup from 'synapps-ui/components/actors/input/cursor-prototype-setup';
+import hasOwnProperty from 'synapps-ui/tools/has-own-property';
+
+const toLowerCase = (v) => {
+  return v &amp;&amp; v.toLowerCase ? v.toLowerCase() : v;
+}
+
+export default class Cursor extends BaseActor {
+
+  @tracked
+  _isDisplayed = true;
+
+  @tracked
+  _slidingValue;
+  get slidingValue() {
+    return this._slidingValue;
+  }
+  set slidingValue(value) {
+    this._slidingValue = value;
+    notifyPropertyChange(this, 'slidingValue');
+  }
+
+  @tracked
+  _slidingValue2;
+  get slidingValue2() {
+    return this._slidingValue2;
+  }
+  set slidingValue2(value) {
+    this._slidingValue2 = value;
+    notifyPropertyChange(this, 'slidingValue2');
+  }
+
+  @computed('properties.{isSingleValue,value,value2}')
+  get _start() {
+    const value = this.properties.value;
+    const value2 = this.properties.value2;
+    return this.properties.isSingleValue ? [value] : [value, value2];
+  }
+
+  @computed('properties.barPosition')
+  get _barPosition() {
+    // from v1
+    return toLowerCase(this.properties.barPosition || 'default');
+  }
+
+  @computed('properties.{isSingleValue,barCenter}', '_barPosition')
+  get _connect() {
+    let value = false;
+    switch (this._barPosition) {
+      case 'lower':
+        value = this.properties.isSingleValue ? [true, false] : [false, true, false];
+        break;
+      case 'upper':
+        value = this.properties.isSingleValue ? [false, true] : [true, false, true];
+        break;
+      case 'default':
+      default:
+        break;
+    }
+
+    return value;
+  }
+
+  @computed('properties.{min,max,step}')
+  get _range() {
+    const min = this.properties.min;
+    var max = this.properties.max;
+    var isValid = isPresent(min) &amp;&amp; !isNaN(min) &amp;&amp; isPresent(max) &amp;&amp; !isNaN(max) &amp;&amp; (max > min);
+    return isValid
+      ? {
+        'min': this._fixValue(min),
+        'max': this._fixValue(max)
+      }
+      : {
+        'min': this._fixValue(0),
+        'max': this._fixValue(100)
+      }
+  }
+
+  @computed('properties.{orientation,withTooltips}')
+  get _cursorStyle() {
+    return `
+  ${this.properties.orientation === 'vertical' ? 'height' : 'width'}: 100%;
+  `;
+  }
+
+  @computed('properties.step')
+  get _step() {
+    let value = parseFloat(this.properties.step);
+    value = isNaN(value) ? null : value;
+    return value;
+  }
+
+  @computed('properties.{isSingleValue,limit}', '_step')
+  get _limit() {
+    if (this.properties.isSingleValue) return undefined;
+    let limit = parseFloat(this.properties.limit);
+    if (isNaN(limit)) return undefined;
+    if (limit &lt; this._step) return this._step;
+    return this._fixValue(this.properties.limit);
+  }
+
+  @computed('properties.{isSingleValue,margin,step}')
+  get _margin() {
+    if (this.properties.isSingleValue) return undefined;
+    let margin = parseFloat(this.properties.margin);
+    if (isNaN(margin)) return undefined;
+    if (margin &lt; 0) return 0;
+    return this._fixValue(this.properties.margin);
+  }
+
+  get _format() {
+    return {
+      // 'to' the formatted value. Receives a number.
+      to: (value) => {
+        return this._fixValue(value);
+      },
+      // 'from' the formatted value.
+      // Receives a string, should return a number.
+      from: (value) => {
+        return this._fixValue(parseFloat(value));
+      }
+    };
+  }
+
+  @computed('properties.enabled')
+  get disabled() {
+    return !this.properties.enabled;
+  }
+  set disabled(value) {
+    // eslint-disable-next-line ember/no-assignment-of-untracked-properties-used-in-tracking-contexts
+    this.properties.enabled = !value;
+    notifyPropertyChange(this, 'disabled');
+    // eslint-disable-next-line no-setter-return
+    return !this.properties.enabled;
+  }
+
+  @action
+  _didElementInsert(element) {
+    this.slidingValue = this.properties.value;
+    this.slidingValue2 = this.properties.value2;
+    super._didElementInsert.bind(super.this)(element);
+  }
+
+  @action
+  _updateSlider() {
+    this._isDisplayed = false;
+    later(() => {
+      if (this.isDestroying || this.isDestroyed) return;
+      this._isDisplayed = true;
+    }, 150);
+  }
+
+  /**
+   * fix javascript problem about value with decimal. Ex 2.00000000001
+   * @param {*} val
+   */
+  _fixValue(val) {
+    const step = parseFloat(this._step);
+    if (isNaN(step)) return val;
+    const round = Math.round(val / step) * step;
+    return parseFloat(round.toFixed(Math.abs(Math.min(0, Math.floor(Math.log10(step))))));
+  }
+
+  _extractValues(val) {
+    if (Array.isArray(val)) {
+      // double cursor
+      return {
+        value: this._fixValue(val[0]),
+        value2: (val.length > 1 &amp;&amp; !isNaN(val[1]))
+          ? this._fixValue(val[1])
+          : this._fixValue(val[0])
+      }
+    } else {
+      // single cursor
+      return {
+        value: this._fixValue(val)
+      }
+    }
+  }
+
+  _doSetValues(values) {
+    if (this.properties.value !== values.value &amp;&amp; !isNaN(values.value)) {
+      // eslint-disable-next-line ember/no-assignment-of-untracked-properties-used-in-tracking-contexts
+      this.properties.value = values.value;
+    }
+
+    if (hasOwnProperty(values, 'value2') &amp;&amp; this.properties.value2 !== values.value2 &amp;&amp; !isNaN(values.value2)) {
+      // eslint-disable-next-line ember/no-assignment-of-untracked-properties-used-in-tracking-contexts
+      this.properties.value2 = values.value2;
+    }
+  }
+
+  _doSetSlidingValues(values) {
+    if (this.slidingValue !== values.value &amp;&amp; !isNaN(values.value)) {
+      this.slidingValue = values.value;
+    }
+
+    if (hasOwnProperty(values, 'value2') &amp;&amp; this.slidingValue2 !== values.value2 &amp;&amp; !isNaN(values.value2)) {
+      this.slidingValue2 = values.value2;
+    }
+  }
+
+  _updateValues(values) {
+    if (this.properties.isSlideValued) {
+      this._doSetValues(values);
+    }
+
+    this._doSetSlidingValues(values);
+
+    this.runEvent('onCursorUpdate');
+  }
+
+  _setValues(values) {
+    this._doSetValues(values);
+
+    this.runEvent('onCursorSet');
+  }
+
+  _doStyling() {
+    super._doStyling();
+
+    this.actor.style.setProperty('--barColor', this.properties.barColor);
+    this.actor.style.setProperty('--barBgColor', this.properties.barBgColor);
+  }
+
+  @action
+  _onUpdateValues(val) {
+    throttle(this, this._updateValues, this._extractValues(val), 100, true);
+  }
+
+  @action
+  _onSetValues(val) {
+    const values = this._extractValues(val);
+    this._setValues(values);
+    this._updateValues(values);
+  }
+
+}
+
+Cursor.registerInDefinitions({ type: 'input/cursor', componentName: 'synapps-ui/actors/input/cursor', prototypeSetup });
+</code></pre>
+		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -200,3 +402,4 @@
 	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->

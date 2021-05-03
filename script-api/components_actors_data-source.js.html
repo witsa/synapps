@@ -1,9 +1,10 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Event</title>
+		<title>components/actors/data-source.js</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -13,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Synapps Script API","systemSummary":"Documentation de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -113,63 +114,308 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">namespace</span>
-				<h1><span class="name">Event</span></h1>
+				<span class="kind">source</span>
+				<h1><span class="name">components/actors/data-source.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="list_namespace.html">Namespaces</a></li>
-							<li class="active">Event</li>
-						</ol>
-					<section>
-							<dl class="symbol primary">
-								<dt class="symbol-title namespace">
-			<h2 class="namespace"><span class="name">Event</span></h2>
-</dt>
-<dd class="symbol-details namespace" style="max-height: 9999px;">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Les évènements</p></div>
-			</div>	</div>
-</dd>
-							</dl>
-							<article class="secondary">
-									<h3>Classes</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContext" class="class public"><a href="Event.BaseContext.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContextUtils" class="class public"><a href="Event.BaseContextUtils.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContextUtils</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="PropertyChangedContext" class="class public"><a href="Event.PropertyChangedContext.html"><span class="signature-new">new&nbsp;</span><span class="name">PropertyChangedContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-									</dl>
-							</article>
-					</section>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { notifyPropertyChange } from '@ember/object';
+import { cancel, debounce as emDebounce, later } from '@ember/runloop';
+import logger from 'logger';
+import BaseActor from 'synapps-ui/components/actors/base-actor';
+import toolsDebounce from 'synapps-ui/tools/debounce';
+import isValuesEqual from 'synapps-ui/tools/is-values-equal';
+import { inject as service } from '@ember/service';
+const STORE_DATA_DELAY = 10;
+
+/**
+ * Classe de base pour fournisseur de donnée. Permet de paramétrer les requêtes et d'exposer une donnée pour des liaisons ou accessible par script.
+ *
+ * @class Actor.DataSource
+ * @extends Actor.BaseActor
+ */
+
+export default class DataSource extends BaseActor {
+
+  _runner = null;
+
+  @service
+  router;
+
+  _autoRefreshing = false;
+  get autoRefreshing() {
+    return this._autoRefreshing;
+  }
+
+  _isFirstRequestDone = false;
+  get isFirstRequestDone() {
+    return this._isFirstRequestDone;
+  }
+
+  _datasourceCanWrite = false;
+
+  // TODO: factoriser lors du dév des reflets ou d'un fournisseur pour les journaux.
+
+  _data = null;
+
+  /**
+   * Donnée exposée.
+   * @attribute data
+   * @type {any}
+   */
+  get data() {
+    return this._data;
+  }
+  set data(newValue) {
+    const oldValue = this._data;
+    if (oldValue === newValue) return newValue;
+    this._data = this._onWillWriteInData({ oldValue, newValue });
+    if (this.properties.writeOnChange) {
+      // attention : asynchrone
+      this.write();
+    }
+
+    notifyPropertyChange(this, 'data');
+  }
+
+  _storeData(newValue) {
+    if (isValuesEqual(this._data, newValue)) return;
+    this._data = newValue;
+    notifyPropertyChange(this, 'data');
+  }
+
+  _storeDataDebounced(newValue) {
+    emDebounce(this, '_storeData', newValue, STORE_DATA_DELAY);
+  }
+
+  _isRequesting = false;
+
+  /**
+   * Requête en cours ?
+   * @attribute isRequesting
+   * @type {Boolean}
+   * @default false
+   */
+  get isRequesting() {
+    return this._isRequesting;
+  }
+
+  set isRequesting(value) {
+    this._isRequesting = value;
+    notifyPropertyChange(this, 'isRequesting');
+  }
+
+  _onInit() {
+    this.stage.dataSourcesRegister.record({ record: this });
+    super._onInit();
+  }
+
+  _canStartAutoRefresh() {
+    return this.properties.autoRefresh &amp;&amp; this.properties.mode === 'auto';
+  }
+
+  _canRequestAtStart() {
+    return this.properties.mode === 'auto';
+  }
+
+  async _autostart() {
+    logger.debug('_autostart()', this.uniqPath, this.properties.mode, 'autoRefresh:', this.properties.autoRefresh);
+    if (this._canStartAutoRefresh()) {
+      await this._startAutoRefresh();
+      return;
+    }
+
+    if (this._canRequestAtStart()) {
+      await this.requestDebounce();
+      return;
+    }
+  }
+
+  async startAutoRefresh() {
+    logger.debug('startAutoRefresh()', this.uniqPath, 'autoRefresh:', this.properties.autoRefresh);
+    if (this.properties.autoRefresh) {
+      await this._startAutoRefresh();
+      return;
+    }
+  }
+
+  _onAfterPropertyChanged({ propertyPath, ...others }) {
+    super._onAfterPropertyChanged({ propertyPath, ...others });
+
+    if (propertyPath === 'properties.autoRefresh') {
+      if (this.properties.autoRefresh) {
+        this._startAutoRefresh();
+      } else {
+        this._stopAutoRefresh();
+      }
+    }
+  }
+
+  async _resolve() {
+    throw '[DataSource][_resolve] MUST BE IMPLEMENTED!';
+  }
+
+  async resolve() {
+    await this._resolve();
+    return this.data;
+  }
+
+  async _startAutoRefresh() {
+    logger.debug('_startAutoRefresh', this.uniqPath);
+    // await this.resolve();
+    if (!this.autoRefreshing) {
+      this._autoRefreshing = true;
+      return await this._autoRefresh();
+    } else {
+      return await this.request();
+    }
+  }
+
+  async _autoRefresh() {
+    if (this.isDestroyed || this.isDestroying) return;
+    if (this.router.currentRouteName.includes('.login')) {
+      this._stopAutoRefresh();
+      return;
+    }
+
+    await this.request();
+    this._runner = later(() => {
+      if (this.isDestroying || this.isDestroyed) return;
+      if (!this.properties.autoRefresh) return;
+      this._autoRefresh();
+    }, this.properties.autoRefreshDelay * 1000);
+  }
+
+  _stopAutoRefresh() {
+    logger.debug('_stopAutoRefresh', this.uniqPath);
+    this._autoRefreshing = false;
+    if (this._runner) {
+      cancel(this._runner);
+    }
+
+    this._runner = null;
+  }
+
+  /**
+   * Effectue une requête retardée. Tant que la méthode est répétée en moins de 300ms, elle ne partira pas.
+   * @method requestDebounce
+   */
+  requestDebounce = toolsDebounce(async function() {
+    logger.debug('[DataSource][requestDebounce]');
+    return await this.request();
+  }, 300);
+
+  /**
+   * Effectue une requête.
+   * @method request
+   * @return {any} La donnée.
+   * @async
+   */
+  async request() {
+    if (this.isDestroying || this.isDestroyed) return;
+    try {
+      this.isRequesting = true;
+      let data = await this._request();
+
+      this._storeData(data);
+      /**
+       * Se produit lorsque la requête s'est terminée.
+       * Dans le contexte, on retrouve la donnée dans le champ `data` ou une erreur dans le champ `error`.
+       * @event onRequestDone
+       * @param {Actor.Event.BaseContext} context
+       */
+      this.runEvent('onRequestDone', { error: null, data: data })
+    } catch (e) {
+      logger.error(e);
+      this._storeData(null);
+      this.runEvent('onRequestDone', { error: e })
+    }
+
+    this.isRequesting = false;
+    if (!this.isFirstRequestDone) {
+      this._isFirstRequestDone = true;
+    }
+
+    return this.data;
+  }
+
+  /**
+   * Effectue une requête d'écriture.
+   * @method write
+   * @return {any} La donnée.
+   * @async
+   */
+  async write() {
+    if (!this._datasourceCanWrite) return this.data;
+    let data = null;
+    try {
+      this.isRequesting = true;
+      data = await this._write();
+
+      /**
+       * Se produit lorsque la requête d'écriture s'est terminée.
+       * Dans le contexte, on retrouve la donnée dans le champ `data` ou une erreur dans le champ `error`.
+       * @event onWriteDone
+       * @param {Actor.Event.BaseContext} context
+       */
+      this.runEvent('onWriteDone', { error: null, data: data });
+    } catch (e) {
+      logger.error(e);
+      this.runEvent('onWriteDone', { error: e });
+    }
+
+    this.isRequesting = false;
+    return data;
+  }
+
+  async _request() {
+    return null;
+  }
+
+  async _write() {
+    return null;
+  }
+
+  _onWillWriteInData( /*{ oldValue, newValue }*/ ) {
+    throw '[DataSource][_onWillWriteInData] NOT IMPLEMENTED!';
+  }
+
+  willDestroy() {
+    if (this.isDestroyed) return;
+
+    this._stopAutoRefresh();
+
+    this._data = null;
+
+    if (this.scene &amp;&amp; this.stage.dataSourcesRegister) {
+      this.stage.dataSourcesRegister.unrecord({ record: this });
+    }
+
+    super.willDestroy();
+  }
+
+  _doComputeStyle({ isAlreadyWrite }) {
+    if (isAlreadyWrite)
+      return {
+        width: 0,
+        height: 0
+      };
+
+    return {};
+  }
+
+  _disposeInParent() {
+    // rient à faire;
+  }
+
+}
+</code></pre>
+		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -200,3 +446,4 @@
 	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->

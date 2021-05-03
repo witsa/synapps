@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Actor.BaseActor</title>
+		<title>&amp;lt;private&amp;gt; Actor.BaseActor</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -12,7 +12,7 @@
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"FooDoc","systemSummary":"A Bootstrap and Handlebars based template for JSDoc3.","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Synapps Script API","systemSummary":"Documentation de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = true;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -23,7 +23,7 @@
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
-					FooDoc
+					Synapps Script API
 				</a>
 				<!-- displayed on small devices -->
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
@@ -37,26 +37,43 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="global.html#_fixValue">_fixValue</a></li>
 											<li><a href="global.html#changeStyleName">changeStyleName</a></li>
-											<li><a href="global.html#createBasicBinding">createBasicBinding</a></li>
-											<li><a href="global.html#createInternalBinding">createInternalBinding</a></li>
-											<li><a href="global.html#getBinding">getBinding</a></li>
+											<li><a href="global.html#data">data</a></li>
+											<li><a href="global.html#isRequesting">isRequesting</a></li>
 											<li><a href="global.html#removeBinding">removeBinding</a></li>
+											<li><a href="global.html#request">request</a></li>
+											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
+											<li><a href="global.html#write">write</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
-											<li><a href="Actor_Composite.html">Actor#Composite</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
+											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
 											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="WithProperties.html">WithProperties</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
 									<ul class="dropdown-menu">
-											<li><a href="Event.html#.BaseContext">Event.BaseContext</a></li>
-											<li><a href="Event.html#.PropertyChangedContext">Event.PropertyChangedContext</a></li>
 											<li><a href="Stage.html">Stage</a></li>
 									</ul>
 								</li>
@@ -64,7 +81,19 @@
 									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
+											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-home.html">home</a></li>
+											<li><a href="tutorial-other.html">other</a></li>
 									</ul>
 								</li>
 				</ul>
@@ -85,7 +114,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="ancestors"><a href="Actor.html">Actor</a>.</span><span class="name">BaseActor</span></h1>
+				<h1><span class="signature-attribs">&lt;private> </span><span class="ancestors"><a href="Actor.html">Actor</a>.</span><span class="name">BaseActor</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -98,53 +127,12 @@
 						</ol>
 					<section>
 							<dl class="symbol primary">
-								<dt class="symbol-title class collapsible-symbol expanded">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">BaseActor</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+								<dt class="symbol-title class">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="signature-attribs">&lt;private> </span><span class="name">BaseActor</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
 </dt>
-<dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
+<dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc">Acteur de base.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-							<!-- augments -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Augments</label>
-								<div class="col-sm-9">
-										<ul class="form-control-static">
-												<li>WithEvents</li>
-												<li>WithAdditionals</li>
-												<li>WithProperties</li>
-												<li>Behavior.DataContextual</li>
-												<li>SourceOfInternalBinding</li>
-										</ul>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-82">line 82</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Acteur de base.</p></div>
 			</div>	</div>
 </dd>
 							</dl>
@@ -152,647 +140,188 @@
 									<h3>Members</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
+			<h4 id="properties" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">properties</span><span class="signature-type"> :<a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient les propriétés de l'acteur.</p></div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
 			<h4 id="isDestroyed" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroyed</span><span class="signature-type"> :Boolean</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Vrai quand l'acteur est détruit.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">false</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-113">line 113</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'acteur est détruit.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="isDestroying" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroying</span><span class="signature-type"> :Boolean</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Vrai quand l'acteur est en train d'être détruit.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">false</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-122">line 122</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'acteur est en train d'être détruit.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
+			<h4 id="dataStores" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">dataStores</span><span class="signature-type"> :Ember.Service</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient les magasins de données de la synapp.</p></div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="accessories" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">accessories</span><span class="signature-type"> :Object</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient la liste des accessoires. <br> La gestion des accessoire s'effectue avec les méthodes : <a href="Actor.BaseActor.html#createAccessory">Actor.BaseActor#createAccessory</a></p></div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
 			<h4 id="key" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">key</span><span class="signature-type"> :string</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">La clé unique de l'acteur.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">string</span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-200">line 200</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>La clé unique de l'acteur.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="stage" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">stage</span><span class="signature-type"> :<a href="Stage.html">Stage</a></span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Scene ou Composite parent de l'acteur.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type"><a href="Stage.html">Stage</a></span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-210">line 210</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Scene ou Composite parent de l'acteur.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="rootScene" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">rootScene</span><span class="signature-type"> :<a href="Scene.html">Scene</a></span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Scene racine de l'acteur.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type"><a href="Scene.html">Scene</a></span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-220">line 220</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Scene racine de l'acteur.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="scene" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">scene</span><span class="signature-type"> :<a href="Stage.html">Stage</a></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id="scene" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">scene</span><span class="signature-type"> :<a href="Scene.html">Scene</a></span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Première scène parente de l'acteur.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type"><a href="Stage.html">Stage</a></span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-231">line 231</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Première scène parente de l'acteur.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="synapp" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">synapp</span><span class="signature-type"> :<a href="Stage.html">Stage</a></span></h4>
+											<dt class="symbol-title member public">
+			<h4 id="synapp" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">synapp</span><span class="signature-type"> :Synapp</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">La Synapp.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type"><a href="Stage.html">Stage</a></span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-241">line 241</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>La Synapp.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="styleName" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">styleName</span><span class="signature-type"> :String</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Le nom du style de l'acteur.
-			
-			  Pour changer de style, il faut utiliser {{#crossLink "Actor.BaseActor/changeStyleName:method"}}{{/crossLink}}</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">String</span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-253">line 253</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Le nom du style de l'acteur.<br>
+			<br><br>
+			Pour changer de style, il faut utiliser Actor.BaseActor#changeStyleName</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="actor" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">actor</span><span class="signature-type"> :Element</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">L'élément DOM de l'acteur.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Element</span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-264">line 264</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>L'élément DOM de l'acteur.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="parent" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">parent</span><span class="signature-type"> :<a href="Actor.BaseActor.html">Actor.BaseActor</a></span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Acteur parent.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type"><a href="Actor.BaseActor.html">Actor.BaseActor</a></span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-275">line 275</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Acteur parent. <br> Peut être absent si l'acteur est le principal.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="type" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">type</span><span class="signature-type"> :string</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Type de l'acteur.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">string</span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-286">line 286</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Type de l'acteur.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="isLeadActor" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isLeadActor</span><span class="signature-type"> :Boolean</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Est-ce un acteur principal ?</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-297">line 297</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Est-ce un acteur principal ?</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
 			<h4 id="uniqPath" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">uniqPath</span><span class="signature-type"> :string</span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Chemin unique de l'acteur.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">string</span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-312">line 312</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Chemin unique de l'acteur.</p></div>
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public collapsible-symbol">
+											<dt class="symbol-title member public">
+			<h4 id="uniqClass" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">uniqClass</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Classe <code>CSS</code> unique de l'acteur.</p></div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="BaseAccessory" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">BaseAccessory</span><span class="signature-type"> :BaseAccessory</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient la classe de base des accessoire.</p></div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
 			<h4 id="leadActor" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">leadActor</span><span class="signature-type"> :<a href="Actor.BaseActor.html">Actor.BaseActor</a></span></h4>
 		</dt>
-<dd class="symbol-details member public  collapsible-symbol">
+<dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Récupération de l'acteur principal.</div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type"><a href="Actor.BaseActor.html">Actor.BaseActor</a></span></div>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-339">line 339</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient l'acteur principal de la scène aou composite présentant l'acteur.</p></div>
 			</div>	</div>
 </dd>
 									</dl>
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
+											<dt class="symbol-title function public">
 			<h4 id="runEvent" class="function public"><span class="name">runEvent</span><span class="signature-params">( <span class="signature-param">eventName</span>, <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
+<dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Exécute un évènement.</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Exécute un évènement.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -808,59 +337,295 @@
 								<td><code>eventName</code></td>
 							<td><span class="param-type">String</span></td>
 							<td class="last">
-									Nom de l'évènement
+									<p>Nom de l'évènement</p>
 							</td>
 						</tr>
 						<tr>
 								<td><code>args</code></td>
 							<td><span class="param-type">Object</span></td>
 							<td class="last">
-									Arguments à passer dans l'objet de contexte.
+									<p>Arguments à passer dans l'objet de contexte.</p>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="createBasicBinding" class="function public"><span class="name">createBasicBinding</span><span class="signature-params">( <span class="signature-param">targetValuePath</span>, <span class="signature-param">setup</span> [,&nbsp;<span class="signature-param">saveInSetup</span>&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{<a href="Binding.BasicBinding.html">Binding.BasicBinding</a>}</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Création d'une liaison basique.</p>
+			<p>La source est prise dans le contexte de donnée.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>targetValuePath</code></td>
+							<td><span class="param-type">string</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Chemin de la cible</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>setup</code></td>
+							<td><span class="param-type"><a href="JSON.html#.BasicBinding">JSON.BasicBinding</a></span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>saveInSetup</code></td>
+							<td><span class="param-type">Boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>true</td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
+								<label class="col-sm-3 control-label returns-type"><span class="param-type"><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></span></label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-475">line 475</a></p>
+									<div class="form-control-static returns-description"><p>la liaison créée.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">Le &#x60;setup&#x60; est un objet&#x60;&#x60;&#x60;actor.createBasicBinding(&#x27;properties.width, { path: &#x27;widthOfPanel&#x27; });&#x60;&#x60;&#x60;La propriété largeur de l&#x27;acteur est maintenant liée au champ &#x60;widthOfPanel&#x60; de son contexte de donnée.</code></pre>
+					</div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="getBinding" class="function public"><span class="name">getBinding</span><span class="signature-params">( <span class="signature-param">targetValuePath</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{<a href="Binding.html">Binding</a>}</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>targetValuePath</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>Chemin de la cible</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type"><a href="Binding.html">Binding</a></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la liaison demandée ou null si non trouvée.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="createInternalBinding" class="function public"><span class="name">createInternalBinding</span><span class="signature-params">( <span class="signature-param">targetValuePath</span>, <span class="signature-param">setup</span> [,&nbsp;<span class="signature-param">saveInSetup</span>&nbsp;]&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Création d'une liaison interne.</p>
+			<p>Le type de source permet à la liaison d'aller cherche la bonne source à placer dans le contexte de donnée de la liaison.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>targetValuePath</code></td>
+							<td><span class="param-type">string</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Chemin de la cible</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>setup</code></td>
+							<td><span class="param-type">Object</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>saveInSetup</code></td>
+							<td><span class="param-type">Boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>true</td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">Le &#x60;setup&#x60; est un objet différent en fonction du type de source.Pour un acteur :
+			&#x60;&#x60;&#x60;
+			{ sourceKey: &#x27;&lt;clé acteur&gt;&#x27;, path: &#x27;le chemin de la valeur de la source&#x27; }
+			&#x60;&#x60;&#x60;</code></pre>
+					</div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="createAccessory" class="function public"><span class="name">createAccessory</span><span class="signature-params">( <span class="signature-param">key</span>, <span class="signature-param">setup</span>, <span class="signature-param">saveInSetup</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Accessory}</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>key</code></td>
+							<td><span class="param-type">*</span></td>
+								<td></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>setup</code></td>
+							<td><span class="param-type">*</span></td>
+								<td></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>saveInSetup</code></td>
+							<td><span class="param-type">*</span></td>
+								<td>true</td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Accessory</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>L'accessoire créé.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- todo -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">To Do</label>
+								<div class="col-sm-9">
+										<p class="form-control-static">Création d&#x27;un accessoire</p>
 								</div>
 							</div>
 			
-			
-			
-			
 					</form>
 			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="removeAccessory" class="function public"><span class="name">removeAccessory</span><span class="signature-params">( <span class="signature-param">key</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>key</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
 </dd>
 									</dl>
 									<h3>Events</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title event public collapsible-symbol">
+											<dt class="symbol-title event public">
 			<h4 id="event:onInit" class="event public"><span class="name">onInit</span></h4>
 		</dt>
-<dd class="symbol-details event public  collapsible-symbol">
+<dd class="symbol-details event public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Se produit lorsque l'acteur est initialisé.</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque l'acteur est initialisé.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -874,41 +639,281 @@
 					<tbody>
 						<tr>
 								<td><code>context</code></td>
-							<td><span class="param-type"><a href="Event.html#.BaseContext">Event.BaseContext</a></span></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
 							<td class="last">
-									Contexte de l'évènement.
+									<p>Contexte de l'évènement.</p>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:onComputeLayout" class="event public"><span class="name">onComputeLayout</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque l'acteur calcul son gabarit.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:onPropertyChanged" class="event public"><span class="name">onPropertyChanged</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque n'importe quelle valeur d'une propriété ou d'une additionnelle change.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:properties/[propertyName]/onValueChanged" class="event public"><span class="name">properties/[propertyName]/onValueChanged</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la valeur de propriété <code>propertyName</code> change.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:additionals/[additionalName]/onValueChanged" class="event public"><span class="name">additionals/[additionalName]/onValueChanged</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la valeur de l'additionnelle <code>additionalName</code> change.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:properties/[propertyName]/binding/onReadTransform" class="event public"><span class="name">properties/[propertyName]/binding/onReadTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à la lecture de la source d'une liaison vers une propriété <code>propertyName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="base-actor.js.html">base-actor.js</a>, <a href="base-actor.js.html#line-455">line 455</a></p>
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
 								</div>
 							</div>
-			
-			
-			
-			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:additionals/[additionalName]/binding/onReadTransform" class="event public"><span class="name">additionals/[additionalName]/binding/onReadTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à la lecture de la source d'une liaison vers une additionnelle <code>additionalName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:properties/[propertyName]/binding/onWriteTransform" class="event public"><span class="name">properties/[propertyName]/binding/onWriteTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à l'écriture de la source d'une liaison vers une propriété <code>propertyName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la source.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public">
+			<h4 id="event:additionals/[additionalName]/binding/onWriteTransform" class="event public"><span class="name">additionals/[additionalName]/binding/onWriteTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à écriture de la source d'une liaison vers une additionnelle <code>additionalName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la source.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
+								</div>
+							</div>
 					</form>
 			</div>	</div>
 </dd>
@@ -922,8 +927,7 @@
 		</div>
 	</div>
 	<footer>
-				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 30th Apr 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 3rd May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

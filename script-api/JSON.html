@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Event</title>
+		<title>JSON</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -114,7 +114,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">namespace</span>
-				<h1><span class="name">Event</span></h1>
+				<h1><span class="name">JSON</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -123,44 +123,163 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_namespace.html">Namespaces</a></li>
-							<li class="active">Event</li>
+							<li class="active">JSON</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title namespace">
-			<h2 class="namespace"><span class="name">Event</span></h2>
+			<h2 class="namespace"><span class="name">JSON</span></h2>
 </dt>
 <dd class="symbol-details namespace" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Les évènements</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Définition des setups JSON.</p></div>
 			</div>	</div>
 </dd>
 							</dl>
 							<article class="secondary">
-									<h3>Classes</h3>
+									<h3>Type Definitions</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContext" class="class public"><a href="Event.BaseContext.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+											<dt class="symbol-title typedef public">
+			<h4 id=".InternalBinding" class="typedef public"><span class="name">InternalBinding</span></h4>
 		</dt>
-<dd class="symbol-details class public">
+<dd class="symbol-details typedef public">
 	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>sourceType</code></td>
+							<td><span class="param-type">string</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Type de source.</p>
+			<ul>
+			<li><code>actor</code> = liaison avec un acteur,</li>
+			<li><code>redy/wos-relative-variable</code> = liaison une variable WOS,</li>
+			<li><code>stage</code> = scène ou composite</li>
+			<li><code>color</code> = Couleur</li>
+			<li><code>picture</code> = Image</li>
+			<li><code>constant</code> = Constante</li>
+			<li><code>text</code> = texte</li>
+			<li><code>synapp</code> = la synapp</li>
+			<li><code>user-agent</code> = l'équipement</li>
+			<li><code>host</code> = l'hôte</li>
+			<li><code>session</code> = la session</li>
+			<li><code>user</code> = l'utilisateur</li>
+			</ul>
+							</td>
+						</tr>
+						<tr>
+								<td><code>path</code></td>
+							<td><span class="param-type">string</span> | <span class="param-type">null</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td></td>
+							<td class="last">
+									<p>Chemin d'accès à la valeur source. La valeur <code>null</code> indique la valeur source est le contexte de donnée lui-même. <br>Exemple:  <code>properties.width</code> ou <code>additionals.prop1</code></p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>canWrite</code></td>
+							<td><span class="param-type">boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>false</td>
+							<td class="last">
+									<p>L'écriture est autorisée?</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>dataContext</code></td>
+							<td><span class="param-type">*</span> | <span class="param-type">null</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td></td>
+							<td class="last">
+									<p>Le contexte de donnée pris comme origine de la valeur source. Elle sera obtenue vial le chemin.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>readMode</code></td>
+							<td><span class="param-type"><a href="Binding.html#.ReadModes">Binding.ReadModes</a></span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>always</td>
+							<td class="last">
+									<p>Mode de lecture de la valeur cible.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="BaseContextUtils" class="class public"><a href="Event.BaseContextUtils.html"><span class="signature-new">new&nbsp;</span><span class="name">BaseContextUtils</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+											<dt class="symbol-title typedef public">
+			<h4 id=".BasicBinding" class="typedef public"><span class="name">BasicBinding</span></h4>
 		</dt>
-<dd class="symbol-details class public">
+<dd class="symbol-details typedef public">
 	<div class="symbol-details-inner">
-	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title class public">
-			<h4 id="PropertyChangedContext" class="class public"><a href="Event.PropertyChangedContext.html"><span class="signature-new">new&nbsp;</span><span class="name">PropertyChangedContext</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-		</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>path</code></td>
+							<td><span class="param-type">string</span> | <span class="param-type">null</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td></td>
+							<td class="last">
+									<p>Chemin d'accès à la valeur source. La valeur <code>null</code> indique la valeur source est le contexte de donnée lui-même. <br>Exemple:  <code>properties.width</code> ou <code>additionals.prop1</code></p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>canWrite</code></td>
+							<td><span class="param-type">boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>false</td>
+							<td class="last">
+									<p>L'écriture est autorisée?</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>dataContext</code></td>
+							<td><span class="param-type">*</span> | <span class="param-type">null</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td></td>
+							<td class="last">
+									<p>Le contexte de donnée pris comme origine de la valeur source. Elle sera obtenue vial le chemin.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>readMode</code></td>
+							<td><span class="param-type"><a href="Binding.html#.ReadModes">Binding.ReadModes</a></span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>always</td>
+							<td class="last">
+									<p>Mode de lecture de la valeur cible.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 	</div>
 </dd>
 									</dl>
