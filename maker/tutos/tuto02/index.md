@@ -1,5 +1,5 @@
 ---
-title: Tutoriel 2
+title: 2. Les liaisons
 parent: Tutoriaux
 grand_parent: Documentation Maker
 ---
