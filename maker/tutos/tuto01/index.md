@@ -1,3 +1,8 @@
+---
+title: Tutoriel 1
+parent: Tutoriaux
+---
+
 [Accueil](../../) / [Tutoriaux](../index.md)
 
 # Tutorial 1: première SynApp "Helloworld" - **<span style='color:green'>Débutant</span>**
