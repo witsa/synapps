@@ -7,7 +7,8 @@ logo: "assets/LogoSynApps128.png"
 defaults:
   -
     scope:
-      path: "maker"
+      path: "maker/README"
       type: "pages"
     values:
       layout: "default"
+      title: "Documentation Maker"
