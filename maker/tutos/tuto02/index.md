@@ -1,3 +1,8 @@
+---
+title: Tutoriel 2
+parent: Tutoriaux
+---
+
 [Accueil](../../) / [Tutoriaux](../index.md)
 
 # Tutorial 2: les liaisons - **<span style='color:green'>Débutant</span>**
