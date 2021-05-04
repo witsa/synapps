@@ -2,7 +2,7 @@
 
 # Tutorial 3: l'acteur de disposition **empilement**
 
-![Empilement](assets/actor_stack.png)
+![Empilement](/assets/actor_stack.png)
 
 La première partie de ce tutorial est consacrée à l'acteur **_Empilement_** qui permet d'**empiler** des acteurs enfants **horizontalement** ou **verticalement** et repondre au besoin de restitution adaptative
 
@@ -10,7 +10,7 @@ La première partie de ce tutorial est consacrée à l'acteur **_Empilement_** q
 
 Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la première scène en **sceneStack** et le _nom_ avec **Empilement** puis déployer.
 
-![Empilement](assets/part1_scene.png)
+![Empilement](/assets/part1_scene.png)
 
 ## Construction de la scène
 
@@ -21,15 +21,15 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
     * définir la propriété _Position > Align. vertical_ à ```Etendre```
     * définir la propriété _Position > Align. horizontal_ à ```Etendre```
 
-    ![Empilement](assets/part1_align.png)
+    ![Empilement](/assets/part1_align.png)
 
 3. **Dupliquer** 3x l'acteur avec le bouton _Dupliquer_ ci-dessous. Vous aurez alors 4 acteurs _Texte_ enfant de l'acteur _Empilement_
 
-    ![Empilement](assets/part1_cloneText.png)
+    ![Empilement](/assets/part1_cloneText.png)
 
     La zone de prévisualisation doit ête celle-ci:
 
-    ![Empilement](assets/part1_textsPreview.png)
+    ![Empilement](/assets/part1_textsPreview.png)
 
 4. **Augmenter** la taille du texte des 4 acteurs peu visible car trop petite. On pourrait répéter cette modification dans la taille de police des 4 acteurs mais il est **préferrable de modifier cette proprité directement sur l'acteur Empilement** parent _stack1_. La taille du texte est alors automatiquement appliqué sur les enfants.
 
@@ -37,27 +37,27 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
     * la propriété _Aspect > Police > Taille_ à ```100px```
     * la propriété _Aspect > Police > Alignement texte_ à ```Centre```
 
-    ![Empilement](assets/part1_police.png)
+    ![Empilement](/assets/part1_police.png)
 
     La zone de prévisualisation est alors celle-ci:
 
-    ![Empilement](assets/part1_textsPreview2.png)
+    ![Empilement](/assets/part1_textsPreview2.png)
 
 5. **Changer** la couleur de fond des 4 acteurs _texte_. Sélectionner l'acteur _text2_ et modifier:
 
     * la propriété _Aspect > Couleur de fond_ avec une couleur
 
-     ![Empilement](assets/part1_bgColor.png)
+     ![Empilement](/assets/part1_bgColor.png)
 
     Répéter l'opération pour les 3 autres acteurs _texte_ avec des couleurs de fond **différentes**
 
-    ![Empilement](assets/part1_bgColors.png)
+    ![Empilement](/assets/part1_bgColors.png)
 
 6. Les couleurs de fond choisies étant plutot foncées,**changer** la couleur de la police des 4 acteurs textes avec du _blanc_. Cette couleur devra être appliquée aux 4 acteurs, donc même stratégie que ci-dessus: modifier la couleur sur l'acteur _Empilement_ **stack1**
 
     * la propriété _Aspect > Couleur_ à blanc ```#ffffff```
 
-    ![Empilement](assets/part1_policeColor.png)
+    ![Empilement](/assets/part1_policeColor.png)
 
 7. **Exécuter** la SynApp pour observer le résultat puis modifier la taille du navigateur et vérifier que les 4 acteurs _texte_ se répartissent équitablement l'espace
 
@@ -67,7 +67,7 @@ Créer une nouvelle SynApp **tuto03** avec le _MAKER_. Modifier le _label_ de la
 
     * la propriété _Spécifiques > Orientation_ à ```Horizontale``` et observer le résultat
 
-    ![Empilement](assets/part1_horizontal.png)
+    ![Empilement](/assets/part1_horizontal.png)
 
 2. **Repositionner** l'acteur _Empilement_ à la **verticale**
 
@@ -84,23 +84,23 @@ les 2 premiers acteurs _texte_ soient empilés horizontalement, les 2 derniers r
 
 2. **Déplacer** l'acteur _Empilement_ **stack6** en première position en utilisant le bouton _Déplacer_
 
-    ![Déplacer acteur](assets/part1_moveActor.png)
+    ![Déplacer acteur](/assets/part1_moveActor.png)
 
 3. **Couper** l'acteur _texte_ **text2**
 
-    ![Couper acteur](assets/part1_cutActor1.png)
-    ![Couper acteur](assets/part1_cutActor2.png)
+    ![Couper acteur](/assets/part1_cutActor1.png)
+    ![Couper acteur](/assets/part1_cutActor2.png)
 
     et le coller sur l'acteur _Empilement_ **stack6**
 
-    ![Couper acteur](assets/part1_pasteActor.png)
+    ![Couper acteur](/assets/part1_pasteActor.png)
 
 4. Procéder de la même façon avec l'acteur _texte_ **text3**
 
-    ![Couper acteur](assets/part1_stackHorizontal.png)
+    ![Couper acteur](/assets/part1_stackHorizontal.png)
 
 5. Le résultat dans la zone de prévisualisation doit être celui-ci
-    ![Couper acteur](assets/part1_textsPreview3.png)
+    ![Couper acteur](/assets/part1_textsPreview3.png)
 
 6. **Exécuter** la SynApp pour observer le résultat puis modifier la taille du navigateur
 
@@ -108,7 +108,7 @@ les 2 premiers acteurs _texte_ soient empilés horizontalement, les 2 derniers r
 
 Les acteurs dispositions ont d'autres propriétés spécifiques secondaires: le comportement en cas de dépassement horizontal ou vertical des acteurs enfants
 
-![Dépassement](assets/part1_overflow.png)
+![Dépassement](/assets/part1_overflow.png)
 
 Les valeurs possible sont:
 

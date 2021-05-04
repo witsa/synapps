@@ -3,7 +3,7 @@
 # Tutorial 7: les acteurs métiers natifs du REDY - Part 1: **Journal**
 
 L'acteur journal est un des plus utilisé et fonctionne simplement sans la moindre configuration. Plusieurs propriétés _spécifiques_ permettent de personnaliser et filtrer son rendu. Ces propriétés sont **explicites** et nous ne rentrerons pas dans le détail de chacune d'entre elles !
-![journal_properties](assets/journal_properties.png)
+![journal_properties](/assets/journal_properties.png)
 
 Nous allons plutot intégrer le journal dans une **scène évoluée** contenant une barre de commande permettant de configurer le **comportement** et les **filtres** du journal
 
@@ -94,7 +94,7 @@ L'ossature du journal est terminée !
 
     * renommer le _Label_ avec ```modalFilter```
     * lier en _interne_ la propriété _Aspect > Police > Taille_ avec la même propriété dans l'acteur ```stackRoot``` en _lecture_
-    ![bind_size](assets/bind_size.png)
+    ![bind_size](/assets/bind_size.png)
     _Remarque:_ dans une modale, la taille du texte n'est pas héritée du parent
 
     * définir la propriété _Gabarit > Hauteur_ avec la taille ```80vh``` (=80% de la hauteur de la fenêtre)
@@ -174,19 +174,19 @@ L'ossature du journal est terminée !
 
     * la liste des acteurs
 
-        ![actors_list](assets/actors_list.png)
+        ![actors_list](/assets/actors_list.png)
 
     * la prévisualisation de la scène
 
-        ![preview](assets/preview.png)
+        ![preview](/assets/preview.png)
 
     * la prévisualisation de la modale
 
-        ![preview_modal](assets/preview_modal.png)
+        ![preview_modal](/assets/preview_modal.png)
 
 10. **Déployer** et **éxécuter** la SynApp. Les filtres doivent encore être configurés et ne sont donc pas opérationnels. Tester l'ouverture de la modale en cliquant sur le bouton en haut à droite
 
-    ![execute](assets/execute.png)
+    ![execute](/assets/execute.png)
 
 ## Définition des liaisons
 
@@ -196,45 +196,45 @@ Nous allons finaliser la configuration de la scène et lier les propriétés des
 
     * Lier en _interne_ la propriété _Spécifiques > nbEvents_ (ou nom personnalisé que vous avez éventuellement défini) à la propriété  _Spécifiques > Nombre filtré_ de l'acteur ```journal``` en lecture uniquement
 
-        ![execute](assets/bind_nbEvents.png)
+        ![execute](/assets/bind_nbEvents.png)
 
 2. **Sélectionner** l'acteur ```buttonFilters```
 
     * Lier en _interne_ la propriété _Spécifiques > selSet_ (ou nom personnalisé que vous avez éventuellement défini) à la propriété  _Spécifiques > Ensemble_ de l'acteur ```journal```
 
-        ![execute](assets/bind_selSet.png)
+        ![execute](/assets/bind_selSet.png)
 
     _Remarque:_ ```null``` est affiché car aucun ensemble n'est défini dans le journal. Sélectionner l'acteur ```journal``` et définir un ensemble. L'identifiant de l'ensemble est alors affiché en haut à droite de l'écran de prévisualisation
-        ![execute](assets/journal_set.png)
+        ![execute](/assets/journal_set.png)
     Ce n'est pas vraiment compréhensible pour l'utilisateur ! Nous allons définir un script de transformation en lecture afin d'afficher l'ensemble sélectionné, ou pas, de façon plus intelligible
 
     * Resélectionner l'acteur ```buttonFilters``` et éditer le _Script de lecture_ de la propriété _Spécifiques > selSet_ (ou celui que vous avez défini)
 
-        ![execute](assets/transform_selSet.png)
+        ![execute](/assets/transform_selSet.png)
 
     Copier le javascript
     ```javascript
     const journal = context.synoStage.findByLabel('journal');
     return journal.get('setName');
     ```
-    ![execute](assets/transform_code.png)
+    ![execute](/assets/transform_code.png)
 
     _Remarque:_ le code javascript retourne la propriété _setName_, nom de l'ensemble, de l'acteur journal. La question étant comment faire pour connaitre la liste des propriétés du journal accessible dans un script ? a terme la liste des propriétés sera documentée pour chaque acteur mais, en attendant, le mieux est d'utiliser la fonction _inspect()_ en mode débug expliqué dans le [tutorial 6: les événements et fonctions javascripts](../tuto06/index.md)
 
     Déployer et exécuter la SynApp dans **Chrome** puis appuyer sur F12 pour ouvrir les outils developpeurs et placer un point d'arrêt sur la ligne 4 de la fonction _onReadSource/attribute-buttonPush-buttonFilters-selSet-sceneJournal.js_
 
-    ![execute](assets/debug.png)
+    ![execute](/assets/debug.png)
 
     Appuyer sur F5 pour recharger la SynApp et attendre le point d'arret
 
-    ![execute](assets/debug2.png)
+    ![execute](/assets/debug2.png)
 
     Taper dans la console le code pour inspecter le journal()
     ```javascript
     journal.inspect();
     ```
-    ![execute](assets/debug3.png)
-    ![execute](assets/debug4.png)
+    ![execute](/assets/debug3.png)
+    ![execute](/assets/debug4.png)
 
     Toutes les propriétés du journal sont alors listées dont la propriété _setName_ avec la valeur ```Ensemble X```
 
@@ -247,7 +247,7 @@ Nous allons finaliser la configuration de la scène et lier les propriétés des
     * Lier en _interne_ la propriété _Spécifiques > Mode_ à la propriété _Spécifiques > Valeur_ de l'acteur ```switchButtonMode``` en lecture uniquement
 
     * Editer le _Script de lecture_ de la propriété _Spécifiques > Mode_
-    ![execute](assets/transform_mode.png)
+    ![execute](/assets/transform_mode.png)
 
     * Copier le javascript
         ```javascript
@@ -258,7 +258,7 @@ Nous allons finaliser la configuration de la scène et lier les propriétés des
     * Lier en _interne_ la propriété _Spécifiques > Période_ à la propriété _Spécifiques > Valeur_ de l'acteur ```sliderPeriod``` en lecture uniquement
 
     * Editer le _Script de lecture_ de la propriété _Spécifiques > Période_ pour arrondir à un entier la valeur du curseur
-    ![transform_mode](assets/transform_mode.png)
+    ![transform_mode](/assets/transform_mode.png)
 
     * Copier le javascript
         ```javascript
@@ -298,9 +298,9 @@ Les liaisons sont configurées, le journal avancé est terminé
     * Période de rafraichissement actuelle
     * Acquittement de l'événement
 
-![execute2](assets/execute2.png)
+![execute2](/assets/execute2.png)
 
-![execute3](assets/execute3.png)
+![execute3](/assets/execute3.png)
 
 ## Que retenir
 
@@ -319,7 +319,7 @@ Quand la scène correspondra completement à vos besoins, vous souhaiterez pouvo
 A ce sujet, tester la **création d'un composite** directement depuis la scène:
 
 * Sélectionner ```stackRoot``` et cliquer sur le bouton de génération de composite
-    ![composite](assets/composite.png)
+    ![composite](/assets/composite.png)
 
 * Vous pouvez désormais **réutiliser** ce composite dans n'importe quelle SynApp et le **partager** avec d'autres utilisateurs !
 

@@ -20,7 +20,7 @@ Les liaisons internes permettent de lier des propriétés entre acteurs
 Dans la scène *scene1*, on observe des propriétés d'acteur dont la même valeur est définie plusieurs fois. Nous voudrions notamment que:
 
 1. la **couleur bleue** soit identique sur:
-  * la couleur de la jauge *gaugeAnalogic*, 
+  * la couleur de la jauge *gaugeAnalogic*,
   * la couleur de fond de *textTop* et
   * la couleur de bordure de *stackRoot*
 
@@ -33,32 +33,32 @@ Dans la scène *scene1*, on observe des propriétés d'acteur dont la même vale
   * la valeur de la propriété additionnelle *max* du texte *textBottom*
 
 En résumé:
-![Résumé des liaisons internes](assets/bindingInternal.png)
+![Résumé des liaisons internes](/assets/bindingInternal.png)
 
 ### Création des liaisons **internes**
 
 1. La couleur de bordure de l'acteur *stackRoot* est actuellement définie manuellement, nous allons la lier avec la couleur  de la jauge *gaugeAnalogic*.
-![Création liaison interne](assets/editBindingInternal.png)
+![Création liaison interne](/assets/editBindingInternal.png)
 L'acteur *stackRoot* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Couleur de fond* et sélectionner **Interne**
 
 2. Description de l'éditeur de liaison interne
-![Description liaison interne](assets/bindingInternalEditDesc.png)
+![Description liaison interne](/assets/bindingInternalEditDesc.png)
 L'éditeur de liaison interne est composé de trois parties principales:
     * **Sélecteur d'objet**: sélectionner la jauge *gaugeAnalogic*
     * **Sélecteur de propriété**: sélectionner la propriété *Couleur premier plan*
     * **Récapitulatif de la liaison**: vérifier la description et cliquer sur **[Lier]** en bas à droite
-![Résumé liaison interne](assets/bindingInternalEditSummary.png)
+![Résumé liaison interne](/assets/bindingInternalEditSummary.png)
 Consulter [description du MAKER](../../designer.md) pour en savoir plus concernant l'éditeur de liaison interne
 
 3. La propriété *Couleur bordure* de *stackRoot* est désormais liée à la propriété *Couleur premier plan* de *gaugeAnalogic*, vous remarquez:
     * qu'elle **n'est plus modifiable manuellement car liée**
     * le bouton d'édition de la liaison est de couleur **orange** pour indiquer une liaison *interne*
     * un **tooltip résumant la liaison** apparaît en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
-    
-    ![Remarques liaison interne](assets/bindingInternalSummary.png)
+
+    ![Remarques liaison interne](/assets/bindingInternalSummary.png)
 
 4. Vérifier la liaison *interne* en modifiant la propriété *Couleur premier plan* de *gaugeAnalogic* dans l'onglet *Spécifiques*. La couleur de bordure de *stackRoot* doit être également modifiée
-![Vérification liaison interne](assets/bindingInternalCheck.png)
+![Vérification liaison interne](/assets/bindingInternalCheck.png)
 
 5. De la même manière, lier la propriété *Aspect.couleur de fond* de l'acteur *textTop* à la propriété *Spécifiques.Couleur premier plan* de l'acteur *gaugeAnalogic*
 
@@ -78,7 +78,7 @@ Vérifier que tout fonctionne comme attendu: sélectionner l'acteur *gaugeAnalog
 * *Couleur premier plan*
 
 La zone de prévisualisation doit restituer les changements sur l'ensemble des acteurs
-![Vérification liaison interne](assets/bindingInternalCheck3.png)
+![Vérification liaison interne](/assets/bindingInternalCheck3.png)
 
 **Déployer la SynApp**
 

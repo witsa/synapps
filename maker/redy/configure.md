@@ -12,7 +12,7 @@ Le RUNTIME de SynApps est embarqué dans le REDY mais prour profiter des derniè
 
 3. Valider
 
-![REDY PC](assets/configure_1.png)
+![REDY PC](/assets/configure_1.png)
 
 ## Configuration du cross-origin
 

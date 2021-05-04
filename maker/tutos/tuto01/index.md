@@ -14,7 +14,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 
 1. Ouvrez le MAKER
 
-    ![Sélection UTL](assets/tuto01device.PNG)
+    ![Sélection UTL](/assets/tuto01device.PNG)
 
 2. Entrez l'adresse de l'UTL (REDY ou REDY PC), exemples:
 
@@ -32,7 +32,7 @@ L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur
 ### Création de la SynApp
 
 Saisir les informations de création dans le formulaire de la SynApp:
-![Création SynApp](assets/tuto01new.PNG)
+![Création SynApp](/assets/tuto01new.PNG)
 
 ### Edition dans le MAKER
 
@@ -40,20 +40,20 @@ L'environnement du MAKER ainsi que tous les concepts seront décrits ultérieure
 
 1. Cliquer sur **[+]** dans l'onglet acteur en bas à gauche de l'éditeur
 
-    ![Ajout acteur empilement](assets/tuto01actorStack.PNG)
+    ![Ajout acteur empilement](/assets/tuto01actorStack.PNG)
 
 2. Dans l'explorateur d'acteur sélectionner le premier *Empilement*
 
     Cet acteur va permettre de disposer des acteurs enfants dans la scène courante qui vont s'empiler verticalement
-    ![Visu acteur empilement](assets/tuto01actorStack2.PNG)
+    ![Visu acteur empilement](/assets/tuto01actorStack2.PNG)
 
 3. L'acteur *stack1* étant sélectionné, cliquer de nouveau sur **[+]** pour ajouter un premier acteur enfant de type *Affichage* > *Texte*
 
-    ![Ajout acteur texte](assets/tuto01actorText.PNG)
+    ![Ajout acteur texte](/assets/tuto01actorText.PNG)
 
 4. Modifier l'acteur texte *text2* pour augmenter la taille du texte à 100 pixels: l'acteur *text2* étant sélectionné, éditer la propriété *Aspect* > *Taille* avec *100px* dans la zone à droite de l'éditeur appélé l'inspecteur d'objets SynApps
 
-    ![Modification taille texte](assets/tuto01actorTextFontSize.PNG)
+    ![Modification taille texte](/assets/tuto01actorTextFontSize.PNG)
 
 5. Dans la zone central de prévisualisation, double cliquer sur *text2* et saisissez "Hello world"
 
@@ -61,15 +61,15 @@ L'environnement du MAKER ainsi que tous les concepts seront décrits ultérieure
 
 7. Modifier l'acteur jauge *gauge3* pour qu'il prenne tout l'espace vertical: l'acteur *gauge3* étant sélectionné, éditer les propriétés *Position* > *Alignement vertical* et *Alignement horizontal* avec *Étendre*
 
-    ![Modification position jauge](assets/tuto01actorGaugePosition.PNG)
+    ![Modification position jauge](/assets/tuto01actorGaugePosition.PNG)
 
     La zone de prévisualisation finale doit ressembler à cela ! (sinon recommencer :-)
-    ![Prévisualisation](assets/tuto01preview.PNG)
+    ![Prévisualisation](/assets/tuto01preview.PNG)
 
 ### Déploiement de la SynApp
 
 Déployer la SynApp sur le REDY en cliquant *Déployer* dans la barre de commande en haut à droite
-![Déployer](assets/tuto01deploy.PNG)
+![Déployer](/assets/tuto01deploy.PNG)
 
 La SynApp est déployée sur le REDY dans *:easy.SynApps*
 [En savoir plus sur les objets crées dans le REDY](../../redy/explore.md)
@@ -82,18 +82,18 @@ Exécuter la SynApp en cliquant *Exécuter* dans la barre de commande, soit:
 
 * *Executer* principal: la SynApp est éxécuté dans le navigateur courant
 
-    ![Exécuter](assets/tuto01execute.PNG)
+    ![Exécuter](/assets/tuto01execute.PNG)
 
 * *Executer* secondaire: la SynApp est éxécuté dans un nouveau navigateur
 
-    ![RedyExécuter dans nouvelle fenêtre](assets/tuto01executeOutside.PNG)
+    ![RedyExécuter dans nouvelle fenêtre](/assets/tuto01executeOutside.PNG)
 
     Ce mode est a privilégier pour faire cohabiter le mode *exécution* et *edition* sur deux écrans différents par exemple. Dans ce cas, à chaque déploiement depuis le *MAKER*, le mode *exécution* est rafraîchi
 
 ### Exécution de la SynApp depuis le REDY
 
 Naviguer dans l'exploitation du REDY, un nouvel onglet **SynApps** est désormais **accessible**
-![RedyExécuter dans nouvelle fenêtre](assets/index_1.png)
+![RedyExécuter dans nouvelle fenêtre](/assets/index_1.png)
 
 _Remarque:_ l'onglet *SynApps* est **visible** uniquement quand au moins une SynApp est **déployée** dans le REDY
 

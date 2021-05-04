@@ -8,7 +8,7 @@ Dans les précédents tutoriaux, nous avons déja utilisé quelques instructions
 
 Nous reviendrons dans ce tutorial sur les fonctions de transformation en lecture et en écriture de liaison, mais au préalable nous allons mettre en oeuvre les **Evénements**. Dans l'inspecteur d'acteur, nous avons largemment manipulé les **Propriétés** mais, vous l'avez peut-être aperçu, un autre onglet permet de définir des evénements
 
-![inspector_events](assets/inspector_events.png)
+![inspector_events](/assets/inspector_events.png)
 
 Ces événements sont générés dans 2 circonstances liées soit:
 
@@ -78,8 +78,8 @@ _Remarque:_ la définition des labels des acteurs est d'autant plus importante a
 
 5. **Vérifier** la _liste des acteurs_ ainsi que la _zone de prévisualisation_
 
-    ![actors_list](assets/actors_list.png)
-    ![preview](assets/preview.png)
+    ![actors_list](/assets/actors_list.png)
+    ![preview](/assets/preview.png)
 
 ## Implémentation et log d'un événement dans la console
 
@@ -89,9 +89,9 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
 
     * cliquer dans l'onglet _Evénements_ de l'_inspecteur d'acteur_
     * cliquer sur _commun_ pour ouvrir la liste des événemnts
-    ![preview](assets/inspector_events2.png)
+    ![preview](/assets/inspector_events2.png)
     * éditer l'événement _Ev. "Click souris"_
-    ![preview](assets/inspector_event_click.png)
+    ![preview](/assets/inspector_event_click.png)
     * copier la fonction javascript suivante dans la _zone d'édition_. Elle sera expliquée ci-après
     ```javascript
     var evtName = "Click souris";
@@ -100,20 +100,20 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
     var newOutput = context.target.get('content') + ' > '+ evtName + "\n" + currentOutput;
     textareaOutput.set("value", newOutput);
     ```
-    ![event_click](assets/event_click.png)
+    ![event_click](/assets/event_click.png)
 
     * sauvegarder la fonction et fermer l'éditeur d'événement
-    ![editor_close](assets/editor_close.png)
+    ![editor_close](/assets/editor_close.png)
 
 2. **Déployer**, **éxécuter** et **cliquer** sur _Acteur A_, la console log l'événement
 
-    ![execute](assets/execute.png)
+    ![execute](/assets/execute.png)
 
 3. **Revenir** sur le MAKER et ouvrir l'événement _Ev. "Click souris"_ défini précédemment
 
     * une **zone d'aide** est affichée droite de la fenêtre et donne les **mots-clefs** permettant de récuperer et modifier les objets de la SynApp, acteurs, scènes, etc dans le contexte courant
 
-        ![help](assets/help.png)
+        ![help](/assets/help.png)
 
     * ligne 2
 
@@ -135,7 +135,7 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
 
         _Remarque:_ la propriété ```value``` correspond à la propriété _Spécifiques > Valeur_ dans l'_inspecteur d'acteur_. En effet, toutes les propriétés ont un nom **intelligible** pour l'utilisateur du MAKER et un nom **interne** (en anglais) utilisé dans les scripts. Pour connaître le nom interne d'une propriété, il suffit de survoler le bouton de liaison de la propriété comme ci-dessous
 
-        ![property_name](assets/property_name.png)
+        ![property_name](/assets/property_name.png)
 
     * ligne 4
 
@@ -147,7 +147,7 @@ Nous allons définir un premier événement _click_ sur l'acteur A et le logger 
 
         La fonction _get('content')_ retourne la valeur de la propriété ```Contenu``` de l'acteur ```textActorA```, soit ```Actor A```
 
-        ![property_name2](assets/property_name2.png)
+        ![property_name2](/assets/property_name2.png)
 
         _"\n"_ effectue un retour à la ligne
 
@@ -180,7 +180,7 @@ _A savoir:_ les **fonctions doivent être déclarées** dans l'événement _init
 
     * Editer l'événement _Commun > Ev. "initialisation"_
 
-        ![event_init](assets/event_init.png)
+        ![event_init](/assets/event_init.png)
 
     * copier la fonction javascript suivante dans la _zone d'édition_
     ```javascript
@@ -249,7 +249,7 @@ _A savoir:_ les **fonctions doivent être déclarées** dans l'événement _init
 
 7. **Déployer**, **éxécuter** et **intéragir** avec les acteurs _Acteur A, B et C_, pour vérifier que la console log tous les événements implémentés: _Rendu_, _Entrée souris_, _Sortie souris_,  _Clic enfoncé_, _Clic relaché_ et _Clic souris_
 
-    ![event_init](assets/execute2.png)
+    ![event_init](/assets/execute2.png)
 
     _Remarques:_
 
@@ -285,7 +285,7 @@ La console de log est vite remplie des événements générés. Nous allons ajou
 
 3. **Déployer**, **éxécuter** et **vérifier** que le bouton de nettoyage est opérationnel
 
-    ![execute3](assets/execute3.png)
+    ![execute3](/assets/execute3.png)
 
 ## Debugging sous Chrome
 
@@ -297,20 +297,20 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
 
     _Remarque:_ dans la mesure du possible, il est préferrable d'utiliser 2 écrans: le premier pour la SynApp, le second pour la console _Developer Tools_. Configurer le _Dock side_ pour choisir le mode d'affichage
 
-    ![tools_dock](assets/tools_dock.png)
+    ![tools_dock](/assets/tools_dock.png)
 
 2. **Sélectionner** l'onglet _Sources > Network_ de la console
-    ![tools_sources](assets/tools_sources.png)
+    ![tools_sources](/assets/tools_sources.png)
 
 3. Pour info, le dossier _appria.wit.fr_ contient le RUNTIME du SynApps qui ne peut pas être exploité
 
 4. **Ouvrir** le second dossier _synapps-scripts_. Celui-ci nous intéresse car il contient tous les événements implémenté dans la SynApp ! Ils sont classés par nom relativement explicites: _onClick_, _onInit_, _onMouseDown_, _onMouseEnter_, _onMouseLeave_, _onMouseUp_, _onRender_
 
-    ![tools_events](assets/tools_events.png)
+    ![tools_events](/assets/tools_events.png)
 
 5. **Ouvrir**  le dossier des événements _onInit_ qui contien la fonction javascript implémenté par l'événement _Ev. "Initialisation"_ de l'acteur ```textareaOutput```
 
-    ![tools_js](assets/tools_js.png)
+    ![tools_js](/assets/tools_js.png)
 
     _Remarque:_ une SynApp peut avoir beaucoup de scripts définis dans plusieurs acteurs et scènes. Un formalisme est donc défini afin d'**identifier rapidement le script recherché**:
 
@@ -323,26 +323,26 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
 
 6. **Ouvrir** le dossier des événements _onClick_ qui contien les 4 fonctions javascript implémenté par l'événement _Ev. "Clic souris"_ dans la scène
 
-    ![tools_js](assets/tools_onclick.png)
+    ![tools_js](/assets/tools_onclick.png)
 
     Le **formalisme de nommage** des évènements permet d'**identifier aisemment** les 4 fonctions et les acteurs auquelles elles se rapportent
 
 7. **Sélectionner** la fonction javascript ```actor-buttonPush-buttonPushClear-sceneEvents.js```. Son contenu s'affiche dans la zone centrale
 
-    ![tools_fxclick](assets/tools_fxclick.png)
+    ![tools_fxclick](/assets/tools_fxclick.png)
 
 8. **Ajouter** un point d'arret sur la ligne 4 en cliquant sur celle-ci
 
-    ![tools_beakpoint](assets/tools_beakpoint.png)
+    ![tools_beakpoint](/assets/tools_beakpoint.png)
 
 9. **Cliquer** sur le bouton de nettoyage de la SynApp pour éxécuter l'événement _Ev "Clic souris"_. Le code javascript est alors éxécuté jusqu'au point d'arrêt et le navigateur indique _Paused in debugger_
 
-    ![tools_debug](assets/tools_debug.png)
-    ![tools_paused](assets/tools_paused.png)
+    ![tools_debug](/assets/tools_debug.png)
+    ![tools_paused](/assets/tools_paused.png)
 
 10. **Ouvrir** la console si pas encore ouverte
 
-    ![tools_debug](assets/tools_console.png)
+    ![tools_debug](/assets/tools_console.png)
 
 11. **copier** le javascript suivant dans la console + entrée
 
@@ -351,7 +351,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
     ```
     Le contenu de la propriété _Valeur_ est alors affichée dans la console !
 
-    ![tools_debug](assets/tools_console2.png)
+    ![tools_debug](/assets/tools_console2.png)
 
     * La totalité des propriétés de l'acteur peuvent être évaluées de la même manière. Pour connaitre la couleur de fond, copier dans la console:
 
@@ -366,7 +366,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
         ```
         puis appuyer sur **F8** pour sortir du point d'arrêt, la couleur de fond a changé !
 
-        ![tools_debug](assets/bg_yellow.png)
+        ![tools_debug](/assets/bg_yellow.png)
 
         _Remarque:_ la couleur d'origine configurée dans la SynApp revient après rechargement
 
@@ -378,7 +378,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
 
     La fonction _inspect()_ permet de visualiser la totalité des valeurs des propriétés d'un objet de SynApps. Ici l'acteur ```textareaOutput```
 
-    ![tools_debug](assets/tools_inspect.png)
+    ![tools_debug](/assets/tools_inspect.png)
 
 13. **Inspecter** tous les types d'objets pour connaitre leurs propriétés
 
@@ -388,7 +388,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
         context.host.inspect()
         ```
 
-        ![tools_debug](assets/tools_host.png)
+        ![tools_debug](/assets/tools_host.png)
 
     * **synoStage**: scène courante
 
@@ -396,7 +396,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
         context.synoStage.inspect()
         ```
 
-        ![tools_debug](assets/tools_synoStage.png)
+        ![tools_debug](/assets/tools_synoStage.png)
 
     * **synapp**: synApp courante
 
@@ -404,7 +404,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
         context.synapp.inspect()
         ```
 
-        ![tools_debug](assets/tools_synApp.png)
+        ![tools_debug](/assets/tools_synApp.png)
 
     * **session**: session utilisateur courant
 
@@ -412,7 +412,7 @@ La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous
         context.session.inspect()
         ```
 
-        ![tools_debug](assets/tools_session.png)
+        ![tools_debug](/assets/tools_session.png)
 
          _Remarque:_ l'objet _session_ contient une fonction _logOff()_ qui déconnecte l'utilisateur courant. Nous allons utiliser cette fonctionnalité dans la partie suivante pour construire un composite affichant l'utilisateur courant et un bouton de déconnection
 
@@ -429,12 +429,12 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
     * modifier la _catégorie_ du composite avec la sélection ```Métier```
     * Récupérer l'image ci-dessous
 
-        ![Empilement](assets/logo_logOff.png)
+        ![Empilement](/assets/logo_logOff.png)
     * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Logo_
     * modifier la propriété _Aspect > Police > Taille_ en ```40px```
     * modifier la propriété _Position > Align. vertical_ en ```Auto```
 
-        ![Empilement](assets/composite_inspector.png)
+        ![Empilement](/assets/composite_inspector.png)
 
 2. **Définir** l'acteur principal avec un acteur _Empilement_
 
@@ -445,21 +445,21 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 3. **Ajouter** un acteur enfant de type _html_
 
     * renommer le _Label_ avec ```htmlSession```
-    * modifier la propriété _Spécifiques > Contenu_ en 
+    * modifier la propriété _Spécifiques > Contenu_ en
     ```html
     <i class="icon-user"></i> {% raw %}{{user}}{% endraw %}
     ```
     * **compléter** le contenu en créant la propriété additionnelle _user_. Vous pouvez également donner des informations additionnelles sur la propriété, comme le nom et la description, dans _Additionnelles > Gestion des propriétés additionnelles_
     * **lier** la propriété en interne à l'objet _Session > Utilisateur > Nom complet_
 
-        ![Empilement](assets/bind_session.png)
+        ![Empilement](/assets/bind_session.png)
     * modifier la propriété _Position > Align. vertical_ en ```Centré```
     * modifier la propriété _Gabarit > Marge > Marge int. droit_ en ```20px```
 
 4. **Sélectionner** l'acteur ```stackRoot``` et **ajouter** un acteur enfant de type _Bouton poussoir_
 
     * renommer le _Label_ avec ```buttonLogOff```
-    * modifier la propriété _Spécifiques > Contenu_ en 
+    * modifier la propriété _Spécifiques > Contenu_ en
     ```html
     <i class="icon-off"></i>
     ```
@@ -471,7 +471,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
     Comme nous l'avons vu précédemment, la fonction _logOff_ sur l'objet SynApp _session_ permet de **forcer la déconnection** de l'utilisateur
 
 5. **Vérifier** le composite _Session utilisateur_ dans la _zone de prévisualisation_
-    ![Empilement](assets/preview2.png)
+    ![Empilement](/assets/preview2.png)
 
 6. **Sélectionner** la scène ```Scène événements```
 
@@ -491,13 +491,13 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
 9. **Déplacer** l'acteur _Session utilisateur_ en première position sous ```stackEvents```
 
-    ![actors_order](assets/actors_order.png)
+    ![actors_order](/assets/actors_order.png)
 
 10. **Déployer** et **éxécuter** la SynApp
 
     * cliquer sur le bouton de déconnection, l'utilisateur est **déconnecté** et l'événement **Déconnection** est loggé dans la console
 
-    ![execute4](assets/execute4.png)
+    ![execute4](/assets/execute4.png)
 
     Le composite _Session utilisateur_ est opérationnel mais nous allons le faire évoluer par afficher un "toolTip" contenant le **mail** et le **niveau** de l'utilisateur connecté: _administrateur_, _installateur_, _exploitant_ connecté
 
@@ -515,12 +515,12 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
     * sélectionner la propriété _Spécifiques > Attachement verticale_ sur ```Bas```
     * lier la propriété _Aspect > Police > Taille_ à la propriété _taille_ du composite
 
-        ![bind_size](assets/bind_size.png)
+        ![bind_size](/assets/bind_size.png)
     * définir les 4 propriétés _Gabarit > Marge > Marge int. gauche_, _Marge int. droit_, _Marge int. haut_, _Marge int. bas_ avec ```50px```
 
     * tester le placement correcte de la modale en sélectionnant la propriété _Spécifiques > Test modale_
 
-        ![bind_size](assets/preview3.png)
+        ![bind_size](/assets/preview3.png)
 
 13. **Ajouter** un acteur enfant _Texte_
 
@@ -532,11 +532,11 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
     ```
     * compléter le contenu en créant les propriétés additionnelles proposées _level_ et _mail_. Vous pouvez également donner des informations additionnelles sur ces propriétés, comme les noms et descriptions, dans _Additionnelles > Gestion des propriétés additionnelles_
 
-        ![properties](assets/properties.png)
+        ![properties](/assets/properties.png)
 
     * lier la propriété _user_ en interne à l'objet _Session > Niveau_
     * éditer le script de lecture de la liaison
-            ![properties](assets/script_transform.png)
+            ![properties](/assets/script_transform.png)
     * définir le script de transormation en lecture suivant
          ```javascript
         var level = context.value;
@@ -567,7 +567,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
         * **lecture**: _context.value_ correspond à la valeur de la propriété de l'objet source. ici le _mail_
         * **écriture**: _context.value_ correspond à la valeur de la propriété de l'acteur. Ici, elle n'est pas définie car on ne fait que lire la source
 
-        ![composite_inspector2](assets/composite_inspector2.png)
+        ![composite_inspector2](/assets/composite_inspector2.png)
 
 14. **Sélectionner** l'acteur ```htmlSession``` pour définir les événements qui vont **afficher** et **cacher** la modale
 
@@ -578,7 +578,7 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
         modalTooltip.set('isShown', true);
         ```
         _Remarque:_ la propriété _isShown_ est le nom interne de la propriété _Afficher_
-        ![prop_isShown](assets/prop_isShown.png)
+        ![prop_isShown](/assets/prop_isShown.png)
 
     * définir l'événement _Ev. "Sortie souris"_ avec la fonction javascript
 
@@ -592,11 +592,11 @@ Nous allons construire un composite affichant le nom de l'utilisateur connecté 
 
     * survoler le nom de l'utilisateur connecté, niveau et mail sont affichés dans le tooltip
 
-        ![execute6](assets/execute6.png)
+        ![execute6](/assets/execute6.png)
 
     * cliquer sur le bouton de déconnection et connectez-vous avec un compte installateur, _login:_ ```install``` et _mot de passe:_ ```.```
 
-        ![execute5](assets/execute5.png)
+        ![execute5](/assets/execute5.png)
 
 ## Que retenir
 

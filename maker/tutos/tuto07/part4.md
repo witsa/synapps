@@ -10,11 +10,11 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 
     * ajouter une propriété de scène de type _texte_ dans _Paramêtres > Gestion des propriétés paramètres_
 
-      ![folder](assets/scene_param.png)
+      ![folder](/assets/scene_param.png)
 
     * définir _label_ avec ```scene``` et _Nom de la propriété_ avec ```Scène```
 
-      ![folder](assets/scene_param2.png)
+      ![folder](/assets/scene_param2.png)
 
     * définir la propriété de scène _Scène_ avec le texte ```sceneJournal```
 
@@ -22,13 +22,13 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 
 2. **Modifier** la scène principale de la SynApp avec la scène ```Scène principale```
 
-    ![admin](assets/admin.png)
+    ![admin](/assets/admin.png)
 
 3. **Sélectionner** la scène ```sceneJournal``` pour la ranger dans un dossier
 
     * modifier la propriété _Dossier_ avec le dossier ```Scènes```
 
-       ![folder](assets/folder.png)
+       ![folder](/assets/folder.png)
 
 4. **Modifier** également le dossier des 4 autres scènes ```sceneEtat```, ```sceneGrapher```, ```sceneAgenda``` et ```sceneDashboard```
 
@@ -71,7 +71,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
     * réinitialiser la propriété _Gabarit > Hauteur_ avec ```[vide]```
     * lier la propriété _Spécifiques > Scène_ avec la propriété _Scène_ de la ```Scène principale``` en _lecture_ et _écriture_
 
-       ![bind_scene](assets/bind_scene.png)
+       ![bind_scene](/assets/bind_scene.png)
 
        _Remarque:_ signification de **lecture** et **écriture** sur les liaisons
        * **lecture**: lorsque la _Scène_ de la _Scène princiaple_ change alors celle de l'acteur ```screenMain``` change également
@@ -103,7 +103,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
     * modifier la propriété _Spécifiques > title_ avec le texte ```Journal```
     * lier en _librairie_ le contenu en créant un nouvel élément de librairie ```contentButtonNav```
 
-        ![create_library](assets/create_library.png)
+        ![create_library](/assets/create_library.png)
 
         _Remarque:_ nous ajoutons ce contenu en librairie car les 5 boutons aurons le même contenu. La **maintenabilité** de la SynApp sera ainsi simplifiée en cas de modification
 
@@ -112,7 +112,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
     * modifier la propriété _Aspect > Couleur de fond_ avec la couleur ```#4b0082```
     * modifier la propriété _Gabarit > Largeur_ avec la taille ```220px```
     * Le bouton de navigation doit resembler à ceci
-        ![preview_nav](assets/preview_nav.png)
+        ![preview_nav](/assets/preview_nav.png)
 
 12. **Dupliquer** l'acteur navigation pour configurer la navigation sur les états
 
@@ -160,11 +160,11 @@ Nous allons définir les comportements des titres, icônes et barre horizontal a
 
     * lier en _interne_ la propriété _Spécifiques > icon_ à la propriété _Scène_ de la scène ```Scène principale``` en _lecture_ uniquement
 
-        ![preview_nav](assets/bind_scene.png)
+        ![preview_nav](/assets/bind_scene.png)
 
     * editer le script de transformation lecture
 
-        ![preview_nav](assets/transform.png)
+        ![preview_nav](/assets/transform.png)
 
     * copier le script suivant qui va retourner l'icone défini dans le bouton de navigation de la scène sélectionnée
 
@@ -240,7 +240,7 @@ Nous allons définir les comportements des titres, icônes et barre horizontal a
     * Le **titre** et **icône** en haut à gauche changent
     * La **couleur de la barre horizontal** de séparation (entre l'en-tête et la scène secondaire) est désormais de la même couleur que le bouton de navigation de la scène sélectionnée
 
-    ![execute](assets/execute.gif)
+    ![execute](/assets/execute.gif)
 
 ## Que retenir
 

@@ -23,7 +23,7 @@ Ils peuvent être classés dans deux grandes catégories:
 
 * **Métiers**: ils ont besoin d'une source de données pour fonctionner ou ils utilisent en interne une ressource du REDY. Par exemple: l'acteur journal
 
-![Empilement](assets/nature.png)
+![Empilement](/assets/nature.png)
 _Classement des acteurs par nature et catégorie_
 
 ## Description
@@ -44,10 +44,10 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
 
 2. **Ajouter** un acteur enfant de type **image** et définir le fond de plan avec l'image ci-dessous
     * Click droit sur l'image ci-dessous et _Enregistrer sous_ dans un dossier local
-    ![Empilement](assets/backgroundPlan.png)
+    ![Empilement](/assets/backgroundPlan.png)
 
     * Ouvrir le dossier local contenant l'image
-    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifiques > Image_ 
+    * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifiques > Image_
     * Modifier la propriété _Gabarit > Hauteur_ à la valeur par défaut
     * Modifier également la propriété _Gabarit > Largeur_ à la valeur par défaut
 
@@ -55,18 +55,18 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
 
 1. **Sélectionner** l'onglet composites et **créer** un nouvel acteur composite
 
-    ![Empilement](assets/composites.png)
+    ![Empilement](/assets/composites.png)
 
     * modifier le _label_ du composite en ```compositeClim``` et le _nom_ avec ```Climatiseur```
     * modifier la _description_ du composite en ```Acteur de visualisation et de contrôle d'un climatiseur```
-    ![Empilement](assets/compositeClim_inspector.png)
+    ![Empilement](/assets/compositeClim_inspector.png)
     * Récupérer l'image ci-dessous
 
-        ![Empilement](assets/clim.jpg)
+        ![Empilement](/assets/clim.jpg)
 
     * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Logo_
 
-        ![Empilement](assets/logo.png)
+        ![Empilement](/assets/logo.png)
 
         _Remarques:_ le logo permet d'identifier visuellement le composite dans l'_explorateur d'acteurs_. Il est également possible de faire une copie d'écran du composite avec l'icone **appareil photo** ci-dessus: à tester mais le résultat sera toujours meilleur avec une image adaptée
 
@@ -94,13 +94,13 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     * _icon-temperature-thermometer_ permet d'utiliser une libraire d'icones embarquée dans SynApps
 
     * créer la propriété proposée ```tempCurrent``` de type **texte**
-    ![Empilement](assets/tempCurrent.png)
+    ![Empilement](/assets/tempCurrent.png)
     * modifier les informations de la propriété additionnelle ```tempCurrent``` dans l'onglet _Additionnelles > Gestion des propriétés additionnelles_
-    ![Empilement](assets/addProps.png)
+    ![Empilement](/assets/addProps.png)
     * modifier _Nom de la propriété_ avec ```Température courante``` et _Description_ avec ```Température mesurée par le climatiseur```
-    ![Empilement](assets/editProps.png)
+    ![Empilement](/assets/editProps.png)
     * définir la propriété _Spécifiques > Température courante_ avec la valeur ```21```
-    ![Empilement](assets/previewTempCurrent.png)
+    ![Empilement](/assets/previewTempCurrent.png)
     * définir la propriété _Aspect > Police > Alignement texte_ à ```Centre```
 
 4. **Sélectionner** l'acteur ```stackClim``` et **ajouter** un acteur enfant de type _boite à vue_ qui adaptera le visuel du climatiseur à la taille de l'écran
@@ -123,7 +123,7 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     * renommer le _Label_ avec ```imageClim```
     * Récupérer l'image ci-dessous
 
-        ![Empilement](assets/clim.jpg)
+        ![Empilement](/assets/clim.jpg)
 
     * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Spécifiques > Image_
     * Réinitialiser la propriété _Gabarit > Hauteur_ à la valeur par défaut
@@ -132,7 +132,7 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
 7. **Sélectionner** l'acteur _toile_ ```canvasClim``` et **ajouter** un acteur enfant de type _commutateur image_ qui affichera le mode hiver/été
 
     * renommer le _Label_ avec ```switchImageMode```
-    * récupérer les 2 images ![Cold](assets/cold.png) ![Hot](assets/hot.png)
+    * récupérer les 2 images ![Cold](/assets/cold.png) ![Hot](/assets/hot.png)
     * réinitialiser la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[vide]```
     * réinitialiser également la propriété _Gabarit > Largeur_ à la valeur par défaut ```[vide]```
     * modifier la propriété _Spécifiques > Texte On_ avec le texte ```Chaud```
@@ -140,14 +140,14 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     * désactiver la propriété _Spécifiques > Actif_
     * glisser la première image dans la zone hachurée de la propriété _Spécifiques > Image On_
     * glisser la deuxième image dans la zone hachurée de la propriété _Spécifiques > Image off_
-    ![Hot](assets/switchImageMode.png)
+    ![Hot](/assets/switchImageMode.png)
     * modifier la propriété _Position > Position gauche_ avec la taille ```5px```
     * modifier la propriété _Position > Position bas_ avec la taille ```5px```
 
 8. **Sélectionner** l'acteur _toile_ ```canvasClim``` et **ajouter** un second acteur enfant de type _commutateur image_ qui affichera le mode de fonctionnement on/off
 
     * renommer le _Label_ avec ```switchImageOnOff```
-    * récupérer les 2 images ![Hot](assets/on.gif) ![Cold](assets/off.png)
+    * récupérer les 2 images ![Hot](/assets/on.gif) ![Cold](/assets/off.png)
     * réinitialiser la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[vide]```
     * réinitialiser également la propriété _Gabarit > Largeur_ à la valeur par défaut ```[vide]```
     * modifier la propriété _Spécifiques > Texte On_ avec le texte ```On```
@@ -155,14 +155,14 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     * désactiver la propriété _Spécifiques > Actif_
     * glisser la première image dans la zone hachurée de la propriété _Spécifiques > Image On_
     * glisser la deuxième image dans la zone hachurée de la propriété _Spécifiques > Image off_
-    ![Hot](assets/switchImageOnOff.png)
+    ![Hot](/assets/switchImageOnOff.png)
     * modifier la propriété _Position > Position droite_ avec la taille ```5px```
     * modifier la propriété _Position > Position haut_ avec la taille ```5px```
 
 9. **Sélectionner** l'acteur _toile_ ```canvasClim``` et **ajouter** un acteur enfant de type _image_ qui indiquera si le climatiseur est en train de fonctionner
 
     * renommer le _Label_ avec ```imageProgress```
-    * récupérer l'image ![Hot](assets/progress.gif)
+    * récupérer l'image ![Hot](/assets/progress.gif)
     * glisser l'image dans la zone hachurée de la propriété _Spécifiques > Image_
     * réinitialiser la propriété _Gabarit > Hauteur_ à la valeur par défaut ```[vide]```
     * réinitialiser également la propriété _Gabarit > Largeur_ à la valeur par défaut ```[vide]```
@@ -184,22 +184,22 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     * modifier les informations de la propriété additionnelle ```tempCmd``` dans l'onglet _Additionnelles > Gestion des propriétés additionnelles_
     * modifier _Nom de la propriété_ avec ```Température consigne``` et _Description_ avec ```Température de consigne```
     * définir la propriété _Spécifiques > Température consigne avec la valeur ```22 °C```
-    ![Empilement](assets/previewTempCurrent.png)
+    ![Empilement](/assets/previewTempCurrent.png)
     * définir la propriété _Aspect > Police > Alignement texte_ à ```Centre```
 
 11. **Vérifier** la configuration
     * la zone de prévisualisation
-    ![Empilement](assets/preview.png)
+    ![Empilement](/assets/preview.png)
 
     * structure des acteurs du composites
-    ![Empilement](assets/actors.png)
+    ![Empilement](/assets/actors.png)
 
 ## Ajout du **composite** dans la **scène**
 
 Seul l'ossature du visuel est finalisée, les propriétés personnalisées et le comportement du composite reste à configurer. Au préalable, nous allons ajouter plusieurs **instances** du composite dans la scène
 
 1. **Sélectionner** la scène _climatiseurs_
-    ![Empilement](assets/select_scene.png)
+    ![Empilement](/assets/select_scene.png)
 
 2. **Sélectionner** l'acteur _toile_ ```canvas1``` et **ajouter** un acteur enfant de type _Climatiseur_ (dans la catégrorie _Autres_ de l'explorateur d'acteurs)
 
@@ -211,7 +211,7 @@ Seul l'ossature du visuel est finalisée, les propriétés personnalisées et le
     * vérifier que la propriété _Aspect > Police > Taille_ a bien la valeur de ```50px``` que nous avons configuré au niveau du composite
     * modifier cette propriété avec la valeur ```30px``` et constater que la taille du texte de l'acteur diminue
     * réinitialiser la propriété et constater que la taille est de nouveau ```50px```
-    ![Empilement](assets/defaultSize.png)
+    ![Empilement](/assets/defaultSize.png)
     * modifier la propriété _Aspect > Couleur de fond_ avec la couleur jaune clair ```#ffe583```
 
 3. **Dupliquer** l'acteur _Climatiseur_ ```compositeClimEast```
@@ -219,7 +219,7 @@ Seul l'ossature du visuel est finalisée, les propriétés personnalisées et le
     * renommer le _Label_ avec ```compositeClimWest```
     * modifier la propriété _Position > Position gauche_ avec la taille ```600px```
     * modifier la propriété _Aspect > Couleur de fond_ avec la couleur gris clair ```#e0e0e0```
-    ![Empilement](assets/preview2.png)
+    ![Empilement](/assets/preview2.png)
     * constater que nous avons personnalisé les 2 instances d'un même composite
 
 ## Définition des **propriétés spécifiques** du composite
@@ -229,7 +229,7 @@ Nous allons définir les propriétés personnalisées du composite pour pouvoir 
 1. **Sélectionner** le composite _Climatiseur_
 
 2. **cliquer** sur **Gestion des propriétés** spécifiques dans l'onglet _Spécifiques_ de l'inspecteur du composite
-    ![Empilement](assets/specificsProps.png)
+    ![Empilement](/assets/specificsProps.png)
 
 3. **ajouter** une propriété de type _Booléen_ qui permettra de définir si le climatiseur est en marche ou arrêt
 
@@ -255,10 +255,10 @@ Nous allons définir les propriétés personnalisées du composite pour pouvoir 
     * définir le _Nom de la propriété_ avec le texte _Mode_
     * définir la _Description_ avec le texte _Mode de fonctionnement_
     * Dans la liste de choix définir les 2 éléments été et hiver avec les labels respectifs ```SUMMER``` et ```WINTER```
-    ![Empilement](assets/listMode.png)
+    ![Empilement](/assets/listMode.png)
 
 7. **Vérifier** la définition des 4 propriétés spécifiques et **fermer** le _Gestionnaire de propriétés spécifiques_ en cliquant sur _Terminé_
-    ![Empilement](assets/compositeProps.png)
+    ![Empilement](/assets/compositeProps.png)
 
 8. **Définir** les valeurs par défaut des 4 propriétés spécifiques créées
 
@@ -274,8 +274,8 @@ Quatre propriétés spécifiques du composite ont été créées et doivent main
 1. **Selectionner** l'acteur ```switchImageOnOff```
 
     * lier la propriété _Spécifiques > Valeur_ en _interne_ à la propriété _Spécifiques > Marche/Arrêt_ du composite
-    ![Empilement](assets/bindInternal.png)
-    ![Empilement](assets/bindInternal2.png)
+    ![Empilement](/assets/bindInternal.png)
+    ![Empilement](/assets/bindInternal2.png)
 
 2. **Selectionner** l'acteur ```htmlTempCurrent```
 
@@ -295,12 +295,12 @@ Quatre propriétés spécifiques du composite ont été créées et doivent main
     * dans le cas de _switchImageMode_ la propriété _Valeur_ est de type **booléen** et la propriété _Mode_ du composite est de type **texte**: ```SUMMER``` ou ```WINTER```. Il faut donc procéder à une **conversion** ou **transformation** de la valeur **texte** en **booléen**
 
     * Définir une fonction de transformation en lecture pour transformer le _Mode_ **texte** en _Valeur_ **booléen**
-    ![Empilement](assets/transform.png)
+    ![Empilement](/assets/transform.png)
     * Définir la fonction
     ```javascript
     return context.value==="SUMMER"
     ```
-    ![Empilement](assets/aceJs.png)
+    ![Empilement](/assets/aceJs.png)
 
     Les scripts seront détaillés dans le [Tutorial 6: événements et javascript](../tuto06/index.md) mais simplement savoir que dans une fonction de transformation _context.value_ contient la **valeur de la source de la liaison**: ici, la valeur de la proriété _Mode_ du composite.
 
@@ -312,8 +312,8 @@ Quatre propriétés spécifiques du composite ont été créées et doivent main
     * Modifier la propriété _Spécifiques > Température consigne_ et vérifier que la consigne dans la _zone de prévisualisation_ change
     * Modifier la propriété _Spécifiques > Température ambiante_ et vérifier qu'elle change dans la _zone de prévisualisation_
     * Modifier la propriété _Spécifiques > Mode_ et vérifier que l'image correspondante dans la _zone de prévisualisation_ bascule bien de _été_ à _hiver_
-    ![Empilement](assets/compositeTest.png)
-    ![Empilement](assets/preview3.png)
+    ![Empilement](/assets/compositeTest.png)
+    ![Empilement](/assets/preview3.png)
 
 ## Configuration des propriétés spécifiques du composite dans la scène
 
@@ -326,7 +326,7 @@ La définition du composite est finalisée, nous allons maintenant lier les vale
     * définir la propriété _Spécifiques > Température consigne_ avec la valeur ```21```
     * définir la propriété _Spécifiques > Température ambiante_ avec la valeur ```19```
     * définir la propriété _Spécifiques > Mode ambiante_ avec la sélection ```Eté```
-    ![compositeClimEast](assets/compositeClimEast.png)
+    ![compositeClimEast](/assets/compositeClimEast.png)
 
 3. **Sélectionner** l'acteur ```compositeClimWest```
 
@@ -336,7 +336,7 @@ La définition du composite est finalisée, nous allons maintenant lier les vale
     * définir la propriété _Spécifiques > Mode_ avec la sélection ```Hiver```
 
 4. **Verifier** que les 2 instances du composite, ```compositeClimEast```, ```compositeClimWest``` représentent les valeurs définies
-    ![preview](assets/preview4.png)
+    ![preview](/assets/preview4.png)
 
 Le composite fonctionne et les valeurs définies pour les 2 instances du composite dans la scène peuvent sans difficultés être liées à une ressource de type _Régulation ventilo-convecteur 2T_ via une source de donnée, consulter le [tutorial 2 sur les liaisons](../tuto06/index.md).
 
@@ -361,34 +361,34 @@ Notre **objectif** ici est double:
 
 1. **Sélectionner** l'onglet composites et **créer** un nouvel acteur composite
 
-    ![Empilement](assets/composites.png)
+    ![Empilement](/assets/composites.png)
 
     * modifier le _label_ du composite en ```compositeClim2``` et le _nom_ avec ```Climatiseur métier```
     * modifier la _description_ du composite en ```Acteur de visualisation et de contrôle d'un climatiseur avec ressource Régulation ventilo-convecteur 2T```
     * modifier la _catégorie_ du composite avec la sélection ```Métier```. Cela permet de retrouver le composite dans cette catégorie dans l'_explorateur d'acteurs_
     * Récupérer l'image ci-dessous
 
-        ![Empilement](assets/climBus.jpg)
+        ![Empilement](/assets/climBus.jpg)
     * Glisser/déplacer l'image dans la zone **hachurée** de la propriété  _Logo_
-    ![Empilement](assets/compositeClim2_inspector.png)
+    ![Empilement](/assets/compositeClim2_inspector.png)
 
     * définir la propriété _Source de données > Source_
-    ![compositeDatasource](assets/compositeDatasource.png)
+    ![compositeDatasource](/assets/compositeDatasource.png)
 
     **Important:** nous définissons une source de donnée sur le composite afin d'avoir une **ressource de travail** pour configurer les liaisons. Cette ressource pourra et devra  être modifié au moment de l'ajout d'une instance de ce composite dans la scène
 
-    * créer la source de donnée WOS ![createDatasource](assets/createDatasource.png)
+    * créer la source de donnée WOS ![createDatasource](/assets/createDatasource.png)
     * parcourir le chemin vers la ressource ```VTCAtlanticEst``` dans le dossier ```Tutorial5```
     ```text
     : / easy / RESS / R00005 / R0003
     ```
     * modifier le nom de la source de donnée par ```dsVTCAtlanticEst``` puis cliquer sur **Créer**
-        ![defineDatasource](assets/defineDatasource.png)
+        ![defineDatasource](/assets/defineDatasource.png)
 
     * modifier la _Classe de la donnée_ pour indiquer la classe de ressource que sait consommer le composite. Cela facilitera la configuration du composite lors de l'ajout dans une scène en indiquant à l'utilisateur le type de ressource à définir. Sélectionner **Classe de la donnée** pour contraindre le composite à une ressource de type _ventilo-convecteur 2T_
 
-        ![defineDatasource](assets/compositeClass.png)
-        ![defineDatasource](assets/compositeClass2.png)
+        ![defineDatasource](/assets/compositeClass.png)
+        ![defineDatasource](/assets/compositeClass2.png)
 
 2. **Définir** l'acteur principal avec un acteur _Empilement_
 
@@ -399,16 +399,16 @@ Notre **objectif** ici est double:
     * définir la propriété _Position > Align. vertical_ a ```Etendre```
     * définir la propriété _Position > Align. horizontal_ a ```Etendre```
     * lier la propriété _Spécifiques > Marche/Arrêt_ en Source de données
-    ![bindDatasource](assets/bindComposite2.png)
+    ![bindDatasource](/assets/bindComposite2.png)
     * saisir ```VC_Stop``` dans le _Chemin_ ou utiliser l'_explorateur de chemin relatif_
     * sélectionner la propriété _Valeur_ et la liaison en lecture _Rafraichie_ et **Lier**
-    ![bindDatasource2](assets/bindDatasource2.png)
+    ![bindDatasource2](/assets/bindDatasource2.png)
     * lier la propriété _Spécifiques > Température consigne_ en Source de données
 
     _Remarque:_ la valeur du chemin de la ressource ```VC_Stop``` retourne ```true``` lorsque le climatiseur est arreté et ```false``` lorsqu'il est en marche. Hors la propriété _Spécifiques > Marche/Arrêt_ doit avoir la valeur ```true``` pour indiquer que le climatiseur est en marche: il faut donc **inverser** la valeur provenant de la source de données avec un **fonction de transformation**
 
     * editer le script de transformation lecture
-    ![transform2](assets/transform2.png)
+    ![transform2](/assets/transform2.png)
     * écrire la fonction suivante
         ```javascript
         return !context.value
@@ -439,8 +439,8 @@ La définition du composite métier est finalisée ! Les valeurs _Spécifiques_ 
 
 Modifier les valeurs directement dans le paramétrage de la Ressource du REDY puis attendre (max 30 secondes ou forcer le rechargement avec F5) le rafraissement de la source de donnée pour vérifier que le composite reflète bien les modifications
 
-![compositeClim2_inspector2](assets/compositeClim2_inspector2.png)
-![preview5](assets/preview5.png)
+![compositeClim2_inspector2](/assets/compositeClim2_inspector2.png)
+![preview5](/assets/preview5.png)
 
 ## Modification de la scène par remplacement du composite métier
 
@@ -448,7 +448,7 @@ Nous avons configuré la scène avec 2 intances de composite _compositeClim_. Ho
 
 1. **Sélectionner** la scène _climatiseurs_
 
-2. **Sélectionner** l'acteur ```compositeClimEast``` et le supprimer ![preview5](assets/actor_delete.png)
+2. **Sélectionner** l'acteur ```compositeClimEast``` et le supprimer ![preview5](/assets/actor_delete.png)
 
 3. **Sélectionner** l'acteur ```compositeClimWest``` et le supprimer également
 
@@ -465,15 +465,15 @@ Nous avons configuré la scène avec 2 intances de composite _compositeClim_. Ho
     * renommer le _Label_ avec ```compositeClimWest```
     * modifier la propriété _Position > Position gauche_ avec la taille ```600px```
     * modifier la propriété _Source de données > Source_
-    ![actorDatasource2](assets/actorDatasource2.png)
+    ![actorDatasource2](/assets/actorDatasource2.png)
     * créer une nouvelle source de donnée _WOS_
-    ![createDatasource2](assets/createDatasource2.png)
+    ![createDatasource2](/assets/createDatasource2.png)
     * parcourir le chemin vers la ressource ```VTCAtlanticWest``` dans le dossier ```Tutorial5```
     ```text
     : / easy / RESS / R00005 / R0004
     ```
     * modifier le nom de la source de donnée par ```dsVTCAtlanticWest``` puis cliquer sur **Créer**
-        ![defineDatasource2](assets/defineDatasource2.png)
+        ![defineDatasource2](/assets/defineDatasource2.png)
     * vérifier que l'acteur représente bien les valeurs de la ressource du REDY ```VTCAtlanticWest```
 
 6. **Sélectionner** l'acteur _toile_ ```canvas1``` et **ajouter** un acteur enfant de type _Curseur_
@@ -489,7 +489,7 @@ Nous avons configuré la scène avec 2 intances de composite _compositeClim_. Ho
     * définir la propriété _Spécifiques > Couleur bar_ avec la couleur ```#ff8000```
     * définir la propriété _Spécifiques > Interval_ avec la valeur ```0.5```
     * lier la propriété  _Spécifiques > Valeur_ en source de donnée avec le chemin ```VC_Sp```, la propriété _valeur_ et la liaison en lecture _Rafraichie_ et **écriture**
-    ![bindDatasource3](assets/bindDatasource3.png)
+    ![bindDatasource3](/assets/bindDatasource3.png)
 
 7. **Dupliquer** l'acteur ```sliderEast```
 
@@ -513,7 +513,7 @@ En attendant, il est tout de même possible d'exporter, et d'importer un composi
 Nous allons créer une nouvelle SynApp et importer le composite ```compositeClim``` créé dans la SynApp ```tuto05```
 
 1. Lister les SynApps et créer une nouvelle SynApps que vous appelerez ```Test Import```
-    ![bindDatasource3](assets/listSynApps.png)]
+    ![bindDatasource3](/assets/listSynApps.png)]
 
 2. **Naviguer** dans l'interface de **Configuration** du REDY et l'onglet **Explorateur**
 
@@ -521,7 +521,7 @@ Nous allons créer une nouvelle SynApp et importer le composite ```compositeClim
     ```text
     :easy.SynApps.tuto05.Composites.compositeClim
     ```
-    ![bindDatasource3](assets/redyExplorator.png)
+    ![bindDatasource3](/assets/redyExplorator.png)
 
 4. **Cliquer** sur le bouton **Exporter**
 
@@ -531,10 +531,10 @@ Nous allons créer une nouvelle SynApp et importer le composite ```compositeClim
     ```
 
 6. **Cliquer** sur le bouton _Choisir un fichier_, **sélectionner** le fichier _.WK4_ exporté précédemment, et **ajouter**
-    ![redyImport](assets/redyImport.png)
+    ![redyImport](/assets/redyImport.png)
 
 7. **Vérifier** que le composite est bien importé
-    ![redyImport2](assets/redyImport2.png)
+    ![redyImport2](/assets/redyImport2.png)
 
 8. **Retourner** dans SynApps MAKER et nettoyer le cache pour forcer le rechargement du paramétrage de la SynApp depuis le REDY
 

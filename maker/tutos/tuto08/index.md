@@ -91,7 +91,7 @@ Nous allons construire une scène simple afin de mettre en évidence le comporte
 
 11. **Vérifier** la zone de prévisualisation
 
-    ![props_invalid](assets/preview.png)
+    ![props_invalid](/assets/preview.png)
 
 12. **Déployer** et **éxécuter**
 
@@ -105,11 +105,11 @@ Nous allons simuler le rendu sur un petit écran pour mieux comprendre l'influen
 
 2. **Cliquer** sur l'icone permettant de choisir un type de _device_ de rendu
 
-    ![devtools](assets/devtools.png)
+    ![devtools](/assets/devtools.png)
 
 3. **Sélectionner** le _device_ que vous souhaitez dans la fenêtre principale du navigateur. Par exemple _iPhone 6/7/8_
 
-    ![execute](assets/execute.png)
+    ![execute](/assets/execute.png)
 
     _Remarque:_ si vous souhaitez faire apparaitre le contour du téléphone, cliquer sur les 3 points verticaux en haut à droite puis sélectionnez **Show device frame**
 
@@ -121,15 +121,15 @@ L'environnement de test est opérationnel et la SynApp est en mode **éxécution
 
 1. **Tourner** la SynApp en mode _portrait_
 
-    ![execute2](assets/portrait.png)
+    ![execute2](/assets/portrait.png)
 
 2. **Définir** la hauteur à ```300px``` et laisser la largeur à ```100%```
 
-    ![execute2](assets/execute2.png)
+    ![execute2](/assets/execute2.png)
 
 3. **Tourner** la SynApp en mode _paysage_ et **constater** que le bord rouge du bas de la zone disparait
 
-    ![execute3](assets/execute3.png)
+    ![execute3](/assets/execute3.png)
 
 La zone centrale est tronquée, la SynApp n'est pas adaptative !
 
@@ -151,7 +151,7 @@ Permet de définir des tailles en pourcent par rapport à l'acteur parent
 
 2. **Passer** du mode _paysage_ au mode _portrait_ et **constater** que la hauteur de la zone est de 50% relativement à la hauteur de la **zone grise**
 
-    ![execute4](assets/execute4.png)
+    ![execute4](/assets/execute4.png)
 
     _Remarque:_ lorsque vous définissez des tailles en %, elles sont relatives par rapport à l'acteur parent immédiat. Ici, il s'agit de l'acteur ```stackInner``` en gris
 
@@ -163,7 +163,7 @@ Permet de définir des tailles en pourcent par rapport à la taille de la fenêt
 
 2. **Passer** du mode _paysage_ au mode _portrait_ et **constater** que la hauteur de la zone est de 50% relativement à la hauteur de la **fenêtre**
 
-    ![execute5](assets/execute5.png)
+    ![execute5](/assets/execute5.png)
 
     _Remarque:_ lorsque vous définissez des tailles avec **vh**, elles sont relatives par rapport à la **taille de la fenêtre** à la différence du %
 
@@ -171,7 +171,7 @@ Permet de définir des tailles en pourcent par rapport à la taille de la fenêt
 
 4. **constater** que la largeur de la zone est de 80% relativement à la largeur de la **fenêtre**
 
-    ![execute6](assets/execute6.png)
+    ![execute6](/assets/execute6.png)
 
     _Remarque:_ **vh** correspond à la hauteur de la fenêtre et **vw** correspond à la largeur de la fenêtre
 
@@ -185,7 +185,7 @@ Permet de définir des tailles en pourcentage par rapport à, respectivement, la
 
 2. **Passer** du mode _paysage_ au mode _portrait_ et **constater** que la hauteur de la zone est de 50% relativement à la plus petite des tailles: la **largeur** de la **fenêtre**
 
-    ![execute7](assets/execute7.png)
+    ![execute7](/assets/execute7.png)
 
     _Remarque:_ **vh** correspond à la hauteur de la fenêtre et **vw** correspond à la largeur de la fenêtre
 
@@ -193,7 +193,7 @@ Permet de définir des tailles en pourcentage par rapport à, respectivement, la
 
 4. **constater** que la hauteur de la zone est de 30% relativement à la plus grande des tailles: la **hauteur** de la **fenêtre**
 
-    ![execute8](assets/execute8.png)
+    ![execute8](/assets/execute8.png)
 
 **vmin** et **vmax** sont trés utiles pour définir des tailles en % par rapport aux tailles de fenêtres sur des écrans _smartphone_ et _tablette_ orientables. La taille est conservée quelquesoit l'orientation
 
@@ -205,7 +205,7 @@ Permet de définir une taille en fonction de celle de la police. **em** est adap
 
 2. **constater** que la hauteur de la zone est 3x plus grande que la taille de la police. Le nombre, qui peut être décimal, devant **em** est donc un coefficient multiplicateur par rapport à la taille de la police
 
-    ![execute9](assets/execute9.png)
+    ![execute9](/assets/execute9.png)
 
 3. **Passer** en mode portrait et **constater** que la hauteur est conservée
 
@@ -254,7 +254,7 @@ Vous ne devez pas hésiter à **tester** votre SynApp avec les outils de dévelo
 
 Vous pouvez même utiliser le device **Responsive** qui permet de modifier manuellement la largeur et la hauteur !
 
-![execute9](assets/responsive.png)
+![execute9](/assets/responsive.png)
 
 La bonne utilisation des tailles est un facteur clé pour construire des applications adaptatives, une des promesses majeures de SynApps !
 

@@ -20,10 +20,10 @@ Les librairies sont classifiées en trois **catégories**:
 * **Images**: librairie d'*images*
 * **Contenu**: librairie d'autre types de contenu: *texte*, *javascript*, *json*, etc
 
-![Paramètres de la ressource](assets/part6_1.png)
+![Paramètres de la ressource](/assets/part6_1.png)
 
 Tout élément d'une librairie est stocké dans le REDY dans un **nod dédié** qui peut donc être simplement modifié côté UTL manuellement, avec du e@sy-script, etc
-![Paramètres de la ressource](assets/part6_2.png)
+![Paramètres de la ressource](/assets/part6_2.png)
 
 Cela implique également qu'une méthode simple pour venir éditer un élément de configuration de SynApps depuis le REDY est de sortir ce contenu de l'acteur dans une *librairie*: _texte_, _couleur_, _valeur numérique_, _etc_
 
@@ -45,12 +45,12 @@ La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie
 
 1. L'acteur *gaugeAnalogic* étant sélectionné, éditer la liaison de la propriété *Spécifiques.Couleur de fond* et sélectionner **Librairie**
 
-    ![Edition source de données](assets/part6_3.png)
+    ![Edition source de données](/assets/part6_3.png)
     La modale d'édition des liaisons vers les librairie s'ouvre
 
 2. Description de l'éditeur de liaison des libraries
 
-    ![Description liaison  interne](assets/part6_4.png)
+    ![Description liaison  interne](/assets/part6_4.png)
     L'éditeur de liaison de *source de données* est composé de trois parties principales:
 
     * **Sélecteur de librairie éxistante**: sélectionner un type et lier la propriété de l'acteur à une librairie éxistante
@@ -63,20 +63,20 @@ La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie
 
 3. Dans *Types*, sélectionner *Couleurs*, sélectionner **color1** dans *Nouvel élément*. Changer le *label* pour **colorGauge** puis **[lier]** en bas à droite
 
-    ![Résumé liaison librairie](assets/part6_5.png)
+    ![Résumé liaison librairie](/assets/part6_5.png)
 
 4. La propriété *Couleur premier plan* de *gaugeAnalogic* est désormais liée à la librairie *colorGauge*, vous remarquez:
     * qu'elle **n'est plus modifiable manuellement car liée**
     * le bouton d'édition de la liaison est de couleur **vert** pour indiquer une liaison *librairie*
     * un **tooltip résumant la liaison** apparaît en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
-    ![Tooltip liaison librairie](assets/part6_6.png)
+    ![Tooltip liaison librairie](/assets/part6_6.png)
 
 ### Verification des liaisons **librairies**
 
 1. Vérifier la liaison en modifiant la couleur de la librairie *colorGauge* avec une autre couleur
 
-    ![Sélection de la librairie](assets/part6_7.png)
-    ![Modification de la librairie](assets/part6_8.png)
+    ![Sélection de la librairie](/assets/part6_7.png)
+    ![Modification de la librairie](/assets/part6_8.png)
 
 2. Revenir sur la scène *scene1* et observer que la couleur est bien appliquée sur les acteurs
 
@@ -85,20 +85,20 @@ La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie
     ```TEXT
     :easy.SynApps.Tuto02.Libraries.Color
     ```
-    ![Explorateur de nod](assets/part6_9.png)
+    ![Explorateur de nod](/assets/part6_9.png)
 
 4. Modifier le numéro de _build_ de la SynApp pour forcer son rechargement
 
     ```:easy.SynApps.Tuto02.Build```
 
-    ![Build](assets/build.png)
+    ![Build](/assets/build.png)
     _Remarque:_ La configuration SynApp est cachée dans le navigateur pour optimiser son temps de chargement. Le numéro de _build_ de la SynApp cachée est comparé à celui stocké sur le REDY. Lorsqu'ils different, la SynApp est rechargée puis cachée dans le navigateur.
 
     A chaque fois que vous modifiez une SynApp depuis le MAKER, le numéro de build change automatiquement. Par contre, si vous **modifiez une des ressources de SynApp directement depuis le REDY**, avec l'explorateur de Nod par exemple, il faut **manuellement modifier le numéro de _build_** pour forcer le rafraîchissement de la SynApp dans les MAKER et RUNTIME
 
 5. Revenir sur la scène *scene1* de SynApps, rafraîchir (F5) et observer que la couleur est bien appliquée sur les acteurs
 
-    ![Explorateur de nod](assets/part6_10.png)
+    ![Explorateur de nod](/assets/part6_10.png)
 
 ## Conclusion
 

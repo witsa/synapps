@@ -30,7 +30,7 @@ Certains acteurs **natifs** vont chercher directement des données autres que ce
 
 1. L'acteur *stackRoot* étant sélectionné, ouvrir l'onglet *source de données* et cliquer sur le bouton d'édition
 
-    ![Création liaison source de données](assets/actorDatasource.png)
+    ![Création liaison source de données](/assets/actorDatasource.png)
 
 2. Définir une nouvelle **source de donnée**, l'éditeur de permet de:
 
@@ -39,20 +39,20 @@ Certains acteurs **natifs** vont chercher directement des données autres que ce
 
 3. Actuellement aucune *source de donnée* n'est définie. Cliquer sur le bouton **[+Créer]** à côté du type de source souhaité: **WOS** ... le seul disponible à ce jour (voir remarques ci-dessus)
 
-    ![Sélecteur source de données](assets/datasourceExplorerDesc.png)
+    ![Sélecteur source de données](/assets/datasourceExplorerDesc.png)
     L'explorateur des ressources du REDY s'ouvre sur le chemin par défaut:
     ```TEXT
     :easy.RESS
     ```
-    ![Sélectionner nod](assets/selectNod.png)
+    ![Sélectionner nod](/assets/selectNod.png)
 
 4. Sélectionner le dossier de ressource **R00001** *Tutorial2*
 
-    ![Sélectionner R00001](assets/selectNod2.png)
+    ![Sélectionner R00001](/assets/selectNod2.png)
 
 5. Sélectionner la variable analogique **R00002** *VariableAnalogicTuto*
 
-    ![Sélectionner R00002](assets/selectNod3.png)
+    ![Sélectionner R00002](/assets/selectNod3.png)
     La variable analogique *VariableAnalogicTuto* a pour chemin
     ```TEXT
     :easy.RESS.R00001.R00002
@@ -64,7 +64,7 @@ Certains acteurs **natifs** vont chercher directement des données autres que ce
 
 7. La propriété *Source* de l'acteur *stackRoot* est désormais définie sur **dsR00002**
 
-    ![Sélectionner R00002](assets/actorDatasource2.png)
+    ![Sélectionner R00002](/assets/actorDatasource2.png)
     * Remarquer également la propriété **Contexte** est *variableAnalogiqueTuto* *:easy.RESS.R00001.R00002*
     * Le **contexte** est la **donnée principale** de l'acteur. Il faut bien distinguer la différence entre **source de donnée** et **contexte**:
         * **source de donnée** = moyen d'accès à une donnée
@@ -77,7 +77,7 @@ Certains acteurs **natifs** vont chercher directement des données autres que ce
 * leurs source sont *Contexte parent* **stackRoot**
 
     Exemple pour l'acteur jauge *gaugeAnalogic*
-![contexte de gaugeAnalogic](assets/actorDatasource3.png)
+![contexte de gaugeAnalogic](/assets/actorDatasource3.png)
 
 ### Création des liaisons **sources de données**
 
@@ -86,11 +86,11 @@ La propriété *Valeur* de l'acteur *gaugeAnalogic* est actuellement définie ma
 1. L'acteur *gaugeAnalogic* étant sélectionné, cliquer sur le bouton d'édition de la liaison de la propriété *Spécifiques.Valeur* et sélectionner **Source de données**
 
     La fenêtre d'édition des liaisons vers les sources de données s'ouvre
-![Création liaison source de données](assets/editBindingDatasource.png)
+![Création liaison source de données](/assets/editBindingDatasource.png)
 
 2. Configurer la liaison
 
-    ![Description liaison  interne](assets/bindingDatasourceExplorerDesc.png)
+    ![Description liaison  interne](/assets/bindingDatasourceExplorerDesc.png)
 L'éditeur de liaison de *source de données* est composé de trois parties principales:
 
 * **Source de données**:
@@ -101,21 +101,21 @@ L'éditeur de liaison de *source de données* est composé de trois parties prin
 
 * **Contexte**: laisser la propriété *Valeur* par défaut. En sélectionnant la liste déroulante, vous pouvez visualiser les autres propriétés disponibles. Dans la cas d'un nod de type *ressource* la propriété *état* serait également sélectionnable
 
-* **Accès**: 
+* **Accès**:
 
-  * **Lecture**: laisser sélectionné et *écriture* non sélectionné. La variable analogique *variableAnalogicTuto* est accédée en lecture 
+  * **Lecture**: laisser sélectionné et *écriture* non sélectionné. La variable analogique *variableAnalogicTuto* est accédée en lecture
 
   * **Mode**: sélectionner *Rafraîchie*. La valeur sera rafraîchie toutes les X secondes. L'autre valeur possible est *Initialisation* dans ce cas la valeur est récupéré une seule fois au moment de l'initialisation de l'acteur
 
   * **Écriture**: laisser non sélectionné. La variable analogique *variableAnalogicTuto* ne doit pas être modifié par l'acteur
-  
-*Remarques:* 
+
+*Remarques:*
 
 * Ne sélectionner le *mode rafraîchie* que sur des propriétés de nod qui changent. Par exemple, le *mode initialisation* est suffisant pour définir la liaison vers le nom d'une ressource
 
 * La période de rafraîchissement du *mode rafraîchie* peut être modifiée directement au niveau de la *source de donnée*: onglet *source* en haut à gauche de SynApps
 
-![Résumé liaison source de donnée](assets/bindingDatasourceEdit.png)
+![Résumé liaison source de donnée](/assets/bindingDatasourceEdit.png)
 
 Consulter [description du MAKER](../../designer.md) pour en savoir plus concernant l'éditeur de liaison *source de donnée*
 
@@ -128,32 +128,32 @@ La propriété *Valeur* de *gaugeAnalogic* est désormais liée à la propriét�
 
 * un **tooltip résumant la liaison** apparaît en déplaçant le curseur de la souris sur le bouton d'édition de la liaison
 
-![Tooltip liaison source de donnée](assets/bindingDatasourceSummary.png)
+![Tooltip liaison source de donnée](/assets/bindingDatasourceSummary.png)
 
 ### Vérification de la liaison **sources de données**
 
 Modifier la période de rafraîchissement de la source de donnée *dsR00002* à 3 secondes
-![Tooltip liaison source de donnée](assets/datasourceEdit.png)
-![Tooltip liaison source de donnée](assets/datasourceChangePeriod.png)
+![Tooltip liaison source de donnée](/assets/datasourceEdit.png)
+![Tooltip liaison source de donnée](/assets/datasourceChangePeriod.png)
 
 Revenir sur la scène *scene1* et observer les mouvements de la jauge toutes les 3 secondes en fonction des changements de valeur *Output* de *variableAnalogicTuto*.
 
 *Remarque:* la valeur dans *textBottom* change également car une liaison interne a déja été définie [précédemment](part4.md)
-![Vérification liaison interne](assets/bindingDatasourceCheck.png)
+![Vérification liaison interne](/assets/bindingDatasourceCheck.png)
 
 ### Définition des autres liaisons aux **sources de données**
 
 1. De la même manière, lier la propriété additionnelle *Spécifiques.Max* de l'acteur *gaugeAnalogic* à la propriété *Valeur* du chemin *WMax* du contexte en *mode initialisation*. *WMax* peut changer dans le REDY mais il est largemment acceptable de ne récupérer sa valeur qu'à l'initialisation
 
-    ![Edition liaison vers Max](assets/bindingDatasourceEditMax.png)
+    ![Edition liaison vers Max](/assets/bindingDatasourceEditMax.png)
 
 2. Lier la propriété additionnelle *Spécifiques.nom* de l'acteur *textTop* à la propriété *Valeur* du chemin *Title* du contexte en *mode initialisation*
 
-    ![Edition liaison vers Title](assets/bindingDatasourceEditTitle.png)
+    ![Edition liaison vers Title](/assets/bindingDatasourceEditTitle.png)
 
 3. Lier la propriété additionnelle *Spécifiques.unit* de l'acteur *textTop* à la propriété *Valeur* du chemin *Unit* du contexte en *mode initialisation*
 
-    ![Edition liaison vers Unit](assets/bindingDatasourceEditUnit.png)
+    ![Edition liaison vers Unit](/assets/bindingDatasourceEditUnit.png)
 
 Toutes les liaisons des **sources de données** sont désormais définies
 
@@ -167,18 +167,18 @@ Vérifier que tout fonctionne comme attendu: connectez-vous sur le REDY et modif
 
 * Modifier le nom de la ressource
 
-![Vérification liaison interne](assets/redyIdentity2.png)
+![Vérification liaison interne](/assets/redyIdentity2.png)
 
 * Passer en mode *Forcé manuel*
 * Modifier le Seuil maximum à *120*
 * Modifier la Valeur à plusieurs reprises en validant: *30, 110, 50, etc*
 
- ![Vérification liaison interne](assets/redyForced2.png)
+ ![Vérification liaison interne](/assets/redyForced2.png)
 La zone de pré-visualisation doit restituer les changements sur l'ensemble des acteurs
 
 Observer le résultat dans SynApp. La zone de prévisualisation doit restituer les changements sur la resource du REDY
 
-![Vérification liaison source de donnée](assets/bindingDatasourceCheck2.png)
+![Vérification liaison source de donnée](/assets/bindingDatasourceCheck2.png)
 
 *Remarques:*
 
