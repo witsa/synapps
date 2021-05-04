@@ -5,6 +5,11 @@ keep_files: [ script-api/ ]
 logo: "assets/LogoSynApps128.png"
 
 defaults:
+  - 
+    scope: 
+      path: ""
+    values:
+      layout: default
   -
     scope:
       path: maker
