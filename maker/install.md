@@ -1,3 +1,7 @@
+---
+parent: Documentation Maker
+---
+
 [Accueil](./)
 
 # Installation
