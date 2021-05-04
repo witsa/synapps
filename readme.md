@@ -10,4 +10,4 @@ Documentation de la solution Synapps
 > TODO
 
 
-[Documemtation Maker](./maker)
+[Documemtation Maker](./maker/readme.md)
