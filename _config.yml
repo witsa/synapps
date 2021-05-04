@@ -4,14 +4,14 @@ description: Construisez des apps standards, adaptatives et multi-plateformes co
 keep_files: [ script-api/ ]
 logo: "assets/LogoSynApps128.png"
 
-defaults:
-  - 
-    scope: 
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "maker"
-    values:
-      parent: "maker"
+# defaults:
+#   - 
+#     scope: 
+#       path: ""
+#     values:
+#       layout: "default"
+#   -
+#     scope:
+#       path: "maker"
+#     values:
+#       parent: "maker"
