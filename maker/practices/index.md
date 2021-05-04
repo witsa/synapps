@@ -1,10 +1,3 @@
----
-layout: default
-title: Bonnes et Mauvaises pratiques *(...en construction...)*
-nav_order: 2
-has_children: true
----
-
 [Accueil](../)
 
 # Bonnes et Mauvaises pratiques *(...en construction...)*

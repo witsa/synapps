@@ -1,10 +1,3 @@
----
-layout: default
-title: Acteurs
-nav_order: 2
-has_children: true
----
-
 [Accueil](../)
 
 # Acteurs
