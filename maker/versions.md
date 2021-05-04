@@ -1,3 +1,9 @@
+---
+title: Versions SynApps MAKER et RUNTIME
+parent: maker
+---
+
+---
 [Accueil](./)
 
 # Versions SynApps MAKER et RUNTIME
