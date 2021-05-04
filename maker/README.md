@@ -1,3 +1,8 @@
+---
+title: Documentation Maker
+has_children: true
+---
+
 [Plan du site](./sitemap.md)
 
 # Home
