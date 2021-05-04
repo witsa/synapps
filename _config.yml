@@ -3,3 +3,11 @@ title: Solution Synapps
 description: Construisez des apps standards, adaptatives et multi-plateformes connectées aux REDY.
 keep_files: [ script-api/ ]
 logo: "assets/LogoSynApps128.png"
+
+defaults:
+  -
+    scope:
+      path: "maker"
+      type: "pages"
+    values:
+      layout: "default"
