@@ -10,4 +10,4 @@ Les paramétrages des SynApps sont déployés sur le REDY dans le chemin:
 :easy.SynApps
 ```
 
-![Explorateur](/assets/explore.png)
+![Explorateur](assets/explore.png)

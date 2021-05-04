@@ -59,13 +59,13 @@ _Remarque:_ il est déconseillé d'intégrer directement du contenu extérieur v
 
         _Remarque:_ pour connaître l'URL du tableau de bord: ouvrir l'écran d'_exploitation_ du REDY sur l'onglet _tableau de bord_ puis cliquer  sur le **bouton** ouvrant le tableau de bord dans une nouvelle fenêtre
 
-        ![dashboard_link](/assets/dashboard_link.png)
+        ![dashboard_link](assets/dashboard_link.png)
 
         Copier l'URL dans la nouvelle fenêtre du navigateur
-        ![dashboard_link2](/assets/dashboard_link2.png)
+        ![dashboard_link2](assets/dashboard_link2.png)
 
         Coller l'URL dans la propriété _Spécifiques > URL_
-        ![preview_iframe](/assets/preview_iframe.png)
+        ![preview_iframe](assets/preview_iframe.png)
 
 4. **Supprimer** la session dans la configuration du REDY, et recharger la SynApp (F5), vous constatez alors que le tableau de bord n'est plus affiché. En effet l'URL copié ci-dessus contient le numéro de session **WSID**. Lorsque ce dernier est expiré, l'IFrame est vide !
 
@@ -84,10 +84,10 @@ _Remarque:_ il est déconseillé d'intégrer directement du contenu extérieur v
     * compléter le contenu en créant les propriétés additionnelle _host_ et _sid_ de type _texte_
 
     * Lier en _interne_ la propriété _Spécifiques > host_ créée vers la propriété _Url hôte_ de l'objet _Hôte_ en _lecture_ uniquement
-        ![bind_host](/assets/bind_host.png)
+        ![bind_host](assets/bind_host.png)
 
     * Lier en _interne_ la propriété _Spécifiques > sid_ créée vers la propriété _Url hôte_ de l'objet _Hôte_ en _lecture_ uniquement
-        ![bind_host](/assets/bind_sid.png)
+        ![bind_host](assets/bind_sid.png)
 
     * Le tableau de bord multi-énergies est de nouveau affiché dans la zone de prévisualisation !
 

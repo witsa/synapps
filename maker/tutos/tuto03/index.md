@@ -12,31 +12,31 @@ Ils sont actuellement au nombre de 5:
 
 **Empiler** les acteurs verticalement ou horizontalement
 
-![Empilement](/assets/actor_stack.png)
+![Empilement](assets/actor_stack.png)
 
 ## [Toile](part2.md)
 
 **Superposer** les acteurs sur une toile. Réaliser des synoptiques avec fond de plan par exemple
 
-![Toile](/assets/actor_canvas.png)
+![Toile](assets/actor_canvas.png)
 
 ## [Boite de vue](part3.md)
 
 **Adapter** au mieux un acteur enfant à la taille de l'écran courant
 
-![Boite de vue](/assets/actor_viewbox.png)
+![Boite de vue](assets/actor_viewbox.png)
 
 ## [Modal](part4.md)
 
 **Ouvrir** une fenêtre modale pour optenir ou fournir une information à l'utilisateur
 
-![Modal](/assets/actor_modal.png)
+![Modal](assets/actor_modal.png)
 
 ## Accordéon
 
 **Etendre** et **réduire** des acteurs panneaux
 
-![Accordéon](/assets/actor_accordion.png)
+![Accordéon](assets/actor_accordion.png)
 
 Dans ce tutorial, nous allons détailler le mode de fonctionnement des 4 premiers acteurs, _accordéon_ présentant un intérêt plus limité.
 

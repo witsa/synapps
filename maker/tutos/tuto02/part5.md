@@ -24,22 +24,22 @@ La prochaine étape va donc consister à ajouter des **acteurs d'intéractions**
 Actuellement le contexte de l'acteur *switchButtonCmd* est hérité de l'acteur *stackRoot*. Nous devons définir une nouvelle source de donnée pour cet acteur vers la ressource *ConsigneLogiqueTuto* du REDY
 
 1. L'acteur *switchButtonCmd* étant sélectionné, éditer sa *source de données*
-![Edition source de données](/assets/page4_1.png)
+![Edition source de données](assets/page4_1.png)
 
 2. Dans l'explorateur, créer une nouvelle *source de données* WOS vers la ressource
 ```
 :easy.RESS.R00001.R00003
 ```
-![Création source de données](/assets/page4_2.png)
+![Création source de données](assets/page4_2.png)
 
 3. La propriété *Source* de l'acteur *switchButtonCmd* est désormais définie sur **dsR00003** et le *Contexte* est sur la ressource *ConsigneLogiqueTuto*
-![Création source de données](/assets/page4_3.png)
+![Création source de données](assets/page4_3.png)
 
 4. Lier la propriété additionnelle *Spécifiques.Valeur* de l'acteur *switchButtonCmd* à la propriété *Valeur* du chemin *SetPoint* du contexte en accès *lecture à l'initialisation* et **Ecriture**
-![Edition liaison vers TrueStr](/assets/page4_4.png)
+![Edition liaison vers TrueStr](assets/page4_4.png)
 
 5. Lier la propriété additionnelle *Spécifiques.Texte On* de l'acteur *switchButtonCmd* à la propriété *Valeur* du chemin *TrueStr* du contexte en accès *lecture à l'initialisation*
-![Edition liaison vers SetPoint](/assets/page4_6.png)
+![Edition liaison vers SetPoint](assets/page4_6.png)
 
 5. Lier la propriété additionnelle *Spécifiques.Texte Off* de l'acteur *switchButtonCmd* à la propriété *Valeur* du chemin *FalseStr* du contexte en accès *lecture à l'initialisation*
 
@@ -53,10 +53,10 @@ Vérifier que tout fonctionne comme attendu:
 ```
 :easy.RESS.R00001.R00003
 ```
-![Vérification liaison interne](/assets/page4_7.png)
+![Vérification liaison interne](assets/page4_7.png)
 
 2. **Déployer** puis **éxécuter** la SynApp
-![Vérification liaison interne](/assets/page4_8.png)
+![Vérification liaison interne](assets/page4_8.png)
 
 3. Cliquer sur le *bouton commutateur* et vérifier que l'état *Jour*/*Nuit* **change**
 
@@ -64,7 +64,7 @@ Vérifier que tout fonctionne comme attendu:
 * *Libellé True*: remplacé *Jour* par **Oui**
 * *Libellé False*: remplacer *Nuit* par **Non**
 * Valider, modifier la *Consigne au Set* et revalider
-![Paramètres de la ressource](/assets/page4_9.png)
+![Paramètres de la ressource](assets/page4_9.png)
 
 5. Constater que les libellés *True*/*false* demeurent toujours inchangés à *Jour*/*Nuit* et pas *Oui*/*Non*
 

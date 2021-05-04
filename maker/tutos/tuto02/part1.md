@@ -14,6 +14,6 @@
 
 Créer la SynApp **tuto02** avec le MAKER depuis le bouton *créer* de la *barre de commande*
 
-![Créer une SynApp](/assets/createSynApp.png)
+![Créer une SynApp](assets/createSynApp.png)
 
 Suite du [tutorial](part2.md)

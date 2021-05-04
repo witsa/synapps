@@ -37,7 +37,7 @@ Procédure détaillée pour [installer un REDY PC](redy/install.md)
 
 Exécuter **REDY-PC.exe** et double cliquer pour ouvrir le navigateur
 
-![REDY PC](/assets/redyPCexe.png)
+![REDY PC](../assets/redyPCexe.png)
 
 ## REDY
 

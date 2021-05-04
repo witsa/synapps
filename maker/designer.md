@@ -5,4 +5,4 @@
 
 ## Zones
 
-![MAKER](/assets/maker.png)
+![MAKER](../assets/maker.png)

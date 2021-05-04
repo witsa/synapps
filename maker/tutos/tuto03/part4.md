@@ -2,14 +2,14 @@
 
 # Tutorial 3: l'acteur de disposition **Modal**
 
-![Icone modal](/assets/actor_modal.png)
+![Icone modal](assets/actor_modal.png)
 
 La quatrième partie de ce tutorial est consacrée à l'acteur **_modal_** qui permet d'**ouvrir** une fenêtre modale pour optenir ou fournir une information à l'utilisateur
 
 ## Prerequis
 
 Ajouter une **nouvelle scène** dans la SynApp **tuto03** créée précédemment. Modifier le _label_ de la scène en ```sceneModal``` et le _nom_ avec ```Modal``` puis déployer
-![Scène modale](/assets/part4_scenes.png)
+![Scène modale](assets/part4_scenes.png)
 
 ## Construction de la scène avec modale **indépendante**
 
@@ -25,7 +25,7 @@ Nous allons construire une scène simple qui affiche une fenêtre modale indépe
     * Définir la propriété _Spécifiques > Texte On_ à ```Ouvert```
     * Définir la propriété _Spécifiques > Texte Off_ à ```Fermé```
     * Définir la propriété _Spécifiques > Taille_ à ```Large```
-    ![Empilement](/assets/part4_switch.png)
+    ![Empilement](assets/part4_switch.png)
 
 3. **Sélectionner** l'acteur _Empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Modal** (Dispositions dans l'_explorateur d'acteur_)
 
@@ -35,34 +35,34 @@ Nous allons construire une scène simple qui affiche une fenêtre modale indépe
 4. **Observer** que la _zone de prévisualisation_ est composés de deux éléments:
     * La scène à proprement parlé en haut
     * Le contenu de l'acteur modale en bas
-        ![Empilement](/assets/part4_preview.png)
+        ![Empilement](assets/part4_preview.png)
 
 5. **Sélectionner** l'acteur _modal_ ```modalLayout3``` et **ajouter** un acteur enfant de type **Text** (Affichages dans l'_explorateur d'acteur_)
 
     * Définir la propriété _Spécifiques > Contenu_ à ```Ceci est le contenu de la fenêtre modale !```
     * Définir la propriété _Aspect > Police > Taille_ à ```50px```
 
-    ![Empilement](/assets/part4_preview2.png)
+    ![Empilement](assets/part4_preview2.png)
 
 6. **Sélectionner** l'acteur _modal_ ```modalLayout3``` et lier son ouverture à la valeur de l'acteur _commutateur bouton_
 
     * Lier en _interne_ la propriété _Spécifiques > Afficher_ à la propriété _Spécifiques > Valeur_ de l'acteur ```switchButton2```
 
-        ![Empilement](/assets/part4_bind.png)
+        ![Empilement](assets/part4_bind.png)
         Le tooltip de la propriété _Afficher_ est alors celui-ci
-        ![Empilement](/assets/part4_bind2.png)
+        ![Empilement](assets/part4_bind2.png)
 
     * Définir la propriété _Aspect > Couleur de fond_ à _Orange_ ```#ff8000```
 
 7. **Déployer** et **Exécuter** la SynApp. Cliquer sur le commutateur, la fenêtre modale s'affiche au centre de l'écran
-    ![Empilement](/assets/part4_execute.png)
+    ![Empilement](assets/part4_execute.png)
 
 ## Construction de la scène avec modale **attachée**
 
 Dans la partie précédente, la fenêtre modale s'affiche au centre de l'écran de manière indépendante. Cela correspont à un cas d'usage fréquent mais il est parfois nécessaire que la modale soit relative à un acteur de la scène: ne pas masquer une zone par exemple. Dans ce cas, on parle de **modale attachée**.
 
 1. **Sélectionner** l'acteur _Empilement_ ```stack1``` et **ajouter** un acteur enfant de type **Texte** (Affichage dans l'_explorateur d'acteur_)
-    ![Empilement](/assets/part4_actors.png)
+    ![Empilement](assets/part4_actors.png)
 
     * Définir la propriété _Spécifiques > Contenu_ à ```Ceci est l'acteur d'attachement !```
     * Définir la propriété _Aspect > Couleur de fond_ à _Bleu_ ```#0000ff```
@@ -71,17 +71,17 @@ Dans la partie précédente, la fenêtre modale s'affiche au centre de l'écran 
     * Définir la propriété _Position > Align. vertical_ à ```Centré```
     * Définir la propriété _Position > Align. horizontal_ à ```Centré```
     * Définir la propriété _Gabarit > Largeur_ à ```350px```
-    ![Empilement](/assets/part4_preview4.png)
+    ![Empilement](assets/part4_preview4.png)
 
 2. **Sélectionner** l'acteur _modal_ ```modalLayout3``` et l'attacher à l'acteur _text_ précédemment créé:
 
     * Définir la propriété _Spécifiques > Acteur attaché_ avec l'acteur ```text5```
 
       _Remarque:_ si l'acteur ```text5``` n'est **pas visible** dans la liste, rafraichissez la page avec **F5** _(BUG en cours de correction)_
-      ![Empilement](/assets/part4_layout.png)
+      ![Empilement](assets/part4_layout.png)
 
     * Sélectionner la propriété _Spécifiques > Test modale_ pour constater que la position de l'acteur _modal_ dans la scène est désormais centrée par rapport à l'acteur ```text5```
-      ![Empilement](/assets/part4_preview5.png)
+      ![Empilement](assets/part4_preview5.png)
 
       _Remarque:_ la propriété _Test modale_ permet der **prévisualiser le positionnement** de la fenêtre modale dans la scène **sans son contenu**
 
@@ -92,10 +92,10 @@ Dans la partie précédente, la fenêtre modale s'affiche au centre de l'écran 
     * Définir la propriété _Spécifiques > Attachement horizontale_ à ```Droite```
     * Définir la propriété _Spécifiques > Attachement verticale_ à ```Haut```
 
-    ![Empilement](/assets/part4_preview6.png)
+    ![Empilement](assets/part4_preview6.png)
 
 4. **Déployer** et **Exécuter** la SynApp. Cliquer sur le commutateur, la fenêtre modale s'affiche à droite et aligner par le haut de l'acteur d'attachement
-    ![Empilement](/assets/part4_execute2.png)
+    ![Empilement](assets/part4_execute2.png)
 
 5. **Modifier** les quatre propriétés ci-dessus, avec la propriété _Test modale_ sélectionnée, pour essayer de comprendre le principe de fonctionnement:
 
@@ -103,7 +103,7 @@ Dans la partie précédente, la fenêtre modale s'affiche au centre de l'écran 
 
     * les propriétés _Spécifiques > Attachement horizontal & vertical_ permettent de définir le point de référence de l'acteur d'attachement
 
-    ![Empilement](/assets/part4_attachment.png)
+    ![Empilement](assets/part4_attachment.png)
 
 ## Les autres propriétés de la modale
 

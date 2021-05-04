@@ -12,11 +12,11 @@ La SynApp sera constituée d'une seule scène avec un acteur disposition de type
 
 2. Par défaut, le *label* de l'acteur est *stack1*. Cliquer sur le bouton d'édition du *label* dans l'*inspecteur* d'acteur
 
-![Editer le Label](/assets/editLabel2.png)
+![Editer le Label](assets/editLabel2.png)
 
  et le renommer avec un nom plus explicite: *stackRoot*
 
-![Changer le label](/assets/changeLabel2.png)
+![Changer le label](assets/changeLabel2.png)
 
 *Remarque:* il est vivement conseillé de modifier systématiquement les *labels* afin de leurs donner un nom **explicite** et **définitif**. Les *labels* sont en effet utilisés dans différents sections de SynApps: *scripts*, *liaisons* et en cas de renommage, la SynApp pourrait ne plus fonctionner correctement
 
@@ -42,7 +42,7 @@ Vous observez que les tailles et alignements des textes des acteurs *textTop* et
   * *Aspect* > *Rayon bordure*: **50px**
   * *Aspect* > *Couleur bordure*: **#0000ff**
 
-![Edition bordure](/assets/editBordure.png)
+![Edition bordure](assets/editBordure.png)
 
 7. Sélectionner l'acteur *textTop* et modifier les propriétés suivantes:
   * *Aspect* > *Couleur de fond*: **#0000ff**, idem *Couleur bordure* de *stackRoot*
@@ -56,36 +56,36 @@ Nom [unité]
 Il existe un moyen simple pour décrire cette composition de format en utilisant des **propriétés additionnelles**:
 
 Cliquer sur le bouton d'édition de la propriété *Spécifique* > *Contenu*
-![Edition bordure](/assets/editContent.png)
+![Edition bordure](assets/editContent.png)
 
 Un fenêtre modale d'édition du contenu s'ouvre
-![Edition bordure](/assets/editContentModal.png)
+![Edition bordure](assets/editContentModal.png)
 
 Saisir:
-![Code snapshot](/assets/codeSnapshot1.png)
+![Code snapshot](assets/codeSnapshot1.png)
 
 Les doubles crochets ouvrant et fermant permettent de définir une *propriété additionnelle*. Dans notre cas, deux *propriétés additionnelles* sont créées:
 * **nom**: qui contiendra le nom de la ressource *variableAnalogiqueTuto*
 * **unit**: qui contiendra l'unité de cette même ressource
 
 Sauvegarder puis fermer la fenêtre, l'inspecteur d'acteur propose la création de ces deux propriétés
-![Edition bordure](/assets/editContentNewProps.png)
+![Edition bordure](assets/editContentNewProps.png)
 
 Créer les deux *propriétés additionnelles* en cliquant sur le [+] et en choisissant **text** comme type de propriété
 
-![Edition bordure](/assets/editContentNewProps2.png)
+![Edition bordure](assets/editContentNewProps2.png)
 
 Vérifier le résultat sur le *contenu* dans la zone de prévisualisation en modifiant la valeur des deux *propriétés additionnelles* **nom** et **unit**
-![Edition bordure](/assets/editContentNewProps3.png)
-![Edition bordure](/assets/editContentPreview.png)
+![Edition bordure](assets/editContentNewProps3.png)
+![Edition bordure](assets/editContentPreview.png)
 
 7. Sélectionner l'acteur *textBottom* et modifier la propriété *Spécifique* > *Contenu*. Procéder de la même façon que pour l'acteur *textTop* mais ici le contenu sera composé de la valeur et du max avec ce format:
-![Code snapshot](/assets/codeSnapshot2.png)
+![Code snapshot](assets/codeSnapshot2.png)
 
 Cette fois ci, choisir **nombre** comme type pour les deux *propriétés additionnelles* **value** et **max** créées. Initialiser les propriétés avec les valeurs respectivement 75 et 100
 
 La zone de prévisualisation finale doit ressembler à cela !
-![Prévisualisation](/assets/preview.png)
+![Prévisualisation](assets/preview.png)
 
 **Déployer la SynApp** pour ne pas perdre vos modifications
 
