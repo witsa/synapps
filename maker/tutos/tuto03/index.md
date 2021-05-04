@@ -1,5 +1,5 @@
 ---
-title: 3 : les acteurs dispositions 
+title: 3. Les acteurs dispositions 
 parent: Tutoriaux
 grand_parent: Documentation Maker
 ---
