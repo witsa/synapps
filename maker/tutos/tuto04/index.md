@@ -1,3 +1,9 @@
+---
+title: 4. La navigation
+parent: Tutoriaux
+grand_parent: Documentation Maker
+---
+
 [Accueil](../../) / [Tutoriaux](../index.md)
 
 # Tutorial 4: la navigation - **<span style='color:green'>Débutant</span>**
