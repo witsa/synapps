@@ -9,9 +9,9 @@ defaults:
     scope: 
       path: ""
     values:
-      layout: default
+      layout: "default"
   -
     scope:
-      path: maker
+      path: "maker"
     values:
-      parent: maker
+      parent: "maker"
