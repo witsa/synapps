@@ -1,7 +1,6 @@
 ---
 title: Documentation Maker
 has_children: true
-nav_order: 1
 ---
 
 [Plan du site](./sitemap.md)
