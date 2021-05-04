@@ -12,7 +12,7 @@
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Synapps Script API","systemSummary":"Documentation de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = true;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -23,7 +23,7 @@
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
-					Synapps Script API
+					API des Scripts Synapps
 				</a>
 				<!-- displayed on small devices -->
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
@@ -78,7 +78,7 @@
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 											<li><a href="Actor.html">Actor</a></li>
 											<li><a href="Actor.Display.html">Actor.Display</a></li>
@@ -90,10 +90,10 @@
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
 									<ul class="dropdown-menu">
-											<li><a href="tutorial-home.html">home</a></li>
-											<li><a href="tutorial-other.html">other</a></li>
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
 									</ul>
 								</li>
 				</ul>
@@ -215,46 +215,33 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="requestDebounce" class="function public"><span class="name">requestDebounce</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+			<h4 id="changeStyleName" class="function public"><span class="name">changeStyleName</span><span class="signature-params">( <span class="signature-param">styleName</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Effectue une requête retardée. Tant que la méthode est répétée en moins de 300ms, elle ne partira pas.</p></div>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="request" class="function public"><span class="signature-attribs">&lt;async> </span><span class="name">request</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{any}</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Effectue une requête.</p></div>
-			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>La donnée.</p></div>
-								</div>
-							</div>
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="write" class="function public"><span class="signature-attribs">&lt;async> </span><span class="name">write</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{any}</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Effectue une requête d'écriture.</p></div>
-			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>La donnée.</p></div>
-								</div>
-							</div>
-					</form>
-			</div>	</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Changer le nom du style de l'acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>styleName</code></td>
+							<td><span class="param-type">String</span></td>
+							<td class="last">
+									<p>Nom du style à appliquer.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
@@ -288,33 +275,46 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="changeStyleName" class="function public"><span class="name">changeStyleName</span><span class="signature-params">( <span class="signature-param">styleName</span>&nbsp;)</span><span class="signature-type"></span></h4>
+			<h4 id="request" class="function public"><span class="signature-attribs">&lt;async> </span><span class="name">request</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{any}</span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Changer le nom du style de l'acteur.</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>styleName</code></td>
-							<td><span class="param-type">String</span></td>
-							<td class="last">
-									<p>Nom du style à appliquer.</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-	</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Effectue une requête.</p></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>La donnée.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="requestDebounce" class="function public"><span class="name">requestDebounce</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Effectue une requête retardée. Tant que la méthode est répétée en moins de 300ms, elle ne partira pas.</p></div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="write" class="function public"><span class="signature-attribs">&lt;async> </span><span class="name">write</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{any}</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Effectue une requête d'écriture.</p></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>La donnée.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
 </dd>
 									</dl>
 							</article>
@@ -326,7 +326,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 3rd May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 4th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
