@@ -1,7 +1,7 @@
 ---
 title: Tutoriel 3
 parent: Tutoriaux
-# grand_parent: Documentation Maker
+grand_parent: Documentation Maker
 ---
 
 [Accueil](../../) / [Tutoriaux](../index.md)
