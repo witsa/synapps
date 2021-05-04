@@ -1,3 +1,8 @@
+---
+title: Changelog
+parent: Documentation Maker
+---
+
 [Accueil](./)
 
 # Changelog
