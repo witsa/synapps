@@ -7,7 +7,7 @@ Documentation de la solution Synapps
 ====================================
 
 
-> TODO
+> à venir...
 
 
 [Documemtation Maker](./maker/README.md)
