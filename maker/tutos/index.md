@@ -1,3 +1,9 @@
+---
+title: Tutoriaux
+parent: Documentation Maker
+has-children: true
+---
+
 [Accueil](../)
 
 # Tutoriaux
