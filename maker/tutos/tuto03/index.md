@@ -1,5 +1,5 @@
 ---
-title: Tutoriel 2
+title: Tutoriel 3
 parent: Tutoriaux
 # grand_parent: Documentation Maker
 ---
