@@ -1,5 +1,5 @@
 ---
-title: Tutoriel 1
+title: 1. Première SynApp
 parent: Tutoriaux
 grand_parent: Documentation Maker
 ---
