@@ -3,9 +3,10 @@ title: Solution Synapps
 description: Construisez des apps standards, adaptatives et multi-plateformes connectées aux REDY.
 keep_files: [ script-api/ ]
 logo: "assets/LogoSynApps128.png"
+aux_links_new_tab: true
 aux_links:
   "Script API":
-    - "script-api/"
+    - "//witsa.github.io/synapps/script-api/"
 
 # defaults:
 #   - 
