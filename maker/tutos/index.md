@@ -1,7 +1,7 @@
 ---
 title: Tutoriaux
 parent: Documentation Maker
-has-children: true
+has_children: true
 ---
 
 [Accueil](../)
