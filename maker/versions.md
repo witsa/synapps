@@ -1,6 +1,6 @@
 ---
 title: Versions SynApps MAKER et RUNTIME
-parent: maker
+parent: Documentation Maker
 ---
 
 ---
