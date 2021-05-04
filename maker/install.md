@@ -1,4 +1,5 @@
 ---
+title: Installation
 parent: Documentation Maker
 ---
 
