@@ -23,7 +23,7 @@ description: Construisez des apps standards, adaptatives et multi-plateformes co
 keep_files: [ script-api/ ]
 # Build settings
 remote_theme: pmarsceill/just-the-docs
-logo: "assets/logo_64px.png"
+logo: "assets/logo.svg"
 aux_links_new_tab: true
 back_to_top: true
 back_to_top_text: "Vers le haut"
