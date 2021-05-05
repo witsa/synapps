@@ -6,7 +6,7 @@ nav_order: 2
 
 <details open markdown="block">
   <summary>
-    Table of contents
+    Table des matières
   </summary>
   {: .text-delta }
 - TOC
