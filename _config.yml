@@ -21,7 +21,7 @@
 title: Solution Synapps
 description: Construisez des apps standards, adaptatives et multi-plateformes connectées aux REDY.
 keep_files: [ script-api/ ]
-baseurl: "synapps/"
+# baseurl: "synapps/"
 # Build settings
 remote_theme: pmarsceill/just-the-docs
 logo: "assets/logo_64px.png"
