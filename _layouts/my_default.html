@@ -14,10 +14,12 @@ layout: default
     backdrop-filter: blur(2px);
 
     transition: opacity 250ms ease-in-out;
+    pointer-events: none;
     opacity: 0;
   }
 
   html:not([data-scroll="0"]) a#back-to-top {
+    pointer-events: initial;
     opacity: 1;
   }
 </style>
