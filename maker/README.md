@@ -18,7 +18,7 @@ nav_order: 2
 
 # Home
 
-![SynApps](../assets/LogoSynApps128.png)
+![SynApps](../assets/LogoSynAppsForREDY128.png)
 
 ## **SynApps**: construisez des apps **multiplateformes** avec le **REDY**
 

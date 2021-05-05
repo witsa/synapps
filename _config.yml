@@ -2,7 +2,7 @@ remote_theme: pmarsceill/just-the-docs
 title: Solution Synapps
 description: Construisez des apps standards, adaptatives et multi-plateformes connectées aux REDY.
 keep_files: [ script-api/ ]
-logo: "assets/LogoSynApps128.png"
+logo: "assets/logo_64px.png"
 aux_links_new_tab: true
 back_to_top: true
 back_to_top_text: "Vers le haut"
@@ -11,8 +11,8 @@ aux_links:
     - "//witsa.github.io/synapps/script-api/"
 
 # defaults:
-#   - 
-#     scope: 
+#   -
+#     scope:
 #       path: ""
 #     values:
 #       layout: "default"
