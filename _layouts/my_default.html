@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<style>
+  a#back-to-top {
+    position: fixed;
+    top: 12px;
+    right: 16px;
+    background-color: rgb(255 255 255 / 46%);
+    padding: 0px 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #444;
+    backdrop-filter: blur(2px);
+
+    transition: opacity 250ms ease-in-out;
+    opacity: 0;
+  }
+
+  html:not([data-scroll="0"]) a#back-to-top {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  document.addEventListener("scroll", () => {
+    document.documentElement.dataset.scroll = window.scrollY > 60 ? window.scrollY : 0;
+  });
+
+  document.documentElement.dataset.scroll = 0;
+</script>
+
+{{content}}

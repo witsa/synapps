@@ -4,14 +4,14 @@ nav_order: 1
 ---
 
 
-![logo_256px](assets/logo_256px.png)
 
 Documentation de la solution Synapps
 ====================================
 
+![logo_256px](assets/logo_256px.png)
 
-> à venir...
+> en cours de rédaction
 
-
+La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible.
 
 [Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }
