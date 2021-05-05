@@ -1,1 +1,5 @@
-#baseurl: "/"
+aux_links:
+  "Doc Script API":
+    - "/script-api/"
+  "WIT.fr":
+    - "https://www.wit.fr"
