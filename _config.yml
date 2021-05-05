@@ -4,6 +4,8 @@ description: Construisez des apps standards, adaptatives et multi-plateformes co
 keep_files: [ script-api/ ]
 logo: "assets/LogoSynApps128.png"
 aux_links_new_tab: true
+back_to_top: true
+back_to_top_text: "Vers le haut"
 aux_links:
   "Script API":
     - "//witsa.github.io/synapps/script-api/"
