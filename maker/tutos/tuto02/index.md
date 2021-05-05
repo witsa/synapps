@@ -4,6 +4,8 @@ parent: Tutoriaux
 grand_parent: Documentation Maker
 ---
 
+{% include table_of_content.html %}
+
 [Accueil](../../) / [Tutoriaux](../index.md)
 
 # Tutorial 2: les liaisons - **<span style='color:green'>Débutant</span>**

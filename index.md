@@ -4,7 +4,7 @@ nav_order: 1
 ---
 
 
-![logo_256px](https://user-images.githubusercontent.com/35595723/117123852-d62ef280-ad97-11eb-9eb0-080ea82e3dcf.png)
+![logo_256px](assets/logo_256px.png)
 
 Documentation de la solution Synapps
 ====================================
@@ -14,4 +14,4 @@ Documentation de la solution Synapps
 
 
 
-[Voir la Documemtation Synapps Maker](./maker/README.md){: .btn .btn-blue }
+[Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }

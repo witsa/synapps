@@ -4,27 +4,19 @@ has_children: true
 nav_order: 2
 ---
 
-<details open markdown="block">
-  <summary>
-    Sommaire
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
-
+{% include table_of_content.html %}
 
 [Plan du site](./sitemap.md)
 
 # Home
 
-![SynApps](../assets/LogoSynAppsForREDY128.png)
+![SynApps](assets/LogoSynAppsForREDY128.png)
 
 ## **SynApps**: construisez des apps **multiplateformes** avec le **REDY**
 
 SynApps est le **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB de manière à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones. Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
 
-![SynApps](../assets/WHomeApp.gif)
+![SynApps](assets/WHomeApp.gif)
 
 Les utilisateurs ciblés par les applications générées par SynApps sont **tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'UTLs REDY: SynApps s'inscrit dans une démarche **Smart Building** et à pour ambition de répondre à ces **nouveaux usages**
 

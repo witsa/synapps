@@ -10,4 +10,4 @@ parent: Documentation Maker
 
 ## Zones
 
-![MAKER](../assets/maker.png)
+![MAKER](assets/maker.png)

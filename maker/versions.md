@@ -30,7 +30,7 @@ _Remarques:_
 * Contactez nous si vous avez besoin de l'adresse d'une **version spécifique** de SynApps MAKER
 * La **version** est visible en haut en gauche de SynApps RUNTIME et MAKER
 
-    ![Versions](../assets/version.png)
+    ![Versions](assets/version.png)
 
 ## Version de SynApps RUNTIME embarqué et REDY
 
