@@ -41,8 +41,15 @@ defaults:
   -
     scope:
       path: ""
+      type: "pages"
     values:
-      layout: "my_default"
+      layout: my_default
+  -
+    scope:
+      path: "assets"
+      type: "pages"
+    values:
+      layout: null
 #   -
 #     scope:
 #       path: "maker"

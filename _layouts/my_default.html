@@ -23,11 +23,12 @@ layout: default
 </style>
 
 <script>
-  document.addEventListener("scroll", () => {
+  const writeScroll = () => {
     document.documentElement.dataset.scroll = window.scrollY > 60 ? window.scrollY : 0;
-  });
+  };
+  document.addEventListener("scroll", writeScroll);
 
-  document.documentElement.dataset.scroll = 0;
+  writeScroll();
 </script>
 
 {{content}}
