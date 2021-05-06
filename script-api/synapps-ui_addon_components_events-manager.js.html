@@ -1,0 +1,440 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui/addon/components/events-manager.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#data">data</a></li>
+											<li><a href="global.html#isRequesting">isRequesting</a></li>
+											<li><a href="global.html#removeBinding">removeBinding</a></li>
+											<li><a href="global.html#request">request</a></li>
+											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
+											<li><a href="global.html#write">write</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
+											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
+											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
+											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/components/events-manager.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { get, notifyPropertyChange, set, setProperties } from '@ember/object';
+import { isEmpty, isNone, isPresent, typeOf } from '@ember/utils';
+import logger from 'logger';
+import { ScriptError } from 'synapps-ui/errors';
+import hasOwnProperty from 'synapps-ui/tools/has-own-property';
+
+/**
+ * Les évènements
+ * @namespace Event
+ */
+
+export default class EventManager {
+
+  static setupContext(event, objectUi, args) {
+    if (event.isV1) {
+      // logger.debug('event v1', event.ID, args);
+      return {
+        ...args,
+        host: args.dataStores.redy.host._eventContextV1,
+        session: args.dataStores.redy.host.session._eventContextV1,
+        target: objectUi._eventContextV1,
+        synoStage: args.stage._eventContextV1,
+        synapp: args.synapp._eventContextV1,
+        value: args.value,
+        parentSynoStage: objectUi.stage &amp;&amp; objectUi.stage.stage ? objectUi.stage.stage._eventContextV1 : null,
+      };
+    }
+    /**
+     * Contexte de base d'un évènement.
+     * @class BaseContext
+     * @memberof Event
+     */
+    return {
+      version() { return 2; },
+
+      /**
+       * Nom de l'évènement.
+       * @member Event.BaseContext#eventName
+       * @readonly
+       * @type {String}
+       */
+      eventName: event.eventName,
+
+      /**
+       * Acteur à l'origine de l'évènement.
+       * @member Event.BaseContext#target
+       * @readonly
+       * @type {Actor.BaseActor}
+       */
+      target: objectUi,
+
+      /**
+       * Scène ou composite portant l'acteur émetteur de l'évènement.
+       * @member Event.BaseContext#stage
+       * @readonly
+       * @type Stage
+       */
+
+      /**
+       * Première scène parente de l'acteur émetteur de l'évènement.
+       * @member Event.BaseContext#scene
+       * @readonly
+       * @type Scene
+       */
+
+      /**
+       * Scène racine de l'acteur.
+       * @member Event.BaseContext#rootScene
+       * @readonly
+       * @type {Scene}
+       */
+
+      /**
+       * Synapp
+       * @member Event.BaseContext#synapp
+       * @readonly
+       * @type {Synapp}
+       */
+
+      /**
+       * Magasins de données.
+       * @member Event.BaseContext#dataStores
+       * @readonly
+       * @type {Object}
+       */
+      ...args,
+
+
+      /**
+       * Obtient l'acteur dans la même scène ou le même composite suivant sa clé.
+       * @function Event.BaseContext#getActor
+       * @param {string} key Clé de l'acteur à chercher.
+       * @returns {Actor.BaseActor} L'acteur demandé.
+       */
+      getActor(key) {
+        return args.stage.getActor(key);
+      },
+
+      /**
+       * Méthodes utilitaires pour les scripts.
+       * @member Event.BaseContext#utils
+       * @readonly
+       * @type {Event.BaseContextUtils}
+       */
+
+      /**
+       * Méthodes utilitaires pour les scripts.
+       * &lt;br> Utilisé dans {@link Event.BaseContext.utils}.
+       * @class Event.BaseContextUtils
+       * @hideconstructor
+       */
+      utils: {
+
+        /**
+         * La valeur est elle vide ?
+         * @memberof Event.BaseContextUtils
+         * @param {any} value la valeur à tester
+         * @return {Boolean}
+         */
+        isEmpty(value) {
+          return isEmpty(value)
+        },
+
+        /**
+         * La valeur est elle null/vide ?
+         * @memberof Event.BaseContextUtils
+         * @param {any} value la valeur à tester
+         * @return {Boolean}
+         */
+        isNone(value) {
+          return isNone(value)
+        },
+
+        /**
+         * La valeur est elle présente ?
+         * @memberof Event.BaseContextUtils
+         * @param {any} value la valeur à tester
+         * @return {Boolean}
+         */
+        isPresent(value) {
+          return isPresent(value)
+        },
+
+        /**
+         * Obtient la valeur d'un objet suivant un chemin.
+         *         *
+         * @memberof Event.BaseContextUtils
+         * @param {Object} obj L'objet
+         * @param {Object} path Le chemin
+         * @return {any}
+         */
+        get(obj, path) {
+          return get(obj, path);
+        },
+
+        /**
+         * Assigne la valeur à un objet suivant un chemin.
+         *
+         * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.
+         *
+         * @memberof Event.BaseContextUtils
+         * @param {Object} obj L'objet
+         * @param {Object} path Le chemin
+         * @param {any} value la valeur à placer.
+         */
+        set(obj, path, value) {
+          set(obj, path, value);
+        },
+
+        /**
+         * Assigne des valeurs à un objet suivant plusieurs chemin.
+         *
+         * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété.
+         *
+         * @memberof Event.BaseContextUtils
+         * @param {Object} obj L'objet
+         * @param {Object} props Les valeurs à placer.
+         */
+        setProperties(obj, props) {
+          setProperties(obj, props);
+        },
+
+        /**
+         * Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété suivant un chemin.
+         *
+         * @memberof Event.BaseContextUtils
+         * @param {Object} obj L'objet
+         * @param {Object} path Le chemin à notifier
+         */
+        notifyPropertyChange(obj, path) {
+          notifyPropertyChange(obj, path);
+        }
+      }
+    };
+  }
+
+  static setupEvent(objectUi, eventName, events, eventScriptLines) {
+    eventName = eventName.replace(/-/g, '/');
+    if (typeOf(eventScriptLines) === 'array') {
+      const event = {
+        ID: `http://synapps-events/${objectUi.uniqPath}/${eventName}`,
+        fx: null,
+        isV1: eventScriptLines[0] === '//# script/v1',
+        text: eventScriptLines.join('\n'),
+        eventName,
+      };
+      try {
+        let fx = () => {};
+        fx = new Function('context', `${event.text}\n//# sourceURL=${event.ID}.js`);
+        event.fx = fx;
+        events[eventName] = event;
+      } catch (error) {
+        logger.error('Script: can not create function script', event.ID, error.message);
+      }
+
+      return event;
+    } else if (typeOf(eventScriptLines) === 'function') {
+      const event = {
+        ID: `http://synapps-events/${objectUi.uniqPath}/${eventName}`,
+        fx: null,
+        eventName,
+      };
+      try {
+        let fx = () => {};
+        fx = eventScriptLines;
+        event.fx = fx;
+        events[eventName] = event;
+      } catch (error) {
+        logger.error('Script: can not create function script', event.ID, error.message);
+      }
+
+      return event;
+    }
+  }
+
+  static setupEvents(objectUi, eventSetups) {
+    var events = {};
+    Object.keys(eventSetups).forEach(key => {
+      if (!eventSetups[key]) return;
+      this.setupEvent(objectUi, key, events, eventSetups[key]);
+    });
+    return events;
+  }
+
+  static hasEvent(objectUi, eventName) {
+    return objectUi.events &amp;&amp; hasOwnProperty(objectUi.events, eventName);
+  }
+
+  static runEvent(objectUi, eventName, args) {
+    if (this.hasEvent(objectUi, eventName)) {
+      try {
+        const event = objectUi.events[eventName];
+        return event.fx.bind(objectUi)(this.setupContext(event, objectUi, args));
+      } catch (e) {
+        const error = new ScriptError();
+        error.message = `Error during ${eventName} with ${objectUi.key}.`;
+        error.details = e;
+        logger.error(error.message, e);
+        throw error;
+      }
+    }
+
+    return true;
+  }
+
+}
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

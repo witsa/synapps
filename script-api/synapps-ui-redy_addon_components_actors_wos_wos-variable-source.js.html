@@ -1,0 +1,417 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui-redy/addon/components/actors/wos/wos-variable-source.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#data">data</a></li>
+											<li><a href="global.html#isRequesting">isRequesting</a></li>
+											<li><a href="global.html#removeBinding">removeBinding</a></li>
+											<li><a href="global.html#request">request</a></li>
+											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
+											<li><a href="global.html#write">write</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
+											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
+											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
+											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui-redy/addon/components/actors/wos/wos-variable-source.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { notifyPropertyChange } from '@ember/object';
+import { isEmpty } from '@ember/utils';
+import logger from 'logger';
+import prototypeSetup from 'synapps-ui-redy/components/actors/wos/wos-variable-source-prototype-setup';
+import DataSource from 'synapps-ui/components/actors/data-source';
+
+/**
+ * Acteur fournisseur de variable WOS. Permet de paramétrer les requêtes et d'exposer une variable pour des liaisons ou accessible par script. Il peut être complété par des fournisseurs relatifs de variable WOS pour effectuer des requêtes groupées.
+ *
+ * @class Actor.DataSource.WosVariableSource
+ * @extends Actor.DataSource
+ */
+export default class WosVariableSource extends DataSource {
+
+  _datasourceCanWrite = true;
+
+  get isAWosVariableSource() {
+    return true;
+  }
+
+  get fullPath() {
+    return this.properties.path;
+  }
+
+  _canStartAutoRefresh() {
+    return super._canStartAutoRefresh()
+      || (
+        this.properties.autoRefresh
+        &amp;&amp; this.properties.mode === 'relative'
+        &amp;&amp; Object.keys(this._relatives).length > 0
+      );
+  }
+
+  _canRequestAtStart() {
+    return super._canRequestAtStart()
+      || (
+        this.properties.mode === 'relative'
+        &amp;&amp; Object.keys(this._relatives).length > 0
+      );
+  }
+
+  _doAfterPropertyChanged({ name, ...others }) {
+    if (this.isDestroying || this.isDestroyed) return;
+    super._doAfterPropertyChanged({ name, ...others });
+
+    if (name === 'path') {
+      this._invalorizeRelatives();
+
+      if (['auto', 'relative'].includes(this.properties.mode) /*&amp;&amp; this.scene.stageIsReady*/ ) {
+        this.requestDebounce();
+      } else {
+        this.resolve();
+      }
+
+      return;
+    }
+  }
+
+  async _resolve() {
+    logger.debug('_resolve', this.uniqPath);
+    let { path, attributeName } = this._extractPathAndAttributeName(this.properties.path);
+    this._storeData(await this._resolveData({ path, attributeName, isDry: true }));
+    await this._valorizeRelatives({ isDry: true });
+  }
+
+  _extractPathAndAttributeName(pathAndAttribute) {
+    if (isEmpty(pathAndAttribute)) return null;
+    let [, path, attributeName] = pathAndAttribute.split(':');
+    path = `:${path}`;
+      return {
+      path,
+      attributeName
+    };
+  }
+
+  _historic = new Set();
+
+  async _request() {
+    if (isEmpty(this.properties.path)) return;
+
+    let { path, attributeName } = this._extractPathAndAttributeName(this.properties.path);
+    const relativeFullPathVariables = this._visitRelativeFullPathVariablesCompact().reject(p => p === path);
+    let variable = this.dataStores.redy.getWosVariable(path);
+    const historicKey = `${path}/${relativeFullPathVariables.join('/')}`;
+    if (
+      variable
+      &amp;&amp; (
+        relativeFullPathVariables.length === 0
+        || this._historic.has(historicKey)
+      )
+    ) {
+      variable = await this.dataStores.redy.refreshWosVariable(path, relativeFullPathVariables);
+    } else {
+      variable = await this.dataStores.redy.loadWosVariable(path, relativeFullPathVariables);
+      this._historic.add(historicKey);
+    }
+
+    await this._valorizeRelatives({ isDry: false });
+
+    return await this._resolveData({ path: variable.path, attributeName });
+  }
+
+  async _write() {
+    if (isEmpty(this.properties.path)) return;
+
+    let { path, attributeName } = this._extractPathAndAttributeName(this.properties.path);
+
+    if (attributeName !== 'value') return;
+
+    const variable = await this.dataStores.redy.writeWosVariableValue(path);
+    notifyPropertyChange(variable, 'value');
+    return await this._resolveData({ path: variable.path, attributeName });
+  }
+
+  _onWillWriteInData({ /*oldValue,*/ newValue }) {
+    if (isEmpty(this.properties.path)) return newValue;
+    let { path, attributeName } = this._extractPathAndAttributeName(this.properties.path);
+    if (attributeName !== 'value') return newValue;
+
+    const variable = this.dataStores.redy.getWosVariable(path);
+    if (variable) {
+      variable.value = newValue;
+    }
+
+    return newValue;
+  }
+
+  async _resolveData({ path, attributeName, isDry = false }) {
+    let resolved;
+    const variable = this.dataStores.redy.getWosVariable(path);
+    if (!variable) {
+      resolved = null;
+      if (!isDry) {
+        logger.warn(`[WosVariableSource][_resolveData] path in host not found ${path} ${attributeName}`);
+      }
+    } else if (attributeName === 'children') {
+
+      resolved = this.dataStores.redy.childrenOfVariable(variable);
+      if (!isDry) {
+        const historicKey = `${path}/**CHILDREN**`;
+        if (this._historic.has(historicKey)) {
+          await this.dataStores.redy.refreshWosVariableChildren(path);
+        } else {
+          await this.dataStores.redy.loadWosVariableChildren(path);
+          this._historic.add(historicKey)
+        }
+
+        resolved = this.dataStores.redy.childrenOfVariable(variable);
+      }
+    } else {
+      resolved = attributeName ? variable[attributeName] : variable
+    }
+
+    return resolved;
+  }
+
+  _invalorizeRelatives() {
+    Object.values(this._relatives).forEach(relative => relative._invalorize());
+  }
+
+  async _valorizeRelatives({ isDry = false }) {
+    const relatives = this._visitRelatives(this);
+    for (const relative of relatives) {
+      await relative._valorize({ isDry });
+    }
+  }
+
+  _visitRelativeFullPaths(source) {
+    let relatives = [];
+    Object.values(source._relatives).forEach(relative => {
+      relatives = [...relatives, relative.fullPath, ...this._visitRelativeFullPaths(relative)];
+    });
+    return relatives;
+  }
+
+  _relatives = {};
+
+  _visitRelativeFullPathVariables(source) {
+    let relatives = [];
+    Object.values(source._relatives).forEach(relative => {
+      relatives = [...relatives, ...this._visitRelativeFullPathVariables(relative)].uniq();
+      if (relative._toIncludeInRequest) {
+        relatives.push(relative.fullPathVariable);
+      }
+    });
+    return relatives;
+  }
+
+  _visitRelativeFullPathVariablesCompact() {
+    const fullPathVariables = this._visitRelativeFullPathVariables(this);
+    let paths = new Set();
+    fullPathVariables.forEach(fullPathVariable => {
+      const goodPaths = new Set();
+
+      for (const path of paths.values()) {
+        if (!isEmpty(path) &amp;&amp; !(fullPathVariable + '.').startsWith(path + '.')) {
+          goodPaths.add(path)
+        }
+      }
+
+      if (!isEmpty(fullPathVariable) &amp;&amp; !goodPaths.has(fullPathVariable)) {
+        goodPaths.add(fullPathVariable);
+      }
+
+      paths = goodPaths;
+    });
+
+
+    return [...paths.values()];
+  }
+
+
+  _visitRelatives(source) {
+    source = source || this;
+    let relatives = [];
+    Object.values(source._relatives).forEach(relative => {
+      relatives = [...relatives, relative, ...this._visitRelatives(relative)];
+    });
+    return relatives;
+  }
+
+  willDestroy() {
+    if (this.isDestroyed) return;
+
+    this._relatives = {};
+
+    super.willDestroy();
+  }
+
+}
+WosVariableSource.registerInDefinitions({
+  type: 'redy/data-source/wos-variable',
+  componentName: 'synapps-ui/actors/redy/data-source/wos-variable',
+  prototypeSetup,
+  platform: 'redy'
+});
+
+WosVariableSource.registerInDefinitions({
+  type: 'redy/data-source/resource',
+  componentName: 'synapps-ui/actors/redy/data-source/wos-variable',
+  prototypeSetup,
+  platform: 'redy'
+});
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

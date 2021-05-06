@@ -1,0 +1,817 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui/addon/components/actors/base-actor-prototype-setup.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#data">data</a></li>
+											<li><a href="global.html#isRequesting">isRequesting</a></li>
+											<li><a href="global.html#removeBinding">removeBinding</a></li>
+											<li><a href="global.html#request">request</a></li>
+											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
+											<li><a href="global.html#write">write</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
+											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
+											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
+											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/components/actors/base-actor-prototype-setup.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">export default {
+
+  /**
+   * Taille CSS.
+   * Voir les unités [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/length}
+   *
+   * @example
+   * '3px'
+   * '1em'
+   * 'available', 'min-content', 'max-content', 'fit-content', 'auto'
+   *
+   * @typedef CssSizeString
+   */
+
+   /**
+   * Font CSS.
+   * Voir les possibilités [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/font-family}
+   *
+   * @example
+   * 'Times',
+   * 'Times New Roman',
+   * 'Georgia',
+   * 'serif'
+   *
+   * 'Verdana',
+   * 'Arial', '
+   * 'Helvetica',
+   * 'sans-serif'
+   *
+   * 'Lucida Console',
+   * 'Courier',
+   * 'monospace'
+   *
+   * @typedef CssFontFamilyString
+   */
+
+  /**
+   * Couleur CSS.
+   * Voir les possibilités [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/color_value}
+   *
+   * @example
+   *  // Valeurs avec un mot-clé
+   * 'currentcolor'
+   *
+   * // Valeurs avec un mot-clé pour une couleur nommée
+   * 'red'
+   * 'orange'
+   * 'tan'
+   * 'purple'
+   *
+   * // Valeurs hexadécimales &lt;hex-color>
+   * '#090'
+   * '#009900'
+   * '#090a'
+   *
+   * // Valeurs utilisant la fonction &lt;rgb()>
+   * 'rgb(34, 12, 64)'
+   * 'rgba(34, 12, 64, 0.6)'
+   *
+   * // Valeurs &lt;hsl()>
+   * 'hsl(30, 100%, 50%, 0.6)'
+   * 'hsla(30, 100%, 50%, 0.6)'
+   *
+   * // Valeurs globales
+   * 'inherit'
+   * 'initial'
+   * 'unset'
+   *
+   * @typedef CssColorString
+   */
+
+  /**
+   * @namespace Actor.Properties
+   */
+
+  /**
+   * @class Actor.Properties.BaseActorProperties
+   * @extends PrototypedBase
+   */
+
+  /**
+   * Obtient les propriétés de l'acteur.
+   * @member Actor.BaseActor#properties
+   * @type {Actor.Properties.BaseActorProperties}
+   * @readonly
+   */
+
+  /**
+   * Nom de class CSS séparées par une virgule à ajouter à l'acteur.
+   * Modificateur : **Rendu**.
+   * @member Actor.Properties.BaseActorProperties#classNames
+   * @default ''
+   * @type {String}
+   */
+  classNames: {
+    modifier: 'render',
+    value: ''
+  },
+
+  /**
+   * Hauteur de l'acteur
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#height
+   * @default 'auto'
+   * @type {CssSizeString}
+   */
+  height: {
+    modifier: "layout",
+    value: 'auto'
+  },
+
+  /**
+   * Hauteur minimale de l'acteur
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#minHeight
+   * @default 'auto'
+   * @type {CssSizeString}
+   */
+  minHeight: {
+    modifier: "layout",
+    value: 'auto'
+  },
+
+  /**
+   * Hauteur maximale de l'acteur
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#maxHeight
+   * @default 'none'
+   * @type {CssSizeString}
+   */
+  maxHeight: {
+    modifier: "layout",
+    value: 'none'
+  },
+
+  /**
+   * Largeur de l'acteur
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#width
+   * @default 'auto'
+   * @type {CssSizeString}
+   */
+  width: {
+    modifier: "layout",
+    value: 'auto'
+  },
+
+  /**
+   * Largeur minimale de l'acteur
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#minHeight
+   * @default 'auto'
+   * @type {CssSizeString}
+   */
+  minWidth: {
+    modifier: "layout",
+    value: 'auto'
+  },
+
+  /**
+   * Largeur maximale de l'acteur
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#maxHeight
+   * @default 'none'
+   * @type {CssSizeString}
+   */
+  maxWidth: {
+    modifier: "layout",
+    value: 'none'
+  },
+
+  /**
+   * Couleur de fond de l'acteur.
+   * Modificateur : **CSS**.
+   * @member Actor.Properties.BaseActorProperties#backgroundColor
+   * @default ''
+   * @type {CssColorString}
+   */
+  backgroundColor: {
+    modifier: "css",
+    value: ''
+  },
+
+  /**
+   * Couleur de l'acteur.
+   * Modificateur : **CSS**.
+   * **Hérité**
+   * @member Actor.Properties.BaseActorProperties#color
+   * @default ''
+   * @type {CssColorString}
+   */
+  color: {
+    modifier: "css",
+    value: ''
+  },
+
+  /**
+   * Marge intérieure haute.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#paddingTop
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  paddingTop: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Marge intérieure basse.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#paddingBottom
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  paddingBottom: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Marge intérieure droite.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#paddingRight
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  paddingRight: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Marge intérieure gauche.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#paddingLeft
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  paddingLeft: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Couleur de bordure.
+   * Modificateur : **CSS**.
+   * @member Actor.Properties.BaseActorProperties#borderColor
+   * @default 'currentColor'
+   * @type {CssColorString}
+   */
+  borderColor: {
+    modifier: "css",
+    value: 'currentColor'
+  },
+
+  /**
+   * Épaisseur de bordure.
+   * Modificateur : **Gabarit**.
+   * @example
+   * // Bordure à 3px
+   * '3px'
+   *
+   * // Bordure haute à 0px et le reste à 3px
+   * '0 3px 3px 3px'
+   * @member Actor.Properties.BaseActorProperties#borderWidth
+   * @default '1px'
+   * @type {CssSizeString}
+   */
+  borderWidth: {
+    modifier: "layout",
+    value: '1px'
+  },
+
+  /**
+   * Style de bordure.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#borderStyle
+   * @default 'none'
+   * @type {'none'|'solid'|'dotted'|'dashed'}
+   */
+  borderStyle: {
+    modifier: "layout",
+    value: "none"
+  },
+
+  /**
+   * Arrondissement des coins.
+   * Modificateur : **CSS**.
+   * @example
+   * // Arrondis sur tous les coins, courbure de 3px
+   * '3px'
+   *
+   * // Arrondis sur le coin haut gauche, haut droit, bas droit, bas gauche :
+   * '3px 3px 0 0'
+   * @member Actor.Properties.BaseActorProperties#borderRadius
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  borderRadius: {
+    modifier: "css",
+    value: '0px'
+  },
+
+  /**
+   * Opacité en %.
+   * Modificateur : **CSS**.
+   * @member Actor.Properties.BaseActorProperties#opacity
+   * @default 100
+   * @type {Number}
+   */
+  opacity: {
+    modifier: "css",
+    value: 100
+  },
+
+  /**
+   * Alignement du texte.
+   * Modificateur : **Gabarit**.
+   * **Hérité**
+   * @member Actor.Properties.BaseActorProperties#textAlign
+   * @default 'inherit'
+   * @type {'inherit'|'left'|'right'|'center'|'justify'}
+   */
+  textAlign: {
+    modifier: "layout",
+    value: 'inherit',
+    options: ['inherit', 'left', 'right', 'center', 'justify']
+  },
+
+  /**
+   * Alignement horizontale dans un [acteur empilement]{@link Actor.Layout.Stack} ou [acteur boite à vue]{@link Actor.Layout.ViewBox}.
+   * Modificateur : **Gabarit**.
+   *
+   * **Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`
+   * @member Actor.Properties.BaseActorProperties#horizontalAlignment
+   * @default 'auto'
+   * @type {'auto'|'left'|'right'|'middle'|'expand'}
+   */
+  horizontalAlignment: {
+    modifier: "layout",
+    value: "auto",
+    options: ['auto', 'left', 'right', 'middle', 'expand']
+  },
+
+  /**
+   * Alignement verticale dans un acteur empilement ou boite à vue.
+   * Modificateur : **Gabarit**.
+   *
+   * **Attention** aux hauteurs fixées qui prennent le pas sur la valeur `'expand'`
+   * @member Actor.Properties.BaseActorProperties#verticalAlignment
+   * @default 'auto'
+   * @type {'auto'|'left'|'right'|'middle'|'expand'}
+   */
+  verticalAlignment: {
+    modifier: "layout",
+    value: "auto",
+    options: ['auto', 'top', 'bottom', 'middle', 'expand']
+  },
+
+  /**
+   * Marge extérieure haute.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#marginTop
+   * @default '0px'
+   * @type {String}
+   */
+  marginTop: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Marge extérieure basse.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#marginBottom
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  marginBottom: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Marge extérieure droite.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#marginRight
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  marginRight: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Marge extérieure gauche.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#marginLeft
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  marginLeft: {
+    modifier: "layout",
+    value: '0px'
+  },
+
+  /**
+   * Visibilité de l'acteur.
+   * Modificateur : **Gabarit**.
+   * @member Actor.Properties.BaseActorProperties#marginLeft
+   * @default true
+   * @type {CssSizeString}
+   */
+  visible: {
+    modifier: "layout",
+    value: true
+  },
+
+  /**
+   * Position verticale depuis le haut dans un [acteur toile]{@link Actor.Layout.Canvas}.
+   * Modificateur : **CSS**.
+   *
+   * @member Actor.Properties.BaseActorProperties#top
+   * @default ''
+   * @type {CssSizeString}
+   */
+  top: {
+    modifier: "css",
+    value: ''
+  },
+
+  /**
+   * Position verticale depuis le bas dans un [acteur toile]{@link Actor.Layout.Canvas}.
+   * Modificateur : **CSS**.
+   *
+   * @member Actor.Properties.BaseActorProperties#bottom
+   * @default ''
+   * @type {CssSizeString}
+   */
+  bottom: {
+    modifier: "css",
+    value: ''
+  },
+
+  /**
+   * Position horizontale depuis la droite dans un [acteur toile]{@link Actor.Layout.Canvas}.
+   * Modificateur : **CSS**.
+   *
+   * @member Actor.Properties.BaseActorProperties#right
+   * @default ''
+   * @type {CssSizeString}
+   */
+  right: {
+    modifier: "css",
+    value: ''
+  },
+
+  /**
+   * Position horizontale depuis la gauche dans un [acteur toile]{@link Actor.Layout.Canvas}.
+   * Modificateur : **CSS**.
+   *
+   * @member Actor.Properties.BaseActorProperties#left
+   * @default ''
+   * @type {CssSizeString}
+   */
+  left: {
+    modifier: "css",
+    value: ''
+  },
+
+  /**
+   * Décoration du texte.
+   * Modificateur : **CSS**.
+   * **Hérité**
+   * @member  Actor.Properties.BaseActorProperties#textDecoration
+   * @default 'inherit'
+   * @type {'normal'|'underline'|'inherit'}
+   */
+  textDecoration: {
+    modifier: "css",
+    value: 'inherit', // underline
+  },
+
+  /**
+   * Style du texte.
+   * Modificateur : **Gabarit**.
+   * **Hérité**
+   * @member  Actor.Properties.BaseActorProperties#fontStyle
+   * @default 'inherit'
+   * @type {'normal'|'italic'|'inherit'}
+   */
+  fontStyle: {
+    modifier: "layout",
+    value: 'inherit'
+  },
+
+  /**
+   * Variant du texte.
+   * Modificateur : **Gabarit**.
+   * **Hérité**
+   * @member  Actor.Properties.BaseActorProperties#fontVariant
+   * @default 'inherit'
+   * @type {'normal'|'small-caps'|'all-small-caps'}
+   */
+  fontVariant: {
+    modifier: "layout",
+    value: 'inherit'
+  },
+
+  /**
+   * Épaisseur du texte.
+   * Modificateur : **Gabarit**.
+   * **Hérité**
+   * @member  Actor.Properties.BaseActorProperties#fontWeight
+   * @default 'inherit'
+   * @type {'normal'|'bold'|'inherit'}
+   */
+  fontWeight: {
+    modifier: "layout",
+    value: 'inherit'
+  },
+
+   /**
+   * Police du texte.
+   * Modificateur : **Gabarit**.
+   * **Hérité**
+   * @member  Actor.Properties.BaseActorProperties#fontFamily
+   * @default 'inherit'
+   * @type {CssFontFamilyString|'inherit'}
+   */
+  fontFamily: {
+    modifier: "layout",
+    value: 'inherit'
+  },
+
+  /**
+   * Hauteur du texte.
+   * Modificateur : **Gabarit**.
+   * **Hérité**
+   * @member  Actor.Properties.BaseActorProperties#fontSize
+   * @default 'inherit'
+   * @type {CssSizeString|'inherit'}
+   */
+  fontSize: {
+    modifier: "layout",
+    value: 'inherit'
+  },
+
+  /**
+   * Hauteur de ligne.
+   * Modificateur : **Gabarit**.
+   * **Hérité**
+   * @member  Actor.Properties.BaseActorProperties#lineHeight
+   * @default 'inherit'
+   * @type {CssSizeString|'inherit'}
+   */
+  lineHeight: {
+    modifier: "layout",
+    value: 'inherit'
+  },
+
+   /**
+   * Texte info bulle.
+   * Modificateur : **Autre**.
+   * @member  Actor.Properties.BaseActorProperties#toolTip
+   * @default ''
+   * @type {String}
+   */
+  toolTip: {
+    modifier: "other",
+    value: ''
+  },
+
+   /**
+   * Angle de rotation en degré.
+   * Modificateur : **CSS**.
+   * @member  Actor.Properties.BaseActorProperties#rotate
+   * @default 0
+   * @type {Number}
+   */
+  rotate: {
+    modifier: "css",
+    value: 0
+  },
+
+   /**
+   * Taux de mise à l'échelle.
+   * Modificateur : **CSS**.
+   *
+   * @example
+   * // > 1 : plus grand
+   * // &lt; 1 : moins grand
+   * // &lt; 0 : renversé
+   * @member  Actor.Properties.BaseActorProperties#scaling
+   * @default 1
+   * @type {Number}
+   */
+  scaling: {
+    modifier: "css",
+    value: 1
+  },
+
+   /**
+   * Translation horizontale.
+   * Modificateur : **CSS**.
+   *
+   * @member  Actor.Properties.BaseActorProperties#translateX
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  translateX: {
+    modifier: "css",
+    value: '0px'
+  },
+
+   /**
+   * Translation verticale.
+   * Modificateur : **CSS**.
+   *
+   * @member  Actor.Properties.BaseActorProperties#translateX
+   * @default '0px'
+   * @type {CssSizeString}
+   */
+  translateY: {
+    modifier: "css",
+    value: '0px'
+  },
+
+   /**
+   * Ombre portée. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow}
+   * Modificateur : **CSS**.
+   *
+   * @member  Actor.Properties.BaseActorProperties#boxShadow
+   * @default 'none'
+   * @type {String}
+   */
+  boxShadow: {
+    modifier: "css",
+    value: 'none',
+  },
+}
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
