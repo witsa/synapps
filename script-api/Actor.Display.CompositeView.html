@@ -1,0 +1,3301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>Actor.Display.CompositeView</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_AFILTER_ENABLED = true;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">class</span>
+				<h1><span class="ancestors"><a href="Actor.html">Actor</a><a href="Actor.Display.html">.Display</a>.</span><span class="name">CompositeView</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-9 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_class.html">Classes</a></li>
+							<li class="active"><a href="Actor.html">Actor</a><a href="Actor.Display.html">.Display</a>.CompositeView</li>
+						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-inherited" type="checkbox" value="" checked>
+									Inherited
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+						</div>
+					<section>
+							<dl class="symbol primary">
+								<dt class="symbol-title class">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">CompositeView</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+</dt>
+<dd class="symbol-details class" style="max-height: 9999px;">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Acteur Vue de composite permettant d'afficher un composite de la synapp dynamiquement.<br>
+			Le composite affiché aura ses propriétés initialisées à leur valeur par défaut.</p>
+			<p><strong>Type :</strong> <code>display/composite-view</code></p></div>
+			</div>	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+									<h3>Members</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="accessories" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">accessories</span><span class="signature-type"> :Object</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient la liste des accessoires.<br>
+			<br> Chaque accessoire est accessible par sa clé :</p>
+			<pre class="prettyprint source lang-js"><code>this.accessories.log.properties.onActorPropertyChanged = true;
+			</code></pre>
+			<p>pour accéder à l'accessoire <code>log</code> préalablement créé et activer la journalisation au changement de propriété de l'acteur.<br>
+			<br> La gestion des accessoires s'effectue avec les méthodes : <a href="Actor.BaseActor.html#createAccessory">Actor.BaseActor#createAccessory</a> et <a href="Actor.BaseActor.html#removeAccessory">Actor.BaseActor#removeAccessory</a></p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Object</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#accessories">Actor.BaseActor#accessories</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="actor" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">actor</span><span class="signature-type"> :Element</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>L'élément DOM de l'acteur.</p>
+			<p><br> <em>Attention! L'élément n'est pas accessible dans tous les scripts.</em></p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Element</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#actor">Actor.BaseActor#actor</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- todo -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">To Do</label>
+								<div class="col-sm-9">
+										<p class="form-control-static">décrire les évènements</p>
+								</div>
+							</div>
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="additionals" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">additionals</span><span class="signature-type"> :<a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient les propriétés additionnelles.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.WithAdditionals.html#additionals">Behavior.WithAdditionals#additionals</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="BaseAccessory" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">BaseAccessory</span><span class="signature-type"> :BaseAccessory</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient la classe de base des accessoire pour en définir des nouveaux</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">BaseAccessory</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#BaseAccessory">Actor.BaseActor#BaseAccessory</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="dataContext" class="member public inherited"><span class="name">dataContext</span><span class="signature-type"> :any</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient ou définit le contexte de donnée.</p>
+			<p>Le contexte de donnée est obtenu par ruissellement si rien n'est définit au niveau de l'objet.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">any</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.DataContextual.html#dataContext">Behavior.DataContextual#dataContext</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="dataContextualParent" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">dataContextualParent</span><span class="signature-type"> :any</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Parent de donnée qui participe au ruissellement.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">any</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.DataContextual.html#dataContextualParent">Behavior.DataContextual#dataContextualParent</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="dataStores" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">dataStores</span><span class="signature-type"> :Ember.Service</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient les magasins de données de la synapp.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Ember.Service</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#dataStores">Actor.BaseActor#dataStores</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="events" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">events</span><span class="signature-type"> :Object</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient les évènements</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Object</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.WithEvents.html#events">Behavior.WithEvents#events</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="inBindingsRegister" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">inBindingsRegister</span><span class="signature-type"> :Register</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient le registre des liaisons qui utilisent l'objet comme source.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Register</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.SourceOfInternalBinding.html#inBindingsRegister">Behavior.SourceOfInternalBinding#inBindingsRegister</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="inheritedDataContext" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">inheritedDataContext</span><span class="signature-type"> :any</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Contexte de donnée ruisselé.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">any</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.DataContextual.html#inheritedDataContext">Behavior.DataContextual#inheritedDataContext</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="isDataContextual" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDataContextual</span><span class="signature-type"> :Boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Est-ce un objet qui participe au ruissellement de donnée.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.DataContextual.html#isDataContextual">Behavior.DataContextual#isDataContextual</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="isDestroyed" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroyed</span><span class="signature-type"> :Boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'acteur est détruit.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#isDestroyed">Actor.BaseActor#isDestroyed</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="isDestroying" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroying</span><span class="signature-type"> :Boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'acteur est en train d'être détruit.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#isDestroying">Actor.BaseActor#isDestroying</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="isLeadActor" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">isLeadActor</span><span class="signature-type"> :Boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Est-ce un acteur principal ?</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#isLeadActor">Actor.BaseActor#isLeadActor</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="key" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">key</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>La clé unique de l'acteur.<br>
+			<br>Son unicité est valable dans le contexte de la scène ou du composite parent direct de l'acteur.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#key">Actor.BaseActor#key</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="leadActor" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">leadActor</span><span class="signature-type"> :<a href="Actor.BaseActor.html">Actor.BaseActor</a></span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient l'acteur principal de la scène ou composite présentant l'acteur.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Actor.BaseActor.html">Actor.BaseActor</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#leadActor">Actor.BaseActor#leadActor</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="parent" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">parent</span><span class="signature-type"> :<a href="Actor.BaseActor.html">Actor.BaseActor</a></span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Acteur parent.<br>
+			<br> <em>Peut être absent si l'acteur est le principal.</em></p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Actor.BaseActor.html">Actor.BaseActor</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#parent">Actor.BaseActor#parent</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="properties" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">properties</span><span class="signature-type"> :<a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient les propriétés de l'acteur.</p></div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="rootScene" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">rootScene</span><span class="signature-type"> :<a href="Scene.html">Scene</a></span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient la scène racine.<br>
+			<br> <em>Ce n'est pas forcément la <a href="Actor.BaseActor.html#stage">scène parente directe</a> de l'acteur.</em></p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Scene.html">Scene</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#rootScene">Actor.BaseActor#rootScene</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="scene" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">scene</span><span class="signature-type"> :<a href="Scene.html">Scene</a></span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Première scène parente de l'acteur.<br>
+			<br> <em>Ce n'est pas forcément la <a href="Actor.BaseActor.html#stage">scène parente directe</a> de l'acteur ni même la <a href="Actor.BaseActor.html#rootScene">scène racine</a>.</em></p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Scene.html">Scene</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#scene">Actor.BaseActor#scene</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="stage" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">stage</span><span class="signature-type"> :<a href="Stage.html">Stage</a></span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Scene ou Composite parent directe de l'acteur.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Stage.html">Stage</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#stage">Actor.BaseActor#stage</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="styleName" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">styleName</span><span class="signature-type"> :String</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Le nom du style de l'acteur.<br>
+			<br><br>
+			Pour changer de style, il faut utiliser <a href="Actor.BaseActor.html#changeStyleName">Actor.BaseActor#changeStyleName</a></p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#styleName">Actor.BaseActor#styleName</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="synapp" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">synapp</span><span class="signature-type"> :Synapp</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient la Synapp.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Synapp</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#synapp">Actor.BaseActor#synapp</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="type" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">type</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Type de l'acteur.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#type">Actor.BaseActor#type</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="uniqClass" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">uniqClass</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Classe <code>CSS</code> unique de l'acteur.<br>
+			<br> Elle permet de sélectionner l'élément du DOM de l'acteur.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#uniqClass">Actor.BaseActor#uniqClass</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="uniqPath" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">uniqPath</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Chemin unique de l'acteur.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#uniqPath">Actor.BaseActor#uniqPath</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+									<h3>Methods</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="changeStyleName" class="function public inherited"><span class="name">changeStyleName</span><span class="signature-params">( <span class="signature-param">styleName</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Changer le nom du style de l'acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>styleName</code></td>
+							<td><span class="param-type">String</span></td>
+							<td class="last">
+									<p>Nom du style à appliquer.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#changeStyleName">Actor.BaseActor#changeStyleName</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- todo -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">To Do</label>
+								<div class="col-sm-9">
+										<p class="form-control-static">Que se passe t il si le nom de style ne correspond à aucun défini ?</p>
+								</div>
+							</div>
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="createAccessory" class="function public inherited"><span class="name">createAccessory</span><span class="signature-params">( <span class="signature-param">key</span>, <span class="signature-param">setup</span>, <span class="signature-param">saveInSetup</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{<a href="Accessory.html">Accessory</a>}</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>key</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+									<p>Clé unique.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>setup</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>saveInSetup</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type"><a href="Accessory.html">Accessory</a></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>L'accessoire créé.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#createAccessory">Actor.BaseActor#createAccessory</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- todo -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">To Do</label>
+								<div class="col-sm-9">
+										<p class="form-control-static">à documenter.Création d&#x27;une instance d&#x27;accessoire.</p>
+								</div>
+							</div>
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="createBasicBinding" class="function public inherited"><span class="name">createBasicBinding</span><span class="signature-params">( <span class="signature-param">targetValuePath</span>, <span class="signature-param">setup</span> [,&nbsp;<span class="signature-param">saveInSetup</span>&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{<a href="Binding.BasicBinding.html">Binding.BasicBinding</a>}</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Création d'une liaison basique.</p>
+			<p>La source est prise dans le contexte de donnée.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>targetValuePath</code></td>
+							<td><span class="param-type">string</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Chemin de la cible de la liaison.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>setup</code></td>
+							<td><span class="param-type"><a href="JSON.html#.BasicBinding">JSON.BasicBinding</a></span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>saveInSetup</code></td>
+							<td><span class="param-type">Boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>true</td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type"><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la liaison créée.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">Le &#x60;setup&#x60; est un objet&#x60;&#x60;&#x60;actor.createBasicBinding(&#x27;properties.width, { path: &#x27;widthOfPanel&#x27; });&#x60;&#x60;&#x60;La propriété largeur de l&#x27;acteur est maintenant liée au champ &#x60;widthOfPanel&#x60; de son contexte de donnée.</code></pre>
+					</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#createBasicBinding">Actor.BaseActor#createBasicBinding</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="createEvent" class="function public inherited"><span class="name">createEvent</span><span class="signature-params">( <span class="signature-param">eventName</span>, <span class="signature-param">eventScriptLines</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{any}</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Crée un évènement dans les <a href="Behavior.WithEvents.html#events"><code>events</code></a>.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>eventName</code></td>
+							<td><span class="param-type">String</span></td>
+							<td class="last">
+									<p>Nom de l'évènement</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>eventScriptLines</code></td>
+							<td><span class="param-type">Array.&lt;String></span> | <span class="param-type">function</span></td>
+							<td class="last">
+									<p>implémentation de l'évènement. Peut être un tableau de ligne de code ou une callback <code>function(context)</code>.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Le retour éventuel dans la définition de l'évènement.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">// avec un tableau de codethis.createEvent(&#x27;onInit&#x27;, [&#x27;const test &#x3D; &quot;test!&quot;;&#x27;, &#x27;console.log(context.eventName, test);&#x27;]);// avec une fonctionthis.createEvent(&#x27;onInit&#x27;, context &#x3D;&gt; {  const test &#x3D; &quot;test!&quot;;  console.log(context.eventName, test);});</code></pre>
+					</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.WithEvents.html#createEvent">Behavior.WithEvents#createEvent</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="createInternalBinding" class="function public inherited"><span class="name">createInternalBinding</span><span class="signature-params">( <span class="signature-param">targetValuePath</span>, <span class="signature-param">setup</span> [,&nbsp;<span class="signature-param">saveInSetup</span>&nbsp;]&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Création d'une liaison interne.</p>
+			<p>Le type de source permet à la liaison d'aller cherche la bonne source à placer dans le contexte de donnée de la liaison.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>targetValuePath</code></td>
+							<td><span class="param-type">string</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Chemin de la cible de la liaison.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>setup</code></td>
+							<td><span class="param-type">Object</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>saveInSetup</code></td>
+							<td><span class="param-type">Boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>true</td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">Le &#x60;setup&#x60; est un objet différent en fonction du type de source.Pour un acteur :&#x60;&#x60;&#x60;{ sourceKey: &#x27;&lt;clé acteur&gt;&#x27;, path: &#x27;le chemin de la valeur de la source&#x27; }&#x60;&#x60;&#x60;</code></pre>
+					</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#createInternalBinding">Actor.BaseActor#createInternalBinding</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="getBinding" class="function public inherited"><span class="name">getBinding</span><span class="signature-params">( <span class="signature-param">targetValuePath</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{<a href="Binding.html">Binding</a>}</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient une liaison de l'acteur par son chemin de la cible.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>targetValuePath</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>Chemin de la cible ex.: <code>properties.content</code></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type"><a href="Binding.html">Binding</a></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la liaison demandée ou null si non trouvée.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#getBinding">Actor.BaseActor#getBinding</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="removeAccessory" class="function public inherited"><span class="name">removeAccessory</span><span class="signature-params">( <span class="signature-param">key</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Suppression d'un accessoire</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>key</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#removeAccessory">Actor.BaseActor#removeAccessory</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="removeBinding" class="function public inherited"><span class="name">removeBinding</span><span class="signature-params">( <span class="signature-param">targetValuePath</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Suppression d'une liaison sur un chemin cible.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>targetValuePath</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>Chemin vers la cible de la liaison</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#removeBinding">Actor.BaseActor#removeBinding</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="removeEvent" class="function public inherited"><span class="name">removeEvent</span><span class="signature-params">( <span class="signature-param">eventName</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Supprime un évènement dans les <a href="Behavior.WithEvents.html#events"><code>events</code></a>.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>eventName</code></td>
+							<td><span class="param-type">String</span></td>
+							<td class="last">
+									<p>Nom de l'évènement à supprimer.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.WithEvents.html#removeEvent">Behavior.WithEvents#removeEvent</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="runEvent" class="function public inherited"><span class="name">runEvent</span><span class="signature-params">( <span class="signature-param">eventName</span>, <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{any}</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Exécute un évènement s'il existe dans les <a href="Behavior.WithEvents.html#events"><code>events</code></a>.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>eventName</code></td>
+							<td><span class="param-type">String</span></td>
+							<td class="last">
+									<p>Nom de l'évènement</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Arguments à passer dans l'objet de contexte.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Le retour éventuel dans la définition de l'évènement.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Behavior.WithEvents.html#runEvent">Behavior.WithEvents#runEvent</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+									<h3>Events</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:additionals/[additionalName]/binding/onReadTransform" class="event public inherited"><span class="name">additionals/[additionalName]/binding/onReadTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à la lecture de la source d'une liaison vers une additionnelle <code>additionalName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.</p>
+			<p><br>Par exemple l'évènement <code>additionals/myText/binding/onReadTransform</code> se produit lorsque la source de la liaison vers l'additionnelle <code>myText</code> est lue.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:additionals/%5BadditionalName%5D/binding/onReadTransform">Actor.BaseActor#additionals/[additionalName]/binding/onReadTransform</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:additionals/[additionalName]/binding/onWriteTransform" class="event public inherited"><span class="name">additionals/[additionalName]/binding/onWriteTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à écriture de la source d'une liaison vers une additionnelle <code>additionalName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la source.</p>
+			<p><br>Par exemple l'évènement <code>additionals/myText/binding/onWriteTransform</code> se produit lorsque l'additionnelle <code>myText</code> change et que sa valeur est écrite dans la source.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:additionals/%5BadditionalName%5D/binding/onWriteTransform">Actor.BaseActor#additionals/[additionalName]/binding/onWriteTransform</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:additionals/[additionalName]/onValueChanged" class="event public inherited"><span class="name">additionals/[additionalName]/onValueChanged</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la valeur de l'additionnelle <code>[additionalName]</code> a changé.</p>
+			<p><br>Par exemple l'évènement <code>additionals/myText/onValueChanged</code> se produit lorsque l'additionnelle <code>myText</code> a changé.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:additionals/%5BadditionalName%5D/onValueChanged">Actor.BaseActor#additionals/[additionalName]/onValueChanged</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onClick" class="event public inherited"><span class="name">onClick</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit au clic sur acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onClick">Actor.BaseActor#onClick</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onComputeLayout" class="event public inherited"><span class="name">onComputeLayout</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque l'acteur calcul son gabarit.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Contexte de l'évènement.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onComputeLayout">Actor.BaseActor#onComputeLayout</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onDestroy" class="event public inherited"><span class="name">onDestroy</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit au moment de la destruction d'un acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onDestroy">Actor.BaseActor#onDestroy</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onInit" class="event public inherited"><span class="name">onInit</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque l'acteur est initialisé.</p>
+			<p><br> Attention, l'élément DOM n'est pas encore accessible, ni les autres acteurs présents.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Contexte de l'évènement.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onInit">Actor.BaseActor#onInit</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onMouseDown" class="event public inherited"><span class="name">onMouseDown</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un bouton de la souris est appuyé au dessus de l'acteur .</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseDown">Actor.BaseActor#onMouseDown</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onMouseEnter" class="event public inherited"><span class="name">onMouseEnter</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la souris entre dans acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseEnter">Actor.BaseActor#onMouseEnter</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onMouseLeave" class="event public inherited"><span class="name">onMouseLeave</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la souris sort de l' acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseLeave">Actor.BaseActor#onMouseLeave</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onMouseMove" class="event public inherited"><span class="name">onMouseMove</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la souris se déplace au dessus de l' acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseMove">Actor.BaseActor#onMouseMove</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onMouseUp" class="event public inherited"><span class="name">onMouseUp</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un bouton de la souris est relâché au dessus de l'acteur .</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseUp">Actor.BaseActor#onMouseUp</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onPostInit" class="event public inherited"><span class="name">onPostInit</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit juste avant le premier rendu de l'acteur mais après que tous les acteurs de la scène soient initialisés.</p>
+			<p><br> On a accès à tous les éléments DOM, liaisons, ...</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onPostInit">Actor.BaseActor#onPostInit</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onPropertyChanged" class="event public inherited"><span class="name">onPropertyChanged</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque n'importe quelle propriété ou additionnelle de l'acteur ou de ses accessoires ou additionnelle voit sa valeur changer.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onPropertyChanged">Actor.BaseActor#onPropertyChanged</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onRender" class="event public inherited"><span class="name">onRender</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque rendu de l'acteur dans l'interface.<br>
+			Un champs <code>isFirstRender</code> est à <code>true</code> dans le contexte au premier rendu uniquement.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement. Avec en plus :</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>isFirstRender</code></td>
+													<td><span class="param-type">Boolean</span></td>
+													<td class="last">
+															<p>Vrai uniquement au premier rendu de l'acteur.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onRender">Actor.BaseActor#onRender</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:properties/[propertyName]/binding/onReadTransform" class="event public inherited"><span class="name">properties/[propertyName]/binding/onReadTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à la lecture de la source d'une liaison vers une propriété <code>propertyName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.</p>
+			<p><br>Par exemple l'évènement <code>properties/width/binding/onReadTransform</code> se produit lorsque la source de la liaison vers la propriété <a href="Actor.BaseActorProperties.html#width">Actor.BaseActorProperties#width</a> est lue.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:properties/%5BpropertyName%5D/binding/onReadTransform">Actor.BaseActor#properties/[propertyName]/binding/onReadTransform</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:properties/[propertyName]/binding/onWriteTransform" class="event public inherited"><span class="name">properties/[propertyName]/binding/onWriteTransform</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à l'écriture de la source d'une liaison vers une propriété <code>propertyName</code>.<br>
+			Il est possible de transformer la valeur lue pour écrire autre chose dans la source.</p>
+			<p><br>Par exemple l'évènement <code>properties/width/binding/onWriteTransform</code> se produit lorsque la propriété <a href="Actor.BaseActorProperties.html#width">Actor.BaseActorProperties#width</a> change et que sa valeur est écrite dans la source.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type">Event.OnBindingTransformContext</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">any</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>la valeur lue par défaut.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:properties/%5BpropertyName%5D/binding/onWriteTransform">Actor.BaseActor#properties/[propertyName]/binding/onWriteTransform</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:properties/[propertyName]/onValueChanged" class="event public inherited"><span class="name">properties/[propertyName]/onValueChanged</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la valeur de propriété <code>[propertyName]</code> change.</p>
+			<p><br>Par exemple l'évènement <code>properties/width/onValueChanged</code> se produit lorsque la propriété <a href="Actor.BaseActorProperties.html#width">Actor.BaseActorProperties#width</a> change.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:properties/%5BpropertyName%5D/onValueChanged">Actor.BaseActor#properties/[propertyName]/onValueChanged</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+							</article>
+					</section>
+			</div>
+				<div class="col-md-3 side-content">
+					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
+				</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,1203 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui/addon/services/setup-migration.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/services/setup-migration.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { set } from '@ember/object';
+import Service from '@ember/service';
+import { isEmpty, isNone, typeOf } from '@ember/utils';
+import logger from 'logger';
+
+// [MIGRATION V1]
+
+const ValuesIn = {
+  none: 'none',
+  properties: 'properties',
+  additionals: 'additionals',
+};
+
+/**
+ * équivalences des types d'acteur.
+ */
+const V1ActorTypes = {
+  'unknown': 'unknown',
+  'stack': 'layout/stack',
+  'canvas': 'layout/canvas',
+  'modalLayout': 'layout/modal',
+  'viewBox': 'layout/view-box',
+  'text': 'display/html',
+  'html': 'display/html',
+  'textbox': 'input/text-box',
+  'textarea': 'input/text-area',
+  'buttonNav': 'input/nav-button',
+  'buttonPush': 'input/button',
+  'buttonDropdown': 'input/dropdown-list',
+  'multiSelect': 'input/checkbox-list',
+  'switchButton': 'input/switch-button',
+  'switchImage': 'input/switch-image',
+  'iframe': 'display/iframe',
+  'screen': 'display/screen',
+  'gauge': 'charting/gauge-demo',
+  'image': 'display/image',
+  'period': 'input/period',
+  'slider': 'input/cursor',
+  'agenda': 'redy/agenda',
+  'graph': 'redy/graphics',
+  'synoptic': 'redy/synoptic',
+  'jrnl': 'redy/wos-event-log',
+  'ress': 'redy/wos-state-list',
+  'resourceView': 'display/composite-view',
+  'set': 'redy/collection-filter',
+  'zone': 'redy/zone-filter',
+  'group': 'redy/group-filter',
+  'equipment': 'redy/device-filter',
+};
+
+/**
+ * ordre dans lequel les liaisons sont écrites.
+ */
+const BindingSourceTypeOrder = {
+  'redy/wos-relative-variable': -10,
+  'user-agent': 0,
+  'synapp': 10,
+  'host': 20,
+  'session': 30,
+  'user': 40,
+  'color': 50,
+  'constant': 60,
+  'picture': 70,
+  'text': 80,
+  'stage': 90,
+  'relative': 100,
+  'actor': 110,
+};
+
+const buttonBootstrapColorRule = ({ key = 'mode', defaultValue = 'DEFAULT' }) => {
+  return {
+    key,
+    additionalDef: {
+      type: 'text',
+      value: defaultValue,
+    },
+    onReadTransform: [
+      "return context.value &amp;&amp; context.value.toLowerCase ? context.value.toLowerCase() : context.value;",
+    ],
+    onWriteTransform: [
+      "return context.value &amp;&amp; context.value.toUpperCase ? context.value.toUpperCase() : context.value;",
+    ],
+  };
+};
+
+const itemsRule = {
+  key: 'options',
+  additionalDef: {
+    type: 'js',
+    value: [],
+  },
+  onReadTransform: [
+    "return JSON.stringify(",
+    "  (context.value || [])",
+    "  .map(item => {",
+    "    return { value: item[this.additionals.keyPath], text: item[this.additionals.captionPath] };",
+    "  })",
+    ");"
+  ],
+  onWriteTransform: [
+    "const options = JSON.parse(context.value);",
+    "return options.map(option => {",
+    "  const item = {};",
+    "  item[this.additionals.keyPath] = option.value;",
+    "  item[this.additionals.captionPath] = option.text;",
+    "  return item;",
+    "});",
+  ],
+};
+
+const itemsToItem = ({ key = 'item' }) => {
+  return {
+    key,
+    additionalDef: {
+      type: 'js',
+      value: null,
+    },
+    onReadTransform: [
+      "const items = context.value &amp;&amp; context.value.map ? context.value.compact(): null;",
+      "return Em.isEmpty(items)? null : items[0];",
+    ],
+    onWriteTransform: [
+      "const item = context.value;",
+      "return Em.isNone(item) ? [null] :  [item];",
+    ],
+  };
+};
+
+
+const itemsToJSON = ({ key = 'values', defaults = [null] }) => {
+  return {
+    key,
+    additionalDef: {
+      "type": "js",
+      "value": defaults,
+    },
+
+    onReadTransform: [
+      "return JSON.stringify(context.value);"
+    ],
+    onWriteTransform: [
+      "if (context.value === undefined) return [null];",
+      "return JSON.parse(context.value);"
+    ],
+  };
+};
+
+
+const V1ActorRules = {
+
+  buttonPush: {
+    bootstrapColor: buttonBootstrapColorRule({ defaultValue: 'PRIMARY' }),
+
+    pushing: {
+      additionalDef: {
+        type: 'boolean',
+        value: false,
+      },
+    }
+  },
+
+  buttonNav: {
+    bootstrapColor: buttonBootstrapColorRule({ defaultValue: 'PRIMARY' }),
+  },
+
+  buttonDropdown: {
+    selectedItem: {
+      key: 'value',
+      additionalDef: {
+        type: 'text',
+        value: 'null',
+      },
+    },
+    emptyValue: {
+      key: 'emptyText',
+      additionalDef: {
+        type: 'text',
+        value: '-',
+      },
+    },
+    keyPath: {
+      additionalDef: {
+        type: 'text',
+        value: 'key',
+      }
+    },
+    captionPath: {
+      additionalDef: {
+        type: 'text',
+        value: 'caption',
+      }
+    },
+    items: itemsRule,
+  },
+
+  period: {
+    period: {
+      key: 'value',
+      additionalDef: {
+        type: 'text',
+        value: 'TODAY',
+      },
+      onReadTransform: [
+        "return context.value &amp;&amp; context.value.toLowerCase ? context.value.toLowerCase() : context.value;",
+      ],
+      onWriteTransform: [
+        "return context.value &amp;&amp; context.value.toUpperCase ? context.value.toUpperCase() : context.value;",
+      ],
+    },
+    periods: {
+      key: 'options',
+      additionalDef: {
+        type: 'js',
+        value: null,
+      },
+      onReadTransform: [
+        "return JSON.stringify(context.value &amp;&amp; context.value.map ? context.value.compact().map(o => o.toLowerCase()) : null);",
+      ],
+      onWriteTransform: [
+        "const options = JSON.parse(context.value);",
+        "return options &amp;&amp; options.map ? options.compact().map(o => o.toUpperCase()) : null;",
+      ],
+    }
+  },
+
+  textbox: {
+    size: {
+      key: 'maxLength',
+      additionalDef: {
+        type: 'number',
+        value: null,
+      },
+    },
+  },
+
+  textarea: {
+    maxlength: {
+      key: 'maxLength',
+      additionalDef: {
+        type: 'number',
+        value: null,
+      },
+    },
+  },
+
+  switchButton: {
+    colorTrue: buttonBootstrapColorRule({ key: 'modeTrue' }),
+    colorFalse: buttonBootstrapColorRule({ key: 'modeFalse' }),
+  },
+
+  multiSelect: {
+    keyPath: {
+      additionalDef: {
+        type: 'text',
+        value: 'key',
+      }
+    },
+
+    captionPath: {
+      additionalDef: {
+        type: 'text',
+        value: 'caption',
+      }
+    },
+
+    items: itemsRule,
+
+    selectedItems: {
+      key: 'values',
+      additionalDef: {
+        "type": "js",
+        "value": [],
+      },
+
+      onReadTransform: [
+        "return JSON.stringify(context.value);"
+      ],
+      onWriteTransform: [
+        "if (context.value === undefined) return null;",
+        "return JSON.parse(context.value);"
+      ],
+    },
+  },
+
+  agenda: {
+    agendaID: {
+      key: 'agendaPath',
+      additionalDef: {
+        type: 'number',
+        value: null,
+      },
+    },
+  },
+
+  graph: {
+    preparationID: {
+      key: 'preparationLabel',
+      additionalDef: {
+        type: 'number',
+        value: null,
+      },
+    },
+    dataID: {
+      key: 'dataId',
+      additionalDef: {
+        type: 'text',
+        value: null,
+      },
+    },
+  },
+
+  synoptic: {
+    synopticLabel: {
+      key: 'synopticPath',
+      additionalDef: {
+        type: 'text',
+        value: null,
+      },
+    },
+  },
+
+  jrnl: {
+    period: {
+      key: 'autoRefreshDelay',
+      additionalDef: {
+        type: 'number',
+        value: 30,
+      }
+    },
+    take: {
+      key: 'pageSize',
+      additionalDef: {
+        type: 'number',
+        value: 10,
+      }
+    },
+    setElement: {
+      key: 'collection',
+      additionalDef: {
+        type: 'number',
+        value: null,
+      },
+      onReadTransform: [
+        "return context.value ? context.value : null;",
+      ],
+      onWriteTransform: [
+        "return context.value ? context.value : null;",
+      ],
+    },
+
+    displayedColumns: {
+      key: 'columns',
+      additionalDef: {
+        type: 'js',
+        value: JSON.stringify(['ack', 'icon', 'date', 'nod', 'state']),
+      },
+      onReadTransform: [
+        "if (context.value === undefined)",
+        "  return this.properties.prototypeSetup.columns.value;",
+        "if (context.value &amp;&amp; context.value.map)",
+        "  return JSON.stringify(this.properties.prototypeSetup.columns.options.map(c=> context.value.compact().any(v=>v.toLowerCase() === c) ? c : null).compact());",
+        "return JSON.stringify(null);"
+      ],
+      onWriteTransform: [
+        "const columns = JSON.parse(context.value);",
+        "return columns &amp;&amp; columns.map ? columns.compact().map(o => o.toUpperCase()) : null;",
+      ],
+    },
+
+    equipments: itemsToItem({ key: 'device' }),
+    zones: itemsToItem({ key: 'zone' }),
+
+  },
+
+  ress: {
+    period: {
+      key: 'autoRefreshDelay',
+      additionalDef: {
+        type: 'number',
+        value: 30,
+      }
+    },
+    take: {
+      key: 'pageSize',
+      additionalDef: {
+        type: 'number',
+        value: 10,
+      }
+    },
+    name: {
+      key: 'searchText',
+      additionalDef: {
+        type: 'text',
+        value: null,
+      }
+    },
+    setElement: {
+      key: 'collection',
+      additionalDef: {
+        type: 'number',
+        value: null,
+      },
+      onReadTransform: [
+        "return context.value ? context.value : null;",
+      ],
+      onWriteTransform: [
+        "return context.value ? context.value : null;",
+      ],
+    },
+
+  },
+
+  resourceView: {
+    mappings: {
+      additionalDef: {
+        type: 'text',
+        value: null,
+      }
+    },
+  },
+
+  set: {
+    setElement: {
+      key: 'values',
+      additionalDef: {
+        type: 'text',
+        value: null,
+      },
+      onReadTransform: [
+        "return context.value ? JSON.stringify([context.value]) : '[null]';",
+      ],
+      onWriteTransform: [
+        "const array = JSON.parse(context.value);",
+        "return array &amp;&amp; Em.typeOf(array) === 'array' &amp;&amp; array.length > 0 ? array[0] : null;",
+      ],
+    },
+  },
+
+  equipment: {
+    equipments: itemsToJSON({}),
+  },
+
+  zone: {
+    zones: itemsToJSON({}),
+  },
+
+  group: {
+    groups: itemsToJSON({ defaults: null }),
+  },
+
+};
+
+const V1ActorScripts = {
+  'onChanged': 'onSelected',
+  'onInit': 'onPostInit',
+  'onRender': 'onComputeLayout',
+  'onSelected': 'accessories/wrv_dataContext/onDidDataStore',
+};
+
+export default class extends Service {
+
+  ValuesIn = ValuesIn;
+
+  V1ActorRules = V1ActorRules;
+
+  V1ActorScripts = V1ActorScripts;
+
+  BindingSourceTypeOrder = BindingSourceTypeOrder;
+
+  migrateFromV1Scene({ synapp, key, v1 }) {
+
+    const setup = {
+      "name": v1.name,
+      key,
+      "leadActor": JSON.stringify(v1 &amp;&amp; v1.leadActor &amp;&amp; v1.leadActor.key ? this._migrateFromV1Actor({ synapp, v1: v1.leadActor }) : null),
+    };
+
+    this._migrateFromV1Props({ synapp, setup, v1, valuesIn: ValuesIn.additionals, isScene: true });
+
+    return setup;
+  }
+
+  migrateFromV1Composite({ synapp, key, name, v1 }) {
+
+    const leadActor = v1 &amp;&amp; v1.leadActor &amp;&amp; v1.leadActor.key ? this._migrateFromV1Actor({ synapp, v1: v1.leadActor }) : null;
+
+
+    if (key === 'colorTheme' &amp;&amp; leadActor.key === 'css') {
+
+      // rattrapage du composite colorTheme.
+      leadActor.properties.content += `
+&lt;style>
+
+  .synapps-ui-scene .badge {
+    background-color: {{bg}};
+    color: {{c}};
+  }
+  .synapps-ui-scene .badge.inv {
+    background-color: {{c}};
+    color: {{bg}};
+  }
+
+  .synapps-ui-scene .nav-pills>li.active>a,
+  .synapps-ui-scene .nav-pills>li>a:focus,
+  .synapps-ui-scene button.btn-info,
+  .synapps-ui-scene button.btn-outline-info:hover,
+  .synapps-ui-scene button.btn-light:hover,
+  .synapps-ui-scene button.btn-info:focus {
+    background-color: {{bg}};
+    color: {{c}};
+  }
+
+  .synapps-ui-scene button.btn-outline-info,
+  .synapps-ui-scene button.btn-light,
+  .synapps-ui-scene .nav-pills>li>a {
+    background-color: {{c}};
+    color: {{bg}};
+    text-align: left;
+  }
+
+&lt;/style>
+
+      `;
+
+    }
+
+    if (key === 'panelMenuBehind' &amp;&amp; leadActor.key === 'stack1') {
+      // rattrapage du composite panelMenuBehind.
+      leadActor.events.onPostInit.splice(55, 0, "      _.removeTouchHandler();");
+      leadActor.events.onPostInit.splice(61, 0, "    _.isHiding = true;");
+      leadActor.events.onPostInit.splice(61, 0, "    if (_.isHiding) return;");
+      leadActor.events.onPostInit.splice(64, 0, "      _.isHiding = false;");
+    }
+
+    const setup = {
+      key,
+      name,
+      "leadActor": JSON.stringify(leadActor),
+      additionals: {},
+      additionalDefs: {},
+      bindings: {},
+      events: {},
+    };
+
+    this._migrateFromV1Props({ synapp, setup, type: v1.type, v1 });
+    this._migrateFromV1Properties({ synapp, setup, type: v1.type, v1 })
+
+    return setup;
+  }
+
+  _migrateFromV1Props({ synapp, setup, type, v1, valuesIn = ValuesIn.none, isScene = false }) {
+    setup.additionalDefs = setup.additionalDefs || {};
+    if (!v1) return;
+    for (const prop of (v1.props || [])) {
+      if (prop.type) {
+        setup.additionalDefs[prop.key] = {
+          "type": prop.type,
+          "label": prop.label,
+          "description": prop.description || '',
+          "modifier": "render",
+          "canBeEmpty": prop.canBeEmpty,
+          "isReadOnly": prop.isReadOnly,
+          "value": prop.propertyValue.value
+        }
+
+        if (isScene) {
+          setup.additionalDefs[prop.key].allowUrlParams = true;
+        }
+      }
+
+      switch (valuesIn) {
+        case ValuesIn.additionals:
+          setup.additionals = setup.additionals || {};
+          this._migrateFromV1Value({ synapp, setup, type, key: prop.key, prototypedName: 'additionals', prop: prop.propertyValue, isFromProps: true });
+          break;
+
+        case ValuesIn.properties:
+          setup.properties = setup.properties || {};
+          this._migrateFromV1Value({ synapp, setup, type, key: prop.key, prototypedName: 'properties', prop: prop.propertyValue, isFromProps: true });
+          break;
+
+        default:
+          break;
+      }
+
+    }
+  }
+
+  _migrateFromV1Actor({ synapp, v1, valuesIn = ValuesIn.additionals }) {
+
+    const isComposite = !(v1.type in V1ActorTypes);
+
+    const setup = {
+      key: v1.key,
+      type: isComposite ? `composite/${v1.type}` : V1ActorTypes[v1.type],
+      oldType: v1.type,
+      additionals: {},
+      bindings: {},
+      properties: {},
+      events: {},
+      additionalDefs: {},
+      fromV1: true,
+    };
+
+    const rule = !isComposite &amp;&amp; (v1.type in V1ActorRules) ? V1ActorRules[v1.type] : null;
+
+    if (
+      !isNone(v1.datasourceVariable) &amp;&amp; (!isNone(v1.datasourceVariable.value) || !isNone(v1.datasourceVariable.binding))
+      || !isNone(v1.relativePath) &amp;&amp; (!isNone(v1.relativePath.value) || !isNone(v1.relativePath.binding))
+      || v1.type === 'ress'
+    ) {
+
+      setup.bindings['dataContext'] = {
+        sourceType: 'redy/wos-relative-variable',
+        dataReadMode: 'onetime',
+        writeOnChange: true,
+      };
+
+      setup.bindings['accessories.wrv_dataContext.properties.relativePath'] = {
+        sourceType: 'relative',
+        path: 'additionals.relativePath',
+        canWrite: true,
+      };
+
+      setup.bindings['accessories.wrv_dataContext.properties.relativeTo'] = {
+        sourceType: 'relative',
+        path: 'additionals.datasourceVariable',
+        canWrite: true,
+      };
+
+      setup.additionalDefs['relativePath'] = {
+        type: 'text',
+        value: null,
+      };
+
+      setup.additionalDefs['datasourceVariable'] = {
+        type: 'text',
+        value: null,
+      };
+
+      setup.events['accessories/wrv_dataContext/properties/relativeTo/binding/onReadTransform'] = [
+        "return context.value ? `global/${context.value}` : null;",
+      ];
+
+      setup.events['accessories/wrv_dataContext/properties/relativeTo/binding/onWriteTransform'] = [
+        "return context.value &amp;&amp; context.value.substring ? context.value.substring(7) : null;",
+      ];
+    }
+
+    if (v1.type === 'period') {
+
+      setup.properties.mode = 'primary';
+
+    }
+
+    if (v1.type === 'jrnl') {
+
+      setup.bindings['properties.nodPath'] = {
+        sourceType: 'relative',
+        path: 'dataContext.data.path',
+      };
+
+    }
+
+    if (v1.type === 'ress') {
+
+      setup.events['accessories/wrv_dataContext/properties/relativeTo/binding/onReadTransform'] = [
+        "if (Em.isEmpty(context.value)) this.selectResource(null);",
+        "return context.value ? `global/${context.value}` : null;",
+      ];
+
+    }
+
+    if (v1.type === 'screen') {
+
+      if (v1.key === 'screen38' &amp;&amp; v1.onRender &amp;&amp; v1.onRender.value &amp;&amp; v1.onRender.value[0] === "if(context.target.get('ressPath') === '') {") {
+        // désactivation d'un script dans le mockup exploitation REDY.
+        delete v1.onRender;
+      }
+
+    }
+
+    if (v1.type === 'buttonPush') {
+
+      setup.events['onDidButtonPush'] = [
+        "this.additionals.pushing = true;",
+      ];
+
+      setup.events['onDidButtonRelease'] = [
+        "setTimeout(() => {",
+        "  if (this.isDestroyed || this.isDestroying) return;",
+        "  context.target.additionals.pushing = false;",
+        "}, 1000);",
+      ];
+    }
+
+    if (v1.type === 'buttonNav') {
+
+      if ([
+          'buttonNav35',
+          'buttonNav36',
+        ].includes(v1.key)
+        &amp;&amp; !isEmpty(v1.props)
+        &amp;&amp; v1.props[0].key === 'mode'
+        &amp;&amp; v1.onClick) {
+
+        v1.props[0].key = 'displayedMode';
+        v1.onClick.value = [
+          "context.synoStage._main.selectMode(context.target.displayedMode, context.target);"
+        ];
+      }
+
+    }
+
+    if (v1.type === 'resourceView') {
+      setup.bindings['properties.compositeType'] = {
+        sourceType: 'redy/wos-relative-variable',
+        relativePath: ':classID',
+      };
+
+      setup.events[`properties/compositeType/binding/onReadTransform`] = [
+        "if (!this.additionals.mappings) return null;",
+        "if (Em.isNone(context.value)) return null;",
+        "const mapping = {}",
+        "for(const rule of this.additionals.mappings) {",
+        "  mapping[rule.classID] = `composite/${rule.actorType}`;",
+        "}",
+        "",
+        "if (mapping.hasOwnProperty(context.value)) return mapping[context.value];",
+        "return mapping[62];",
+      ];
+    }
+
+    if (v1.type === 'set') {
+      setup.properties.isMultiSelect = false;
+    }
+
+    if (v1.type === 'equipment') {
+      setup.properties.isMultiSelect = false;
+      if (v1.equipments &amp;&amp; v1.equipments.length > 0) {
+        v1.equipments = [v1.equipments[0]];
+      } else {
+        // v1.equipments = [null];
+      }
+    }
+
+    if (v1.type === 'zone') {
+      setup.properties.isMultiSelect = false;
+      if (v1.zones &amp;&amp; v1.zones.length > 0) {
+        v1.zones = [v1.zones[0]];
+      } else {
+        // v1.zones = [null];
+      }
+    }
+
+    if (rule) {
+      for (const oldKey in rule) {
+        if (oldKey in rule) {
+          const propRule = rule[oldKey];
+
+          if (propRule.additionalDef) {
+            setup.additionalDefs[oldKey] = propRule.additionalDef;
+          }
+
+          if (propRule.key &amp;&amp; propRule.key !== oldKey) {
+            setup.bindings[`properties.${propRule.key}`] = {
+              sourceType: 'relative',
+              path: `additionals.${oldKey}`,
+              canWrite: true,
+            };
+
+            if (propRule.onReadTransform) {
+              setup.events[`properties/${propRule.key}/binding/onReadTransform`] = propRule.onReadTransform;
+            }
+
+            if (propRule.onWriteTransform) {
+              setup.events[`properties/${propRule.key}/binding/onWriteTransform`] = propRule.onWriteTransform;
+            }
+          }
+        }
+      }
+    }
+
+    this._migrateFromV1Properties({ synapp, setup, type: v1.type, v1 });
+    this._migrateFromV1Props({ synapp, setup, type: v1.type, v1, valuesIn: isComposite ? ValuesIn.properties : valuesIn });
+
+    if (v1.actors) {
+      setup.children = v1.actors.map(v1 => this._migrateFromV1Actor({ synapp, v1 }));
+    }
+
+    const bindings = {};
+    Object.entries(setup.bindings).sort(([, binding1], [, binding2]) => BindingSourceTypeOrder[binding1.sourceType] - BindingSourceTypeOrder[binding2.sourceType]).forEach(([path, binding]) => {
+      bindings[path] = binding;
+    });
+
+    setup.bindings = bindings;
+    // logger.debug(v1, setup);
+
+    return setup;
+  }
+
+  _migrateFromV1Properties({ synapp, setup, v1, type }) {
+    setup.properties = setup.properties || {};
+
+    if (!v1) return;
+
+    for (const key in v1) {
+      if (key in v1) {
+        if (![
+            'key',
+            'type',
+            'actors',
+            'leadActor',
+            'dataDriven',
+            'name',
+            'id',
+            'props',
+          ].includes(key)) {
+
+          if (key.startsWith('on')) {
+            this._migrateFromV1Event({ setup, key, v1 });
+          } else if ([
+              'datasourceVariable',
+              'relativePath',
+            ].includes(key)) {
+            // => source de donnée relative
+
+            if (!isNone(v1[key].value) || !isNone(v1[key].binding)) {
+              this._migrateFromV1Value({ synapp, setup, type, key, prop: v1[key], prototypedName: 'additionals' });
+            }
+
+          } else {
+            this._migrateFromV1Value({ synapp, setup, type, key, prop: v1[key], prototypedName: 'properties' });
+          }
+        }
+      }
+    }
+  }
+
+  _migrateFromV1Event({ setup, key, v1 }) {
+    setup.events = setup.events || {};
+    let newKey = key in V1ActorScripts ? V1ActorScripts[key] : key;
+    if (key === 'onRender' &amp;&amp; v1.type === 'screen') {
+      newKey = 'onDidSceneChange';
+      setup.events.onRender = ['this.runEvent("onDidSceneChange");'];
+    }
+
+    if (v1[key].binding) {
+      logger.warn('[SetupMigration][_migrateFromV1Event] binding on script event!', v1[key].binding);
+      return;
+    }
+
+
+    setup.events[newKey] = v1[key].value;
+    if (!setup.events[newKey]) return;
+    setup.events[newKey].unshift('//# script/v1', '');
+  }
+
+  _getActorPropertyRule(type, key) {
+    if (!(type in V1ActorRules)) return null;
+    return key in V1ActorRules[type] ? V1ActorRules[type][key] : null
+  }
+
+  _migrateFromV1Value({ synapp, setup, type, key, prototypedName, prop, isFromProps = false }) {
+    const rule = !isFromProps ? this._getActorPropertyRule(type, key) : null;
+    const path = rule ? `additionals.${key}` : `${prototypedName}.${key}`;
+
+    if (typeOf(prop) !== 'object') {
+      prop = { value: prop };
+    }
+
+    if ('binding' in prop) {
+      // => binding
+      this._migrateFromV1Binding({ synapp, setup, key, prototypedName, path, prop, rule });
+    } else if ('value' in prop) {
+      // => valeur
+      let newValue = rule &amp;&amp; rule.value ? rule.value(prop.value) : prop.value;
+
+      set(setup, path, newValue);
+    }
+  }
+
+  _migrateFromV1Binding({ synapp, setup, prop, path }) {
+    const binding = {};
+    const oldBinding = prop.binding;
+    setup.bindings = setup.bindings || {};
+
+    if (oldBinding.source.onReadSource) {
+      setup.events[`${path.replace('.', '/')}/binding/onReadTransform`] = oldBinding.source.onReadSource;
+      setup.events[`${path.replace('.', '/')}/binding/onReadTransform`].unshift('//# script/v1', '');
+    }
+    if (oldBinding.source.onWriteSource) {
+      setup.events[`${path.replace('.', '/')}/binding/onWriteTransform`] = oldBinding.source.onWriteSource;
+      setup.events[`${path.replace('.', '/')}/binding/onWriteTransform`].unshift('//# script/v1', '');
+    }
+
+    switch (oldBinding.type) {
+      case 'library':
+
+        binding.canRead = isNone(oldBinding.source.read) ? true : oldBinding.source.read;
+        binding.canWrite = isNone(oldBinding.source.write) ? false : oldBinding.source.write;
+
+        if (oldBinding.source.key in synapp.colors) {
+          binding.sourceType = 'color';
+        } else if (oldBinding.source.key in synapp.pictures) {
+          binding.sourceType = 'picture';
+        } else if (oldBinding.source.key in synapp.constants) {
+          binding.sourceType = 'constant';
+        }
+
+        binding.path = oldBinding.source.key;
+        setup.bindings[path] = binding;
+        break;
+
+      case 'internal':
+
+        binding.canRead = isNone(oldBinding.source.read) ? true : oldBinding.source.read;
+        binding.canWrite = isNone(oldBinding.source.write) ? true : oldBinding.source.write;
+
+        switch (oldBinding.source.sourceType) {
+          case 'stage':
+
+            if (!oldBinding.source.key) {
+              binding.sourceType = 'stage';
+            } else {
+              binding.sourceType = 'actor';
+              binding.sourceKey = oldBinding.source.key;
+            }
+
+            binding.path = `_eventContextV1.${oldBinding.source.attributeName}`;
+
+            break;
+
+          case 'user-agent':
+          case 'host':
+          case 'session':
+          case 'user':
+          case 'synapp':
+            binding.sourceType = oldBinding.source.sourceType;
+            binding.path = `_eventContextV1.${oldBinding.source.attributeName}`;
+            break;
+
+          default:
+            // rien à faire ici.
+            logger.warn('TYPE OUBLIE!!!! oldBinding:', oldBinding);
+            return;
+        }
+
+        setup.bindings[path] = binding;
+
+        break;
+
+      case 'external':
+        binding.canRead = isNone(oldBinding.source.read) ? true : oldBinding.source.read;
+        binding.canWrite = isNone(oldBinding.source.write) ? false : oldBinding.source.write;
+
+        binding.sourceType = 'redy/wos-relative-variable';
+        binding.writeOnChange = true;
+        binding.dataReadMode = oldBinding.source.readMode === 'REFRESH' ? 'always' : 'onetime';
+
+        if (oldBinding.source.relativePath) {
+          let [relativePath, attributeName] = oldBinding.source.relativePath.split(':');
+          if (attributeName === 'id') {
+            attributeName = 'redyID';
+          }
+
+          binding.relativePath = `${relativePath}${attributeName ? ':' + attributeName : ''}`;
+        }
+
+        if (oldBinding.source.datasourceVariable) {
+          binding.relativeTo = `global/${oldBinding.source.datasourceVariable}`;
+        }
+
+
+        setup.bindings[path] = binding;
+
+
+        break;
+
+      default:
+        // rien à faire ici.
+        logger.warn('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!TYPE OUBLIE!!!! oldBinding:', oldBinding);
+        break;
+    }
+
+  }
+
+}
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

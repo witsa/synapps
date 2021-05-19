@@ -12,8 +12,9 @@
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -38,30 +39,56 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
 											<li><a href="global.html#CssColorString">CssColorString</a></li>
 											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
 											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
-											<li><a href="global.html#data">data</a></li>
-											<li><a href="global.html#isRequesting">isRequesting</a></li>
-											<li><a href="global.html#removeBinding">removeBinding</a></li>
-											<li><a href="global.html#request">request</a></li>
-											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
-											<li><a href="global.html#write">write</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
 											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
 											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
 											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
 											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
 											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
 											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
 											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
-											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
-											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
-											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
 											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
 											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
 											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
@@ -77,10 +104,21 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
-											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
-											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
 											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
 											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -92,17 +130,20 @@
 								<li class="dropdown">
 									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
 											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
 											<li><a href="Actor.Display.html">Actor.Display</a></li>
-											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
-											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
 											<li><a href="Behavior.html">Behavior</a></li>
 											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
 											<li><a href="JSON.html">JSON</a></li>
 											<li><a href="REDY.html">REDY</a></li>
 											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
-											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -732,7 +773,7 @@ class BaseActor extends BaseActorComponent {
    * La propriété largeur de l'acteur est maintenant liée au champ `widthOfPanel` de son contexte de donnée.
    *
    * @method
-   * @param {string} targetValuePath Chemin de la cible
+   * @param {string} targetValuePath Chemin de la cible de la liaison.
    * @param {JSON.BasicBinding} setup
    * @param {Boolean} [saveInSetup=true]
    * @returns {Binding.BasicBinding} la liaison créée.
@@ -779,7 +820,7 @@ class BaseActor extends BaseActorComponent {
    * ```
    *
    * @method
-   * @param {string} targetValuePath Chemin de la cible
+   * @param {string} targetValuePath Chemin de la cible de la liaison.
    * @param {Object} setup
    * @param {Boolean} [saveInSetup=true]
    */
@@ -835,7 +876,8 @@ class BaseActor extends BaseActorComponent {
    * Suppression d'une liaison sur un chemin cible.
    *
    * @method removeBinding
-   * @param {string} targetValuePath Chemin vers la cible
+   * @memberof Actor.BaseActor#
+   * @param {string} targetValuePath Chemin vers la cible de la liaison
    */
   removeBinding(targetValuePath) {
     const binding = this.bindingsRegister.findByKey({ targetValuePath });
@@ -848,8 +890,10 @@ class BaseActor extends BaseActorComponent {
 
   /**
    * @todo à documenter.
-   * Création d'un accessoire
-   * @param {*} key
+   * Création d'une instance d'accessoire.
+   * @method createAccessory
+   * @memberof Actor.BaseActor#
+   * @param {*} key Clé unique.
    * @param {*} setup
    * @param {*} saveInSetup
    * @returns {Accessory} L'accessoire créé.
@@ -1148,7 +1192,7 @@ class BaseActor extends BaseActorComponent {
   _onAfterPropertyChanged({ modifier, name, propertyPath, newValue, ...args }) {
 
     /**
-     * Se produit lorsque n'importe quelle valeur d'une propriété ou d'une additionnelle a changé.
+     * Se produit lorsque n'importe quelle propriété ou additionnelle de l'acteur ou de ses accessoires ou additionnelle voit sa valeur changer.
      *
      * @event Actor.BaseActor#onPropertyChanged
      * @param {Event.PropertyChangedContext} context Le contexte de l'évènement.
@@ -1160,7 +1204,7 @@ class BaseActor extends BaseActorComponent {
     /**
      * Se produit lorsque la valeur de propriété `[propertyName]` change.
      *
-     * &lt;br>Par exemple l'évènement `properties/width/onValueChanged` se produit lorsque la propriété {@link Actor.Properties.BaseActorProperties#width} change.
+     * &lt;br>Par exemple l'évènement `properties/width/onValueChanged` se produit lorsque la propriété {@link Actor.BaseActorProperties#width} change.
      * @event Actor.BaseActor#properties/[propertyName]/onValueChanged
      * @param {Event.PropertyChangedContext} context
      */
@@ -1196,7 +1240,7 @@ class BaseActor extends BaseActorComponent {
      * Se produit à la lecture de la source d'une liaison vers une propriété `propertyName`.
      * Il est possible de transformer la valeur lue pour écrire autre chose dans la cible.
      *
-     * &lt;br>Par exemple l'évènement `properties/width/binding/onReadTransform` se produit lorsque la source de la liaison vers la propriété {@link Actor.Properties.BaseActorProperties#width} est lue.
+     * &lt;br>Par exemple l'évènement `properties/width/binding/onReadTransform` se produit lorsque la source de la liaison vers la propriété {@link Actor.BaseActorProperties#width} est lue.
      * @event Actor.BaseActor#properties/[propertyName]/binding/onReadTransform
      * @param {Event.OnBindingTransformContext} context Le contexte de l'évènement.
      * @return {any} la valeur lue par défaut.
@@ -1223,7 +1267,7 @@ class BaseActor extends BaseActorComponent {
      * Se produit à l'écriture de la source d'une liaison vers une propriété `propertyName`.
      * Il est possible de transformer la valeur lue pour écrire autre chose dans la source.
      *
-     * &lt;br>Par exemple l'évènement `properties/width/binding/onWriteTransform` se produit lorsque la propriété {@link Actor.Properties.BaseActorProperties#width} change et que sa valeur est écrite dans la source.
+     * &lt;br>Par exemple l'évènement `properties/width/binding/onWriteTransform` se produit lorsque la propriété {@link Actor.BaseActorProperties#width} change et que sa valeur est écrite dans la source.
      * @event Actor.BaseActor#properties/[propertyName]/binding/onWriteTransform
      * @param {Event.OnBindingTransformContext} context
      * @return {any} la valeur lue par défaut.
@@ -1751,14 +1795,6 @@ export default BaseActor;
  */
 
 /**
- * Acteur composite.
- * @class Actor.Composite
- * @extends Stage
- * @extends Actor.BaseActor
- * @hideconstructor
- */
-
-/**
  * Scène
  * @class Scene
  * @extends Stage
@@ -1804,7 +1840,7 @@ export default BaseActor;
  */
 
 /**
- * Type de modification.
+ * Type de modification entraînée par le changement.
  * @member Event.PropertyChangedContext#modifier
  * @readonly
  * @default 'other'
@@ -1816,7 +1852,7 @@ export default BaseActor;
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

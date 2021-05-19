@@ -12,8 +12,9 @@
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -38,30 +39,56 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
 											<li><a href="global.html#CssColorString">CssColorString</a></li>
 											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
 											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
-											<li><a href="global.html#data">data</a></li>
-											<li><a href="global.html#isRequesting">isRequesting</a></li>
-											<li><a href="global.html#removeBinding">removeBinding</a></li>
-											<li><a href="global.html#request">request</a></li>
-											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
-											<li><a href="global.html#write">write</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
 											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
 											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
 											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
 											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
 											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
 											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
 											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
-											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
-											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
-											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
 											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
 											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
 											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
@@ -77,10 +104,21 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
-											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
-											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
 											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
 											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -92,17 +130,20 @@
 								<li class="dropdown">
 									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
 											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
 											<li><a href="Actor.Display.html">Actor.Display</a></li>
-											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
-											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
 											<li><a href="Behavior.html">Behavior</a></li>
 											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
 											<li><a href="JSON.html">JSON</a></li>
 											<li><a href="REDY.html">REDY</a></li>
 											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
-											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -149,7 +190,7 @@ class JokerableContentBaseActor extends BaseActor {}
 
 /**
  * Acteur Iframe. Permet de rendre une page WEB dans l'interface.
- * La propriété complétable par des jokers est [`properties.url`]{@link Actor.Properties.Display.IframeProperties#url}
+ * La propriété complétable par des jokers est [`properties.url`]{@link Actor.Display.IframeProperties#url}
  * Type : **display/iframe**
  * @class Actor.Display.Iframe
  * @extends Actor.BaseActor
@@ -175,7 +216,7 @@ Iframe.registerInDefinitions({ type: 'display/iframe', componentName: 'synapps-u
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

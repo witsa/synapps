@@ -12,8 +12,9 @@
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -38,30 +39,56 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
 											<li><a href="global.html#CssColorString">CssColorString</a></li>
 											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
 											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
-											<li><a href="global.html#data">data</a></li>
-											<li><a href="global.html#isRequesting">isRequesting</a></li>
-											<li><a href="global.html#removeBinding">removeBinding</a></li>
-											<li><a href="global.html#request">request</a></li>
-											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
-											<li><a href="global.html#write">write</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
 											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
 											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
 											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
 											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
 											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
 											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
 											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
-											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
-											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
-											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
 											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
 											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
 											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
@@ -77,10 +104,21 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
-											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
-											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
 											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
 											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -92,17 +130,20 @@
 								<li class="dropdown">
 									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
 											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
 											<li><a href="Actor.Display.html">Actor.Display</a></li>
-											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
-											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
 											<li><a href="Behavior.html">Behavior</a></li>
 											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
 											<li><a href="JSON.html">JSON</a></li>
 											<li><a href="REDY.html">REDY</a></li>
 											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
-											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -210,25 +251,21 @@
    */
 
   /**
-   * @namespace Actor.Properties
-   */
-
-  /**
-   * @class Actor.Properties.BaseActorProperties
-   * @extends PrototypedBase
+   * @class Actor.BaseActorProperties
+   * @extends Synapps.PrototypedBase
    */
 
   /**
    * Obtient les propriétés de l'acteur.
    * @member Actor.BaseActor#properties
-   * @type {Actor.Properties.BaseActorProperties}
+   * @type {Actor.BaseActorProperties}
    * @readonly
    */
 
   /**
    * Nom de class CSS séparées par une virgule à ajouter à l'acteur.
-   * Modificateur : **Rendu**.
-   * @member Actor.Properties.BaseActorProperties#classNames
+   * **Modificateur :** `render`.
+   * @member Actor.BaseActorProperties#classNames
    * @default ''
    * @type {String}
    */
@@ -239,8 +276,8 @@
 
   /**
    * Hauteur de l'acteur
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#height
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#height
    * @default 'auto'
    * @type {CssSizeString}
    */
@@ -251,8 +288,8 @@
 
   /**
    * Hauteur minimale de l'acteur
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#minHeight
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#minHeight
    * @default 'auto'
    * @type {CssSizeString}
    */
@@ -263,8 +300,8 @@
 
   /**
    * Hauteur maximale de l'acteur
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#maxHeight
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#maxHeight
    * @default 'none'
    * @type {CssSizeString}
    */
@@ -275,8 +312,8 @@
 
   /**
    * Largeur de l'acteur
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#width
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#width
    * @default 'auto'
    * @type {CssSizeString}
    */
@@ -287,8 +324,8 @@
 
   /**
    * Largeur minimale de l'acteur
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#minHeight
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#minHeight
    * @default 'auto'
    * @type {CssSizeString}
    */
@@ -299,8 +336,8 @@
 
   /**
    * Largeur maximale de l'acteur
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#maxHeight
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#maxHeight
    * @default 'none'
    * @type {CssSizeString}
    */
@@ -311,8 +348,8 @@
 
   /**
    * Couleur de fond de l'acteur.
-   * Modificateur : **CSS**.
-   * @member Actor.Properties.BaseActorProperties#backgroundColor
+   * **Modificateur :** `css`.
+   * @member Actor.BaseActorProperties#backgroundColor
    * @default ''
    * @type {CssColorString}
    */
@@ -323,9 +360,9 @@
 
   /**
    * Couleur de l'acteur.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    * **Hérité**
-   * @member Actor.Properties.BaseActorProperties#color
+   * @member Actor.BaseActorProperties#color
    * @default ''
    * @type {CssColorString}
    */
@@ -336,8 +373,8 @@
 
   /**
    * Marge intérieure haute.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#paddingTop
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#paddingTop
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -348,8 +385,8 @@
 
   /**
    * Marge intérieure basse.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#paddingBottom
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#paddingBottom
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -360,8 +397,8 @@
 
   /**
    * Marge intérieure droite.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#paddingRight
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#paddingRight
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -372,8 +409,8 @@
 
   /**
    * Marge intérieure gauche.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#paddingLeft
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#paddingLeft
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -384,8 +421,8 @@
 
   /**
    * Couleur de bordure.
-   * Modificateur : **CSS**.
-   * @member Actor.Properties.BaseActorProperties#borderColor
+   * **Modificateur :** `css`.
+   * @member Actor.BaseActorProperties#borderColor
    * @default 'currentColor'
    * @type {CssColorString}
    */
@@ -396,14 +433,14 @@
 
   /**
    * Épaisseur de bordure.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * @example
    * // Bordure à 3px
    * '3px'
    *
    * // Bordure haute à 0px et le reste à 3px
    * '0 3px 3px 3px'
-   * @member Actor.Properties.BaseActorProperties#borderWidth
+   * @member Actor.BaseActorProperties#borderWidth
    * @default '1px'
    * @type {CssSizeString}
    */
@@ -414,8 +451,8 @@
 
   /**
    * Style de bordure.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#borderStyle
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#borderStyle
    * @default 'none'
    * @type {'none'|'solid'|'dotted'|'dashed'}
    */
@@ -426,14 +463,14 @@
 
   /**
    * Arrondissement des coins.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    * @example
    * // Arrondis sur tous les coins, courbure de 3px
    * '3px'
    *
    * // Arrondis sur le coin haut gauche, haut droit, bas droit, bas gauche :
    * '3px 3px 0 0'
-   * @member Actor.Properties.BaseActorProperties#borderRadius
+   * @member Actor.BaseActorProperties#borderRadius
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -444,8 +481,8 @@
 
   /**
    * Opacité en %.
-   * Modificateur : **CSS**.
-   * @member Actor.Properties.BaseActorProperties#opacity
+   * **Modificateur :** `css`.
+   * @member Actor.BaseActorProperties#opacity
    * @default 100
    * @type {Number}
    */
@@ -456,9 +493,9 @@
 
   /**
    * Alignement du texte.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * **Hérité**
-   * @member Actor.Properties.BaseActorProperties#textAlign
+   * @member Actor.BaseActorProperties#textAlign
    * @default 'inherit'
    * @type {'inherit'|'left'|'right'|'center'|'justify'}
    */
@@ -470,10 +507,10 @@
 
   /**
    * Alignement horizontale dans un [acteur empilement]{@link Actor.Layout.Stack} ou [acteur boite à vue]{@link Actor.Layout.ViewBox}.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    *
    * **Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`
-   * @member Actor.Properties.BaseActorProperties#horizontalAlignment
+   * @member Actor.BaseActorProperties#horizontalAlignment
    * @default 'auto'
    * @type {'auto'|'left'|'right'|'middle'|'expand'}
    */
@@ -485,10 +522,10 @@
 
   /**
    * Alignement verticale dans un acteur empilement ou boite à vue.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    *
    * **Attention** aux hauteurs fixées qui prennent le pas sur la valeur `'expand'`
-   * @member Actor.Properties.BaseActorProperties#verticalAlignment
+   * @member Actor.BaseActorProperties#verticalAlignment
    * @default 'auto'
    * @type {'auto'|'left'|'right'|'middle'|'expand'}
    */
@@ -500,8 +537,8 @@
 
   /**
    * Marge extérieure haute.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#marginTop
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#marginTop
    * @default '0px'
    * @type {String}
    */
@@ -512,8 +549,8 @@
 
   /**
    * Marge extérieure basse.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#marginBottom
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#marginBottom
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -524,8 +561,8 @@
 
   /**
    * Marge extérieure droite.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#marginRight
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#marginRight
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -536,8 +573,8 @@
 
   /**
    * Marge extérieure gauche.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#marginLeft
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#marginLeft
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -548,8 +585,8 @@
 
   /**
    * Visibilité de l'acteur.
-   * Modificateur : **Gabarit**.
-   * @member Actor.Properties.BaseActorProperties#marginLeft
+   * **Modificateur :** `layout`.
+   * @member Actor.BaseActorProperties#marginLeft
    * @default true
    * @type {CssSizeString}
    */
@@ -560,9 +597,9 @@
 
   /**
    * Position verticale depuis le haut dans un [acteur toile]{@link Actor.Layout.Canvas}.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
-   * @member Actor.Properties.BaseActorProperties#top
+   * @member Actor.BaseActorProperties#top
    * @default ''
    * @type {CssSizeString}
    */
@@ -573,9 +610,9 @@
 
   /**
    * Position verticale depuis le bas dans un [acteur toile]{@link Actor.Layout.Canvas}.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
-   * @member Actor.Properties.BaseActorProperties#bottom
+   * @member Actor.BaseActorProperties#bottom
    * @default ''
    * @type {CssSizeString}
    */
@@ -586,9 +623,9 @@
 
   /**
    * Position horizontale depuis la droite dans un [acteur toile]{@link Actor.Layout.Canvas}.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
-   * @member Actor.Properties.BaseActorProperties#right
+   * @member Actor.BaseActorProperties#right
    * @default ''
    * @type {CssSizeString}
    */
@@ -599,9 +636,9 @@
 
   /**
    * Position horizontale depuis la gauche dans un [acteur toile]{@link Actor.Layout.Canvas}.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
-   * @member Actor.Properties.BaseActorProperties#left
+   * @member Actor.BaseActorProperties#left
    * @default ''
    * @type {CssSizeString}
    */
@@ -612,9 +649,9 @@
 
   /**
    * Décoration du texte.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    * **Hérité**
-   * @member  Actor.Properties.BaseActorProperties#textDecoration
+   * @member  Actor.BaseActorProperties#textDecoration
    * @default 'inherit'
    * @type {'normal'|'underline'|'inherit'}
    */
@@ -625,9 +662,9 @@
 
   /**
    * Style du texte.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * **Hérité**
-   * @member  Actor.Properties.BaseActorProperties#fontStyle
+   * @member  Actor.BaseActorProperties#fontStyle
    * @default 'inherit'
    * @type {'normal'|'italic'|'inherit'}
    */
@@ -638,9 +675,9 @@
 
   /**
    * Variant du texte.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * **Hérité**
-   * @member  Actor.Properties.BaseActorProperties#fontVariant
+   * @member  Actor.BaseActorProperties#fontVariant
    * @default 'inherit'
    * @type {'normal'|'small-caps'|'all-small-caps'}
    */
@@ -651,9 +688,9 @@
 
   /**
    * Épaisseur du texte.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * **Hérité**
-   * @member  Actor.Properties.BaseActorProperties#fontWeight
+   * @member  Actor.BaseActorProperties#fontWeight
    * @default 'inherit'
    * @type {'normal'|'bold'|'inherit'}
    */
@@ -664,9 +701,9 @@
 
    /**
    * Police du texte.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * **Hérité**
-   * @member  Actor.Properties.BaseActorProperties#fontFamily
+   * @member  Actor.BaseActorProperties#fontFamily
    * @default 'inherit'
    * @type {CssFontFamilyString|'inherit'}
    */
@@ -677,9 +714,9 @@
 
   /**
    * Hauteur du texte.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * **Hérité**
-   * @member  Actor.Properties.BaseActorProperties#fontSize
+   * @member  Actor.BaseActorProperties#fontSize
    * @default 'inherit'
    * @type {CssSizeString|'inherit'}
    */
@@ -690,9 +727,9 @@
 
   /**
    * Hauteur de ligne.
-   * Modificateur : **Gabarit**.
+   * **Modificateur :** `layout`.
    * **Hérité**
-   * @member  Actor.Properties.BaseActorProperties#lineHeight
+   * @member  Actor.BaseActorProperties#lineHeight
    * @default 'inherit'
    * @type {CssSizeString|'inherit'}
    */
@@ -703,8 +740,8 @@
 
    /**
    * Texte info bulle.
-   * Modificateur : **Autre**.
-   * @member  Actor.Properties.BaseActorProperties#toolTip
+   * **Modificateur :** `other`.
+   * @member  Actor.BaseActorProperties#toolTip
    * @default ''
    * @type {String}
    */
@@ -715,8 +752,8 @@
 
    /**
    * Angle de rotation en degré.
-   * Modificateur : **CSS**.
-   * @member  Actor.Properties.BaseActorProperties#rotate
+   * **Modificateur :** `css`.
+   * @member  Actor.BaseActorProperties#rotate
    * @default 0
    * @type {Number}
    */
@@ -727,13 +764,13 @@
 
    /**
    * Taux de mise à l'échelle.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
    * @example
    * // > 1 : plus grand
    * // &lt; 1 : moins grand
    * // &lt; 0 : renversé
-   * @member  Actor.Properties.BaseActorProperties#scaling
+   * @member  Actor.BaseActorProperties#scaling
    * @default 1
    * @type {Number}
    */
@@ -744,9 +781,9 @@
 
    /**
    * Translation horizontale.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
-   * @member  Actor.Properties.BaseActorProperties#translateX
+   * @member  Actor.BaseActorProperties#translateX
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -757,9 +794,9 @@
 
    /**
    * Translation verticale.
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
-   * @member  Actor.Properties.BaseActorProperties#translateX
+   * @member  Actor.BaseActorProperties#translateX
    * @default '0px'
    * @type {CssSizeString}
    */
@@ -770,9 +807,9 @@
 
    /**
    * Ombre portée. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow}
-   * Modificateur : **CSS**.
+   * **Modificateur :** `css`.
    *
-   * @member  Actor.Properties.BaseActorProperties#boxShadow
+   * @member  Actor.BaseActorProperties#boxShadow
    * @default 'none'
    * @type {String}
    */
@@ -787,7 +824,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

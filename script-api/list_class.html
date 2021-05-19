@@ -11,8 +11,9 @@
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = true;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -37,30 +38,56 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
 											<li><a href="global.html#CssColorString">CssColorString</a></li>
 											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
 											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
-											<li><a href="global.html#data">data</a></li>
-											<li><a href="global.html#isRequesting">isRequesting</a></li>
-											<li><a href="global.html#removeBinding">removeBinding</a></li>
-											<li><a href="global.html#request">request</a></li>
-											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
-											<li><a href="global.html#write">write</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
 											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
 											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
 											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
 											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
 											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
 											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
 											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
-											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
-											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
-											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
 											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
 											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
 											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
@@ -76,10 +103,21 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
-											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
-											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
 											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
 											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -91,17 +129,20 @@
 								<li class="dropdown">
 									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
 											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
 											<li><a href="Actor.Display.html">Actor.Display</a></li>
-											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
-											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
 											<li><a href="Behavior.html">Behavior</a></li>
 											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
 											<li><a href="JSON.html">JSON</a></li>
 											<li><a href="REDY.html">REDY</a></li>
 											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
-											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -144,10 +185,42 @@
 		<article class="secondary">
 				<dl class="symbol">
 						
+						<dt class="symbol-title class public">
+			<h4 id="BaseAccessory" class="class public"><a href="Accessory.BaseAccessory.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Accessory.</span><span class="name">BaseAccessory</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
 						<dt class="symbol-title class private">
 			<h4 id="BaseActor" class="class private"><a href="Actor.BaseActor.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.</span><span class="signature-attribs">&lt;private> </span><span class="name">BaseActor</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
 </dt>
 <dd class="symbol-details class private">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="BaseActorProperties" class="class public"><a href="Actor.BaseActorProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.</span><span class="name">BaseActorProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="GaugeDemo" class="class public"><a href="Actor.Charting.GaugeDemo.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Charting.</span><span class="name">GaugeDemo</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="GaugeDemoProperties" class="class public"><a href="Actor.Charting.GaugeDemoProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Charting.</span><span class="name">GaugeDemoProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
 	<div class="symbol-details-inner">
 	</div>
 </dd>
@@ -185,7 +258,39 @@
 </dd>
 						<hr/>
 						<dt class="symbol-title class public">
+			<h4 id="DataSourceProperties" class="class public"><a href="Actor.DataSourceProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.</span><span class="name">DataSourceProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="CompositeView" class="class public"><a href="Actor.Display.CompositeView.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">CompositeView</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="CompositeViewProperties" class="class public"><a href="Actor.Display.CompositeViewProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">CompositeViewProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
 			<h4 id="Html" class="class public"><a href="Actor.Display.Html.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">Html</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="HtmlProperties" class="class public"><a href="Actor.Display.HtmlProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">HtmlProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
 </dt>
 <dd class="symbol-details class public">
 	<div class="symbol-details-inner">
@@ -201,7 +306,7 @@
 </dd>
 						<hr/>
 						<dt class="symbol-title class public">
-			<h4 id="BaseActorProperties" class="class public"><a href="Actor.Properties.BaseActorProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Properties.</span><span class="name">BaseActorProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+			<h4 id="IframeProperties" class="class public"><a href="Actor.Display.IframeProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">IframeProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
 </dt>
 <dd class="symbol-details class public">
 	<div class="symbol-details-inner">
@@ -209,7 +314,7 @@
 </dd>
 						<hr/>
 						<dt class="symbol-title class public">
-			<h4 id="HtmlProperties" class="class public"><a href="Actor.Properties.Display.HtmlProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Properties.Display.</span><span class="name">HtmlProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+			<h4 id="Image" class="class public"><a href="Actor.Display.Image.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">Image</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
 </dt>
 <dd class="symbol-details class public">
 	<div class="symbol-details-inner">
@@ -217,7 +322,183 @@
 </dd>
 						<hr/>
 						<dt class="symbol-title class public">
-			<h4 id="IframeProperties" class="class public"><a href="Actor.Properties.Display.IframeProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Properties.Display.</span><span class="name">IframeProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+			<h4 id="ImageProperties" class="class public"><a href="Actor.Display.ImageProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">ImageProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Screen" class="class public"><a href="Actor.Display.Screen.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">Screen</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="ScreenProperties" class="class public"><a href="Actor.Display.ScreenProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">ScreenProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Text" class="class public"><a href="Actor.Display.Text.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">Text</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="TextProperties" class="class public"><a href="Actor.Display.TextProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Display.</span><span class="name">TextProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class private">
+			<h4 id="BaseInput" class="class private"><a href="Actor.Input.BaseInput.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="signature-attribs">&lt;private> </span><span class="name">BaseInput</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class private">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="BaseInputProperties" class="class public"><a href="Actor.Input.BaseInputProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">BaseInputProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Button" class="class public"><a href="Actor.Input.Button.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">Button</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="ButtonList" class="class public"><a href="Actor.Input.ButtonList.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">ButtonList</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="ButtonListProperties" class="class public"><a href="Actor.Input.ButtonListProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">ButtonListProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="ButtonProperties" class="class public"><a href="Actor.Input.ButtonProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">ButtonProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Checkbox" class="class public"><a href="Actor.Input.Checkbox.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">Checkbox</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="CheckboxList" class="class public"><a href="Actor.Input.CheckboxList.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">CheckboxList</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="CheckboxListProperties" class="class public"><a href="Actor.Input.CheckboxListProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">CheckboxListProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="CheckboxProperties" class="class public"><a href="Actor.Input.CheckboxProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">CheckboxProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Cursor" class="class public"><a href="Actor.Input.Cursor.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">Cursor</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="CursorProperties" class="class public"><a href="Actor.Input.CursorProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">CursorProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="DropdownList" class="class public"><a href="Actor.Input.DropdownList.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">DropdownList</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="DropdownListProperties" class="class public"><a href="Actor.Input.DropdownListProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">DropdownListProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="NavButton" class="class public"><a href="Actor.Input.NavButton.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">NavButton</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="NavButtonProperties" class="class public"><a href="Actor.Input.NavButtonProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">NavButtonProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Period" class="class public"><a href="Actor.Input.Period.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">Period</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="PeriodProperties" class="class public"><a href="Actor.Input.PeriodProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Actor.Input.</span><span class="name">PeriodProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
 </dt>
 <dd class="symbol-details class public">
 	<div class="symbol-details-inner">
@@ -344,22 +625,6 @@
 	</div>
 </dd>
 						<hr/>
-						<dt class="symbol-title class private">
-			<h4 id="PrototypedBase" class="class private"><a href="PrototypedBase.html"><span class="signature-new">new&nbsp;</span><span class="signature-attribs">&lt;private> </span><span class="name">PrototypedBase</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-</dt>
-<dd class="symbol-details class private">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
-						<dt class="symbol-title class public">
-			<h4 id="SynopticProperties" class="class public"><a href="REDY.Actor.Properties.SynopticProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">REDY.Actor.Properties.</span><span class="name">SynopticProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
-</dt>
-<dd class="symbol-details class public">
-	<div class="symbol-details-inner">
-	</div>
-</dd>
-						<hr/>
 						<dt class="symbol-title class public">
 			<h4 id="Synoptic" class="class public"><a href="REDY.Actor.Synoptic.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">REDY.Actor.</span><span class="name">Synoptic</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
 </dt>
@@ -369,7 +634,111 @@
 </dd>
 						<hr/>
 						<dt class="symbol-title class public">
+			<h4 id="SynopticProperties" class="class public"><a href="REDY.Actor.SynopticProperties.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">REDY.Actor.</span><span class="name">SynopticProperties</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="WosRelativeVariableAble" class="class public"><a href="REDY.Behavior.WosRelativeVariableAble.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">REDY.Behavior.</span><span class="name">WosRelativeVariableAble</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="RedyHost" class="class public"><a href="REDY.Synapps.RedyHost.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">REDY.Synapps.</span><span class="name">RedyHost</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="RedySession" class="class public"><a href="REDY.Synapps.RedySession.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">REDY.Synapps.</span><span class="name">RedySession</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
 			<h4 id="Scene" class="class public"><a href="Scene.html"><span class="signature-new">new&nbsp;</span><span class="name">Scene</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class private">
+			<h4 id="BaseDataStore" class="class private"><a href="Synapps.BaseDataStore.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="signature-attribs">&lt;private> </span><span class="name">BaseDataStore</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class private">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="BaseHost" class="class public"><a href="Synapps.BaseHost.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="name">BaseHost</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="BaseSession" class="class public"><a href="Synapps.BaseSession.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="name">BaseSession</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="BaseSetupDataStore" class="class public"><a href="Synapps.BaseSetupDataStore.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="name">BaseSetupDataStore</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="BaseUser" class="class public"><a href="Synapps.BaseUser.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="name">BaseUser</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Model" class="class public"><a href="Synapps.Model.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="name">Model</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class private">
+			<h4 id="PrototypedBase" class="class private"><a href="Synapps.PrototypedBase.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="signature-attribs">&lt;private> </span><span class="name">PrototypedBase</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class private">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="Serializer" class="class public"><a href="Synapps.Serializer.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="name">Serializer</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
+</dt>
+<dd class="symbol-details class public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+						<hr/>
+						<dt class="symbol-title class public">
+			<h4 id="UserAgent" class="class public"><a href="Synapps.UserAgent.html"><span class="signature-new">new&nbsp;</span><span class="ancestors">Synapps.</span><span class="name">UserAgent</span><span class="signature-params">()</span><span class="signature-type"></span></a></h4>
 </dt>
 <dd class="symbol-details class public">
 	<div class="symbol-details-inner">
@@ -385,7 +754,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

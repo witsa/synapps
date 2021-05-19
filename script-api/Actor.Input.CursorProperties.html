@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Actor.Properties.Display.IframeProperties</title>
+		<title>Actor.Input.CursorProperties</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -11,8 +11,9 @@
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = true;
 			window.DOCLET_AFILTER_ENABLED = true;
 		</script>
@@ -37,30 +38,56 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
 											<li><a href="global.html#CssColorString">CssColorString</a></li>
 											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
 											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
-											<li><a href="global.html#data">data</a></li>
-											<li><a href="global.html#isRequesting">isRequesting</a></li>
-											<li><a href="global.html#removeBinding">removeBinding</a></li>
-											<li><a href="global.html#request">request</a></li>
-											<li><a href="global.html#requestDebounce">requestDebounce</a></li>
-											<li><a href="global.html#write">write</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
 											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
 											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
 											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
 											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
 											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
 											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
 											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
-											<li><a href="Actor.Properties.BaseActorProperties.html">Actor.Properties.BaseActorProperties</a></li>
-											<li><a href="Actor.Properties.Display.HtmlProperties.html">Actor.Properties.Display.HtmlProperties</a></li>
-											<li><a href="Actor.Properties.Display.IframeProperties.html">Actor.Properties.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
 											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
 											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
 											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
@@ -76,10 +103,21 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
-											<li><a href="PrototypedBase.html">PrototypedBase</a></li>
-											<li><a href="REDY.Actor.Properties.SynopticProperties.html">REDY.Actor.Properties.SynopticProperties</a></li>
 											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
 											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -91,17 +129,20 @@
 								<li class="dropdown">
 									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
 									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
 											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
 											<li><a href="Actor.Display.html">Actor.Display</a></li>
-											<li><a href="Actor.Properties.html">Actor.Properties</a></li>
-											<li><a href="Actor.Properties.Display.html">Actor.Properties.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
 											<li><a href="Behavior.html">Behavior</a></li>
 											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
 											<li><a href="JSON.html">JSON</a></li>
 											<li><a href="REDY.html">REDY</a></li>
 											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
-											<li><a href="REDY.Actor.Properties.html">REDY.Actor.Properties</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -129,7 +170,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="ancestors"><a href="Actor.html">Actor</a><a href="Actor.Properties.html">.Properties</a><a href="Actor.Properties.Display.html">.Display</a>.</span><span class="name">IframeProperties</span></h1>
+				<h1><span class="ancestors"><a href="Actor.html">Actor</a><a href="Actor.Input.html">.Input</a>.</span><span class="name">CursorProperties</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -138,7 +179,7 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active"><a href="Actor.html">Actor</a><a href="Actor.Properties.html">.Properties</a><a href="Actor.Properties.Display.html">.Display</a>.IframeProperties</li>
+							<li class="active"><a href="Actor.html">Actor</a><a href="Actor.Input.html">.Input</a>.CursorProperties</li>
 						</ol>
 						<div class="access-filter">
 								<label class="checkbox-inline">
@@ -153,236 +194,17 @@
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">IframeProperties</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">CursorProperties</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-	</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Propriétés de l'acteur <a href="Actor.Input.Cursor.html">Curseur</a>.</p></div>
+			</div>	</div>
 </dd>
 							</dl>
 							<article class="secondary">
 									<h3>Members</h3>
 									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="allowForms" class="member public"><span class="name">allowForms</span><span class="signature-type"> :boolean</span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les formulaires</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">&#x27;&#x27;</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="allowModals" class="member public"><span class="name">allowModals</span><span class="signature-type"> :boolean</span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les modales</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">&#x27;&#x27;</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="allowPopups" class="member public"><span class="name">allowPopups</span><span class="signature-type"> :boolean</span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les popups</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">&#x27;&#x27;</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="allowSameOrigin" class="member public"><span class="name">allowSameOrigin</span><span class="signature-type"> :boolean</span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Traiter comme même origine</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">&#x27;&#x27;</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="allowScripts" class="member public"><span class="name">allowScripts</span><span class="signature-type"> :boolean</span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Autoriser les scrips</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">&#x27;&#x27;</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
 											<hr/>
 											<dt class="symbol-title member public inherited">
 			<h4 id="backgroundColor" class="member public inherited"><span class="name">backgroundColor</span><span class="signature-type"> :<a href="global.html#CssColorString">CssColorString</a></span></h4>
@@ -390,7 +212,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Couleur de fond de l'acteur.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -416,9 +238,144 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#backgroundColor">Actor.Properties.BaseActorProperties#backgroundColor</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#backgroundColor">Actor.BaseActorProperties#backgroundColor</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="barBgColor" class="member public"><span class="name">barBgColor</span><span class="signature-type"> :<a href="global.html#CssColorString">CssColorString</a></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Couleur de l'autre côté de la barre.<br>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="global.html#CssColorString">CssColorString</a></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="barColor" class="member public"><span class="name">barColor</span><span class="signature-type"> :<a href="global.html#CssColorString">CssColorString</a></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Couleur de la barre.<br>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="global.html#CssColorString">CssColorString</a></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;#E0E0E0&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="barPosition" class="member public"><span class="name">barPosition</span><span class="signature-type"> :'default'|'lower'|'upper'</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Position de la barre colorée.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">'default'</span> | <span class="param-type">'lower'</span> | <span class="param-type">'upper'</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;default&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -442,7 +399,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Couleur de bordure.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -468,7 +425,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#borderColor">Actor.Properties.BaseActorProperties#borderColor</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#borderColor">Actor.BaseActorProperties#borderColor</a></p>
 								</div>
 							</div>
 			
@@ -494,7 +451,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Arrondissement des coins.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
 						<pre class="prettyprint source language-javascript"><code class="language-javascript">// Arrondis sur tous les coins, courbure de 3px&#x27;3px&#x27;// Arrondis sur le coin haut gauche, haut droit, bas droit, bas gauche :&#x27;3px 3px 0 0&#x27;</code></pre>
 					</div>
@@ -523,7 +480,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#borderRadius">Actor.Properties.BaseActorProperties#borderRadius</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#borderRadius">Actor.BaseActorProperties#borderRadius</a></p>
 								</div>
 							</div>
 			
@@ -549,7 +506,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Style de bordure.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -575,7 +532,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#borderStyle">Actor.Properties.BaseActorProperties#borderStyle</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#borderStyle">Actor.BaseActorProperties#borderStyle</a></p>
 								</div>
 							</div>
 			
@@ -601,7 +558,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Épaisseur de bordure.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
 						<pre class="prettyprint source language-javascript"><code class="language-javascript">// Bordure à 3px&#x27;3px&#x27;// Bordure haute à 0px et le reste à 3px&#x27;0 3px 3px 3px&#x27;</code></pre>
 					</div>
@@ -630,7 +587,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#borderWidth">Actor.Properties.BaseActorProperties#borderWidth</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#borderWidth">Actor.BaseActorProperties#borderWidth</a></p>
 								</div>
 							</div>
 			
@@ -656,7 +613,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Position verticale depuis le bas dans un acteur toile.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -682,7 +639,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#bottom">Actor.Properties.BaseActorProperties#bottom</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#bottom">Actor.BaseActorProperties#bottom</a></p>
 								</div>
 							</div>
 			
@@ -708,7 +665,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Ombre portée. Voir information <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow">ici</a><br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -734,7 +691,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#boxShadow">Actor.Properties.BaseActorProperties#boxShadow</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#boxShadow">Actor.BaseActorProperties#boxShadow</a></p>
 								</div>
 							</div>
 			
@@ -760,7 +717,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Nom de class CSS séparées par une virgule à ajouter à l'acteur.<br>
-			Modificateur : <strong>Rendu</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>render</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -786,7 +743,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#classNames">Actor.Properties.BaseActorProperties#classNames</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#classNames">Actor.BaseActorProperties#classNames</a></p>
 								</div>
 							</div>
 			
@@ -812,7 +769,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Couleur de l'acteur.<br>
-			Modificateur : <strong>CSS</strong>.<br>
+			<strong>Modificateur :</strong> <code>css</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -839,7 +796,58 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#color">Actor.Properties.BaseActorProperties#color</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#color">Actor.BaseActorProperties#color</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="enabled" class="member public inherited"><span class="name">enabled</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p><strong>Modificateur :</strong> <code>css</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">true</p>
+								</div>
+							</div>
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Input.BaseInputProperties.html#enabled">Actor.Input.BaseInputProperties#enabled</a></p>
 								</div>
 							</div>
 			
@@ -865,7 +873,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Police du texte.<br>
-			Modificateur : <strong>Gabarit</strong>.<br>
+			<strong>Modificateur :</strong> <code>layout</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -892,7 +900,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#fontFamily">Actor.Properties.BaseActorProperties#fontFamily</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#fontFamily">Actor.BaseActorProperties#fontFamily</a></p>
 								</div>
 							</div>
 			
@@ -918,7 +926,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur du texte.<br>
-			Modificateur : <strong>Gabarit</strong>.<br>
+			<strong>Modificateur :</strong> <code>layout</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -945,7 +953,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#fontSize">Actor.Properties.BaseActorProperties#fontSize</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#fontSize">Actor.BaseActorProperties#fontSize</a></p>
 								</div>
 							</div>
 			
@@ -971,7 +979,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Style du texte.<br>
-			Modificateur : <strong>Gabarit</strong>.<br>
+			<strong>Modificateur :</strong> <code>layout</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -998,7 +1006,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#fontStyle">Actor.Properties.BaseActorProperties#fontStyle</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#fontStyle">Actor.BaseActorProperties#fontStyle</a></p>
 								</div>
 							</div>
 			
@@ -1024,7 +1032,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Variant du texte.<br>
-			Modificateur : <strong>Gabarit</strong>.<br>
+			<strong>Modificateur :</strong> <code>layout</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -1051,7 +1059,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#fontVariant">Actor.Properties.BaseActorProperties#fontVariant</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#fontVariant">Actor.BaseActorProperties#fontVariant</a></p>
 								</div>
 							</div>
 			
@@ -1077,7 +1085,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Épaisseur du texte.<br>
-			Modificateur : <strong>Gabarit</strong>.<br>
+			<strong>Modificateur :</strong> <code>layout</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -1104,7 +1112,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#fontWeight">Actor.Properties.BaseActorProperties#fontWeight</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#fontWeight">Actor.BaseActorProperties#fontWeight</a></p>
 								</div>
 							</div>
 			
@@ -1130,7 +1138,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur de l'acteur<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1156,7 +1164,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#height">Actor.Properties.BaseActorProperties#height</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#height">Actor.BaseActorProperties#height</a></p>
 								</div>
 							</div>
 			
@@ -1182,7 +1190,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Alignement horizontale dans un acteur empilement ou acteur boite à vue.<br>
-			Modificateur : <strong>Gabarit</strong>.</p>
+			<strong>Modificateur :</strong> <code>layout</code>.</p>
 			<p><strong>Attention</strong> aux largeurs fixées qui prennent le pas sur la valeur <code>'expand'</code></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -1209,9 +1217,99 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#horizontalAlignment">Actor.Properties.BaseActorProperties#horizontalAlignment</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#horizontalAlignment">Actor.BaseActorProperties#horizontalAlignment</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="isSingleValue" class="member public"><span class="name">isSingleValue</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Le curseur est simple ?<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">true</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="isSlideValued" class="member public"><span class="name">isSlideValued</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Le glissement change la valeur ?<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">false</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -1235,7 +1333,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Position horizontale depuis la gauche dans un acteur toile.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1261,9 +1359,54 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#left">Actor.Properties.BaseActorProperties#left</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#left">Actor.BaseActorProperties#left</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="limit" class="member public"><span class="name">limit</span><span class="signature-type"> :Number|null</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Distance maximale entre les deux valeurs du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Number</span> | <span class="param-type">null</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">null</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -1287,7 +1430,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur de ligne.<br>
-			Modificateur : <strong>Gabarit</strong>.<br>
+			<strong>Modificateur :</strong> <code>layout</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -1314,9 +1457,54 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#lineHeight">Actor.Properties.BaseActorProperties#lineHeight</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#lineHeight">Actor.BaseActorProperties#lineHeight</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="margin" class="member public"><span class="name">margin</span><span class="signature-type"> :Number|null</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Distance minimale entre les deux valeurs du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Number</span> | <span class="param-type">null</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">null</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -1340,7 +1528,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge extérieure basse.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1366,7 +1554,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#marginBottom">Actor.Properties.BaseActorProperties#marginBottom</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#marginBottom">Actor.BaseActorProperties#marginBottom</a></p>
 								</div>
 							</div>
 			
@@ -1392,7 +1580,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge extérieure gauche.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1418,17 +1606,10 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#marginLeft">Actor.Properties.BaseActorProperties#marginLeft</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#marginLeft">Actor.BaseActorProperties#marginLeft</a></p>
 								</div>
 							</div>
 			
-							<!-- overrides -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Overrides</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#marginLeft">Actor.Properties.BaseActorProperties#marginLeft</a></p>
-								</div>
-							</div>
 			
 			
 			
@@ -1451,7 +1632,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge extérieure droite.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1477,7 +1658,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#marginRight">Actor.Properties.BaseActorProperties#marginRight</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#marginRight">Actor.BaseActorProperties#marginRight</a></p>
 								</div>
 							</div>
 			
@@ -1503,7 +1684,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge extérieure haute.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1529,9 +1710,54 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#marginTop">Actor.Properties.BaseActorProperties#marginTop</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#marginTop">Actor.BaseActorProperties#marginTop</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="max" class="member public"><span class="name">max</span><span class="signature-type"> :Number</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Valeur maximale du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Number</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">100</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -1555,7 +1781,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur maximale de l'acteur<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1581,17 +1807,55 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#maxHeight">Actor.Properties.BaseActorProperties#maxHeight</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#maxHeight">Actor.BaseActorProperties#maxHeight</a></p>
 								</div>
 							</div>
 			
-							<!-- overrides -->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="min" class="member public"><span class="name">min</span><span class="signature-type"> :Number</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Valeur minimale du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Overrides</label>
+								<label class="col-sm-3 control-label">Type</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#maxHeight">Actor.Properties.BaseActorProperties#maxHeight</a></p>
+									<div class="form-control-static type-names"><span class="param-type">Number</span></div>
 								</div>
 							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">0</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
 			
 			
 			
@@ -1614,7 +1878,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Hauteur minimale de l'acteur<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1640,17 +1904,10 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#minHeight">Actor.Properties.BaseActorProperties#minHeight</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#minHeight">Actor.BaseActorProperties#minHeight</a></p>
 								</div>
 							</div>
 			
-							<!-- overrides -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Overrides</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#minHeight">Actor.Properties.BaseActorProperties#minHeight</a></p>
-								</div>
-							</div>
 			
 			
 			
@@ -1673,7 +1930,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Opacité en %.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1699,9 +1956,54 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#opacity">Actor.Properties.BaseActorProperties#opacity</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#opacity">Actor.BaseActorProperties#opacity</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="orientation" class="member public"><span class="name">orientation</span><span class="signature-type"> :'horizontal'|'vertical'</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Orientation du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">'horizontal'</span> | <span class="param-type">'vertical'</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">&#x27;horizontal&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -1725,7 +2027,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge intérieure basse.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1751,7 +2053,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#paddingBottom">Actor.Properties.BaseActorProperties#paddingBottom</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#paddingBottom">Actor.BaseActorProperties#paddingBottom</a></p>
 								</div>
 							</div>
 			
@@ -1777,7 +2079,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge intérieure gauche.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1803,7 +2105,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#paddingLeft">Actor.Properties.BaseActorProperties#paddingLeft</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#paddingLeft">Actor.BaseActorProperties#paddingLeft</a></p>
 								</div>
 							</div>
 			
@@ -1829,7 +2131,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge intérieure droite.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1855,7 +2157,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#paddingRight">Actor.Properties.BaseActorProperties#paddingRight</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#paddingRight">Actor.BaseActorProperties#paddingRight</a></p>
 								</div>
 							</div>
 			
@@ -1881,7 +2183,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Marge intérieure haute.<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1907,9 +2209,54 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#paddingTop">Actor.Properties.BaseActorProperties#paddingTop</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#paddingTop">Actor.BaseActorProperties#paddingTop</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="reverse" class="member public"><span class="name">reverse</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Les valeurs sont inversées ?<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">false</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -1933,7 +2280,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Position horizontale depuis la droite dans un acteur toile.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -1959,7 +2306,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#right">Actor.Properties.BaseActorProperties#right</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#right">Actor.BaseActorProperties#right</a></p>
 								</div>
 							</div>
 			
@@ -1985,7 +2332,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Angle de rotation en degré.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -2011,7 +2358,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#rotate">Actor.Properties.BaseActorProperties#rotate</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#rotate">Actor.BaseActorProperties#rotate</a></p>
 								</div>
 							</div>
 			
@@ -2037,7 +2384,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Taux de mise à l'échelle.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
 						<pre class="prettyprint source language-javascript"><code class="language-javascript">// &gt; 1 : plus grand// &lt; 1 : moins grand// &lt; 0 : renversé</code></pre>
 					</div>
@@ -2066,7 +2413,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#scaling">Actor.Properties.BaseActorProperties#scaling</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#scaling">Actor.BaseActorProperties#scaling</a></p>
 								</div>
 							</div>
 			
@@ -2092,7 +2439,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Alignement du texte.<br>
-			Modificateur : <strong>Gabarit</strong>.<br>
+			<strong>Modificateur :</strong> <code>layout</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -2119,7 +2466,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#textAlign">Actor.Properties.BaseActorProperties#textAlign</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#textAlign">Actor.BaseActorProperties#textAlign</a></p>
 								</div>
 							</div>
 			
@@ -2145,7 +2492,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Décoration du texte.<br>
-			Modificateur : <strong>CSS</strong>.<br>
+			<strong>Modificateur :</strong> <code>css</code>.<br>
 			<strong>Hérité</strong></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -2172,7 +2519,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#textDecoration">Actor.Properties.BaseActorProperties#textDecoration</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#textDecoration">Actor.BaseActorProperties#textDecoration</a></p>
 								</div>
 							</div>
 			
@@ -2198,7 +2545,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Texte info bulle.<br>
-			Modificateur : <strong>Autre</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -2224,7 +2571,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#toolTip">Actor.Properties.BaseActorProperties#toolTip</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#toolTip">Actor.BaseActorProperties#toolTip</a></p>
 								</div>
 							</div>
 			
@@ -2250,7 +2597,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Position verticale depuis le haut dans un acteur toile.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -2276,7 +2623,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#top">Actor.Properties.BaseActorProperties#top</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#top">Actor.BaseActorProperties#top</a></p>
 								</div>
 							</div>
 			
@@ -2302,7 +2649,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Translation horizontale.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>css</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -2328,17 +2675,10 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#translateX">Actor.Properties.BaseActorProperties#translateX</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#translateX">Actor.BaseActorProperties#translateX</a></p>
 								</div>
 							</div>
 			
-							<!-- overrides -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Overrides</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#translateX">Actor.Properties.BaseActorProperties#translateX</a></p>
-								</div>
-							</div>
 			
 			
 			
@@ -2356,20 +2696,19 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title member public">
-			<h4 id="url" class="member public"><span class="name">url</span><span class="signature-type"> :String</span></h4>
+			<h4 id="value" class="member public"><span class="name">value</span><span class="signature-type"> :Number</span></h4>
 		</dt>
 <dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>URL de la page WEB à afficher.<br>
-			Peut être complété par des jokers.<br>
-			Modificateur : <strong>CSS</strong>.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Valeur du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Type</label>
 								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">String</span></div>
+									<div class="form-control-static type-names"><span class="param-type">Number</span></div>
 								</div>
 							</div>
 			
@@ -2377,7 +2716,97 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Default Value</label>
 								<div class="col-sm-9">
-									<p class="form-control-static">&#x27;&#x27;</p>
+									<p class="form-control-static">20</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="value" class="member public"><span class="name">value</span><span class="signature-type"> :Number|null</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Pas entre deux mouvements du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Number</span> | <span class="param-type">null</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">null</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="value2" class="member public"><span class="name">value2</span><span class="signature-type"> :Number</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Deuxième valeur du curseur.<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Number</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">80</p>
 								</div>
 							</div>
 			
@@ -2407,7 +2836,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Alignement verticale dans un acteur empilement ou boite à vue.<br>
-			Modificateur : <strong>Gabarit</strong>.</p>
+			<strong>Modificateur :</strong> <code>layout</code>.</p>
 			<p><strong>Attention</strong> aux hauteurs fixées qui prennent le pas sur la valeur <code>'expand'</code></p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
@@ -2434,7 +2863,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#verticalAlignment">Actor.Properties.BaseActorProperties#verticalAlignment</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#verticalAlignment">Actor.BaseActorProperties#verticalAlignment</a></p>
 								</div>
 							</div>
 			
@@ -2460,7 +2889,7 @@
 <dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Largeur de l'acteur<br>
-			Modificateur : <strong>Gabarit</strong>.</p></div>
+			<strong>Modificateur :</strong> <code>layout</code>.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -2486,9 +2915,54 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Actor.Properties.BaseActorProperties.html#width">Actor.Properties.BaseActorProperties#width</a></p>
+									<p class="form-control-static"><a href="Actor.BaseActorProperties.html#width">Actor.BaseActorProperties#width</a></p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="withTooltips" class="member public"><span class="name">withTooltips</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Affiche-t'on l'indication de valeur ?<br>
+			<strong>Modificateur :</strong> <code>other</code>.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">false</p>
+								</div>
+							</div>
+			
+			
+			
+			
 			
 			
 			
@@ -2547,7 +3021,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="PrototypedBase.html#reset">PrototypedBase#reset</a></p>
+									<p class="form-control-static"><a href="Synapps.PrototypedBase.html#reset">Synapps.PrototypedBase#reset</a></p>
 								</div>
 							</div>
 			
@@ -2576,7 +3050,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 6th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

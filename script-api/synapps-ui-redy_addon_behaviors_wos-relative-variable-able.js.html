@@ -1,0 +1,574 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui-redy/addon/behaviors/wos-relative-variable-able.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="Scene.html">Scene</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_interface.html" class="dropdown-toggle" data-toggle="dropdown">Interfaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Stage.html">Stage</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui-redy/addon/behaviors/wos-relative-variable-able.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { notifyPropertyChange } from '@ember/object';
+import { debounce as emDebounce } from '@ember/runloop';
+import { isEmpty, isNone } from '@ember/utils';
+import { tracked } from '@glimmer/tracking';
+import logger from 'logger';
+import WosVariableSource from 'synapps-ui-redy/components/actors/wos/wos-variable-source';
+import toolsDebounce from 'synapps-ui/tools/debounce';
+import isValuesEqual from 'synapps-ui/tools/is-values-equal';
+
+const STORE_DATA_DELAY = 10;
+
+/**
+ * @namespace REDY.Behavior
+ */
+
+/**
+ * Comportement de fournisseur de variable relativement à un autre fournisseur.
+ * @class REDY.Behavior.WosRelativeVariableAble
+ */
+
+export default function(Class) {
+  return class WosRelativeVariableAble extends Class {
+
+    get isAWosVariableSource() {
+      return true;
+    }
+
+    /**
+     * Obtient le fournisseur parent.
+     * @member REDY.Behavior.WosRelativeVariableAble#parentSource
+     * @type {REDY.Actor.WosVariableSource|REDY.Actor.ResourceSource|REDY.Actor.WosRelativeVariableSource|null}
+     * @readonly
+     */
+    @tracked
+    parentSource;
+
+    _datasourceCanWrite = true;
+
+    _relatives = {};
+
+    _isValorized = false;
+
+    _relatives = {};
+
+    _isValorized = false;
+
+    get _toIncludeInRequest() {
+      return this.properties.dataReadMode === 'always'
+        || this.properties.dataReadMode === 'onetime' &amp;&amp; !this._isValorized;
+    }
+
+    /**
+     * Obtient le chemin complet vers la variable.
+     * @member REDY.Behavior.WosRelativeVariableAble#fullPath
+     * @type {string}
+     * @readonly
+     */
+    get fullPath() {
+      const parentPath = (this.parentSource ? this.parentSource.fullPath : '');
+      const separator = (!this.parentSource || isEmpty(this.properties.relativePath) || this.properties.relativePath.startsWith(':')) ? '' : '.';
+      return `${parentPath}${separator}${this.properties.relativePath || ''}`;
+    }
+
+    /**
+     * Obtient le fournisseur de donnée racine.
+     * @member REDY.Behavior.WosRelativeVariableAble#dataSource
+     * @type {REDY.Actor.WosVariableSource|REDY.Actor.ResourceSource|null}
+     * @readonly
+     */
+    get dataSource() {
+      if (this.parentSource &amp;&amp; this.parentSource instanceof WosVariableSource) return this.parentSource;
+      if (this.parentSource) return this.parentSource.dataSource;
+      return null;
+    }
+
+    /**
+     * Obtient l'attribut à fournir.
+     * @member REDY.Behavior.WosRelativeVariableAble#attributeName
+     * @type {string|null}
+     * @readonly
+     */
+    get attributeName() {
+      let path = this.properties.relativePath || '';
+      const index = path.indexOf(':');
+      if (index !== -1) {
+        path = path.substring(index + 1);
+        return isEmpty(path) ? null : path;
+      }
+
+      return null;
+    }
+
+    /**
+     * Obtient le chemin sans l'attribut de la variable à fournir.
+     * @member REDY.Behavior.WosRelativeVariableAble#pathPart
+     * @type {string|null}
+     * @readonly
+     */
+    get pathPart() {
+      let path = this.properties.relativePath || '';
+      const index = path.indexOf(':');
+      if (index !== -1) {
+        path = path.substring(0, index);
+      }
+
+      return isNone(path) ? '' : path;
+    }
+
+    /**
+     * Obtient le chemin complet sans l'attribut de la variable à fournir.
+     * @member REDY.Behavior.WosRelativeVariableAble#fullPathVariable
+     * @type {string|null}
+     * @readonly
+     */
+    get fullPathVariable() {
+      const parentPath = (this.parentSource ? this.parentSource.fullPath : '');
+      let pathPart = this.pathPart;
+      let separator = '.'
+      if (isEmpty(pathPart)) {
+        separator = ''
+      }
+
+      return `${parentPath}${separator}${pathPart}`;
+    }
+
+    @tracked
+    _data = null;
+
+    /**
+     * Obtient ou définit la donnée exposée.
+     * @member REDY.Behavior.WosRelativeVariableAble#data
+     * @type {any}
+     */
+    get data() {
+      return this._data;
+    }
+
+    set data(newValue) {
+      const oldValue = this._data;
+      if (oldValue === newValue) return;
+      this._data = this._onWillWriteInData({ oldValue, newValue });
+      if (this.properties.writeOnChange) {
+        // attention : asynchrone
+        this.write();
+      }
+
+      notifyPropertyChange(this, 'data');
+    }
+
+    _runDataEvent(name, args) {
+      this.runEvent(name, args);
+    }
+
+    _storeData(newValue) {
+      if (this.isDestroyed || this.isDestroying) return;
+      if (isValuesEqual(this._data, newValue)) return;
+      this._data = newValue;
+      this._isValorized = true;
+      notifyPropertyChange(this, 'data');
+
+      /**
+       * Se produit lorsque la donnée est stockée dans [data]{@link REDY.Behavior.WosRelativeVariableAble#data}.
+       * @event onDidDataStore
+       * @memberof REDY.Behavior.WosRelativeVariableAble#
+       * @param {Event.BaseContext} context Le contexte de l'évènement.
+       * @param {any} context.data La donnée stockée.
+       */
+      this._runDataEvent(`onDidDataStore`, { data: newValue });
+    }
+
+    _storeDataDebounced(newValue) {
+      emDebounce(this, '_storeData', newValue, STORE_DATA_DELAY);
+    }
+
+    async _valorize({ isDry = false }) {
+      if (!this.dataSource) return;
+      try {
+        this._storeDataDebounced(await this.dataSource._resolveData({ path: this.fullPathVariable, attributeName: this.attributeName, isDry }));
+      } catch (e) {
+        logger.warn(`[WosRelativeVariableAble][_valorize] Error during resolve relative ${this.uniqPath} ${this.fullPath}`);
+      }
+    }
+
+    async _valorizeRelatives({ isDry = false }) {
+      if (!this.dataSource) return;
+
+      await this._valorize({ isDry });
+
+      const relatives = Object.values(this._relatives);
+      for (const relative of relatives) {
+        if (relative.isDestroyed || relative.isDestroying) continue;
+        await relative._valorize({ isDry });
+      }
+    }
+
+    _onWillWriteInData({ /*oldValue,*/ newValue }) {
+      if (!this.dataSource) return newValue;
+      if (isEmpty(this.fullPathVariable)) return newValue;
+      if (this.attributeName !== 'value') return newValue;
+      const variable = this.dataSource.dataStores.redy.getWosVariable(this.fullPathVariable);
+      if (variable) {
+        variable.value = newValue;
+      }
+
+      return newValue;
+    }
+
+    _onEndingRender({ isFirstRender }) {
+      if (this.isDestroyed || this.isDestroying) return;
+      if (isFirstRender) {
+        this._setupParentSource();
+      }
+    }
+
+    async _write() {
+      if (!this.dataSource) return;
+      if (isEmpty(this.fullPathVariable)) return;
+      if (this.attributeName !== 'value') return;
+      const variable = await this.dataSource.dataStores.redy.writeWosVariableValue(this.fullPathVariable);
+      return await this.dataSource._resolveData({ path: variable.path, attributeName: this.attributeName });
+    }
+
+    /**
+     * Effectue une requête d'écriture.
+     * @method write
+     * @memberof REDY.Behavior.WosRelativeVariableAble#
+     * @return {any} La donnée.
+     * @async
+     */
+    async write() {
+      if (!this._datasourceCanWrite) return this.data;
+      let data = null;
+      try {
+        this.isRequesting = true;
+        data = await this._write();
+        /**
+         * Se produit lorsque la requête d'écriture s'est terminée.
+         * @event onWriteDone
+         * @memberof REDY.Behavior.WosRelativeVariableAble#
+         * @param {Event.BaseContext} context
+         * @param {String|Object|null} context.error Une erreur éventuelle
+         * @param {any} context.error La donnée
+         */
+        this._runDataEvent(`onWriteDone`, { error: null, data: data });
+      } catch (e) {
+        logger.error(e);
+        this._runDataEvent(`onWriteDone`, { error: e });
+      }
+
+      this.isRequesting = false;
+      return data;
+    }
+
+    _invalorize() {
+      this._isValorized = false;
+      Object.values(this._relatives).forEach(relative => relative._invalorize());
+    }
+
+    _doAfterPropertyChanged({ name, ...others }) {
+      if (this.isDestroying || this.isDestroyed) return;
+      super._doAfterPropertyChanged({ name, ...others });
+
+      if (name === 'relativeTo') {
+        this._invalorize();
+        this._setupParentSource();
+        this._valorizeOrRequest();
+
+        return;
+      }
+
+      if (name === 'relativePath') {
+        this._invalorize();
+        this._valorizeOrRequest();
+
+        return;
+      }
+    }
+
+    _valorizeOrRequest = toolsDebounce(async () => {
+      if (this.dataSource) {
+        if (['auto', 'relative'].includes(this.dataSource.properties.mode) &amp;&amp; this.scene.stageIsReady) {
+          this.dataSource.requestDebounce();
+        } else {
+          await this._valorizeRelatives({ isDry: true });
+        }
+      }
+    }, 150);
+
+    _setupParentSource() {
+      this._detachParentSource();
+      let relativeTo = this.properties.relativeTo;
+      if (isEmpty(relativeTo)) {
+        this._attachParentSource(this.dataContext);
+      } else {
+        let stage = this.stage;
+        const words = relativeTo.split('/');
+        if (words.length > 1 &amp;&amp; words[0] === 'global') {
+          relativeTo = words[1];
+          stage = this.scene.synapp.backstage;
+        }
+
+        const parentSource = stage.getActor(relativeTo);
+        this._attachParentSource(parentSource);
+      }
+    }
+
+    _attachParentSource(parentSource) {
+      if (!parentSource || !parentSource.isAWosVariableSource) return;
+      if (this.parentSource === parentSource) return;
+      this.parentSource = parentSource;
+      this.parentSource._relatives[this.uniqPath] = this;
+      if (!this.dataSource || this.stage.dataSourcesRegister.hasKey(this.dataSource.key)) return;
+      if (this.stage.dataSourcesRegister.hasRecord({ record: this.dataSource })) return;
+      this.stage.dataSourcesRegister.record({ record: this.dataSource });
+    }
+
+    _detachParentSource(parentSource) {
+      this._invalorize();
+      parentSource = parentSource || this.parentSource;
+      if (!parentSource) return;
+      delete parentSource._relatives[this.uniqPath];
+
+      if (
+        this.dataSource
+        &amp;&amp; this.dataSource.stage.args.isBackstage
+        &amp;&amp; this.dataSource.properties.autoRefresh
+        &amp;&amp; this.dataSource.properties.mode === 'relative'
+        &amp;&amp; Object.keys(this.dataSource._relatives).length === 0
+      ) {
+        this.dataSource._stopAutoRefresh();
+      }
+
+      this.parentSource = null;
+    }
+
+    didChangeDataContext({ oldValue, newValue }) {
+      if (!isEmpty(this.properties.relativeTo)) return;
+      if (oldValue === newValue) return;
+      if (oldValue &amp;&amp; oldValue.isAWosVariableSource) {
+        // on enlève la reference.
+        this._detachParentSource(oldValue);
+      }
+
+      if (newValue &amp;&amp; newValue.isAWosVariableSource) {
+        // on ajoute la reference du binding.
+        this._setupParentSource();
+        this._valorizeOrRequest();
+      }
+    }
+
+    willDestroy() {
+      if (this.isDestroyed) return;
+      this._relatives = {};
+      this._detachParentSource();
+      super.willDestroy();
+    }
+
+  };
+}
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 19th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
