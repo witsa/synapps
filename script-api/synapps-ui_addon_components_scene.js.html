@@ -1,0 +1,611 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui/addon/components/scene.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.CompositeProperties.html">Actor.CompositeProperties</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Actor.Input.RadioList.html">Actor.Input.RadioList</a></li>
+											<li><a href="Actor.Input.RadioListProperties.html">Actor.Input.RadioListProperties</a></li>
+											<li><a href="Actor.Input.SwitchButton.html">Actor.Input.SwitchButton</a></li>
+											<li><a href="Actor.Input.SwitchButtonProperties.html">Actor.Input.SwitchButtonProperties</a></li>
+											<li><a href="Actor.Input.SwitchImage.html">Actor.Input.SwitchImage</a></li>
+											<li><a href="Actor.Input.SwitchImageProperties.html">Actor.Input.SwitchImageProperties</a></li>
+											<li><a href="Actor.Input.TextArea.html">Actor.Input.TextArea</a></li>
+											<li><a href="Actor.Input.TextAreaProperties.html">Actor.Input.TextAreaProperties</a></li>
+											<li><a href="Actor.Input.TextBox.html">Actor.Input.TextBox</a></li>
+											<li><a href="Actor.Input.TextBoxProperties.html">Actor.Input.TextBoxProperties</a></li>
+											<li><a href="Actor.Layout.BaseLayout.html">Actor.Layout.BaseLayout</a></li>
+											<li><a href="Actor.Layout.BaseLayoutProperties.html">Actor.Layout.BaseLayoutProperties</a></li>
+											<li><a href="Actor.Layout.Canvas.html">Actor.Layout.Canvas</a></li>
+											<li><a href="Actor.Layout.CanvasProperties.html">Actor.Layout.CanvasProperties</a></li>
+											<li><a href="Actor.Layout.Modal.html">Actor.Layout.Modal</a></li>
+											<li><a href="Actor.Layout.ModalProperties.html">Actor.Layout.ModalProperties</a></li>
+											<li><a href="Actor.Layout.Stack.html">Actor.Layout.Stack</a></li>
+											<li><a href="Actor.Layout.StackProperties.html">Actor.Layout.StackProperties</a></li>
+											<li><a href="Actor.Layout.ViewBox.html">Actor.Layout.ViewBox</a></li>
+											<li><a href="Actor.Layout.ViewBoxProperties.html">Actor.Layout.ViewBoxProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.Parenthood.html">Behavior.Parenthood</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.Stage.html">Behavior.Stage</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="REDY.Synapps.RedyStore.html">REDY.Synapps.RedyStore</a></li>
+											<li><a href="Synapps.Ajax.html">Synapps.Ajax</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Actor.Layout.html">Actor.Layout</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/components/scene.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">/* eslint-disable ember/no-empty-glimmer-component-classes */
+import { assert } from '@ember/debug';
+import { action, set } from '@ember/object';
+import { readOnly } from '@ember/object/computed';
+import { debounce, later } from '@ember/runloop';
+import { dasherize } from '@ember/string';
+import { isEmpty } from '@ember/utils';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import logger from 'logger';
+import SourceOfInternalBinding from 'synapps-ui/behaviors/source-of-internal-binding';
+import V1EventScript from 'synapps-ui/behaviors/v1-event-script';
+import WithAdditionals from 'synapps-ui/behaviors/with-additionals';
+import InternalBinding from 'synapps-ui/bindings/internal';
+import Stage from 'synapps-ui/components/behaviors/stage';
+import CssClassesRegister from 'synapps-ui/registers/css-classes';
+import hasOwnProperty from 'synapps-ui/tools/has-own-property';
+
+const LEAD_ACTOR_PARSING_DELAY = 150;
+
+@Stage
+@SourceOfInternalBinding
+@WithAdditionals
+@V1EventScript
+class SceneBase extends Component {}
+
+/**
+ * La scène.
+ * @class Synapps.Scene
+ * @extends Behavior.Stage
+ * @extends Behavior.SourceOfInternalBinding
+ * @extends Behavior.WithAdditionals
+ */
+export default class Scene extends SceneBase {
+
+  @tracked
+  _key = null;
+
+  _name = null;
+
+  _cssClassesRegister = new CssClassesRegister(this);
+
+  @tracked
+  _classes = [];
+
+  @tracked
+  classesCount = 0;
+
+  @tracked
+  _instanceOfPath = '~';
+
+  _synapp = null;
+
+  @tracked
+  _error = null;
+
+  _screen;
+
+  /**
+   * Obtient éventuellement l'acteur écran qui l'accueille.
+   * @member screen
+   * @memberof Synapps.Scene#
+   * @readonly
+   * @type {Actor.Display.Screen|null}
+   */
+  get screen() {
+    return this._screen;
+  }
+
+   /**
+   * Obtient la scène racine.
+   * @member rootScene
+   * @memberof Synapps.Scene#
+   * @readonly
+   * @type {Synapps.Scene}
+   */
+  get rootScene() {
+    return this.args.rootScene || this;
+  }
+
+  constructor(owner, args) {
+    super(owner, args);
+
+    assert('[synapps-ui][scene] setup is required.', args.setup);
+    assert('[synapps-ui][scene] no key in scene definition.', args.setup.key);
+
+    this._key = args.setup.key;
+
+    set(this, '_name', args.setup.name);
+
+    if (args.synapp) {
+      this._synapp = args.synapp;
+    }
+
+    if (args.instanceOfPath) {
+      this._instanceOfPath = args.instanceOfPath;
+    }
+
+    if (args.isBackstage) {
+      return;
+    }
+
+    this._extractAdditionalsFromSetup(args.setup);
+
+    this._doUpdateAdditionalsFromParams(args.sceneParams);
+
+  }
+
+   /**
+   * Obtient la Synapp.
+   * @member Synapps.Scene#synapp
+   * @readonly
+   * @type {Synapps.Synapp}
+   */
+  get synapp() {
+    return this._synapp;
+  }
+
+  get classes() {
+    return this._classes;
+  }
+
+  get cssClassesRegister() {
+    return this._cssClassesRegister;
+  }
+
+  /**
+   * Obtient la clé unique de la scène.
+   * @member Synapps.Scene#key
+   * @readonly
+   * @type {String}
+   */
+  @readOnly('_key')
+  key;
+
+  /**
+   * Obtient le nom de la scène.
+   * @member Synapps.Scene#name
+   * @readonly
+   * @type {String}
+   */
+  @readOnly('_name')
+  name;
+
+  get instanceOfPath() {
+    return this._instanceOfPath;
+  }
+
+
+  /**
+   * Obtient le chemin unique de la scène.
+   * @member Synapps.Scene#uniqPath
+   * @readonly
+   * @type {String}
+   */
+  get uniqPath() {
+    return `${this.instanceOfPath}/${this.key}`;
+  }
+
+  /**
+   * Obtient la classe CSS unique de la scène.
+   * @member Synapps.Scene#uniqClass
+   * @readonly
+   * @type {String}
+   */
+  get uniqClass() {
+    return this.uniqPath.replace(/~/, '').replace(/\//g, '_');
+  }
+
+  setupClass(style) {
+
+    var str = '';
+    for (var prop in style) {
+      str += `\n  ${dasherize(prop)}: ${style[prop]};`;
+    }
+
+    return str;
+  }
+
+  recordClass(properties, objectUi, styleName) {
+    if (this.args.isBackstage) return;
+    const classSelector = this.cssClassesRegister.buildKey({ actorClass: objectUi.constructor, styleName });
+    if (this.cssClassesRegister.hasKey(classSelector)) return;
+    logger.debug('recordClass', classSelector);
+    const css = this.setupClass(objectUi._doComputeStyle({ properties, isAlreadyWrite: true }));
+    this.cssClassesRegister.record({ record: css, actorClass: objectUi.constructor, styleName });
+
+    later(() => {
+      this._classes = [...this.cssClassesRegister.register].map(([key, value]) => {
+        return {
+          classSelector: key,
+          css: value
+        };
+      });
+      this.styleDom.innerHTML = this.classes.map(cl => `
+  ${cl.classSelector} {
+    ${cl.css}
+  }
+`).join('');
+    });
+
+    this.classesCount = this.cssClassesRegister.register.size;
+  }
+
+  unrecordClass(actorClass, styleName) {
+    if (this.args.isBackstage) return;
+    const classSelector = this.cssClassesRegister.buildKey({ actorClass, styleName });
+    logger.debug('unrecordClass', classSelector);
+    this.cssClassesRegister.unrecord({ actorClass, styleName });
+
+    later(() => {
+      this._classes = [...this.cssClassesRegister.register].map(([key, value]) => {
+        return {
+          classSelector: key,
+          css: value
+        };
+      });
+    });
+
+    this.classesCount = this.cssClassesRegister.register.size;
+  }
+
+  @action
+  didInsert(element) {
+    this.styleDom = element;
+    if (this.args.onReady) {
+      // TODO un event onReady
+      this.args.onReady(this);
+    }
+
+    later(() => {
+      if (this.isDestroying || this.isDestroyed) return;
+      try {
+        const leadActorSetup = typeof this.args.setup.leadActor === 'string' ? JSON.parse(this.args.setup.leadActor) : this.args.setup.leadActor;
+        this.setLeadActorSetup(leadActorSetup);
+      } catch (error) {
+        logger.error('[Scene][didInsert] error during the parse of leadActorSetup.', error.message || error);
+        this._error = error.message || error;
+      }
+    }, LEAD_ACTOR_PARSING_DELAY);
+  }
+
+  willDestroy() {
+    if (this.isDestroyed) return;
+
+    this._screen = null;
+
+    this.cssClassesRegister.destroy();
+    this._cssClassesRegister = null;
+
+    super.willDestroy();
+  }
+
+  _doAfterAdditionalChanged({ name, ...others }) {
+    if (this.isDestroying || this.isDestroyed) return;
+    super._doAfterAdditionalChanged({ name, ...others });
+
+    if (this.screen &amp;&amp; hasOwnProperty(this.screen.setup.additionalDefs, name)) {
+      this.screen.additionals[name] = this.additionals[name];
+      return;
+    }
+
+    debounce(this, this._onDidAdditionalsChange, 250);
+  }
+
+  _onDidAdditionalsChange() {
+    if (this.isDestroying || this.isDestroyed) return;
+    if (this.args.onDidAdditionalsChange) {
+      this.args.onDidAdditionalsChange(this._additionalsToSceneParams(this.additionals));
+    }
+  }
+
+  _additionalsToSceneParams(additionals) {
+    const sceneParams = {};
+    const additionalsSetupEntries = Object.entries(additionals.prototypeSetup);
+    for (const [key, setup] of additionalsSetupEntries) {
+      if (
+        (
+          // ça vient d'un nav-button ou d'un screen
+          additionals.objectUi !== this
+
+          // [MIGRATION V1]
+          // inhibition des additionals de migration dans le cas d'une navigation depuis un nav-button
+          &amp;&amp; (
+            this.synapp.setup.setupVersion > 1
+            || additionals.objectUi.type !== 'input/nav-button'
+            || ![
+              'relativePath',
+              'datasourceVariable',
+              'bootstrapColor'
+            ].includes(key))
+        )
+
+        // ça vient d'un changement de paramètre de la scène et l'apparition dans l'URL est autorisée
+        || setup.allowUrlParams
+      ) {
+        sceneParams[key] = additionals[key];
+      }
+    }
+
+    const params = JSON.stringify(sceneParams);
+    return params === '{}' ? '' : params;
+  }
+
+  _doUpdateAdditionalsFromParams(sceneParamsJSON) {
+    sceneParamsJSON = sceneParamsJSON || this.args.sceneParams;
+    if (isEmpty(sceneParamsJSON)) return;
+    let sceneParams = {};
+    try {
+      sceneParams = JSON.parse(sceneParamsJSON);
+    } catch (e) {
+      logger.warn('[Scene][_doUpdateAdditionalsFromParams] impossible to parse sceneParams.', sceneParamsJSON);
+    }
+
+    Object.keys(sceneParams).forEach(key => {
+      if (hasOwnProperty(this.additionals.prototypeSetup, key) &amp;&amp; this.additionals.prototypeSetup[key].allowUrlParams) {
+        this.additionals[key] = sceneParams[key];
+      }
+    });
+  }
+
+  @action
+  _didUpdateSceneParams() {
+    this._doUpdateAdditionalsFromParams();
+  }
+
+  /**
+   * Navigue vers une scène et change ses paramètres.
+   * @method Synapps.Scene#navigate
+   * @param {String} sceneKey
+   * @param {Synapps.PrototypedBase} additionals
+   */
+  navigate(sceneKey, additionals) {
+    if (sceneKey &amp;&amp; this.key !== sceneKey) {
+      // on navigue vraiment sur une autre scene
+      if (this.screen) {
+        this.screen.navigate(sceneKey, additionals);
+        return;
+      }
+
+      this.synapp.navigate(sceneKey, this._additionalsToSceneParams(additionals));
+      return;
+    }
+
+    if (additionals &amp;&amp; this.additionals) {
+      Object.keys(additionals.prototypeSetup).forEach(key => {
+        if (hasOwnProperty(this.additionals.prototypeSetup, key)) {
+          this.additionals[key] = additionals[key];
+        }
+      });
+    }
+  }
+
+  // [MIGRATION V1]
+
+  _getEventContextV1Class() {
+
+    const BaseClass = super._getEventContextV1Class();
+
+    return class extends BaseClass {
+
+      @readOnly('_objectUi.key')
+      label;
+    };
+
+  }
+
+}
+
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'stage',
+  resolveSource: function resolveSource({ target }) {
+    return target.stage;
+  }
+});
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 20th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

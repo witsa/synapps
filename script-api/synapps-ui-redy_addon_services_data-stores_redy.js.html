@@ -1,0 +1,1340 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui-redy/addon/services/data-stores/redy.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.CompositeProperties.html">Actor.CompositeProperties</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Actor.Input.RadioList.html">Actor.Input.RadioList</a></li>
+											<li><a href="Actor.Input.RadioListProperties.html">Actor.Input.RadioListProperties</a></li>
+											<li><a href="Actor.Input.SwitchButton.html">Actor.Input.SwitchButton</a></li>
+											<li><a href="Actor.Input.SwitchButtonProperties.html">Actor.Input.SwitchButtonProperties</a></li>
+											<li><a href="Actor.Input.SwitchImage.html">Actor.Input.SwitchImage</a></li>
+											<li><a href="Actor.Input.SwitchImageProperties.html">Actor.Input.SwitchImageProperties</a></li>
+											<li><a href="Actor.Input.TextArea.html">Actor.Input.TextArea</a></li>
+											<li><a href="Actor.Input.TextAreaProperties.html">Actor.Input.TextAreaProperties</a></li>
+											<li><a href="Actor.Input.TextBox.html">Actor.Input.TextBox</a></li>
+											<li><a href="Actor.Input.TextBoxProperties.html">Actor.Input.TextBoxProperties</a></li>
+											<li><a href="Actor.Layout.BaseLayout.html">Actor.Layout.BaseLayout</a></li>
+											<li><a href="Actor.Layout.BaseLayoutProperties.html">Actor.Layout.BaseLayoutProperties</a></li>
+											<li><a href="Actor.Layout.Canvas.html">Actor.Layout.Canvas</a></li>
+											<li><a href="Actor.Layout.CanvasProperties.html">Actor.Layout.CanvasProperties</a></li>
+											<li><a href="Actor.Layout.Modal.html">Actor.Layout.Modal</a></li>
+											<li><a href="Actor.Layout.ModalProperties.html">Actor.Layout.ModalProperties</a></li>
+											<li><a href="Actor.Layout.Stack.html">Actor.Layout.Stack</a></li>
+											<li><a href="Actor.Layout.StackProperties.html">Actor.Layout.StackProperties</a></li>
+											<li><a href="Actor.Layout.ViewBox.html">Actor.Layout.ViewBox</a></li>
+											<li><a href="Actor.Layout.ViewBoxProperties.html">Actor.Layout.ViewBoxProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.Parenthood.html">Behavior.Parenthood</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.Stage.html">Behavior.Stage</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="REDY.Synapps.RedyStore.html">REDY.Synapps.RedyStore</a></li>
+											<li><a href="Synapps.Ajax.html">Synapps.Ajax</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Actor.Layout.html">Actor.Layout</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui-redy/addon/services/data-stores/redy.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { assert } from '@ember/debug';
+import { inject as service } from '@ember/service';
+import { isEmpty, isNone, typeOf } from '@ember/utils';
+import logger from 'logger';
+import moment from 'moment';
+import hostPilotLogo from 'synapps-ui-redy/assets/logo-pilot-256';
+import ReflectEvent from 'synapps-ui-redy/services/data-stores/models/reflect-event';
+import { ReflectTypes } from 'synapps-ui-redy/services/data-stores/models/reflect-imports';
+import WosEvent from 'synapps-ui-redy/services/data-stores/models/wos-event';
+import WosVariable from 'synapps-ui-redy/services/data-stores/models/wos-variable';
+import RedyAuthenticatedBehaviorStoreService from 'synapps-ui-redy/services/data-stores/redy-authenticated-behavior';
+import ReflectsRegister from 'synapps-ui-redy/services/data-stores/registers/reflects';
+import WosVariablesRegister from 'synapps-ui-redy/services/data-stores/registers/wos-variables';
+import { CannotWriteError } from 'synapps-ui/errors';
+import authenticatedRequest from 'synapps-ui/services/data-stores/authenticated-request';
+import BaseStoreService from 'synapps-ui/services/data-stores/base';
+import hasOwnProperty from 'synapps-ui/tools/has-own-property';
+
+
+const CONSTANTS = 'N,R,U,CC,CI';
+const OMNI = 'L,V,D,EXT';
+
+/**
+ * @typedef REDY.Synapps.DataStores
+ * @property {REDY.Synapps.RedyStore} redy Magasin de donnée REDY.
+ */
+
+@RedyAuthenticatedBehaviorStoreService
+class BaseRedyStoreService extends BaseStoreService {}
+
+/**
+ * Magasin de données du REDY.
+ * @class REDY.Synapps.RedyStore
+ */
+export default class RedyStoreService extends BaseRedyStoreService {
+
+  _wosVariablesRegister = new WosVariablesRegister(this);
+  _reflectsRegister = new ReflectsRegister(this);
+
+  _key = 'redy-store';
+
+
+  @service('synapps-ui/resize-picture')
+  resizePicture
+
+  _deserializeWosVariable({ data, parent, path }) {
+
+    if (!hasOwnProperty(data, 'p')) {
+      if (path) {
+        data.p = path;
+      } else if (parent &amp;&amp; !isEmpty(parent.path)) {
+        const separator = parent.path === ':' ? '' : '.';
+        data.p = `${parent.path}${separator}${data.l}`;
+      }
+    }
+
+    let variable = this._wosVariablesRegister.findByKey(data.p);
+    if (!variable) {
+      variable = new WosVariable({ userLevel: this.host.session.user.level });
+      WosVariable.serializer.deserialize(variable, data);
+      this._wosVariablesRegister.record({ record: variable });
+    } else {
+      WosVariable.serializer.deserialize(variable, data);
+    }
+
+    if (hasOwnProperty(data, 'c') &amp;&amp; typeOf(data.c) === 'array') {
+      data.c.map(cData => {
+        const c = this._deserializeWosVariable({ data: cData, parent: variable });
+        if (!variable.childLabels.has(c.label)) {
+          variable.childLabels.add(c.label);
+        }
+      })
+    }
+
+    return variable;
+  }
+
+  /**
+   * Cherche ou charge une variable.
+   * @member REDY.Synapps.RedyStore#findWosVariable
+   * @param {string} path Chemin vers la variable.
+   * @returns {Promise&lt;REDY.Synapps.WosVariable>} la variable WOS.
+   * @async
+   */
+  async findWosVariable(path) {
+    let variable = this._wosVariablesRegister.findByKey(path);
+    if (variable) {
+      return variable;
+    }
+
+    return await this.loadWosVariable(path);
+  }
+
+  /**
+   * Cherche une variable. Si elle n'est pas déja chargée, on obtient `null`
+   * @member REDY.Synapps.RedyStore#getWosVariable
+   * @param {string} path Chemin vers la variable.
+   * @returns {REDY.Synapps.WosVariable|null} la variable WOS.
+   */
+  getWosVariable(path) {
+    return this._wosVariablesRegister.findByKey(path);
+  }
+
+  /**
+   * Charge la liste des classes WOS.
+   * @member REDY.Synapps.RedyStore#getClasses
+   * @param {Object} params Paramètres.
+   * @param {Array.&lt;Number>} [params.classIds=[]] Filtrer par ID de classe.
+   * @returns {Promise&lt;Array.&lt;Object>>} les classes WOS.
+   * @async
+   */
+  @authenticatedRequest
+  async getClasses({ classIds = [], disabled = false }) {
+    let url = `${this.host.domain}/${this.host.namespace}/wos/classes?`;
+
+    if (!isEmpty(classIds)) {
+      url += `c={classIds.join(',')}&amp;`;
+    }
+
+    if (!isNone(disabled)) {
+      url += `d=${disabled}&amp;`;
+    }
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    return await this.ajax.fetchJson({ url, options });
+  }
+
+  @authenticatedRequest
+  async createWosVariable({ path, classId, label, name = '', enabledFlags = [], disabledFlags = [], value }) {
+    assert('[RedyStore][createWosVariable] path is required', path);
+    assert('[RedyStore][createWosVariable] classId is required', classId);
+    assert('[RedyStore][createWosVariable] label is required', label);
+
+    let url = `${this.host.domain}/${this.host.namespace}/wos/create`;
+
+    const options = {
+      method: 'POST',
+      headers: { ...this.authenticatedHeader },
+      body: `p=${encodeURIComponent(path)}&amp;ci=${classId}&amp;l=${label}`,
+    };
+
+    if (!isEmpty(name)) {
+      options.body += `&amp;n=${name}`;
+    }
+
+    if (!isNone(value)) {
+      options.body += `&amp;v=${value}`;
+    }
+
+    if (!isEmpty(enabledFlags)) {
+      options.body += `&amp;ef=${encodeURIComponent(enabledFlags.join(','))}`;
+    }
+
+    if (!isEmpty(disabledFlags)) {
+      options.body += `&amp;df=${encodeURIComponent(disabledFlags.join(','))}`;
+    }
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+
+    const data = await this.ajax.fetchJson({ url, options });
+    return this._deserializeWosVariable({ data, path });
+  }
+
+  @authenticatedRequest
+  async deleteWosVariable(path) {
+    assert('[RedyStore][deleteWosVariable] path is required', path);
+
+    let url = `${this.host.domain}/${this.host.namespace}/wos/delete?path=${encodeURIComponent(path)}`;
+
+    const options = {
+      method: 'GET',
+      headers: { ...this.authenticatedHeader },
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    return await this.ajax.fetchJson({ url, options });
+  }
+
+  async _loadWosVariable({ path, subPaths, queryOptions, queryDepth = 1 }) {
+    assert('[RedyStore][_loadWosVariable] path is required', path);
+    assert('[RedyStore][_loadWosVariable] queryOptions is required', queryOptions);
+
+    let url = `${this.host.domain}/${this.host.namespace}/wos/get?path=${path}&amp;options=${queryOptions}&amp;depth=${queryDepth}`;
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    if (subPaths &amp;&amp; subPaths.length > 0) {
+      url = `${this.host.domain}/${this.host.namespace}/wos/get`;
+
+      options.method = 'POST';
+      options.body = `path=${encodeURIComponent(path)}&amp;pl=${encodeURIComponent(subPaths.map(s => s.substring(path.length+1)).join(','))}&amp;depth=${encodeURIComponent(0)}&amp;options=${encodeURIComponent(queryOptions)}`
+
+    }
+
+    const data = await this.ajax.fetchJson({ url, options });
+    return this._deserializeWosVariable({ data, path });
+  }
+
+  async _searchWosVariables({
+    path,
+    queryOptions = `${OMNI},${CONSTANTS},P`,
+    depth = 2,
+    name,
+    isClasses,
+    matchClasses,
+    collection,
+    // groups,
+    // equipment,
+    // zone,
+    take = 10,
+    skip = 0,
+  }) {
+    assert('[RedyStore][_searchWosVariables] path is required', path);
+
+    let url = `${this.host.domain}/${this.host.namespace}/wos/search`;
+    const options = {
+      headers: { ...this.authenticatedHeader },
+      method: 'POST',
+      body: `path=${encodeURIComponent(path)}&amp;d=${encodeURIComponent(depth)}&amp;o=${encodeURIComponent(queryOptions)}&amp;t=${take}&amp;s=${skip}`
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    if (!isEmpty(name)) {
+      options.body += `&amp;n=${encodeURIComponent(name)}`;
+    }
+
+    if (!isEmpty(isClasses)) {
+      options.body += `&amp;ic=${encodeURIComponent(isClasses.join(','))}`;
+    }
+
+    if (!isEmpty(matchClasses)) {
+      options.body += `&amp;ic=${encodeURIComponent(matchClasses.join(','))}`;
+    }
+
+    if (!isEmpty(matchClasses)) {
+      options.body += `&amp;ic=${encodeURIComponent(matchClasses.join(','))}`;
+    }
+
+    if (!isNone(collection)) {
+      if (typeOf(collection) === 'string') {
+        collection = await this._collectionToId(collection);
+        if (!collection) return { count: 0, variables: [] };
+      }
+
+      options.body += `&amp;st=${encodeURIComponent(collection)}`;
+    }
+
+    // if (!isEmpty(groups)) {
+    //   if (groups.any(g => typeOf(g) === 'string')) {
+    //     groups = await this._groupsToIds(groups);
+    //     if (isEmpty(groups)) return { count: 0, variables: [] };
+    //   }
+
+    //   options.body += `&amp;gr=${groups.join(',')}`;
+    // }
+
+    // if (!isNone(equipment)) {
+    //   if (typeOf(equipment) === 'string') {
+    //     equipment = await this._equipmentToId(equipment);
+    //     if (!equipment) return { count: 0, variables: [] };
+    //   }
+
+    //   options.body += `&amp;eq=${equipment}`;
+    // }
+
+    // if (!isNone(zone)) {
+    //   if (typeOf(zone) === 'string') {
+    //     zone = await this._zoneToId(zone);
+    //     if (!zone) return { count: 0, variables: [] };
+    //   }
+
+    //   options.body += `&amp;zo=${zone}`;
+    // }
+
+    const { count, items } = await this.ajax.fetchJson({ url, options });
+    const variables = [];
+
+    for (const item of items) {
+      try {
+        variables.push(this._deserializeWosVariable({ data: item }));
+      } catch (e) {
+        logger.error('[RedyStore][_searchWosVariables] error during parse resource.', item, e.message || e);
+      }
+    }
+
+    return { count, variables };
+  }
+
+  @authenticatedRequest
+  async loadFluxDatas() {
+    let url = `${this.host.domain}/${this.host.namespace}/flux/datas`;
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    return await this.ajax.fetchJson({ url, options });
+  }
+
+  @authenticatedRequest
+  async searchWosVariables({
+    path,
+    name,
+    isClasses,
+    matchClasses,
+    collection,
+    // groups,
+    // equipment,
+    // zone,
+    take,
+    skip,
+  }) {
+    return await this._searchWosVariables({
+      path,
+      queryOptions: `${OMNI},${CONSTANTS},P,G,GP`,
+      depth: 0,
+      name,
+      isClasses,
+      matchClasses,
+      collection,
+      // groups,
+      // equipment,
+      // zone,
+      take,
+      skip,
+    });
+  }
+
+  @authenticatedRequest
+  async searchRessources({
+    path,
+    name,
+    isClasses,
+    matchClasses,
+    collection,
+    // groups,
+    // equipment,
+    // zone,
+    take,
+    skip,
+  }) {
+    return await this.searchWosVariables({
+      path,
+      name,
+      isClasses: [62, ...(isEmpty(isClasses) ? [] : isClasses)],
+      matchClasses,
+      collection,
+      // groups,
+      // equipment,
+      // zone,
+      take,
+      skip,
+    });
+  }
+
+  @authenticatedRequest
+  async loadWosVariable(path, subPaths = []) {
+    logger.debug('loadWosVariable', path, subPaths.length);
+
+    try {
+      return await this._loadWosVariable({ path, subPaths, queryOptions: `${OMNI},${CONSTANTS},G,GP` });
+    } catch (error) {
+      logger.error('[RedyStore][loadWosVariable] error during loading WOS Variable.', error);
+      throw error;
+    }
+  }
+
+  @authenticatedRequest
+  async refreshWosVariable(path, subPaths = []) {
+    logger.debug('refreshWosVariable', path, subPaths.length);
+
+    let variable = this._wosVariablesRegister.findByKey(path);
+    assert(`[RedyStore][refreshWosVariable] variable not found ${path}`, variable);
+
+    try {
+      return await this._loadWosVariable({
+        path,
+        subPaths,
+        queryOptions: OMNI
+      });
+    } catch (error) {
+      logger.error('[RedyStore][refreshWosVariable] error during refresh WOS Variable.', error);
+      throw error;
+    }
+  }
+
+  async _loadWosVariableChildren(path, options) {
+    assert('[RedyStore][loadWosVariableChildren] path is required', path);
+    return await this._loadWosVariable({ path, queryOptions: options, queryDepth: 3 });
+  }
+
+  @authenticatedRequest
+  async loadWosVariableChildren(path) {
+    logger.debug('loadWosVariableChildren', path);
+
+    try {
+      return await this._loadWosVariableChildren(path, `${OMNI},${CONSTANTS},G,GP`);
+    } catch (error) {
+      logger.error('[RedyStore][loadWosVariableChildren] error during loading WOS Variable children.', error);
+      throw error;
+    }
+  }
+
+  @authenticatedRequest
+  async refreshWosVariableChildren(path) {
+    logger.debug('refreshWosVariableChildren', path);
+    assert('[RedyStore][refreshWosVariableChildren] path is required', path);
+
+    try {
+      return await this._loadWosVariableChildren(path, `${OMNI}`);
+    } catch (error) {
+      logger.error('[RedyStore][refreshWosVariableChildren] error during loading WOS Variable children.', error);
+      throw error;
+    }
+  }
+
+  childrenOfVariable(variable) {
+    return [...variable.childLabels.values()]
+      .map(label => this.getWosVariable(`${variable.path}${variable.path === ':' ? '' : '.'}${label}`))
+      .filter(c => c);
+  }
+
+  @authenticatedRequest
+  async writeWosVariableValue(path) {
+    logger.debug('writeWosVariableValue', path);
+    assert('[RedyStore][writeWosVariableValue] path is required', path);
+    let variable = this._wosVariablesRegister.findByKey(path);
+    assert(`[RedyStore][writeWosVariableValue] variable not found ${path}`, variable);
+
+    if (!variable) {
+      const error = new CannotWriteError();
+      error.details = '[RedyStore][writeWosVariableValue] cannot write value on this unknown variable.';
+      throw error;
+    }
+
+    if (!variable.canWrite) {
+      const error = new CannotWriteError();
+      error.details = '[RedyStore][writeWosVariableValue] cannot write value on this variable.';
+      throw error;
+    }
+
+    const url = `${this.host.domain}/${this.host.namespace}/wos/put`;
+    const options = {
+      method: 'PUT',
+      headers: this.authenticatedHeader,
+      body: `value=${encodeURIComponent(variable.value)}&amp;path=${path}`
+    };
+
+    options.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+
+    try {
+      const data = await this.ajax.fetchJson({ url, options });
+      if (hasOwnProperty(data, 'v') &amp;&amp; hasOwnProperty(data, 'i') &amp;&amp; data.i === variable.redyID) {
+        variable.value = data.v;
+      }
+
+      return variable;
+    } catch (error) {
+      logger.error('[RedyStore][writeWosVariableValue] error during save WOS Variable.', error);
+      throw error;
+    }
+  }
+
+  @authenticatedRequest
+  async fetchHostInfo(refreshHostPicture = false) {
+    logger.debug('fetchHost');
+    try {
+      await this.loadWosVariable(':System', [
+        ':System.Id',
+        ':System.Identity',
+        ':System.RootPath',
+        ':System.HostingRootDirName',
+        ':System.OnPremisesEnabled',
+        ':System.Hard',
+        ':System.SoftwareVersion',
+        ':System.OptAdd',
+        ':System.OptProfil',
+      ]);
+      const system = this.getWosVariable(':System');
+      const wid = this.getWosVariable(':System.Id');
+      const identity = this.getWosVariable(':System.Identity');
+      const rootPath = this.getWosVariable(':System.RootPath');
+      const hostingRootDirName = this.getWosVariable(':System.HostingRootDirName');
+      const hard = this.getWosVariable(':System.Hard');
+      const onPremisesEnabled = this.getWosVariable(':System.OnPremisesEnabled');
+      const softwareVersion = this.getWosVariable(':System.SoftwareVersion');
+
+      const riaUrl = (isNone(rootPath.value) || onPremisesEnabled.value === true)
+        ? this.host.domain : rootPath.value;
+
+      const version = this._normalizeVersion(softwareVersion.value);
+
+      this.host._wid = wid.value;
+      this.host._name = identity.value;
+      this.host._type = version.type;
+      this.host._version = version.version;
+      this.host._versionDate = version.date;
+      this.host._hard = hard.value;
+      this.host._riaUrl = riaUrl + hostingRootDirName.value;
+
+      if (this.host.version.match(/v13/)) {
+        const optAdd = this.getWosVariable(':System.OptAdd');
+        const optProfil = this.getWosVariable(':System.OptProfil');
+
+        if (optAdd) {
+          const addStrs = optAdd.value.split('|');
+          this.host._optAdds = {};
+          if (addStrs.length >= 0) {
+            addStrs.forEach(addStr => {
+              const kv = addStr.split(':');
+              if (kv.length === 2) {
+                this.host._optAdds[kv[0]] = kv[1];
+              }
+            })
+          }
+        }
+
+        if (optProfil) {
+          this.host._profil = optProfil.value;
+        }
+      }
+
+      await this._setupHostPicture(this.host, system.date, refreshHostPicture);
+
+      return system;
+    } catch (error) {
+      logger.error('[RedyStore][fetchHostInfo] error during loading host info.', error);
+      throw error;
+    }
+  }
+
+  async _setupHostPicture(host, date, refreshHostPicture = false) {
+    if (host.type === 'e@sy-Pilot') {
+      host._picture = hostPilotLogo;
+    } else {
+      try {
+        // TODO ne pas mettre de critère de date mais donner un bouton de refresh
+        const pictureSrc = `${host.domain}/easy/GUI/Skins/Default/SiteLogo?${moment().startOf(refreshHostPicture ?'second' : 'month').valueOf()+ (date ? date : '')}_${location.host}`;
+        host._picture = await this.resizePicture.resize(pictureSrc, { width: 200, height: 200 });
+      } catch (e) {
+        logger.warn('[RedyStore][fetchHostInfo] error during loading host logo.', e.message || e);
+      }
+    }
+  }
+
+  _normalizeVersion(version) {
+    const v = { date: null, version: '', type: null }
+    if (!version) return v;
+    const split = version.split(' ');
+    if (split.length > 2) {
+      v.date = moment(split[2], "DD/MM/YYYY");
+      if (v.date.isValid()) {
+        v.version = split[1];
+      } else if (split.length > 3) {
+        v.date = moment(split[3], "DD/MM/YYYY");
+        if (!v.date.isValid()) {
+          v.date = null;
+        }
+        v.version = split[2];
+      }
+    }
+    v.type = split[0];
+    return v;
+  }
+
+  @authenticatedRequest
+  async loadWosEvents({
+    originPath,
+    originID,
+    dateMin,
+    dateMax,
+    sortedField = 'd',
+    isSortAscending = false,
+    groups,
+    equipment,
+    zone,
+    collection,
+    pendingOnly = false,
+    take = 10,
+    skip = 0,
+  }) {
+
+    const params = [
+      `sf=${sortedField}`,
+      `sa=${isSortAscending}`,
+      `po=${pendingOnly}`,
+      `et=${encodeURIComponent('a,d,o,s,u')}`,
+      `o=all`,
+      `t=${take}`,
+      `s=${skip}`,
+    ];
+
+    if (originPath) {
+      params.push(`op=${encodeURIComponent(originPath)}`);
+    }
+
+    if (originID) {
+      params.push(`oi=${originID}`);
+    }
+
+    if (dateMin) {
+      params.push(`dmin=${dateMin}`);
+    }
+
+    if (dateMax) {
+      params.push(`dmax=${dateMax}`);
+    }
+
+    if (!isEmpty(groups)) {
+      if (groups.any(g => typeOf(g) === 'string')) {
+        groups = await this._groupsToIds(groups);
+        if (isEmpty(groups)) return { count: 0, events: [] };
+      }
+
+      params.push(`gr=${groups.join(',')}`);
+    }
+
+    if (!isNone(equipment)) {
+      if (typeOf(equipment) === 'string') {
+        equipment = await this._equipmentToId(equipment);
+        if (!equipment) return { count: 0, events: [] };
+      }
+
+      params.push(`eq=${equipment}`);
+    }
+
+    if (!isNone(zone)) {
+      if (typeOf(zone) === 'string') {
+        zone = await this._zoneToId(zone);
+        if (!zone) return { count: 0, events: [] };
+      }
+
+      params.push(`zo=${zone}`);
+    }
+
+    if (!isNone(collection)) {
+      if (typeOf(collection) === 'string') {
+        collection = await this._collectionToId(collection);
+        if (!collection) return { count: 0, events: [] };
+      }
+
+      params.push(`st=${collection}`);
+    }
+
+    let url = `${this.host.domain}/${this.host.namespace}/jrnl/search`;
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+      method: 'POST',
+      body: `${params.join('&amp;')}`
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    const data = await this.ajax.fetchJson({ url, options });
+    return this._deserializeWosEvents(data);
+  }
+
+  @authenticatedRequest
+  async ackEvent(event) {
+    const {
+      id,
+      todo,
+    } = event;
+    assert('[RedyStore][ackEvent] eventID is required', id);
+
+    const params = [
+      `i=${id}`,
+      `ak=true`,
+      `o=all`,
+    ];
+
+    if (!isEmpty(todo)) {
+      params.push(`n=${encodeURIComponent(todo)}`);
+    }
+
+    let url = `${this.host.domain}/${this.host.namespace}/jrnl/put`;
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+      method: 'PUT',
+      body: `${params.join('&amp;')}`
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    const data = await this.ajax.fetchJson({ url, options });
+    WosEvent.serializer.deserialize(event, data);
+    return event;
+  }
+
+  _deserializeWosEvents(responseData) {
+    // const count = responseData.count
+    const eventsData = responseData.events;
+    const events = [];
+    const count = responseData.count;
+    for (const eventData of eventsData) {
+      events.push(this._deserializeWosEvent(eventData));
+    }
+
+    return { count, events };
+  }
+
+  _deserializeWosEvent(eventData) {
+    let event = new WosEvent();
+    WosEvent.serializer.deserialize(event, eventData);
+    return event;
+  }
+
+  @authenticatedRequest
+  async searchReflectEvents({
+    reflectPath,
+    dateFrom,
+    dateTo,
+    searchText,
+    reflectType,
+    isSortAscending = false,
+    groups,
+    equipment,
+    zone,
+    collection,
+    pendingOnly = false,
+    take = 10,
+    skip = 0,
+  }) {
+
+    const params = [
+      `sortAscending=${isSortAscending}`,
+      `pendingOnly=${pendingOnly}`,
+      `eventType=${encodeURIComponent('appearance,disappearance,oneshot,system')}`,
+      `take=${take}`,
+      `skip=${skip}`,
+    ];
+
+    if (reflectPath) {
+      params.push(`reflectionPath=${encodeURIComponent(reflectPath)}`);
+    }
+
+    if (searchText) {
+      params.push(`reflectionName=${encodeURIComponent(searchText)}`);
+    }
+
+    if (reflectType) {
+      params.push(`reflectionType=${encodeURIComponent(reflectType)}`);
+    }
+
+    if (dateFrom) {
+      params.push(`dateFrom=${dateFrom}`);
+    }
+
+    if (dateTo) {
+      params.push(`dateTo=${dateTo}`);
+    }
+
+    if (groups &amp;&amp; !isEmpty(groups)) {
+      groups = await this._groupsToIds(groups);
+      if (isEmpty(groups)) return { count: 0, events: [] };
+      params.push(`groups=${groups.join(',')}`);
+    }
+
+    if (!isNone(equipment)) {
+      equipment = await this._equipmentToId(equipment);
+      if (!equipment) return { count: 0, events: [] };
+      params.push(`equipment=${equipment}`);
+    }
+
+    if (!isNone(zone)) {
+      zone = await this._zoneToId(zone);
+      if (!zone) return { count: 0, events: [] };
+      params.push(`zone=${zone}`);
+    }
+
+    if (!isNone(collection)) {
+      collection = await this._collectionToId(collection);
+      if (!collection) return { count: 0, events: [] };
+      params.push(`set=${collection}`);
+    }
+
+    let url = `${this.host.domain}/${this.host.namespace}/reflections/eventlog`;
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+      method: 'POST',
+      body: `${params.join('&amp;')}`
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    const data = await this.ajax.fetchJson({ url, options });
+    return this._deserializeReflectEvents(data);
+  }
+
+  _deserializeReflectEvents(responseData) {
+    // const count = responseData.count
+    const eventsData = responseData.events;
+    const events = [];
+    const count = responseData.count;
+    for (const eventData of eventsData) {
+      events.push(this._deserializeReflectEvent(eventData));
+    }
+
+    return { count, events };
+  }
+
+  _deserializeReflectEvent(eventData) {
+    let event = new ReflectEvent();
+    ReflectEvent.serializer.deserialize(event, eventData);
+    return event;
+  }
+
+  getReflect(path) {
+    return this._reflectsRegister.findByKey(path);
+  }
+
+  getReflectByRedyID(redyID) {
+    return this._reflectsRegister.findByRedyID(redyID);
+  }
+
+  @authenticatedRequest
+  async searchReflects({
+    ids,
+    searchText,
+    reflectType,
+    zone,
+    collection,
+    pendingOnly = false,
+    take = 10,
+    skip = 0,
+  }) {
+
+    const params = [
+      `pendingOnly=${pendingOnly}`,
+      `take=${take}`,
+      `skip=${skip}`,
+    ];
+
+    if (searchText) {
+      params.push(`name=${encodeURIComponent(searchText)}`);
+    }
+
+    if (reflectType) {
+      params.push(`reflectionType=${encodeURIComponent(reflectType)}`);
+    }
+
+    if (!isNone(zone)) {
+      zone = await this._zoneToId(zone);
+      if (!zone) return { count: 0, reflects: [] };
+      params.push(`zone=${zone}`);
+    }
+
+    if (!isNone(collection)) {
+      collection = await this._collectionToId(collection);
+      if (!collection) return { count: 0, reflects: [] };
+      params.push(`set=${collection}`);
+    }
+
+    if (!isEmpty(ids)) {
+      params.push(`ids=${encodeURIComponent(ids.join(','))}`);
+    }
+
+    let url = `${this.host.domain}/${this.host.namespace}/reflections`;
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+      method: 'POST',
+      body: `${params.join('&amp;')}`
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    const responseData = await this.ajax.fetchJson({ url, options });
+    return this._deserializeReflects(responseData);
+  }
+
+  @authenticatedRequest
+  async searchReflectValues({
+    ids,
+    searchText,
+    reflectType,
+    zone,
+    collection,
+    pendingOnly = false,
+    take = 10,
+    skip = 0,
+  }) {
+
+    const params = [
+      `pendingOnly=${pendingOnly}`,
+      `take=${take}`,
+      `skip=${skip}`,
+    ];
+
+    if (searchText) {
+      params.push(`name=${encodeURIComponent(searchText)}`);
+    }
+
+    if (reflectType) {
+      params.push(`reflectionType=${encodeURIComponent(reflectType)}`);
+    }
+
+    if (!isNone(zone)) {
+      zone = await this._zoneToId(zone);
+      if (!zone) return { count: 0, reflects: [] };
+      params.push(`zone=${zone}`);
+    }
+
+    if (!isNone(collection)) {
+      collection = await this._collectionToId(collection);
+      if (!collection) return { count: 0, reflects: [] };
+      params.push(`set=${collection}`);
+    }
+
+    if (!isEmpty(ids)) {
+      params.push(`ids=${encodeURIComponent(ids.join(','))}`);
+    }
+
+    let url = `${this.host.domain}/${this.host.namespace}/reflections/values`;
+
+    const options = {
+      headers: { ...this.authenticatedHeader },
+      method: 'POST',
+      body: `${params.join('&amp;')}`
+    };
+
+    options.headers['Accept-Encoding'] = 'gzip';
+
+    const responseData = await this.ajax.fetchJson({ url, options });
+    return this._deserializeReflectValues(responseData);
+  }
+
+  _deserializeReflects(responseData) {
+    const reflectDatas = responseData.items;
+    const reflects = [];
+    const count = responseData.count;
+    for (const reflectData of reflectDatas) {
+      try {
+        reflects.push(this._deserializeReflect(reflectData));
+      } catch (error) {
+        logger.error(`[RedyStore][_deserializeReflects]`, error, reflectData);
+      }
+    }
+
+    return { count, reflects };
+  }
+
+  _deserializeReflect(reflectData) {
+    // reflectData.path dans l'ancien schema
+    let reflect = this.getReflect(reflectData.label || reflectData.path);
+    if (reflect) {
+      // TODO pb si changement de type dynamiquement!
+      // reflect.serializer.deserialize(reflect, reflectData);
+    } else {
+
+      const Reflect = hasOwnProperty(ReflectTypes, reflectData.type) ? ReflectTypes[reflectData.type] : ReflectTypes.unknown;
+
+      // case 'analog':
+      // case 'analog_thresholds':
+      // case 'digital':
+      // case 'text':
+      // case 'state':
+      // case 'agenda':
+      // case 'dailyPlanning':
+      // case 'setpoint_list':
+
+      reflect = new Reflect();
+      Reflect.serializer.deserialize(reflect, reflectData);
+      this._reflectsRegister.record({ record: reflect });
+    }
+
+    return reflect;
+  }
+
+  _deserializeReflectValues(responseData) {
+    const reflectValueDatas = responseData.items;
+    const reflects = [];
+    const count = responseData.count;
+    for (const reflectValueData of reflectValueDatas) {
+      try {
+        const reflect = this.getReflectByRedyID(reflectValueData.id);
+        if (!reflect) continue;
+        reflect.serializer.deserializeValue(reflect, reflectValueData);
+        reflects.push(reflect);
+      } catch (error) {
+        logger.error(`[RedyStore][_deserializeReflectValues]`, error, reflectValueData);
+      }
+    }
+
+    return { count, reflects };
+  }
+
+  @authenticatedRequest
+  async commandReflect(reflect) {
+
+    assert('[RedyStore][commandReflect] reflect is required', reflect);
+
+    if (!reflect.canCommand) {
+      const error = new CannotWriteError();
+      error.details = '[RedyStore][commandReflect] cannot command reflect.';
+      throw error;
+    }
+
+    const command = reflect._commandToArgs(reflect.command);
+    const url = `${this.host.domain}/${this.host.namespace}/reflections/value`;
+    const options = {
+      method: 'PUT',
+      headers: this.authenticatedHeader,
+      body: JSON.stringify({
+        id: reflect.redyID,
+        command,
+      }),
+    };
+
+    try {
+      await this.ajax.fetchJson({ url, options });
+      return await (new Promise(resolve => {
+        setTimeout(async () => {
+          return resolve(await this.searchReflectValues({ ids: [reflect.redyID] }));
+        }, 2000);
+      }));
+    } catch (error) {
+      logger.error('[RedyStore][commandReflect] error during command reflect.', error);
+      throw error;
+    }
+
+  }
+
+  async _collectionToId(collection) {
+    // on va chercher l'id de l'ensemble correspondant.
+    try {
+      const variable = await this.findWosVariable(`:easy.Set.${collection}`);
+      collection = variable.redyID;
+    } catch (e) {
+      logger.error('[RedyStore][_collectionToId], cannot retrieve collection! skip.', collection, e.message || e);
+      collection = null;
+    }
+    return collection;
+  }
+
+  async _zoneToId(zone) {
+    // on va chercher l'id de la zone correspondante.
+    try {
+      const variable = await this.findWosVariable(`:System.Attribute.Zone.${zone}`);
+      zone = variable.redyID;
+    } catch (e) {
+      logger.error('[RedyStore][_zoneToId], cannot retrieve zone! Skip.', zone, e.message || e);
+      zone = null;
+    }
+    return zone;
+  }
+
+  async _equipmentToId(equipment) {
+    // on va chercher l'id de l'équipement correspondant.
+    try {
+      const variable = await this.findWosVariable(`:System.Attribute.Equipment.${equipment}`);
+      equipment = variable.redyID;
+    } catch (e) {
+      logger.error('[RedyStore][_equipmentToId], cannot retrieve equipment! Skip.', equipment, e.message || e);
+      equipment = null;
+    }
+    return equipment;
+  }
+
+  async _groupsToIds(groups) {
+    const groupIds = [];
+    for (const group of groups) {
+      if (group === null) {
+        groupIds.push(group);
+        continue;
+      }
+
+      // on va chercher l'id du groupe correspondant.
+      try {
+        const variable = await this.findWosVariable(`:System.Attribute.Group.${group}`);
+        if (variable) {
+          groupIds.push(variable.redyID);
+        }
+      } catch (e) {
+        logger.error('[RedyStore][_groupsToIds], cannot retrieve group! Skip.', group, e.message || e);
+      }
+    }
+
+    groups = groupIds;
+    return groups;
+  }
+
+  clearAll() {
+    this._wosVariablesRegister.clear();
+    this._reflectsRegister.clear();
+  }
+}
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 20th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

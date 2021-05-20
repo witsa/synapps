@@ -1,0 +1,708 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui/addon/components/synapp.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.CompositeProperties.html">Actor.CompositeProperties</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Actor.Input.RadioList.html">Actor.Input.RadioList</a></li>
+											<li><a href="Actor.Input.RadioListProperties.html">Actor.Input.RadioListProperties</a></li>
+											<li><a href="Actor.Input.SwitchButton.html">Actor.Input.SwitchButton</a></li>
+											<li><a href="Actor.Input.SwitchButtonProperties.html">Actor.Input.SwitchButtonProperties</a></li>
+											<li><a href="Actor.Input.SwitchImage.html">Actor.Input.SwitchImage</a></li>
+											<li><a href="Actor.Input.SwitchImageProperties.html">Actor.Input.SwitchImageProperties</a></li>
+											<li><a href="Actor.Input.TextArea.html">Actor.Input.TextArea</a></li>
+											<li><a href="Actor.Input.TextAreaProperties.html">Actor.Input.TextAreaProperties</a></li>
+											<li><a href="Actor.Input.TextBox.html">Actor.Input.TextBox</a></li>
+											<li><a href="Actor.Input.TextBoxProperties.html">Actor.Input.TextBoxProperties</a></li>
+											<li><a href="Actor.Layout.BaseLayout.html">Actor.Layout.BaseLayout</a></li>
+											<li><a href="Actor.Layout.BaseLayoutProperties.html">Actor.Layout.BaseLayoutProperties</a></li>
+											<li><a href="Actor.Layout.Canvas.html">Actor.Layout.Canvas</a></li>
+											<li><a href="Actor.Layout.CanvasProperties.html">Actor.Layout.CanvasProperties</a></li>
+											<li><a href="Actor.Layout.Modal.html">Actor.Layout.Modal</a></li>
+											<li><a href="Actor.Layout.ModalProperties.html">Actor.Layout.ModalProperties</a></li>
+											<li><a href="Actor.Layout.Stack.html">Actor.Layout.Stack</a></li>
+											<li><a href="Actor.Layout.StackProperties.html">Actor.Layout.StackProperties</a></li>
+											<li><a href="Actor.Layout.ViewBox.html">Actor.Layout.ViewBox</a></li>
+											<li><a href="Actor.Layout.ViewBoxProperties.html">Actor.Layout.ViewBoxProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.Parenthood.html">Behavior.Parenthood</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.Stage.html">Behavior.Stage</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="REDY.Synapps.RedyStore.html">REDY.Synapps.RedyStore</a></li>
+											<li><a href="Synapps.Ajax.html">Synapps.Ajax</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Actor.Layout.html">Actor.Layout</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/components/synapp.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">/* eslint-disable ember/no-empty-glimmer-component-classes */
+import { assert, runInDebug } from '@ember/debug';
+import { action, notifyPropertyChange } from '@ember/object';
+import { alias, readOnly } from '@ember/object/computed';
+import { inject as service } from '@ember/service';
+import { isEmpty } from '@ember/utils';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import logger from 'logger';
+import UserAgent from 'synapps-ui/bases/user-agent';
+import SourceOfInternalBinding from 'synapps-ui/behaviors/source-of-internal-binding';
+import V1EventScript from 'synapps-ui/behaviors/v1-event-script';
+import InternalBinding from 'synapps-ui/bindings/internal';
+
+const arrayToGenerator = function*(collection) {
+  yield* collection;
+}
+
+@SourceOfInternalBinding
+@V1EventScript
+class BaseSynappComponent extends Component {}
+
+/**
+ * La scène.
+ * @class Synapps.Synapp
+ * @extends Behavior.SourceOfInternalBinding
+ */
+export default class Synapp extends BaseSynappComponent {
+
+  @service
+  router;
+
+  /**
+   * Obtient les magasins de donnée.
+   * @member Synapps.Synapp#dataStores
+   * @readonly
+   * @type {Object}
+   */
+  @service('data-stores')
+  dataStores;
+
+  /**
+   * Obtient le Setup de la synapp.
+   * @member Synapps.Synapp#setup
+   * @readonly
+   * @type {JSON.SynappSetup}
+   */
+  get setup() {
+    return this.args.setup;
+  }
+
+  /**
+   * Obtient les couleurs en librairie.
+   * @member Synapps.Synapp#colors
+   * @readonly
+   * @type {Object}
+   */
+  get colors() {
+    return this.setup.colors;
+  }
+
+  /**
+   * Obtient les textes en librairie.
+   * @member Synapps.Synapp#texts
+   * @readonly
+   * @type {Object}
+   */
+  get texts() {
+    return this.setup.texts;
+  }
+
+  /**
+   * Obtient les constantes en librairie.
+   * @member Synapps.Synapp#constants
+   * @readonly
+   * @type {Object}
+   */
+  get constants() {
+    return this.setup.constants;
+  }
+
+  /**
+   * Obtient les images en librairie.
+   * @member Synapps.Synapp#pictures
+   * @readonly
+   * @type {Object}
+   */
+  get pictures() {
+    return this.setup.pictures;
+  }
+
+  /**
+   * Obtient le nom de la synapp.
+   * @member Synapps.Synapp#name
+   * @readonly
+   * @type {Object}
+   */
+  get name() {
+    return this.setup.name;
+  }
+
+
+  /**
+   * Obtient la version de la synapp.
+   * @member Synapps.Synapp#version
+   * @readonly
+   * @type {Object}
+   */
+  get version() {
+    return this.setup.version;
+  }
+
+  /**
+   * Obtient le logo de la synapp.
+   * @member Synapps.Synapp#logo
+   * @readonly
+   * @type {Object}
+   */
+  get logo() {
+    return this.setup.pictureSrc;
+  }
+
+  /**
+   * Obtient les icons de la synapp.
+   * @member Synapps.Synapp#icons
+   * @readonly
+   * @type {Object}
+   */
+  get icons() {
+    return this.setup.icons;
+  }
+
+  get dataSourceSetups() {
+    return this.setup.dataSourceSetups;
+  }
+
+  _backstageSetup;
+  get backstageSetup() {
+    return this._backstageSetup;
+  }
+
+  /**
+   * Obtient la scène d'arrière plan de la synapp.
+   * @member Synapps.Synapp#backstage
+   * @readonly
+   * @type {Synapps.Scène}
+   */
+  _backstage;
+  get backstage() {
+    return this._backstage;
+  }
+
+  @tracked
+  _isBackstageReady = false;
+
+  @tracked
+  _isIncludesLoaded = false;
+
+  /**
+   * Obtient l'[afficheur]{@link Synapps.UserAgent}.
+   * @member Synapps.Synapp#userAgent
+   * @readonly
+   * @type {Synapps.UserAgent}
+   */
+  userAgent = new UserAgent();
+
+  /**
+   * Obtient vrai si la scène s'éxecute dans Synapps Studio.
+   * @member Synapps.Synapp#isInStudio
+   * @readonly
+   * @type {boolean}
+   */
+  get isInStudio() {
+    return Boolean(this.setup.isInStudio);
+  }
+
+  /**
+   * Obtient vrai si la scène s'éxecute dans un runtime en mode DEBUG.
+   * @member Synapps.Synapp#isInDebug
+   * @readonly
+   * @private
+   * @type {boolean}
+   */
+  _isInDebug = false;
+  get isInDebug() {
+    return this._isInDebug;
+  }
+
+  /**
+   * Obtient vrai si la scène s'éxecute dans un designer de Synapps Studio.
+   * @member Synapps.Synapp#isInDesigner
+   * @readonly
+   * @type {boolean}
+   */
+  _isInDesigner = false;
+  get isInDesigner() {
+    return this._isInDesigner;
+  }
+
+  /**
+   * Obtient ou définit la couleur d'arrière plan de la synapp.
+   * @member Synapps.Synapp#backgroundColor
+   * @type {CssColorString}
+   */
+  get backgroundColor() {
+    return this.setup.backgroundColor;
+  }
+
+  set backgroundColor(value) {
+    this.setup.backgroundColor = value;
+    notifyPropertyChange(this, 'backgroundColor');
+  }
+
+  /**
+   * Obtient ou définit la couleur de police de la synapp.
+   * @member Synapps.Synapp#color
+   * @type {CssColorString}
+   */
+  get color() {
+    return this.setup.color;
+  }
+
+  set color(value) {
+    this.setup.color = value;
+    notifyPropertyChange(this, 'color');
+  }
+
+  __cssIncludes = null;
+  get _cssIncludes() {
+    if (!this.__cssIncludes) {
+      this.__cssIncludes = this.setup.includes.filterBy('type', 'css');
+    }
+
+    return this.__cssIncludes;
+  }
+
+  __jsIncludes = null;
+  get _jsIncludes() {
+    if (!this.__jsIncludes) {
+      this.__jsIncludes = this.setup.includes.filterBy('type', 'js');
+    }
+
+    return this.__jsIncludes;
+  }
+
+  __cssIncludesIterator = null;
+  get _cssIncludesIterator() {
+    if (!this.__cssIncludesIterator) {
+      this.__cssIncludesIterator = arrayToGenerator(this._cssIncludes);
+    }
+
+    return this.__cssIncludesIterator;
+  }
+
+  __jsIncludesIterator = null;
+  get _jsIncludesIterator() {
+    if (!this.__jsIncludesIterator) {
+      this.__jsIncludesIterator = arrayToGenerator(this._jsIncludes);
+    }
+
+    return this.__jsIncludesIterator;
+  }
+
+  constructor(owner, args) {
+    super(owner, args);
+    assert('[Synapp][constructor] setup is required.', args.setup);
+
+    runInDebug(() => {
+      this._isInDebug = true;
+    });
+
+    this._backstageSetup = {
+      key: 'backupStage',
+      leadActor: JSON.stringify({
+        key: 'root',
+        type: 'layout/stack',
+        children: args.setup.dataSourceSetups
+      })
+    };
+
+    if (args.setSynapp) {
+      args.setSynapp(this);
+    }
+  }
+
+  @action
+  _onIncludeLoad(include) {
+    include.isLoaded = true;
+    logger.debug('_onIncludeLoad', include.fileName);
+  }
+
+  @action
+  _onIncludeLoadError(include, error) {
+    include.isLoaded = false;
+    include.error = error;
+    logger.error('_onIncludeLoadError', include.fileName, error);
+  }
+
+  _iterateJsFileSetup(element) {
+    let fileSetup = this._jsIncludesIterator.next().value;
+    if (!fileSetup) {
+      logger.debug('isIncludesLoaded');
+      this._isIncludesLoaded = true;
+      return;
+    }
+
+    logger.debug('fileSetup:', fileSetup);
+    if (fileSetup.isRemote) {
+      const script = document.createElement('script');
+      script.src = fileSetup.url;
+      script.addEventListener('load', () => {
+        this._onIncludeLoad(fileSetup);
+        this._iterateJsFileSetup(element);
+      });
+      script.addEventListener('error', error => {
+        this._onIncludeLoadError(fileSetup, error);
+        this._iterateJsFileSetup(element);
+      });
+      element.append(script);
+    } else {
+      try {
+        const ID = `http://synapps-includes/${fileSetup.fileName}`;
+        const fx = new Function(`${fileSetup.content}\n//# sourceURL=${ID}`);
+        fx();
+        element.append(document.createComment(`includes - ${ID}`));
+        this._onIncludeLoad(fileSetup);
+      } catch (error) {
+        this._onIncludeLoadError(fileSetup, error);
+      } finally {
+        this._iterateJsFileSetup(element);
+      }
+    }
+  }
+
+  @action
+  _onDidInsertJsIncludesElement(element) {
+    this._iterateJsFileSetup(element);
+  }
+
+  @action
+  _onBackstageLeadActorDidRender(leadActor) {
+    this._backstage = leadActor.stage;
+    this._isBackstageReady = true;
+  }
+
+  @action
+  _onWillRemoveComponent() {
+    if (this.args.setSynapp) {
+      this.args.setSynapp(null);
+    }
+  }
+
+  willDestroy() {
+    if (this.isDestroyed) return;
+    this._backstage = null;
+    super.willDestroy();
+  }
+
+  /**
+   * Navigue vers une scène et change ses paramètres.
+   * @todo Donner des exemples.
+   * @method Synapps.Scene#navigate
+   * @param {String} sceneKey
+   * @param {Object} sceneParams Paramètres de scène.
+   */
+  navigate(sceneKey, sceneParams) {
+    // aucune navigation en preview.
+    if (this.isInDesigner) return;
+    if (isEmpty(sceneKey)) {
+      this.router.transitionTo('synapps.synapp.index', this.setup.key);
+      return;
+    }
+
+    if (isEmpty(sceneParams)) {
+      this.router.transitionTo('synapps.synapp.scene', this.setup.key, sceneKey, {
+        queryParams: {
+          params: undefined,
+          sceneProps: undefined,
+        }
+      });
+      return;
+    }
+
+    this.router.transitionTo('synapps.synapp.scene', this.setup.key, sceneKey, {
+      queryParams: {
+        params: sceneParams,
+        sceneProps: undefined,
+      }
+    });
+
+  }
+
+  // [MIGRATION V1]
+
+  _getEventContextV1Class() {
+
+    const BaseClass = super._getEventContextV1Class();
+
+    const Class = class extends BaseClass {
+
+      @readOnly('_objectUi.setup.id')
+      id;
+
+      @readOnly('_objectUi.setup.key')
+      key;
+
+      @readOnly('_objectUi.setup.key')
+      label;
+
+      @readOnly('_objectUi.name')
+      name;
+
+      @readOnly('_objectUi.setup.pictureSrc')
+      logo;
+
+      @readOnly('_objectUi.setup.description')
+      description;
+
+      @alias('_objectUi.setup.sceneStartKey')
+      sceneStartKey;
+
+      @alias('_objectUi.setup.sceneStartKey')
+      sceneStartLabel;
+
+      @readOnly('_objectUi.userAgent._eventContextV1')
+      userAgent;
+
+      displayScene(sceneKey) {
+        this._objectUi.navigate(sceneKey);
+      }
+    };
+
+    return Class;
+  }
+
+}
+
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'synapp',
+  resolveSource: function resolveSource({ target }) {
+    return target.synapp;
+  }
+});
+
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'color',
+  resolveSource: function resolveSource({ target }) {
+    return target.synapp.colors;
+  }
+});
+
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'constant',
+  resolveSource: function resolveSource({ target }) {
+    return target.synapp.constants;
+  }
+});
+
+
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'picture',
+  resolveSource: function resolveSource({ target }) {
+    return target.synapp.pictures;
+  }
+});
+
+InternalBinding.registerInInternalSourceDefs({
+  sourceType: 'text',
+  resolveSource: function resolveSource({ target }) {
+    return target.synapp.texts;
+  }
+});
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 20th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

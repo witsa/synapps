@@ -1,0 +1,545 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui/addon/components/actors/layout/base-layout.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.CompositeProperties.html">Actor.CompositeProperties</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
+											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Actor.Input.RadioList.html">Actor.Input.RadioList</a></li>
+											<li><a href="Actor.Input.RadioListProperties.html">Actor.Input.RadioListProperties</a></li>
+											<li><a href="Actor.Input.SwitchButton.html">Actor.Input.SwitchButton</a></li>
+											<li><a href="Actor.Input.SwitchButtonProperties.html">Actor.Input.SwitchButtonProperties</a></li>
+											<li><a href="Actor.Input.SwitchImage.html">Actor.Input.SwitchImage</a></li>
+											<li><a href="Actor.Input.SwitchImageProperties.html">Actor.Input.SwitchImageProperties</a></li>
+											<li><a href="Actor.Input.TextArea.html">Actor.Input.TextArea</a></li>
+											<li><a href="Actor.Input.TextAreaProperties.html">Actor.Input.TextAreaProperties</a></li>
+											<li><a href="Actor.Input.TextBox.html">Actor.Input.TextBox</a></li>
+											<li><a href="Actor.Input.TextBoxProperties.html">Actor.Input.TextBoxProperties</a></li>
+											<li><a href="Actor.Layout.BaseLayout.html">Actor.Layout.BaseLayout</a></li>
+											<li><a href="Actor.Layout.BaseLayoutProperties.html">Actor.Layout.BaseLayoutProperties</a></li>
+											<li><a href="Actor.Layout.Canvas.html">Actor.Layout.Canvas</a></li>
+											<li><a href="Actor.Layout.CanvasProperties.html">Actor.Layout.CanvasProperties</a></li>
+											<li><a href="Actor.Layout.Modal.html">Actor.Layout.Modal</a></li>
+											<li><a href="Actor.Layout.ModalProperties.html">Actor.Layout.ModalProperties</a></li>
+											<li><a href="Actor.Layout.Stack.html">Actor.Layout.Stack</a></li>
+											<li><a href="Actor.Layout.StackProperties.html">Actor.Layout.StackProperties</a></li>
+											<li><a href="Actor.Layout.ViewBox.html">Actor.Layout.ViewBox</a></li>
+											<li><a href="Actor.Layout.ViewBoxProperties.html">Actor.Layout.ViewBoxProperties</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.Parenthood.html">Behavior.Parenthood</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.Stage.html">Behavior.Stage</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="REDY.Synapps.RedyStore.html">REDY.Synapps.RedyStore</a></li>
+											<li><a href="Synapps.Ajax.html">Synapps.Ajax</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Actor.Layout.html">Actor.Layout</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
+											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/components/actors/layout/base-layout.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { action, computed, notifyPropertyChange, set } from '@ember/object';
+import { readOnly } from '@ember/object/computed';
+import { isNone } from '@ember/utils';
+import { all } from 'rsvp';
+import BaseActor from 'synapps-ui/components/actors/base-actor';
+import Parenthood from 'synapps-ui/components/behaviors/parenthood';
+
+@Parenthood
+class ParenthoodBaseActor extends BaseActor {}
+
+/**
+ * Base pour les acteurs de disposition.
+ *
+ * @class Actor.Layout.BaseLayout
+ * @extends Behavior.Parenthood
+ * @extends Actor.BaseActor
+ * @private
+ */
+class LayoutBase extends ParenthoodBaseActor {
+
+  /**
+   * Obtient les propriétés de l'acteur.
+   * @member properties
+   * @memberof Actor.Layout.BaseLayout#
+   * @type {Actor.Layout.BaseLayoutProperties}
+   * @readonly
+   */
+
+  /**
+   * Obtient les setups des acteur enfants.
+   * @member childSetups
+   * @memberof Actor.Layout.BaseLayout#
+   * @readonly
+   * @type {Array.&lt;JSON.ActorSetup>}
+   */
+  get childSetups() {
+    return this.args.setup.children;
+  }
+
+  set childSetups(array) {
+    // TODO ça plante ça normalement il faut le virer
+    this.args.setup.children = array;
+  }
+
+  constructor(owner, args) {
+    super(owner, args);
+    if (!args.setup.children) {
+      args.setup.children = [];
+    }
+  }
+
+  /**
+   * Pour savoir s'il est possible d'ajouter un acteur.
+   * @member canAddActor
+   * @memberof Actor.Layout.BaseLayout#
+   * @readonly
+   * @type {boolean}
+   */
+  canAddActor() {
+    return !this.adding;
+  }
+
+  /**
+   * Pour savoir s'il est possible de retirer un acteur.
+   * @member canRemoveActor
+   * @memberof Actor.Layout.BaseLayout#
+   * @readonly
+   * @type {boolean}
+   */
+  canRemoveActor() {
+    return this.childSetups.length > 0;
+  }
+
+  /**
+   * Pour savoir s'il est possible de retirer tous les acteurs.
+   * @member canClearActors
+   * @memberof Actor.Layout.BaseLayout#
+   * @readonly
+   * @type {boolean}
+   */
+  canClearActors() {
+    return this.childSetups.length > 0;
+  }
+
+  @action
+  onAddedChildDidRender(childUi) {
+    super.onAddedChildDidRender.bind(super.this)(childUi);
+    if (this.adding) {
+      this.adding.actor = childUi;
+      this._doCascadeRender();
+      this.adding.gen.next().value;
+      this.adding = null;
+    }
+
+    if (this.addings) {
+      const adding = this.addings.findBy('key', childUi.key);
+      if (!adding) return;
+      adding.childUi = childUi;
+      adding.gen.next().value;
+    }
+  }
+
+  /**
+   * Déplace vers le haut un acteur enfant obtenu par sa clé.
+   * @method moveUpActor
+   * @memberof Actor.Layout.BaseLayout#
+   * @param {String} key Clé de l'acteur enfant à déplacer.
+   */
+  moveUpActor(key) {
+    const actorSetup = this.childSetups.findBy('key', key);
+    if (!actorSetup) return;
+    if (this.childSetups.firstObject === actorSetup) return;
+    const actorSetupIndex = this.childSetups.indexOf(actorSetup);
+    this.childSetups.splice(actorSetupIndex - 1, 2, actorSetup, this.childSetups[actorSetupIndex - 1]);
+    notifyPropertyChange(this, 'childSetups');
+    this._sendAllSizesToPreviewer();
+  }
+
+  /**
+   * Déplace vers le bas un acteur enfant obtenu par sa clé.
+   * @method moveDownActor
+   * @memberof Actor.Layout.BaseLayout#
+   * @param {String} key Clé de l'acteur enfant à déplacer.
+   */
+  moveDownActor(key) {
+    const actorSetup = this.childSetups.findBy('key', key);
+    if (!actorSetup) return;
+    if (this.childSetups.lastObject === actorSetup) return;
+    const actorSetupIndex = this.childSetups.indexOf(actorSetup);
+    this.childSetups.splice(actorSetupIndex, 2, this.childSetups[actorSetupIndex + 1], actorSetup);
+    notifyPropertyChange(this, 'childSetups');
+    this._sendAllSizesToPreviewer();
+  }
+
+  /**
+   * Ajoute un acteur enfant.
+   * L'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.
+   * Note: C'est le seul moyen de créer un acteur.
+   * @todo donner des exemples ou liens vers guide.
+   * @method addActor
+   * @memberof Actor.Layout.BaseLayout#
+   * @param {JSON.ActorSetup} actorSetup Setup JSON de l'acteur à ajouter.
+   * @param {Number} [atIndex] Position à laquelle l'acteur doit être ajouté.
+   * @async
+   * @returns {Promise&lt;Actor.BaseActor>} l'acteur créé
+   */
+  async addActor(actorSetup, atIndex) {
+
+    if (!this.canAddActor()) return;
+
+    const adding = {};
+
+    const layout = this;
+
+    adding.promise = new Promise(resolve => {
+      const generator = function*() {
+
+        /**
+         * Se produit lorsque un acteur est ajouté.
+         *
+         * @event onDidActorAdd
+         * @memberof Actor.Layout.BaseLayout#
+         * @param {Event.BaseContext} context Contexte de l'évènement.
+         * @param {Actor.BaseActor} context.addedActor Acteur ajouté.
+         */
+        layout.runEvent('onDidActorAdd', { addedActor: adding.actor });
+        layout._sendAllSizesToPreviewer();
+        return yield resolve(adding.actor);
+      }
+
+      adding.gen = generator();
+      if (isNone(atIndex)) {
+        this.childSetups.pushObject(actorSetup);
+      } else {
+        this.childSetups.insertAt(atIndex, actorSetup);
+      }
+    });
+
+    this.adding = adding;
+
+    return await this.adding.promise;
+  }
+
+  /**
+   * Ajoute une collection d'acteurs enfants.
+   * Les acteurs sont ajoutés à la fin de la liste.
+   * @todo donner des exemples ou liens vers guide.
+   * @method addActors
+   * @memberof Actor.Layout.BaseLayout#
+   * @param {Array.&lt;JSON.ActorSetup>} actorSetups Tableau des Setups JSON des acteurs à ajouter.
+   * @async
+   * @returns {Promise&lt;Array.&lt;Actor.BaseActor>>} le tableau des acteurs créés
+   */
+  async addActors(actorSetups) {
+
+    if (!this.canAddActor()) return;
+
+    const addings = [];
+    const layout = this;
+
+    addings.promise = null;
+
+    for (const actorSetup of actorSetups) {
+      const adding = {
+        key: actorSetup.key,
+      };
+
+      adding.promise = new Promise(resolve => {
+        const generator = function*() {
+          layout.runEvent('onDidActorAdd', { addedActor: adding.actor });
+          return yield resolve(adding.actor);
+        }
+
+        adding.gen = generator();
+      });
+
+      addings.push(adding);
+    }
+
+    addings.promise = all(addings.mapBy('promise'));
+
+    this.childSetups.pushObjects(actorSetups);
+
+    this.addings = addings;
+
+    await this.addings.promise;
+
+    const childUis = this.addings.mapBy('childUi');
+
+    this._doCascadeRender();
+
+    /**
+         * Se produit lorsque une collection d'acteurs est ajoutée.
+         *
+         * @event onDidActorsAdd
+         * @memberof Actor.Layout.BaseLayout#
+         * @param {Event.BaseContext} context Contexte de l'évènement.
+         * @param {Array.&lt;Actor.BaseActor>} context.addedActors Acteurs ajoutés.
+         */
+    layout.runEvent('onDidActorsAdd', { addedActors: childUis });
+    layout._sendAllSizesToPreviewer();
+
+    this.adding = null;
+
+    return childUis;
+  }
+
+  /**
+   * Retire un acteur enfant.
+   * @method removeActor
+   * @memberof Actor.Layout.BaseLayout#
+   * @param {String} actorKey Clé de l'acteur enfant à retirer.
+   */
+  removeActor(actorKey) {
+    if (!this.canRemoveActor()) return;
+    const childSetup = this.childSetups.findBy('key', actorKey);
+    if (!childSetup) return;
+    this.childSetups.removeObject(childSetup);
+    this._sendAllSizesToPreviewer();
+  }
+
+  /**
+   * Retire  tous les acteurs enfants.
+   * @method clearActors
+   * @memberof Actor.Layout.BaseLayout#
+   */
+  clearActors() {
+    if (!this.canClearActors()) return;
+    this.childSetups.clear();
+    set(this, 'childSetups', this.childSetups);
+    this._sendAllSizesToPreviewer();
+  }
+
+  _doComputeStyle({ properties, style = {}, isAlreadyWrite = false }) {
+    super._doComputeStyle({ properties, isAlreadyWrite, style });
+    this.styling.setupStyleKey(style, "overflowX", properties, isAlreadyWrite);
+    this.styling.setupStyleKey(style, "overflowY", properties, isAlreadyWrite);
+    return style;
+  }
+
+  // [MIGRATION V1]
+
+  _getEventContextV1Class() {
+
+    const BaseClass = super._getEventContextV1Class();
+
+    return class extends BaseClass {
+      @readOnly('_objectUi.isParent')
+      withChildren;
+
+      @computed('_objectUi.childUis.size')
+      get actors() {
+        return [...this._objectUi.childUis].mapBy('_eventContextV1');
+      }
+
+      findByKey(key) {
+        const childUi = this._objectUi.getActor(key);
+        return childUi ? childUi._eventContextV1 : null;
+      }
+
+      findByLabel(label) {
+        return this.findByKey(label);
+      }
+    };
+  }
+}
+
+
+export default LayoutBase;
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on 20th May 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
