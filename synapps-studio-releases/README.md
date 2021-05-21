@@ -6,7 +6,7 @@ nav_order: 4
 
 Version candidate [1.0.0-rc.3](https://github.com/witsa/synapps/releases/download/1.0.0-rc.3/synapps-studio-setup.zip)
 
-> **Attention!** La version actuelle est en cours de validation par nos équipe.
+> **Attention!** La version actuelle est en cours de validation par nos équipes.
   Il ne faut pour l'instant *en aucun cas* l'utiliser pour réaliser des projets commerciaux.
 
 > Synapps Maker reste en attendant l'*outil officiel* de construction de Synapp.
