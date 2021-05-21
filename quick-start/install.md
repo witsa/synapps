@@ -14,9 +14,9 @@ Dernière version : [1.0.0-rc.3](https://github.com/witsa/synapps/releases/downl
 - L'ouvrir et exécutez le fichier synapps-studio-setup.exe
 - Ignorer le message de protection :
 
-![SynApps](/assets/install-warning-message.png)
+![SynApps](../assets/install-warning-message.png)
 
-![SynApps](/assets/install-warning-message-2.png)
+![SynApps](../assets/install-warning-message-2.png)
 
 - Suivez ensuite les instructions de l'installateur windows.
 
