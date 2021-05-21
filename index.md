@@ -9,7 +9,7 @@ Documentation de la solution Synapps
 ![logo_256px](assets/logo_256px.png)
 
 > en cours de rédaction
-> Progression **3%**
+> Progression **7%**
 
 
 {% include table_of_content.html %}
