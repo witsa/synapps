@@ -50,7 +50,7 @@ Avec Studio,
 
 ## Démarrage Rapide
 
-Vous trouverez un guide de démarrage rapide pour une première prise en main de l'outils et appréhender les concepts de la solution.
+Vous trouverez un [guide de démarrage](./quick-start) pour une première prise en main de l'outils et appréhender les concepts de la solution.
 
 
 ## Le précurseur de Studio : La Maker

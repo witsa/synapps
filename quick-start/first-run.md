@@ -7,11 +7,36 @@ nav_order: 3
 # Première exécution
 
 Dans l'étape précédente, nous avons créé un projet avec comme modèle "Tablette et Bureau". Cela a généré un projet avec un contenu pré-définit et adapté aux tailles d'écran des tablettes et bureau.
-Le contenu est presque pret à être exécuté. Ce qu'il lui manque, c'est la présence d'un **REDY-PC**.
+Le contenu est presque pret à être exécuté.
 
-Lancez une instance de **REDY-PC** (au moins *v13.2.0*).
+## Hôte
 
-> En cours de rédaction
+Lorsqu'une **synapp** s'exécute dans Studio, elle doit se connecter à une ULI. C'est ce que nous appelons l'**hôte** de la synapp qui permet de définir à quelle ULI elle se connecte.
+Un nouveau projet définit un hôte par défaut à `http://127.0.0.1`. Le projet s'attend à la présence d'un **REDY-PC** et que son paramétrage se connecte avec l'utilisateur `admin`, mot de passe `.`.
+
+![SynApps](../assets/first-run-01.png)
+
+Lancez une instance de **REDY-PC** (au moins `13.2.0`).
+
+![SynApps](../assets/first-run-02.png)
+
+> N'oubliez pas d'activer l'adds **Intravision**. C'est ce qui permettra plus tard de publier la synapp dans le paramétrage.
+
+## Exécution
+
+Passons maintenant à l'exécution de la synapp :
+ - Rendez-vous dans le menu d'application et choisissez l'option "Exécution". Raccourci clavier **Ctrl+R**
+
+![SynApps](../assets/first-run-03.png)
+
+Un onglet s'est ouvert qui exécute l'application :
+
+![SynApps](../assets/first-run-04.png)
+
+Vous pouvez la tester en utilisant le menu.
+
+Un autre manière de visualiser la synapp est de l'ouvrir dans votre navigateur.
+Dans ce cas choisissez l'option "Exécuter dans le navigateur...". Raccourci clavier **Ctrl+Shift+R**
 
 # Prochaine étape :
 Maintenant, vous allez [modifier la scène d'accueil](./modif-1) de projet Studio.

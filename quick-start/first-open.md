@@ -72,6 +72,12 @@ Félicitation ! Votre premier projet est créé !
 
 ![SynApps](../assets/first-step-11.png)
 
+### Accueil de Projet
+
+Vous visualisez à présent le *Lisez-moi* du projet qui fait office de documentation de ce dernier. Par défaut, vous pourrez y lire des informations sur le modèle de projet employé, et comment l'utiliser pour alimenter votre synapp.
+
+> Le *Lisez-moi* est bien sur éditable. Le format d'écriture est un standard dans la rédaction de documentation : Le [`markdown`](https://fr.wikipedia.org/wiki/Markdown).
+
 
 # Prochaine étape :
 Maintenant, vous allez réaliser la [première exécution](./first-run) de projet Studio.
