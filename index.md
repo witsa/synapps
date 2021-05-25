@@ -17,7 +17,7 @@ Documentation de la solution Synapps
 
 ## **SynApps**: Construisez des apps **multi-plateformes** avec le **REDY**
 
-SynApps est une **nouvelle solution** de WIT avec un **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB de manière à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones.
+SynApps est une **nouvelle solution** de WIT avec un **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB pour à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones.
 
 
 ![SynApps](assets/browsers.png)
@@ -27,7 +27,7 @@ SynApps est une **nouvelle solution** de WIT avec un **nouvel outil** de constru
 
 ![SynApps](assets/WHomeApp.gif)
 
-Les utilisateurs ciblés par les applications générées par SynApps sont **tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'ULIs REDY: SynApps s'inscrit dans une démarche **Smart Building** et **Smart Water** et à pour ambition de répondre à ces **nouveaux usages**
+**Tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'ULIs REDY sont ciblés par les applications générées par SynApps: SynApps s'inscrit dans une démarche **Smart Building** et **Smart Water** et à pour ambition de répondre à ces **nouveaux usages**
 
 ## Synapps Studio : outil de *construction* et de *déploiement*.
 
@@ -55,6 +55,6 @@ Vous trouverez un [guide de démarrage](./quick-start) pour une première prise 
 
 ## Le précurseur de Studio : La Maker
 
-La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible.
+La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible. Il reste disponible pour la maintenance des Synapps de première génération.
 
 [Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }

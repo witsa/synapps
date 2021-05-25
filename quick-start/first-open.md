@@ -6,11 +6,11 @@ nav_order: 2
 
 # Premier pas
 
-Vous allez ouvrir pour la première fois **Synapps Studio** en double cliquant son icône installé sur votre poste.
+Vous allez ouvrir pour la première fois **Synapps Studio** en double cliquant son icône installé sur votre poste (dans le *menu démarrer* ou sur votre bureau).
 
 ![SynApps](../assets/icon-studio.png)
 
-La fenêtre de Synapps Studio s'est affchée :
+La fenêtre de Synapps Studio s'est affichée :
 ![SynApps](../assets/first-step-01.png)
 
 ## Création d'un projet "Bonjour le monde!"
@@ -56,7 +56,7 @@ Choisissez un emplacement dans votre système de fichier qui va contenir votre p
 
 ![SynApps](../assets/first-step-07.png)
 
-Rendez-vous dans le répertoire de votre choix et créez un nouveau répertoire au nom de "hello-world" et choisissez le dans la boite de dialogue.
+Rendez-vous dans le répertoire de votre choix et créez un nouveau répertoire au nom de "hello-world" et sélectionnez le dans la boite de dialogue.
 
 ![SynApps](../assets/first-step-08.png)
 
@@ -74,9 +74,9 @@ Félicitation ! Votre premier projet est créé !
 
 ### Accueil de Projet
 
-Vous visualisez à présent le *Lisez-moi* du projet qui fait office de documentation de ce dernier. Par défaut, vous pourrez y lire des informations sur le modèle de projet employé, et comment l'utiliser pour alimenter votre synapp.
+Vous visualisez à présent le *Lisez-moi* du projet qui fait office de documentation de ce dernier. Par défaut, vous pourrez y lire des informations sur le modèle de projet employé et comment l'utiliser pour alimenter votre synapp.
 
-> Le *Lisez-moi* est bien sur éditable. Le format d'écriture est un standard dans la rédaction de documentation : Le [`markdown`](https://fr.wikipedia.org/wiki/Markdown).
+> Le *Lisez-moi* est bien sûr modifiable. Le format d'écriture est un standard dans la rédaction de documentation : Le [`markdown`](https://fr.wikipedia.org/wiki/Markdown).
 
 
 # Prochaine étape :
