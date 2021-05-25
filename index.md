@@ -11,6 +11,7 @@ Documentation de la solution Synapps
 > en cours de rédaction
 > Progression **7%**
 
+{% include disclaimer-beta.md %}
 
 {% include table_of_content.html %}
 
