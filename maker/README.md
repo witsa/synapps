@@ -1,7 +1,7 @@
 ---
 title: Documentation Maker
 has_children: true
-nav_order: 3
+nav_order: 2
 ---
 
 {% include table_of_content.html %}

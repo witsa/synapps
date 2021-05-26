@@ -8,13 +8,25 @@ Documentation de la solution Synapps
 
 ![logo_256px](assets/logo_256px.png)
 
-> en cours de rédaction
-> Progression **7%**
-
 {% include disclaimer-beta.md %}
 
-{% include table_of_content.html %}
 
+## Le précurseur de Studio : La Maker
+
+La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible. Il reste disponible pour la maintenance des Synapps de première génération.
+
+[Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }
+
+
+------
+
+> en cours de rédaction
+
+> Progression **7%**
+
+------
+
+{% include table_of_content.html %}
 
 ## **SynApps**: Construisez des apps **multi-plateformes** avec le **REDY**
 
@@ -52,10 +64,3 @@ Avec Studio,
 ## Démarrage Rapide
 
 Vous trouverez un [guide de démarrage](./quick-start) pour une première prise en main de l'outils et appréhender les concepts de la solution.
-
-
-## Le précurseur de Studio : La Maker
-
-La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible. Il reste disponible pour la maintenance des Synapps de première génération.
-
-[Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }
