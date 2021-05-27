@@ -1,4 +1,9 @@
-[Accueil](../) / [REDY](index.md)
+---
+title: Installation projet PK4/BK4
+parent: REDY
+grand_parent: Documentation Maker
+nav_order: 3
+---
 
 # Installation projet PK4/BK4
 

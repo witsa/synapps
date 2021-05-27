@@ -1,9 +1,9 @@
 ---
 title: Installation
 parent: Documentation Maker
+has_children: true
+nav_order: 1
 ---
-
-[Accueil](./)
 
 # Installation
 
@@ -66,4 +66,4 @@ Voir la note concernant la [compatibilité des versions de SynApps MAKER et RUNT
 
 Vous avez le **MAKER** de *SynApps* (Windows ou cloud RIA) et un **REDY PC** (ou REDY) compatible avec SynApps **>=12.0.1**, nous pouvons commencer la création et le déploiement d'une première SynApp simple sur le REDY en suivant le _Tutorial 1_: **première SynApp “Helloworld”** !
 
-[Tutoriaux](tutos/index.md)
+[Tutoriels](tutos/index.md)

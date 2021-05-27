@@ -1,10 +1,14 @@
-[Accueil](../)
+---
+title: Installation de SynApps RUNTIME sur **Android**
+parent: Installation
+grand_parent: Documentation Maker
+---
 
 # Installation de SynApps RUNTIME sur **Android**
 
 ## WebApp sur bureau
 
-1. Naviguer sur l'écran d'acceuil de la SynApp avec le navigateur Chrome
+1. Naviguer sur l'écran d'accueil de la SynApp avec le navigateur Chrome
 
 2. Sélectionner **Ajouter à l'écran d'accueil** dans le menu de Chrome (3 points verticaux)
 

@@ -1,12 +1,18 @@
-[Accueil](../../) / [Tutoriaux](../index.md)
+---
+title: 6. Événements
+parent: Tutoriels
+grand_parent: Documentation Maker
+---
 
-# Tutorial 6: les événements et fonctions javascripts - **<span style='color:red'>Expert</span>**
+{% include table_of_content.html %}
+
+# Tutoriel 6: les événements et fonctions javascripts - **<span style='color:red'>Expert</span>**
 
 SynApps est conçu pour construire des applications avec le minimum de connaissances en développement et un rendu adapté est possible sans saisir une seule ligne de javascript. Cependant, comme nous allons le voir, il est parfois nécessaire d'écrire du code pour des usages plus avancés
 
-Dans les précédents tutoriaux, nous avons déja utilisé quelques instructions javascripts pour définir des **fonctions de transformations** en lecture sur des liaisons et ainsi adapter un type de valeur source à un type attendu par l'acteur. Exemple: une valeur booléenne ```true``` ou ```false``` vers une chaine de caractère
+Dans les précédents tutoriels, nous avons déja utilisé quelques instructions javascripts pour définir des **fonctions de transformations** en lecture sur des liaisons et ainsi adapter un type de valeur source à un type attendu par l'acteur. Exemple: une valeur booléenne ```true``` ou ```false``` vers une chaine de caractère
 
-Nous reviendrons dans ce tutorial sur les fonctions de transformation en lecture et en écriture de liaison, mais au préalable nous allons mettre en oeuvre les **Evénements**. Dans l'inspecteur d'acteur, nous avons largemment manipulé les **Propriétés** mais, vous l'avez peut-être aperçu, un autre onglet permet de définir des evénements
+Nous reviendrons dans ce tutoriel sur les fonctions de transformation en lecture et en écriture de liaison, mais au préalable nous allons mettre en oeuvre les **Evénements**. Dans l'inspecteur d'acteur, nous avons largemment manipulé les **Propriétés** mais, vous l'avez peut-être aperçu, un autre onglet permet de définir des evénements
 
 ![inspector_events](assets/inspector_events.png)
 
@@ -33,7 +39,7 @@ La maitrise de la définition des événements est un élément important de tou
 
 ## Prerequis
 
-* Le paramétrage [SynApps_Tutorials.BRY](../config/SynApps_Tutorials.BRY) installé sur le REDY. Il contient les profils utilisateurs, _Administrateur_ et _Installateur_ utilisés dans ce tutorial
+* Le paramétrage [SynApps_Tutorials.BRY](../config/SynApps_Tutorials.BRY) installé sur le REDY. Il contient les profils utilisateurs, _Administrateur_ et _Installateur_ utilisés dans ce tutoriel
 
 * Créer une nouvelle SynApp **tuto06** avec le _MAKER_. Modifier le _label_ de la première scène en ```sceneEvents``` et le _nom_ avec ```scène événements``` puis déployer
 
@@ -291,7 +297,7 @@ La console de log est vite remplie des événements générés. Nous allons ajou
 
 Il est parfois trés utile de pouvoir débugger une fonction javascript pour résoudre un dysfonctionnement ou une erreur.
 SynApp une application qui s'éxécute dans le navigateur et nous pouvons donc utiliser ses fonctionnalités avancés pour débugger le code éxécuté dans SynApp !
-La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous utiliserons ici **Chrome** pour les besoins de ce tutorial
+La plupart des navigateurs modernes possèdent des fonctions de débugging. Nous utiliserons ici **Chrome** pour les besoins de ce tutoriel
 
 1. **Exécuter** la SynApp et appuyer sur **F12** pour ouvrir la console _Developer Tools_
 
@@ -621,8 +627,8 @@ Enfin, vous avez réalisé un composite métier réutilisable: gérant les sessi
 
 ## Conclusion
 
-Le **tutorial 6** sur les événements et fonctions javascripts est **terminé**. Ils sont un usage avancé de SynApps mais pour construire des applications évoluées leurs maitrises devient rapidement indispensable !
+Le **tutoriel 6** sur les événements et fonctions javascripts est **terminé**. Ils sont un usage avancé de SynApps mais pour construire des applications évoluées leurs maitrises devient rapidement indispensable !
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les acteurs métiers du REDY](../tuto07/index.md)

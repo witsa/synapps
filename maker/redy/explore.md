@@ -1,4 +1,9 @@
-[Accueil](../) / [REDY](index.md)
+---
+title: Exploration des objets SynApps dans le REDY
+parent: REDY
+grand_parent: Documentation Maker
+nav_order: 4
+---
 
 # Exploration des objets SynApps dans le REDY
 

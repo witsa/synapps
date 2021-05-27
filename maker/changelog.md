@@ -1,9 +1,8 @@
 ---
 title: Changelog
 parent: Documentation Maker
+nav_order: 3
 ---
-
-[Accueil](./)
 
 # Changelog
 

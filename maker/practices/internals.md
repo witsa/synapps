@@ -1,11 +1,11 @@
 ---
-title: Les propriétés additionnelles
+title: Les liaisons internes
 parent: Bonnes et Mauvaises pratiques
 grand_parent: Documentation Maker
-nav_order: 3
+nav_order: 9
 ---
 
-# Les propriétés additionnelles
+# Les liaisons internes
 
 
 *(...)*

@@ -1,4 +1,9 @@
-[Accueil](../) / [Les pratiques](./index.md)
+---
+title: Les équipements nomades
+parent: Bonnes et Mauvaises pratiques
+grand_parent: Documentation Maker
+nav_order: 12
+---
 
 # Les spécificités des équipements nomades
 
@@ -8,7 +13,7 @@ Ces équipements ont des contraintes et des possibilités qui sont non triviales
 ## Tailles d’écran réduites et divers
 *(...)*
 
-## Interactions tactiles 
+## Interactions tactiles
 *(taille des zones à toucher, moins de fonctionnalité que l’interaction souris)*
 
 *(...)*
@@ -18,7 +23,7 @@ Ces équipements ont des contraintes et des possibilités qui sont non triviales
 
 *(...)*
 
-## Intimité d'usage 
+## Intimité d'usage
 *Besoin d'affichage plus synthétique (l'essentiel est présenté, on navigue pour entrer dans les détails)*
 
 *(...)*
@@ -35,5 +40,3 @@ Ces équipements ont des contraintes et des possibilités qui sont non triviales
 ### la navigation
 
 ### le nombre d'acteurs
-
-

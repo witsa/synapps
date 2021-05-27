@@ -1,10 +1,19 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
+---
+title: 2. Les liaisons / Partie 4
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 2: les liaisons **4/6** *[8 nov 17]*
+[< 2. Les liaisons](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 2: les liaisons **4/6** *[8 nov 17]*
 
 ## Liaisons **sources de données** en lecture
 
-Dans la troisième partie du tutorial, des liaisons *internes* entre acteurs ont été définies. Cela a permis de rationaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources du REDY
+Dans la troisième partie du tutoriel, des liaisons *internes* entre acteurs ont été définies. Cela a permis de rationaliser le paramétrage des acteurs mais, pour l'instant, les acteurs ne sont toujours pas liés aux ressources du REDY
 
 La prochaine étape va donc consister à configurer les liaisons entre les acteurs et ses ressources: les **sources de données**
 
@@ -190,4 +199,4 @@ Observer le résultat dans SynApp. La zone de prévisualisation doit restituer l
 
 **Déployer la SynApp**
 
-Suite du [tutorial](part5.md)
+Suite du [tutoriel](part5.md)

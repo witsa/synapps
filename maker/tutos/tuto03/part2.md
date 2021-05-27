@@ -1,10 +1,19 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
+---
+title: 3. Les acteurs dispositions / Partie 2
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 3: l'acteur de disposition **toile**
+[< 3. Les acteurs dispositions](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 3: l'acteur de disposition **toile**
 
 ![Empilement](assets/actor_canvas.png)
 
-La deuxième partie de ce tutorial est consacrée à l'acteur **_toile_** qui permet de **superposer** des acteurs enfants et repondre au besoin de **construction de synoptiques** notamment !
+La deuxième partie de ce tutoriel est consacrée à l'acteur **_toile_** qui permet de **superposer** des acteurs enfants et repondre au besoin de **construction de synoptiques** notamment !
 
 La scène sera constituée d'un fond de plan et permettra de gérer deux zones de lumières dans une salle de réunion
 
@@ -59,7 +68,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 5. **Sélectionner** l'acteur _Empilement_ **stack3** et **ajouter** un acteur enfant de type _Empilement_ **stack4** qui représentera la couleur dont l'opacité variera en fonction de l'intensité lumineuse:
 
     * définir la propriété _Aspect > Couleur de fond avec une couleur jaune ```#ffe583```
-    * ajouter cette couleur dans la librairie avec le nom ```colorLight```, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutorial 2 sur les liaisons aux librairies](../tuto02/part6/index.md))
+    * ajouter cette couleur dans la librairie avec le nom ```colorLight```, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutoriel 2 sur les liaisons aux librairies](../tuto02/part6/index.md))
     ![Empilement](assets/part2_lightLibrary.png)
     * la propriété _Aspect > Bordure > Rayon bordure_ à ```50px```
     * la propriété _Position > Align. vertical_ à ```Etendre```
@@ -108,7 +117,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 
     * lier en _interne_ la propriété _Aspect > Opacité_ avec la propriété _Spécifiques > Valeur_ de l'acteur **slider5**
 ![Empilement](assets/part2_lightBind.png)
-    (voir [Tutorial 2 sur les liaisons internes](../tuto02/part5/index.md))
+    (voir [Tutoriel 2 sur les liaisons internes](../tuto02/part5/index.md))
 ![Empilement](assets/part2_lightBind2.png)
 
 9. **Exécuter** la SynApp et vérifier que:
@@ -212,7 +221,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 
 Quelques suggestions ...
 
-* **Ne pas vous aider de ce tutorial !**
+* **Ne pas vous aider de ce tutoriel !**
 * Utiliser la  **Dupplication** des acteurs de la _zone 1_ et les déplacer vers la _zone 2_
 
 * Modifier la **source de donnée principale** des 2 acteurs _jauge_ et _curseur_. Tous les liaisons des propriétés des acteurs de type _source de données_ seront automatiquement configurées car **relatives à leurs sources de donnée principale**
@@ -228,18 +237,18 @@ Vous avez composé une scène de type _toile_ et représenté un synoptique simp
 
 * Cet acteur est un de ceux les **plus utilisés** avec l'acteur _Empilement_ pour construire des scènes de type synoptique composés d'acteurs superposés et **bien comprendre son mode de fonctionnement** constitue une des clés de SynApps.
 
-* Beaucoup d'acteurs sont dupliqués dans ce tutorial au moins 2x et même 8x pour les lumières. Même si le mécanisme est plutot simple, cela ne favorise pas:
+* Beaucoup d'acteurs sont dupliqués dans ce tutoriel au moins 2x et même 8x pour les lumières. Même si le mécanisme est plutot simple, cela ne favorise pas:
     * **réutisabilité**: cloner est seulement un raccourci pour refaire rapidement mais les acteurs vivent ensuite indépendemment
 
     * **maintenabilité**: si l'on souhaite modifier des propriétés d'un acteur, il faut répéter l'opération sur tous les acteurs. Par exemple, modifier la représentation des lumières avec une image nécessiterais de faire la modification 8x ...
 
-    Les acteurs **composites** permettent de résoudre ce problème et seront exploités dans un prochain tutorial
+    Les acteurs **composites** permettent de résoudre ce problème et seront exploités dans un prochain tutoriel
 
 * Nous aurions pu également utiliser 2 acteurs _toiles_ enfants de **canvas1** pour les _zones 1 & 2_. Les 2 _toiles_ auraient disposés les acteurs enfants dans leurs zones respectives. Les 2 sources de données ```dsLightZone1``` et ```dsLightZone2``` auraient également été définies sur les 2 toiles et ainsi héritées directement sur leurs enfants !
 Cela aurait également permis une dupplication simplifiée de la _zone 1_ vers la _zone 2_
 
-* La scène est relativement statique et ne s'adapte pas en l'état a toutes les tailles d'écrans. Même si il est toujours possible d'utiliser des tailles relatives, on arrive rapidement à des limites pour ce type de restitution. Le tutorial suivant adresse cette problématique ...
+* La scène est relativement statique et ne s'adapte pas en l'état a toutes les tailles d'écrans. Même si il est toujours possible d'utiliser des tailles relatives, on arrive rapidement à des limites pour ce type de restitution. Le tutoriel suivant adresse cette problématique ...
 
-Le tutorial suivant est complémentaire à celui-ci puisque nous allons utiliser l'acteur **_boite à vue_** qui permet d'**adapter** des acteurs à une taille d'écran !
+Le tutoriel suivant est complémentaire à celui-ci puisque nous allons utiliser l'acteur **_boite à vue_** qui permet d'**adapter** des acteurs à une taille d'écran !
 
-[Tutorial acteur disposition **_boite à vue_**](part3.md)
+[Tutoriel acteur disposition **_boite à vue_**](part3.md)

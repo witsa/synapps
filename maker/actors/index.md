@@ -1,7 +1,13 @@
-[Accueil](../)
+---
+title: Acteurs
+parent: Documentation Maker
+has_children: true
+nav_order: 5
+---
+
+> Documentation partielle
 
 # Acteurs
-
 
 ## Types
 

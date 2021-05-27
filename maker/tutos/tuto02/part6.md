@@ -1,6 +1,15 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
+---
+title: 2. Les liaisons / Partie 5
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 2: les liaisons **6/6** *[10 nov 17]*
+[< 2. Les liaisons](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 2: les liaisons **6/6** *[10 nov 17]*
 
 ## Liaisons **librairies**
 
@@ -102,13 +111,13 @@ La couleur de premier plan de l'acteur *gaugeAnalogic* est actuellement définie
 
 ## Conclusion
 
-Le tutorial 2 est **terminé** ! la SynApp créée est simple mais a permis d'appréhender un des concepts importants de SynApps, les **liaisons**
+Le tutoriel 2 est **terminé** ! la SynApp créée est simple mais a permis d'appréhender un des concepts importants de SynApps, les **liaisons**
 
-Sans attendre les prochains tutoriaux, vous pouvez:
+Sans attendre les prochains tutoriels, vous pouvez:
 
 * parcourir le MAKER,
 * essayer d'autres acteurs
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les acteurs _disposition_](../tuto03/index.md)

@@ -1,4 +1,9 @@
-[Accueil](../) / [REDY](index.md)
+---
+title: Installation
+parent: REDY
+grand_parent: Documentation Maker
+nav_order: 1
+---
 
 # Installation
 
@@ -12,7 +17,7 @@ Installer REDY-PC-Setup puis éxécuter *REDY-PC.exe*
 
 Vérifier que la version est **12.0.1** ou **supérieure**
 
-![REDY PC](assets/redyPCexe.png)
+![REDY PC](../assets/redyPCexe.png)
 
 Double cliquer pour ouvrir le navigateur sur l'application d'exploitation du REDY et vérifier que tout fonctionne
 

@@ -1,6 +1,15 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
+---
+title: 7. Acteurs REDY / Partie 1
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 7: les acteurs métiers natifs du REDY - Part 1: **Journal**
+[< 7. Acteurs REDY](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 7: les acteurs métiers natifs du REDY - Part 1: **Journal**
 
 L'acteur journal est un des plus utilisé et fonctionne simplement sans la moindre configuration. Plusieurs propriétés _spécifiques_ permettent de personnaliser et filtrer son rendu. Ces propriétés sont **explicites** et nous ne rentrerons pas dans le détail de chacune d'entre elles !
 ![journal_properties](assets/journal_properties.png)
@@ -75,7 +84,7 @@ Nous allons plutot intégrer le journal dans une **scène évoluée** contenant 
       const modalFilter = context.synoStage.findByLabel('modalFilter');
       modalFilter.set('isShown', true);
       ```
-      _Remarque:_ ce code a été déja mis en place dans le [Tutorial 6: les événements et fonctions javascripts](../tuto06/index.md) et permet d'ouvrir la fenêtre modale
+      _Remarque:_ ce code a été déja mis en place dans le [Tutoriel 6: les événements et fonctions javascripts](../tuto06/index.md) et permet d'ouvrir la fenêtre modale
 
 L'ossature de la barre de commande est terminée
 
@@ -219,7 +228,7 @@ Nous allons finaliser la configuration de la scène et lier les propriétés des
     ```
     ![execute](assets/transform_code.png)
 
-    _Remarque:_ le code javascript retourne la propriété _setName_, nom de l'ensemble, de l'acteur journal. La question étant comment faire pour connaitre la liste des propriétés du journal accessible dans un script ? a terme la liste des propriétés sera documentée pour chaque acteur mais, en attendant, le mieux est d'utiliser la fonction _inspect()_ en mode débug expliqué dans le [tutorial 6: les événements et fonctions javascripts](../tuto06/index.md)
+    _Remarque:_ le code javascript retourne la propriété _setName_, nom de l'ensemble, de l'acteur journal. La question étant comment faire pour connaitre la liste des propriétés du journal accessible dans un script ? a terme la liste des propriétés sera documentée pour chaque acteur mais, en attendant, le mieux est d'utiliser la fonction _inspect()_ en mode débug expliqué dans le [tutoriel 6: les événements et fonctions javascripts](../tuto06/index.md)
 
     Déployer et exécuter la SynApp dans **Chrome** puis appuyer sur F12 pour ouvrir les outils developpeurs et placer un point d'arrêt sur la ligne 4 de la fonction _onReadSource/attribute-buttonPush-buttonFilters-selSet-sceneJournal.js_
 
@@ -306,7 +315,7 @@ Les liaisons sont configurées, le journal avancé est terminé
 
 Nous avons utilisé un acteur journal qui fonctionne sans **aucune configuration** et nous l'avons complété avec des filtres personnalisés pour enrichir son fonctionnement et répondre à un besoin particulier. Nous avons d'ailleurs utilisé un autre acteur métier natif: le filtre **Ensembles**
 
-Nous avons mis en oeuvre de nombreux concepts et mécanismes vus dans les précédents tutoriaux: les fenêtres **modales**, les **empilements**, les **événements** et **fonctions de transformation***, le **débugging**
+Nous avons mis en oeuvre de nombreux concepts et mécanismes vus dans les précédents tutoriels: les fenêtres **modales**, les **empilements**, les **événements** et **fonctions de transformation***, le **débugging**
 
 Vous pourriez faire évoluer la scène pour répondre précisemment à vos besoins. Par exemple: ajouter de nouveaux filtres dans la fenêtre modale:
 
@@ -325,8 +334,8 @@ A ce sujet, tester la **création d'un composite** directement depuis la scène:
 
 ## Conclusion
 
-La **première partie du tutorial 7** portant sur l' acteur métier natif journal est **terminée**, l'intérêt de ces acteurs réside dans le fait qu'ils sont simples d'utilisation car ils embarquent tout le comportement métier
+La **première partie du tutoriel 7** portant sur l' acteur métier natif journal est **terminée**, l'intérêt de ces acteurs réside dans le fait qu'ils sont simples d'utilisation car ils embarquent tout le comportement métier
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant](part2.md)

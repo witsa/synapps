@@ -1,6 +1,15 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
+---
+title: 7. Acteurs REDY / Partie 4
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 7: les acteurs métiers natifs du REDY - Part 4: **Navigation**
+[< 7. Acteurs REDY](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 7: les acteurs métiers natifs du REDY - Part 4: **Navigation**
 
 Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les intégrer dans une nouvelle scène principale avec la navigation
 
@@ -18,7 +27,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 
     * définir la propriété de scène _Scène_ avec le texte ```sceneJournal```
 
-    _Remarque:_ pour rappel, les paramêtres de scène permettent de **piloter les scènes** et **définir des raccourcis** vers des scènes spécifiques. Voir [tutorial 4 sur la navigation](../../tuto04/index.md)
+    _Remarque:_ pour rappel, les paramêtres de scène permettent de **piloter les scènes** et **définir des raccourcis** vers des scènes spécifiques. Voir [tutoriel 4 sur la navigation](../../tuto04/index.md)
 
 2. **Modifier** la scène principale de la SynApp avec la scène ```Scène principale```
 
@@ -267,6 +276,6 @@ Le principal intérêt des acteurs métiers natifs sont leur **simplicité** d'u
 
 Vous pouvez également créer vos propres acteurs métiers réutilisables avec les composites et ainsi améliorer votre **productivité**, voir [tutoriel sur les composites](../tuto05/index.md)
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les tailles](../tuto08/index.md)

@@ -72,9 +72,9 @@ Essayer d'être le plus **exhaustif** possible et communiquer, quand c'est possi
 
 Dans un second temps, vous pouvez également contacter le **support** WIT
 
-## Tutoriaux
+## Tutoriels
 
-Nous recommandons **fortement** de découvrir SynApps avec les [tutoriaux](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriaux proposés vous aurez une **vision avancée** de SynApps et serez à même de réaliser des **applications** webs évoluées **multi-plateformes**
+Nous recommandons **fortement** de découvrir SynApps avec les [tutoriels](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriels proposés vous aurez une **vision avancée** de SynApps et serez à même de réaliser des **applications** webs évoluées **multi-plateformes**
 
 
 ## Pratiques et équipements nomades *(...en construction...)*

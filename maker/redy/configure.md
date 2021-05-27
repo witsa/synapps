@@ -1,4 +1,9 @@
-[Accueil](../) / [REDY](index.md)
+---
+title: Configurer un REDY
+parent: REDY
+grand_parent: Documentation Maker
+nav_order: 2
+---
 
 # Configurer un REDY
 

@@ -1,4 +1,9 @@
-[Accueil](../) / [Les pratiques](./index.md)
+---
+title: "Acteurs"
+parent: Bonnes et Mauvaises pratiques
+grand_parent: Documentation Maker
+nav_order: 2
+---
 
 # Acteurs
 

@@ -1,11 +1,11 @@
 ---
-title: Les propriétés additionnelles
+title: Les valeurs par défaut
 parent: Bonnes et Mauvaises pratiques
 grand_parent: Documentation Maker
-nav_order: 3
+nav_order: 11
 ---
 
-# Les propriétés additionnelles
+# Les valeurs par défaut
 
 
 *(...)*

@@ -1,10 +1,19 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
+---
+title: 2. Les liaisons / Partie 5
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 2: les liaisons **5/6** *[9 nov 17]*
+[< 2. Les liaisons](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 2: les liaisons **5/6** *[9 nov 17]*
 
 ## Liaisons **sources de données** en écriture
 
-Dans la quatrième partie de ce tutorial, les acteurs ont été liés à une *source de donnée* en **lecture** mais actuellement aucune **intéraction** avec l'utilisateur, ni **commande** avec une ressource du REDY ne sont configurées
+Dans la quatrième partie de ce tutoriel, les acteurs ont été liés à une *source de donnée* en **lecture** mais actuellement aucune **intéraction** avec l'utilisateur, ni **commande** avec une ressource du REDY ne sont configurées
 
 La prochaine étape va donc consister à ajouter des **acteurs d'intéractions** avec l'utilisateur et les **lier en écriture** vers la ressource du REDY *ConsigneLogiqueTuto* de type consigne digitale
 
@@ -76,4 +85,4 @@ Le rafraîchissement de SynApps (F5) force la réinitialisation de l'acteur, les
 
 **Repasser en mode MAKER**
 
-Suite du [tutorial](part6.md)
+Suite du [tutoriel](part6.md)

@@ -1,14 +1,14 @@
 ---
 title: 4. La navigation
-parent: Tutoriaux
+parent: Tutoriels
 grand_parent: Documentation Maker
 ---
 
-[Accueil](../../) / [Tutoriaux](../index.md)
+{% include table_of_content.html %}
 
-# Tutorial 4: la navigation - **<span style='color:green'>Débutant</span>**
+# Tutoriel 4: la navigation - **<span style='color:green'>Débutant</span>**
 
-Dans ce tutorial, nous allons détailler une fonction fondamentale de toute application: la **navigation** entre scènes.
+Dans ce tutoriel, nous allons détailler une fonction fondamentale de toute application: la **navigation** entre scènes.
 
 Nous allons mettre en oeuvre 2 nouveaux acteurs
 
@@ -17,7 +17,7 @@ Nous allons mettre en oeuvre 2 nouveaux acteurs
 
 ## Description
 
-L'objectif du tutorial est la construction d'une SynApp navigable avec **3 scènes**. Chaque scène naviguée pourra être accédée avec un **raccourci** ou favoris dans le navigateur. La dernière scène contiendra également une navigation scondaire.
+L'objectif du tutoriel est la construction d'une SynApp navigable avec **3 scènes**. Chaque scène naviguée pourra être accédée avec un **raccourci** ou favoris dans le navigateur. La dernière scène contiendra également une navigation scondaire.
 La scène principale sera composée d'un **menu**, de la **scène centrale** et d'un **pied de page**
 
 ![Empilement](assets/description.png)
@@ -40,7 +40,7 @@ Créer une nouvelle SynApp **tuto04** avec le _MAKER_. Modifier le _label_ de la
 
     Par exemple ```stack1``` par ```stackRoot```, ```scene1``` par ```sceneMaster```
 
-    Cela rend la la SynApp plus **maintenable** notamment dans ce tutorial car des acteurs vont référencés les clés d'autres acteurs
+    Cela rend la la SynApp plus **maintenable** notamment dans ce tutoriel car des acteurs vont référencés les clés d'autres acteurs
 
 2. **Ajouter** un acteur enfant de type _Empilement_ qui contiendra le menu de navigation
 
@@ -318,8 +318,8 @@ Enfin, vous avez rangé les scènes dans des **dossiers** pour les retrouver plu
 
 ## Conclusion
 
-Le **tutorial 4** sur les acteurs _navigation_ est **terminé**. La maitrise de la navigation est extrémement importante pour construire des applications ambitieuses !
+Le **tutoriel 4** sur les acteurs _navigation_ est **terminé**. La maitrise de la navigation est extrémement importante pour construire des applications ambitieuses !
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les acteurs composites](../tuto05/index.md)

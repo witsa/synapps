@@ -1,11 +1,14 @@
-[Accueil](../)
+---
+title: Installation de SynApps RUNTIME sur **iOs**
+parent: Installation
+grand_parent: Documentation Maker
+---
 
 # Installation de SynApps RUNTIME sur **iOs**
 
-
 ## SynApp sur l'écran d'accueil
 
-1. Naviguer sur l'écran d'acceuil de la SynApp avec le navigateur Safari et cliquer sur le **bouton d’action**
+1. Naviguer sur l'écran d'accueil de la SynApp avec le navigateur Safari et cliquer sur le **bouton d’action**
 
     ![MacOs](assets/iOs1.jpg)
 

@@ -1,6 +1,15 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
+---
+title: 2. Les liaisons / Partie 2
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 2: les liaisons **2/6** *[6 nov 17]*
+[< 2. Les liaisons](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 2: les liaisons **2/6** *[6 nov 17]*
 
 ## Construction et configuration des acteurs
 
@@ -89,4 +98,4 @@ La zone de prévisualisation finale doit ressembler à cela !
 
 **Déployer la SynApp** pour ne pas perdre vos modifications
 
-Suite du [tutorial](part3.md)
+Suite du [tutoriel](part3.md)

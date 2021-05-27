@@ -1,10 +1,19 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
+---
+title: 3. Les acteurs dispositions / Partie 3
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 3: l'acteur de disposition **Boite de vue**
+[< 3. Les acteurs dispositions](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 3: l'acteur de disposition **Boite de vue**
 
 ![Empilement](assets/actor_viewbox.png)
 
-La troisième partie de ce tutorial est consacrée à l'acteur **_boite de vue_** qui permet d'**adapter** des acteurs enfants à la taille de l'écran de restitution:
+La troisième partie de ce tutoriel est consacrée à l'acteur **_boite de vue_** qui permet d'**adapter** des acteurs enfants à la taille de l'écran de restitution:
 * **sans déformation** et conserver le ratio _hauteur_ * _largeur_
 * occuper le **maximum d'espace** disponible
 
@@ -95,6 +104,6 @@ L'acteur boite à vue est parfait pour adapter une image, ou tout autre acteur e
 
 _Remarque:_ il permet notamment d'adapter un synoptique avec des dimensions fixes en pixel !
 
-Le tutorial suivant est consacré à l'acteur disposition de type **modal** qui permet d'**ouvrir** une **fenêtre modale** pour optenir ou fournir une information à l'utilisateur
+Le tutoriel suivant est consacré à l'acteur disposition de type **modal** qui permet d'**ouvrir** une **fenêtre modale** pour optenir ou fournir une information à l'utilisateur
 
-[Tutorial acteur disposition **_modal_**](part4.md)
+[Tutoriel acteur disposition **_modal_**](part4.md)

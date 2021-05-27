@@ -1,4 +1,9 @@
-[Accueil](../) / [Les pratiques](./index.md)
+---
+title: Les librairies
+parent: Bonnes et Mauvaises pratiques
+grand_parent: Documentation Maker
+nav_order: 8
+---
 
 # Utilisation des librairies
 

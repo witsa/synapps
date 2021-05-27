@@ -1,10 +1,19 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
+---
+title: 3. Les acteurs dispositions / Partie 1
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 3: l'acteur de disposition **empilement**
+[< 3. Les acteurs dispositions](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 3: l'acteur de disposition **empilement**
 
 ![Empilement](assets/actor_stack.png)
 
-La première partie de ce tutorial est consacrée à l'acteur **_Empilement_** qui permet d'**empiler** des acteurs enfants **horizontalement** ou **verticalement** et repondre au besoin de restitution adaptative
+La première partie de ce tutoriel est consacrée à l'acteur **_Empilement_** qui permet d'**empiler** des acteurs enfants **horizontalement** ou **verticalement** et repondre au besoin de restitution adaptative
 
 ## Prerequis
 
@@ -131,6 +140,6 @@ Vous avez réalisé la construction de la scène avec 2 acteurs dispositions de 
 
 * Cet acteur est un de ceux les **plus utilisés** pour construire des scènes et **bien comprendre son mode de fonctionnement** constitue une des clés de SynApps.
 
-Le tutorial suivant est complémentaire à celui-ci puisque nous allons utiliser l'acteur **_toile_** qui permet, non pas d'empiler, mais **superposer** des acteurs enfants et repondre au besoin de construction de synoptiques notamment !
+Le tutoriel suivant est complémentaire à celui-ci puisque nous allons utiliser l'acteur **_toile_** qui permet, non pas d'empiler, mais **superposer** des acteurs enfants et repondre au besoin de construction de synoptiques notamment !
 
-[Tutorial acteur disposition **_toile_**](part2.md)
+[Tutoriel acteur disposition **_toile_**](part2.md)

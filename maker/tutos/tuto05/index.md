@@ -1,8 +1,14 @@
-[Accueil](../../) / [Tutoriaux](../index.md)
+---
+title: 5. Composites
+parent: Tutoriels
+grand_parent: Documentation Maker
+---
 
-# Tutorial 5: les acteurs **composites** - **<span style='color:orange'>Avancé</span>**
+{% include table_of_content.html %}
 
-Dans ce tutorial, nous allons mettre un oeuvre l'acteur **composite** qui permet de construire de **nouveaux acteurs** à partir d'acteurs éxistants. Ces derniers peuvent être soit des acteurs:
+# Tutoriel 5: les acteurs **composites** - **<span style='color:orange'>Avancé</span>**
+
+Dans ce tutoriel, nous allons mettre un oeuvre l'acteur **composite** qui permet de construire de **nouveaux acteurs** à partir d'acteurs éxistants. Ces derniers peuvent être soit des acteurs:
 
 * **Natifs**: disponibles dans toute SynApp
 * **Composites**: construits avec le MAKER, ils correspondent à un usage avancé et nécessitent une bonne compréhension du fonctionnement de SynApps
@@ -28,7 +34,7 @@ _Classement des acteurs par nature et catégorie_
 
 ## Description
 
-L'objectif du tutorial est la construction d'acteurs composites permettant de visualiser une ressource de type climatiseur
+L'objectif du tutoriel est la construction d'acteurs composites permettant de visualiser une ressource de type climatiseur
 
 ## Prerequis
 
@@ -75,7 +81,7 @@ L'objectif du tutorial est la construction d'acteurs composites permettant de vi
     _Important:_ les propriétés définies **directement** sur le composite sont des **valeurs par défaut** qui seront **initialisées** lors de l'ajout du composite dans la scène.
     Elles sont alors modifiables ce qui permet la personnalisation du composite.
     Ici, nous définissons la police par défaut à ```50px``` directement sur le composite. Cette taille sera modifiable lors de l'ajout du composite dans la scène.
-    Cet aspect est extrémement important: un composite peut être considéré comme une **boite noir** avec des **propriétés publiques personnalisables**. Editer le composite revient à ouvrir la boite et définir son comportement. Nous reviendrons sur cet aspect ultérieurement dans le tutorial
+    Cet aspect est extrémement important: un composite peut être considéré comme une **boite noir** avec des **propriétés publiques personnalisables**. Editer le composite revient à ouvrir la boite et définir son comportement. Nous reviendrons sur cet aspect ultérieurement dans le tutoriel
 
 2. **Définissez** l'acteur principal avec un acteur _Empilement_
 
@@ -302,7 +308,7 @@ Quatre propriétés spécifiques du composite ont été créées et doivent main
     ```
     ![Empilement](assets/aceJs.png)
 
-    Les scripts seront détaillés dans le [Tutorial 6: événements et javascript](../tuto06/index.md) mais simplement savoir que dans une fonction de transformation _context.value_ contient la **valeur de la source de la liaison**: ici, la valeur de la proriété _Mode_ du composite.
+    Les scripts seront détaillés dans le [Tutoriel 6: événements et javascript](../tuto06/index.md) mais simplement savoir que dans une fonction de transformation _context.value_ contient la **valeur de la source de la liaison**: ici, la valeur de la proriété _Mode_ du composite.
 
     ```_return context.value==="SUMMER"``` retourne la valeur booléénne ```true``` si le mode est ```SUMMER```, sinon ```false``` (pour ```WINTER```)
 
@@ -338,7 +344,7 @@ La définition du composite est finalisée, nous allons maintenant lier les vale
 4. **Verifier** que les 2 instances du composite, ```compositeClimEast```, ```compositeClimWest``` représentent les valeurs définies
     ![preview](assets/preview4.png)
 
-Le composite fonctionne et les valeurs définies pour les 2 instances du composite dans la scène peuvent sans difficultés être liées à une ressource de type _Régulation ventilo-convecteur 2T_ via une source de donnée, consulter le [tutorial 2 sur les liaisons](../tuto06/index.md).
+Le composite fonctionne et les valeurs définies pour les 2 instances du composite dans la scène peuvent sans difficultés être liées à une ressource de type _Régulation ventilo-convecteur 2T_ via une source de donnée, consulter le [tutoriel 2 sur les liaisons](../tuto06/index.md).
 
 Cela pose cependant **plusieurs problèmes**:
 
@@ -568,12 +574,12 @@ Enfin, en attendant un mécanisme d'import/export natif depuis SynApps MAKER, no
 
 ## Conclusion
 
-Le **tutorial 5** sur les acteurs _composites_ est **terminé**. La maitrise de la création est extrémement importante pour construire des applications ambitieuses, maintenables et réutilisables !
+Le **tutoriel 5** sur les acteurs _composites_ est **terminé**. La maitrise de la création est extrémement importante pour construire des applications ambitieuses, maintenables et réutilisables !
 
 Il est important de bien définir le **périmêtre fonctionnel** de chaque composite et exposer notamment de façon intelligible ses **propriétés personnalisées**. La **description** est également importante pour donner des indications à celui qui va utiliser le composite
 
 L'acteur composite est une fonctionnalité majeure de SynApps et permet de construire un éco-système d'acteurs métiers réutilisables et ainsi priviligier **qualité** et **productivité** !
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur les événements et fonctions](../tuto06/index.md)

@@ -1,22 +1,20 @@
 ---
 title: 2. Les liaisons
-parent: Tutoriaux
+parent: Tutoriels
 grand_parent: Documentation Maker
 ---
 
-{% include table_of_content.html %}
+[Accueil](../../) / [Tutoriels](../index.md)
 
-[Accueil](../../) / [Tutoriaux](../index.md)
-
-# Tutorial 2: les liaisons - **<span style='color:green'>Débutant</span>**
+# Tutoriel 2: les liaisons - **<span style='color:green'>Débutant</span>**
 
 ## Objectif
 
-L'objectif de ce tutorial est la réalisation d'une SynApp **opérationnelle** et **connectée** mettant en oeuvre les mécanismes de **liaisons** _internes_, _librairies_ et vers les ressources du REDY. Il permettra d'avoir une **vision d'ensemble** des **concepts importants** autour de SynApps et du MAKER
+L'objectif de ce tutoriel est la réalisation d'une SynApp **opérationnelle** et **connectée** mettant en oeuvre les mécanismes de **liaisons** _internes_, _librairies_ et vers les ressources du REDY. Il permettra d'avoir une **vision d'ensemble** des **concepts importants** autour de SynApps et du MAKER
 
 ## Parties
 
-Le tutorial se décompose en **6 parties** pour une durée d'environ **1H**
+Le tutoriel se décompose en **6 parties** pour une durée d'environ **1H**
 
 * Partie 1 [prérequis, **installation** et création](part1.md) (10min)
 
@@ -36,4 +34,4 @@ Le tutorial se décompose en **6 parties** pour une durée d'environ **1H**
 
 * Après tout déploiement, vous pouvez **éxécuter** la SynApp en mode:
   * *Principal*: une seule fenêtre
-  * *Secondaire*: RUNTIME & MAKER dans deux fenêtre différentes. Ce mode est recommandé surtout avec deux écrans, voir [tutorial 1](../../tutos/index.md) pour plus de détail
+  * *Secondaire*: RUNTIME & MAKER dans deux fenêtre différentes. Ce mode est recommandé surtout avec deux écrans, voir [tutoriel 1](../../tutos/index.md) pour plus de détail

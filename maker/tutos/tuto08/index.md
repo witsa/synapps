@@ -1,6 +1,12 @@
-[Accueil](../../) / [Tutoriaux](../index.md)
+---
+title: 8. Les tailles
+parent: Tutoriels
+grand_parent: Documentation Maker
+---
 
-# Tutorial 8: les tailles - **<span style='color:green'>Débutant</span>**
+{% include table_of_content.html %}
+
+# Tutoriel 8: les tailles - **<span style='color:green'>Débutant</span>**
 
 Un des éléments fondateur de SynApps est sa capacité à construire des applications adaptatives: on parle également de **responsive design** ou **site web adaptatif**
 
@@ -135,7 +141,7 @@ La zone centrale est tronquée, la SynApp n'est pas adaptative !
 
 Bien que la taille en pixel soit la plus simple à appréhender, nous recommandons d'éviter ce type de taille pour construire des applications **responsives** excepté dans quelques cas:
 
-* Scène de type synoptique avec fond de plan dans une disposition _toile_, pour rappel [tutorial 3 sur l'acteur de disposition **toile**](../tuto03/part2.md). Tous les acteurs de la scène doivent être défnis en valeur absolu en pixels. L'adaptabilité du synoptique pourra alors être apporté par l'acteur boite à vue, pour rappel [tutorial 3 sur l'acteur de disposition **boite à vue**](../tuto03/part3.md)
+* Scène de type synoptique avec fond de plan dans une disposition _toile_, pour rappel [tutoriel 3 sur l'acteur de disposition **toile**](../tuto03/part2.md). Tous les acteurs de la scène doivent être défnis en valeur absolu en pixels. L'adaptabilité du synoptique pourra alors être apporté par l'acteur boite à vue, pour rappel [tutoriel 3 sur l'acteur de disposition **boite à vue**](../tuto03/part3.md)
 
 * Acteur enfant dont la taille doit absolument rester fixe. Par exemple: un logo qui doit avoir un aspect fixe
 
@@ -235,7 +241,7 @@ Selon le **type de device** de restitution, certain types sont plus adaptés que
 2. **vmin** et **vmax** pour les smartphones et tablettes
 3. **px** est a éviter sauf dans certains cas trés limités
 
-Dans ce tutorial, les tailles ont été mis en oeuvre dans les propriétés _Gabarit > Hauteur_ et _Gabarit > Largeur_ mais le principe reste le même pour les autres propriétés des acteurs avec des tailles:
+Dans ce tutoriel, les tailles ont été mis en oeuvre dans les propriétés _Gabarit > Hauteur_ et _Gabarit > Largeur_ mais le principe reste le même pour les autres propriétés des acteurs avec des tailles:
 
 * _Gabarit > Marge > Extérieurs_
 * _Gabarit > Marge > Intérieurs_
@@ -248,7 +254,7 @@ Enfin nous avons utilisé les **Dev Tools** de Chrome pour simuler un device de 
 
 ## Conclusion
 
-Le **tutorial 8** portant sur les tailles est **terminé**
+Le **tutoriel 8** portant sur les tailles est **terminé**
 
 Vous ne devez pas hésiter à **tester** votre SynApp avec les outils de développement des navigateurs qui permmettent de vérifier rapidement le rendu dans différentes tailles et orientations d'écrans: n'hésitez pas à **changer le device** de restitution _iPad_, _Nexus_, etc
 
@@ -261,6 +267,6 @@ La bonne utilisation des tailles est un facteur clé pour construire des applica
 [![Source Blog Stéphanie Walter](https://cdn.dribbble.com/users/84109/screenshots/1488076/content-is-like-water-800.jpg)](http://google.com.au/)
 [Source Blog Stéphanie Walter](https://blog.stephaniewalter.fr/en/freebies-giveaways/){:target="_blank"}
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
-Revenir sur la [liste des tutoriaux](../index.md)
+Revenir sur la [liste des tutoriels](../index.md)

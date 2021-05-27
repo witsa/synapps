@@ -1,10 +1,19 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 03](index.md)
+---
+title: 3. Les acteurs dispositions / Partie 4
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 3: l'acteur de disposition **Modal**
+[< 3. Les acteurs dispositions](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 3: l'acteur de disposition **Modal**
 
 ![Icone modal](assets/actor_modal.png)
 
-La quatrième partie de ce tutorial est consacrée à l'acteur **_modal_** qui permet d'**ouvrir** une fenêtre modale pour optenir ou fournir une information à l'utilisateur
+La quatrième partie de ce tutoriel est consacrée à l'acteur **_modal_** qui permet d'**ouvrir** une fenêtre modale pour optenir ou fournir une information à l'utilisateur
 
 ## Prerequis
 
@@ -121,14 +130,14 @@ L'acteur _modal_ est important pour optenir ou fournir une information à l'util
 
 Il est possible d'automatiser l'ouverture d'une modale en **liant** sa propriété _Afficher_ à un autre acteur, voir à une source de données
 
-L'acteur modale a une taille fixe dans ce tutorial, mais il est tout à fait possible de définir des tailles relatives afin d'adapter au mieux la modale au support de restitution
+L'acteur modale a une taille fixe dans ce tutoriel, mais il est tout à fait possible de définir des tailles relatives afin d'adapter au mieux la modale au support de restitution
 
 L'acteur modale doit être utilisé avec discernement, dans le cadre mentionné ci-dessus. Il est parfois préférrable de faire naviguer l'utilisateur sur une nouvelle scène: se sera l'objet du prochain [Tutoriel suivant](../tuto04/index.md) sur la navigation
 
 ## Conclusion
 
-Le **tutorial 3** sur les acteurs _dispositions_ est **terminé**. Certains sont plus utilisés que d'autres mais ils sont tous trés importants car ils savent disposer des acteurs enfants. Ils peuvent bien sur être combinés entre eux afin de construire des applications **ambitieuses adaptées** à tous les types d'écrans
+Le **tutoriel 3** sur les acteurs _dispositions_ est **terminé**. Certains sont plus utilisés que d'autres mais ils sont tous trés importants car ils savent disposer des acteurs enfants. Ils peuvent bien sur être combinés entre eux afin de construire des applications **ambitieuses adaptées** à tous les types d'écrans
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant sur la navigation](../tuto04/index.md)

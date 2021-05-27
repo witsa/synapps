@@ -1,11 +1,11 @@
 ---
-title: Les propriétés additionnelles
+title: Les scènes
 parent: Bonnes et Mauvaises pratiques
 grand_parent: Documentation Maker
-nav_order: 3
+nav_order: 4
 ---
 
-# Les propriétés additionnelles
+# Les scènes
 
 
 *(...)*

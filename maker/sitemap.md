@@ -1,4 +1,8 @@
-[Accueil](./)
+---
+title: Plan de site
+parent: Documentation Maker
+nav_order: 30
+---
 
 # Plan du site
 
@@ -12,15 +16,15 @@
 
 * [Matrice de compatibilité recommandée des OS et navigateurs](browers.md)
 
-* [Tutoriaux](tutos/index.md)
-  1. [Tutorial 1: **première** SynApp "Helloworld"](tutos/tuto01/index.md)
-  2. [Tutorial 2: les **liaisons**](tutos/tuto02/index.md)
-  3. [Tutorial 3: les acteurs **dispositions**](tutos/tuto03/index.md)
-  4. [Tutorial 4: la **navigation**](tutos/tuto04/index.md)
-  5. [Tutorial 5: les acteurs **composites**](tutos/tuto05/index.md)
-  6. [Tutorial 6: les **événements** et **fonctions** javascripts](tutos/tuto06/index.md)
-  7. [Tutorial 7: les acteurs **métiers** natifs du REDY](tutos/tuto07/index.md)
-  8. [Tutorial 8: les **tailles**](tutos/tuto08/index.md)
+* [Tutoriels](tutos/index.md)
+  1. [Tutoriel 1: **première** SynApp "Helloworld"](tutos/tuto01/index.md)
+  2. [Tutoriel 2: les **liaisons**](tutos/tuto02/index.md)
+  3. [Tutoriel 3: les acteurs **dispositions**](tutos/tuto03/index.md)
+  4. [Tutoriel 4: la **navigation**](tutos/tuto04/index.md)
+  5. [Tutoriel 5: les acteurs **composites**](tutos/tuto05/index.md)
+  6. [Tutoriel 6: les **événements** et **fonctions** javascripts](tutos/tuto06/index.md)
+  7. [Tutoriel 7: les acteurs **métiers** natifs du REDY](tutos/tuto07/index.md)
+  8. [Tutoriel 8: les **tailles**](tutos/tuto08/index.md)
 
 * [Acteurs](actors/index.md)
   1. [Description des acteurs natifs](actors/natives.md)
@@ -36,4 +40,4 @@
 3. [En savoir plus sur les objets crées dans le REDY](redy/explore.md)
 
 ----
-[API Sript](script-api/index.html)
+[API Script](script-api/index.html)

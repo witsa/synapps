@@ -1,8 +1,17 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
+---
+title: 7. Acteurs REDY / Partie 3
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 7: les acteurs métiers natifs du REDY - Part 3: **Agenda**, **Grapheur** et **plus...**
+[< 7. Acteurs REDY](./index.md)
 
-Dans ce tutorial, nous allons utiliser les acteurs **grapheurs** et **agenda** qui ne nécessitent pas une configuration particulière. Nous allons les intégrer simplement dans 2 scènes sans barres de commandes
+{% include table_of_content.html %}
+
+# Tutoriel 7: les acteurs métiers natifs du REDY - Part 3: **Agenda**, **Grapheur** et **plus...**
+
+Dans ce tutoriel, nous allons utiliser les acteurs **grapheurs** et **agenda** qui ne nécessitent pas une configuration particulière. Nous allons les intégrer simplement dans 2 scènes sans barres de commandes
 
 Nous allons également intégrer le **tableau de bord multi-énergies** du REDY !
 
@@ -105,10 +114,10 @@ _Remarque:_ pour ce dernier, nous aurions également pu construire un nouvel act
 
 ## Conclusion
 
-La **troisième partie du tutorial 7** portant est **terminée**. Nous avons construit 3 scènes simples avec le **grapheur**, l'**agenda** et le **tableau de bord multi-énergies**
+La **troisième partie du tutoriel 7** portant est **terminée**. Nous avons construit 3 scènes simples avec le **grapheur**, l'**agenda** et le **tableau de bord multi-énergies**
 
 Nous allons maintenant intégrer les 5 scènes créées dans une nouvelle scène de navigation pour **finaliser** l'application d'exploitation !
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant](part4.md)

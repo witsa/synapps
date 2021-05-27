@@ -1,4 +1,8 @@
-[Accueil](./)
+---
+title: Compatibilités
+parent: Documentation Maker
+nav_order: 4
+---
 
 # Matrice de compatibilité recommandée des OS et navigateurs
 

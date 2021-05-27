@@ -1,6 +1,15 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 07](index.md)
+---
+title: 7. Acteurs REDY / Partie 2
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 7: les acteurs métiers natifs du REDY - Part 2: **Etats**
+[< 7. Acteurs REDY](./index.md)
+
+{% include table_of_content.html %}
+
+# Tutoriel 7: les acteurs métiers natifs du REDY - Part 2: **Etats**
 
 L'acteur état fonctionne également sans la moindre configuration. Plusieurs propriétés _spécifiques_ permettent de personnaliser et filtrer son rendu. Ces propriétés sont **explicites** et comme pour le journal nous ne rentrerons pas dans le détail de chacune d'entre elles !
 ![etats_properties](assets/etats_properties.png)
@@ -133,8 +142,8 @@ Comme pour le journal, vous pourrez faire évoluer la scène pour répondre pré
 
 ## Conclusion
 
-La **deuxième partie du tutorial 7** portant sur l' acteur métier natif états est **terminée**. Nous avons construit 2 scènes avancées avec le **journal** et les **états**. Ils manquent encore quelques acteurs métiers natifs pour réaliser une application d'exploitation simple: les acteurs **agenda** et **grapheurs**
+La **deuxième partie du tutoriel 7** portant sur l' acteur métier natif états est **terminée**. Nous avons construit 2 scènes avancées avec le **journal** et les **états**. Ils manquent encore quelques acteurs métiers natifs pour réaliser une application d'exploitation simple: les acteurs **agenda** et **grapheurs**
 
-Vous pouvez remonter les **bugs** & **remarques** concernant ce tutorial, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
+Vous pouvez remonter les **bugs** & **remarques** concernant ce tutoriel, SynApps RUNTIME & MAKER sur [GitHub](https://github.com/witsa/synapps/issues)
 
 [Tutoriel suivant](part3.md)

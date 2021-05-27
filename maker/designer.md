@@ -1,9 +1,8 @@
 ---
 title: Description de l'IDE du MAKER
 parent: Documentation Maker
+nav_exclude: true
 ---
-
-[Accueil](./)
 
 # Description de l'IDE du MAKER
 

@@ -1,16 +1,14 @@
 ---
 title: 1. Première SynApp
-parent: Tutoriaux
+parent: Tutoriels
 grand_parent: Documentation Maker
 ---
 
 {% include table_of_content.html %}
 
-[Accueil](../../) / [Tutoriaux](../index.md)
+# Tutoriel 1: première SynApp "Helloworld" - **<span style='color:green'>Débutant</span>**
 
-# Tutorial 1: première SynApp "Helloworld" - **<span style='color:green'>Débutant</span>**
-
-L'objectif de ce tutorial est la réalisation d'une SynApp simple déployée sur un REDY
+L'objectif de ce tutoriel est la réalisation d'une SynApp simple déployée sur un REDY
 
 ## Prerequis
 
@@ -111,4 +109,4 @@ Vous avez construit puis déployé sur un REDY une première SynApp !
 
 * Avant de continuer, revenir dans l'edition de la SynApp et parcourir toutes les propriétés des 3 acteurs. Regarder notamment les propriétés *spécifiques*, essayer de modifier des propriétés, la couleur de fond par exemple, pour observer leurs effets dans la zone de prévisualisation
 
-* [Tutorial suivant sur les _liaisons_](../tuto02/index.md)
+* [Tutoriel suivant sur les _liaisons_](../tuto02/index.md)

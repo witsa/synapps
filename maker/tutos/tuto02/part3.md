@@ -1,8 +1,17 @@
-[Accueil](../../) / [Tutoriaux](../index.md) / [Tutorial 02](index.md)
+---
+title: 2. Les liaisons / Partie 3
+parent: Tutoriels
+grand_parent: Documentation Maker
+nav_exclude: true
+---
 
-# Tutorial 2: les liaisons **3/6** *[7 nov 17]*
+[< 2. Les liaisons](./index.md)
 
-Dans la deuxième partie de ce tutorial, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
+{% include table_of_content.html %}
+
+# Tutoriel 2: les liaisons **3/6** *[7 nov 17]*
+
+Dans la deuxième partie de ce tutoriel, le squelette de présentation a été créé. Pour l'instant, toutes les propriétés des acteurs sont définies avec des valeurs fixes. La prochaine étape va consister mettre en oeuvre un concept important de SynApps: les **liaisons** pour notamment
 * lier certaines propriétés des acteurs avec des ressources du REDY: liaisons vers des **source de données**
 
 Exemple: la valeur analogique de *variableAnalogicTuto* avec la valeur de la jauge *gaugeAnalogic*
@@ -82,4 +91,4 @@ La zone de prévisualisation doit restituer les changements sur l'ensemble des a
 
 **Déployer la SynApp**
 
-Suite du [tutorial](part4.md)
+Suite du [tutoriel](part4.md)
