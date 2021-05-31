@@ -3,11 +3,11 @@
   "config": {
     "stable": {
       "version": "1.0.0-rc.4",
-      "revision": "2021-05-31T16:08:00"
+      "revision": "2021-05-31T16:40:00"
     },
     "beta": {
       "version": "1.0.0-rc.4",
-      "revision": "2021-05-31T16:08:00"
+      "revision": "2021-05-31T16:40:00"
     }
   }
 }
