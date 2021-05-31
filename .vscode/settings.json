@@ -2,5 +2,8 @@
   "cSpell.words": [
     "lorsqu'on",
     "redy"
-  ]
+  ],
+  "search.exclude": {
+    "script-api": true
+  }
 }
