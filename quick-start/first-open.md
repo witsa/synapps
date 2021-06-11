@@ -16,7 +16,7 @@ La fenêtre de Synapps Studio s'est affichée :
 
 ## Accès anticipé
 
-Pendant toute la phase d'accès anticipé à Synapps Studio, une clé d'agrément est requise pour l'activer.
+Pendant toute la phase d'accès anticipé de Synapps Studio, une clé d'agrément est requise pour l'activer.
 
 ![SynApps](../assets/first-open-12.png)
 
@@ -24,7 +24,7 @@ Pendant toute la phase d'accès anticipé à Synapps Studio, une clé d'agrémen
 
 ## Création d'un projet "Bonjour le monde!"
 
-Nous allons créer un premier projet de construction d'une application de démonstration  jusqu'à son installation dans un REDY-PC.
+Nous allons créer un premier projet de démonstration, de sa construction jusqu'à son installation dans un REDY-PC.
 
 Mais abordons deux éléments importants :
 

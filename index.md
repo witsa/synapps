@@ -19,9 +19,19 @@ La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est 
 
 ------
 
+
+<center>
+
+![SynApps](assets/under-progress.gif)
+
 > en cours de rédaction
 
 > Progression **7%**
+
+</center>
+
+
+
 
 ------
 
@@ -63,3 +73,15 @@ Avec Studio,
 ## Démarrage Rapide
 
 Vous trouverez un [guide de démarrage](./quick-start) pour une première prise en main de l'outils et appréhender les concepts de la solution.
+
+
+## Issues et demandes d'évolution
+
+Les **bugs** relevés, **questions** ou **demandes d'évolution** doivent remonter via le [gestionnaire d'issues GitHub](https://github.com/witsa/synapps/issues). Il est d'un accès simple et permet notamment d'être notifié, suivre l'évolution des issues, et partager auprès des autres utilisateurs
+
+[![SynApps](assets/github.png)](https://github.com/witsa/synapps/issues){:target="_blank"}
+
+
+Essayer d'être le plus **exhaustif** possible et communiquer, quand c'est possible, étapes de reproduction d'un bug, copies d'écrans et description détaillée!
+
+Dans un second temps, vous pouvez également contacter le **support** WIT
