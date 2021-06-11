@@ -20,17 +20,11 @@ La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est 
 ------
 
 
-<center>
-
 ![SynApps](assets/under-progress.gif)
 
 > en cours de rédaction
 
 > Progression **7%**
-
-</center>
-
-
 
 
 ------
