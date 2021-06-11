@@ -10,7 +10,7 @@ Avant tout, il va falloir installer une version de Synapps Studio sur votre post
 
 > Pendant la phase d'*accès anticipé** de la solution, **une clé d'activation sera requise**.
 
-Dernière version : [1.0.0-rc.4](https://github.com/witsa/synapps/releases/download/1.0.0-rc.4/synapps-studio-setup.zip)
+Dernière version : [1.0.0-rc.5](https://github.com/witsa/synapps/releases/download/1.0.0-rc.5/synapps-studio-setup.zip)
 
 - Téléchargez le fichier zip.
 - Ouvrir le fichier zip et exécutez le fichier synapps-studio-setup.exe
