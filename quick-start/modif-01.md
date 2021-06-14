@@ -118,7 +118,7 @@ Et dans l'aperçu :
 
 ![SynApps](../assets/modif-01-15.png)
 
-> **Remarque :** Les réalisées dans le designer sont *annulables*. <br>![SynApps](../assets/modif-01-10.png)<br>Raccourci **Ctrl+Z** / **Ctrl+Shift+Z**
+> **Remarque :** Les actions réalisées dans le designer sont *annulables*. <br>![SynApps](../assets/modif-01-10.png)<br>Raccourci **Ctrl+Z** / **Ctrl+Shift+Z**
 
 
 Nous allons maintenant changer le contenu du texte :

@@ -44,4 +44,4 @@ Vous pouvez tester la synapp en utilisant le menu.
 Dans ce cas choisissez l'option "Exécuter dans le navigateur...". <br>Raccourci clavier **Ctrl+Shift+R**
 
 # Prochaine étape :
-Maintenant, vous allez [modifier la scène d'accueil](./modif-1) de projet Studio.
+Maintenant, vous allez [modifier la scène d'accueil](./modif-01) de projet Studio.
