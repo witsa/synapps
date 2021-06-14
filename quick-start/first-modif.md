@@ -25,13 +25,13 @@ L'application est constituée d’une ou plusieurs scènes que l’utilisateur a
 
 Nous allons sélectionner une des scènes du projet. Affichons l'arborescence des scènes du projet :
 
-![SynApps](../assets/modif-01-01.png)
+![SynApps](../assets/first-modif-01.png)
 
 La scène avec le ![SynApps](../assets/start-scene-icon.png) est la celle de démarrage. Mais ce n'est pas cette scène que nous allons modifier ici.
 
 Sélectionnez la scène **Accueil** pour afficher son **designer**.
 
-![SynApps](../assets/modif-01-03.png)
+![SynApps](../assets/first-modif-03.png)
 
 - Au centre se trouve l'**aperçu** de la scène *(A)*
 - En dessous de la liste des scènes, sur la gauche, vous trouverez le **plan des acteurs** *(B)*.
@@ -46,7 +46,7 @@ Les acteurs permettent de construire et d’articuler n’importe quel type d’
 
 Ils sont organisés sous forme d'arborescence :
 
-![SynApps](../assets/modif-01-04.png)
+![SynApps](../assets/first-modif-04.png)
 
 
 Le premier acteur, l'**acteur principal** de la scène, `stack1` est de type **Empilement**.
@@ -62,22 +62,22 @@ Pour ajouter un acteur, vous allez effectuer un clic droit sur `stack1`. Le menu
 
 > **Remarque :** La gestion des scènes s'effectue également par l'intermédiaire d'un menu contextuel sur les éléments de l'arborescence.
 
-![SynApps](../assets/modif-01-05.png)
+![SynApps](../assets/first-modif-05.png)
 
 Choisissez *Ajouter un acteur...*. Le panneau de choix de nouvel acteur va s'afficher.
 
-![SynApps](../assets/modif-01-06.png)
+![SynApps](../assets/first-modif-06.png)
 
 
 Cliquez sur l'acteur *Texte* qui se trouve dans la section *Affichage*.
 
 L'acteur `text2` a été ajouté dans l'arborescence :
 
-![SynApps](../assets/modif-01-07.png)
+![SynApps](../assets/first-modif-07.png)
 
 Dans l'aperçu, l'acteur se retrouve empilé en dessous de `text1`.
 
-![SynApps](../assets/modif-01-08.png)
+![SynApps](../assets/first-modif-08.png)
 
 ### Suppression
 
@@ -87,11 +87,11 @@ Cliquez droit sur l'acteur `text1` et choisissez *Supprimer*.
 
 L'acteur à disparu :
 
-![SynApps](../assets/modif-01-09.png)
+![SynApps](../assets/first-modif-09.png)
 
 Et dans l'aperçu :
 
-![SynApps](../assets/modif-01-11.png)
+![SynApps](../assets/first-modif-11.png)
 
 
 ### Modification
@@ -104,34 +104,35 @@ Si ce n'est pas déjà le cas, sélectionner l'acteur `text2`.
 
 Concentrons nous sur l'inspecteur :
 
-![SynApps](../assets/modif-01-12.png)
+![SynApps](../assets/first-modif-12.png)
 
 Déroulez la partie *Disposition*.
 
-![SynApps](../assets/modif-01-13.png)
+![SynApps](../assets/first-modif-13.png)
 
 Cette section permet de gérer la disposition de l'acteur dans son acteur parent. ici, vous pouvez changer l'alignement de l'acteur et choisir *centré* verticalement et horizontalement.
 
-![SynApps](../assets/modif-01-14.png)
+![SynApps](../assets/first-modif-14.png)
 
 Et dans l'aperçu :
 
-![SynApps](../assets/modif-01-15.png)
+![SynApps](../assets/first-modif-15.png)
 
-> **Remarque :** Les actions réalisées dans le designer sont *annulables*. <br>![SynApps](../assets/modif-01-10.png)<br>Raccourci **Ctrl+Z** / **Ctrl+Shift+Z**
+> **Remarque :** Les actions réalisées dans le designer sont *annulables*. <br>![SynApps](../assets/first-modif-10.png)<br>Raccourci **Ctrl+Z** / **Ctrl+Shift+Z**
 
+Profitez-en pour jeter un oeil sur les autres sections offertes par l'inspecteur de l'acteur.
 
 Nous allons maintenant changer le contenu du texte :
 
 Cela se passe dans la section *Spécifiques*.
 
-![SynApps](../assets/modif-01-16.png)
+![SynApps](../assets/first-modif-16.png)
 
 Comme son nom l'indique, cette section varie en fonction du type d'acteur qui est sélectionné.
 
 Ici, vous pouvez modifier le texte affiché par l'acteur en cliquant sur le bouton avec un stylo. Le panneau d'édition de texte s'affiche :
 
-![SynApps](../assets/modif-01-17.png)
+![SynApps](../assets/first-modif-17.png)
 
 Saisissez `Salut le monde!` à la place de `Text`. Puis cliquez sur le bouton pour sauver votre saisie.
 
@@ -139,7 +140,7 @@ Saisissez `Salut le monde!` à la place de `Text`. Puis cliquez sur le bouton po
 
 Vous pouvez fermer le panneau en cliquant ailleurs ou directement sur la croix. Le texte a changé dans l'aperçu.
 
-![SynApps](../assets/modif-01-18.png)
+![SynApps](../assets/first-modif-18.png)
 
 
 ## Sauvegarde et Exécution
@@ -150,10 +151,10 @@ Nous allons sauvegarder les modifications réalisées en cliquant sur le bouton 
 
 Maintenant, si vous exécuter la synapp (pensez à **Ctrl+R**), vous pourrez voir :
 
-![SynApps](../assets/modif-01-19.png).
+![SynApps](../assets/first-modif-19.png).
 
 ## Prochaine étape :
-Maintenant, vous allez [ajouter une scène d'accueil](./modif-1) de projet Studio.
+Maintenant, vous pouvez continuer en affichant une variable du REDY [ajouter une scène](./add-scene) de projet Studio.
 
 
 > En cours de rédaction...
