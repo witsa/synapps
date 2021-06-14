@@ -16,7 +16,7 @@ La fenêtre de Synapps Studio s'est affichée :
 
 ## Accès anticipé
 
-Pendant toute la phase d'accès anticipé de Synapps Studio, une clé d'agrément est requise pour l'activer.
+{% include disclaimer-beta.md %}
 
 ![SynApps](../assets/first-open-12.png)
 

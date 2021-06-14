@@ -8,7 +8,7 @@ nav_order: 1
 
 Avant tout, il va falloir installer une version de Synapps Studio sur votre poste.
 
-> Pendant la phase d'*accès anticipé** de la solution, **une clé d'activation sera requise**.
+{% include disclaimer-beta.md %}
 
 Dernière version : [1.0.0-rc.5](https://github.com/witsa/synapps/releases/download/1.0.0-rc.5/synapps-studio-setup.zip)
 

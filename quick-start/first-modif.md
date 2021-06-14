@@ -153,7 +153,7 @@ Maintenant, si vous exécuter la synapp (pensez à **Ctrl+R**), vous pourrez voi
 
 ![SynApps](../assets/first-modif-19.png).
 
-## Prochaine étape :
+## Prochaine étape
 Maintenant, vous pouvez continuer en affichant une variable du REDY [ajouter une scène](./add-scene) de projet Studio.
 
 
