@@ -1,5 +1,5 @@
 ---
-title: Première modification
+title: Premières modifications
 parent: Guide de démarrage
 nav_order: 4
 ---
@@ -7,7 +7,7 @@ nav_order: 4
 {% include table_of_content.html %}
 
 
-# Première modification : la scène d'accueil
+# Premières modifications : la scène d'accueil
 
 Nous allons modifier le projet de manière à afficher un message de bienvenue en accueil.
 
@@ -153,10 +153,44 @@ Maintenant, si vous exécuter la synapp (pensez à **Ctrl+R**), vous pourrez voi
 
 ![SynApps](../assets/first-modif-19.png).
 
+## Encore quelques modifications
+
+### Utilisation de librairie
+
+Nous allons maintenant changer la couleur du texte. Pour celà, nous allons nous intéresser à la section *Texte* et plus paticulièrement, le champ *Couleur*.
+
+![SynApps](../assets/first-modif-20.png).
+
+Ce champ attend une [couleur CSS](http://localhost:4000/script-api/global.html#CssColorString){:target="_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Vous pouvez en essayer pour visualiser le résultat.
+
+Nous allons utiliser la **librairie** de couleur définie dans la synapp et en profiter pour aborder le sujet de la **liaison**.
+
+La simplicité d'édition des interfaces repose entre autres sur ce concept. Les champs des acteurs peuvent être liés à d'autres éléments de l'application, un autre acteur, une couleur, un texte, une image et une donnée dans l’ULI...
+
+Cliquez sur le bouton d'option de champ sur la droite, en forme d'engrenage et choisissez *Lier à...*.
+
+![SynApps](../assets/first-modif-21.png).
+
+
+Le panneau d'édition de liaison s'affiche alors.
+
+![SynApps](../assets/first-modif-22.png).
+
+Pour l'instant, aucune liaison n'est définie. Mais si vous ouvrez le menu déroulant, vous pourrez observer les sources de liaisons possibles. Choisissez *Librairies/Couleur*.
+
+L'interface a changé :
+
+![SynApps](../assets/first-modif-23.png).
+
+Dans le champ couleur qui est apparu, vous allez pouvoir choisir une des couleurs définies dans la librairie :
+
+![SynApps](../assets/first-modif-24.png).
+
+Choisissez `themeColor` et cliquer sur le bouton *Lier à...* en bas pour valider la création de la liaison.
+
+![SynApps](../assets/first-modif-25.png).
+
+> **Remarque :** La librairie de couleur, comme toutes les autres librairie sont accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png) et ne possède pas encore son *designer*. Il faut modifier un fichier `JSON`.
+
 ## Prochaine étape
-Maintenant, vous pouvez continuer en affichant une variable du REDY [ajouter une scène](./add-scene) de projet Studio.
-
-
-> En cours de rédaction...
-
-![SynApps](../assets/under-progress.gif)
+Maintenant, vous pouvez continuer en affichant une variable du REDY [Visualiser un reflet du REDY](./add-scene) de projet Studio.
