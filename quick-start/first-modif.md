@@ -192,7 +192,7 @@ Choisissez `themeColor` et cliquer sur le bouton *Lier à...* en bas pour valide
 
 ![SynApps](../assets/first-modif-25.png).
 
-> **Remarque :** La librairie de couleur, comme toutes les autres librairie sont accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png) et ne possède pas encore son *designer*. Il faut modifier un fichier `JSON`.
+> **Remarque :** La librairie de couleur, comme toutes les autres librairies est accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png) et ne possède pas encore son *designer*. Il faut modifier un fichier `JSON`.
 
 ## Prochaine étape
 Maintenant, vous pouvez continuer en affichant une variable du REDY [Visualiser un reflet du REDY](./add-scene) de projet Studio.
