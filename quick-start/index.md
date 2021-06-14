@@ -5,6 +5,10 @@ nav_order: 3
 ---
 
 
+> En cours de rédaction...
+
+![SynApps](../assets/under-progress.gif)
+
 # Guide de démarrage
 
 En suivant ce guide, vous pourrez prendre en main de l'outil Synapps Studio et appréhender des concepts fondamentaux de la solution.
