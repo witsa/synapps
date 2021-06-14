@@ -163,6 +163,8 @@ Nous allons maintenant changer la couleur du texte. Pour celà, nous allons nous
 
 Ce champ attend une [couleur CSS](http://localhost:4000/script-api/global.html#CssColorString){:target="_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Vous pouvez en essayer pour visualiser le résultat.
 
+![SynApps](../assets/first-modif-26.png).
+
 Nous allons utiliser la **librairie** de couleur définie dans la synapp et en profiter pour aborder le sujet de la **liaison**.
 
 La simplicité d'édition des interfaces repose entre autres sur ce concept. Les champs des acteurs peuvent être liés à d'autres éléments de l'application, un autre acteur, une couleur, un texte, une image et une donnée dans l’ULI...
