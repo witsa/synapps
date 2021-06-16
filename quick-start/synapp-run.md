@@ -1,10 +1,10 @@
 ---
-title: Première exécution
+title: Exécution
 parent: Guide de démarrage
 nav_order: 3
 ---
 
-# Première exécution
+# Exécution de la synapp
 
 Dans l'étape précédente, nous avons créé un projet avec le modèle "Tablette et Bureau". Cela a généré un projet avec un contenu pré-défini et adapté aux tailles des tablettes et bureau.
 Le contenu est pret à être exécuté.
@@ -19,11 +19,11 @@ Tout nouveau projet démarre avec un hôte pré-défini. Il pointe vers `http://
 
 Tout ceci est paramétrable (voir la section consacrée à la gestion des hôtes et des synapps - *todo*).
 
-![SynApps](../assets/first-run-01.png)
+![SynApps](../assets/quick-start/synapp-run/01.png)
 
 Lancez une instance de **REDY-PC** (une version `13.2.0` ou ultérieur).
 
-![SynApps](../assets/first-run-02.png)
+![SynApps](../assets/quick-start/synapp-run/02.png)
 
 > N'oubliez pas d'activer l'adds **Intravision**. C'est ce qui vous permettra plus tard de publier la synapp dans le paramétrage.
 
@@ -32,11 +32,11 @@ Lancez une instance de **REDY-PC** (une version `13.2.0` ou ultérieur).
 Passons maintenant à l'exécution de la synapp :
  - Rendez-vous dans le menu d'application et choisissez l'option "Exécution". <br>Raccourci clavier **Ctrl+R**
 
-![SynApps](../assets/first-run-03.png)
+![SynApps](../assets/quick-start/synapp-run/03.png)
 
 L'onglet d'exécution s'est ouvert :
 
-![SynApps](../assets/first-run-04.png)
+![SynApps](../assets/quick-start/synapp-run/04.png)
 
 Vous pouvez tester la synapp en utilisant le menu.
 
@@ -44,4 +44,4 @@ Vous pouvez tester la synapp en utilisant le menu.
 Dans ce cas choisissez l'option "Exécuter dans le navigateur...". <br>Raccourci clavier **Ctrl+Shift+R**
 
 # Prochaine étape :
-Maintenant, vous allez [modifier la scène d'accueil](./first-modif) de projet Studio.
+Maintenant, vous allez effectuer [vos premiers pas avec le designer de scène](./designer-first-steps).

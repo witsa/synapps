@@ -1,5 +1,5 @@
 ---
-title: Première publication
+title: Publication
 parent: Guide de démarrage
 nav_order: 5
 ---
@@ -13,11 +13,11 @@ Il ne reste plus qu'à voir comment publier la synapp de votre projet.
 
 Rendez-vous dans la rubrique *projet* ![SynApps](../assets/project.png) et la *gestion des hôtes*.
 
-![SynApps](../assets/first-publish-01.png)
+![SynApps](../assets/quick-start/synapp-publish/01.png)
 
 Sélectionnez le seul hôte défini ou bien celui sur lequel vous désirez publier si vous en avez définis plusieurs.
 
-![SynApps](../assets/first-publish-02.png)
+![SynApps](../assets/quick-start/synapp-publish/02.png)
 
 ## Connexion à l'hôte
 
@@ -25,7 +25,7 @@ Il va falloir se connecter à l'hôte sélectionné. Pour celà, cliquez sur bou
 
 Une fois connectée, l'interface présente maintenant le bouton dédié à la publication.
 
-![SynApps](../assets/first-publish-03.png)
+![SynApps](../assets/quick-start/synapp-publish/03.png)
 
 
 > **Remarque :** Si vous définissez un utilisateur qui n'est pas au moins *installateur* ou si l'*adds Intravision* n'est pas activée, vous ne pourrez pas publier la synapp dans l'hôte.
@@ -34,11 +34,11 @@ Une fois connectée, l'interface présente maintenant le bouton dédié à la pu
 
 Appuyez sur le bouton *Publier* et la progression du déploiement s'affichera :
 
-![SynApps](../assets/first-publish-04.png)
+![SynApps](../assets/quick-start/synapp-publish/04.png)
 
 Si tout se passe bien, l'interface montrera la synapp correspondante au projet publiée dans l'hôte.
 
-![SynApps](../assets/first-publish-05.png)
+![SynApps](../assets/quick-start/synapp-publish/05.png)
 
 > **Remarque :** Chaque projet permet de définir une synapp, avec un identifiant unique. Ainsi, Studio est capable de reconnaître la synapp publiée commme correspondante à celle du projet en cours.
 

@@ -24,4 +24,4 @@ Dernière version : [1.0.0-rc.5](https://github.com/witsa/synapps/releases/downl
 
 
 # Prochaine étape :
-Maintenant, vous pouvez ouvrir Studio [ouvrir Studio](./first-open) pour la première fois.
+Maintenant, vous pouvez ouvrir Studio et [créer votre premier projet](./first-project).
