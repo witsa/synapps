@@ -3,6 +3,7 @@ title: Installation projet PK4/BK4
 parent: REDY
 grand_parent: Documentation Maker
 nav_order: 3
+search_exclude: true
 ---
 
 # Installation projet PK4/BK4

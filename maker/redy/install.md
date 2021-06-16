@@ -3,6 +3,7 @@ title: Installation
 parent: REDY
 grand_parent: Documentation Maker
 nav_order: 1
+search_exclude: true
 ---
 
 # Installation

@@ -3,6 +3,7 @@ title: Configurer un REDY
 parent: REDY
 grand_parent: Documentation Maker
 nav_order: 2
+search_exclude: true
 ---
 
 # Configurer un REDY

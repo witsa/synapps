@@ -2,6 +2,7 @@
 title: Versions SynApps MAKER et RUNTIME
 parent: Documentation Maker
 nav_order: 3
+search_exclude: true
 ---
 
 # Versions SynApps MAKER et RUNTIME

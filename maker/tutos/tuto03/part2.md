@@ -1,8 +1,9 @@
 ---
 title: 3. Les acteurs dispositions / Partie 2
-parent: Tutoriels
+parent: Tutoriels Maker
 grand_parent: Documentation Maker
 nav_exclude: true
+search_exclude: true
 ---
 
 [< 3. Les acteurs dispositions](./index.md)

@@ -1,7 +1,8 @@
 ---
 title: 3. Les acteurs dispositions
-parent: Tutoriels
+parent: Tutoriels Maker
 grand_parent: Documentation Maker
+search_exclude: true
 ---
 
 {% include table_of_content.html %}

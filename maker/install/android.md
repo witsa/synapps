@@ -2,6 +2,7 @@
 title: Installation de SynApps RUNTIME sur **Android**
 parent: Installation
 grand_parent: Documentation Maker
+search_exclude: true
 ---
 
 # Installation de SynApps RUNTIME sur **Android**

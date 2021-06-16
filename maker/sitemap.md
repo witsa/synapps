@@ -2,6 +2,7 @@
 title: Plan de site
 parent: Documentation Maker
 nav_order: 30
+search_exclude: true
 ---
 
 # Plan du site

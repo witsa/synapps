@@ -3,6 +3,7 @@ title: Acteurs composites
 parent: Acteurs
 grand_parent: Documentation Maker
 nav_order: 2
+search_exclude: true
 ---
 
 # Acteurs composites

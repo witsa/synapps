@@ -3,6 +3,7 @@ title: Installation
 parent: Documentation Maker
 has_children: true
 nav_order: 1
+search_exclude: true
 ---
 
 # Installation

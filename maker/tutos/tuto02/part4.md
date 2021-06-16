@@ -1,8 +1,9 @@
 ---
 title: 2. Les liaisons / Partie 4
-parent: Tutoriels
+parent: Tutoriels Maker
 grand_parent: Documentation Maker
 nav_exclude: true
+search_exclude: true
 ---
 
 [< 2. Les liaisons](./index.md)

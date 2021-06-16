@@ -2,6 +2,7 @@
 title: Compatibilités
 parent: Documentation Maker
 nav_order: 4
+search_exclude: true
 ---
 
 # Matrice de compatibilité recommandée des OS et navigateurs

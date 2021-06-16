@@ -3,6 +3,7 @@ title: Les équipements nomades
 parent: Bonnes et Mauvaises pratiques
 grand_parent: Documentation Maker
 nav_order: 12
+search_exclude: true
 ---
 
 # Les spécificités des équipements nomades

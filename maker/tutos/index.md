@@ -1,9 +1,10 @@
 ---
-title: Tutoriels
+title: Tutoriels Maker
 parent: Documentation Maker
 has_children: true
 nav_order: 2
 has_toc: false
+search_exclude: true
 ---
 
 # Tutoriels

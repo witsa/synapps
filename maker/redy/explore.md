@@ -3,6 +3,7 @@ title: Exploration des objets SynApps dans le REDY
 parent: REDY
 grand_parent: Documentation Maker
 nav_order: 4
+search_exclude: true
 ---
 
 # Exploration des objets SynApps dans le REDY

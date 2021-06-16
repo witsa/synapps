@@ -24,7 +24,7 @@ La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est 
 
 > en cours de rédaction
 
-> Progression **15%**
+> Progression **20%**
 
 
 ------

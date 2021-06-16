@@ -3,6 +3,7 @@ title: Bonnes et Mauvaises pratiques
 parent: Documentation Maker
 nav_order: 5
 has_children: true
+search_exclude: true
 ---
 
 # Bonnes et Mauvaises pratiques *(...en construction...)*

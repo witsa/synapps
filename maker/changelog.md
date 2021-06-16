@@ -2,6 +2,7 @@
 title: Changelog
 parent: Documentation Maker
 nav_order: 3
+search_exclude: true
 ---
 
 # Changelog

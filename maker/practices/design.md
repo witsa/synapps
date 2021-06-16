@@ -3,6 +3,7 @@ title: Dessinez !
 parent: Bonnes et Mauvaises pratiques
 grand_parent: Documentation Maker
 nav_order: 1
+search_exclude: true
 ---
 
 {% include table_of_content.html %}
