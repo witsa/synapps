@@ -1,4 +1,11 @@
 source "https://rubygems.org"
+
+# GHSA-7rrm-v45f-jp64
+# moderate severity
+# Vulnerable versions: < 1.11.4
+# Patched version: 1.11.4
+gem "nokogiri", ">= 1.11.4"
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
