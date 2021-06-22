@@ -20,6 +20,8 @@ Un style est toujours défini basé sur un autre (donc au moins celui par défau
 
 # Dans Studio
 
+## Définition des Styles
+
 La définition des styles d'acteur est une section à part entière dans Studio. Elle est actuellement encore à réaliser en JSON.
 
 ![SynApps](../assets/styles.png)
@@ -72,7 +74,18 @@ Voici un exemple de définition JSON de styles pour les empilements :
 
 Vous remarquerez la définition de `other-shadow` basé sur `shadow` qui hérite des définitions du second tout en redéfinissant `borderRadius` et `boxShadow`.
 
+## Utilisation
 
 Dans chaque acteur, le champ **Style** permet de le changer pour un autre correspondant à son type.
 
 ![SynApps](../assets/concepts/actor-style-02.png)
+
+Regardez la couleur de fond :
+
+![SynApps](../assets/concepts/actor-style-03.png)
+
+Elle est définie à sa valeur par défaut : aucune.
+
+Après avoir changé de style pour `pink`, la valeur affichée du champ est passée à `pink`. Mais, ne vous y trompez pas : c'est sa valeur par défaut qui a changé. Si une couleur autre que la celle par défaut avait été définie, elle aurait été conservée.
+
+![SynApps](../assets/concepts/actor-style-04.png)
