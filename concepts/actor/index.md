@@ -122,7 +122,7 @@ Les propriétés relatives aux transformations géométrique (échelle, translat
 
 ### Valeur héritée
 
-Certaine propriété peuvent hériter de la valeur de la propriété de l'ascendance d'un acteur. C'est le cas par exemple de la taille de police. Il est alors possible de définir les valeurs de ces propriétés une fois pour toute au plus haut dans l'arborescence des acteurs pour en faire bénéficier tous les enfants.
+Certaines propriétés peuvent hériter leur valeur de la propriété d'un parent de l'acteur. C'est le cas par exemple de la taille de police. Il est alors possible de définir les valeurs de ces propriétés une fois pour toute au plus haut dans l'arborescence des acteurs pour en faire bénéficier tous les enfants.
 
 ## Clé d'acteur
 
