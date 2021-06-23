@@ -3,7 +3,11 @@ title: "Style d'acteur"
 parent: Concepts
 ---
 
-# Dans le Runtime
+{% include table_of_content.html %}
+
+# Style d'un acteur
+
+## Définition
 
 Les propriétés d'un [acteur](./actor.md) sont initialisées avec des valeurs par défaut. Ces dernières sont définies dans le style qu'utilise l'acteur.
 Au départ, un acteur utilise le style `default`. Mais il est possible d'établir d'autre style et changer les valeurs par défaut d'un acteur.
@@ -18,9 +22,9 @@ Un style est défini pour un type donné.
 
 Un style est toujours défini basé sur un autre (donc au moins celui par défaut!).
 
-# Dans Studio
+## Dans Studio
 
-## Définition des Styles
+### Gestion des Styles
 
 La définition des styles d'acteur est une section à part entière dans Studio. Elle est actuellement encore à réaliser en JSON.
 
@@ -74,7 +78,7 @@ Voici un exemple de définition JSON de styles pour les empilements :
 
 Vous remarquerez la définition de `other-shadow` basé sur `shadow` qui hérite des définitions du second tout en redéfinissant `borderRadius` et `boxShadow`.
 
-## Utilisation
+### Utilisation dans le designer
 
 Dans chaque acteur, le champ **Style** permet de le changer pour un autre correspondant à son type.
 
