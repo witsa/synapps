@@ -2,12 +2,12 @@
   "name": "synapps-studio-releases",
   "config": {
     "stable": {
-      "version": "1.0.0-rc.6",
-      "revision": "2021-06-16T11:00:00"
+      "version": "1.0.0",
+      "revision": "2021-06-23T17:40:00"
     },
     "beta": {
-      "version": "1.0.0-rc.6",
-      "revision": "2021-06-16T11:00:00"
+      "version": "1.0.0",
+      "revision": "2021-06-23T17:40:00"
     }
   }
 }
