@@ -27,36 +27,34 @@ Les acteurs sont organisés sous la forme d'une arborescence et vont constituer 
 
 Les acteurs sont regroupés en catégorie.
 
-### Disposition
+- **Disposition**
 
 Les acteurs de disposition permettent d'agencer les autres acteurs et de construire l'arborescence.
 Leur différentes spécificités permettent d'épouser toutes les possibilités de disposition.
 
 Les acteurs de disposition forment le squelette de la scène et leur *imbrication* est un *principe de base* de Synapps. C'est ce qui permet de s'adapter au mode de fonctionnement des navigateurs et permet l'adaptabilité de l'interface à tout type de taille d'écran.
 
-> TODO : Liens vers acteurs
-
-### Affichage
+- **Affichage**
 
 Les acteurs d'affichage sont dédiés à la présentation d'information ou même de scène.
 
-### Intéraction
+- **Intéraction**
 
 L'utilisateur va pouvoir interagir  avec les acteurs d'interaction comme les boutons ou les zones de saisie.
 
-### Charts
+- **Charts**
 
 Ces acteurs sont dédié à la représentation graphique de donnée. Pour l'instant, il en existe qu'un seul : la jauge.
 
-### Composites
+- **Composites**
 
 Les composites sont des acteurs créer à partir d'autres acteurs. Voir la partie dédiée aux [composites](./composite.md).
 
-### REDY
+- **REDY**
 
 Les acteurs REDY sont disponible dans un projet de synapp pour REDY et présente les interfaces et composant dédié à cette plateforme.
 
-### HighWay
+- **HighWay**
 
 > A venir...
 
