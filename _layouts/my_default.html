@@ -3,7 +3,6 @@ layout: default
 ---
 
 <style>
-
   blockquote {
     border-left: 5px solid #888;
     padding-left: 10px;
@@ -28,6 +27,33 @@ layout: default
   html:not([data-scroll="0"]) a#back-to-top {
     pointer-events: initial;
     opacity: 1;
+  }
+
+  .nav-list .nav-list-item>.nav-list .nav-list-item .nav-list-link {
+    white-space: nowrap;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  *:hover::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+  }
+
+  * {
+    scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    scrollbar-width: thin;
+  }
+
+  *:hover {
+    scrollbar-color: #aaa rgba(0, 0, 0, 0.1);
   }
 </style>
 
