@@ -6,7 +6,7 @@ nav_order: 30
 
 {% include disclaimer-beta.md %}
 
-Version candidate [1.0.0](https://github.com/witsa/synapps/releases/download/1.0.0/synapps-studio-setup.zip)
+Version candidate [1.0.1](https://github.com/witsa/synapps/releases/download/1.0.1/synapps-studio-setup.zip)
 
 > Synapps Maker reste en attendant l'*outil officiel* de construction de Synapp.
 
