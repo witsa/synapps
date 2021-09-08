@@ -127,9 +127,15 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -395,7 +401,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
     return await this.ajax.fetchJson({ url, options });
   }
 
-  async _loadWosVariable({ path, subPaths, queryOptions, queryDepth = 1 }) {
+  async _loadWosVariable(path, { subPaths, queryOptions, queryDepth = 1 }) {
     assert('[RedyStore][_loadWosVariable] path is required', path);
     assert('[RedyStore][_loadWosVariable] queryOptions is required', queryOptions);
 
@@ -580,11 +586,12 @@ export default class RedyStoreService extends BaseRedyStoreService {
   }
 
   @authenticatedRequest
-  async loadWosVariable(path, subPaths = []) {
+  async loadWosVariable(path, options = {}) {
+    const { subPaths = [], withBlob = false } = options;
     logger.debug('loadWosVariable', path, subPaths.length);
 
     try {
-      return await this._loadWosVariable({ path, subPaths, queryOptions: `${OMNI},${CONSTANTS},G,GP` });
+      return await this._loadWosVariable(path, { subPaths, queryOptions: `${withBlob ? 'VB,' : ''}${OMNI},${CONSTANTS},G,GP` });
     } catch (error) {
       logger.error('[RedyStore][loadWosVariable] error during loading WOS Variable.', error);
       throw error;
@@ -592,17 +599,17 @@ export default class RedyStoreService extends BaseRedyStoreService {
   }
 
   @authenticatedRequest
-  async refreshWosVariable(path, subPaths = []) {
+  async refreshWosVariable(path, options = {}) {
+    const { subPaths = [], withBlob = false } = options;
     logger.debug('refreshWosVariable', path, subPaths.length);
 
     let variable = this._wosVariablesRegister.findByKey(path);
     assert(`[RedyStore][refreshWosVariable] variable not found ${path}`, variable);
 
     try {
-      return await this._loadWosVariable({
-        path,
+      return await this._loadWosVariable(path, {
         subPaths,
-        queryOptions: OMNI
+        queryOptions: `${withBlob ? 'VB,' : ''}${OMNI}`,
       });
     } catch (error) {
       logger.error('[RedyStore][refreshWosVariable] error during refresh WOS Variable.', error);
@@ -610,9 +617,9 @@ export default class RedyStoreService extends BaseRedyStoreService {
     }
   }
 
-  async _loadWosVariableChildren(path, options) {
+  async _loadWosVariableChildren(path, queryOptions) {
     assert('[RedyStore][loadWosVariableChildren] path is required', path);
-    return await this._loadWosVariable({ path, queryOptions: options, queryDepth: 3 });
+    return await this._loadWosVariable(path, { queryOptions, queryDepth: 3 });
   }
 
   @authenticatedRequest
@@ -691,17 +698,19 @@ export default class RedyStoreService extends BaseRedyStoreService {
   async fetchHostInfo(refreshHostPicture = false) {
     logger.debug('fetchHost');
     try {
-      await this.loadWosVariable(':System', [
-        ':System.Id',
-        ':System.Identity',
-        ':System.RootPath',
-        ':System.HostingRootDirName',
-        ':System.OnPremisesEnabled',
-        ':System.Hard',
-        ':System.SoftwareVersion',
-        ':System.OptAdd',
-        ':System.OptProfil',
-      ]);
+      await this.loadWosVariable(':System', {
+        subPaths: [
+          ':System.Id',
+          ':System.Identity',
+          ':System.RootPath',
+          ':System.HostingRootDirName',
+          ':System.OnPremisesEnabled',
+          ':System.Hard',
+          ':System.SoftwareVersion',
+          ':System.OptAdd',
+          ':System.OptProfil',
+        ]
+      });
       const system = this.getWosVariable(':System');
       const wid = this.getWosVariable(':System.Id');
       const identity = this.getWosVariable(':System.Identity');
@@ -793,7 +802,6 @@ export default class RedyStoreService extends BaseRedyStoreService {
   async loadWosEvents({
     originPath,
     sitePath,
-    siteID,
     originID,
     dateMin,
     dateMax,
@@ -827,11 +835,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
     }
 
     if (sitePath) {
-      params.push(`sp=${encodeURIComponent(sitePath)}`);
-    }
-
-    if (siteID) {
-      params.push(`si=${siteID}`);
+      params.push(`si=${encodeURIComponent(sitePath)}`);
     }
 
     if (dateMin) {
@@ -1334,7 +1338,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 16th Jul 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

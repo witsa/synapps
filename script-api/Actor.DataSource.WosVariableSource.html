@@ -126,9 +126,15 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -2676,6 +2682,82 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title event public inherited">
+			<h4 id="event:onContextMenu" class="event public inherited"><span class="name">onContextMenu</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un bouton droit est cliqué pour afficher le menu contextuel.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onContextMenu">Actor.BaseActor#onContextMenu</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
 			<h4 id="event:onDestroy" class="event public inherited"><span class="name">onDestroy</span></h4>
 		</dt>
 <dd class="symbol-details event public inherited">
@@ -2714,6 +2796,234 @@
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
 									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onDestroy">Actor.BaseActor#onDestroy</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onDoubleClick" class="event public inherited"><span class="name">onDoubleClick</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit au double clic sur acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onDoubleClick">Actor.BaseActor#onDoubleClick</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onFocusIn" class="event public inherited"><span class="name">onFocusIn</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque l'acteur est sur le point d'obtenir le focus.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>focusEvent</code></td>
+													<td><span class="param-type">FocusEvent</span></td>
+													<td class="last">
+															<p>L'évènement de focus.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onFocusIn">Actor.BaseActor#onFocusIn</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onFocusOut" class="event public inherited"><span class="name">onFocusOut</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque l'acteur est sur le point de perdre le focus.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>focusEvent</code></td>
+													<td><span class="param-type">FocusEvent</span></td>
+													<td class="last">
+															<p>L'évènement de clavier.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onFocusOut">Actor.BaseActor#onFocusOut</a></p>
 								</div>
 							</div>
 			
@@ -2773,6 +3083,158 @@
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
 									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onInit">Actor.BaseActor#onInit</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onKeyDown" class="event public inherited"><span class="name">onKeyDown</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un touche de clavier est enfoncée dans l'acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>keyboardEvent</code></td>
+													<td><span class="param-type">KeyboardEvent</span></td>
+													<td class="last">
+															<p>L'évènement de clavier.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onKeyDown">Actor.BaseActor#onKeyDown</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onKeyUp" class="event public inherited"><span class="name">onKeyUp</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un touche de clavier est relâchée dans l'acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>keyboardEvent</code></td>
+													<td><span class="param-type">KeyboardEvent</span></td>
+													<td class="last">
+															<p>L'évènement de clavier.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onKeyUp">Actor.BaseActor#onKeyUp</a></p>
 								</div>
 							</div>
 			
@@ -3077,6 +3539,158 @@
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
 									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseMove">Actor.BaseActor#onMouseMove</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onMouseOut" class="event public inherited"><span class="name">onMouseOut</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la souris survol autre chose que l' acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseOut">Actor.BaseActor#onMouseOut</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onMouseOver" class="event public inherited"><span class="name">onMouseOver</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la souris survol l' acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement de souris.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onMouseOver">Actor.BaseActor#onMouseOver</a></p>
 								</div>
 							</div>
 			
@@ -3448,6 +4062,234 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title event public inherited">
+			<h4 id="event:onTouchEnd" class="event public inherited"><span class="name">onTouchEnd</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un ou plusieurs points de contact ont été relâchés sur l'acteur .</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement tactile.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onTouchEnd">Actor.BaseActor#onTouchEnd</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onTouchMove" class="event public inherited"><span class="name">onTouchMove</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un ou plusieurs points de contact ont été déplacés sur l'acteur .</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement tactile.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onTouchMove">Actor.BaseActor#onTouchMove</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onTouchStart" class="event public inherited"><span class="name">onTouchStart</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un ou plusieurs points de contact ont été réalisés sur l'acteur .</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Le contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>L'évènement tactile.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onTouchStart">Actor.BaseActor#onTouchStart</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
 			<h4 id="event:onWriteDone" class="event public inherited"><span class="name">onWriteDone</span></h4>
 		</dt>
 <dd class="symbol-details event public inherited">
@@ -3731,7 +4573,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 16th Jul 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

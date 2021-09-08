@@ -127,9 +127,15 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -451,6 +457,42 @@ export default class BaseAccessory extends BaseAccessoryObject {
   onActorComputeLayout() {}
 
   /**
+   * Se produit à chaque fois que l'acteur est sur le point d'obtenir le focus.
+   * @method Accessory.BaseAccessory#onActorFocusIn
+   * @param {Object} args Paramètre.
+   * @param {FocusEvent} args.focusEvent Évènement focus
+   * @virtual
+   */
+   onActorFocusIn( /* { focusEvent }*/ ) {}
+
+   /**
+   * Se produit à chaque fois que l'acteur est sur le point de perdre le focus.
+   * @method Accessory.BaseAccessory#onActorFocusOut
+   * @param {Object} args Paramètre.
+   * @param {FocusEvent} args.focusEvent Évènement focus
+   * @virtual
+   */
+    onActorFocusOut( /* { focusEvent }*/ ) {}
+
+  /**
+   * Se produit à chaque pression sur le clavier.
+   * @method Accessory.BaseAccessory#onActorKeyDown
+   * @param {Object} args Paramètre.
+   * @param {KeyboardEvent} args.keyboardEvent Évènement clavier
+   * @virtual
+   */
+   onActorKeyDown( /* { keyboardEvent }*/ ) {}
+
+  /**
+   * Se produit à chaque relâchement d'une touche du clavier.
+   * @method Accessory.BaseAccessory#onActorKeyUp
+   * @param {Object} args Paramètre.
+   * @param {KeyboardEvent} args.keyboardEvent Évènement clavier
+   * @virtual
+   */
+  onActorKeyUp( /* { keyboardEvent }*/ ) {}
+
+  /**
    * Se produit à chaque clic souris sur l'acteur.
    * @method Accessory.BaseAccessory#onActorClick
    * @param {Object} args Paramètre.
@@ -458,6 +500,15 @@ export default class BaseAccessory extends BaseAccessoryObject {
    * @virtual
    */
   onActorClick( /* { mouseEvent }*/ ) {}
+
+  /**
+   * Se produit à chaque double clic souris sur l'acteur.
+   * @method Accessory.BaseAccessory#onActorDoubleClick
+   * @param {Object} args Paramètre.
+   * @param {MouseEvent} args.mouseEvent Évènement souris
+   * @virtual
+   */
+  onActorDoubleClick( /* { mouseEvent }*/ ) {}
 
   /**
    * Se produit à chaque entrée de souris sur l'acteur.
@@ -488,6 +539,25 @@ export default class BaseAccessory extends BaseAccessoryObject {
   onActorMouseMove( /*{ mouseEvent }*/ ) {}
 
   /**
+   * Se produit à chaque survol de souris sur l'acteur.
+   * @method Accessory.BaseAccessory#onActorMouseOver
+   * @param {Object} args Paramètre.
+   * @param {MouseEvent} args.mouseEvent Évènement souris
+   * @virtual
+   */
+  onActorMouseOver( /*{ mouseEvent }*/ ) {}
+
+  /**
+   * Se produit à chaque survol de souris sur autre chose que l'acteur.
+   * @method Accessory.BaseAccessory#onActorMouseOut
+   * @param {Object} args Paramètre.
+   * @param {MouseEvent} args.mouseEvent Évènement souris
+   * @virtual
+   */
+   onActorMouseOut( /*{ mouseEvent }*/ ) {}
+
+
+  /**
    * Se produit à chaque relâchement de bouton de souris sur l'acteur.
    * @method Accessory.BaseAccessory#onActorMouseUp
    * @param {Object} args Paramètre.
@@ -505,6 +575,43 @@ export default class BaseAccessory extends BaseAccessoryObject {
    */
   onActorMouseDown( /*{ mouseEvent }*/ ) {}
 
+   /**
+   * Se produit à chaque demande d'ouverture du menu contextuel.
+   * @method Accessory.BaseAccessory#onActorContextMenu
+   * @param {Object} args Paramètre.
+   * @param {MouseEvent} args.mouseEvent Évènement souris
+   * @virtual
+   */
+    onActorContextMenu( /*{ mouseEvent }*/ ) {}
+
+  /**
+   * Se produit à chaque relâchement d'un point tactile.
+   * @method Accessory.BaseAccessory#onActorTouchEnd
+   * @param {Object} args Paramètre.
+   * @param {MouseEvent} args.touchEvent Évènement tactile
+   * @virtual
+   */
+  onActorTouchEnd( /*{ touchEvent }*/ ) {}
+
+  /**
+   * Se produit à chaque application d'un point tactile.
+   * @method Accessory.BaseAccessory#onActorTouchStart
+   * @param {Object} args Paramètre.
+   * @param {MouseEvent} args.touchEvent Évènement tactile
+   * @virtual
+   */
+  onActorTouchStart( /*{ touchEvent }*/ ) {}
+
+  /**
+   * Se produit à chaque déplacement d'un point tactile.
+   * @method Accessory.BaseAccessory#onActorTouchMove
+   * @param {Object} args Paramètre.
+   * @param {MouseEvent} args.touchEvent Évènement tactile
+   * @virtual
+   */
+  onActorTouchMove( /*{ touchEvent }*/ ) {}
+
+
 }
 
 BaseAccessory.registerInAccessoryDefs({ type: 'basic', prototypeSetup: {} });
@@ -514,7 +621,7 @@ BaseAccessory.registerInAccessoryDefs({ type: 'basic', prototypeSetup: {} });
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 16th Jul 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

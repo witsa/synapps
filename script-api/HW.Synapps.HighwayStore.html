@@ -126,9 +126,15 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -229,16 +235,250 @@
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title member public">
-			<h4 id="clearAll" class="member public"><span class="name">clearAll</span><span class="signature-type"></span></h4>
+			<h4 id="getManySmartLocalUnits" class="member public"><span class="signature-attribs">&lt;async> </span><span class="name">getManySmartLocalUnits</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details member public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Efface toutes les données recueillies.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient ou charge une liste des ULIs par des ids</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>ids</code></td>
+							<td><span class="param-type">Array.&lt;int></span></td>
+							<td class="last">
+									<p>Ids des ULIs</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Promise.&lt;Array.&lt;SmartLocalUnit>></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Liste des ULIs</p></div>
+								</div>
+							</div>
+					</form>
 			</div>	</div>
 </dd>
 											<hr/>
 											<dt class="symbol-title member public">
-			<h4 id="getAllScope" class="member public"><span class="signature-attribs">&lt;async> </span><span class="name">getAllScope</span><span class="signature-type"></span></h4>
+			<h4 id="getManyUsers" class="member public"><span class="signature-attribs">&lt;async> </span><span class="name">getManyUsers</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient ou charge une liste des utilisateurs d'une affaire par des ids</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>ids</code></td>
+							<td><span class="param-type">Array.&lt;int></span></td>
+							<td class="last">
+									<p>Ids des utilisateurs</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Promise.&lt;Array.&lt;SmartLocalUnit>></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Liste des utilisateurs</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="getReflectModesAll" class="member public"><span class="signature-attribs">&lt;async> </span><span class="name">getReflectModesAll</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient ou charge toute la liste des modes de reflets.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>params</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètres.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+													<th>Attributes</th>
+													<th>Default</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>forceLoad</code></td>
+													<td><span class="param-type">Boolean</span></td>
+														<td class="attributes">&lt;optional&gt;<br/></td>
+														<td>false</td>
+													<td class="last">
+															<p>Forcer le chargement de la liste des scopes.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Promise.&lt;Array.&lt;Object>></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Liste des modes de reflets.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="searchInfras" class="member public"><span class="signature-attribs">&lt;async> </span><span class="name">searchInfras</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient ou charge la liste des infras (maximum : 200).</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>params</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètres.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+													<th>Attributes</th>
+													<th>Default</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>forceLoad</code></td>
+													<td><span class="param-type">Boolean</span></td>
+														<td class="attributes">&lt;optional&gt;<br/></td>
+														<td>false</td>
+													<td class="last">
+															<p>Forcer le chargement de la liste des infras.</p>
+													</td>
+												</tr>
+												<tr>
+														<td><code>pageSize</code></td>
+													<td><span class="param-type">Number</span></td>
+														<td class="attributes">&lt;optional&gt;<br/></td>
+														<td>200</td>
+													<td class="last">
+															<p>Nombre d'infras à récupérer.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Promise.&lt;Array.&lt;Object>></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Liste des infras.</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="searchPointGroups" class="member public"><span class="signature-attribs">&lt;async> </span><span class="name">searchPointGroups</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient ou charge une liste de de points groupés de flux.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>params</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètres</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Promise.&lt;Array.&lt;PointGroup>></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Liste de points groupés</p></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="searchScopes" class="member public"><span class="signature-attribs">&lt;async> </span><span class="name">searchScopes</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details member public">
 	<div class="symbol-details-inner">
@@ -315,7 +555,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 16th Jul 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

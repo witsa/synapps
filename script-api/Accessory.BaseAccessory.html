@@ -126,9 +126,15 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -942,6 +948,54 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
+			<h4 id="onActorContextMenu" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorContextMenu</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque demande d'ouverture du menu contextuel.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>Évènement souris</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
 			<h4 id="onActorDestroy" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorDestroy</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details function public">
@@ -1008,12 +1062,252 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
+			<h4 id="onActorDoubleClick" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorDoubleClick</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque double clic souris sur l'acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>Évènement souris</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="onActorFocusIn" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorFocusIn</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque fois que l'acteur est sur le point d'obtenir le focus.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>focusEvent</code></td>
+													<td><span class="param-type">FocusEvent</span></td>
+													<td class="last">
+															<p>Évènement focus</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="onActorFocusOut" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorFocusOut</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque fois que l'acteur est sur le point de perdre le focus.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>focusEvent</code></td>
+													<td><span class="param-type">FocusEvent</span></td>
+													<td class="last">
+															<p>Évènement focus</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
 			<h4 id="onActorInit" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorInit</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
 			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lors de l'initialisation de l'acteur.</p></div>
 			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="onActorKeyDown" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorKeyDown</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque pression sur le clavier.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>keyboardEvent</code></td>
+													<td><span class="param-type">KeyboardEvent</span></td>
+													<td class="last">
+															<p>Évènement clavier</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="onActorKeyUp" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorKeyUp</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque relâchement d'une touche du clavier.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>keyboardEvent</code></td>
+													<td><span class="param-type">KeyboardEvent</span></td>
+													<td class="last">
+															<p>Évènement clavier</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
@@ -1209,6 +1503,102 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
+			<h4 id="onActorMouseOut" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorMouseOut</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque survol de souris sur autre chose que l'acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>Évènement souris</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="onActorMouseOver" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorMouseOver</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque survol de souris sur l'acteur.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>mouseEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>Évènement souris</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
 			<h4 id="onActorMouseUp" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorMouseUp</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details function public">
@@ -1351,6 +1741,150 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
+			<h4 id="onActorTouchEnd" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorTouchEnd</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque relâchement d'un point tactile.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>touchEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>Évènement tactile</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="onActorTouchMove" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorTouchMove</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque déplacement d'un point tactile.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>touchEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>Évènement tactile</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="onActorTouchStart" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorTouchStart</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit à chaque application d'un point tactile.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>args</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+									<p>Paramètre.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>touchEvent</code></td>
+													<td><span class="param-type">MouseEvent</span></td>
+													<td class="last">
+															<p>Évènement tactile</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
 			<h4 id="onActorValueChanged" class="function public"><span class="signature-attribs">&lt;abstract> </span><span class="name">onActorValueChanged</span><span class="signature-params">( <span class="signature-param">args</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details function public">
@@ -1435,7 +1969,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 16th Jul 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

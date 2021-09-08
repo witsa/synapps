@@ -127,9 +127,15 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -211,20 +217,24 @@
 			<div class="col-md-12 main-content">
 		<section class="source-section">
 			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import HighwayAuthenticatedBehaviorStoreService from 'synapps-ui-hw/services/data-stores/highway-authenticated-behavior';
-import HighwayObjectsRegister from 'synapps-ui-hw/services/data-stores/registers/highway-objects';
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import HighwayObjectsRegister from 'synapps-ui-hw/services/data-stores/registers/highway-objects';
 import authenticatedRequest from 'synapps-ui/services/data-stores/authenticated-request';
-import BaseStoreService from 'synapps-ui/services/data-stores/base';
+import Infra from 'synapps-ui-hw/services/data-stores/models/infra';
+import BaseHighwayStoreService from 'synapps-ui-hw/services/data-stores/highway-base';
+import SmartLocalUnit from './models/smartlocalunit';
+import Flux from './models/flux';
+import FluxItem from './models/fluxitem';
+import PointGroup from './models/point-group';
+import Reflect from './models/reflect';
+import ReflectClass from './models/reflect-class';
+import Journal from './models/journal';
+import User from './models/user';
+import { isEmpty, isNone } from '@ember/utils';
 
 const PAGE_SIZE = 200;
 
-/**
- * @typedef HW.Synapps.DataStores
- * @property {HW.Synapps.HighwayStore} highway Magasin de donnée Highway.
- */
-
-@HighwayAuthenticatedBehaviorStoreService
-class BaseHighwayStoreService extends BaseStoreService {}
+// EV? How can i split HighStore with a store per resource ?
+// Try with reflect-store but something is getting wrong with token ...
 
 /**
  * Magasin de données de Highway.
@@ -232,14 +242,21 @@ class BaseHighwayStoreService extends BaseStoreService {}
  */
 export default class HighwayStoreService extends BaseHighwayStoreService {
 
-  // _reflectsRegister = new ReflectsRegister(this);
-  _scopesRegister = new HighwayObjectsRegister(this);
-
   _key = 'highway-store';
+  _scopesRegister = new HighwayObjectsRegister(this);
+  _infrasRegister = new HighwayObjectsRegister(this);
+  _smartlocalunitsRegister = new HighwayObjectsRegister(this);
+  _fluxsRegister = new HighwayObjectsRegister(this);
+  _fluxitemsRegister = new HighwayObjectsRegister(this);
+  _wumUnitsRegister = new HighwayObjectsRegister(this);
+  _reflectsRegister = new HighwayObjectsRegister(this);
+  _reflectsClassRegister = new HighwayObjectsRegister(this);
+  _reflectsModeRegister = new HighwayObjectsRegister(this);
+  _usersRegister = new HighwayObjectsRegister(this);
 
   /**
    * Obtient ou charge la liste des scopes (maximum : 200).
-   * @member HW.Synapps.HighwayStore#getAllScope
+   * @member HW.Synapps.HighwayStoreService#searchScopes
    * @param {Object} params Paramètres.
    * @param {Boolean} [params.forceLoad=false] Forcer le chargement de la liste des scopes.
    * @param {Number} [params.pageSize=200] Nombre de scopes à récupérer.
@@ -247,40 +264,618 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
    * @async
    */
   @authenticatedRequest
-  async getAllScopes(params = {}) {
-    const { forceLoad = false, pageSize = PAGE_SIZE } = params;
-
-    if (!forceLoad &amp;&amp; this._scopesRegister._isRequestedYet) {
+  async searchScopes(params = {}) {
+    const filters = Object.assign({ forceLoad: false, pageSize: PAGE_SIZE }, params);
+    if (!filters.forceLoad &amp;&amp; this._scopesRegister.isRequestedYet) {
       return this._scopesRegister.records;
     }
 
-    let url = `${this.host.domain}/${this.host.namespace}/wac/${this.host.wac}/scope?pageSize=${pageSize}`;
-
-    const options = {
-      headers: { ...this.authenticatedHeader },
-    };
-
-    options.headers['Accept-Encoding'] = 'gzip';
-
-    const results = await this.ajax.fetchJson({ url, options });
+    const results = await this.searchResources({ resourceType: 'scope', filters });
 
     for (const record of [...results.data]) {
       if (this._scopesRegister.hasRecord({ record })) continue;
-      this._scopesRegister.record({ record })
+      this._deserializeScope(record, true);
     }
 
     this._scopesRegister._isRequestedYet = true;
     return this._scopesRegister.records;
   }
 
+  findWum(id, type) {
+    switch (type) {
+      case 'unit':
+        return this._wumUnitsRegister.findByKey(id);
+      default:
+        return null;
+    }
+  }
+
+  /**
+   * Obtient ou charge la liste des scopes (maximum : 200).
+   * @member HW.Synapps.HighwayStore#searchScopes
+   * @param {Object} params Paramètres.
+   * @param {Boolean} [params.forceLoad=false] Forcer le chargement de la liste des scopes.
+   * @param {Number} [params.pageSize=200] Nombre de scopes à récupérer.
+   * @returns {Promise&lt;Array.&lt;Object>>} Liste des scopes.
+   * @async
+   */
+  @authenticatedRequest
+  async getWumUnitsAll() {
+
+    if (this._wumUnitsRegister.isRequestedYet) {
+      return this._wumUnitsRegister.records;
+    }
+
+    let url = `global/wum/unit`;
+    const results = await this._request(url);
+
+    for (const record of [...results]) {
+      if (this._wumUnitsRegister.hasRecord({ record })) continue;
+      this._wumUnitsRegister.record({ record });
+    }
+
+    this._wumUnitsRegister._isRequestedYet = true;
+    return this._wumUnitsRegister.records;
+  }
+
+  findInfra(id) {
+    return this._infrasRegister.findByKey(id);
+  }
+
+  /**
+   * Obtient ou charge une liste des ULIs par des ids
+   * @member HW.Synapps.HighwayStore#getManySmartLocalUnits
+   * @param {Array.&lt;int>} ids Ids des ULIs
+   * @returns {Promise&lt;Array.&lt;SmartLocalUnit>>} Liste des ULIs
+   * @async
+   */
+  @authenticatedRequest
+  async getManyInfras(ids) {
+    var missingIds = this._infrasRegister.findWithoutKeys(ids);
+    if (!isEmpty(missingIds)) {
+      const results = await this.getManyResources({ resourceType: 'infra', ids: missingIds });
+      results.forEach(record => this._deserializeInfra(record, true))
+    }
+    return this._infrasRegister.findByKeys(ids);
+  }
+
+  /**
+   * Obtient ou charge la liste des infras (maximum : 200).
+   * @member HW.Synapps.HighwayStore#searchInfras
+   * @param {Object} params Paramètres.
+   * @param {Boolean} [params.forceLoad=false] Forcer le chargement de la liste des infras.
+   * @param {Number} [params.pageSize=200] Nombre d'infras à récupérer.
+   * @returns {Promise&lt;Array.&lt;Object>>} Liste des infras.
+   * @async
+   */
+  @authenticatedRequest
+  async searchInfras(params = {}) {
+    const filters = Object.assign({ forceLoad: false, pageSize: PAGE_SIZE }, params);
+    if (!filters.forceLoad &amp;&amp; this._infrasRegister.isRequestedYet) {
+      return this._infrasRegister.records;
+    }
+
+    const results = await this.searchResources({ resourceType: 'infra', filters });
+    for (const record of [...results.data]) {
+      if (this._infrasRegister.hasRecord({ record })) continue;
+      this._deserializeInfra(record, true);
+    }
+
+    this._infrasRegister._isRequestedYet = true;
+    return this._infrasRegister.records;
+  }
+
+  @authenticatedRequest
+  async getInfraReferences(resources) {
+
+    // get or request referenced infras
+    const infraIds = resources.filter(f => !isNone(f.infraId))
+      .map(f => f.infraId).filter((v, i, a) => a.indexOf(v) === i); // not null and distinct
+
+    if (!isEmpty(infraIds))
+      await this.getManyInfras(infraIds);
+  }
+
+  findSmartLocalUnit(id) {
+    return this._smartlocalunitsRegister.findByKey(id);
+  }
+
+  /**
+   * Charge une ULI par son id
+   * @member HW.Synapps.HighwayStoreService#getSmartLocalUnit
+   * @param {int} id Id de l'ULI
+   * @returns {Promise&lt;SmartLocalUnit>} ULI
+   * @async
+   */
+  @authenticatedRequest
+  async getSmartLocalUnit(id) {
+    const record = await this.getResource({ resourceType: 'smartlocalunit', id });
+    record.metrics = await this._request(`wac/${this.host.wac}/smartlocalunit/${id}/metric`); // specific request to get metrics
+    return this._deserializeSmartLocalUnit(record, false);
+  }
+
+  /**
+   * Obtient ou charge une liste des ULIs par des ids
+   * @member HW.Synapps.HighwayStoreService#getManySmartLocalUnits
+   * @param {Array.&lt;int>} ids Ids des ULIs
+   * @returns {Promise&lt;Array.&lt;SmartLocalUnit>>} Liste des ULIs
+   * @async
+   */
+  @authenticatedRequest
+  async getManySmartLocalUnits(ids) {
+    var missingIds = this._smartlocalunitsRegister.findWithoutKeys(ids);
+    if (!isEmpty(missingIds)) {
+      const results = await this.getManyResources({ resourceType: 'smartlocalunit', ids: missingIds });
+      results.forEach(record => this._deserializeSmartLocalUnit(record, true))
+    }
+    return this._smartlocalunitsRegister.findByKeys(ids);
+  }
+
+  /**
+   * Charge la liste des ULIs (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#searchSmartLocalUnits
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre d'ULIs à récupérer
+   * @returns {Promise&lt;Array.&lt;SmartLocalUnit>>} Liste des ULIs
+   * @async
+   */
+  @authenticatedRequest
+  async searchSmartLocalUnits(params = {}) {
+    const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
+    const results = await this.searchResources({ resourceType: 'smartlocalunit', filters });
+    const smartlocalunits = results.data.map(record => this._deserializeSmartLocalUnit(record, false))
+    return {
+      count: results.count,
+      smartlocalunits
+    };
+  }
+
+  @authenticatedRequest
+  async getSmartLocalUnitReferences(resources) {
+
+    const smartLocalUnitIds = resources.filter(f => !isNone(f.smartLocalUnitId))
+      .map(f => f.smartLocalUnitId).filter((v, i, a) => a.indexOf(v) === i); // not null and distinct
+
+    if (!isEmpty(smartLocalUnitIds))
+      await this.getManySmartLocalUnits(smartLocalUnitIds);
+  }
+
+  findFlux(id) {
+    return this._fluxsRegister.findByKey(id);
+  }
+
+  /**
+   * Charge un flux par son id
+   * @member HW.Synapps.HighwayStoreService#getFlux
+   * @param {int} id Id du flux
+   * @returns {Promise&lt;Flux>} Flux
+   * @async
+   */
+  @authenticatedRequest
+  async getFlux(id) {
+    const record = await this.getResource({ resourceType: 'flux', id });
+    return this._deserializeFlux(record, false);
+  }
+
+  /**
+   * Obtient ou charge une liste des fluxs par des ids
+   * @member HW.Synapps.HighwayStoreService#getManyFluxs
+   * @param {Array.&lt;int>} ids Ids des fluxs
+   * @returns {Promise&lt;Array.&lt;SmartLocalUnit>>} Liste des fluxs
+   * @async
+   */
+  @authenticatedRequest
+  async getManyFluxs(ids) {
+    var missingIds = this._fluxsRegister.findWithoutKeys(ids);
+    if (!isEmpty(missingIds)) {
+      const results = await this.getManyResources({ resourceType: 'flux', ids: missingIds });
+      results.forEach(record => this._deserializeFlux(record, true))
+    }
+    return this._fluxsRegister.findByKeys(ids);
+  }
+
+  /**
+   * Obtient ou charge une liste de fluxs (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#searchFluxs
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre de fluxs à récupérer
+   * @returns {Promise&lt;Array.&lt;Flux>>} Liste des fluxs
+   * @async
+   */
+  @authenticatedRequest
+  async searchFluxs(params = {}) {
+    const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
+    const results = await this.searchResources({ resourceType: 'flux', filters });
+    const fluxs = results.data.map(record => this._deserializeFlux(record, false))
+    return {
+      count: results.count,
+      fluxs: fluxs
+    };
+  }
+
+  @authenticatedRequest
+  async getFluxReferences(resources) {
+
+    // get or request referenced fluxs
+    const fluxIds = resources.filter(f => !isNone(f.fluxId))
+      .map(f => f.fluxId).filter((v, i, a) => a.indexOf(v) === i); // not null and distinct
+
+    return !isEmpty(fluxIds) ? await this.getManyFluxs(fluxIds) : [];
+  }
+
+  findFluxItem(id) {
+    return this._fluxitemsRegister.findByKey(id);
+  }
+
+  /**
+   * Charge un flux item (=data) par son id
+   * @member HW.Synapps.HighwayStoreService#getFluxItem
+   * @param {int} id Id du flux item
+   * @returns {Promise&lt;FluxItem>} FluxItem
+   * @async
+   */
+  @authenticatedRequest
+  async getFluxItem(id) {
+    const record = await this.getResource({ resourceType: 'flux/item', id });
+    return this._deserializeFluxItem(record, false);
+  }
+
+  /**
+   * Obtient ou charge une liste de flux items par des ids
+   * @member HW.Synapps.HighwayStoreService#getManyFluxItems
+   * @param {Array.&lt;int>} ids Ids de flux items
+   * @returns {Promise&lt;Array.&lt;FluxItem>>} Liste de flux items
+   * @async
+   */
+  @authenticatedRequest
+  async getManyFluxItems(ids) {
+    var missingIds = this._fluxitemsRegister.findWithoutKeys(ids);
+    if (!isEmpty(missingIds)) {
+      const results = await this.getManyResources({ resourceType: 'flux/item', ids: missingIds });
+      results.forEach(record => this._deserializeFluxItem(record, true))
+    }
+    return this._fluxitemsRegister.findByKeys(ids);
+  }
+
+  /**
+   * Obtient ou charge une liste de flux items (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#searchFluxItems
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre de flux items à récupérer
+   * @returns {Promise&lt;Array.&lt;FluxItem>>} Liste de flux items
+   * @async
+   */
+  @authenticatedRequest
+  async searchFluxItems(params = {}) {
+    const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
+    const results = await this.searchResources({ resourceType: 'flux/item', filters });
+    const fluxItems = results.data.map(record => this._deserializeFluxItem(record, false))
+    return {
+      count: results.count,
+      fluxItems
+    };
+  }
+
+  /**
+   * Obtient ou charge une liste de de points groupés de flux.
+   * @member HW.Synapps.HighwayStore#searchPointGroups
+   * @param {Object} params Paramètres
+   * @returns {Promise&lt;Array.&lt;PointGroup>>} Liste de points groupés
+   * @async
+   */
+  @authenticatedRequest
+  async searchPointGroups(params = {}) {
+    const { id, ...filters } = params;
+    const results = await this.searchResources({ resourceType: `flux/item/${id}/pointgroups`, filters });
+    const points = results.map(record => this._deserializePointGroup(record))
+    return { points };
+  }
+
+  findReflect(id) {
+    return this._reflectsRegister.findByKey(id);
+  }
+
+  /**
+   * Charge un reflet par son id
+   * @member HW.Synapps.HighwayStoreService#getReflect
+   * @param {int} id Id du reflet
+   * @returns {Promise&lt;Reflect>} Reflect
+   * @async
+   */
+  @authenticatedRequest
+  async getReflect(id) {
+    const record = await this.getResource({ resourceType: 'reflect', id });
+    return this._deserializeReflect(record, false);
+  }
+
+  /**
+   * Obtient ou charge une liste des reflets par des ids
+   * @member HW.Synapps.HighwayStoreService#getManyReflects
+   * @param {Array.&lt;int>} ids Ids des reflets
+   * @returns {Promise&lt;Array.&lt;SmartLocalUnit>>} Liste des reflets
+   * @async
+   */
+  @authenticatedRequest
+  async getManyReflects(ids) {
+    var missingIds = this._reflectsRegister.findWithoutKeys(ids);
+    if (!isEmpty(missingIds)) {
+      const results = await this.getManyResources({ resourceType: 'reflect', ids: missingIds });
+      results.forEach(record => this._deserializeReflect(record, true))
+    }
+    return this._reflectsRegister.findByKeys(ids);
+  }
+
+  /**
+   * Obtient ou charge une liste de reflets (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#searchReflects
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre de reflets à récupérer
+   * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
+   * @async
+   */
+  @authenticatedRequest
+  async searchReflects(params = {}) {
+    const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
+    const results = await this.searchResources({ resourceType: 'reflect', filters });
+    const reflects = results.data.map(record => this._deserializeReflect(record, false))
+    return {
+      count: results.count,
+      reflects
+    };
+  }
+
+  findReflectClass(id) {
+    return this._reflectsClassRegister.findByKey(id);
+  }
+
+  /**
+   * Obtient ou charge une liste de reflets (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#searchReflects
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre de reflets à récupérer
+   * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
+   * @async
+   */
+  @authenticatedRequest
+  async searchReflectClasses(params = {}) {
+    const filters = Object.assign({ forceLoad: false }, params);
+    if (!filters.forceLoad &amp;&amp; this._reflectsClassRegister.isRequestedYet) {
+      return this._reflectsClassRegister.records;
+    }
+
+    const results = await this.searchResources({ resourceType: 'reflect/class' });
+    for (const record of [...results]) {
+      if (this._reflectsClassRegister.hasRecord({ record })) continue;
+      this._deserializeReflectClass(record, true);
+    }
+
+    this._reflectsClassRegister._isRequestedYet = true;
+    return this._reflectsClassRegister.records;
+  }
+
+  findReflectMode(id) {
+    return this._reflectsModeRegister.findByKey(id);
+  }
+
+  /**
+   * Obtient ou charge toute la liste des modes de reflets.
+   * @member HW.Synapps.HighwayStore#getReflectModesAll
+   * @param {Object} params Paramètres.
+   * @param {Boolean} [params.forceLoad=false] Forcer le chargement de la liste des scopes.
+   * @returns {Promise&lt;Array.&lt;Object>>} Liste des modes de reflets.
+   * @async
+   */
+  @authenticatedRequest
+  async getReflectModesAll() {
+
+    if (this._reflectsModeRegister.isRequestedYet) {
+      return this._reflectsModeRegister.records;
+    }
+
+    let url = `global/mode`;
+    const results = await this._request(url);
+
+    for (const record of [...results]) {
+      if (this._reflectsModeRegister.hasRecord({ record })) continue;
+      this._reflectsModeRegister.record({ record });
+    }
+
+    this._reflectsModeRegister._isRequestedYet = true;
+    return this._reflectsModeRegister.records;
+  }
+
+  /**
+  * Charge les événements du journal (par defaut : 200).
+  * @member HW.Synapps.HighwayStoreService#searchJournal
+  * @param {Object} params Paramètres
+  * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
+  * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
+  * @async
+  */
+  @authenticatedRequest
+  async searchJournal(params = {}) {
+    const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
+    const results = await this.searchResources({ resourceType: 'journal', filters });
+    const events = results.data.map(record => this._deserializeJournal(record))
+    return {
+      count: results.count,
+      events
+    };
+  }
+
+  /**
+ * Charge les événements du journal (par defaut : 200).
+ * @member HW.Synapps.HighwayStoreService#ackJournal
+ * @param {Object} params Paramètres
+ * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
+ * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
+ * @async
+ */
+  @authenticatedRequest
+  async ackJournal(id, comment) {
+    const record = await this.patchResource({
+      resourceType: 'journal',
+      path: 'ack',
+      id, params: { comment }
+    });
+
+    return this._deserializeReflect(record, false);
+  }
+
+  findResource(type, id) {
+    switch (type) {
+      case 'flux':
+        return this.findFlux(id);
+      case 'reflect':
+        return this.findReflect(id);
+      case 'smartlocalunit':
+        return this.findSmartLocalUnit(id);
+      default:
+        return null;
+    }
+  }
+
+  findUser(id) {
+    return this._usersRegister.findByKey(id);
+  }
+
+  /**
+   * Obtient ou charge une liste des utilisateurs d'une affaire par des ids
+   * @member HW.Synapps.HighwayStore#getManyUsers
+   * @param {Array.&lt;int>} ids Ids des utilisateurs
+   * @returns {Promise&lt;Array.&lt;SmartLocalUnit>>} Liste des utilisateurs
+   * @async
+   */
+  @authenticatedRequest
+  async getManyUsers(ids) {
+    var missingIds = this._usersRegister.findWithoutKeys(ids);
+    if (!isEmpty(missingIds)) {
+      const results = await this.getManyResources({ resourceType: 'user', ids: missingIds });
+      results.forEach(record => this._deserializeUser(record, true))
+    }
+    return this._usersRegister.findByKeys(ids);
+  }
+
   /**
    * Efface toutes les données recueillies.
-   * @member HW.Synapps.HighwayStore#clearAll
+   * @member HW.Synapps.HighwayStoreService#clearAll
    */
   clearAll() {
-    // this._reflectsRegister.clear();
     this._scopesRegister.clear();
-    this._scopesRegister._isRequestedYet = false;
+    this._infrasRegister.clear();
+    this._smartlocalunitsRegister.clear();
+    this._fluxsRegister.clear();
+    this._fluxitemsRegister.clear();
+    this._reflectsRegister.clear();
+    this._usersRegister.clear();
+  }
+
+  _deserializeScope(record, cache) {
+    if (cache) this._scopesRegister.record({ record });
+    return record;
+  }
+
+  _deserializeInfra(record, cache) {
+    var infra = this._infrasRegister.findByRecord({ record });
+    if (isNone(infra)) {
+      infra = new Infra();
+      Infra.serializer.deserialize(infra, record);
+      if (cache) this._infrasRegister.record({ record: infra });
+    } else {
+      Infra.serializer.deserialize(infra, record);
+    }
+
+    return infra;
+  }
+
+  _deserializeSmartLocalUnit(record, cache) {
+    var smartlocalunit = this._smartlocalunitsRegister.findByRecord({ record });
+    if (isNone(smartlocalunit)) {
+      smartlocalunit = new SmartLocalUnit();
+      SmartLocalUnit.serializer.deserialize(smartlocalunit, record);
+      if (cache) this._smartlocalunitsRegister.record({ record: smartlocalunit });
+    } else {
+      SmartLocalUnit.serializer.deserialize(smartlocalunit, record);
+    }
+
+    return smartlocalunit;
+  }
+
+  _deserializeFlux(record, cache) {
+    var flux = this._fluxsRegister.findByRecord({ record });
+    if (isNone(flux)) {
+      flux = new Flux();
+      Flux.serializer.deserialize(flux, record);
+      if (cache) this._fluxsRegister.record({ record: flux });
+    } else {
+      Flux.serializer.deserialize(flux, record);
+    }
+
+    return flux;
+  }
+
+  _deserializeFluxItem(record, cache) {
+    var fluxItem = this._fluxitemsRegister.findByRecord({ record });
+    if (isNone(fluxItem)) {
+      fluxItem = new FluxItem();
+      FluxItem.serializer.deserialize(fluxItem, record);
+      if (cache) this._fluxitemsRegister.record({ record: fluxItem });
+    } else {
+      FluxItem.serializer.deserialize(fluxItem, record);
+    }
+
+    return fluxItem;
+  }
+
+  _deserializePointGroup(record) {
+    const pointGroup = new PointGroup();
+    PointGroup.serializer.deserialize(pointGroup, record);
+    return pointGroup;
+  }
+
+  _deserializeReflect(record, cache) {
+    var reflect = this._reflectsRegister.findByRecord({ record });
+    if (isNone(reflect)) {
+      reflect = new Reflect();
+      Reflect.serializer.deserialize(reflect, record);
+      if (cache) this._reflectsRegister.record({ record: reflect });
+    } else {
+      Reflect.serializer.deserialize(reflect, record);
+    }
+
+    return reflect;
+  }
+
+  _deserializeJournal(record) {
+    const event = new Journal(this); // inject highwayStore
+    Journal.serializer.deserialize(event, record);
+    return event;
+  }
+
+  _deserializeReflectClass(record, cache) {
+    var reflectClass = this._reflectsClassRegister.findByRecord({ record });
+    if (isNone(reflectClass)) {
+      reflectClass = new ReflectClass();
+      ReflectClass.serializer.deserialize(reflectClass, record);
+      if (cache) this._reflectsClassRegister.record({ record: reflectClass });
+    } else {
+      ReflectClass.serializer.deserialize(reflectClass, record);
+    }
+
+    return reflectClass;
+  }
+
+  _deserializeUser(record, cache) {
+    var user = this._usersRegister.findByRecord({ record });
+    if (isNone(user)) {
+      user = new User();
+      User.serializer.deserialize(user, record);
+      if (cache) this._usersRegister.record({ record: user });
+    } else {
+      User.serializer.deserialize(user, record);
+    }
+
+    return user;
   }
 }
 </code></pre>
@@ -289,7 +884,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 16th Jul 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

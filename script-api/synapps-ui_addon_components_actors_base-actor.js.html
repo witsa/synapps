@@ -127,9 +127,15 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -269,6 +275,26 @@ const Events = {
   onComputeLayout: 'onComputeLayout',
   onDestroy: 'onDestroy',
 }
+
+const DomEventHandlers = {
+  onFocusIn: 'focusin',
+  onFocusOut: 'focusout',
+  onKeyUp: 'keyup',
+  onKeyDown: 'keydown',
+  onClick: 'click',
+  onDoubleClick: 'dblclick',
+  onMouseOver: 'mouseover',
+  onMouseOut: 'mouseout',
+  onMouseEnter: 'mouseenter',
+  onMouseLeave: 'mouseleave',
+  onMouseMove: 'mousemove',
+  onMouseUp: 'mouseup',
+  onMouseDown: 'mousedown',
+  onContextMenu: 'contextmenu',
+  onTouchEnd: 'touchend',
+  onTouchStart: 'touchstart',
+  onTouchMove: 'touchmove',
+};
 
 runInDebug(() => {
   window.ActorCount = 0;
@@ -1567,14 +1593,41 @@ class BaseActor extends BaseActorComponent {
     actor._synappActor = this;
     resizeObserver.observe(actor);
 
-    this.actor.addEventListener('click', this._onClick);
-    this.actor.addEventListener('mouseenter', this._onMouseEnter);
-    this.actor.addEventListener('mouseleave', this._onMouseLeave);
-    this.actor.addEventListener('mousemove', this._onMouseMove);
-    this.actor.addEventListener('mouseup', this._onMouseUp);
-    this.actor.addEventListener('mousedown', this._onMouseDown);
+
+    for (const key in this.events) {
+      this._addEventListener(key);
+    }
 
     this._doPostInit();
+  }
+
+  _addEventListener(eventName) {
+    if (!this.actor) return;
+    const domEventName = DomEventHandlers[eventName];
+    const handler = this[`_${eventName}`];
+    if (!handler) return;
+    if (!domEventName) return;
+    this.actor.removeEventListener(DomEventHandlers[eventName], handler);
+    this.actor.addEventListener(DomEventHandlers[eventName], handler);
+  }
+
+  _removeEventListener(dom, eventName) {
+    if (!dom) return;
+    const domEventName = DomEventHandlers[eventName];
+    const handler = this[`_${eventName}`];
+    if (!handler) return;
+    if (!domEventName) return;
+    dom.removeEventListener(DomEventHandlers[eventName], handler);
+  }
+
+  createEvent(eventName, eventScriptLines) {
+    this._addEventListener(eventName);
+    return super.createEvent(eventName, eventScriptLines);
+  }
+
+  removeEvent(eventName) {
+    this._removeEventListener(this.actor, eventName);
+    super.removeEvent(eventName);
   }
 
   @action
@@ -1608,12 +1661,10 @@ class BaseActor extends BaseActorComponent {
       logger.debug('[ActorBase][_onWillRemove()]', error);
     }
 
-    actor.removeEventListener('click', this._onClick);
-    actor.removeEventListener('mouseenter', this._onMouseEnter);
-    actor.removeEventListener('mouseleave', this._onMouseLeave);
-    actor.removeEventListener('mousemove', this._onMouseMove);
-    actor.removeEventListener('mouseup', this._onMouseUp);
-    actor.removeEventListener('mousedown', this._onMouseDown);
+    for (const key in this.events) {
+      this._removeEventListener(actor, key);
+    }
+
   }
 
   _invokeOnAccessories(methodName, args) {
@@ -1676,6 +1727,62 @@ class BaseActor extends BaseActorComponent {
   }
 
   @action
+  _onFocusIn(focusEvent) {
+    /**
+     * Se produit lorsque l'acteur est sur le point d'obtenir le focus.
+     *
+     * @event Actor.BaseActor#onFocusIn
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {FocusEvent} context.focusEvent L'évènement de focus.
+     */
+    const result = this.runEvent('onFocusIn', { focusEvent });
+    this._invokeOnAccessories('onActorFocusIn', { focusEvent });
+    return result;
+  }
+
+  @action
+  _onFocusOut(focusEvent) {
+    /**
+     * Se produit lorsque l'acteur est sur le point de perdre le focus.
+     *
+     * @event Actor.BaseActor#onFocusOut
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {FocusEvent} context.focusEvent L'évènement de clavier.
+     */
+    const result = this.runEvent('onFocusOut', { focusEvent });
+    this._invokeOnAccessories('onActorFocusOut', { focusEvent });
+    return result;
+  }
+
+  @action
+  _onKeyDown(keyboardEvent) {
+    /**
+     * Se produit lorsque un touche de clavier est enfoncée dans l'acteur.
+     *
+     * @event Actor.BaseActor#onKeyDown
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {KeyboardEvent} context.keyboardEvent L'évènement de clavier.
+     */
+    const result = this.runEvent('onKeyDown', { keyboardEvent });
+    this._invokeOnAccessories('onActorKeyDown', { keyboardEvent });
+    return result;
+  }
+
+  @action
+  _onKeyUp(keyboardEvent) {
+    /**
+     * Se produit lorsque un touche de clavier est relâchée dans l'acteur.
+     *
+     * @event Actor.BaseActor#onKeyUp
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {KeyboardEvent} context.keyboardEvent L'évènement de clavier.
+     */
+    const result = this.runEvent('onKeyUp', { keyboardEvent });
+    this._invokeOnAccessories('onActorKeyUp', { keyboardEvent });
+    return result;
+  }
+
+  @action
   _onClick(mouseEvent) {
     /**
      * Se produit au clic sur acteur.
@@ -1686,6 +1793,20 @@ class BaseActor extends BaseActorComponent {
      */
     const result = this.runEvent('onClick', { mouseEvent });
     this._invokeOnAccessories('onActorClick', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onDoubleClick(mouseEvent) {
+    /**
+     * Se produit au double clic sur acteur.
+     *
+     * @event Actor.BaseActor#onDoubleClick
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {MouseEvent} context.mouseEvent L'évènement de souris.
+     */
+    const result = this.runEvent('onDoubleClick', { mouseEvent });
+    this._invokeOnAccessories('onActorDoubleClick', { mouseEvent });
     return result;
   }
 
@@ -1732,6 +1853,34 @@ class BaseActor extends BaseActorComponent {
   }
 
   @action
+  _onMouseOver(mouseEvent) {
+    /**
+     * Se produit lorsque la souris survol l' acteur.
+     *
+     * @event Actor.BaseActor#onMouseOver
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {MouseEvent} context.mouseEvent L'évènement de souris.
+     */
+    const result = this.runEvent('onMouseOver', { mouseEvent });
+    this._invokeOnAccessories('onActorMouseOver', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onMouseOut(mouseEvent) {
+    /**
+     * Se produit lorsque la souris survol autre chose que l' acteur.
+     *
+     * @event Actor.BaseActor#onMouseOut
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {MouseEvent} context.mouseEvent L'évènement de souris.
+     */
+    const result = this.runEvent('onMouseOut', { mouseEvent });
+    this._invokeOnAccessories('onActorMouseOver', { mouseEvent });
+    return result;
+  }
+
+  @action
   _onMouseUp(mouseEvent) {
     /**
      * Se produit lorsque un bouton de la souris est relâché au dessus de l'acteur .
@@ -1756,6 +1905,62 @@ class BaseActor extends BaseActorComponent {
      */
     const result = this.runEvent('onMouseDown', { mouseEvent });
     this._invokeOnAccessories('onActorMouseDown', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onContextMenu(mouseEvent) {
+    /**
+     * Se produit lorsque un bouton droit est cliqué pour afficher le menu contextuel.
+     *
+     * @event Actor.BaseActor#onContextMenu
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {MouseEvent} context.mouseEvent L'évènement de souris.
+     */
+    const result = this.runEvent('onContextMenu', { mouseEvent });
+    this._invokeOnAccessories('onActorContextMenu', { mouseEvent });
+    return result;
+  }
+
+  @action
+  _onTouchEnd(touchEvent) {
+    /**
+     * Se produit lorsque un ou plusieurs points de contact ont été relâchés sur l'acteur .
+     *
+     * @event Actor.BaseActor#onTouchEnd
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {MouseEvent} context.mouseEvent L'évènement tactile.
+     */
+    const result = this.runEvent('onTouchEnd', { touchEvent });
+    this._invokeOnAccessories('onActorTouchEnd', { touchEvent });
+    return result;
+  }
+
+  @action
+  _onTouchStart(touchEvent) {
+    /**
+     * Se produit lorsque un ou plusieurs points de contact ont été réalisés sur l'acteur .
+     *
+     * @event Actor.BaseActor#onTouchStart
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {MouseEvent} context.mouseEvent L'évènement tactile.
+     */
+    const result = this.runEvent('onTouchStart', { touchEvent });
+    this._invokeOnAccessories('onActorTouchStart', { touchEvent });
+    return result;
+  }
+
+  @action
+  _onTouchMove(touchEvent) {
+    /**
+     * Se produit lorsque un ou plusieurs points de contact ont été déplacés sur l'acteur .
+     *
+     * @event Actor.BaseActor#onTouchMove
+     * @param {Event.BaseContext} context Le contexte de l'évènement.
+     * @param {MouseEvent} context.mouseEvent L'évènement tactile.
+     */
+    const result = this.runEvent('onTouchMove', { touchEvent });
+    this._invokeOnAccessories('onActorTouchMove', { touchEvent });
     return result;
   }
 
@@ -1869,7 +2074,7 @@ export default BaseActor;
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 16th Jul 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
