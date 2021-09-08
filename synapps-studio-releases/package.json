@@ -2,12 +2,12 @@
   "name": "synapps-studio-releases",
   "config": {
     "stable": {
-      "version": "1.0.1",
-      "revision": "2021-07-19T17:00:00"
+      "version": "1.0.2",
+      "revision": "2021-09-08T15:20:00"
     },
     "beta": {
-      "version": "1.0.1",
-      "revision": "2021-07-19T17:00:00"
+      "version": "1.0.2",
+      "revision": "2021-09-08T15:20:00"
     },
     "highway": {
       "version": "1.0.2-highway",
