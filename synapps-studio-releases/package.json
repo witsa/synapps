@@ -3,15 +3,15 @@
   "config": {
     "stable": {
       "version": "1.0.3",
-      "revision": "2021-09-29T15:45:00"
+      "revision": "2021-09-29T18:00:00"
     },
     "beta": {
       "version": "1.0.3",
-      "revision": "2021-09-29T15:45:00"
+      "revision": "2021-09-29T18:00:00"
     },
     "highway": {
-      "version": "1.0.2-highway",
-      "revision": "2021-09-28T15:45:00"
+      "version": "1.0.3-highway",
+      "revision": "2021-09-29T18:00:00"
     }
   }
 }
