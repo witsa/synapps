@@ -3,11 +3,11 @@
   "config": {
     "stable": {
       "version": "1.0.3",
-      "revision": "2021-09-29T18:00:00"
+      "revision": "2021-09-30T01:00:00"
     },
     "beta": {
       "version": "1.0.3",
-      "revision": "2021-09-29T18:00:00"
+      "revision": "2021-09-30T01:00:00"
     },
     "highway": {
       "version": "1.0.3-highway",
