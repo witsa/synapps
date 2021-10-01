@@ -10,7 +10,7 @@ Documentation de la solution Synapps
 
 {% include disclaimer-beta.md %}
 
-## Le précurseur de Studio : La Maker
+## Le précurseur de Studio : Maker
 
 La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible. Il reste disponible pour la maintenance des Synapps de première génération.
 

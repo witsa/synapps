@@ -133,9 +133,9 @@
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
 											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
+											<li><a href="HW.Synapps.BaseHighwayStore.html">HW.Synapps.BaseHighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
-											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -224,6 +224,7 @@ import BaseHighwayStoreService from 'synapps-ui-hw/services/data-stores/highway-
 import SmartLocalUnit from './models/smartlocalunit';
 import Flux from './models/flux';
 import FluxItem from './models/fluxitem';
+import Point from './models/point';
 import PointGroup from './models/point-group';
 import Reflect from './models/reflect';
 import ReflectClass from './models/reflect-class';
@@ -239,6 +240,7 @@ const PAGE_SIZE = 200;
 /**
  * Magasin de données de Highway.
  * @class HW.Synapps.HighwayStore
+ * @extends HW.Synapps.BaseHighwayStoreService
  */
 export default class HighwayStoreService extends BaseHighwayStoreService {
 
@@ -249,10 +251,13 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   _fluxsRegister = new HighwayObjectsRegister(this);
   _fluxitemsRegister = new HighwayObjectsRegister(this);
   _wumUnitsRegister = new HighwayObjectsRegister(this);
+  _wumTypesRegister = new HighwayObjectsRegister(this);
   _reflectsRegister = new HighwayObjectsRegister(this);
+  _reflectsSchemaRegister = new HighwayObjectsRegister(this);
   _reflectsClassRegister = new HighwayObjectsRegister(this);
   _reflectsModeRegister = new HighwayObjectsRegister(this);
   _usersRegister = new HighwayObjectsRegister(this);
+  _prepsRegister = new HighwayObjectsRegister(this);
 
   /**
    * Obtient ou charge la liste des scopes (maximum : 200).
@@ -306,8 +311,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       return this._wumUnitsRegister.records;
     }
 
-    let url = `global/wum/unit`;
-    const results = await this._request(url);
+    const results = await this.searchResources({ resourceType: 'wum/unit' });
 
     for (const record of [...results]) {
       if (this._wumUnitsRegister.hasRecord({ record })) continue;
@@ -316,6 +320,30 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 
     this._wumUnitsRegister._isRequestedYet = true;
     return this._wumUnitsRegister.records;
+  }
+
+  /**
+   * Obtient ou charge la liste des scopes (maximum : 200).
+   * @member HW.Synapps.HighwayStore#getWumTypesAll
+   * @returns {Promise&lt;Array.&lt;Object>>} Liste des types d'unites
+   * @async
+   */
+  @authenticatedRequest
+  async getWumTypesAll() {
+
+    if (this._wumTypesRegister.isRequestedYet) {
+      return this._wumTypesRegister.records;
+    }
+
+    const results = await this.searchResources({ resourceType: 'wum/type' });
+
+    for (const record of [...results]) {
+      if (this._wumTypesRegister.hasRecord({ record })) continue;
+      this._wumTypesRegister.record({ record });
+    }
+
+    this._wumTypesRegister._isRequestedYet = true;
+    return this._wumTypesRegister.records;
   }
 
   findInfra(id) {
@@ -549,7 +577,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   async searchFluxItems(params = {}) {
     const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
     const results = await this.searchResources({ resourceType: 'flux/item', filters });
-    const fluxItems = results.data.map(record => this._deserializeFluxItem(record, false))
+    const fluxItems = results.data.map(record => this._deserializeFluxItem(record, false));
     return {
       count: results.count,
       fluxItems
@@ -565,10 +593,75 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
    */
   @authenticatedRequest
   async searchPointGroups(params = {}) {
+    const { id, ids, ...filters } = params;
+    if (isNone(id)) {
+      const points = [];
+      await Promise.all(ids.map(i =>
+        this.searchResources({ resourceType: `flux/item/${i}/pointgroups`, filters })
+          .then(result => {
+            const records = Object.entries(result).map(record => this._deserializePointGroup(record, id));
+            points.push(...records);
+            return Promise.resolve();
+          })
+      ));
+
+      return { points };
+    }
+    else {
+      const records = await this.searchResources({ resourceType: `flux/item/${id}/pointgroups`, filters });
+      const points = Object.entries(records).map(record => this._deserializePointGroup(record, id));
+      return { points };
+    }
+  }
+
+  /**
+  * Obtient ou charge une liste de de points de flux.
+  * @member HW.Synapps.HighwayStore#searchPoints
+  * @param {Object} params Paramètres
+  * @returns {Promise&lt;Array.&lt;PointGroup>>} Liste de points
+  * @async
+  */
+  @authenticatedRequest
+  async searchPoints(params = {}) {
     const { id, ...filters } = params;
-    const results = await this.searchResources({ resourceType: `flux/item/${id}/pointgroups`, filters });
-    const points = results.map(record => this._deserializePointGroup(record))
-    return { points };
+
+    if (isNone(id)) {
+      const points = [];
+      const records = await this.searchResources({ resourceType: 'flux/item/points', filters });
+      Object.entries(records).forEach(record => {
+        const itemId = parseInt(record[0]);
+        const itemRecords = record[1];
+        const itemPoints = Object.entries(itemRecords).map(record => this._deserializePoint(record, itemId));
+        points.push(...itemPoints);
+      });
+
+      return { points };
+    }
+    else {
+
+      const records = await this.searchResources({ resourceType: `flux/item/${id}/points`, filters });
+      const points = Object.entries(records).map(record => this._deserializePoint(record, id));
+      return { points };
+    }
+  }
+
+  /**
+  * Obtient ou charge une liste de preparations (par defaut : 200).
+  * @member HW.Synapps.HighwayStoreService#searchPreps
+  * @param {Object} params Paramètres
+  * @param {Number} [params.pageSize=200] Nombre de preparations à récupérer
+  * @returns {Promise&lt;Array.&lt;Flux>>} Liste des preparations
+  * @async
+  */
+  @authenticatedRequest
+  async searchPreps(params = {}) {
+    const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
+    const results = await this.searchResources({ resourceType: 'preparation', filters });
+    const preps = results.data.map(record => this._deserializePrep(record, false))
+    return {
+      count: results.count,
+      preps
+    };
   }
 
   findReflect(id) {
@@ -585,7 +678,8 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   @authenticatedRequest
   async getReflect(id) {
     const record = await this.getResource({ resourceType: 'reflect', id });
-    return this._deserializeReflect(record, false);
+    const reflects = await this._deserializeReflectsWithSchemas([record], false);
+    return reflects.shift();
   }
 
   /**
@@ -600,8 +694,9 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     var missingIds = this._reflectsRegister.findWithoutKeys(ids);
     if (!isEmpty(missingIds)) {
       const results = await this.getManyResources({ resourceType: 'reflect', ids: missingIds });
-      results.forEach(record => this._deserializeReflect(record, true))
+      await this._deserializeReflectsWithSchemas(results, true);
     }
+
     return this._reflectsRegister.findByKeys(ids);
   }
 
@@ -617,7 +712,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   async searchReflects(params = {}) {
     const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
     const results = await this.searchResources({ resourceType: 'reflect', filters });
-    const reflects = results.data.map(record => this._deserializeReflect(record, false))
+    const reflects = await this._deserializeReflectsWithSchemas(results.data, false);
     return {
       count: results.count,
       reflects
@@ -704,13 +799,13 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   }
 
   /**
- * Charge les événements du journal (par defaut : 200).
- * @member HW.Synapps.HighwayStoreService#ackJournal
- * @param {Object} params Paramètres
- * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
- * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
- * @async
- */
+  * Charge les événements du journal (par defaut : 200).
+  * @member HW.Synapps.HighwayStoreService#ackJournal
+  * @param {Object} params Paramètres
+  * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
+  * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
+  * @async
+  */
   @authenticatedRequest
   async ackJournal(id, comment) {
     const record = await this.patchResource({
@@ -719,7 +814,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       id, params: { comment }
     });
 
-    return this._deserializeReflect(record, false);
+    return this._deserializeJournal(record);
   }
 
   findResource(type, id) {
@@ -775,6 +870,11 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     return record;
   }
 
+  _deserializePrep(record, cache) {
+    if (cache) this._prepsRegister.record({ record });
+    return record;
+  }
+
   _deserializeInfra(record, cache) {
     var infra = this._infrasRegister.findByRecord({ record });
     if (isNone(infra)) {
@@ -827,10 +927,43 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     return fluxItem;
   }
 
-  _deserializePointGroup(record) {
+  _deserializePointGroup(recordHash, fluxItemId) {
     const pointGroup = new PointGroup();
+    const record = recordHash[1];
+    record.d = fluxItemId;
+    record.t = recordHash[0];
     PointGroup.serializer.deserialize(pointGroup, record);
     return pointGroup;
+  }
+
+  _deserializePoint(recordHash, fluxItemId) {
+    const point = new Point();
+    const record = {
+      t: recordHash[0],
+      v: recordHash[1],
+      d: fluxItemId
+    };
+
+    Point.serializer.deserialize(point, record);
+    return point;
+  }
+
+  async _deserializeReflectsWithSchemas(records, cache) {
+    const ids = records.map(r => r.id);
+    var missingSchemasIds = this._reflectsSchemaRegister.findWithoutKeys(ids);
+    if (!isEmpty(missingSchemasIds)) {
+      const schemas = await this.searchResources({ resourceType: 'reflect/schema', filters: { ids: missingSchemasIds } });
+      Object.entries(schemas).forEach(record => {
+        record[1].id = parseInt(record[0]);
+        this._reflectsSchemaRegister.record({ record: record[1] });
+      });
+    }
+
+    const reflects = records.map(record => {
+      record.schema = this._reflectsSchemaRegister.findByKey(record.id);
+      return this._deserializeReflect(record, cache);
+    });
+    return reflects;
   }
 
   _deserializeReflect(record, cache) {
@@ -884,7 +1017,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 1st Oct 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -1,9 +1,10 @@
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>&amp;lt;private&amp;gt; Behavior.Destroyable</title>
+		<title>synapps-ui-hw/addon/components/actors/fluxs/point-chart.js</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -14,7 +15,7 @@
 			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -207,139 +208,387 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">class</span>
-				<h1><span class="signature-attribs">&lt;private> </span><span class="ancestors"><a href="Behavior.html">Behavior</a>.</span><span class="name">Destroyable</span></h1>
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui-hw/addon/components/actors/fluxs/point-chart.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="list_class.html">Classes</a></li>
-							<li class="active"><a href="Behavior.html">Behavior</a>.Destroyable</li>
-						</ol>
-					<section>
-							<dl class="symbol primary">
-								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="signature-attribs">&lt;private> </span><span class="name">Destroyable</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
-</dt>
-<dd class="symbol-details class" style="max-height: 9999px;">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Étend une classe en lui donnant des capacités de nettoyage par destruction.</p></div>
-			</div>	</div>
-</dd>
-							</dl>
-							<article class="secondary">
-									<h3>Members</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="isDestroyed" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroyed</span><span class="signature-type"> :Boolean</span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'objet est détruit.</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">false</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="isDestroying" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroying</span><span class="signature-type"> :Boolean</span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'objet est en train d'être détruit.</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-							<!-- type -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
-								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
-								</div>
-							</div>
-			
-							<!-- defaultvalue -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">false</p>
-								</div>
-							</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-									</dl>
-									<h3>Methods</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="destroy" class="function public"><span class="name">destroy</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Détruit l'objet.</p></div>
-			</div>	</div>
-</dd>
-									</dl>
-							</article>
-					</section>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">/* global Chart */
+import { action, computed } from '@ember/object';
+import { inject as service } from '@ember/service';
+import { isEmpty, isNone } from '@ember/utils';
+import loc from 'ember-wit/utils/loc';
+import BaseRequest from 'synapps-ui/components/actors/base-request';
+import prototypeSetup from 'synapps-ui-hw/components/actors/fluxs/point-chart-prototype-setup';
+import logger from 'logger';
+import HIGHWAY_COLORS from 'synapps-ui-hw/components/cross-cutting/colors';
+
+const LABEL_DEFAULT_COLORS = {
+  min: HIGHWAY_COLORS.red,
+  max: HIGHWAY_COLORS.orange,
+  first: HIGHWAY_COLORS.yellow,
+  last: HIGHWAY_COLORS.green,
+  average: HIGHWAY_COLORS.blue,
+  sum: HIGHWAY_COLORS.purple,
+  delta: HIGHWAY_COLORS.grey,
+  count: HIGHWAY_COLORS.pink
+};
+
+const REQUEST_TRIGGER_FIELDS = [
+  'properties.from',
+  'properties.to',
+  'properties.fluxItems',
+  'properties.aggregate',
+  'properties.take',
+  'properties.period',
+  'properties.split',
+];
+
+const CHART_UPDATE_TRIGGER_FIELDS = [
+  'properties.metric',
+  'properties.metrics',
+  'properties.title',
+  'properties.titleAlign',
+  'properties.legendTitle',
+  'properties.legendPosition',
+  'properties.legendAlign',
+  'properties.chartFill',
+  'properties.interpolation',
+  'properties.tension',
+];
+
+const CHART_CREATE_TRIGGER_FIELDS = [
+  'properties.chartType',
+  'properties.chartOrientation',
+];
+
+const AUTO_REFRESH_TRIGGER_FIELDS = [];
+
+export default class PointChart extends BaseRequest {
+
+  /**
+   * Magasin de donnée Highway.
+   * @member HW.Actor.PointList#highway
+   * @type {HW.Synapps.RedyStore}
+   * @readonly
+   */
+  @service('synapps-ui-hw/highway-store')
+  highwayStore;
+
+  REQUEST_TRIGGER_FIELDS = REQUEST_TRIGGER_FIELDS;
+  AUTO_REFRESH_TRIGGER_FIELDS = AUTO_REFRESH_TRIGGER_FIELDS;
+  CHART_CREATE_TRIGGER_FIELDS = CHART_CREATE_TRIGGER_FIELDS;
+  CHART_UPDATE_TRIGGER_FIELDS = CHART_UPDATE_TRIGGER_FIELDS;
+
+  canvas;
+
+  chart;
+
+  _onAfterPropertyChanged({ propertyPath, ...others }) {
+    super._onAfterPropertyChanged({ propertyPath, ...others });
+    if (!this._isPostInit) return;
+
+    if (this.CHART_CREATE_TRIGGER_FIELDS.includes(propertyPath)) {
+      this._updateChart(true);
+    }
+
+    if (this.CHART_UPDATE_TRIGGER_FIELDS.includes(propertyPath)) {
+      this._updateChart(false);
+    }
+  }
+
+  _updateChart(recreate = false) {
+    const ctx = this.canvas.getContext("2d");
+    if (isNone(this.data)) return;
+
+    if (!this.chart || recreate) {
+      this._initChart(ctx);
+    }
+
+    // get unique dates
+    var dates = this.data.map(d => d.date).filter((v, i, a) => a.indexOf(v) === i);
+    this.chart.data.labels = dates;
+
+    // get datasets to apply
+    var datasets = this._getDatasets();
+
+    // remove datasets
+    var labels = datasets.map(dataset => dataset.label);
+    this.chart.data.datasets
+      .filter(dataset => !labels.includes(dataset.label))
+      .forEach(dataset => {
+        const index = this.chart.data.datasets.indexOf(dataset);
+        if (index > -1) {
+          this.chart.data.datasets.splice(index, 1)
+        }
+      });
+
+    // create or update datasets
+    datasets.forEach(dataset => {
+      var chartDataset = this.chart.data.datasets.find(ds => ds.label === dataset.label);
+      if (isNone(chartDataset)) {
+        this.chart.data.datasets.push(dataset);
+      } else {
+        Object.assign(chartDataset, dataset)
+      }
+    })
+
+    this.chart.options.plugins.title.align = this.titleAlign;
+    this.chart.options.plugins.legend.title.display = !isEmpty(this.properties.legendTitle);
+    this.chart.options.plugins.legend.title.text = this.properties.legendTitle;
+    this.chart.options.plugins.legend.align = this.legendAlign;
+    this.chart.options.plugins.legend.position = this.legendPosition;
+    this.chart.options.plugins.title.display = !isEmpty(this.properties.title);
+    this.chart.options.plugins.title.text = this.properties.title;
+
+    this.chart.update();
+  }
+
+  _initChart(ctx) {
+    if (this.chart) {
+      this.chart.destroy();
+    }
+
+    const config = {
+      type: this.chartType,
+      data: {
+        label: [],
+        datasets: [],
+      },
+      options: {
+        responsive: true,
+        indexAxis: this.chartOrientation,
+      },
+    };
+
+    this.chart = new Chart(ctx, config);
+  }
+
+  _getDatasets() {
+    var dataSets = {};
+    this.data.forEach((point) => {
+      if (this.isMulti) {
+        // many fluxItems: dataSets is {fluxItemId1=[metric values], fluxItemId2=[metric values] }
+        this._pushDataset(dataSets, point.id, point[this.metric]); // metric
+      }
+      else {
+        // one fluxItems: dataSets is {metric1=[metric values], metric2=[metric values] }
+        this.metrics.forEach(metric => {
+          this._pushDataset(dataSets, metric, point[metric]);
+        })
+      }
+    })
+
+    return Object.values(dataSets);
+  }
+
+  _pushDataset(datasets, serie, value) {
+    var dataset = datasets[serie];
+    if (isNone(dataset)) {
+      const index = Object.keys(datasets).length;
+
+      var label = this.isSingle ?
+        loc(`_actor_chartMetric_value_${serie}`) : // single flux item: serie is metric
+        this.highwayStore.findFluxItem(serie)?.name ?? serie; // multiple Flux items: serie is flux item ...
+
+      datasets[serie] = {
+        data: [value],
+        label,
+        borderColor: this.additionals[`${serie}BorderColor`] ?? this._getColor(serie, index),
+        backgroundColor: this.additionals[`${serie}BackgroundColor`] ?? this._getColor(serie, index),
+        fill: this.chartFill,
+        cubicInterpolationMode: this.interpolation,
+        tension: this.tension
+      }
+    }
+    else {
+      dataset.data.push(value);
+    }
+  }
+
+  _getColor(label, index) {
+    const color = LABEL_DEFAULT_COLORS[label];
+    if (!isEmpty(color)) return color;
+    const keys = Object.keys(HIGHWAY_COLORS);
+    const key = keys[index % keys.length];
+    return HIGHWAY_COLORS[key];
+  }
+
+  setData(newData) {
+    super.setData(newData);
+    this._updateChart();
+  }
+
+  async _request() {
+    return await this.loadPointGroups();
+  }
+
+  async loadPointGroups() {
+
+    if (!this.isMulti &amp;&amp; !this.isSingle) return [];
+
+    const filters = {};
+
+    // get or retreive from cache Flux item: check exist and allow find
+    var fluxItems = await this.highwayStore.getManyFluxItems(this.fluxItems);
+    if (this.isMulti) {
+      filters.ids = fluxItems.map(f => f.id);
+      if (isEmpty(filters.ids)) return [];
+    }
+    else if (this.isSingle) {
+      filters.id = fluxItems.shift()?.id;
+      if (isNone(filters.id)) return [];
+    }
+
+    if (!isNone(this.properties.from)) {
+      filters.from = this.properties.from;
+    }
+
+    if (!isNone(this.properties.to)) {
+      filters.to = this.properties.to;
+    }
+
+    switch (this.aggregate) {
+      case 'period':
+        filters.period = this.period;
+        break;
+      case 'split':
+        filters.split = this.properties.split;
+        break;
+      case 'none':
+      default:
+        filters.numberRows = this.properties.take;
+    }
+
+    const { points } = this.aggregate === 'none' ?
+      await this.highwayStore.searchPoints(filters) :
+      await this.highwayStore.searchPointGroups(filters);
+
+    return points;
+  }
+
+  @action
+  _didInsertCanvas(canvas) {
+    this.canvas = canvas;
+  }
+
+  willDestroy() {
+    if (this.isDestroyed) return;
+    if (this.canvas) {
+      this.canvas = null;
+    }
+
+    if (this.chart) {
+      this.chart.destroy();
+    }
+  }
+
+  @computed('fluxItems.length')
+  get isMulti() {
+    return this.fluxItems.length > 1;
+  }
+
+  @computed('fluxItems.length')
+  get isSingle() {
+    return this.fluxItems.length === 1;
+  }
+
+  @computed('properties.fluxItems')
+  get fluxItems() {
+    return isNone(this.properties.fluxItems) ? [] : JSON.parse(this.properties.fluxItems) ?? [];
+  }
+
+  // computed
+  @computed('properties.period')
+  get period() {
+    return this.properties.period;
+  }
+
+  @computed('properties.{aggregate,prototypeSetup.aggregate.options}')
+  get aggregate() {
+    return this.properties.aggregate &amp;&amp;
+      this.properties.prototypeSetup.aggregate.options.includes(this.properties.aggregate) ? this.properties.aggregate : this.properties.prototypeSetup.aggregate.options[0];
+  }
+
+  @computed('aggregate', 'properties.{metric,prototypeSetup.metric.options}')
+  get metric() {
+    if (this.aggregate === 'none') return ['value'];
+    return this.properties.metric &amp;&amp;
+      this.properties.prototypeSetup.metric.options.includes(this.properties.metric) ? this.properties.metric : this.properties.prototypeSetup.metric.options[0];
+  }
+
+  @computed('isMulti', 'aggregate', 'properties.{metrics,prototypeSetup.metrics.options}')
+  get metrics() {
+    if (this.aggregate === 'none') return ['value'];
+    try {
+      const metrics = JSON.parse(this.properties.metrics);
+      return isEmpty(metrics) ? [...this.properties.prototypeSetup.metrics.options] : metrics;
+    } catch (e) {
+      logger.warn('[PointChart][get metrics] JSON parsing error.', this.properties.metrics);
+      return [...this.properties.prototypeSetup.metrics.options];
+    }
+  }
+
+  @computed('properties.{chartType,prototypeSetup.chartType.options}')
+  get chartType() {
+    return this.properties.chartType &amp;&amp;
+      this.properties.prototypeSetup.chartType.options.includes(this.properties.chartType) ? this.properties.chartType : this.properties.prototypeSetup.chartType.options[0];
+  }
+
+  @computed('chartType', 'properties.{chartFill,prototypeSetup.chartFill.options}')
+  get chartFill() {
+    return this.chartType != 'line' ? false : this.properties.chartFill &amp;&amp;
+      this.properties.prototypeSetup.chartFill.options.includes(this.properties.chartFill) ? this.properties.chartFill : this.properties.prototypeSetup.chartFill.options[0];
+  }
+
+  @computed('chartType', 'properties.chartOrientation')
+  get chartOrientation() {
+    return this.chartType === 'bar' &amp;&amp; this.properties.chartOrientation === 'horizontal' ? 'y' : 'x';
+  }
+
+  @computed('chartType', 'properties.{interpolation,prototypeSetup.interpolation.options}')
+  get interpolation() {
+    return this.chartType != 'line' ? false : this.properties.interpolation &amp;&amp;
+      this.properties.prototypeSetup.interpolation.options.includes(this.properties.interpolation) ? this.properties.interpolation : this.properties.prototypeSetup.interpolation.options[0];
+  }
+
+  @computed('properties.{titleAlign,prototypeSetup.titleAlign.options}')
+  get titleAlign() {
+    return this.properties.titleAlign &amp;&amp;
+      this.properties.prototypeSetup.titleAlign.options.includes(this.properties.titleAlign) ? this.properties.titleAlign : this.properties.prototypeSetup.titleAlign.options[0];
+  }
+
+  @computed('properties.{legendPosition,prototypeSetup.legendPosition.options}')
+  get legendPosition() {
+    return this.properties.legendPosition &amp;&amp;
+      this.properties.prototypeSetup.legendPosition.options.includes(this.properties.legendPosition) ? this.properties.legendPosition : this.properties.prototypeSetup.legendPosition.options[0];
+  }
+
+  @computed('properties.{legendAlign,prototypeSetup.legendAlign.options}')
+  get legendAlign() {
+    return this.properties.legendAlign &amp;&amp;
+      this.properties.prototypeSetup.legendAlign.options.includes(this.properties.legendAlign) ? this.properties.legendAlign : this.properties.prototypeSetup.legendAlign.options[0];
+  }
+
+  @computed('interpolation', 'properties.tension')
+  get tension() {
+    return this.interpolation != 'default' ? undefined : this.properties.tension;
+  }
+}
+
+PointChart.registerInDefinitions({
+  type: 'highway/point-chart',
+  componentName: 'synapps-ui/actors/highway/point-chart',
+  prototypeSetup,
+  platform: 'highway'
+});
+</code></pre>
+		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -370,3 +619,4 @@
 	
 </body>
 </html>
+<!-- end:source.tmpl.hbs -->
