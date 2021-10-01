@@ -133,9 +133,9 @@
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
 											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
+											<li><a href="HW.Synapps.BaseHighwayStore.html">HW.Synapps.BaseHighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
-											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -223,10 +223,17 @@ import { inject as service } from '@ember/service';
 import { isEmpty, isNone } from '@ember/utils';
 import { tracked } from '@glimmer/tracking';
 import loc from 'ember-wit/utils/loc';
-import BaseRequestList from 'synapps-ui/components/actors/base-request-list';
+import MultiSelectRequestList from 'synapps-ui-hw/components/actors/multiselect-request-list';
 import prototypeSetup from 'synapps-ui-hw/components/actors/fluxs/fluxitem-list-prototype-setup';
 
 const COLUMN_TEMPLATES = {
+
+  multiselect: {
+    key: 'multiselect',
+    name: '',
+    width: 'auto',
+    isButton: false,
+  },
 
   id: {
     key: 'id',
@@ -314,11 +321,13 @@ const REQUEST_TRIGGER_FIELDS = [
   'properties.fluxs',
   'properties.infras',
   'properties.includeInfraChildren',
+  'properties.smartLocalUnits',
+  'properties.wumUnits',
 ];
 
 const AUTO_REFRESH_TRIGGER_FIELDS = [];
 
-export default class FluxItemList extends BaseRequestList {
+export default class FluxItemList extends MultiSelectRequestList {
 
   @readOnly('rows')
   fluxItems;
@@ -348,12 +357,42 @@ export default class FluxItemList extends BaseRequestList {
     return this._selectedFluxItem;
   }
 
+  @readOnly('_checkedStringIds')
+  checkedFluxItemIds;
+
   set selectedFluxItem(value) {
+    if (this._selectedFluxItem === value) return;
     this._selectedFluxItem = value;
 
     notifyPropertyChange(this, 'selectedFluxItem');
     if (this.isDestroyed || this.isDestroying) return;
     this.runEvent('onSelectChange', { value });
+  }
+
+  @computed('properties.scopes')
+  get scopes() {
+    return this.properties.scopes ? JSON.parse(this.properties.scopes) : null;
+  }
+
+  @computed('properties.fluxs')
+  get fluxs() {
+    return this.properties.fluxs ? JSON.parse(this.properties.fluxs) : null;
+  }
+
+  @computed('properties.infras')
+  get infras() {
+    return this.properties.infras ? JSON.parse(this.properties.infras) : null;
+  }
+
+  @computed('properties.smartLocalUnits')
+  get smartLocalUnits() {
+    return this.properties.smartLocalUnits ? JSON.parse(this.properties.smartLocalUnits) : null;
+  }
+
+  @computed('properties.wumUnits')
+  get wumUnits() {
+    return this.properties.wumUnits ? JSON.parse(this.properties.wumUnits)
+      .filter(n => n) : null;
   }
 
   async _request() {
@@ -367,33 +406,33 @@ export default class FluxItemList extends BaseRequestList {
       pageIndex: this.page
     };
 
-    if (!isNone(this.properties.level)) {
-      filters.level = this.properties.level;
-    }
-
     if (!isEmpty(this.properties.search)) {
       filters.search = this.properties.search;
     }
 
-    if (this.properties.scopes) {
-      // EV?: scopes is a string ? is it the good way to parse value ?
-      filters.scopeIds = JSON.parse(this.properties.scopes);
+    if (!isNone(this.properties.level)) {
+      filters.level = this.properties.level;
     }
 
-    if (this.properties.fluxs) {
-      // EV?: tags is a string ? is it the good way to parse value ?
-      filters.fluxIds = JSON.parse(this.properties.fluxs);
+    if (!isNone(this.scopes)) {
+      filters.scopeIds = this.scopes;
     }
 
-    if (this.properties.infras) {
-      // EV?: infras is a string ? is it the good way to parse value ?
-      filters.infraIds = JSON.parse(this.properties.infras);
+    if (!isNone(this.fluxs)) {
+      filters.fluxIds = this.fluxs;
+    }
+
+    if (!isNone(this.infras)) {
+      filters.infraIds = this.infras;
       filters.includeInfraChildren = this.properties.includeInfraChildren;
     }
 
-    if (this.properties.smartLocalUnits) {
-      // EV?: smartLocalUnits is a string ? is it the good way to parse value ?
-      filters.smartLocalUnitIds = JSON.parse(this.properties.smartLocalUnits);
+    if (!isNone(this.smartLocalUnits)) {
+      filters.smartLocalUnitIds = this.smartLocalUnits;
+    }
+
+    if (!isNone(this.wumUnits)) {
+      filters.wumUnits = this.wumUnits;
     }
 
     filters.includePoints = true;
@@ -437,6 +476,13 @@ export default class FluxItemList extends BaseRequestList {
   selectFluxItem(fluxItem) {
     this.selectedFluxItem = fluxItem;
   }
+
+  @action
+  checkFluxItem(fluxItem, event) {
+    if (!isNone(fluxItem)) {
+      this._toggleOption(fluxItem.id, event);
+    }
+  }
 }
 
 FluxItemList.registerInDefinitions({
@@ -451,7 +497,7 @@ FluxItemList.registerInDefinitions({
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 1st Oct 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

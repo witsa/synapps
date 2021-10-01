@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>&amp;lt;private&amp;gt; Behavior.Destroyable</title>
+		<title>.Synapps.BaseHighwayStore</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -15,7 +15,7 @@
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = true;
-			window.DOCLET_AFILTER_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = true;
 		</script>
 </head>
 <body>
@@ -208,7 +208,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="signature-attribs">&lt;private> </span><span class="ancestors"><a href="Behavior.html">Behavior</a>.</span><span class="name">Destroyable</span></h1>
+				<h1><span class="ancestors"><a href="HW.Synapps.html">.Synapps</a>.</span><span class="name">BaseHighwayStore</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -217,16 +217,26 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active"><a href="Behavior.html">Behavior</a>.Destroyable</li>
+							<li class="active"><a href="HW.Synapps.html">.Synapps</a>.BaseHighwayStore</li>
 						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-inherited" type="checkbox" value="" checked>
+									Inherited
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+						</div>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="signature-attribs">&lt;private> </span><span class="name">Destroyable</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">BaseHighwayStore</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Étend une classe en lui donnant des capacités de nettoyage par destruction.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Magasin de données de Highway.</p></div>
 			</div>	</div>
 </dd>
 							</dl>
@@ -234,33 +244,33 @@
 									<h3>Members</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="isDestroyed" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroyed</span><span class="signature-type"> :Boolean</span></h4>
+											<dt class="symbol-title member public inherited">
+			<h4 id="ajax" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">ajax</span><span class="signature-type"> :<a href="Synapps.Ajax.html">Synapps.Ajax</a></span></h4>
 		</dt>
-<dd class="symbol-details member public">
+<dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'objet est détruit.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Outils ajax.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Type</label>
 								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
+									<div class="form-control-static type-names"><span class="param-type"><a href="Synapps.Ajax.html">Synapps.Ajax</a></span></div>
 								</div>
 							</div>
 			
-							<!-- defaultvalue -->
+			
+			
+			
+			
+							<!-- inherits -->
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
+								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static">false</p>
+									<p class="form-control-static"><a href="Synapps.BaseDataStore.html#ajax">Synapps.BaseDataStore#ajax</a></p>
 								</div>
 							</div>
-			
-			
-			
-			
 			
 			
 			
@@ -278,33 +288,63 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="isDestroying" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isDestroying</span><span class="signature-type"> :Boolean</span></h4>
+											<dt class="symbol-title member public inherited">
+			<h4 id="host" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">host</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member public">
+<dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Vrai quand l'objet est en train d'être détruit.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient l'hôte.</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
-							<!-- type -->
+			
+			
+			
+			
+			
+							<!-- inherits -->
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Type</label>
+								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
+									<p class="form-control-static"><a href="Synapps.BaseDataStore.html#host">Synapps.BaseDataStore#host</a></p>
 								</div>
 							</div>
 			
-							<!-- defaultvalue -->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public inherited">
+			<h4 id="session" class="member public inherited"><span class="signature-attribs">&lt;readonly> </span><span class="name">session</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Obtient la session.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Default Value</label>
+								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static">false</p>
+									<p class="form-control-static"><a href="Synapps.BaseDataStore.html#session">Synapps.BaseDataStore#session</a></p>
 								</div>
 							</div>
-			
-			
-			
-			
 			
 			
 			
@@ -325,12 +365,77 @@
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="destroy" class="function public"><span class="name">destroy</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title function public inherited">
+			<h4 id="disconnect" class="function public inherited"><span class="signature-attribs">&lt;async> </span><span class="name">disconnect</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details function public">
+<dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Détruit l'objet.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Déconnecte.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Synapps.BaseDataStore.html#disconnect">Synapps.BaseDataStore#disconnect</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="logout" class="function public inherited"><span class="signature-attribs">&lt;async> </span><span class="name">logout</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Affiche la page de déconnexion.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Synapps.BaseDataStore.html#logout">Synapps.BaseDataStore#logout</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
 			</div>	</div>
 </dd>
 									</dl>

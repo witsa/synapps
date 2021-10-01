@@ -133,9 +133,9 @@
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
 											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
+											<li><a href="HW.Synapps.BaseHighwayStore.html">HW.Synapps.BaseHighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
-											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
@@ -231,7 +231,7 @@
    * @typedef CssSizeString
    */
 
-   /**
+  /**
    * Font CSS.
    * Voir les possibilités [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/font-family}
    *
@@ -470,7 +470,7 @@
   },
 
   /**
-   * Épaisseur de bordure.
+   * Épaisseur de bordure. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/border-width}
    * **Modificateur :** `layout`.
    * @example
    * // Bordure à 3px
@@ -500,7 +500,7 @@
   },
 
   /**
-   * Arrondissement des coins.
+   * Arrondissement des coins.  Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/border-radius}
    * **Modificateur :** `css`.
    * @example
    * // Arrondis sur tous les coins, courbure de 3px
@@ -691,7 +691,7 @@
    * **Hérité**
    * @member  Actor.BaseActorProperties#textDecoration
    * @default 'inherit'
-   * @type {'normal'|'underline'|'inherit'}
+   * @type {'none'|'underline'|'inherit'}
    */
   textDecoration: {
     modifier: "css",
@@ -737,8 +737,8 @@
     value: 'inherit'
   },
 
-   /**
-   * Police du texte.
+  /**
+   * Police du texte. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/font-family}
    * **Modificateur :** `layout`.
    * **Hérité**
    * @member  Actor.BaseActorProperties#fontFamily
@@ -776,7 +776,7 @@
     value: 'inherit'
   },
 
-   /**
+  /**
    * Texte info bulle.
    * **Modificateur :** `other`.
    * @member  Actor.BaseActorProperties#toolTip
@@ -788,7 +788,7 @@
     value: ''
   },
 
-   /**
+  /**
    * Angle de rotation en degré.
    * **Modificateur :** `css`.
    * @member  Actor.BaseActorProperties#rotate
@@ -800,7 +800,7 @@
     value: 0
   },
 
-   /**
+  /**
    * Taux de mise à l'échelle.
    * **Modificateur :** `css`.
    *
@@ -817,7 +817,7 @@
     value: 1
   },
 
-   /**
+  /**
    * Translation horizontale.
    * **Modificateur :** `css`.
    *
@@ -830,7 +830,7 @@
     value: '0px'
   },
 
-   /**
+  /**
    * Translation verticale.
    * **Modificateur :** `css`.
    *
@@ -843,7 +843,7 @@
     value: '0px'
   },
 
-   /**
+  /**
    * Ombre portée. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow}
    * **Modificateur :** `css`.
    *
@@ -855,6 +855,149 @@
     modifier: "css",
     value: 'none',
   },
+
+  /**
+   * Z-index. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/z-index}
+   *
+   * Rester entre -9 et 4999 (-10 et 5000 sont réservés aux modales)
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#zIndex
+   * @default 'none'
+   * @type {String}
+   */
+  zIndex: {
+    modifier: "css",
+    value: 'auto',
+  },
+
+  /**
+   * Transition. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/transition}
+   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#transition
+   * @default 'none'
+   * @type {String}
+   */
+  transition: {
+    modifier: "css",
+    value: 'none',
+  },
+
+  /**
+   * Animation. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/animation}
+   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#animation
+   * @default 'none'
+   * @type {String}
+   */
+  animation: {
+    modifier: "css",
+    value: '',
+  },
+
+  /**
+   * Curseur souris. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/cursor}
+   *
+   * > Attention au limitation de taille pour les images : maximum 126x126
+   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#cursor
+   * @default 'inherit'
+   * @type {String}
+   */
+  cursor: {
+    modifier: "css",
+    value: 'inherit',
+  },
+
+  /**
+   * Image de fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-image}
+   *   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#backgroundImage
+   * @default 'none'
+   * @type {String}
+   */
+  backgroundImage: {
+    modifier: "css",
+    value: 'none',
+  },
+
+  /**
+   * Position du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-position}
+   *   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#backgroundPosition
+   * @default '0 0'
+   * @type {String}
+   */
+   backgroundPosition: {
+    modifier: "css",
+    value: '0 0',
+  },
+
+  /**
+   * Taille du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-size}
+   *   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#backgroundSize
+   * @default 'auto auto'
+   * @type {String}
+   */
+   backgroundSize: {
+    modifier: "css",
+    value: 'auto auto',
+  },
+
+  /**
+   * Répétition du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-repeat}
+   *   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#backgroundRepeat
+   * @default 'repeat'
+   * @type {String}
+   */
+  backgroundRepeat: {
+    modifier: "css",
+    value: 'repeat',
+  },
+
+  /**
+   * Attachement du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-attachment}
+   *   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#backgroundAttachment
+   * @default 'scroll'
+   * @type {String}
+   */
+   backgroundAttachment: {
+    modifier: "css",
+    value: 'scroll',
+  },
+
+   /**
+   * Filtre. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/filter}
+   *   *
+   * **Modificateur :** `css`.
+   *
+   * @member  Actor.BaseActorProperties#filter
+   * @default 'none'
+   * @type {String}
+   */
+    filter: {
+      modifier: "css",
+      value: 'none',
+    },
 }
 </code></pre>
 		</section>
@@ -862,7 +1005,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Sep 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 1st Oct 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
