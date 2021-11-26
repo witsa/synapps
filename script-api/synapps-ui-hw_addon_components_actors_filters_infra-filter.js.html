@@ -129,6 +129,7 @@
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
 											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
 											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.InfraFilterProperties.html">HW.Actor.InfraFilterProperties</a></li>
 											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
@@ -137,6 +138,7 @@
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
+											<li><a href="HW.Synapps.HighwaySynapp.html">HW.Synapps.HighwaySynapp</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
 											<li><a href="REDY.Actor.GroupFilter.html">REDY.Actor.GroupFilter</a></li>
@@ -156,6 +158,7 @@
 											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
 											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
 											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectBase.html">Synapps.Reflect.ReflectBase</a></li>
 											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
 											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
 											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
@@ -182,6 +185,7 @@
 											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
 											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
 											<li><a href="Synapps.html">Synapps</a></li>
+											<li><a href="Synapps.Reflect.html">Synapps.Reflect</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -217,10 +221,13 @@
 			<div class="col-md-12 main-content">
 		<section class="source-section">
 			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { inject as service } from '@ember/service';
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { notifyPropertyChange, set } from '@ember/object';
+import { isNone } from '@ember/utils';
+import { inject as service } from '@ember/service';
 import loc from 'ember-wit/utils/loc';
 import prototypeSetup from 'synapps-ui-hw/components/actors/filters/infra-filter-prototype-setup';
 import BaseFilterActor from 'synapps-ui/components/actors/input/base-filter';
+import Infra from 'synapps-ui-hw/services/data-stores/models/infra';
 
 /**
  * Acteur filtre d'infra.
@@ -242,16 +249,70 @@ export default class InfraFilter extends BaseFilterActor {
 
   _noneText = loc('_no_infra');
 
+  _onAfterPropertyChanged({ propertyPath, newValue, ...others }) {
+    super._onAfterPropertyChanged({ propertyPath, newValue, ...others });
+    if (propertyPath === 'properties.collapsedDepth' &amp;&amp; this._options) {
+      const collapseByDepth = (option, depth) => {
+        option.collapsed = depth >= newValue;
+        if (option.options) {
+          option.options.forEach(option => collapseByDepth(option, depth + 1));
+        }
+      };
+
+      try {
+        const options = JSON.parse(this._options);
+        options.forEach(option => collapseByDepth(option, 0));
+        set(this, '_options', JSON.stringify(options));
+        notifyPropertyChange(this, '_options');
+      } catch (e) {
+        //
+      }
+    }
+  }
+
   async _loadOptions() {
-    const collections = [...(await this.highway.searchInfras())]
-      .map(({ id, name }) => {
-        return {
-          value: id,
-          text: name,
-        };
+    const infras = await this.highway.searchInfras();
+    // index des infras par id.
+    const createItem = infra => {
+      return { infra, items: new Map() };
+    };
+    const infraMap = new Map();
+    infras.forEach(infra => {
+      infraMap.set(infra.id, createItem(infra));
+    });
+
+    const root = createItem(null);
+
+    // user restricted to a scope may not have a full access to all infra
+    // in this case, "fake" not accessible parents have to be created
+    infras.filter(f => !isNone(f.parentId) &amp;&amp; isNone(infraMap.get(f.parentId)))
+      .map(f => f.parentId)
+      .filter((v, i, a) => a.indexOf(v) === i) // distinct
+      .forEach(parentId => {
+        const fakeParent = new Infra();
+        Infra.serializer.deserialize(fakeParent, { id: parentId, name: '...', type: 1 });
+        infraMap.set(fakeParent.id, createItem(fakeParent));
+        root.items.set(fakeParent.id, infraMap.get(fakeParent.id));
       });
 
-    return collections;
+    infras.forEach(infra => {
+      const parent = infra.parentId ? infraMap.get(infra.parentId) : root;
+      parent.items.set(infra.id, infraMap.get(infra.id));
+    });
+
+    const itemToOption = (item, depth) => {
+      const option = { value: item.infra.id, text: item.infra.name, collapsed: depth >= this.properties.collapsedDepth };
+      if (item.items.size > 0) {
+        option.options = [...item.items.values()].map(item => itemToOption(item, depth + 1));
+      }
+
+      return option;
+    };
+
+    const options = [...root.items.values()].map(item => itemToOption(item, 0));
+
+    this._cachedOptions = options;
+    return options;
   }
 }
 
@@ -267,7 +328,7 @@ InfraFilter.registerInDefinitions({
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 1st Oct 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 26th Nov 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

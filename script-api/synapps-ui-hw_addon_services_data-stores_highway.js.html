@@ -129,6 +129,7 @@
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
 											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
 											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.InfraFilterProperties.html">HW.Actor.InfraFilterProperties</a></li>
 											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
@@ -137,6 +138,7 @@
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
+											<li><a href="HW.Synapps.HighwaySynapp.html">HW.Synapps.HighwaySynapp</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
 											<li><a href="REDY.Actor.GroupFilter.html">REDY.Actor.GroupFilter</a></li>
@@ -156,6 +158,7 @@
 											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
 											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
 											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectBase.html">Synapps.Reflect.ReflectBase</a></li>
 											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
 											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
 											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
@@ -182,6 +185,7 @@
 											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
 											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
 											<li><a href="Synapps.html">Synapps</a></li>
+											<li><a href="Synapps.Reflect.html">Synapps.Reflect</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -217,22 +221,37 @@
 			<div class="col-md-12 main-content">
 		<section class="source-section">
 			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import HighwayObjectsRegister from 'synapps-ui-hw/services/data-stores/registers/highway-objects';
-import authenticatedRequest from 'synapps-ui/services/data-stores/authenticated-request';
-import Infra from 'synapps-ui-hw/services/data-stores/models/infra';
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { assert } from '@ember/debug';
+import { isEmpty, isNone } from '@ember/utils';
+import logger from 'logger';
+import moment from 'moment';
 import BaseHighwayStoreService from 'synapps-ui-hw/services/data-stores/highway-base';
-import SmartLocalUnit from './models/smartlocalunit';
+import Infra from 'synapps-ui-hw/services/data-stores/models/infra';
+import HighwayReflectSerializer from 'synapps-ui-hw/services/data-stores/models/reflect-serializer';
+import HighwayObjectsRegister from 'synapps-ui-hw/services/data-stores/registers/highway-objects';
+import { CannotWriteError } from 'synapps-ui/errors';
+import authenticatedRequest from 'synapps-ui/services/data-stores/authenticated-request';
+import { ReflectModes } from 'synapps-ui/services/data-stores/models/reflect-base';
+import { ReflectTypes } from 'synapps-ui/services/data-stores/models/reflect-imports';
+import hasOwnProperty from 'synapps-ui/tools/has-own-property';
+import wait from 'synapps-ui/tools/wait';
 import Flux from './models/flux';
 import FluxItem from './models/fluxitem';
+import Journal from './models/journal';
 import Point from './models/point';
 import PointGroup from './models/point-group';
-import Reflect from './models/reflect';
 import ReflectClass from './models/reflect-class';
-import Journal from './models/journal';
+import SmartLocalUnit from './models/smartlocalunit';
 import User from './models/user';
-import { isEmpty, isNone } from '@ember/utils';
 
 const PAGE_SIZE = 200;
+
+const highwayReflectSerializer = new HighwayReflectSerializer();
+
+const ReflectClassIds = {};
+Object.values(ReflectTypes).forEach(ReflectType => {
+  ReflectClassIds[ReflectType.classId] = ReflectType;
+});
 
 // EV? How can i split HighStore with a store per resource ?
 // Try with reflect-store but something is getting wrong with token ...
@@ -599,28 +618,28 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       await Promise.all(ids.map(i =>
         this.searchResources({ resourceType: `flux/item/${i}/pointgroups`, filters })
           .then(result => {
-            const records = Object.entries(result).map(record => this._deserializePointGroup(record, id));
+            if (isNone(result)) return Promise.resolve();
+            const records = Object.entries(result).map((record) => this._deserializePointGroup(record, i));
             points.push(...records);
             return Promise.resolve();
           })
       ));
 
       return { points };
-    }
-    else {
+    } else {
       const records = await this.searchResources({ resourceType: `flux/item/${id}/pointgroups`, filters });
-      const points = Object.entries(records).map(record => this._deserializePointGroup(record, id));
+      const points = isNone(records) ? [] : Object.entries(records).map(record => this._deserializePointGroup(record, id));
       return { points };
     }
   }
 
   /**
-  * Obtient ou charge une liste de de points de flux.
-  * @member HW.Synapps.HighwayStore#searchPoints
-  * @param {Object} params Paramètres
-  * @returns {Promise&lt;Array.&lt;PointGroup>>} Liste de points
-  * @async
-  */
+   * Obtient ou charge une liste de de points de flux.
+   * @member HW.Synapps.HighwayStore#searchPoints
+   * @param {Object} params Paramètres
+   * @returns {Promise&lt;Array.&lt;PointGroup>>} Liste de points
+   * @async
+   */
   @authenticatedRequest
   async searchPoints(params = {}) {
     const { id, ...filters } = params;
@@ -628,31 +647,32 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     if (isNone(id)) {
       const points = [];
       const records = await this.searchResources({ resourceType: 'flux/item/points', filters });
-      Object.entries(records).forEach(record => {
-        const itemId = parseInt(record[0]);
-        const itemRecords = record[1];
-        const itemPoints = Object.entries(itemRecords).map(record => this._deserializePoint(record, itemId));
-        points.push(...itemPoints);
-      });
+      if (!isNone(records)) {
+        Object.entries(records).forEach(record => {
+          const itemId = parseInt(record[0]);
+          const itemRecords = record[1];
+          const itemPoints = Object.entries(itemRecords).map(record => this._deserializePoint(record, itemId));
+          points.push(...itemPoints);
+        });
+      }
 
       return { points };
-    }
-    else {
+    } else {
 
       const records = await this.searchResources({ resourceType: `flux/item/${id}/points`, filters });
-      const points = Object.entries(records).map(record => this._deserializePoint(record, id));
+      const points = isNone(records) ? [] : Object.entries(records).map(record => this._deserializePoint(record, id));
       return { points };
     }
   }
 
   /**
-  * Obtient ou charge une liste de preparations (par defaut : 200).
-  * @member HW.Synapps.HighwayStoreService#searchPreps
-  * @param {Object} params Paramètres
-  * @param {Number} [params.pageSize=200] Nombre de preparations à récupérer
-  * @returns {Promise&lt;Array.&lt;Flux>>} Liste des preparations
-  * @async
-  */
+   * Obtient ou charge une liste de preparations (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#searchPreps
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre de preparations à récupérer
+   * @returns {Promise&lt;Array.&lt;Flux>>} Liste des preparations
+   * @async
+   */
   @authenticatedRequest
   async searchPreps(params = {}) {
     const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
@@ -712,11 +732,51 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   async searchReflects(params = {}) {
     const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
     const results = await this.searchResources({ resourceType: 'reflect', filters });
-    const reflects = await this._deserializeReflectsWithSchemas(results.data, false);
+    const reflects = await this._deserializeReflectsWithSchemas(results.data, true);
     return {
       count: results.count,
       reflects
     };
+  }
+
+  @authenticatedRequest
+  async postCommand(id, params = {}) {
+    await this.postResource({ resourceType: 'reflect', path: 'command', id, params });
+    return true;
+  }
+
+  /**
+   * Réalise une commande sur un reflet. &lt;br> Peut ête planifiée.
+   * @member HW.Synapps.HighwayStoreService#commandReflect
+   * @param {Synapps.Reflect.ReflectBase} reflect Reflet à commander.
+   * @param {String|null} [executionDate] Date au format ISO de planification de la commande.
+   * @returns {Promise&lt;Reflect>} Reflet commandé
+   * @async
+   */
+  @authenticatedRequest
+  async commandReflect(reflect, executionDate) {
+    assert('[HighwayStore][commandReflect] reflect is required', reflect);
+
+
+    if (!reflect.canCommand) {
+      const error = new CannotWriteError();
+      error.details = '[HighwayStore][commandReflect] cannot command reflect.';
+      throw error;
+    }
+
+    const command = reflect.serializer.serializeCommand(reflect, reflect.command);
+    executionDate = executionDate || moment().toISOString();
+    try {
+      await this.postCommand(reflect.id, {
+        executionDate,
+        command,
+      });
+      await wait(2000);
+      return await this.getReflect(reflect.id);
+    } catch (error) {
+      logger.error('[HighwayStore][commandReflect] error during command reflect.', error);
+      throw error;
+    }
   }
 
   findReflectClass(id) {
@@ -780,13 +840,13 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   }
 
   /**
-  * Charge les événements du journal (par defaut : 200).
-  * @member HW.Synapps.HighwayStoreService#searchJournal
-  * @param {Object} params Paramètres
-  * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
-  * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
-  * @async
-  */
+   * Charge les événements du journal (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#searchJournal
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
+   * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
+   * @async
+   */
   @authenticatedRequest
   async searchJournal(params = {}) {
     const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
@@ -799,19 +859,20 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   }
 
   /**
-  * Charge les événements du journal (par defaut : 200).
-  * @member HW.Synapps.HighwayStoreService#ackJournal
-  * @param {Object} params Paramètres
-  * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
-  * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
-  * @async
-  */
+   * Charge les événements du journal (par defaut : 200).
+   * @member HW.Synapps.HighwayStoreService#ackJournal
+   * @param {Object} params Paramètres
+   * @param {Number} [params.pageSize=200] Nombre d'événements à récupérer
+   * @returns {Promise&lt;Array.&lt;Reflect>>} Liste des reflets
+   * @async
+   */
   @authenticatedRequest
   async ackJournal(id, comment) {
     const record = await this.patchResource({
       resourceType: 'journal',
       path: 'ack',
-      id, params: { comment }
+      id,
+      params: { comment }
     });
 
     return this._deserializeJournal(record);
@@ -863,6 +924,12 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     this._fluxitemsRegister.clear();
     this._reflectsRegister.clear();
     this._usersRegister.clear();
+    this._wumUnitsRegister.clear();
+    this._wumTypesRegister.clear();
+    this._reflectsSchemaRegister.clear();
+    this._reflectsClassRegister.clear();
+    this._reflectsModeRegister.clear();
+    this._prepsRegister.clear();
   }
 
   _deserializeScope(record, cache) {
@@ -948,32 +1015,49 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     return point;
   }
 
-  async _deserializeReflectsWithSchemas(records, cache) {
-    const ids = records.map(r => r.id);
+  async _deserializeReflectsWithSchemas(reflectDatas, cache) {
+    const ids = reflectDatas.map(r => r.id);
     var missingSchemasIds = this._reflectsSchemaRegister.findWithoutKeys(ids);
     if (!isEmpty(missingSchemasIds)) {
       const schemas = await this.searchResources({ resourceType: 'reflect/schema', filters: { ids: missingSchemasIds } });
-      Object.entries(schemas).forEach(record => {
-        record[1].id = parseInt(record[0]);
-        this._reflectsSchemaRegister.record({ record: record[1] });
+      Object.entries(schemas).forEach(([id, schema]) => {
+        schema.id = parseInt(id);
+        this._reflectsSchemaRegister.record({ record: schema });
       });
     }
 
-    const reflects = records.map(record => {
-      record.schema = this._reflectsSchemaRegister.findByKey(record.id);
-      return this._deserializeReflect(record, cache);
+    const reflects = reflectDatas.map(reflectData => {
+      reflectData.schema = this._reflectsSchemaRegister.findByKey(reflectData.id);
+      return this._deserializeReflect(reflectData, cache);
     });
     return reflects;
   }
 
-  _deserializeReflect(record, cache) {
-    var reflect = this._reflectsRegister.findByRecord({ record });
+  _deserializeReflect(reflectData, cache) {
+    let reflect = this._reflectsRegister.findByKey(reflectData.id);
     if (isNone(reflect)) {
+      const { Reflect } = hasOwnProperty(ReflectClassIds, reflectData.classId) ? ReflectClassIds[reflectData.classId] : ReflectTypes.unknown;
       reflect = new Reflect();
-      Reflect.serializer.deserialize(reflect, record);
+      reflectData.type = Reflect.type;
+      highwayReflectSerializer.deserialize(reflect, reflectData);
+      Reflect.serializer.deserialize(reflect, reflectData);
       if (cache) this._reflectsRegister.record({ record: reflect });
-    } else {
-      Reflect.serializer.deserialize(reflect, record);
+    }
+
+
+
+    if (reflectData.lastState &amp;&amp; !isNone(reflectData.lastState.mode)) {
+      const reflectMode = this.findReflectMode(reflectData.lastState.mode);
+      if (!isNone(reflectMode)) {
+        reflectData.lastState.mode = ReflectModes[reflectMode.mode];
+      } else {
+        reflectData.lastState.mode = 'unknown';
+      }
+    }
+
+    highwayReflectSerializer.deserializeValue(reflect, reflectData);
+    if (reflectData.lastState) {
+      reflect.serializer.deserializeValue(reflect, reflectData.lastState);
     }
 
     return reflect;
@@ -1017,7 +1101,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 1st Oct 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 26th Nov 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

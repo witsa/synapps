@@ -129,6 +129,7 @@
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
 											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
 											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.InfraFilterProperties.html">HW.Actor.InfraFilterProperties</a></li>
 											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
@@ -137,6 +138,7 @@
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
+											<li><a href="HW.Synapps.HighwaySynapp.html">HW.Synapps.HighwaySynapp</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
 											<li><a href="REDY.Actor.GroupFilter.html">REDY.Actor.GroupFilter</a></li>
@@ -156,6 +158,7 @@
 											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
 											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
 											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectBase.html">Synapps.Reflect.ReflectBase</a></li>
 											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
 											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
 											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
@@ -182,6 +185,7 @@
 											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
 											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
 											<li><a href="Synapps.html">Synapps</a></li>
+											<li><a href="Synapps.Reflect.html">Synapps.Reflect</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -224,7 +228,7 @@ import logger from 'logger';
 import moment from 'moment';
 import hostPilotLogo from 'synapps-ui-redy/assets/logo-pilot-256';
 import ReflectEvent from 'synapps-ui-redy/services/data-stores/models/reflect-event';
-import { ReflectTypes } from 'synapps-ui-redy/services/data-stores/models/reflect-imports';
+import RedyReflectSerializer from 'synapps-ui-redy/services/data-stores/models/reflect-serializer';
 import WosEvent from 'synapps-ui-redy/services/data-stores/models/wos-event';
 import WosVariable from 'synapps-ui-redy/services/data-stores/models/wos-variable';
 import RedyAuthenticatedBehaviorStoreService from 'synapps-ui-redy/services/data-stores/redy-authenticated-behavior';
@@ -233,11 +237,14 @@ import WosVariablesRegister from 'synapps-ui-redy/services/data-stores/registers
 import { CannotWriteError } from 'synapps-ui/errors';
 import authenticatedRequest from 'synapps-ui/services/data-stores/authenticated-request';
 import BaseStoreService from 'synapps-ui/services/data-stores/base';
+import { ReflectTypes } from 'synapps-ui/services/data-stores/models/reflect-imports';
 import hasOwnProperty from 'synapps-ui/tools/has-own-property';
-
+import wait from 'synapps-ui/tools/wait';
 
 const CONSTANTS = 'N,R,U,CC,CI';
 const OMNI = 'L,V,D,EXT';
+
+const redyReflectSerializer = new RedyReflectSerializer();
 
 /**
  * @typedef REDY.Synapps.DataStores
@@ -654,7 +661,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
   }
 
   @authenticatedRequest
-  async writeWosVariableValue(path) {
+  async writeWosVariableValue(path, params = {}) {
     logger.debug('writeWosVariableValue', path);
     assert('[RedyStore][writeWosVariableValue] path is required', path);
     let variable = this._wosVariablesRegister.findByKey(path);
@@ -672,11 +679,13 @@ export default class RedyStoreService extends BaseRedyStoreService {
       throw error;
     }
 
+    const { withBlob = false } = params;
+
     const url = `${this.host.domain}/${this.host.namespace}/wos/put`;
     const options = {
       method: 'PUT',
       headers: this.authenticatedHeader,
-      body: `value=${encodeURIComponent(variable.value)}&amp;path=${path}`
+      body: `value=${withBlob ? btoa(variable.value) : encodeURIComponent(variable.value)}&amp;path=${path}`
     };
 
     options.headers['Content-Type'] = 'application/x-www-form-urlencoded';
@@ -719,9 +728,8 @@ export default class RedyStoreService extends BaseRedyStoreService {
       const hard = this.getWosVariable(':System.Hard');
       const onPremisesEnabled = this.getWosVariable(':System.OnPremisesEnabled');
       const softwareVersion = this.getWosVariable(':System.SoftwareVersion');
-
-      const riaUrl = (isNone(rootPath.value) || onPremisesEnabled.value === true)
-        ? this.host.domain : rootPath.value;
+      const withLocalRia = isNone(rootPath.value) || onPremisesEnabled.value === true;
+      const riaUrl = (withLocalRia ? this.host.domain : rootPath.value) + (hostingRootDirName ? hostingRootDirName.value : '/web/ria');
 
       const version = this._normalizeVersion(softwareVersion.value);
 
@@ -731,7 +739,8 @@ export default class RedyStoreService extends BaseRedyStoreService {
       this.host._version = version.version;
       this.host._versionDate = version.date;
       this.host._hard = hard.value;
-      this.host._riaUrl = riaUrl + hostingRootDirName.value;
+      this.host._riaUrl = riaUrl;
+      this.host._withLocalRia = withLocalRia;
 
       let isOldVersion = true;
       const matches = this.host.version.match(/\d+/g);
@@ -1203,7 +1212,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
       // reflect.serializer.deserialize(reflect, reflectData);
     } else {
 
-      const Reflect = hasOwnProperty(ReflectTypes, reflectData.type) ? ReflectTypes[reflectData.type] : ReflectTypes.unknown;
+      const { Reflect } = hasOwnProperty(ReflectTypes, reflectData.type) ? ReflectTypes[reflectData.type] : ReflectTypes.unknown;
 
       // case 'analog':
       // case 'analog_thresholds':
@@ -1215,6 +1224,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
       // case 'setpoint_list':
 
       reflect = new Reflect();
+      redyReflectSerializer.deserialize(reflect, reflectData);
       Reflect.serializer.deserialize(reflect, reflectData);
       this._reflectsRegister.record({ record: reflect });
     }
@@ -1230,6 +1240,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
       try {
         const reflect = this.getReflectByRedyID(reflectValueData.id);
         if (!reflect) continue;
+        redyReflectSerializer.deserializeValue(reflect, reflectValueData);
         reflect.serializer.deserializeValue(reflect, reflectValueData);
         reflects.push(reflect);
       } catch (error) {
@@ -1251,7 +1262,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
       throw error;
     }
 
-    const command = reflect._commandToArgs(reflect.command);
+    const command = reflect.serializer.serializeCommand(reflect, reflect.command);
     const url = `${this.host.domain}/${this.host.namespace}/reflections/value`;
     const options = {
       method: 'PUT',
@@ -1264,11 +1275,8 @@ export default class RedyStoreService extends BaseRedyStoreService {
 
     try {
       await this.ajax.fetchJson({ url, options });
-      return await (new Promise(resolve => {
-        setTimeout(async () => {
-          return resolve(await this.searchReflectValues({ ids: [reflect.redyID] }));
-        }, 2000);
-      }));
+      await wait(2000);
+      return await this.searchReflectValues({ ids: [reflect.redyID] })
     } catch (error) {
       logger.error('[RedyStore][commandReflect] error during command reflect.', error);
       throw error;
@@ -1350,7 +1358,7 @@ export default class RedyStoreService extends BaseRedyStoreService {
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 1st Oct 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 26th Nov 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

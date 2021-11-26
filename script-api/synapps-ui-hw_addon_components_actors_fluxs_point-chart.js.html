@@ -129,6 +129,7 @@
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
 											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
 											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.InfraFilterProperties.html">HW.Actor.InfraFilterProperties</a></li>
 											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
 											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
@@ -137,6 +138,7 @@
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
+											<li><a href="HW.Synapps.HighwaySynapp.html">HW.Synapps.HighwaySynapp</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
 											<li><a href="REDY.Actor.GroupFilter.html">REDY.Actor.GroupFilter</a></li>
@@ -156,6 +158,7 @@
 											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
 											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
 											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectBase.html">Synapps.Reflect.ReflectBase</a></li>
 											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
 											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
 											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
@@ -182,6 +185,7 @@
 											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
 											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
 											<li><a href="Synapps.html">Synapps</a></li>
+											<li><a href="Synapps.Reflect.html">Synapps.Reflect</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -221,27 +225,14 @@
 import { action, computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 import { isEmpty, isNone } from '@ember/utils';
-import loc from 'ember-wit/utils/loc';
 import BaseRequest from 'synapps-ui/components/actors/base-request';
 import prototypeSetup from 'synapps-ui-hw/components/actors/fluxs/point-chart-prototype-setup';
-import logger from 'logger';
-import HIGHWAY_COLORS from 'synapps-ui-hw/components/cross-cutting/colors';
-
-const LABEL_DEFAULT_COLORS = {
-  min: HIGHWAY_COLORS.red,
-  max: HIGHWAY_COLORS.orange,
-  first: HIGHWAY_COLORS.yellow,
-  last: HIGHWAY_COLORS.green,
-  average: HIGHWAY_COLORS.blue,
-  sum: HIGHWAY_COLORS.purple,
-  delta: HIGHWAY_COLORS.grey,
-  count: HIGHWAY_COLORS.pink
-};
 
 const REQUEST_TRIGGER_FIELDS = [
   'properties.from',
   'properties.to',
-  'properties.fluxItems',
+  'properties.series',
+  'properties.scales',
   'properties.aggregate',
   'properties.take',
   'properties.period',
@@ -249,16 +240,13 @@ const REQUEST_TRIGGER_FIELDS = [
 ];
 
 const CHART_UPDATE_TRIGGER_FIELDS = [
-  'properties.metric',
-  'properties.metrics',
+  'properties.series',
+  'properties.scales',
   'properties.title',
   'properties.titleAlign',
   'properties.legendTitle',
   'properties.legendPosition',
   'properties.legendAlign',
-  'properties.chartFill',
-  'properties.interpolation',
-  'properties.tension',
 ];
 
 const CHART_CREATE_TRIGGER_FIELDS = [
@@ -290,7 +278,7 @@ export default class PointChart extends BaseRequest {
 
   _onAfterPropertyChanged({ propertyPath, ...others }) {
     super._onAfterPropertyChanged({ propertyPath, ...others });
-    if (!this._isPostInit) return;
+    if (!this.isPostInit) return;
 
     if (this.CHART_CREATE_TRIGGER_FIELDS.includes(propertyPath)) {
       this._updateChart(true);
@@ -337,6 +325,7 @@ export default class PointChart extends BaseRequest {
       }
     })
 
+    this.chart.options.scales = this._getScales();
     this.chart.options.plugins.title.align = this.titleAlign;
     this.chart.options.plugins.legend.title.display = !isEmpty(this.properties.legendTitle);
     this.chart.options.plugins.legend.title.text = this.properties.legendTitle;
@@ -369,53 +358,56 @@ export default class PointChart extends BaseRequest {
   }
 
   _getDatasets() {
-    var dataSets = {};
-    this.data.forEach((point) => {
-      if (this.isMulti) {
-        // many fluxItems: dataSets is {fluxItemId1=[metric values], fluxItemId2=[metric values] }
-        this._pushDataset(dataSets, point.id, point[this.metric]); // metric
-      }
-      else {
-        // one fluxItems: dataSets is {metric1=[metric values], metric2=[metric values] }
-        this.metrics.forEach(metric => {
-          this._pushDataset(dataSets, metric, point[metric]);
-        })
+    const datasets = {};
+    Object.entries(this.series).forEach(([key, serie]) => {
+      var points = this.data.map(p => p[serie.metric]);
+      const fluxItem = this.highwayStore.findFluxItem(serie.fluxItemId);
+      if (!isNone(fluxItem)) {
+        const dataset = {
+          data: points,
+          label: serie.label ?? fluxItem.name,
+          borderColor: serie.borderColor,
+          backgroundColor: serie.backgroundColor,
+          borderWidth: serie.borderWidth,
+          type: serie.chartType,
+          fill: serie.chartFill,
+          cubicInterpolationMode: serie.interpolation,
+          tension: !isEmpty(serie.interpolation) ? serie.tension : null,
+          yAxisID: serie.scale,
+        }
+
+        datasets[key] = dataset;
       }
     })
 
-    return Object.values(dataSets);
+    return Object.values(datasets);
   }
 
-  _pushDataset(datasets, serie, value) {
-    var dataset = datasets[serie];
-    if (isNone(dataset)) {
-      const index = Object.keys(datasets).length;
-
-      var label = this.isSingle ?
-        loc(`_actor_chartMetric_value_${serie}`) : // single flux item: serie is metric
-        this.highwayStore.findFluxItem(serie)?.name ?? serie; // multiple Flux items: serie is flux item ...
-
-      datasets[serie] = {
-        data: [value],
-        label,
-        borderColor: this.additionals[`${serie}BorderColor`] ?? this._getColor(serie, index),
-        backgroundColor: this.additionals[`${serie}BackgroundColor`] ?? this._getColor(serie, index),
-        fill: this.chartFill,
-        cubicInterpolationMode: this.interpolation,
-        tension: this.tension
+  _getScales() {
+    const scales = {};
+    Object.entries(this.scales).forEach(([key, scale]) => {
+      const config = {
+        type: scale.type,
+        display: scale.display,
+        position: scale.position,
       }
-    }
-    else {
-      dataset.data.push(value);
-    }
-  }
 
-  _getColor(label, index) {
-    const color = LABEL_DEFAULT_COLORS[label];
-    if (!isEmpty(color)) return color;
-    const keys = Object.keys(HIGHWAY_COLORS);
-    const key = keys[index % keys.length];
-    return HIGHWAY_COLORS[key];
+      if (!isNone(scale.min)) {
+        config.min = scale.min;
+      }
+
+      if (!isNone(scale.max)) {
+        config.max = scale.max;
+      }
+
+      if (!isNone(scale.step)) {
+        config.ticks = { stepSize: scale.step }
+      }
+
+      scales[key] = config;
+    })
+
+    return scales;
   }
 
   setData(newData) {
@@ -429,19 +421,24 @@ export default class PointChart extends BaseRequest {
 
   async loadPointGroups() {
 
-    if (!this.isMulti &amp;&amp; !this.isSingle) return [];
-
     const filters = {};
 
     // get or retreive from cache Flux item: check exist and allow find
-    var fluxItems = await this.highwayStore.getManyFluxItems(this.fluxItems);
-    if (this.isMulti) {
-      filters.ids = fluxItems.map(f => f.id);
-      if (isEmpty(filters.ids)) return [];
-    }
-    else if (this.isSingle) {
-      filters.id = fluxItems.shift()?.id;
-      if (isNone(filters.id)) return [];
+    const fluxItemIds = Object.values(this.series).map(s => s.fluxItemId)
+      .filter((v, i, a) => a.indexOf(v) === i); // not null and distinct;
+
+    var fluxItems = await this.highwayStore.getManyFluxItems(fluxItemIds);
+
+    switch (fluxItems.length) {
+      case 0:
+        return [];
+      case 1:
+        filters.id = fluxItems[0].id;
+        break;
+
+      default:
+        filters.ids = fluxItems.map(f => f.id);
+        break;
     }
 
     if (!isNone(this.properties.from)) {
@@ -487,19 +484,28 @@ export default class PointChart extends BaseRequest {
     }
   }
 
-  @computed('fluxItems.length')
-  get isMulti() {
-    return this.fluxItems.length > 1;
+  @computed('properties.series')
+  get series() {
+    if (isNone(this.properties.series)) return {};
+    try {
+      return JSON.parse(this.properties.series);
+    }
+    catch
+    {
+      return {};
+    }
   }
 
-  @computed('fluxItems.length')
-  get isSingle() {
-    return this.fluxItems.length === 1;
-  }
-
-  @computed('properties.fluxItems')
-  get fluxItems() {
-    return isNone(this.properties.fluxItems) ? [] : JSON.parse(this.properties.fluxItems) ?? [];
+  @computed('properties.scales')
+  get scales() {
+    if (isNone(this.properties.scales)) return {};
+    try {
+      return JSON.parse(this.properties.scales);
+    }
+    catch
+    {
+      return {};
+    }
   }
 
   // computed
@@ -514,46 +520,15 @@ export default class PointChart extends BaseRequest {
       this.properties.prototypeSetup.aggregate.options.includes(this.properties.aggregate) ? this.properties.aggregate : this.properties.prototypeSetup.aggregate.options[0];
   }
 
-  @computed('aggregate', 'properties.{metric,prototypeSetup.metric.options}')
-  get metric() {
-    if (this.aggregate === 'none') return ['value'];
-    return this.properties.metric &amp;&amp;
-      this.properties.prototypeSetup.metric.options.includes(this.properties.metric) ? this.properties.metric : this.properties.prototypeSetup.metric.options[0];
-  }
-
-  @computed('isMulti', 'aggregate', 'properties.{metrics,prototypeSetup.metrics.options}')
-  get metrics() {
-    if (this.aggregate === 'none') return ['value'];
-    try {
-      const metrics = JSON.parse(this.properties.metrics);
-      return isEmpty(metrics) ? [...this.properties.prototypeSetup.metrics.options] : metrics;
-    } catch (e) {
-      logger.warn('[PointChart][get metrics] JSON parsing error.', this.properties.metrics);
-      return [...this.properties.prototypeSetup.metrics.options];
-    }
-  }
-
   @computed('properties.{chartType,prototypeSetup.chartType.options}')
   get chartType() {
     return this.properties.chartType &amp;&amp;
       this.properties.prototypeSetup.chartType.options.includes(this.properties.chartType) ? this.properties.chartType : this.properties.prototypeSetup.chartType.options[0];
   }
 
-  @computed('chartType', 'properties.{chartFill,prototypeSetup.chartFill.options}')
-  get chartFill() {
-    return this.chartType != 'line' ? false : this.properties.chartFill &amp;&amp;
-      this.properties.prototypeSetup.chartFill.options.includes(this.properties.chartFill) ? this.properties.chartFill : this.properties.prototypeSetup.chartFill.options[0];
-  }
-
   @computed('chartType', 'properties.chartOrientation')
   get chartOrientation() {
     return this.chartType === 'bar' &amp;&amp; this.properties.chartOrientation === 'horizontal' ? 'y' : 'x';
-  }
-
-  @computed('chartType', 'properties.{interpolation,prototypeSetup.interpolation.options}')
-  get interpolation() {
-    return this.chartType != 'line' ? false : this.properties.interpolation &amp;&amp;
-      this.properties.prototypeSetup.interpolation.options.includes(this.properties.interpolation) ? this.properties.interpolation : this.properties.prototypeSetup.interpolation.options[0];
   }
 
   @computed('properties.{titleAlign,prototypeSetup.titleAlign.options}')
@@ -573,11 +548,6 @@ export default class PointChart extends BaseRequest {
     return this.properties.legendAlign &amp;&amp;
       this.properties.prototypeSetup.legendAlign.options.includes(this.properties.legendAlign) ? this.properties.legendAlign : this.properties.prototypeSetup.legendAlign.options[0];
   }
-
-  @computed('interpolation', 'properties.tension')
-  get tension() {
-    return this.interpolation != 'default' ? undefined : this.properties.tension;
-  }
 }
 
 PointChart.registerInDefinitions({
@@ -592,7 +562,7 @@ PointChart.registerInDefinitions({
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 1st Oct 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 26th Nov 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
