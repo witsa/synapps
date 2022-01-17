@@ -88,7 +88,9 @@ Chaque propriété déclenche un évènement de modification lorsque sa valeur c
 - **Rendu** Modification qui entraîne un nouveau rendu de l'acteur.
 - **Gabarit** Modification qui entraîne un nouveau calcul de gabarit et rendu de toute la hiérarchie de l'acteur.
 
-Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur. Voir la [documentation des scripts](/synapps/script-api/){:target="_blank"}
+Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur.
+- Voir la partie dédiées aux [Scripts](../scripts/)
+- Voir la [documentation des scripts](/synapps/script-api/){:target="_blank"}
 
 ## Clé d'acteur
 
