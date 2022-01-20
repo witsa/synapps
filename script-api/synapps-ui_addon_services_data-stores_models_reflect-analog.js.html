@@ -1,0 +1,608 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>synapps-ui/addon/services/data-stores/models/reflect-analog.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					API des Scripts Synapps
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="global.html#CssColorString">CssColorString</a></li>
+											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
+											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
+											<li><a href="global.html#JSONString">JSONString</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.BaseAccessory.html">Accessory.BaseAccessory</a></li>
+											<li><a href="Actor.BaseActor.html">Actor.BaseActor</a></li>
+											<li><a href="Actor.BaseActorProperties.html">Actor.BaseActorProperties</a></li>
+											<li><a href="Actor.Charting.GaugeDemo.html">Actor.Charting.GaugeDemo</a></li>
+											<li><a href="Actor.Charting.GaugeDemoProperties.html">Actor.Charting.GaugeDemoProperties</a></li>
+											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
+											<li><a href="Actor.CompositeProperties.html">Actor.CompositeProperties</a></li>
+											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
+											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
+											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
+											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
+											<li><a href="Actor.Display.Html.html">Actor.Display.Html</a></li>
+											<li><a href="Actor.Display.HtmlProperties.html">Actor.Display.HtmlProperties</a></li>
+											<li><a href="Actor.Display.Iframe.html">Actor.Display.Iframe</a></li>
+											<li><a href="Actor.Display.IframeProperties.html">Actor.Display.IframeProperties</a></li>
+											<li><a href="Actor.Display.Image.html">Actor.Display.Image</a></li>
+											<li><a href="Actor.Display.ImageProperties.html">Actor.Display.ImageProperties</a></li>
+											<li><a href="Actor.Display.Screen.html">Actor.Display.Screen</a></li>
+											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
+											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
+											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseFilter.html">Actor.Input.BaseFilter</a></li>
+											<li><a href="Actor.Input.BaseFilterProperties.html">Actor.Input.BaseFilterProperties</a></li>
+											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
+											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
+											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
+											<li><a href="Actor.Input.ButtonList.html">Actor.Input.ButtonList</a></li>
+											<li><a href="Actor.Input.ButtonListProperties.html">Actor.Input.ButtonListProperties</a></li>
+											<li><a href="Actor.Input.ButtonProperties.html">Actor.Input.ButtonProperties</a></li>
+											<li><a href="Actor.Input.Checkbox.html">Actor.Input.Checkbox</a></li>
+											<li><a href="Actor.Input.CheckboxList.html">Actor.Input.CheckboxList</a></li>
+											<li><a href="Actor.Input.CheckboxListProperties.html">Actor.Input.CheckboxListProperties</a></li>
+											<li><a href="Actor.Input.CheckboxProperties.html">Actor.Input.CheckboxProperties</a></li>
+											<li><a href="Actor.Input.Cursor.html">Actor.Input.Cursor</a></li>
+											<li><a href="Actor.Input.CursorProperties.html">Actor.Input.CursorProperties</a></li>
+											<li><a href="Actor.Input.DropdownList.html">Actor.Input.DropdownList</a></li>
+											<li><a href="Actor.Input.DropdownListProperties.html">Actor.Input.DropdownListProperties</a></li>
+											<li><a href="Actor.Input.NavButton.html">Actor.Input.NavButton</a></li>
+											<li><a href="Actor.Input.NavButtonProperties.html">Actor.Input.NavButtonProperties</a></li>
+											<li><a href="Actor.Input.Period.html">Actor.Input.Period</a></li>
+											<li><a href="Actor.Input.PeriodProperties.html">Actor.Input.PeriodProperties</a></li>
+											<li><a href="Actor.Input.RadioList.html">Actor.Input.RadioList</a></li>
+											<li><a href="Actor.Input.RadioListProperties.html">Actor.Input.RadioListProperties</a></li>
+											<li><a href="Actor.Input.SwitchButton.html">Actor.Input.SwitchButton</a></li>
+											<li><a href="Actor.Input.SwitchButtonProperties.html">Actor.Input.SwitchButtonProperties</a></li>
+											<li><a href="Actor.Input.SwitchImage.html">Actor.Input.SwitchImage</a></li>
+											<li><a href="Actor.Input.SwitchImageProperties.html">Actor.Input.SwitchImageProperties</a></li>
+											<li><a href="Actor.Input.TextArea.html">Actor.Input.TextArea</a></li>
+											<li><a href="Actor.Input.TextAreaProperties.html">Actor.Input.TextAreaProperties</a></li>
+											<li><a href="Actor.Input.TextBox.html">Actor.Input.TextBox</a></li>
+											<li><a href="Actor.Input.TextBoxProperties.html">Actor.Input.TextBoxProperties</a></li>
+											<li><a href="Actor.Layout.BaseLayout.html">Actor.Layout.BaseLayout</a></li>
+											<li><a href="Actor.Layout.BaseLayoutProperties.html">Actor.Layout.BaseLayoutProperties</a></li>
+											<li><a href="Actor.Layout.Canvas.html">Actor.Layout.Canvas</a></li>
+											<li><a href="Actor.Layout.CanvasProperties.html">Actor.Layout.CanvasProperties</a></li>
+											<li><a href="Actor.Layout.Modal.html">Actor.Layout.Modal</a></li>
+											<li><a href="Actor.Layout.ModalProperties.html">Actor.Layout.ModalProperties</a></li>
+											<li><a href="Actor.Layout.Stack.html">Actor.Layout.Stack</a></li>
+											<li><a href="Actor.Layout.StackProperties.html">Actor.Layout.StackProperties</a></li>
+											<li><a href="Actor.Layout.ViewBox.html">Actor.Layout.ViewBox</a></li>
+											<li><a href="Actor.Layout.ViewBoxProperties.html">Actor.Layout.ViewBoxProperties</a></li>
+											<li><a href="Actor.ReflectDetailsBase.html">Actor.ReflectDetailsBase</a></li>
+											<li><a href="Actor.ReflectDetailsBaseProperties.html">Actor.ReflectDetailsBaseProperties</a></li>
+											<li><a href="Actor.Request.BaseRequest.html">Actor.Request.BaseRequest</a></li>
+											<li><a href="Actor.Request.BaseRequestList.html">Actor.Request.BaseRequestList</a></li>
+											<li><a href="Actor.Request.BaseRequestListProperties.html">Actor.Request.BaseRequestListProperties</a></li>
+											<li><a href="Actor.Request.BaseRequestProperties.html">Actor.Request.BaseRequestProperties</a></li>
+											<li><a href="Actor.Unknown.html">Actor.Unknown</a></li>
+											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
+											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
+											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
+											<li><a href="Behavior.Parenthood.html">Behavior.Parenthood</a></li>
+											<li><a href="Behavior.SourceOfInternalBinding.html">Behavior.SourceOfInternalBinding</a></li>
+											<li><a href="Behavior.Stage.html">Behavior.Stage</a></li>
+											<li><a href="Behavior.WithAdditionals.html">Behavior.WithAdditionals</a></li>
+											<li><a href="Behavior.WithEvents.html">Behavior.WithEvents</a></li>
+											<li><a href="Behavior.WithProperties.html">Behavior.WithProperties</a></li>
+											<li><a href="Binding.BasicBinding.html">Binding.BasicBinding</a></li>
+											<li><a href="Binding.InternalBinding.html">Binding.InternalBinding</a></li>
+											<li><a href="Binding.Setup.Actor.html">Binding.Setup.Actor</a></li>
+											<li><a href="Binding.Setup.Relative.html">Binding.Setup.Relative</a></li>
+											<li><a href="Binding.Setup.Stage.html">Binding.Setup.Stage</a></li>
+											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
+											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
+											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="Event.RequestDataContext.html">Event.RequestDataContext</a></li>
+											<li><a href="HW.Actor.AlarmFilter.html">HW.Actor.AlarmFilter</a></li>
+											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
+											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
+											<li><a href="HW.Actor.InfraFilterProperties.html">HW.Actor.InfraFilterProperties</a></li>
+											<li><a href="HW.Actor.ReflectClassFilter.html">HW.Actor.ReflectClassFilter</a></li>
+											<li><a href="HW.Actor.ScopeFilter.html">HW.Actor.ScopeFilter</a></li>
+											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
+											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
+											<li><a href="HW.Synapps.BaseHighwayStore.html">HW.Synapps.BaseHighwayStore</a></li>
+											<li><a href="HW.Synapps.BusinessAccount.html">HW.Synapps.BusinessAccount</a></li>
+											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
+											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
+											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
+											<li><a href="HW.Synapps.HighwaySynapp.html">HW.Synapps.HighwaySynapp</a></li>
+											<li><a href="REDY.Accessory.WosRelativeVariableAccessory.html">REDY.Accessory.WosRelativeVariableAccessory</a></li>
+											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
+											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
+											<li><a href="REDY.Actor.GroupFilter.html">REDY.Actor.GroupFilter</a></li>
+											<li><a href="REDY.Actor.SiteFilter.html">REDY.Actor.SiteFilter</a></li>
+											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
+											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Actor.WosRelativeVariableSource.html">REDY.Actor.WosRelativeVariableSource</a></li>
+											<li><a href="REDY.Actor.WosRelativeVariableSourceProperties.html">REDY.Actor.WosRelativeVariableSourceProperties</a></li>
+											<li><a href="REDY.Actor.WosVariableSource.html">REDY.Actor.WosVariableSource</a></li>
+											<li><a href="REDY.Actor.WosVariableSourceProperties.html">REDY.Actor.WosVariableSourceProperties</a></li>
+											<li><a href="REDY.Actor.ZoneFilter.html">REDY.Actor.ZoneFilter</a></li>
+											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
+											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
+											<li><a href="REDY.Synapps.RedySession.html">REDY.Synapps.RedySession</a></li>
+											<li><a href="REDY.Synapps.RedyStore.html">REDY.Synapps.RedyStore</a></li>
+											<li><a href="Synapps.Ajax.html">Synapps.Ajax</a></li>
+											<li><a href="Synapps.BaseDataStore.html">Synapps.BaseDataStore</a></li>
+											<li><a href="Synapps.BaseHost.html">Synapps.BaseHost</a></li>
+											<li><a href="Synapps.BaseSession.html">Synapps.BaseSession</a></li>
+											<li><a href="Synapps.BaseSetupDataStore.html">Synapps.BaseSetupDataStore</a></li>
+											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
+											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
+											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectAgenda.html">Synapps.Reflect.ReflectAgenda</a></li>
+											<li><a href="Synapps.Reflect.ReflectAnalog.html">Synapps.Reflect.ReflectAnalog</a></li>
+											<li><a href="Synapps.Reflect.ReflectAnalogCommand.html">Synapps.Reflect.ReflectAnalogCommand</a></li>
+											<li><a href="Synapps.Reflect.ReflectBase.html">Synapps.Reflect.ReflectBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectBoiler.html">Synapps.Reflect.ReflectBoiler</a></li>
+											<li><a href="Synapps.Reflect.ReflectBoilerCommand.html">Synapps.Reflect.ReflectBoilerCommand</a></li>
+											<li><a href="Synapps.Reflect.ReflectBurner.html">Synapps.Reflect.ReflectBurner</a></li>
+											<li><a href="Synapps.Reflect.ReflectDigital.html">Synapps.Reflect.ReflectDigital</a></li>
+											<li><a href="Synapps.Reflect.ReflectDigitalCommand.html">Synapps.Reflect.ReflectDigitalCommand</a></li>
+											<li><a href="Synapps.Reflect.ReflectState.html">Synapps.Reflect.ReflectState</a></li>
+											<li><a href="Synapps.Reflect.ReflectText.html">Synapps.Reflect.ReflectText</a></li>
+											<li><a href="Synapps.Reflect.ReflectTextCommand.html">Synapps.Reflect.ReflectTextCommand</a></li>
+											<li><a href="Synapps.Reflect.ReflectValve.html">Synapps.Reflect.ReflectValve</a></li>
+											<li><a href="Synapps.Reflect.ReflectValveCommand.html">Synapps.Reflect.ReflectValveCommand</a></li>
+											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
+											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
+											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
+											<li><a href="Synapps.SynappSetup.html">Synapps.SynappSetup</a></li>
+											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Espaces de nom<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Accessory.html">Accessory</a></li>
+											<li><a href="Actor.html">Actor</a></li>
+											<li><a href="Actor.Charting.html">Actor.Charting</a></li>
+											<li><a href="Actor.Display.html">Actor.Display</a></li>
+											<li><a href="Actor.Input.html">Actor.Input</a></li>
+											<li><a href="Actor.Layout.html">Actor.Layout</a></li>
+											<li><a href="Actor.Request.html">Actor.Request</a></li>
+											<li><a href="Behavior.html">Behavior</a></li>
+											<li><a href="Binding.html">Binding</a></li>
+											<li><a href="Event.html">Event</a></li>
+											<li><a href="HW.Actor.html">HW.Actor</a></li>
+											<li><a href="HW.Actor.html">HW.Actor</a></li>
+											<li><a href="HW.Synapps.html">HW.Synapps</a></li>
+											<li><a href="JSON.html">JSON</a></li>
+											<li><a href="REDY.html">REDY</a></li>
+											<li><a href="REDY.Actor.html">REDY.Actor</a></li>
+											<li><a href="REDY.Behavior.html">REDY.Behavior</a></li>
+											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
+											<li><a href="Synapps.html">Synapps</a></li>
+											<li><a href="Synapps.Reflect.html">Synapps.Reflect</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/services/data-stores/models/reflect-analog.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { isEmpty, isNone } from '@ember/utils';
+import { tracked } from '@glimmer/tracking';
+import logger from 'logger';
+import reflectAnalIcon from 'synapps-ui/assets/reflects/reflectAnal';
+import reflectAnalCmdIcon from 'synapps-ui/assets/reflects/reflectAnalCmd';
+import ReflectBase, { ReflectBaseSerializer, ReflectTypes } from './reflect-base';
+
+class ReflectAnalogSerializer extends ReflectBaseSerializer {
+
+  deserialize(model, data) {
+    super.deserialize(model, data);
+
+    if (data.type === 'analog_thresholds') {
+      model.withWitness = true;
+    }
+
+    if (data.type === 'analog_Forced') {
+      model.isForcible = true;
+      model.withWitness = true;
+    }
+
+    if (!isEmpty(data.schema.states.value.unit)) {
+      model.unit = data.schema.states.value.unit;
+    }
+
+    if (!isNone(data.schema.states.value.decimals)) {
+      model.decimals = data.schema.states.value.decimals
+    }
+
+    if (!isNone(data.schema.states.value.min)) {
+      model.min = data.schema.states.value.min
+    }
+
+    if (!isNone(data.schema.states.value.max)) {
+      model.max = data.schema.states.value.max
+    }
+
+    if (model.min === model.max &amp;&amp; model.max === 0) {
+      model.min = null;
+      model.max = null;
+    }
+
+    data.schema.commands = data.schema.commands || {};
+    data.schema.commands.valueCmd = data.schema.commands.valueCmd || {
+      type: data.schema.states.value.type,
+      isLinked: false,
+    };
+
+    model.isLinked = Boolean(data.schema.commands.valueCmd.isLinked);
+
+    return model;
+  }
+
+  deserializeValue(model, data) {
+    model.value = data.value;
+    model.valueDate = data.valueDate;
+
+    if (model.withWitness) {
+      model.witnessMin = data.wSeuilMin;
+      model.witnessMax = data.wSeuilMax;
+    }
+
+    if (model.isForcible) {
+      model.forcedValue = data.valueForced;
+    }
+
+    super.deserializeValue(model, data);
+    return model;
+  }
+
+  serializeCommand(model, { type, valueCmd, valueForcedCmd, forcedCmd, maxValueCmd, minValueCmd }) {
+    const args = {
+      type,
+    };
+
+    if (model._isOldSchema) {
+      if (model.isForcible) {
+        args.WPTF_ValueForcedCmd = valueForcedCmd;
+        args.WPTF_ModeForcedCmd = forcedCmd;
+      }
+
+      if (model.allowCommand) {
+        args.WPTF_ValueCmd = valueCmd;
+      }
+
+      if (model.withWitness) {
+        args.WPTF_WSeuilMinCmd = minValueCmd;
+        args.WPTF_WSeuilMaxCmd = maxValueCmd;
+      }
+
+      return args;
+    }
+
+    if (model.isForcible) {
+      args.valueForcedCmd = valueForcedCmd;
+      args.modeForcedCmd = forcedCmd;
+    }
+
+    if (!model.isLinked) {
+      args.valueCmd = valueCmd;
+    }
+
+    if (model.withWitness) {
+      args.wSeuilMinCmd = minValueCmd;
+      args.wSeuilMaxCmd = maxValueCmd;
+    }
+
+    return args;
+  }
+}
+
+/**
+ * Reflect Analogique.
+ * @class Synapps.Reflect.ReflectAnalog
+ * @extends Synapps.Reflect.ReflectBase
+ * @see Synapps.Reflect.ReflectBase
+ */
+export default class ReflectAnalog extends ReflectBase {
+
+  static serializer = new ReflectAnalogSerializer();
+
+  static icon = reflectAnalIcon;
+  static iconCmd = reflectAnalCmdIcon;
+
+  static type = 'analog';
+
+  _setupStateText() {
+    this.stateText = `${this.value}${this.unit}`;
+  }
+
+  /**
+   * Obtient l'objet de commande du reflet.
+   * @member Synapps.Reflect.ReflectAnalog#command
+   * @type {Synapps.Reflect.ReflectAnalogCommand}
+   * @readonly
+   */
+
+  _setupCommand() {
+
+    const setup = {
+      type: this.redyType,
+      minValueCmd: this.witnessMin,
+      maxValueCmd: this.witnessMax,
+      valueForcedCmd: this.forcedValue,
+      forcedCmd: this.isForced,
+      valueCmd: this.value,
+    };
+
+    /**
+     * Commande de [reflect Analogique]{@link Synapps.Reflect.ReflectAnalog}.
+     * @class Synapps.Reflect.ReflectAnalogCommand
+     */
+    const cmd = new(class {
+      /**
+       * @member Synapps.Reflect.ReflectAnalogCommand#type
+       * @readonly
+       * @type {String}
+       */
+      type = this.redyType;
+
+      /**
+       * @member Synapps.Reflect.ReflectAnalogCommand#minValueCmd
+       * @type {number}
+       */
+      @tracked
+      minValueCmd = this.witnessMin;
+
+      /**
+       * @member Synapps.Reflect.ReflectAnalogCommand#maxValueCmd
+       * @type {number}
+       */
+      @tracked
+      maxValueCmd = this.witnessMax;
+
+
+      /**
+       * @member Synapps.Reflect.ReflectAnalogCommand#valueForcedCmd
+       * @type {number}
+       */
+      @tracked
+      valueForcedCmd = this.forcedValue;
+
+      /**
+       * @member Synapps.Reflect.ReflectAnalogCommand#forcedCmd
+       * @type {number}
+       */
+      @tracked
+      forcedCmd = this.isForced;
+
+      /**
+       * @member Synapps.Reflect.ReflectAnalogCommand#valueCmd
+       * @type {number}
+       */
+      @tracked
+      valueCmd = this.value
+
+      constructor({
+        type,
+        minValueCmd,
+        maxValueCmd,
+        valueForcedCmd,
+        forcedCmd,
+        valueCmd,
+      }) {
+        this.type = type;
+
+        this.minValueCmd = minValueCmd;
+        this.maxValueCmd = maxValueCmd;
+
+        this.valueForcedCmd = valueForcedCmd;
+        this.forcedCmd = forcedCmd;
+
+        this.valueCmd = valueCmd
+      }
+    })(this.pendingCommand ? this.pendingCommand.command : setup);
+    return cmd;
+  }
+
+  setupCanSubmit() {
+    let canSubmit = false;
+    if (!this.pendingCommand) {
+      if (this.isForcible) {
+        canSubmit = this.command.forcedCmd !== this.isForced
+          || this.command.forcedCmd &amp;&amp; this.command.valueForcedCmd !== this.forcedValue
+          || !this.command.forcedCmd &amp;&amp; this.command.valueCmd !== this.value;
+      } else if (!this.isLinked) {
+        canSubmit = this.command.valueCmd !== this.value;
+      }
+
+      if (this.withWitness) {
+        canSubmit = canSubmit
+          || this.command.minValueCmd !== this.witnessMin
+          || this.command.maxValueCmd !== this.witnessMax;
+      }
+    }
+
+    logger.debug(this.name, 'setupCanSubmit, canSubmit', canSubmit);
+    this._canSubmit = canSubmit;
+  }
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#hasLimits
+   * @readonly
+   * @type {number}
+   */
+  get hasLimits() {
+    return !isNone(this.min) &amp;&amp; !isNone(this.max);
+  }
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#min
+   * @readonly
+   * @type {number}
+   */
+  min;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#max
+   * @readonly
+   * @type {number}
+   */
+  max;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#decimals
+   * @readonly
+   * @type {number}
+   */
+  decimals;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#unit
+   * @readonly
+   * @type {string}
+   */
+  unit = '';
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#isLinked
+   * @readonly
+   * @type {Boolean}
+   */
+  isLinked = false;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#witnessMin
+   * @readonly
+   * @type {number}
+   */
+  @tracked
+  witnessMin;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#witnessMax
+   * @readonly
+   * @type {number}
+   */
+  @tracked
+  witnessMax;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#forcedValue
+   * @readonly
+   * @type {number}
+   */
+  @tracked
+  forcedValue;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#value
+   * @readonly
+   * @type {number}
+   */
+  @tracked
+  value;
+
+  /**
+   * @member Synapps.Reflect.ReflectAnalog#withWitness
+   * @readonly
+   * @type {Boolean}
+   */
+  withWitness = false;
+
+}
+
+ReflectTypes['analog'] = { Reflect: ReflectAnalog, classId: 2 };
+ReflectTypes['analog_thresholds'] = { Reflect: ReflectAnalog, classId: 10 };
+ReflectTypes['analog_Forced'] = { Reflect: ReflectAnalog, classId: 14 };
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 20th Jan 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->

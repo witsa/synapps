@@ -1,10 +1,10 @@
-<!-- start:readme.hbs -->
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Vue d&#x27;ensemble</title>
+		<title>synapps-ui/addon/services/data-stores/models/reflect-valve.js</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -15,7 +15,7 @@
 			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -39,11 +39,10 @@
 								<li class="dropdown">
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
-											<li><a href="global.html#BindingSourceTypeOrder">BindingSourceTypeOrder</a></li>
 											<li><a href="global.html#CssColorString">CssColorString</a></li>
 											<li><a href="global.html#CssFontFamilyString">CssFontFamilyString</a></li>
 											<li><a href="global.html#CssSizeString">CssSizeString</a></li>
-											<li><a href="global.html#V1ActorTypes">V1ActorTypes</a></li>
+											<li><a href="global.html#JSONString">JSONString</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -57,8 +56,6 @@
 											<li><a href="Actor.Composite.html">Actor.Composite</a></li>
 											<li><a href="Actor.CompositeProperties.html">Actor.CompositeProperties</a></li>
 											<li><a href="Actor.DataSource.html">Actor.DataSource</a></li>
-											<li><a href="Actor.DataSource.WosRelativeVariableSource.html">Actor.DataSource.WosRelativeVariableSource</a></li>
-											<li><a href="Actor.DataSource.WosVariableSource.html">Actor.DataSource.WosVariableSource</a></li>
 											<li><a href="Actor.DataSourceProperties.html">Actor.DataSourceProperties</a></li>
 											<li><a href="Actor.Display.CompositeView.html">Actor.Display.CompositeView</a></li>
 											<li><a href="Actor.Display.CompositeViewProperties.html">Actor.Display.CompositeViewProperties</a></li>
@@ -72,6 +69,8 @@
 											<li><a href="Actor.Display.ScreenProperties.html">Actor.Display.ScreenProperties</a></li>
 											<li><a href="Actor.Display.Text.html">Actor.Display.Text</a></li>
 											<li><a href="Actor.Display.TextProperties.html">Actor.Display.TextProperties</a></li>
+											<li><a href="Actor.Input.BaseFilter.html">Actor.Input.BaseFilter</a></li>
+											<li><a href="Actor.Input.BaseFilterProperties.html">Actor.Input.BaseFilterProperties</a></li>
 											<li><a href="Actor.Input.BaseInput.html">Actor.Input.BaseInput</a></li>
 											<li><a href="Actor.Input.BaseInputProperties.html">Actor.Input.BaseInputProperties</a></li>
 											<li><a href="Actor.Input.Button.html">Actor.Input.Button</a></li>
@@ -110,6 +109,13 @@
 											<li><a href="Actor.Layout.StackProperties.html">Actor.Layout.StackProperties</a></li>
 											<li><a href="Actor.Layout.ViewBox.html">Actor.Layout.ViewBox</a></li>
 											<li><a href="Actor.Layout.ViewBoxProperties.html">Actor.Layout.ViewBoxProperties</a></li>
+											<li><a href="Actor.ReflectDetailsBase.html">Actor.ReflectDetailsBase</a></li>
+											<li><a href="Actor.ReflectDetailsBaseProperties.html">Actor.ReflectDetailsBaseProperties</a></li>
+											<li><a href="Actor.Request.BaseRequest.html">Actor.Request.BaseRequest</a></li>
+											<li><a href="Actor.Request.BaseRequestList.html">Actor.Request.BaseRequestList</a></li>
+											<li><a href="Actor.Request.BaseRequestListProperties.html">Actor.Request.BaseRequestListProperties</a></li>
+											<li><a href="Actor.Request.BaseRequestProperties.html">Actor.Request.BaseRequestProperties</a></li>
+											<li><a href="Actor.Unknown.html">Actor.Unknown</a></li>
 											<li><a href="Behavior.DataContextual.html">Behavior.DataContextual</a></li>
 											<li><a href="Behavior.Destroyable.html">Behavior.Destroyable</a></li>
 											<li><a href="Behavior.Jokerable.html">Behavior.Jokerable</a></li>
@@ -127,6 +133,8 @@
 											<li><a href="Event.BaseContext.html">Event.BaseContext</a></li>
 											<li><a href="Event.BaseContextUtils.html">Event.BaseContextUtils</a></li>
 											<li><a href="Event.PropertyChangedContext.html">Event.PropertyChangedContext</a></li>
+											<li><a href="Event.RequestDataContext.html">Event.RequestDataContext</a></li>
+											<li><a href="HW.Actor.AlarmFilter.html">HW.Actor.AlarmFilter</a></li>
 											<li><a href="HW.Actor.FluxFilter.html">HW.Actor.FluxFilter</a></li>
 											<li><a href="HW.Actor.InfraFilter.html">HW.Actor.InfraFilter</a></li>
 											<li><a href="HW.Actor.InfraFilterProperties.html">HW.Actor.InfraFilterProperties</a></li>
@@ -135,16 +143,22 @@
 											<li><a href="HW.Actor.SmartLocalUnitFilter.html">HW.Actor.SmartLocalUnitFilter</a></li>
 											<li><a href="HW.Actor.WumFilter.html">HW.Actor.WumFilter</a></li>
 											<li><a href="HW.Synapps.BaseHighwayStore.html">HW.Synapps.BaseHighwayStore</a></li>
+											<li><a href="HW.Synapps.BusinessAccount.html">HW.Synapps.BusinessAccount</a></li>
 											<li><a href="HW.Synapps.HighwayHost.html">HW.Synapps.HighwayHost</a></li>
 											<li><a href="HW.Synapps.HighwaySession.html">HW.Synapps.HighwaySession</a></li>
 											<li><a href="HW.Synapps.HighwayStore.html">HW.Synapps.HighwayStore</a></li>
 											<li><a href="HW.Synapps.HighwaySynapp.html">HW.Synapps.HighwaySynapp</a></li>
+											<li><a href="REDY.Accessory.WosRelativeVariableAccessory.html">REDY.Accessory.WosRelativeVariableAccessory</a></li>
 											<li><a href="REDY.Actor.CollectionFilter.html">REDY.Actor.CollectionFilter</a></li>
 											<li><a href="REDY.Actor.DeviceFilter.html">REDY.Actor.DeviceFilter</a></li>
 											<li><a href="REDY.Actor.GroupFilter.html">REDY.Actor.GroupFilter</a></li>
 											<li><a href="REDY.Actor.SiteFilter.html">REDY.Actor.SiteFilter</a></li>
 											<li><a href="REDY.Actor.Synoptic.html">REDY.Actor.Synoptic</a></li>
 											<li><a href="REDY.Actor.SynopticProperties.html">REDY.Actor.SynopticProperties</a></li>
+											<li><a href="REDY.Actor.WosRelativeVariableSource.html">REDY.Actor.WosRelativeVariableSource</a></li>
+											<li><a href="REDY.Actor.WosRelativeVariableSourceProperties.html">REDY.Actor.WosRelativeVariableSourceProperties</a></li>
+											<li><a href="REDY.Actor.WosVariableSource.html">REDY.Actor.WosVariableSource</a></li>
+											<li><a href="REDY.Actor.WosVariableSourceProperties.html">REDY.Actor.WosVariableSourceProperties</a></li>
 											<li><a href="REDY.Actor.ZoneFilter.html">REDY.Actor.ZoneFilter</a></li>
 											<li><a href="REDY.Behavior.WosRelativeVariableAble.html">REDY.Behavior.WosRelativeVariableAble</a></li>
 											<li><a href="REDY.Synapps.RedyHost.html">REDY.Synapps.RedyHost</a></li>
@@ -158,10 +172,24 @@
 											<li><a href="Synapps.BaseUser.html">Synapps.BaseUser</a></li>
 											<li><a href="Synapps.Model.html">Synapps.Model</a></li>
 											<li><a href="Synapps.PrototypedBase.html">Synapps.PrototypedBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectAgenda.html">Synapps.Reflect.ReflectAgenda</a></li>
+											<li><a href="Synapps.Reflect.ReflectAnalog.html">Synapps.Reflect.ReflectAnalog</a></li>
+											<li><a href="Synapps.Reflect.ReflectAnalogCommand.html">Synapps.Reflect.ReflectAnalogCommand</a></li>
 											<li><a href="Synapps.Reflect.ReflectBase.html">Synapps.Reflect.ReflectBase</a></li>
+											<li><a href="Synapps.Reflect.ReflectBoiler.html">Synapps.Reflect.ReflectBoiler</a></li>
+											<li><a href="Synapps.Reflect.ReflectBoilerCommand.html">Synapps.Reflect.ReflectBoilerCommand</a></li>
+											<li><a href="Synapps.Reflect.ReflectBurner.html">Synapps.Reflect.ReflectBurner</a></li>
+											<li><a href="Synapps.Reflect.ReflectDigital.html">Synapps.Reflect.ReflectDigital</a></li>
+											<li><a href="Synapps.Reflect.ReflectDigitalCommand.html">Synapps.Reflect.ReflectDigitalCommand</a></li>
+											<li><a href="Synapps.Reflect.ReflectState.html">Synapps.Reflect.ReflectState</a></li>
+											<li><a href="Synapps.Reflect.ReflectText.html">Synapps.Reflect.ReflectText</a></li>
+											<li><a href="Synapps.Reflect.ReflectTextCommand.html">Synapps.Reflect.ReflectTextCommand</a></li>
+											<li><a href="Synapps.Reflect.ReflectValve.html">Synapps.Reflect.ReflectValve</a></li>
+											<li><a href="Synapps.Reflect.ReflectValveCommand.html">Synapps.Reflect.ReflectValveCommand</a></li>
 											<li><a href="Synapps.Scene.html">Synapps.Scene</a></li>
 											<li><a href="Synapps.Serializer.html">Synapps.Serializer</a></li>
 											<li><a href="Synapps.Synapp.html">Synapps.Synapp</a></li>
+											<li><a href="Synapps.SynappSetup.html">Synapps.SynappSetup</a></li>
 											<li><a href="Synapps.UserAgent.html">Synapps.UserAgent</a></li>
 									</ul>
 								</li>
@@ -174,9 +202,11 @@
 											<li><a href="Actor.Display.html">Actor.Display</a></li>
 											<li><a href="Actor.Input.html">Actor.Input</a></li>
 											<li><a href="Actor.Layout.html">Actor.Layout</a></li>
+											<li><a href="Actor.Request.html">Actor.Request</a></li>
 											<li><a href="Behavior.html">Behavior</a></li>
 											<li><a href="Binding.html">Binding</a></li>
 											<li><a href="Event.html">Event</a></li>
+											<li><a href="HW.Actor.html">HW.Actor</a></li>
 											<li><a href="HW.Actor.html">HW.Actor</a></li>
 											<li><a href="HW.Synapps.html">HW.Synapps</a></li>
 											<li><a href="JSON.html">JSON</a></li>
@@ -186,13 +216,6 @@
 											<li><a href="REDY.Synapps.html">REDY.Synapps</a></li>
 											<li><a href="Synapps.html">Synapps</a></li>
 											<li><a href="Synapps.Reflect.html">Synapps.Reflect</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Guides<b class="caret"></b></a>
-									<ul class="dropdown-menu">
-											<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
-											<li><a href="tutorial-overview.html">Vue d'ensemble</a></li>
 									</ul>
 								</li>
 				</ul>
@@ -212,44 +235,250 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">tutorial</span>
-				<h1><span class="title">Vue d'ensemble</span></h1>
-				<div class="summary"><p>Vue d'ensemble des tutoriels</p></div>			</div>
+				<span class="kind">source</span>
+				<h1><span class="name">synapps-ui/addon/services/data-stores/models/reflect-valve.js</span></h1>
+			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="list_tutorial.html">Guides</a></li>
-							<li class="active">Vue d'ensemble</li>
-						</ol>
-		<section class="tutorial-section">
-			<article><h1>Guides</h1>
-<blockquote>
-<p>Pour appréhender les scripts de synapps et entrevoir les possibilités de programmation de la solution.</p>
-</blockquote>
-<blockquote>
-<p>TODO</p>
-</blockquote>
-<ul>
-<li>actor-cycle-life</li>
-<li><a href="tutorial-add-actor.html">Ajouter un acteur</a></li>
-<li>create-binding</li>
-<li>create-event</li>
-<li>create-accessory</li>
-<li>in-designer</li>
-<li>includes</li>
-</ul></article>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { computed } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
+import ReflectBase, { ReflectBaseSerializer, ReflectTypes } from './reflect-base';
+
+const MOCKED = true;
+
+class ReflectValveSerializer extends ReflectBaseSerializer {
+
+  deserialize(model, data) {
+    if (MOCKED) {
+      data.schema.states = {
+        runID: {
+          type: 1,
+          content: [
+            { value: 0, label: 'Fermée' },
+            { value: 20, label: 'Ouverture' },
+            { value: 50, label: 'Ouverte' },
+            { value: 70, label: 'Fermeture' },
+          ],
+        },
+        modeForced: {
+          type: 1,
+          content: [
+            { value: 0, label: 'Automatique' },
+            { value: 1, label: 'Forcé ouvert' },
+            { value: 2, label: 'Forcé fermé' },
+          ]
+        },
+      };
+
+      if (data.allowCmd) {
+        data.schema.commands = {
+          modeForcedCmd: {
+            type: 1,
+          },
+        };
+      }
+    }
+
+    super.deserialize(model, data);
+
+    model.modeForcedOptions = [
+      ...data.schema.states.modeForced.content.map(({ value, label }) => {
+        return {
+          value,
+          text: label,
+        };
+      }),
+    ];
+
+    model.runIDOptions = [
+      ...data.schema.states.runID.content.map(({ value, label }) => {
+        return {
+          value,
+          text: label,
+        };
+      }),
+    ];
+
+    return model;
+  }
+
+  deserializeValue(model, data) {
+
+    if (MOCKED) {
+      data.runID = 50;
+      data.modeForced = 1;
+    }
+
+    model.runID = data.runID;
+    model.modeForced = data.modeForced;
+
+    super.deserializeValue(model, data);
+
+    model.isForced = model.modeForced !== 0;
+
+    return model;
+  }
+
+  serializeCommand(model, { type, modeForcedCmd }) {
+    const args = {
+      type,
+    };
+
+    args.modeForcedCmd = modeForcedCmd;
+
+    return args;
+  }
+}
+
+/**
+ * Reflect Vanne.
+ * @class Synapps.Reflect.ReflectValve
+ * @extends Synapps.Reflect.ReflectBase
+ * @see Synapps.Reflect.ReflectBase
+ */
+export default class ReflectValve extends ReflectBase {
+
+  static serializer = new ReflectValveSerializer();
+
+  static type = 'valve';
+
+  /**
+   * Obtient l'objet de commande du reflet.
+   * @member Synapps.Reflect.ReflectValve#command
+   * @type {Synapps.Reflect.ReflectValveCommand}
+   * @readonly
+   */
+
+  _setupCommand() {
+
+    const setup = {
+      type: this.redyType,
+      modeForcedCmd: this.modeForced,
+    };
+
+    /**
+     * Commande de [reflect Vanne]{@link Synapps.Reflect.ReflectValve}.
+     * @class Synapps.Reflect.ReflectValveCommand
+     */
+    const cmd = new(class {
+      /**
+       * @member Synapps.Reflect.ReflectValveCommand#type
+       * @readonly
+       * @type {String}
+       */
+      type = this.redyType;
+
+      /**
+       * @member Synapps.Reflect.ReflectValveCommand#modeForcedCmd
+       * @type {number}
+       */
+      @tracked
+      modeForcedCmd = this.modeForced;
+
+      constructor({
+        type,
+        modeForcedCmd,
+      }) {
+        this.type = type;
+
+        this.modeForcedCmd = modeForcedCmd;
+      }
+
+    })(this.pendingCommand ? this.pendingCommand.command : setup);
+
+    return cmd;
+  }
+
+  /**
+   * @member Synapps.Reflect.ReflectValve#runID
+   * @readonly
+   * @type {number}
+   */
+  @tracked
+  runID;
+
+  /**
+   * @member Synapps.Reflect.ReflectValve#modeForced
+   * @readonly
+   * @type {Number}
+   */
+  @tracked
+  modeForced;
+
+  /**
+   * Liste des options de runID.
+   * @member Synapps.Reflect.ReflectValve#modeForcedOptions
+   * @type {Array}
+   */
+  modeForcedOptions = [];
+
+  /**
+   * Liste des options de runID.
+   * @member Synapps.Reflect.ReflectValve#runIDOptions
+   * @type {Array}
+   */
+  runIDOptions = [];
+
+    /**
+   * Texte du modeForced.
+   * @member Synapps.Reflect.ReflectValve#modeForcedText
+   * @readonly
+   * @type {String}
+   */
+  @computed('modeForced', 'modeForcedOptions.@each.{text,value}')
+  get modeForcedText() {
+    const option = this.modeForcedOptions.findBy('value', this.modeForced);
+    return option ? option.text : '';
+  }
+
+  /**
+   * Texte du runID.
+   * @member Synapps.Reflect.ReflectValve#runIDText
+   * @readonly
+   * @type {String}
+   */
+  @computed('runID', 'runIDOptions.@each.{text,value}')
+  get runIDText() {
+    const option = this.runIDOptions.findBy('value', this.runID);
+    return option ? option.text : '';
+  }
+
+  /**
+   * Valeur du runID.
+   * @member Synapps.Reflect.ReflectValve#runIDValue
+   * @readonly
+   * @type {Number}
+   */
+  @computed('runID', 'runIDOptions.@each.value')
+  get runIDValue() {
+    const option = this.runIDOptions.findBy('value', this.runID);
+    return option ? option.value : null;
+  }
+
+  setupCanSubmit() {
+    this._canSubmit = !this.pendingCommand &amp;&amp; (
+      (this.command.modeForcedCmd !== this.modeForced)
+    );
+  }
+
+  _setupStateText() {
+    this.stateText = `${this.runIDText}`;
+  }
+
+}
+
+ReflectTypes['Valve'] = { Reflect: ReflectValve, classId: 20 };
+</code></pre>
 		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 26th Nov 2021 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 20th Jan 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -276,4 +505,4 @@
 	
 </body>
 </html>
-<!-- end:readme.hbs -->
+<!-- end:source.tmpl.hbs -->
