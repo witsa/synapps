@@ -5,3 +5,27 @@ dt.symbol-title {
 .callout {
   margin: 5px 0;
 }
+
+.progression {
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 25px;
+  border: 1px solid grey;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px;
+}
+
+.progression-success, .progression-todo {
+  height: 23px;
+  padding: 0;
+  margin: 0;
+}
+.progression-success {
+  background-color: #337ab7;
+}
+.progression-todo {
+  background-color: lightgray;
+  flex: 1;
+}
