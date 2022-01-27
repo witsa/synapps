@@ -16,7 +16,7 @@ has_children: true
 
 L'acteur est la brique fondamentale de construction de l'interface. Les nombreux types d'acteur et leur spécificité vont vous permettre d’articuler n’importe quel type d’interface, du formulaire au tableau de bord.
 
-Les acteurs sont organisés sous la forme d'une arborescence et vont constituer la [scène](../scene.md).
+Les acteurs sont organisés sous forme d'arborescence et vont constituer la [scène](../scene.md).
 
 ![SynApps](../../assets/concepts/actor/01.png)
 
@@ -48,7 +48,7 @@ Dans l'inspecteur, les propriétés sont rangées par catégorie :
 
 Les propriétés propres au type de l'acteur.
 
-- **Aspect**
+- [**Aspect**](./category-aspect.md)
 
 Les propriétés relatives à l'aspect de l'acteur comme sa couleur de fond ou bien sa visibilité.
 
