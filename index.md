@@ -8,8 +8,6 @@ Documentation de la solution Synapps
 
 ![logo_256px](assets/logo_256px.png)
 
-<!-- {% include disclaimer-beta.md %} -->
-
 ------
 
 

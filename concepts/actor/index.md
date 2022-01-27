@@ -109,8 +109,8 @@ Il est possible de changer cette clé dans l'inspecteur d'acteur.
 Un acteur va déclencher des évènements pendant toute sa durée de vie : de son initialisation à sa destruction. Il aura aussi des évènements de souris comme le click, le survol... Enfin, certains acteurs possèdent des évènements spécifiques à leur comportement.
 Tous ces évènements sont autant d'occasions d'intervenir et d'ajouter des comportements par script.
 
-- Voir le détails du [cycle de vie d'un acteur](./actor-life-cycle)
-- Voir la partie dédiées aux [Scripts](../scripts/)
+- En savoir plus sur le [cycle de vie d'un acteur](./actor-life-cycle)
+- En savoir plus sur les [Scripts](../scripts/)
 
 ## Les additionnelles
 
