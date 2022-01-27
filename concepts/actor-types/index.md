@@ -12,7 +12,7 @@ has_children: true
 
 # Types d'acteur
 
-Chaque acteur possède un type qui va déterminer le son comportement, sa spécificité.
+Chaque acteur possède un type qui va déterminer son comportement, sa spécificité.
 
 ## Les Catégories d'acteur
 
