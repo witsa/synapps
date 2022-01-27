@@ -8,14 +8,7 @@ Documentation de la solution Synapps
 
 ![logo_256px](assets/logo_256px.png)
 
-{% include disclaimer-beta.md %}
-
-## Le précurseur de Studio : Maker
-
-La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible. Il reste disponible pour la maintenance des Synapps de première génération.
-
-[Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }
-
+<!-- {% include disclaimer-beta.md %} -->
 
 ------
 
@@ -79,3 +72,12 @@ Les **bugs** relevés, **questions** ou **demandes d'évolution** doivent remont
 Essayer d'être le plus **exhaustif** possible et communiquer, quand c'est possible, étapes de reproduction d'un bug, copies d'écrans et description détaillée!
 
 Dans un second temps, vous pouvez également contacter le **support** WIT
+
+
+---------------------
+
+## Le précurseur de Studio : Maker
+
+La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible. Il reste disponible pour la maintenance des Synapps de première génération.
+
+[Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }

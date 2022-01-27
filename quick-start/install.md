@@ -8,7 +8,7 @@ nav_order: 1
 
 Avant tout, il va falloir installer une version de Synapps Studio sur votre poste.
 
-{% include disclaimer-beta.md %}
+<!-- {% include disclaimer-beta.md %} -->
 
 Dernière version : [1.0.4](https://github.com/witsa/synapps/releases/download/1.0.4/synapps-studio-setup.zip)
 

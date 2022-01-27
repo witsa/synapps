@@ -4,7 +4,7 @@ nav_order: 30
 
 # Synapps Studio
 
-{% include disclaimer-beta.md %}
+<!-- {% include disclaimer-beta.md %} -->
 
 Version candidate [1.0.4](https://github.com/witsa/synapps/releases/download/1.0.4/synapps-studio-setup.zip)
 

@@ -18,9 +18,11 @@ La fenêtre de Synapps Studio s'est affichée :
 ![SynApps](../assets/quick-start/first-project/01.png)
 
 
-## Accès anticipé
+## Accès restreint
 
 {% include disclaimer-beta.md %}
+
+> Pendant toute la phase d'**accès retreint**, une clé d'agrément est requise pour activer Synapps Studio.
 
 ![SynApps](../assets/quick-start/first-project/12.png)
 
