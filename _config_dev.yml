@@ -3,3 +3,4 @@ aux_links:
     - "/script-api/"
   "WIT.fr":
     - "https://www.wit.fr"
+incremental: true
