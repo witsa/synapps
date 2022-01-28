@@ -69,13 +69,15 @@ Choisissez un emplacement dans votre système de fichier qui va contenir votre p
 
 ![SynApps](../assets/quick-start/first-project/07.png)
 
-Rendez-vous dans le répertoire de votre choix et créez un nouveau répertoire au nom de "hello-world" et sélectionnez le dans la boite de dialogue.
+Rendez-vous dans le répertoire dans lequel celui du projet sera créé.
 
 ![SynApps](../assets/quick-start/first-project/08.png)
 
-De retour dans la fenêtre de création :
+De retour dans la fenêtre de création, donnez un nom à votre projet :
 
 ![SynApps](../assets/quick-start/first-project/09.png)
+
+Ce sera aussi le nom du répertoire qui contiendra tous les éléments de votre projet.
 
 Vous n'avez plus qu'à cliquer sur le bouton "Créer".
 
