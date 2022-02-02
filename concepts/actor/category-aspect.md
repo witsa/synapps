@@ -11,22 +11,10 @@ grand_parent: Concepts
 
 Cette catégorie regroupe les propriétés relatives à l'aspect de l'acteur.
 
-{% for property in site.base_actor_properties_aspect %}
+{% assign sorted = site.base_actor_properties_aspect | sort: 'order' %}
+
+{% for property in sorted %}
 
 {% include actor_property.md property=property %}
 
 {% endfor %}
-
-## Position du fond
-
-## Taille du fond
-
-## Répétition du fond
-
-## Attachement du fond
-
-## Opacité
-
-## Visibilité
-
-## Classes CSS
