@@ -43,6 +43,7 @@ collections:
   - base_actor_properties_size
   - base_actor_properties_space
   - base_actor_properties_border
+  - base_actor_properties_effects
 
 
 defaults:

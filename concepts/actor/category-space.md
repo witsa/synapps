@@ -7,7 +7,7 @@ grand_parent: Concepts
 {% include table_of_content.html %}
 
 
-# Catégorie Marges
+# Catégorie Espaces
 
 Cette catégorie regroupe les propriétés relatives aux marges de l'acteur.
 
