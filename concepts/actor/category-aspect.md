@@ -11,7 +11,7 @@ grand_parent: Concepts
 
 Cette catégorie regroupe les propriétés relatives à l'aspect de l'acteur.
 
-{% assign sorted = site.base_actor_properties_aspect | sort: 'order' %}
+{% assign sorted = site.base_actor_properties | where: 'section', 'aspect' | sort: 'order' %}
 
 {% for property in sorted %}
 

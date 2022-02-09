@@ -11,7 +11,7 @@ grand_parent: Concepts
 
 Cette catégorie regroupe les propriétés relatives au texte de l'acteur.
 
-{% assign sorted = site.base_actor_properties_text | sort: 'order' %}
+{% assign sorted = site.base_actor_properties | where: 'section', 'text' | sort: 'order' %}
 
 {% for property in sorted %}
 
