@@ -41,6 +41,7 @@ collections:
   - base_actor_properties
   - display_text_properties
   - display_html_properties
+  - display_picture_properties
 
 defaults:
   -
