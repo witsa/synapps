@@ -42,6 +42,7 @@ collections:
   - display_text_properties
   - display_html_properties
   - display_picture_properties
+  - display_screen_properties
 
 defaults:
   -
