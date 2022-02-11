@@ -11,7 +11,7 @@ La propriété spécifique `contenu` de l'acteur texte permet de rédiger du tex
 Il est possible d'ajouter des additionnelles au sein de cet acteur.
 
 La clé de l'additionnelle peut être utilisé au sein du `contenu` de l'acteur texte avec un joker.
-Pour utiliser la clé au sein du contenu de l'acteur texte il faut OBLIGATOIREMENT utiliser le joker `{{cle_additionnelle}}`.
+Pour utiliser la clé au sein du contenu de l'acteur texte il faut OBLIGATOIREMENT utiliser le joker {% raw %}`{{cle_additionnelle}}`{% endraw %}.
 
 ***Exemple :***
 
@@ -27,7 +27,7 @@ Résultat du contenu de l'acteur :
 
 **Cas avec une additionnelle :**
 
-Contenu avec le joker `{{cle}}` :
+Contenu avec le joker {% raw %}`{{cle}}`{% endraw %} :
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_text/AddiC.PNG)
 
