@@ -4,7 +4,7 @@ section: image
 propName: picture
 propPath: properties.Image
 scriptApiClass: Actor.Display.Image
-order: 7
+order: 1
 ---
 Cette propriété permet de définir l'image à afficher de l'acteur.
 
