@@ -1,0 +1,28 @@
+---
+title: Ombre de la bordure
+section: border
+propName: borderShadow
+propPath: properties.borderShadow
+scriptApiClass: Actor.BaseActorProperties
+order: 5
+---
+Cette propriété permet de donner une ombre à la bordure décorative de l'acteur.
+
+Cette propriété attend veux valeurs essentielles, et plusieurs valeurs optionnelles.
+
+Exemple : ` box-shadow: A B C D E; `.
+
+Dans cet exemple :
+- A (Obligatoire) : est la position X de l'ombre projetée.
+- B (Obligatoire) : est la position Y de l'ombre projetée.
+- C (Optionelle) : Permet de contrôler le flou appliqué sur l'ombre ( Plus la valeur est elevée plus l'ombre sera floue).
+- D (Optionelle) : Permet de contrôler la taille que va prendre l'ombre (Les valeurs négative diminuent la taille, tandis que les valeurs positives aggrandissent la taille).
+- E (Optionelle) : Permet de donner la couleru à l'ombre projetée (Par défaut noire).
+
+Les valeurs attendues pour les paramètres A,B,D sont des nombres positifs ou négatifs suivit de leur suffixe d'unité (`px,em`,etc ...)
+La valeur attendue pour le paramètres C est un nombre positif suivit de son suffixe d'unité (`px,em`,etc ...)
+La valeur attendue pour le paramètres E est une couleur ou un code RGB. Un aide pour la liste native des couleurs en CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/color_value).
+
+
+**Pour vous aider :**
+Il est possible de retrouver la documentation de l'attribut Bos-Shadow CSS [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow).
