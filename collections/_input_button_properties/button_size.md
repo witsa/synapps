@@ -3,7 +3,7 @@ title: Taille
 section: input
 propName: ActorButtonSize
 propPath: properties.Actor.input.Size
-scriptApiClass: Actor.input.Size
+scriptApiClass: Actor.Input.Button
 order: 2
 ---
 La propriété spécifique `Taille` gérer la taille que va prendre le contenu du bouton.

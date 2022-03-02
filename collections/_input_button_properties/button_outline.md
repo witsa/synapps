@@ -3,7 +3,7 @@ title: Outline
 section: input
 propName: ActorButtonOutline
 propPath: properties.Actor.input.Outline
-scriptApiClass: Actor.input.Outline
+scriptApiClass: Actor.Input.Button
 order: 4
 ---
 La propriété spécifique `Outline` va permettre de donner un style de couleur inversée au bouton de l'acteur.
