@@ -45,6 +45,7 @@ collections:
   - display_screen_properties
   - input_button_properties
   - input_cursor_properties
+  - input_button_list_properties
 
 defaults:
   -
