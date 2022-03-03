@@ -43,9 +43,11 @@ collections:
   - display_html_properties
   - display_picture_properties
   - display_screen_properties
+  - display_iframe_properties
   - input_button_properties
   - input_cursor_properties
   - input_button_list_properties
+
 
 defaults:
   -
