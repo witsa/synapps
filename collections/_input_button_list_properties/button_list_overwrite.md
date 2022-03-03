@@ -1,5 +1,5 @@
 ---
-title: En ligne
+title: Dépassement de texte
 section: input_list
 propName: ActorButtonListInline
 propPath: properties.Actor.Input.Button

@@ -10,7 +10,7 @@ Cette propriété permet de spécifier la couleur de la bordure décorative de l
 
 La valeur attendue est :
 - Soit une couleur native CSS ( la liste des couleurs est retrouvable [à cette adresse](https://www.w3schools.com/cssref/css_colors.asp).).
-- Une couleur RGBA de format [ rgb(255,255,255) ].
+- Une couleur RGBA de format [ rgba(255,255,255,1) ].
 
 Il est possible de renseigner jusqu'à quatre valeurs dans le champ afin de définir différentes couleurs en fonction du côté souhaité.
 

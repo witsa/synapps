@@ -13,6 +13,6 @@ Il existe quatre possibilités pour cette propriété :
  - Positionné en haut de l'acteur parent
  - Positionné au centre de l'acteur parent
  - Positionné en bas de l'acteur parent
- - Occupe toute la placeverticale  disponible ( Répartie entre tous les acteurs présents dans l'acteur parent )
+ - Occupe toute la place verticale disponible ( Répartie entre tous les acteurs présents dans l'acteur parent )
 
-(Cas spécial pour les modales, la disposition n'a aucune effet sur la position de la modale puisque cet acteur est positionné grâce aux ancres.)
+(Cas spécial pour les modales : la disposition n'a aucune effet sur la position de la modale puisque cet acteur est positionné grâce aux ancres.)

@@ -6,7 +6,7 @@ propPath: properties.Actor.input.Overwrite
 scriptApiClass: Actor.Input.Button
 order: 5
 ---
-La propriété spécifique `Dépassement de texte` permet de gérer l'affichage du texte dans le cas ou la taille du conteneur ne suffit pas à afficher l'entièreté du texte.
+La propriété spécifique `Dépassement de texte` permet de gérer l'affichage du texte dans le cas où la taille du conteneur ne suffit pas à afficher l'entièreté du texte.
 
 
 Il existe donc trois options pour cette propriété :

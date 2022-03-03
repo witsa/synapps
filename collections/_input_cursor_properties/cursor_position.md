@@ -17,4 +17,4 @@ La seconde propriété `Position de la barre` permet d'afficher la barre horizon
 Il est à noter que si l'acteur parent n'est pas positionné comme cette propriété, l'affichage risque de ne pas être correct.
 
 *NOTE*
-Cas propriétés n'ont qu'un impact esthétique et ne change pas le comportement du slider.
+Ces propriétés n'ont qu'un impact esthétique et ne changent pas le comportement du slider.

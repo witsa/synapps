@@ -33,7 +33,7 @@ Cette propriété permet d'activer / désactiver les popups lors de la navigatio
 Cela peut avoir pour effet de désactiver certains formulaires de connexion.
 
 
-***Autoriser les formulaire***
+***Autoriser les formulaires***
 
 Cette propriété permet d'activer / désactiver les formulaires lors de la navigation dans la Synapp.
 <br>

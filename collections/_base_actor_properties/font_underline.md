@@ -7,6 +7,7 @@ scriptApiClass: Actor.BaseActorProperties
 order: 7
 ---
 Cette propriété définit la décoration du texte.
+
 Par défault, la valeur hérite de l'acteur dans lequel il se trouve.
 
 Il existe trois possibilités pour cette propriété :
