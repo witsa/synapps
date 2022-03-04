@@ -25,8 +25,8 @@ Cette propriété permet de définir du contenu HTML dans l'acteur.
 
 Il est possible d'ajouter des additionnelles au sein de cet acteur.
 
-La clé de l'additionnelle peut être utilisé au sein du `contenu` de l'acteur HTML avec un joker.
+La clé de l'additionnelle peut être utilisée au sein du `contenu` de l'acteur HTML avec un joker.
 Pour utiliser la clé au sein du contenu de l'acteur HTML il faut OBLIGATOIREMENT utiliser le joker {% raw %}`{{cle_additionnelle}}`{% endraw %}.
 
 **Pour vous aider :**
-La documentation concernant les joker et leurs utilisations peut être trouvée [à cette adresse]().
+La documentation concernant les jokers et leurs utilisations peut être trouvée [à cette adresse]().

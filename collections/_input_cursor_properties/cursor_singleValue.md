@@ -24,6 +24,6 @@ Lorsque la propriété est activée, il apparait également deux nouvelles propr
 
 
 **ATTENTION**
-Il est possible de définir la `Valeur` au dessus de la borne supérieure et `Valeur 2` en dessous de la borne inférieure cependant, il est conseillé de définir des valeur comprises dans les bornes définies.
+Il est possible de définir la `Valeur` au dessus de la borne supérieure et `Valeur 2` en dessous de la borne inférieure cependant, il est conseillé de définir des valeurs comprises dans les bornes définies.
 
 De même, la `Valeur` et la `Valeur 2` peuvent ne pas respecter les `Différence min.` et `Différence max.` lorsqu'elles sont renseignées manuellement, il est tout de même conseillé de mettre des valeur avec un écart respectant les différences définies.
