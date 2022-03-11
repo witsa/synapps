@@ -10,7 +10,7 @@ La propriété 'Dépassement du contenu' permet de gérer l'affichage du contenu
 
 Si l'acteur écran dispose d'une taille figée OU contrainte par un autre élément (acteur parent par exemple), alors, les propriétés 'dépassement horizontal' et 'dépassement vertical' s'appliquent.
 
-Il existe quatres options pour chaqu'une de ces deux propriétés :
+Il existe quatres options pour chacune de ces deux propriétés :
 - **Caché**
 
 Le contenu de l'acteur écran qui ne dispose pas de suffisament de place pour s'afficher ne sera pas visible et ses éléments ne seront pas accessible.
