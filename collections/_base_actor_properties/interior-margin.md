@@ -2,14 +2,16 @@
 title: Marges intérieures
 section: space
 propName: pading
-propPath: properties.pading
+propPath: properties.padding
 scriptApiClass: Actor.BaseActorProperties
 order: 2
 ---
+
+<!-- TODO : à démultiplier pour les quattres directions  -->
+
 Cette propriété permet de gérer les marges intérieures de l'acteur.
 
-Ces marges agissent à l'intérieur de l'acteur et positionnent le contenu à l'intérieur de l'espace qui lui est dédié.
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+Ces marges agissent à l'intérieur de l'acteur et positionnent le contenu dans l'espace restant.
 
 La valeur attendue est un nombre positif.
 L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
