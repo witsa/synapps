@@ -14,10 +14,10 @@ La valeur attendue est un nombre positif.
 L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
 
 Cette propriété possède quatre champs qui permettent le contrôle des marges :
-- Le champ du haut : Permet de gérer la marges du haut extérieure à l'acteur.
-- Le champ de gauche : Permet de gérer la marges de gauche extérieure à l'acteur.
-- Le champ de droite : Permet de gérer la marges de droite extérieure à l'acteur.
-- Le champ du bas : Permet de gérer la marges du bas extérieure à l'acteur.
+- Le champ du haut : Permet de gérer la marge du haut extérieure à l'acteur.
+- Le champ de gauche : Permet de gérer la marge de gauche extérieure à l'acteur.
+- Le champ de droite : Permet de gérer la marge de droite extérieure à l'acteur.
+- Le champ du bas : Permet de gérer la marge du bas extérieure à l'acteur.
 
 **Pour vous aider :**
 La documentation concernant les marges extérieures de CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/margin).

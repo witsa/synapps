@@ -5,6 +5,14 @@ grand_parent: Concepts
 ---
 
 
-> En cours de rédaction...
+{% include table_of_content.html %}
 
-![SynApps](../../assets/under-progress.gif)
+# Propriétés spécifiques
+
+{% assign sorted = site.input_button_properties | sort: 'order' %}
+
+{% for property in sorted %}
+
+{% include actor_property.md property=property %}
+
+{% endfor %}

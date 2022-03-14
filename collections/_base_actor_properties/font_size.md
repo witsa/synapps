@@ -7,6 +7,7 @@ scriptApiClass: Actor.BaseActorProperties
 order: 3
 ---
 Cette propriété définit la taille du texte.
+
 Par défault, la valeur hérite de l'acteur dans lequel il se trouve.
 
 La valeur attendue est un nombre positif.

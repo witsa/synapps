@@ -39,7 +39,16 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 collections_dir: collections
 collections:
   - base_actor_properties
+  - display_text_properties
   - display_html_properties
+  - display_picture_properties
+  - display_screen_properties
+  - display_iframe_properties
+  - input_button_properties
+  - input_nav_button_properties
+  - input_button_list_properties
+  - input_cursor_properties
+
 
 defaults:
   -

@@ -1,10 +1,17 @@
 ---
-title: "Affichage | Écran"
+title: "Affichage | Ecran"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
+{% include table_of_content.html %}
 
-> En cours de rédaction...
+# Propriétés spécifiques
 
-![SynApps](../../assets/under-progress.gif)
+{% assign sorted = site.display_screen_properties | sort: 'order' %}
+
+{% for property in sorted %}
+
+{% include actor_property.md property=property %}
+
+{% endfor %}

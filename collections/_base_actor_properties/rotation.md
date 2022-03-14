@@ -10,6 +10,7 @@ Cette propriété permet de définir une rotation de l'acteur sur lui même.
 
 
 La valeur attendue est un nombre positif OU négatif.
+
 Dans l'inspecteur, le champ de saisie agit également comme un slider, permettant de changer la valeur en fiasant glisser la souris vers la droite pour augmenter la valeur et vers la gauche pour diminuer la valeur.
 
 **Indication :**
