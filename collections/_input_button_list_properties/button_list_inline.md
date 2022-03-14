@@ -7,8 +7,9 @@ scriptApiClass: Actor.Input.Button
 
 order: 3
 ---
-La propriété spécifique `En ligne?` permet de changer l'affichage de la liste de bouton.
+La propriété spécifique `En ligne?` permet de changer l'orientation d'empilement de la liste de boutons.
 
-Lorsque cette propriété est activée, la liste est affichée sur une seule ligne les boutons côte à côte.
-<br>
-A l'inverse, lorsqu'elle est désactivé, les boutons s'affichent sur plusieurs lignes l'un en dessous de l'autre.
+Lorsque cette propriété est activée, la liste est affichée sur une seule ligne, les boutons côte à côte.
+
+
+A l'inverse, lorsqu'elle est désactivée, les boutons s'affichent sur une seule colonne, les uns en dessous des autres.
