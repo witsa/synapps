@@ -4,7 +4,7 @@ section: effects
 propName: transition
 propPath: properties.transition
 scriptApiClass: Actor.BaseActorProperties
-order: 6
+order: 7
 ---
 Cette propriété permet de définir la transition entre deux états d'un élément.
 

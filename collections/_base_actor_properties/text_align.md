@@ -7,7 +7,7 @@ scriptApiClass: Actor.BaseActorProperties
 order: 5
 ---
 Cette propriété définit l'alignement horizontal du texte au sein du contenant dans lequel il se trouve.
-Par défault, la valeur hérite de l'acteur dans lequel il se trouve.
+Par défaul, la valeur hérite de l'acteur dans lequel il se trouve.
 
 Il existe trois possibilités pour cette propriété :
  - Alignement à gauche (Start)

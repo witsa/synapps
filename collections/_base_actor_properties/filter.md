@@ -4,17 +4,17 @@ section: effects
 propName: filter
 propPath: properties.filter
 scriptApiClass: Actor.BaseActorProperties
-order: 9
+order: 10
 ---
 Cette propriété permet d'ajouter un filter graphique à l'élément.
 
 La valeur attendue est la propriété avec une unité entre parenthèse précisant l'intensité du changement.
 
-**Image originale :** 
+**Image originale :**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/firefox-logo.PNG)
 
-**Image avec le filtre 'blur(5px)' :** 
+**Image avec le filtre 'blur(5px)' :**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/firefox-logo-blurred.PNG)
 

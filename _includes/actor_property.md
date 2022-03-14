@@ -1,6 +1,6 @@
 {% assign property = include.property %}
 
-## {{ property.title }}<i id="{{ property.propName }}"></i>
+## {{ property.title }}
 
 {{ property.content | markdownify }}
 

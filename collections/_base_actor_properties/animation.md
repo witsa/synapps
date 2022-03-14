@@ -4,10 +4,10 @@ section: effects
 propName: animation
 propPath: properties.animation
 scriptApiClass: Actor.BaseActorProperties
-order: 7
+order: 8
 ---
-Cette propriété permet de définir des animations sur l'acteur.
 
+Cette propriété permet de définir des animations CSS sur l'acteur.
 
 
 **Pour vous aider :**

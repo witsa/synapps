@@ -1,8 +1,8 @@
 ---
 title: Bulle d'aide
 section: effects
-propName: effect
-propPath: properties.effect
+propName: tooltip
+propPath: properties.tooltip
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---

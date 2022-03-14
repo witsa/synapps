@@ -7,7 +7,7 @@ scriptApiClass: Actor.BaseActorProperties
 section: aspect
 order: 4
 ---
-Cette propriété définit l'oppacité de l'acteur.
+Cette propriété définit l'opacité de l'acteur.
 
 Elle est définie de 0% à 100% et permet de gérer la transparence de l'acteur.
 

@@ -8,7 +8,7 @@ order: 2
 ---
 Cette propriété définit la police du texte.
 
-Par défault, le texte hérite de l'acteur dans lequel il se trouve, si aucune des polices n'a été changée, la police du texte est celle définie par défault `Arial`.
+Par défault, le texte hérite de l'acteur dans lequel il se trouve, si aucune des polices n'a été changée, la police du texte est celle définie par défaut `Arial`.
 
 Dans l'inspecteur, un sélecteur de police est disponible pour aider à définir la valeur de la propriété.
 

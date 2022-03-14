@@ -13,7 +13,5 @@ L'unité de taille peut être soit définie directement lors de la saisie soit d
 
 Les deux champ "minimum" et "maximum" situé en dessous de la saisie de la valeur permettent de contraindre l'acteur à une hauteur minimum et une hauteur maximum.
 
-(Cas spécial des modales à définir)
-
 **Pour vous aider :**
 La documentation concernant la hauteur en CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/height).
