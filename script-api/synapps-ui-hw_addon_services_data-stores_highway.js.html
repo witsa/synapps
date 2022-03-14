@@ -639,10 +639,10 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     if (isNone(id)) {
       const points = [];
       await Promise.all(ids.map(i =>
-        this.searchResources({ resourceType: `flux/item/${i}/pointgroups`, filters })
+        this.searchResources({ resourceType: `flux/item/${i}/pointgroup`, filters })
           .then(result => {
             if (isNone(result)) return Promise.resolve();
-            const records = Object.entries(result).map((record) => this._deserializePointGroup(record, i));
+            const records = Object.entries(result).map((record) => this._deserializePointGroup(record, i, filters.slide));
             points.push(...records);
             return Promise.resolve();
           })
@@ -650,8 +650,8 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 
       return { points };
     } else {
-      const records = await this.searchResources({ resourceType: `flux/item/${id}/pointgroups`, filters });
-      const points = isNone(records) ? [] : Object.entries(records).map(record => this._deserializePointGroup(record, id));
+      const records = await this.searchResources({ resourceType: `flux/item/${id}/pointgroup`, filters });
+      const points = isNone(records) ? [] : Object.entries(records).map(record => this._deserializePointGroup(record, id, filters.slide));
       return { points };
     }
   }
@@ -669,12 +669,12 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 
     if (isNone(id)) {
       const points = [];
-      const records = await this.searchResources({ resourceType: 'flux/item/points', filters });
+      const records = await this.searchResources({ resourceType: 'flux/item/point', filters });
       if (!isNone(records)) {
         Object.entries(records).forEach(record => {
           const itemId = parseInt(record[0]);
           const itemRecords = record[1];
-          const itemPoints = Object.entries(itemRecords).map(record => this._deserializePoint(record, itemId));
+          const itemPoints = Object.entries(itemRecords).map(record => this._deserializePoint(record, itemId, filters.slide));
           points.push(...itemPoints);
         });
       }
@@ -682,8 +682,12 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       return { points };
     } else {
 
-      const records = await this.searchResources({ resourceType: `flux/item/${id}/points`, filters });
-      const points = isNone(records) ? [] : Object.entries(records).map(record => this._deserializePoint(record, id));
+      const records = await this.searchResources({ resourceType: `flux/item/${id}/point`, filters });
+      // EV 21.01.2022 temporary patch until "records.data??records"
+      // API evolution return now paginated points {count:5, data:[{},{}]}.
+      // Need patch until solution deployement in every environments
+      const points = isNone(records) ? [] : Object.entries(records.data ?? records).map(record => this._deserializePoint(record, id, filters.slide));
+      if (filters.slide) { points.forEach(p => p) }
       return { points };
     }
   }
@@ -1056,21 +1060,23 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     return fluxItem;
   }
 
-  _deserializePointGroup(recordHash, fluxItemId) {
+  _deserializePointGroup(recordHash, fluxItemId, slide) {
     const pointGroup = new PointGroup();
     const record = recordHash[1];
     record.d = fluxItemId;
     record.t = recordHash[0];
+    record.s = slide;
     PointGroup.serializer.deserialize(pointGroup, record);
     return pointGroup;
   }
 
-  _deserializePoint(recordHash, fluxItemId) {
+  _deserializePoint(recordHash, fluxItemId, slide) {
     const point = new Point();
     const record = {
       t: recordHash[0],
       v: recordHash[1],
-      d: fluxItemId
+      d: fluxItemId,
+      s: slide
     };
 
     Point.serializer.deserialize(point, record);
@@ -1090,10 +1096,15 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       });
     }
 
-    const reflects = reflectDatas.map(reflectData => {
-      reflectData.schema = this._reflectsSchemaRegister.findByKey(reflectData.id);
-      return this._deserializeReflect(reflectData, cache);
-    });
+    const reflects = [];
+    reflectDatas.forEach(reflectData => {
+      try {
+        reflectData.schema = this._reflectsSchemaRegister.findByKey(reflectData.id);
+        reflects.push(this._deserializeReflect(reflectData, cache));
+      } catch (error) {
+        logger.error(`[HighwayStore][_deserializeReflectsWithSchemas]`, error, 'reflectData:', reflectData, 'with cache?', cache);
+      }
+    })
     return reflects;
   }
 
@@ -1107,8 +1118,6 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       Reflect.serializer.deserialize(reflect, reflectData);
       if (cache) this._reflectsRegister.record({ record: reflect });
     }
-
-
 
     if (reflectData.lastState &amp;&amp; !isNone(reflectData.lastState.mode)) {
       const reflectMode = this.findReflectMode(reflectData.lastState.mode);
@@ -1165,7 +1174,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 20th Jan 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 14th Mar 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
