@@ -4,6 +4,7 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
+> en cours de rédaction...
 
 {% include table_of_content.html %}
 
@@ -16,3 +17,13 @@ grand_parent: Concepts
 {% include actor_property.md property=property %}
 
 {% endfor %}
+
+# Informations
+
+## Est Pressé ?
+
+> en cours de rédaction...
+
+# Évènements spécifiques
+
+> en cours de rédaction...

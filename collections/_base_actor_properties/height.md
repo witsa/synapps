@@ -1,7 +1,7 @@
 ---
 title: Hauteur de l'acteur
 section: size
-propName: heighr
+propName: height
 propPath: properties.height
 scriptApiClass: Actor.BaseActorProperties
 order: 2

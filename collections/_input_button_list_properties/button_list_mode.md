@@ -1,9 +1,9 @@
 ---
 title: Mode
-section: input_list
-propName: ActorButtonListMode
-propPath: properties.Actor.Input.Button
-scriptApiClass: Actor.Input.Button
+section: specifics
+propName: mode
+propPath: properties.mode
+scriptApiClass: Actor.Input.ButtonListProperties
 order: 5
 ---
 La propriété spécifique `Mode` permet d'assigner des classes bootstrap à l'ensemble de la liste de bouton.

@@ -1,9 +1,9 @@
 ---
 title: Pas entre deux valeurs
-section: input
-propName: ActorButtonCursorStep
-propPath: properties.Actor.input.Cursor
-scriptApiClass: Actor.input.Cursor
+section: specifics
+propName: step
+propPath: properties.step
+scriptApiClass: Actor.input.CursorProperties
 order: 4
 ---
 La propriété spécifique `Pas entre deux valeur` permet de définir la valeur entre deux `Valeur` lorsque l'on utilise le slider.

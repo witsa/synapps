@@ -1,9 +1,9 @@
 ---
 title: Valeur unique
-section: input
-propName: ActorButtonCursorSingleValue
-propPath: properties.Actor.input.Cursor
-scriptApiClass: Actor.input.Cursor
+section: specifics
+propName: isSingleValue
+propPath: properties.isSingleValue
+scriptApiClass: Actor.input.CursorProperties
 order: 2
 ---
 La propriété spécifique `Valeur unique?` permet d'activer / désactiver un deuxième curseur sur l'acteur.
@@ -16,7 +16,7 @@ Si un second curseur est présent, la propriété spécifique `Valeur` devient l
 
 Il est à noter que la borne inférieure ne peut pas dépasser la borne supérieure et inversement.
 
-Lorsque la propriété est activée, il apparait également deux nouvelles propriétés spécifiques :
+Lorsque la propriété est activée, il apparaît également deux nouvelles propriétés spécifiques :
 <br>
 `Différence min.` : Permet de définir un écart minimal entre `Valeur` et `Valeur 2`
 <br>

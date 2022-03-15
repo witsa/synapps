@@ -1,19 +1,27 @@
 ---
 title: URL
-section: iFrame
-propName: picture
-propPath: properties.Image
-scriptApiClass: Actor.Display.Iframe
+section: specifics
+propName: url
+propPath: properties.url
+scriptApiClass: Actor.Display.IframeProperties
 order: 1
 ---
 Cette propriété permet de renseigner une URL d'un élément à afficher dans l'acteur.
 
-Cet élément doit être une adresse qui référence :
-- Soit un site web.
-- Soit une image hébergée.
+Cet élément doit être une adresse qui référence une ressource WEB ou plus fréquemment une page WEB de n'importe quel site WEB accessible.
 
-Une fois affichée, il est possible d'accéder au site web ainsi qu'à toutes les fonctionnalités qu'il propose.
+> **ATTENTION**<br>
+> Il faut noter que certains sites WEB interdisent l'accès au travers d'une iFrame.
 
-**ATTENTION**
+**Jokerable**
 
-Il est à noter que certains site web interdisent l'accès au travers d'une iFrame.
+Il est possible de placer des jokers (ex.: {% raw %}`{{jokerKey}}`{% endraw %}) dans la définition de l'URL qui seront remplacés par la valeur d'additionnelles de même clé.
+
+Par exemple :
+
+{% raw %}
+```URL
+https://www.wit.fr/{{section}}/
+```
+{% endraw %}
+Une additionnelle de clé `section` de type *texte* remplacera le joker par sa valeur.

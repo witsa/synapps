@@ -1,14 +1,11 @@
 ---
 title: Selection
-section: input_list
-propName: ActorButtonListValue
-propPath: properties.Actor.Input.Button
-scriptApiClass: Actor.Input.Button
+section: specifics
+propName: value
+propPath: properties.value
+scriptApiClass: Actor.Input.ButtonListProperties
 order: 1
 ---
-La propriété spécifique `Selection` permet de gérer la selection par défaut du bouton.
+La propriété spécifique `Selection` reflète la valeur sélectionnée en cours.
 
-La valeur attendue est la `value` de l'un des boutons de la liste.
-
-**NOTE**
-Il n'est pas possible de sélectionner plusieurs boutons en même temps.
+La valeur attendue est la `value` de l'une des [options][#options] de l'acteur.

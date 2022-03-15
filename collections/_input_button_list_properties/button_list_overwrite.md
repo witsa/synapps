@@ -1,9 +1,9 @@
 ---
 title: Dépassement de texte
-section: input_list
-propName: ActorButtonListInline
-propPath: properties.Actor.Input.Button
-scriptApiClass: Actor.Input.Button
+section: specifics
+propName: textOverflow
+propPath: properties.textOverflow
+scriptApiClass: Actor.Input.ButtonListProperties
 
 order: 6
 ---

@@ -1,9 +1,9 @@
 ---
 title: Options
-section: input_list
-propName: ActorButtonListOptions
-propPath: properties.Actor.Input.Button
-scriptApiClass: Actor.Input.Button
+section: specifics
+propName: options
+propPath: properties.options
+scriptApiClass: Actor.Input.ButtonListProperties
 order: 4
 ---
 La propriété spécifique `Options` permet de renseigner les boutons avec le format JSON.

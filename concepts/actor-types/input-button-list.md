@@ -4,8 +4,12 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-
 {% include table_of_content.html %}
+
+Liste de boutons pour faire un choix simple. La liste est construite dynamiquement à partir d'une liste d'[options](#options).
+
+**NOTE**
+Il n'est pas possible de sélectionner plusieurs boutons en même temps.
 
 # Propriétés spécifiques
 
@@ -16,3 +20,13 @@ grand_parent: Concepts
 {% include actor_property.md property=property %}
 
 {% endfor %}
+
+# Informations
+
+## Texte sélectionné
+> en cours de rédaction...
+
+
+# Évènements spécifiques
+
+> en cours de rédaction...

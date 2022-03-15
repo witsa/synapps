@@ -1,9 +1,9 @@
 ---
 title: Dépassement de texte
-section: input
-propName: ActorButtonOverwrite
-propPath: properties.Actor.input.Overwrite
-scriptApiClass: Actor.Input.Button
+section: specifics
+propName: textOverflow
+propPath: properties.textOverflow
+scriptApiClass: Actor.Input.ButtonProperties
 order: 5
 ---
 La propriété spécifique `Dépassement de texte` permet de gérer l'affichage du texte dans le cas où la taille du conteneur ne suffit pas à afficher l'entièreté du texte.

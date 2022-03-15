@@ -1,9 +1,9 @@
 ---
 title: Valeur manimale et maximale
-section: input
-propName: ActorButtonCursorLimit
-propPath: properties.Actor.input.Cursor
-scriptApiClass: Actor.input.Cursor
+section: specifics
+propName: limit
+propPath: properties.limit
+scriptApiClass: Actor.input.CursorProperties
 order: 3
 ---
 La propriété spécifique `Valeur min` et `Valeur max` permet de délimiter une intervalle sur laquelle la `Valeur` du curseur de l'acteur devra être positionnée.
