@@ -42,8 +42,5 @@ Si tout se passe bien, l'interface montrera la synapp correspondante au projet p
 
 > **Remarque :** Chaque projet permet de définir une synapp, avec un identifiant unique. Ainsi, Studio est capable de reconnaître la synapp publiée commme correspondante à celle du projet en cours.
 
-## Prochaine étape
-
-Découvrir toutes les autres possibilités que Studio vous propose.
-
-> Liens à suivre
+# Prochaine étape :
+Maintenant, vous allez [afficher des données du REDY dans la scène](./display-redy-data.md).

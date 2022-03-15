@@ -44,4 +44,4 @@ Vous pouvez tester la synapp en utilisant le menu.
 Dans ce cas choisissez l'option "Exécuter dans le navigateur...". <br>Raccourci clavier **Ctrl+Shift+R**
 
 # Prochaine étape :
-Maintenant, vous allez effectuer [vos premiers pas avec le designer de scène](./designer-first-steps).
+Maintenant, vous allez effectuer [vos premiers pas avec le designer de scène](./designer-first-step.md).
