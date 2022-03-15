@@ -1,5 +1,5 @@
 ---
-title: "REDY | Journal des reflets"
+title: "REDY | Journal des reflets [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---

@@ -1,5 +1,5 @@
 ---
-title: "REDY | Synoptique"
+title: "REDY | Synoptique [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---

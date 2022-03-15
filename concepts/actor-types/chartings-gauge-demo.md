@@ -1,7 +1,8 @@
 ---
-title: "Charts | Jauge"
+title: "Charts | Jauge [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
+disabled: true
 ---
 
 

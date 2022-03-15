@@ -1,5 +1,5 @@
 ---
-title: "Interaction | Périodes"
+title: "Interaction | Périodes [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---

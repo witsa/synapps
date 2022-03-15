@@ -1,5 +1,5 @@
 ---
-title: "Affichage | Vue de composite"
+title: "Affichage | Vue de composite [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---

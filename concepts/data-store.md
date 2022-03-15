@@ -1,5 +1,5 @@
 ---
-title: "Magasin de donnée"
+title: "Magasin de donnée [TODO]"
 parent: Concepts
 ---
 

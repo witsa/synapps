@@ -1,5 +1,5 @@
 ---
-title: "REDY | Fournisseur de ressource"
+title: "REDY | Fournisseur de ressource [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---

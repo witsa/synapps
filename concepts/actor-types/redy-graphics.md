@@ -1,5 +1,5 @@
 ---
-title: "REDY | Graphique"
+title: "REDY | Graphiques [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---

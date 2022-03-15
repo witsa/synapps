@@ -1,5 +1,5 @@
 ---
-title: "Cycle de vie d'un acteur"
+title: "Cycle de vie d'un acteur [TODO]"
 parent: Acteur
 grand_parent: Concepts
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Interaction | Images interrupteur"
+title: "Interaction | Images interrupteur [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---

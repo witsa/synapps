@@ -1,5 +1,5 @@
 ---
-title: "Modèle de projet"
+title: "Modèle de projet [TODO]"
 parent: Concepts
 ---
 

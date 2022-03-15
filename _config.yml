@@ -27,6 +27,7 @@ logo: "assets/logo.svg"
 aux_links_new_tab: true
 back_to_top: true
 back_to_top_text: "Vers le haut"
+# color_scheme: dark
 aux_links:
   "Doc Script API":
     - "/synapps/script-api/"

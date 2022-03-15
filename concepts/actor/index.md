@@ -14,9 +14,9 @@ has_children: true
 
 ## Définition
 
-L'acteur est la brique fondamentale de construction de l'interface. Les nombreux types d'acteur et leur spécificité vont vous permettre d’articuler n’importe quel type d’interface, du formulaire au tableau de bord.
+L'acteur est la brique fondamentale de construction de l'interface. Les nombreux types d'acteur et leurs spécificités vont vous permettre d’articuler n’importe quel type d’interface, du formulaire au tableau de bord.
 
-Les acteurs sont organisés sous forme d'arborescence et vont constituer la [scène](../scene.md).
+Les acteurs sont organisés sous forme d'arborescence pour constituer ce qu'on appelle la [scène](../scene.md).
 
 ![SynApps](../../assets/concepts/actor/01.png)
 
@@ -30,13 +30,13 @@ Un acteur possède un type qui va déterminer son comportement.
 
 ## Les Propriétés
 
-Tous les acteurs partagent des propriétés. Chaque acteur possède des propriétés spécifique à son type.
+Tous les acteurs partagent des propriétés. Chaque acteur possède des propriétés spécifiques à son type.
 
 Ces propriétés représentent l'état de l'acteur. Elles commandent son aspect, son comportement.
 
 Chaque propriété à une valeur par défaut. Cette dernière est définie par le [style de l'acteur](../actor-style.md).
 
-L'inspecteur est la partie du designer qui permet de paramétrer, de programmer, de lier les propriétés d'un acteur.
+L'inspecteur est la partie du *designer* qui permet de paramétrer, de programmer, de lier les propriétés d'un acteur.
 
 ![SynApps](../../assets/concepts/actor/03.png)
 
@@ -52,27 +52,27 @@ Les propriétés propres au type de l'acteur.
 
 Les propriétés relatives à l'aspect de l'acteur comme sa couleur de fond ou bien sa visibilité.
 
-- **Texte**
+- [**Texte**](./category-text.md)
 
 Les propriétés relatives au texte qui sera contenu dans l'acteur ou ses enfants. Certaines propriétés comme la taille ou la couleur de la police sont transmises par *héritage* aux acteurs enfants.
 
--  **Disposition**
+-  [**Disposition**](./category-disposition.md)
 
-Les propriétés qui paramètrent la disposition de l'acteur dans son parent. La nature de ses propriétés dépendent du type d'acteur de disposition parent.
+Les propriétés qui paramètrent la disposition de l'acteur dans son parent. La nature de ses propriétés dépendent du type de disposition auquel appartient le parent.
 
-- **Tailles**
+- [**Tailles**](./category-size.md)
 
 Les propriétés relatives à la taille de l'acteur.
 
-- **Espaces**
+- [**Espaces**](./category-space.md)
 
 Les propriétés relatives à l'espacement entre les acteurs et les coins de la scène.
 
-- **Bordures**
+- [**Bordures**](./category-border.md)
 
 Les propriétés relatives aux bordures de l'acteur et l'arrondi de ses coins.
 
-- **Effets**
+- [**Effets**](./category-effect.md)
 
 Les propriétés relatives aux transformations géométrique (échelle, translation, rotation) ou les ombres portées ou l'affichage de bulle d'aide.
 
@@ -122,6 +122,8 @@ Les types de propriétés disponibles :
 
 ![SynApps](../../assets/concepts/actor/05.png)
 
+> En cours de rédaction...
+
 
 Chaque additionnelle est identifiée par sa clé qui doit être unique pour un acteur donné.
 
@@ -129,8 +131,14 @@ Lorsqu'une valeur d'additionnelle change, comme toute les autres propriétés, e
 
 ## Les liaisons
 
+> En cours de rédaction...
+
+
 ### Évènements de transformation
+> En cours de rédaction...
 
 ## Le ruissellement de contexte
+> En cours de rédaction...
 
 ## Les fournisseurs de donnée
+> En cours de rédaction...
