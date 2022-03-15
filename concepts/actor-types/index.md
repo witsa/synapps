@@ -45,6 +45,6 @@ Les composites sont des acteurs créer à partir d'autres acteurs. Voir la parti
 
 Les acteurs REDY sont disponible dans un projet de synapp pour REDY et présente les interfaces et composant dédié à cette plateforme.
 
-- **HighWay**
+<!-- - **HighWay**
 
-> A venir...
+> A venir... -->

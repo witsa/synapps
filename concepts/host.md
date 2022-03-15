@@ -11,7 +11,7 @@ Cela pourra être :
 
 - un REDY
 - un REDY-PC
-- *bientôt* un serveur HighWay
+<!-- - *bientôt* un serveur HighWay -->
 
 L'objet hôte est accessible par liaison et par script. Il est porté par le magasin de données de la synapp.
 
