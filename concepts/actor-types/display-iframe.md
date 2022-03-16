@@ -48,3 +48,18 @@ Cette propriété permet d'activer / désactiver les formulaires lors de la navi
 
 > **Attention**<br>
 > Si l'on désactive cette option, il ne sera plus possible d'utiliser les formulaires de connexion, les formulaires de contact, etc ...
+
+
+# Quelques exemples
+
+## iframe vers REDY
+
+Voici un exemple d'iFrame qui montre une page du REDY.
+
+![SynApps](../../assets/concepts/actor/display_iframe/iframe01.png)
+
+L'additionnelle *Chemin REDY* permet de définir le chemin vers la page, depuis la racine du REDY (ici, on affiche le tableau de bord).
+
+```text
+SYNAPPS-STUDIO-ACTOR|{"type":"display/iframe","key":"iframe1","properties":{"verticalAlignment":"expand"},"additionalDefs":{"redyPath":{"type":"text","label":"Chemin REDY"}},"additionals":{"redyPath":"/easy/dashboard"},"bindings":{"properties.url":{"sourceType":"relative","sourcePath":"self","path":"additionals.redyPath"}},"events":{"properties/url/binding/onReadTransform":["return  `${this.dataStores.redy.host.domain}/WSID${this.dataStores.redy.host.session.sid}${context.value}`;"]}}
+```
