@@ -4,3 +4,4 @@ aux_links:
   "WIT.fr":
     - "https://www.wit.fr"
 incremental: true
+ga_tracking: false

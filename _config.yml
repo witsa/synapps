@@ -28,6 +28,8 @@ aux_links_new_tab: true
 back_to_top: true
 back_to_top_text: "Vers le haut"
 # color_scheme: dark
+ga_tracking: G-7FK6J523FV
+ga_tracking_anonymize_ip: true
 aux_links:
   "Doc Script API":
     - "/synapps/script-api/"
