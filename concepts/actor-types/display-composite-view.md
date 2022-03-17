@@ -13,6 +13,8 @@ La propriété *Composite* permet de choisir parmi les composites définis dans 
 
 Le composite en question est affiché avec ses propriétés par défaut.
 
+[&#x1F4BB; Actor.Display.CompositeView]({{ site.baseurl }}/script-api/Actor.Display.CompositeView.html){:target="_blank"}
+
 > **Astuce**<br>
 > Si vous désirez passer des informations au composite, il faut utiliser le [ruissellement de contexte de donnée](../context.md).
 

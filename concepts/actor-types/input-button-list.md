@@ -8,6 +8,8 @@ grand_parent: Concepts
 
 Liste de boutons pour faire un choix simple. La liste est construite dynamiquement à partir d'une liste d'[options](#options).
 
+[&#x1F4BB; Actor.Input.ButtonList]({{ site.baseurl }}/script-api/Actor.Input.ButtonList.html){:target="_blank"}
+
 **NOTE**
 Il n'est pas possible de sélectionner plusieurs boutons en même temps.
 

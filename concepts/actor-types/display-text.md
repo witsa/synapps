@@ -8,6 +8,8 @@ grand_parent: Concepts
 
 Acteur de base pour afficher du texte.
 
+[&#x1F4BB; Actor.Display.Text]({{ site.baseurl }}/script-api/Actor.Display.Text.html){:target="_blank"}
+
 Son contenu est **jokerable**.
 
 # Propriétés spécifiques

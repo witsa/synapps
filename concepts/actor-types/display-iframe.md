@@ -8,6 +8,8 @@ grand_parent: Concepts
 
 L'acteur Iframe permet d'intégrer une page web dans votre scène.
 
+[&#x1F4BB; Actor.Display.Iframe]({{ site.baseurl }}/script-api/Actor.Display.Iframe.html){:target="_blank"}
+
 La définition de l'URL est **jokerable**.
 
 # Propriétés spécifiques

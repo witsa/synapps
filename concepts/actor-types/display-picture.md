@@ -8,6 +8,8 @@ grand_parent: Concepts
 
 Un acteur qui permet d'afficher une image.
 
+[&#x1F4BB; Actor.Display.Image]({{ site.baseurl }}/script-api/Actor.Display.Image.html){:target="_blank"}
+
 # Propriétés spécifiques
 
 {% assign sorted = site.display_picture_properties | sort: 'order' %}

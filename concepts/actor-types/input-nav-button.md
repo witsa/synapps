@@ -12,6 +12,9 @@ Ses propriétés sont similaires aux propriétés de l'acteur bouton et la docum
 
 Ses propriétés supplémentaires sont listées ci-dessous.
 
+[&#x1F4BB; Actor.Input.NavButton]({{ site.baseurl }}/script-api/Actor.Input.NavButton.html){:target="_blank"}
+
+
 # Propriétés spécifiques
 
 {% assign sorted = site.input_nav_button_properties | sort: 'order' %}

@@ -11,6 +11,8 @@ grand_parent: Concepts
 
 L'acteur jauge permet de représenter graphiquement par un arc de cercle coloré, une valeur dans un intervalle.
 
+[&#x1F4BB; Actor.Charting.GaugeDemo]({{ site.baseurl }}/script-api/Actor.Charting.GaugeDemo.html){:target="_blank"}
+
 Il est possible de la personnaliser en changeant les couleurs
 - de l'aiguille
 - de l'arc avant l'aiguille

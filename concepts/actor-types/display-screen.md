@@ -8,6 +8,8 @@ grand_parent: Concepts
 
 Acteur qui permet d'afficher une autre scène.
 
+[&#x1F4BB; Actor.Display.Screen]({{ site.baseurl }}/script-api/Actor.Display.Screen.html){:target="_blank"}
+
 # Propriétés spécifiques
 
 {% assign sorted = site.display_screen_properties | sort: 'order' %}

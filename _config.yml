@@ -31,7 +31,7 @@ back_to_top_text: "Vers le haut"
 ga_tracking: G-7FK6J523FV
 ga_tracking_anonymize_ip: true
 aux_links:
-  "Doc Script API":
+  "&#x1F4BB; Doc Script API":
     - "/synapps/script-api/"
   "WIT.fr":
     - "https://www.wit.fr"

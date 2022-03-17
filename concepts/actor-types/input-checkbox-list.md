@@ -1,12 +1,15 @@
 ---
-title: "Interaction | Liste de Boites à cocher [TODO]"
+title: "Interaction | Liste de Cases à cocher"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-# Liste de boites à cocher
+# Liste de cases à cocher
 
-Acteur d'interaction qui permet d'afficher une liste de boites à cocher. Cette liste peut être une arborescence. L'acteur possède deux modes de sélection : simple et multiple.
+Acteur d'interaction qui permet d'afficher une liste de cases à cocher. Cette liste peut être une arborescence. L'acteur possède deux modes de sélection : simple et multiple.
+
+[&#x1F4BB; Actor.Input.CheckboxList]({{ site.baseurl }}/script-api/Actor.Input.CheckboxList.html){:target="_blank"}
+
 
 # Propriétés
 
@@ -16,25 +19,33 @@ La propriété *Sélection* est une chaîne `JSON` qui contient la liste des val
 
 Exemples en multi sélection:
 
+<div class="code-example" markdown="1">
 les options 1 et 2 sont sélectionnées
+</div>
+
 ```json
 ["value1", "value2"]
 ```
 
+<div class="code-example" markdown="1">
 Aucune valeur n'est sélectionnée :
+</div>
+
 ```json
 []
 ```
 
-si la propriété *Tout est la valeur vide?* est activée, toutes les options sont sélectionnées
+<div class="code-example" markdown="1">
+Si la propriété *Tout est la valeur vide?* est activée, toutes les options sont sélectionnées :
+</div>
 
-Aucune valeur n'est sélectionnée :
 ```json
 null
 ```
 
->
-Le mode de saisie de cette
+En mode de sélection simple, le format de la sélection reste le meme.
+
+Par exemple : `["value1"]` ou bien `[]`.
 
 ## Multi sélection
 La propriété *Multi sélection?* permet de définir si l'acteur est en mode sélection multiple ou non.
@@ -50,10 +61,10 @@ Une option est un object `JSON` qui possède les propriétés suivantes :
 | CHAMPS | DESCRIPTION | PAR DÉFAUT |
 |--------|-------------|------------|
 | `value` | La valeur de l'option. C'est son identifiant unique dans la liste. De préférence, la valeur est une chaîne de caractères. | - |
-| `text` | Le texte qui s'affiche à coté de la boite à cocher. | - |
+| `text` | Le texte qui s'affiche à coté de la case à cocher. | - |
 | `disabled` | Indique si l'option doit apparaître désactivée. | `false` |
-| `options` | Un tableau d'options qui sera affiché sous la boite à cocher pour fabriquer une arborescence. | `null` |
-| `collapsed` | Indique si la boite à cocher doit enrouler ses options éventuelles. | `false` |
+| `options` | Un tableau d'options qui sera affiché sous la case à cocher pour fabriquer une arborescence. | `null` |
+| `collapsed` | Indique si la case à cocher doit enrouler ses options éventuelles. | `false` |
 
 Exemple :
 
@@ -69,11 +80,11 @@ Exemple :
 [
   {
     "value": "item1",
-    "text": "Elément 1"
+    "text": "Élément 1"
   },
   {
     "value": "item2",
-    "text": "Elément 2",
+    "text": "Élément 2",
     "options": [
       {
         "value": "sub2Item1",
@@ -87,7 +98,7 @@ Exemple :
   },
   {
     "value": "item3",
-    "text": "Elément 3",
+    "text": "Élément 3",
     "collapsed": true,
     "options": [
       {
@@ -143,3 +154,5 @@ Le tableau des options est accessible dans le champ d'information *Liste des opt
 ## `onSelected`
 
 L'évènement `onSelected` est déclenché lorsque la sélection change.
+
+[&#x1F4BB; `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.CheckboxList.html#event:onSelected){:target="_blank"}

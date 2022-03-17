@@ -6,6 +6,8 @@ grand_parent: Concepts
 
 {% include table_of_content.html %}
 
+[&#x1F4BB; Actor.Input.Button]({{ site.baseurl }}/script-api/Actor.Input.Button.html){:target="_blank"}
+
 # Propriétés spécifiques
 
 {% assign sorted = site.input_button_properties | sort: 'order' %}
