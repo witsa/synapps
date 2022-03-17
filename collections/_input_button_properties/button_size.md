@@ -6,15 +6,8 @@ propPath: properties.size
 scriptApiClass: Actor.Input.ButtonProperties
 order: 2
 ---
-La propriété spécifique `Taille` permet de gérer la taille que va prendre le contenu du bouton.
 
-Il existe trois options pour cette propriété :
-
-- Par défaut (la taille dépend de la taille du contenu).
-- Grand.
-- Petit.
-
-Le contenu du bouton s'adapte ainsi à l'option choisie.
+{% include property_size.md %}
 
 **Attention**
 

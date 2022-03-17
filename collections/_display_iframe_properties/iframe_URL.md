@@ -6,6 +6,10 @@ propPath: properties.url
 scriptApiClass: Actor.Display.IframeProperties
 order: 1
 ---
+
+Jokerable
+{: .label }
+
 Cette propriété permet de renseigner une URL d'un élément à afficher dans l'acteur.
 
 Cet élément doit être une adresse qui référence une ressource WEB ou plus fréquemment une page WEB de n'importe quel site WEB accessible.

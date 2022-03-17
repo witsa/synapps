@@ -22,9 +22,16 @@ Son contenu est **jokerable**.
 
 {% endfor %}
 
+# Champs d'informations
+
+## Contenu complété
+
+{% include field_completed_content.md %}
 
 # Variantes
 
 ## Icône
 
-Une variante de l'acteur HTML offrant la possibilité d'intégrer une icône choisi parmi les icônes intégrées à Synapps.
+Une variante de l'acteur HTML offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+
+Le contenu de l'acteur est complété par une additionnelle *icône*.

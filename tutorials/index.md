@@ -10,3 +10,4 @@ nav_order: 5
 
 
 - [Affichage dynamique de composite](tutorials/composite-view.md) [TODO]
+- [Utilisation des jokers pour concaténer du texte](tutorials/concatenate.md) [TODO]

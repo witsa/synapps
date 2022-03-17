@@ -21,3 +21,15 @@ Ses propriétés supplémentaires sont listées ci-dessous.
 {% include actor_property.md property=property %}
 
 {% endfor %}
+
+# Évènements spécifiques
+
+> en cours de rédaction...
+
+# Variantes
+
+## Icône
+
+La variante de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+
+Le contenu du bouton est complété par une additionnelle *icône* et une additionnelle *texte*.

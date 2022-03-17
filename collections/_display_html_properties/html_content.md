@@ -6,6 +6,10 @@ propPath: properties.content
 scriptApiClass: Actor.Display.HtmlProperties
 order: 7
 ---
+
+Jokerable
+{: .label }
+
 Cette propriété permet de définir du contenu HTML de l'acteur.
 
 **Exemple :**

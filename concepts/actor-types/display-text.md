@@ -19,3 +19,9 @@ Son contenu est **jokerable**.
 {% include actor_property.md property=property %}
 
 {% endfor %}
+
+# Champs d'informations
+
+## Contenu complété
+
+{% include field_completed_content.md %}

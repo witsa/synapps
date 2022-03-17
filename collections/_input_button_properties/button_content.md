@@ -6,23 +6,25 @@ propPath: properties.content
 scriptApiClass: Actor.input.ButtonProperties
 order: 1
 ---
+
+Jokerable
+{: .label }
+
 Cette propriété permet de définir du contenu HTML de l'acteur.
 
 **Exemple :**
 
+<div class="code-example" markdown="1">
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/button01.png)
+
+</div>
+
+
 ```html
-<div style="background-color: red;">
-    <p>
-        Ceci est <i>un</i> <b>paragraphe</b>.
-    </p>
-</div>
+Ceci est <i>un</i> <b style="background-color: red;">bouton</b>
 ```
-Résultat :
-<div style="background-color: red;">
-    <p>
-        Ceci est <i>un</i> <b>paragraphe</b>.
-    </p>
-</div>
+
 
 **Jokerable**
 
@@ -32,14 +34,13 @@ Par exemple :
 
 {% raw %}
 ```html
-<div style="background-color: {{theColor}};">
-    <p>
-        Ceci est un paragraphe.
-    </p>
-</div>
+Ceci est <i>un</i> <b style="background-color: {{theColor}};">bouton</b>.
+
 ```
 {% endraw %}
 Une additionnelle de clé `theColor` de type *couleur* remplacera le joker par sa valeur.
+
+
 
 > **Astuce**<br>
 > S'il est possible d'ajouter du style CSS avec une balise HTML `<style>`, il n'est par contre pas possible d'ajouter du code Javascript.

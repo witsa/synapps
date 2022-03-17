@@ -6,6 +6,11 @@ propPath: properties.content
 scriptApiClass: Actor.Display.TextProperties
 order: 1
 ---
+
+Jokerable
+{: .label }
+
+
 La propriété spécifique `contenu` permet de rédiger du texte que l'acteur affichera dans la scène.
 
 
