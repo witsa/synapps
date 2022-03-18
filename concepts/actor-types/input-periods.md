@@ -12,9 +12,9 @@ L'acteur *Période* propose une sélection de périodes types et expose les born
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_period/sample01.gif)
 
-{% include table_of_content.html %}
+L'acteur *Période* a beaucoup de similitudes avec l'acteur [*Liste de boutons*](./input-button-list.md) et propose la plupart de ses propriétés (*En ligne?*, *Taille*, *Mode*, ...).
 
-L'acteur *Période* a beaucoup de similitudes avec l'acteur *Liste de boutons* et propose la plupart de ses propriétés (*En ligne?*, *Taille*, ...).
+{% include table_of_content.html %}
 
 # Propriétés
 
@@ -22,7 +22,7 @@ L'acteur *Période* a beaucoup de similitudes avec l'acteur *Liste de boutons* e
 
 La propriété `Selection` reflète la valeur sélectionnée en cours.
 
-La valeur attendue est la `value` de l'une des [options][#options] de l'acteur parmi :
+La valeur attendue est la `value` de l'une des périodes de l'acteur parmi :
 
 | - | - | - |
 | `all` | Tout |
