@@ -16,7 +16,7 @@ Acteur d'interaction qui permet d'afficher une liste de choix déroulante.
 
 ## Sélection
 
-La propriété *Sélection* est une chaîne qui la valeur qui correspond au choix dans la liste des options. Dans le cas de la sélection simple, la liste ne contient qu'une seule valeur à la fois.
+La propriété *Sélection* est une chaîne qui la valeur qui correspond au choix dans la liste des options.
 
 Exemples:
 
@@ -100,4 +100,4 @@ Le tableau des options est accessible dans le champ d'information *Liste des opt
 
 L'évènement `onSelected` est déclenché lorsque la sélection change.
 
-> [&#x1F4BB; `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.DropdownList.html#event:onSelected){:target="_blank"}
+> [⚡ `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.DropdownList.html#event:onSelected){:target="_blank"}

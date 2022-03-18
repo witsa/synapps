@@ -70,4 +70,4 @@ Le tableau des options est accessible dans le champ d'information *Liste des opt
 
 L'évènement `onSelected` est déclenché lorsque la sélection change.
 
-> [&#x1F4BB; `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.Period.html#event:onSelected){:target="_blank"}
+> [⚡ `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.Period.html#event:onSelected){:target="_blank"}

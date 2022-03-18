@@ -5,4 +5,4 @@ Cette propriété possède trois options :
 - Grand.
 - Petit.
 
-Seul le choix *par défaut* vous laisse la possibilité de modifier la taille du texte. Les autres options prennent le pas sur tout autres réglage.
+Seul le choix *par défaut* vous laisse la possibilité de modifier la taille du texte. Les autres options prennent le pas sur tout autre réglage.
