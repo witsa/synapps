@@ -64,6 +64,18 @@ layout: default
   document.addEventListener("scroll", writeScroll);
 
   writeScroll();
+
+  const showActiveItem = () => {
+    const activeItem = document.querySelector(".nav-list .nav-list-link.active");
+    if (activeItem) {
+      activeItem.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  };
+
+  setTimeout(showActiveItem, 600);
 </script>
 
 {{content}}
