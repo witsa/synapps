@@ -4,11 +4,13 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...
+
+{% include links_actor.md apiClass="Actor.Input.Cursor" %}
+
+# Curseur
 
 {% include table_of_content.html %}
-
-[&#x1F4BB; Actor.Input.Cursor]({{ site.baseurl }}/script-api/Actor.Input.Cursor.html){:target="_blank"}
 
 # Propriétés spécifiques
 
@@ -22,8 +24,8 @@ grand_parent: Concepts
 
 # Informations
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...
 
 # Évènements spécifiques
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...

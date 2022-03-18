@@ -4,11 +4,13 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include table_of_content.html %}
+{% include links_actor.md apiClass="Actor.Display.Text" %}
+
+# Texte
 
 Acteur de base pour afficher du texte.
 
-[&#x1F4BB; Actor.Display.Text]({{ site.baseurl }}/script-api/Actor.Display.Text.html){:target="_blank"}
+{% include table_of_content.html %}
 
 Son contenu est **jokerable**.
 

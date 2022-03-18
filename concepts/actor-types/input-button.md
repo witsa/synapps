@@ -4,9 +4,15 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include table_of_content.html %}
+> 🚧 en cours de rédaction...
 
-[&#x1F4BB; Actor.Input.Button]({{ site.baseurl }}/script-api/Actor.Input.Button.html){:target="_blank"}
+{% include links_actor.md apiClass="Actor.Input.Button" %}
+
+# Bouton
+
+Acteur bouton poussoir.
+
+{% include table_of_content.html %}
 
 # Propriétés spécifiques
 
@@ -30,7 +36,7 @@ Le champ d'information *Est pressé?* est un booléen qui est `true` lorsque le 
 
 # Évènements spécifiques
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...
 
 # Variantes
 

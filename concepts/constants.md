@@ -3,7 +3,7 @@ title: "Librairie de constantes [TODO]"
 parent: Concepts
 ---
 
-> En cours de rédaction...
+> 🚧 en cours de rédaction...
 
 ![SynApps](../assets/under-progress.gif)
 

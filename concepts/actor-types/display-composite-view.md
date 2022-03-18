@@ -4,6 +4,7 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
+{% include links_actor.md apiClass="Actor.Display.CompositeView" %}
 
 # Vue de composite
 
@@ -12,8 +13,6 @@ Cet acteur permet d'afficher un composite de manière dynamique.
 La propriété *Composite* permet de choisir parmi les composites définis dans le projet celui qu'on désire afficher.
 
 Le composite en question est affiché avec ses propriétés par défaut.
-
-[&#x1F4BB; Actor.Display.CompositeView]({{ site.baseurl }}/script-api/Actor.Display.CompositeView.html){:target="_blank"}
 
 > **Astuce**<br>
 > Si vous désirez passer des informations au composite, il faut utiliser le [ruissellement de contexte de donnée](../context.md).

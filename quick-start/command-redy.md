@@ -9,7 +9,7 @@ nav_order: 7
 
 # Commander le REDY
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...
 
 # Pour aller plus loin
 

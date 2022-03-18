@@ -4,14 +4,16 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include table_of_content.html %}
+{% include links_actor.md apiClass="Actor.Input.ButtonList" %}
+
+# Liste de bouton
 
 Liste de boutons pour faire un choix simple. La liste est construite dynamiquement à partir d'une liste d'[options](#options).
 
-[&#x1F4BB; Actor.Input.ButtonList]({{ site.baseurl }}/script-api/Actor.Input.ButtonList.html){:target="_blank"}
-
 **NOTE**
 Il n'est pas possible de sélectionner plusieurs boutons en même temps.
+
+{% include table_of_content.html %}
 
 # Propriétés spécifiques
 
@@ -26,9 +28,9 @@ Il n'est pas possible de sélectionner plusieurs boutons en même temps.
 # Informations
 
 ## Texte sélectionné
-> en cours de rédaction...
+> 🚧 en cours de rédaction...
 
 
 # Évènements spécifiques
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...

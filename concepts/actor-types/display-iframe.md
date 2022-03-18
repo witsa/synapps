@@ -4,13 +4,15 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include table_of_content.html %}
+{% include links_actor.md apiClass="Actor.Display.Iframe" %}
+
+# IFrame
 
 L'acteur Iframe permet d'intégrer une page web dans votre scène.
 
-[&#x1F4BB; Actor.Display.Iframe]({{ site.baseurl }}/script-api/Actor.Display.Iframe.html){:target="_blank"}
-
 La définition de l'URL est **jokerable**.
+
+{% include table_of_content.html %}
 
 # Propriétés spécifiques
 

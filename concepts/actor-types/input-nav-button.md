@@ -4,7 +4,11 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include table_of_content.html %}
+> 🚧 en cours de rédaction...
+
+{% include links_actor.md apiClass="Actor.Input.NavButton" %}
+
+# Bouton de Navigation
 
 L'acteur bouton de navigation permet, en plus de toutes les possibilités de l'[acteur bouton](./input-button.md), de naviguer entre les scènes ainsi que de modifier la scène affichée dans un [acteur écran](./display-screen.md).
 
@@ -12,8 +16,7 @@ Ses propriétés sont similaires aux propriétés de l'acteur bouton et la docum
 
 Ses propriétés supplémentaires sont listées ci-dessous.
 
-[&#x1F4BB; Actor.Input.NavButton]({{ site.baseurl }}/script-api/Actor.Input.NavButton.html){:target="_blank"}
-
+{% include table_of_content.html %}
 
 # Propriétés spécifiques
 
@@ -27,7 +30,7 @@ Ses propriétés supplémentaires sont listées ci-dessous.
 
 # Évènements spécifiques
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...
 
 # Variantes
 

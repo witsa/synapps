@@ -3,7 +3,7 @@ title: "Synapp"
 parent: Concepts
 ---
 
-> En cours de rédaction...
+> 🚧 en cours de rédaction...
 
 ![SynApps](../assets/under-progress.gif)
 
@@ -35,4 +35,4 @@ La synapp porte le `guid` du projet qui a servi à sa création et publication. 
 
 ## Définition d'une synapp au log d'un utilisateur
 
-> En cours de rédaction...
+> 🚧 en cours de rédaction...

@@ -4,11 +4,13 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include table_of_content.html %}
+{% include links_actor.md apiClass="Actor.Display.Image" %}
+
+# Image
 
 Un acteur qui permet d'afficher une image.
 
-[&#x1F4BB; Actor.Display.Image]({{ site.baseurl }}/script-api/Actor.Display.Image.html){:target="_blank"}
+{% include table_of_content.html %}
 
 # Propriétés spécifiques
 

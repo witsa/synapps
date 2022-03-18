@@ -9,7 +9,7 @@ nav_order: 6
 
 # Affichage de données REDY
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...
 
 
 # Prochaine étape :

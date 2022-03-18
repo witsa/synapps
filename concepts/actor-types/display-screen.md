@@ -4,11 +4,15 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include table_of_content.html %}
+> 🚧 en cours de rédaction...
+
+{% include links_actor.md apiClass="Actor.Display.Screen" %}
+
+# Écran
 
 Acteur qui permet d'afficher une autre scène.
 
-[&#x1F4BB; Actor.Display.Screen]({{ site.baseurl }}/script-api/Actor.Display.Screen.html){:target="_blank"}
+{% include table_of_content.html %}
 
 # Propriétés spécifiques
 
@@ -61,4 +65,4 @@ La scène affichée par l'acteur écran est stockée dans la propriété `displa
 
 # évènements spécifiques
 
-> en cours de rédaction...
+> 🚧 en cours de rédaction...

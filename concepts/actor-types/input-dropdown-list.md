@@ -4,13 +4,13 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
+{% include links_actor.md apiClass="Actor.Input.DropdownList" %}
 
 # Liste de choix déroulante
 
 Acteur d'interaction qui permet d'afficher une liste de choix déroulante.
 
-[&#x1F4BB; Actor.Input.DropdownList]({{ site.baseurl }}/script-api/Actor.Input.DropdownList.html){:target="_blank"}
-
+{% include table_of_content.html %}
 
 # Propriétés
 
@@ -100,4 +100,4 @@ Le tableau des options est accessible dans le champ d'information *Liste des opt
 
 L'évènement `onSelected` est déclenché lorsque la sélection change.
 
-[&#x1F4BB; `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.DropdownList.html#event:onSelected){:target="_blank"}
+> [&#x1F4BB; `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.DropdownList.html#event:onSelected){:target="_blank"}

@@ -6,7 +6,7 @@ grand_parent: Concepts
 
 # Cycle de vie d'un acteur
 
-> En cours de rédaction...
+> 🚧 en cours de rédaction...
 
 ![SynApps](../../assets/under-progress.gif)
 
