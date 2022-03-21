@@ -8,7 +8,7 @@ grand_parent: Concepts
 
 # Boite de saisie
 
-Acteur Boite de saisie.
+L'acteur boite de saisie permet de créer des champs de saisies personnalisables.
 
 {% include table_of_content.html %}
 
