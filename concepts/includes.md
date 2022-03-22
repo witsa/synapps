@@ -1,5 +1,5 @@
 ---
-title: "Intégrations [TODO]"
+title: "Inclusions [TODO]"
 parent: Concepts
 ---
 

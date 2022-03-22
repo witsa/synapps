@@ -47,6 +47,6 @@ La rédaction du *lisez-moi* s'effectue dans un éditeur intégré dans le langu
 
 > 🚧 en cours de rédaction...
 
-## Intégrations
+## Inclusions
 
 > 🚧 en cours de rédaction...
