@@ -45,7 +45,7 @@ Par exemple :
 {% endraw %}
 Une additionnelle de clé `theColor` de type *couleur* remplacera le joker par sa valeur.
 
-> **Astuce**<br>
+> 💡 **ASTUCE**<br>
 > S'il est possible d'ajouter du style CSS avec une balise HTML `<style>`, il n'est par contre pas possible d'ajouter du code Javascript.
 > Pour cela, il faut utiliser les évènements de l'acteur.
 

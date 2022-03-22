@@ -42,7 +42,7 @@ Cette propriété permet d'activer / désactiver toute les alertes systèmes qui
 
 Cette propriété permet d'activer / désactiver les popups lors de la navigation dans le site web de l'iFrame.
 
-> **Note**<br>
+> 📌 **REMARQUE**<br>
 > Cela peut avoir pour effet de désactiver certains formulaires de connexion.
 
 ## Autoriser les formulaires
@@ -50,7 +50,7 @@ Cette propriété permet d'activer / désactiver les popups lors de la navigatio
 Cette propriété permet d'activer / désactiver les formulaires lors de la navigation dans la Synapp.
 
 
-> **Attention**<br>
+>⚠️ **ATTENTION**<br>
 > Si l'on désactive cette option, il ne sera plus possible d'utiliser les formulaires de connexion, les formulaires de contact, etc ...
 
 

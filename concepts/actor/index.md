@@ -102,7 +102,8 @@ Il est possible de changer cette clé dans l'inspecteur d'acteur.
  - Tous les caractères alphanumériques sont autorisés.
  - Seul le tiret `-` est autorisé parmi les caractères spéciaux.
 
-> **Conseil**<br>Il est recommander de profiter des clés d'acteur pour les qualifier et mieux comprendre le rôle de chaque acteur et la structure de votre scène ou composite.
+> ✔️ **CONSEIL**<br>
+Il est recommandé de profiter des clés d'acteur pour les qualifier et mieux comprendre le rôle de chaque acteur et la structure de votre scène ou composite.
 
 ## Les évènements et cycle de vie
 

@@ -14,7 +14,7 @@ Cette propriété permet de renseigner une URL d'un élément à afficher dans l
 
 Cet élément doit être une adresse qui référence une ressource WEB ou plus fréquemment une page WEB de n'importe quel site WEB accessible.
 
-> **ATTENTION**<br>
+> ⚠️ **ATTENTION**<br>
 > Il faut noter que certains sites WEB interdisent l'accès au travers d'une iFrame.
 
 **Jokerable**

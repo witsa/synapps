@@ -26,7 +26,7 @@ Voici des exemples pour chacun des exemples :
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/buttonOverwrite.PNG)
 
-**ATTENTION :**
+>⚠️ **ATTENTION**<br>
 La taille verticale de l'acteur est automatiquement adaptée à la taille du texte sauf si celle ci est fixée.
 
 **Tronqué**

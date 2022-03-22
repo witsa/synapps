@@ -23,5 +23,5 @@ Permet d'ajouter une *scrollbar* à l'acteur qui donne le moyen d'acceder au con
 
 Affiche une *scrollbar* uniquement s'il existe un dépassement.
 
-> **ATTENTION**<br>
+> ⚠️ **ATTENTION**<br>
 > Les options `Visible` et `Caché` ne sont pas compatibles entres elles.

@@ -17,5 +17,5 @@ Dans l'inspecteur, le champ de saisie agit également comme un slider, permettan
 **Pour vous aider :**
 La propriété définie la valeur de la fonction 'scale()' en CSS dont la documentation est disponible [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/transform-function/scale()).
 
-***ATTENTION***
+>⚠️ **ATTENTION**<br>
 Il n'est pas possible de renseigner deux valeurs comme montré dans la documentation CSS.
