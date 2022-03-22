@@ -1,6 +1,6 @@
 ---
 title: Alignement horizontal
-section: disposition
+section: disposition_flex
 propName: horizontalAlignment
 propPath: properties.horizontalAlignment
 scriptApiClass: Actor.BaseActorProperties

@@ -1,6 +1,6 @@
 ---
 title: Alignement vertical
-section: disposition
+section: disposition_flex
 propName: verticalAlignment
 propPath: properties.verticalAlignment
 scriptApiClass: Actor.BaseActorProperties
