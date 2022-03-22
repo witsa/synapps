@@ -1,13 +1,38 @@
 ---
-title: "Librairie de couleur [TODO]"
+title: "Librairie de couleur"
 parent: Concepts
 ---
 
-> 🚧 en cours de rédaction...
 
-![SynApps](../assets/under-progress.gif)
+{% include table_of_content.html %}
 
+# Librairie de couleur
 
-# Dans le Runtime
+La librairie de couleur permet de stocker des codes couleurs afin de pouvoir utiliser ces codes au sein d'une Synapp.
 
-# Dans Studio
+>Les variables sont stockés sous format JSON avec la syntaxe suivante pour chaque couleur :
+>
+>`"clé"` : `"valeur"`
+
+Chaque Synapp possède à l'initialisation une librairie de couleur déjà fournie et utilisable directement dans la synapp.
+
+## Création de donnée dans la librairie
+
+Afin de créer de nouvelles variables couleurs, il est nécessaire d'ajouter un couple `"Clé"` : `"Valeur"` au sein du JSON.
+
+La `Clé` correspond à l'identifiant qui va être attribué à la variable couleur.
+<br>
+La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code héxadécimal](https://htmlcolorcodes.com/fr/) soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value).
+
+>*Exemple de création d'une nouvelle variable couleur :*
+>
+>"dark-brown" : "#7B5000"
+
+## Dans Studio
+
+Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une Synapp :
+
+>- Accès grâce aux [liaisons](binding.md).
+>- Accès via les [scripts](scripts/index.md).
+>
+>[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#colors){:target="_blank"}
