@@ -32,7 +32,7 @@ Afin de créer de nouvelles variables couleurs, il est nécessaire d'ajouter un 
 
 La `Clé` correspond à l'identifiant qui va être attribué à la variable couleur.
 <br>
-La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code héxadécimal](https://htmlcolorcodes.com/fr/) soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value).
+La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code héxadécimal](https://htmlcolorcodes.com/fr/) soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) soit un code RGB de format RGB(0,0,0).
 
 >*Exemple de création d'une nouvelle variable couleur :*
 >
