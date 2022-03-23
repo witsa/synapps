@@ -13,6 +13,17 @@ La librairie de constante permet de stocker des variables stables afin de pouvoi
 >
 >`"clé"` : `"valeur"`
 
+## Accès à la librairie
+
+La librairie se trouve dans la section librairie à gauche de la fenêtre Synapps.
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
+
+A l'intérieur de cette section, vous pourrez trouver la liste des librairies disponibles.
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
+
+
 ## Création de donnée dans la librairie
 
 Afin de créer de nouvelles variables constantes, il est nécessaire d'ajouter un couple `"Clé"` : `"Valeur"` au sein du JSON.
@@ -26,7 +37,7 @@ La `Valeur` correspond à la valeur que prend la variable constante, cela doit �
 >"Aventurier" : "Casanova",<br>
 >"Date de naissance" : 1725
 
-## Dans Studio
+## Utilisation des constantes de la librairie dans une Synapp
 
 Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une Synapp :
 

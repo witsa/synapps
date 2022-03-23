@@ -16,6 +16,16 @@ La librairie de couleur permet de stocker des codes couleurs afin de pouvoir uti
 
 Chaque Synapp possède à l'initialisation une librairie de couleur déjà fournie et utilisable directement dans la synapp.
 
+## Accès à la librairie
+
+La librairie se trouve dans la section librairie à gauche de la fenêtre Synapps.
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
+
+A l'intérieur de cette section, vous pourrez trouver la liste des librairies disponibles.
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
+
 ## Création de donnée dans la librairie
 
 Afin de créer de nouvelles variables couleurs, il est nécessaire d'ajouter un couple `"Clé"` : `"Valeur"` au sein du JSON.
@@ -28,7 +38,7 @@ La `Valeur` correspond à la valeur que prend la variable couleur, cela doit êt
 >
 >"dark-brown" : "#7B5000"
 
-## Dans Studio
+## Utilisation des couleurs de la librairie dans une Synapp
 
 Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une Synapp :
 
