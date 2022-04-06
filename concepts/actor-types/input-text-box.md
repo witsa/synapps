@@ -14,7 +14,7 @@ L'acteur boite de saisie permet de créer des champs de saisies personnalisables
 
 # Propriétés spécifiques
 
-L'acteur boite de saisie possède le champ `Type de saisie` qui va dicter le comportement de cet acteur en fonction du type selectionné dont chaque choix sera détaillé plus bas.
+L'acteur boite de saisie possède le champ `Type de saisie` qui va dicter le comportement de cet acteur en fonction du type sélectionné dont chaque choix sera détaillé plus bas.
 
 Cependant, l'acteur possède 7 champs de saisies qui possèdent toujours le même comportement peut importe le `Type de saisie` :
 
@@ -27,7 +27,6 @@ Cependant, l'acteur possède 7 champs de saisies qui possèdent toujours le mêm
 Permet de limiter la taille de la chaine de caractère de `Valeur`.
 
 >📌 *REMARQUE*<br>
->
 >Le caractère vide 'espace' est comptabilisé comme tout autre caractère.
 
 **Mode de saisie**
@@ -46,7 +45,7 @@ Permet d'activer / désactiver la saisie de valeur dans le champ de saisie.
 
 Ce champ est inutile pour les `Type de saisie` suivants : Curseur / Couleur.
 
-**Etat de validation**
+**État de validation**
 
 Permet de donner une décoration prédéfinie au champ de saisie.
 
@@ -69,7 +68,7 @@ La propriété spécifique `Valeur` permet de définir la valeur actuelle de l'a
 *Texte si vide*
 
 La propriété spécifique `Texte si vide` permet de définir le texte à afficher lorsque le champ de saisie de l'acteur est vide.
-La valeur attendue est une chaine de caractère.
+La valeur attendue est une chaîne de caractère.
 
 *Options*
 
@@ -93,7 +92,7 @@ La valeur attendue est un nombre.
 
 La propriété spécifique `Texte si vide` permet de définir le texte à afficher lorsque le champ de saisie de l'acteur est vide.
 
-La valeur attendue est une chaine de caractère.
+La valeur attendue est une chaîne de caractère.
 
 *Valeur Min*
 
@@ -167,6 +166,6 @@ La propriété spécifique `Valeur` permet de définir la couleur de l'acteur.
 
 La valeur attendue est un code hexadécimal.
 
-Un outil permet de récupérer les codés héxadécimaux des couleur et est disponible [à cette adresse](https://htmlcolorcodes.com/fr/).
+Un outil permet de récupérer les codes hexadécimaux des couleur et est disponible [à cette adresse](https://htmlcolorcodes.com/fr/).
 
 Il est également possible de cliquer sur le bouton dans l'interface afin de choisir une couleur.
