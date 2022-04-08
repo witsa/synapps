@@ -8,10 +8,12 @@ order: 2
 ---
 Cette propriété permet de spécifier l'épaisseur de la bordure décorative de l'acteur.
 
-La valeur attendue est un nombre positif ou une chaïne de caractères ( retrouvables dans la documentation ci-dessous ).
-L'unité par défault est le pixel, cependant, cette unité peut être renseignée avec toute autre unité compatible.
+La valeur attendue est un nombre positif ou une chaine de caractères ( retrouvables dans la documentation ci-dessous ).
+L'unité par défaut est le pixel, cependant, cette unité peut être renseignée avec toute autre unité compatible.
 
 Il est possible de renseigner jusqu'à quatre valeurs dans le champ afin de définir différentes tailles en fonction du côté souhaité.
+
+Règle :  `<Haut> <Droit> <Bas> <Gauche>`
 
 Il est à noter que la taille de la bordure occupera de l'espace au sein de l'encadrement de l'acteur.
 

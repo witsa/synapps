@@ -13,9 +13,9 @@ Documentation de la solution Synapps
 
 ![SynApps](assets/under-progress.gif)
 
-> en cours de rédaction
+> 🚧 en cours de rédaction
 
-> Progression **25%**
+> Progression **45%**
 
 
 ------

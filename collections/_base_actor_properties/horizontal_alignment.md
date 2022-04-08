@@ -1,12 +1,12 @@
 ---
 title: Alignement horizontal
-section: disposition
+section: disposition_flex
 propName: horizontalAlignment
 propPath: properties.horizontalAlignment
 scriptApiClass: Actor.BaseActorProperties
 order: 2
 ---
-Cette propriété permet de régler l'alignement honrizontal de l'acteur dans l'acteur parent.
+Cette propriété permet de régler l'alignement horizontal de l'acteur dans l'acteur parent.
 
 Il existe quatre possibilités pour cette propriété :
  - Auto

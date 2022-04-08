@@ -2,6 +2,7 @@
 title: "Catégorie Texte"
 parent: Acteur
 grand_parent: Concepts
+nav_order: 2
 ---
 
 {% include table_of_content.html %}

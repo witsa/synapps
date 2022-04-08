@@ -2,6 +2,7 @@
 title: "Catégorie Taille"
 parent: Acteur
 grand_parent: Concepts
+nav_order: 4
 ---
 
 {% include table_of_content.html %}

@@ -1,9 +1,9 @@
 ---
-title: "Contexte de donnée"
+title: "Contexte de donnée [TODO]"
 parent: Concepts
 ---
 
-> En cours de rédaction...
+> 🚧 en cours de rédaction...
 
 ![SynApps](../assets/under-progress.gif)
 

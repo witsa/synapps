@@ -1,9 +1,9 @@
 ---
-title: "Modèle de projet"
+title: "Modèle de projet [TODO]"
 parent: Concepts
 ---
 
-> En cours de rédaction...
+> 🚧 en cours de rédaction...
 
 ![SynApps](../assets/under-progress.gif)
 

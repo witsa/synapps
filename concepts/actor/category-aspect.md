@@ -2,6 +2,7 @@
 title: "Catégorie Aspect"
 parent: Acteur
 grand_parent: Concepts
+nav_order: 1
 ---
 
 {% include table_of_content.html %}

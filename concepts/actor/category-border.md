@@ -2,6 +2,7 @@
 title: "Catégorie Bordure"
 parent: Acteur
 grand_parent: Concepts
+nav_order: 6
 ---
 
 {% include table_of_content.html %}

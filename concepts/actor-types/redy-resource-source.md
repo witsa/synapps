@@ -1,10 +1,10 @@
 ---
-title: "REDY | Fournisseur de ressource"
+title: "REDY | Fournisseur de ressource [TODO]"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
 
-> En cours de rédaction...
+> 🚧 en cours de rédaction...
 
 ![SynApps](../../assets/under-progress.gif)

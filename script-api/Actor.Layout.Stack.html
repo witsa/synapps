@@ -1929,7 +1929,7 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public inherited">
-			<h4 id="clearActors" class="function public inherited"><span class="name">clearActors</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
+			<h4 id="clearActors" class="function public inherited"><span class="signature-attribs">&lt;async> </span><span class="name">clearActors</span><span class="signature-params">()</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
@@ -2603,7 +2603,7 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public inherited">
-			<h4 id="removeActor" class="function public inherited"><span class="name">removeActor</span><span class="signature-params">( <span class="signature-param">actorKey</span>&nbsp;)</span><span class="signature-type"></span></h4>
+			<h4 id="removeActor" class="function public inherited"><span class="signature-attribs">&lt;async> </span><span class="name">removeActor</span><span class="signature-params">( <span class="signature-param">actorKey</span>&nbsp;)</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
@@ -3256,6 +3256,64 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title event public inherited">
+			<h4 id="event:onCssStyling" class="event public inherited"><span class="name">onCssStyling</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque l'acteur applique son style CSS.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Contexte de l'évènement.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.BaseActor.html#event:onCssStyling">Actor.BaseActor#onCssStyling</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
 			<h4 id="event:onDestroy" class="event public inherited"><span class="name">onDestroy</span></h4>
 		</dt>
 <dd class="symbol-details event public inherited">
@@ -3390,6 +3448,82 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title event public inherited">
+			<h4 id="event:onDidActorRemove" class="event public inherited"><span class="name">onDidActorRemove</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque un acteur est retiré.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>addedActor</code></td>
+													<td><span class="param-type"><a href="Actor.BaseActor.html">Actor.BaseActor</a></span></td>
+													<td class="last">
+															<p>Acteur retiré.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Layout.BaseLayout.html#event:onDidActorRemove">Actor.Layout.BaseLayout#onDidActorRemove</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
 			<h4 id="event:onDidActorsAdd" class="event public inherited"><span class="name">onDidActorsAdd</span></h4>
 		</dt>
 <dd class="symbol-details event public inherited">
@@ -3446,6 +3580,82 @@
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
 									<p class="form-control-static"><a href="Actor.Layout.BaseLayout.html#event:onDidActorsAdd">Actor.Layout.BaseLayout#onDidActorsAdd</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title event public inherited">
+			<h4 id="event:onDidActorsClear" class="event public inherited"><span class="name">onDidActorsClear</span></h4>
+		</dt>
+<dd class="symbol-details event public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Se produit lorsque la collection d'acteurs est vidée.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>context</code></td>
+							<td><span class="param-type"><a href="Event.BaseContext.html">Event.BaseContext</a></span></td>
+							<td class="last">
+									<p>Contexte de l'évènement.</p>
+										<table class="params table table-striped">
+											<thead>
+											<tr>
+													<th>Name</th>
+												<th>Type</th>
+												<th class="last">Description</th>
+											</tr>
+											</thead>
+											<tbody>
+												<tr>
+														<td><code>addedActors</code></td>
+													<td><span class="param-type">Array.&lt;<a href="Actor.BaseActor.html">Actor.BaseActor</a>></span></td>
+													<td class="last">
+															<p>Acteurs retirés.</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="Actor.Layout.BaseLayout.html#event:onDidActorsClear">Actor.Layout.BaseLayout#onDidActorsClear</a></p>
 								</div>
 							</div>
 			
@@ -5059,7 +5269,7 @@
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 20th Jan 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Apr 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

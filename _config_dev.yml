@@ -1,6 +1,7 @@
 aux_links:
-  "Doc Script API":
+  "⚡ Doc Script API":
     - "/script-api/"
   "WIT.fr":
     - "https://www.wit.fr"
 incremental: true
+ga_tracking: false
