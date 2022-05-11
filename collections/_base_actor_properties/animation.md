@@ -9,18 +9,25 @@ order: 8
 
 Cette propriété permet de définir des animations CSS sur l'acteur.
 
-Pour déclarer une animation sur un acteur, il est nécessaire en premier lieu de créer un `Acteur HTML`.
+Pour déclarer une animation sur un acteur, il est nécessaire en premier lieu que l'animation CSS utilisée soit définie.
+
+Pour cela, il est possible : 
+- d'utiliser une animation embarquée dans de CSS du runtime de Synapps ([voir outils CSS]())
+- de definir l'animation dans une inclusion CSS ([voir les inclusions]())
+- ou bien de créer un `Acteur HTML` qui contiendra la défintion de l'animation.
+
+Exemple avec un `Acteur HTML`.
 
 Le contenu de cet `Acteur HTML` doit être comme suit :
->\<style>
->
->@keyframes myAnimationName {
->
->   instructions de l'animation
->
->}
->
->\</style>
+```html
+<style>
+
+  @keyframes myAnimationName {
+    instructions de l'animation
+  }
+
+</style>
+```
 
 Cela permet ainsi de définir une animation qui a pour nom `myAnimationName` (à changer).
 
