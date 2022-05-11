@@ -7,34 +7,56 @@ parent: Concepts
 
 # Gestion des icônes dans Synapps Studio
 
-Les icônes de la synapp sont utiles pour personnaliser votre application.
+Les icônes de la synapp permettent de personnaliser, de caractériser votre application.
+
+Ce sont des images carrées, de type `png`. Ils sont de différentes tailles pour correspondre aux attentes du navigateur et appareil mobile. Ils sont 11 au totale.
+
+Par défaut, les icônes de votre synapp sont le logo de Synapps.
+
+## Logo de la synapp
+
+L'icône incontournable est celle qui va servir de logo à la synapp. C'est elle qui est affichée en *splash screen* c'est à dire au démarrage de la synapp, pendant son chargement. c'est aussi lui qui la représente lorsqu'on affiche une liste de synapp.
+
+La taille de cette icône est `255x255`.
+
+## Icônes pour le navigateur
+
+Les icônes de tailles `16x16` et `32x32` sont utilisées par les navigateurs pour illustrer les favoris et les onglets.
+
+## Autres icônes
+
+Tous les autres icônes sont utilisées par les mobiles lorsque la synapp est installée dessus en *progressive web app* (PWA). Voir la procédure([TODO]).
+
+
+## Poids des icônes
+
+Dans l'absolu, il vaut mieux que les icônes soient légères : quelques `ko` ou dizaines de `ko`. C'est surtout valable pour les 3 principales icônes. Les autres ne seront chargées qu'une seule fois.
 
 ## Accès aux icônes
 
-Les icônes se situent dans la sous section "icônes" de la section "Dossier".
-Lors de la création d'un projet, une collection de 11 icônes est directement disponible à l'utilisation.
+Les icônes se situent dans la sous section "icônes" de la section "Projet".
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconsAccess.PNG)
 
 ## Barre d'outil des icônes
 
->La barre d'outil des icônes est disponible tout en haut de la fenêtre de gestion des icônes.
->
->![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconsToolBar.PNG)
+La barre d'outil des icônes est visible tout en haut de la fenêtre de gestion des icônes.
 
->L'icône de rafraichissement sert à actualiser les icônes qui auraient pû être changer dans le dossier des icônes.
->
->![SynApps]( {{ site.baseurl }}/assets/concepts/icons/refresh.PNG)
+![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconsToolBar.PNG)
 
->L'icônes de suppression permet de réintialiser toutes les icônes à celles de base fournies par Synapps.
->
->![SynApps]( {{ site.baseurl }}/assets/concepts/icons/deleteAll.PNG)
+L'icône de rafraîchissement sert à actualiser les icônes qui auraient pû être changer dans le dossier des icônes.
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/icons/refresh.PNG)
+
+L'icônes de suppression permet de réinitialiser toutes les icônes à celles de base fournies par Synapps.
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/icons/deleteAll.PNG)
 
 Enfin, le dernier bouton permet d'ouvrir directement le dossier ou se situent les icônes.
 
 ## Modification / Réinitialisation / Génération des icônes
 
-L'interface d'une icône se présente de la manière suivante :
+L'interface d'une icône se présente ainsi :
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/icon.PNG)
 
