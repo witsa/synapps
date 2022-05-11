@@ -26,16 +26,24 @@ A l'intérieur de cette section, vous pourrez trouver la liste des librairies di
 
 ## Création de donnée dans la librairie
 
-Afin de créer de nouvelles variables constantes, il est nécessaire d'ajouter un couple `"Clé"` : `"Valeur"` au sein du JSON.
+Afin de créer de nouvelles variables constante il faut cliquer sur le bouton d'ajout situé en bas à gauche de la fenêtre.
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/addConstant.PNG)
+
+Une fenêtre s'ouvre alors et permet de saisir la `clé` et la `valeur` de la constante.
 
 La `Clé` correspond à l'identifiant qui va être attribué à la variable constante.
 <br>
 La `Valeur` correspond à la valeur que prend la variable constante, cela doit être soit une chaine de caractère soit un nombre SANS OPERATEUR ( +, -, *, /, etc ..).
 
->*Exemples de création de nouvelles variables constantes :*
->
->"Aventurier" : "Casanova",<br>
->"Date de naissance" : 1725
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/newConstant.PNG)
+
+## Modification de donnée dans la librairie
+
+Pour modifier une donnée dans la libraire de constante, il faut cliquer directement sur la variable que l'on souhaite modifier.
+
+L'interface de modification s'ouvre alors, permettant de saisir une nouvelle `clé` ainsi qu'une nouvelle `valeur`.
+
 
 ## Utilisation des constantes de la librairie dans une Synapp
 
