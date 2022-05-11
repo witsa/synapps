@@ -63,6 +63,20 @@ Il y a pour l'instant que deux scènes de base : une scène vide et le modèle d
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/scene/new-scene.PNG)
 
+### Copier/Coller de scène
+
+Il est possible de copier dans votre presse papier une scène grâce au menu contextuel.
+
+Ainsi vous pouvez coller cette scène, toujours grâce au menu, n'importe où :
+- dans un dossier de votre projet, elle sera dupliquée
+- dans un autre projet
+- dans un mail pour la partager.
+- dans un fichier pour l'archiver
+- ou, comme ici, en exemple.
+
+> ⚠️ **ATTENTION**<br>
+> Vous copiez uniquement la scène, pas les éléments de librairie qu'elle utilise éventuellement.
+
 ## Ajouter un dossier
 
 De la même manière que les scènes, il est possible d'ajouter un nouveau dossier en affichant le menu du dossier dans lequel on veut l'ajouter.
