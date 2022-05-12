@@ -78,6 +78,8 @@ Voici un exemple de définition JSON de styles pour les empilements :
 
 Vous remarquerez la définition de `other-shadow` basé sur `shadow` qui hérite des définitions du second tout en redéfinissant `borderRadius` et `boxShadow`.
 
+> A moyen terme, un designer sera dédié aux styles.
+
 ### Utilisation dans le designer
 
 Dans chaque acteur, le champ **Style** permet de le changer pour un autre correspondant à son type.

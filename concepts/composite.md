@@ -17,7 +17,7 @@ parent: Concepts
 # Composites remarquables
 
 
-Dans ce qui suit, vous trouverez un ensemble de composites remarquables que vous pouvez librement copier/coller dans vos création.
+Dans ce qui suit, vous trouverez un ensemble de composites remarquables que vous pouvez librement copier/coller dans vos créations.
 
 ## Représentation Bruleur, Vanne, Pompe simple et double
 

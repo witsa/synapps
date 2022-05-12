@@ -7,16 +7,17 @@ parent: Concepts
 
 # Librairie d'images
 
-La librairie d'images permet de stocker des images dans le dossier `pictures` du projet en cours.<br>
-Le but de cette librairie est de rassembler toutes les images les plus volumineuses de la Synapp afin d'y avoir un accès plus rapide et donc d'optimiser les performances de la Synapp.
+La librairie d'images permet de référencer des fichiers images contenus dans le dossier `pictures` de votre projet.
+
+Le but de cette librairie est de rassembler toutes les images les plus volumineuses de la synapp afin d'y avoir un accès plus rapide et donc d'optimiser les performances de la synapp.
 
 ## Accès à la librairie
 
-La librairie se trouve dans la section librairie à gauche de la fenêtre Synapps.
+Les images se trouvent dans la section librairie à gauche de la fenêtre Studio.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
 
-A l'intérieur de cette section, vous pourrez trouver la liste des librairies disponibles.
+A l'intérieur de cette section, vous pourrez trouver la liste des images disponibles.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
 
@@ -43,7 +44,7 @@ Celle-ci devient disponible à l'ajout via l'aide :
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/helpAddPic.PNG)
 
-Toutefois, si l'image n'apparait pas, il est possible d'actualiser afin de détecter les éventuels ajouts dans le dossier `pictures`.
+Toutefois, si l'image n'apparaît pas, il est possible d'actualiser afin de détecter les éventuels ajouts dans le dossier `pictures`.
 
 >📌*Remarque*
 >
@@ -59,7 +60,7 @@ L'image peut être ajoutée manuellement de la façon suivante :
 >![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/addPicture2.PNG)
 
 >Une prévisualisation de l'image est disponible.<br>
->Il est également possible de changer la clé de l'image que l'on s'apprêtte à ajouter.<br>
+>Il est également possible de changer la clé de l'image que l'on s'apprête à ajouter.<br>
 >![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/addPicture3.PNG)<br>
 >Valider une fois les informations renseignés pour ajouter l'image à la librairie.
 
@@ -67,9 +68,9 @@ L'image peut être ajoutée manuellement de la façon suivante :
 
 
 
-## Utilisation des images de la librairie dans une Synapp
+## Utilisation des images de la librairie dans une synapp
 
-Il y a deux méthodes pour utiliser une donnée issue d'une librairie d'images au sein d'une Synapp :
+Il y a deux méthodes pour utiliser une donnée issue d'une librairie d'images au sein d'une synapp :
 
 >- Accès grâce aux [liaisons](binding.md).
 >- Accès via les [scripts](scripts/index.md).
