@@ -8,21 +8,17 @@ parent: Concepts
 
 # Librairie de couleur
 
-La librairie de couleur permet de stocker des codes couleurs afin de pouvoir utiliser ces codes au sein d'une Synapp.
+La librairie de couleur permet de stocker des codes couleurs afin de les utiliser au sein d'une synapp.
 
->Les variables sont stockés sous format JSON avec la syntaxe suivante pour chaque couleur :
->
->`"clé"` : `"valeur"`
-
-Chaque Synapp possède à l'initialisation une librairie de couleur déjà fournie et utilisable directement dans la synapp.
+Chaque projet démarre avec une librairie de couleur déjà fournie.
 
 ## Accès à la librairie
 
-La librairie se trouve dans la section librairie à gauche de la fenêtre Synapps.
+Les couleurs se trouvent dans la section librairie à gauche de la fenêtre Studio.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
 
-A l'intérieur de cette section, vous pourrez trouver la liste des librairies disponibles.
+A l'intérieur de cette section, vous pourrez trouver la liste des couleurs disponibles.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
 
@@ -36,7 +32,7 @@ Une fenêtre s'ouvre alors et permet de saisir la `clé` et la `valeur` de la co
 
 La `Clé` correspond à l'identifiant qui va être attribué à la variable couleur.
 <br>
-La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code héxadécimal](https://htmlcolorcodes.com/fr/) soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) soit un code RGB de format RGB(X,X,X).
+La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code hexadécimal](https://htmlcolorcodes.com/fr/) soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) soit un code RGB de format RGB(X,X,X).
 Une aide est également disponible directement lors de l'édition.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/newColor.PNG)
@@ -48,11 +44,18 @@ Pour modifier une donnée dans la libraire de couleur, il faut cliquer directeme
 L'interface de modification s'ouvre alors, permettant de saisir une nouvelle `clé` ainsi qu'une nouvelle `valeur`.
 
 
-## Utilisation des couleurs de la librairie dans une Synapp
+## Utilisation des couleurs de la librairie dans une synapp
 
-Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une Synapp :
+Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une synapp :
 
 >- Accès grâce aux [liaisons](binding.md).
 >- Accès via les [scripts](scripts/index.md).
 >
 >[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#colors){:target="_blank"}
+
+
+>Les variables sont stockés sous format JSON avec la syntaxe suivante pour chaque couleur :
+>
+>`"clé"` : `"valeur"`
+>
+> Le JSON est directement éditable depuis l'interface.
