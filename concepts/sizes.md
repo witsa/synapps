@@ -56,20 +56,20 @@ Cette unité est très pratique pour définir une taille de texte de référence
 Exemple:
 
 Imaginons que vous ayez l'arborescence suivante :
-- Acteur racine (Taille de texte : `25px`)
+- Acteur racine (Taille de texte : `20px`)
   - Acteur A
   - Acteur B (taille de texte : `2em`)
     - Acteur 1 (taille de texte : `0.5em`)
     - Acteur 2
-    - Acteur 3 (taille de texte : `2em`)
+    - Acteur 3 (taille de texte : `1.5em`)
 
 Cela va se traduire effectivement par les tailles suivantes :
-- Acteur racine (Taille de texte : `25px`)
+- Acteur racine (Taille de texte : `20px`)
   - Acteur A
-  - Acteur B (taille de texte *calculée* : `50px`)
-    - Acteur 1 (taille de texte *calculée* : `25px`)
+  - Acteur B (taille de texte *calculée* : `40px`)
+    - Acteur 1 (taille de texte *calculée* : `20px`)
     - Acteur 2
-    - Acteur 3 (taille de texte *calculée* : `100px`)
+    - Acteur 3 (taille de texte *calculée* : `60px`)
 
 Si vous changez la taille de l'acteur racine, automatiquement, les autres acteurs suivent sans changer leur réglage.
 
