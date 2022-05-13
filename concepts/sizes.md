@@ -3,6 +3,8 @@ title: "Tailles"
 parent: Concepts
 ---
 
+{% include table_of_content.html %}
+
 # Tailles
 
 Les propriétés de type tailles dans Synapps prennent comme valeur les tailles CSS. Ici, vous aurez un aperçu des différentes unités de grandeur et instructions utiles pour vos créations.
@@ -35,7 +37,7 @@ Le pixel est une unité fixe, c'est à dire que pour un appareil et une échelle
 > 💡 **ASTUCE**<br>
 > Toujours employer cette unité lors de montage d'acteurs qui se chevauchent comme les constructions de plan ou des dessins précis dans un acteur [Toile](./actor-types/layout-canvas.md). Ensuite, laisser faire un acteur [Boite à vue](./actor-types/layout-view-box.md) pour que l'ensemble s'adapte à n'importe quelle taille.
 
-Le pixel est défini comme étant le plus petit élément de l'écran suffisamment grand pour être visible.
+Le pixel est défini comme étant le plus petit élément de l'écran mais suffisamment grand pour être visible.
 
 ### Le centimètre `cm` et le pouce `in`
 
@@ -52,7 +54,7 @@ Il sont très pratiques pour définir des tailles *organique*. Par exemple, pour
 Ainsi, si votre acteur a une taille de texte définie à `15px`, `1em` représente `15px`.
 Si le un acteur parent (de disposition, ou un composite, ...) a défini sa taille de texte à `30px`, `1em` représentera `30px` pour tous les acteurs enfants.
 
-Cette unité est très pratique pour définir une taille de texte de référence tout en haut de votre arborescence d'acteur et de définir des tailles relatives en dessous.
+Cette unité est très pratique pour définir une taille de texte de référence tout en haut de votre arborescence d'acteurs et de définir des tailles relatives en dessous.
 Exemple:
 
 Imaginons que vous ayez l'arborescence suivante :
@@ -85,7 +87,7 @@ L'unité `rem` est sensiblement la même que `em`. La seule différence est que 
 
 ### Le pourcentage `%`
 
-Cette unité est le pourcentage de la gradeur du contenant. Elle n'est toujours facile à utiliser. En effet, il est parfois difficile de savoir de quelle dimension du contenant la référence est prise : la largeur ou la hauteur. En générale, lorsqu'il s'agit d'une grandeur verticale, la référence est prise sur la hauteur du contenant. Lorsqu'il s'agit d'une grandeur horizontale, la référence est la largeur du contenant. Si c'est vrai pour la hauteur, la largeur, la taille de texte, ce n'est pas vrai pour les marges intérieures et extérieures.
+Cette unité est le pourcentage de la gradeur du contenant. Elle n'est pas toujours facile à utiliser. En effet, il est parfois difficile de savoir de quelle dimension du contenant la référence est prise : la largeur ou la hauteur. En générale, lorsqu'il s'agit d'une grandeur verticale, la référence est prise sur la hauteur du contenant. Lorsqu'il s'agit d'une grandeur horizontale, la référence est la largeur du contenant. Si c'est vrai pour la hauteur, la largeur, la taille de texte, ce n'est pas vrai pour les marges intérieures et extérieures.
 
 ### Le `vh` et le `vw`
 
@@ -107,3 +109,18 @@ Ainsi, vous pouvez définir des tailles de texte en `vmin` afin de vous assurez 
 
 
 ![SynApps](../assets/concepts/sizes/sample-vmin.gif)
+
+## Instructions
+
+Les propriétés de type *tailles* prennent aussi comme valeur des instructions. Elles ont des conséquences très variables en fonctions des cas.
+
+- chaîne vide : en général, c'est une valeur par défaut qui neutralise la propriété.
+- `auto` : indique que le comportement doit être automatique. C'est la valeur neutre de la hauteur minimum par exemple.
+- `none` : indique que le comportement ne doit pas tenir compte de cette dimension. C'est la valeur par défaut de la hauteur maximum par exemple.
+- `inherit` : indique que la taille doit être héritée de l'ascendance de l'acteur.
+
+Les instructions suivantes ne sont pas reconnu encore par Studio mais sont fonctionnelles dans une synapp sur les propriétés *Hauteur* et *Largeur*:
+
+- `fit-content` : indique que l'acteur doit s'ajuster à son contenu.
+- `min-content` : indique que l'acteur doit s'ajuster à son plus petit élément.
+- `max-content` : indique que l'acteur doit s'ajuster à son plus grand élément.
