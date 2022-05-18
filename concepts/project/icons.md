@@ -1,6 +1,8 @@
 ---
 title: "Icônes"
-parent: Concepts
+parent: "Projet"
+grand_parent: Concepts
+nav_order: 7
 ---
 
 {% include table_of_content.html %}

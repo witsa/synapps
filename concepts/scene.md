@@ -1,6 +1,7 @@
 ---
 title: "Scène"
 parent: Concepts
+nav_order: 3
 ---
 {% include table_of_content.html %}
 

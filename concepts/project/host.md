@@ -1,6 +1,8 @@
 ---
 title: "Hôte"
-parent: Concepts
+parent: "Projet"
+grand_parent: Concepts
+nav_order: 6
 ---
 
 # Dans le Runtime
@@ -15,7 +17,7 @@ Cela pourra être :
 
 L'objet hôte est accessible par liaison et par script. Il est porté par le magasin de données de la synapp.
 
-Il contient la [session](./session.md) et permet sa gestion, par script.
+Il contient la [session](../session.md) et permet sa gestion, par script.
 
 > L'hôte est un objet essentiel à l'exécution d'une synapp.
 
@@ -23,7 +25,7 @@ Il contient la [session](./session.md) et permet sa gestion, par script.
 
 Dans un projet, les hôtes sont gérés dans la section *Projet/Hôtes*.
 
-![SynApps](../assets/hosts.png)
+![SynApps](../../assets/hosts.png)
 
 Il est possible de définir plusieurs hôtes dans un même projet mais un seul sera actif en même temps et servira à la visualisation dans le designer ou à l'exécution dans le navigateur.
 
@@ -31,7 +33,7 @@ Aussi, en basculant de l'un à l'autre, il sera possible de visualiser une synap
 
 C'est dans cet onglet qu'il est possible publier la synapp dans un hôte.
 
-![SynApps](../assets/concepts/host-01.png)
+![SynApps](../../assets/concepts/host-01.png)
 
 ## Création d'un hôte
 
@@ -44,3 +46,5 @@ Les informations d'un hôte sont récupérées dès la première connection. Ell
 ## Publication
 
 > **Attention** N'oubliez pas qu'un profil d'*installateur* au minimum et l'*adds Intravision* sont requis pour pouvoir publier (ou gérer) un synapp sur un *REDY*.
+
+> TODO

@@ -23,6 +23,7 @@ nav_order: 5
 - Utilisation des jokers pour concaténer du texte
 - Personnaliser les couleurs de l'acteur détail de reflet
 - Faire clignoter le contour d'un acteur
+- Définition d'une synapp à la connexion d'un utilisateur
 - Scripts :
   - se déconnecter
   - ajouter/supprimer des acteurs
