@@ -8,6 +8,5 @@ has_children: true
 
 ![SynApps](../../assets/under-progress.gif)
 
-Voir la [documentation des scripts](/synapps/script-api/){:target="_blank"}
 
-{% include table_of_content.html %}
+Voir la [documentation des scripts](/synapps/script-api/){:target="_blank"}

@@ -1,6 +1,7 @@
 ---
 title: "Magasin de donnée [TODO]"
-parent: Concepts
+parent: Scripts
+grand_parent: Concepts
 ---
 
 > 🚧 en cours de rédaction...
