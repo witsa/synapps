@@ -8,6 +8,4 @@ parent: Concepts
 ![SynApps](../assets/under-progress.gif)
 
 
-# Dans le Runtime
-
-# Dans Studio
+> TODO
