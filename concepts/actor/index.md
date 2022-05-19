@@ -91,7 +91,7 @@ Chaque propriété déclenche un évènement de modification lorsque sa valeur c
 
 Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur.
 - Voir la partie dédiées aux [Scripts](../scripts/)
-- Voir la [documentation des scripts](/synapps/script-api/){:target="_blank"}
+- Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="_blank"}
 
 ## Clé d'acteur
 
