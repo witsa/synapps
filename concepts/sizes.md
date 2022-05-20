@@ -87,7 +87,7 @@ L'unité `rem` est sensiblement la même que `em`. La seule différence est que 
 
 ### Le pourcentage `%`
 
-Cette unité est le pourcentage de la gradeur du contenant. Elle n'est pas toujours facile à utiliser. En effet, il est parfois difficile de savoir de quelle dimension du contenant la référence est prise : la largeur ou la hauteur. En générale, lorsqu'il s'agit d'une grandeur verticale, la référence est prise sur la hauteur du contenant. Lorsqu'il s'agit d'une grandeur horizontale, la référence est la largeur du contenant. Si c'est vrai pour la hauteur, la largeur, la taille de texte, ce n'est pas vrai pour les marges intérieures et extérieures.
+Cette unité est le pourcentage de la grandeur du contenant. Elle n'est pas toujours facile à utiliser. En effet, il est parfois difficile de savoir de quelle dimension du contenant la référence est prise : la largeur ou la hauteur. En générale, lorsqu'il s'agit d'une grandeur verticale, la référence est prise sur la hauteur du contenant. Lorsqu'il s'agit d'une grandeur horizontale, la référence est la largeur du contenant. Si c'est vrai pour la hauteur, la largeur, la taille de texte, ce n'est pas vrai pour les marges intérieures et extérieures.
 
 ### Le `vh` et le `vw`
 
