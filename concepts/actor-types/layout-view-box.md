@@ -16,9 +16,9 @@ Acteur qui permet de disposer un acteur enfant en l'adaptant à sa taille.
 
 ## Type de vue
 
-La boite à vue va disposer son acteur enfant suivant deux possibilités suivant la regle donnée par la propriété *Type de vue* :
+La boite à vue va disposer son acteur enfant suivant la règle donnée par la propriété *Type de vue* :
 
-- **Visible** : la boite à vue va adapter la taille de son acteur enfant pour qu'il soit entièrement visible dans la boite à vue.
+- **Visible** *(par défaut)* : la boite à vue va adapter la taille de son acteur enfant pour qu'il soit entièrement visible dans la boite à vue.
 - **Rempli** : la boite à vue va adapter la taille de son acteur enfant pour qu'il la remplisse entièrement.
 
 Dans l'exemple ci-dessous, la boite à vue présente un acteur image bien plus grand qu'elle.
@@ -51,3 +51,8 @@ Par exemple, vous pouvez construire tout une superposition d'un plan avec des é
 > Ne définissez pas des tailles avec des [unites](../sizes.md) relatives dans les acteurs qui sont à l'intérieure d'une boite à vue. En effet, le résultat sera difficilement prévisible.
 >
 > **Utiliser toujours des unités fixes : `px`, `cm` et `in`.**
+
+
+# Événements
+
+{% include events_layout.md %}
