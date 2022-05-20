@@ -28,3 +28,7 @@ La valeur par défaut est **Caché**
 
 > ✔️ **CONSEIL**<br>
 > Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
+
+# Événements
+
+{% include events_layout.md %}

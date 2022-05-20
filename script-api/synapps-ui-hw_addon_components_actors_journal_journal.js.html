@@ -14,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":false,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -254,22 +254,19 @@ import moment from 'moment';
 import BaseRequestList from 'synapps-ui/components/actors/base-request-list';
 import prototypeSetup from 'synapps-ui-hw/components/actors/journal/journal-prototype-setup';
 import logger from 'logger';
+import { BehaviourIcons, BehaviourTexts } from 'synapps-ui-hw/services/data-stores/models/enums/journal-behaviour';
 
-const TYPE_ICONS = {
-  appearance: 'icon-arrow-up',
-  disappearance: 'icon-arrow-down	',
-  system: 'icon-wrench',
-  unknown: 'icon-warning-sign',
-  oneshot: 'icon-cameraflash',
-};
+//onst BEHAVIOUR = JournalBehaviour;
 
-const TYPE_TEXTS = {
+//const TYPE_ICONS = Object.keys(BEHAVIOUR);
+
+/* const TYPE_TEXTS = {
   appearance: loc('_event_log_type_a'),
   disappearance: loc('_event_log_type_d'),
   system: loc('_event_log_type_s'),
   unknown: loc('_event_log_type_u'),
   oneshot: loc('_event_log_type_o'),
-};
+}; */
 
 const COLUMN_TEMPLATES = {
 
@@ -300,6 +297,12 @@ const COLUMN_TEMPLATES = {
   duration: {
     key: 'duration',
     name: loc('_duration'),
+    width: 'min-content',
+  },
+
+  mainResource: {
+    key: 'mainResource',
+    name: loc('_resource_name'),
     width: 'min-content',
   },
 
@@ -381,9 +384,6 @@ const AUTO_REFRESH_TRIGGER_FIELDS = [
 
 export default class Journal extends BaseRequestList {
 
-  @readOnly('rows')
-  events;
-
   // Need to remove occurrences column when actor property mode is not news
   // EV? some duplicated code from BaseRequestList: how to avoid this ?
   @computed('properties.{columns,prototypeSetup.columns.options,mode}')
@@ -407,8 +407,9 @@ export default class Journal extends BaseRequestList {
   @service('synapps-ui-hw/highway-store')
   highwayStore;
 
-  TYPE_ICONS = TYPE_ICONS;
-  TYPE_TEXTS = TYPE_TEXTS;
+  //BEHAVIOUR = BEHAVIOUR;
+  TYPE_ICONS = BehaviourIcons;
+  TYPE_TEXTS = BehaviourTexts;
   COLUMN_TEMPLATES = COLUMN_TEMPLATES;
   REQUEST_TRIGGER_FIELDS = REQUEST_TRIGGER_FIELDS;
   AUTO_REFRESH_TRIGGER_FIELDS = AUTO_REFRESH_TRIGGER_FIELDS;
@@ -446,17 +447,8 @@ export default class Journal extends BaseRequestList {
     return this.properties.dateTo ? moment(this.properties.dateTo) : null;
   }
 
-  // @computed('properties.groups')
-  // get groups() {
-  //   if (isEmpty(this.properties.groups)) {
-  //     return null;
-  //   }
-
-  //   return JSON.parse(this.properties.groups);
-  // }
-
   @readOnly('rows')
-  events;
+  journalEvents;
 
   _canAutoRefreshFx() {
     return super._canAutoRefreshFx()
@@ -509,7 +501,13 @@ export default class Journal extends BaseRequestList {
     }
 
     if (this.properties.infras) {
-      filters.infraIds = JSON.parse(this.properties.infras);
+      var infraIds = JSON.parse(this.properties.infras);
+      var index = infraIds.indexOf(null);
+      if (index > -1) {
+        infraIds[index] = 0;
+      }
+
+      filters.infraIds = infraIds;
       filters.includeInfraChildren = this.properties.includeInfraChildren;
     }
 
@@ -566,8 +564,8 @@ export default class Journal extends BaseRequestList {
     })
 
     // ensure direct references are loaded
-    if (!isNone(references.smartlocalunit)) {
-      await this.highwayStore.getManySmartLocalUnits(references.smartlocalunit);
+    if (!isNone(references.smartLocalUnit)) {
+      await this.highwayStore.getManySmartLocalUnits(references.smartLocalUnit);
     }
 
     var reflects = isNone(references.reflect) ? [] : await this.highwayStore.getManyReflects(references.reflect);
@@ -584,6 +582,25 @@ export default class Journal extends BaseRequestList {
     }
   }
 
+  async startAck(event) {
+    this._isAcking = true;
+    this._ackComment = event.ackComment;
+    this._stopAutoRefresh();
+    this.runEvent('onStartAcking', { event });
+  }
+
+  async ack(eventId, comment) {
+    this._isAcking = false;
+    var event = await this.highwayStore.ackJournal(eventId, comment);
+    this._startOrStopRefresh();
+    this.runEvent('onEndAcking', { event });
+  }
+
+  async cancelAck() {
+    this._isAcking = false;
+    this._startOrStopRefresh();
+  }
+
   willDestroy() {
     if (this.isDestroyed) return;
     this._selectedEvent = null;
@@ -591,11 +608,15 @@ export default class Journal extends BaseRequestList {
   }
 
   @action
-  async activeRow(row, column) {
-    if (this._isAcking) return;
-    this.selectEvent(row);
+  async activeRow(event, column) {
+    this.selectEvent(event);
     if (column.key === 'ack') {
-      await this._startAcking(row);
+      if (this._isAcking) {
+        await this.cancelAck();
+      }
+      else {
+        await this.startAck(event);
+      }
     }
   }
 
@@ -605,25 +626,15 @@ export default class Journal extends BaseRequestList {
   }
 
   @action
-  async _startAcking(event) {
-    this._isAcking = true;
-    this._ackComment = event.ackComment;
-    this._stopAutoRefresh();
+  async _ack(event, mouseEvent) {
+    mouseEvent.stopPropagation();
+    await this.ack(event.id, this._ackComment);
   }
 
   @action
-  async ack(event, mouseEvent) {
+  async _cancelAck(mouseEvent) {
     mouseEvent.stopPropagation();
-    await this.highwayStore.ackJournal(event.id, this._ackComment);
-    this._isAcking = false;
-    this._startOrStopRefresh();
-  }
-
-  @action
-  cancelAck(mouseEvent) {
-    mouseEvent.stopPropagation();
-    this._isAcking = false;
-    this._startOrStopRefresh();
+    await this.cancelAck();
   }
 }
 
@@ -639,7 +650,7 @@ Journal.registerInDefinitions({
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Apr 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -14,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":false,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -253,7 +253,8 @@ import HighwayReflectSerializer from 'synapps-ui-hw/services/data-stores/models/
 import HighwayObjectsRegister from 'synapps-ui-hw/services/data-stores/registers/highway-objects';
 import { CannotWriteError } from 'synapps-ui/errors';
 import authenticatedRequest from 'synapps-ui/services/data-stores/authenticated-request';
-import { ReflectModes } from 'synapps-ui/services/data-stores/models/reflect-base';
+import ReflectModes from './models/enums/reflect-modes';
+import { ReflectItemTypes } from 'synapps-ui/services/data-stores/models/reflect-base';
 import { ReflectTypes } from 'synapps-ui/services/data-stores/models/reflect-imports';
 import hasOwnProperty from 'synapps-ui/tools/has-own-property';
 import wait from 'synapps-ui/tools/wait';
@@ -274,9 +275,6 @@ const ReflectClassIds = {};
 Object.entries(ReflectTypes).forEach(([type, { classId, Reflect }]) => {
   ReflectClassIds[classId] = { type, Reflect };
 });
-
-// EV? How can i split HighStore with a store per resource ?
-// Try with reflect-store but something is getting wrong with token ...
 
 /**
  * Magasin de données de Highway.
@@ -476,7 +474,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     var missingIds = this._smartlocalunitsRegister.findWithoutKeys(ids);
     if (!isEmpty(missingIds)) {
       const results = await this.getManyResources({ resourceType: 'smartlocalunit', ids: missingIds });
-      results.forEach(record => this._deserializeSmartLocalUnit(record, true))
+      results.forEach(record => this._deserializeSmartLocalUnit(record))
     }
     return this._smartlocalunitsRegister.findByKeys(ids);
   }
@@ -493,7 +491,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   async searchSmartLocalUnits(params = {}) {
     const filters = Object.assign({ pageSize: PAGE_SIZE }, params);
     const results = await this.searchResources({ resourceType: 'smartlocalunit', filters });
-    const smartlocalunits = results.data.map(record => this._deserializeSmartLocalUnit(record, false))
+    const smartlocalunits = results.data.map(record => this._deserializeSmartLocalUnit(record))
     return {
       count: results.count,
       smartlocalunits
@@ -898,6 +896,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 
     for (const record of [...results]) {
       if (this._reflectsModeRegister.hasRecord({ record })) continue;
+
       this._reflectsModeRegister.record({ record });
     }
 
@@ -944,13 +943,69 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     return this._deserializeJournal(record);
   }
 
+  /**
+   * Rechercher les alarmes aggrégées par affaire
+   * Remarque: la recherche est restreinte aux scopes de l'utilisateur
+   * @member HW.Synapps.HighwayStoreService#getSmartLocalUnit
+   * @param {string} type type de ressource aggrégé: smartlocalunit or reflect only else response is an empty object
+   * @returns {Promise&lt;{object}>} ULI
+   * @async
+   */
+  @authenticatedRequest
+  async getAlarms(type) {
+    const alarms = {};
+    switch (type) {
+      case 'reflect':
+      case 'smartlocalunit':
+      case 'infra':
+        return await this._request(`wac/${this.host.wac}/${type}/alarm`);
+      /*    if (!isNone(data)) {
+           Object.keys(data).forEach(a => {
+             const val = Criticity[a];
+             alarms[val] = data[a];
+           })
+         } */
+    }
+
+    return alarms;
+  }
+
+  /**
+   * Rechercher les alarmes aggrégées par type de ressources
+   * Remarque: la recherche est restreinte aux scopes de l'utilisateur
+   * @member HW.Synapps.HighwayStoreService#getAlarmsGroup
+   * @param {string} type type de ressource aggrégé: smartlocalunit or reflect only else response is an empty object
+   * @returns {Promise&lt;{object}>} Alarms
+   * @async
+   */
+  @authenticatedRequest
+  async getAlarmsGroup(type, params = {}) {
+    const alarmsGroup = {};
+    switch (type) {
+      case 'smartlocalunit':
+      case 'infra':
+        return await this.searchResources({ resourceType: type, path: 'alarm/group', filters: params });
+      /*  if (!isNone(results)) {
+         Object.entries(results).forEach(([resourceId, alarm]) => {
+           const alarms = {};
+           Object.entries(alarm).forEach(([criticity, acknew]) =>
+             alarms[Criticity[criticity]] = acknew);
+
+           alarmsGroup[resourceId] = alarms;
+         })
+       } */
+    }
+
+    return alarmsGroup;
+  }
+
   findResource(type, id) {
     switch (type) {
       case 'flux':
         return this.findFlux(id);
       case 'reflect':
         return this.findReflect(id);
-      case 'smartlocalunit':
+      case 'smartLocalUnit':
         return this.findSmartLocalUnit(id);
       default:
         return null;
@@ -1021,12 +1076,12 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
     return infra;
   }
 
-  _deserializeSmartLocalUnit(record, cache) {
+  _deserializeSmartLocalUnit(record) {
     var smartlocalunit = this._smartlocalunitsRegister.findByRecord({ record });
     if (isNone(smartlocalunit)) {
       smartlocalunit = new SmartLocalUnit();
       SmartLocalUnit.serializer.deserialize(smartlocalunit, record);
-      if (cache) this._smartlocalunitsRegister.record({ record: smartlocalunit });
+      this._smartlocalunitsRegister.record({ record: smartlocalunit });
     } else {
       SmartLocalUnit.serializer.deserialize(smartlocalunit, record);
     }
@@ -1090,6 +1145,10 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       const schemas = await this.searchResources({ resourceType: 'reflect/schema', filters: { ids: missingSchemasIds } });
       Object.entries(schemas).forEach(([id, schema]) => {
         schema.id = parseInt(id);
+        // API item type is now an enumerate as string
+        Object.values(schema.commands).forEach(c => c.type = ReflectItemTypes[c.type]);
+        Object.values(schema.parameters).forEach(c => c.type = ReflectItemTypes[c.type]);
+        Object.values(schema.states).forEach(c => c.type = ReflectItemTypes[c.type]);
         if (!this._reflectsSchemaRegister.findByKey(schema.id)) {
           this._reflectsSchemaRegister.record({ record: schema });
         }
@@ -1109,6 +1168,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
   }
 
   _deserializeReflect(reflectData, cache) {
+    // deserialize reflect
     let reflect = this._reflectsRegister.findByKey(reflectData.id);
     if (isNone(reflect)) {
       const { type, Reflect } = hasOwnProperty(ReflectClassIds, reflectData.classId) ? ReflectClassIds[reflectData.classId] : { type: 'unknown', Reflect: ReflectTypes.unknown.Reflect };
@@ -1117,19 +1177,16 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
       highwayReflectSerializer.deserialize(reflect, reflectData);
       Reflect.serializer.deserialize(reflect, reflectData);
       if (cache) this._reflectsRegister.record({ record: reflect });
+    } else {
+      highwayReflectSerializer.deserialize(reflect, reflectData);
+      //  Reflect.serializer.deserialize(reflect, reflectData);
     }
 
-    if (reflectData.lastState &amp;&amp; !isNone(reflectData.lastState.mode)) {
+    // deserialize last state
+    if (!isNone(reflectData.lastState?.mode)) {
+      // replace mode id with related enum
       const reflectMode = this.findReflectMode(reflectData.lastState.mode);
-      if (!isNone(reflectMode)) {
-        reflectData.lastState.mode = ReflectModes[reflectMode.mode];
-      } else {
-        reflectData.lastState.mode = 'unknown';
-      }
-    }
-
-    highwayReflectSerializer.deserializeValue(reflect, reflectData);
-    if (reflectData.lastState) {
+      reflectData.lastState.mode = ReflectModes[reflectMode.mode]?.name ?? ReflectModes.undefined.name;
       reflect.serializer.deserializeValue(reflect, reflectData.lastState);
     }
 
@@ -1174,7 +1231,7 @@ export default class HighwayStoreService extends BaseHighwayStoreService {
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Apr 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
