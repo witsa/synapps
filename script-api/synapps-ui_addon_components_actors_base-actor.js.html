@@ -14,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 			<link type="text/css" rel="stylesheet" href="css/script-api-custom.css">
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.TEMPLATE_OPTIONS = {"includeDate":false,"dateFormat":"Do MMM YYYY","systemName":"API des Scripts Synapps","systemSummary":"Documentation référence de l'API de script de la solution Synapps","systemLogo":"","systemColor":"","navMembers":[{"kind":"tutorial","title":"Guides","summary":"Tous les guides disponibles."},{"kind":"class","title":"Classes","summary":"Toutes les classes documentées."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Espaces de nom","summary":"Tous les espaces de nom documentés."}],"footer":"","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname, linenum, version, since","search":true,"favicon":null,"stylesheets":["css/script-api-custom.css"],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
 			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -1079,21 +1079,22 @@ class BaseActor extends BaseActorComponent {
 
     this._onStyling();
 
-     /**
-       * Se produit lorsque l'acteur applique son style CSS.
-       *
-       * @event Actor.BaseActor#onCssStyling
-       * @param {Event.BaseContext} context Contexte de l'évènement.
-       */
-      this.runEvent(Events.onCssStyling);
-      this._invokeOnAccessories('onActorCssStyling')
+    /**
+     * Se produit lorsque l'acteur applique son style CSS.
+     *
+     * @event Actor.BaseActor#onCssStyling
+     * @param {Event.BaseContext} context Contexte de l'évènement.
+     */
+    this.runEvent(Events.onCssStyling);
+    this._invokeOnAccessories('onActorCssStyling')
   }
 
   _onStyling() {
     //
   }
 
-  _doRender(withComputeLayout = true) {
+  _doRender(params = { withComputeLayout: true }) {
+    const { withComputeLayout } = params;
     if (this.isDestroying || this.isDestroyed) return;
     if (!this.isReady) {
       // logger.debug(`_doRender aborted on not ready actor [${this.key}]`);
@@ -1114,7 +1115,7 @@ class BaseActor extends BaseActorComponent {
 
     this._reRenderWatchdog++;
     if (withComputeLayout) {
-      this._doComputeLayout(!this._isFirstRender);
+      this._doComputeLayout({ withRunEvent: !this._isFirstRender });
     }
 
     this._onDidRender();
@@ -1148,8 +1149,8 @@ class BaseActor extends BaseActorComponent {
     }
   }
 
-  _doComputeLayout(withRunEvent = true) {
-
+  _doComputeLayout(params = { withRunEvent: true }) {
+    const { withRunEvent } = params;
     if (this.isDestroyed || this.isDestroying) return;
 
     // Doit être Fait deux fois : une première fois en remontant,
@@ -1234,7 +1235,7 @@ class BaseActor extends BaseActorComponent {
       return;
     }
 
-    this._doRender(false);
+    this._doRender({ withComputeLayout: false });
   }
 
   _doAfterPropertyChanged({ prototyped, modifier, name, propertyPath, newValue, oldValue, ...args }) {
@@ -1251,33 +1252,33 @@ class BaseActor extends BaseActorComponent {
         this._doRender();
         break;
 
-      case 'layout':
-        if (propertyPath.startsWith('additionals.')) {
-          this._willLayoutResize();
-          this._recomputeLayout();
-        } else {
-
-          this._willLayoutResize();
-          if (this.parent &amp;&amp; this.parent.type === 'layout/view-box') {
-            // certaines modification n'entraîne pas de resize. Donc, on le fait à la main.
-            if ([
-                'verticalAlignment',
-                'horizontalAlignment',
-                'marginTop',
-                'marginBottom',
-                'marginRight',
-                'marginLeft',
-                'paddingTop',
-                'paddingBottom',
-                'paddingRight',
-                'paddingLeft',
-                'borderWidth',
-              ].includes(name)) {
-              this._recomputeLayout();
-            }
+      case 'resize':
+        this._willLayoutResize();
+        if (this.parent &amp;&amp; this.parent.type === 'layout/view-box') {
+          // certaines modification n'entraîne pas de resize. Donc, on le fait à la main.
+          if ([
+              'verticalAlignment',
+              'horizontalAlignment',
+              'marginTop',
+              'marginBottom',
+              'marginRight',
+              'marginLeft',
+              'paddingTop',
+              'paddingBottom',
+              'paddingRight',
+              'paddingLeft',
+              'borderWidth',
+              'borderStyle',
+            ].includes(name)) {
+            this._recomputeLayout();
           }
         }
 
+        break;
+
+      case 'layout':
+        this._willLayoutResize();
+        this._recomputeLayout();
         break;
 
       default:
@@ -2174,7 +2175,7 @@ export default BaseActor;
  * @member Event.PropertyChangedContext#modifier
  * @readonly
  * @default 'other'
- * @type {'css'|'render'|'layout'|'other'}
+ * @type {'css'|'render'|'layout'|'resize'|'other'}
  */
 </code></pre>
 		</section>
@@ -2182,7 +2183,7 @@ export default BaseActor;
 		</div>
 	</div>
 	<footer>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on 8th Apr 2022 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
