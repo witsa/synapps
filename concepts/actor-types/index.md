@@ -2,6 +2,7 @@
 title: "Types d'acteur"
 parent: Concepts
 has_children: true
+nav_order: 5
 ---
 
 > 🚧 en cours de rédaction...

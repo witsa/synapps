@@ -12,7 +12,7 @@ parent: Concepts
 # Composite
 
 *A venir: explication du concept...*
-
+> TODO
 
 # Composites remarquables
 

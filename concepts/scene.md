@@ -1,6 +1,7 @@
 ---
 title: "Scène"
 parent: Concepts
+nav_order: 3
 ---
 {% include table_of_content.html %}
 
@@ -10,7 +11,7 @@ La scène est l'objet qui va définir chaque interface de votre synapp.
 # Scène de démarrage
 La synapp démarre en affichant une première scène, c'est la scène de démarrage. Elle se définie au niveau de la liste des scènes dans Studio.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/scene/scene-start.PNG)
+![SynApps]( {{ site.baseurl }}/assets/concepts/scene/scene-start.png)
 
 # Affichage de scène
 
@@ -52,7 +53,7 @@ Les [acteurs](./actor/index.md) sont les éléments qui vont définir l'interfac
 
 La liste des scène dans Studio est une arborescence de dossier dans lesquels sont rangé les scène du projet.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/scene/scene-start.PNG)
+![SynApps]( {{ site.baseurl }}/assets/concepts/scene/scene-start.png)
 
 La gestion des dossiers et scènes se réalise grace aux actions contenu dans le menu contextuel de chaque élément.
 
@@ -61,7 +62,7 @@ La gestion des dossiers et scènes se réalise grace aux actions contenu dans le
 Pour ajouter une scène, il faut réaliser un clic droit sur un dossier pour afficher le menu contextuelle et choisir dans les options d'ajout la scène de base à ajouter.
 Il y a pour l'instant que deux scènes de base : une scène vide et le modèle de scène par défaut.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/scene/new-scene.PNG)
+![SynApps]( {{ site.baseurl }}/assets/concepts/scene/new-scene.png)
 
 ### Copier/Coller de scène
 

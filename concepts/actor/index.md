@@ -2,6 +2,7 @@
 title: "Acteur"
 parent: Concepts
 has_children: true
+nav_order: 4
 ---
 
 > 🚧 en cours de rédaction...
@@ -44,9 +45,9 @@ L'inspecteur est la partie du *designer* qui permet de paramétrer, de programme
 
 Dans l'inspecteur, les propriétés sont rangées par catégorie :
 
-- **Spécifiques**
+- [**Spécifiques**](../actor-types/index.md)
 
-Les propriétés propres au type de l'acteur.
+Les propriétés propres au type de l'acteur. Pour les visiter, se rendre sur la page du [type d'acteur](../actor-types/index.md).
 
 - [**Aspect**](./category-aspect.md)
 
@@ -90,7 +91,7 @@ Chaque propriété déclenche un évènement de modification lorsque sa valeur c
 
 Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur.
 - Voir la partie dédiées aux [Scripts](../scripts/)
-- Voir la [documentation des scripts](/synapps/script-api/){:target="_blank"}
+- Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="_blank"}
 
 ## Clé d'acteur
 
@@ -134,9 +135,9 @@ Lorsqu'une valeur d'additionnelle change, comme toute les autres propriétés, e
 
 > 🚧 en cours de rédaction...
 
-
 ### Évènements de transformation
-> 🚧 en cours de rédaction...
+
+> voir [le cycle de vie d'un acteur](../scripts/actor-life-cycle.md)
 
 ## Le ruissellement de contexte
 > 🚧 en cours de rédaction...

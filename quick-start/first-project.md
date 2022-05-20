@@ -69,6 +69,9 @@ Choisissez un emplacement dans votre système de fichier qui va contenir votre p
 
 ![SynApps](../assets/quick-start/first-project/07.png)
 
+> ⚠️ **ATTENTION**<br>
+> N'utiliser pas de lecteur réseau pour accueillir votre projet. En effet, Studio ne fonctionne pas correctement pour l'instant avec ce type de lecteur.
+
 Rendez-vous dans le répertoire dans lequel celui du projet sera créé.
 
 ![SynApps](../assets/quick-start/first-project/08.png)
