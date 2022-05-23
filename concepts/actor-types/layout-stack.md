@@ -35,12 +35,11 @@ La valeur par défaut est **Caché**
 > ✔️ **CONSEIL**<br>
 > Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
 
+# Événements
+
+{% include events_layout.md %}
 
 # Usage
 
 L'empilement avec les règles de [disposition flexibles](../actor/category-disposition.md#catégorie-disposition-flexible) sont à la base de la construction d'interface qui peuvent s'adapter à n'importe quelle taille d'écran.
 Associées à la disposition par [Toile](./layout-canvas.md) et la [Boite à vue](./layout-view-box.md), ces acteurs permettent de construire n'importe quel type de gabarit.
-
-# Événements
-
-{% include events_layout.md %}

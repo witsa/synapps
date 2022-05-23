@@ -40,6 +40,9 @@ La valeur par défaut est **Caché**
 > ✔️ **CONSEIL**<br>
 > Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
 
+# Événements
+
+{% include events_layout.md %}
 
 # Usage
 
@@ -51,8 +54,3 @@ Par exemple, vous pouvez construire tout une superposition d'un plan avec des é
 > Ne définissez pas des tailles avec des [unites](../sizes.md) relatives dans les acteurs qui sont à l'intérieure d'une boite à vue. En effet, le résultat sera difficilement prévisible.
 >
 > **Utiliser toujours des unités fixes : `px`, `cm` et `in`.**
-
-
-# Événements
-
-{% include events_layout.md %}
