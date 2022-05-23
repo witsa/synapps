@@ -1,10 +1,12 @@
 ---
-title: "REDY | Fournisseur de ressource [TODO]"
+title: "REDY | Fournisseur de ressource"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
 
-> 🚧 en cours de rédaction...
+{% include links_actor.md apiClass="REDY.Actor.WosVariableSource" %}
 
-![SynApps](../../assets/under-progress.gif)
+# Fournisseur de resource
+
+Acteur [fournisseur de variable](./redy-wos-variable-source.md) mais bloqué pour cibler uniquement les *ressources* d'un REDY.
