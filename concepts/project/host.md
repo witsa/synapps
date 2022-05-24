@@ -45,6 +45,12 @@ Les informations d'un hôte sont récupérées dès la première connection. Ell
 
 ## Publication
 
-> **Attention** N'oubliez pas qu'un profil d'*installateur* au minimum et l'*adds Intravision* sont requis pour pouvoir publier (ou gérer) un synapp sur un *REDY*.
+⚠️ **ATTENTION**<br> N'oubliez pas qu'un profil d'*installateur* au minimum et l'*adds Intravision* sont requis pour pouvoir publier (ou gérer) un synapp sur un *REDY*.
 
-> TODO
+Choisissez un hôte. Connectez vous. Vous verrez les informations de l'hôte dans la colonne centrale. Aussi, dans la colonne de droite, vous verrez la partie dédiée à la gestion des synapps de l'hôte.
+
+Dans le haut se trouve la zone dédiée à la synapp correspondant au projet publiée dans le REDY. En dessous, vous pourrez afficher et gérer les autres synapp publiée dans le REDY.
+
+⚠️ **ATTENTION**<br> Chaque synapp est identifiée par le GUID du projet. Mais sur le REDY, c'est son *label* qui l'identifie. Donc faite attention à ne pas écraser une synapp déjà publiée.
+
+A chaque publication, un numéro de *build* est inscrit. En réalité, c'est la date à laquelle la synapp a été publiée.
