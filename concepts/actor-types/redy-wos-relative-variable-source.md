@@ -40,6 +40,27 @@ Cette propriété va contenir un *chemin relatif* vers la variable à récupére
 
 Le chemin de référence est une construction de tous les chemins en remontant dans les parents de l'acteur.
 
+Par exemple :
+
+- **Fournisseur 1** :
+  - Chemin : `easy.RESS.R00001`
+
+Ce fournisseur pointe sur la ressource `R00001`. Il réalisera les requêtes.
+
+- **Fournisseur relatif 1** :
+  - Parent : **Fournisseur 1**
+  - Chemin relatif : `Output`
+
+Ce fournisseur est relatif au premier. Il indique être intéressé par la variable enfant `Output` de ce qui est défini dans le fournisseur parent, ici, la ressource `R00001`. Le chemin en entier donne : `easy.RESS.R00001.Output`.
+
+- **Fournisseur relatif 2** :
+  - Parent : **Fournisseur relatif 1**
+  - champ : *Valeur*
+
+Finalement, ce fournisseur est relatif au *fournisseur relatif 1*. Il indique quant à lui être intéressé par le champ *Valeur* de ce qui résulte du fournisseur parent, ici, la variable `easy.RESS.R00001.Output`. Le chemin en entier donne encore : `easy.RESS.R00001.Output` mais c'est ça *valeur* qui sera inscrite dans la *donnée* de l'acteur.
+
+
+
 Comme pour les fournisseurs normaux, un explorateur de paramétrage de REDY aide à saisir ce sous chemin.
 
 ## Champ de Variable REDY
@@ -57,7 +78,9 @@ Cette propriété permet de renseigner comment le fournisseur principale doit al
 
 ## Écriture au changement?
 
-Cette propriété active/désactive l'enregistrement de la valeur d'une variable dans le REDY si la *donnée* est modifiée par liaison ou par script. Il bien entendu que le ce soit le *champ* ***Valeur*** qui soit inscrit dans la donnée.
+Cette propriété active/désactive l'enregistrement de la valeur d'une variable dans le REDY si la *donnée* est modifiée par liaison ou par script. Il faut bien entendu que ce soit le *champ* ***Valeur*** qui soit inscrit dans la donnée.
+
+Aussi, pour déclencher l'enregistrement de la donnée changée dans le REDY, il faudra appeler la méthode [⚡ `write()`]({{ site.baseurl }}/script-api/REDY.Actor.WosRelativeVariableSource.html#method:write){:target="_blank"} de l'acteur.
 
 # Événements
 
@@ -100,34 +123,43 @@ Utiliser les fournisseurs relatifs est une bonne manière de mutualiser les four
 
 Par exemple vous pouvez grouper la requête des sous variables d'une ressource :
 
-- fournisseur 1 : **pour accéder à une ressource**
+- **Fournisseur 1 :** *pour accéder à une ressource*
   - chemin : `easy.RESS.R00001`
 
-- fournisseur relatif 1 : **pour accéder à son état**
-  - parent : *fournisseur 1*
-  - champ : *Etat*
+- **Fournisseur relatif 1 :** *pour accéder à son état*
+  - parent : **Fournisseur 1**
+  - champ : *État*
 
-- fournisseur relatif 2 : **pour accéder à sa valeur brute**
-  - parent : *fournisseur relatif 1*
+  ▶️ Champ *État* de `easy.RESS.R00001`
+
+- **Fournisseur relatif 2 :** *pour accéder à sa valeur brute*
+  - parent : **Fournisseur relatif 1**
   - chemin relatif : `Output`
   - champ : *Valeur*
 
-- fournisseur relatif 2 : **pour accéder à son unité**
-  - parent : *fournisseur relatif 2*
+  ▶️ Champ *Valeur* de `easy.RESS.R00001.Output`
+
+
+- **Fournisseur relatif 2 :** *pour accéder à son unité*
+  - parent : **Fournisseur relatif 2**
   - chemin relatif : `Unit`
   - champ : *Valeur*
+
+  ▶️ Champ *Valeur* de `easy.RESS.R00001.Unit`
+
+Le *Fournisseur 1* réalise en une seule requête la récupération de toutes les variables désignées.
 
 ## Chemin dynamique
 Avec les fournisseurs relatifs, il est possible de construire un chemin cible dont les segments sont dynamiques :
 
-- fournisseur 1 :
+- **Fournisseur 1 :**
   - chemin : `easy.RESS`
 
-- fournisseur relatif 1 :
-  - parent : *fournisseur 1*
-  - chemin relatif : **le sous chemin que vous souhaitez, renseigné par liaison par exemple.**
+- **Fournisseur relatif 1 :**
+  - parent : **Fournisseur 1**
+  - chemin relatif : <span style="color: green;">*le sous chemin que vous souhaitez, renseigné par liaison par exemple.*</span>
 
-- fournisseur relatif 2 :
-  - parent : *fournisseur relatif 1*
+- **Fournisseur relatif 2 :**
+  - parent : **Fournisseur relatif 1**
   - chemin relatif : `Output`
   - champ : *Valeur*

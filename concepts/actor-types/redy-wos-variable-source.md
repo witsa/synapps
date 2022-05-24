@@ -14,7 +14,7 @@ Aussi, l'acteur permet de définir la manière avec laquelle la variable est ré
 
 La donnée récupérée est disponible pour les liaisons ou par script.
 
-L'acteur sert de fournisseur de base aux éventuels [fournisseurs de variable relative](./redy-wos-variable-relative-source.md) ou liaisons de type [fournisseur de variable](../binding.md#fournisseur-de-variable) qui pointeraient dessus.
+L'acteur sert de fournisseur de base aux éventuels [fournisseurs de variable relative](./redy-wos-relative-variable-source.md) ou liaisons de type [fournisseur de variable](../binding.md#fournisseur-de-variable) qui pointeraient dessus.
 
 {% include table_of_content.html %}
 
@@ -54,7 +54,7 @@ Cette propriété permet de définir le comportement de l'acteur à son arrivée
 
 - **Automatique** Si toutes les conditions sons réunis, l'acteur va récupérer automatiquement la variable et la placer elle ou le *champ* dans la *donnée*.
 - **Manuel** L'acteur attend qu'on change de *mode* ou qu'un script le demande pour récupérer la variable et la placer elle ou le *champ* dans la *donnée*.
-- **Relatif** L'acteur se comportera comme dans le mode automatique dès qu'il a des [fournisseurs de variable relative](./redy-wos-variable-relative-source.md) ou liaisons de type [fournisseur de variable](../binding.md#fournisseur-de-variable) qui pointent dessus.
+- **Relatif** L'acteur se comportera comme dans le mode automatique dès qu'il a des [fournisseurs de variable relative](./redy-wos-relative-variable-source.md) ou liaisons de type [fournisseur de variable](../binding.md#fournisseur-de-variable) qui pointent dessus.
 
 Dans tous les cas, ceci est complètement indépendant du mode de rafraîchissement de l'acteur.
 
