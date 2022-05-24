@@ -4,7 +4,7 @@ parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
-{% include links_actor.md apiClass="REDY.Actor.WosVariableRelativeSource" %}
+{% include links_actor.md apiClass="REDY.Actor.WosRelativeVariableSource" %}
 
 # Fournisseur de variable relative
 
@@ -65,13 +65,13 @@ Cette propriété active/désactive l'enregistrement de la valeur d'une variable
 
 L'évènement `onDidDataStore` est déclenché à chaque fois que le fournisseur parent a réaliser une requête et que la donnée cible est écrite dans l'information *Donnée*.
 
-> [⚡ `onDidDataStore`]({{ site.baseurl }}/script-api/REDY.Actor.WosVariableRelativeSource.html#event:onDidDataStore){:target="_blank"}
+> [⚡ `onDidDataStore`]({{ site.baseurl }}/script-api/REDY.Actor.WosRelativeVariableSource.html#event:onDidDataStore){:target="_blank"}
 
 ## `onWriteDone`
 
 L'évènement `onWriteDone` est déclenché à chaque fois que l'acteur a réaliser une écriture vers le REDY.
 
-> [⚡ `onWriteDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosVariableRelativeSource.html#event:onWriteDone){:target="_blank"}
+> [⚡ `onWriteDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosRelativeVariableSource.html#event:onWriteDone){:target="_blank"}
 
 # Informations
 
