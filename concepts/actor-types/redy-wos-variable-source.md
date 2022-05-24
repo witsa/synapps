@@ -88,6 +88,25 @@ L'évènement `onWriteDone` est déclenché à chaque fois que l'acteur a réali
 
 > [⚡ `onWriteDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosVariableSource.html#event:onWriteDone){:target="_blank"}
 
+# Informations
+
+## Donnée
+
+Vous trouverez dans ce champ la variable ou le champ de variable désigné par l'acteur.
+
+Une liaison avec l'écriture activée permet de modifier la valeur de la variable REDY si l'acteur la désigne.
+
+## Requête en cours ?
+
+Cette information permet de savoir si l'acteur est en train de réaliser une requête.
+
+> 💡 **ASTUCE**<br>
+Liez la visibilité d'une acteur sur cette information pour le visualiser lorsqu'il est en train de réaliser une requête.
+
+## Première requête réalisée ?
+
+Cette information sera vrai après avoir effectuer une première requête.
+
 # Usage
 
 Il est possible de créer des fournisseurs dans vos scènes ou composites. Vous pouvez également les créer de manière globale dans la sous-section [Projet / Fournisseurs de variable](../project/variable-source.md) pour en faire profiter toute votre synapp.
