@@ -32,6 +32,8 @@ Bien entendu, il sera tout a fait possible de choisir un autre fournisseur de va
 > 📌 **REMARQUE**<br>
 Quoi qu'il en soit, on trouvera un fournisseur normal en remontant dans l'ascendance des acteurs relatifs.
 
+Si vous fournissez par liaison ou par script un fournisseur dans le contexte de donnée de l'acteur et que la clé du parent reste vide, ce fournisseur sera utilisé comme parent. C'est très utile pour paramétrer un composite qui contient un fournisseur relatif mais pas de normal.
+
 ## Chemin relatif
 
 Cette propriété va contenir un *chemin relatif* vers la variable à récupérer. C'est un chemin au sens REDY mais par rapport à un autre chemin par ex : `R00001` ou même `R00001.Output`.
