@@ -63,12 +63,12 @@ Dans la partie *Style global*, vous avez la possibilité de définir la couleur 
 
 ## Hôtes
 
-Dans la sous-section des [hôtes](./host.md), vous pouvez définir les ULI sur lesquels vous pourrez vous connecter pour élaborer votre synapp.
+Dans la sous-section des [hôtes](./hosts.md), vous pouvez définir les ULI sur lesquels vous pourrez vous connecter pour élaborer votre synapp.
 C'est dans cette section aussi que vous pouvez publier votre synapp dans une ULI.
 
 ## Fournisseurs de données
 
-Dans cette sous-section, vous pouvez définir les [fournisseurs de données globaux](./data-sources.md) qui seront utilisés par votre synapp.
+Dans cette sous-section, vous pouvez définir les [fournisseurs de données globaux](./global-data-sources.md) qui seront utilisés par votre synapp.
 
 ## Icônes
 
@@ -76,7 +76,7 @@ Vous avez la possibilité de définir [icônes](./icons.md) de votre synapp dans
 
 ## Inclusions
 
-Dans la sous-section [inclusions](./inclusions.md), vous pouvez définir les sources `Javascript` et `CSS` qui seront incluses au chargement de votre synapp.
+Dans la sous-section [inclusions](./includes.md), vous pouvez définir les sources `Javascript` et `CSS` qui seront incluses au chargement de votre synapp.
 
 ## Lisez-moi
 
