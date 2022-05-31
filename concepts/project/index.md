@@ -63,12 +63,12 @@ Dans la partie *Style global*, vous avez la possibilité de définir la couleur 
 
 ## Hôtes
 
-Dans la sous-section des [hôtes](./host.md), vous pouvez définir les ULI sur lesquels vous pourrez vous connecter pour élaborer votre synapp.
+Dans la sous-section des [hôtes](./hosts.md), vous pouvez définir les ULI sur lesquels vous pourrez vous connecter pour élaborer votre synapp.
 C'est dans cette section aussi que vous pouvez publier votre synapp dans une ULI.
 
 ## Fournisseurs de données
 
-Dans cette sous-section, vous pouvez définir les [fournisseurs de données globaux](./data-sources.md) qui seront utilisés par votre synapp.
+Dans cette sous-section, vous pouvez définir les [fournisseurs de données globaux](./global-data-sources.md) qui seront utilisés par votre synapp.
 
 ## Icônes
 
@@ -76,7 +76,7 @@ Vous avez la possibilité de définir [icônes](./icons.md) de votre synapp dans
 
 ## Inclusions
 
-Dans la sous-section [inclusions](./inclusions.md), vous pouvez définir les sources `Javascript` et `CSS` qui seront incluses au chargement de votre synapp.
+Dans la sous-section [inclusions](./includes.md), vous pouvez définir les sources `Javascript` et `CSS` qui seront incluses au chargement de votre synapp.
 
 ## Lisez-moi
 
@@ -88,16 +88,18 @@ La rédaction du *lisez-moi* s'effectue dans un éditeur intégré dans le langu
 
 # Exécution du projet
 
-Dans le menu **Exécuter**, vous pouvez ouvrir un onglet qui exécutera votre synapp dans un onglet dédiée.
+Dans le menu **Exécuter**, vous pouvez ouvrir un onglet qui exécutera votre synapp (`Ctrl+R`).
+
+Vous pouvez aussi exécuter votre synapp dans votre navigateur (`Ctrl+Shift+R`).
 
 ## Changement d'hôte
 
-> TODO
+Dans le menu *Exécution*, vous pouvez changer l'hôte actif grâce au menu déroulant en bas à droite de l'interface de Studio.
 
-## Changement de langue
+Par exemple, en créant plusieurs hôtes qui pointent sur le même REDY mais avec des utilisateurs différents, vous pourrez visualiser le comportement de votre synapp en fonction des utilisateurs.
 
-> TODO
+## Changement de langue de prévisualisation
 
-## Exécution dans le navigateur
+Si vous avez déclarer que votre synapp supporte plusieurs langues, le menu déroulant en bas à gauche lorsque vous exécutez votre synapp vous permettra de changer sa langue.
 
-> TODO
+Vous pouvez à tout moment changer cette langue également dans le menu *Exécution*.
