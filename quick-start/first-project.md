@@ -41,13 +41,13 @@ Chaque synapp est le fruit d'un projet Studio.
 
 Il faut l'envisager Studio comme un outil de montage vidéo :
 
-![SynApps](../assets/quick-start/first-project/02.png)
+![Répertoire de montage vidéo](../assets/quick-start/first-project/02.png)
 
 Un projet réunit les différents rushs vidéo, musiques et autres ressources qui sont utilisés pour suivre un scenario et enfin produire un film.
 
 Chaque projet est matérialisé dans un *dossier du système*. Il contient les fichiers de paramétrages des interfaces, la documentation, les fichiers de programmations, les images et les textes qui permettent de construire la synapp.
 
-![SynApps](../assets/quick-start/first-project/03.png)
+![Répertoire de projet](../assets/quick-start/first-project/03.png)
 
 C'est ce que nous allons créer de suite.
 
