@@ -197,7 +197,7 @@ Choisissons `themeColor` et cliquons sur le bouton *Lier à...* en bas pour vali
 
 ![SynApps](../assets/quick-start/designer-first-steps/25.png).
 
-> **Remarque :** La librairie de couleur, comme toutes les autres librairies est accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png). Celle-ci ne possède pas encore son *designer*. Il faudra modifier un fichier `JSON` très simple.
+> **Remarque :** La [librairie de couleur](../concepts/colors.md), comme toutes les autres librairies est accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png).
 
 ## Prochaine étape
 [Publier la synapp dans le REDY-PC](./synapp-publish).
