@@ -4,6 +4,10 @@ parent: Guide de démarrage
 nav_order: 2
 ---
 
+[◀ Installation](./install){: .btn } [Exécution ▶](./synapp-run){: .btn }
+
+-------------
+
 {% include table_of_content.html %}
 
 # Création d'un projet Studio
@@ -41,13 +45,13 @@ Chaque synapp est le fruit d'un projet Studio.
 
 Il faut l'envisager Studio comme un outil de montage vidéo :
 
-![SynApps](../assets/quick-start/first-project/02.png)
+![Répertoire de montage vidéo](../assets/quick-start/first-project/02.png)
 
 Un projet réunit les différents rushs vidéo, musiques et autres ressources qui sont utilisés pour suivre un scenario et enfin produire un film.
 
 Chaque projet est matérialisé dans un *dossier du système*. Il contient les fichiers de paramétrages des interfaces, la documentation, les fichiers de programmations, les images et les textes qui permettent de construire la synapp.
 
-![SynApps](../assets/quick-start/first-project/03.png)
+![Répertoire de projet](../assets/quick-start/first-project/03.png)
 
 C'est ce que nous allons créer de suite.
 
@@ -97,5 +101,9 @@ Vous visualisez à présent le *Lisez-moi* du projet qui fait office de document
 > Le *Lisez-moi* est bien sûr modifiable. Le format d'écriture est un standard dans la rédaction de documentation : Le [`markdown`](https://fr.wikipedia.org/wiki/Markdown).
 
 
-# Prochaine étape :
+# Prochaine étape
 Maintenant, vous allez réaliser la [première exécution](./synapp-run) de la synapp du projet.
+
+-------------------
+
+[◀ Installation](./install){: .btn } [Exécution ▶](./synapp-run){: .btn }

@@ -4,6 +4,10 @@ parent: Guide de démarrage
 nav_order: 4
 ---
 
+[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }
+
+----------------
+
 {% include table_of_content.html %}
 
 # Premiers pas avec le Designer de scène
@@ -32,9 +36,9 @@ Sélectionnez la scène **Accueil** pour afficher son **designer**.
 
 ![SynApps](../assets/quick-start/designer-first-steps/02.png)
 
-- Au centre se trouve l'**aperçu** de la scène *(A)*
-- En dessous de la liste des scènes, sur la gauche, vous trouverez le **plan des acteurs** *(B)*.
-- Sur la gauche s'affiche l'**inspecteur** de l'objet que vous sélectionnerez dans le panneau de gauche *(C)*.
+- Au centre se trouve l'**aperçu** de la scène <span style="color: red;">**A**</span>.
+- En dessous de la liste des scènes, sur la gauche, vous trouverez le **plan des acteurs**  <span style="color: red;">**B**</span>.
+- Sur la gauche s'affiche l'**inspecteur** de l'objet que vous sélectionnerez dans le panneau de gauche  <span style="color: red;">**C**</span>.
 
 ## L'acteur
 
@@ -197,3 +201,7 @@ Choisissons `themeColor` et cliquons sur le bouton *Lier à...* en bas pour vali
 
 ## Prochaine étape
 [Publier la synapp dans le REDY-PC](./synapp-publish).
+
+---------------------
+
+[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }

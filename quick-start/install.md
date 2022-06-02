@@ -4,6 +4,10 @@ parent: Guide de démarrage
 nav_order: 1
 ---
 
+[◀ Guide de démarrage](./index){: .btn } [Création d'un projet ▶](./first-project){: .btn }
+
+--------------------
+
 # Installation de Synapps Studio
 
 Avant tout, il va falloir installer une version de Synapps Studio sur votre poste.
@@ -22,5 +26,9 @@ Dernière version : [1.1.1](https://github.com/witsa/synapps/releases/download/1
 - Suivez ensuite les instructions de l'installeur windows.
 
 
-# Prochaine étape :
+# Prochaine étape
 Maintenant, vous pouvez ouvrir Studio et [créer votre premier projet](./first-project).
+
+--------------------
+
+[◀ Guide de démarrage](./index){: .btn } [Création d'un projet ▶](./first-project){: .btn }

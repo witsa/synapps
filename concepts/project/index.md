@@ -11,6 +11,8 @@ nav_order: 1
 
 Le projet représente l'ensemble des éléments qui permettent de réaliser une synapp. Le projet se matérialise pas un dossier dans votre système de fichier. Il continent tous les fichiers de configuration de la synapp, les définitions de scènes, de composites, des librairies, les images, etc.
 
+![Répertoire de projet](../../assets/quick-start/first-project/03.png)
+
 ## Création d'un projet
 
 Pour créer un nouveau projet, il vous suffit de cliquer sur le bouton **Nouveau projet** dans le menu **Fichier**.

@@ -9,7 +9,7 @@ nav_order: 3
 La scène est l'objet qui va définir chaque interface de votre synapp.
 
 # Scène de démarrage
-La synapp démarre en affichant une première scène, c'est la scène de démarrage. Elle se définie au niveau de la liste des scènes dans Studio.
+La synapp démarre en affichant une première scène, c'est la **scène de démarrage**. Elle se définie au niveau de la liste des scènes dans Studio et elle est matérialisé par la présence de l'icône ![scène de démarrage](../assets/start-scene-icon.png).
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/scene/scene-start.png)
 
@@ -47,7 +47,9 @@ Elles possèdent une option supplémentaire ici : la possibilité d'afficher le 
 
 ## Les acteurs
 
-Les [acteurs](./actor/index.md) sont les éléments qui vont définir l'interface qu'est une scène. Ils sont définie comme une arborescence en partant d'un seul acteur : l'acteur principale.
+Les [acteurs](./actor/index.md) sont les éléments qui vont définir l'interface qu'est une scène. Ils sont définie comme une arborescence en partant d'un seul acteur : l'**acteur principale**.
+
+![SynApps](../assets/scene-actors.png)
 
 # Liste des scène
 
@@ -85,9 +87,15 @@ Vous trouverez l'action qui permet de changer le nom d'un dossier dans son menu 
 
 # Designer de scène
 
-Dans Studio, lorsque vous cliquer sur une scène dans leur liste, vous afficherez le designer de scène. Cette interface vous permet de complètement définir la scène.
+Dans Studio, lorsque vous cliquer sur une scène dans leur liste, vous afficherez le **designer** de scène. Cette interface vous permet de complètement définir la scène.
 
 Dans le designer, vous allez pouvoir gérer les champs de la scène ainsi que l'arborescence d'acteur que la scène présente.
+
+![SynApps](../assets/quick-start/designer-first-steps/02.png)
+
+- Au centre se trouve l'**aperçu** de la scène <span style="color: red;">**A**</span>.
+- En dessous de la liste des scènes, sur la gauche, vous trouverez le **plan des acteurs**  <span style="color: red;">**B**</span>.
+- Sur la gauche s'affiche l'**inspecteur** de l'objet que vous sélectionnerez dans le panneau de gauche  <span style="color: red;">**C**</span>.
 
 # Scènes remarquables
 
