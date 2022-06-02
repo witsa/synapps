@@ -4,6 +4,10 @@ parent: Guide de démarrage
 nav_order: 5
 ---
 
+[◀ Designer : Premiers pas](./designer-first-step){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }
+
+------------
+
 {% include table_of_content.html %}
 
 
@@ -40,7 +44,11 @@ Si tout se passe bien, l'interface montrera la synapp correspondante au projet p
 
 ![SynApps](../assets/quick-start/synapp-publish/05.png)
 
-> **Remarque :** Chaque projet permet de définir une synapp, avec un identifiant unique. Ainsi, Studio est capable de reconnaître la synapp publiée commme correspondante à celle du projet en cours.
+> **Remarque :** Chaque projet permet de définir une synapp, avec un identifiant unique. Ainsi, Studio est capable de reconnaître la synapp publiée comme correspondante à celle du projet en cours.
 
-# Prochaine étape :
-Maintenant, vous allez [afficher des données du REDY dans la scène](./display-redy-data.md).
+# Prochaine étape
+Maintenant, vous allez [afficher l'état d'une ressource du REDY](./display-redy-data.md) dans la scène.
+
+--------------
+
+[◀ Designer : Premiers pas](./designer-first-step){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }

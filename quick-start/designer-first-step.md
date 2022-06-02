@@ -4,6 +4,10 @@ parent: Guide de démarrage
 nav_order: 4
 ---
 
+[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }
+
+----------------
+
 {% include table_of_content.html %}
 
 # Premiers pas avec le Designer de scène
@@ -197,3 +201,7 @@ Choisissons `themeColor` et cliquons sur le bouton *Lier à...* en bas pour vali
 
 ## Prochaine étape
 [Publier la synapp dans le REDY-PC](./synapp-publish).
+
+---------------------
+
+[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }

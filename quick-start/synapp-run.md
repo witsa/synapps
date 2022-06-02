@@ -4,6 +4,10 @@ parent: Guide de démarrage
 nav_order: 3
 ---
 
+[◀ Création d'un projet](./first-project){: .btn } [Designer : Premiers pas ▶](./designer-first-step){: .btn }
+
+--------------
+
 # Exécution de la synapp
 
 Dans l'étape précédente, nous avons créé un projet avec le modèle "Tablette et Bureau". Cela a généré un projet avec un contenu pré-défini et adapté aux tailles des tablettes et bureau.
@@ -43,5 +47,9 @@ Vous pouvez tester la synapp en utilisant le menu.
 > Un autre manière de visualiser la synapp est de l'ouvrir dans votre navigateur.
 Dans ce cas choisissez l'option "Exécuter dans le navigateur...". <br>Raccourci clavier **Ctrl+Shift+R**
 
-# Prochaine étape :
+# Prochaine étape
 Maintenant, vous allez effectuer [vos premiers pas avec le designer de scène](./designer-first-step.md).
+
+-----------------
+
+[◀ Création d'un projet](./first-project){: .btn } [Designer : Premiers pas ▶](./designer-first-step){: .btn }
