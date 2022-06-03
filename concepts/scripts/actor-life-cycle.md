@@ -39,7 +39,7 @@ Dans cette phase l'acteur va initialiser ses propriétés, valoriser les propri�
 Un évènement est ensuite déclenché : [`onInit`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onInit){:target="_blank"}.
 
 A ce moment, tous les acteurs définis dans la scène ou le composite ne sont pas encore présents ni disponibles.
-Les liaisons ne sont toujours pas réalisées.
+Les [liaisons](../binding.md) ne sont toujours pas réalisées.
 
 > ✔️ **CONSEIL**<br>
 > C'est donc une phase privilégiée pour compléter l'initialisation de l'acteur. Par exemple, changer par script des valeurs de propriétés. En effet, on ne risque pas de perdre en performance à cause d'exécution de liaison et leur conséquences puisqu'elles ne sont pas encore effective.
@@ -160,7 +160,7 @@ Les propriétés spécifiques d'un acteur possèdent chacune leur type de modifi
 
 # Transformations de liaison
 
-Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une liaison. L'évènement [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} se déclenche lorsque la valeur source d'une liaison est lue parce qu'elle a changé, ou que la source a changé. Cette valeur est passée dans le champ `value` du contexte de l'évènement et elle est par défaut directement retourné par l'évènement. Il est possible de transformer cette valeur pour écrire autre chose dans la propriété cible.
+Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une [liaison](../binding.md). L'évènement [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} se déclenche lorsque la valeur source d'une liaison est lue parce qu'elle a changé, ou que la source a changé. Cette valeur est passée dans le champ `value` du contexte de l'évènement et elle est par défaut directement retourné par l'évènement. Il est possible de transformer cette valeur pour écrire autre chose dans la propriété cible.
 
 > ✔️ **CONSEIL**<br>
 > Très pratique par exemple pour changer le type de valeur : passer d'une valeur booléenne à une couleur.
