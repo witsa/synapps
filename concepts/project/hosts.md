@@ -45,7 +45,6 @@ Les informations d'un hôte sont récupérées dès la première connection. Ell
 
 ## Publication
 
-
 La synapp doit être publiée dans l'hôte pour qu'elle soit accessible par les utilisateurs.
 
 Studio s'occupe de transformer le projet et ce qu'il contient en un morceau de paramétrage, dans l'hôte.
