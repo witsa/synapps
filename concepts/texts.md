@@ -1,5 +1,5 @@
 ---
-title: "Textes [TODO]"
+title: "Librairie de textes [TODO]"
 parent: Concepts
 ---
 

@@ -13,6 +13,8 @@ L'avantage ici est, qu'une fois créée, cette nouvelle propriété est disponib
 
 Les acteurs, les scènes et les composites peuvent accueillir des additionnelles. C'est ainsi que l'on crée des paramètres de scène et les propriétés spécifiques d'un composite.
 
+Un additionnelle peut être le siège ou la source d'une [liaison](./binding.md). Elle peut être utilisée dans un script. Elle donne lieu également aux [évènements de changement de valeur de propriété](./scripts/actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur).
+
 ## Options communes
 
 ### Clé
@@ -112,16 +114,8 @@ Permet de choisir la clé d'un composite parmi ceux de la synapp. Une option per
 
 Permet de choisir un chemin de variable REDY. Plusieurs options permettent d'affiner les possibilités affichée par l'explorateur de variable.
 
-
-## Définition d'une additionnelle
-
-
-## Additionnelles sur un acteur
-
-Il est parfois utile d'ajouter une propriété sur un acteur. Les raisons peuvent être nombreuses. Parfois pour avoir une valeur à utiliser dans un script ou par liaison pour paramétrer un comportement, parfois pour être le siège d'une liaison.
-
 ### Additionnelles de complément
 
-- Contenu
-- Écran
-- Bouton de navigation
+Dans certains types d'acteur, des additionnelles peuvent être utilisées pour compléter des définitions de propriétés. C'est le cas pas exemple des acteurs à contenu comme le [bouton](./actor-types/input-button.md) ou il est possible de compléter des jokers par les valeurs d'additionnelle.
+
+Les paramètres de scènes sont renseignés par des addtionnelles également dans les acteur écran pour paramétrer la scène choisie.

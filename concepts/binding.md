@@ -1,12 +1,12 @@
 ---
-title: "Les Liaisons"
+title: "Liaisons"
 parent: Concepts
 nav_order: 6
 ---
 
 {% include table_of_content.html %}
 
-# Les liaisons
+# Liaisons
 
 La liaison est un concept fort de la solution Synapps. En effet, grâce à elle, vous pouvez établir des comportements, des changements de propriété, simplement.
 En liant des propriétés d'objet de Synapps ensemble, vous pouvez automatiser des changements, utilisez des librairies, s'accorder avec les tailles de l'afficheur, etc.
