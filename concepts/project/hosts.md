@@ -5,6 +5,8 @@ grand_parent: Concepts
 nav_order: 6
 ---
 
+{% include table_of_content.html %}
+
 # Dans le Runtime
 
 Dans la synapp, l'hôte est l'objet qui définit son hébergeur et qui contient les données exploitables.
