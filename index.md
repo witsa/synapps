@@ -15,7 +15,7 @@ Documentation de la solution Synapps
 
 > 🚧 en cours de rédaction
 >
-> Progression **85%**
+> Progression **90%**
 
 ------
 
