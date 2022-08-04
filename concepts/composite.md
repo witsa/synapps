@@ -113,3 +113,34 @@ Un exemple de composite pour afficher et modifier une ressource Planning Hebdo. 
 
 
 {% include st/composites/planning-hebdo.md %}
+
+## Icône clignotant
+
+Un Composite qui permet de choisir 2 logos (Normal/Défaut) ainsi que 2 couleurs (Normal/Defaut).
+En mode Défaut, le logo clignote.
+Il suffit de liaisonner la variable etatDefaut.
+
+![demo blinker](https://user-images.githubusercontent.com/35595723/182792816-4615c596-eed2-4a60-b705-fd1978202473.gif)
+
+
+{% include st/composites/blinker.md %}
+
+## Fond clignotant
+
+Un composite qui permet d'ajouter un comportement de clignotement à un autre acteur.
+
+Il faut en ajouter une instance dans la scène, pas loin de l'acteur qu'on veut faire clignoter. 
+
+Dans ces propriétés on doit choisir l'acteur ciblé.
+
+Ensuite on peut paramétrer la couleur normale, la couleur défaut, la durée de clignotement. 
+
+Et bien sur, il y une propriété qui permet d'indiquer s'il est en défaut ou pas, à lier à la donnée.
+
+
+![demo style default2](https://user-images.githubusercontent.com/35595723/182633155-7acfff52-733e-47e9-95f5-7f648e2aaa9f.gif)
+
+{% include st/composites/bg-default.md %}
+
+
+
