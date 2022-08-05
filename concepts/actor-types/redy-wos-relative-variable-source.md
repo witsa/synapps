@@ -71,10 +71,10 @@ Choisissez *Valeur* si vous voulez écrire dans ce champ. Ainsi, en vous liant a
 
 ## Mode de lecture
 
-Cette propriété permet de renseigner comment le fournisseur principale doit aller chercher la cible de l'acteur. En effet, rappelons que c'est le fournisseur parent qui réalise les requêtes. Deux modes de lecture sont possibles :
+Cette propriété permet de renseigner comment le fournisseur principal doit aller chercher la cible de l'acteur. En effet, rappelons que c'est le fournisseur parent qui réalise les requêtes. Deux modes de lecture sont possibles :
 
 - **Une seule fois** Le fournisseur parent ne fournira la cible que la première fois. Puis, ses autres requêtes n'iront plus la rafraîchir.
-- **A chaque rafraîchissement** L'acteur raffraichira la cible à chaque fois que le fournisseur parent fera une requête.
+- **A chaque rafraîchissement** L'acteur rafraichira la cible à chaque fois que le fournisseur parent fera une requête.
 
 ## Écriture au changement?
 
