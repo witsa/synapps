@@ -142,5 +142,19 @@ Et bien sur, il y une propriété qui permet d'indiquer s'il est en défaut ou p
 
 {% include st/composites/bg-default.md %}
 
+## Horloge
+
+Un composite qui affiche une horloge mise à l'heure du *REDY*. Par défault, elle affiche la date et l'heure. Mais vous pouvez changer ça en utilisant le format de date de [MomentJS](https://momentjs.com/docs/#/displaying/format/){:target=_blank}.
+
+{% include st/composites/clock.md %}
+
+Dans l'exemple ci dessous avec le format `ddd DD MMM Y HH:mm:ss` :
+
+![image](https://user-images.githubusercontent.com/35595723/183080700-951a04e2-4abe-48e8-a02d-80d4dd359132.png)
+
+
+
+
+
 
 
