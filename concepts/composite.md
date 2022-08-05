@@ -144,7 +144,7 @@ Et bien sur, il y une propriété qui permet d'indiquer s'il est en défaut ou p
 
 ## Horloge
 
-Un composite qui affiche une horloge mise à l'heure du *REDY*. Par défault, elle affiche la date et l'heure. Mais vous pouvez changer ça en utilisant le format de date de [MomentJS](https://momentjs.com/docs/#/displaying/format/){:target=_blank}.
+Un composite qui affiche une horloge mise à l'heure du *REDY*. Par défault, elle affiche la date et l'heure. Mais vous pouvez changer ça en utilisant le format de date de [MomentJS](https://momentjs.com/docs/#/displaying/format/){:target="_blank"}.
 
 {% include st/composites/clock.md %}
 
