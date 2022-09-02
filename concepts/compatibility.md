@@ -24,7 +24,7 @@ En ce qui concerne les appareils nomades, il faudra veiller à utiliser les vers
 
 | Système    | Version |
 |------------|---------|
-| Android    | *Oreo* 8.0 |
+| Android    | *Oreo* 8.0 (ou 6.0.1 si mise à jour de chrome possible à >60) |
 | iOS        | 11.3    |
 
 
