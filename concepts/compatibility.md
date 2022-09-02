@@ -24,7 +24,7 @@ En ce qui concerne les appareils nomades, il faudra veiller à utiliser les vers
 
 | Système    | Version |
 |------------|---------|
-| Android    | *Marshmallow* 6.0.1 |
+| Android    | *Oreo* 8.0 |
 | iOS        | 11.3    |
 
 
