@@ -34,10 +34,11 @@ Il est à noter que ceci peut être effectué sur la scène sur laquelle se trou
 
 Ci dessous, l'exemple d'une scène qui possède deux boutons qui font changer un paramètre de scène dont la valeur est liée à celle d'un acteur texte.
 
+{% raw %}
 ```
 SYNAPPS-STUDIO-SCENE|{"config":{"key":"scene1","name":"Scène 1","additionalDefs":{"prop1":{"type":"text"}},"additionals":{"prop1":"TEST"}},"leadActor":{"type":"layout/stack","key":"stack1","children":[{"type":"input/nav-button","key":"nav-button1","properties":{"content":"Bouton de navigation","displaySceneKey":"scene1"},"additionals":{"prop1":"Hello world !"},"additionalDefs":{"prop1":{"type":"text"}}},{"type":"input/nav-button","key":"nav-button2","properties":{"content":"Bouton de navigation","displaySceneKey":"scene1"},"additionals":{"prop1":"Lorem Ipsum"},"additionalDefs":{"prop1":{"type":"text"}}},{"type":"display/text","key":"text1","properties":{"content":"Voici du texte !"},"bindings":{"properties.content":"stage@additionals.prop1"}}]}}
 ```
-
+{% endraw %}
 
 >⚠️ **ATTENTION**<br>
 > Si vous désirez commander les paramètres d'une scène à travers un acteur écran, n'oublier pas de créer les additionnelles correspondantes sur celui-ci également, sinon, aucune action ne sera transmise
