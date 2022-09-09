@@ -85,19 +85,19 @@ Voici 4 composites pour afficher les représentations graphiques :
 
 ### Bruleur
 
-{% include st/composites/burner.md %}
+{% include composites/burner.md %}
 
 ### Vanne
 
-{% include st/composites/valve.md %}
+{% include composites/valve.md %}
 
 ### Pompe simple
 
-{% include st/composites/simple-pump.md %}
+{% include composites/simple-pump.md %}
 
 ### Pompe double
 
-{% include st/composites/dual-pump.md %}
+{% include composites/dual-pump.md %}
 
 ## Planning Hebdomadaire
 
@@ -112,7 +112,7 @@ Un exemple de composite pour afficher et modifier une ressource Planning Hebdo. 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/composites/planning-hebdo.gif)
 
 
-{% include st/composites/planning-hebdo.md %}
+{% include composites/planning-hebdo.md %}
 
 ## Icône clignotant
 
@@ -123,7 +123,7 @@ Il suffit de liaisonner la variable etatDefaut.
 ![demo blinker](https://user-images.githubusercontent.com/35595723/182792816-4615c596-eed2-4a60-b705-fd1978202473.gif)
 
 
-{% include st/composites/blinker.md %}
+{% include composites/blinker.md %}
 
 ## Fond clignotant
 
@@ -140,7 +140,7 @@ Et bien sur, il y une propriété qui permet d'indiquer s'il est en défaut ou p
 
 ![demo style default2](https://user-images.githubusercontent.com/35595723/182633155-7acfff52-733e-47e9-95f5-7f648e2aaa9f.gif)
 
-{% include st/composites/bg-default.md %}
+{% include composites/bg-default.md %}
 
 ## Horloge
 
