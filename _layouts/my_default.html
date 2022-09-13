@@ -60,10 +60,14 @@ layout: default
 <script>
   const writeScroll = () => {
     document.documentElement.dataset.scroll = window.scrollY > 60 ? window.scrollY : 0;
+    const limit = window.scrollMaxY || (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    document.documentElement.dataset.scrollBottom = window.scrollY > limit - 120 ? 0 : 'shadow';
+    document.documentElement.dataset.scrollTop =  window.scrollY > 0 ? window.scrollY : 0;
+    console.log('window.scrollY', window.scrollY, limit);
   };
   document.addEventListener("scroll", writeScroll);
 
-  writeScroll();
+  setTimeout(writeScroll, 500);
 
   const showActiveItem = () => {
     const activeItem = document.querySelector(".nav-list .nav-list-link.active");
@@ -79,3 +83,61 @@ layout: default
 </script>
 
 {{content}}
+
+<hr>
+<div class="stick">
+  <div class="">
+    <a class="btn btn-outline" style="box-shadow: none; white-space: nowrap; text-overflow: initial;" href="/synapps{{ page.url }}">✔️ FR</a> <a class="btn btn-info" style="white-space: nowrap; text-overflow: initial;" href="/synapps-it{{ page.url }}">IT</a>
+    <div style="flex: 1"></div>
+    <div>
+      <p class="text-center">
+        <a class="btn btn-info" target="_blank" title="Vous pouvez créer une issue Github concernant le sujet que vous êtes en train de consulter." href="https://github.com/witsa/synapps/issues/new?title=[DOC][QUESTION] {{page.title}}&body=> Lien de la page : `{{page.path}}`.">❔ Posez une Question </a>
+        <a class="btn btn-info" target="_blank" title="Vous pouvez créer une issue Github concernant le sujet que vous êtes en train de consulter." href="https://github.com/witsa/synapps/issues/new?title=[DOC][SUGGESTION] {{page.title}}&body=> Lien de la page : `{{page.path}}`.">💡 Proposez une Suggestion </a>
+        <a class="btn btn-info" target="_blank" title="Vous pouvez venir discuter avec la communauté des Créateurs." href="https://github.com/witsa/synapps/discussions">💬 Venez discuter</a>
+      </p>
+    </div>
+    <div style="margin-left: 2em;">
+      made by <a href="https://www.wit.fr" target="_blank"><img style="height: 1.5em;" src="{{ site.baseurl }}/assets/logoWit.png" alt="WIT"></a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .stick {
+    font-size: 0.7em;
+  }
+
+  .stick > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.66);
+    padding: .2em;
+  }
+
+  @media (min-height: 50rem) {
+
+    .stick {
+      position: sticky;
+      bottom: 1em;
+      backdrop-filter: blur(3px);
+    }
+
+    html[data-scroll-bottom="shadow"] .stick {
+      box-shadow: 0 0 10px -5px #444;
+    }
+  }
+
+
+  html:not(.search-active) .main-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+
+  html:not([data-scroll-top="0"]) .main-header {
+    box-shadow: 0 11px 10px -16px #444;
+    z-index: 1;
+  }
+
+</style>
