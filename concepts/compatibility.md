@@ -38,7 +38,7 @@ Un PC de puissance moyenne suffit pour son exécution. Le périmètre des caract
 - `600Mo` d'espace lible au moins
 - Résolution d'écran `1080p` recommandé
 
-Il faudra bien entendu de l'espace libre sur votre disque dur pour accueillir les fichiers de projet.
+Il faudra bien entendu de l'espace libre suplémentaire sur votre disque dur pour accueillir les fichiers de projet.
 
 > ⚠️ **ATTENTION**<br>
 > N'utiliser pas de lecteur réseau pour accueillir vos projets. En effet, Studio ne fonctionne pas correctement pour l'instant avec ce type de lecteur.
