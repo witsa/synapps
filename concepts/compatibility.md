@@ -33,9 +33,10 @@ En ce qui concerne les appareils nomades, il faudra veiller à utiliser les vers
 Synapps Studio fonctionne sur *Windows 10* et les versions suivantes.
 
 Un PC de puissance moyenne suffit pour son exécution. Le périmètre des caractéristiques requises sont en cours de définition mais il apparaît déjà que Synapps Studio tournera convenablement sur des systèmes ayant
-- 8Go de RAM ou plus
+- `4Go`de RAM mimum, `8Go` recommandé,
 - processeurs à 4 cœurs ou plus
-- 600 Mo d'espace lible au moins
+- `600Mo` d'espace lible au moins
+- Résolution d'écran `1080p` recommandé
 
 Il faudra bien entendu de l'espace libre sur votre disque dur pour accueillir les fichiers de projet.
 
