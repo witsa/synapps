@@ -160,12 +160,14 @@ Les propriétés spécifiques d'un acteur possèdent chacune leur type de modifi
 
 # Transformations de liaison
 
-Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une [liaison](../binding.md). L'évènement [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} se déclenche lorsque la valeur source d'une liaison est lue parce qu'elle a changé, ou que la source a changé. Cette valeur est passée dans le champ `value` du contexte de l'évènement et elle est par défaut directement retourné par l'évènement. Il est possible de transformer cette valeur pour écrire autre chose dans la propriété cible.
+Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une [liaison](../binding.md): 
+
+Lorsque la valeur source ou la source elle-même change, la valeur est lue pour être inscrite dans la propriété cible. L'évènement [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} se déclenche pour passer la valeur source par l'intermédiaire du champ `value` du contexte de l'évènement. Elle est, par défaut, directement retournée par l'évènement. Il est possible de modifier ce comportement et de transformer cette valeur afin d'écrire autre chose dans la propriété cible.
 
 > ✔️ **CONSEIL**<br>
 > Très pratique par exemple pour changer le type de valeur : passer d'une valeur booléenne à une couleur.
 
-De la même manière, si l'écriture est activée sur la liaison, un changement de valeur de la cible va déclencher l'écriture dans la valeur source. L'évènement [`onWriteTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onWriteTransform){:target="_blank"} se déclenche et permet d'intervenir sur la valeur transmise.
+De la même manière, si l'écriture est activée sur la liaison, un changement de valeur de la cible va déclencher l'écriture dans la valeur source. L'évènement [`onWriteTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onWriteTransform){:target="_blank"} se déclenche et permet d'intervenir sur la valeur transmise dans l'autre sens.
 
 >⚠️ **ATTENTION**<br>
 > Dans le cas où vous réalisez une transformation en lecture sur une liaison dont l'écriture est activée, veillez à opérer la transformation inverse. Sinon quoi vous feriez entrer l'interface dans une boucle sans fin où l'écriture défait ce que fait la lecture.
