@@ -160,8 +160,7 @@ Les propriétés spécifiques d'un acteur possèdent chacune leur type de modifi
 
 # Transformations de liaison
 
-Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une [liaison](../binding.md): 
-
+Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une [liaison](../binding.md): <br>
 Lorsque la valeur source ou la source elle-même change, la valeur est lue pour être inscrite dans la propriété cible. L'évènement [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} se déclenche pour passer la valeur source par l'intermédiaire du champ `value` du contexte de l'évènement. Elle est, par défaut, directement retournée par l'évènement. Il est possible de modifier ce comportement et de transformer cette valeur afin d'écrire autre chose dans la propriété cible.
 
 > ✔️ **CONSEIL**<br>
