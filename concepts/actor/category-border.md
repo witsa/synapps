@@ -8,9 +8,9 @@ nav_order: 6
 {% include table_of_content.html %}
 
 
-# Catégorie Disposition
+# Catégorie Bordure
 
-Cette catégorie regroupe les propriétés relatives à la disposition de l'acteur.
+Cette catégorie regroupe les propriétés relatives aux bordures de l'acteur.
 
 {% assign sorted = site.base_actor_properties | where: 'section', 'border' | sort: 'order' %}
 
