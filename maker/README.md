@@ -9,7 +9,7 @@ search_exclude: true
 
 [Plan du site](./sitemap.md)
 
-# Home
+# Accueil
 
 ![SynApps](assets/LogoSynAppsForREDY128.png)
 
