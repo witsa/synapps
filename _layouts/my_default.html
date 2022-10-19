@@ -68,7 +68,6 @@ layout: default
     const limit = window.scrollMaxY || (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     document.documentElement.dataset.scrollBottom = window.scrollY > limit - 120 ? 0 : 'shadow';
     document.documentElement.dataset.scrollTop =  window.scrollY > 0 ? window.scrollY : 0;
-    console.log('window.scrollY', window.scrollY, limit);
   };
   document.addEventListener("scroll", writeScroll);
 
