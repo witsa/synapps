@@ -36,6 +36,12 @@ Cette propriété autorise/interdit la modale de se fermer si l'utilisateur cliq
 
 Active/désactive la présence d'un fond transparent opalescent derrière la modale.
 
+## Prévisualiser ?
+
+Active/désactive la prévisualisation de la modale pour l'édition uniquement.
+
+> 📌 **REMARQUE**<br>
+> Cette prévisualisation permet uniquement d'éditer le contenue de la modal sans changer son comportement.
 
 ## Ancrage de la modale
 
