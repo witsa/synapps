@@ -6,7 +6,7 @@ parent: Concepts
 
 # Librairie de textes
 
-La librairie de textes permet de renseigner des clés de texte et plusieurs traductions associés à ces clés afin de permettre une traduction dynamique au sein de la synapp.
+La librairie de textes permet de renseigner des clés de texte ainsi que plusieurs traductions associées qui permettent une traduction dynamique de la synapp.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/textsDesigner.PNG)
 
@@ -34,9 +34,9 @@ Une fenêtre s'ouvre alors et permet de saisir la `clé` du texte à ajouter, pa
 
 La `Clé` correspond à l'identifiant qui va être attribué au texte et qui pourra être utilisée dans la synapp.
 
-### Language
+### Lanuge
 
-Pour créer un nouveau language, il faut cliquer sur le bouton d'ajout à droite de la ligne des languages.
+Pour créer une nouvelle langue, il faut cliquer sur le bouton d'ajout à droite de la ligne des langues.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/addLang.PNG)
 
@@ -54,28 +54,27 @@ Une fenêtre s'ouvre et permet de renseigner une nouvelle clé pour le texte.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/popupChangeKeyText.PNG)
 
-Afin de supprimmer un texte, il faut cliquer sur la corbeille sur la ligne correspondante au texte que l'on souhaite supprimer.
-
-![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/removeText.PNG)
-
 > 📌 **REMARQUE**<br>
 >Chaque clé doit être unique et ne peut pas être vide.<br>
 >Il convient de respecter cette règle particulièrement lorsque l'on modifie directement le JSON.<br>
 >Lorsqu'un texte est supprimé, toutes ses traductions sont également supprimés.
 
-### Language
+Afin de supprimmer un texte, il faut cliquer sur la corbeille sur la ligne correspondante au texte que l'on souhaite supprimer.
 
-Afin de modifier un language, il faut cliquer sur la clé du language.
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/removeText.PNG)
+
+### Langue
+
+Pour modifier une langue, il faut cliquer sur la clé de la langue.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/modifyLang.GIF)
 
-Une fenêtre s'ouvre et permet de renseigner une nouvelle clé pour le language, il est possible de supprimer un language depuis cette fenêtre.
+Une fenêtre s'ouvre et permet de renseigner une nouvelle clé pour la langue, il est possible de supprimer une langue depuis cette fenêtre.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/popupChangeKeyLang.PNG)
 
 > 📌 **REMARQUE**<br>
 >Chaque clé doit être unique et ne peut pas être vide.<br>
->Si le language supprimé est le language de prévisualition de la synapp, le premier language du tableau devient alors le nouveau language de prévisualisation.
 
 ### Traduction
 
@@ -85,15 +84,32 @@ Les traductions de chaque textes peuvent être renseignées en saisisant dans ch
 
 ## Accessibilité de la librairie de textes
 
+>### Pagination
 >La tableau de la librairie de texte contient un nombre limité d'élément par page.<br>
 >Il est possible de naviguer d'une page à l'autre grâce aux boutons en haut à droite de la page.<br>
 >Il est également possible de changer le nombre d'éléments affichés par page en haut à droite de la page.
 >
 >![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/pages.PNG)
+> 📌 **REMARQUE**<br>
+>Si la librairie ne contient qu'une seule page, ce navigateur de page n'est pas accessible.
 
->Le language de prévisualisatin de la synapp est indiquée par une icône à côté de la clé du language.<br>
+>### Prévisualisation
+>La langue de prévisualisation de la synapp est indiquée par une icône située à côté de la clé de la langue.<br>
 >
 >![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/preview.PNG)
+> 📌 **REMARQUE**<br>
+>Si la langue de prévisualition est supprimée, c'est la première lanuge du tableau qui devient la langue de prévisualisation.
+
+
+>### Organisation des colonnes
+>Il est possible d'ordonner les différentes colonnes de la librairie depuis les cellules de clé de la langue.<br>
+>
+>![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/switchLang.GIF)
+
+>### Navigation
+>Il est possible de naviguer entre les différents champs de saisie de la librairie de texte avec différents raccourcis :
+>- TAB : Passage à la prochaine cellule de texte.
+>- ENTRER : Passage à la cellule de texte situé en dessous de la cellule selectionnée.
 
 ## Utilisation des textes de la librairie dans une synapp
 
@@ -108,9 +124,9 @@ Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'
 >Les textes sont stockés sous format JSON avec la syntaxe suivante pour chaque texte :
 >
 >"text1" : {<br>
->   "language1" : "traduction1",<br>
->   "language2" : "traduction2"<br>
+>   "lang1" : "traduction1",<br>
+>   "lang2" : "traduction2"<br>
 > }
 >
-> Une clé de texte possède donc plusieurs languages qui contiennent chacun une traduction.<br>
+> Une clé de texte possède donc plusieures langues qui contiennent chacun une traduction.<br>
 > Le JSON est directement éditable depuis l'interface via l'onglet "JSON" en bas à droite de la page.
