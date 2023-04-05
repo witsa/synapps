@@ -34,7 +34,7 @@ L'acteur fournisseur de variable relative (situé dans le composite) doit avoir 
 
 Enfin, l'acteur texte, situé dans le composite doit être lié avec la valeur souhaité de l'acteur *fournisseur de variable relative* comme suit :
 
->![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite3.PNG)<br>
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite5.PNG)<br>
 >Liaison de l'acteur texte sur le fournisseur de variable relative
 
 >![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite7.PNG)<br>
