@@ -46,7 +46,7 @@ C'est ainsi également que sont créées les [composites remarquables](../concep
 # Quelques remarques
 
 > ⚠️ **ATTENTION**<br>
-Faite attention au formatage automatique du texte si vous coller dans un autre logiciel. Par exemple **Microsoft Teams** a tendance à ajouter des caractères de formatage qui vont perturber le collage dans Studio.
+Faites attention au formatage automatique du texte si vous coller dans un autre logiciel. Par exemple **Microsoft Teams** a tendance à ajouter des caractères de formatage qui vont perturber le collage dans Studio.
 
 > 💡 **ASTUCE**<br>
 Pour le partage, nous recommandons d'utiliser un fichier texte brut dans lequel vous glisser ce que vous avez copié.
@@ -55,4 +55,4 @@ Pour le partage, nous recommandons d'utiliser un fichier texte brut dans lequel 
 Vous pouvez également réaliser des couper/coller qui ont pour effet de copier l'élément et de le supprimer de l'endroit d'origine. Pour cela, il suffit de réaliser un clic droit sur l'élément et de sélectionner l'option *Couper*. Cela s'avère très pratique pour déplacer un élément dans un autre endroit.
 
 > ⚠️ **ATTENTION**<br>
-Faite attention également au liaison vers des librairies qui sont perdues lors du collage. Si vous coller un acteur qui utilise une librairie, il faudra la définir dans le projet.
+Faites attention également au liaison vers des librairies qui sont perdues lors du collage. Si vous coller un acteur qui utilise une librairie, il faudra la définir dans le projet.
