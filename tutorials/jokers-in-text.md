@@ -1,5 +1,6 @@
 ---
 title: Jokers dans un acteur Texte
+parent: Tutoriels
 ---
 
 Nous allons réaliser dans ce tutoriel une scène qui affiche un *texte avec des jokers*.
