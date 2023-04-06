@@ -101,6 +101,8 @@ Dans le designer, vous allez pouvoir gérer les champs de la scène ainsi que l'
 
 Dans ce qui suit, vous trouverez un ensemble de scènes remarquables que vous pouvez librement copier/coller dans vos créations.
 
+Vous trouverez un tutoriel qui explique comme coller une scène dans votre projet [ici](../tutorials/copy-paste-actor-scene-composite.md#copiercoller-une-scène).
+
 ## Hub choix de gabarit
 Voici une scène qui, une fois définie comme départ, permet d'automatiquement naviguer vers une scène faite pour le gabarit Desktop/Tablette ou vers une scène faite pour le gabarit Smartphone du projet. La bonne scène est choisie en fonction de la résolution de l'afficheur et de la présence des fonctions tactiles.
 

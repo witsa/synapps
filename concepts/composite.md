@@ -71,11 +71,14 @@ Vous pouvez gérer les composites d'un projet exactement comme vous pouvez le fa
 
 Dans ce qui suit, vous trouverez un ensemble de composites remarquables que vous pouvez librement copier/coller dans vos créations.
 
-## Représentation Bruleur, Vanne, Pompe simple et double
+Vous trouverez un tutoriel qui explique comme coller un composite dans votre projet [ici](../tutorials/copy-paste-actor-scene-composite.md#copiercoller-un-composite).
+
+
+## Représentation Brûleur, Vanne, Pompe simple et double
 
 Voici 4 composites pour afficher les représentations graphiques :
 
-- Bruleur
+- Brûleur
 - Vanne
 - Pompe simple
 - Pompe double
@@ -83,7 +86,7 @@ Voici 4 composites pour afficher les représentations graphiques :
 ![SynApps]( {{ site.baseurl }}/assets/concepts/composites/ressources.gif)
 
 
-### Bruleur
+### Brûleur
 
 {% include st/composites/burner.md %}
 
@@ -129,11 +132,11 @@ Il suffit de liaisonner la variable etatDefaut.
 
 Un composite qui permet d'ajouter un comportement de clignotement à un autre acteur.
 
-Il faut en ajouter une instance dans la scène, pas loin de l'acteur qu'on veut faire clignoter. 
+Il faut en ajouter une instance dans la scène, pas loin de l'acteur qu'on veut faire clignoter.
 
 Dans ces propriétés on doit choisir l'acteur ciblé.
 
-Ensuite on peut paramétrer la couleur normale, la couleur défaut, la durée de clignotement. 
+Ensuite on peut paramétrer la couleur normale, la couleur défaut, la durée de clignotement.
 
 Et bien sur, il y une propriété qui permet d'indiquer s'il est en défaut ou pas, à lier à la donnée.
 
@@ -151,10 +154,3 @@ Un composite qui affiche une horloge mise à l'heure du *REDY*. Par défault, el
 Dans l'exemple ci dessous avec le format `ddd DD MMM Y HH:mm:ss` :
 
 ![image](https://user-images.githubusercontent.com/35595723/183080700-951a04e2-4abe-48e8-a02d-80d4dd359132.png)
-
-
-
-
-
-
-

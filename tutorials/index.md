@@ -10,9 +10,10 @@ nav_order: 5
 
 
 - [Jokers dans un acteur texte](./jokers-in-text)
+- [Copier/coller un acteur, une scène ou un composite](./copy-paste-actor-scene-composite)
+
 
 > **A venir**
-- Copier/coller d'acteur, de scène, de composite
 - Réaliser une navigation simple
 - Réaliser une navigation avec un acteur écran
 - Passer des paramètres à une scène
