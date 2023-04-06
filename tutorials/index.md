@@ -9,7 +9,10 @@ nav_order: 5
 ![SynApps](../assets/under-progress.gif)
 
 
+- [Jokers dans un acteur texte](./jokers-in-text)
+
 > **A venir**
+- Copier/coller d'acteur, de scène, de composite
 - Réaliser une navigation simple
 - Réaliser une navigation avec un acteur écran
 - Passer des paramètres à une scène
@@ -19,8 +22,8 @@ nav_order: 5
 - Mise à la ligne dans un empilement
 - Adapter la taille d'un texte à son contenu
 - Réaliser des formes
-- Affichage dynamique de composite
-- Utilisation des jokers pour concaténer du texte
+- Fabriquer un gradient de couleur dynamique
+- Affichage dynamique de composite : vue de composite
 - Personnaliser les couleurs de l'acteur détail de reflet
 - Faire clignoter le contour d'un acteur
 - Définition d'une synapp à la connexion d'un utilisateur

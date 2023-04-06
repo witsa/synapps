@@ -118,4 +118,4 @@ Permet de choisir un chemin de variable REDY. Plusieurs options permettent d'aff
 
 Dans certains types d'acteur, des additionnelles peuvent être utilisées pour compléter des définitions de propriétés. C'est le cas pas exemple des acteurs à contenu comme le [bouton](./actor-types/input-button.md) ou il est possible de compléter des jokers par les valeurs d'additionnelle.
 
-Les paramètres de scènes sont renseignés par des addtionnelles également dans les acteur écran pour paramétrer la scène choisie.
+Les paramètres de scènes sont renseignés par des additionnelles également dans les acteur écran pour paramétrer la scène choisie.
