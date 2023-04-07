@@ -5,11 +5,11 @@ parent: Tutoriels
 
 Nous allons réaliser dans ce tutoriel une scène qui affiche un *texte avec des jokers*.
 
-Utiliser les jokers dans les acteurs complétables est manière très simple de réaliser des textes ou des contenus dynamiques.
+Utiliser les jokers dans les acteurs complétables est une manière très simple de réaliser des textes ou des contenus dynamiques.
 
 Pour l'illustrer, nous allons réaliser un acteur texte qui possédera deux additionnelles :
-- une additionnelle pour renseigner un nombre
-- une autre pour renseigner une unité.
+- une additionnelle de type *Nombre* pour renseigner un nombre
+- une autre de type *Texte* pour renseigner une unité.
 
 L'acteur présentera le texte suivant :
 > Température extérieure : 10°C
@@ -57,7 +57,7 @@ Il faut remarquer que des suggestion de création d'additionnelles sont proposé
 
 ![Acteur texte](../assets/tutorials/jokers-in-text/picture-01.png)
 
-Nous les utilisons pour créer les deux additionnelles : Un nombre pour `value` et un texte pour `unit`.
+Nous les utilisons pour créer les deux additionnelles : Une de type *Nombre* pour `value` et une de type *Texte* pour `unit`.
 
 ![Acteur texte](../assets/tutorials/jokers-in-text/step-04.gif)
 
@@ -69,7 +69,7 @@ Il ne reste plus qu'à renseigner les additionnelles avec les valeurs souhaitée
 
 ![Acteur texte](../assets/tutorials/jokers-in-text/step-05.gif)
 
-Ici, nous entrons les valeurs en dur mais il est possible *voir recommandé* de les renseigner avec des liaisons de donnée ou par script.
+Ici, nous entrons les valeurs en dur mais il est possible, *voir recommandé*, de les renseigner avec des liaisons de donnée ou par script.
 
 
 # Conclusion
@@ -81,7 +81,7 @@ L'acteur texte n'est pas le seul à profiter de cette fonctionnalité, nous pouv
 
 # Scène du tutoriel
 
-Vous pouvez copier/coller la scène réalisée ici.
+Vous pouvez copier/coller la scène réalisée dans ce tutoriel.
 
 {% raw %}
 ```
