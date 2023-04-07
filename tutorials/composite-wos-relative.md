@@ -1,5 +1,5 @@
 ---
-title: "omposite avec son propre fournisseur relatif"
+title: "Composite avec son propre fournisseur relatif"
 parent: Tutoriels
 ---
 
