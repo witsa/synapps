@@ -39,17 +39,18 @@ Ceux-ci possèdent cependant un chemin relatif et un champ.
 >Dans notre cas, les acteurs fournisseurs de variables relatives détecteront automatiquement la présence d'un acteur fournisseur de ressource dans leurs contexte de donnée et l'utiliseront comme clé parent.
 
 
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite6.PNG)<br>
-Fournisseur de variable relative chargé de récupérer le titre de la ressource
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite6.PNG)<br>
+>Fournisseur de variable relative chargé de récupérer le titre de la ressource
 
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite5.PNG)<br>
-Fournisseur de variable relative chargé de récupérer la classe de la ressource
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite5.PNG)<br>
+>Fournisseur de variable relative chargé de récupérer la classe de la ressource
 
 ### <b>Details de l'acteur texte</b>
 
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite10.PNG)
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite10.PNG)<br>
+>Exemple de l'une des liaisons d'un acteur texte
 
-La seule particularité des acteurs textes de ce composite réside dans la liaison de leurs contenus vers la donnée de l'un des acteur fournisseur de variable relative, ce qui permet de récupérer la variable souhaitée dynamiquement.
+La seule particularité des acteurs textes de ce composite réside dans la liaison de leurs contenus vers la donnée de l'un des acteurs fournisseurs de variables relatives, ce qui permet de récupérer la variable souhaitée dynamiquement.
 
 # Étape 2 : La scène
 
@@ -81,7 +82,7 @@ A l'issue de ce tutoriel, nous devrions avoir :
 Au cours de ce tutoriel, nous avons appris à fournir à un composite un certain contexte de donnée et à valoriser ce contexte de donnée pour l'utilisation d'acteurs fournisseurs de variables relatives.<br>
 
 > 📌 **REMARQUE**<br>
-Il est tout à fait possible, d'agir sur la variable récupérée (écriture, transformation, etc ...) par le fournisseur de variable relative.
+Il est tout à fait possible, d'agir sur la variable récupérée par le fournisseur de variable relative (écriture, transformation, etc ...) .
 
 # Scène et composite du tutoriel
 
