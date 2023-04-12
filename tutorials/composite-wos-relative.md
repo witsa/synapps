@@ -4,7 +4,7 @@ parent: Tutoriels
 ---
 
 Nous verrons au cours de ce tutoriel comment fournir un acteur fournisseur de ressource à un acteur fournisseur de variable relative contenu dans un composite à l'aide du [contexte de donnée](../concepts/context.md).<br>
-Il est à noter que l'utilisation du contexte de donnée n'est qu'une des méthodes possibles pour parvenir à renseigner dynamiquement un acteur fournisseur de variable relative.
+Il est à noter que l'utilisation du contexte de donnée n'est qu'une des méthodes possibles pour parvenir à renseigner dynamiquement le parent d'un acteur fournisseur de variable relative.
 
 Les acteurs fournisseurs de variables relatives peuvent de cette façon être regroupés afin de rassembler les différentes requêtes.<br>
 Cette pratique permet également de renseigner à l'acteur fournisseur de variable relative une clé parent dynamiquement.
@@ -31,12 +31,12 @@ Le composite utilisé contient deux acteurs fournisseurs de variable relative et
 
 ### <b> Details des acteurs fournisseurs de variable relative </b>
 
-Les deux acteurs fournisseurs de variable relative ne possèdent pas de clé parent, nous allons utiliser le contexte de donnée afin de leur fournir un parent.
+Les deux acteurs fournisseurs de variables relatives ne possèdent pas de clé parent, nous allons utiliser le contexte de donnée afin de leur fournir un parent.
 Ceux-ci possèdent cependant un chemin relatif et un champ.
 <br>
 >📌 **REMARQUE**<br>
->Le contexte de donnée peut être utilisé en ruissellement, nous pouvons ainsi fournir au composite un acteur fournisseur de ressource et celui-ci ruissèlera cet acteur vers tous ses enfants.<br><br>
->Dans notre cas, les acteurs fournisseurs de variables relatives détecteront automatiquement la présence d'un acteur fournisseur de ressource dans leurs contexte de donnée et l'utiliseront comme clé parent.
+>Le contexte de donnée peut être utilisé en ruissellement, nous pouvons ainsi fournir à l'instance du composite un acteur fournisseur de ressource et celui-ci ruissèlera cet acteur vers tous ses enfants.<br><br>
+>Dans notre cas, les acteurs fournisseurs de variables relatives détecteront automatiquement la présence d'un acteur fournisseur de ressource dans leurs contextes de donnée et l'utiliseront comme parent.
 
 
 >![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite6.PNG)<br>
