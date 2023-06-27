@@ -3,11 +3,11 @@ title: "Composite avec son propre fournisseur relatif"
 parent: Tutoriels
 ---
 
-Nous verrons au cours de ce tutoriel comment fournir un acteur fournisseur de ressource à un acteur fournisseur de variable relative contenu dans un composite à l'aide du [contexte de donnée](../concepts/context.md).<br>
-Il est à noter que l'utilisation du contexte de donnée n'est qu'une des méthodes possibles pour parvenir à renseigner dynamiquement le parent d'un acteur fournisseur de variable relative.
+Nous verrons au cours de ce tutoriel comment fournir un acteur fournisseur de ressource à un acteur fournisseur relatif de variable contenu dans un composite à l'aide du [contexte de donnée](../concepts/context.md).<br>
+Il est à noter que l'utilisation du contexte de donnée n'est qu'une des méthodes possibles pour parvenir à renseigner dynamiquement le parent d'un acteur fournisseur relatif de variable.
 
 Les acteurs fournisseurs de variables relatives peuvent de cette façon être regroupés afin de rassembler les différentes requêtes.<br>
-Cette pratique permet également de renseigner à l'acteur fournisseur de variable relative une clé parent dynamiquement.
+Cette pratique permet également de renseigner à l'acteur fournisseur relatif de variable une clé parent dynamiquement.
 
 Dans ce tutoriel, nous afficherons une scène qui comporte un composite et un acteur fournisseur de ressource.<br>
 Le composite utilise via son contexte de donnée l'acteur fournisseur de ressource de la scène afin d'alimenter ses propres fournisseurs de variables relatives.
@@ -35,15 +35,15 @@ Les deux acteurs fournisseurs de variables relatives ne possèdent pas de clé p
 Ceux-ci possèdent cependant un chemin relatif et un champ.
 <br>
 >📌 **REMARQUE**<br>
->Le contexte de donnée peut être utilisé en ruissellement, nous pouvons ainsi fournir à l'instance du composite un acteur fournisseur de ressource et celui-ci ruissèlera cet acteur vers tous ses enfants.<br><br>
+>Le contexte de donnée peut être utilisé en ruissellement, nous pouvons ainsi fournir à l'instance du composite un acteur fournisseur de ressource et celui-ci ruissellera cet acteur vers tous ses enfants.<br><br>
 >Dans notre cas, les acteurs fournisseurs de variables relatives détecteront automatiquement la présence d'un acteur fournisseur de ressource dans leurs contextes de donnée et l'utiliseront comme parent.
 
 
 >![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite6.PNG)<br>
->Fournisseur de variable relative chargé de récupérer le titre de la ressource
+>Fournisseur relatif de variable chargé de récupérer le titre de la ressource
 
 >![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite5.PNG)<br>
->Fournisseur de variable relative chargé de récupérer la classe de la ressource
+>Fournisseur relatif de variable chargé de récupérer la classe de la ressource
 
 ### <b>Details de l'acteur texte</b>
 
@@ -82,7 +82,7 @@ A l'issue de ce tutoriel, nous devrions avoir :
 Au cours de ce tutoriel, nous avons appris à fournir à un composite un certain contexte de donnée et à valoriser ce contexte de donnée pour l'utilisation d'acteurs fournisseurs de variables relatives.<br>
 
 > 📌 **REMARQUE**<br>
-Il est tout à fait possible, d'agir sur la variable récupérée par le fournisseur de variable relative (écriture, transformation, etc ...) .
+Il est tout à fait possible, d'agir sur la variable récupérée par le fournisseur relatif de variable (écriture, transformation, etc ...) .
 
 # Scène et composite du tutoriel
 
