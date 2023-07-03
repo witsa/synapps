@@ -15,7 +15,7 @@ nav_order: 6
 
 Votre synapp va devoir forcément présenter des données des ressources ou variables du paramétrage du REDY. Contrairement aux synoptiques, la page ne va pas se charger et se rafraîchir avec les données. Elle va charger les données et les rafraîchir **séparément**.
 
-Ce que vous allez voir ici est l'une des méthodes pour **obtenir et afficher l'état d'une ressource** : la liaison de type *Fournisseur de variable* vers l'état de la.
+Ce que vous allez voir ici est l'une des méthodes pour **obtenir et afficher l'état d'une ressource** : la liaison de type *Fournisseur de variable* vers l'état de la ressource.
 
 > 📌 **REMARQUE**<br>
 D'autres méthodes existent. Elles impliquent l'utilisation d'[**acteurs fournisseurs de données**](../concepts/actor-types/redy-wos-variable-source.md) notion à voir dans les concepts.
