@@ -144,3 +144,16 @@ Lorsqu'une valeur d'additionnelle change, comme toute les autres propriétés, e
 
 ## Les fournisseurs de donnée
 > 🚧 en cours de rédaction...
+
+## La recherche d'acteur
+
+![SynApps](../../assets/concepts/actor/search-actor.png)
+
+Il est possible de rechercher un acteur à l'aide de l'outil "loupe".<br>
+La recherche d'acteurs repose sur la correspondance des clés des acteurs avec une chaîne de caractères spécifiée par l'utilisateur.
+Lorsque vous effectuez une recherche, l'application parcourt l'arborescence des acteurs et identifie tous les acteurs dont la clé correspond à la chaîne de caractères renseignée.
+
+>📌*Remarque*
+>
+>Il est important de noter que la recherche n'est pas sensible à la casse, ce qui signifie que les lettres majuscules et minuscules sont traitées de la même manière.
+>Par exemple, une recherche pour "acteur123" retournera les résultats pour "Acteur123" et "acteur123" indifféremment.

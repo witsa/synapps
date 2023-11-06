@@ -97,6 +97,19 @@ Dans le designer, vous allez pouvoir gérer les champs de la scène ainsi que l'
 - En dessous de la liste des scènes, sur la gauche, vous trouverez le **plan des acteurs**  <span style="color: red;">**B**</span>.
 - Sur la gauche s'affiche l'**inspecteur** de l'objet que vous sélectionnerez dans le panneau de gauche  <span style="color: red;">**C**</span>.
 
+## La recherche de scènes
+
+![SynApps](../assets/scene-search.png)
+
+Il est possible de rechercher une scène à l'aide de l'outil "loupe".<br>
+La recherche de scène repose sur la correspondance des clés des scènes avec une chaîne de caractères spécifiée par l'utilisateur.
+Lorsque vous effectuez une recherche, l'application parcourt l'arborescence des scènes et identifie tous les acteurs dont la clé correspond à la chaîne de caractères renseignée.
+
+>📌*Remarque*
+>
+>Il est important de noter que la recherche n'est pas sensible à la casse, ce qui signifie que les lettres majuscules et minuscules sont traitées de la même manière.
+>Par exemple, une recherche pour "scene123" retournera les résultats pour "Scene123" et "scene123" indifféremment.
+
 # Scènes remarquables
 
 Dans ce qui suit, vous trouverez un ensemble de scènes remarquables que vous pouvez librement copier/coller dans vos créations.
