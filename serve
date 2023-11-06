@@ -1,0 +1,6 @@
+if [ -e .jekyll-metadata ];
+then
+  rm .jekyll-metadata
+fi
+
+bundle exec jekyll serve --config ./_config.yml,./_config_dev.yml --safe

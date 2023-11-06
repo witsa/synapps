@@ -52,6 +52,8 @@ collections:
   - input_button_list_properties
   - input_cursor_properties
 
+plugins:
+  - jekyll-include-cache
 
 defaults:
   -
