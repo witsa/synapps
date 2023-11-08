@@ -164,3 +164,7 @@ Indiquez ici si vous désirez que la donnée soit récupérée à chaque mise à
 Cette liaison, en réalité, ne définit pas comment aller cherche la source. Elle va donc uniquement tenter de se réaliser avec ce qu'elle va trouver dans son contexte de donnée.
 
 Voir la section [Contexte de donnée](./data-context) pour plus de détails.
+
+## Changement de clé d'élément lié
+
+Une liaison qui lie deux objets sera automatiquement modifiée lorsque l'un des deux objets voit l'un de ses champ concerné par la liaison être changé.
