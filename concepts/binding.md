@@ -167,4 +167,4 @@ Voir la section [Contexte de donnée](./data-context) pour plus de détails.
 
 ## Changement de clé d'élément lié
 
-Une liaison qui lie deux objets sera automatiquement modifiée lorsque l'un des deux objets voit l'un de ses champ concerné par la liaison être changé.
+Une liaison qui lie deux objets sera automatiquement modifiée lorsque l'un des deux objets voit l'un de ses champ concerné par la liaison être modifié.
