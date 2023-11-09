@@ -48,6 +48,6 @@ Le contenu du bouton est complété par une additionnelle *icône* et une additi
 
 ## Écriture fournisseur
 
-Cette variation "Bouton d'Écriture Fournisseur" permet à  de déclencher manuellement le processus d'écriture des données vers un acteur fournisseur spécifique.
+Cette variation "Bouton d'Écriture Fournisseur" permet de déclencher manuellement le processus d'écriture des données vers un acteur fournisseur spécifique.
 
 Le contenu du bouton est complété par une additionnelle "Acteur fournisseur ciblé", qui permet de choisir l'acteur fournisseur vers lequel le bouton d'écriture est dirigé.
