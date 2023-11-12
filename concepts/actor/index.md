@@ -41,6 +41,16 @@ L'inspecteur est la partie du *designer* qui permet de paramétrer, de programme
 
 ![SynApps](../../assets/concepts/actor/03.png)
 
+> 📌 **REMARQUE**<br>
+>Certaines propriétés sont qualifiées de "héritables", ce qui signifie qu'elles prennent la même valeur que la propriété correspondante de leur parent.<br>
+>Pour que cette héritabilité soit activée, les propriétés concernées doivent être explicitement définies avec la valeur "inherit".
+>
+>Vous pouvez visualiser qu'elle est la valeur héritée d'une propriété parente en activant l'option "Montrer l'héritage" dans le menu des paramètres de la propriété.<br><br>
+>⚠️ Lorsque la propriété ne possède pas la valeur "inherit", l'héritage peut tout de même être visualisé mais il ne sera pas appliqué à la propriété.
+>
+>![SynApps](../../assets/concepts/actor/inherit.gif)
+
+
 ### Catégories
 
 Dans l'inspecteur, les propriétés sont rangées par catégorie :

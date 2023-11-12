@@ -1,7 +1,7 @@
 {
   "name": "synapps-doc",
   "scripts": {
-    "serve": "rm .jekyll-metadata && bundle exec jekyll serve --config ./_config.yml,./_config_dev.yml --safe",
+    "serve": "bundle exec jekyll serve --config ./_config.yml,./_config_dev.yml --safe",
     "build": "rm .jekyll-metadata && bundle exec jekyll build --config ./_config.yml,./_config_dev.yml --safe "
   }
 }
