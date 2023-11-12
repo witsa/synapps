@@ -1,12 +1,10 @@
 ---
-title: "Magasin de donnée [TODO]"
+title: "Magasin de donnée"
 parent: Scripts
 grand_parent: Concepts
 ---
 
 > 🚧 en cours de rédaction...
-
-![SynApps](../assets/under-progress.gif)
 
 
 # Dans le Runtime

@@ -1,10 +1,8 @@
 ---
-title: "REDY | Liste d'états [TODO]"
+title: "REDY | Liste d'états"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
 
 > 🚧 en cours de rédaction...
-
-![SynApps](../../assets/under-progress.gif)

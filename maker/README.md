@@ -5,6 +5,18 @@ nav_order: 50
 search_exclude: true
 ---
 
+<br>
+<br>
+<br>
+
+> ⚠️ **Avertissement**<br>
+> Ceci est la documentation du précurseur de Synapps Studio. Cette ancienne génération n'est plus maintenue.
+
+
+<br>
+<br>
+<br>
+
 {% include table_of_content.html %}
 
 [Plan du site](./sitemap.md)

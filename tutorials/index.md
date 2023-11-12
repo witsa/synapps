@@ -6,14 +6,15 @@ nav_order: 5
 
 > 🚧 en cours de rédaction...
 
-![SynApps](../assets/under-progress.gif)
-
 
 - [Jokers dans un acteur texte](./jokers-in-text)
 - [Copier/coller un acteur, une scène ou un composite](./copy-paste-actor-scene-composite)
 
+> Dernière mise à jour : 📅13/11/2023
+>
+> Très vite, les tutoriels suivants arriveront.
 
-> **A venir**
+### A venir
 - Réaliser une navigation simple
 - Réaliser une navigation avec un acteur écran
 - Passer des paramètres à une scène
