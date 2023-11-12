@@ -22,13 +22,13 @@ La fenêtre de Synapps Studio s'est affichée :
 ![SynApps](../assets/quick-start/first-project/01.png)
 
 
-## Accès restreint
+<!-- ## Accès restreint
 
 > Pendant toute la phase d'**accès retreint**, une clé d'agrément est requise pour activer Synapps Studio.
 
 ![SynApps](../assets/quick-start/first-project/12.png)
 
-> Par la suite, cette limitation sera levée.
+> Par la suite, cette limitation sera levée. -->
 
 ## Création d'un projet *"Bonjour le monde!"*
 

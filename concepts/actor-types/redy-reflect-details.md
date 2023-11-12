@@ -1,10 +1,8 @@
 ---
-title: "REDY | Détails de reflet [TODO]"
+title: "REDY | Détails de reflet"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
 
 > 🚧 en cours de rédaction...
-
-![SynApps](../../assets/under-progress.gif)
