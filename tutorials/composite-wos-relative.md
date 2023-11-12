@@ -27,7 +27,7 @@ Ci-dessous le composite fonctionnel utilisé pour ce tutoriel, plus de détails 
 
 Le composite utilisé contient deux acteurs fournisseurs de variable relative et deux acteurs textes.<br>
 
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite1.PNG)<br>
+![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite1.png)<br>
 
 ### <b> Details des acteurs fournisseurs de variable relative </b>
 
@@ -39,15 +39,15 @@ Ceux-ci possèdent cependant un chemin relatif et un champ.
 >Dans notre cas, les acteurs fournisseurs de variables relatives détecteront automatiquement la présence d'un acteur fournisseur de ressource dans leurs contextes de donnée et l'utiliseront comme parent.
 
 
->![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite6.PNG)<br>
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite6.png)<br>
 >Fournisseur relatif de variable chargé de récupérer le titre de la ressource
 
->![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite5.PNG)<br>
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite5.png)<br>
 >Fournisseur relatif de variable chargé de récupérer la classe de la ressource
 
 ### <b>Details de l'acteur texte</b>
 
->![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite10.PNG)<br>
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite10.png)<br>
 >Exemple de l'une des liaisons d'un acteur texte
 
 La seule particularité des acteurs textes de ce composite réside dans la liaison de leurs contenus vers la donnée de l'un des acteurs fournisseurs de variables relatives, ce qui permet de récupérer la variable souhaitée dynamiquement.
@@ -55,10 +55,10 @@ La seule particularité des acteurs textes de ce composite réside dans la liais
 # Étape 2 : La scène
 
 La scène présente un acteur fournisseur de ressource ainsi qu'une instance du composite que nous avons créé précédemment.<br>
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite8.PNG)<br>
+![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite8.png)<br>
 
 Le fournisseur de ressource de la scène va chercher une des ressources présente sur le REDY.<br>
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite3.PNG)<br>
+![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite3.png)<br>
 
 Via son contexte de donnée, le composite va renseigner l'acteur fournisseur de ressource à ses acteurs relatifs comme vu dans les détails de l'étape 1.
 
@@ -66,7 +66,7 @@ Via son contexte de donnée, le composite va renseigner l'acteur fournisseur de 
 >Liaison du contexte de donnée.
 
 A l'issue de cette étape, notre scène devrait afficher le titre et la classe de la ressource récupérée par notre fournisseur de ressource.<br>
->![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite11.PNG)<br>
+>![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite11.png)<br>
 > Exemple d'une scène affichant le titre et la classe d'une ressource.
 
 # Conclusion
@@ -74,10 +74,10 @@ A l'issue de cette étape, notre scène devrait afficher le titre et la classe d
 A l'issue de ce tutoriel, nous devrions avoir :
 
 - Une scène composée d'un acteur fournisseur de ressource et d'un composite :<br>
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite4.PNG)<br>
+![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite4.png)<br>
 
 - Un composite composé de deux acteurs fournisseurs de variables relatives et de deux acteurs textes :<br>
-![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite1.PNG)<br>
+![SynApps]( {{ site.baseurl }}/assets/tutorials/composite-relative/tuto-composite1.png)<br>
 
 Au cours de ce tutoriel, nous avons appris à fournir à un composite un certain contexte de donnée et à valoriser ce contexte de donnée pour l'utilisation d'acteurs fournisseurs de variables relatives.<br>
 
