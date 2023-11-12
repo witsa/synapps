@@ -9,7 +9,7 @@ nav_order: 8
 
 Cette sous-section est dédiée à la définition d'acteurs [fournisseurs de ressource](../actor-types/redy-resource-source.md), [de variable](../actor-types/redy-wos-variable-source.md) et [de variable relative](../actor-types/redy-wos-relative-variable-source.md) qui pourront être utilisés dans tous le projet.
 
-Il sont disponibles par liaison de type *fournisseur de variable* ou dans le champ clé parent des acteurs fournisseur de variable relative.
+Il sont disponibles par liaison de type *fournisseur de variable* ou dans le champ clé parent des acteurs fournisseur relatif de variable.
 
 Un acteur fournisseur de variable est toujours défini à la création d'un projet. Il pointe sur `easy.RESS`. Il sert à faciliter la définition de liaisons de type *fournisseur de variable*.
 

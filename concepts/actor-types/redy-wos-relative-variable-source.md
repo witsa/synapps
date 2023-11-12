@@ -6,7 +6,7 @@ grand_parent: Concepts
 
 {% include links_actor.md apiClass="REDY.Actor.WosRelativeVariableSource" %}
 
-# Fournisseur de variable relative
+# Fournisseur relatif de variable
 
 Cet acteur fournisseur de donnnée permet de compléter des acteurs [fournisseur de variable](./redy-wos-variable-source.md) ou [de ressource](./redy-resource-source.md) pour communiquer avec une *variable WOS* enfant d'un REDY.
 
@@ -27,7 +27,7 @@ La donnée récupérée est disponible pour les liaisons ou par script.
 
 Cette propriété permet de renseigner le fournisseur parent de l'acteur par sa clé. Vous aurez le choix parmi tous les fournisseurs de la même scène ou du même composite ainsi que ceux définis parmi les fournisseurs de donnée globaux.
 
-Bien entendu, il sera tout a fait possible de choisir un autre fournisseur de variable relative aussi.
+Bien entendu, il sera tout a fait possible de choisir un autre fournisseur relatif de variable aussi.
 
 > 📌 **REMARQUE**<br>
 Quoi qu'il en soit, on trouvera un fournisseur normal en remontant dans l'ascendance des acteurs relatifs.

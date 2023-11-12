@@ -23,7 +23,7 @@ Documentation de la solution Synapps
 
 ## **Synapps**: Construisez des apps **multi-plateformes** avec le **REDY**
 
-Synapps est une **nouvelle solution** de WIT avec un **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB pour à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones.
+Synapps est une **nouvelle solution** de WIT avec un **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB pour profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones.
 
 
 ![Browsers](assets/browsers.png)

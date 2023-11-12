@@ -67,6 +67,20 @@ Ensuite, vous verrez que la définition d'un composite est très semblable de ce
 
 Vous pouvez gérer les composites d'un projet exactement comme vous pouvez le faire pour les [scènes](./scene.md). Vous pouvez donc ajouter/supprimer des dossiers, ajouter/supprimer des composites, les copier/coller, etc.
 
+## La recherche de composite
+
+![Composites](../assets/composite-search.png)
+
+Il est possible de rechercher un composite à l'aide de l'outil "loupe".<br>
+La recherche de scène repose sur la correspondance des clés des composites avec une chaîne de caractères spécifiée par l'utilisateur.
+Lorsque vous effectuez une recherche, l'application parcourt l'arborescence des composites et identifie tous les composites dont la clé correspond à la chaîne de caractères renseignée.
+
+>📌*Remarque*
+>
+>Il est important de noter que la recherche n'est pas sensible à la casse, ce qui signifie que les lettres majuscules et minuscules sont traitées de la même manière.
+>Par exemple, une recherche pour "composite123" retournera les résultats pour "Composite123" et "composite123" indifféremment.
+
+
 # Composites remarquables
 
 Dans ce qui suit, vous trouverez un ensemble de composites remarquables que vous pouvez librement copier/coller dans vos créations.
