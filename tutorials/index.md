@@ -16,7 +16,6 @@ nav_order: 5
 
 ### A venir
 - Réaliser une navigation simple
-- Réaliser une navigation avec un acteur écran
 - Passer des paramètres à une scène
 - Utiliser les fournisseurs de variable
 - Créer un composite
