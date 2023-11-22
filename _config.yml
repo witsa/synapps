@@ -44,6 +44,7 @@ collections:
   - base_actor_properties
   - display_text_properties
   - display_html_properties
+  - display_html_properties_en
   - display_picture_properties
   - display_screen_properties
   - display_iframe_properties
@@ -54,6 +55,12 @@ collections:
 
 plugins:
   - jekyll-include-cache
+  - jekyll-polyglot
+
+languages: [fr, en]
+default_lang: fr
+exclude_from_localization: ["synapps-studio-releases/package.json"]
+parallel_localization: true
 
 defaults:
   -
@@ -83,13 +90,19 @@ defaults:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
 #   - .sass-cache/
-#   - .jekyll-cache/
+  - .jekyll-cache/
+  - .vscode/
 #   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - temp/
+  - serve-doc
+  - yarn.lock
+  - package.json
+  # - collections/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

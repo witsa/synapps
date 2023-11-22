@@ -2,6 +2,6 @@
 title: Concepts
 has_children: true
 nav_order: 4
-lang: fr
+lang: en
 permalink: /concepts
 ---

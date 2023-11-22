@@ -1,0 +1,13 @@
+issues:
+  linkTitle: Vous pouvez créer une issue Github concernant le sujet que vous êtes en train de consulter.
+  linkContent: Posez une Question
+issuesSuggestions:
+  linkTitle: Vous pouvez créer une issue Github de suggestion concernant le sujet que vous êtes en train de consulter.
+  linkContent: Proposer une Suggestion
+discussions:
+  linkTitle: Vous pouvez venir discuter avec la communauté des Créateurs.
+  linkContent: Venez discuter
+linkUrlText: "Lien de la page :"
+tableOfContent: "Sommaire"
+
+    

@@ -3,6 +3,8 @@ title: "Types d'acteur"
 parent: Concepts
 has_children: true
 nav_order: 5
+lang: fr
+permalink: /concepts/actor-types
 ---
 
 > 🚧 en cours de rédaction...

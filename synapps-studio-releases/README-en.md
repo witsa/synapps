@@ -1,16 +1,16 @@
 ---
 nav_order: 30
-lang: fr
+lang: en
 permalink: /synapps-studio-releases
 ---
 
 # Synapps Studio
 
-Télécharger la version actuelle [1.2.0](https://github.com/witsa/synapps/releases/download/1.2.0/synapps-studio-setup.zip)
+Download the current version [1.2.0](https://github.com/witsa/synapps/releases/download/1.2.0/synapps-studio-setup.zip)
 
-Voir la [Note de version](./notes/1.2.0){:target="_blank"}
+See the [Release Note](./notes/1.2.0){:target="_blank"}
 
-# Historique des versions
+# Release History
 
 | Version | Date |
 |---------|-----|-|

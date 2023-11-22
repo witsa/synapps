@@ -1,0 +1,11 @@
+issues:
+  linkTitle: You can create a Github issue about the topic you are currently reading.
+  linkContent: Ask a Question
+issuesSuggestions:
+  linkTitle: You can create a Github issue to suggest about the topic you are currently reading.
+  linkContent: Propose a Suggestion
+discussions:
+  linkTitle: You can come and discuss with the Creators community.
+  linkContent: Come and discuss
+linkUrlText: "Page link:"
+tableOfContent: "Table of content"

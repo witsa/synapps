@@ -3,6 +3,7 @@ title: Documentation Maker
 has_children: true
 nav_order: 50
 search_exclude: true
+lang-exclusive: ['fr']
 ---
 
 <br>

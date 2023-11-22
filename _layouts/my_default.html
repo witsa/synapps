@@ -63,7 +63,7 @@ layout: default
 </style>
 
 <!-- Matomo -->
-<script>
+<!-- <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
@@ -75,7 +75,7 @@ layout: default
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
-</script>
+</script> -->
 <!-- End Matomo Code -->
 
 
@@ -108,13 +108,15 @@ layout: default
 <hr>
 <div class="stick">
   <div class="">
-    <a class="btn btn-outline lang" style="box-shadow: none; white-space: nowrap; text-overflow: initial;" href="/synapps{{ page.url }}">✔️ FR</a> <a class="btn btn-info lang" style="white-space: nowrap; text-overflow: initial;" href="/synapps-it{{ page.url }}">IT</a>
+    {% for tongue in site.languages %}
+    <a class="btn btn-outline lang" style="box-shadow: none; white-space: nowrap; text-overflow: initial;" {% static_href %}href="{{ site.baseurl }}{% if tongue != site.default_lang %}/{{ tongue }}{% endif %}{{ page.url }}"{% endstatic_href %}>{% if tongue == site.active_lang %}✔️ {% endif %}{{ tongue }}</a>
+    {% endfor %}
     <div class="lang" style="flex: 1"></div>
     <div>
       <p class="text-center">
-        <a class="btn btn-info" target="_blank" title="Vous pouvez créer une issue Github concernant le sujet que vous êtes en train de consulter." href="https://github.com/witsa/synapps/issues/new?title=[DOC][QUESTION] {{page.title}}&body=> Lien de la page : `{{page.path}}`.">❔ Posez une Question </a>
-        <a class="btn btn-info" target="_blank" title="Vous pouvez créer une issue Github concernant le sujet que vous êtes en train de consulter." href="https://github.com/witsa/synapps/issues/new?title=[DOC][SUGGESTION] {{page.title}}&body=> Lien de la page : `{{page.path}}`.">💡 Proposez une Suggestion </a>
-        <a class="btn btn-info" target="_blank" title="Vous pouvez venir discuter avec la communauté des Créateurs." href="https://github.com/witsa/synapps/discussions">💬 Venez discuter</a>
+        <a class="btn btn-info" target="_blank" title="{{ site.data.strings.issues.linkTitle }}" href="https://github.com/witsa/synapps/issues/new?title=[DOC][QUESTION] {{page.title}}&body=> {{ site.data.strings.linkUrlText }} `{{page.path}}`.">❔ {{ site.data.strings.issues.linkContent }} </a>
+        <a class="btn btn-info" target="_blank" title="{{ site.data.strings.issuesSuggestions.linkTitle }}" href="https://github.com/witsa/synapps/issues/new?title=[DOC][SUGGESTION] {{page.title}}&body=> {{ site.data.strings.linkUrlText }} `{{page.path}}`.">💡 {{ site.data.strings.issuesSuggestions.linkContent }} </a>
+        <a class="btn btn-info" target="_blank" title="{{ site.data.strings.discussions.linkTitle }}" href="https://github.com/witsa/synapps/discussions">💬 {{ site.data.strings.discussions.linkContent }}</a>
       </p>
     </div>
     <div style="margin-left: 2em;">

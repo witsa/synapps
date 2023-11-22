@@ -1,11 +1,12 @@
 ---
-title: Accueil
+title: Home
 nav_order: 1
-lang: fr
+lang: en
 permalink: /
+
 ---
 
-Solution Synapps
+Synapps Solution
 ================
 
 ![logo_256px](assets/logo_256px.png)
@@ -14,14 +15,14 @@ Solution Synapps
 
 {% include table_of_content.html %}
 
-## **Synapps**: Pour rendre chaque détail spectaculaire
+## **Synapps**: To make every detail spectacular
 
-Synapps est la **nouvelle solution** de WIT de construction d'imagerie pour le REDY. La solution respecte les **standards** du WEB pour profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones.
+Synapps is the **new solution** from WIT for building imaging for REDY. The solution adheres to WEB **standards** to take advantage of modern browser features such as, among others, the ability to adapt to different screen sizes and smartphones.
 
 ![Browsers](assets/browsers.png)
 ![Multi-platforms](assets/multi-platforms.png)
 
-> Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
+> This is not just an evolution of synoptic displays, but a complete **breakthrough** in the way applications are built!
 
 ![WhomeApp](assets/WHomeApp.gif)
 

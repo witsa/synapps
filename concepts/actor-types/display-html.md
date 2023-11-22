@@ -2,6 +2,8 @@
 title: "Affichage | HTML"
 parent: "Types d'acteur"
 grand_parent: Concepts
+lang: fr
+permalink: /concepts/actor-types/display-html.html
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Html" %}

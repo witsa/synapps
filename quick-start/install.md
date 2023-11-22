@@ -2,6 +2,8 @@
 title: Installation
 parent: Guide de démarrage
 nav_order: 1
+lang: fr
+permalink: /quick-start/install
 ---
 
 [◀ Guide de démarrage](./index){: .btn } [Création d'un projet ▶](./first-project){: .btn }
@@ -13,7 +15,7 @@ nav_order: 1
 Avant tout, il va falloir installer une version de Synapps Studio sur votre poste.
 
 
-Dernière version : [1.2.0](https://github.com/witsa/synapps/releases/download/1.2.0/synapps-studio-setup.zip)
+Dernière version : [{{ site.data.constants.releaseVersion }}](https://github.com/witsa/synapps/releases/download/{{ site.data.constants.releaseVersion }}/synapps-studio-setup.zip)
 
 - Téléchargez le fichier zip.
 - Ouvrir le fichier zip et exécutez le fichier synapps-studio-setup.exe

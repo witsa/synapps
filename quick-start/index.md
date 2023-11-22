@@ -2,6 +2,8 @@
 title: Guide de démarrage
 has_children: true
 nav_order: 3
+lang: fr
+permalink: /quick-start
 ---
 
 # Guide de démarrage
