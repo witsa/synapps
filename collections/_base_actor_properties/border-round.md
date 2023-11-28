@@ -17,4 +17,13 @@ Cette propriété régit la valeur de l'attribut CSS `border-radius`.
 > Règle :  `<Haut gauche> <Haut droit> <Bas droit> <Bas gauche>`
 
 **Pour vous aider :**
+Nous avons ajouté une aide à la saisie, vous y trouverez les caractéristiques nécessaire pour gérer l'arondi des coins de la bordures<br>
+Pour y acceder, il suffit de cliquer ici : ↓ en rouge<br>
+
+![SynApps]( {{ site.baseurl }}/assets/concepts/actor/base_properties/borderRadius/is_borderRadius.png)
+
+Puis vous verrez apparaitre le pop-up suivant ↓<br>
+
+<image src="/assets/concepts/actor/base_properties/borderRadius/Helper_BorderRadius.gif" alt="gif de l'aide à la saisi de l'épaisseur de la bordure" style="max-height: 50%; max-width: 50%;"/>
+
 Il est possible de retrouver la documentation de l'attribut border-radius CSS [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/border-radius).
