@@ -18,7 +18,7 @@ Règle :  `<Haut> <Droit> <Bas> <Gauche>`
 Il est à noter que la taille de la bordure occupera de l'espace au sein de l'encadrement de l'acteur.
 
 **Pour vous aider :**
-Nous avons ajouté une aide à la saisie, vous y trouverez les caractéristiques nécessaire pour gérer l'épaisseur de la bordure.<br>
+Nous avons ajouté une aide à la saisie, vous y trouverez les caractéristiques nécessaires pour gérer l'épaisseur de la bordure.<br>
 Pour y acceder, il suffit de cliquer ici : ↓ en rouge<br>
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/base_properties/borderWidth/is_BorderWidth.png)

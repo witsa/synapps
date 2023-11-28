@@ -25,7 +25,7 @@ La valeur attendue pour le paramètres E est une couleur ou un code RGB. Un aide
 
 
 **Pour vous aider :**
-Nous avons ajouté une aide à la saisie, vous y trouverez les caractéristiques nécessaire pour gérer l'ombre de la bordures<br>
+Nous avons ajouté une aide à la saisie, vous y trouverez les caractéristiques nécessaires pour gérer l'ombre de la bordures<br>
 Pour y acceder, il suffit de cliquer ici : ↓ en rouge<br>
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/base_properties/boxShadow/is_BoxShadow.png)

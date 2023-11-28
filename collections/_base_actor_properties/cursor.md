@@ -14,6 +14,7 @@ Nous avons ajouté une aide à la saisie, vous y trouverez les curseurs les plus
 Pour y acceder, il suffit de cliquer ici : ↓ en rouge<br>
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/base_properties/cursor/is_cursor_red.png)
+
 Puis vous verrez apparaitre le pop-up suivant ↓<br>
 
 <image src="/assets/concepts/actor/base_properties/cursor/Helper_cursor_red.png" alt="image de l'aide à la saisi de curseur" style="max-height: 50%; max-width: 50%;"/>
