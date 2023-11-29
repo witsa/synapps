@@ -5,7 +5,7 @@ propName: opacity
 propPath: properties.opacity
 scriptApiClass: Actor.BaseActorProperties
 section: aspect
-order: 4
+order: 6
 ---
 Cette propriété définit l'opacité de l'acteur.
 

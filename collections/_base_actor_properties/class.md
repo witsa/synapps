@@ -5,7 +5,7 @@ propName: classNames
 propPath: properties.classNames
 scriptApiClass: Actor.BaseActorProperties
 section: aspect
-order: 5
+order: 7
 ---
 Cette propriété permet d'ajouter à l'acteur des classes CSS, à séparer par une virgule `,`.
 
