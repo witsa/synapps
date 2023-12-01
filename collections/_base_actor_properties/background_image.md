@@ -4,7 +4,6 @@ section: aspect
 propName: backgroundImage
 propPath: properties.backgroundImage
 scriptApiClass: Actor.BaseActorProperties
-section: aspect
 order: 2
 ---
 Cette propriété définit l'image de fond de l'acteur.

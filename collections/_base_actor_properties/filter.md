@@ -6,7 +6,7 @@ propPath: properties.filter
 scriptApiClass: Actor.BaseActorProperties
 order: 10
 ---
-Cette propriété permet d'ajouter un filter graphique à l'élément.
+Cette propriété permet d'ajouter un filtre graphique à l'élément.
 
 La valeur attendue est la propriété avec une unité entre parenthèse précisant l'intensité du changement.
 
