@@ -4,7 +4,7 @@ parent: Guide de démarrage
 nav_order: 7
 ---
 
-[◀ Affichage d'un état](./display-redy-data.md){: .btn } [Pour aller plus loin ▶](./and-more){: .btn }
+[◀ Affichage d'un état](./display-redy-data.md){: .btn } [Pour aller plus loin ▶](./and-more.md){: .btn }
 
 ------
 
@@ -76,4 +76,4 @@ Si vous cliquez sur *Annuler*, l'état revient à sa valeur en cours. Sinon, la 
 L'acteur a d'autres modes de commande : un mode automatique et un mode manuel.
 
 ---------
-[◀ Affichage d'un état](./display-redy-data.md){: .btn } [Pour aller plus loin ▶](./and-more){: .btn }
+[◀ Affichage d'un état](./display-redy-data.md){: .btn } [Pour aller plus loin ▶](./and-more.md){: .btn }

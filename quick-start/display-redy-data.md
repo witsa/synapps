@@ -4,7 +4,7 @@ parent: Guide de démarrage
 nav_order: 6
 ---
 
-[◀ Publication](./synapp-publish){: .btn } [Commander une ressource ▶](./command-redy.md){: .btn }
+[◀ Publication](./synapp-publish.md){: .btn } [Commander une ressource ▶](./command-redy.md){: .btn }
 
 ------------------
 
@@ -97,4 +97,4 @@ Maintenant, vous allez [commander une ressource dans le REDY](./command-redy.md)
 
 ---------------------
 
-[◀ Publication](./synapp-publish){: .btn } [Commander une ressource ▶](./command-redy.md){: .btn }
+[◀ Publication](./synapp-publish.md){: .btn } [Commander une ressource ▶](./command-redy.md){: .btn }

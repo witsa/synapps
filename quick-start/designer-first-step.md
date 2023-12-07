@@ -4,7 +4,7 @@ parent: Guide de démarrage
 nav_order: 4
 ---
 
-[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }
+[◀ Exécution](./synapp-run.md){: .btn } [Publication ▶](./synapp-publish.md){: .btn }
 
 ----------------
 
@@ -52,12 +52,12 @@ Ils sont organisés sous forme d'arborescence :
 ![SynApps](../assets/quick-start/designer-first-steps/04.png)
 
 
-Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type [**Empilement**](/synapps/concepts/actor-types/layout-stack.md).
+Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type [**Empilement**](../concepts/actor-types/layout-stack.md).
 
 C'est un acteur de disposition. Son role est de disposer, de placer sur l'interface, les acteurs qu'il va contenir. Dans le cas d'un empilement, il va empiler les acteurs verticalement par défaut.
 D'autres types de disposition existent *([voir doc](/synapps/concepts/actor-types/#layout))*.
 
-Nous allons ajouter un acteur [**Texte**](/synapps/concepts/actor-types/display-text.md) à l'empilement.
+Nous allons ajouter un acteur [**Texte**](../concepts/actor-types/display-text.md) à l'empilement.
 
 ### Ajout
 
@@ -167,7 +167,7 @@ Nous allons maintenant changer la couleur du texte. Pour cela, nous allons nous 
 
 ![SynApps](../assets/quick-start/designer-first-steps/20.png).
 
-Ce champ attend une [couleur CSS](/script-api/global.html#CssColorString){:target="_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Nous pouvons en essayer plusieurs et visualiser le résultat.
+Ce champ attend une [couleur CSS](../script-api/global.html#CssColorString){:target="_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Nous pouvons en essayer plusieurs et visualiser le résultat.
 
 ![SynApps](../assets/quick-start/designer-first-steps/26.png).
 
@@ -200,8 +200,8 @@ Choisissons `themeColor` et cliquons sur le bouton *Lier à...* en bas pour vali
 > **Remarque :** La [librairie de couleur](../concepts/colors.md), comme toutes les autres librairies est accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png).
 
 ## Prochaine étape
-[Publier la synapp dans le REDY-PC](./synapp-publish).
+[Publier la synapp dans le REDY-PC](./synapp-publish.md).
 
 ---------------------
 
-[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }
+[◀ Exécution](./synapp-run.md){: .btn } [Publication ▶](./synapp-publish.md){: .btn }

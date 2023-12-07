@@ -4,7 +4,7 @@ parent: Guide de démarrage
 nav_order: 1
 ---
 
-[◀ Guide de démarrage](./index){: .btn } [Création d'un projet ▶](./first-project){: .btn }
+[◀ Guide de démarrage](./index.md){: .btn } [Création d'un projet ▶](./first-project.md){: .btn }
 
 --------------------
 
@@ -27,8 +27,8 @@ Dernière version : [1.2.0](https://github.com/witsa/synapps/releases/download/1
 
 
 # Prochaine étape
-Maintenant, vous pouvez ouvrir Studio et [créer votre premier projet](./first-project).
+Maintenant, vous pouvez ouvrir Studio et [créer votre premier projet](./first-project.md).
 
 --------------------
 
-[◀ Guide de démarrage](./index){: .btn } [Création d'un projet ▶](./first-project){: .btn }
+[◀ Guide de démarrage](./index.md){: .btn } [Création d'un projet ▶](./first-project.md){: .btn }

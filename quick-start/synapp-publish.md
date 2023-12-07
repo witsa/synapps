@@ -4,7 +4,7 @@ parent: Guide de démarrage
 nav_order: 5
 ---
 
-[◀ Designer : Premiers pas](./designer-first-step){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }
+[◀ Designer : Premiers pas](./designer-first-step.md){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }
 
 ------------
 
@@ -51,4 +51,4 @@ Maintenant, vous allez [afficher l'état d'une ressource du REDY](./display-redy
 
 --------------
 
-[◀ Designer : Premiers pas](./designer-first-step){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }
+[◀ Designer : Premiers pas](./designer-first-step.md){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }
