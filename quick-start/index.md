@@ -16,9 +16,9 @@ En suivant ce guide, vous pourrez prendre en main de Synapps Studio et appréhen
 > Synapps Studio reste compatible avec les **REDY** de version supérieure à `14.2.0`.
 
 # Première étape
-Commençons par [se procurer et installer Synapps Studio](./install)
+Commençons par [se procurer et installer Synapps Studio](./install.md)
 
 
 --------------
 
-[Installation ▶](./install){: .btn }
+[Installation ▶](./install.md){: .btn }

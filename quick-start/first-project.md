@@ -4,7 +4,7 @@ parent: Guide de démarrage
 nav_order: 2
 ---
 
-[◀ Installation](./install){: .btn } [Exécution ▶](./synapp-run){: .btn }
+[◀ Installation](./install.md){: .btn } [Exécution ▶](./synapp-run.md){: .btn }
 
 -------------
 
@@ -102,8 +102,8 @@ Vous visualisez à présent le *Lisez-moi* du projet qui fait office de document
 
 
 # Prochaine étape
-Maintenant, vous allez réaliser la [première exécution](./synapp-run) de la synapp du projet.
+Maintenant, vous allez réaliser la [première exécution](./synapp-run.md) de la synapp du projet.
 
 -------------------
 
-[◀ Installation](./install){: .btn } [Exécution ▶](./synapp-run){: .btn }
+[◀ Installation](./install.md){: .btn } [Exécution ▶](./synapp-run.md){: .btn }

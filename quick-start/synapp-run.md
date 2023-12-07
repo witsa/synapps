@@ -4,7 +4,7 @@ parent: Guide de démarrage
 nav_order: 3
 ---
 
-[◀ Création d'un projet](./first-project){: .btn } [Designer : Premiers pas ▶](./designer-first-step){: .btn }
+[◀ Création d'un projet](./first-project.md){: .btn } [Designer : Premiers pas ▶](./designer-first-step.md){: .btn }
 
 --------------
 
@@ -52,4 +52,4 @@ Maintenant, vous allez effectuer [vos premiers pas avec le designer de scène](.
 
 -----------------
 
-[◀ Création d'un projet](./first-project){: .btn } [Designer : Premiers pas ▶](./designer-first-step){: .btn }
+[◀ Création d'un projet](./first-project.md){: .btn } [Designer : Premiers pas ▶](./designer-first-step.md){: .btn }
