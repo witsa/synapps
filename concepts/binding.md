@@ -26,6 +26,8 @@ Seules les propriétés des acteurs peuvent être cible de liaison. En revanche,
   - une [constante](./constants.md)
   - un [texte](./texts.md)
 - Un [fournisseur de variable REDY](#la-liaison-de-type-de-source-fournisseur-de-variable)
+- Un [fournisseur de reflet REDY](#la-liaion-de-type-de-source-fournisseur-de-reflet)
+- Une [donnée de fournisseur](#la-liaison-de-type-de-source-donnée-de-fournisseur)
 - L'[hôte](./project/hosts.md)
 - La [session](./session.md)
 - L'[utilisateur](./user.md)
@@ -158,6 +160,13 @@ Cette option permet d'indiquer quel champ sera la source de la liaison. N'indiqu
 
 Indiquez ici si vous désirez que la donnée soit récupérée à chaque mise à jour du fournisseur parent ou seulement la première fois.
 
+## La liaion de type de source *Fournisseur de reflet*
+
+> 🚧 en cours de rédaction...
+
+## La liaison de type de source *Donnée de fournisseur*
+
+> 🚧 en cours de rédaction...
 
 ## La liaison de type de source *Contexte*
 
