@@ -6,11 +6,7 @@ nav_order: 5
 
 > 🚧 en cours de rédaction...
 
-
-- [Jokers dans un acteur texte](./jokers-in-text)
-- [Copier/coller un acteur, une scène ou un composite](./copy-paste-actor-scene-composite)
-
-> Dernière mise à jour : 📅13/11/2023
+> Dernière mise à jour : 📅06/12/2023
 >
 > Très vite, les tutoriels suivants arriveront.
 
@@ -29,8 +25,9 @@ nav_order: 5
 - Personnaliser les couleurs de l'acteur détail de reflet
 - Faire clignoter le contour d'un acteur
 - Définition d'une synapp à la connexion d'un utilisateur
+- Racourci vers une synapp sur mobile
 - Scripts :
-  - se déconnecter
+  - se déconnecter d'un REDY
   - ajouter/supprimer des acteurs
   - Réaliser une requête externe
   - Gérer avec des blob fichier
