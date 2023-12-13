@@ -8,7 +8,7 @@ order: 1
 ---
 Cette propriété définit la couleur du texte.
 
-La valeur par défaut est héritée d'un acteur parent qui en définit une ou, à défaut, de la couleur de base définit dans les [généralités de la synapp](/concepts/synapp#Généralités).
+La valeur par défaut est héritée d'un acteur parent qui en définit une ou, à défaut, de la couleur de base définit dans les [généralités de la synapp]({{ site.baseurl }}/concepts/project/#généralités).
 
 Dans l'inspecteur, un sélecteur de couleur est disponible pour aider à définir la valeur de la propriété.
 

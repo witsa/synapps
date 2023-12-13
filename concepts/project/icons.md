@@ -84,8 +84,8 @@ Dans un premier temps, il est nécessaire de déposer une image en haut à droit
 
 Une fois l'image déposée, il est possible de générer des icônes pour toutes les tailles d'icônes à l'aide du bouton situé au dessus de l'interface du générateur d'icône.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.png)
+![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.PNG)
 
 Il est également possible de générer l'image adaptée pour une seule icône à l'aide du bouton situé au dessus de l'interface d'une icône.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.png)
+![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.PNG)

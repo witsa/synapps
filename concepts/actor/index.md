@@ -82,7 +82,7 @@ Les propriétés relatives à l'espacement entre les acteurs et les coins de la 
 
 Les propriétés relatives aux bordures de l'acteur et l'arrondi de ses coins.
 
-- [**Effets**](./category-effect.md)
+- [**Effets**](./category-effects.md)
 
 Les propriétés relatives aux transformations géométrique (échelle, translation, rotation) ou les ombres portées ou l'affichage de bulle d'aide.
 
@@ -120,7 +120,7 @@ Il est recommandé de profiter des clés d'acteur pour les qualifier et mieux co
 Un acteur va déclencher des évènements pendant toute sa durée de vie : de son initialisation à sa destruction. Il aura aussi des évènements de souris comme le click, le survol... Enfin, certains acteurs possèdent des évènements spécifiques à leur comportement.
 Tous ces évènements sont autant d'occasions d'intervenir et d'ajouter des comportements par script.
 
-- En savoir plus sur le [cycle de vie d'un acteur](./actor-life-cycle)
+- En savoir plus sur le [cycle de vie d'un acteur](../scripts/actor-life-cycle.md)
 - En savoir plus sur les [Scripts](../scripts/)
 
 ## Les additionnelles

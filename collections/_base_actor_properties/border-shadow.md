@@ -32,5 +32,5 @@ Pour y acceder, il suffit de cliquer ici : ↓ en rouge<br>
 
 Puis vous verrez apparaitre le pop-up suivant ↓<br>
 
-<image src="/assets/concepts/actor/base_properties/boxShadow/Helper_BoxShadow.gif" alt="gif de l'aide à la saisi de l'ombre de la bordure" style="max-height: 50%; max-width: 50%;"/>
+<image src="{{ site.baseurl }}/assets/concepts/actor/base_properties/boxShadow/Helper_BoxShadow.gif" alt="gif de l'aide à la saisi de l'ombre de la bordure" style="max-height: 50%; max-width: 50%;"/>
 Il est possible de retrouver la documentation de l'attribut Bos-Shadow CSS [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow).

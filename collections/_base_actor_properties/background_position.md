@@ -19,4 +19,4 @@ Pour y accéder, il suffit de cliquer ici : ↓ en rouge<br>
 
 Puis vous verrez apparaitre le pop-up suivant ↓<br>
 
-<image src="/assets/concepts/actor/base_properties/backgroundPosition/Helper_BackgroundPosition.png" alt="gif de l'aide à la saisie de la position de l'image de fond" style="max-height: 50%; max-width: 50%;"/>
+<image src="{{ site.baseurl }}/assets/concepts/actor/base_properties/backgroundPosition/Helper_BackgroundPosition.png" alt="gif de l'aide à la saisie de la position de l'image de fond" style="max-height: 50%; max-width: 50%;"/>
