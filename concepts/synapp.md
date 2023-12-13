@@ -16,7 +16,7 @@ C'est cet objet qui orchestre l'affichage de la scène en cours et qui va conten
 
 ## Dans Studio
 
-Les réglages de la synapp sont gérés dans Studio dans la sous-section [Projet/Généralités](./project.md#généralités).
+Les réglages de la synapp sont gérés dans Studio dans la sous-section [Projet/Généralités](./project/index.md#généralités).
 
 ## Identifiant de la synapp
 

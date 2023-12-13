@@ -17,6 +17,6 @@ Pour y acceder, il suffit de cliquer ici : ↓ en rouge<br>
 
 Puis vous verrez apparaitre le pop-up suivant ↓<br>
 
-<image src="/assets/concepts/actor/base_properties/cursor/Helper_cursor_red.png" alt="image de l'aide à la saisi de curseur" style="max-height: 50%; max-width: 50%;"/>
+<image src="{{ site.baseurl }}/assets/concepts/actor/base_properties/cursor/Helper_cursor_red.png" alt="image de l'aide à la saisi de curseur" style="max-height: 50%; max-width: 50%;"/>
 
 La documentation concernant les curseurs en CSS ainsi que la liste de tous les curseurs disponibles peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/cursor).
