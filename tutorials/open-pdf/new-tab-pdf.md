@@ -51,7 +51,7 @@ Nous allons ajouter dans le script le code suivant :
 window.open(`WSID${this.additionals.wsid}/WEB/IMG/${this.additionals.pdfName}`)
 ```
 
-Ce script permet de récupérer les valeurs des additionnelles créer précédemment afin de construire le chemin et d'ouvrir le PDF dans un nouvel onglet.
+Ce script permet de récupérer les valeurs des additionnelles créées précédemment afin de construire le chemin et d'ouvrir le PDF dans un nouvel onglet.
 
 ## Résultat
 
@@ -61,7 +61,7 @@ Ce script permet de récupérer les valeurs des additionnelles créer précédem
 
 # Conclusion
 
-Au cours de ce tutoriel, nous avons appris a renseigner à des additionnelles des informations qui sont récupérées dans un script afin d'ouvrir un PDF dans un nouvel onglet.
+Au cours de ce tutoriel, nous avons appris a renseigner à des additionnelles des informations et à récupérer ces additionnelles dans un script afin d'ouvrir un PDF dans un nouvel onglet.
 
 # Scène du tutoriel
 
