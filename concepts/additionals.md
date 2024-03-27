@@ -109,6 +109,11 @@ Permet de choisir la clé d'une scène parmi celles de la synapp. Une option per
 
 Permet de choisir la clé d'un composite parmi ceux de la synapp. Une option permet d'activer ou pas la possibilité de choisir le composite actuel.
 
+- Code
+
+Permet de saisir du code dans différents langages, notamment le `HTML`, le `CSS`, le `JavaScript`, le `Markdown`, le `JSON` et du `texte`.
+
+L'éditeur de code de cette additionnelle est conçu principalement comme un outil d'aide à la syntaxe. Il permet aux utilisateurs de saisir du code de manière efficace en fournissant des suggestions et des corrections automatiques. Il est important de noter que la valeur stockée dans l'additionnelle est une chaîne de caractères.
 
 - Chemin de variable
 
