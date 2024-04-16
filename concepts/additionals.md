@@ -94,16 +94,17 @@ La valeur stockée dans l'additionelle est la valeur de l'option selectionnée.
 
 Cette liste d'options peut être éditée lors de la modification de l'additionnelle.
 > Chaque option possède trois propriétés :
->  - La valeur de l'option sélectionnée.
->  - Le texte affiché pour cette option.
->  - L'activation de la possibilité de selectionner cette option.
+>  - Valeur: La valeur de l'option sélectionnée.
+>  - Texte: Le texte affiché pour cette option.
+>  - Désactivé?: L'activation / désactivation de cette option parmis celles proposées.
 
 - **Sélection multiple**
 
 Permet la sélection de plusieurs valeurs parmis une liste d'options.
-La valeur stockée dans l'additionnelle est un tableau avec la liste des  valeurs des options selectionnées.
+La valeur stockée dans l'additionnelle est un tableau avec la liste des valeurs des options selectionnées.
 
 Cette liste d'options peut être éditée lors de la modification de l'additionnelle.
+
 >Chaque option possède quatres propriétés :
 >  - Valeur: Valeur de l'option sélectionnée.
 >  - Texte : Le texte affiché pour cette option.
