@@ -50,17 +50,17 @@ Dans le cas d'un paramètre de scène, il est possible d'indiquer s'il doit appa
 
 Il existe plusieurs type d'additionnelle :
 
-- Texte
+- **Texte**
 
 Permet d'obtenir une propriété pour saisir du texte.
 
-- Nombre
+- **Nombre**
 
 Permet d'obtenir une propriété pour saisir un nombre.
 
 Il est possible de définir aussi un maximum et un minimum, ainsi que le pas lors d'un changement de valeur par glissement. Il est possible d'ajouter une unité informative.
 
-- Taille
+- **Taille**
 
 Permet d'obtenir une propriété pour saisir une taille. Ressemble à la propriété *Nombre* mais permet en plus de gérer les unités de type taille.
 
@@ -68,44 +68,62 @@ Il est possible de définir la valeur neutre.
 
 Voir [la section qui explique les unités de taille](./sizes.md)
 
-- Booléen
+- **Booléen**
 
 Permet d'obtenir une propriété avec un bouton à bascule.
 
-- Image
+- **Image**
 
 Permet d'obtenir une propriété pour ajouter une image.
 
-- Couleur
+- **Couleur**
 
 Permet d'obtenir une propriété pour saisir une couleur.
 
-- Icône
+- **Icône**
 Permet d'obtenir une propriété pour obtenir la clé d'une icône de la bibliothèque de Synapps.
 
-<!-- ![image](https://user-images.githubusercontent.com/35595723/124151000-646ede80-da92-11eb-8003-4235f467aaa1.png) -->
-
-- Date
+- **Date**
 
 Permet d'obtenir une propriété pour saisir une date avec en option une date minimum et une date maximum.
 
-- Sélection simple **ALPHA**
+- **Sélection simple**
 
-Permettra dans un avenir proche la saisie d'un option parmi une liste.
+Permet la sélection d'une seule valeur parmis une liste d'options.
+La valeur stockée dans l'additionelle est la valeur de l'option selectionnée.
 
-- Sélection multiple **ALPHA**
+Cette liste d'options peut être éditée lors de la modification de l'additionnelle.
+> Chaque option possède trois propriétés :
+>  - La valeur de l'option sélectionnée.
+>  - Le texte affiché pour cette option.
+>  - L'activation de la possibilité de selectionner cette option.
 
-Permettra dans un avenir proche la saisie de plusieurs options parmi une liste.
+- **Sélection multiple**
 
-- Acteur
+Permet la sélection de plusieurs valeurs parmis une liste d'options.
+La valeur stockée dans l'additionnelle est un tableau avec la liste des  valeurs des options selectionnées.
+
+Cette liste d'options peut être éditée lors de la modification de l'additionnelle.
+>Chaque option possède quatres propriétés :
+>  - Valeur: Valeur de l'option sélectionnée.
+>  - Texte : Le texte affiché pour cette option.
+>  - Désactivé? : L'activation / désactivation de cette option parmis celles proposées.
+>  - Enroulé? : L'option affiche ses enfants directs
+
+>Cette additionnelle possède également des champs spécifiques :
+>  - Avec 'tous': Permet de selectioner toutes les options disponibles via une option 'tous'
+>  - 'Tous' est null: L'option 'tous' disponible a pour valeur *null*
+>  - Texte pour 'Tous': Les texte affiché pour l'option 'tous'
+
+- **Acteur**
 
 Permet de choisir la clé d'un acteur parmi ceux de la scène ou du composite courant. Une option permet d'activer ou pas la possibilité de choisir l'acteur actuel. Il est possible de filtrer les acteurs disponibles par leur type.
 
-- Scène
+- **Scène**
 
 Permet de choisir la clé d'une scène parmi celles de la synapp. Une option permet d'activer ou pas la possibilité de choisir la scène actuelle.
 
-- Composite
+- **Composite**
 
 Permet de choisir la clé d'un composite parmi ceux de la synapp. Une option permet d'activer ou pas la possibilité de choisir le composite actuel.
 
@@ -115,7 +133,7 @@ Permet de saisir du code dans différents langages, notamment le `HTML`, le `CSS
 
 L'éditeur de code de cette additionnelle est conçu principalement comme un outil d'aide à la syntaxe. Il permet aux utilisateurs de saisir du code de manière efficace en fournissant des suggestions et des corrections automatiques. Il est important de noter que la valeur stockée dans l'additionnelle est une chaîne de caractères.
 
-- Chemin de variable
+- **Chemin de variable**
 
 Permet de choisir un chemin de variable REDY. Plusieurs options permettent d'affiner les possibilités affichée par l'explorateur de variable.
 
