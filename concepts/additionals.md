@@ -108,13 +108,13 @@ Cette liste d'options peut être éditée lors de la modification de l'additionn
 >Chaque option possède quatres propriétés :
 >  - Valeur: Valeur de l'option sélectionnée.
 >  - Texte : Le texte affiché pour cette option.
->  - Désactivé? : L'activation / désactivation de cette option parmis celles proposées.
->  - Enroulé? : L'option affiche ses enfants directs
+>  - Désactivé? : Activation / désactivation de cette option parmis celles proposées.
+>  - Enroulé? : Activation / désactivation de l'affichage des enfants de cette option.
 
 >Cette additionnelle possède également des champs spécifiques :
->  - Avec 'tous': Permet de selectioner toutes les options disponibles via une option 'tous'
->  - 'Tous' est null: L'option 'tous' disponible a pour valeur *null*
->  - Texte pour 'Tous': Les texte affiché pour l'option 'tous'
+>  - Avec 'tous': Permet de selectioner toutes les options disponibles via une option 'tous'.
+>  - 'Tous' est null: L'option 'tous' disponible a pour valeur *null*.
+>  - Texte pour 'Tous': Les texte affiché pour l'option 'tous'.
 
 - **Acteur**
 
