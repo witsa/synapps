@@ -28,6 +28,19 @@ En ce qui concerne les appareils nomades, il faudra veiller à utiliser les vers
 | iOS        | 11.3    |
 
 
+### Versions du Runtime embarquées dans REDY
+
+| REDY   | Runtime | Studio |
+|--------|---------|--------|
+| ?      | 2.5.1   | 1.2.1  |
+| 14.5.2 | 2.5.0   | 1.2.0  |
+| 14.4.1 | 2.4.1   | 1.1.6  |
+| 14.4.0 | 2.4.0   | 1.1.5  |
+| 14.3.2 | 2.3.3   | 1.1.4  |
+| 14.2.3 | 2.3.2   | 1.1.2  |
+| 14.2.2 | 2.3.1   | 1.1.0  |
+
+
 ## Synapps Studio
 
 Synapps Studio fonctionne sur *Windows 10* et les versions suivantes.
@@ -42,3 +55,30 @@ Il faudra bien entendu de l'espace libre suplémentaire sur votre disque dur pou
 
 > ⚠️ **ATTENTION**<br>
 > N'utiliser pas de lecteur réseau pour accueillir vos projets. En effet, Studio ne fonctionne pas correctement pour l'instant avec ce type de lecteur.
+
+### Compatibilités avec REDY
+
+Voici un tableau des versions de REDY que Studio est capable de gérer :
+
+| Studio | REDY   |
+|--------|--------|
+| 1.2.1  | ?      |
+| 1.2.0  | 14.5.2 |
+| 1.1.6  | 14.4.1 |
+| 1.1.5  | 14.4.0 |
+| 1.1.4  | 14.3.2 |
+| 1.1.2  | 14.2.3 |
+| 1.1.0  | 14.2.2 |
+
+
+### Versions du Runtime embarquées dans Studio
+
+| Studio | Runtime |
+|--------|---------|
+| 1.2.1  | 2.5.1   |
+| 1.2.0  | 2.5.0   |
+| 1.1.6  | 2.4.1   |
+| 1.1.5  | 2.4.0   |
+| 1.1.4  | 2.3.3   |
+| 1.1.2  | 2.3.2   |
+| 1.1.0  | 2.3.1   |
