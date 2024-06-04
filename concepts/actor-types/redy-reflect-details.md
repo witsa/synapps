@@ -11,7 +11,7 @@ grand_parent: Concepts
 |---------------------|------| -------------------|
 | Agenda | `agenda` | Reflet Agenda et Reflet Agendapp |
 | Analogique | `analog` | - Reflet Analogique<br> - Reflet Analogique avec Seuils témoins<br> - Reflet Analogique avec Forçage |
-| Chaudière | `boiler  | Reflet Chaudière |
+| Chaudière | `boiler`  | Reflet Chaudière |
 | Bruleur | `burner` | Reflet Bruleur |
 | Digital | `digital` | - Reflet Digital<br> - Reflet Digital avec Forçage |
 | Courbe de chauffe | `heating-curve` | Reflet Courbe de chauffe |
