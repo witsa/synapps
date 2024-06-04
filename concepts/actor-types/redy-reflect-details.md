@@ -6,6 +6,7 @@ grand_parent: Concepts
 
 ## Liste des reflets du REDY supportés par Synapps :
 
+
 | Reflet dans Synapps | type Synapps | Reflets dans REDY |
 |---------------------|------| -------------------|
 | Agenda | `agenda` | Reflet Agenda et Reflet Agendapp |
@@ -15,7 +16,7 @@ grand_parent: Concepts
 | Digital | `digital` | - Reflet Digital<br> - Reflet Digital avec Forçage |
 | Courbe de chauffe | `heating-curve` | Reflet Courbe de chauffe |
 | Tableau de consignes | `setpoints-table` | Reflet Tableau de consignes |
-|PID | `pid` | Reflet PID |
+| PID | `pid` | Reflet PID |
 | Fil Pilote | `pilot-wire` | Reflet Fil Pilote |
 | Pompe | `pump` | Reflet Pompe |
 | Etat | `state` | Reflet Etat |
