@@ -9,7 +9,7 @@ grand_parent: Concepts
 
 | Reflet dans Synapps | type Synapps | Reflets dans REDY |
 |---------------------|------| -------------------|
-| Agenda | `agenda` | Reflet Agenda et Reflet Agendapp |
+| Agenda | `agenda` | - Reflet Agenda<br> - Reflet Agendapp |
 | Analogique | `analog` | - Reflet Analogique<br> - Reflet Analogique avec Seuils témoins<br> - Reflet Analogique avec Forçage |
 | Chaudière | `boiler`  | Reflet Chaudière |
 | Bruleur | `burner` | Reflet Bruleur |
