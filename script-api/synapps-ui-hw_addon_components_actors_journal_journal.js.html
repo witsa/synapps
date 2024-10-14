@@ -434,7 +434,7 @@ export default class Journal extends BaseRequestList {
 
     notifyPropertyChange(this, 'selectedEvent');
     if (this.isDestroyed || this.isDestroying) return;
-    this.runEvent('onSelectChange', { value });
+    this.runEvent('onSelected', { value });
   }
 
   @computed('properties.dateFrom')
