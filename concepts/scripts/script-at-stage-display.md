@@ -10,7 +10,16 @@ grand_parent: Concepts
 
 Que ce soit pour une scène ou un composite, il est possible d'exécuter un script juste à son affichage.
 
-Pour cela, il suffit de définir ce script dans l'évènement `onPostInit` de l'acteur principale de la scène ou du composite.
+onLeadActorDidRender
+
+Pour cela, il suffit de définir ce script dans l'évènement `onLeadActorDidRender` de l'acteur principale de la scène ou du composite.
+
+En effet, l'évènement `onLeadActorDidRender` est déclenché une seule fois, lors du premier rendu de l'acteur principal, lorsque toute la scène sera rendue. Il ne sera pas déclenché lors des rendus suivants.
+
+
+### solution alternative
+
+Une autre solution consiste à définir ce script dans l'évènement `onPostInit` de l'acteur principale de la scène ou du composite.
 
 En effet, lorsqu'une scène ou un composite doit être affichée, l'arborescence des acteurs est construite. Lors de cette construction, les scripts `onInit` sont d'abord exécutés en parcourant l'arborescence des acteurs vers le bas. Puis l'évènement `onPostInit` est exécuté sur chaque acteur, en remontant l'arborescence. Ainsi, lorsque le tour de l'acteur principal est arrivé, tous les acteurs ont été déclarés, toutes les liaisons réalisées.
 

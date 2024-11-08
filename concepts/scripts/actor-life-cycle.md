@@ -112,6 +112,9 @@ Enfin, l'évènement [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.
 | Post-initialisation | Placement de l'élément DOM dans le flux HTML et création des liaisons | Montant | `onPostInit` | Création | Création | | |
 | Premier rendu | Création des classes CSS, du style CSS et du gabarit | Descendant | `onCssStyling`<br>`onRender(isFirstRender=true)` | Oui<br>Oui | Oui<br>Oui | Création<br>Oui | Non<br>Oui |
 
+>📌*Remarque*
+>
+> L'acteur principal d'une scène possède un évènement supplémentaire : [`onLeadActorDidRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onLeadActorDidRender){:target="_blank"}. Cet évènement est déclenché une seule fois, lors du premier rendu de l'acteur principal, lorsque toute la scène sera rendue. Il ne sera pas déclenché lors des rendus suivants.
 
 # Ajout d'un acteur dynamiquement
 
