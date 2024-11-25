@@ -179,28 +179,27 @@ let boolFalse = Boolean(0);
 
 ### (Les objets)
 
-### Les conditions
-
-#### Les conditions simples
-#### les conditions multiples
-#### Les conditions ternaires
-
-#### Les opérateurs de comparaison
-#### Les opérateurs logiques
-
-
-### L'instruction if...else
-### L'instruction switch
-
-
-### (Les boucles)
-#### La boucle for
-#### La boucle while
-#### La boucle do...while
-#### La boucle for...in
-#### La boucle for...of
-
-
 ### (Les fonctions)
 
-### L'essentiel de la librairie Math
+## Les conditions
+
+### Les conditions simples
+### les conditions multiples
+### Les conditions ternaires
+
+### Les opérateurs de comparaison
+### Les opérateurs logiques
+
+
+## L'instruction if...else
+## L'instruction switch
+
+
+## (Les boucles)
+### La boucle for
+### La boucle while
+### La boucle do...while
+### La boucle for...in
+### La boucle for...of
+
+## L'essentiel de la librairie Math
