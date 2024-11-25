@@ -6,6 +6,8 @@ grand_parent: Concepts
 
 > 🚧 En construction
 
+{% include table_of_content.html %}
+
 # Scripts utiles
 
 Nous allons voir ici quelques scripts utiles pour vous aider lorsqu'ils deviennent incontournables.
