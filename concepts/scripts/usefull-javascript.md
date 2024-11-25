@@ -67,9 +67,6 @@ Les opérations mathématiques sont possibles en Javascript.
 
 ### Les chaînes de caractères
 
-> 🚧 a écrire
-
-
 #### Concaténation
 
 ```javascript
