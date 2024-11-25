@@ -4,6 +4,8 @@ parent: Scripts
 grand_parent: Concepts
 ---
 
+> 🚧 En construction
+
 # Scripts utiles
 
 Nous allons voir ici quelques scripts utiles pour vous aider lorsqu'ils deviennent incontournables.
@@ -291,11 +293,16 @@ Dans cet exemple, `num` contiendra `42`.
 #### Conversion en booléen
 
 ```javascript
-let str = 'true';
+let str = 'test';
 let bool = Boolean(str);
-```
-Dans cet exemple, `bool` contiendra `true`.
+// > true
 
+let boolTrue = Boolean(10);
+// > true
+
+let boolFalse = Boolean(0);
+// false
+```
 
 ### Les tableaux
 
@@ -326,8 +333,5 @@ Dans cet exemple, `bool` contiendra `true`.
 ### (Les fonctions)
 
 ## L'essentiel de la librairie Math
-
-
-
 
 ## Accès des objets Synapps
