@@ -13,7 +13,7 @@ nav_order: 1
 Avant tout, il va falloir installer une version de Synapps Studio sur votre poste.
 
 
-Dernière version : [ici](https://github.com/witsa/synapps/releases/download/1.3.0/synapps-studio-setup.zip)
+Dernière version : [ici](https://github.com/witsa/synapps/releases/download/1.4.0/synapps-studio-setup.zip)
 
 - Téléchargez le fichier zip.
 - Ouvrir le fichier zip et exécutez le fichier synapps-studio-setup.exe
