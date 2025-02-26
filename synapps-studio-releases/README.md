@@ -4,9 +4,9 @@ nav_order: 30
 
 # Synapps Studio
 
-[📥Télécharger la dernière version](https://github.com/witsa/synapps/releases/download/1.3.0/synapps-studio-setup.zip){: .btn }
+[📥Télécharger la dernière version](https://github.com/witsa/synapps/releases/download/1.4.0/synapps-studio-setup.zip){: .btn }
 
-Voir la [📋Note de version](./notes/1.3.0){:target="_blank"}
+Voir la [📋Note de version](./notes/1.4.0){:target="_blank"}
 
 # Historique des versions
 
