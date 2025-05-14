@@ -32,6 +32,7 @@ En ce qui concerne les appareils nomades, il faudra veiller à utiliser les vers
 
 | REDY   | Runtime | Studio |
 |--------|---------|--------|
+| 16.3.0 | 2.7.1   | 1.4.1  |
 | 16.2.0 | 2.7.0   | 1.4.0  |
 |        | 2.6.1   |        |
 | 16.1.0 | 2.6.0   | 1.3.0  |
@@ -66,6 +67,7 @@ Voici un tableau des versions de REDY que Studio est capable de gérer :
 
 | Studio | REDY   |
 |--------|--------|
+| 1.4.1  | 16.3.0 |
 | 1.4.0  | 16.2.0 |
 | 1.3.0  |        |
 | 1.2.1  |        |
@@ -81,6 +83,7 @@ Voici un tableau des versions de REDY que Studio est capable de gérer :
 
 | Studio | Runtime |
 |--------|---------|
+| 1.4.1  | 2.7.1   |
 | 1.4.0  | 2.7.0   |
 | 1.3.0  | 2.6.0   |
 | 1.2.1  | 2.5.1   |
