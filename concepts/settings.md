@@ -5,48 +5,82 @@ parent: Concepts
 
 {% include table_of_content.html %}
 
-Les paramètres de Synapps Studio permettent à l'utilisateur de paramétrer :
+# Paramètres de l'application Synapps Studio
 
-### Mises à jour.
+Ce guide présente les différents paramètres disponibles dans l’application Synapps Studio et explique comment les utiliser pour personnaliser votre expérience.
 
-**Vérification automatique de mise à jour**<br>
-Par défaut, cette option est activée.
-Il est grandement conseillé de laisser cette option activée afin de recevoir une notification lorsqu'un nouveau correctif ou une nouvelle version est disponible pour Synapps Studio.
+### Paramètres Studio
 
-### Collecte de données.
+- **Langue de l’application**
+  Sélectionnez la langue d’affichage parmi les options disponibles : Français, Italien, Anglais.
 
-**Autorisation de la collecte de données d'utilisation**<br>
-Cette option permet d'autoriser / interdire la collecte de données lors de l'utilisation de Synapps Studio.
+  ⚠️ Le changement de langue sera effectif uniquement au prochain redémarrage de Synapps Studio (ou au rafraîchissement).
 
-**Profil d'utilisation**<br>
+- **Vérification automatique des mises à jour**
+  Activez ou désactivez la vérification automatique des mises à jour de Synapps Studio.
+
+- **Partage des données d’utilisation (Analytics)**
+  Activez ou désactivez l’envoi de statistiques d’utilisation pour améliorer l’application.
+
+- **Agréments**
+  Visualisez la liste des agréments.
+  Ajoutez un nouvel agrément via le bouton « Ajouter un agrément ».
+  Si aucun agrément n’est présent, un message d’information s’affiche.
+
+### Projets récents
+
+- **Liste des projets récents**
+  Consultez les chemins des projets récemment ouverts.
+  Supprimez un projet individuel de la liste via le bouton « Supprimer ».
+  Supprimez tous les projets ou uniquement ceux qui sont inaccessibles via les boutons dédiés.
+
+### Paramètres utilisateur
+
+- **Identifiant utilisateur**
+  Visualisez votre identifiant utilisateur (userID).
+
+- **Type d’utilisateur**
+  Sélectionnez votre profil utilisateur parmi plusieurs options (installateur certifié, exploitant, etc.).
+
 Le profil d'utilisateur est réparti en 5 catégories :
+
 - Installateur certifié : Installateur de produit WIT, reconnu et certifié par WIT.
 - Installateur : Installateur de produit WIT.
 - Exploitant : Utilisateur de produit WIT.
 - WIT : Membre du personnel WIT.
 - Autre : Aucunes des catégories ci-dessus ne correspond à la description de votre profil.
 
-La collecte des données d'utilisation et le profil utilisateur permet à l'équipe de développement de comprendre le comportement de l'utilisateur ainsi que d'analyser les usages sur Synapps Studio pour apporter des mise à jour en cohérence avec les besoins utilisateurs.
+### Paramètres du designer
 
-### Languages
+- **Résolutions d’écran**
+  Gérez la liste des résolutions d’écran utilisées pour la prévisualisation dans le designer.
+  Ajoutez une nouvelle résolution, modifiez ou supprimez une résolution existante.
 
-**Language de Synapps Studio**<br>
-Synapps Studio supporte pour l'instant 2 languages, le français (par défaut) et l'italien.<br>
-Si vous souhaitez que l'équipe de développement apporte de nouvelle traductions à la solution, n'hésitez pas à soumettre vos idées dans l'onglet discussions de l'espace <a href="https://github.com/witsa/synapps/discussions">gitHub associé à Synapps Studio </a.>
+- **Largeur et hauteur de l’aperçu composite**
+  Définissez la taille de l’aperçu du composite dans le designer.
 
-⚠️ Le changement de langue sera effectif uniquement au prochain redémarrage de Synapps Studio.
+- **Mode d’exploration par défaut**
+  Choisissez le mode d’exploration par défaut pour l’explorateur de variables.
 
-### Informations
+1. Mode « all » (Toutes les variables) :
+   Affiche toutes les variables accessibles dans le chemin sélectionné, sans filtrage particulier.
+2. Mode « commonVariables » (Variables communes):
+   Affiche uniquement les variables considérées comme « communes », ainsi que celles définies dans le filtre personnalisé lors de la navigation au sein d'une ressource.
+3. Mode « resourcesOnly » (Ressources uniquement):
+   Filtre et affiche uniquement les variables qui sont des ressources, c’est-à-dire des éléments matériels ou logiques identifiés comme tels dans le système.
+4. Mode « withReflectOnly » (Avec reflet uniquement):
+   Affiche uniquement les variables de type « ressource » qui possèdent un reflet (propriété spécifique, par exemple la présence d’un enfant « PT »).
 
-**userID**<br>
-L'<iuserID</i> est l'identifiant interne, propre à chaque utilisateur, il peut être demandé par l'équipe de développement pour du support.
+- **Filtre de variables (JSON)**
+  Définissez des variables à ajouter au filtre des variables communes.
 
-### Gestion des projets récents
+---
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/recent_projects.png)
+## Remarques
 
-*Bouton A*: Permet la suppression de tous les accès rapides aux projets récents qui sont introuvables, c'est à dire innaccessible via le lien qui est présenté.
+- Les modifications sont prises en compte immédiatement.
+- Certains paramètres sont en lecture seule et ne peuvent être modifiés que par l’administrateur ou lors de l’installation.
 
-*Bouton B* : Permet la suppression de TOUS les accès rapides aux projets récents sans distinctions.
+---
 
-*Bouton C* : Permet la suppression de l'accès rapide à tout les projets récents.
+Ce panneau de paramètres vous permet d’adapter Synapps Studio à vos besoins et à votre usage quotidien.
