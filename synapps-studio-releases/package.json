@@ -2,8 +2,8 @@
   "name": "synapps-studio-releases",
   "config": {
     "stable": {
-      "version": "1.4.1",
-      "revision": "2025-05-21T16:00:00"
+      "version": "1.5.0",
+      "revision": "2025-10-10T12:00:00"
     },
     "beta": {
       "version": "1.5.0-beta",
