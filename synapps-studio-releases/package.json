@@ -3,11 +3,11 @@
   "config": {
     "stable": {
       "version": "1.5.0",
-      "revision": "2025-10-10T12:00:00"
+      "revision": "2025-10-15T14:00:00"
     },
     "beta": {
       "version": "1.5.1-beta",
-      "revision": "2025-10-10T12:00:00"
+      "revision": "2025-10-15T14:00:00"
     },
     "hw": {
       "version": "1.2.1-hw",
