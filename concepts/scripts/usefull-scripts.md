@@ -169,3 +169,59 @@ let actor = getActor('actorKey');
 actor.properties.backgroundColor = 'red';
 actor.additionals.prop1 = 42;
 ```
+
+
+## Navigation entre scènes
+
+### Navigation de base
+Il est possible de naviguer entre les scènes en utilisant la fonction `navigate` sur la scène courante.
+
+```javascript
+
+context.scene.navigate('<clé de la scène>');
+
+```
+
+Si la scène est dans un acteur écran, l'écran naviguera vers la scène ciblée. Si la scène est celle où la synapp se trouve, c'est la synapp elle même qui naviguera vers la scène ciblée.
+
+Si vous souhaitez naviguer vers une scène depuis la synapp :
+
+```javascript
+context.synapp.navigate('<clé de la scène>');
+```
+
+Si vous souhaitez naviguer vers une scène depuis un acteur écran :
+
+```javascript
+const screen = context.getActor("<clé de l'acteur écran>");
+screen.navigate('<clé de la scène>');
+```
+
+### Navigation avec des paramètres
+
+Il est possible de passer des paramètres à la scène cible lors de la navigation. Pour cela, il faut passer un second argument à la fonction `navigate`, qui est un objet contenant les paramètres.
+
+```javascript
+
+// Depuis la synapp :
+context.synapp.navigate('<clé de la scène>', {
+    param1: 'value1',
+    param2: 'value2'
+});
+
+// Depuis un acteur écran :
+const screen = context.getActor("<clé de l'acteur écran>");
+Object.assign(screen.additionals, {
+    param1: 'value1',
+    param2: 'value2'
+});
+screen.navigate('<clé de la scène>');
+
+// Depuis une scène
+Object.assign(context.scene.additionals, {
+    param1: 'value1',
+    param2: 'value2'
+});
+context.scene.navigate('<clé de la scène>');
+
+```
