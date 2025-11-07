@@ -1,5 +1,5 @@
 ---
-title: "Conseils, bonnes pratiques et Optimisations"
+title: "Conseils"
 parent: Concepts
 ---
 
