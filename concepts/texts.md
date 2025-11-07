@@ -6,7 +6,7 @@ parent: Concepts
 
 # Librairie de textes
 
-La librairie de textes permet de définir des clés de texte qui seront associées à la traduction d'un texte dans plusieurs langues.
+La librairie de textes permet de définir des clés qui seront associées à la traduction d'un texte dans plusieurs langues.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/textsDesigner.PNG)
 
@@ -69,14 +69,14 @@ Les langues peuvent tout à fait être les ISO de type `en-US`, `en-GB`, etc.
 
 La première langue de la liste est celle par défaut utilisée lorsqu'il n'y a pas de traduction disponible pour la langue de prévisualisation de la synapp. Pour la changer, il suffit de déplacer la colonne de la langue souhaitée en première position.
 
->![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/switchLang.GIF)
+>![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/switchLang.gif)
 
 
 ### Langue de prévisualisation
 
 La langue de prévisualisation de la synapp est indiquée par une icône située à côté de la clé de la langue. Il est possible de changer la langue de prévisualisation en cliquant sur cette icône.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/preview.PNG)
+![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/preview.png)
 
 Le même bouton est disponible dans les designers de Scènes/Composites pour changer rapidement de langue de prévisualisation.
 
