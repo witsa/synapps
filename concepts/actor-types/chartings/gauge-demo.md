@@ -1,14 +1,13 @@
 ---
-title: "Charts | Jauge"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Jauge"
+parent: "Charts"
 ---
 
 {% include links_actor.md apiClass="Actor.Charting.GaugeDemo" %}
 
 # Jauge
 
-![SynApps](../../assets/concepts/actor/charting_gauge/gauge.png)
+![SynApps](../../../assets/concepts/actor/charting_gauge/gauge.png)
 
 L'acteur jauge permet de représenter graphiquement par un arc de cercle coloré, une valeur dans un intervalle.
 
@@ -25,7 +24,7 @@ La personnalisation va plus loin en permettant de définir l'épaisseur de l'arc
 ## Quelques recommandations
 
 - Ne sortez pas la valeur de l'intervalle définie par les bornes sous peine de dysfonctionnement de la jauge.
-- Fixez sa largeur et sa hauteur pour éviter les problèmes de redimensionnement. Éventuellement, placez la ensuite dans une [Boite à vue](./layout-view-box.md).
+- Fixez sa largeur et sa hauteur pour éviter les problèmes de redimensionnement. Éventuellement, placez la ensuite dans une [Boite à vue](../layout/view-box.md).
 
 ## Quelques exemples
 
@@ -33,7 +32,7 @@ La personnalisation va plus loin en permettant de définir l'épaisseur de l'arc
 
 <div class="code-example" markdown="1">
 
-![SynApps](../../assets/concepts/actor/charting_gauge/gauge01.png)
+![SynApps](../../../assets/concepts/actor/charting_gauge/gauge01.png)
 
 </div>
 ```
@@ -44,7 +43,7 @@ SYNAPPS-STUDIO-ACTOR|{"type":"charting/gauge-demo","key":"gauge-demo1","properti
 
 <div class="code-example" markdown="1">
 
-![SynApps](../../assets/concepts/actor/charting_gauge/gauge02.png)
+![SynApps](../../../assets/concepts/actor/charting_gauge/gauge02.png)
 
 </div>
 ```

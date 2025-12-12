@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Périodes"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Périodes"
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Period" %}
@@ -12,7 +11,7 @@ L'acteur *Période* propose une sélection de périodes types et expose les born
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_period/sample01.gif)
 
-L'acteur *Période* a beaucoup de similitudes avec l'acteur [*Liste de boutons*](./input-button-list.md) et propose la plupart de ses propriétés (*En ligne?*, *Taille*, *Mode*, ...).
+L'acteur *Période* a beaucoup de similitudes avec l'acteur [*Liste de boutons*](./button-list.md) et propose la plupart de ses propriétés (*En ligne?*, *Taille*, *Mode*, ...).
 
 {% include table_of_content.html %}
 

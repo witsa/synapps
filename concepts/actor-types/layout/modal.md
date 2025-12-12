@@ -1,7 +1,6 @@
 ---
-title: "Disposition | Modale"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Modale"
+parent: "Disposition"
 ---
 
 
@@ -11,7 +10,7 @@ grand_parent: Concepts
 
 Acteur qui permet d'afficher une boite de dialogue ou un menu.
 
-![SynApps](../../assets/concepts/actor/layout_modal/sample-01.gif)
+![SynApps](../../../assets/concepts/actor/layout_modal/sample-01.gif)
 
 {% include table_of_content.html %}
 
@@ -24,7 +23,7 @@ La propriété *Montrer?* permet d'afficher/cacher la modale.²
 > 💡 **ASTUCE**<br>
 > Vous pouvez activer cette propriété dans le designer pour apercevoir le contenu de la modale ou pour régler son ancrage. Vous avez également la possibilité d'avoir un apperçu de la modale en cliquant sur le bouton "oeil" juste à coté :
 >
-> ![aperçu](../../assets/concepts/actor/layout_modal/image-01.png)
+> ![aperçu](../../../assets/concepts/actor/layout_modal/image-01.png)
 
 
 ## Ferme si on clique en ailleurs
@@ -50,7 +49,7 @@ Pour ancrer la modale, il y à trois points à observer :
 
 Dans l'exemple ci dessous, la <span style="color: red;">**modale**</span> est attachée à un <span style="color: green;">**acteur bouton**</span> et son ancre est matérialisé par un cercle rouge, l'ancrage sur le bouton est vert :
 
-![SynApps](../../assets/concepts/actor/layout_modal/sample-02.gif)
+![SynApps](../../../assets/concepts/actor/layout_modal/sample-02.gif)
 
 
 
@@ -111,4 +110,4 @@ SYNAPPS-STUDIO-SCENE|{"config":{"key":"scene145","name":"Exemple de modale au cl
 ```
 {% endraw %}
 
-![modal au clic](../../assets/concepts/actor/layout_modal/image-02.png)
+![modal au clic](../../../assets/concepts/actor/layout_modal/image-02.png)

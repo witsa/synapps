@@ -9,7 +9,7 @@ nav_order: 3
 
 # Catégorie Disposition flexible
 
-Cette catégorie regroupe les propriétés relatives à la disposition de l'acteur dans une disposition flexible comme l'[empilement](../actor-types/layout-stack.md), la [boite à vue](../actor-types/layout-view-box.md) ou la [modale](../actor-types/layout-modal.md).
+Cette catégorie regroupe les propriétés relatives à la disposition de l'acteur dans une disposition flexible comme l'[empilement](../actor-types/layout/tack.md), la [boite à vue](../actor-types/layout/view-box.md) ou la [modale](../actor-types/layout-modal.md).
 
 {% assign sorted = site.base_actor_properties | where: 'section', 'disposition_flex' | sort: 'order' %}
 

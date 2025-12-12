@@ -35,7 +35,7 @@ Et enfin les unités relative à la taille du conteneur, de l'équipement ou bie
 Le pixel est une unité fixe, c'est à dire que pour un appareil et une échelle donnée, le pixel a toujours la même taille. C'est une unité facile à employer.
 
 > 💡 **ASTUCE**<br>
-> Toujours employer cette unité lors de montage d'acteurs qui se chevauchent comme les constructions de plan ou des dessins précis dans un acteur [Toile](./actor-types/layout-canvas.md). Ensuite, laisser faire un acteur [Boite à vue](./actor-types/layout-view-box.md) pour que l'ensemble s'adapte à n'importe quelle taille.
+> Toujours employer cette unité lors de montage d'acteurs qui se chevauchent comme les constructions de plan ou des dessins précis dans un acteur [Toile](./actor-types/layout-canvas.md). Ensuite, laisser faire un acteur [Boite à vue](./actor-types/layout/view-box.md) pour que l'ensemble s'adapte à n'importe quelle taille.
 
 Le pixel est défini comme étant le plus petit élément de l'écran mais suffisamment grand pour être visible.
 

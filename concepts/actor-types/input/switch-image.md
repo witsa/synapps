@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Images interrupteur"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Images interrupteur"
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.SwitchImage" %}

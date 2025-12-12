@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Curseur"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Curseur"
+parent: "Intéraction"
 ---
 
 > 🚧 en cours de rédaction...

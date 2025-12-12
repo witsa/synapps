@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Liste de choix déroulante"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Liste de choix déroulante"
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.DropdownList" %}

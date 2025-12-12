@@ -85,7 +85,7 @@ L'évènement [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.htm
 > ✔️ **CONSEIL**<br>
 > C'est le moment de modifier le style CSS de l'élément DOM ou d'ajouter des classes CSS dessus par script.
 
-Ensuite, un premier calcul de gabarit est réalisé sur l'acteur. Certain acteur ont besoin de cette étape pour s'afficher correctement, comme par exemple la [boite à vue](../actor-types/layout-view-box.md).
+Ensuite, un premier calcul de gabarit est réalisé sur l'acteur. Certain acteur ont besoin de cette étape pour s'afficher correctement, comme par exemple la [boite à vue](../actor-types/layout/view-box.md).
 
 Enfin, l'évènement [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onRender){:target="_blank"} est déclenché. Dans le contexte de l'évènement, le champ `isFirstRender` est vrai. En effet, cette évènement est déclenché à chaque fois que l'acteur passe par l'étape de rendu, il est donc intéressant de savoir si c'est le premier rendu ou non.
 

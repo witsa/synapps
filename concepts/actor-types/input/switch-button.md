@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Bouton interrupteur"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Bouton interrupteur"
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.SwitchButton" %}

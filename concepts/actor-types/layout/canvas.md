@@ -1,7 +1,6 @@
 ---
-title: "Disposition | Toile"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Toile"
+parent: "Disposition"
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.Canvas" %}

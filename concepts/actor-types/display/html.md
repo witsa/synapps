@@ -1,7 +1,7 @@
 ---
-title: "Affichage | HTML"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "HTML"
+parent: "Affichage"
+nav_order: 0
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Html" %}

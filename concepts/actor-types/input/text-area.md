@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Zone de texte"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Zone de texte"
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.TextArea" %}

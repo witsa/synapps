@@ -1,7 +1,7 @@
 ---
-title: "Affichage | Ecran"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Écran"
+parent: "Affichage"
+nav_order: 0
 ---
 
 > 🚧 en cours de rédaction...

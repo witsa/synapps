@@ -1,7 +1,7 @@
 ---
-title: "Affichage | Image"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Image"
+parent: "Affichage"
+nav_order: 0
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Image" %}

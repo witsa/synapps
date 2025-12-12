@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Boite de saisie "
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: Boite de saisie
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.TextBox" %}
@@ -166,6 +165,6 @@ La propriété spécifique `Valeur` permet de définir la couleur de l'acteur.
 
 La valeur attendue est un code hexadécimal.
 
-Un outil permet de récupérer les codes hexadécimaux des couleur et est disponible [à cette adresse](https://htmlcolorcodes.com/fr/).
+Un outil permet de récupérer les codes hexadécimaux des couleur et est disponible [à cette adresse](https://htmlcolorcodes.com/fr/){:target="_blank"}.
 
 Il est également possible de cliquer sur le bouton dans l'interface afin de choisir une couleur.

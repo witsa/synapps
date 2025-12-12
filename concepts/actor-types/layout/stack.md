@@ -1,7 +1,6 @@
 ---
-title: "Disposition | Empilement"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Empilement"
+parent: "Disposition"
 ---
 
 
@@ -24,7 +23,7 @@ L'empilement va disposer ses acteurs enfants suivant la règle donnée par la pr
 
 ## Disposition
 
-Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../actor/category-disposition.md#catégorie-disposition-flexible)
+Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../../actor/category-disposition.md#catégorie-disposition-flexible)
 
 ## Dépassement de contenu
 
@@ -41,5 +40,5 @@ La valeur par défaut est **Caché**
 
 # Usage
 
-L'empilement avec les règles de [disposition flexibles](../actor/category-disposition.md#catégorie-disposition-flexible) sont à la base de la construction d'interface qui peuvent s'adapter à n'importe quelle taille d'écran.
-Associées à la disposition par [Toile](./layout-canvas.md) et la [Boite à vue](./layout-view-box.md), ces acteurs permettent de construire n'importe quel type de gabarit.
+L'empilement avec les règles de [disposition flexibles](../../actor/category-disposition.md#catégorie-disposition-flexible) sont à la base de la construction d'interface qui peuvent s'adapter à n'importe quelle taille d'écran.
+Associées à la disposition par [Toile](./canvas.md) et la [Boite à vue](./view-box.md), ces acteurs permettent de construire n'importe quel type de gabarit.

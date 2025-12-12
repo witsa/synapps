@@ -1,7 +1,7 @@
 ---
-title: "Affichage | IFrame"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "IFrame"
+parent: "Affichage"
+nav_order: 0
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Iframe" %}
@@ -34,7 +34,7 @@ Cette propriété permet de d'autoriser que le site web affiché de même origin
 Si cette propriété est désactivée, les ressources du site d'origine seront donc inaccessible pour l'iFrame alors même qu'il est vraiment sur la même origine. De plus, le site à l'intérieur de l'iFrame aura une origine 'null' ce qui peut empêcher certaines requêtes et limiter certains accès.
 
 *Pour en apprendre plus sur les origines et leurs fonctionnements :*
-La documentation MDN peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/Security/Same-origin_policy).
+La documentation MDN peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/Security/Same-origin_policy){:target="_blank"}.
 ## Autoriser les modales
 
 Cette propriété permet d'activer / désactiver toute les alertes systèmes qui pourraient survenir à la suite d'une action dans l'iFrame.
@@ -68,7 +68,7 @@ Cette propriété permet d'activer / désactiver les formulaires lors de la navi
 
 Voici un exemple d'iFrame qui montre une page du REDY.
 
-![SynApps](../../assets/concepts/actor/display_iframe/iframe01.png)
+![SynApps](../../../assets/concepts/actor/display_iframe/iframe01.png)
 
 L'additionnelle *Chemin REDY* permet de définir le chemin vers la page, depuis la racine du REDY (ici, on affiche le tableau de bord).
 

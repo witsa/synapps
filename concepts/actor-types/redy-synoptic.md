@@ -10,7 +10,7 @@ grand_parent: Concepts
 
 L'acteur *Synoptique* affiche un synoptique du REDY. Dans une phase de transition entre la solution Synapps et les synoptiques, cet acteur joue un rôle important.
 
-> Placer un acteur synoptique dans une [boite à vue](./layout-view-box.md) est un bon moyen de l'afficher dans un écran de n'importe quelle taille.
+> Placer un acteur synoptique dans une [boite à vue](./layout/view-box.md) est un bon moyen de l'afficher dans un écran de n'importe quelle taille.
 
 # Propriétés
 

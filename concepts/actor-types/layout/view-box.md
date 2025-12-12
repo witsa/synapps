@@ -1,7 +1,6 @@
 ---
-title: "Disposition | Boite à vue"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Boite à vue"
+parent: "Disposition"
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.ViewBox" %}
@@ -23,12 +22,12 @@ La boite à vue va disposer son acteur enfant suivant la règle donnée par la p
 
 Dans l'exemple ci-dessous, la boite à vue présente un acteur image bien plus grand qu'elle.
 
-![SynApps](../../assets/concepts/actor/view-box/sample-01.gif)
+![SynApps](../../../assets/concepts/actor/view-box/sample-01.gif)
 
 
 ## Disposition
 
-Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../actor/category-disposition.md#catégorie-disposition-flexible)
+Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../../actor/category-disposition.md#catégorie-disposition-flexible)
 
 
 ## Dépassement de contenu
@@ -51,6 +50,6 @@ La boite à vue est un acteur très pratique pour afficher un contenu de taille 
 Par exemple, vous pouvez construire tout une superposition d'un plan avec des éléments positionnés précisément par rapport à lui au pixel prés. Ensuite, vous le placerez dans une boite à vue pour qu'il soit visible quelque soit la taille de l'écran.
 
 > ⚠️ **ATTENTION**<br>
-> Ne définissez pas des tailles avec des [unites](../sizes.md) relatives dans les acteurs qui sont à l'intérieure d'une boite à vue. En effet, le résultat sera difficilement prévisible.
+> Ne définissez pas des tailles avec des [unites](../../sizes.md) relatives dans les acteurs qui sont à l'intérieure d'une boite à vue. En effet, le résultat sera difficilement prévisible.
 >
 > **Utiliser toujours des unités fixes : `px`, `cm` et `in`.**

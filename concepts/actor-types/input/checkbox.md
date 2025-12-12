@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Case à cocher"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Case à cocher"
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Checkbox" %}

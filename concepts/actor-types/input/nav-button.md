@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Bouton de Navigation"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Bouton de Navigation"
+parent: "Intéraction"
 ---
 
 > 🚧 en cours de rédaction...
@@ -10,9 +9,9 @@ grand_parent: Concepts
 
 # Bouton de Navigation
 
-L'acteur bouton de navigation permet, en plus de toutes les possibilités de l'[acteur bouton](./input-button.md), de naviguer entre les scènes ainsi que de modifier la scène affichée dans un [acteur écran](./display-screen.md).
+L'acteur bouton de navigation permet, en plus de toutes les possibilités de l'[acteur bouton](./button.md), de naviguer entre les scènes ainsi que de modifier la scène affichée dans un [acteur écran](../display/screen.md).
 
-Ses propriétés sont similaires aux propriétés de l'acteur bouton et la documentation de ces propriétés peut être retrouvée à [cette adresse](./input-button.md).
+Ses propriétés sont similaires aux propriétés de l'acteur bouton et la documentation de ces propriétés peut être retrouvée à [cette adresse](./button.md).
 
 Ses propriétés supplémentaires sont listées ci-dessous.
 

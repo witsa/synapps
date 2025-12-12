@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Bouton"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Bouton"
+parent: "Intéraction"
 ---
 
 > 🚧 en cours de rédaction...

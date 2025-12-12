@@ -1,7 +1,6 @@
 ---
-title: "Interaction | Liste de bouton"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Liste de bouton"
+parent: "Intéraction"
 ---
 
 {% include links_actor.md apiClass="Actor.Input.ButtonList" %}
