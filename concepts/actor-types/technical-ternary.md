@@ -16,6 +16,9 @@ L'acteur Ternaire permet d'afficher un des trois états distincts en fonction d'
 
 Chaque état est entièrement personnalisable, permettant de configurer un texte, une LED ou une image et un comportement de clignotement spécifique.
 
+>📌 **REMARQUE**<br>
+> Par défaut, l'acteur Ternaire affiche une LED verte allumée pour l'état Vrai, une LED verte éteinte pour l'état Faux, et une LED rouge clignotante pour l'état de Défaut.
+
 ![Synapps](../../synapps-studio-releases/notes/assets/1.6/ternary.gif)
 
 ## Propriétés spécifiques

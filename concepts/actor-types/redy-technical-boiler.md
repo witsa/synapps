@@ -29,7 +29,14 @@ Voici les différents états de la chaudière :
 
 La chaudière peut être associée à un brûleur, les [états du brûleur](./redy-burner-reflect.md) sont également pris en charge.
 
+>📌 **REMARQUE**<br>
+> Les états du brûleurs sont affichés uniquement si la chaudière 
+
 > ⚠️ **ATTENTION**<br>
 > Afin que Synapps puisse détecter le brûleur dans le paramétrage, la ressource brûleur doit porter le label `RessBurner` dans le paramétrage et posséder un reflet.
 
 {% include redy_reflect_technical_common.md %}
+
+### Types de reflets compatibles
+
+1. Reflet Chaudière

@@ -20,3 +20,8 @@ La vanne 3 voies représente présente une poignée indiquant la position actuel
 Si la ressource est en défaut, la poignée de la vanne est remplacée par une LED rouge clignotante.
 
 {% include redy_reflect_technical_common.md %}
+
+### Types de reflets compatibles
+
+1. Reflet Vanne 3 voies
+2. Reflet analogique

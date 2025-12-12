@@ -23,10 +23,12 @@ L'acteur Chaudière (Boiler) permet de représenter l'état d'une chaudière ind
 
 - **Type** : `String` (Lecture seule)
 - **Description** : Indique l'état de fonctionnement de la chaudière. Les valeurs possibles sont :
-- `running` (en marche)
-- `stopped` (à l'arrêt)
-- `starting` (en démarrage)
-- `stopping` (en arrêt)
+| **Nom**               | **Clé**          | **Description**                       | **État du brûleur**               |
+|-----------------------|------------------|---------------------------------------|-----------------------------------|
+| Arrêté                | `stopped`        | La chaudière est arrêtée              | Éteint                            |
+| En marche             | `running`        | La chaudière est en fonctionnement    | Synchronisé avec l'état du brûleur|
+| Démarrage en cours    | `starting`       | La chaudière est en phase de démarrage| Éteint                            |
+| Arrêt en cours        | `stopping`       | La chaudière est en phase d'arrêt     | Éteint                            |
 
 ### En défaut? ``isFault``
 
@@ -36,13 +38,17 @@ L'acteur Chaudière (Boiler) permet de représenter l'état d'une chaudière ind
 ### Statut du brûleur ``burnerStatus``
 
 - **Type** : `String` (Lecture seule)
-- **Description** : Indique le statut du brûleur associé à la chaudière, il existe 9 états possibles:
-  - `without` : Sans bruleur
-  - `stopped` : Bruleur arrêté, led éteinte, flamme absente
-  - `running` : Bruleur en marche, led allumée, flamme présente
-  - `standby` : Bruleur en veille, led clignotante, flamme absente
-  - `starting` : Bruleur en démarrage, led clignotante, flamme absente
-  - `stopping` : Bruleur en arrêt, led clignotante, flamme présente
-  - `init` : Bruleur en initialisation, led clignotante, flamme absente
-  - `fault` : Bruleur en défaut, led rouge clignotante, flamme absente
-  - `faultReachSP` : Bruleur en défaut d'atteinte de consigne, led orange clignotante, flamme présente
+- **Description** : Indique le statut du brûleur associé à la chaudière.
+Il existe 9 états possibles:
+
+| **Nom**                 | **Clé**          | **Description**                                 | **État de la LED**        | **État de la flamme**      |
+|-------------------------|------------------|-------------------------------------------------|---------------------------|----------------------------|
+| Sans                    | `without`        | Sans brûleur                                    | -                         | -                          |
+| Arrêté                  | `stopped`        | Brûleur arrêté                                  | Éteinte                   | Absente                    |
+| En marche               | `running`        | Brûleur en marche                               | Allumée                   | Présente                   |
+| En veille               | `standby`        | Brûleur en veille                               | Clignotante               | Absente                    |
+| Démarrage en cours      | `starting`       | Brûleur en démarrage                            | Clignotante               | Absente                    |
+| Arrêt en cours          | `stopping`       | Brûleur en arrêt                                | Clignotante               | Présente                   |
+| Initialisation          | `init`           | Brûleur en initialisation                       | Clignotante               | Absente                    |
+| Défaut                  | `fault`          | Brûleur en défaut                               | Rouge clignotante         | Absente                    |
+| Défaut atteinte consigne| `faultReachSP`   | Brûleur en défaut d'atteinte de consigne        | Orange clignotante        | Présente                   |

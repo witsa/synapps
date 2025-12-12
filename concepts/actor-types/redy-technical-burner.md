@@ -30,3 +30,7 @@ Voici les différents états du brûleur :
 | **En défaut d'atteinte de la consigne** | Le brûleur n'a pas réussi à atteindre la température ou la condition définie. | Clignotante | Orange      | Éteinte    |
 
 {% include redy_reflect_technical_common.md %}
+
+### Types de reflets compatibles
+
+1. Reflet Brûleur

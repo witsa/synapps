@@ -27,3 +27,7 @@ Voici les différents états de la pompe double :
 | **Pompe 2 en défaut** | La pompe 2 rencontre un problème.                     | Allumée  | 🟥          |
 
 {% include redy_reflect_technical_common.md %}
+
+### Types de reflets compatibles
+
+1. Reflet pompe double

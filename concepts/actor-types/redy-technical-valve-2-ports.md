@@ -35,3 +35,9 @@ Si la ressource est en défaut, la poignée de la vanne est remplacée par une L
 | **En défaut**      | La vanne rencontre un problème la poignée de la vanne est remplacée par une LED rouge clignotante. |
 
 {% include redy_reflect_technical_common.md %}
+
+### Types de reflets compatibles
+
+1. Reflet Vanne 2 voies
+2. Reflet digital
+3. Reflet analogique

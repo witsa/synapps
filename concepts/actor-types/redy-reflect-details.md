@@ -14,27 +14,32 @@ L'acteur **Détails de reflet REDY** est un composant conçu pour afficher dynam
 
 Cet acteur s'adapte automatiquement au type de reflet REDY que vous lui indiquez. Une fois configuré avec le chemin vers un reflet (par exemple, vers une chaudière ou une vanne), il :
 
-1.  **Identifie le type de reflet** (chaudière, vanne, etc.).
-2.  **Affiche la vue détaillée appropriée** avec toutes les informations pertinentes et, le cas échéant, les commandes spécifiques à cet équipement.
-3.  **Gère l'envoi de commandes** si le reflet est commandable, affichant l'état des commandes en attente ou les erreurs.
-
-Cela signifie que vous pouvez utiliser un seul acteur "Détails de reflet" pour interagir avec différents types d'équipements REDY en fonction du contexte.
+1.  **Affiche la vue détaillée appropriée** avec toutes les informations pertinentes et, le cas échéant, les commandes spécifiques à cet équipement.
+2.  **Gère l'envoi de commandes** si le reflet est commandable, le détail de reflet présente les commandes disponibles et permet à l'utilisateur de les exécuter directement depuis l'interface.
 
 ## Propriétés spécifiques
+
+Il existe deux types de configuration pour cet acteur :
+- **Autonome** : L'acteur gère lui-même les requêtes vers le REDY lorsque la propriété **Autonome** `isAutonomous` est vraie afin obtenir et rafraîchir les données du reflet. Dans ce mode, il n'a pas besoin d'un acteur requêteur externe. La propriété **Requêteur** `requesterKey` est ignorée.
+- **Dépendant** : L'acteur s'appuie sur un acteur requêteur de reflet lorsque la propriété **Autonome** `isAutonomous` est fausse afin effectuer les requêtes. Cela permet de centraliser les requêtes et d'optimiser les performances si plusieurs acteurs "Détails de reflet" sont utilisés dans la même scène.
 
 ### Autonome `isAutonomous`
 - **Type** : `Boolean`
 - **Description** : Indique si l'acteur fonctionne de manière autonome, sans nécessiter d'acteur requêteur.
 
 ### Requêteur `requesterKey`
+>📌 **REMARQUE**<br>
+> Cette propriété est uniquement prise en compte lorsque le mode **Autonome** est **désactivé**.
 - **Type** : `String`
-- **Description** : La clé de l'acteur requêteur responsable de la communication avec le serveur REDY. Nécessaire si `isAutonomous` est désactivé (`false`).
+- **Description** : La clé de l'acteur requêteur responsable de la communication avec le serveur REDY. Nécessaire si `isAutonomous` est désactivé.
 
 ### Auto raffraichi? `autoRefresh`
-- **Type** : `Boolean`ùùRefait
-- **Description** : Indique si l'acteur doit automatiquement rafraîchir les données du reflet à intervalles réguliers.
+- **Type** : `Boolean`
+- **Description** : Indique si l'acteur doit automatiquement rafraîchir les données du reflet lorsque de nouvelles données sont disponibles.
 
 ### Délai `autoRefreshDelay`
+>📌 **REMARQUE**<br>
+> Cette propriété est uniquement prise en compte lorsque le mode **Autonome** est **activé**.
 - **Type** : `Number`
 - **Description** : Le délai en secondes entre chaque rafraîchissement automatique des données du reflet.
 
@@ -66,6 +71,12 @@ Cela signifie que vous pouvez utiliser un seul acteur "Détails de reflet" pour 
 - **Type** : `String`
 - **Description** : Définit le mode des commandes.
 
+## Conseils et optimisations
+
+**Centralisation des requêtes** : Si vous avez plusieurs acteurs "Détails de reflet" dans votre scène, il est recommandé de ne pas les paramétrer comme `autonome` et d'utiliser un **requêteur de reflet commun**.
+Cette pratique permet de mutualiser les requête et d'optimiser les performances globales de votre scène. Cela permet également de synchroniser les détails de reflet entre eux.
+
+
 ## Reflets du REDY supportés par Synapps
 
 Voici la liste des types de reflets REDY que Synapps est capable de reconnaître et d'afficher en détail.
@@ -93,10 +104,20 @@ Voici la liste des types de reflets REDY que Synapps est capable de reconnaître
 
 L'évènement `onRequestDone` est déclenché lorsque l'acteur a terminé une requête vers le REDY pour obtenir ou rafraîchir le reflet.
 
+L'évènement comporte un objet `context` avec les propriétés suivantes :
+- `data`  : Le modèle du reflet obtenu du REDY, cet objet contient toutes les informations relative au reflet (nom, chemin, etc ...).
+- `error` : Un message d'erreur si la requête a échoué, ou `null` si elle a réussi.
+
 ## `onDidReflectChange`
 
 L'évènement `onDidReflectChange` est déclenché lorsque le reflet renseigné dans la propriété `reflectPath` a changé de valeur.
 
+L'évènement comporte un objet `context` avec les propriétés suivantes :
+- `reflect` : Le nouveau reflet obtenu.
+
 ## `onDidCommand`
 
 L'évènement `onDidCommand` est déclenché lorsqu'une commande a été envoyée au reflet.
+- `data`  : Le modèle du reflet mis à jour.
+- `error` : Un message d'erreur si la requête a échoué, ou `null` si elle a réussi.
+ 

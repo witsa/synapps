@@ -25,3 +25,7 @@ Voici les différents états de la pompe simple :
 | **En défaut** | La pompe rencontre un problème.                 | Allumée  | 🟥          |
 
 {% include redy_reflect_technical_common.md %}
+
+### Types de reflets compatibles
+
+1. Reflet pompe simple

@@ -44,8 +44,10 @@ Ils ne sont reliés à aucun reflet REDY pour le moment, nous allons maintenant 
 Par défaut, les acteurs reflets techniques REDY se basent sur le requêteur global de reflet.
 Il est possible de leur assigner un acteur fournisseur de reflet différent si besoin.
 
-> ⚠️ **ATTENTION**<br>
-> Si le reflet est configuré comme étant **Autonome** le requêteur sera ignoré et l'acteur effectuera ses propres requêtes afin de récupérer les données (en suivant le taux de raffraichissement défini).
+> 💡 **ASTUCE**<br>
+> Si plusieurs acteurs reflets REDY sont utilisés dans la scène, il est recommandé d'utiliser un acteur requêteur de reflet commun afin d'optimiser les performances.
+>
+> Voir [les conseils et optimisations relatifs aux reflets REDY](../concepts/actor-types/redy-reflect-details.md#conseils-et-optimisations).
 
 Il faut ensuite renseigner un reflet correspondant à la ressource voulue pour chaque acteur.<br>
 Un acteur reflet de chaudière devra posséder le chemin d'un reflet de chaudière, un acteur reflet de pompe simple devra posséder le chemin d'un reflet de pompe simple, etc ...
