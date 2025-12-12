@@ -74,6 +74,24 @@ defaults:
 #     values:
 #       parent: "maker"
 
+callouts:
+  warning:
+    title: ⚠️ Attention
+    color: red
+  tip:
+    title: 💡 Astuce
+    color: green
+  info:
+    title: ℹ️ Info
+    color: blue
+  note:
+    title: 📝 Note
+    color: purple
+  paragraph:
+    title: 📄 Paragraphe
+    color: yellow
+
+# availlable colors :  grey-lt, grey-dk, purple, blue, green, yellow, and red
 
 # Exclude from processing.
 # The following items will not be processed, by default.
