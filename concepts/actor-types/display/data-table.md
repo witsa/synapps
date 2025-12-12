@@ -1,7 +1,7 @@
 ---
-title: "Affichage | Tableau de données"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Tableau de données"
+parent: "Affichage"
+nav_order: 1
 ---
 
 {% include links_actor.md apiClass="Actor.Display.DataTable" %}
@@ -9,6 +9,13 @@ grand_parent: Concepts
 # Tableau de données
 
 Un acteur qui permet de créer des tableaux de données dynamiques.
+
+![Tableau de données](./assets/data-table.png)
+
+{: .info-title }
+> 💎 Acteur Avancé
+>
+> Le tableau de données est un acteur qui nécessite une bonne compréhension de son fonctionnement et de ses propriétés ainsi que des notions de JSON et parfois du JavaScript.
 
 L'entrée des données se fait sous la forme de tableau d'objets `JSON`. Il est possible de définir des colonnes typées et personnalisées.
 De nombreux évènements sont disponibles pour interagir avec le tableau ou chaque cellule et avec des boutons de pagination.
@@ -82,7 +89,32 @@ Lorsque vous modifiez une colonne, la prévisualisation du tableau de données n
 | Style d'en-tête    | `headerStyle` | Style d'acteur cellule pour l'en-tête ; si vide, le style d'en-tête par défaut est utilisé.           |
 | Largeur de colonne | `columnWidth` | Largeur de la colonne (`auto`, `max-content`, valeur fixe, etc.).                                     |
 
-> !!!!! Doc des types de cell
+#### Types de colonnes
+
+| Type              | Description                                                                                     |
+| ----------------- | ----------------------------------------------------------------------------------------------- |
+| Texte `string`    | Affiche la valeur comme du texte.                                                               |
+| Nombre `number`   | Affiche la valeur comme un nombre.                                                              |
+| Booléen `boolean` | Affiche la valeur comme vrai/faux avec un texte.                                                |
+| Booléen image     | Affiche la valeur comme vrai/faux avec une image et un texte.                                   |
+| Date/heure        | Affiche la valeur comme une date ou une heure au format par défaut comme `23/12/2025 21:30:00`. |
+| Personnalisé      | Utilise un composite comme contenu de la cellule.                                               |
+
+Chaque type de colonne utilise un style de cellule. Des styles par défaut sont fournis pour chaque type :
+
+| Type              | Style par défaut                             |
+| ----------------- | -------------------------------------------- |
+| Texte `string`    | _Texte_ `table-cell-string`                  |
+| Nombre `number`   | _Nombre_ `table-cell-number`                 |
+| Booléen `boolean` | _Booléen_ `table-cell-boolean-text`          |
+| Booléen image     | _Booléen image_ `table-cell-boolean-image`   |
+| Date/heure        | _Date/heure_ `table-cell-date-time`          |
+| Personnalisé      | _Personnalisé_ `table-cell-custom-composite` |
+
+{: .note }
+> Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Il seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
+> Voir la page [Cellule de tableau de données](./data-table-cell) pour plus de détails.
+
 
 ### En-tête ?
 
@@ -105,6 +137,12 @@ Cette propriété permet de définir le nombre maximum de pages pour la paginati
 ### Style d'acteur cellule d'en-tête
 
 Cette propriété permet de définir le style d'acteur cellule à utiliser pour l'en-tête du tableau de données lorsqu'aucun style spécifique n'est défini dans la colonne.
+
+Par défaut, le style _Texte entête_ `table-header-cell` est utilisé.
+
+{: .note }
+> Il est possible de définir d'autres styles d'en-tête. Pour cela, il faut créer un style de cellule de tableau de données et le baser sur le style _Texte entête_ `table-header-cell` ou _Texte_ `table-cell-string`. Ensuite, il sera proposé dans la liste des styles d'acteur cellule d'en-tête. <br/>
+> Voir la page [Cellule de tableau de données](./data-table-cell) pour plus de détails.
 
 > Chemin d’accès depuis l’acteur `properties.headerStyle`.
 
@@ -193,9 +231,13 @@ L'évènement fournit le numéro de la page demandée dans le champ `context.pag
 exemple d'implémentation de la pagination :
 
 {% raw %}
+
 ```javascript
 // onChangeDataPage
+
+// taille de chaque page
 const pageSize = 10;
+
 const data = [
   /* ... tableau complet des données ... */
 ];
@@ -205,14 +247,13 @@ const dataPage = data.slice((context.page - 1) * pageSize, context.page * pageSi
 
 // Mise à jour des lignes de données en fonction de la page demandée. Le format est du JSON texte.
 this.properties.dataRows = JSON.stringify(dataPage);
-
 ```
+
 {% endraw %}
 
 Un exemple d'acteur au complet avec la gestion de la pagination :
 
 {% include samples/display_data_table.md %}
-
 
 ## Champs d'informations
 
