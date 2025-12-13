@@ -65,7 +65,7 @@ defaults:
       path: "assets"
       type: "pages"
     values:
-      layout: null
+      layout: none
 #   -
 #     scope:
 #       path: "maker"
