@@ -25,7 +25,7 @@ Ces deux propriétés permettent de définir les textes qui s'affichent dans l'i
 
 ## Mode pour vrai, mode pour faux
 
-Ces deux propriétés permettent de définir le mode de couleur de l'interrupteur correspondant à la valeur `true` et à la valeur `false`. Ce sont les mêmes mode que pour l'acteur [*bouton*](./input_button.md). La propriété *Outline* permet aussi de gérer les variantes de couleur.
+Ces deux propriétés permettent de définir le mode de couleur de l'interrupteur correspondant à la valeur `true` et à la valeur `false`. Ce sont les mêmes mode que pour l'acteur [*bouton*](./button.md). La propriété *Outline* permet aussi de gérer les variantes de couleur.
 
 ## Taille
 

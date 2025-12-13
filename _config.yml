@@ -82,11 +82,11 @@ callouts:
   info:
     title: ℹ️ Info
     color: blue
-  note:
-    title: 📝 Note
+  important:
+    title: 💎 Important
     color: purple
-  paragraph:
-    title: 📄 Paragraphe
+  pin:
+    title: 📌 A retenir
     color: yellow
 
 # availlable colors :  grey-lt, grey-dk, purple, blue, green, yellow, and red

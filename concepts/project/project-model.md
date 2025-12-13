@@ -13,8 +13,8 @@ Lorsque vous créez un nouveau projet, vous devez choisir un modèle à partir d
 Studio propose 4 modèles de projet :
 
 - Défaut : Parfait pour démarrer avec un projet presque vide.
-- Tablette / Bureau : Pour partir avec un gabarit de synapp adapté à l'affichage sur tablette et PC.<br>Un menu de navigation est placé à gauche et le contenu principal dans un acteur [écran](../actor-types/display-screen.md) est au centre.
-- Smartphone : Pour partir avec un gabarit adapté à l'affichage sur smartphone.<br>Un menu escamotable de navigation est placé à gauche et le contenu principal dans un acteur [écran](../actor-types/display-screen.md) est pleine page. Les tailles de texte et de boutons sont adaptées aux caractéristiques des smartphones.
+- Tablette / Bureau : Pour partir avec un gabarit de synapp adapté à l'affichage sur tablette et PC.<br>Un menu de navigation est placé à gauche et le contenu principal dans un acteur [écran](../actor-types/display/screen.md) est au centre.
+- Smartphone : Pour partir avec un gabarit adapté à l'affichage sur smartphone.<br>Un menu escamotable de navigation est placé à gauche et le contenu principal dans un acteur [écran](../actor-types/display/screen.md) est pleine page. Les tailles de texte et de boutons sont adaptées aux caractéristiques des smartphones.
 - 3 parties : Adapté pour tablette et PC, c'est un gabarit de synapp qui est divisé en un menu de navigation à gauche, une partie centrale de contenu principal et une partie droite de contenu secondaire.
 - 1 view : La nouvelle application d'exploitation qui utilise les reflets et les ensembles définis dans le REDY.
 

@@ -6,5 +6,5 @@ parent: "Disposition"
 
 # Emplacement
 
-{: .note }
+{: .important }
 > A compléter.

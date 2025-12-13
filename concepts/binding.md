@@ -21,10 +21,10 @@ Seules les propriétés des acteurs peuvent être cible de liaison. En revanche,
 - La [scène](./scene.md) ou le [composite](./composite.md) accueillant l'acteur cible
 - Un autre [acteur](./actor/index.md) ou lui-même
 - Un élément de librairie
-  - une [couleur](./colors.md)
-  - une [image](./pictures.md)
-  - une [constante](./constants.md)
-  - un [texte](./texts.md)
+  - une [couleur](./librairies/colors.md)
+  - une [image](./librairies/pictures.md)
+  - une [constante](./librairies/constants.md)
+  - un [texte](./librairies/texts.md)
 - Un [fournisseur de variable REDY](#la-liaison-de-type-de-source-fournisseur-de-variable)
 - Un [fournisseur de reflet REDY](#la-liaion-de-type-de-source-fournisseur-de-reflet)
 - Une [donnée de fournisseur](#la-liaison-de-type-de-source-donnée-de-fournisseur)

@@ -13,7 +13,7 @@ Runtime **2.8.0**
 REDY **16.4.0**
 {: .label .label-green }
 
-{: .info-title }
+{: .important-title }
 
 > 💎 Acteur Avancé
 >
@@ -23,7 +23,7 @@ Ce type d'acteur est particulier car il ne peut pas être utilisé directement d
 
 Chaque colonne d'un tableau de données utilise un style d'acteur cellule de tableau de données. Des styles par défaut sont fournis pour chaque type de colonne (voir la page [Tableau de données](./data-table) pour plus de détails).
 
-{: .note }
+{: .info }
 
 > Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Ils seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
 > Voir la page [Tableau de données](./data-table) pour plus de détails.
@@ -53,7 +53,7 @@ Par défaut, le texte est tronqué si la largeur de la cellule est insuffisante 
 - **Retour à la ligne (Cassure)** `break`: le texte est affiché sur plusieurs lignes si nécessaire, en cassant les mots si besoin.
 - **Sans retour à la ligne** `nowrap`: le texte est affiché en une seule ligne, même s'il dépasse la largeur de la cellule.
 
-> Chemin d’accès depuis l’acteur `properties.textOverflow`.
+> ⚡Chemin d’accès depuis l’acteur `properties.textOverflow`.
 
 ### Position verticale
 
@@ -63,7 +63,7 @@ Il est possible de configurer l'alignement vertical du texte dans la cellule. Pa
 - **Milieu** `center`: le texte est centré verticalement dans la cellule.
 - **Bas** `end`: le texte est aligné en bas de la cellule.
 
-> Chemin d’accès depuis l’acteur `properties.verticalPosition`.
+> ⚡Chemin d’accès depuis l’acteur `properties.verticalPosition`.
 
 ## Basé sur _Texte_ `table-cell-string`
 
@@ -95,7 +95,7 @@ Deux propriétés permettent de configurer le texte affiché pour les états vra
 
 Par défaut, les textes sont "Oui" et "Non", mais ils peuvent être personnalisés en utilisant les propriétés suivantes :
 
-> Chemin d’accès depuis l’acteur `properties.trueText` et `properties.falseText`.
+> ⚡Chemin d’accès depuis l’acteur `properties.trueText` et `properties.falseText`.
 
 ## Basé sur _Date/Heure_ `table-cell-datetime`
 

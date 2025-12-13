@@ -1,6 +1,6 @@
 ---
 title: "Librairie de textes"
-parent: Concepts
+parent: "Librairies"
 ---
 {% include table_of_content.html %}
 
@@ -119,7 +119,7 @@ Il est possible de naviguer entre les différents champs de saisie de la librair
 
 ## Utilisation des textes
 
-La méthode principale pour utiliser les textes de la librairie est via les [liaisons](binding.md).
+La méthode principale pour utiliser les textes de la librairie est via les [liaisons](../binding.md).
 
 Il faut définir une liaison de type Librairie/Texte sur une propriété d'un acteur. Dans la définition de la liaison, il faut sélectionner la clé du texte que l'on souhaite utiliser dans la liste déroulante.
 

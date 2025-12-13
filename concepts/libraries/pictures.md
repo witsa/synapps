@@ -1,6 +1,6 @@
 ---
 title: "Librairie d'images"
-parent: Concepts
+parent: "Librairies"
 ---
 
 {% include table_of_content.html %}
@@ -72,7 +72,7 @@ L'image peut être ajoutée manuellement de la façon suivante :
 
 Il y a deux méthodes pour utiliser une donnée issue d'une librairie d'images au sein d'une synapp :
 
->- Accès grâce aux [liaisons](binding.md).
->- Accès via les [scripts](scripts/index.md).
+>- Accès grâce aux [liaisons](../binding.md).
+>- Accès via les [scripts](../scripts/index.md).
 >
 >[⚡ Synapps.Synapp.html#pictures]({{ site.baseurl }}/script-api/Synapps.Synapp.html#pictures){:target="_blank"}

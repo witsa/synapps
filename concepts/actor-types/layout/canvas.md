@@ -15,7 +15,7 @@ Acteur qui permet de disposer des acteurs enfants suivant des coordonnées.
 
 ## Disposition
 
-Voir les règles de disposition avec les [propriétés de position (haute, basse, gauche et droite)](../actor/category-disposition.md#catégorie-disposition-dans-une-toile)
+Voir les règles de disposition avec les [propriétés de position (haute, basse, gauche et droite)](../../actor/category-disposition.md#catégorie-disposition-dans-une-toile)
 
 
 ## Dépassement de contenu

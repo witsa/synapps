@@ -1,6 +1,6 @@
 ---
 title: "Librairie de constantes"
-parent: Concepts
+parent: "Librairies"
 ---
 
 {% include table_of_content.html %}
@@ -45,8 +45,8 @@ L'interface de modification s'ouvre alors, permettant de saisir une nouvelle `cl
 
 Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une synapp :
 
->- Accès grâce aux [liaisons](binding.md).
->- Accès via les [scripts](scripts/index.md).
+>- Accès grâce aux [liaisons](../binding.md).
+>- Accès via les [scripts](../scripts/index.md).
 >
 >[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#constants){:target="_blank"}
 

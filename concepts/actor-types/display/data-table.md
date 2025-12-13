@@ -19,7 +19,7 @@ Un acteur qui permet de créer des tableaux de données dynamiques.
 
 ![Tableau de données](./assets/data-table.png)
 
-{: .info-title }
+{: .important-title }
 > 💎 Acteur Avancé
 >
 > Le tableau de données est un acteur qui nécessite une bonne compréhension de son fonctionnement et de ses propriétés ainsi que des notions de JSON et parfois du JavaScript.
@@ -70,7 +70,7 @@ Cette propriété permet de renseigner un tableau d'objets JSON représentant le
 
 Le JSON est stucturé sous la forme d'un tableau d'objets, chaque objet représentant une ligne de données. Chaque propriété de l'objet représente une colonne potentielle du tableau de données.
 
-> Chemin d’accès depuis l’acteur `properties.dataRows`.
+> ⚡Chemin d’accès depuis l’acteur `properties.dataRows`.
 
 ### Colonnes
 
@@ -81,7 +81,7 @@ Studio permet de configurer les colonnes via l'inspecteur.
 
 Lorsque vous modifiez une colonne, la prévisualisation du tableau de données n'est pas mise à jour automatiquement. Il faut cliquer sur le bouton "Appliquer les modifications" pour mettre à jour le tableau de données avec les nouvelles définitions de colonnes.
 
-> Chemin d’accès depuis l’acteur `properties.columns`.
+> ⚡Chemin d’accès depuis l’acteur `properties.columns`.
 
 #### Champs de colonne
 
@@ -118,7 +118,7 @@ Chaque type de colonne utilise un style de cellule. Des styles par défaut sont 
 | Date/heure        | _Date/heure_ `table-cell-date-time`          |
 | Personnalisé      | _Personnalisé_ `table-cell-custom-composite` |
 
-{: .note }
+{: .info }
 > Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Il seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
 > Voir la page [Cellule de tableau de données](./data-table-cell) pour plus de détails.
 
@@ -127,19 +127,19 @@ Chaque type de colonne utilise un style de cellule. Des styles par défaut sont 
 
 Cette propriété permet d'afficher ou non l'en-tête du tableau de données.
 
-> Chemin d’accès depuis l’acteur `properties.displayHeader`.
+> ⚡Chemin d’accès depuis l’acteur `properties.displayHeader`.
 
 ### Pagination ?
 
 Cette propriété permet d'afficher ou non les boutons de pagination du tableau de données. Il faut aussi augmenter le nombre de page avec le champ `pageMax` pour que les boutons de pagination apparaissent.
 
-> Chemin d’accès depuis l’acteur `properties.displayPaging`.
+> ⚡Chemin d’accès depuis l’acteur `properties.displayPaging`.
 
 ### Nombre de pages
 
 Cette propriété permet de définir le nombre maximum de pages pour la pagination du tableau de données.
 
-> Chemin d’accès depuis l’acteur `properties.pageMax`.
+> ⚡Chemin d’accès depuis l’acteur `properties.pageMax`.
 
 ### Style d'acteur cellule d'en-tête
 
@@ -147,11 +147,11 @@ Cette propriété permet de définir le style d'acteur cellule à utiliser pour 
 
 Par défaut, le style _Texte entête_ `table-header-cell` est utilisé.
 
-{: .note }
+{: .info }
 > Il est possible de définir d'autres styles d'en-tête. Pour cela, il faut créer un style de cellule de tableau de données et le baser sur le style _Texte entête_ `table-header-cell` ou _Texte_ `table-cell-string`. Ensuite, il sera proposé dans la liste des styles d'acteur cellule d'en-tête. <br/>
 > Voir la page [Cellule de tableau de données](./data-table-cell) pour plus de détails.
 
-> Chemin d’accès depuis l’acteur `properties.headerStyle`.
+> ⚡Chemin d’accès depuis l’acteur `properties.headerStyle`.
 
 ## Évènements spécifiques
 

@@ -1,6 +1,6 @@
 ---
 title: "Librairie de couleur"
-parent: Concepts
+parent: "Librairies"
 ---
 
 
@@ -32,7 +32,7 @@ Une fenêtre s'ouvre alors et permet de saisir la `clé` et la `valeur` de la co
 
 La `Clé` correspond à l'identifiant qui va être attribué à la variable couleur.
 <br>
-La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code hexadécimal](https://htmlcolorcodes.com/fr/) soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) soit un code RGB de format RGB(X,X,X).
+La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code hexadécimal](https://htmlcolorcodes.com/fr/){: target="_blank" } soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){: target="_blank" } soit un code RGB de format RGB(X,X,X).
 Une aide est également disponible directement lors de l'édition.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/newColor.PNG)
@@ -48,8 +48,8 @@ L'interface de modification s'ouvre alors, permettant de saisir une nouvelle `cl
 
 Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une synapp :
 
->- Accès grâce aux [liaisons](binding.md).
->- Accès via les [scripts](scripts/index.md).
+>- Accès grâce aux [liaisons](../binding.md).
+>- Accès via les [scripts](../scripts/index.md).
 >
 >[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#colors){:target="_blank"}
 

@@ -57,7 +57,7 @@ Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type
 C'est un acteur de disposition. Son role est de disposer, de placer sur l'interface, les acteurs qu'il va contenir. Dans le cas d'un empilement, il va empiler les acteurs verticalement par défaut.
 D'autres types de disposition existent *([voir doc](/synapps/concepts/actor-types/#layout))*.
 
-Nous allons ajouter un acteur [**Texte**](../concepts/actor-types/display-text.md) à l'empilement.
+Nous allons ajouter un acteur [**Texte**](../concepts/actor-types/display/text.md) à l'empilement.
 
 ### Ajout
 
@@ -197,7 +197,7 @@ Choisissons `themeColor` et cliquons sur le bouton *Lier à...* en bas pour vali
 
 ![SynApps](../assets/quick-start/designer-first-steps/25.png).
 
-> **Remarque :** La [librairie de couleur](../concepts/colors.md), comme toutes les autres librairies est accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png).
+> **Remarque :** La [librairie de couleur](../concepts/libraries/colors.md), comme toutes les autres librairies est accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png).
 
 ## Prochaine étape
 [Publier la synapp dans le REDY-PC](./synapp-publish.md).
