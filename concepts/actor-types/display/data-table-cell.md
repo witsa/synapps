@@ -6,7 +6,15 @@ nav_order: 2
 
 # Cellule de tableau de données
 
+Studio **1.5.0**
+{: .label .label-green }
+Runtime **2.8.0**
+{: .label .label-green }
+REDY **16.4.0**
+{: .label .label-green }
+
 {: .info-title }
+
 > 💎 Acteur Avancé
 >
 > Le tableau de données est un acteur qui nécessite une bonne compréhension de son fonctionnement et de ses propriétés ainsi que des notions de JSON et parfois du JavaScript.
@@ -15,9 +23,10 @@ Ce type d'acteur est particulier car il ne peut pas être utilisé directement d
 
 Chaque colonne d'un tableau de données utilise un style d'acteur cellule de tableau de données. Des styles par défaut sont fournis pour chaque type de colonne (voir la page [Tableau de données](./data-table) pour plus de détails).
 
-{: .note }> Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Ils seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
-> Voir la page [Tableau de données](./data-table) pour plus de détails.
+{: .note }
 
+> Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Ils seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
+> Voir la page [Tableau de données](./data-table) pour plus de détails.
 
 ## Types de colonnes
 
@@ -30,7 +39,6 @@ Par exemple, pour créer un style d'acteur cellule de tableau de données pour u
 Autre exemple, pour créer un style d'acteur cellule de tableau de données pour l'utiliser comme en-tête de colonne, il faut créer un nouveau style et le baser sur le style par défaut _Texte entête_ `table-header-cell` ou _Texte_ `table-cell-string`. Cela permettra d'accéder aux propriétés spécifiques pour configurer l'affichage des en-têtes de colonnes.
 
 ## Propiétés communes
-
 
 ### Valeur
 
@@ -57,7 +65,6 @@ Il est possible de configurer l'alignement vertical du texte dans la cellule. Pa
 
 > Chemin d’accès depuis l’acteur `properties.verticalPosition`.
 
-
 ## Basé sur _Texte_ `table-cell-string`
 
 Ce style est utilisé pour les colonnes de type **Texte**. Il permet de configurer l'affichage des données textuelles dans les cellules.
@@ -70,13 +77,11 @@ La propriété **Valeur** est un nombre.
 
 Par défaut l'alignement horizontal est à droite, mais il est possible de le modifier en utilisant la propriété **Alignement du texte** `textAlign` (gauche, centre, droite, justifié).
 
-
 ## Basé sur _Booléen_ `table-cell-boolean`
 
 Ce style est utilisé pour les colonnes de type **Booléen**. Il permet de configurer l'affichage des données booléennes (vrai/faux) dans les cellules. Un texte est affiché selon la valeur (par défaut "Oui" pour vrai et "Non" pour faux).
 
 La propriété **Valeur** est un booléen.
-
 
 ## Basé sur _Booléen image_ `table-cell-boolean-image`
 
@@ -100,7 +105,7 @@ La propriété **Valeur** est une date/heure au format ISO 8601 (YYYY-MM-DDTHH:m
 
 ### Format date/heure
 
-Il est possible de configurer le format d'affichage de la date/heure en utilisant la propriété **Format**. Vous pouvez utiliser les formats de [Moment.js](https://momentjs.com/docs/#/displaying/format/){:target="_blank"} pour personnaliser l'affichage selon vos besoins.
+Il est possible de configurer le format d'affichage de la date/heure en utilisant la propriété **Format**. Vous pouvez utiliser les formats de [Moment.js](https://momentjs.com/docs/#/displaying/format/){:target="\_blank"} pour personnaliser l'affichage selon vos besoins.
 
 Par défaut, le format est `DD/MM/YYYY HH:mm:ss`.
 

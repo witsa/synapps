@@ -8,6 +8,13 @@ nav_order: 1
 
 # Tableau de données
 
+Studio **1.5.0**
+{: .label .label-green }
+Runtime **2.8.0**
+{: .label .label-green }
+REDY **16.4.0**
+{: .label .label-green }
+
 Un acteur qui permet de créer des tableaux de données dynamiques.
 
 ![Tableau de données](./assets/data-table.png)

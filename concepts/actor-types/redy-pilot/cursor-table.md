@@ -1,11 +1,18 @@
 ---
 title: "Tableau de curseur BETA"
-parent: "REDY PILOT BETA"
+parent: "REDY Pilot BETA"
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.CursorTable" %}
 
-# Tableau de curseur `BETA`{: .label }
+# Tableau de curseur
+
+Studio **1.6.0-beta**
+{: .label .label-yellow }
+Runtime **2.8.0**
+{: .label .label-green }
+REDY Pilot **1.0.0**
+{: .label .label-yellow }
 
 C'est un acteur [tableau de données](../display-data-table.md) alimenté directement par un curseur requête.
 
