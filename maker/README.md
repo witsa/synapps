@@ -5,17 +5,10 @@ nav_order: 50
 search_exclude: true
 ---
 
-<br>
-<br>
-<br>
-
-> ⚠️ **Avertissement**<br>
-> Ceci est la documentation du précurseur de Synapps Studio. Cette ancienne génération n'est plus maintenue.
-
-
-<br>
-<br>
-<br>
+{: .warning-title }
+> ⚠️ Avertissement
+>
+> Ceci est la documentation du précurseur de Synapps Studio. Cette ancienne génération n'évolura plus mais reste maintenue.
 
 {% include table_of_content.html %}
 
@@ -35,8 +28,8 @@ Les utilisateurs ciblés par les applications générées par SynApps sont **tou
 
 SynApps est constitué de 2 web apps distinctes:
 
-* Le **MAKER**: outil de *construction* et de *déploiement*
-* Le **RUNTIME**: app d'exécution des SynApps
+- Le **MAKER**: outil de _construction_ et de _déploiement_
+- Le **RUNTIME**: app d'exécution des SynApps
 
 SynApps entre en phase de **BETA PREVIEW** pour évaluation de juin à fin 2018. Il va encore évoluer largement mais nous garantissons le portage de toutes les applications créées pendant cette phase vers les prochaines versions
 
@@ -46,20 +39,20 @@ _Attention:_ **aucune SynApp ne doit être déployée en production sur site** s
 
 A ce jour, **MAKER** et le **RUNTIME** sont des applications Web hébergées sur notre cloud « RIA ». Seul le **RUNTIME** est embarqué dans le REDY
 
-A terme, **SynApps MAKER** sera distribué sous la forme d'un éxécutable, avec installeur, sur les principales plateformes desktop, notamment _Windows_, _Mac_ et _Linux_ et ne sera plus accessible via notre cloud. La raison principale étant de donner un accès aux *ressources* locales: dossiers, images
+A terme, **SynApps MAKER** sera distribué sous la forme d'un éxécutable, avec installeur, sur les principales plateformes desktop, notamment _Windows_, _Mac_ et _Linux_ et ne sera plus accessible via notre cloud. La raison principale étant de donner un accès aux _ressources_ locales: dossiers, images
 
 De même, **SynApps RUNTIME** sera également distribué pour les plateformes, _Windows_, _Android_ et _IOS_, sous la forme d'une application **hybride** (= WebApp embarquée dans natif) installée ou déployée dans les stores _Google Play_, _App Store_ et _Windows_
 
-| Mode                            | MAKER | RUNTIME |  DISPONIBILITE   |
-|---------------------------------|-------|---------|------------------|
-| Web cloud RIA                   |  [x]  |   [x]   | Oui              |
-| Web embarqué dans REDY          |  [ ]  |   [x]   | Oui              |
-| Windows                         |  [x]  |   [x]   | Novembre 2018    |
-| Linux                           |  [x]  |   [x]   | Date non définie |
-| Mac                             |  [x]  |   [x]   | Date non définie |
-| Android (APK: fichier installé) |  [ ]  |   [x]   | Fin 2018         |
-| Android (Store)                 |  [ ]  |   [x]   | Date non définie |
-| IOS (Store)                     |  [ ]  |   [x]   | Date non définie |
+| Mode                            | MAKER | RUNTIME | DISPONIBILITE    |
+| ------------------------------- | ----- | ------- | ---------------- |
+| Web cloud RIA                   | [x]   | [x]     | Oui              |
+| Web embarqué dans REDY          | [ ]   | [x]     | Oui              |
+| Windows                         | [x]   | [x]     | Novembre 2018    |
+| Linux                           | [x]   | [x]     | Date non définie |
+| Mac                             | [x]   | [x]     | Date non définie |
+| Android (APK: fichier installé) | [ ]   | [x]     | Fin 2018         |
+| Android (Store)                 | [ ]   | [x]     | Date non définie |
+| IOS (Store)                     | [ ]   | [x]     | Date non définie |
 
 ## Distributions
 
@@ -89,11 +82,9 @@ Dans un second temps, vous pouvez également contacter le **support** WIT
 
 Nous recommandons **fortement** de découvrir SynApps avec les [tutoriels](tutos/index.md). Ils permettent de comprendre et mettre en oeuvre tous les **concepts et mécanismes** de SynApps de manière **itérative**. A l'issue des tutoriels proposés vous aurez une **vision avancée** de SynApps et serez à même de réaliser des **applications** webs évoluées **multi-plateformes**
 
-
-## Pratiques et équipements nomades *(...en construction...)*
+## Pratiques et équipements nomades _en construction_{: .label }
 
 Vous trouverez des [bonnes et les mauvaises pratiques](practices/index.md) que l'on peut avoir avec SynApps et mêmes des éléments fondamentaux à savoir à propos du design d'application dédiée aux équipements nomades.
-
 
 ## A vous de jouer !
 
