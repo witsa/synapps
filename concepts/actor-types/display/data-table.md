@@ -83,6 +83,12 @@ Lorsque vous modifiez une colonne, la prévisualisation du tableau de données n
 
 > ⚡Chemin d’accès depuis l’acteur `properties.columns`.
 
+#### Gestion des colonnes
+
+> TODO : ajouter une capture d'écran de l'interface de gestion des colonnes.
+> Montrer les boutons ajouter/supprimer/déplacer.
+> Montrer comment modidier une colonne, valider ou mettre _à jour_.
+
 #### Champs de colonne
 
 | Champ              | Propriété     | Description                                                                                           |

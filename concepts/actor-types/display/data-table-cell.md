@@ -111,4 +111,17 @@ Par défaut, le format est `DD/MM/YYYY HH:mm:ss`.
 
 ## Basé sur _Personalisé_ `table-cell-custom`
 
-Ce style est utilisé pour les colonnes de type **Personnalisé**. Il permet de créer des cellules avec un affichage entièrement personnalisé en utilisant un composite.
+Ce style est utilisé pour les colonnes de type **Personnalisé**. Il permet de créer des cellules avec un affichage entièrement personnalisé en utilisant un composite. Par défaut, un composite basique est fourni, mais il est possible de créer un composite personnalisé.
+
+### Composite
+Pour personnaliser réellement l'affichage, il faut créer un composite qui va définir comment afficher la donnée et ajouter un style d'acteur cellule de tableau de données basé sur _Personnalisé_ `table-cell-custom` qui utilise ce composite.
+
+#### Passage par le contexte de données
+Le composite à créer reçoit les mêmes éléments de la cellule que dans l'évènement [`onDidCellRender`](./data-table#contexte-des-évènements) de l'acteur **Tableau de données**. Ils sont disponibles dans le [contexte de données](../../context.md) du composite. Ainsi, elle sont accessibles par script ou via des liaisons vers le contexte de données.
+
+> TODO : ajouter un exemple simple d'utilisation d'un composite personnalisé pour afficher une cellule avec une mise en forme spécifique en utilisant le données de la cellule.
+
+#### Passage par les propriétés du composite
+Il est également possible de commander des propriétés du composite en passant un objet dans l'évènement [`onCellContentTransform`](./data-table#oncellcontenttransform) de l'acteur **Tableau de données**.
+
+> TODO : ajouter un exemple simple d'utilisation de l'évènement `onCellContentTransform` pour modifier des propriétés du composite en fonction des données de la cellule.
