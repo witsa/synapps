@@ -2,7 +2,7 @@
 title: "REDY Pilot BETA"
 parent: "Types d'acteur"
 has_children: true
-nav_order: 10
+nav_order: 7
 ---
 
 # REDY PILOT
