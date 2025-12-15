@@ -49,7 +49,7 @@ Dans la mesure du possible, utilisez des images en librairie plutôt que des ima
 
 ### Surveiller les indicateurs d'utilisation des acteurs
 
-Des indicateurs d'utilisation sont disponibles dans Studio dans les designers à partir de la version 1.6.0. Ils permettent de surveiller l'impact de ce que vous ajoutez dans vos scènes/composites.
+Des indicateurs d'utilisation sont disponibles dans Studio dans les designers à partir de la version 1.6.0-beta. Ils permettent de surveiller l'impact de ce que vous ajoutez dans vos scènes/composites.
 
  Les indicateurs suivants sont affichés :
 
