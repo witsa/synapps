@@ -80,7 +80,7 @@ callouts:
     title: 💡 Astuce
     color: green
   info:
-    title: ℹ️ Info
+    title: ℹ️ Remarque
     color: blue
   important:
     title: 💎 Important

@@ -1,46 +1,30 @@
 ---
-title: "Technical | Ternaire"
+title: "REDY | Reflet Ternaire"
 parent: "Types d'acteur"
 grand_parent: Concepts
 ---
 
 {% include table_of_content.html %}
 
-# Acteur Ternaire
+# Acteur Reflet Ternaire
 
-L'acteur Ternaire permet d'afficher un des trois états distincts en fonction d'une valeur et d'un état de défaut :
+L'acteur Reflet Ternaire permet d'afficher un des trois états distincts en fonction d'un reflet. Tous les reflet sont supportés mais le digital est privilégié.
 
-1.  **État Vrai** : Lorsque la `value` est vraie.
-2.  **État Faux** : Lorsque la `value` est fausse.
-3.  **État de Défaut** : Lorsqu'un défaut est signalé via `isFault` (cet état a la priorité sur les autres).
+{: .info }
+>
+> C'est la version avec reflet de l'acteur [Ternaire](./technical-ternary.md).
 
-Chaque état est entièrement personnalisable, permettant de configurer un texte, une LED ou une image et un comportement de clignotement spécifique.
+1.  **État Vrai** : Lorsque la valeur est vraie
+2.  **État Faux** : Lorsque la valeur est fausse
+3.  **État de Défaut** : Lorsque le reflet est en défaut (cet état a la priorité sur les autres).
 
-La led est affichée si vous ne fournissez pas d'image personnalisée.
-
-{: .pin }
-
-> Par défaut, l'acteur Ternaire affiche une LED verte allumée pour l'état Vrai, une LED verte éteinte pour l'état Faux, et une LED rouge clignotante pour l'état de Défaut.
-
-![Synapps](../../synapps-studio-releases/notes/assets/1.6/ternary.gif)
+Nous retrouvons les mêmes possibilités de personnalisation que pour l'acteur Ternaire classique, avec la possibilité de configurer une LED ou une image et un comportement de clignotement spécifique pour chaque état. Seule la propriété texte n'est pas personnalisable car elle est directement issue du reflet.
 
 ## Propriétés spécifiques
 
 Ces propriétés contrôlent l'état global de l'acteur.
 
-### Valeur ? `value`
-
-- **Type** : `Boolean`
-- **Description** : La valeur principale qui détermine si l'acteur doit afficher l'état "Vrai" ou "Faux".
-
-> ⚡Chemin d’accès depuis l’acteur `properties.value`
-
-### En défaut? `isFault`
-
-- **Type** : `Boolean`
-- **Description** : Si défini sur `true`, force l'affichage de l'état "de Défaut", ignorant la propriété `value`.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFault`
+{% include redy_reflect_technical_common.md %}
 
 ### Text à afficher `displayText`
 
@@ -48,13 +32,6 @@ Ces propriétés contrôlent l'état global de l'acteur.
 - **Description** : Permet d'activer (`true`) ou de désactiver (`false`) l'affichage du texte pour l'état actuellement visible.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.displayText`
-
-### Texte vrai
-
-- **Type** : `String`
-- **Description** : Le texte à afficher pour cet état.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.textTrue`
 
 ### Couleur LED vrai
 
@@ -88,13 +65,6 @@ Ces propriétés contrôlent l'état global de l'acteur.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.isBlinkingTrue`
 
-### Texte faux
-
-- **Type** : `String`
-- **Description** : Le texte à afficher pour cet état.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.textFalse`
-
 ### Couleur LED faux
 
 - **Type** : `CssColorString`
@@ -126,13 +96,6 @@ Ces propriétés contrôlent l'état global de l'acteur.
 - **Description** : Si `true`, la LED ou l'image de cet état se mettra à clignoter.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.isBlinkingFalse`
-
-### Texte défaut
-
-- **Type** : `String`
-- **Description** : Le texte à afficher pour cet état.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.textFault`
 
 ### Couleur LED défaut
 

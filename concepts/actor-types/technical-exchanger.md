@@ -10,10 +10,13 @@ grand_parent: Concepts
 
 L'acteur Échangeur est un composant visuel simple représentant un échangeur thermique. Il est principalement utilisé pour la représentation graphique dans les schémas.
 
-![Synapps](../../synapps-studio-releases/notes/assets/1.6/exchanger.gif)
+![Synapps](../../synapps-studio-releases/notes//assets/1.6/exchanger.png)
 
 ## Propriétés spécifiques
 
-### Orientation ``orientation``
+### Orientation
+
 - **Type** : `String`
 - **Description** : Définit l'orientation du dessin de l'échangeur.
+
+> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
