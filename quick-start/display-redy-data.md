@@ -18,7 +18,7 @@ Votre synapp va devoir forcément présenter des données des ressources ou vari
 Ce que vous allez voir ici est l'une des méthodes pour **obtenir et afficher l'état d'une ressource** : la liaison de type *Fournisseur de variable* vers l'état de la ressource.
 
 > 📌 **REMARQUE**<br>
-D'autres méthodes existent. Elles impliquent l'utilisation d'[**acteurs fournisseurs de données**](../concepts/actor-types/redy-wos-variable-source.md) notion à voir dans les concepts.
+D'autres méthodes existent. Elles impliquent l'utilisation d'[**acteurs fournisseurs de données**](../concepts/actor-types/redy/wos-variable-source.md) notion à voir dans les concepts.
 
 ## Préparation de la ressource
 
@@ -86,9 +86,9 @@ Pour en savoir plus sur les fournisseurs de données globaux, rendez-vous dans l
 
 Il est tout à fait possible de créer des fournisseurs de données directement dans une scène. Dans ce cas, il sont paramétrable, leur propriétés liable et accessible par script. ce qui donne un contrôle total sur leur utilisation.
 
-Pour en savoir plus, rendez-vous dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy-wos-variable-source.md).
+Pour en savoir plus, rendez-vous dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy/wos-variable-source.md).
 
-Bien d'autre champ sont accessibles par liaison (la valeur, le nom, ...). Pour en savoir plus, rendez-vous encore dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy-wos-variable-source.md#champ-de-variable-redy).
+Bien d'autre champ sont accessibles par liaison (la valeur, le nom, ...). Pour en savoir plus, rendez-vous encore dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy/wos-variable-source.md#champ-de-variable-redy).
 
 
 

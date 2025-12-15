@@ -52,7 +52,7 @@ Vous allez lui indiquer celui que vous venez de déclarer grâce à sa propriét
 
 > L'acteur va maintenant se charger d'afficher l'état commandable de la ressource et la mettre à jour (par défaut toutes les 30 secondes).
 
-Pour voir comment configurer cet acteur,  [c'est ici](../concepts/actor-types/redy-reflect-details.md).
+Pour voir comment configurer cet acteur,  [c'est ici](../concepts/actor-types/redy/reflect-details.md).
 
 Vous remarquerez que l'on retrouve les bornes de valeur de la ressource ainsi que son unité.
 

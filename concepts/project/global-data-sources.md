@@ -7,7 +7,7 @@ nav_order: 8
 
 # Fournisseurs de donnée
 
-Cette partie est dédiée à la définition d'acteurs [fournisseurs de ressource](../actor-types/redy-resource-source.md), [de variable](../actor-types/redy-wos-variable-source.md) et de [requêteur de reflet](../actor-types/redy-reflect-requester.md) qui seront utilisables dans tous le projet.
+Cette partie est dédiée à la définition d'acteurs [fournisseurs de ressource](../actor-types/redy/resource-source.md), [de variable](../actor-types/redy/wos-variable-source.md) et de [requêteur de reflet](../actor-types/redy-reflect-requester.md) qui seront utilisables dans tous le projet.
 
 Il sont disponibles :
 - par liaison de type *fournisseur de variable* ou *de reflet*

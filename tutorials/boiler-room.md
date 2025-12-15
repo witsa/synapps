@@ -6,6 +6,13 @@ nav_order: 99 # à ajuster
 
 # Construire une scène de chaufferie
 
+Studio **1.6.0-beta**
+{: .label .label-yellow }
+Runtime **2.8.0**
+{: .label .label-green }
+REDY **16.4.0**
+{: .label .label-yellow }
+
 > 🎯 Objectif : créer une scène avec 3 acteurs reflets REDY (chaudière, pompe simple, valve 3 voies).
 
 ## Prérequis
@@ -47,7 +54,7 @@ Il est possible de leur assigner un acteur fournisseur de reflet différent si b
 > 💡 **ASTUCE**<br>
 > Si plusieurs acteurs reflets REDY sont utilisés dans la scène, il est recommandé d'utiliser un acteur requêteur de reflet commun afin d'optimiser les performances.
 >
-> Voir [les conseils et optimisations relatifs aux reflets REDY](../concepts/actor-types/redy-reflect-details.md#conseils-et-optimisations).
+> Voir [les conseils et optimisations relatifs aux reflets REDY](../concepts/actor-types/redy/reflect-details.md#conseils-et-optimisations).
 
 Il faut ensuite renseigner un reflet correspondant à la ressource voulue pour chaque acteur.<br>
 Un acteur reflet de chaudière devra posséder le chemin d'un reflet de chaudière, un acteur reflet de pompe simple devra posséder le chemin d'un reflet de pompe simple, etc ...

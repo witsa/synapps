@@ -138,11 +138,11 @@ Lorsque la valeur source est transmise à la cible, il est possible de lui appli
 
 ## La liaison de type de source *Fournisseur de variable*
 
-Ce type de source permet de lier une propriété à un champ d'une variable de REDY par l'intermédiaire d'un [fournisseur de variable](./actor-types/redy-wos-variable-source.md).
+Ce type de source permet de lier une propriété à un champ d'une variable de REDY par l'intermédiaire d'un [fournisseur de variable](./actor-types/redy/wos-variable-source.md).
 
 Voir une illustration [ici](../quick-start/display-redy-data.md)
 
-A la manière d'un acteur [fournisseur relatif de variable](./actor-types/redy-wos-relative-variable-source.md), il est possible d'aller chercher le champ d'une sous variable WOS d'une variable ou ressource définie dans un fournisseur parent.
+A la manière d'un acteur [fournisseur relatif de variable](./actor-types/redy/wos-relative-variable-source.md), il est possible d'aller chercher le champ d'une sous variable WOS d'une variable ou ressource définie dans un fournisseur parent.
 
 ### Clé parent
 
