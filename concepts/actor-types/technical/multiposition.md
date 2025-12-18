@@ -44,25 +44,25 @@ Chaque position dans la liste est un objet configurable avec les propriétés su
 - **Type** : `String`
 - **Description** : Une clé unique (ex: "mode_auto") pour identifier la position. Cette clé peut être utilisée pour activer la position via la propriété Position.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.positions<n>.positionKey` où `<n>` est l'index de la position (1 à 8).
+> ⚡Chemin d’accès depuis l’acteur `properties.positions<n>` où `<n>` est l'index de la position (1 à 8).
 
 ### Texte
 
 - **Type** : `String`
 - **Description** : Le texte à afficher lorsque cette position est active.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.positions<n>.text` où `<n>` est l'index de la position (1 à 8).
+> ⚡Chemin d’accès depuis l’acteur `properties.text<n>` où `<n>` est l'index de la position (1 à 8).
 
 ### Image personnalisée
 
 - **Type** : `String` (Chemin/URL)
 - **Description** : Le chemin d'accès ou l'URL de l'image à afficher pour cette position.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.positions<n>.customImage` où `<n>` est l'index de la position (1 à 8).
+> ⚡Chemin d’accès depuis l’acteur `properties.customImage<n>` où `<n>` est l'index de la position (1 à 8).
 
 ### Clignotant?
 
 - **Type** : `Boolean`
 - **Description** : Si `true`, l'image de cette position se mettra à clignoter.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.positions<n>.isBlinking` où `<n>` est l'index de la position (1 à 8).
+> ⚡Chemin d’accès depuis l’acteur `properties.isBlinking<n>` où `<n>` est l'index de la position (1 à 8).

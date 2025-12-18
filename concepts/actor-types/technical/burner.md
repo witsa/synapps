@@ -33,6 +33,8 @@ Voici les différents états du brûleur :
 | **En défaut**                           | Le brûleur rencontre un problème.                                             | Allumée     | Rouge       | Éteinte    |
 | **En défaut d'atteinte de la consigne** | Le brûleur n'a pas réussi à atteindre la température ou la condition définie. | Clignotante | Orange      | Éteinte    |
 
+{% include table_of_content.html %}
+
 ## Propriétés spécifiques
 
 ### Orientation

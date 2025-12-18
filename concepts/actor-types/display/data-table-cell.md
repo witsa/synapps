@@ -28,6 +28,8 @@ Chaque colonne d'un tableau de données utilise un style d'acteur cellule de tab
 > Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Ils seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
 > Voir la page [Tableau de données](./data-table) pour plus de détails.
 
+{% include table_of_content.html %}
+
 ## Types de colonnes
 
 Chaque type de colonne utilise un jeu de propriétés spécifiques pour configurer l'affichage des données dans les cellules. Les types de colonnes disponibles sont décrits dans la page [Tableau de données](./data-table#types-de-colonnes).
@@ -119,9 +121,9 @@ Pour personnaliser réellement l'affichage, il faut créer un composite qui va d
 #### Passage par le contexte de données
 Le composite à créer reçoit les mêmes éléments de la cellule que dans l'évènement [`onDidCellRender`](./data-table#contexte-des-évènements) de l'acteur **Tableau de données**. Ils sont disponibles dans le [contexte de données](../../context.md) du composite. Ainsi, elle sont accessibles par script ou via des liaisons vers le contexte de données.
 
-> TODO : ajouter un exemple simple d'utilisation d'un composite personnalisé pour afficher une cellule avec une mise en forme spécifique en utilisant le données de la cellule.
+> A venir : ajouter un exemple simple d'utilisation d'un composite personnalisé pour afficher une cellule avec une mise en forme spécifique en utilisant le données de la cellule.
 
 #### Passage par les propriétés du composite
 Il est également possible de commander des propriétés du composite en passant un objet dans l'évènement [`onCellContentTransform`](./data-table#oncellcontenttransform) de l'acteur **Tableau de données**.
 
-> TODO : ajouter un exemple simple d'utilisation de l'évènement `onCellContentTransform` pour modifier des propriétés du composite en fonction des données de la cellule.
+> A venir : ajouter un exemple simple d'utilisation de l'évènement `onCellContentTransform` pour modifier des propriétés du composite en fonction des données de la cellule.

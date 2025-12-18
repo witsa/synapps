@@ -4,7 +4,7 @@ parent: "Affichage"
 nav_order: 1
 ---
 
-{% include links_actor.md apiClass="Actor.Display.DataTable" %}
+{% include table_of_content.html %}
 
 # Tableau de données
 
@@ -35,8 +35,6 @@ Les types de colonnes disponibles sont :
 - booléen images : pour afficher une image en fonction de la valeur booléenne et définir les textes associés,
 - date/heure : pour afficher une date ou une heure avec un format personnalisable,
 - personnalisé : pour utiliser un composite comme contenu de la cellule.
-
-{% include table_of_content.html %}
 
 ## Propriétés spécifiques
 
@@ -82,12 +80,6 @@ Studio permet de configurer les colonnes via l'inspecteur.
 Lorsque vous modifiez une colonne, la prévisualisation du tableau de données n'est pas mise à jour automatiquement. Il faut cliquer sur le bouton "Appliquer les modifications" pour mettre à jour le tableau de données avec les nouvelles définitions de colonnes.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.columns`.
-
-#### Gestion des colonnes
-
-> TODO : ajouter une capture d'écran de l'interface de gestion des colonnes.
-> Montrer les boutons ajouter/supprimer/déplacer.
-> Montrer comment modidier une colonne, valider ou mettre _à jour_.
 
 #### Champs de colonne
 
@@ -161,32 +153,32 @@ Par défaut, le style _Texte entête_ `table-header-cell` est utilisé.
 
 ## Évènements spécifiques
 
-### onWillCellRender
+### ⚡onWillCellRender
 
 Cet évènement est déclenché avant le rendu d'une cellule du tableau de données.
 C'est le bon moment pour modifier la donnée d'une cellule avant son traitement et son affichage.
 
-### onCellContentTransform
+### ⚡onCellContentTransform
 
 Cet évènement est déclenché lors de la transformation du contenu d'une cellule du tableau de données.
 C'est le bon moment pour modifier le contenu affiché dans la cellule (texte, image, etc.). Le retour de cet évènement sera dans le champ `transformedValue` stocké après dans le contexte de l'évènement et utilisé pour l'affichage de la cellule.
 
-### onDidCellRender
+### ⚡onDidCellRender
 
 Cet évènement est déclenché après le rendu d'une cellule du tableau de données.
 C'est le bon moment pour récupérer la cellule rendue et effectuer des actions dessus.
 
-### onDidTableRender
+### ⚡onDidTableRender
 
 Cet évènement est déclenché après le rendu complet du tableau de données.
 C'est le bon moment pour récupérer le tableau rendu et effectuer des actions dessus.
 
-### onChangeDataPage
+### ⚡onChangeDataPage
 
 Cet évènement est déclenché lors du changement de page du tableau de données.
 C'est le bon moment pour modifier les données affichées en fonction de la page demandée. _Voir la section [La pagination](#la-pagination) pour plus de détails_.
 
-### Evènements souris et tactile
+### ⚡Evènements souris et tactile
 
 Dans les éèvènements souris et tactile de l'acteur tableau de données, le context contient des informations supplémentaires sur la cellule ou la ligne de données concernée par l'évènement.
 C'est donc un bon moyen pour interagir avec les cellules du tableau.
