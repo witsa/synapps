@@ -67,8 +67,9 @@ L'interface d'une icône se présente ainsi :
 - Cliquer sur l'icône permet de définir manuellement l'icône que l'on souhaite associé à la taille définie.
 
 - Utiliser le bouton `Ouvrir le dossier des icônes du projet ...` et remplacer l'icône souhaitée.
->⚠️ **ATTENTION**<br>
->Pour la seconde méthode, il est nécessaire de remplacer l'icône souhaité avec une image et de lui donner le MEME NOM que l'icône à remplacer.
+
+{: .warning }
+> Pour la seconde méthode, il est nécessaire de remplacer l'icône souhaité avec une image et de lui donner le MEME NOM que l'icône à remplacer.
 
 ### Pour réinitialiser une icône vers l'icône de base de Synapps Studio :
 

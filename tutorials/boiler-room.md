@@ -51,7 +51,7 @@ Ils ne sont reliés à aucun reflet REDY pour le moment, nous allons maintenant 
 Par défaut, les acteurs reflets techniques REDY se basent sur le requêteur global de reflet.
 Il est possible de leur assigner un acteur fournisseur de reflet différent si besoin.
 
-> 💡 **ASTUCE**<br>
+{: .tip }
 > Si plusieurs acteurs reflets REDY sont utilisés dans la scène, il est recommandé d'utiliser un acteur requêteur de reflet commun afin d'optimiser les performances.
 >
 > Voir [les conseils et optimisations relatifs aux reflets REDY](../concepts/actor-types/redy/reflect-details.md#conseils-et-optimisations).
@@ -61,7 +61,7 @@ Un acteur reflet de chaudière devra posséder le chemin d'un reflet de chaudiè
 
 **Pour l'acteur reflet pompe simple, nous allons également activer l'affichage du détail de reflet au click, ainsi lorsque l'utilisateur clique sur l'acteur, une modale s'ouvre avec le détail de reflet à l'intérieur.**
 
->📌 **REMARQUE**<br>
+{: .info }
 >Si le reflet est commandable, la modale proposera également les commandes disponibles.
 
 ![Propriété reflect simple pompe](../assets/tutorials/boiler-room/reflect-details.png)
@@ -70,19 +70,19 @@ Un acteur reflet de chaudière devra posséder le chemin d'un reflet de chaudiè
 
 **Ajouter les acteurs Tuyaux pour construire la tuyauterie.**
 
->📌 **REMARQUE**<br>
+{: .info }
 >Le système d'ancrage de Synapps Studio permet de positionner précisément les acteurs techniques (tuyaux, chaudières, pompes, vannes, etc ...) en les alignant facilement entre eux.
 
 ![Tuyauterie](../assets/tutorials/boiler-room/pipes.gif)
 
->📌 **REMARQUE**<br>
+{: .info }
 >L'acteur Tuyau posssède plusieurs types (coudes, Tés, flèches, embouts, etc ...) et permet de définir la couleur du tuyau ( Rouge pour les tuyaux d'eau chaude par exemple).
 
 **Voici à quoi devrait ressembler la scène une fois la tuyauterie terminée :**
 
 ![Tuyauterie finale](../assets/tutorials/boiler-room/pipes_final.png)
 
->📌 **REMARQUE**<br>
+{: .info }
 > Les acteurs respectent l'ordre des acteurs Synapps, ainsi, si l'on souhaite qu'un tuyau soit au dessus d'un autre, il faut s'assurer que l'acteur tuyau supérieur soit placé après dans la liste des acteurs.
 
 Les acteurs reflets techniques sont ajustés pour correspondrent à la tuyauterie, on peut maintenant les disposer sur les tuyaux que nous venons de réaliser.
@@ -91,7 +91,7 @@ Les acteurs reflets techniques sont ajustés pour correspondrent à la tuyauteri
 
 ## Étape 5 — Ajouter des détails de reflet
 
-Si l'on souhaite afficher des détails de reflet supplémentaires, on peut utiliser l'acteur **Détails de reflet** (REDY | Détails de reflet).
+Si l'on souhaite afficher des détails de reflet supplémentaires, on peut utiliser l'acteur [*Détails de reflet*](../concepts/actor-types/redy/reflect-details.md).
 
 Dans notre scène, nous utilisons des acteurs détails de reflet pour afficher des informations supplémentaires sur la température des tuyaux.
 

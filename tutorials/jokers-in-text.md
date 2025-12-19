@@ -42,8 +42,8 @@ Nous allons maintenant ajouter les jokers dans le texte de l'acteur.
 
 Il est défini par des *doubles accolades* {% raw %}`{{une clé}}`{% endraw %} qui entourent une clé. Cette dernière est un texte de votre choix qui correspondra à la clé de l'additionnelle utilisée pour remplacer le joker.
 
-> 📌 **REMARQUE**<br>
-La clé du joker respecte les mêmes contraintes que celle d'une additionnelle : pas d'espace, que de l'alphanumérique.
+{: .info }
+> La clé du joker respecte les mêmes contraintes que celle d'une additionnelle : pas d'espace, que de l'alphanumérique.
 
 Ici, nous créons deux jokers :
 - {% raw %}`{{value}}`{% endraw %} pour la température

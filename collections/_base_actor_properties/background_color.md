@@ -16,5 +16,5 @@ Dans l'inspecteur, un sélecteur de couleur est disponible pour aider à défini
 - voir la documentation MDN pour [valeur de couleur CSS](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){:target="_blank"}
 - voir la documentation MDN pour [couleur de fond](https://developer.mozilla.org/fr/docs/Web/CSS/background-color){:target="_blank"}
 
-> **A noter**
+{: .info }
 > La couleur du fond de la synapp peut être définie de manière globale dans la sous-section [Projet/Généralités]({{ site.baseurl }}/concepts/project/#généralités).
