@@ -7,7 +7,7 @@ parent: Concepts
 
 > **🚧 En cours de rédaction 🚧**
 >
-> mise à jour : `2024-11-06 16:00`
+> mise à jour : `2024-12-16 10:00`
 
 Nous vous proposons ici quelques conseils et bonnes pratiques pour la création de vos synapps, ainsi que des optimisations pour améliorer leurs performances.
 

@@ -13,14 +13,14 @@ Si votre synapp contient plusieurs scènes, vous pouvez naviguer entre elles sim
 
 ![SynApps](../assets/scenes-nav.png)
 
-> 📌 **REMARQUE**<br>
-Vous pouvez aussi naviguer par script. [⚡ `synapp.navigate(sceneKey,sceneParams)`]({{ site.baseurl }}/script-api/Synapps.Synapp.html#navigate){:target="_blank"}
+{: .info }
+> Vous pouvez aussi naviguer par script voir [ici](./scripts/usefull-scripts.md#navigation-entre-scènes)
 
 ## Navigation dans un acteur écran
 
 Si votre scène contient un [acteur écran](./actor-types/display/screen.md), vous pouvez le faire afficher une autre scène aussi grâce à un [acteur bouton de navigation](./actor-types/input/nav-button.md) en lui spécifiant le nom de l'acteur écran considéré.
 
-> 📌 **REMARQUE**<br>
+{: .info }
 Le champ [scène](./actor-types/display/screen.md#scene) de l'acteur écran peut être défini manuelle par liaison ou par script.
 
 ## Navigation paramétrée

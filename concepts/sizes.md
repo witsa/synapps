@@ -34,7 +34,7 @@ Et enfin les unités relative à la taille du conteneur, de l'équipement ou bie
 
 Le pixel est une unité fixe, c'est à dire que pour un appareil et une échelle donnée, le pixel a toujours la même taille. C'est une unité facile à employer.
 
-> 💡 **ASTUCE**<br>
+{: .tip }
 > Toujours employer cette unité lors de montage d'acteurs qui se chevauchent comme les constructions de plan ou des dessins précis dans un acteur [Toile](./actor-types/layout/canvas.md). Ensuite, laisser faire un acteur [Boite à vue](./actor-types/layout/view-box.md) pour que l'ensemble s'adapte à n'importe quelle taille.
 
 Le pixel est défini comme étant le plus petit élément de l'écran mais suffisamment grand pour être visible.
@@ -44,7 +44,7 @@ Le pixel est défini comme étant le plus petit élément de l'écran mais suffi
 Le centimètre et le pouce sont proches des unités réelles tant que l'écran est suffisamment grand.
 Il sont très pratiques pour définir des tailles *organique*. Par exemple, pour s'assurer qu'un objet soit *touchable*, il est possible de lui donner une taille supérieure à `1cm`.
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 > Le `cm` d'un écran de petite taille peut être plus petit qu'un vrai centimètre.
 
 
@@ -78,7 +78,7 @@ Si vous changez la taille de l'acteur racine, automatiquement, les autres acteur
 ![SynApps](../assets/concepts/sizes/sample-em.gif)
 
 
-> 💡 **ASTUCE**<br>
+{: .tip }
 > La démarche de renseigner quelques tailles en racine de votre interface et de définir les propriétés qui héritent en `em` est très pratique. Cela fait gagner un temps précieux pour ajuster les tailles et réaliser des modifications globales.
 
 ### Le `rem`

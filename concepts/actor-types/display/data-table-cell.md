@@ -116,14 +116,31 @@ Par défaut, le format est `DD/MM/YYYY HH:mm:ss`.
 Ce style est utilisé pour les colonnes de type **Personnalisé**. Il permet de créer des cellules avec un affichage entièrement personnalisé en utilisant un composite. Par défaut, un composite basique est fourni, mais il est possible de créer un composite personnalisé.
 
 ### Composite
+
 Pour personnaliser réellement l'affichage, il faut créer un composite qui va définir comment afficher la donnée et ajouter un style d'acteur cellule de tableau de données basé sur _Personnalisé_ `table-cell-custom` qui utilise ce composite.
 
 #### Passage par le contexte de données
+
 Le composite à créer reçoit les mêmes éléments de la cellule que dans l'évènement [`onDidCellRender`](./data-table#contexte-des-évènements) de l'acteur **Tableau de données**. Ils sont disponibles dans le [contexte de données](../../context.md) du composite. Ainsi, elle sont accessibles par script ou via des liaisons vers le contexte de données.
 
-> A venir : ajouter un exemple simple d'utilisation d'un composite personnalisé pour afficher une cellule avec une mise en forme spécifique en utilisant le données de la cellule.
-
 #### Passage par les propriétés du composite
+
 Il est également possible de commander des propriétés du composite en passant un objet dans l'évènement [`onCellContentTransform`](./data-table#oncellcontenttransform) de l'acteur **Tableau de données**.
 
-> A venir : ajouter un exemple simple d'utilisation de l'évènement `onCellContentTransform` pour modifier des propriétés du composite en fonction des données de la cellule.
+```javascript
+// onCellContentTransform
+
+if (!context.isHeader && context.columnKey === "custom1") {
+  // la clé de la colonne est "custom1"
+  // Personnalisation de la cellule
+  return {
+      // Passage d'une propriété "color" au composite
+      color: context.rowData.status === "active" ? "green" : "red",
+      // Passage d'une propriété "label" au composite
+      label: context.rowData.name,
+    },
+  };
+}
+```
+
+Dans cet exemple, on passe deux propriétés `color` et `label` au composite de la cellule. La couleur du composite sera changée en fonction de la valeur du champ `status` de la ligne de données, et la propriété scpécifique qui a comme clé `label` sera définie avec la valeur du champ `name` de la ligne de données.

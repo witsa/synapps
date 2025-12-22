@@ -32,6 +32,7 @@ Seules les propriétés des acteurs peuvent être cible de liaison. En revanche,
 - La [session](./session.md)
 - L'[utilisateur](./user.md)
 - L'[afficheur](./user-agent.md)
+- Le [contexte de donnée](./data-context.md)
 
 Exemple : *une liaison vers la **couleur A** de la librairie des couleurs définie sur la propriété **couleur de fond** d'un acteur*
 ![La liaison vers une couleur de la librairie](../assets/concepts/bindings/01.png)
@@ -80,8 +81,8 @@ Intéressons nous plus particulièrement à ce chemin. Il est visible dans la fe
 
 Observez dans le deuxième exemple que ce chemin est `properties.color`. Ce chemin est le même qui permet d'accéder à la valeur par script.
 
-> 📌 **REMARQUE**<br>
-Il est tout à fait possible, si vous le connaissait, de définir un chemin qui n'a pas de correspondance dans la liste des champs disponible pour une source donnée.
+{: .info }
+> Il est tout à fait possible, si vous le connaissait, de définir un chemin qui n'a pas de correspondance dans la liste des champs disponible pour une source donnée.
 
 ### Activation de l'écriture
 
@@ -103,8 +104,8 @@ Ceci est très pratique lorsqu'on se lie à une valeur qui ne va pas changer ou 
 
 Dans certain cas, il est possible lors de la création de la liaison, la source définie n'existe pas ou soit introuvable. Dans ce cas la liaison n'aboutit pas et la valeur restera à sa définition initiale.
 
-> 📌 **REMARQUE**<br>
-Pour l'instant, il n'y a pas encore de retour dans Studio qui indique ce type d'échec.
+{: .info }
+> Pour l'instant, il n'y a pas encore de retour dans Studio qui indique ce type d'échec.
 
 ## Menu des options d'une liaison
 

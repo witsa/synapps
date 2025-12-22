@@ -26,10 +26,13 @@ Un style est toujours défini basé sur un autre (donc au moins celui par défau
 
 ### Gestion des Styles
 
-La définition des styles d'acteur est une section à part entière dans Studio. Elle est actuellement encore à réaliser en JSON.
+La définition des styles d'acteur est une section à part entière dans Studio. Un designer dédié permet de les créer et les modifier.
+
+La documentation de cette partie est à venir.
+
+En attendant, ce qui suit présente la structure JSON d'un style.
 
 ![SynApps](../assets/styles.png)
-
 
 Voici un exemple de définition JSON de styles pour les empilements :
 ```json
