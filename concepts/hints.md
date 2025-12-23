@@ -11,7 +11,8 @@ parent: Concepts
 
 Nous vous proposons ici quelques conseils et bonnes pratiques pour la création de vos synapps, ainsi que des optimisations pour améliorer leurs performances.
 
-Un point important à garder à l'esprit est que les synapps sont conçues pour fonctionner sur une variété d'appareils, y compris des appareils mobiles avec des ressources limitées. Mais, surtout dans ce cas, **il demeure essentiel d'optimiser vos synapps pour garantir une expérience utilisateur fluide et réactive**.
+{: .important }
+> Les synapps sont conçues pour fonctionner sur une variété d'appareils, y compris des appareils mobiles avec des ressources limitées. Mais, surtout dans ce cas, **il demeure essentiel d'optimiser vos synapps pour garantir une expérience utilisateur fluide et réactive**.
 
 ## Bonnes pratiques pour la création de synapps
 

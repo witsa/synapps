@@ -89,6 +89,8 @@ callouts:
     title: 📌 A retenir
     color: yellow
 
+withMatomo: true
+
 # availlable colors :  grey-lt, grey-dk, purple, blue, green, yellow, and red
 
 # Exclude from processing.

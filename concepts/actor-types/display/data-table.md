@@ -20,6 +20,7 @@ Un acteur qui permet de créer des tableaux de données dynamiques.
 ![Tableau de données](./assets/data-table.png)
 
 {: .important-title }
+
 > 💎 Acteur Avancé
 >
 > Le tableau de données est un acteur qui nécessite une bonne compréhension de son fonctionnement et de ses propriétés ainsi que des notions de JSON et parfois du JavaScript.
@@ -42,6 +43,7 @@ Les types de colonnes disponibles sont :
 
 Cette propriété permet de renseigner un tableau d'objets JSON représentant les lignes de données à afficher dans le tableau de données.
 
+Exemple de données JSON pour cette propriété :
 {% raw %}
 
 ```json
@@ -119,7 +121,6 @@ Chaque type de colonne utilise un style de cellule. Des styles par défaut sont 
 {: .info }
 > Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Il seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
 > Voir la page [Cellule de tableau de données](./data-table-cell) pour plus de détails.
-
 
 ### En-tête ?
 
@@ -264,15 +265,15 @@ Un exemple d'acteur au complet avec la gestion de la pagination :
 
 ### Ligne de données
 
-Le champ `dataRows` permet d'obtenir les ligne de données directement sous forme d'un tableau d'objets à la différence de la propriété qui contient le JSON sous forme de texte.
+Le champ *Ligne de données* permet d'obtenir les ligne de données directement sous forme d'un tableau d'objets à la différence de la propriété qui contient le JSON sous forme de texte.
 
 ### Nombre de lignes
 
-Le champ `rowsCount` permet d'obtenir le nombre de lignes de données actuellement présentes dans le tableau.
+Le champ *Nombre de lignes* permet d'obtenir le nombre de lignes de données actuellement présentes dans le tableau.
 
 ### Colonnes
 
-Le champ `columns` permet d'obtenir les définitions des colonnes directement sous forme d'un tableau d'objets à la différence de la propriété qui contient le JSON sous forme de texte.
+Le champ *Colonnes* permet d'obtenir les définitions des colonnes directement sous forme d'un tableau d'objets à la différence de la propriété qui contient le JSON sous forme de texte.
 
 ### Numéro de page
 

@@ -1,6 +1,2 @@
-aux_links:
-  "⚡ Doc Script API":
-    - "/script-api/"
-  "WIT.fr":
-    - "https://www.wit.fr"
 incremental: true
+withMatomo: false
