@@ -43,6 +43,11 @@ Les types de colonnes disponibles sont :
 
 Cette propriété permet de renseigner un tableau d'objets JSON représentant les lignes de données à afficher dans le tableau de données.
 
+- **Champ** : `properties.dataRows`
+- **Type** : `JSON`
+- **Par défaut** : `[]`
+- **Modificateur** : ⚡Gabarit
+
 Exemple de données JSON pour cette propriété :
 {% raw %}
 
@@ -70,18 +75,19 @@ Exemple de données JSON pour cette propriété :
 
 Le JSON est stucturé sous la forme d'un tableau d'objets, chaque objet représentant une ligne de données. Chaque propriété de l'objet représente une colonne potentielle du tableau de données.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.dataRows`.
-
 ### Colonnes
 
 Cette propriété permet de définir les colonnes du tableau de données.
 Le JSON est structuré sous la forme d'un tableau d'objets, chaque objet représentant une colonne du tableau de données.
 
+- **Champ** : `properties.columns`
+- **Type** : `JSON`
+- **Par défaut** : `[]`
+- **Modificateur** : ⚡Gabarit
+
 Studio permet de configurer les colonnes via l'inspecteur.
 
 Lorsque vous modifiez une colonne, la prévisualisation du tableau de données n'est pas mise à jour automatiquement. Il faut cliquer sur le bouton "Appliquer les modifications" pour mettre à jour le tableau de données avec les nouvelles définitions de colonnes.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.columns`.
 
 #### Champs de colonne
 
@@ -119,6 +125,7 @@ Chaque type de colonne utilise un style de cellule. Des styles par défaut sont 
 | Personnalisé      | _Personnalisé_ `table-cell-custom-composite` |
 
 {: .info }
+
 > Il est possible de créer d'autres styles d'acteur Cellule de donnée pour les personnaliser. Il seront basés sur les styles par défaut pour les utiliser dans les colonnes de type correspondant.<br/>
 > Voir la page [Cellule de tableau de données](./data-table-cell) pour plus de détails.
 
@@ -126,19 +133,28 @@ Chaque type de colonne utilise un style de cellule. Des styles par défaut sont 
 
 Cette propriété permet d'afficher ou non l'en-tête du tableau de données.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.displayHeader`.
+- **Champ** : `properties.displayHeader`
+- **Type** : `boolean`
+- **Par défaut** : `true`
+- **Modificateur** : ⚡Gabarit
 
 ### Pagination ?
 
 Cette propriété permet d'afficher ou non les boutons de pagination du tableau de données. Il faut aussi augmenter le nombre de page avec le champ `pageMax` pour que les boutons de pagination apparaissent.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.displayPaging`.
+- **Champ** : `properties.displayPaging`
+- **Type** : `boolean`
+- **Par défaut** : `true`
+- **Modificateur** : ⚡Gabarit
 
 ### Nombre de pages
 
 Cette propriété permet de définir le nombre maximum de pages pour la pagination du tableau de données.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.pageMax`.
+- **Champ** : `properties.pageMax`
+- **Type** : `number`
+- **Par défaut** : `1`
+- **Modificateur** : ⚡Gabarit
 
 ### Style d'acteur cellule d'en-tête
 
@@ -146,11 +162,15 @@ Cette propriété permet de définir le style d'acteur cellule à utiliser pour 
 
 Par défaut, le style _Texte entête_ `table-header-cell` est utilisé.
 
+- **Champ** : `properties.headerStyle`
+- **Type** : `string`
+- **Par défaut** : `table-header-cell`
+- **Modificateur** : ⚡Rendu
+
 {: .info }
+
 > Il est possible de définir d'autres styles d'en-tête. Pour cela, il faut créer un style de cellule de tableau de données et le baser sur le style _Texte entête_ `table-header-cell` ou _Texte_ `table-cell-string`. Ensuite, il sera proposé dans la liste des styles d'acteur cellule d'en-tête. <br/>
 > Voir la page [Cellule de tableau de données](./data-table-cell) pour plus de détails.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.headerStyle`.
 
 ## Évènements spécifiques
 
@@ -267,14 +287,30 @@ Un exemple d'acteur au complet avec la gestion de la pagination :
 
 Le champ *Ligne de données* permet d'obtenir les ligne de données directement sous forme d'un tableau d'objets à la différence de la propriété qui contient le JSON sous forme de texte.
 
+- **Champ** : `dataRows`
+- **Type** : `Array`
+- **Lecture seule**
+
 ### Nombre de lignes
 
 Le champ *Nombre de lignes* permet d'obtenir le nombre de lignes de données actuellement présentes dans le tableau.
+
+- **Champ** : `rowsCount`
+- **Type** : `Number`
+- **Lecture seule**
 
 ### Colonnes
 
 Le champ *Colonnes* permet d'obtenir les définitions des colonnes directement sous forme d'un tableau d'objets à la différence de la propriété qui contient le JSON sous forme de texte.
 
+- **Champ** : `columns`
+- **Type** : `Array`
+- **Lecture seule**
+
 ### Numéro de page
 
 Le champ `page` permet d'obtenir le numéro de la page actuellement affichée dans le tableau de données.
+
+- **Champ** : `page`
+- **Type** : `Number`
+- **Lecture seule**

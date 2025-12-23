@@ -2,6 +2,6 @@
 
 ## {{ property.title }}
 
-{{ property.content | markdownify }}
+- **Champ** : `{{ property.propPath }}`
 
-> {% include actor_property_script.md propName=property.propName propPath=property.propPath scriptApiClass=property.scriptApiClass %}
+{{ property.content | markdownify }}
