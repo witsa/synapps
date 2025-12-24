@@ -15,7 +15,6 @@ Cela pourra être :
 
 - un REDY
 - un REDY-PC
-<!-- - *bientôt* un serveur HighWay -->
 
 L'objet hôte est accessible par liaison et par script. Il est porté par le magasin de données de la synapp.
 
@@ -55,7 +54,8 @@ Studio s'occupe de transformer le projet et ce qu'il contient en un morceau de p
 
 Bien sur, si vous définissez plusieurs hôtes dans le projet, vous pourrez gérez la publication d'une même synapp sur autant d'hôtes.
 
-> ⚠️ **ATTENTION**<br> N'oubliez pas qu'un profil d'*installateur* au minimum et l'*adds Intravision* sont requis pour pouvoir publier (ou gérer) un synapp sur un *REDY*.
+{: .warning }
+> N'oubliez pas qu'un profil d'*installateur* au minimum et l'*adds Intravision* sont requis pour pouvoir publier (ou gérer) un synapp sur un *REDY*.
 
 Choisissez un hôte.
 
@@ -69,7 +69,8 @@ Dans le haut se trouve la zone dédiée à la synapp correspondant au projet pub
 
 ![Hôtes](../../assets/quick-start/synapp-publish/03.png)
 
-> ⚠️ **ATTENTION**<br> Chaque synapp est identifiée par le GUID du projet. Mais sur le REDY, c'est son *label* qui l'identifie. Donc faite attention à ne pas écraser une synapp déjà publiée.
+{: .warning }
+> Chaque synapp est identifiée par le GUID du projet. Mais sur le REDY, c'est son *label* qui l'identifie. Donc faite attention à ne pas écraser une synapp déjà publiée.
 
 A chaque publication, un numéro de *build* est inscrit. En réalité, c'est la date à laquelle la synapp a été publiée.
 
@@ -88,6 +89,8 @@ Il contient toute une arborescence que le runtime de Synapps sait interpréter.
 ![Hôtes](../../assets/quick-start/synapp-publish/07.png)
 
 
-> ⚠️ **ATTENTION**<br> Surtout, ne changez rien dans cette arborescence. Laissez Synapps Studio gérer ce paramétrage.
+{: .warning }
+> Surtout, ne changez rien dans cette arborescence. Laissez Synapps Studio gérer ce paramétrage.
 
-> 📌 **REMARQUE**<br> N'oubliez pas de sauvegarder le paramétrage après avoir publier la synapp.
+{: .info }
+> N'oubliez pas de sauvegarder le paramétrage après avoir publier la synapp.

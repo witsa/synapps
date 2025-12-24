@@ -7,7 +7,6 @@ nav_order: 4
 
 > 🚧 en cours de rédaction...
 
-
 {% include table_of_content.html %}
 
 # Acteur
@@ -36,71 +35,57 @@ Ces propriétés représentent l'état de l'acteur. Elles commandent son aspect,
 
 Chaque propriété à une valeur par défaut. Cette dernière est définie par le [style de l'acteur](../actor-style.md).
 
-L'inspecteur est la partie du *designer* qui permet de paramétrer, de programmer, de lier les propriétés d'un acteur.
+L'inspecteur est la partie du _designer_ qui permet de paramétrer, de programmer, de lier les propriétés d'un acteur.
 
 ![SynApps](../../assets/concepts/actor/03.png)
-
-> 📌 **REMARQUE**<br>
->Certaines propriétés sont qualifiées de "héritables", ce qui signifie qu'elles prennent la même valeur que la propriété correspondante de leur parent.<br>
->Pour que cette héritabilité soit activée, les propriétés concernées doivent être explicitement définies avec la valeur "inherit".
->
->Vous pouvez visualiser qu'elle est la valeur héritée d'une propriété parente en activant l'option "Montrer l'héritage" dans le menu des paramètres de la propriété.<br><br>
->⚠️ Lorsque la propriété ne possède pas la valeur "inherit", l'héritage peut tout de même être visualisé mais il ne sera pas appliqué à la propriété.
->
->![SynApps](../../assets/concepts/actor/inherit.gif)
-
 
 ### Catégories
 
 Dans l'inspecteur, les propriétés sont rangées par catégorie :
 
-- [**Spécifiques**](../actor-types/index.md)
+- [**Spécifiques**](../actor-types/index.md) Les propriétés propres au type de l'acteur. Pour les visiter, se rendre sur la page du [type d'acteur](../actor-types/index.md).
 
-Les propriétés propres au type de l'acteur. Pour les visiter, se rendre sur la page du [type d'acteur](../actor-types/index.md).
+- [**Aspect**](./category-aspect.md) Les propriétés relatives à l'aspect de l'acteur comme sa couleur de fond ou bien sa visibilité.
 
-- [**Aspect**](./category-aspect.md)
+- [**Texte**](./category-text.md) Les propriétés relatives au texte qui sera contenu dans l'acteur ou ses enfants. Certaines propriétés comme la taille ou la couleur de la police sont transmises par _héritage_ aux acteurs enfants.
 
-Les propriétés relatives à l'aspect de l'acteur comme sa couleur de fond ou bien sa visibilité.
+- [**Disposition**](./category-disposition.md) Les propriétés qui paramètrent la disposition de l'acteur dans son parent. La nature de ses propriétés dépendent du type de disposition auquel appartient le parent.
 
-- [**Texte**](./category-text.md)
+- [**Tailles**](./category-size.md) Les propriétés relatives à la taille de l'acteur.
 
-Les propriétés relatives au texte qui sera contenu dans l'acteur ou ses enfants. Certaines propriétés comme la taille ou la couleur de la police sont transmises par *héritage* aux acteurs enfants.
+- [**Espaces**](./category-space.md) Les propriétés relatives à l'espacement entre les acteurs et les coins de la scène.
 
--  [**Disposition**](./category-disposition.md)
+- [**Bordures**](./category-border.md) Les propriétés relatives aux bordures de l'acteur et l'arrondi de ses coins.
 
-Les propriétés qui paramètrent la disposition de l'acteur dans son parent. La nature de ses propriétés dépendent du type de disposition auquel appartient le parent.
-
-- [**Tailles**](./category-size.md)
-
-Les propriétés relatives à la taille de l'acteur.
-
-- [**Espaces**](./category-space.md)
-
-Les propriétés relatives à l'espacement entre les acteurs et les coins de la scène.
-
-- [**Bordures**](./category-border.md)
-
-Les propriétés relatives aux bordures de l'acteur et l'arrondi de ses coins.
-
-- [**Effets**](./category-effects.md)
-
-Les propriétés relatives aux transformations géométrique (échelle, translation, rotation) ou les ombres portées ou l'affichage de bulle d'aide.
+- [**Effets**](./category-effects.md) Les propriétés relatives aux transformations géométrique (échelle, translation, rotation) ou les ombres portées ou l'affichage de bulle d'aide.
 
 ### Valeur héritée
 
 Certaines propriétés peuvent hériter leur valeur de la propriété d'un parent de l'acteur. C'est le cas par exemple de la taille de police. Il est alors possible de définir les valeurs de ces propriétés une fois pour toute au plus haut dans l'arborescence des acteurs pour en faire bénéficier tous les enfants.
 
+Dans l'inspecteur, il est possible d'afficher la valeur héritée d'une propriété et son origine en activant l'option "Montrer l'héritage" dans le menu des paramètres de la propriété.
+
+![SynApps](../../assets/concepts/actor/inherit.gif)
+
+{: .info }
+
+> Lorsque la propriété ne possède pas la valeur "inherit", l'héritage peut tout de même être visualisé mais il ne sera pas appliqué à la propriété.
+
 ### Évènement de modification
 
 Chaque propriété déclenche un évènement de modification lorsque sa valeur change. Il y a 4 types de modification :
+
 - **Aucune** Pas de modification particulière
 - **Style** Modification qui entraîne un calcul des styles CSS de l'acteur.
 - **Rendu** Modification qui entraîne un nouveau rendu de l'acteur.
 - **Gabarit** Modification qui entraîne un nouveau calcul de gabarit et rendu de toute la hiérarchie de l'acteur.
 
 Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur.
+
 - Voir la partie dédiées aux [Scripts](../scripts/)
-- Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="_blank"}
+  {% comment %}
+- Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="\_blank"}
+  {% endcomment %}
 
 ## Clé d'acteur
 
@@ -109,11 +94,13 @@ Un acteur est identifiable par sa clé. C'est une chaîne de caractère qui doit
 Il est possible de changer cette clé dans l'inspecteur d'acteur.
 
 ### Caractères autorisés
- - Tous les caractères alphanumériques sont autorisés.
- - Seul le tiret `-` est autorisé parmi les caractères spéciaux.
 
-> ✔️ **CONSEIL**<br>
-Il est recommandé de profiter des clés d'acteur pour les qualifier et mieux comprendre le rôle de chaque acteur et la structure de votre scène ou composite.
+- Tous les caractères alphanumériques sont autorisés.
+- Seul le tiret `-` est autorisé parmi les caractères spéciaux.
+
+{: .tip }
+
+> Il est recommandé de profiter des clés d'acteur pour les qualifier et mieux comprendre le rôle de chaque acteur et la structure de votre scène ou composite.
 
 ## Les évènements et cycle de vie
 
@@ -129,29 +116,24 @@ Il est possible de définir des propriétés additionnelles sur un acteur. Une c
 
 ![SynApps](../../assets/concepts/actor/04.png)
 
-Les types de propriétés disponibles :
-
 ![SynApps](../../assets/concepts/actor/05.png)
 
-> 🚧 en cours de rédaction...
-
+Voir la section dédiée aux [Additionnelles](../additionals.md).
 
 Chaque additionnelle est identifiée par sa clé qui doit être unique pour un acteur donné.
 
-Lorsqu'une valeur d'additionnelle change, comme toute les autres propriétés, elle déclenche un type de d'évènement de modification. Par défaut c'est la *non modification* qui est lancé.
+Lorsqu'une valeur d'additionnelle change, comme toute les autres propriétés, elle déclenche un type de d'évènement de modification. Par défaut c'est la _non modification_ qui est lancé.
 
 ## Les liaisons
 
-> 🚧 en cours de rédaction...
-
-### Évènements de transformation
-
-> voir [le cycle de vie d'un acteur](../scripts/actor-life-cycle.md)
+C'est l'un des points fort de Synapps. Les propriétés d'un acteur peuvent être liées à d'autres éléments. Voir la section dédiée aux [Liaisons](../binding.md).
 
 ## Le ruissellement de contexte
-> 🚧 en cours de rédaction...
+
+C'est une notion Avancée. Voir la section dédiée au [Ruissellement de contexte](../context.md).
 
 ## Les fournisseurs de donnée
+
 > 🚧 en cours de rédaction...
 
 ## La recherche d'acteur
@@ -162,7 +144,7 @@ Il est possible de rechercher un acteur à l'aide de l'outil "loupe".<br>
 La recherche d'acteurs repose sur la correspondance des clés des acteurs avec une chaîne de caractères spécifiée par l'utilisateur.
 Lorsque vous effectuez une recherche, l'application parcourt l'arborescence des acteurs et identifie tous les acteurs dont la clé correspond à la chaîne de caractères renseignée.
 
->📌*Remarque*
->
->Il est important de noter que la recherche n'est pas sensible à la casse, ce qui signifie que les lettres majuscules et minuscules sont traitées de la même manière.
->Par exemple, une recherche pour "acteur123" retournera les résultats pour "Acteur123" et "acteur123" indifféremment.
+{: .info }
+
+> Il est important de noter que la recherche n'est pas sensible à la casse, ce qui signifie que les lettres majuscules et minuscules sont traitées de la même manière.
+> Par exemple, une recherche pour "acteur123" retournera les résultats pour "Acteur123" et "acteur123" indifféremment.

@@ -32,7 +32,8 @@ Une fois connectée, l'interface présente maintenant le bouton dédié à la pu
 ![SynApps](../assets/quick-start/synapp-publish/03.png)
 
 
-> **Remarque :** Si vous définissez un utilisateur qui n'est pas au moins *installateur* ou si l'*adds Intravision* n'est pas activée, vous ne pourrez pas publier la synapp dans l'hôte.
+{: .warning }
+> Si vous définissez un utilisateur qui n'est pas au moins *installateur* ou si l'*adds Intravision* n'est pas activée, vous ne pourrez pas publier la synapp dans l'hôte.
 
 ## Publication
 
@@ -44,7 +45,8 @@ Si tout se passe bien, l'interface montrera la synapp correspondante au projet p
 
 ![SynApps](../assets/quick-start/synapp-publish/05.png)
 
-> **Remarque :** Chaque projet permet de définir une synapp, avec un identifiant unique. Ainsi, Studio est capable de reconnaître la synapp publiée comme correspondante à celle du projet en cours.
+{: .pin }
+> Chaque projet permet de définir une synapp, avec un identifiant unique. Ainsi, Studio est capable de reconnaître la synapp publiée comme correspondante à celle du projet en cours.
 
 # Prochaine étape
 Maintenant, vous allez [afficher l'état d'une ressource du REDY](./display-redy-data.md) dans la scène.

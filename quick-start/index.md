@@ -10,10 +10,9 @@ En suivant ce guide, vous pourrez prendre en main de Synapps Studio et appréhen
 
 > Vous aurez besoin qu'un version récente de **REDY-PC** tourne sur votre système.
 
-> 📌 **REMARQUE**<br>
-> Pour profiter des dernières fonctionnalités, il sera nécessaire d'utiliser une version `14.5.2`.
+{: .pin }
 >
-> Synapps Studio reste compatible avec les **REDY** de version supérieure à `14.2.0`.
+> Vous pouvez utiliser Synapps Studio avec des versions de REDY à partir de la `14.5.2`. <br />Mais pour une expérience optimale, **il est recommandé d'utiliser une version plus récente**.
 
 # Première étape
 Commençons par [se procurer et installer Synapps Studio](./install.md)

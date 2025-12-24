@@ -15,6 +15,10 @@ parent: Concepts
 | Designer | `Ctrl+S` | Sauvegarde les modifications |
 | Designer | `Ctrl+Z` | Annule la dernière modification |
 | Designer | `Ctrl+Shift+Z`, `Ctrl+Y` | Reproduit la modification annulée |
+| Designer | `Ctrl+C` | Copie l'élément sélectionné |
+| Designer | `Ctrl+X` | Coupe l'élément sélectionné |
+| Designer | `Ctrl+V` | Colle l'élément copié ou coupé |
+| Designer | `Delete` | Supprime l'élément sélectionné |
 | Éditeur de texte | `Ctrl+Z` | Annule la dernière saisie |
 | Éditeur de texte | `Ctrl+Shift+Z`, `Ctrl+Y` | Reproduit la saisie annulée |
 | Éditeur de texte | `Ctrl+Shift+F` | Formate le contenu |

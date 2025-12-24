@@ -25,7 +25,7 @@ Tout ceci est paramétrable (voir la section consacrée à la gestion des hôtes
 
 ![SynApps](../assets/quick-start/synapp-run/01.png)
 
-Lancez une instance de **REDY-PC** (une version `13.2.0` ou ultérieur).
+Lancez une instance de **REDY-PC**.
 
 ![SynApps](../assets/quick-start/synapp-run/02.png)
 
@@ -44,8 +44,9 @@ L'onglet d'exécution s'est ouvert :
 
 Vous pouvez tester la synapp en utilisant le menu.
 
+{: .tip }
 > Un autre manière de visualiser la synapp est de l'ouvrir dans votre navigateur.
-Dans ce cas choisissez l'option "Exécuter dans le navigateur...". <br>Raccourci clavier **Ctrl+Shift+R**
+> Dans ce cas choisissez l'option "Exécuter dans le navigateur...". <br>Raccourci clavier **Ctrl+Shift+R**
 
 # Prochaine étape
 Maintenant, vous allez effectuer [vos premiers pas avec le designer de scène](./designer-first-step.md).

@@ -16,7 +16,7 @@ Dans un premier temps, nous verrons comment ajouter une *image de fond* et un ac
 # Etape 1 : Ajout d'une image dans la librairie
 
 Pour commencer, nous allons ajouter nos **images** dans la librairie. Cela simplifie l'accès et optimise l'affichage.<br>
-Pour ajouter une **image** dans la librairie suivez ce [tutoriel]({{ site.baseurl }}/concepts/pictures.html)<br>
+Pour ajouter une **image** dans la librairie suivez ce [tutoriel]({{ site.baseurl }}/concepts/libraries/pictures.html)<br>
 
 >📌 **REMARQUE**<br>
  Sauvegardez votre librairie après chaque modification ou ajout d'image.<br>

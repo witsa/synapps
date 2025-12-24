@@ -23,12 +23,13 @@ Tout d'abord, dans votre paramétrage vous allez déclarer un reflet dans la res
 Rendez-vous dans le paramétrage de la ressource, onglet identité. Nous allons déclarer son reflet de type *Analogique*. Cela permet de rendre disponible dans le REDY cette ressource sous la forme d'un objet avec des propriétés bien connues comme ses limites, son unité, ...
 Il sera disponible pour la communication avec Synapps ou plus généralement par l'API du REDY.
 
+{: .important}
 > N'oublier pas de rendre le reflet commandable.
 
 ![Reflet](../assets/quick-start/command-redy/03.gif)
 
-> 📌 **REMARQUE**<br>
-Toutes les ressources ont un ou des types de reflet possibles. Au moins le reflet état est disponible et permet à minima d'afficher l'état de la ressource. Les autres sont à chaque fois plus spécialisé (reflet analogique, reflet de type digital, vanne, pompe, ...).
+{: .pin }
+> Toutes les ressources ont un ou des types de reflet possibles. Au moins le reflet état est disponible et permet à minima d'afficher l'état de la ressource. Les autres sont à chaque fois plus spécialisé (reflet analogique, reflet de type digital, vanne, pompe, ...).
 
 
 ## Acteur détails de reflet
@@ -52,7 +53,7 @@ Vous allez lui indiquer celui que vous venez de déclarer grâce à sa propriét
 
 > L'acteur va maintenant se charger d'afficher l'état commandable de la ressource et la mettre à jour (par défaut toutes les 30 secondes).
 
-Pour voir comment configurer cet acteur,  [c'est ici](../concepts/actor-types/redy-reflect-details.md).
+Pour voir comment configurer cet acteur,  [c'est ici](../concepts/actor-types/redy/reflect-details.md).
 
 Vous remarquerez que l'on retrouve les bornes de valeur de la ressource ainsi que son unité.
 
@@ -72,8 +73,8 @@ Si vous cliquez sur *Annuler*, l'état revient à sa valeur en cours. Sinon, la 
 ![Reflet](../assets/quick-start/command-redy/08.gif)
 
 
-> 📌 **REMARQUE**<br>
-L'acteur a d'autres modes de commande : un mode automatique et un mode manuel.
+{: .pin }
+> L'acteur a d'autres modes de commande : un mode automatique et un mode manuel.
 
 ---------
 [◀ Affichage d'un état](./display-redy-data.md){: .btn } [Pour aller plus loin ▶](./and-more.md){: .btn }

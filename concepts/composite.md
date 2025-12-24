@@ -37,7 +37,7 @@ Lorsque vous ajoutez une instance de composite dans une scène, vous ne visualis
 
 Un composite peut être paramétrable grâce à des propriétés spécifiques, comme n'importe quel acteur. Dans sa définition, il est possible d'ajouter des additionnelles qui vont jouer le rôle de propriété spécifique.
 
-> 💡 **ASTUCE**<br>
+{: .tip }
 Les valeurs que vous paramétrez dans sa définition serviront de valeurs par défaut pour les instances du composite.
 
 Dans la définition d'un composite, les propriétés spécifiques sont accessibles par liaison ou par script.
@@ -55,7 +55,7 @@ Rendez-vous dans la section dédiée à la gestion des composites de votre proje
 Dans la partie du haut de la section, vous trouverez l'arborescence des composites. Pour en créer un nouveau, cliquez droit sur un dossier et choissisez un modèle de départ.
 
 
-> 💡 **ASTUCE**<br>
+{: .tip }
 > Nommez bien votre composite. C'est avec ce nom que vous l'identifirez dans la liste des acteurs à utiliser. Prochainement, il sera possible de renseigner un logo.
 >
 > De la même manière, donnez une clé explicite à votre composite. Il sera plus facile aussi d'identifier votre instance de composite dans les scènes même si vous gardez la clé générée automatiquement.
@@ -75,8 +75,8 @@ Il est possible de rechercher un composite à l'aide de l'outil "loupe".<br>
 La recherche de scène repose sur la correspondance des clés des composites avec une chaîne de caractères spécifiée par l'utilisateur.
 Lorsque vous effectuez une recherche, l'application parcourt l'arborescence des composites et identifie tous les composites dont la clé correspond à la chaîne de caractères renseignée.
 
->📌*Remarque*
->
+
+{: .info }
 >Il est important de noter que la recherche n'est pas sensible à la casse, ce qui signifie que les lettres majuscules et minuscules sont traitées de la même manière.
 >Par exemple, une recherche pour "composite123" retournera les résultats pour "Composite123" et "composite123" indifféremment.
 
@@ -89,6 +89,9 @@ Vous trouverez un tutoriel qui explique comme coller un composite dans votre pro
 
 
 ## Représentation Brûleur, Vanne, Pompe simple et double
+
+{: .important-title }
+> Il ne sont plus aussi remarquables depuis l'arrivée des [acteurs techniques dédiés](./actor-types/redy/technical/index.md).
 
 Voici 4 composites pour afficher les représentations graphiques :
 
@@ -122,7 +125,7 @@ Un exemple de composite pour afficher et modifier une ressource Planning Hebdo. 
 
 *Compatible tactile !*
 
-> ✔️ **CONSEIL**<br>
+{: .tip}
 > Par défaut, les cellules font `1cmx1cm` pour qu'un doigt puisse y accéder. Si vous désirer un affichage plus
 > petit, choisissez `15px` comme largeur de cellule et laissez `1cm` comme hauteur.
 

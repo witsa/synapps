@@ -28,8 +28,6 @@ aux_links_new_tab: true
 back_to_top: true
 back_to_top_text: "Vers le haut"
 # color_scheme: dark
-ga_tracking: G-7FK6J523FV
-ga_tracking_anonymize_ip: true
 aux_links:
   "⚡ Doc Script API":
     - "/synapps/script-api/"
@@ -67,13 +65,33 @@ defaults:
       path: "assets"
       type: "pages"
     values:
-      layout: null
+      layout: none
 #   -
 #     scope:
 #       path: "maker"
 #     values:
 #       parent: "maker"
 
+callouts:
+  warning:
+    title: ⚠️ Attention
+    color: red
+  tip:
+    title: 💡 Astuce
+    color: green
+  info:
+    title: ℹ️ Remarque
+    color: blue
+  important:
+    title: 💎 Important
+    color: purple
+  pin:
+    title: 📌 A retenir
+    color: yellow
+
+withMatomo: true
+
+# availlable colors :  grey-lt, grey-dk, purple, blue, green, yellow, and red
 
 # Exclude from processing.
 # The following items will not be processed, by default.

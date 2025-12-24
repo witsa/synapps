@@ -21,15 +21,6 @@ Vous allez ouvrir pour la première fois **Synapps Studio** en double cliquant s
 La fenêtre de Synapps Studio s'est affichée :
 ![SynApps](../assets/quick-start/first-project/01.png)
 
-
-<!-- ## Accès restreint
-
-> Pendant toute la phase d'**accès retreint**, une clé d'agrément est requise pour activer Synapps Studio.
-
-![SynApps](../assets/quick-start/first-project/12.png)
-
-> Par la suite, cette limitation sera levée. -->
-
 ## Création d'un projet *"Bonjour le monde!"*
 
 Nous allons créer un premier projet de démonstration, de sa construction jusqu'à son installation dans un REDY-PC.
@@ -73,9 +64,6 @@ Choisissez un emplacement dans votre système de fichier qui va contenir votre p
 
 ![SynApps](../assets/quick-start/first-project/07.png)
 
-<!-- > ⚠️ **ATTENTION**<br>
-> N'utiliser pas de lecteur réseau pour accueillir votre projet. En effet, Studio ne fonctionne pas correctement pour l'instant avec ce type de lecteur. -->
-
 Rendez-vous dans le répertoire dans lequel celui du projet sera créé.
 
 ![SynApps](../assets/quick-start/first-project/08.png)
@@ -98,6 +86,7 @@ Félicitation ! Votre premier projet est créé !
 
 Vous visualisez à présent le *Lisez-moi* du projet qui fait office de documentation de ce dernier. Par défaut, vous pourrez y lire des informations sur le modèle de projet employé et comment l'utiliser pour alimenter votre synapp.
 
+{: .pin }
 > Le *Lisez-moi* est bien sûr modifiable. Le format d'écriture est un standard dans la rédaction de documentation : Le [`markdown`](https://fr.wikipedia.org/wiki/Markdown).
 
 

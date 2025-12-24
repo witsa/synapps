@@ -25,10 +25,10 @@ Pour en savoir plus sur la [création de projet](../../quick-start/first-project
 
 Pour en savoir plus sur les [modèles de projet](./project-model.md).
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 > **Ne dupliquez pas un projet.** Vous produiriez des problèmes lors de la publication de la synapp et dans la gestion des mots de passe de vos hôtes. Si vous l'avez fait, pour récupérer la situation, modifiez à la main dans le fichier de figuration, le `guid` d'un des deux projets, de préférence avant de l'ouvrir avec Studio.
 >
-> Pour dupliquer un projet correctement un projet, il faut tout simplement l'exporter sous forme de modèle et créer le nouveau projet à partir de celui-ci.
+> Pour dupliquer un projet correctement, il faut tout simplement l'exporter sous forme de modèle et créer le nouveau projet à partir de celui-ci.
 
 ## Ouvrir un projet
 

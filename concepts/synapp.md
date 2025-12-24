@@ -28,7 +28,7 @@ C'est ainsi que le REDY identifie la synapp. Le paramétrage de la synapp dans l
 ### Le `guid`
 La synapp porte le `guid` du projet qui a servi à sa création et publication. C'est ce qui permet à un projet de reconnaître **sa** synapp dans le REDY. C'est ce qui permet à Synapps Studio de reconnaître ce projet dans votre système.
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 > **Ne dupliquez pas un projet.** En effet, le `guid` serait le même ce qui entraînera des erreurs de publication et de gestion des mots de passe de vos hôtes. Ce n'est vraiment pas recommandé mais si vous l'avez fait, pour récupérer la situation, modifiez à la main dans le fichier de figuration, le `guid` du projet d'un des deux projets, de préférence avant de l'ouvrir avec Studio.
 >
 > Pour dupliquer un projet correctement un projet, il faut tout simplement l'exporter sous forme de modèle et créer le nouveau projet à partir de celui-ci.

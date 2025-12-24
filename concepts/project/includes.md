@@ -21,7 +21,9 @@ Les fichiers inclus sont soient *distants* soit *locaux*. Les fichiers distants 
 
 Vous pouvez gérer les inclusions dans la section *Projet/Inclusions*.
 
-Pour l'instant, il n'y a pas de designer pour cette partie. Il faudra éditer un fichier JSON de configuration.
+> 🚧 en cours de rédaction...
+
+# Format des inclusions
 
 Il se compose de la liste des inclusions à charger. Chaque inclusion est définie par un objet JSON,
 
@@ -72,7 +74,7 @@ Voici un exemple de configuration qui charge la librairie API de cartographie [L
   }
 ]
 ```
-# Exemple d'inclusion dans 1view
+## Exemple d'inclusion dans 1view
 
 Le code source qui gère les scènes d'exploitation dans le modèle de projet **1view** est un exemple d'inclusion de fichiers `JavaScript` :
 

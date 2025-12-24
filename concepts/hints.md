@@ -7,11 +7,12 @@ parent: Concepts
 
 > **🚧 En cours de rédaction 🚧**
 >
-> mise à jour : `2024-11-06 16:00`
+> mise à jour : `2024-12-16 10:00`
 
 Nous vous proposons ici quelques conseils et bonnes pratiques pour la création de vos synapps, ainsi que des optimisations pour améliorer leurs performances.
 
-Un point important à garder à l'esprit est que les synapps sont conçues pour fonctionner sur une variété d'appareils, y compris des appareils mobiles avec des ressources limitées. Mais, surtout dans ce cas, **il demeure essentiel d'optimiser vos synapps pour garantir une expérience utilisateur fluide et réactive**.
+{: .important }
+> Les synapps sont conçues pour fonctionner sur une variété d'appareils, y compris des appareils mobiles avec des ressources limitées. Mais, surtout dans ce cas, **il demeure essentiel d'optimiser vos synapps pour garantir une expérience utilisateur fluide et réactive**.
 
 ## Bonnes pratiques pour la création de synapps
 
@@ -49,7 +50,7 @@ Dans la mesure du possible, utilisez des images en librairie plutôt que des ima
 
 ### Surveiller les indicateurs d'utilisation des acteurs
 
-Des indicateurs d'utilisation sont disponibles dans Studio dans les designers à partir de la version 1.6.0. Ils permettent de surveiller l'impact de ce que vous ajoutez dans vos scènes/composites.
+Des indicateurs d'utilisation sont disponibles dans Studio dans les designers à partir de la version 1.6.0-beta. Ils permettent de surveiller l'impact de ce que vous ajoutez dans vos scènes/composites.
 
  Les indicateurs suivants sont affichés :
 

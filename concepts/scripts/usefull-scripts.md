@@ -11,8 +11,8 @@ grand_parent: Concepts
 Nous allons voir ici quelques scripts utiles pour vous aider lorsqu'ils deviennent *incontournables*.
 En effet, de nombreux concepts permettent de reppousser la limite avant que vous ayez besoin de scripter. Mais il arrive des situations où vous ne pourrez pas faire autrement.
 
->📌*Remarque*<br>
- L'équipe de développement de la solution reste à l'écoute pour intégrer des outils et continuer de repousser la limite avant l'utilisation de script.
+{: .important }
+> L'équipe de développement de la solution reste à l'écoute pour intégrer des outils et continuer de repousser la limite avant l'utilisation de script.
 
 
 ## Les transformation de liaison
@@ -30,8 +30,8 @@ return context.value;
 
 `context.value` est la valeur de la source. Le mot clé `return` permet de renvoyer la valeur transformée.
 
-> 📌*Remarque*<br>
-Tout ce qui est après le `return` sera ignoré.
+{: .info }
+> Tout ce qui est après le `return` sera ignoré.
 
 
 #### Exemple 1 : Transformation de booléen en texte
@@ -169,7 +169,41 @@ let actor = getActor('actorKey');
 actor.properties.backgroundColor = 'red';
 actor.additionals.prop1 = 42;
 ```
+## Accéder à la synapp, la scène et le composite
 
+Dans un script, il est posssible d'accéder à la synapp :
+
+```javascript
+context.synapp;
+```
+
+Pour aller chercher la scène ou le composite qui contient l'acteur en cours :
+
+```javascript
+context.stage;
+```
+
+Pour aller chercher la scène qui accueille l'acteur en cours ou si l'acteur est dans un composite, la scène qui contient le composite :
+
+```javascript
+context.scene;
+```
+
+Pour accéder à un éventuel acteur écran qui contient la scène courrante :
+
+```javascript
+context.scene.screen;
+```
+
+Pour accéder à la scène principale affichée directement par la synapp :
+
+```javascript
+context.rootScene;
+```
+
+{: .info }
+
+> A ne pas confondre avec la scène de démarrage de la synapp qui peut être obtenue avec `context.synapp.setup.sceneStartKey`.
 
 ## Navigation entre scènes
 

@@ -15,9 +15,9 @@ La synapp démarre en affichant une première scène, c'est la **scène de déma
 
 # Affichage de scène
 
-Les acteurs [boutons de navigation](./actor-types/input-nav-button.md) permettent de changer la scène présentée par la synapp.
+Les acteurs [boutons de navigation](./actor-types/input/nav-button.md) permettent de changer la scène présentée par la synapp.
 
-Aussi l'[acteur écran](./actor-types/display-screen.md) permet d'afficher une autre scène au sein d'une scène.
+Aussi l'[acteur écran](./actor-types/display/screen.md) permet d'afficher une autre scène au sein d'une scène.
 
 Bien entendu, il est possible de commander les affichages de scènes par liaison ou script.
 

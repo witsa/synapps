@@ -21,10 +21,10 @@ Seules les propriétés des acteurs peuvent être cible de liaison. En revanche,
 - La [scène](./scene.md) ou le [composite](./composite.md) accueillant l'acteur cible
 - Un autre [acteur](./actor/index.md) ou lui-même
 - Un élément de librairie
-  - une [couleur](./colors.md)
-  - une [image](./pictures.md)
-  - une [constante](./constants.md)
-  - un [texte](./texts.md)
+  - une [couleur](./librairies/colors.md)
+  - une [image](./librairies/pictures.md)
+  - une [constante](./librairies/constants.md)
+  - un [texte](./librairies/texts.md)
 - Un [fournisseur de variable REDY](#la-liaison-de-type-de-source-fournisseur-de-variable)
 - Un [fournisseur de reflet REDY](#la-liaion-de-type-de-source-fournisseur-de-reflet)
 - Une [donnée de fournisseur](#la-liaison-de-type-de-source-donnée-de-fournisseur)
@@ -32,6 +32,7 @@ Seules les propriétés des acteurs peuvent être cible de liaison. En revanche,
 - La [session](./session.md)
 - L'[utilisateur](./user.md)
 - L'[afficheur](./user-agent.md)
+- Le [contexte de donnée](./data-context.md)
 
 Exemple : *une liaison vers la **couleur A** de la librairie des couleurs définie sur la propriété **couleur de fond** d'un acteur*
 ![La liaison vers une couleur de la librairie](../assets/concepts/bindings/01.png)
@@ -80,8 +81,8 @@ Intéressons nous plus particulièrement à ce chemin. Il est visible dans la fe
 
 Observez dans le deuxième exemple que ce chemin est `properties.color`. Ce chemin est le même qui permet d'accéder à la valeur par script.
 
-> 📌 **REMARQUE**<br>
-Il est tout à fait possible, si vous le connaissait, de définir un chemin qui n'a pas de correspondance dans la liste des champs disponible pour une source donnée.
+{: .info }
+> Il est tout à fait possible, si vous le connaissait, de définir un chemin qui n'a pas de correspondance dans la liste des champs disponible pour une source donnée.
 
 ### Activation de l'écriture
 
@@ -103,8 +104,8 @@ Ceci est très pratique lorsqu'on se lie à une valeur qui ne va pas changer ou 
 
 Dans certain cas, il est possible lors de la création de la liaison, la source définie n'existe pas ou soit introuvable. Dans ce cas la liaison n'aboutit pas et la valeur restera à sa définition initiale.
 
-> 📌 **REMARQUE**<br>
-Pour l'instant, il n'y a pas encore de retour dans Studio qui indique ce type d'échec.
+{: .info }
+> Pour l'instant, il n'y a pas encore de retour dans Studio qui indique ce type d'échec.
 
 ## Menu des options d'une liaison
 
@@ -138,11 +139,11 @@ Lorsque la valeur source est transmise à la cible, il est possible de lui appli
 
 ## La liaison de type de source *Fournisseur de variable*
 
-Ce type de source permet de lier une propriété à un champ d'une variable de REDY par l'intermédiaire d'un [fournisseur de variable](./actor-types/redy-wos-variable-source.md).
+Ce type de source permet de lier une propriété à un champ d'une variable de REDY par l'intermédiaire d'un [fournisseur de variable](./actor-types/redy/wos-variable-source.md).
 
 Voir une illustration [ici](../quick-start/display-redy-data.md)
 
-A la manière d'un acteur [fournisseur relatif de variable](./actor-types/redy-wos-relative-variable-source.md), il est possible d'aller chercher le champ d'une sous variable WOS d'une variable ou ressource définie dans un fournisseur parent.
+A la manière d'un acteur [fournisseur relatif de variable](./actor-types/redy/wos-relative-variable-source.md), il est possible d'aller chercher le champ d'une sous variable WOS d'une variable ou ressource définie dans un fournisseur parent.
 
 ### Clé parent
 

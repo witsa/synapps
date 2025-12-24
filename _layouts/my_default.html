@@ -33,6 +33,12 @@ layout: default
     white-space: nowrap;
   }
 
+  @media (min-width: 66.5rem) {
+    .site-nav, .site-header, .site-footer {
+        width: 21rem;
+    }
+}
+
   *::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.1);
   }
@@ -55,29 +61,18 @@ layout: default
   *:hover {
     scrollbar-color: #aaa rgba(0, 0, 0, 0.1);
   }
-  
+
   p {
     text-align: justify;
   }
-  
+
+  h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 4rem;
+  }
+
 </style>
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//wit-matomo.westeurope.cloudapp.azure.com/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-
+{% include matomo.html %}
 
 <script>
   const writeScroll = () => {
