@@ -103,3 +103,36 @@ Exemple de données retournées :
   "totalRows": 50
 }
 ```
+
+## Usages
+
+Ce fournisseur de requête peut être utilisé avec des acteurs consommateurs de curseur. Un bon exemple est la [Liste de choix déroulante](../input/dropdown-list.md).
+
+Imaginons que nous voulons remplir une liste déroulante avec les utilisateurs de la base de données.
+1. Créez un acteur **Fournisseur de requête REDY Pilot** avec la requête SQL suivante :
+
+```sql
+SELECT id AS value, name AS text FROM users ORDER BY name
+```
+
+2. Créez un acteur **Liste de choix déroulante**.
+3. Dans la propriété **Options** de la liste déroulante, liez-la à la Liste des lignes dans les informations du fournisseur de requête.
+4. Ajouter la transformation de la lisaison, et ajouter la transformation suivantes :
+
+```javascript
+return this.getOptionsFromData();
+```
+
+Cela remplira automatiquement la liste déroulante avec les utilisateurs de la base de données, en utilisant `id` comme valeur et `name` comme texte affiché.
+
+{: .note }
+> Cela marche ici, parce que les colonnes de la requête SQL sont nommées `value` et `text`, ce qui correspond directement aux attentes de la liste déroulante pour ses options.
+>
+> Si la requête SQL n'a pas les bon noms de colonnes, dans la transformation, vous pouvez faire quelque chose comme ceci :
+> ```javascript
+> return this.getOptionsFromData('id', 'name');
+> ```
+> où `id` et `name` sont les noms des colonnes dans les résultats de la requête SQL qui correspondent respectivement à la valeur et au texte des options.
+
+{: .tip }
+> Si la liste n'a pas vication à changer, assurez-vous que la propriété *Auto rafraîchissement* du fournisseur de requête est désactivée.
