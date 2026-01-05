@@ -14,9 +14,9 @@ Au départ, un acteur utilise le style `default`. Mais il est possible d'établi
 
 ![SynApps](../assets/concepts/actor-style-01.png)
 
-Le changement de style s'effectue par script. *TODO lien vers doc*
+Le changement de style s'effectue par script. Consultez la [documentation de l'API Script](./scripts/index.md) pour plus de détails.
 
-La définition de style peut s'effectuer par script. *TODO lien vers doc*
+La définition de style peut s'effectuer par script. Consultez la [documentation de l'API Script](./scripts/index.md) pour plus de détails.
 
 Un style est défini pour un type donné.
 

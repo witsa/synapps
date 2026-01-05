@@ -16,24 +16,24 @@ Solution Synapps
 
 Synapps est la **nouvelle solution** de WIT de construction d'imagerie pour le REDY. La solution respecte les **standards** du WEB pour profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones.
 
-![Browsers](assets/browsers.png)
-![Multi-platforms](assets/multi-platforms.png)
+![Compatibilité multi-navigateurs](assets/browsers.png)
+![Support multi-plateformes](assets/multi-platforms.png)
 
 > Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
 
-![WhomeApp](assets/WHomeApp.gif)
+![Exemple d'application WhomeApp](assets/WHomeApp.gif)
 
 **Tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'ULIs REDY sont ciblés par les applications générées par Synapps : Synapps s'inscrit dans une démarche **Smart Building** et **Smart Water** et à pour ambition de répondre à ces **nouveaux usages**
 
 ## Synapps Studio : outil de *construction* et de *déploiement*.
 
-![studio](assets/studio-001.png)
+![Interface de Synapps Studio](assets/studio-001.png)
 
 Véritable environnement de développement intégré (IDE), Synapps Studio est l'outil de *construction* et de *déploiement*.
 Avec Studio,
  - vous construisez votre application WEB avec des outils d'édition d'interface simples et intuitifs,
- - vous tester l'exécution de l'application sur des ULIs.
- - vous déployer votre application dans des ULIs.
+ - vous testez l'exécution de l'application sur des ULIs.
+ - vous déployez votre application dans des ULIs.
 
 
 ### Quelques fonctionnalités

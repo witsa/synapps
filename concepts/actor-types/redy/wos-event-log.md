@@ -60,4 +60,5 @@ L'évènement `onRequestDone` est déclenché lorsque l'acteur a terminé une re
 
 ## Journal avec selection de période de temps :
 
-> TODO
+{: .info }
+> Des exemples pratiques seront ajoutés dans une prochaine mise à jour de la documentation.

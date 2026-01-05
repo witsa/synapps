@@ -135,4 +135,4 @@ Cela remplira automatiquement la liste déroulante avec les utilisateurs de la b
 > où `id` et `name` sont les noms des colonnes dans les résultats de la requête SQL qui correspondent respectivement à la valeur et au texte des options.
 
 {: .tip }
-> Si la liste n'a pas vication à changer, assurez-vous que la propriété *Auto rafraîchissement* du fournisseur de requête est désactivée.
+> Si la liste n'a pas vocation à changer, assurez-vous que la propriété *Auto rafraîchissement* du fournisseur de requête est désactivée.

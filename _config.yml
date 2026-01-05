@@ -91,7 +91,7 @@ callouts:
 
 withMatomo: true
 
-# availlable colors :  grey-lt, grey-dk, purple, blue, green, yellow, and red
+# available colors :  grey-lt, grey-dk, purple, blue, green, yellow, and red
 
 # Exclude from processing.
 # The following items will not be processed, by default.

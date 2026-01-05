@@ -11,7 +11,7 @@ nav_order: 7
 
 Les icônes de la synapp permettent de personnaliser, de caractériser votre application.
 
-Ce sont des images carrées, de type `png`. Ils sont de différentes tailles pour correspondre aux attentes du navigateur et appareil mobile. Ils sont 11 au totale.
+Ce sont des images carrées, de type `png`. Ils sont de différentes tailles pour correspondre aux attentes du navigateur et appareil mobile. Ils sont 11 au total.
 
 Par défaut, les icônes de votre synapp sont le logo de Synapps.
 
@@ -27,7 +27,7 @@ Les icônes de tailles `16x16` et `32x32` sont utilisées par les navigateurs po
 
 ## Autres icônes
 
-Tous les autres icônes sont utilisées par les mobiles lorsque la synapp est installée dessus en *progressive web app* (PWA). Voir la procédure([TODO]).
+Tous les autres icônes sont utilisées par les mobiles lorsque la synapp est installée dessus en *progressive web app* (PWA). La procédure d'installation PWA sera documentée dans une prochaine mise à jour.
 
 
 ## Poids des icônes
