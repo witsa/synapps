@@ -52,8 +52,18 @@ nav_order: 1 # optionnel
 
 - **Ton** : Utiliser le vouvoiement ("vous") pour s'adresser au lecteur
 - **Verbes** : Utiliser l'infinitif pour les titres et instructions ("Créer un projet", "Configurer l'environnement")
-- **Conjugaison** : Vérifier la conjugaison des verbes (éviter "vous tester" → utiliser "vous testez")
 - **Concision** : Être clair et concis
+- **Orthographe** : Utiliser le français correct, éviter les anglicismes
+- **Ponctuation** : Utiliser des espaces insécables avant les deux-points, points d'exclamation et d'interrogation
+- **Listes** : Utiliser des listes à puces pour les éléments non ordonnés et des listes numérotées pour les étapes séquentielles
+- **Tutoriels** :
+   - Tutoriel courts.
+   - Expliquer dès le début l'objectif final.
+   - Diviser en sections claires avec des titres
+   - Fournir des exemples concrets et des captures d'écran lorsque c'est pertinent
+   - Animations légères pour illustrer les étapes complexes et courtes ([Screen2Gif](https://www.screentogif.com/){:target="_blank"} recommandé)
+   - Inclure des liens vers des ressources supplémentaires si nécessaire
+   - Fournir les scènes ou composites créés dans le tutoriel à copier/coller dans Synapps Studio.
 
 ### Images
 
@@ -63,6 +73,7 @@ nav_order: 1 # optionnel
   ```
 - **Format** : Préférer PNG pour les captures d'écran, SVG pour les diagrammes
 - **Taille** : Optimiser les images avant de les ajouter
+- **Gif animés** : Utiliser [Screen2Gif](https://www.screentogif.com/){:target="_blank"} pour créer des animations légères
 
 ### Liens
 
@@ -82,23 +93,23 @@ Utiliser les callouts Jekyll pour mettre en évidence des informations important
 
 ```markdown
 {: .warning }
-> ⚠️ **Attention**
+> Ecrira automatiquement ⚠️ **Attention**
 > Message d'avertissement
 
 {: .tip }
-> 💡 **Astuce**
+> Ecrira automatiquement 💡 **Astuce**
 > Conseil pratique
 
 {: .info }
-> ℹ️ **Remarque**
+> Ecrira automatiquement ℹ️ **Remarque**
 > Information complémentaire
 
 {: .important }
-> 💎 **Important**
+> Ecrira automatiquement 💎 **Important**
 > Information cruciale
 
 {: .pin }
-> 📌 **À retenir**
+> Ecrira automatiquement 📌 **À retenir**
 > Point clé
 ```
 
@@ -118,19 +129,14 @@ console.log("Hello World");
 ​```
 ```
 
-### TODOs
-
-Si vous devez laisser une note TODO :
+Le mieux est de les entourer par les instructions `{% raw %}` et `{% endraw %}` pour éviter que Jekyll n'essaie de les interpréter.
 
 ```markdown
-{: .info }
-> Cette section sera complétée dans une prochaine mise à jour.
-```
-
-Ou :
-
-```markdown
-Consultez la [documentation de l'API Script](/synapps/script-api/) pour plus de détails.
+{% raw %}
+​```javascript
+console.log("Hello World");
+​```
+{% endraw %}
 ```
 
 ## Développement local
