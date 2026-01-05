@@ -32,8 +32,8 @@ Synapps est la **nouvelle solution** de WIT de construction d'imagerie pour le R
 Véritable environnement de développement intégré (IDE), Synapps Studio est l'outil de *construction* et de *déploiement*.
 Avec Studio,
  - vous construisez votre application WEB avec des outils d'édition d'interface simples et intuitifs,
- - vous tester l'exécution de l'application sur des ULIs.
- - vous déployer votre application dans des ULIs.
+ - vous testez l'exécution de l'application sur des ULIs.
+ - vous déployez votre application dans des ULIs.
 
 
 ### Quelques fonctionnalités
