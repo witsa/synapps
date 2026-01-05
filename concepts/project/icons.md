@@ -27,7 +27,7 @@ Les icônes de tailles `16x16` et `32x32` sont utilisées par les navigateurs po
 
 ## Autres icônes
 
-Tous les autres icônes sont utilisées par les mobiles lorsque la synapp est installée dessus en *progressive web app* (PWA). Voir la procédure([TODO]).
+Tous les autres icônes sont utilisées par les mobiles lorsque la synapp est installée dessus en *progressive web app* (PWA). La procédure d'installation PWA sera documentée dans une prochaine mise à jour.
 
 
 ## Poids des icônes

@@ -22,4 +22,5 @@ Le RUNTIME de SynApps est embarqué dans le REDY mais prour profiter des derniè
 
 ## Configuration du cross-origin
 
-### TODO
+{: .info }
+> Cette section sera complétée dans une prochaine mise à jour de la documentation Maker.
