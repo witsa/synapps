@@ -60,7 +60,7 @@ Ce champ indique la date et l'heure d'expiration de la session au format MomentJ
 
 Ce champ indique si la session est authentifiée ou non.
 
-## Authenification en cours ?
+## Authentification en cours ?
 
 - Champ : `isAuthenticating`
 - Type : `boolean`
