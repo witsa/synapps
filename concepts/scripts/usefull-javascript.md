@@ -35,8 +35,10 @@ Les booléens sont souvent utilisés pour les conditions.
 let num = 42;
 let bool = Boolean(num);
 ```
+
 Dans cet exemple, `bool` contiendra `true`.
 En Javascript, les valeurs suivantes sont considérées comme `false` :
+
 - `false`
 - `0`
 - `''` (chaîne de caractères vide)
@@ -56,7 +58,7 @@ let num2 = 3.14;
 let num3 = 1e3; // 1000
 let num4 = 0b1010; // 10 en binaire
 let num5 = 0o12; // 10 en octal
-let num6 = 0xA; // 10 en hexadécimal
+let num6 = 0xa; // 10 en hexadécimal
 let num7 = NaN; // Not a Number
 let num8 = Infinity;
 let num9 = -Infinity;
@@ -69,10 +71,11 @@ Les opérations mathématiques sont possibles en Javascript.
 #### Concaténation
 
 ```javascript
-let str1 = 'Hello';
-let str2 = 'World';
-let str3 = str1 + ' ' + str2;
+let str1 = "Hello";
+let str2 = "World";
+let str3 = str1 + " " + str2;
 ```
+
 `str3` contiendra `Hello World`.
 
 Autre méthode, la chaine dynamique (template string). Elle permet d'insérer des expression directement dans la chaîne.
@@ -80,15 +83,15 @@ Autre méthode, la chaine dynamique (template string). Elle permet d'insérer de
 Par exemple :
 
 ```javascript
-let str1 = 'Hello';
-let str2 = 'World';
+let str1 = "Hello";
+let str2 = "World";
 let str3 = `${str1} ${str2}`;
 ```
 
 #### Longueur d'une chaîne
 
 ```javascript
-let str = 'Hello World';
+let str = "Hello World";
 let length = str.length;
 ```
 
@@ -97,80 +100,89 @@ Dans cet exemple, `length` contiendra `11`.
 #### Recherche dans une chaîne
 
 ```javascript
-let str = 'Hello World';
-let index = str.indexOf('World');
+let str = "Hello World";
+let index = str.indexOf("World");
 ```
+
 Dans cet exemple, `index` contiendra `6`.
 
 Autre méthode pour savoir si une chaîne contient une sous-chaîne :
 
 ```javascript
-let str = 'Hello World';
-let contains = str.includes('World');
+let str = "Hello World";
+let contains = str.includes("World");
 ```
+
 Dans cet exemple, `contains` contiendra `true`.
 
 #### Extraction d'une sous-chaîne
 
 ```javascript
-let str = 'Hello World';
+let str = "Hello World";
 let subStr = str.substring(6, 11);
 ```
+
 Dans cet exemple, `subStr` contiendra `World`.
 
 #### Remplacement
 
 ```javascript
-let str = 'Hello World';
-let newStr = str.replace('World', 'Synapps');
+let str = "Hello World";
+let newStr = str.replace("World", "Synapps");
 ```
+
 Dans cet exemple, `newStr` contiendra `Hello Synapps`.
 
 ### Remplacement multiple
 
 ```javascript
-let str = 'Hello World';
-let newStr = str.replaceAll('o', 'a');
+let str = "Hello World";
+let newStr = str.replaceAll("o", "a");
 ```
+
 Dans cet exemple, `newStr` contiendra `Hella Warld`.
 
 ### Conversion en majuscule/minuscule
 
 ```javascript
-let str = 'Hello World';
+let str = "Hello World";
 let upperStr = str.toUpperCase();
 let lowerStr = str.toLowerCase();
 ```
+
 Dans cet exemple, `upperStr` contiendra `HELLO WORLD` et `lowerStr` contiendra `hello world`.
 
 ### Suppression des espaces en début et fin de chaîne
 
 ```javascript
-let str = ' Hello World ';
+let str = " Hello World ";
 let trimmedStr = str.trim();
 ```
+
 Dans cet exemple, `trimmedStr` contiendra `Hello World`.
 
 ### Découpage d'une chaîne
 
 ```javascript
-let str = 'Hello World';
-let parts = str.split(' ');
+let str = "Hello World";
+let parts = str.split(" ");
 ```
+
 Dans cet exemple, `parts` contiendra un tableau avec `Hello` et `World`.
 
 ### Conversion en nombre
 
 ```javascript
-let str = '42';
+let str = "42";
 let num = Number(str);
 ```
+
 Dans cet exemple, `num` contiendra `42`.
 
 ### Conversion en booléen
 
 ```javascript
-let str = 'test';
+let str = "test";
 let bool = Boolean(str);
 // > true
 
@@ -187,7 +199,7 @@ Les tableaux sont des objets qui permettent de stocker plusieurs valeurs. Ils so
 Il n'est pas nécessaire de définir le type des éléments du tableau, un tableau peut contenir des éléments de types différents.
 
 ```javascript
-let array = [1, 'two', true, 4.5];
+let array = [1, "two", true, 4.5];
 ```
 
 ## Accéder aux éléments d'un tableau
@@ -198,6 +210,7 @@ let firstElement = array[0]; // 1
 let secondElement = array[1]; // 2
 let thirdElement = array[2]; // 3
 ```
+
 ## Taille d'un tableau
 
 ```javascript
@@ -222,6 +235,7 @@ let array = [1, 2, 3];
 array.unshift(0);
 // array est maintenant [0, 1, 2, 3]
 ```
+
 Il est aussi possible d'ajouter plusieurs éléments à la fois :
 
 ```javascript
@@ -261,7 +275,7 @@ Quelques exemples d'utilisation :
 
 ```javascript
 let a = 5;
-let b = '5';
+let b = "5";
 console.log(a == b); // true
 console.log(a === b); // false
 console.log(a != b); // false
@@ -273,9 +287,11 @@ console.log(a >= 5); // true
 ```
 
 ### La différence entre `==` et `===`
+
 La différence entre `==` et `===` est que `==` compare les valeurs en effectuant une conversion de type si nécessaire, tandis que `===` compare les valeurs sans conversion de type.
 
 ### Les opérateurs logiques
+
 Les opérateurs logiques permettent de combiner plusieurs conditions.
 
 - `&&` : et logique
@@ -307,9 +323,9 @@ La structure de base d'une condition est la suivante :
 
 ```javascript
 if (condition) {
-    // code à exécuter si la condition est vraie
+  // code à exécuter si la condition est vraie
 } else {
-    // code à exécuter si la condition est fausse
+  // code à exécuter si la condition est fausse
 }
 ```
 
@@ -317,15 +333,16 @@ Par exemple :
 
 ```javascript
 if (context.value === 0) {
-    return 'zero';
+  return "zero";
 } else {
-    return 'not zero';
+  return "not zero";
 }
 ```
 
 ### Les conditions ternaires
 
 Une condition ternaire est une forme abrégée de la structure if...else. Elle permet d'écrire une condition en une seule ligne.
+
 ```javascript
 condition ? valeur_si_vrai : valeur_si_faux;
 ```
@@ -333,7 +350,7 @@ condition ? valeur_si_vrai : valeur_si_faux;
 Par exemple :
 
 ```javascript
-return context.value === 0 ? 'zero' : 'not zero';
+return context.value === 0 ? "zero" : "not zero";
 ```
 
 ### les conditions multiples
@@ -342,11 +359,11 @@ La structure de base d'une condition multiple est la suivante :
 
 ```javascript
 if (condition1) {
-    // code à exécuter si la condition1 est vraie
+  // code à exécuter si la condition1 est vraie
 } else if (condition2) {
-    // code à exécuter si la condition2 est vraie
+  // code à exécuter si la condition2 est vraie
 } else {
-    // code à exécuter si aucune des conditions n'est vraie
+  // code à exécuter si aucune des conditions n'est vraie
 }
 ```
 
@@ -354,11 +371,11 @@ Par exemple :
 
 ```javascript
 if (context.value === 0) {
-    return 'zero';
+  return "zero";
 } else if (context.value === 1) {
-    return 'one';
+  return "one";
 } else {
-    return 'other';
+  return "other";
 }
 ```
 
@@ -366,14 +383,14 @@ if (context.value === 0) {
 
 ```javascript
 switch (expression) {
-    case valeur1:
-        // code à exécuter si l'expression est égale à valeur1
-        break;
-    case valeur2:
-        // code à exécuter si l'expression est égale à valeur2
-        break;
-    default:
-        // code à exécuter si aucune des valeurs n'est égale à l'expression
+  case valeur1:
+    // code à exécuter si l'expression est égale à valeur1
+    break;
+  case valeur2:
+    // code à exécuter si l'expression est égale à valeur2
+    break;
+  default:
+  // code à exécuter si aucune des valeurs n'est égale à l'expression
 }
 ```
 
@@ -381,15 +398,14 @@ Par exemple :
 
 ```javascript
 switch (context.value) {
-    case 0:
-        return 'zero';
-    case 1:
-        return 'one';
-    default:
-        return 'other';
+  case 0:
+    return "zero";
+  case 1:
+    return "one";
+  default:
+    return "other";
 }
 ```
-
 
 ## Les boucles (avancé)
 
@@ -401,7 +417,7 @@ La boucle for permet de répéter un bloc de code un certain nombre de fois.
 
 ```javascript
 for (let i = 0; i < 5; i++) {
-    console.log(i);
+  console.log(i);
 }
 ```
 
@@ -416,8 +432,8 @@ La boucle while permet de répéter un bloc de code tant qu'une condition est vr
 ```javascript
 let i = 0;
 while (i < 5) {
-    console.log(i);
-    i++;
+  console.log(i);
+  i++;
 }
 ```
 
@@ -428,12 +444,13 @@ La boucle do...while est similaire à la boucle while, mais elle garantit que le
 ```javascript
 let i = 0;
 do {
-    console.log(i);
-    i++;
+  console.log(i);
+  i++;
 } while (i < 5);
 ```
 
 ### La boucle for...in
+
 La boucle for...in permet de parcourir les propriétés d'un objet.
 
 ```javascriptlet obj = {a: 1, b: 2, c: 3};
@@ -449,7 +466,7 @@ La boucle for...of permet de parcourir les éléments d'un tableau ou d'une cha�
 ```javascript
 let array = [1, 2, 3];
 for (let value of array) {
-    console.log(value);
+  console.log(value);
 }
 ```
 
@@ -459,8 +476,8 @@ Il est possible de définir des fonctions en Javascript. Les fonctions sont déf
 
 ```javascript
 function maFonction(param1, param2) {
-    // Corps de la fonction
-    return param1 + param2;
+  // Corps de la fonction
+  return param1 + param2;
 }
 ```
 
@@ -468,35 +485,101 @@ on peut aussi les définir en utilisant une expression de fonction fléchée :
 
 ```javascript
 const maFonction = (param1, param2) => {
-    // Corps de la fonction
-    return param1 + param2;
-}
+  // Corps de la fonction
+  return param1 + param2;
+};
 ```
+
 L'avantage des fonctions fléchées est qu'elles sont plus concises et qu'elles n'ont pas leur propre contexte `this`.
 
-
 ## L'essentiel de la librairie Math
+
 La librairie Math permet de faire des opérations mathématiques courantes.
 
 ```javascript
-Math.PI; // 3.141592653589793
-Math.sqrt(16); // 4
-Math.pow(2, 3); // 8
-Math.random(); // Nombre aléatoire entre 0 et 1
+// valeurs absolues
+Math.abs(-5); // 5
 
+// racine carrée
+Math.sqrt(16); // 4
+
+// puissance
+Math.pow(2, 3); // 8
+
+// nombre aléatoire entre 0 et 1
+Math.random(); // 0.123456789 par exemple
+
+// Minimum entre plusieurs nombres
+Math.min(1, 2, 3); // 1
+
+// Maximum entre plusieurs nombres
+Math.max(1, 2, 3); // 3
+
+// Arrondir à l'entier le plus petit
 Math.floor(4.7); // 4
+
+// Arrondir à l'entier le plus grand
 Math.ceil(4.3); // 5
+
+// Arrondir à l'entier le plus proche
 Math.round(4.5); // 5
+
+// Valeur de Pi
+Math.PI; // 3.141592653589793
+
+// Valeur de e
+Math.E; // 2.718281828459045
 ```
+
+Pour aller plus loin, voir la [documentation de la librairie Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math){:target="\_blank"}.
 
 ## La console de débogage
 
 La console de débogage permet d'afficher des messages dans la console de Synapps. Cela peut être utile pour déboguer des scripts.
 
 ```javascript
-console.log('Message de débogage');
-console.error('Message d\'erreur');
-console.warn('Message d\'avertissement');
-console.info('Message d\'information');
-console.debug('Message de débogage détaillé');
+// Afficher un message dans la console
+console.log("Message de", "log"); // Affiche "Message de log"
+
+//  Afficher un message d'erreur
+console.error("Message d'erreur");
+
+// Afficher un message d'avertissement
+console.warn("Message d'avertissement");
+
+// Afficher un message d'information
+console.info("Message d'information");
+
+// Afficher un message de débogage
+console.debug("Message de débogage");
+
+// inspecter un objet
+console.dir({ a: 1, b: 2, c: 3 });
+
+// Afficher une table
+console.table([
+  { a: 1, b: 2 },
+  { a: 3, b: 4 },
+]);
+
+// Afficher le contenu d'une variable
+let obj = { a: 1, b: 2, c: 3 };
+console.log("Contenu de l'objet :", obj);
+
+// grouper des messages
+
+console.group("Groupe de messages");
+console.log("Message 1");
+console.log("Message 2");
+console.groupEnd();
+
+// Mesurer le temps d'exécution d'un bloc de code
+console.time("<un label pour identifier le chronomètre>");
+
+// Code à mesurer
+for (let i = 0; i < 1000000; i++) {
+  // ...
+}
+
+console.timeEnd("<le label pour identifier le chronomètre>");
 ```
