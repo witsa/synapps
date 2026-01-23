@@ -1,5 +1,5 @@
 ---
-title: "En fonction du group de ressource"
+title: "En fonction du groupe de ressource"
 parent: Droits d'accès
 grand_parent: Tutoriels
 has_children: false

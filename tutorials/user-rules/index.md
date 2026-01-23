@@ -10,4 +10,4 @@ nav_order: 6
 Voici deux tutoriels pour utiliser les droits de l'utilisateur sur une ressource dans Synapps pour contrôler l'accès à un champ.
 
 - [En fonction du niveau utilisateur](./user-level.md)
-- [En fonction des groupes](./user-groups.md)
+- [En fonction du groupe de ressource](./user-group.md)
