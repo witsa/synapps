@@ -37,6 +37,8 @@ SYNAPPS-STUDIO-SCENE|{"config":{"key":"scene161","name":"Tutoriel Groupe Utilisa
 
 Elle est composée d'un bouton intérupteur affiché au centre de la scène.
 
+![scene](image01.png)
+
 ## Etape 4 : Liaison de la valeur de la consigne
 
 Nous allons lier la propriété _Valeur_ du bouton à la valeur du champ `SetPoint` de la ressource "Lumière".
