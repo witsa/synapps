@@ -118,7 +118,7 @@ SELECT id AS value, name AS text FROM users ORDER BY name
 
 2. Créez un acteur **Liste de choix déroulante**.
 3. Dans la propriété **Options** de la liste déroulante, liez-la à la Liste des lignes dans les informations du fournisseur de requête.
-4. Ajouter la transformation de la lisaison, et ajouter la transformation suivantes :
+4. Ajouter la transformation de la liaison, et ajouter la transformation suivante :
 
 ```javascript
 return context.getActor("<clé du fournisseur de requête>").getOptionsFromData();
