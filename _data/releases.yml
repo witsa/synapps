@@ -1,3 +1,8 @@
+- version: '1.6.0'
+  date: 24/02/2026
+  channel: beta
+  notes: ./notes/
+
 - version: '1.5.0'
   date: 10/10/2025
   channel: stable
