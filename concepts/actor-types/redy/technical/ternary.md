@@ -8,7 +8,7 @@ grand_parent: "REDY"
 
 # Acteur Reflet Ternaire
 
-Studio **1.6.0-beta**
+Studio **1.6.0**
 {: .label .label-yellow }
 Runtime **2.8.0**
 {: .label .label-green }

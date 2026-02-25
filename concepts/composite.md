@@ -91,7 +91,7 @@ Vous trouverez un tutoriel qui explique comme coller un composite dans votre pro
 ## Représentation Brûleur, Vanne, Pompe simple et double
 
 {: .important-title }
-> Il ne sont plus aussi remarquables depuis l'arrivée des [acteurs techniques dédiés](./actor-types/redy/technical/index.md).
+> Il ne sont plus aussi **remarquables** depuis l'arrivée des [acteurs techniques dédiés](./actor-types/redy/technical/index.md).
 
 Voici 4 composites pour afficher les représentations graphiques :
 
