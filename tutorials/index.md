@@ -6,11 +6,11 @@ nav_order: 6
 
 > 🚧 en cours de rédaction...
 
-> Dernière mise à jour : 📅06/12/2023
+> Dernière mise à jour : 📅02/02/2026
 >
-> Très vite, les tutoriels suivants arriveront.
 
 ### A venir
+
 - Réaliser une navigation simple
 - Réaliser une navigation avec un acteur écran
 - Passer des paramètres à une scène
