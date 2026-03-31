@@ -3,7 +3,7 @@
   "config": {
     "stable": {
       "version": "1.6.1",
-      "revision": "2026-03-16T14:00:00"
+      "revision": "2026-03-31T14:00:00"
     },
     "beta": {
       "version": "1.6.0-beta",
