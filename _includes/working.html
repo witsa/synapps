@@ -1,0 +1,26 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="border-radius: 8px; background: white; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin: 20px 0; border: 1px solid #eee;">
+  <style>
+    @keyframes typing { from { width: 0; } to { width: 200px; } }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .text-bar { fill: #f3f4f6; rx: 4; ry: 4; }
+    .typing-bar { fill: #0099ff; rx: 4; ry: 4; opacity: 0.4; animation: typing 3s infinite alternate ease-in-out; }
+    .cursor { fill: #0099ff; animation: blink 0.8s infinite; }
+    .gear-group { fill: #e5e7eb; animation: rotate 10s infinite linear; transform-origin: 340px 60px; }
+    .label { fill: #9ca3af; font-family: 'Inter', system-ui, sans-serif; font-size: 11px; font-style: italic; }
+  </style>
+  <g class="gear-group">
+    <path d="M340 35 L344 35 L347 42 L353 44 L359 40 L363 44 L359 50 L361 56 L368 59 L368 64 L361 67 L359 73 L363 79 L359 83 L353 79 L347 81 L344 88 L336 88 L333 81 L327 79 L321 83 L317 79 L321 73 L319 67 L312 64 L312 59 L319 56 L321 50 L317 44 L321 40 L327 44 L333 42 L336 35 Z M340 52 A8 8 0 1 0 340 72 A8 8 0 1 0 340 52 Z" />
+  </g>
+  <g transform="translate(50, 50)">
+    <rect class="text-bar" width="280" height="8" />
+    <rect class="text-bar" y="20" width="240" height="8" />
+    <rect class="text-bar" y="40" width="260" height="8" />
+    <g transform="translate(0, 60)">
+      <rect class="typing-bar" width="200" height="8" />
+      <rect class="cursor" x="205" width="2" height="10" />
+    </g>
+    <rect class="text-bar" y="80" width="180" height="8" />
+  </g>
+  <text x="50" y="165" class="label">Rédaction en cours...</text>
+</svg>
