@@ -1,6 +1,6 @@
 ---
 title: "Échangeur"
-parent: "Technique"
+parent: "Chaufferie"
 grand_parent: "Types d'acteur"
 ---
 
@@ -8,7 +8,7 @@ grand_parent: "Types d'acteur"
 
 # Échangeur
 
-Studio **1.6.0**
+Studio **1.6.0-beta**
 {: .label .label-yellow }
 Runtime **2.8.0**
 {: .label .label-green }
