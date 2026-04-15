@@ -8,14 +8,15 @@ grand_parent: "Types d'acteur"
 
 # Batterie
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Batterie représente une batterie de traitement d'air ou une batterie électrique. Il permet d'afficher un rendu coloré pour la batterie d'air et un indicateur LED pour la version électrique.
+La batterie d'air possède des sortie de tuyaux à sa base afin de connecter celle-ci aux acteurs tuyaux de la chaufferie.
 
 {: .pin }
 
@@ -37,30 +38,30 @@ L'acteur Batterie représente une batterie de traitement d'air ou une batterie �
 
 > ⚡Chemin d’accès depuis l’acteur `properties.type`
 
-### Couleur de la batterie d'air
+### Couleur de la batterie d'air (uniquement pour le type d'air)
 
 - **Type** : `String`
 - **Description** : Définit la couleur de la batterie d'air. Les valeurs possibles sont `rouge`, `bleu` ou `personnalisé`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.airBatteryColor`
 
-### Couleur personnalisée
+### Couleur personnalisée (Uniquement pour le type d'air)
 
 - **Type** : `CssColorString`
 - **Description** : Couleur utilisée lorsque le type d'air est réglé sur `custom`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.customColor`
 
-### En marche ?
+### En marche ? (Uniquement pour le type électrique)
 
 - **Type** : `Boolean`
-- **Description** : Indique si la batterie est considérée comme en fonctionnement.
+- **Description** : Indique si la batterie est considérée comme en fonctionnement (LED allumée / éteinte).
 
 > ⚡Chemin d’accès depuis l’acteur `properties.isRunning`
 
-### En défaut ?
+### En défaut ? (Uniquement pour le type électrique)
 
 - **Type** : `Boolean`
-- **Description** : Indique si la batterie doit afficher son état de défaut. Pour la version électrique, cela force une LED rouge clignotante.
+- **Description** : Indique si la batterie doit afficher son état de défaut. (LED rouge clignotante).
 
 > ⚡Chemin d’accès depuis l’acteur `properties.isDefault`

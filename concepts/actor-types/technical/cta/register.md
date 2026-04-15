@@ -8,21 +8,21 @@ grand_parent: "Types d'acteur"
 
 # Registre
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
-L'acteur Registre représente un registre de ventilation. Son fonctionnement est très proche du bypass : le mode numérique alterne entre ouvert et fermé, tandis que le mode analogique expose un pourcentage d'ouverture.
+L'acteur Registre représente un registre de ventilation. Son fonctionnement est très proche du bypass : le mode numérique alterne entre ouvert et fermé, tandis que le mode analogic expose un pourcentage d'ouverture.
 
 ## Propriétés spécifiques
 
 ### Mode
 
 - **Type** : `String`
-- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogique`.
+- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogic`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.mode`
 
@@ -36,6 +36,6 @@ L'acteur Registre représente un registre de ventilation. Son fonctionnement est
 ### Ouverture (%)
 
 - **Type** : `Number`
-- **Description** : Utilisé lorsque le mode est `analogique`. La valeur représente le pourcentage d'ouverture affiché.
+- **Description** : Utilisé lorsque le mode est `analogic`. La valeur représente le pourcentage d'ouverture affiché.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.opening`

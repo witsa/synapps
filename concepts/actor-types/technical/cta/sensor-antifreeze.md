@@ -8,11 +8,11 @@ grand_parent: "Types d'acteur"
 
 # Capteur antigel
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Capteur antigel représente un capteur de surveillance du risque de gel. Son affichage reste simple et met en avant un état de défaut visuel lorsque l'alarme est active.

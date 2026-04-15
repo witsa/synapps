@@ -8,21 +8,21 @@ grand_parent: "Types d'acteur"
 
 # Roue
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
-L'acteur Roue représente un ventilateur ou une roue de CTA. Il réagit à un mode numérique ou analogique et adapte la durée d'animation à la vitesse.
+L'acteur Roue représente un ventilateur ou une roue de CTA. Il réagit à un mode numérique ou analogic et adapte la durée d'animation à la vitesse.
 
 ## Propriétés spécifiques
 
 ### Mode
 
 - **Type** : `String`
-- **Description** : Définit le mode de commande. Les valeurs possibles sont `digital` et `analogique`.
+- **Description** : Définit le mode de commande. Les valeurs possibles sont `digital` et `analogic`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.mode`
 
@@ -36,6 +36,6 @@ L'acteur Roue représente un ventilateur ou une roue de CTA. Il réagit à un mo
 ### Vitesse
 
 - **Type** : `Number`
-- **Description** : Utilisée en mode analogique. La valeur influe directement sur l'animation de la roue.
+- **Description** : Utilisée en mode analogic. La valeur influe directement sur l'animation de la roue.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.speed`

@@ -8,34 +8,34 @@ grand_parent: "Types d'acteur"
 
 # Bypass
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
-L'acteur Bypass représente un organe de dérivation dans une CTA. Il propose un mode numérique, avec un état ouvert ou fermé, et un mode analogique, avec un pourcentage d'ouverture.
+L'acteur Bypass représente une connection entre deux gaines de la CTA avec un registre entre ces deux gaines. Il propose un mode digital, avec un état ouvert ou fermé, et un mode analogic, avec un pourcentage d'ouverture.
 
 ## Propriétés spécifiques
 
 ### Mode
 
 - **Type** : `String`
-- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogique`.
+- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogic`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.mode`
 
-### Ouvert ?
+### Ouvert ? (Uniquement pour le mode digital)
 
 - **Type** : `Boolean`
-- **Description** : Utilisé lorsque le mode est `digital`. Si la valeur est `true`, le bypass est affiché comme ouvert.
+- **Description** : Affiche le volet comme ouvert ou fermé.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.isOpen`
 
-### Ouverture (%)
+### Ouverture (%) (Uniquement pour le mode analogic)
 
 - **Type** : `Number`
-- **Description** : Utilisé lorsque le mode est `analogique`. La valeur représente le pourcentage d'ouverture affiché.
+- **Description** : La valeur représente le pourcentage d'ouverture affiché( 0 : fermé, 100 : ouvert).
 
 > ⚡Chemin d’accès depuis l’acteur `properties.opening`

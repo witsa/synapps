@@ -8,41 +8,41 @@ grand_parent: "Types d'acteur"
 
 # Filtre
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
-L'acteur Filtre représente un filtre de CTA avec un indicateur visuel d'encrassement. La couleur de l'élément central varie selon l'état propre ou sale.
+L'acteur Filtre représente un filtre de CTA avec un capteur. L'état varie selon la propriété `isDirty` (sale/propre).
 
 ## Propriétés spécifiques
 
-### Encrassé ?
+### Sale ?
 
 - **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, le filtre est affiché comme encrassé.
+- **Description** : Si la valeur est `true`, le filtre et le capteur prennent la couleur correspondante à l'état sale.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.isDirty`
 
 ### Couleur propre
 
 - **Type** : `CssColorString`
-- **Description** : Couleur utilisée lorsque le filtre n'est pas encrassé.
+- **Description** : Couleur utilisée lorsque le filtre est propre.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.cleanColor`
 
 ### Couleur sale
 
 - **Type** : `CssColorString`
-- **Description** : Couleur utilisée lorsque le filtre est encrassé.
+- **Description** : Couleur utilisée lorsque le filtre est sale.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.dirtyColor`
 
 ### Orientation
 
 - **Type** : `String`
-- **Description** : Définit l'orientation du filtre. Les valeurs suivent `OrientationEnum`.
+- **Description** : Définit l'orientation du filtre.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.orientation`

@@ -8,42 +8,42 @@ grand_parent: "Types d'acteur"
 
 # Moteur axial
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
-L'acteur Moteur axial représente une variante plus compacte du moteur CTA. Son comportement est identique sur le plan fonctionnel, avec un rendu plus adapté aux équipements axiaux.
+L'acteur Moteur axial représente une variante plus compacte du moteur CTA. Ses propriétés sont similaires à celles du moteur standard.
 
 ## Propriétés spécifiques
 
 ### Orientation
 
 - **Type** : `String`
-- **Description** : Définit le sens d'affichage du moteur. Les valeurs possibles suivent `DirectionEnum`.
+- **Description** : Définit le sens d'affichage du moteur (droite ou gauche).
 
 > ⚡Chemin d’accès depuis l’acteur `properties.orientation`
 
 ### Mode
 
 - **Type** : `String`
-- **Description** : Définit le mode de commande. Les valeurs possibles sont `digital` et `analogique`.
+- **Description** : Définit le mode de commande. Les valeurs possibles sont `digital` et `analogic`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.mode`
 
-### En marche ?
+### En marche ? (Uniquement pour le mode digital)
 
 - **Type** : `Boolean`
-- **Description** : Utilisé en mode numérique pour indiquer si le moteur tourne.
+- **Description** : Indique si le moteur est en marche.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.isRunning`
 
-### Vitesse
+### Vitesse (Uniquement pour le mode analogic)
 
 - **Type** : `Number`
-- **Description** : Utilisée en mode analogique. La valeur représente la vitesse d'affichage du moteur, généralement entre 0 et 100.
+- **Description** :La valeur représente la vitesse d'affichage du moteur (0: lent, 100: rapide).
 
 > ⚡Chemin d’accès depuis l’acteur `properties.speed`
 

@@ -8,11 +8,11 @@ grand_parent: "Types d'acteur"
 
 # Capteur
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Capteur représente un capteur de CTA. Il expose un mode de fonctionnement et une valeur numérique simple.
@@ -29,7 +29,7 @@ L'acteur Capteur représente un capteur de CTA. Il expose un mode de fonctionnem
 ### Mode
 
 - **Type** : `String`
-- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogique`.
+- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogic`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.mode`
 

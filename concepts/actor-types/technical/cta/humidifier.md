@@ -8,11 +8,11 @@ grand_parent: "Types d'acteur"
 
 # Humidificateur
 
-Studio **1.6.0-beta**
+Studio **1.7.0-beta**
 {: .label .label-yellow }
-Runtime **2.8.0**
+Runtime **2.9.0**
 {: .label .label-green }
-REDY **16.4.0**
+REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Humidificateur représente un humidificateur de CTA. Son affichage change selon l'activation et l'état de défaut.
@@ -22,7 +22,7 @@ L'acteur Humidificateur représente un humidificateur de CTA. Son affichage chan
 ### Orientation
 
 - **Type** : `String`
-- **Description** : Définit l'orientation de l'humidificateur. Les valeurs possibles suivent `DirectionEnum`.
+- **Description** : Définit l'orientation de l'humidificateur.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.orientation`
 
