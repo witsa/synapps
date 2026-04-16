@@ -9,15 +9,15 @@ grand_parent: "Types d'acteur"
 # Led
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Led permet d'afficher un indicateur lumineux simple (semblable à une LED), utile pour représenter un état (par exemple, allumé/éteint, actif/inactif, alarme).
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/led.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/led.gif)
 
 ## Propriétés spécifiques
 

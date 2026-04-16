@@ -1,7 +1,7 @@
 ---
 title: "Brûleur"
-parent: "Technique"
-grand_parent: "Types d'acteur"
+parent: "Chaufferie"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -9,15 +9,15 @@ grand_parent: "Types d'acteur"
 # Brûleur
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Brûleur (Burner) représente l'état d'un brûleur. Il affiche visuellement les différents modes de fonctionnement tels que la marche, l'arrêt ou un état de défaut.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/burner.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/burner.gif)
 
 
 Voici les différents états du brûleur :

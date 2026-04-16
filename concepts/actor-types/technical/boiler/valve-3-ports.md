@@ -1,7 +1,7 @@
 ---
 title: "Vanne 3 voies"
-parent: "Technique"
-grand_parent: "Types d'acteur"
+parent: "Chaufferie"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -9,15 +9,15 @@ grand_parent: "Types d'acteur"
 # Vanne 3 voies
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Vanne 3 voies représente une vanne de mélange ou de dérivation. Sa position est contrôlée par une valeur numérique.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/valvle-3-ports.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/valvle-3-ports.gif)
 
 La vanne 3 voies représente présente une poignée indiquant la position actuelle de la vanne, variant de **0%** à **100%**.
 Si la ressource est en défaut, la poignée de la vanne est remplacée par une LED rouge clignotante.

@@ -1,7 +1,7 @@
 ---
 title: "Ballon"
-parent: "Technique"
-grand_parent: "Types d'acteur"
+parent: "Chaufferie"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -9,15 +9,15 @@ grand_parent: "Types d'acteur"
 # Ballon
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Ballon est un composant visuel simple représentant un réservoir ou une cuve. Il est principalement utilisé pour la représentation graphique dans les schémas.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/tank.png)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/tank.png)
 
 ## Propriétés spécifiques
 

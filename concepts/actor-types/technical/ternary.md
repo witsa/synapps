@@ -9,11 +9,11 @@ grand_parent: "Types d'acteur"
 # Acteur Ternaire
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Ternaire permet d'afficher un des trois états distincts en fonction d'une valeur et d'un état de défaut :
 
@@ -29,7 +29,7 @@ La led est affichée si vous ne fournissez pas d'image personnalisée.
 
 > Par défaut, l'acteur Ternaire affiche une LED verte allumée pour l'état Vrai, une LED verte éteinte pour l'état Faux, et une LED rouge clignotante pour l'état de Défaut.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/ternary.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/ternary.gif)
 
 ## Propriétés spécifiques
 

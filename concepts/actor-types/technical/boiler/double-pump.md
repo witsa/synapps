@@ -1,7 +1,7 @@
 ---
 title: "Pompe double"
-parent: "Technique"
-grand_parent: "Types d'acteur"
+parent: "Chaufferie"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -9,15 +9,15 @@ grand_parent: "Types d'acteur"
 # Pompe double
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Pompe double représente un système de pompage avec deux moteurs. Chaque pompe peut être contrôlée et surveillée indépendamment pour son état de marche et de défaut.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/double-pump.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/double-pump.gif)
 
 
 Voici les différents états de la pompe double :

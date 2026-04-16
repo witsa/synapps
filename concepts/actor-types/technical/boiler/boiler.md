@@ -1,7 +1,7 @@
 ---
 title: "Chaudière"
-parent: "Technique"
-grand_parent: "Types d'acteur"
+parent: "Chaufferie"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -9,15 +9,15 @@ grand_parent: "Types d'acteur"
 # Chaudière
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Chaudière permet de représenter l'état d'une chaudière industrielle et de son brûleur associé. Il représente visuellement les différents modes de fonctionnement comme la marche, l'arrêt ou un état de défaut.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/boiler.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/boiler.gif)
 
 Voici les différents états de la chaudière :
 

@@ -9,11 +9,11 @@ grand_parent: "Types d'acteur"
 # Acteur Multiposition
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Multiposition permet d'afficher un état parmi une liste de "positions" configurables. C'est un composant idéal pour représenter un équipement ayant plusieurs modes de fonctionnement (ex: Arrêt, Manuel, Auto, Alarme).
 
