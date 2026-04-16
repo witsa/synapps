@@ -54,7 +54,7 @@ Enfin, ajoutez des **Boutons de menu** à l'intérieur de chaque groupe de navig
 
 ```
 ├── Menu de navigation (gère selectedScene)
-│   └── Bouton "Acceuil"
+│   └── Bouton "Accueil"
 ├────── Groupe "Utilisateur"
 │   ├────── Bouton "Dashboard"
 │   ├────── Bouton "Profil"
