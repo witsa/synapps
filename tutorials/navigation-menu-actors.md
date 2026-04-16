@@ -1,8 +1,16 @@
 ﻿---
-title: Utiliser les acteurs de menu de navigation
+title: Acteurs de menu de navigation BETA
 parent: Tutoriels
 nav_order: 1
 ---
+
+Studio **1.7.0-beta**
+{: .label .label-yellow }
+Runtime **2.9.0**
+{: .label .label-green }
+REDY **16.5.0**
+{: .label .label-yellow }
+
 
 {% include table_of_content.html %}
 
