@@ -1,23 +1,23 @@
 ---
 title: "Échangeur"
 parent: "Chaufferie"
-grand_parent: "Types d'acteur"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
 
 # Échangeur
 
-Studio **1.6.0-beta**
-{: .label .label-yellow }
+Studio **1.6.0**
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Échangeur est un composant visuel simple représentant un échangeur thermique. Il est principalement utilisé pour la représentation graphique dans les schémas.
 
-![Synapps](../../../synapps-studio-releases/notes//assets/1.6/exchanger.png)
+![Synapps](../../../../synapps-studio-releases/notes//assets/1.6/exchanger.png)
 
 ## Propriétés spécifiques
 

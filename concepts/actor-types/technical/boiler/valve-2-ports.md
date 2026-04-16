@@ -1,23 +1,23 @@
 ---
 title: "Vanne 2 voies"
 parent: "Chaufferie"
-grand_parent: "Types d'acteur"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
 
 # Vanne 2 voies
 
-Studio **1.6.0-beta**
-{: .label .label-yellow }
+Studio **1.6.0**
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Vanne 2 voies représente une vanne standard. Son état visuel (ouverte, fermée, en mouvement, en défaut) est déterminé par ses propriétés.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/valvle-2-ports.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/valvle-2-ports.gif)
 
 ## Propriétés spécifiques
 

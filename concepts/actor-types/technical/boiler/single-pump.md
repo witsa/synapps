@@ -1,23 +1,23 @@
 ---
 title: "Pompe simple"
 parent: "Chaufferie"
-grand_parent: "Types d'acteur"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
 
 # Pompe simple
 
-Studio **1.6.0-beta**
-{: .label .label-yellow }
+Studio **1.6.0**
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Pompe simple représente une pompe avec un seul moteur. Son état visuel (marche, arrêt, défaut) est déterminé par ses propriétés.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/single-pump.gif)
+![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/single-pump.gif)
 
 Voici les différents états de la pompe simple :
 
