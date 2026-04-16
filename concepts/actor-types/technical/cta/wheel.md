@@ -1,7 +1,7 @@
 ---
 title: "Roue"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -16,6 +16,8 @@ REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Roue représente un ventilateur ou une roue de CTA. Il réagit à un mode numérique ou analogic et adapte la durée d'animation à la vitesse.
+
+![Roue CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-wheel.gif)
 
 ## Propriétés spécifiques
 

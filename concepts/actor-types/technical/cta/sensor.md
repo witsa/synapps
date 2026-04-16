@@ -1,7 +1,7 @@
 ---
 title: "Capteur"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -17,6 +17,8 @@ REDY **16.5.0**
 
 L'acteur Capteur représente un capteur de CTA. Il expose un mode de fonctionnement et une valeur numérique simple.
 
+![Capteur CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-sensor.png)
+
 ## Propriétés spécifiques
 
 ### Orientation
@@ -25,17 +27,3 @@ L'acteur Capteur représente un capteur de CTA. Il expose un mode de fonctionnem
 - **Description** : Définit l'orientation du capteur. Les valeurs possibles suivent `OrientationEnum`.
 
 > ⚡Chemin d’accès depuis l’acteur `properties.orientation`
-
-### Mode
-
-- **Type** : `String`
-- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogic`.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.mode`
-
-### Valeur
-
-- **Type** : `Number`
-- **Description** : Valeur numérique portée par le capteur.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.value`

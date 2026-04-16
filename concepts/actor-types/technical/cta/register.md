@@ -1,7 +1,7 @@
 ---
 title: "Registre"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -16,6 +16,8 @@ REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Registre représente un registre de ventilation. Son fonctionnement est très proche du bypass : le mode numérique alterne entre ouvert et fermé, tandis que le mode analogic expose un pourcentage d'ouverture.
+
+![Registre CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-register.gif)
 
 ## Propriétés spécifiques
 

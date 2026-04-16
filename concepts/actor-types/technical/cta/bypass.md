@@ -1,7 +1,7 @@
 ---
 title: "Bypass"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -16,6 +16,8 @@ REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Bypass représente une connection entre deux gaines de la CTA avec un registre entre ces deux gaines. Il propose un mode digital, avec un état ouvert ou fermé, et un mode analogic, avec un pourcentage d'ouverture.
+
+![Bypass CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-bypass.gif)
 
 ## Propriétés spécifiques
 

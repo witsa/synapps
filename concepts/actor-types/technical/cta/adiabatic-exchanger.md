@@ -1,6 +1,6 @@
 ---
 title: "Échangeur adiabatique"
-parent: "Centrale de traitement d'air"
+parent: "CTA"
 grand_parent: "Types d'acteur"
 ---
 
@@ -16,6 +16,8 @@ REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Échangeur adiabatique représente un échangeur de type adiabatique. Il est possible de personnaliser le sens de circulation des flux ainsi que les couleurs des quatre flux.
+
+![Échangeur adiabatique CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-adiabatic-exchanger.gif)
 
 ## Propriétés spécifiques
 

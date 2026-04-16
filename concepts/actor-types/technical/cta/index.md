@@ -1,5 +1,5 @@
 ---
-title: "Centrale de traitement d'air"
+title: "CTA"
 parent: "Technique"
 has_children: true
 ---

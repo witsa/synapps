@@ -1,7 +1,7 @@
 ---
 title: "Batterie"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -21,6 +21,8 @@ La batterie d'air possède des sortie de tuyaux à sa base afin de connecter cel
 {: .pin }
 
 > Pour le type `electric`, l'acteur affiche une LED d'état. Pour le type `air`, l'apparence dépend de la couleur choisie.
+
+![Batterie CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-battery.gif)
 
 ## Propriétés spécifiques
 

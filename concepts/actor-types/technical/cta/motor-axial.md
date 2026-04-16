@@ -1,7 +1,7 @@
 ---
 title: "Moteur axial"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -16,6 +16,8 @@ REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Moteur axial représente une variante plus compacte du moteur CTA. Ses propriétés sont similaires à celles du moteur standard.
+
+![Moteur axial CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-motor-axial.gif)
 
 ## Propriétés spécifiques
 

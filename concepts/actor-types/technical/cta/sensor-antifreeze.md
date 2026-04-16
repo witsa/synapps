@@ -1,7 +1,7 @@
 ---
 title: "Capteur antigel"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -16,6 +16,8 @@ REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Capteur antigel représente un capteur de surveillance du risque de gel. Son affichage reste simple et met en avant un état de défaut visuel lorsque l'alarme est active.
+
+![Capteur antigel CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-sensor-freeze.gif)
 
 ## Propriétés spécifiques
 

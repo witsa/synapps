@@ -1,7 +1,7 @@
 ---
 title: "Ternaire"
-parent: "Chaufferie"
-grand_parent: "Technique"
+parent: "Technique"
+grand_parent: "Types d'acteur"
 ---
 
 {% include table_of_content.html %}

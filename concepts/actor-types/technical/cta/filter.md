@@ -1,7 +1,7 @@
 ---
 title: "Filtre"
-parent: "Centrale de traitement d'air"
-grand_parent: "Types d'acteur"
+parent: "CTA"
+grand_parent: "Technique"
 ---
 
 {% include table_of_content.html %}
@@ -16,6 +16,8 @@ REDY **16.5.0**
 {: .label .label-yellow }
 
 L'acteur Filtre représente un filtre de CTA avec un capteur. L'état varie selon la propriété `isDirty` (sale/propre).
+
+![Filtre CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-filter.gif)
 
 ## Propriétés spécifiques
 
