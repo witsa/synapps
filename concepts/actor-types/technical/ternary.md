@@ -29,7 +29,7 @@ La led est affichée si vous ne fournissez pas d'image personnalisée.
 
 > Par défaut, l'acteur Ternaire affiche une LED verte allumée pour l'état Vrai, une LED verte éteinte pour l'état Faux, et une LED rouge clignotante pour l'état de Défaut.
 
-![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/ternary.gif)
+![Synapps](../../../synapps-studio-releases/notes/assets/1.6/ternary.gif)
 
 ## Propriétés spécifiques
 

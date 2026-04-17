@@ -17,7 +17,7 @@ REDY **16.4.0**
 
 L'acteur Led permet d'afficher un indicateur lumineux simple (semblable à une LED), utile pour représenter un état (par exemple, allumé/éteint, actif/inactif, alarme).
 
-![Synapps](../../../../synapps-studio-releases/notes/assets/1.6/led.gif)
+![Synapps](../../../synapps-studio-releases/notes/assets/1.6/led.gif)
 
 ## Propriétés spécifiques
 

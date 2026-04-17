@@ -19,6 +19,9 @@ L'acteur Multiposition permet d'afficher un état parmi une liste de "positions"
 
 L'acteur peut gérer jusqu'à 8 positions. Par défaut, il est créé avec 4 positions, mais vous pouvez en ajouter ou en supprimer selon vos besoins.
 
+![Synapps](../../../synapps-studio-releases/notes/assets/1.6/multiposition.gif)
+
+
 ## Propriétés spécifiques
 
 ### Position
