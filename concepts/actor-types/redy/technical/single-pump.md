@@ -1,6 +1,6 @@
 ---
 title: "Reflet Pompe simple"
-parent: "Technique"
+parent: "Technique REDY"
 grand_parent: "REDY"
 ---
 
@@ -9,11 +9,11 @@ grand_parent: "REDY"
 # Reflet Pompe simple
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur **Reflet Pompe simple** permet une visualisation détaillée d'une ressource pompe simple avec reflet.
 

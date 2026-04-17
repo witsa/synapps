@@ -1,6 +1,6 @@
 ---
 title: "Reflet Vanne 3 voies"
-parent: "Technique"
+parent: "Technique REDY"
 grand_parent: "REDY"
 ---
 
@@ -9,11 +9,11 @@ grand_parent: "REDY"
 # Reflet Vanne 3 voies
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur **Reflet Vanne 3 voies** permet une visualisation détaillée d'une ressource vanne 3 voies avec reflet.
 
