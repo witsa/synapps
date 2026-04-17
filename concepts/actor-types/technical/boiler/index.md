@@ -8,6 +8,9 @@ has_children: true
 
 # Chaufferie
 
+![Résultat final de la scène de chaufferie](../../../../assets/tutorials/boiler-room/final_scene.gif)
+
+
 La section Chaufferie regroupe les acteurs utilisés pour représenter une installation de chauffage et ses principaux organes. Vous y trouverez les composants les plus courants d'une chaufferie, comme la chaudière, le brûleur, les circulateurs, les vannes ou encore le ballon.
 
 ## Acteurs disponibles
