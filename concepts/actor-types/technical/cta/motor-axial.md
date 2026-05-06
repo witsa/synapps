@@ -8,12 +8,12 @@ grand_parent: "Technique"
 
 # Moteur axial
 
-Studio **1.7.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.9.0**
 {: .label .label-green }
 REDY **16.5.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Moteur axial représente une variante plus compacte du moteur CTA. Ses propriétés sont similaires à celles du moteur standard.
 

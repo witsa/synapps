@@ -4,12 +4,12 @@ parent: Tutoriels
 nav_order: 1
 ---
 
-Studio **1.7.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.9.0**
 {: .label .label-green }
 REDY **16.5.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 
 {% include table_of_content.html %}

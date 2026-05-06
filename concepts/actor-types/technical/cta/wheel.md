@@ -8,12 +8,12 @@ grand_parent: "Technique"
 
 # Roue
 
-Studio **1.7.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.9.0**
 {: .label .label-green }
 REDY **16.5.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Roue représente un ventilateur ou une roue de CTA. Il réagit à un mode numérique ou analogic et adapte la durée d'animation à la vitesse.
 

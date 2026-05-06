@@ -8,12 +8,12 @@ grand_parent: "Technique"
 
 # Bypass
 
-Studio **1.7.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.9.0**
 {: .label .label-green }
 REDY **16.5.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Bypass représente une connection entre deux gaines de la CTA avec un registre entre ces deux gaines. Il propose un mode digital, avec un état ouvert ou fermé, et un mode analogic, avec un pourcentage d'ouverture.
 

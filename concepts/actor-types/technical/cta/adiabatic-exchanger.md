@@ -8,12 +8,12 @@ grand_parent: "Types d'acteur"
 
 # Échangeur adiabatique
 
-Studio **1.7.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.9.0**
 {: .label .label-green }
 REDY **16.5.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Échangeur adiabatique représente un échangeur de type adiabatique. Il est possible de personnaliser le sens de circulation des flux ainsi que les couleurs des quatre flux.
 
