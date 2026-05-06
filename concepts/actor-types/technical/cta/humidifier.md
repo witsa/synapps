@@ -8,12 +8,12 @@ grand_parent: "Technique"
 
 # Humidificateur
 
-Studio **1.7.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.9.0**
 {: .label .label-green }
 REDY **16.5.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Humidificateur représente un humidificateur de CTA. Son affichage change selon l'activation et l'état de défaut.
 

@@ -8,12 +8,12 @@ grand_parent: "Technique"
 
 # Conduit
 
-Studio **1.7.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.9.0**
 {: .label .label-green }
 REDY **16.5.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 L'acteur Conduit représente une portion de gaine de ventilation. Il peut afficher un tronçon simple ou une extrémité selon sa configuration.
 
