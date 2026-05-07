@@ -1,18 +1,18 @@
 ---
-title: "Fournisseur d'instruction BETA"
-parent: "REDY Pilot BETA"
+title: "Fournisseur d'instruction"
+parent: "REDY Pilot"
 ---
 
 {% include table_of_content.html %}
 
 # Fournisseur d'instruction
 
-Studio **1.6.0-beta**
-{: .label .label-yellow }
+Studio **1.7.0**
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY Pilot **1.0.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 Cet acteur permet de créer une source de curseur instructions pour le pilote REDY. Il consomme un curseur d'instruction, demande son exécution au pilote REDY suivant des éventuels paramètres, et fournit les résultats dans son champ de données `data`.
 

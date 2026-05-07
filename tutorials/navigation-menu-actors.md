@@ -1,5 +1,5 @@
 ﻿---
-title: Acteurs de menu de navigation BETA
+title: Acteurs de menu de navigation
 parent: Tutoriels
 nav_order: 1
 ---
