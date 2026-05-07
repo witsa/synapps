@@ -13,18 +13,3 @@ La section CTA regroupe les acteurs utilisés pour le traitement d'air et la ven
 ![CTA demo](../../../../synapps-studio-releases/notes/assets/1.7/cta-demo.gif)
 
 {% include samples/cta-demo.md %}
-
-## Acteurs disponibles
-
-- [Batterie](battery.md)
-- [Bypass](bypass.md)
-- [Conduit](duct.md)
-- [Échangeur adiabatique](adiabatic-exchanger.md)
-- [Filtre](filter.md)
-- [Humidificateur](humidifier.md)
-- [Moteur](motor.md)
-- [Moteur axial](motor-axial.md)
-- [Registre](register.md)
-- [Roue](wheel.md)
-- [Capteur](sensor.md)
-- [Capteur antigel](sensor-antifreeze.md)

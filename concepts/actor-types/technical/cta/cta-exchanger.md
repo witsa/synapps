@@ -1,12 +1,12 @@
 ---
-title: "Échangeur adiabatique"
+title: "Échangeur"
 parent: "CTA"
 grand_parent: "Types d'acteur"
 ---
 
 {% include table_of_content.html %}
 
-# Échangeur adiabatique
+# Échangeur
 
 Studio **1.7.0**
 {: .label .label-green }
@@ -15,9 +15,9 @@ Runtime **2.9.0**
 REDY **16.5.0**
 {: .label .label-green }
 
-L'acteur Échangeur adiabatique représente un échangeur de type adiabatique. Il est possible de personnaliser le sens de circulation des flux ainsi que les couleurs des quatre flux.
+L'acteur représente un échangeur. Il est possible de personnaliser le sens de circulation des flux ainsi que les couleurs des quatre flux.
 
-![Échangeur adiabatique CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-adiabatic-exchanger.gif)
+![Échangeur CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-exchanger.gif)
 
 ## Propriétés spécifiques
 
