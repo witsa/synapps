@@ -29,9 +29,11 @@ Choix entre **gauche** et **droite** pour l’icône ou l’image.
 
 Contrôle l’état replié/déplié du groupe. Un clic sur l’entête inverse automatiquement cette valeur.
 
-## Couleur de fond du groupe
+## Couleur de fond du menu
 
-Couleur d’arrière‑plan spécifique à l’entête du groupe.
+Couleur d’arrière‑plan de la zone contenant les boutons du groupe. Si aucune couleur n’est définie, la zone reste transparente.
+
+Les couleurs de l’entête, elles, ne sont pas définies ici : elles proviennent des **couleurs de groupe** du **Menu de navigation** parent.
 
 # Fonctionnement
 
