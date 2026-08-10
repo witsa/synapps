@@ -27,10 +27,6 @@ Permet d’afficher une icône ou une image dans l’entête. Si une image est d
 
 Choix entre **gauche** et **droite** pour l’icône ou l’image, par rapport au texte.
 
-## Couleur de fond du menu
-
-Couleur d’arrière‑plan du menu déroulant contenant les boutons du groupe. Si aucune couleur n’est définie, le menu conserve le fond par défaut du navigateur.
-
 # Fonctionnement
 
 - L’entête du groupe s’ouvre **au clic**, ou **au survol** si la propriété **Ouvrir au survol ?** de la barre de navigation parente est activée. Dans ce mode, le sous‑menu reste ouvert tant que la souris se trouve sur l’entête ou sur le panneau, et se referme peu après l’avoir quitté.
