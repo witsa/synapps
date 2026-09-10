@@ -21,7 +21,7 @@ Le journal est mis à jour suivant un délai qui est paramétrable. Ce rafraîch
 Dans l'entête du tableau vous trouverez les définitions des colonnes. La liste des colonnes est paramétrable. C'est pour l'instant un tableau de clé en JSON :
 
 ```json
-["id", "ack", "icon", "date", "nod", "site", "state", "todo"]
+["id", "ack", "icon", "date", "nod", "site", "state", "todo", "ackBy"]
 ```
 
 | clé de colonne | Description |
@@ -34,6 +34,7 @@ Dans l'entête du tableau vous trouverez les définitions des colonnes. La liste
 | `site` | Site de l'élément à l'origine de l'évènement |
 | `state` | État de la ressource |
 | `todo` | ? |
+| `ackBy` | Identité de l'utilisateur ayant acquitté l'évènement |
 
 Laissez vide la propriété *Colonnes* pour les afficher toutes.
 
