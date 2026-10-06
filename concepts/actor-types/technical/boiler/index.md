@@ -17,6 +17,10 @@ La section Chaufferie regroupe les acteurs utilisés pour représenter une insta
 
 - [Chaudière](boiler.md)
 - [Brûleur](burner.md)
+- [Bouteille de découplage](hydraulic-separator.md)
+- [Collecteur](collector.md)
+- [Compteur d'énergie](energy-meter.md)
+- [Compteur volumétrique](volume-meter.md)
 - [Échangeur](exchanger.md)
 - [Led](led.md)
 - [Multiposition](multiposition.md)
