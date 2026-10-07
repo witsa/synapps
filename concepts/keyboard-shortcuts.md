@@ -19,6 +19,10 @@ parent: Concepts
 | Designer | `Ctrl+X` | Coupe l'élément sélectionné |
 | Designer | `Ctrl+V` | Colle l'élément copié ou coupé |
 | Designer | `Delete` | Supprime l'élément sélectionné |
+| Designer | `Maj + clic` | Ajoute ou retire un acteur de la  [multi-sélection](./multi-selection.md) **Studio 1.7.3-beta**{: .label .label-yellow } |
+| Designer | `Ctrl + glisser` | Sélectionne au lasso les acteurs d'une toile ([multi-sélection](./multi-selection.md)) **Studio 1.7.3-beta**{: .label .label-yellow } |
+| Designer | `←` `→` `↑` `↓` | Déplace le ou les acteurs sélectionnés d'une unité (10 avec `Ctrl`) **Studio 1.7.3-beta**{: .label .label-yellow } |
+| Designer | `Échap` | Vide la sélection  **Studio 1.7.3-beta**{: .label .label-yellow } |
 | Éditeur de texte | `Ctrl+Z` | Annule la dernière saisie |
 | Éditeur de texte | `Ctrl+Shift+Z`, `Ctrl+Y` | Reproduit la saisie annulée |
 | Éditeur de texte | `Ctrl+Shift+F` | Formate le contenu |
