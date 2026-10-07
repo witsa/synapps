@@ -7,8 +7,8 @@ parent: Concepts
 
 # Sélection contextuelle
 
-Studio **1.7.3**
-{: .label .label-green }
+Studio **1.7.3-beta**
+{: .label .label-yellow }
 
 La sélection contextuelle permet de sélectionner facilement un acteur difficile à atteindre dans la prévisualisation d'une scène, par exemple un acteur recouvert par un autre ou un conteneur entièrement occupé par ses enfants.
 

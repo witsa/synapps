@@ -7,8 +7,8 @@ parent: Concepts
 
 # Multi-sélection
 
-Studio **1.7.3**
-{: .label .label-green }
+Studio **1.7.3-beta**
+{: .label .label-yellow }
 
 La multi-sélection permet de sélectionner plusieurs acteurs d'une scène pour les manipuler simultanément : les déplacer, les aligner ou les empiler.
 

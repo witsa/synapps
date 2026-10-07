@@ -7,11 +7,11 @@ nav_order: 99 # à ajuster
 # Construire une scène de chaufferie
 
 Studio **1.6.0**
-{: .label .label-yellow }
+{: .label .label-green }
 Runtime **2.8.0**
 {: .label .label-green }
 REDY **16.4.0**
-{: .label .label-yellow }
+{: .label .label-green }
 
 > 🎯 Objectif : créer une scène avec 3 acteurs reflets REDY (chaudière, pompe simple, valve 3 voies).
 
