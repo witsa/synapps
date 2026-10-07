@@ -79,6 +79,8 @@ GEM
       webrick (~> 1.7)
     jekyll-include-cache (0.3.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-redirect-from (0.17.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-relative-links (0.9.1)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.1.0)
@@ -184,6 +186,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.4)
   jekyll-include-cache
+  jekyll-redirect-from
   jekyll-relative-links
   jekyll-seo-tag
   jekyll-titles-from-headings

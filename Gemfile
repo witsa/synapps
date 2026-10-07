@@ -11,6 +11,7 @@ gem "just-the-docs", "0.10.1"
 
 group :jekyll_plugins do
   gem "jekyll-include-cache"
+  gem "jekyll-redirect-from"
   gem "jekyll-relative-links"
   gem "jekyll-seo-tag"
   gem "jekyll-titles-from-headings"

@@ -56,6 +56,7 @@ collections:
 
 plugins:
   - jekyll-include-cache
+  - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-titles-from-headings
