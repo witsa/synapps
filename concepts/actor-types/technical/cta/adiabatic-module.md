@@ -8,12 +8,12 @@ grand_parent: "Technique"
 
 # Module adiabatique
 
-Studio **1.7.2**
-{: .label .label-green }
+Studio **1.7.3-beta**
+{: .label .label-yellow }
 Runtime **2.9.3**
-{: .label .label-green }
-REDY **16.5.1**
-{: .label .label-green }
+{: .label .label-yellow }
+REDY **17.0.0**
+{: .label .label-yellow }
 
 Un module adiabatique est un organe de CTA qui rafraîchit l'air par évaporation d'eau (refroidissement adiabatique) plutôt que par un échange thermique classique avec un fluide frigorigène.
 
