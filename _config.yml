@@ -20,9 +20,13 @@
 
 title: Solution Synapps
 description: Construisez des apps standards, adaptatives et multi-plateformes connectées aux REDY.
+url: "https://witsa.github.io"
+baseurl: "/synapps"
 keep_files: [ script-api/ ]
 # Build settings
-remote_theme: just-the-docs/just-the-docs@v0.10.1
+theme: just-the-docs
+sass:
+  sourcemap: never
 logo: "assets/logo.svg"
 aux_links_new_tab: true
 back_to_top: true
@@ -52,6 +56,9 @@ collections:
 
 plugins:
   - jekyll-include-cache
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-titles-from-headings
 
 defaults:
   -

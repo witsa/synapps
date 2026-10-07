@@ -26,19 +26,20 @@ Cette documentation est construite avec [Jekyll](https://jekyllrb.com/) et utili
 
 ### Prérequis
 
-- Ruby (version 2.7 ou supérieure)
+- Ruby (version 3.1 ou supérieure)
 - Bundler
 
 ### Installation
 
 ```bash
-# Installer les dépendances
+# Installer les dépendances (dans ./vendor/bundle, sans droits administrateur)
+bundle config set --local path vendor/bundle
 bundle install
 
 # Lancer le serveur de développement
 npm run serve
 # ou
-bundle exec jekyll serve --config ./_config.yml,./_config_dev.yml --safe
+bundle exec jekyll serve --config ./_config.yml,./_config_dev.yml
 ```
 
 La documentation sera accessible à l'adresse : `http://localhost:4000/synapps/`
@@ -48,8 +49,13 @@ La documentation sera accessible à l'adresse : `http://localhost:4000/synapps/`
 ```bash
 npm run build
 # ou
-bundle exec jekyll build --config ./_config.yml,./_config_dev.yml --safe
+bundle exec jekyll build --config ./_config.yml,./_config_dev.yml
 ```
+
+### Publication
+
+La documentation est publiée sur GitHub Pages par la GitHub Action
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) à chaque push sur `master`.
 
 ## 🤝 Contribuer
 
