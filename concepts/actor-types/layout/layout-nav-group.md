@@ -29,9 +29,6 @@ Choix entre **gauche** et **droite** pour l’icône ou l’image.
 
 Contrôle l’état replié/déplié du groupe. Un clic sur l’entête inverse automatiquement cette valeur.
 
-## Couleur de fond du groupe
-
-Couleur d’arrière‑plan spécifique à l’entête du groupe.
 
 # Fonctionnement
 
