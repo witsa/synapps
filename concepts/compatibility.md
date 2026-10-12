@@ -73,6 +73,7 @@ Voici un tableau des versions de REDY que Studio est capable de gérer :
 
 | Studio     | REDY   |
 | ---------- | ------ |
+| 1.8.0-beta | 17.0.0 |
 | 1.7.3-beta | 17.0.0 |
 | 1.7.2      |        |
 | 1.7.1      | 16.5.1 |
@@ -95,6 +96,7 @@ Voici un tableau des versions de REDY que Studio est capable de gérer :
 
 | Studio     | Runtime |
 | ---------- | ------- |
+| 1.8.0-beta | 2.9.3   |
 | 1.7.3-beta | 2.9.3   |
 | 1.7.2      | 2.9.2   |
 | 1.7.1      | 2.9.2   |
