@@ -1,8 +1,8 @@
-version: 1.8.0-beta.202610130000
+version: 1.8.0
 files:
-  - url: https://github.com/witsa/synapps/releases/download/1.8.0-beta/synapps-studio-setup-1.8.0-beta.202610130000.exe
-    sha512: lUVeddM/UbYuz+i0qLkzi2M5pWRM0Obu9Dr8njA/w+todImVIskZKmeVagJAHS7fHsoX4W7AASwH9C/sGZ2Kwg==
-    size: 117285563
-path: https://github.com/witsa/synapps/releases/download/1.8.0-beta/synapps-studio-setup-1.8.0-beta.202610130000.exe
-sha512: lUVeddM/UbYuz+i0qLkzi2M5pWRM0Obu9Dr8njA/w+todImVIskZKmeVagJAHS7fHsoX4W7AASwH9C/sGZ2Kwg==
-releaseDate: '2026-10-12T23:10:55.240Z'
+  - url: https://github.com/witsa/synapps/releases/download/1.8.0/synapps-studio-setup-1.8.0.exe
+    sha512: Y2TsYBqyhKbOyN9XGLhObTwneJ1zXaV6cRG2cSq1wxKroCqfNMWpxsbAdrfebe01Xv+Xjr6sYaD0anfGh2coeA==
+    size: 117453533
+path: https://github.com/witsa/synapps/releases/download/1.8.0/synapps-studio-setup-1.8.0.exe
+sha512: Y2TsYBqyhKbOyN9XGLhObTwneJ1zXaV6cRG2cSq1wxKroCqfNMWpxsbAdrfebe01Xv+Xjr6sYaD0anfGh2coeA==
+releaseDate: '2026-10-13T13:42:57.698Z'

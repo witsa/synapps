@@ -1,0 +1,8 @@
+version: 1.8.0
+files:
+  - url: https://github.com/witsa/synapps/releases/download/1.8.0/synapps-studio-setup-1.8.0.exe
+    sha512: Y2TsYBqyhKbOyN9XGLhObTwneJ1zXaV6cRG2cSq1wxKroCqfNMWpxsbAdrfebe01Xv+Xjr6sYaD0anfGh2coeA==
+    size: 117453533
+path: https://github.com/witsa/synapps/releases/download/1.8.0/synapps-studio-setup-1.8.0.exe
+sha512: Y2TsYBqyhKbOyN9XGLhObTwneJ1zXaV6cRG2cSq1wxKroCqfNMWpxsbAdrfebe01Xv+Xjr6sYaD0anfGh2coeA==
+releaseDate: '2026-10-13T13:42:57.698Z'
