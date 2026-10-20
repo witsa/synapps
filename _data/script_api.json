@@ -2370,7 +2370,7 @@
      "description": "Distance maximale entre les deux valeurs du curseur.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
-     "type": "number | null",
+     "type": "number ou null",
      "default": "null"
     },
     {
@@ -2379,7 +2379,7 @@
      "description": "Distance minimale entre les deux valeurs du curseur.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
-     "type": "number | null",
+     "type": "number ou null",
      "default": "null"
     },
     {
@@ -2388,7 +2388,7 @@
      "description": "Pas entre deux mouvements du curseur.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
-     "type": "number | null",
+     "type": "number ou null",
      "default": "null"
     },
     {
@@ -4329,7 +4329,7 @@
      "description": "Image pour faux.\n**Modificateur :** `resize`.",
      "section": "specifics",
      "values": null,
-     "type": "string | null",
+     "type": "string ou null",
      "default": "null"
     },
     {
@@ -4338,7 +4338,7 @@
      "description": "Image pour vrai.\nURL ou DataURI.\n**Modificateur :** `resize`.",
      "section": "specifics",
      "values": null,
-     "type": "string | null",
+     "type": "string ou null",
      "default": "null"
     },
     {
@@ -7066,7 +7066,7 @@
      "name": "cursor",
      "kind": "champ",
      "signature": "cursor",
-     "type": "Object|null",
+     "type": "Object ou null",
      "readonly": true,
      "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
      "params": []
@@ -7075,7 +7075,7 @@
      "name": "dataColumns",
      "kind": "champ",
      "signature": "dataColumns",
-     "type": "Array<{key: string, type: string}>|undefined",
+     "type": "Array<{key: string, type: string}> ou undefined",
      "readonly": true,
      "description": "Colonnes du résultat (`data.columns`) : nom (`key`) et type (`type`) de chacune.",
      "params": []
@@ -7093,7 +7093,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -7120,7 +7120,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -7246,7 +7246,7 @@
      "context": [
       {
        "name": "cursor",
-       "type": "Object|null",
+       "type": "Object ou null",
        "description": "Le curseur"
       },
       {
@@ -7262,7 +7262,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -7353,7 +7353,7 @@
      "description": "Le curseur de requête SQL à exécuter par le pilote REDY.",
      "section": "specifics",
      "values": null,
-     "type": "string | null",
+     "type": "string ou null",
      "default": "null"
     }
    ],
@@ -7371,7 +7371,7 @@
      "name": "cursor",
      "kind": "champ",
      "signature": "cursor",
-     "type": "Object|null",
+     "type": "Object ou null",
      "readonly": true,
      "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
      "params": []
@@ -7389,7 +7389,7 @@
      "name": "dataColumns",
      "kind": "champ",
      "signature": "dataColumns",
-     "type": "Array<{key: string, type: string}>|undefined",
+     "type": "Array<{key: string, type: string}> ou undefined",
      "readonly": true,
      "description": "Colonnes du résultat (`data.columns`) : nom (`key`) et type (`type`) de chacune.",
      "params": []
@@ -7407,7 +7407,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -7452,7 +7452,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -7530,7 +7530,7 @@
      "context": [
       {
        "name": "cursor",
-       "type": "Object|null",
+       "type": "Object ou null",
        "description": "Le curseur"
       },
       {
@@ -7546,7 +7546,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -7602,7 +7602,7 @@
      "description": "Le curseur d'instruction SQL à exécuter par le pilote REDY.",
      "section": "specifics",
      "values": null,
-     "type": "string | null",
+     "type": "string ou null",
      "default": "null"
     },
     {
@@ -7632,7 +7632,7 @@
      "name": "cursor",
      "kind": "champ",
      "signature": "cursor",
-     "type": "Object|null",
+     "type": "Object ou null",
      "readonly": true,
      "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
      "params": []
@@ -7650,7 +7650,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -7695,7 +7695,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -7755,7 +7755,7 @@
      "context": [
       {
        "name": "cursor",
-       "type": "Object|null",
+       "type": "Object ou null",
        "description": "Le curseur"
       },
       {
@@ -7771,7 +7771,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -7942,7 +7942,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -7969,7 +7969,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -8011,7 +8011,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -8190,7 +8190,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -8217,7 +8217,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -8286,7 +8286,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -8511,7 +8511,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -8538,7 +8538,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -8580,7 +8580,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -8689,7 +8689,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -8734,7 +8734,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -8785,7 +8785,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -8892,7 +8892,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -8937,7 +8937,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -9010,7 +9010,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -9026,7 +9026,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -9244,7 +9244,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -9271,7 +9271,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -9324,7 +9324,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -9437,7 +9437,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -9464,7 +9464,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -9517,7 +9517,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -9635,7 +9635,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -9662,7 +9662,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -9715,7 +9715,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -9830,7 +9830,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -9857,7 +9857,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -9910,7 +9910,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -10025,7 +10025,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -10052,7 +10052,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -10105,7 +10105,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -10220,7 +10220,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -10247,7 +10247,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -10300,7 +10300,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -10415,7 +10415,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -10442,7 +10442,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -10495,7 +10495,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -10638,7 +10638,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -10665,7 +10665,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -10707,7 +10707,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -10939,7 +10939,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -10966,7 +10966,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -11008,7 +11008,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -11128,7 +11128,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -11182,7 +11182,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -11242,7 +11242,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -11258,7 +11258,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -11377,7 +11377,7 @@
      "name": "error",
      "kind": "champ",
      "signature": "error",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
      "params": []
@@ -11431,7 +11431,7 @@
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
-     "type": "String|null",
+     "type": "String ou null",
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
@@ -11491,7 +11491,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -11507,7 +11507,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
@@ -11602,7 +11602,7 @@
      "name": "dataSource",
      "kind": "champ",
      "signature": "dataSource",
-     "type": "REDY.Actor.WosVariableSource|null",
+     "type": "Fournisseur de variable ou null",
      "readonly": true,
      "description": "Obtient le fournisseur de donnée racine.",
      "params": []
@@ -11611,7 +11611,7 @@
      "name": "fieldName",
      "kind": "champ",
      "signature": "fieldName",
-     "type": "string|null",
+     "type": "string ou null",
      "readonly": true,
      "description": "Obtient l'attribut à fournir.",
      "params": []
@@ -11629,7 +11629,7 @@
      "name": "fullPathVariable",
      "kind": "champ",
      "signature": "fullPathVariable",
-     "type": "string|null",
+     "type": "string ou null",
      "readonly": true,
      "description": "Obtient le chemin complet sans l'attribut de la variable à fournir.",
      "params": []
@@ -11656,7 +11656,7 @@
      "name": "parentSource",
      "kind": "champ",
      "signature": "parentSource",
-     "type": "REDY.Actor.WosVariableSource|REDY.Actor.ResourceSource|REDY.Actor.WosRelativeVariableSource|null",
+     "type": "Fournisseur de variable ou Fournisseur de ressource ou Fournisseur relatif de variable ou null",
      "readonly": true,
      "description": "Obtient le fournisseur parent.",
      "params": []
@@ -11691,7 +11691,7 @@
      "context": [
       {
        "name": "error",
-       "type": "String|Object|null",
+       "type": "String ou Object ou null",
        "description": "Une erreur éventuelle"
       },
       {
