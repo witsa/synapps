@@ -1,6 +1,7 @@
 ---
 title: "Fournisseur de variable"
 parent: "REDY"
+api_type: redy/data-source/wos-variable
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.WosVariableSource" %}
@@ -17,94 +18,31 @@ L'acteur sert de fournisseur de base aux éventuels [fournisseurs de variable re
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
 
-## Chemin
-
-Cette propriété va contenir un *chemin* vers la variable à récupérer. C'est un chemin au sens REDY, par ex : `:easy.RESS.R00001` ou même `:easy.RESS.R00001.Output`.
-
-Un explorateur de paramétrage de REDY aide à saisir le chemin.
-
-![SynApps](../../assets/concepts/actor/redy-variable-source/sample-01.gif)
-
-
-## Champ de Variable REDY
-
-Par défaut, c'est la variable toute entière qui est récupérée et placée dans le champ *Donnée*. Si vous voulez récupérer une partie de la variable, vous pouvez indiquer le nom du champ à récupérer parmi les possibilités suivantes :
-- **Label** Le label REDY de la variable du REDY. Par exemple : `R00003` ou `RunCount`.
-- **Nom** Le nom de la variable REDY. Par exemple : `Compteur 1`.
-- **Value** La valeur de la variable. Par exemple : `true`, `"un texte"` ou bien `23` en fonction du type de la variable.
-- **État** L'état si la variable est une ressource. Ce sera le texte de l'état comme défini dans le REDY. Par exemple : `"Veille"`, `"En Marche"`.
-- **Chemin** Le chemin entier de la variable REDY. Par exemple : `:easy.RESS.R00001` ou même `:easy.RESS.R00001.Output`.
-- **ID** L'ID interne de la variable REDY.
-- **Date** La date de la dernière mise à jour de la variable REDY.
-- **ID de classe** L'ID de la classe de la variable REDY.
-- **URL de l'icône** L'URL de l'icône de la variable REDY. Directement exploitable par exemple dans une liaison vers un [acteur image](../display/image.md).
-- **Lecture?** Si la variable est accessible par l'utilisateur actuelle en lecture. Tiens compte des groupes et du du niveau de l'utilisateur.
-- **Écriture?** Si la variable est accessible par l'utilisateur actuelle en écriture. Tiens compte des groupes et du du niveau de l'utilisateur.
-- **Nombre d'enfant** Le nombre d'enfant de la variable REDY.
-- **Enfants** Le liste des enfants de la variable REDY.
-
-Choisissez *Valeur* si vous voulez écrire dans ce champ. Ainsi, en vous liant avec l'écriture activée à la donnée de l'acteur, vous pourrez écrire dans la variable REDY et envoyer cette valeur automatiquement si la propriété *Écriture au changement* est activée. Sinon par script.
-
-## Mode
-
-Cette propriété permet de définir le comportement de l'acteur à son arrivée dans la scène ou lorsque le *chemin* ou le *champ* de la variable cible sont modifiés.
-
-- **Automatique** Si toutes les conditions sons réunis, l'acteur va récupérer automatiquement la variable et la placer elle ou le *champ* dans la *donnée*.
-- **Manuel** L'acteur attend qu'on change de *mode* ou qu'un script le demande pour récupérer la variable et la placer elle ou le *champ* dans la *donnée*.
-- **Relatif** L'acteur se comportera comme dans le mode automatique dès qu'il a des [fournisseurs de variable relative](./wos-relative-variable-source.md) ou liaisons de type [fournisseur de variable](../../binding.md#fournisseur-de-variable) qui pointent dessus.
-
-Dans tous les cas, ceci est complètement indépendant du mode de rafraîchissement de l'acteur.
-
-## Auto rafraîchissement?
-
-Cette propriété active/désactive l'auto rafraîchissement de la variable ciblée.
-
-## Délai de rafraîchissement
-
-Cette propriété définit le délai de rafraîchissement (en seconde) de la variable ciblée lorsque l'auto rafraîchissement est activé.
-
-
-> ✔️ **CONSEIL**<br>
-> Évitez de définir des délais de rafraîchissement trop court. En dessous de 10 secondes, il faut vraiment s'interroger sur la pertinence d'un tel choix.
-
-## Écriture au changement?
-
-Cette propriété active/désactive l'enregistrement de la valeur d'une variable dans le REDY si la *donnée* est modifiée par liaison ou par script. Il bien entendu que le ce soit le *champ* ***Valeur*** qui soit inscrit dans la donnée.
-
-# Événements
-
-## `onRequestDone`
-
-L'évènement `onRequestDone` est déclenché à chaque fois que l'acteur a réaliser une requête pour obtenir ou rafraîchir la variable et le champ souhaité.
-
-> [⚡ `onRequestDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosVariableSource.html#event:onRequestDone){:target="_blank"}
-
-## `onWriteDone`
-
-L'évènement `onWriteDone` est déclenché à chaque fois que l'acteur a réaliser une écriture vers le REDY.
-
-> [⚡ `onWriteDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosVariableSource.html#event:onWriteDone){:target="_blank"}
+{% include script_api/properties.md type=page.api_type %}
 
 # Informations
 
-## Donnée
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-Vous trouverez dans ce champ la variable ou le champ de variable désigné par l'acteur.
+{% include script_api/fields.md type=page.api_type %}
 
-Une liaison avec l'écriture activée permet de modifier la valeur de la variable REDY si l'acteur la désigne.
+# Méthodes
 
-## Requête en cours ?
+{% include script_api/methods.md type=page.api_type %}
 
-Cette information permet de savoir si l'acteur est en train de réaliser une requête.
+# Événements
 
-> 💡 **ASTUCE**<br>
-Liez la visibilité d'une acteur sur cette information pour le visualiser lorsqu'il est en train de réaliser une requête.
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/actor/).
 
-## Première requête réalisée ?
+{% include script_api/events.md type=page.api_type %}
 
-Cette information sera vrai après avoir effectuer une première requête.
+# Hérite de
+
+{% include script_api/inherits.md type=page.api_type %}
 
 # Usage
 

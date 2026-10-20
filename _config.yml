@@ -53,6 +53,7 @@ collections:
   - input_nav_button_properties
   - input_button_list_properties
   - input_cursor_properties
+  - api_notes
 
 plugins:
   - jekyll-include-cache
