@@ -216,7 +216,7 @@
    {
     "name": "horizontalAlignment",
     "label": "Alignement horizontal",
-    "description": "Alignement horizontale dans un [acteur empilement]{@link Actor.Layout.Stack} ou [acteur boite à vue]{@link Actor.Layout.ViewBox}.\n**Modificateur :** `resize`.\n\n**Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`",
+    "description": "Alignement horizontale dans un acteur empilement ou acteur boite à vue.\n**Modificateur :** `resize`.\n\n**Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`",
     "section": "layout",
     "values": [
      "auto",
@@ -255,7 +255,7 @@
    {
     "name": "animation",
     "label": "Animation",
-    "description": "Animation. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/animation}\n\n**Modificateur :** `css`.",
+    "description": "Animation. Voir information ici\n\n**Modificateur :** `css`.",
     "section": "effects",
     "values": null,
     "type": "string",
@@ -264,7 +264,7 @@
    {
     "name": "backgroundAttachment",
     "label": "Attachement du fond",
-    "description": "Attachement du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-attachment}\n  *\n**Modificateur :** `css`.",
+    "description": "Attachement du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
     "section": "aspect",
     "values": null,
     "type": "string",
@@ -318,7 +318,7 @@
    {
     "name": "borderRadius",
     "label": "Courbure des coins",
-    "description": "Arrondissement des coins.  Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/border-radius}\n**Modificateur :** `css`.",
+    "description": "Arrondissement des coins.  Voir information ici\n**Modificateur :** `css`.",
     "section": "borders",
     "values": null,
     "type": "string",
@@ -327,7 +327,7 @@
    {
     "name": "cursor",
     "label": "Curseur",
-    "description": "Curseur souris. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/cursor}\n\n> Attention au limitation de taille pour les images : maximum 126x126\n\n**Modificateur :** `css`.",
+    "description": "Curseur souris. Voir information ici\n\n> Attention au limitation de taille pour les images : maximum 126x126\n\n**Modificateur :** `css`.",
     "section": "effects",
     "values": null,
     "type": "string",
@@ -354,7 +354,7 @@
    {
     "name": "borderWidth",
     "label": "Épaisseur de la bordure",
-    "description": "Épaisseur de bordure. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/border-width}\n**Modificateur :** `resize`.",
+    "description": "Épaisseur de bordure. Voir information ici\n**Modificateur :** `resize`.",
     "section": "borders",
     "values": null,
     "type": "string",
@@ -363,7 +363,7 @@
    {
     "name": "fontFamily",
     "label": "Famille",
-    "description": "Police du texte. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/font-family}\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Police du texte. Voir information ici\n**Modificateur :** `resize`.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
@@ -372,7 +372,7 @@
    {
     "name": "filter",
     "label": "Filtre",
-    "description": "Filtre. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/filter}\n  *\n**Modificateur :** `css`.",
+    "description": "Filtre. Voir information ici\n  *\n**Modificateur :** `css`.",
     "section": "effects",
     "values": null,
     "type": "string",
@@ -417,7 +417,7 @@
    {
     "name": "backgroundImage",
     "label": "Image de fond",
-    "description": "Image de fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-image}\n  *\n**Modificateur :** `css`.",
+    "description": "Image de fond. Voir information ici\n  *\n**Modificateur :** `css`.",
     "section": "aspect",
     "values": null,
     "type": "string",
@@ -525,7 +525,7 @@
    {
     "name": "boxShadow",
     "label": "Ombre portée",
-    "description": "Ombre portée. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow}\n**Modificateur :** `css`.",
+    "description": "Ombre portée. Voir information ici\n**Modificateur :** `css`.",
     "section": "borders",
     "values": null,
     "type": "string",
@@ -543,7 +543,7 @@
    {
     "name": "bottom",
     "label": "Position basse",
-    "description": "Position verticale depuis le bas dans un [acteur toile]{@link Actor.Layout.Canvas}.\n**Modificateur :** `css`.",
+    "description": "Position verticale depuis le bas dans un acteur toile.\n**Modificateur :** `css`.",
     "section": "layout",
     "values": null,
     "type": "string",
@@ -552,7 +552,7 @@
    {
     "name": "right",
     "label": "Position droite",
-    "description": "Position horizontale depuis la droite dans un [acteur toile]{@link Actor.Layout.Canvas}.\n**Modificateur :** `css`.",
+    "description": "Position horizontale depuis la droite dans un acteur toile.\n**Modificateur :** `css`.",
     "section": "layout",
     "values": null,
     "type": "string",
@@ -561,7 +561,7 @@
    {
     "name": "backgroundPosition",
     "label": "Position du fond",
-    "description": "Position du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-position}\n  *\n**Modificateur :** `css`.",
+    "description": "Position du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
     "section": "aspect",
     "values": null,
     "type": "string",
@@ -570,7 +570,7 @@
    {
     "name": "left",
     "label": "Position gauche",
-    "description": "Position horizontale depuis la gauche dans un [acteur toile]{@link Actor.Layout.Canvas}.\n**Modificateur :** `css`.",
+    "description": "Position horizontale depuis la gauche dans un acteur toile.\n**Modificateur :** `css`.",
     "section": "layout",
     "values": null,
     "type": "string",
@@ -579,7 +579,7 @@
    {
     "name": "top",
     "label": "Position haute",
-    "description": "Position verticale depuis le haut dans un [acteur toile]{@link Actor.Layout.Canvas}.\n**Modificateur :** `css`.",
+    "description": "Position verticale depuis le haut dans un acteur toile.\n**Modificateur :** `css`.",
     "section": "layout",
     "values": null,
     "type": "string",
@@ -588,7 +588,7 @@
    {
     "name": "backgroundRepeat",
     "label": "Repetition du fond",
-    "description": "Répétition du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-repeat}\n  *\n**Modificateur :** `css`.",
+    "description": "Répétition du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
     "section": "aspect",
     "values": null,
     "type": "string",
@@ -633,7 +633,7 @@
    {
     "name": "backgroundSize",
     "label": "Taille du fond",
-    "description": "Taille du fond. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/background-size}\n  *\n**Modificateur :** `css`.",
+    "description": "Taille du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
     "section": "aspect",
     "values": null,
     "type": "string",
@@ -642,7 +642,7 @@
    {
     "name": "transition",
     "label": "Transition",
-    "description": "Transition. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/transition}\n\n**Modificateur :** `css`.",
+    "description": "Transition. Voir information ici\n\n**Modificateur :** `css`.",
     "section": "effects",
     "values": null,
     "type": "string",
@@ -687,7 +687,7 @@
    {
     "name": "zIndex",
     "label": "Z-Index",
-    "description": "Z-index. Voir information [ici]{@link https://developer.mozilla.org/fr/docs/Web/CSS/z-index}\n\nRester entre -9 et 4999 (-10 et 5000 sont réservés aux modales)\n**Modificateur :** `css`.",
+    "description": "Z-index. Voir information ici\n\nRester entre -9 et 4999 (-10 et 5000 sont réservés aux modales)\n**Modificateur :** `css`.",
     "section": "effects",
     "values": null,
     "type": "string",
@@ -1026,6 +1026,9 @@
    "type": "layout/canvas",
    "name": "Empilement",
    "family": "layout",
+   "note_types": [
+    "layout/canvas"
+   ],
    "properties": [
     {
      "name": "overflowX",
@@ -1144,6 +1147,9 @@
    "type": "layout/view-box",
    "name": "Toile",
    "family": "layout",
+   "note_types": [
+    "layout/view-box"
+   ],
    "properties": [
     {
      "name": "overflowX",
@@ -1250,6 +1256,9 @@
    "type": "layout/modal",
    "name": "Boite à vue",
    "family": "layout",
+   "note_types": [
+    "layout/modal"
+   ],
    "properties": [
     {
      "name": "overflowX",
@@ -1378,6 +1387,9 @@
    "type": "display/text",
    "name": "Texte",
    "family": "display",
+   "note_types": [
+    "display/text"
+   ],
    "properties": [
     {
      "name": "content",
@@ -1404,6 +1416,9 @@
    "type": "display/html",
    "name": "Html",
    "family": "display",
+   "note_types": [
+    "display/html"
+   ],
    "properties": [
     {
      "name": "content",
@@ -1430,6 +1445,9 @@
    "type": "display/image",
    "name": "Image",
    "family": "display",
+   "note_types": [
+    "display/image"
+   ],
    "properties": [
     {
      "name": "content",
@@ -1450,10 +1468,13 @@
    "type": "display/screen",
    "name": "Écran",
    "family": "display",
+   "note_types": [
+    "display/screen"
+   ],
    "properties": [
     {
      "name": "overflowX",
-     "label": null,
+     "label": "Dépassement Horizontal",
      "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
      "section": "specifics",
      "values": [
@@ -1467,7 +1488,7 @@
     },
     {
      "name": "overflowY",
-     "label": null,
+     "label": "Dépassement Vertical",
      "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
      "section": "specifics",
      "values": [
@@ -1520,6 +1541,9 @@
    "type": "display/iframe",
    "name": "IFrame",
    "family": "display",
+   "note_types": [
+    "display/iframe"
+   ],
    "properties": [
     {
      "name": "allowTopNavigation",
@@ -1609,10 +1633,13 @@
    "type": "display/composite-view",
    "name": "Vue de composite",
    "family": "display",
+   "note_types": [
+    "display/composite-view"
+   ],
    "properties": [
     {
      "name": "overflowX",
-     "label": null,
+     "label": "Dépassement Horizontal",
      "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
      "section": "specifics",
      "values": [
@@ -1626,7 +1653,7 @@
     },
     {
      "name": "overflowY",
-     "label": null,
+     "label": "Dépassement Vertical",
      "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
      "section": "specifics",
      "values": [
@@ -1724,6 +1751,9 @@
    "type": "display/data-table",
    "name": "Tableau de données",
    "family": "display",
+   "note_types": [
+    "display/data-table"
+   ],
    "properties": [
     {
      "name": "columns",
@@ -1867,6 +1897,9 @@
    "type": "display/data-table-cell",
    "name": "Cellule de tableau de données",
    "family": "display",
+   "note_types": [
+    "display/data-table-cell"
+   ],
    "properties": [
     {
      "name": "displayText",
@@ -2059,6 +2092,9 @@
    "type": "input/button",
    "name": "Bouton",
    "family": "input",
+   "note_types": [
+    "input/button"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -2165,6 +2201,9 @@
    "type": "input/button-list",
    "name": "Liste de boutons",
    "family": "input",
+   "note_types": [
+    "input/button-list"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -2220,7 +2259,7 @@
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'[options]{@link JSON.Option}.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -2276,6 +2315,9 @@
    "type": "input/cursor",
    "name": "Curseur",
    "family": "input",
+   "note_types": [
+    "input/cursor"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -2455,6 +2497,10 @@
    "type": "input/period",
    "name": "Périodes",
    "family": "input",
+   "note_types": [
+    "input/period",
+    "input/button-list"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -2510,7 +2556,7 @@
     {
      "name": "options",
      "label": "Périodes présentes",
-     "description": "Chaîne `JSON` contenant un tableau de clé des périodes à afficher {@link Array.<string>}.\n\n**Modificateur :** `other`.\n\nPossibilités parmi :\n- `'all'`\n- `'today'`\n- `'last24'`\n- `'week'`\n- `'weekprevious'`\n- `'month'`\n- `'monthprevious'`\n- `'year'`\n- `'yearprevious'`",
+     "description": "Chaîne `JSON` contenant un tableau de clé des périodes à afficher `Array.<string>`.\n\n**Modificateur :** `other`.\n\nPossibilités parmi :\n- `'all'`\n- `'today'`\n- `'last24'`\n- `'week'`\n- `'weekprevious'`\n- `'month'`\n- `'monthprevious'`\n- `'year'`\n- `'yearprevious'`",
      "section": "specifics",
      "values": [
       "all",
@@ -2581,6 +2627,10 @@
    "type": "input/nav-button",
    "name": "Bouton de navigation",
    "family": "input",
+   "note_types": [
+    "input/nav-button",
+    "input/button"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -2594,7 +2644,7 @@
     {
      "name": "screenActorKey",
      "label": "Clé de l'acteur écran",
-     "description": "Clé de l'acteur [écran]{@link Actor.Display.Screen} à afficher.\n**Modificateur :** `render`.",
+     "description": "Clé de l'acteur écran à afficher.\n**Modificateur :** `render`.",
      "section": "specifics",
      "values": null,
      "type": "clé d'acteur",
@@ -2710,6 +2760,9 @@
    "type": "layout/nav-group",
    "name": "Groupe de navigation",
    "family": "input",
+   "note_types": [
+    "layout/nav-group"
+   ],
    "properties": [
     {
      "name": "groupBackgroundColor",
@@ -2866,6 +2919,9 @@
    "type": "layout/navbar",
    "name": "Barre de navigation",
    "family": "input",
+   "note_types": [
+    "layout/navbar"
+   ],
    "properties": [
     {
      "name": "isHeaderDisplayed",
@@ -3040,6 +3096,9 @@
    "type": "layout/navbar-group",
    "name": "Groupe de barre de navigation",
    "family": "input",
+   "note_types": [
+    "layout/navbar-group"
+   ],
    "properties": [
     {
      "name": "groupBackgroundColor",
@@ -3223,6 +3282,10 @@
    "type": "input/menu-button",
    "name": "Bouton Menu",
    "family": "input",
+   "note_types": [
+    "input/menu-button",
+    "input/button"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -3375,6 +3438,9 @@
    "type": "input/text-box",
    "name": "Boite de saisie",
    "family": "input",
+   "note_types": [
+    "input/text-box"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -3447,7 +3513,7 @@
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau de texte à proposer {@link Array.<String>}.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau de texte à proposer `Array.<String>`.\n\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3456,7 +3522,7 @@
     {
      "name": "step",
      "label": "Pas entre deux valeurs",
-     "description": "Pas entre deux valeurs ou heures.\nValable pour les [types]{@link Actor.Input.TextBoxProperties#inputType} sauf `'number'`, `'range'` et `'time'`.\nPour 'time', une valeur exprimée en seconde inférieure à 60 indique que les secondes sont à saisir.\n**Modificateur :** `other`.",
+     "description": "Pas entre deux valeurs ou heures.\nValable pour les types sauf `'number'`, `'range'` et `'time'`.\nPour 'time', une valeur exprimée en seconde inférieure à 60 indique que les secondes sont à saisir.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3478,7 +3544,7 @@
     {
      "name": "placeHolder",
      "label": "Texte si vide",
-     "description": "Chaîne de remplacement lorsque l'acteur est vide.\nValable uniquement pour les [types]{@link Actor.Input.TextBoxProperties#inputType}  `'text'`, `'password'` et `'number'`\n**Modificateur :** `other`.",
+     "description": "Chaîne de remplacement lorsque l'acteur est vide.\nValable uniquement pour les types  `'text'`, `'password'` et `'number'`\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3513,7 +3579,7 @@
     {
      "name": "max",
      "label": "Valeur max",
-     "description": "Valeur ou date ou heure maximale.\nValable pour tous les [types]{@link Actor.Input.TextBoxProperties#inputType} sauf `'text'`, `'color'` et `'password'`\n**Modificateur :** `other`.",
+     "description": "Valeur ou date ou heure maximale.\nValable pour tous les types sauf `'text'`, `'color'` et `'password'`\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3522,7 +3588,7 @@
     {
      "name": "min",
      "label": "Valeur min",
-     "description": "Valeur ou date ou heure minimale.\nValable pour tous les [types]{@link Actor.Input.TextBoxProperties#inputType} sauf `'text'`, `'color'` et `'password'`\n**Modificateur :** `other`.",
+     "description": "Valeur ou date ou heure minimale.\nValable pour tous les types sauf `'text'`, `'color'` et `'password'`\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3544,6 +3610,9 @@
    "type": "input/text-area",
    "name": "Zone de texte",
    "family": "input",
+   "note_types": [
+    "input/text-area"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -3655,6 +3724,9 @@
    "type": "input/checkbox",
    "name": "Case à cocher",
    "family": "input",
+   "note_types": [
+    "input/checkbox"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -3743,6 +3815,9 @@
    "type": "input/checkbox-list",
    "name": "Liste de cases à cocher",
    "family": "input",
+   "note_types": [
+    "input/checkbox-list"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -3810,7 +3885,7 @@
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'[options]{@link JSON.Option}.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3819,7 +3894,7 @@
     {
      "name": "values",
      "label": "Selection",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées {@link Array.<String>}.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3850,7 +3925,7 @@
     {
      "name": "allIsNull",
      "label": "Tout est la valeur vide?",
-     "description": "Tout sélectionné se traduit-il par la valeur `null` dans [properties.values]{@link Actor.Input.CheckboxListProperties#values} ?\n**Modificateur :** `other`.",
+     "description": "Tout sélectionné se traduit-il par la valeur `null` dans properties.values ?\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
@@ -3884,6 +3959,9 @@
    "type": "input/dropdown-list",
    "name": "Liste de choix déroulante",
    "family": "input",
+   "note_types": [
+    "input/dropdown-list"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -3919,7 +3997,7 @@
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'[options]{@link JSON.Option}.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3950,7 +4028,7 @@
     {
      "name": "emptyText",
      "label": "Texte pour vide",
-     "description": "Texte de l'option vide.\n\nValable lorsque [hasEmptyValue]{@link Actor.Input.DropdownListProperties#hasEmptyValue} est à `true`.\n**Modificateur :** `other`.",
+     "description": "Texte de l'option vide.\n\nValable lorsque hasEmptyValue est à `true`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -3959,7 +4037,7 @@
     {
      "name": "placeHolder",
      "label": "Texte si vide",
-     "description": "Chaîne de remplacement lorsque l'option vide est sélectionnée.\n\nValable lorsque [hasEmptyValue]{@link Actor.Input.DropdownListProperties#hasEmptyValue} est à `true`.\n**Modificateur :** `other`.",
+     "description": "Chaîne de remplacement lorsque l'option vide est sélectionnée.\n\nValable lorsque hasEmptyValue est à `true`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -4002,6 +4080,9 @@
    "type": "input/radio-list",
    "name": "Liste de choix",
    "family": "input",
+   "note_types": [
+    "input/radio-list"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -4037,7 +4118,7 @@
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'[options]{@link JSON.Option}.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -4093,6 +4174,9 @@
    "type": "input/switch-button",
    "name": "Bouton interrupteur",
    "family": "input",
+   "note_types": [
+    "input/switch-button"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -4226,6 +4310,9 @@
    "type": "input/switch-image",
    "name": "Images interrupteur",
    "family": "input",
+   "note_types": [
+    "input/switch-image"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -4303,6 +4390,9 @@
    "type": "technical/led",
    "name": "LED",
    "family": "technical",
+   "note_types": [
+    "technical/led"
+   ],
    "properties": [
     {
      "name": "isBlinking",
@@ -4341,6 +4431,9 @@
    "type": "technical/ternary",
    "name": "Ternaire",
    "family": "technical",
+   "note_types": [
+    "technical/ternary"
+   ],
    "properties": [
     {
      "name": "isBlinkingFault",
@@ -4514,6 +4607,9 @@
    "type": "technical/multi-position",
    "name": "Multi positions",
    "family": "technical",
+   "note_types": [
+    "technical/multi-position"
+   ],
    "properties": [
     {
      "name": "displayText",
@@ -4840,6 +4936,9 @@
    "type": "technical/boiler",
    "name": "Chaudière",
    "family": "technical",
+   "note_types": [
+    "technical/boiler"
+   ],
    "properties": [
     {
      "name": "isFault",
@@ -4852,7 +4951,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -4905,6 +5004,9 @@
    "type": "technical/burner",
    "name": "Brûleur",
    "family": "technical",
+   "note_types": [
+    "technical/burner"
+   ],
    "properties": [
     {
      "name": "isFaultReachSP",
@@ -4926,7 +5028,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -4962,6 +5064,9 @@
    "type": "technical/double-pump",
    "name": "Pompe double",
    "family": "technical",
+   "note_types": [
+    "technical/double-pump"
+   ],
    "properties": [
     {
      "name": "mode",
@@ -4977,7 +5082,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5048,10 +5153,13 @@
    "type": "technical/exchanger",
    "name": "Échangeur",
    "family": "technical",
+   "note_types": [
+    "technical/exchanger"
+   ],
    "properties": [
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5073,6 +5181,9 @@
    "type": "technical/pipe",
    "name": "Tuyau",
    "family": "technical",
+   "note_types": [
+    "technical/pipe"
+   ],
    "properties": [
     {
      "name": "kindColor",
@@ -5145,7 +5256,19 @@
    "type": "technical/single-pump",
    "name": "Pompe simple",
    "family": "technical",
+   "note_types": [
+    "technical/single-pump"
+   ],
    "properties": [
+    {
+     "name": "isFault",
+     "label": "En défaut?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false"
+    },
     {
      "name": "isRunning",
      "label": "En marche?",
@@ -5156,17 +5279,8 @@
      "default": "false"
     },
     {
-     "name": "isFault",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false"
-    },
-    {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5188,6 +5302,9 @@
    "type": "technical/tank",
    "name": "Ballon",
    "family": "technical",
+   "note_types": [
+    "technical/tank"
+   ],
    "properties": [
     {
      "name": "orientation",
@@ -5213,10 +5330,13 @@
    "type": "technical/valve-2-ports",
    "name": "Vanne 2 voies",
    "family": "technical",
+   "note_types": [
+    "technical/valve-2-ports"
+   ],
    "properties": [
     {
      "name": "isFault",
-     "label": null,
+     "label": "En défaut?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -5225,7 +5345,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5283,10 +5403,13 @@
    "type": "technical/valve-3-ports",
    "name": "Vanne 3 voies",
    "family": "technical",
+   "note_types": [
+    "technical/valve-3-ports"
+   ],
    "properties": [
     {
      "name": "isFault",
-     "label": null,
+     "label": "En défaut?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -5295,7 +5418,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5326,6 +5449,9 @@
    "type": "technical/arrow",
    "name": "Flèche",
    "family": "technical",
+   "note_types": [
+    "technical/arrow"
+   ],
    "properties": [
     {
      "name": "customColor",
@@ -5338,7 +5464,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5373,6 +5499,9 @@
    "type": "technical/battery",
    "name": "Batterie",
    "family": "technical",
+   "note_types": [
+    "technical/battery"
+   ],
    "properties": [
     {
      "name": "airBatteryColor",
@@ -5416,7 +5545,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5450,10 +5579,13 @@
    "type": "technical/sensor",
    "name": "Capteur",
    "family": "technical",
+   "note_types": [
+    "technical/sensor"
+   ],
    "properties": [
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5475,6 +5607,9 @@
    "type": "technical/sensor-antifreeze",
    "name": "Capteur antigel",
    "family": "technical",
+   "note_types": [
+    "technical/sensor-antifreeze"
+   ],
    "properties": [
     {
      "name": "isFrozen",
@@ -5487,7 +5622,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5509,6 +5644,9 @@
    "type": "technical/duct",
    "name": "Gaine de ventilation",
    "family": "technical",
+   "note_types": [
+    "technical/duct"
+   ],
    "properties": [
     {
      "name": "isEdge",
@@ -5521,7 +5659,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5565,6 +5703,9 @@
    "type": "technical/bypass",
    "name": "Bypass",
    "family": "technical",
+   "note_types": [
+    "technical/bypass"
+   ],
    "properties": [
     {
      "name": "mode",
@@ -5606,6 +5747,9 @@
    "type": "technical/register",
    "name": "Registre de ventilation",
    "family": "technical",
+   "note_types": [
+    "technical/register"
+   ],
    "properties": [
     {
      "name": "mode",
@@ -5621,7 +5765,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5661,6 +5805,9 @@
    "type": "technical/filter",
    "name": "Filtre",
    "family": "technical",
+   "note_types": [
+    "technical/filter"
+   ],
    "properties": [
     {
      "name": "cleanColor",
@@ -5682,7 +5829,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5713,6 +5860,9 @@
    "type": "technical/humidifier",
    "name": "Humidificateur",
    "family": "technical",
+   "note_types": [
+    "technical/humidifier"
+   ],
    "properties": [
     {
      "name": "isActive",
@@ -5734,7 +5884,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5754,6 +5904,9 @@
    "type": "technical/adiabatic-module",
    "name": null,
    "family": "technical",
+   "note_types": [
+    "technical/adiabatic-module"
+   ],
    "properties": [
     {
      "name": "isDefault",
@@ -5775,7 +5928,7 @@
     },
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -5797,6 +5950,9 @@
    "type": "technical/motor",
    "name": "Moteur",
    "family": "technical",
+   "note_types": [
+    "technical/motor"
+   ],
    "properties": [
     {
      "name": "isDefault",
@@ -5859,6 +6015,9 @@
    "type": "technical/motor-axial",
    "name": "Moteur axial",
    "family": "technical",
+   "note_types": [
+    "technical/motor-axial"
+   ],
    "properties": [
     {
      "name": "isDefault",
@@ -5921,6 +6080,9 @@
    "type": "technical/cta-exchanger",
    "name": "Échangeur",
    "family": "technical",
+   "note_types": [
+    "technical/cta-exchanger"
+   ],
    "properties": [
     {
      "name": "colorBottomRight",
@@ -5982,6 +6144,9 @@
    "type": "technical/wheel",
    "name": "Roue",
    "family": "technical",
+   "note_types": [
+    "technical/wheel"
+   ],
    "properties": [
     {
      "name": "isRunning",
@@ -6023,6 +6188,9 @@
    "type": "charting/gauge-demo",
    "name": "Jauge",
    "family": "charting",
+   "note_types": [
+    "charting/gauge-demo"
+   ],
    "properties": [
     {
      "name": "gaugeBackgroundColor",
@@ -6115,6 +6283,9 @@
    "type": "redy/agenda",
    "name": "Agenda",
    "family": "redy-apps",
+   "note_types": [
+    "redy/agenda"
+   ],
    "properties": [
     {
      "name": "withSidebar",
@@ -6166,6 +6337,9 @@
    "type": "redy/graphics",
    "name": "Graphique",
    "family": "redy-apps",
+   "note_types": [
+    "redy/graphics"
+   ],
    "properties": [
     {
      "name": "allowEdit",
@@ -6222,6 +6396,9 @@
    "type": "redy/synoptic",
    "name": "Synoptique",
    "family": "redy-apps",
+   "note_types": [
+    "redy/synoptic"
+   ],
    "properties": [
     {
      "name": "synopticPath",
@@ -6242,6 +6419,9 @@
    "type": "redy/collection-filter",
    "name": "Filtre d'ensemble",
    "family": "redy-filters",
+   "note_types": [
+    "redy/collection-filter"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -6278,7 +6458,7 @@
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées {@link Array.<String>}.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -6327,6 +6507,9 @@
    "type": "redy/device-filter",
    "name": "Filtre d'équipement",
    "family": "redy-filters",
+   "note_types": [
+    "redy/device-filter"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -6363,7 +6546,7 @@
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées {@link Array.<String>}.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -6412,6 +6595,9 @@
    "type": "redy/group-filter",
    "name": "Filtre de groupe",
    "family": "redy-filters",
+   "note_types": [
+    "redy/group-filter"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -6448,7 +6634,7 @@
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées {@link Array.<String>}.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -6497,6 +6683,9 @@
    "type": "redy/zone-filter",
    "name": "Filtre de zone",
    "family": "redy-filters",
+   "note_types": [
+    "redy/zone-filter"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -6533,7 +6722,7 @@
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées {@link Array.<String>}.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -6582,6 +6771,9 @@
    "type": "redy/site-filter",
    "name": "Filtre de site",
    "family": "redy-filters",
+   "note_types": [
+    "redy/site-filter"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -6618,7 +6810,7 @@
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées {@link Array.<String>}.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -6667,6 +6859,9 @@
    "type": "redy/agenda-filter",
    "name": "Filtre Agenda",
    "family": "redy-filters",
+   "note_types": [
+    "redy/agenda-filter"
+   ],
    "properties": [
     {
      "name": "enabled",
@@ -6703,7 +6898,7 @@
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées {@link Array.<String>}.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
      "section": "specifics",
      "values": null,
      "type": "string",
@@ -6761,10 +6956,14 @@
    "type": "redy/cursor-table",
    "name": "Tableau de curseur",
    "family": "redy-pilot",
+   "note_types": [
+    "redy/cursor-table",
+    "display/data-table"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
-     "label": null,
+     "label": "Auto rafraîchissement",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -6772,17 +6971,8 @@
      "default": "true"
     },
     {
-     "name": "autoRefreshDelay",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "number",
-     "default": "30"
-    },
-    {
      "name": "columns",
-     "label": null,
+     "label": "Colonnes",
      "description": "Liste des colonnes du tableau.",
      "section": "specifics",
      "values": null,
@@ -6790,17 +6980,17 @@
      "default": "'[]'"
     },
     {
-     "name": "dataRows",
-     "label": null,
-     "description": "Lignes de données du tableau.",
+     "name": "autoRefreshDelay",
+     "label": "Délai rafraîchissement",
+     "description": null,
      "section": "specifics",
      "values": null,
-     "type": "string",
-     "default": "''"
+     "type": "number",
+     "default": "30"
     },
     {
      "name": "displayHeader",
-     "label": null,
+     "label": "En-tête ?",
      "description": "Indique si l'entête du tableau est visible.",
      "section": "specifics",
      "values": null,
@@ -6808,31 +6998,13 @@
      "default": "true"
     },
     {
-     "name": "displayPaging",
-     "label": null,
-     "description": "Indique si la pagination est activée.",
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "true"
-    },
-    {
-     "name": "headerStyle",
-     "label": null,
-     "description": null,
+     "name": "dataRows",
+     "label": "Lignes de données",
+     "description": "Lignes de données du tableau.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'table-cell-string-header'"
-    },
-    {
-     "name": "label",
-     "label": null,
-     "description": "Obtient les propriétés de l'acteur.",
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null"
+     "default": "''"
     },
     {
      "name": "pageMax",
@@ -6844,8 +7016,35 @@
      "default": "1"
     },
     {
+     "name": "displayPaging",
+     "label": "Pagination ?",
+     "description": "Indique si la pagination est activée.",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true"
+    },
+    {
+     "name": "label",
+     "label": "Requête SQL",
+     "description": "Obtient les propriétés de l'acteur.",
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null"
+    },
+    {
+     "name": "headerStyle",
+     "label": "Style d'en-tête",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'table-cell-string-header'"
+    },
+    {
      "name": "pageSize",
-     "label": null,
+     "label": "Taille page",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -6861,6 +7060,33 @@
      "type": "Boolean",
      "readonly": true,
      "description": "Indique si le rafraîchissement automatique est actif.",
+     "params": []
+    },
+    {
+     "name": "cursor",
+     "kind": "champ",
+     "signature": "cursor",
+     "type": "Object|null",
+     "readonly": true,
+     "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
+     "params": []
+    },
+    {
+     "name": "dataColumns",
+     "kind": "champ",
+     "signature": "dataColumns",
+     "type": "Array<{key: string, type: string}>|undefined",
+     "readonly": true,
+     "description": "Colonnes du résultat (`data.columns`) : nom (`key`) et type (`type`) de chacune.",
+     "params": []
+    },
+    {
+     "name": "dataRows",
+     "kind": "champ",
+     "signature": "dataRows",
+     "type": "Array<Object>",
+     "readonly": true,
+     "description": "Lignes du résultat sous forme d'objets, une propriété par colonne (`{ id: 1, name: 'Alice' }`).",
      "params": []
     },
     {
@@ -6907,9 +7133,27 @@
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
+    },
+    {
+     "name": "totalRows",
+     "kind": "champ",
+     "signature": "totalRows",
+     "type": "number",
+     "readonly": true,
+     "description": "Nombre total de lignes du résultat (`data.totalRows`), `0` sans donnée.",
+     "params": []
     }
    ],
    "methods": [
+    {
+     "name": "getParameters",
+     "kind": "méthode",
+     "signature": "getParameters()",
+     "type": "Object",
+     "readonly": false,
+     "description": "Paramètres envoyés au curseur : les additionnelles de l'acteur qui portent le nom d'un\nparamètre du curseur, converties en texte (`'1'` ou `'0'` pour un booléen).",
+     "params": []
+    },
     {
      "name": "refresh",
      "kind": "méthode",
@@ -6998,17 +7242,17 @@
     },
     {
      "name": "onDidGetCursor",
-     "description": null,
+     "description": "Se produit lorsque le curseur a été récupéré du REDY, avant son exécution.",
      "context": [
       {
        "name": "cursor",
-       "type": null,
-       "description": null
+       "type": "Object|null",
+       "description": "Le curseur"
       },
       {
        "name": "parameters",
-       "type": null,
-       "description": null
+       "type": "Object",
+       "description": "Les paramètres envoyés au curseur"
       }
      ]
     },
@@ -7051,6 +7295,9 @@
    "type": "redy/data-source/cursor-request",
    "name": "Fournisseur de requêtes",
    "family": "redy-pilot",
+   "note_types": [
+    "redy/data-source/cursor-request"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -7071,18 +7318,9 @@
      "default": "30"
     },
     {
-     "name": "writeOnChange",
-     "label": "Écriture au changement",
-     "description": "Écriture dès changement de la donnée activée?",
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false"
-    },
-    {
      "name": "limit",
      "label": "Limit",
-     "description": null,
+     "description": "Le nombre maximum de résultats à retourner par la requête.",
      "section": "specifics",
      "values": null,
      "type": "number",
@@ -7091,7 +7329,7 @@
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode [`request()`]{@link Actor.DataSource#request} ou [`requestDebounce()`]{@link Actor.DataSource#requestDebounce}.",
+     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode `request()` ou `requestDebounce()`.",
      "section": "specifics",
      "values": [
       "auto",
@@ -7103,7 +7341,7 @@
     {
      "name": "offset",
      "label": "Offset",
-     "description": null,
+     "description": "Le nombre de résultats à ignorer au début de la requête.",
      "section": "specifics",
      "values": null,
      "type": "number",
@@ -7112,10 +7350,10 @@
     {
      "name": "label",
      "label": "Requête SQL",
-     "description": null,
+     "description": "Le curseur de requête SQL à exécuter par le pilote REDY.",
      "section": "specifics",
      "values": null,
-     "type": "any",
+     "type": "string | null",
      "default": "null"
     }
    ],
@@ -7130,12 +7368,39 @@
      "params": []
     },
     {
+     "name": "cursor",
+     "kind": "champ",
+     "signature": "cursor",
+     "type": "Object|null",
+     "readonly": true,
+     "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
+     "params": []
+    },
+    {
      "name": "data",
      "kind": "champ",
      "signature": "data",
      "type": "any",
      "readonly": false,
      "description": "Obtient ou définit la donnée exposée.",
+     "params": []
+    },
+    {
+     "name": "dataColumns",
+     "kind": "champ",
+     "signature": "dataColumns",
+     "type": "Array<{key: string, type: string}>|undefined",
+     "readonly": true,
+     "description": "Colonnes du résultat (`data.columns`) : nom (`key`) et type (`type`) de chacune.",
+     "params": []
+    },
+    {
+     "name": "dataRows",
+     "kind": "champ",
+     "signature": "dataRows",
+     "type": "Array<Object>",
+     "readonly": true,
+     "description": "Lignes du résultat sous forme d'objets, une propriété par colonne (`{ id: 1, name: 'Alice' }`).",
      "params": []
     },
     {
@@ -7200,9 +7465,45 @@
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
+    },
+    {
+     "name": "totalRows",
+     "kind": "champ",
+     "signature": "totalRows",
+     "type": "number",
+     "readonly": true,
+     "description": "Nombre total de lignes du résultat (`data.totalRows`), `0` sans donnée.",
+     "params": []
     }
    ],
    "methods": [
+    {
+     "name": "getOptionsFromData",
+     "kind": "méthode",
+     "signature": "getOptionsFromData(valuePath?, textPath?)",
+     "type": "string",
+     "readonly": false,
+     "description": "Convertit les lignes du résultat en options pour une liste (JSON d'objets `value` et `text`).",
+     "params": [
+      {
+       "name": "valuePath",
+       "description": "Colonne qui donne la valeur de chaque option."
+      },
+      {
+       "name": "textPath",
+       "description": "Colonne qui donne le texte de chaque option."
+      }
+     ]
+    },
+    {
+     "name": "getParameters",
+     "kind": "méthode",
+     "signature": "getParameters()",
+     "type": "Object",
+     "readonly": false,
+     "description": "Paramètres envoyés au curseur : les additionnelles de l'acteur qui portent le nom d'un\nparamètre du curseur, converties en texte (`'1'` ou `'0'` pour un booléen).",
+     "params": []
+    },
     {
      "name": "refresh",
      "kind": "méthode",
@@ -7220,53 +7521,28 @@
      "readonly": false,
      "description": "Effectue une requête.",
      "params": []
-    },
-    {
-     "name": "write",
-     "kind": "méthode",
-     "signature": "write()",
-     "type": "Promise<any>",
-     "readonly": false,
-     "description": "Effectue une requête d'écriture.",
-     "params": []
     }
    ],
    "events": [
     {
      "name": "onDidGetCursor",
-     "description": null,
+     "description": "Se produit lorsque le curseur a été récupéré du REDY, avant son exécution.",
      "context": [
       {
        "name": "cursor",
-       "type": null,
-       "description": null
+       "type": "Object|null",
+       "description": "Le curseur"
       },
       {
        "name": "parameters",
-       "type": null,
-       "description": null
+       "type": "Object",
+       "description": "Les paramètres envoyés au curseur"
       }
      ]
     },
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
-     "context": [
-      {
-       "name": "error",
-       "type": "String|Object|null",
-       "description": "Une erreur éventuelle"
-      },
-      {
-       "name": "data",
-       "type": "any",
-       "description": "La donnée"
-      }
-     ]
-    },
-    {
-     "name": "onWriteDone",
-     "description": "Se produit lorsque la requête d'écriture s'est terminée.",
      "context": [
       {
        "name": "error",
@@ -7298,6 +7574,9 @@
    "type": "redy/data-source/cursor-instruction",
    "name": "Fournisseur d'instruction",
    "family": "redy-pilot",
+   "note_types": [
+    "redy/data-source/cursor-instruction"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -7318,27 +7597,18 @@
      "default": "30"
     },
     {
-     "name": "writeOnChange",
-     "label": "Écriture au changement",
-     "description": "Écriture dès changement de la donnée activée?",
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false"
-    },
-    {
      "name": "label",
      "label": "Instruction SQL",
-     "description": null,
+     "description": "Le curseur d'instruction SQL à exécuter par le pilote REDY.",
      "section": "specifics",
      "values": null,
-     "type": "any",
+     "type": "string | null",
      "default": "null"
     },
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode [`request()`]{@link Actor.DataSource#request} ou [`requestDebounce()`]{@link Actor.DataSource#requestDebounce}.",
+     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode `request()` ou `requestDebounce()`.",
      "section": "specifics",
      "values": [
       "auto",
@@ -7356,6 +7626,15 @@
      "type": "Boolean",
      "readonly": true,
      "description": "Indique si le rafraîchissement automatique est actif.",
+     "params": []
+    },
+    {
+     "name": "cursor",
+     "kind": "champ",
+     "signature": "cursor",
+     "type": "Object|null",
+     "readonly": true,
+     "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
      "params": []
     },
     {
@@ -7429,9 +7708,27 @@
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
+    },
+    {
+     "name": "totalRows",
+     "kind": "champ",
+     "signature": "totalRows",
+     "type": "number",
+     "readonly": true,
+     "description": "Nombre total de lignes du résultat (`data.totalRows`), `0` sans donnée.",
+     "params": []
     }
    ],
    "methods": [
+    {
+     "name": "getParameters",
+     "kind": "méthode",
+     "signature": "getParameters()",
+     "type": "Object",
+     "readonly": false,
+     "description": "Paramètres envoyés au curseur : les additionnelles de l'acteur qui portent le nom d'un\nparamètre du curseur, converties en texte (`'1'` ou `'0'` pour un booléen).",
+     "params": []
+    },
     {
      "name": "refresh",
      "kind": "méthode",
@@ -7449,53 +7746,28 @@
      "readonly": false,
      "description": "Effectue une requête.",
      "params": []
-    },
-    {
-     "name": "write",
-     "kind": "méthode",
-     "signature": "write()",
-     "type": "Promise<any>",
-     "readonly": false,
-     "description": "Effectue une requête d'écriture.",
-     "params": []
     }
    ],
    "events": [
     {
      "name": "onDidGetCursor",
-     "description": null,
+     "description": "Se produit lorsque le curseur a été récupéré du REDY, avant son exécution.",
      "context": [
       {
        "name": "cursor",
-       "type": null,
-       "description": null
+       "type": "Object|null",
+       "description": "Le curseur"
       },
       {
        "name": "parameters",
-       "type": null,
-       "description": null
+       "type": "Object",
+       "description": "Les paramètres envoyés au curseur"
       }
      ]
     },
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
-     "context": [
-      {
-       "name": "error",
-       "type": "String|Object|null",
-       "description": "Une erreur éventuelle"
-      },
-      {
-       "name": "data",
-       "type": "any",
-       "description": "La donnée"
-      }
-     ]
-    },
-    {
-     "name": "onWriteDone",
-     "description": "Se produit lorsque la requête d'écriture s'est terminée.",
      "context": [
       {
        "name": "error",
@@ -7527,6 +7799,9 @@
    "type": "redy/reflect-list",
    "name": "Liste de reflets",
    "family": "redy-reflects",
+   "note_types": [
+    "redy/reflect-list"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -7780,6 +8055,9 @@
    "type": "redy/reflect-details",
    "name": "Détails de reflet",
    "family": "redy-reflects",
+   "note_types": [
+    "redy/reflect-details"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -8046,6 +8324,9 @@
    "type": "redy/reflect-event-log",
    "name": "Journal des reflets",
    "family": "redy-reflects",
+   "note_types": [
+    "redy/reflect-event-log"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -8332,6 +8613,9 @@
    "type": "redy/data-source/reflect-requester",
    "name": "Requêteur de reflet",
    "family": "redy-reflects",
+   "note_types": [
+    "redy/data-source/reflect-requester"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -8550,6 +8834,9 @@
    "type": "redy/data-source/reflect",
    "name": "Fournisseur de reflet",
    "family": "redy-reflects",
+   "note_types": [
+    "redy/data-source/reflect"
+   ],
    "properties": [
     {
      "name": "relativePath",
@@ -8708,7 +8995,7 @@
     },
     {
      "name": "onDidDataStore",
-     "description": "Se produit lorsque le reflet est stocké dans [data]{@link Behavior.ReflectRequesterAttachableBase#data}.",
+     "description": "Se produit lorsque le reflet est stocké dans data.",
      "context": [
       {
        "name": "data",
@@ -8767,6 +9054,9 @@
    "type": "redy/technical/ternary",
    "name": "Reflet ternaire",
    "family": "redy-technical",
+   "note_types": [
+    "redy/technical/ternary"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -8787,6 +9077,60 @@
      "default": "true"
     },
     {
+     "name": "isBlinkingFault",
+     "label": "Clignotant en défaut?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true"
+    },
+    {
+     "name": "isBlinkingFalse",
+     "label": "Clignotant faux?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false"
+    },
+    {
+     "name": "isBlinkingTrue",
+     "label": "Clignotant vrai?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false"
+    },
+    {
+     "name": "ledColorFault",
+     "label": "Couleur LED en défaut",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'#ff1500'"
+    },
+    {
+     "name": "ledColorFalse",
+     "label": "Couleur LED faux",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'#00ff5b'"
+    },
+    {
+     "name": "ledColorTrue",
+     "label": "Couleur LED vrai",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'#00ff5b'"
+    },
+    {
      "name": "autoRefreshDelay",
      "label": "Délai",
      "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
@@ -8796,98 +9140,17 @@
      "default": "30"
     },
     {
-     "name": "displayText",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "true"
-    },
-    {
-     "name": "isBlinkingFalse",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false"
-    },
-    {
-     "name": "isBlinkingFault",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "true"
-    },
-    {
-     "name": "isBlinkingTrue",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false"
-    },
-    {
-     "name": "ledColorFalse",
-     "label": null,
+     "name": "withDetails",
+     "label": "Détails de reflet au click?",
      "description": null,
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#00ff5b'"
+     "default": "'none'"
     },
     {
-     "name": "ledColorFault",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'#ff1500'"
-    },
-    {
-     "name": "ledColorTrue",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'#00ff5b'"
-    },
-    {
-     "name": "ledIsOnFalse",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false"
-    },
-    {
-     "name": "ledIsOnFault",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "true"
-    },
-    {
-     "name": "ledIsOnTrue",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "true"
-    },
-    {
-     "name": "pictureFalse",
-     "label": null,
+     "name": "pictureFault",
+     "label": "Image personnalisée en défaut",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -8895,8 +9158,8 @@
      "default": "null"
     },
     {
-     "name": "pictureFault",
-     "label": null,
+     "name": "pictureFalse",
+     "label": "Image personnalisée faux",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -8905,12 +9168,39 @@
     },
     {
      "name": "pictureTrue",
-     "label": null,
+     "label": "Image personnalisée vrai",
      "description": null,
      "section": "specifics",
      "values": null,
      "type": "any",
      "default": "null"
+    },
+    {
+     "name": "ledIsOnFault",
+     "label": "LED en défaut allumée?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true"
+    },
+    {
+     "name": "ledIsOnFalse",
+     "label": "LED faux allumée?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false"
+    },
+    {
+     "name": "ledIsOnTrue",
+     "label": "LED vrai allumée?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true"
     },
     {
      "name": "reflectPath",
@@ -8931,13 +9221,13 @@
      "default": "''"
     },
     {
-     "name": "withDetails",
-     "label": null,
+     "name": "displayText",
+     "label": "Texte à afficher",
      "description": null,
      "section": "specifics",
      "values": null,
-     "type": "string",
-     "default": "'none'"
+     "type": "boolean",
+     "default": "true"
     }
    ],
    "fields": [
@@ -9062,6 +9352,9 @@
    "type": "redy/technical/boiler",
    "name": "Reflet Chaudière",
    "family": "redy-technical",
+   "note_types": [
+    "redy/technical/boiler"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -9091,8 +9384,17 @@
      "default": "30"
     },
     {
+     "name": "withDetails",
+     "label": "Détails de reflet au click?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'"
+    },
+    {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -9119,15 +9421,6 @@
      "values": null,
      "type": "string",
      "default": "''"
-    },
-    {
-     "name": "withDetails",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'none'"
     }
    ],
    "fields": [
@@ -9257,6 +9550,9 @@
    "type": "redy/technical/burner",
    "name": "Reflet Brûleur",
    "family": "redy-technical",
+   "note_types": [
+    "redy/technical/burner"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -9286,8 +9582,17 @@
      "default": "30"
     },
     {
+     "name": "withDetails",
+     "label": "Détails de reflet au click?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'"
+    },
+    {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -9314,15 +9619,6 @@
      "values": null,
      "type": "string",
      "default": "''"
-    },
-    {
-     "name": "withDetails",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'none'"
     }
    ],
    "fields": [
@@ -9447,6 +9743,9 @@
    "type": "redy/technical/single-pump",
    "name": "Reflet Pompe simple",
    "family": "redy-technical",
+   "note_types": [
+    "redy/technical/single-pump"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -9476,8 +9775,17 @@
      "default": "30"
     },
     {
+     "name": "withDetails",
+     "label": "Détails de reflet au click?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'"
+    },
+    {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -9506,15 +9814,6 @@
      "values": null,
      "type": "string",
      "default": "''"
-    },
-    {
-     "name": "withDetails",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'none'"
     }
    ],
    "fields": [
@@ -9639,6 +9938,9 @@
    "type": "redy/technical/double-pump",
    "name": "Reflet Pompe double",
    "family": "redy-technical",
+   "note_types": [
+    "redy/technical/double-pump"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -9668,8 +9970,17 @@
      "default": "30"
     },
     {
+     "name": "withDetails",
+     "label": "Détails de reflet au click?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'"
+    },
+    {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -9698,15 +10009,6 @@
      "values": null,
      "type": "string",
      "default": "''"
-    },
-    {
-     "name": "withDetails",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'none'"
     }
    ],
    "fields": [
@@ -9831,6 +10133,9 @@
    "type": "redy/technical/valve-2-ports",
    "name": "Reflet Vanne 2 voies",
    "family": "redy-technical",
+   "note_types": [
+    "redy/technical/valve-2-ports"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -9860,8 +10165,17 @@
      "default": "30"
     },
     {
+     "name": "withDetails",
+     "label": "Détails de reflet au click?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'"
+    },
+    {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -9890,15 +10204,6 @@
      "values": null,
      "type": "string",
      "default": "''"
-    },
-    {
-     "name": "withDetails",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'none'"
     }
    ],
    "fields": [
@@ -10023,6 +10328,9 @@
    "type": "redy/technical/valve-3-ports",
    "name": "Reflet Vanne 3 voies",
    "family": "redy-technical",
+   "note_types": [
+    "redy/technical/valve-3-ports"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -10052,8 +10360,17 @@
      "default": "30"
     },
     {
+     "name": "withDetails",
+     "label": "Détails de reflet au click?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'"
+    },
+    {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [
@@ -10082,15 +10399,6 @@
      "values": null,
      "type": "string",
      "default": "''"
-    },
-    {
-     "name": "withDetails",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'none'"
     }
    ],
    "fields": [
@@ -10215,6 +10523,9 @@
    "type": "redy/wos-state-list",
    "name": "Liste d'états",
    "family": "redy-variables",
+   "note_types": [
+    "redy/wos-state-list"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -10440,6 +10751,9 @@
    "type": "redy/wos-event-log",
    "name": "Journal des variables",
    "family": "redy-variables",
+   "note_types": [
+    "redy/wos-event-log"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -10727,6 +11041,10 @@
    "type": "redy/data-source/resource",
    "name": "Fournisseur de ressource",
    "family": "redy-variables",
+   "note_types": [
+    "redy/data-source/resource",
+    "redy/data-source/wos-variable"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -10776,7 +11094,7 @@
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode {{#crossLink \"Actor.DataSource/request:method\"}}{{/crossLink}} ou {{#crossLink \"Actor.DataSource/requestDebounce:method\"}}{{/crossLink}},\n- `relative`: Le comportement est automatique dès que des sources relatives sont attachées à cet acteur.",
+     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode `request()` ou `requestDebounce()`,\n- `relative`: Le comportement est automatique dès que des sources relatives sont attachées à cet acteur.",
      "section": "specifics",
      "values": [
       "auto",
@@ -10813,6 +11131,15 @@
      "type": "String|null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": "string",
+     "readonly": true,
+     "description": "Obtient le chemin complet vers la variable.",
      "params": []
     },
     {
@@ -10896,6 +11223,15 @@
      "type": "Promise<any>",
      "readonly": false,
      "description": "Effectue une requête d'écriture.",
+     "params": []
+    },
+    {
+     "name": "writeAll",
+     "kind": "méthode",
+     "signature": "writeAll()",
+     "type": null,
+     "readonly": false,
+     "description": "Effectue une requête d'écriture de la variable, puis de celles de tous ses fournisseurs relatifs.",
      "params": []
     }
    ],
@@ -10955,6 +11291,9 @@
    "type": "redy/data-source/wos-variable",
    "name": "Fournisseur de variable",
    "family": "redy-variables",
+   "note_types": [
+    "redy/data-source/wos-variable"
+   ],
    "properties": [
     {
      "name": "autoRefresh",
@@ -11004,7 +11343,7 @@
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode {{#crossLink \"Actor.DataSource/request:method\"}}{{/crossLink}} ou {{#crossLink \"Actor.DataSource/requestDebounce:method\"}}{{/crossLink}},\n- `relative`: Le comportement est automatique dès que des sources relatives sont attachées à cet acteur.",
+     "description": "Mode de requête de la donnée.\n\n- `auto` : Récupération de la donnée à l'initialisation et possibilité de rafraîchir automatiquement,\n- `manual`: Les requêtes doivent être commandées par script avec la méthode `request()` ou `requestDebounce()`,\n- `relative`: Le comportement est automatique dès que des sources relatives sont attachées à cet acteur.",
      "section": "specifics",
      "values": [
       "auto",
@@ -11041,6 +11380,15 @@
      "type": "String|null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": "string",
+     "readonly": true,
+     "description": "Obtient le chemin complet vers la variable.",
      "params": []
     },
     {
@@ -11124,6 +11472,15 @@
      "type": "Promise<any>",
      "readonly": false,
      "description": "Effectue une requête d'écriture.",
+     "params": []
+    },
+    {
+     "name": "writeAll",
+     "kind": "méthode",
+     "signature": "writeAll()",
+     "type": null,
+     "readonly": false,
+     "description": "Effectue une requête d'écriture de la variable, puis de celles de tous ses fournisseurs relatifs.",
      "params": []
     }
    ],
@@ -11178,6 +11535,9 @@
    "type": "redy/data-source/wos-relative-variable",
    "name": "Fournisseur relatif de variable",
    "family": "redy-variables",
+   "note_types": [
+    "redy/data-source/wos-relative-variable"
+   ],
    "properties": [
     {
      "name": "fieldName",
@@ -11207,6 +11567,15 @@
      "default": "null"
     },
     {
+     "name": "writeOnChange",
+     "label": "Écriture au changement",
+     "description": "Écriture dès changement de la donnée activée?",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false"
+    },
+    {
      "name": "dataReadMode",
      "label": "Mode de lecture",
      "description": "Mode de lecture de la variable.\n\n- `always` : Récupération de la donnée à chaque fois que le fournisseur racine effectue une requête,\n- `onetime`: Récupération de la donnée qu'une fois par le fournisseur racine. Ce sera fait dès que possible.",
@@ -11217,27 +11586,9 @@
      ],
      "type": null,
      "default": "'onetime'"
-    },
-    {
-     "name": "writeOnChange",
-     "label": null,
-     "description": "Écriture dès changement de la donnée activée?",
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false"
     }
    ],
    "fields": [
-    {
-     "name": "autoRefreshing",
-     "kind": "champ",
-     "signature": "autoRefreshing",
-     "type": "Boolean",
-     "readonly": true,
-     "description": "Indique si le rafraîchissement automatique est actif.",
-     "params": []
-    },
     {
      "name": "data",
      "kind": "champ",
@@ -11248,30 +11599,39 @@
      "params": []
     },
     {
-     "name": "error",
+     "name": "dataSource",
      "kind": "champ",
-     "signature": "error",
-     "type": "String|null",
+     "signature": "dataSource",
+     "type": "REDY.Actor.WosVariableSource|null",
      "readonly": true,
-     "description": "Erreur de requête.",
+     "description": "Obtient le fournisseur de donnée racine.",
      "params": []
     },
     {
-     "name": "hasError",
+     "name": "fieldName",
      "kind": "champ",
-     "signature": "hasError",
-     "type": "Boolean",
+     "signature": "fieldName",
+     "type": "string|null",
      "readonly": true,
-     "description": "Indique s'il y a eu une erreur de requête.",
+     "description": "Obtient l'attribut à fournir.",
      "params": []
     },
     {
-     "name": "isFirstRequestDone",
+     "name": "fullPath",
      "kind": "champ",
-     "signature": "isFirstRequestDone",
-     "type": "boolean",
+     "signature": "fullPath",
+     "type": "string",
      "readonly": true,
-     "description": "Indique si la première requête a été faite.",
+     "description": "Obtient le chemin complet vers la variable.",
+     "params": []
+    },
+    {
+     "name": "fullPathVariable",
+     "kind": "champ",
+     "signature": "fullPathVariable",
+     "type": "string|null",
+     "readonly": true,
+     "description": "Obtient le chemin complet sans l'attribut de la variable à fournir.",
      "params": []
     },
     {
@@ -11280,7 +11640,7 @@
      "signature": "isRequesting",
      "type": "Boolean",
      "readonly": true,
-     "description": "Indique si la requête est en cours.",
+     "description": "Requête en cours ?",
      "params": []
     },
     {
@@ -11293,43 +11653,16 @@
      "params": []
     },
     {
-     "name": "lastRequestDate",
+     "name": "parentSource",
      "kind": "champ",
-     "signature": "lastRequestDate",
-     "type": "String|null",
+     "signature": "parentSource",
+     "type": "REDY.Actor.WosVariableSource|REDY.Actor.ResourceSource|REDY.Actor.WosRelativeVariableSource|null",
      "readonly": true,
-     "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
-     "params": []
-    },
-    {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Obtient le fournisseur parent.",
      "params": []
     }
    ],
    "methods": [
-    {
-     "name": "refresh",
-     "kind": "méthode",
-     "signature": "refresh()",
-     "type": null,
-     "readonly": false,
-     "description": "Effectue un rafraîchissement de la donnée.",
-     "params": []
-    },
-    {
-     "name": "request",
-     "kind": "méthode",
-     "signature": "request()",
-     "type": "Promise<Any>",
-     "readonly": false,
-     "description": "Effectue une requête.",
-     "params": []
-    },
     {
      "name": "write",
      "kind": "méthode",
@@ -11343,28 +11676,12 @@
    "events": [
     {
      "name": "onDidDataStore",
-     "description": "Se produit lorsque la donnée est stockée dans [data]{@link REDY.Behavior.WosRelativeVariableAble#data}.",
+     "description": "Se produit lorsque la donnée est stockée dans data.",
      "context": [
       {
        "name": "data",
        "type": "any",
        "description": "La donnée stockée."
-      }
-     ]
-    },
-    {
-     "name": "onRequestDone",
-     "description": "Se produit lorsque la requête s'est terminée.",
-     "context": [
-      {
-       "name": "error",
-       "type": "String|Object|null",
-       "description": "Une erreur éventuelle"
-      },
-      {
-       "name": "data",
-       "type": "any",
-       "description": "La donnée"
       }
      ]
     },
