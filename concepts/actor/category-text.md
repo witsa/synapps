@@ -12,10 +12,6 @@ nav_order: 2
 
 Cette catégorie regroupe les propriétés relatives au texte de l'acteur.
 
-{% assign sorted = site.base_actor_properties | where: 'section', 'text' | sort: 'order' %}
+{% include script_api/legend.md %}
 
-{% for property in sorted %}
-
-{% include actor_property.md property=property %}
-
-{% endfor %}
+{% include script_api/properties.md type="common" section="text" %}

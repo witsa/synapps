@@ -3,7 +3,11 @@
 alphabétique : include.type = type d'acteur. Les évènements communs sont décrits avec l'acteur
 de base.
 {%- endcomment -%}
+{%- if include.type == "common" -%}
+{%- assign api_actor = site.data.script_api.common -%}
+{%- else -%}
 {%- assign api_actor = site.data.script_api.actors[include.type] -%}
+{%- endif -%}
 {%- for event in api_actor.events %}
 
 ## {{ event.name }}

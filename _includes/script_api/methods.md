@@ -2,7 +2,11 @@
 Méthodes d'un acteur accessibles par script (@script), générées depuis le code, par ordre
 alphabétique : include.type = type d'acteur. Le titre vient de la note (label) s'il y en a une.
 {%- endcomment -%}
+{%- if include.type == "common" -%}
+{%- assign api_actor = site.data.script_api.common -%}
+{%- else -%}
 {%- assign api_actor = site.data.script_api.actors[include.type] -%}
+{%- endif -%}
 {%- for member in api_actor.methods %}
 {%- include script_api/find_note.md type=include.type kind="member" name=member.name %}
 

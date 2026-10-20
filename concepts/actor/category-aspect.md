@@ -12,10 +12,6 @@ nav_order: 1
 
 Cette catégorie regroupe les propriétés relatives à l'aspect de l'acteur.
 
-{% assign sorted = site.base_actor_properties | where: 'section', 'aspect' | sort: 'order' %}
+{% include script_api/legend.md %}
 
-{% for property in sorted %}
-
-{% include actor_property.md property=property %}
-
-{% endfor %}
+{% include script_api/properties.md type="common" section="aspect" %}
