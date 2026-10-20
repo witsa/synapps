@@ -7068,7 +7068,7 @@
      "signature": "cursor",
      "type": "Object ou null",
      "readonly": true,
-     "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
+     "description": "Curseur défini dans le REDY (`null` avant la première requête).",
      "params": []
     },
     {
@@ -7373,7 +7373,7 @@
      "signature": "cursor",
      "type": "Object ou null",
      "readonly": true,
-     "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
+     "description": "Curseur défini dans le REDY (`null` avant la première requête).",
      "params": []
     },
     {
@@ -7634,7 +7634,7 @@
      "signature": "cursor",
      "type": "Object ou null",
      "readonly": true,
-     "description": "Curseur exécuté, tel que défini dans le REDY (`null` avant la première requête).",
+     "description": "Curseur défini dans le REDY (`null` avant la première requête).",
      "params": []
     },
     {

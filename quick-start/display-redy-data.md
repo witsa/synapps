@@ -89,7 +89,7 @@ Il est tout à fait possible de créer des fournisseurs de données directement 
 
 Pour en savoir plus, rendez-vous dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy/wos-variable-source.md).
 
-Bien d'autre champ sont accessibles par liaison (la valeur, le nom, ...). Pour en savoir plus, rendez-vous encore dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy/wos-variable-source.md#champ-de-variable-redy).
+Bien d'autre champ sont accessibles par liaison (la valeur, le nom, ...). Pour en savoir plus, rendez-vous encore dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy/wos-variable-source.md#champ).
 
 
 

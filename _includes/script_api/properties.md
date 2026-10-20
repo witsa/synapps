@@ -5,7 +5,10 @@ alphabétique du libellé : include.type = type d'acteur (ex. redy/data-source/w
 {%- assign api_actor = site.data.script_api.actors[include.type] -%}
 {%- for property in api_actor.properties %}
 
-## {{ property.label | default: property.name }}
+{%- assign api_title = property.label | default: property.name %}
+
+## {{ api_title }}
+{: .api-property }
 
 `this.properties.{{ property.name }}` · {% if property.values %}{% for value in property.values %}`'{{ value }}'`{% unless forloop.last %} \| {% endunless %}{% endfor %}{% else %}{{ property.type | escape }}{% endif %} · défaut `{{ property.default }}`
 {: .fs-2 }

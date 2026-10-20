@@ -44,15 +44,15 @@ C'est la même définition que la propriété [Auto rafraîchissement](./cursor-
 
 ### Délai de rafraîchissement
 
-C'est la même définition que la propriété [Délai de rafraîchissement](./cursor-request-source.md#délai-de-rafraîchissement) pour le fournisseur de requête.
+C'est la même définition que la propriété [Délai de rafraîchissement](./cursor-request-source.md#délai-rafraîchissement) pour le fournisseur de requête.
 
 ### Limite de résultats
 
-C'est la même définition que la propriété [Limite de résultats](./cursor-request-source.md#limite-de-résultats) pour le fournisseur de requête.
+C'est la même définition que la propriété [Limite de résultats](./cursor-request-source.md#limit) pour le fournisseur de requête.
 
 ### Décalage des résultats
 
-C'est la même définition que la propriété [Décalage des résultats](./cursor-request-source.md#décalage-des-résultats) pour le fournisseur de requête.
+C'est la même définition que la propriété [Décalage des résultats](./cursor-request-source.md#offset) pour le fournisseur de requête.
 
 ## Paramètres de requête
 

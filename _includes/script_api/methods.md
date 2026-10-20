@@ -6,7 +6,10 @@ alphabétique : include.type = type d'acteur. Le titre vient de la note (label) 
 {%- for member in api_actor.methods %}
 {%- include script_api/find_note.md type=include.type kind="member" name=member.name %}
 
-## ⚙️ {{ api_note.label | default: member.signature }}
+{%- assign api_title = api_note.label | default: member.signature %}
+
+## {{ api_title }}
+{: .api-method }
 
 `this.{{ member.signature }}`{% if member.type %} · renvoie {{ member.type | escape }}{% endif %}
 {: .fs-2 }

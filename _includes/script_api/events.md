@@ -6,7 +6,8 @@ de base.
 {%- assign api_actor = site.data.script_api.actors[include.type] -%}
 {%- for event in api_actor.events %}
 
-## ⚡ `{{ event.name }}`
+## {{ event.name }}
+{: .api-event }
 {% if event.description %}
 {{ event.description }}
 {% endif %}
