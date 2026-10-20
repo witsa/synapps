@@ -53,7 +53,98 @@
   "redy/ReflectEvent": {
    "name": "ReflectEvent",
    "description": null,
-   "fields": [],
+   "fields": [
+    {
+     "name": "attributes",
+     "kind": "champ",
+     "signature": "attributes",
+     "type": null,
+     "readonly": false,
+     "description": "Attributs de l'évènement (ex. `class`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "caption",
+     "kind": "champ",
+     "signature": "caption",
+     "type": null,
+     "readonly": false,
+     "description": "Libellé de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "committed",
+     "kind": "champ",
+     "signature": "committed",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si l'évènement est validé (champ `committed` du REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "date",
+     "kind": "champ",
+     "signature": "date",
+     "type": null,
+     "readonly": false,
+     "description": "Date de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pending",
+     "kind": "champ",
+     "signature": "pending",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si l'évènement est en cours.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "reflectionID",
+     "kind": "champ",
+     "signature": "reflectionID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant du réflexe à l'origine de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": null,
+     "readonly": false,
+     "description": "État associé à l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "type",
+     "kind": "champ",
+     "signature": "type",
+     "type": null,
+     "readonly": false,
+     "description": "Type de l'évènement : `appearance`, `disappearance`, `oneshot` ou `system`.",
+     "params": [],
+     "label": null
+    }
+   ],
    "methods": []
   },
   "redy/RedyReflectSerializer": {
@@ -65,7 +156,168 @@
   "redy/WosEvent": {
    "name": "WosEvent",
    "description": null,
-   "fields": [],
+   "fields": [
+    {
+     "name": "ack",
+     "kind": "champ",
+     "signature": "ack",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si l'évènement est acquitté.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "ackInfos",
+     "kind": "champ",
+     "signature": "ackInfos",
+     "type": null,
+     "readonly": false,
+     "description": "Informations d'acquittement de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant de la classe de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "date",
+     "kind": "champ",
+     "signature": "date",
+     "type": null,
+     "readonly": false,
+     "description": "Date de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "diffusion",
+     "kind": "champ",
+     "signature": "diffusion",
+     "type": null,
+     "readonly": false,
+     "description": "Indicateur de diffusion de l'évènement (champ `dif` du REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "label",
+     "kind": "champ",
+     "signature": "label",
+     "type": null,
+     "readonly": false,
+     "description": "Libellé de l'origine de l'évènement (colonne « Origine » du journal).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodID",
+     "kind": "champ",
+     "signature": "nodID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la variable à l'origine de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pending",
+     "kind": "champ",
+     "signature": "pending",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si l'évènement est en cours.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "siteID",
+     "kind": "champ",
+     "signature": "siteID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY du site de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "siteName",
+     "kind": "champ",
+     "signature": "siteName",
+     "type": null,
+     "readonly": false,
+     "description": "Nom du site de l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": null,
+     "readonly": false,
+     "description": "État associé à l'évènement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "todo",
+     "kind": "champ",
+     "signature": "todo",
+     "type": null,
+     "readonly": false,
+     "description": "Consigne associée à l'évènement (envoyée avec l'acquittement).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "type",
+     "kind": "champ",
+     "signature": "type",
+     "type": null,
+     "readonly": false,
+     "description": "Type de l'évènement : `a` (apparition), `d` (disparition), `o` (ponctuel), `s` (système) ou `u` (inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de l'évènement.",
+     "params": [],
+     "label": null
+    }
+   ],
    "methods": []
   },
   "redy/WosVariable": {
@@ -91,6 +343,16 @@
      "description": "Si la variable est accessible par l'utilisateur actuelle en écriture. Tiens compte des groupes et du du niveau de l'utilisateur.",
      "params": [],
      "label": "Écriture?"
+    },
+    {
+     "name": "childLabels",
+     "kind": "champ",
+     "signature": "childLabels",
+     "type": null,
+     "readonly": true,
+     "description": "Libellés des enfants chargés de la variable (`Set`).",
+     "params": [],
+     "label": null
     },
     {
      "name": "childrenSize",
@@ -123,6 +385,26 @@
      "label": "Date"
     },
     {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la variable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupsID",
+     "kind": "champ",
+     "signature": "groupsID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la variable.",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "iconUrl",
      "kind": "champ",
      "signature": "iconUrl",
@@ -131,6 +413,16 @@
      "description": "L'URL de l'icône de la variable REDY. Directement exploitable par exemple dans une liaison vers un acteur image.",
      "params": [],
      "label": "URL de l'icône"
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
     },
     {
      "name": "label",
@@ -191,6 +483,16 @@
      "description": "La valeur de la variable. Par exemple : `true`, `\"un texte\"` ou bien `23` en fonction du type de la variable.",
      "params": [],
      "label": "Valeur"
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la variable.",
+     "params": [],
+     "label": null
     }
    ],
    "methods": []
@@ -694,8 +996,254 @@
     "default": "'auto'"
    }
   ],
-  "fields": [],
-  "methods": [],
+  "fields": [
+   {
+    "name": "accessories",
+    "kind": "champ",
+    "signature": "accessories",
+    "type": "Object",
+    "readonly": true,
+    "description": "Obtient la liste des accessoires.\n<br> Chaque accessoire est accessible par sa clé :\n```js\nthis.accessories.log.properties.onActorPropertyChanged = true;\n```\npour accéder à l'accessoire `log` préalablement créé et activer la journalisation au changement de propriété de l'acteur.\n <br> La gestion des accessoires s'effectue avec les méthodes : {@link Actor.BaseActorcreateAccessory } et {@link Actor.BaseActorremoveAccessory }",
+    "params": []
+   },
+   {
+    "name": "additionals",
+    "kind": "champ",
+    "signature": "additionals",
+    "type": "Synapps.PrototypedBase",
+    "readonly": true,
+    "description": "Obtient les propriétés additionnelles.",
+    "params": []
+   },
+   {
+    "name": "dataContext",
+    "kind": "champ",
+    "signature": "dataContext",
+    "type": "any",
+    "readonly": false,
+    "description": "Obtient ou définit le contexte de donnée.\n\nLe contexte de donnée est obtenu par ruissellement si rien n'est définit au niveau de l'objet.",
+    "params": []
+   },
+   {
+    "name": "dataStores",
+    "kind": "champ",
+    "signature": "dataStores",
+    "type": "REDY.Synapps.DataStores",
+    "readonly": true,
+    "description": "Obtient les magasins de données de la synapp.",
+    "params": []
+   },
+   {
+    "name": "elementDOM",
+    "kind": "champ",
+    "signature": "elementDOM",
+    "type": "Element",
+    "readonly": true,
+    "description": "L'élément DOM de l'acteur.\n\n<br> *Attention! L'élément n'est pas accessible dans tous les scripts.*",
+    "params": []
+   },
+   {
+    "name": "events",
+    "kind": "champ",
+    "signature": "events",
+    "type": "Object",
+    "readonly": true,
+    "description": "Obtient les évènements",
+    "params": []
+   },
+   {
+    "name": "isDestroyed",
+    "kind": "champ",
+    "signature": "isDestroyed",
+    "type": "Boolean",
+    "readonly": true,
+    "description": "Vrai quand l'acteur est détruit.",
+    "params": []
+   },
+   {
+    "name": "isDestroying",
+    "kind": "champ",
+    "signature": "isDestroying",
+    "type": "Boolean",
+    "readonly": true,
+    "description": "Vrai quand l'acteur est en train d'être détruit.",
+    "params": []
+   },
+   {
+    "name": "isLeadActor",
+    "kind": "champ",
+    "signature": "isLeadActor",
+    "type": "Boolean",
+    "readonly": true,
+    "description": "Est-ce un acteur principal ?",
+    "params": []
+   },
+   {
+    "name": "key",
+    "kind": "champ",
+    "signature": "key",
+    "type": "string",
+    "readonly": true,
+    "description": "La clé unique de l'acteur.\n<br>Son unicité est valable dans le contexte de la scène ou du composite parent direct de l'acteur.",
+    "params": []
+   },
+   {
+    "name": "parent",
+    "kind": "champ",
+    "signature": "parent",
+    "type": "Actor.BaseActor",
+    "readonly": true,
+    "description": "Acteur parent.\n<br> *Peut être absent si l'acteur est le principal.*",
+    "params": []
+   },
+   {
+    "name": "properties",
+    "kind": "champ",
+    "signature": "properties",
+    "type": "Synapps.PrototypedBase",
+    "readonly": true,
+    "description": "Obtient les propriétés.",
+    "params": []
+   },
+   {
+    "name": "rootScene",
+    "kind": "champ",
+    "signature": "rootScene",
+    "type": "Synapps.Scene",
+    "readonly": true,
+    "description": "Obtient la scène racine.\n<br> *Ce n'est pas forcément la scène parente directe de l'acteur.*",
+    "params": []
+   },
+   {
+    "name": "scene",
+    "kind": "champ",
+    "signature": "scene",
+    "type": "Synapps.Scene",
+    "readonly": true,
+    "description": "Première scène parente de l'acteur.\n<br> *Ce n'est pas forcément la scène parente directe de l'acteur ni même la scène racine.*",
+    "params": []
+   },
+   {
+    "name": "slotComposite",
+    "kind": "champ",
+    "signature": "slotComposite",
+    "type": "Actor.Composite",
+    "readonly": true,
+    "description": "Composite auquel appartient l'emplacement contenant l'acteur.",
+    "params": []
+   },
+   {
+    "name": "stage",
+    "kind": "champ",
+    "signature": "stage",
+    "type": "Stage",
+    "readonly": true,
+    "description": "Scene ou Composite parent directe de l'acteur.",
+    "params": []
+   },
+   {
+    "name": "styleName",
+    "kind": "champ",
+    "signature": "styleName",
+    "type": "String",
+    "readonly": true,
+    "description": "Le nom du style de l'acteur.\n<br>\nPour changer de style, il faut utiliser {@link Actor.BaseActorchangeStyleName }",
+    "params": []
+   },
+   {
+    "name": "synapp",
+    "kind": "champ",
+    "signature": "synapp",
+    "type": "Synapps.Synapp",
+    "readonly": true,
+    "description": "Obtient la Synapp.",
+    "params": []
+   },
+   {
+    "name": "type",
+    "kind": "champ",
+    "signature": "type",
+    "type": "string",
+    "readonly": true,
+    "description": "Type de l'acteur.",
+    "params": []
+   },
+   {
+    "name": "uniqClass",
+    "kind": "champ",
+    "signature": "uniqClass",
+    "type": "string",
+    "readonly": true,
+    "description": "Classe `CSS` unique de l'acteur.\n<br> Elle permet de sélectionner l'élément du DOM de l'acteur.",
+    "params": []
+   },
+   {
+    "name": "uniqPath",
+    "kind": "champ",
+    "signature": "uniqPath",
+    "type": "string",
+    "readonly": true,
+    "description": "Chemin unique de l'acteur.",
+    "params": []
+   }
+  ],
+  "methods": [
+   {
+    "name": "changeStyleName",
+    "kind": "méthode",
+    "signature": "changeStyleName(styleName)",
+    "type": null,
+    "readonly": false,
+    "description": "Changer le nom du style de l'acteur.\nÉchoue si l'acteur n'est pas encore rendu (par exemple dans `onInit`).",
+    "params": [
+     {
+      "name": "styleName",
+      "description": "Nom du style à appliquer."
+     }
+    ]
+   },
+   {
+    "name": "createEvent",
+    "kind": "méthode",
+    "signature": "createEvent(eventName, eventScriptLines)",
+    "type": null,
+    "readonly": false,
+    "description": "Crée un évènement de l'acteur à partir d'un tableau de lignes de code ou d'une fonction `function(context)`.",
+    "params": []
+   },
+   {
+    "name": "getBinding",
+    "kind": "méthode",
+    "signature": "getBinding(targetValuePath)",
+    "type": "Binding",
+    "readonly": false,
+    "description": "Obtient une liaison de l'acteur par son chemin de la cible.",
+    "params": [
+     {
+      "name": "targetValuePath",
+      "description": "Chemin de la cible ex.: `properties.content`"
+     }
+    ]
+   },
+   {
+    "name": "removeEvent",
+    "kind": "méthode",
+    "signature": "removeEvent(eventName)",
+    "type": null,
+    "readonly": false,
+    "description": "Supprime un évènement de l'acteur.",
+    "params": []
+   },
+   {
+    "name": "runEvent",
+    "kind": "méthode",
+    "signature": "runEvent(eventName, args)",
+    "type": null,
+    "readonly": false,
+    "description": "Exécute un évènement de l'acteur s'il existe, avec le contexte de l'acteur (scène, synapp, magasins de données) complété des arguments donnés.",
+    "params": []
+   }
+  ],
   "events": [
    {
     "name": "binding/onReadTransform",
@@ -1071,8 +1619,161 @@
      "default": "'vertical'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onDidActorAdd",
@@ -1180,8 +1881,152 @@
      "default": "'hidden'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups)",
+     "type": null,
+     "readonly": false,
+     "description": "Ajoute un acteur enfant : seul le premier setup de la collection est retenu, la boîte de vue n'accueillant qu'un enfant.",
+     "params": []
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onDidActorAdd",
@@ -1301,8 +2146,152 @@
      "default": "'visible'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups)",
+     "type": null,
+     "readonly": false,
+     "description": "Ajoute un acteur enfant : seul le premier setup de la collection est retenu, la modale n'accueillant qu'un enfant.",
+     "params": []
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onCloseModal",
@@ -1401,7 +2390,17 @@
      "default": "''"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [],
    "lineage": [
@@ -1430,7 +2429,17 @@
      "default": "''"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [],
    "lineage": [
@@ -1459,7 +2468,17 @@
      "default": "''"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "isLoaded",
+     "kind": "champ",
+     "signature": "isLoaded",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si l'image affichée est chargée.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [],
    "lineage": []
@@ -1510,8 +2529,55 @@
      "default": "null"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "displayedScene",
+     "kind": "champ",
+     "signature": "displayedScene",
+     "type": null,
+     "readonly": false,
+     "description": "Scène actuellement affichée dans l'écran (`null` tant qu'aucune n'est prête).",
+     "params": []
+    },
+    {
+     "name": "error",
+     "kind": "champ",
+     "signature": "error",
+     "type": null,
+     "readonly": true,
+     "description": "Message d'erreur du dernier chargement de scène, `null` sans erreur.",
+     "params": []
+    },
+    {
+     "name": "isLoading",
+     "kind": "champ",
+     "signature": "isLoading",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la scène à afficher est en cours de chargement.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "navigate",
+     "kind": "méthode",
+     "signature": "navigate(sceneKey, additionals)",
+     "type": null,
+     "readonly": false,
+     "description": "Affiche une scène dans l'écran.",
+     "params": [
+      {
+       "name": "sceneKey",
+       "description": "Clé de la scène."
+      },
+      {
+       "name": "additionals",
+       "description": "Additionnelles transmises à la scène."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onDidSceneChange",
@@ -1618,7 +2684,17 @@
      "default": "''"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [],
    "lineage": [
@@ -1675,8 +2751,161 @@
      "default": "null"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onDidActorAdd",
@@ -1810,8 +3039,242 @@
      "default": "'table-cell-string-header'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "columns",
+     "kind": "champ",
+     "signature": "columns",
+     "type": null,
+     "readonly": true,
+     "description": "Colonnes visibles du tableau, lues depuis la propriété `columns` (JSON) et complétées des valeurs par défaut.",
+     "params": []
+    },
+    {
+     "name": "dataRows",
+     "kind": "champ",
+     "signature": "dataRows",
+     "type": null,
+     "readonly": true,
+     "description": "Lignes de données du tableau, lues depuis la propriété `dataRows` (JSON).",
+     "params": []
+    },
+    {
+     "name": "headerRow",
+     "kind": "champ",
+     "signature": "headerRow",
+     "type": null,
+     "readonly": false,
+     "description": "Ligne d'en-tête affichée : associe à chaque clé de colonne l'acteur cellule d'en-tête, `null` sans en-tête.",
+     "params": []
+    },
+    {
+     "name": "isLoading",
+     "kind": "champ",
+     "signature": "isLoading",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le voile de chargement du tableau est affiché.",
+     "params": []
+    },
+    {
+     "name": "page",
+     "kind": "champ",
+     "signature": "page",
+     "type": null,
+     "readonly": false,
+     "description": "Page courante du tableau (à partir de 1).",
+     "params": []
+    },
+    {
+     "name": "rows",
+     "kind": "champ",
+     "signature": "rows",
+     "type": null,
+     "readonly": false,
+     "description": "Lignes affichées : un objet par ligne, qui associe à chaque clé de colonne l'acteur cellule correspondant.",
+     "params": []
+    },
+    {
+     "name": "rowsCount",
+     "kind": "champ",
+     "signature": "rowsCount",
+     "type": null,
+     "readonly": true,
+     "description": "Nombre de lignes de données du tableau.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "changePage",
+     "kind": "méthode",
+     "signature": "changePage(newPage)",
+     "type": null,
+     "readonly": false,
+     "description": "Affiche la page demandée (entre 1 et `pageMax`) et déclenche `onChangeDataPage`.",
+     "params": []
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "refreshTable",
+     "kind": "méthode",
+     "signature": "refreshTable()",
+     "type": null,
+     "readonly": false,
+     "description": "Reconstruit les cellules du tableau à partir des colonnes et des lignes de données, puis déclenche `onDidTableRender`.",
+     "params": []
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onChangeDataPage",
@@ -2016,8 +3479,251 @@
      "default": "''"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "column",
+     "kind": "champ",
+     "signature": "column",
+     "type": null,
+     "readonly": true,
+     "description": "Colonne de la cellule (`key`, `name`, `fieldPath`, `style`, `columnWidth`...).",
+     "params": []
+    },
+    {
+     "name": "columnKey",
+     "kind": "champ",
+     "signature": "columnKey",
+     "type": null,
+     "readonly": true,
+     "description": "Clé de la colonne de la cellule.",
+     "params": []
+    },
+    {
+     "name": "composite",
+     "kind": "champ",
+     "signature": "composite",
+     "type": null,
+     "readonly": false,
+     "description": "Composite affiché dans la cellule, `null` sans composite.",
+     "params": []
+    },
+    {
+     "name": "content",
+     "kind": "champ",
+     "signature": "content",
+     "type": null,
+     "readonly": true,
+     "description": "Contenu affiché dans la cellule : l'image pour le type `boolean-image`, sinon le texte.",
+     "params": []
+    },
+    {
+     "name": "dataRow",
+     "kind": "champ",
+     "signature": "dataRow",
+     "type": null,
+     "readonly": true,
+     "description": "Ligne de données de la cellule (objet vide si absente).",
+     "params": []
+    },
+    {
+     "name": "isHeader",
+     "kind": "champ",
+     "signature": "isHeader",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la cellule appartient à la ligne d'en-tête.",
+     "params": []
+    },
+    {
+     "name": "rowKey",
+     "kind": "champ",
+     "signature": "rowKey",
+     "type": null,
+     "readonly": true,
+     "description": "Index de la ligne de la cellule (`HEADER` pour l'en-tête).",
+     "params": []
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": null,
+     "readonly": true,
+     "description": "Texte affiché dans la cellule : la valeur transformée, mise en forme selon le type de la cellule (booléen, date).",
+     "params": []
+    },
+    {
+     "name": "transformedValue",
+     "kind": "champ",
+     "signature": "transformedValue",
+     "type": null,
+     "readonly": false,
+     "description": "Valeur de la cellule après transformation par l'évènement `onCellContentTransform` du tableau.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": null,
+     "readonly": true,
+     "description": "Valeur brute de la cellule (propriété `value`).",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onDidActorAdd",
@@ -2170,7 +3876,26 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    },
+    {
+     "name": "pushing",
+     "kind": "champ",
+     "signature": "pushing",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le bouton est en train d'être enfoncé.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -2288,7 +4013,35 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "hasOptions",
+     "kind": "champ",
+     "signature": "hasOptions",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient la valeur indiquant si l'acteur a des options.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": "Array.<JSON.Option>",
+     "readonly": true,
+     "description": "Obtient les options sous forme de tableau.",
+     "params": []
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient le texte correspondant à la sélection.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -2471,7 +4224,26 @@
      "default": "true"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "slidingValue",
+     "kind": "champ",
+     "signature": "slidingValue",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient la valeur pendant le glissement du curseur.",
+     "params": []
+    },
+    {
+     "name": "slidingValue2",
+     "kind": "champ",
+     "signature": "slidingValue2",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient la deuxième valeur pendant le glissement du curseur.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -2595,7 +4367,53 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "dateFrom",
+     "kind": "champ",
+     "signature": "dateFrom",
+     "type": "String ou null",
+     "readonly": true,
+     "description": "Obtient la date de début de période correspondante à la sélection.",
+     "params": []
+    },
+    {
+     "name": "dateTo",
+     "kind": "champ",
+     "signature": "dateTo",
+     "type": "String ou null",
+     "readonly": true,
+     "description": "Obtient la date de fin de période correspondante à la sélection.",
+     "params": []
+    },
+    {
+     "name": "hasOptions",
+     "kind": "champ",
+     "signature": "hasOptions",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient la valeur indiquant si l'acteur a des options.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient les périodes proposées sous forme de tableau.",
+     "params": []
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le texte correspondant à la sélection.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -2724,8 +4542,37 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    },
+    {
+     "name": "pushing",
+     "kind": "champ",
+     "signature": "pushing",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le bouton est en train d'être enfoncé.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "navigate",
+     "kind": "méthode",
+     "signature": "navigate()",
+     "type": null,
+     "readonly": false,
+     "description": "Navigue vers la destination définie comme si le bouton avait été utilisé.",
+     "params": []
+    }
+   ],
    "events": [
     {
      "name": "onDidButtonPush",
@@ -2838,8 +4685,142 @@
      "default": "'menu-button-inactive'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(...args)",
+     "type": null,
+     "readonly": false,
+     "description": "Ajoute un acteur enfant, puis recalcule la hauteur du sous-menu.",
+     "params": []
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(...args)",
+     "type": null,
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants, puis recalcule la hauteur du sous-menu.",
+     "params": []
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(...args)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant, puis recalcule la hauteur du sous-menu.",
+     "params": []
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...args)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants, puis recalcule la hauteur du sous-menu.",
+     "params": []
+    }
+   ],
    "events": [
     {
      "name": "onDidActorAdd",
@@ -3009,8 +4990,175 @@
      "default": "''"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "selectScene",
+     "kind": "méthode",
+     "signature": "selectScene(sceneKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Sélectionne une scène dans le menu.",
+     "params": [
+      {
+       "name": "sceneKey",
+       "description": "Clé de la scène."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onDidActorAdd",
@@ -3201,8 +5349,179 @@
      "default": "'menu-button-navbar-inactive'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    },
+    {
+     "name": "isOpen",
+     "kind": "champ",
+     "signature": "isOpen",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le menu déroulant du groupe est ouvert.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
    "events": [
     {
      "name": "onDidActorAdd",
@@ -3402,7 +5721,26 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    },
+    {
+     "name": "pushing",
+     "kind": "champ",
+     "signature": "pushing",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le bouton est en train d'être enfoncé.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -3595,7 +5933,26 @@
      "default": "null"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "hasOptions",
+     "kind": "champ",
+     "signature": "hasOptions",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient la valeur indiquant si l'acteur a des options.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": "Array.<String>",
+     "readonly": true,
+     "description": "Obtient les options sous forme de tableau.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [],
    "lineage": [
@@ -3795,7 +6152,17 @@
      "default": "false"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "completedContent",
+     "kind": "champ",
+     "signature": "completedContent",
+     "type": "String",
+     "readonly": true,
+     "description": "Le texte une fois complété.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [],
    "lineage": [
@@ -3932,7 +6299,71 @@
      "default": "true"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "flatOptions",
+     "kind": "champ",
+     "signature": "flatOptions",
+     "type": "Array.<JSON.Option>",
+     "readonly": false,
+     "description": "Obtient ou définit les options sous forme de tableau à plat.",
+     "params": []
+    },
+    {
+     "name": "hasOptions",
+     "kind": "champ",
+     "signature": "hasOptions",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient la valeur indiquant si l'acteur a des options.",
+     "params": []
+    },
+    {
+     "name": "isAllChecked",
+     "kind": "champ",
+     "signature": "isAllChecked",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Les options sont-elles toutes sélectionnées?",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": "Array.<JSON.Option>",
+     "readonly": false,
+     "description": "Obtient ou définit les options sous forme de tableau hiérarchique.\nC'est l'image Javascript de properties.options.",
+     "params": []
+    },
+    {
+     "name": "texts",
+     "kind": "champ",
+     "signature": "texts",
+     "type": "Array.<String> ou null",
+     "readonly": true,
+     "description": "Obtient la liste des textes correspondants à la sélection.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "String ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la valeur sélectionnée lorsque l'acteur est en mode sélection simple.",
+     "params": []
+    },
+    {
+     "name": "values",
+     "kind": "champ",
+     "signature": "values",
+     "type": "Array.<String> ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la liste des valeurs sélectionnées.\nC'est l'image Javascript de properties.values.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -4053,7 +6484,44 @@
      "default": "false"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "hasOptions",
+     "kind": "champ",
+     "signature": "hasOptions",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient la valeur indiquant si l'acteur a des options.",
+     "params": []
+    },
+    {
+     "name": "isEmpty",
+     "kind": "champ",
+     "signature": "isEmpty",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si aucune valeur n'est sélectionnée.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": "Array.<JSON.Option>",
+     "readonly": true,
+     "description": "Obtient les options sous forme de tableau.",
+     "params": []
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient le texte correspondant à la sélection.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -4147,7 +6615,35 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
+   "fields": [
+    {
+     "name": "hasOptions",
+     "kind": "champ",
+     "signature": "hasOptions",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient la valeur indiquant si l'acteur a des options.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": "Array.<JSON.Option>",
+     "readonly": true,
+     "description": "Obtient les options sous forme de tableau.",
+     "params": []
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient le texte correspondant à la sélection.",
+     "params": []
+    }
+   ],
    "methods": [],
    "events": [
     {
@@ -6487,8 +8983,69 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "allCount",
+     "kind": "champ",
+     "signature": "allCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre total d'options.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "selectedCount",
+     "kind": "champ",
+     "signature": "selectedCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre d'options sélectionnées.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "String ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la valeur sélectionnée lorsque l'acteur est en mode sélection simple.",
+     "params": []
+    },
+    {
+     "name": "values",
+     "kind": "champ",
+     "signature": "values",
+     "type": "Array.<String> ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la liste des valeurs sélectionnées.\nC'est l'image Javascript de properties.values.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    }
+   ],
    "events": [],
    "lineage": [
     {
@@ -6575,8 +9132,69 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "allCount",
+     "kind": "champ",
+     "signature": "allCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre total d'options.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "selectedCount",
+     "kind": "champ",
+     "signature": "selectedCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre d'options sélectionnées.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "String ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la valeur sélectionnée lorsque l'acteur est en mode sélection simple.",
+     "params": []
+    },
+    {
+     "name": "values",
+     "kind": "champ",
+     "signature": "values",
+     "type": "Array.<String> ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la liste des valeurs sélectionnées.\nC'est l'image Javascript de properties.values.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    }
+   ],
    "events": [],
    "lineage": [
     {
@@ -6663,8 +9281,69 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "allCount",
+     "kind": "champ",
+     "signature": "allCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre total d'options.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "selectedCount",
+     "kind": "champ",
+     "signature": "selectedCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre d'options sélectionnées.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "String ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la valeur sélectionnée lorsque l'acteur est en mode sélection simple.",
+     "params": []
+    },
+    {
+     "name": "values",
+     "kind": "champ",
+     "signature": "values",
+     "type": "Array.<String> ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la liste des valeurs sélectionnées.\nC'est l'image Javascript de properties.values.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    }
+   ],
    "events": [],
    "lineage": [
     {
@@ -6751,8 +9430,69 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "allCount",
+     "kind": "champ",
+     "signature": "allCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre total d'options.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "selectedCount",
+     "kind": "champ",
+     "signature": "selectedCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre d'options sélectionnées.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "String ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la valeur sélectionnée lorsque l'acteur est en mode sélection simple.",
+     "params": []
+    },
+    {
+     "name": "values",
+     "kind": "champ",
+     "signature": "values",
+     "type": "Array.<String> ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la liste des valeurs sélectionnées.\nC'est l'image Javascript de properties.values.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    }
+   ],
    "events": [],
    "lineage": [
     {
@@ -6839,8 +9579,69 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "allCount",
+     "kind": "champ",
+     "signature": "allCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre total d'options.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "selectedCount",
+     "kind": "champ",
+     "signature": "selectedCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre d'options sélectionnées.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "String ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la valeur sélectionnée lorsque l'acteur est en mode sélection simple.",
+     "params": []
+    },
+    {
+     "name": "values",
+     "kind": "champ",
+     "signature": "values",
+     "type": "Array.<String> ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la liste des valeurs sélectionnées.\nC'est l'image Javascript de properties.values.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    }
+   ],
    "events": [],
    "lineage": [
     {
@@ -6936,8 +9737,69 @@
      "default": "'default'"
     }
    ],
-   "fields": [],
-   "methods": [],
+   "fields": [
+    {
+     "name": "allCount",
+     "kind": "champ",
+     "signature": "allCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre total d'options.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "selectedCount",
+     "kind": "champ",
+     "signature": "selectedCount",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le nombre d'options sélectionnées.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "String ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la valeur sélectionnée lorsque l'acteur est en mode sélection simple.",
+     "params": []
+    },
+    {
+     "name": "values",
+     "kind": "champ",
+     "signature": "values",
+     "type": "Array.<String> ou null",
+     "readonly": false,
+     "description": "Obtient ou définit la liste des valeurs sélectionnées.\nC'est l'image Javascript de properties.values.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    }
+   ],
    "events": [],
    "lineage": [
     {
@@ -7063,12 +9925,66 @@
      "params": []
     },
     {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "columns",
+     "kind": "champ",
+     "signature": "columns",
+     "type": null,
+     "readonly": true,
+     "description": "Colonnes visibles du tableau, lues depuis la propriété `columns` (JSON) et complétées des valeurs par défaut.",
+     "params": []
+    },
+    {
      "name": "cursor",
      "kind": "champ",
      "signature": "cursor",
      "type": "Object ou null",
      "readonly": true,
      "description": "Curseur défini dans le REDY (`null` avant la première requête).",
+     "params": []
+    },
+    {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Résultat de la dernière requête du curseur (lecture seule).",
      "params": []
     },
     {
@@ -7108,6 +10024,24 @@
      "params": []
     },
     {
+     "name": "headerRow",
+     "kind": "champ",
+     "signature": "headerRow",
+     "type": null,
+     "readonly": false,
+     "description": "Ligne d'en-tête affichée : associe à chaque clé de colonne l'acteur cellule d'en-tête, `null` sans en-tête.",
+     "params": []
+    },
+    {
+     "name": "isLoading",
+     "kind": "champ",
+     "signature": "isLoading",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le voile de chargement du tableau est affiché.",
+     "params": []
+    },
+    {
      "name": "isRequesting",
      "kind": "champ",
      "signature": "isRequesting",
@@ -7126,12 +10060,39 @@
      "params": []
     },
     {
+     "name": "page",
+     "kind": "champ",
+     "signature": "page",
+     "type": null,
+     "readonly": false,
+     "description": "Page courante du tableau (à partir de 1).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "params": []
+    },
+    {
+     "name": "rows",
+     "kind": "champ",
+     "signature": "rows",
+     "type": null,
+     "readonly": false,
+     "description": "Lignes affichées : un objet par ligne, qui associe à chaque clé de colonne l'acteur cellule correspondant.",
+     "params": []
+    },
+    {
+     "name": "rowsCount",
+     "kind": "champ",
+     "signature": "rowsCount",
+     "type": null,
+     "readonly": true,
+     "description": "Nombre de lignes de données du tableau.",
      "params": []
     },
     {
@@ -7146,6 +10107,74 @@
    ],
    "methods": [
     {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "changePage",
+     "kind": "méthode",
+     "signature": "changePage(newPage)",
+     "type": null,
+     "readonly": false,
+     "description": "Affiche la page demandée (entre 1 et `pageMax`) et déclenche `onChangeDataPage`.",
+     "params": []
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
      "name": "getParameters",
      "kind": "méthode",
      "signature": "getParameters()",
@@ -7155,6 +10184,34 @@
      "params": []
     },
     {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
      "name": "refresh",
      "kind": "méthode",
      "signature": "refresh()",
@@ -7162,6 +10219,43 @@
      "readonly": false,
      "description": "Effectue un rafraîchissement de la donnée.",
      "params": []
+    },
+    {
+     "name": "refreshTable",
+     "kind": "méthode",
+     "signature": "refreshTable()",
+     "type": null,
+     "readonly": false,
+     "description": "Reconstruit les cellules du tableau à partir des colonnes et des lignes de données, puis déclenche `onDidTableRender`.",
+     "params": []
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
     },
     {
      "name": "request",
@@ -7939,6 +11033,33 @@
      "params": []
     },
     {
+     "name": "columns",
+     "kind": "champ",
+     "signature": "columns",
+     "type": "Array<String>",
+     "readonly": true,
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "params": []
+    },
+    {
+     "name": "count",
+     "kind": "champ",
+     "signature": "count",
+     "type": "Number",
+     "readonly": true,
+     "description": "Nombre d'éléments total de la liste.",
+     "params": []
+    },
+    {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
@@ -7975,12 +11096,48 @@
      "params": []
     },
     {
+     "name": "page",
+     "kind": "champ",
+     "signature": "page",
+     "type": null,
+     "readonly": false,
+     "description": "Numéro de la page en cours (à partir de 1).",
+     "params": []
+    },
+    {
+     "name": "reflects",
+     "kind": "champ",
+     "signature": "reflects",
+     "type": null,
+     "readonly": false,
+     "description": "Réflexes de la page courante de la liste (lecture seule).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "params": []
+    },
+    {
+     "name": "rows",
+     "kind": "champ",
+     "signature": "rows",
+     "type": "Array",
+     "readonly": true,
+     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
+     "params": []
+    },
+    {
+     "name": "selectedReflect",
+     "kind": "champ",
+     "signature": "selectedReflect",
+     "type": null,
+     "readonly": false,
+     "description": "Réflexe sélectionné dans la liste ; le modifier déclenche l'évènement onSelectChange.",
      "params": []
     }
    ],
@@ -8001,6 +11158,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "selectReflect",
+     "kind": "méthode",
+     "signature": "selectReflect(reflect)",
+     "type": null,
+     "readonly": false,
+     "description": "Sélectionne le réflexe donné dans la liste.",
      "params": []
     }
    ],
@@ -8187,12 +11353,66 @@
      "params": []
     },
     {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande peut être envoyée.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "commandError",
+     "kind": "champ",
+     "signature": "commandError",
+     "type": null,
+     "readonly": true,
+     "description": "Erreur de la dernière commande envoyée.",
+     "params": []
+    },
+    {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
+     "params": []
+    },
+    {
+     "name": "hasCommandError",
+     "kind": "champ",
+     "signature": "hasCommandError",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la dernière commande a échoué.",
      "params": []
     },
     {
@@ -8205,12 +11425,39 @@
      "params": []
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet a une commande en attente.",
+     "params": []
+    },
+    {
+     "name": "isCommanding",
+     "kind": "champ",
+     "signature": "isCommanding",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si une commande est en cours d'envoi.",
+     "params": []
+    },
+    {
      "name": "isRequesting",
      "kind": "champ",
      "signature": "isRequesting",
      "type": "Boolean",
      "readonly": true,
      "description": "Indique si la requête est en cours.",
+     "params": []
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
      "params": []
     },
     {
@@ -8223,16 +11470,75 @@
      "params": []
     },
     {
+     "name": "pendingCommand",
+     "kind": "champ",
+     "signature": "pendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Commande en attente du reflet, `null` sans commande.",
+     "params": []
+    },
+    {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
    "methods": [
+    {
+     "name": "cancelCommand",
+     "kind": "méthode",
+     "signature": "cancelCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Annule la commande en cours.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
     {
      "name": "refresh",
      "kind": "méthode",
@@ -8243,12 +11549,39 @@
      "params": []
     },
     {
+     "name": "removePendingCommand",
+     "kind": "méthode",
+     "signature": "removePendingCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Supprime la commande en attente.",
+     "params": []
+    },
+    {
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "submitCommand",
+     "kind": "méthode",
+     "signature": "submitCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Envoie la commande.",
+     "params": []
+    },
+    {
+     "name": "write",
+     "kind": "méthode",
+     "signature": "write()",
+     "type": null,
+     "readonly": false,
+     "description": "Envoie la commande du reflet si l'acteur et le reflet l'autorisent.",
      "params": []
     }
    ],
@@ -8508,6 +11841,33 @@
      "params": []
     },
     {
+     "name": "columns",
+     "kind": "champ",
+     "signature": "columns",
+     "type": "Array<String>",
+     "readonly": true,
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "params": []
+    },
+    {
+     "name": "count",
+     "kind": "champ",
+     "signature": "count",
+     "type": "Number",
+     "readonly": true,
+     "description": "Nombre d'éléments total de la liste.",
+     "params": []
+    },
+    {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
@@ -8544,12 +11904,39 @@
      "params": []
     },
     {
+     "name": "page",
+     "kind": "champ",
+     "signature": "page",
+     "type": null,
+     "readonly": false,
+     "description": "Numéro de la page en cours (à partir de 1).",
+     "params": []
+    },
+    {
+     "name": "reflectEvents",
+     "kind": "champ",
+     "signature": "reflectEvents",
+     "type": null,
+     "readonly": false,
+     "description": "Évènements de réflexe de la page courante du journal (lecture seule).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "params": []
+    },
+    {
+     "name": "rows",
+     "kind": "champ",
+     "signature": "rows",
+     "type": "Array",
+     "readonly": true,
+     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
      "params": []
     }
    ],
@@ -8704,6 +12091,15 @@
      "params": []
     },
     {
+     "name": "isCommanding",
+     "kind": "champ",
+     "signature": "isCommanding",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si la requête de commande est en cours.",
+     "params": []
+    },
+    {
      "name": "isFirstRequestDone",
      "kind": "champ",
      "signature": "isFirstRequestDone",
@@ -8772,9 +12168,9 @@
      "name": "write",
      "kind": "méthode",
      "signature": "write()",
-     "type": "Promise<any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête d'écriture.",
+     "description": "Envoie les commandes de tous les fournisseurs de reflet commandables, puis rafraîchit la donnée.",
      "params": []
     }
    ],
@@ -8883,8 +12279,8 @@
      "name": "data",
      "kind": "champ",
      "signature": "data",
-     "type": "any",
-     "readonly": false,
+     "type": "Reflect",
+     "readonly": true,
      "description": "Obtient ou définit la donnée exposée.",
      "params": []
     },
@@ -8898,12 +12294,30 @@
      "params": []
     },
     {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": "string",
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
+     "params": []
+    },
+    {
      "name": "hasError",
      "kind": "champ",
      "signature": "hasError",
      "type": "Boolean",
      "readonly": true,
      "description": "Indique s'il y a eu une erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "isCommanding",
+     "kind": "champ",
+     "signature": "isCommanding",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si la requête de commande est en cours.",
      "params": []
     },
     {
@@ -8921,14 +12335,14 @@
      "signature": "isRequesting",
      "type": "Boolean",
      "readonly": true,
-     "description": "Indique si la requête est en cours.",
+     "description": "Requête en cours ?",
      "params": []
     },
     {
      "name": "isValorized",
      "kind": "champ",
      "signature": "isValorized",
-     "type": "boolean",
+     "type": null,
      "readonly": true,
      "description": "Indique si la donnée a été valorisée.",
      "params": []
@@ -8949,6 +12363,15 @@
      "type": null,
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": "Actor.ReflectRequesterBase ou null",
+     "readonly": true,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
@@ -8974,10 +12397,10 @@
     {
      "name": "write",
      "kind": "méthode",
-     "signature": "write()",
-     "type": "Promise<any>",
+     "signature": "write({ withRefreshAfter }?)",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête d'écriture.",
+     "description": "Envoie la commande du reflet si elle est autorisée (`data.allowCommand`), puis rafraîchit la donnée par défaut (`withRefreshAfter`).",
      "params": []
     }
    ],
@@ -9241,12 +12664,30 @@
      "params": []
     },
     {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
      "params": []
     },
     {
@@ -9268,6 +12709,15 @@
      "params": []
     },
     {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
+     "params": []
+    },
+    {
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
@@ -9277,12 +12727,39 @@
      "params": []
     },
     {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
@@ -9300,9 +12777,9 @@
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -9434,12 +12911,39 @@
      "params": []
     },
     {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
      "params": []
     },
     {
@@ -9461,6 +12965,15 @@
      "params": []
     },
     {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
+     "params": []
+    },
+    {
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
@@ -9470,16 +12983,57 @@
      "params": []
     },
     {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
    "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
     {
      "name": "refresh",
      "kind": "méthode",
@@ -9493,9 +13047,9 @@
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -9632,12 +13186,30 @@
      "params": []
     },
     {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
      "params": []
     },
     {
@@ -9659,6 +13231,15 @@
      "params": []
     },
     {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
+     "params": []
+    },
+    {
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
@@ -9668,12 +13249,39 @@
      "params": []
     },
     {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
@@ -9691,9 +13299,9 @@
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -9827,12 +13435,30 @@
      "params": []
     },
     {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
      "params": []
     },
     {
@@ -9854,6 +13480,15 @@
      "params": []
     },
     {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
+     "params": []
+    },
+    {
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
@@ -9863,12 +13498,39 @@
      "params": []
     },
     {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
@@ -9886,9 +13548,9 @@
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -10022,12 +13684,30 @@
      "params": []
     },
     {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
      "params": []
     },
     {
@@ -10049,6 +13729,15 @@
      "params": []
     },
     {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
+     "params": []
+    },
+    {
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
@@ -10058,12 +13747,39 @@
      "params": []
     },
     {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
@@ -10081,9 +13797,9 @@
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -10217,12 +13933,30 @@
      "params": []
     },
     {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
      "params": []
     },
     {
@@ -10244,6 +13978,15 @@
      "params": []
     },
     {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
+     "params": []
+    },
+    {
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
@@ -10253,12 +13996,39 @@
      "params": []
     },
     {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
@@ -10276,9 +14046,9 @@
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -10412,12 +14182,30 @@
      "params": []
     },
     {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
      "type": "String ou null",
      "readonly": true,
      "description": "Erreur de requête.",
+     "params": []
+    },
+    {
+     "name": "fullPath",
+     "kind": "champ",
+     "signature": "fullPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin complet vers le reflet.",
      "params": []
     },
     {
@@ -10439,6 +14227,15 @@
      "params": []
     },
     {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la donnée a été valorisée.",
+     "params": []
+    },
+    {
      "name": "lastRequestDate",
      "kind": "champ",
      "signature": "lastRequestDate",
@@ -10448,12 +14245,39 @@
      "params": []
     },
     {
+     "name": "reflect",
+     "kind": "champ",
+     "signature": "reflect",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le reflet chargé (alias en lecture seule de `data`).",
+     "params": []
+    },
+    {
+     "name": "reflectPath",
+     "kind": "champ",
+     "signature": "reflectPath",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient le chemin du reflet relatif au requêteur source (`properties.reflectPath`).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requesterSource",
+     "kind": "champ",
+     "signature": "requesterSource",
+     "type": null,
+     "readonly": false,
+     "description": "Obtient le requêteur de reflet source.",
      "params": []
     }
    ],
@@ -10471,9 +14295,9 @@
      "name": "request",
      "kind": "méthode",
      "signature": "request()",
-     "type": "Promise<Any>",
+     "type": null,
      "readonly": false,
-     "description": "Effectue une requête.",
+     "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -10635,6 +14459,33 @@
      "params": []
     },
     {
+     "name": "columns",
+     "kind": "champ",
+     "signature": "columns",
+     "type": "Array<String>",
+     "readonly": true,
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "params": []
+    },
+    {
+     "name": "count",
+     "kind": "champ",
+     "signature": "count",
+     "type": "Number",
+     "readonly": true,
+     "description": "Nombre d'éléments total de la liste.",
+     "params": []
+    },
+    {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
@@ -10671,12 +14522,48 @@
      "params": []
     },
     {
+     "name": "page",
+     "kind": "champ",
+     "signature": "page",
+     "type": null,
+     "readonly": false,
+     "description": "Numéro de la page en cours (à partir de 1).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "params": []
+    },
+    {
+     "name": "ressources",
+     "kind": "champ",
+     "signature": "ressources",
+     "type": null,
+     "readonly": false,
+     "description": "Ressources de la page courante de la liste (lecture seule).",
+     "params": []
+    },
+    {
+     "name": "rows",
+     "kind": "champ",
+     "signature": "rows",
+     "type": "Array",
+     "readonly": true,
+     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
+     "params": []
+    },
+    {
+     "name": "selectedResource",
+     "kind": "champ",
+     "signature": "selectedResource",
+     "type": null,
+     "readonly": false,
+     "description": "Ressource sélectionnée dans la liste ; la modifier déclenche l'évènement onSelected.",
      "params": []
     }
    ],
@@ -10697,6 +14584,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "selectResource",
+     "kind": "méthode",
+     "signature": "selectResource(resource)",
+     "type": null,
+     "readonly": false,
+     "description": "Sélectionne la ressource donnée dans la liste.",
      "params": []
     }
    ],
@@ -10936,6 +14832,33 @@
      "params": []
     },
     {
+     "name": "columns",
+     "kind": "champ",
+     "signature": "columns",
+     "type": "Array<String>",
+     "readonly": true,
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "params": []
+    },
+    {
+     "name": "count",
+     "kind": "champ",
+     "signature": "count",
+     "type": "Number",
+     "readonly": true,
+     "description": "Nombre d'éléments total de la liste.",
+     "params": []
+    },
+    {
+     "name": "data",
+     "kind": "champ",
+     "signature": "data",
+     "type": null,
+     "readonly": false,
+     "description": "Donnée reçue par la dernière requête.",
+     "params": []
+    },
+    {
      "name": "error",
      "kind": "champ",
      "signature": "error",
@@ -10972,12 +14895,39 @@
      "params": []
     },
     {
+     "name": "page",
+     "kind": "champ",
+     "signature": "page",
+     "type": null,
+     "readonly": false,
+     "description": "Numéro de la page en cours (à partir de 1).",
+     "params": []
+    },
+    {
      "name": "requestDebounce",
      "kind": "champ",
      "signature": "requestDebounce",
      "type": null,
      "readonly": true,
      "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
+     "params": []
+    },
+    {
+     "name": "rows",
+     "kind": "champ",
+     "signature": "rows",
+     "type": "Array",
+     "readonly": true,
+     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
+     "params": []
+    },
+    {
+     "name": "wosEvents",
+     "kind": "champ",
+     "signature": "wosEvents",
+     "type": null,
+     "readonly": false,
+     "description": "Évènements WOS de la page courante du journal (lecture seule).",
      "params": []
     }
    ],
