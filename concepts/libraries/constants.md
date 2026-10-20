@@ -48,7 +48,7 @@ Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'
 >- Accès grâce aux [liaisons](../binding.md).
 >- Accès via les [scripts](../scripts/index.md).
 >
->[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#constants){:target="_blank"}
+>[⚡ Synapp : `constants`](../scripts/reference/synapp.md#constants)
 
 
 >Les constantes sont stockés sous format JSON avec la syntaxe suivante pour chaque constante :

@@ -3,7 +3,9 @@
 alphabétique : include.type = type d'acteur ou « common » ; include.list = autre liste de l'acteur
 (property_events : évènements propres à chaque propriété, ancre explicite sans accents).
 {%- endcomment -%}
-{%- if include.type == "common" -%}
+{%- if include.object -%}
+{%- assign api_actor = site.data.script_api.objects[include.object] -%}
+{%- elsif include.type == "common" -%}
 {%- assign api_actor = site.data.script_api.common -%}
 {%- else -%}
 {%- assign api_actor = site.data.script_api.actors[include.type] -%}

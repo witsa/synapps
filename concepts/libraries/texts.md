@@ -123,7 +123,7 @@ La méthode principale pour utiliser les textes de la librairie est via les [lia
 
 Il faut définir une liaison de type Librairie/Texte sur une propriété d'un acteur. Dans la définition de la liaison, il faut sélectionner la clé du texte que l'on souhaite utiliser dans la liste déroulante.
 
-Une méthode alternative est l'utilisation via les scripts [⚡ Synapps.Synapp.html#text]({{ site.baseurl }}/script-api/Synapps.Synapp.html#texts){:target="_blank"}.
+Une méthode alternative est l'utilisation via les scripts [⚡ Synapp : `texts`](../scripts/reference/synapp.md#texts).
 
 ## Format de stockage des textes JSON
 

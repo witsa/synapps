@@ -1215,7 +1215,7 @@
     "name": "rootScene",
     "kind": "champ",
     "signature": "rootScene",
-    "type": "Synapps.Scene",
+    "type": "Scène",
     "readonly": true,
     "description": "Obtient la scène racine.\n<br> *Ce n'est pas forcément la scène parente directe de l'acteur.*",
     "params": []
@@ -1224,7 +1224,7 @@
     "name": "scene",
     "kind": "champ",
     "signature": "scene",
-    "type": "Synapps.Scene",
+    "type": "Scène",
     "readonly": true,
     "description": "Première scène parente de l'acteur.\n<br> *Ce n'est pas forcément la scène parente directe de l'acteur ni même la scène racine.*",
     "params": []
@@ -1233,7 +1233,7 @@
     "name": "slotComposite",
     "kind": "champ",
     "signature": "slotComposite",
-    "type": "Actor.Composite",
+    "type": "Composite",
     "readonly": true,
     "description": "Composite auquel appartient l'emplacement contenant l'acteur.",
     "params": []
@@ -1260,7 +1260,7 @@
     "name": "synapp",
     "kind": "champ",
     "signature": "synapp",
-    "type": "Synapps.Synapp",
+    "type": "Synapp",
     "readonly": true,
     "description": "Obtient la Synapp.",
     "params": []
@@ -1804,6 +1804,989 @@
   ]
  },
  "objects": {
+  "context": {
+   "name": "Contexte d'évènement",
+   "fields": [
+    {
+     "name": "dataStores",
+     "kind": "champ",
+     "signature": "dataStores",
+     "type": "REDY.Synapps.DataStores",
+     "readonly": true,
+     "description": "Magasins de données.",
+     "params": []
+    },
+    {
+     "name": "eventName",
+     "kind": "champ",
+     "signature": "eventName",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom de l'évènement.",
+     "params": []
+    },
+    {
+     "name": "rootScene",
+     "kind": "champ",
+     "signature": "rootScene",
+     "type": "Scène",
+     "readonly": true,
+     "description": "Scène racine de l'acteur.",
+     "params": []
+    },
+    {
+     "name": "scene",
+     "kind": "champ",
+     "signature": "scene",
+     "type": "Scène",
+     "readonly": true,
+     "description": "Première scène parente de l'acteur émetteur de l'évènement.",
+     "params": []
+    },
+    {
+     "name": "stage",
+     "kind": "champ",
+     "signature": "stage",
+     "type": "Stage",
+     "readonly": true,
+     "description": "Scène ou composite portant l'acteur émetteur de l'évènement.",
+     "params": []
+    },
+    {
+     "name": "synapp",
+     "kind": "champ",
+     "signature": "synapp",
+     "type": "Synapp",
+     "readonly": true,
+     "description": "Synapp",
+     "params": []
+    },
+    {
+     "name": "target",
+     "kind": "champ",
+     "signature": "target",
+     "type": "Actor.BaseActor",
+     "readonly": true,
+     "description": "Acteur à l'origine de l'évènement.",
+     "params": []
+    },
+    {
+     "name": "utils",
+     "kind": "champ",
+     "signature": "utils",
+     "type": "Utilitaires du contexte",
+     "readonly": true,
+     "description": "Méthodes utilitaires pour les scripts.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient l'acteur dans la même scène ou le même composite suivant sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à chercher."
+      }
+     ]
+    }
+   ],
+   "events": []
+  },
+  "context-utils": {
+   "name": "Utilitaires du contexte",
+   "fields": [],
+   "methods": [
+    {
+     "name": "debounce",
+     "kind": "méthode",
+     "signature": "debounce(func, delay)",
+     "type": "Function",
+     "readonly": false,
+     "description": "Retourne un méthode qui retarde les répétitions d'exécution d'une autre méthode.",
+     "params": [
+      {
+       "name": "func",
+       "description": "Fonction a exécuter après un délai."
+      },
+      {
+       "name": "delay",
+       "description": "Délai d'attente avant l'exécution en ms."
+      }
+     ]
+    },
+    {
+     "name": "debouncedPromise",
+     "kind": "méthode",
+     "signature": "debouncedPromise(func, delay)",
+     "type": "Function",
+     "readonly": false,
+     "description": "Retourne une méthode asynchrone qui retarde les répétitions d'exécution d'une autre méthode.",
+     "params": [
+      {
+       "name": "func",
+       "description": "Fonction asynchrone a exécuter après un délai."
+      },
+      {
+       "name": "delay",
+       "description": "Délai d'attente avant l'exécution en ms."
+      }
+     ]
+    },
+    {
+     "name": "get",
+     "kind": "méthode",
+     "signature": "get(obj, path)",
+     "type": "any",
+     "readonly": false,
+     "description": "Obtient la valeur d'un objet suivant un chemin.",
+     "params": [
+      {
+       "name": "obj",
+       "description": "L'objet"
+      },
+      {
+       "name": "path",
+       "description": "Le chemin"
+      }
+     ]
+    },
+    {
+     "name": "isEmpty",
+     "kind": "méthode",
+     "signature": "isEmpty(value)",
+     "type": "Boolean",
+     "readonly": false,
+     "description": "La valeur est elle vide ?",
+     "params": [
+      {
+       "name": "value",
+       "description": "la valeur à tester"
+      }
+     ]
+    },
+    {
+     "name": "isNone",
+     "kind": "méthode",
+     "signature": "isNone(value)",
+     "type": "Boolean",
+     "readonly": false,
+     "description": "La valeur est elle null/vide ?",
+     "params": [
+      {
+       "name": "value",
+       "description": "la valeur à tester"
+      }
+     ]
+    },
+    {
+     "name": "isPresent",
+     "kind": "méthode",
+     "signature": "isPresent(value)",
+     "type": "Boolean",
+     "readonly": false,
+     "description": "La valeur est elle présente ?",
+     "params": [
+      {
+       "name": "value",
+       "description": "la valeur à tester"
+      }
+     ]
+    },
+    {
+     "name": "isValuesEqual",
+     "kind": "méthode",
+     "signature": "isValuesEqual(value1, value2, isWeakComparison?)",
+     "type": null,
+     "readonly": false,
+     "description": "Compare deux valeurs de tous types.\n\nLes tableaux sont comparés élément par élément.",
+     "params": [
+      {
+       "name": "v1",
+       "description": "Valeur 1 à comparer"
+      },
+      {
+       "name": "v2",
+       "description": "Valeur 2 à comparer"
+      },
+      {
+       "name": "isWeakComparison",
+       "description": "activer la comparaison faible"
+      }
+     ]
+    },
+    {
+     "name": "notifyPropertyChange",
+     "kind": "méthode",
+     "signature": "notifyPropertyChange(obj, path)",
+     "type": null,
+     "readonly": false,
+     "description": "Permet de déclencher les mises à jours de liaison ou évènement de changement de propriété suivant un chemin.",
+     "params": [
+      {
+       "name": "obj",
+       "description": "L'objet"
+      },
+      {
+       "name": "path",
+       "description": "Le chemin à notifier"
+      }
+     ]
+    },
+    {
+     "name": "set",
+     "kind": "méthode",
+     "signature": "set(obj, path, value)",
+     "type": null,
+     "readonly": false,
+     "description": "Assigne la valeur à un objet suivant un chemin.\n\nPermet de déclencher les mises à jours de liaison ou évènement de changement de propriété.",
+     "params": [
+      {
+       "name": "obj",
+       "description": "L'objet"
+      },
+      {
+       "name": "path",
+       "description": "Le chemin"
+      },
+      {
+       "name": "value",
+       "description": "la valeur à placer."
+      }
+     ]
+    },
+    {
+     "name": "setProperties",
+     "kind": "méthode",
+     "signature": "setProperties(obj, props)",
+     "type": null,
+     "readonly": false,
+     "description": "Assigne des valeurs à un objet suivant plusieurs chemin.\n\nPermet de déclencher les mises à jours de liaison ou évènement de changement de propriété.",
+     "params": [
+      {
+       "name": "obj",
+       "description": "L'objet"
+      },
+      {
+       "name": "props",
+       "description": "Les valeurs à placer."
+      }
+     ]
+    },
+    {
+     "name": "typeOf",
+     "kind": "méthode",
+     "signature": "typeOf(value)",
+     "type": "string",
+     "readonly": false,
+     "description": "Retourne le type de la valeur.",
+     "params": [
+      {
+       "name": "value",
+       "description": "la valeur à tester"
+      }
+     ]
+    },
+    {
+     "name": "wait",
+     "kind": "méthode",
+     "signature": "wait(delay, params?)",
+     "type": "Promise",
+     "readonly": false,
+     "description": "Méthode asynchrone qui permet d'attendre un délai avant d'exécuter la suite du code.",
+     "params": [
+      {
+       "name": "delay",
+       "description": "Délai d'attente avant l'exécution en ms."
+      },
+      {
+       "name": "params",
+       "description": "Objet qui permet de récupérer le timeout créer pour avoir la possibilité d'annuler l'attente."
+      }
+     ]
+    }
+   ],
+   "events": []
+  },
+  "synapp": {
+   "name": "Synapp",
+   "fields": [
+    {
+     "name": "backgroundColor",
+     "kind": "champ",
+     "signature": "backgroundColor",
+     "type": "CssColorString",
+     "readonly": false,
+     "description": "Obtient ou définit la couleur d'arrière plan de la synapp.",
+     "params": []
+    },
+    {
+     "name": "backstage",
+     "kind": "champ",
+     "signature": "backstage",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient la scène d'arrière-plan de la synapp.",
+     "params": []
+    },
+    {
+     "name": "color",
+     "kind": "champ",
+     "signature": "color",
+     "type": "CssColorString",
+     "readonly": false,
+     "description": "Obtient ou définit la couleur de police de la synapp.",
+     "params": []
+    },
+    {
+     "name": "colors",
+     "kind": "champ",
+     "signature": "colors",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient les couleurs en librairie.",
+     "params": []
+    },
+    {
+     "name": "constants",
+     "kind": "champ",
+     "signature": "constants",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient les constantes en librairie.",
+     "params": []
+    },
+    {
+     "name": "dataStores",
+     "kind": "champ",
+     "signature": "dataStores",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient les magasins de donnée.",
+     "params": []
+    },
+    {
+     "name": "fontFamily",
+     "kind": "champ",
+     "signature": "fontFamily",
+     "type": "CssFontFamilyString ou 'inherit'",
+     "readonly": false,
+     "description": "Obtient ou définit la famille de police de la synapp.",
+     "params": []
+    },
+    {
+     "name": "fontSize",
+     "kind": "champ",
+     "signature": "fontSize",
+     "type": "String",
+     "readonly": false,
+     "description": "Obtient ou définit la taille de police de la synapp.",
+     "params": []
+    },
+    {
+     "name": "icons",
+     "kind": "champ",
+     "signature": "icons",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient les icons de la synapp.",
+     "params": []
+    },
+    {
+     "name": "isInDesigner",
+     "kind": "champ",
+     "signature": "isInDesigner",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la synapp s'exécute dans un designer de Synapps Studio.",
+     "params": []
+    },
+    {
+     "name": "isInStudio",
+     "kind": "champ",
+     "signature": "isInStudio",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient vrai si la scène s'exécute dans Synapps Studio.",
+     "params": []
+    },
+    {
+     "name": "logo",
+     "kind": "champ",
+     "signature": "logo",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient le logo de la synapp.",
+     "params": []
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient le nom de la synapp.",
+     "params": []
+    },
+    {
+     "name": "pictures",
+     "kind": "champ",
+     "signature": "pictures",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient les images en librairie.",
+     "params": []
+    },
+    {
+     "name": "texts",
+     "kind": "champ",
+     "signature": "texts",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient les textes en librairie.",
+     "params": []
+    },
+    {
+     "name": "userAgent",
+     "kind": "champ",
+     "signature": "userAgent",
+     "type": "Afficheur",
+     "readonly": true,
+     "description": "Obtient l'afficheur.",
+     "params": []
+    },
+    {
+     "name": "version",
+     "kind": "champ",
+     "signature": "version",
+     "type": "Object",
+     "readonly": true,
+     "description": "Obtient la version de la synapp.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "navigate",
+     "kind": "méthode",
+     "signature": "navigate(sceneKey, sceneParams)",
+     "type": null,
+     "readonly": false,
+     "description": "Navigue vers une scène et change ses paramètres.",
+     "params": [
+      {
+       "name": "sceneKey",
+       "description": "Clé de la scène cible."
+      },
+      {
+       "name": "sceneParams",
+       "description": "Paramètres de scène. On attend ici un objet clé/valeur ou un JSON en chaîne de cet objet. Les clés correspondent aux paramètres de la scène cible."
+      }
+     ]
+    }
+   ],
+   "events": []
+  },
+  "scene": {
+   "name": "Scène",
+   "fields": [
+    {
+     "name": "additionals",
+     "kind": "champ",
+     "signature": "additionals",
+     "type": "Propriétés et additionnelles",
+     "readonly": true,
+     "description": "Obtient les propriétés additionnelles.",
+     "params": []
+    },
+    {
+     "name": "allActors",
+     "kind": "champ",
+     "signature": "allActors",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient tous les acteurs de la scène ou du composite.",
+     "params": []
+    },
+    {
+     "name": "isInDesigner",
+     "kind": "champ",
+     "signature": "isInDesigner",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient vrai s'il le composites{@link Actor.Composite } ou la [scène est en mode **design** dans Synapps Studio.",
+     "params": []
+    },
+    {
+     "name": "key",
+     "kind": "champ",
+     "signature": "key",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la clé unique de la scène.",
+     "params": []
+    },
+    {
+     "name": "leadActor",
+     "kind": "champ",
+     "signature": "leadActor",
+     "type": "Actor.BaseActor",
+     "readonly": true,
+     "description": "Obtient l'acteur principal.",
+     "params": []
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient le nom de la scène.",
+     "params": []
+    },
+    {
+     "name": "rootScene",
+     "kind": "champ",
+     "signature": "rootScene",
+     "type": "Scène",
+     "readonly": true,
+     "description": "Obtient la scène racine.",
+     "params": []
+    },
+    {
+     "name": "screen",
+     "kind": "champ",
+     "signature": "screen",
+     "type": "Écran ou null",
+     "readonly": true,
+     "description": "Obtient éventuellement l'acteur écran qui l'accueille.",
+     "params": []
+    },
+    {
+     "name": "synapp",
+     "kind": "champ",
+     "signature": "synapp",
+     "type": "Synapp",
+     "readonly": true,
+     "description": "Obtient la Synapp.",
+     "params": []
+    },
+    {
+     "name": "uniqClass",
+     "kind": "champ",
+     "signature": "uniqClass",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la classe CSS unique de la scène.",
+     "params": []
+    },
+    {
+     "name": "uniqPath",
+     "kind": "champ",
+     "signature": "uniqPath",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient le chemin unique de la scène.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "navigate",
+     "kind": "méthode",
+     "signature": "navigate(sceneKey, additionals)",
+     "type": null,
+     "readonly": false,
+     "description": "Navigue vers une scène et change ses paramètres.",
+     "params": [
+      {
+       "name": "sceneKey",
+       "description": "Clé de la scène cible."
+      }
+     ]
+    }
+   ],
+   "events": []
+  },
+  "composite": {
+   "name": "Composite",
+   "fields": [
+    {
+     "name": "allActors",
+     "kind": "champ",
+     "signature": "allActors",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient tous les acteurs de la scène ou du composite.",
+     "params": []
+    },
+    {
+     "name": "availableSlots",
+     "kind": "champ",
+     "signature": "availableSlots",
+     "type": "Array<String>",
+     "readonly": true,
+     "description": "Liste des clés des emplacements sur le composte.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "hasSlots",
+     "kind": "champ",
+     "signature": "hasSlots",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il y a des emplacement sur le composte.",
+     "params": []
+    },
+    {
+     "name": "isInDesigner",
+     "kind": "champ",
+     "signature": "isInDesigner",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Obtient vrai s'il le composites{@link Actor.Composite } ou la [scène est en mode **design** dans Synapps Studio.",
+     "params": []
+    },
+    {
+     "name": "leadActor",
+     "kind": "champ",
+     "signature": "leadActor",
+     "type": "Actor.BaseActor",
+     "readonly": true,
+     "description": "Obtient l'acteur principal.",
+     "params": []
+    },
+    {
+     "name": "slotChildUis",
+     "kind": "champ",
+     "signature": "slotChildUis",
+     "type": "Object<String,Actor.BaseActor>",
+     "readonly": true,
+     "description": "Obtient les acteurs dans les emplacements.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, slotKey)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur dans un slot.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "slotKey",
+       "description": "Clé de l'emplacement."
+      }
+     ]
+    },
+    {
+     "name": "canAddActor",
+     "kind": "méthode",
+     "signature": "canAddActor(slotKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur dans un emplacement.",
+     "params": [
+      {
+       "name": "slotKey",
+       "description": "Clé de l'emplacement."
+      }
+     ]
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "méthode",
+     "signature": "canRemoveActor(slotKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Pour savoir s'il est possible de retirer un acteur dans un emplacement.",
+     "params": [
+      {
+       "name": "slotKey",
+       "description": "Clé de l'emplacement."
+      }
+     ]
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "getActorInSlots",
+     "kind": "méthode",
+     "signature": "getActorInSlots(key)",
+     "type": "Actor.BaseActor ou null",
+     "readonly": false,
+     "description": "Obtient un acteur dans l'arborescence des emplacements du composite.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur cherché."
+      }
+     ]
+    },
+    {
+     "name": "isAvailableSlot",
+     "kind": "méthode",
+     "signature": "isAvailableSlot(slotKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Pour savoir s'il est un emplacement existe.",
+     "params": [
+      {
+       "name": "slotKey",
+       "description": "Clé de l'emplacement."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur d'un slot.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "name": "onDidActorAddInSlot",
+     "description": "Se produit lorsque un acteur est ajouté dans un slot.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur ajouté."
+      },
+      {
+       "name": "inSlot",
+       "type": null,
+       "description": null
+      }
+     ]
+    },
+    {
+     "name": "onDidActorRemoveInSlot",
+     "description": "Se produit lorsque un acteur est ajouté dans un slot.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur ajouté."
+      },
+      {
+       "name": "removedActor",
+       "type": null,
+       "description": null
+      },
+      {
+       "name": "inSlot",
+       "type": null,
+       "description": null
+      }
+     ]
+    }
+   ]
+  },
+  "host": {
+   "name": "Hôte",
+   "fields": [
+    {
+     "name": "domain",
+     "kind": "champ",
+     "signature": "domain",
+     "type": "string",
+     "readonly": true,
+     "description": "Url du domaine de l'hôte.",
+     "params": []
+    },
+    {
+     "name": "session",
+     "kind": "champ",
+     "signature": "session",
+     "type": "REDY.Synapps.RedySession",
+     "readonly": true,
+     "description": "La session pour cet hôte.",
+     "params": []
+    }
+   ],
+   "methods": [],
+   "events": []
+  },
+  "session": {
+   "name": "Session",
+   "fields": [
+    {
+     "name": "expirationDate",
+     "kind": "champ",
+     "signature": "expirationDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date d'expiration de la session. Format : Date ISO.",
+     "params": []
+    },
+    {
+     "name": "host",
+     "kind": "champ",
+     "signature": "host",
+     "type": "Hôte",
+     "readonly": true,
+     "description": "Obtient l'hôte.",
+     "params": []
+    },
+    {
+     "name": "isAuthenticated",
+     "kind": "champ",
+     "signature": "isAuthenticated",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Est authentifié?",
+     "params": []
+    },
+    {
+     "name": "token",
+     "kind": "champ",
+     "signature": "token",
+     "type": "Hôte",
+     "readonly": true,
+     "description": "Obtient le jeton identifiant la session.",
+     "params": []
+    },
+    {
+     "name": "user",
+     "kind": "champ",
+     "signature": "user",
+     "type": "Synapps.BaseUser",
+     "readonly": true,
+     "description": "L'utilisateur de la session.",
+     "params": []
+    }
+   ],
+   "methods": [],
+   "events": []
+  },
+  "user-agent": {
+   "name": "Afficheur",
+   "fields": [
+    {
+     "name": "isDestroyed",
+     "kind": "champ",
+     "signature": "isDestroyed",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Vrai quand l'objet est détruit.",
+     "params": []
+    },
+    {
+     "name": "isDestroying",
+     "kind": "champ",
+     "signature": "isDestroying",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Vrai quand l'objet est en train d'être détruit.",
+     "params": []
+    },
+    {
+     "name": "isLandscape",
+     "kind": "champ",
+     "signature": "isLandscape",
+     "type": "boolean",
+     "readonly": true,
+     "description": "L'afficheur est-il orienté au format paysage.",
+     "params": []
+    },
+    {
+     "name": "isPortrait",
+     "kind": "champ",
+     "signature": "isPortrait",
+     "type": "boolean",
+     "readonly": true,
+     "description": "L'afficheur est-il orienté au format portrait.",
+     "params": []
+    },
+    {
+     "name": "isTouchScreen",
+     "kind": "champ",
+     "signature": "isTouchScreen",
+     "type": "boolean",
+     "readonly": true,
+     "description": "L'afficheur est-il tactile.",
+     "params": []
+    },
+    {
+     "name": "viewportHeight",
+     "kind": "champ",
+     "signature": "viewportHeight",
+     "type": "Number",
+     "readonly": true,
+     "description": "Obtient la hauteur de l'afficheur en pixel.",
+     "params": []
+    },
+    {
+     "name": "viewportWidth",
+     "kind": "champ",
+     "signature": "viewportWidth",
+     "type": "Number",
+     "readonly": true,
+     "description": "Obtient la largeur de l'afficheur en pixel.",
+     "params": []
+    }
+   ],
+   "methods": [],
+   "events": []
+  },
   "properties": {
    "name": "Propriétés et additionnelles",
    "fields": [],
@@ -1822,7 +2805,8 @@
       }
      ]
     }
-   ]
+   ],
+   "events": []
   },
   "binding": {
    "name": "Liaison",
@@ -1937,7 +2921,8 @@
      "description": "Désactive la liaison. Il n'y aura plus d'observation de la valeur source.",
      "params": []
     }
-   ]
+   ],
+   "events": []
   }
  },
  "actors": {
