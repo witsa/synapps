@@ -1,17 +1,18 @@
 {%- comment -%}
 Évènements propres à un acteur, générés depuis le code (@event, appels runEvent), par ordre
-alphabétique : include.type = type d'acteur. Les évènements communs sont décrits avec l'acteur
-de base.
+alphabétique : include.type = type d'acteur ou « common » ; include.list = autre liste de l'acteur
+(property_events : évènements propres à chaque propriété, ancre explicite sans accents).
 {%- endcomment -%}
 {%- if include.type == "common" -%}
 {%- assign api_actor = site.data.script_api.common -%}
 {%- else -%}
 {%- assign api_actor = site.data.script_api.actors[include.type] -%}
 {%- endif -%}
-{%- for event in api_actor.events %}
+{%- assign api_events = api_actor[include.list] | default: api_actor.events -%}
+{%- for event in api_events %}
 
-## {{ event.name }}
-{: .api-event }
+## {{ event.name | escape }}
+{% if include.list %}{: .api-event #{{ event.name | slugify: "latin" }} }{% else %}{: .api-event }{% endif %}
 {% if event.description %}
 {{ event.description }}
 {% endif %}
@@ -22,6 +23,10 @@ de base.
 {%- for item in event.context %}
 | `{{ item.name }}` | {{ item.type | default: "" | escape | replace: "|", "&#124;" }} | {{ item.description | default: "" | replace: "|", "&#124;" }} |
 {%- endfor %}
+{% endif %}
+{%- if event.returns %}
+
+Valeur renvoyée{% if event.returns.type %} ({{ event.returns.type | escape }}){% endif %} : {{ event.returns.description }}
 {% endif %}
 {% include script_api/note.md type=include.type kind="event" name=event.name %}
 {%- endfor %}

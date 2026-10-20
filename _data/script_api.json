@@ -1116,7 +1116,7 @@
     "name": "additionals",
     "kind": "champ",
     "signature": "additionals",
-    "type": "Synapps.PrototypedBase",
+    "type": "Propriétés et additionnelles",
     "readonly": true,
     "description": "Obtient les propriétés additionnelles.",
     "params": []
@@ -1206,7 +1206,7 @@
     "name": "properties",
     "kind": "champ",
     "signature": "properties",
-    "type": "Synapps.PrototypedBase",
+    "type": "Propriétés et additionnelles",
     "readonly": true,
     "description": "Obtient les propriétés.",
     "params": []
@@ -1352,50 +1352,9 @@
   ],
   "events": [
    {
-    "name": "binding/onReadTransform",
-    "description": null,
-    "context": [
-     {
-      "name": "value",
-      "type": null,
-      "description": null
-     },
-     {
-      "name": "binding",
-      "type": null,
-      "description": null
-     },
-     {
-      "name": "propertyPath",
-      "type": null,
-      "description": null
-     }
-    ]
-   },
-   {
-    "name": "binding/onWriteTransform",
-    "description": null,
-    "context": [
-     {
-      "name": "value",
-      "type": null,
-      "description": null
-     },
-     {
-      "name": "binding",
-      "type": null,
-      "description": null
-     },
-     {
-      "name": "propertyPath",
-      "type": null,
-      "description": null
-     }
-    ]
-   },
-   {
     "name": "onClick",
     "description": "Se produit au clic sur acteur.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1407,11 +1366,13 @@
    {
     "name": "onComputeLayout",
     "description": "Se produit lorsque l'acteur calcul son gabarit.",
+    "returns": null,
     "context": []
    },
    {
     "name": "onContextMenu",
     "description": "Se produit lorsque un bouton droit est cliqué pour afficher le menu contextuel.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1423,16 +1384,19 @@
    {
     "name": "onCssStyling",
     "description": "Se produit lorsque l'acteur applique son style CSS.",
+    "returns": null,
     "context": []
    },
    {
     "name": "onDestroy",
     "description": "Se produit au moment de la destruction d'un acteur.",
+    "returns": null,
     "context": []
    },
    {
     "name": "onDoubleClick",
     "description": "Se produit au double clic sur acteur.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1444,6 +1408,7 @@
    {
     "name": "onFocusIn",
     "description": "Se produit lorsque l'acteur est sur le point d'obtenir le focus.",
+    "returns": null,
     "context": [
      {
       "name": "focusEvent",
@@ -1455,6 +1420,7 @@
    {
     "name": "onFocusOut",
     "description": "Se produit lorsque l'acteur est sur le point de perdre le focus.",
+    "returns": null,
     "context": [
      {
       "name": "focusEvent",
@@ -1466,11 +1432,13 @@
    {
     "name": "onInit",
     "description": "Se produit lorsque l'acteur est initialisé.\n\n<br> Attention, l'élément DOM n'est pas encore accessible, ni les autres acteurs présents.",
+    "returns": null,
     "context": []
    },
    {
     "name": "onKeyDown",
     "description": "Se produit lorsque un touche de clavier est enfoncée dans l'acteur.",
+    "returns": null,
     "context": [
      {
       "name": "keyboardEvent",
@@ -1482,6 +1450,7 @@
    {
     "name": "onKeyUp",
     "description": "Se produit lorsque un touche de clavier est relâchée dans l'acteur.",
+    "returns": null,
     "context": [
      {
       "name": "keyboardEvent",
@@ -1493,11 +1462,13 @@
    {
     "name": "onLeadActorDidRender",
     "description": "Se produit une seule fois sur l'acteur principal d'une scène ou d'un composite, après son\npremier rendu, une fois les fournisseurs de données démarrés (déclenché par la scène ou le\ncomposite).",
+    "returns": null,
     "context": []
    },
    {
     "name": "onMouseDown",
     "description": "Se produit lorsque un bouton de la souris est appuyé au dessus de l'acteur .",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1509,6 +1480,7 @@
    {
     "name": "onMouseEnter",
     "description": "Se produit lorsque la souris entre dans acteur.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1520,6 +1492,7 @@
    {
     "name": "onMouseLeave",
     "description": "Se produit lorsque la souris sort de l' acteur.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1531,6 +1504,7 @@
    {
     "name": "onMouseMove",
     "description": "Se produit lorsque la souris se déplace au dessus de l' acteur.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1542,6 +1516,7 @@
    {
     "name": "onMouseOut",
     "description": "Se produit lorsque la souris survol autre chose que l' acteur.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1553,6 +1528,7 @@
    {
     "name": "onMouseOver",
     "description": "Se produit lorsque la souris survol l' acteur.",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1564,6 +1540,7 @@
    {
     "name": "onMouseUp",
     "description": "Se produit lorsque un bouton de la souris est relâché au dessus de l'acteur .",
+    "returns": null,
     "context": [
      {
       "name": "mouseEvent",
@@ -1575,37 +1552,45 @@
    {
     "name": "onPostInit",
     "description": "Se produit juste avant le premier rendu de l'acteur mais après que tous les acteurs de la scène soient initialisés.\n\n<br> On a accès à tous les éléments DOM, liaisons, ...",
+    "returns": null,
     "context": []
    },
    {
     "name": "onPropertyChanged",
     "description": "Se produit lorsque n'importe quelle propriété ou additionnelle de l'acteur ou de ses accessoires ou additionnelle voit sa valeur changer.",
+    "returns": null,
     "context": [
      {
-      "name": "modifier",
-      "type": null,
-      "description": null
+      "name": "newValue",
+      "type": "any",
+      "description": "Nouvelle valeur."
+     },
+     {
+      "name": "oldValue",
+      "type": "any",
+      "description": "Ancienne valeur."
      },
      {
       "name": "propertyPath",
-      "type": null,
-      "description": null
+      "type": "string",
+      "description": "Chemin de la propriété."
      },
      {
       "name": "name",
-      "type": null,
-      "description": null
+      "type": "string",
+      "description": "Nom de la propriété."
      },
      {
-      "name": "newValue",
-      "type": null,
-      "description": null
+      "name": "modifier",
+      "type": "'css' ou 'render' ou 'layout' ou 'resize' ou 'other'",
+      "description": "Type de modification entraînée par le changement."
      }
     ]
    },
    {
     "name": "onRender",
     "description": "Se produit à chaque rendu de l'acteur dans l'interface.\nUn champs `isFirstRender` est à `true` dans le contexte au premier rendu uniquement.",
+    "returns": null,
     "context": [
      {
       "name": "isFirstRender",
@@ -1617,6 +1602,7 @@
    {
     "name": "onTouchEnd",
     "description": "Se produit lorsque un ou plusieurs points de contact ont été relâchés sur l'acteur .",
+    "returns": null,
     "context": [
      {
       "name": "touchEvent",
@@ -1628,6 +1614,7 @@
    {
     "name": "onTouchMove",
     "description": "Se produit lorsque un ou plusieurs points de contact ont été déplacés sur l'acteur .",
+    "returns": null,
     "context": [
      {
       "name": "touchEvent",
@@ -1639,6 +1626,7 @@
    {
     "name": "onTouchStart",
     "description": "Se produit lorsque un ou plusieurs points de contact ont été réalisés sur l'acteur .",
+    "returns": null,
     "context": [
      {
       "name": "touchEvent",
@@ -1646,39 +1634,311 @@
       "description": null
      }
     ]
-   },
+   }
+  ],
+  "property_events": [
    {
-    "name": "onValueChanged",
-    "description": null,
+    "name": "additionals/<nom>/binding/onReadTransform",
+    "description": "Se produit à la lecture de la source d'une liaison vers une additionnelle `additionalName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la cible.\n\n<br>Par exemple l'évènement `additionals/myText/binding/onReadTransform` se produit lorsque la source de la liaison vers l'additionnelle `myText` est lue.",
+    "returns": {
+     "type": "any",
+     "description": "la valeur lue par défaut."
+    },
     "context": [
      {
-      "name": "newValue",
-      "type": null,
-      "description": null
+      "name": "value",
+      "type": "any",
+      "description": "La valeur lue."
      },
      {
-      "name": "oldValue",
-      "type": null,
-      "description": null
-     },
-     {
-      "name": "name",
-      "type": null,
-      "description": null
+      "name": "binding",
+      "type": "Liaison",
+      "description": "La liaison."
      },
      {
       "name": "propertyPath",
-      "type": null,
-      "description": null
+      "type": "string",
+      "description": "Chemin de la propriété."
+     }
+    ]
+   },
+   {
+    "name": "additionals/<nom>/binding/onWriteTransform",
+    "description": "Se produit à écriture de la source d'une liaison vers une additionnelle `additionalName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la source.\n\n<br>Par exemple l'évènement `additionals/myText/binding/onWriteTransform` se produit lorsque l'additionnelle `myText` change et que sa valeur est écrite dans la source.",
+    "returns": {
+     "type": "any",
+     "description": "la valeur lue par défaut."
+    },
+    "context": [
+     {
+      "name": "value",
+      "type": "any",
+      "description": "La valeur écrite."
+     },
+     {
+      "name": "binding",
+      "type": "Liaison",
+      "description": "La liaison."
+     },
+     {
+      "name": "propertyPath",
+      "type": "string",
+      "description": "Chemin de la propriété."
+     }
+    ]
+   },
+   {
+    "name": "additionals/<nom>/onValueChanged",
+    "description": "Se produit lorsque la valeur de l'additionnelle `[additionalName]` a changé.\n\n<br>Par exemple l'évènement `additionals/myText/onValueChanged` se produit lorsque l'additionnelle `myText` a changé.",
+    "returns": null,
+    "context": [
+     {
+      "name": "newValue",
+      "type": "any",
+      "description": "Nouvelle valeur."
+     },
+     {
+      "name": "oldValue",
+      "type": "any",
+      "description": "Ancienne valeur."
+     },
+     {
+      "name": "propertyPath",
+      "type": "string",
+      "description": "Chemin de la propriété."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "Nom de la propriété."
      },
      {
       "name": "modifier",
-      "type": null,
-      "description": null
+      "type": "'css' ou 'render' ou 'layout' ou 'resize' ou 'other'",
+      "description": "Type de modification entraînée par le changement."
+     }
+    ]
+   },
+   {
+    "name": "properties/<nom>/binding/onReadTransform",
+    "description": "Se produit à la lecture de la source d'une liaison vers une propriété `propertyName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la cible.\n\n<br>Par exemple l'évènement `properties/width/binding/onReadTransform` se produit lorsque la source de la liaison vers la propriété `Actor.BaseActorProperties#width` est lue.",
+    "returns": {
+     "type": "any",
+     "description": "la valeur lue par défaut."
+    },
+    "context": [
+     {
+      "name": "value",
+      "type": "any",
+      "description": "La valeur lue."
+     },
+     {
+      "name": "binding",
+      "type": "Liaison",
+      "description": "La liaison."
+     },
+     {
+      "name": "propertyPath",
+      "type": "string",
+      "description": "Chemin de la propriété."
+     }
+    ]
+   },
+   {
+    "name": "properties/<nom>/binding/onWriteTransform",
+    "description": "Se produit à l'écriture de la source d'une liaison vers une propriété `propertyName`.\nIl est possible de transformer la valeur lue pour écrire autre chose dans la source.\n\n<br>Par exemple l'évènement `properties/width/binding/onWriteTransform` se produit lorsque la propriété `Actor.BaseActorProperties#width` change et que sa valeur est écrite dans la source.",
+    "returns": {
+     "type": "any",
+     "description": "la valeur lue par défaut."
+    },
+    "context": [
+     {
+      "name": "value",
+      "type": "any",
+      "description": "La valeur écrite."
+     },
+     {
+      "name": "binding",
+      "type": "Liaison",
+      "description": "La liaison."
+     },
+     {
+      "name": "propertyPath",
+      "type": "string",
+      "description": "Chemin de la propriété."
+     }
+    ]
+   },
+   {
+    "name": "properties/<nom>/onValueChanged",
+    "description": "Se produit lorsque la valeur de propriété `[propertyName]` change.\n\n<br>Par exemple l'évènement `properties/width/onValueChanged` se produit lorsque la propriété `Actor.BaseActorProperties#width` change.",
+    "returns": null,
+    "context": [
+     {
+      "name": "newValue",
+      "type": "any",
+      "description": "Nouvelle valeur."
+     },
+     {
+      "name": "oldValue",
+      "type": "any",
+      "description": "Ancienne valeur."
+     },
+     {
+      "name": "propertyPath",
+      "type": "string",
+      "description": "Chemin de la propriété."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "Nom de la propriété."
+     },
+     {
+      "name": "modifier",
+      "type": "'css' ou 'render' ou 'layout' ou 'resize' ou 'other'",
+      "description": "Type de modification entraînée par le changement."
      }
     ]
    }
   ]
+ },
+ "objects": {
+  "properties": {
+   "name": "Propriétés et additionnelles",
+   "fields": [],
+   "methods": [
+    {
+     "name": "reset",
+     "kind": "méthode",
+     "signature": "reset(name)",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise à sa valeur par défaut une propriété par son nom.",
+     "params": [
+      {
+       "name": "name",
+       "description": "Nom de la propriété à réinitialiser."
+      }
+     ]
+    }
+   ]
+  },
+  "binding": {
+   "name": "Liaison",
+   "fields": [
+    {
+     "name": "canRead",
+     "kind": "champ",
+     "signature": "canRead",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "la lecture est-elle permise ?",
+     "params": []
+    },
+    {
+     "name": "canWrite",
+     "kind": "champ",
+     "signature": "canWrite",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "l'écriture est-elle permise ?",
+     "params": []
+    },
+    {
+     "name": "dataContext",
+     "kind": "champ",
+     "signature": "dataContext",
+     "type": "any",
+     "readonly": false,
+     "description": "Obtient ou définit le contexte de donnée.\n\nLe contexte de donnée est obtenu par ruissellement si rien n'est définit au niveau de l'objet.",
+     "params": []
+    },
+    {
+     "name": "isActive",
+     "kind": "champ",
+     "signature": "isActive",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "La liaison est-elle active ?",
+     "params": []
+    },
+    {
+     "name": "isDestroyed",
+     "kind": "champ",
+     "signature": "isDestroyed",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Vrai quand l'objet est détruit.",
+     "params": []
+    },
+    {
+     "name": "isDestroying",
+     "kind": "champ",
+     "signature": "isDestroying",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Vrai quand l'objet est en train d'être détruit.",
+     "params": []
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "string",
+     "readonly": false,
+     "description": "Le chemin vers la valeur source.",
+     "params": []
+    },
+    {
+     "name": "readMode",
+     "kind": "champ",
+     "signature": "readMode",
+     "type": "'always' ou 'onetime'",
+     "readonly": false,
+     "description": "Le mode de lecture.\n- `always` pour chaque changement\n- `onetime` pour qu'une seule lecture.",
+     "params": []
+    },
+    {
+     "name": "target",
+     "kind": "champ",
+     "signature": "target",
+     "type": "any",
+     "readonly": true,
+     "description": "La cible de la liaison.",
+     "params": []
+    },
+    {
+     "name": "targetValuePath",
+     "kind": "champ",
+     "signature": "targetValuePath",
+     "type": "string",
+     "readonly": true,
+     "description": "La chemin vers la valeur depuis la cible.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "activate",
+     "kind": "méthode",
+     "signature": "activate()",
+     "type": null,
+     "readonly": false,
+     "description": "Active la liaison. La valeur de la source est observée. Si elle change, le champ cible est alimenté. Si l'écriture est permise, le champ cible est écouté également pour alimenté le champ source.",
+     "params": []
+    },
+    {
+     "name": "deactivate",
+     "kind": "méthode",
+     "signature": "deactivate()",
+     "type": null,
+     "readonly": false,
+     "description": "Désactive la liaison. Il n'y aura plus d'observation de la valeur source.",
+     "params": []
+    }
+   ]
+  }
  },
  "actors": {
   "layout/canvas": {
@@ -1895,6 +2155,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -1906,6 +2167,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -1917,6 +2179,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -1928,6 +2191,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -1939,6 +2203,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -2152,6 +2417,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -2163,6 +2429,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -2174,6 +2441,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -2185,6 +2453,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -2196,6 +2465,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -2423,11 +2693,13 @@
     {
      "name": "onCloseModal",
      "description": "Se produit lorsque la modale s'est fermée.",
+     "returns": null,
      "context": []
     },
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -2439,6 +2711,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -2450,6 +2723,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -2461,6 +2735,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -2472,6 +2747,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -2483,6 +2759,7 @@
     {
      "name": "onOpenModal",
      "description": "Se produit lorsque la modale s'est ouverte.",
+     "returns": null,
      "context": []
     }
    ],
@@ -2721,6 +2998,7 @@
     {
      "name": "onDidSceneChange",
      "description": "Se produit lorsque l'acteur a changé de scène et qu'elle est prête.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -2732,11 +3010,13 @@
     {
      "name": "onDidSceneDestroy",
      "description": "Se produit lorsque l'acteur décharge la scène.",
+     "returns": null,
      "context": []
     },
     {
      "name": "onWillSceneChange",
      "description": "Se produit lorsque l'acteur va changer de scène.\n\nAttention, les additionnelles de l'acteur ont déjà été transmises à la scène suivante.",
+     "returns": null,
      "context": []
     }
    ],
@@ -3071,6 +3351,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -3082,6 +3363,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -3093,6 +3375,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -3104,6 +3387,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -3115,6 +3399,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -3452,6 +3737,7 @@
     {
      "name": "onChangeDataPage",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "page",
@@ -3463,6 +3749,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -3474,6 +3761,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -3485,6 +3773,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -3496,6 +3785,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -3507,6 +3797,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -3923,6 +4214,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -3934,6 +4226,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -3945,6 +4238,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -3956,6 +4250,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -3967,6 +4262,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -4108,11 +4404,13 @@
     {
      "name": "onDidButtonPush",
      "description": "Se produit lorsque le bouton est enfoncé.",
+     "returns": null,
      "context": []
     },
     {
      "name": "onDidButtonRelease",
      "description": "Se produit lorsque le bouton est relâché.",
+     "returns": null,
      "context": []
     }
    ],
@@ -4268,6 +4566,7 @@
     {
      "name": "onSelected",
      "description": "Se produit lorsqu'une option a été sélectionnée.",
+     "returns": null,
      "context": [
       {
        "name": "value",
@@ -4502,11 +4801,13 @@
     {
      "name": "onCursorSet",
      "description": "Se produit lorsque le curseur change de position.",
+     "returns": null,
      "context": []
     },
     {
      "name": "onCursorUpdate",
      "description": "Se produit lorsque le curseur glisse.",
+     "returns": null,
      "context": []
     }
    ],
@@ -4686,6 +4987,7 @@
     {
      "name": "onSelected",
      "description": "Se produit lorsqu'une option a été sélectionnée.",
+     "returns": null,
      "context": [
       {
        "name": "value",
@@ -4860,11 +5162,13 @@
     {
      "name": "onDidButtonPush",
      "description": "Se produit lorsque le bouton est enfoncé.",
+     "returns": null,
      "context": []
     },
     {
      "name": "onDidButtonRelease",
      "description": "Se produit lorsque le bouton est relâché.",
+     "returns": null,
      "context": []
     }
    ],
@@ -5122,6 +5426,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -5133,6 +5438,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -5144,6 +5450,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -5155,6 +5462,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -5166,6 +5474,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -5476,6 +5785,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -5487,6 +5797,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -5498,6 +5809,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -5509,6 +5821,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -5520,6 +5833,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -5531,6 +5845,7 @@
     {
      "name": "onMenuSceneSelected",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "selectedSceneKey",
@@ -5859,6 +6174,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -5870,6 +6186,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -5881,6 +6198,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -5892,6 +6210,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -5903,6 +6222,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -6099,11 +6419,13 @@
     {
      "name": "onDidButtonPush",
      "description": "Se produit lorsque le bouton est enfoncé.",
+     "returns": null,
      "context": []
     },
     {
      "name": "onDidButtonRelease",
      "description": "Se produit lorsque le bouton est relâché.",
+     "returns": null,
      "context": []
     }
    ],
@@ -6802,6 +7124,7 @@
     {
      "name": "onSelected",
      "description": "Se produit lorsqu'une option a été sélectionnée/désélectionnée.",
+     "returns": null,
      "context": [
       {
        "name": "newValues",
@@ -6978,6 +7301,7 @@
     {
      "name": "onSelected",
      "description": "Se produit lorsqu'une option a été sélectionnée.",
+     "returns": null,
      "context": [
       {
        "name": "value",
@@ -7112,6 +7436,7 @@
     {
      "name": "onSelected",
      "description": "Se produit lorsqu'une option a été sélectionnée.",
+     "returns": null,
      "context": [
       {
        "name": "value",
@@ -7272,6 +7597,7 @@
     {
      "name": "onSwitched",
      "description": "Se produit lorsque l'interrupteur est commuté.",
+     "returns": null,
      "context": []
     }
    ],
@@ -7364,6 +7690,7 @@
     {
      "name": "onSwitched",
      "description": "Se produit lorsque l'interrupteur est commuté.",
+     "returns": null,
      "context": []
     }
    ],
@@ -11176,6 +11503,7 @@
     {
      "name": "onChangeDataPage",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "page",
@@ -11187,6 +11515,7 @@
     {
      "name": "onDidActorAdd",
      "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
      "context": [
       {
        "name": "addedActor",
@@ -11198,6 +11527,7 @@
     {
      "name": "onDidActorRemove",
      "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
      "context": [
       {
        "name": "removedActor",
@@ -11209,6 +11539,7 @@
     {
      "name": "onDidActorsAdd",
      "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
      "context": [
       {
        "name": "addedActors",
@@ -11220,6 +11551,7 @@
     {
      "name": "onDidActorsClear",
      "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -11231,6 +11563,7 @@
     {
      "name": "onDidActorsRemove",
      "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
      "context": [
       {
        "name": "removedActors",
@@ -11242,6 +11575,7 @@
     {
      "name": "onDidGetCursor",
      "description": "Se produit lorsque le curseur a été récupéré du REDY, avant son exécution.",
+     "returns": null,
      "context": [
       {
        "name": "cursor",
@@ -11258,6 +11592,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -11538,6 +11873,7 @@
     {
      "name": "onDidGetCursor",
      "description": "Se produit lorsque le curseur a été récupéré du REDY, avant son exécution.",
+     "returns": null,
      "context": [
       {
        "name": "cursor",
@@ -11554,6 +11890,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -11771,6 +12108,7 @@
     {
      "name": "onDidGetCursor",
      "description": "Se produit lorsque le curseur a été récupéré du REDY, avant son exécution.",
+     "returns": null,
      "context": [
       {
        "name": "cursor",
@@ -11787,6 +12125,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -12123,6 +12462,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -12139,6 +12479,7 @@
     {
      "name": "onSelectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "value",
@@ -12562,6 +12903,7 @@
     {
      "name": "onDidCommand",
      "description": "Se produit lorsque la commande est réalisée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -12578,6 +12920,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -12589,6 +12932,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -12971,6 +13315,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -13195,6 +13540,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -13211,6 +13557,7 @@
     {
      "name": "onWriteDone",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -13431,6 +13778,7 @@
     {
      "name": "onDidDataRefresh",
      "description": "Se produit lorsque les valeurs du reflet sont rafraichies.",
+     "returns": null,
      "context": [
       {
        "name": "data",
@@ -13442,6 +13790,7 @@
     {
      "name": "onDidDataStore",
      "description": "Se produit lorsque le reflet est stocké dans data.",
+     "returns": null,
      "context": [
       {
        "name": "data",
@@ -13453,6 +13802,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -13469,6 +13819,7 @@
     {
      "name": "onWriteDone",
      "description": "Se produit lorsque la requête d'écriture s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -13848,6 +14199,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -13859,6 +14211,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -14132,6 +14485,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -14143,6 +14497,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -14398,6 +14753,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -14409,6 +14765,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -14661,6 +15018,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -14672,6 +15030,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -14924,6 +15283,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -14935,6 +15295,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -15187,6 +15548,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -15198,6 +15560,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -15450,6 +15813,7 @@
     {
      "name": "onDidReflectChange",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "reflect",
@@ -15461,6 +15825,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -15765,6 +16130,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -15781,6 +16147,7 @@
     {
      "name": "onSelected",
      "description": null,
+     "returns": null,
      "context": [
       {
        "name": "value",
@@ -16154,6 +16521,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -16400,6 +16768,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -16416,6 +16785,7 @@
     {
      "name": "onWriteDone",
      "description": "Se produit lorsque la requête d'écriture s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -16661,6 +17031,7 @@
     {
      "name": "onRequestDone",
      "description": "Se produit lorsque la requête s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -16677,6 +17048,7 @@
     {
      "name": "onWriteDone",
      "description": "Se produit lorsque la requête d'écriture s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",
@@ -16860,6 +17232,7 @@
     {
      "name": "onDidDataStore",
      "description": "Se produit lorsque la donnée est stockée dans data.",
+     "returns": null,
      "context": [
       {
        "name": "data",
@@ -16871,6 +17244,7 @@
     {
      "name": "onWriteDone",
      "description": "Se produit lorsque la requête d'écriture s'est terminée.",
+     "returns": null,
      "context": [
       {
        "name": "error",

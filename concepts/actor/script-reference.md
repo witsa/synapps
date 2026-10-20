@@ -32,3 +32,19 @@ celles propres à un type d'acteur, sur la page de ce [type d'acteur](../actor-t
 {: #evenements }
 
 {% include script_api/events.md type="common" %}
+
+# Propriétés et additionnelles
+{: #proprietes-et-additionnelles }
+
+Les propriétés (`this.properties`) et les additionnelles (`this.additionals`) d'un acteur donnent
+accès à chaque propriété ou additionnelle par son nom (`this.properties.width`), et offrent :
+
+{% include script_api/methods.md object="properties" %}
+
+# Évènements des propriétés et additionnelles
+{: #evenements-des-proprietes }
+
+Scripts définis dans l'inspecteur sur une propriété ou une additionnelle donnée (`<nom>` est son
+nom) : changement de valeur et transformations de [liaison](../binding-reference.md).
+
+{% include script_api/events.md type="common" list="property_events" %}

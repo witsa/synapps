@@ -1,6 +1,7 @@
 ---
 title: "Liaisons"
 parent: Concepts
+has_children: true
 nav_order: 6
 ---
 
@@ -136,6 +137,8 @@ Pour la cacher, cliquez sur *Cacher la valeur initiale* dans le menu d'options.
 ## Scripts de transformation
 
 Lorsque la valeur source est transmise à la cible, il est possible de lui appliquer un script de transformation. De la même façon, il est possible d'appliquer un script de transformation de la valeur cible lorsque l'écriture de la valeur source est activée. Voir ce dans la section [cycle de vie des acteurs](./scripts/actor-life-cycle.md#transformations-de-liaison).
+
+Les scripts de transformation et l'objet liaison accessible par script sont décrits dans la [référence pour les scripts](./binding-reference.md).
 
 ## La liaison de type de source *Fournisseur de variable*
 

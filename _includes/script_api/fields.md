@@ -1,8 +1,11 @@
 {%- comment -%}
 Champs d'un acteur accessibles par script (@script), générés depuis le code, par ordre
-alphabétique : include.type = type d'acteur. Le titre vient de la note (label) s'il y en a une.
+alphabétique : include.type = type d'acteur ou « common », ou include.object = objet documenté à part
+(properties, binding). Le titre vient de la note (label) s'il y en a une.
 {%- endcomment -%}
-{%- if include.type == "common" -%}
+{%- if include.object -%}
+{%- assign api_actor = site.data.script_api.objects[include.object] -%}
+{%- elsif include.type == "common" -%}
 {%- assign api_actor = site.data.script_api.common -%}
 {%- else -%}
 {%- assign api_actor = site.data.script_api.actors[include.type] -%}
