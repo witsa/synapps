@@ -7,7 +7,7 @@ alphabétique du libellé : include.type = type d'acteur (ex. redy/data-source/w
 
 ## {{ property.label | default: property.name }}
 
-`this.properties.{{ property.name }}` · ✏️ · {% if property.values %}{% for value in property.values %}`'{{ value }}'`{% unless forloop.last %} \| {% endunless %}{% endfor %}{% else %}{{ property.type | escape }}{% endif %} · défaut `{{ property.default }}`
+`this.properties.{{ property.name }}` · {% if property.values %}{% for value in property.values %}`'{{ value }}'`{% unless forloop.last %} \| {% endunless %}{% endfor %}{% else %}{{ property.type | escape }}{% endif %} · défaut `{{ property.default }}`
 {: .fs-2 }
 {% if property.description %}
 {{ property.description }}

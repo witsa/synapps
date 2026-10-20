@@ -8,7 +8,7 @@ alphabétique : include.type = type d'acteur. Le titre vient de la note (label) 
 
 ## {{ api_note.label | default: member.name }}
 
-`this.{{ member.name }}` · {% if member.readonly %}🔒 lecture seule{% else %}✏️ modifiable{% endif %}{% if member.type %} · {{ member.type | escape }}{% endif %}
+`this.{{ member.name }}`{% if member.readonly %} · 🔒 lecture seule{% endif %}{% if member.type %} · {{ member.type | escape }}{% endif %}
 {: .fs-2 }
 {% if member.description %}
 {{ member.description }}
