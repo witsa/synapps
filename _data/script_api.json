@@ -503,7 +503,7 @@
    {
     "name": "textAlign",
     "label": "Alignement du texte",
-    "description": "Alignement du texte.\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Alignement du texte.\n**Hérité**",
     "section": "text",
     "values": [
      "inherit",
@@ -513,12 +513,13 @@
      "justify"
     ],
     "type": null,
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Taille"
    },
    {
     "name": "horizontalAlignment",
     "label": "Alignement horizontal",
-    "description": "Alignement horizontale dans un acteur empilement ou acteur boite à vue.\n**Modificateur :** `resize`.\n\n**Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`",
+    "description": "Alignement horizontale dans un acteur empilement ou acteur boite à vue.\n\n**Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`",
     "section": "layout",
     "values": [
      "auto",
@@ -528,12 +529,13 @@
      "expand"
     ],
     "type": null,
-    "default": "'auto'"
+    "default": "'auto'",
+    "modifier": "Taille"
    },
    {
     "name": "verticalAlignment",
     "label": "Alignement vertical",
-    "description": "Alignement verticale dans un acteur empilement ou boite à vue.\n**Modificateur :** `resize`.\n\n**Attention** aux hauteurs fixées qui prennent le pas sur la valeur `'expand'`",
+    "description": "Alignement verticale dans un acteur empilement ou boite à vue.\n\n**Attention** aux hauteurs fixées qui prennent le pas sur la valeur `'expand'`",
     "section": "layout",
     "values": [
      "auto",
@@ -543,457 +545,508 @@
      "expand"
     ],
     "type": null,
-    "default": "'auto'"
+    "default": "'auto'",
+    "modifier": "Taille"
    },
    {
     "name": "rotate",
     "label": "Angle de rotation",
-    "description": "Angle de rotation en degré.\n**Modificateur :** `css`.",
+    "description": "Angle de rotation en degré.",
     "section": "effects",
     "values": null,
     "type": "number",
-    "default": "0"
+    "default": "0",
+    "modifier": "Style CSS"
    },
    {
     "name": "animation",
     "label": "Animation",
-    "description": "Animation. Voir information ici\n\n**Modificateur :** `css`.",
+    "description": "Animation. Voir information ici",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Style CSS"
    },
    {
     "name": "backgroundAttachment",
     "label": "Attachement du fond",
-    "description": "Attachement du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
+    "description": "Attachement du fond. Voir information ici\n  *",
     "section": "aspect",
     "values": null,
     "type": "string",
-    "default": "'scroll'"
+    "default": "'scroll'",
+    "modifier": "Style CSS"
    },
    {
     "name": "toolTip",
     "label": "Bulle d'aide",
-    "description": "Texte info bulle.\n**Modificateur :** `other`.",
+    "description": "Texte info bulle.",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": null
    },
    {
     "name": "classNames",
     "label": "Classes",
-    "description": "Nom de class CSS séparées par une virgule à ajouter à l'acteur.\n**Modificateur :** `render`.",
+    "description": "Nom de class CSS séparées par une virgule à ajouter à l'acteur.",
     "section": "aspect",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": "Rendu"
    },
    {
     "name": "color",
     "label": "Couleur",
-    "description": "Couleur de l'acteur.\n**Modificateur :** `css`.\n**Hérité**",
+    "description": "Couleur de l'acteur.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": "Style CSS"
    },
    {
     "name": "backgroundColor",
     "label": "Couleur de fond",
-    "description": "Couleur de fond de l'acteur.\n**Modificateur :** `css`.",
+    "description": "Couleur de fond de l'acteur.",
     "section": "aspect",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": "Style CSS"
    },
    {
     "name": "borderColor",
     "label": "Couleur de la bordure",
-    "description": "Couleur de bordure.\n**Modificateur :** `css`.",
+    "description": "Couleur de bordure.",
     "section": "borders",
     "values": null,
     "type": "string",
-    "default": "'currentColor'"
+    "default": "'currentColor'",
+    "modifier": "Style CSS"
    },
    {
     "name": "borderRadius",
     "label": "Courbure des coins",
-    "description": "Arrondissement des coins.  Voir information ici\n**Modificateur :** `css`.",
+    "description": "Arrondissement des coins.  Voir information ici",
     "section": "borders",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Style CSS"
    },
    {
     "name": "cursor",
     "label": "Curseur",
-    "description": "Curseur souris. Voir information ici\n\n> Attention au limitation de taille pour les images : maximum 126x126\n\n**Modificateur :** `css`.",
+    "description": "Curseur souris. Voir information ici\n\n> Attention au limitation de taille pour les images : maximum 126x126",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Style CSS"
    },
    {
     "name": "scaling",
     "label": "Échelle",
-    "description": "Taux de mise à l'échelle.\n**Modificateur :** `css`.",
+    "description": "Taux de mise à l'échelle.",
     "section": "effects",
     "values": null,
     "type": "number",
-    "default": "1"
+    "default": "1",
+    "modifier": "Style CSS"
    },
    {
     "name": "fontWeight",
     "label": "Épaisseur",
-    "description": "Épaisseur du texte.\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Épaisseur du texte.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Taille"
    },
    {
     "name": "borderWidth",
     "label": "Épaisseur de la bordure",
-    "description": "Épaisseur de bordure. Voir information ici\n**Modificateur :** `resize`.",
+    "description": "Épaisseur de bordure. Voir information ici",
     "section": "borders",
     "values": null,
     "type": "string",
-    "default": "'1px'"
+    "default": "'1px'",
+    "modifier": "Taille"
    },
    {
     "name": "fontFamily",
     "label": "Famille",
-    "description": "Police du texte. Voir information ici\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Police du texte. Voir information ici\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Taille"
    },
    {
     "name": "filter",
     "label": "Filtre",
-    "description": "Filtre. Voir information ici\n  *\n**Modificateur :** `css`.",
+    "description": "Filtre. Voir information ici\n  *",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Style CSS"
    },
    {
     "name": "height",
     "label": "Hauteur",
-    "description": "Hauteur de l'acteur\n**Modificateur :** `resize`.",
+    "description": "Hauteur de l'acteur",
     "section": "sizes",
     "values": null,
     "type": "string",
-    "default": "'auto'"
+    "default": "'auto'",
+    "modifier": "Taille"
    },
    {
     "name": "lineHeight",
     "label": "Hauteur de ligne",
-    "description": "Hauteur de ligne.\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Hauteur de ligne.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Taille"
    },
    {
     "name": "maxHeight",
     "label": "Hauteur maximale",
-    "description": "Hauteur maximale de l'acteur\n**Modificateur :** `resize`.",
+    "description": "Hauteur maximale de l'acteur",
     "section": "sizes",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Taille"
    },
    {
     "name": "minHeight",
     "label": "Hauteur minimale",
-    "description": "Hauteur minimale de l'acteur\n**Modificateur :** `resize`.",
+    "description": "Hauteur minimale de l'acteur",
     "section": "sizes",
     "values": null,
     "type": "string",
-    "default": "'auto'"
+    "default": "'auto'",
+    "modifier": "Taille"
    },
    {
     "name": "backgroundImage",
     "label": "Image de fond",
-    "description": "Image de fond. Voir information ici\n  *\n**Modificateur :** `css`.",
+    "description": "Image de fond. Voir information ici\n  *",
     "section": "aspect",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Style CSS"
    },
    {
     "name": "width",
     "label": "Largeur",
-    "description": "Largeur de l'acteur\n**Modificateur :** `resize`.",
+    "description": "Largeur de l'acteur",
     "section": "sizes",
     "values": null,
     "type": "string",
-    "default": "'auto'"
+    "default": "'auto'",
+    "modifier": "Taille"
    },
    {
     "name": "maxWidth",
     "label": "Largeur maximale",
-    "description": "Largeur maximale de l'acteur\n**Modificateur :** `resize`.",
+    "description": "Largeur maximale de l'acteur",
     "section": "sizes",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Taille"
    },
    {
     "name": "minWidth",
     "label": "Largeur minimale",
-    "description": "Largeur minimale de l'acteur\n**Modificateur :** `resize`.",
+    "description": "Largeur minimale de l'acteur",
     "section": "sizes",
     "values": null,
     "type": "string",
-    "default": "'auto'"
+    "default": "'auto'",
+    "modifier": "Taille"
    },
    {
     "name": "marginBottom",
     "label": "Marge extérieure basse",
-    "description": "Marge extérieure basse.\n**Modificateur :** `resize`.",
+    "description": "Marge extérieure basse.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "marginRight",
     "label": "Marge extérieure droite",
-    "description": "Marge extérieure droite.\n**Modificateur :** `resize`.",
+    "description": "Marge extérieure droite.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "marginLeft",
     "label": "Marge extérieure gauche",
-    "description": "Marge extérieure gauche.\n**Modificateur :** `resize`.",
+    "description": "Marge extérieure gauche.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "marginTop",
     "label": "Marge extérieure haute",
-    "description": "Marge extérieure haute.\n**Modificateur :** `resize`.",
+    "description": "Marge extérieure haute.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "paddingBottom",
     "label": "Marge intérieure basse",
-    "description": "Marge intérieure basse.\n**Modificateur :** `resize`.",
+    "description": "Marge intérieure basse.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "paddingRight",
     "label": "Marge intérieure droite",
-    "description": "Marge intérieure droite.\n**Modificateur :** `resize`.",
+    "description": "Marge intérieure droite.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "paddingLeft",
     "label": "Marge intérieure gauche",
-    "description": "Marge intérieure gauche.\n**Modificateur :** `resize`.",
+    "description": "Marge intérieure gauche.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "paddingTop",
     "label": "Marge intérieure haute",
-    "description": "Marge intérieure haute.\n**Modificateur :** `resize`.",
+    "description": "Marge intérieure haute.",
     "section": "spaces",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Taille"
    },
    {
     "name": "boxShadow",
     "label": "Ombre portée",
-    "description": "Ombre portée. Voir information ici\n**Modificateur :** `css`.",
+    "description": "Ombre portée. Voir information ici",
     "section": "borders",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Style CSS"
    },
    {
     "name": "opacity",
     "label": "Opacité",
-    "description": "Opacité en %.\n**Modificateur :** `css`.",
+    "description": "Opacité en %.",
     "section": "aspect",
     "values": null,
     "type": "number",
-    "default": "100"
+    "default": "100",
+    "modifier": "Style CSS"
    },
    {
     "name": "bottom",
     "label": "Position basse",
-    "description": "Position verticale depuis le bas dans un acteur toile.\n**Modificateur :** `css`.",
+    "description": "Position verticale depuis le bas dans un acteur toile.",
     "section": "layout",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": "Style CSS"
    },
    {
     "name": "right",
     "label": "Position droite",
-    "description": "Position horizontale depuis la droite dans un acteur toile.\n**Modificateur :** `css`.",
+    "description": "Position horizontale depuis la droite dans un acteur toile.",
     "section": "layout",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": "Style CSS"
    },
    {
     "name": "backgroundPosition",
     "label": "Position du fond",
-    "description": "Position du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
+    "description": "Position du fond. Voir information ici\n  *",
     "section": "aspect",
     "values": null,
     "type": "string",
-    "default": "'left top'"
+    "default": "'left top'",
+    "modifier": "Style CSS"
    },
    {
     "name": "left",
     "label": "Position gauche",
-    "description": "Position horizontale depuis la gauche dans un acteur toile.\n**Modificateur :** `css`.",
+    "description": "Position horizontale depuis la gauche dans un acteur toile.",
     "section": "layout",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": "Style CSS"
    },
    {
     "name": "top",
     "label": "Position haute",
-    "description": "Position verticale depuis le haut dans un acteur toile.\n**Modificateur :** `css`.",
+    "description": "Position verticale depuis le haut dans un acteur toile.",
     "section": "layout",
     "values": null,
     "type": "string",
-    "default": "''"
+    "default": "''",
+    "modifier": "Style CSS"
    },
    {
     "name": "backgroundRepeat",
     "label": "Repetition du fond",
-    "description": "Répétition du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
+    "description": "Répétition du fond. Voir information ici\n  *",
     "section": "aspect",
     "values": null,
     "type": "string",
-    "default": "'repeat'"
+    "default": "'repeat'",
+    "modifier": "Style CSS"
    },
    {
     "name": "textDecoration",
     "label": "Soulignement",
-    "description": "Décoration du texte.\n**Modificateur :** `css`.\n**Hérité**",
+    "description": "Décoration du texte.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Style CSS"
    },
    {
     "name": "fontStyle",
     "label": "Style",
-    "description": "Style du texte.\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Style du texte.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Taille"
    },
    {
     "name": "borderStyle",
     "label": "Style de la bordure",
-    "description": "Style de bordure.\n**Modificateur :** `resize`.",
+    "description": "Style de bordure.",
     "section": "borders",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Taille"
    },
    {
     "name": "fontSize",
     "label": "Taille",
-    "description": "Hauteur du texte.\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Hauteur du texte.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Taille"
    },
    {
     "name": "backgroundSize",
     "label": "Taille du fond",
-    "description": "Taille du fond. Voir information ici\n  *\n**Modificateur :** `css`.",
+    "description": "Taille du fond. Voir information ici\n  *",
     "section": "aspect",
     "values": null,
     "type": "string",
-    "default": "'auto auto'"
+    "default": "'auto auto'",
+    "modifier": "Style CSS"
    },
    {
     "name": "transition",
     "label": "Transition",
-    "description": "Transition. Voir information ici\n\n**Modificateur :** `css`.",
+    "description": "Transition. Voir information ici",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "'none'"
+    "default": "'none'",
+    "modifier": "Style CSS"
    },
    {
     "name": "translateX",
     "label": "Translation horizontale",
-    "description": "Translation horizontale.\n**Modificateur :** `css`.",
+    "description": "Translation horizontale.",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Style CSS"
    },
    {
     "name": "translateY",
     "label": "Translation verticale",
-    "description": "Translation verticale.\n**Modificateur :** `css`.",
+    "description": "Translation verticale.",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "'0px'"
+    "default": "'0px'",
+    "modifier": "Style CSS"
    },
    {
     "name": "fontVariant",
     "label": "Variant",
-    "description": "Variant du texte.\n**Modificateur :** `resize`.\n**Hérité**",
+    "description": "Variant du texte.\n**Hérité**",
     "section": "text",
     "values": null,
     "type": "string",
-    "default": "'inherit'"
+    "default": "'inherit'",
+    "modifier": "Taille"
    },
    {
     "name": "visible",
     "label": "Visible ?",
-    "description": "Visibilité de l'acteur.\n**Modificateur :** `resize`.",
+    "description": "Visibilité de l'acteur.",
     "section": "aspect",
     "values": null,
     "type": "boolean",
-    "default": "true"
+    "default": "true",
+    "modifier": "Taille"
    },
    {
     "name": "zIndex",
     "label": "Z-Index",
-    "description": "Z-index. Voir information ici\n\nRester entre -9 et 4999 (-10 et 5000 sont réservés aux modales)\n**Modificateur :** `css`.",
+    "description": "Z-index. Voir information ici\n\nRester entre -9 et 4999 (-10 et 5000 sont réservés aux modales)",
     "section": "effects",
     "values": null,
     "type": "string",
-    "default": "'auto'"
+    "default": "'auto'",
+    "modifier": "Style CSS"
    }
   ],
   "fields": [
@@ -1581,7 +1634,7 @@
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -1590,12 +1643,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -1604,19 +1658,21 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "orientation",
      "label": "Orientation",
-     "description": "Orientation de l'empilement.\n**Modificateur :** `resize`.",
+     "description": "Orientation de l'empilement.",
      "section": "specifics",
      "values": [
       "vertical",
       "horizontal"
      ],
      "type": null,
-     "default": "'vertical'"
+     "default": "'vertical'",
+     "modifier": "Taille"
     }
    ],
    "fields": [
@@ -1855,7 +1911,7 @@
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -1864,12 +1920,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -1878,7 +1935,8 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     }
    ],
    "fields": [
@@ -2108,7 +2166,7 @@
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -2117,12 +2175,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -2131,19 +2190,21 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "viewType",
      "label": "Type de vue",
-     "description": "Type de vue.\n**Modificateur :** `layout`.",
+     "description": "Type de vue.",
      "section": "specifics",
      "values": [
       "fill",
       "visible"
      ],
      "type": null,
-     "default": "'visible'"
+     "default": "'visible'",
+     "modifier": "Gabarit"
     }
    ],
    "fields": [
@@ -2383,11 +2444,12 @@
     {
      "name": "content",
      "label": "Contenu",
-     "description": "Contenu texte.\nPeut être complété par des jokers.\n**Modificateur :** `other`.",
+     "description": "Contenu texte.\nPeut être complété par des jokers.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -2422,11 +2484,12 @@
     {
      "name": "content",
      "label": "Contenu",
-     "description": "Contenu HTML.\nPeut être complété par des jokers.\n**Modificateur :** `other`.",
+     "description": "Contenu HTML.\nPeut être complété par des jokers.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -2461,11 +2524,12 @@
     {
      "name": "content",
      "label": "Image",
-     "description": "Contenu de l'image. Accepte les urls et les data-url.\nUne image vide est affichée en secours.\n**Modificateur :** `other`.",
+     "description": "Contenu de l'image. Accepte les urls et les data-url.\nUne image vide est affichée en secours.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -2494,7 +2558,7 @@
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -2503,12 +2567,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'auto'"
+     "default": "'auto'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -2517,16 +2582,18 @@
       "auto"
      ],
      "type": null,
-     "default": "'auto'"
+     "default": "'auto'",
+     "modifier": "Taille"
     },
     {
      "name": "sceneKey",
      "label": "Scène",
-     "description": "Clé de la scène à afficher.\n**Modificateur :** `other`.",
+     "description": "Clé de la scène à afficher.",
      "section": "specifics",
      "values": null,
      "type": "clé de scène",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     }
    ],
    "fields": [
@@ -2618,7 +2685,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "allowForms",
@@ -2627,7 +2695,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "allowModals",
@@ -2636,7 +2705,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "allowPopups",
@@ -2645,7 +2715,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "allowScripts",
@@ -2654,7 +2725,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "allowDownloads",
@@ -2663,7 +2735,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "allowSameOrigin",
@@ -2672,16 +2745,18 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "url",
      "label": "URL",
-     "description": "URL de la page WEB à afficher.\nPeut être complété par des jokers.\n**Modificateur :** `css`.",
+     "description": "URL de la page WEB à afficher.\nPeut être complété par des jokers.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Style CSS"
     }
    ],
    "fields": [
@@ -2716,7 +2791,7 @@
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -2725,12 +2800,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -2739,16 +2815,18 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "compositeType",
      "label": "Type de composite",
-     "description": "Clé du type de composite à afficher.\n**Modificateur :** `resize`.",
+     "description": "Clé du type de composite à afficher.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": "Taille"
     }
    ],
    "fields": [
@@ -2991,7 +3069,8 @@
      "section": "specifics",
      "values": null,
      "type": "any[]",
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": "Rendu"
     },
     {
      "name": "displayHeader",
@@ -3000,7 +3079,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "dataRows",
@@ -3009,7 +3089,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Rendu"
     },
     {
      "name": "pageMax",
@@ -3018,7 +3099,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "1"
+     "default": "1",
+     "modifier": null
     },
     {
      "name": "displayPaging",
@@ -3027,7 +3109,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "headerStyle",
@@ -3036,7 +3119,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'table-cell-string-header'"
+     "default": "'table-cell-string-header'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -3371,7 +3455,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Rendu"
     },
     {
      "name": "composite",
@@ -3380,7 +3465,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Rendu"
     },
     {
      "name": "datetimeFormat",
@@ -3389,7 +3475,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'DD/MM/YYYY HH:mm:ss'"
+     "default": "'DD/MM/YYYY HH:mm:ss'",
+     "modifier": "Rendu"
     },
     {
      "name": "falseImage",
@@ -3398,7 +3485,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "trueImage",
@@ -3407,7 +3495,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "verticalPosition",
@@ -3420,7 +3509,8 @@
       "end"
      ],
      "type": null,
-     "default": "'center'"
+     "default": "'center'",
+     "modifier": "Style CSS"
     },
     {
      "name": "falseText",
@@ -3429,7 +3519,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_table_cell_false_text'"
+     "default": "'_table_cell_false_text'",
+     "modifier": null
     },
     {
      "name": "trueText",
@@ -3438,7 +3529,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_table_cell_true_text'"
+     "default": "'_table_cell_true_text'",
+     "modifier": null
     },
     {
      "name": "textOverflow",
@@ -3452,7 +3544,8 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "type",
@@ -3467,7 +3560,8 @@
       "datetime"
      ],
      "type": null,
-     "default": "'string'"
+     "default": "'string'",
+     "modifier": null
     },
     {
      "name": "value",
@@ -3476,7 +3570,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -3805,25 +3900,27 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "content",
      "label": "Contenu",
-     "description": "Contenu HTML du bouton.\nPeut être complété par des jokers.\n**Modificateur :** `other`.",
+     "description": "Contenu HTML du bouton.\nPeut être complété par des jokers.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -3832,12 +3929,13 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode d'affichage du bouton.\n\n**Modificateur :** `render`.",
+     "description": "Mode d'affichage du bouton.",
      "section": "specifics",
      "values": [
       "primary",
@@ -3851,21 +3949,23 @@
       "link"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "outline",
      "label": "Outline?",
-     "description": "Indique si le mode d'affichage du bouton doit êre détouré.\n\n**Modificateur :** `render`.",
+     "description": "Indique si le mode d'affichage du bouton doit êre détouré.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Rendu"
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -3873,7 +3973,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -3933,16 +4034,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -3951,21 +4053,23 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les boutons s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les boutons s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les boutons s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les boutons s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode d'affichage des boutons.\n\n**Modificateur :** `render`.",
+     "description": "Mode d'affichage des boutons.",
      "section": "specifics",
      "values": [
       "primary",
@@ -3979,30 +4083,33 @@
       "link"
      ],
      "type": null,
-     "default": "'info'"
+     "default": "'info'",
+     "modifier": "Rendu"
     },
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Selection",
-     "description": "Valeur de clé sélectionnée.\n**Modificateur :** `other`.",
+     "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -4010,7 +4117,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -4075,79 +4183,87 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "withTooltips",
      "label": "Avec indicateur?",
-     "description": "Affiche-t'on l'indication de valeur ?\n**Modificateur :** `other`.",
+     "description": "Affiche-t'on l'indication de valeur ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "barBgColor",
      "label": null,
-     "description": "Couleur de l'autre côté de la barre.\n**Modificateur :** `css`.",
+     "description": "Couleur de l'autre côté de la barre.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Style CSS"
     },
     {
      "name": "isSlideValued",
      "label": "Changement en glissant?",
-     "description": "Le glissement change la valeur ?\n**Modificateur :** `other`.",
+     "description": "Le glissement change la valeur ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "barColor",
      "label": "Couleur de la barre",
-     "description": "Couleur de la barre.\n**Modificateur :** `css`.",
+     "description": "Couleur de la barre.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#E0E0E0'"
+     "default": "'#E0E0E0'",
+     "modifier": "Style CSS"
     },
     {
      "name": "limit",
      "label": "Différence max.",
-     "description": "Distance maximale entre les deux valeurs du curseur.\n**Modificateur :** `other`.",
+     "description": "Distance maximale entre les deux valeurs du curseur.",
      "section": "specifics",
      "values": null,
      "type": "number ou null",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "margin",
      "label": "Différence min.",
-     "description": "Distance minimale entre les deux valeurs du curseur.\n**Modificateur :** `other`.",
+     "description": "Distance minimale entre les deux valeurs du curseur.",
      "section": "specifics",
      "values": null,
      "type": "number ou null",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "step",
      "label": "Pas entre deux valeurs",
-     "description": "Pas entre deux mouvements du curseur.\n**Modificateur :** `other`.",
+     "description": "Pas entre deux mouvements du curseur.",
      "section": "specifics",
      "values": null,
      "type": "number ou null",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "barPosition",
      "label": "Position de la barre",
-     "description": "Position de la barre colorée.\n**Modificateur :** `other`.",
+     "description": "Position de la barre colorée.",
      "section": "specifics",
      "values": [
       "default",
@@ -4155,73 +4271,81 @@
       "upper"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": null
     },
     {
      "name": "orientation",
      "label": "Position de la barre",
-     "description": "Orientation du curseur.\n**Modificateur :** `other`.",
+     "description": "Orientation du curseur.",
      "section": "specifics",
      "values": [
       "horizontal",
       "vertical"
      ],
      "type": null,
-     "default": "'horizontal'"
+     "default": "'horizontal'",
+     "modifier": null
     },
     {
      "name": "reverse",
      "label": "Renversé?",
-     "description": "Les valeurs sont inversées ?\n**Modificateur :** `other`.",
+     "description": "Les valeurs sont inversées ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Valeur",
-     "description": "Valeur du curseur.\n**Modificateur :** `other`.",
+     "description": "Valeur du curseur.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "20"
+     "default": "20",
+     "modifier": null
     },
     {
      "name": "value2",
      "label": "Valeur 2",
-     "description": "Deuxième valeur du curseur.\n**Modificateur :** `other`.",
+     "description": "Deuxième valeur du curseur.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "80"
+     "default": "80",
+     "modifier": null
     },
     {
      "name": "max",
      "label": "Valeur max",
-     "description": "Valeur maximale du curseur.\n**Modificateur :** `other`.",
+     "description": "Valeur maximale du curseur.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "100"
+     "default": "100",
+     "modifier": null
     },
     {
      "name": "min",
      "label": "Valeur min",
-     "description": "Valeur minimale du curseur.\n**Modificateur :** `other`.",
+     "description": "Valeur minimale du curseur.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "0"
+     "default": "0",
+     "modifier": null
     },
     {
      "name": "isSingleValue",
      "label": "Valeur unique?",
-     "description": "Le curseur est simple ?\n**Modificateur :** `other`.",
+     "description": "Le curseur est simple ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     }
    ],
    "fields": [
@@ -4277,16 +4401,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -4295,21 +4420,23 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les boutons s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les boutons s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les boutons s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les boutons s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode d'affichage des boutons.\n\n**Modificateur :** `render`.",
+     "description": "Mode d'affichage des boutons.",
      "section": "specifics",
      "values": [
       "primary",
@@ -4323,12 +4450,13 @@
       "link"
      ],
      "type": null,
-     "default": "'info'"
+     "default": "'info'",
+     "modifier": "Rendu"
     },
     {
      "name": "options",
      "label": "Périodes présentes",
-     "description": "Chaîne `JSON` contenant un tableau de clé des périodes à afficher `Array.<string>`.\n\n**Modificateur :** `other`.\n\nPossibilités parmi :\n- `'all'`\n- `'today'`\n- `'last24'`\n- `'week'`\n- `'weekprevious'`\n- `'month'`\n- `'monthprevious'`\n- `'year'`\n- `'yearprevious'`",
+     "description": "Chaîne `JSON` contenant un tableau de clé des périodes à afficher `Array.<string>`.\n\n\nPossibilités parmi :\n- `'all'`\n- `'today'`\n- `'last24'`\n- `'week'`\n- `'weekprevious'`\n- `'month'`\n- `'monthprevious'`\n- `'year'`\n- `'yearprevious'`",
      "section": "specifics",
      "values": [
       "all",
@@ -4342,21 +4470,23 @@
       "yearprevious"
      ],
      "type": null,
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Selection",
-     "description": "Valeur de clé sélectionnée.\n**Modificateur :** `other`.",
+     "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'today'"
+     "default": "'today'",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -4364,7 +4494,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -4453,34 +4584,37 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "screenActorKey",
      "label": "Clé de l'acteur écran",
-     "description": "Clé de l'acteur écran à afficher.\n**Modificateur :** `render`.",
+     "description": "Clé de l'acteur écran à afficher.",
      "section": "specifics",
      "values": null,
      "type": "clé d'acteur",
-     "default": "null"
+     "default": "null",
+     "modifier": "Rendu"
     },
     {
      "name": "content",
      "label": "Contenu",
-     "description": "Contenu HTML du bouton.\nPeut être complété par des jokers.\n**Modificateur :** `other`.",
+     "description": "Contenu HTML du bouton.\nPeut être complété par des jokers.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -4489,12 +4623,13 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode d'affichage du bouton.\n\n**Modificateur :** `render`.",
+     "description": "Mode d'affichage du bouton.",
      "section": "specifics",
      "values": [
       "primary",
@@ -4508,30 +4643,33 @@
       "link"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "outline",
      "label": "Outline?",
-     "description": "Indique si le mode d'affichage du bouton doit êre détouré.\n\n**Modificateur :** `render`.",
+     "description": "Indique si le mode d'affichage du bouton doit êre détouré.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Rendu"
     },
     {
      "name": "displaySceneKey",
      "label": "Scène",
-     "description": "Clé de la scène à afficher.\n**Modificateur :** `render`.",
+     "description": "Clé de la scène à afficher.",
      "section": "specifics",
      "values": null,
      "type": "clé de scène",
-     "default": "null"
+     "default": "null",
+     "modifier": "Rendu"
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -4539,7 +4677,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -4618,7 +4757,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'inherit'"
+     "default": "'inherit'",
+     "modifier": null
     },
     {
      "name": "groupColor",
@@ -4627,12 +4767,13 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'inherit'"
+     "default": "'inherit'",
+     "modifier": null
     },
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -4641,12 +4782,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -4655,7 +4797,8 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "selectedScene",
@@ -4664,7 +4807,8 @@
      "section": "specifics",
      "values": null,
      "type": "clé de scène",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "styleBtnActive",
@@ -4673,7 +4817,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'menu-button-active'"
+     "default": "'menu-button-active'",
+     "modifier": null
     },
     {
      "name": "styleBtnInactive",
@@ -4682,7 +4827,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'menu-button-inactive'"
+     "default": "'menu-button-inactive'",
+     "modifier": null
     }
    ],
    "fields": [
@@ -4911,12 +5057,13 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Gabarit"
     },
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -4925,12 +5072,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -4939,7 +5087,8 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "isOpen",
@@ -4948,7 +5097,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Gabarit"
     },
     {
      "name": "icon",
@@ -4957,7 +5107,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "picture",
@@ -4966,7 +5117,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "iconPosition",
@@ -4978,7 +5130,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "content",
@@ -4987,7 +5140,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -5255,7 +5409,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'inherit'"
+     "default": "'inherit'",
+     "modifier": null
     },
     {
      "name": "groupBackgroundColorActive",
@@ -5264,7 +5419,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'inherit'"
+     "default": "'inherit'",
+     "modifier": null
     },
     {
      "name": "groupColor",
@@ -5273,7 +5429,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'inherit'"
+     "default": "'inherit'",
+     "modifier": null
     },
     {
      "name": "groupColorActive",
@@ -5282,12 +5439,13 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#2A9FD6'"
+     "default": "'#2A9FD6'",
+     "modifier": null
     },
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
-     "description": "Comportement au dépassement horizontal.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement horizontal.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -5296,12 +5454,13 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "overflowY",
      "label": "Dépassement Vertical",
-     "description": "Comportement au dépassement vertical.\n**Modificateur :** `resize`.",
+     "description": "Comportement au dépassement vertical.",
      "section": "specifics",
      "values": [
       "hidden",
@@ -5310,7 +5469,8 @@
       "auto"
      ],
      "type": null,
-     "default": "'hidden'"
+     "default": "'hidden'",
+     "modifier": "Taille"
     },
     {
      "name": "isHover",
@@ -5319,7 +5479,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "selectedScene",
@@ -5328,7 +5489,8 @@
      "section": "specifics",
      "values": null,
      "type": "clé de scène",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "styleBtnActive",
@@ -5337,7 +5499,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'menu-button-navbar-active'"
+     "default": "'menu-button-navbar-active'",
+     "modifier": null
     },
     {
      "name": "styleBtnInactive",
@@ -5346,7 +5509,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'menu-button-navbar-inactive'"
+     "default": "'menu-button-navbar-inactive'",
+     "modifier": null
     }
    ],
    "fields": [
@@ -5609,25 +5773,27 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "content",
      "label": "Contenu",
-     "description": "Contenu HTML du bouton.\nPeut être complété par des jokers.\n**Modificateur :** `other`.",
+     "description": "Contenu HTML du bouton.\nPeut être complété par des jokers.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -5636,7 +5802,8 @@
       "truncate"
      ],
      "type": null,
-     "default": "'truncate'"
+     "default": "'truncate'",
+     "modifier": "Rendu"
     },
     {
      "name": "icon",
@@ -5645,7 +5812,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "picture",
@@ -5654,12 +5822,13 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "mode",
      "label": "Mode",
-     "description": "Mode d'affichage du bouton.\n\n**Modificateur :** `render`.",
+     "description": "Mode d'affichage du bouton.",
      "section": "specifics",
      "values": [
       "primary",
@@ -5673,16 +5842,18 @@
       "link"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "outline",
      "label": "Outline?",
-     "description": "Indique si le mode d'affichage du bouton doit êre détouré.\n\n**Modificateur :** `render`.",
+     "description": "Indique si le mode d'affichage du bouton doit êre détouré.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Rendu"
     },
     {
      "name": "iconPosition",
@@ -5696,7 +5867,8 @@
       "bottom"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "sceneKey",
@@ -5705,12 +5877,13 @@
      "section": "specifics",
      "values": null,
      "type": "clé de scène",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -5718,7 +5891,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -5783,25 +5957,27 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "autocomplete",
      "label": "Auto complétion?",
-     "description": "Activation de l'auto-complétion.\n**Modificateur :** `other`.",
+     "description": "Activation de l'auto-complétion.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "validationState",
      "label": "État de validation",
-     "description": "État de validation de l'acteur.\n**Modificateur :** `layout`.",
+     "description": "État de validation de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -5809,30 +5985,33 @@
       "invalid"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Gabarit"
     },
     {
      "name": "isReadOnly",
      "label": "Lecture seule?",
-     "description": "En lecture seule ?\n**Modificateur :** `other`.",
+     "description": "En lecture seule ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "maxLength",
      "label": "Longueur max",
-     "description": "Longueur maximum du texte en nombre de caractère.\nPar défaut, il n'y a pas de limite (=`null`).\n**Modificateur :** `other`.",
+     "description": "Longueur maximum du texte en nombre de caractère.\nPar défaut, il n'y a pas de limite (=`null`).",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "inputmode",
      "label": "Mode de saisie",
-     "description": "Type de clavier à présenter sur les afficheurs nomades.\n**Modificateur :** `other`.",
+     "description": "Type de clavier à présenter sur les afficheurs nomades.",
      "section": "specifics",
      "values": [
       "default",
@@ -5846,30 +6025,33 @@
       "url"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": null
     },
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau de texte à proposer `Array.<String>`.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau de texte à proposer `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "step",
      "label": "Pas entre deux valeurs",
-     "description": "Pas entre deux valeurs ou heures.\nValable pour les types sauf `'number'`, `'range'` et `'time'`.\nPour 'time', une valeur exprimée en seconde inférieure à 60 indique que les secondes sont à saisir.\n**Modificateur :** `other`.",
+     "description": "Pas entre deux valeurs ou heures.\nValable pour les types sauf `'number'`, `'range'` et `'time'`.\nPour 'time', une valeur exprimée en seconde inférieure à 60 indique que les secondes sont à saisir.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -5877,21 +6059,23 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "placeHolder",
      "label": "Texte si vide",
-     "description": "Chaîne de remplacement lorsque l'acteur est vide.\nValable uniquement pour les types  `'text'`, `'password'` et `'number'`\n**Modificateur :** `other`.",
+     "description": "Chaîne de remplacement lorsque l'acteur est vide.\nValable uniquement pour les types  `'text'`, `'password'` et `'number'`",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "inputType",
      "label": "Type de saisie",
-     "description": "Variante de boite de saisies.\n**Modificateur :** `other`.",
+     "description": "Variante de boite de saisies.",
      "section": "specifics",
      "values": [
       "text",
@@ -5903,34 +6087,38 @@
       "color"
      ],
      "type": null,
-     "default": "'text'"
+     "default": "'text'",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Valeur",
-     "description": "Texte ou nombre.\n**Modificateur :** `resize`.",
+     "description": "Texte ou nombre.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Taille"
     },
     {
      "name": "max",
      "label": "Valeur max",
-     "description": "Valeur ou date ou heure maximale.\nValable pour tous les types sauf `'text'`, `'color'` et `'password'`\n**Modificateur :** `other`.",
+     "description": "Valeur ou date ou heure maximale.\nValable pour tous les types sauf `'text'`, `'color'` et `'password'`",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "min",
      "label": "Valeur min",
-     "description": "Valeur ou date ou heure minimale.\nValable pour tous les types sauf `'text'`, `'color'` et `'password'`\n**Modificateur :** `other`.",
+     "description": "Valeur ou date ou heure minimale.\nValable pour tous les types sauf `'text'`, `'color'` et `'password'`",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     }
    ],
    "fields": [
@@ -5974,25 +6162,27 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "autocomplete",
      "label": "Auto complétion?",
-     "description": "Activation de l'auto-complétion.\n**Modificateur :** `other`.",
+     "description": "Activation de l'auto-complétion.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "validationState",
      "label": "État de validation",
-     "description": "État de validation de l'acteur.\n**Modificateur :** `layout`.",
+     "description": "État de validation de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6000,30 +6190,33 @@
       "invalid"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Gabarit"
     },
     {
      "name": "isReadOnly",
      "label": "Lecture seule?",
-     "description": "En lecture seule ?\n**Modificateur :** `other`.",
+     "description": "En lecture seule ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "maxLength",
      "label": "Longueur max",
-     "description": "Longueur maximum du texte en nombre de caractère.\nPar défaut, il n'y a pas de limite (=`null`).\n**Modificateur :** `other`.",
+     "description": "Longueur maximum du texte en nombre de caractère.\nPar défaut, il n'y a pas de limite (=`null`).",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "resize",
      "label": "Retaille",
-     "description": "Mode de redimensionnement de la zone de texte.\n**Modificateur :** `other`.",
+     "description": "Mode de redimensionnement de la zone de texte.",
      "section": "specifics",
      "values": [
       "both",
@@ -6032,12 +6225,13 @@
       "none"
      ],
      "type": null,
-     "default": "'vertical'"
+     "default": "'vertical'",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `resize`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6045,25 +6239,28 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Taille"
     },
     {
      "name": "placeHolder",
      "label": "Texte si vide",
-     "description": "Chaîne de remplacement lorsque l'acteur est vide.\n**Modificateur :** `other`.",
+     "description": "Chaîne de remplacement lorsque l'acteur est vide.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Valeur",
-     "description": "Texte.\nAccepte des retour à la ligne et tabulation.\n**Modificateur :** `resize`.",
+     "description": "Texte.\nAccepte des retour à la ligne et tabulation.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Taille"
     }
    ],
    "fields": [],
@@ -6088,16 +6285,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -6105,12 +6303,13 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "validationState",
      "label": "État de validation",
-     "description": "État de validation de l'acteur.\n**Modificateur :** `render`.",
+     "description": "État de validation de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6118,12 +6317,13 @@
       "invalid"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6131,25 +6331,28 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "content",
      "label": "Texte",
-     "description": "Contenu HTML de la case à cocher.\nPeut être complété par des jokers.\n**Modificateur :** `other`.",
+     "description": "Contenu HTML de la case à cocher.\nPeut être complété par des jokers.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Valeur",
-     "description": "La case est-est cochée ?\n**Modificateur :** `other`.",
+     "description": "La case est-est cochée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     }
    ],
    "fields": [
@@ -6189,25 +6392,27 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "withCheckAll",
      "label": "Avec l'option 'Tout'?",
-     "description": "L'option qui sélectionne tout est-elle présente ?\n**Modificateur :** `resize`.",
+     "description": "L'option qui sélectionne tout est-elle présente ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -6216,21 +6421,23 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "validationState",
      "label": "État de validation",
-     "description": "État de validation de l'acteur.\n**Modificateur :** `render`.",
+     "description": "État de validation de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6238,39 +6445,43 @@
       "invalid"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "isMultiSelect",
      "label": "Multi-sélection?",
-     "description": "La sélection multiple est-elle activée ?\n**Modificateur :** `other`.",
+     "description": "La sélection multiple est-elle activée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": null
     },
     {
      "name": "values",
      "label": "Selection",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille des cases à cocher de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille des cases à cocher de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6278,25 +6489,28 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "checkAllText",
      "label": "Texte pour 'Tout'",
-     "description": "Texte pour l'option qui sélectionne tout.\n**Modificateur :** `resize`.",
+     "description": "Texte pour l'option qui sélectionne tout.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Taille"
     },
     {
      "name": "allIsNull",
      "label": "Tout est la valeur vide?",
-     "description": "Tout sélectionné se traduit-il par la valeur `null` dans properties.values ?\n**Modificateur :** `other`.",
+     "description": "Tout sélectionné se traduit-il par la valeur `null` dans properties.values ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     }
    ],
    "fields": [
@@ -6397,16 +6611,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "validationState",
      "label": "État de validation",
-     "description": "État de validation de l'acteur.\n**Modificateur :** `render`.",
+     "description": "État de validation de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6414,39 +6629,43 @@
       "invalid"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "isReadOnly",
      "label": "Lecture seule?",
-     "description": "En lecture seule ?\n**Modificateur :** `other`.",
+     "description": "En lecture seule ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Selection",
-     "description": "Valeur de clé sélectionnée.\n**Modificateur :** `resize`.",
+     "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": "Taille"
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6454,34 +6673,38 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "emptyText",
      "label": "Texte pour vide",
-     "description": "Texte de l'option vide.\n\nValable lorsque hasEmptyValue est à `true`.\n**Modificateur :** `other`.",
+     "description": "Texte de l'option vide.\n\nValable lorsque hasEmptyValue est à `true`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "placeHolder",
      "label": "Texte si vide",
-     "description": "Chaîne de remplacement lorsque l'option vide est sélectionnée.\n\nValable lorsque hasEmptyValue est à `true`.\n**Modificateur :** `other`.",
+     "description": "Chaîne de remplacement lorsque l'option vide est sélectionnée.\n\nValable lorsque hasEmptyValue est à `true`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "hasEmptyValue",
      "label": "Valeur vide?",
-     "description": "Propose une option vide ?\n**Modificateur :** `other`.",
+     "description": "Propose une option vide ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     }
    ],
    "fields": [
@@ -6555,25 +6778,27 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les boutons s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les boutons s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les boutons s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les boutons s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "validationState",
      "label": "État de validation",
-     "description": "État de validation de l'acteur.\n**Modificateur :** `render`.",
+     "description": "État de validation de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6581,30 +6806,33 @@
       "invalid"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "options",
      "label": "Options",
-     "description": "Chaîne `JSON` contenant un tableau d'options.\n\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau d'options.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": null
     },
     {
      "name": "value",
      "label": "Selection",
-     "description": "Valeur de clé sélectionnée.\n**Modificateur :** `other`.",
+     "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6612,7 +6840,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -6677,16 +6906,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -6695,12 +6925,13 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "modeFalse",
      "label": "Mode pour faux",
-     "description": "Mode de bouton pour faux\n**Modificateur :** `render`.",
+     "description": "Mode de bouton pour faux",
      "section": "specifics",
      "values": [
       "primary",
@@ -6714,12 +6945,13 @@
       "link"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "modeTrue",
      "label": "Mode pour vrai",
-     "description": "Mode de bouton pour vrai\n**Modificateur :** `render`.",
+     "description": "Mode de bouton pour vrai",
      "section": "specifics",
      "values": [
       "primary",
@@ -6733,21 +6965,23 @@
       "link"
      ],
      "type": null,
-     "default": "'primary'"
+     "default": "'primary'",
+     "modifier": "Rendu"
     },
     {
      "name": "outline",
      "label": "Outline?",
-     "description": "Indique si le mode d'affichage du bouton doit êre détouré.\n\n**Modificateur :** `render`.",
+     "description": "Indique si le mode d'affichage du bouton doit êre détouré.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Rendu"
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -6755,34 +6989,38 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "textFalse",
      "label": "Texte pour faux",
-     "description": "Texte pour faux.\n**Modificateur :** `render`.",
+     "description": "Texte pour faux.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'Off'"
+     "default": "'Off'",
+     "modifier": "Rendu"
     },
     {
      "name": "textTrue",
      "label": "Texte pour vrai",
-     "description": "Texte pour vrai.\n**Modificateur :** `render`.",
+     "description": "Texte pour vrai.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'On'"
+     "default": "'On'",
+     "modifier": "Rendu"
     },
     {
      "name": "value",
      "label": "Valeur",
-     "description": "Valeur courante.\n**Modificateur :** `other`.",
+     "description": "Valeur courante.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -6813,56 +7051,62 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "imageFalse",
      "label": "Image pour faux",
-     "description": "Image pour faux.\n**Modificateur :** `resize`.",
+     "description": "Image pour faux.",
      "section": "specifics",
      "values": null,
      "type": "string ou null",
-     "default": "null"
+     "default": "null",
+     "modifier": "Taille"
     },
     {
      "name": "imageTrue",
      "label": "Image pour vrai",
-     "description": "Image pour vrai.\nURL ou DataURI.\n**Modificateur :** `resize`.",
+     "description": "Image pour vrai.\nURL ou DataURI.",
      "section": "specifics",
      "values": null,
      "type": "string ou null",
-     "default": "null"
+     "default": "null",
+     "modifier": "Taille"
     },
     {
      "name": "textFalse",
      "label": "Texte pour faux",
-     "description": "Texte pour faux.\n**Modificateur :** `render`.",
+     "description": "Texte pour faux.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'Off'"
+     "default": "'Off'",
+     "modifier": "Rendu"
     },
     {
      "name": "textTrue",
      "label": "Texte pour vrai",
-     "description": "Texte pour vrai.\n**Modificateur :** `render`.",
+     "description": "Texte pour vrai.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'On'"
+     "default": "'On'",
+     "modifier": "Rendu"
     },
     {
      "name": "value",
      "label": "Valeur",
-     "description": "Valeur courante.\n**Modificateur :** `other`.",
+     "description": "Valeur courante.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -6897,7 +7141,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isOn",
@@ -6906,7 +7151,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "ledColor",
@@ -6915,7 +7161,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#00ff5b'"
+     "default": "'#00ff5b'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -6938,7 +7185,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isBlinkingFalse",
@@ -6947,7 +7195,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinkingTrue",
@@ -6956,7 +7205,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "ledColorFault",
@@ -6965,7 +7215,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#ff1500'"
+     "default": "'#ff1500'",
+     "modifier": null
     },
     {
      "name": "ledColorFalse",
@@ -6974,7 +7225,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#00ff5b'"
+     "default": "'#00ff5b'",
+     "modifier": null
     },
     {
      "name": "ledColorTrue",
@@ -6983,7 +7235,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#00ff5b'"
+     "default": "'#00ff5b'",
+     "modifier": null
     },
     {
      "name": "isFault",
@@ -6992,7 +7245,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "pictureFault",
@@ -7001,7 +7255,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "pictureFalse",
@@ -7010,7 +7265,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "pictureTrue",
@@ -7019,7 +7275,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "ledIsOnFault",
@@ -7028,7 +7285,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "ledIsOnFalse",
@@ -7037,7 +7295,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "ledIsOnTrue",
@@ -7046,7 +7305,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "displayText",
@@ -7055,7 +7315,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "textFault",
@@ -7064,7 +7325,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_ternary_fault_text'"
+     "default": "'_ternary_fault_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "textFalse",
@@ -7073,7 +7335,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_ternary_false_text'"
+     "default": "'_ternary_false_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "textTrue",
@@ -7082,7 +7345,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_ternary_true_text'"
+     "default": "'_ternary_true_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "value",
@@ -7091,7 +7355,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -7114,7 +7379,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Gabarit"
     },
     {
      "name": "isBlinking1",
@@ -7123,7 +7389,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinking2",
@@ -7132,7 +7399,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinking3",
@@ -7141,7 +7409,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinking4",
@@ -7150,7 +7419,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinking5",
@@ -7159,7 +7429,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinking6",
@@ -7168,7 +7439,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinking7",
@@ -7177,7 +7449,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinking8",
@@ -7186,7 +7459,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "positionsCount",
@@ -7195,7 +7469,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "4"
+     "default": "4",
+     "modifier": null
     },
     {
      "name": "picture1",
@@ -7204,7 +7479,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "picture2",
@@ -7213,7 +7489,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "picture3",
@@ -7222,7 +7499,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "picture4",
@@ -7231,7 +7509,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "picture5",
@@ -7240,7 +7519,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "picture6",
@@ -7249,7 +7529,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "picture7",
@@ -7258,7 +7539,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "picture8",
@@ -7267,7 +7549,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "position",
@@ -7276,7 +7559,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'1'"
+     "default": "'1'",
+     "modifier": null
     },
     {
      "name": "position1",
@@ -7285,7 +7569,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'1'"
+     "default": "'1'",
+     "modifier": null
     },
     {
      "name": "position2",
@@ -7294,7 +7579,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'2'"
+     "default": "'2'",
+     "modifier": null
     },
     {
      "name": "position3",
@@ -7303,7 +7589,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'3'"
+     "default": "'3'",
+     "modifier": null
     },
     {
      "name": "position4",
@@ -7312,7 +7599,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'4'"
+     "default": "'4'",
+     "modifier": null
     },
     {
      "name": "position5",
@@ -7321,7 +7609,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'5'"
+     "default": "'5'",
+     "modifier": null
     },
     {
      "name": "position6",
@@ -7330,7 +7619,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'6'"
+     "default": "'6'",
+     "modifier": null
     },
     {
      "name": "position7",
@@ -7339,7 +7629,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'7'"
+     "default": "'7'",
+     "modifier": null
     },
     {
      "name": "position8",
@@ -7348,7 +7639,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'8'"
+     "default": "'8'",
+     "modifier": null
     },
     {
      "name": "text1",
@@ -7357,7 +7649,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "text2",
@@ -7366,7 +7659,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "text3",
@@ -7375,7 +7669,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "text4",
@@ -7384,7 +7679,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "text5",
@@ -7393,7 +7689,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "text6",
@@ -7402,7 +7699,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "text7",
@@ -7411,7 +7709,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     },
     {
      "name": "text8",
@@ -7420,7 +7719,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'_multi_position_position_text'"
+     "default": "'_multi_position_position_text'",
+     "modifier": "Gabarit"
     }
    ],
    "fields": [],
@@ -7443,7 +7743,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7455,7 +7756,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "status",
@@ -7469,7 +7771,8 @@
       "stopping"
      ],
      "type": null,
-     "default": "'stopped'"
+     "default": "'stopped'",
+     "modifier": null
     },
     {
      "name": "burnerStatus",
@@ -7488,7 +7791,8 @@
       "faultReachSP"
      ],
      "type": null,
-     "default": "'stopped'"
+     "default": "'stopped'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -7511,7 +7815,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isFault",
@@ -7520,7 +7825,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7532,7 +7838,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "status",
@@ -7548,7 +7855,8 @@
       "init"
      ],
      "type": null,
-     "default": "'stopped'"
+     "default": "'stopped'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -7574,7 +7882,8 @@
       "debride"
      ],
      "type": null,
-     "default": "'bride'"
+     "default": "'bride'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7588,7 +7897,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "isFault1",
@@ -7597,7 +7907,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isPump1Running",
@@ -7606,7 +7917,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isFault2",
@@ -7615,7 +7927,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isPump2Running",
@@ -7624,7 +7937,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "status",
@@ -7637,7 +7951,8 @@
       "running2"
      ],
      "type": null,
-     "default": "'stopped'"
+     "default": "'stopped'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -7665,7 +7980,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": "Gabarit"
     }
    ],
    "fields": [],
@@ -7692,7 +8008,8 @@
       "custom"
      ],
      "type": null,
-     "default": "'blue'"
+     "default": "'blue'",
+     "modifier": null
     },
     {
      "name": "customColor",
@@ -7701,7 +8018,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#cccccc'"
+     "default": "'#cccccc'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7715,7 +8033,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "size",
@@ -7724,7 +8043,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "1"
+     "default": "1",
+     "modifier": null
     },
     {
      "name": "kind",
@@ -7740,7 +8060,8 @@
       "cross"
      ],
      "type": null,
-     "default": "'straight'"
+     "default": "'straight'",
+     "modifier": "Gabarit"
     }
    ],
    "fields": [],
@@ -7763,7 +8084,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isRunning",
@@ -7772,7 +8094,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7786,7 +8109,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -7814,7 +8138,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": "Gabarit"
     }
    ],
    "fields": [],
@@ -7837,7 +8162,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7851,7 +8177,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "status",
@@ -7866,7 +8193,8 @@
       "init"
      ],
      "type": null,
-     "default": "'closed'"
+     "default": "'closed'",
+     "modifier": null
     },
     {
      "name": "type",
@@ -7878,7 +8206,8 @@
       "control"
      ],
      "type": null,
-     "default": "'shutoff'"
+     "default": "'shutoff'",
+     "modifier": null
     },
     {
      "name": "value",
@@ -7887,7 +8216,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "0"
+     "default": "0",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -7910,7 +8240,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7924,7 +8255,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "value",
@@ -7933,7 +8265,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "0"
+     "default": "0",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -7956,7 +8289,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#1ed760'"
+     "default": "'#1ed760'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -7970,7 +8304,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "arrowType",
@@ -7983,7 +8318,8 @@
       "custom"
      ],
      "type": null,
-     "default": "'blue'"
+     "default": "'blue'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8010,7 +8346,8 @@
       "custom"
      ],
      "type": null,
-     "default": "'red'"
+     "default": "'red'",
+     "modifier": null
     },
     {
      "name": "customColor",
@@ -8019,7 +8356,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#cccccc'"
+     "default": "'#cccccc'",
+     "modifier": null
     },
     {
      "name": "isDefault",
@@ -8028,7 +8366,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isRunning",
@@ -8037,7 +8376,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8051,7 +8391,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "type",
@@ -8063,7 +8404,8 @@
       "electric"
      ],
      "type": null,
-     "default": "'air'"
+     "default": "'air'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8091,7 +8433,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8114,7 +8457,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8128,7 +8472,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8151,7 +8496,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8165,7 +8511,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "size",
@@ -8174,7 +8521,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "1"
+     "default": "1",
+     "modifier": null
     },
     {
      "name": "type",
@@ -8187,7 +8535,8 @@
       "tee"
      ],
      "type": null,
-     "default": "'straight'"
+     "default": "'straight'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8213,7 +8562,8 @@
       "analogic"
      ],
      "type": null,
-     "default": "'digital'"
+     "default": "'digital'",
+     "modifier": null
     },
     {
      "name": "isOpen",
@@ -8222,7 +8572,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "opening",
@@ -8231,7 +8582,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "100"
+     "default": "100",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8257,7 +8609,8 @@
       "analogic"
      ],
      "type": null,
-     "default": "'digital'"
+     "default": "'digital'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8271,7 +8624,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "isOpen",
@@ -8280,7 +8634,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "opening",
@@ -8289,7 +8644,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "100"
+     "default": "100",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8312,7 +8668,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#00FF66'"
+     "default": "'#00FF66'",
+     "modifier": null
     },
     {
      "name": "dirtyColor",
@@ -8321,7 +8678,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#FF0000'"
+     "default": "'#FF0000'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8335,7 +8693,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "isDirty",
@@ -8344,7 +8703,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8367,7 +8727,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isDefault",
@@ -8376,7 +8737,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8388,7 +8750,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8411,7 +8774,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isRunning",
@@ -8420,7 +8784,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8434,7 +8799,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8457,7 +8823,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isRunning",
@@ -8466,7 +8833,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -8478,7 +8846,8 @@
       "analogic"
      ],
      "type": null,
-     "default": "'digital'"
+     "default": "'digital'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8490,7 +8859,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "speed",
@@ -8499,7 +8869,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "100"
+     "default": "100",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8522,7 +8893,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isRunning",
@@ -8531,7 +8903,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -8543,7 +8916,8 @@
       "analogic"
      ],
      "type": null,
-     "default": "'digital'"
+     "default": "'digital'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -8555,7 +8929,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "speed",
@@ -8564,7 +8939,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "100"
+     "default": "100",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8587,7 +8963,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#F7FF00'"
+     "default": "'#F7FF00'",
+     "modifier": null
     },
     {
      "name": "colorBottomLeft",
@@ -8596,7 +8973,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#15FF00'"
+     "default": "'#15FF00'",
+     "modifier": null
     },
     {
      "name": "colorTopRight",
@@ -8605,7 +8983,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#0095FF'"
+     "default": "'#0095FF'",
+     "modifier": null
     },
     {
      "name": "colorTopLeft",
@@ -8614,7 +8993,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#FF0004'"
+     "default": "'#FF0004'",
+     "modifier": null
     },
     {
      "name": "flowDirection",
@@ -8628,7 +9008,8 @@
       "right"
      ],
      "type": null,
-     "default": "'bottom'"
+     "default": "'bottom'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8651,7 +9032,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -8663,7 +9045,8 @@
       "analogic"
      ],
      "type": null,
-     "default": "'digital'"
+     "default": "'digital'",
+     "modifier": null
     },
     {
      "name": "speed",
@@ -8672,7 +9055,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "100"
+     "default": "100",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8691,38 +9075,42 @@
     {
      "name": "gaugeBackgroundColor",
      "label": "Couleur après",
-     "description": "Couleur CSS après l'aiguille.\n**Modificateur :** `css`.",
+     "description": "Couleur CSS après l'aiguille.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#C2C2C2'"
+     "default": "'#C2C2C2'",
+     "modifier": "Style CSS"
     },
     {
      "name": "gaugeStartColor",
      "label": "Couleur avant",
-     "description": "Couleur CSS avant l'aiguille.\n**Modificateur :** `css`.",
+     "description": "Couleur CSS avant l'aiguille.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#0B04CF'"
+     "default": "'#0B04CF'",
+     "modifier": "Style CSS"
     },
     {
      "name": "gaugeColor",
      "label": "Couleur de l'aiguille",
-     "description": "Couleur CSS de l'aiguille.\n**Modificateur :** `css`.",
+     "description": "Couleur CSS de l'aiguille.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#E0E0E0'"
+     "default": "'#E0E0E0'",
+     "modifier": "Style CSS"
     },
     {
      "name": "gaugeWidth",
      "label": "Épaisseur",
-     "description": "Épaisseur de la jauge.\n**Modificateur :** `css`.",
+     "description": "Épaisseur de la jauge.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "3"
+     "default": "3",
+     "modifier": "Style CSS"
     },
     {
      "name": "gaugeType",
@@ -8731,43 +9119,48 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'gauge'"
+     "default": "'gauge'",
+     "modifier": "Rendu"
     },
     {
      "name": "gaugeAngle",
      "label": "Ouverture Angulaire",
-     "description": "Angle d'étendue de la jauge en degré.\n**Modificateur :** `css`.",
+     "description": "Angle d'étendue de la jauge en degré.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "180"
+     "default": "180",
+     "modifier": "Style CSS"
     },
     {
      "name": "gaugeValue",
      "label": "Valeur",
-     "description": "Valeur de la jauge.\n**Modificateur :** `css`.",
+     "description": "Valeur de la jauge.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "75"
+     "default": "75",
+     "modifier": "Style CSS"
     },
     {
      "name": "gaugeMaxValue",
      "label": "Valeur maximale",
-     "description": "Valeur maximale de la jauge.\n**Modificateur :** `css`.",
+     "description": "Valeur maximale de la jauge.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "100"
+     "default": "100",
+     "modifier": "Style CSS"
     },
     {
      "name": "gaugeMinValue",
      "label": "Valeur minimale",
-     "description": "Valeur minimale de la jauge.\n**Modificateur :** `css`.",
+     "description": "Valeur minimale de la jauge.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "0"
+     "default": "0",
+     "modifier": "Style CSS"
     }
    ],
    "fields": [],
@@ -8790,7 +9183,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "resourceFilterPath",
@@ -8799,7 +9193,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "periodType",
@@ -8812,7 +9207,8 @@
       "month"
      ],
      "type": null,
-     "default": "'week'"
+     "default": "'week'",
+     "modifier": null
     },
     {
      "name": "agendaPath",
@@ -8821,7 +9217,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8844,7 +9241,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "showLegend",
@@ -8853,7 +9251,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "preparationLabel",
@@ -8862,7 +9261,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "dataId",
@@ -8871,7 +9271,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "version",
@@ -8880,7 +9281,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'Latest'"
+     "default": "'Latest'",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8899,11 +9301,12 @@
     {
      "name": "synopticPath",
      "label": "Synoptique",
-     "description": "Chemin REDY vers le synoptique à afficher\n**Modificateur :** `other`.",
+     "description": "Chemin REDY vers le synoptique à afficher",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [],
@@ -8922,16 +9325,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -8940,39 +9344,43 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "isMultiSelect",
      "label": "Multi-sélection?",
-     "description": "La sélection multiple est-elle activée ?\n**Modificateur :** `other`.",
+     "description": "La sélection multiple est-elle activée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille des cases à cocher de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille des cases à cocher de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -8980,7 +9388,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -9071,16 +9480,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -9089,39 +9499,43 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "isMultiSelect",
      "label": "Multi-sélection?",
-     "description": "La sélection multiple est-elle activée ?\n**Modificateur :** `other`.",
+     "description": "La sélection multiple est-elle activée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille des cases à cocher de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille des cases à cocher de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -9129,7 +9543,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -9220,16 +9635,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -9238,39 +9654,43 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "isMultiSelect",
      "label": "Multi-sélection?",
-     "description": "La sélection multiple est-elle activée ?\n**Modificateur :** `other`.",
+     "description": "La sélection multiple est-elle activée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille des cases à cocher de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille des cases à cocher de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -9278,7 +9698,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -9369,16 +9790,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -9387,39 +9809,43 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "isMultiSelect",
      "label": "Multi-sélection?",
-     "description": "La sélection multiple est-elle activée ?\n**Modificateur :** `other`.",
+     "description": "La sélection multiple est-elle activée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille des cases à cocher de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille des cases à cocher de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -9427,7 +9853,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -9518,16 +9945,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -9536,39 +9964,43 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "isMultiSelect",
      "label": "Multi-sélection?",
-     "description": "La sélection multiple est-elle activée ?\n**Modificateur :** `other`.",
+     "description": "La sélection multiple est-elle activée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille des cases à cocher de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille des cases à cocher de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -9576,7 +10008,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -9667,16 +10100,17 @@
     {
      "name": "enabled",
      "label": "Actif?",
-     "description": "**Modificateur :** `css`.",
+     "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Style CSS"
     },
     {
      "name": "textOverflow",
      "label": "Dépassement de texte",
-     "description": "Comportement au dépassement de texte.\n**Modificateur :** `render`.",
+     "description": "Comportement au dépassement de texte.",
      "section": "specifics",
      "values": [
       "nowrap",
@@ -9685,25 +10119,28 @@
       "truncate"
      ],
      "type": null,
-     "default": "'nowrap'"
+     "default": "'nowrap'",
+     "modifier": "Rendu"
     },
     {
      "name": "isInline",
      "label": "En ligne?",
-     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.\n**Modificateur :** `resize`.",
+     "description": "Les cases à cocher s'empilent horizontalement ?\n\nSi cette propriété a la valeur `false`, les cases s'empileront verticalement.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "values",
      "label": "Filtre",
-     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.\n**Modificateur :** `other`.",
+     "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "resourceFilterPath",
@@ -9712,21 +10149,23 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "isMultiSelect",
      "label": "Multi-sélection?",
-     "description": "La sélection multiple est-elle activée ?\n**Modificateur :** `other`.",
+     "description": "La sélection multiple est-elle activée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "size",
      "label": "Taille",
-     "description": "Taille des cases à cocher de l'acteur.\n**Modificateur :** `render`.",
+     "description": "Taille des cases à cocher de l'acteur.",
      "section": "specifics",
      "values": [
       "default",
@@ -9734,7 +10173,8 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     }
    ],
    "fields": [
@@ -9830,7 +10270,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "columns",
@@ -9839,7 +10280,8 @@
      "section": "specifics",
      "values": null,
      "type": "any[]",
-     "default": "'[]'"
+     "default": "'[]'",
+     "modifier": "Rendu"
     },
     {
      "name": "autoRefreshDelay",
@@ -9848,7 +10290,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "displayHeader",
@@ -9857,7 +10300,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "dataRows",
@@ -9866,7 +10310,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": "Rendu"
     },
     {
      "name": "pageMax",
@@ -9875,7 +10320,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "1"
+     "default": "1",
+     "modifier": null
     },
     {
      "name": "displayPaging",
@@ -9884,7 +10330,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "label",
@@ -9893,7 +10340,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "headerStyle",
@@ -9902,7 +10350,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'table-cell-string-header'"
+     "default": "'table-cell-string-header'",
+     "modifier": "Rendu"
     },
     {
      "name": "pageSize",
@@ -9911,7 +10360,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "10"
+     "default": "10",
+     "modifier": null
     }
    ],
    "fields": [
@@ -10400,7 +10850,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -10409,7 +10860,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "limit",
@@ -10418,7 +10870,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "10"
+     "default": "10",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -10430,7 +10883,8 @@
       "manual"
      ],
      "type": null,
-     "default": "'auto'"
+     "default": "'auto'",
+     "modifier": null
     },
     {
      "name": "offset",
@@ -10439,7 +10893,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "0"
+     "default": "0",
+     "modifier": null
     },
     {
      "name": "label",
@@ -10448,7 +10903,8 @@
      "section": "specifics",
      "values": null,
      "type": "string ou null",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     }
    ],
    "fields": [
@@ -10679,7 +11135,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -10688,7 +11145,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "label",
@@ -10697,7 +11155,8 @@
      "section": "specifics",
      "values": null,
      "type": "string ou null",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -10709,7 +11168,8 @@
       "manual"
      ],
      "type": null,
-     "default": "'manual'"
+     "default": "'manual'",
+     "modifier": null
     }
    ],
    "fields": [
@@ -10900,16 +11360,17 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "columns",
      "label": "Colonnes",
-     "description": "Colonnes de la liste.\n\n**Modificateur :** `layout`.",
+     "description": "Colonnes de la liste.",
      "section": "specifics",
      "values": [
       "id",
@@ -10920,25 +11381,28 @@
       "state"
      ],
      "type": null,
-     "default": "'[\"icon\",\"name\",\"isForced\",\"state\"]'"
+     "default": "'[\"icon\",\"name\",\"isForced\",\"state\"]'",
+     "modifier": "Gabarit"
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "displayHeader",
      "label": "Entête?",
-     "description": "Active/désactive l'affichage de l'entête de la liste.\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de l'entête de la liste.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "collection",
@@ -10947,7 +11411,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "searchText",
@@ -10956,7 +11421,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "zone",
@@ -10965,7 +11431,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -10977,16 +11444,18 @@
       "pending"
      ],
      "type": null,
-     "default": "'all'"
+     "default": "'all'",
+     "modifier": null
     },
     {
      "name": "displayPaging",
      "label": "Pagination?",
-     "description": "Active/désactive l'affichage de la pagination\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de la pagination",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "reflectType",
@@ -11001,7 +11470,8 @@
       "state"
      ],
      "type": null,
-     "default": "'all'"
+     "default": "'all'",
+     "modifier": null
     },
     {
      "name": "enabled",
@@ -11010,16 +11480,18 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "pageSize",
      "label": "Taille page",
-     "description": "Taille en nombre d'élément d'un page de pagination.\n**Modificateur :** `other`.",
+     "description": "Taille en nombre d'élément d'un page de pagination.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "10"
+     "default": "10",
+     "modifier": null
     }
    ],
    "fields": [
@@ -11228,11 +11700,12 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -11241,57 +11714,63 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "withLastRefreshDate",
      "label": "Avec date?",
-     "description": "Active/désactive l'affichage de la date de fraîcheur du reflet.\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de la date de fraîcheur du reflet.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": "Taille"
     },
     {
      "name": "withIcon",
      "label": "Avec icône?",
-     "description": "Active/désactive l'affichage de l'icône du reflet.\n**Modificateur :** `layout`.",
+     "description": "Active/désactive l'affichage de l'icône du reflet.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "withName",
      "label": "Avec nom?",
-     "description": "Active/désactive l'affichage du nom du reflet.\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage du nom du reflet.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "allowCommand",
      "label": "Commandable?",
-     "description": "Permet d'afficher l'interface de commande du reflet s'il est commandable.\n**Modificateur :** `resize`.",
+     "description": "Permet d'afficher l'interface de commande du reflet s'il est commandable.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "submitMode",
      "label": "Mode de commande?",
-     "description": "Mode de validation de commande.\n\n- `'action'` (défaut) : des boutons s'afficheront en cas de modification de la commande pour choisir l'action à effectuer.\n- `'manual'` : la commande devra être envoyée manuellement, par script.\n- `'auto'` : la commande sera envoyée automatiquement dès modification ou dès la perte de focus.\n**Modificateur :** `other`.",
+     "description": "Mode de validation de commande.\n\n- `'action'` (défaut) : des boutons s'afficheront en cas de modification de la commande pour choisir l'action à effectuer.\n- `'manual'` : la commande devra être envoyée manuellement, par script.\n- `'auto'` : la commande sera envoyée automatiquement dès modification ou dès la perte de focus.",
      "section": "specifics",
      "values": [
       "action",
@@ -11299,7 +11778,8 @@
       "auto"
      ],
      "type": null,
-     "default": "'action'"
+     "default": "'action'",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -11308,7 +11788,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -11317,7 +11798,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "size",
@@ -11330,16 +11812,18 @@
       "small"
      ],
      "type": null,
-     "default": "'default'"
+     "default": "'default'",
+     "modifier": "Rendu"
     },
     {
      "name": "isVertical",
      "label": "Vertical?",
-     "description": "Permet d'activer/désactiver le mode vertical d'affichage des détails.\n**Modificateur :** `resize`.",
+     "description": "Permet d'activer/désactiver le mode vertical d'affichage des détails.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     }
    ],
    "fields": [
@@ -11664,11 +12148,12 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "colorsFromClasses",
@@ -11677,12 +12162,13 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "columns",
      "label": "Colonnes",
-     "description": "Colonnes de la liste.\n\n**Modificateur :** `layout`.",
+     "description": "Colonnes de la liste.",
      "section": "specifics",
      "values": [
       "id",
@@ -11692,16 +12178,18 @@
       "state"
      ],
      "type": null,
-     "default": "'[\"icon\",\"date\",\"caption\",\"state\"]'"
+     "default": "'[\"icon\",\"date\",\"caption\",\"state\"]'",
+     "modifier": "Gabarit"
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "dateFrom",
@@ -11710,16 +12198,18 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "displayHeader",
      "label": "Entête?",
-     "description": "Active/désactive l'affichage de l'entête de la liste.\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de l'entête de la liste.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "collection",
@@ -11728,7 +12218,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "device",
@@ -11737,7 +12228,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "groups",
@@ -11746,7 +12238,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -11755,7 +12248,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "searchText",
@@ -11764,7 +12258,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "zone",
@@ -11773,7 +12268,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "dateTo",
@@ -11782,7 +12278,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -11794,16 +12291,18 @@
       "pending"
      ],
      "type": null,
-     "default": "'all'"
+     "default": "'all'",
+     "modifier": null
     },
     {
      "name": "displayPaging",
      "label": "Pagination?",
-     "description": "Active/désactive l'affichage de la pagination\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de la pagination",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "reflectType",
@@ -11818,16 +12317,18 @@
       "state"
      ],
      "type": null,
-     "default": "'all'"
+     "default": "'all'",
+     "modifier": null
     },
     {
      "name": "pageSize",
      "label": "Taille page",
-     "description": "Taille en nombre d'élément d'un page de pagination.\n**Modificateur :** `other`.",
+     "description": "Taille en nombre d'élément d'un page de pagination.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "10"
+     "default": "10",
+     "modifier": null
     }
    ],
    "fields": [
@@ -12011,7 +12512,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "path",
@@ -12020,7 +12522,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -12029,7 +12532,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "writeOnChange",
@@ -12038,7 +12542,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -12050,7 +12555,8 @@
       "relative"
      ],
      "type": null,
-     "default": "'relative'"
+     "default": "'relative'",
+     "modifier": null
     }
    ],
    "fields": [
@@ -12241,7 +12747,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -12250,7 +12757,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "dataReadMode",
@@ -12262,7 +12770,8 @@
       "onetime"
      ],
      "type": null,
-     "default": "'onetime'"
+     "default": "'onetime'",
+     "modifier": null
     }
    ],
    "fields": [
@@ -12484,11 +12993,12 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -12497,7 +13007,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isBlinkingFault",
@@ -12506,7 +13017,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isBlinkingFalse",
@@ -12515,7 +13027,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "isBlinkingTrue",
@@ -12524,7 +13037,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "ledColorFault",
@@ -12533,7 +13047,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#ff1500'"
+     "default": "'#ff1500'",
+     "modifier": null
     },
     {
      "name": "ledColorFalse",
@@ -12542,7 +13057,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#00ff5b'"
+     "default": "'#00ff5b'",
+     "modifier": null
     },
     {
      "name": "ledColorTrue",
@@ -12551,16 +13067,18 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'#00ff5b'"
+     "default": "'#00ff5b'",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "withDetails",
@@ -12569,7 +13087,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'none'"
+     "default": "'none'",
+     "modifier": null
     },
     {
      "name": "pictureFault",
@@ -12578,7 +13097,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "pictureFalse",
@@ -12587,7 +13107,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "pictureTrue",
@@ -12596,7 +13117,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": "Gabarit"
     },
     {
      "name": "ledIsOnFault",
@@ -12605,7 +13127,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "ledIsOnFalse",
@@ -12614,7 +13137,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "ledIsOnTrue",
@@ -12623,7 +13147,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -12632,7 +13157,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -12641,7 +13167,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "displayText",
@@ -12650,7 +13177,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     }
    ],
    "fields": [
@@ -12836,11 +13364,12 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -12849,16 +13378,18 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "withDetails",
@@ -12867,7 +13398,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'none'"
+     "default": "'none'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -12879,7 +13411,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -12888,7 +13421,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -12897,7 +13431,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -13111,11 +13646,12 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -13124,16 +13660,18 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "withDetails",
@@ -13142,7 +13680,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'none'"
+     "default": "'none'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -13154,7 +13693,8 @@
       "right"
      ],
      "type": null,
-     "default": "'left'"
+     "default": "'left'",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -13163,7 +13703,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -13172,7 +13713,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -13362,7 +13904,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -13371,7 +13914,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -13380,7 +13924,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "withDetails",
@@ -13389,7 +13934,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'none'"
+     "default": "'none'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -13403,7 +13949,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -13412,7 +13959,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -13421,7 +13969,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -13611,7 +14160,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -13620,7 +14170,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -13629,7 +14180,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "withDetails",
@@ -13638,7 +14190,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'none'"
+     "default": "'none'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -13652,7 +14205,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -13661,7 +14215,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -13670,7 +14225,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -13860,7 +14416,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -13869,7 +14426,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -13878,7 +14436,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "withDetails",
@@ -13887,7 +14446,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'none'"
+     "default": "'none'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -13901,7 +14461,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -13910,7 +14471,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -13919,7 +14481,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -14109,7 +14672,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "isAutonomous",
@@ -14118,7 +14682,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -14127,7 +14692,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "withDetails",
@@ -14136,7 +14702,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'none'"
+     "default": "'none'",
+     "modifier": null
     },
     {
      "name": "orientation",
@@ -14150,7 +14717,8 @@
       "270"
      ],
      "type": null,
-     "default": "'0'"
+     "default": "'0'",
+     "modifier": null
     },
     {
      "name": "reflectPath",
@@ -14159,7 +14727,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "requesterKey",
@@ -14168,7 +14737,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     }
    ],
    "fields": [
@@ -14354,16 +14924,17 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "columns",
      "label": "Colonnes",
-     "description": "Colonnes de la liste.\n\n**Modificateur :** `layout`.",
+     "description": "Colonnes de la liste.",
      "section": "specifics",
      "values": [
       "id",
@@ -14373,25 +14944,28 @@
       "state"
      ],
      "type": null,
-     "default": "'[\"icon\",\"name\",\"state\"]'"
+     "default": "'[\"icon\",\"name\",\"state\"]'",
+     "modifier": "Gabarit"
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "displayHeader",
      "label": "Entête?",
-     "description": "Active/désactive l'affichage de l'entête de la liste.\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de l'entête de la liste.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "collection",
@@ -14400,7 +14974,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "nodPath",
@@ -14409,7 +14984,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "searchText",
@@ -14418,16 +14994,18 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "displayPaging",
      "label": "Pagination?",
-     "description": "Active/désactive l'affichage de la pagination\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de la pagination",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "enabled",
@@ -14436,16 +15014,18 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "pageSize",
      "label": "Taille page",
-     "description": "Taille en nombre d'élément d'un page de pagination.\n**Modificateur :** `other`.",
+     "description": "Taille en nombre d'élément d'un page de pagination.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "10"
+     "default": "10",
+     "modifier": null
     }
    ],
    "fields": [
@@ -14654,11 +15234,12 @@
     {
      "name": "autoRefresh",
      "label": "Auto rafraîchi?",
-     "description": "Active/désactive le rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Active/désactive le rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "colorsFromClasses",
@@ -14667,12 +15248,13 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "columns",
      "label": "Colonnes",
-     "description": "Colonnes de la liste.\n\n**Modificateur :** `layout`.",
+     "description": "Colonnes de la liste.",
      "section": "specifics",
      "values": [
       "id",
@@ -14685,16 +15267,18 @@
       "todo"
      ],
      "type": null,
-     "default": "'[\"ack\",\"icon\",\"date\",\"nod\",\"state\"]'"
+     "default": "'[\"ack\",\"icon\",\"date\",\"nod\",\"state\"]'",
+     "modifier": "Gabarit"
     },
     {
      "name": "autoRefreshDelay",
      "label": "Délai",
-     "description": "Délai de rafraîchissement automatique de la donnée.\n**Modificateur :** `other`.",
+     "description": "Délai de rafraîchissement automatique de la donnée.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "dateFrom",
@@ -14703,16 +15287,18 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "displayHeader",
      "label": "Entête?",
-     "description": "Active/désactive l'affichage de l'entête de la liste.\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de l'entête de la liste.",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "collection",
@@ -14721,7 +15307,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "device",
@@ -14730,7 +15317,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "acquitted",
@@ -14743,7 +15331,8 @@
       "acquitted"
      ],
      "type": null,
-     "default": "'all'"
+     "default": "'all'",
+     "modifier": null
     },
     {
      "name": "groups",
@@ -14752,7 +15341,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "site",
@@ -14761,7 +15351,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "nodPath",
@@ -14770,7 +15361,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "zone",
@@ -14779,7 +15371,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "dateTo",
@@ -14788,7 +15381,8 @@
      "section": "specifics",
      "values": null,
      "type": "any",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -14800,25 +15394,28 @@
       "pending"
      ],
      "type": null,
-     "default": "'all'"
+     "default": "'all'",
+     "modifier": null
     },
     {
      "name": "displayPaging",
      "label": "Pagination?",
-     "description": "Active/désactive l'affichage de la pagination\n**Modificateur :** `resize`.",
+     "description": "Active/désactive l'affichage de la pagination",
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": "Taille"
     },
     {
      "name": "pageSize",
      "label": "Taille page",
-     "description": "Taille en nombre d'élément d'un page de pagination.\n**Modificateur :** `other`.",
+     "description": "Taille en nombre d'élément d'un page de pagination.",
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "10"
+     "default": "10",
+     "modifier": null
     }
    ],
    "fields": [
@@ -15003,7 +15600,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "fieldName",
@@ -15012,7 +15610,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "path",
@@ -15021,7 +15620,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -15030,7 +15630,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "writeOnChange",
@@ -15039,7 +15640,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -15052,7 +15654,8 @@
       "relative"
      ],
      "type": null,
-     "default": "'auto'"
+     "default": "'auto'",
+     "modifier": null
     }
    ],
    "fields": [
@@ -15252,7 +15855,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true"
+     "default": "true",
+     "modifier": null
     },
     {
      "name": "fieldName",
@@ -15261,7 +15865,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "path",
@@ -15270,7 +15875,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "autoRefreshDelay",
@@ -15279,7 +15885,8 @@
      "section": "specifics",
      "values": null,
      "type": "number",
-     "default": "30"
+     "default": "30",
+     "modifier": null
     },
     {
      "name": "writeOnChange",
@@ -15288,7 +15895,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "mode",
@@ -15301,7 +15909,8 @@
       "relative"
      ],
      "type": null,
-     "default": "'auto'"
+     "default": "'auto'",
+     "modifier": null
     }
    ],
    "fields": [
@@ -15496,7 +16105,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "relativePath",
@@ -15505,7 +16115,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''"
+     "default": "''",
+     "modifier": null
     },
     {
      "name": "relativeTo",
@@ -15514,7 +16125,8 @@
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "null"
+     "default": "null",
+     "modifier": null
     },
     {
      "name": "writeOnChange",
@@ -15523,7 +16135,8 @@
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "false"
+     "default": "false",
+     "modifier": null
     },
     {
      "name": "dataReadMode",
@@ -15535,7 +16148,8 @@
       "onetime"
      ],
      "type": null,
-     "default": "'onetime'"
+     "default": "'onetime'",
+     "modifier": null
     }
    ],
    "fields": [

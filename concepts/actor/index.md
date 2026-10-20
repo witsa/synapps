@@ -73,11 +73,12 @@ Dans l'inspecteur, il est possible d'afficher la valeur héritée d'une proprié
 
 ### Évènement de modification
 
-Chaque propriété déclenche un évènement de modification lorsque sa valeur change. Il y a 4 types de modification :
+Chaque propriété déclenche un évènement de modification lorsque sa valeur change. Il y a 5 types de modification :
 
 - **Aucune** Pas de modification particulière
-- **Style** Modification qui entraîne un calcul des styles CSS de l'acteur.
+- **Style CSS** Modification qui entraîne un calcul des styles CSS de l'acteur.
 - **Rendu** Modification qui entraîne un nouveau rendu de l'acteur.
+- **Taille** Modification qui entraîne un nouveau calcul de la taille de l'acteur.
 - **Gabarit** Modification qui entraîne un nouveau calcul de gabarit et rendu de toute la hiérarchie de l'acteur.
 
 Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur.
