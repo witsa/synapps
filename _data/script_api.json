@@ -503,7 +503,7 @@
    {
     "name": "textAlign",
     "label": "Alignement du texte",
-    "description": "Alignement du texte.\n**Hérité**",
+    "description": "Alignement du texte.",
     "section": "text",
     "values": [
      "inherit",
@@ -514,7 +514,8 @@
     ],
     "type": null,
     "default": "'inherit'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "horizontalAlignment",
@@ -530,7 +531,8 @@
     ],
     "type": null,
     "default": "'auto'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": false
    },
    {
     "name": "verticalAlignment",
@@ -546,7 +548,8 @@
     ],
     "type": null,
     "default": "'auto'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": false
    },
    {
     "name": "rotate",
@@ -556,7 +559,8 @@
     "values": null,
     "type": "number",
     "default": "0",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": false
    },
    {
     "name": "animation",
@@ -566,7 +570,8 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": false
    },
    {
     "name": "backgroundAttachment",
@@ -576,7 +581,8 @@
     "values": null,
     "type": "string",
     "default": "'scroll'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "toolTip",
@@ -586,7 +592,8 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": null
+    "modifier": null,
+    "inheritable": false
    },
    {
     "name": "classNames",
@@ -596,17 +603,19 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Rendu"
+    "modifier": "Rendu",
+    "inheritable": false
    },
    {
     "name": "color",
     "label": "Couleur",
-    "description": "Couleur de l'acteur.\n**Hérité**",
+    "description": "Couleur de l'acteur.",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "backgroundColor",
@@ -616,7 +625,8 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "borderColor",
@@ -626,7 +636,8 @@
     "values": null,
     "type": "string",
     "default": "'currentColor'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "borderRadius",
@@ -636,7 +647,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "cursor",
@@ -646,7 +658,8 @@
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "scaling",
@@ -656,17 +669,19 @@
     "values": null,
     "type": "number",
     "default": "1",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": false
    },
    {
     "name": "fontWeight",
     "label": "Épaisseur",
-    "description": "Épaisseur du texte.\n**Hérité**",
+    "description": "Épaisseur du texte.",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "borderWidth",
@@ -676,17 +691,19 @@
     "values": null,
     "type": "string",
     "default": "'1px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "fontFamily",
     "label": "Famille",
-    "description": "Police du texte. Voir information ici\n**Hérité**",
+    "description": "Police du texte. Voir information ici",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "filter",
@@ -696,7 +713,8 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "height",
@@ -706,17 +724,19 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "lineHeight",
     "label": "Hauteur de ligne",
-    "description": "Hauteur de ligne.\n**Hérité**",
+    "description": "Hauteur de ligne.",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "maxHeight",
@@ -726,7 +746,8 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "minHeight",
@@ -736,7 +757,8 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "backgroundImage",
@@ -746,7 +768,8 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "width",
@@ -756,7 +779,8 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "maxWidth",
@@ -766,7 +790,8 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "minWidth",
@@ -776,7 +801,8 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "marginBottom",
@@ -786,7 +812,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "marginRight",
@@ -796,7 +823,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "marginLeft",
@@ -806,7 +834,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "marginTop",
@@ -816,7 +845,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "paddingBottom",
@@ -826,7 +856,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "paddingRight",
@@ -836,7 +867,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "paddingLeft",
@@ -846,7 +878,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "paddingTop",
@@ -856,7 +889,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "boxShadow",
@@ -866,7 +900,8 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "opacity",
@@ -876,7 +911,8 @@
     "values": null,
     "type": "number",
     "default": "100",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": false
    },
    {
     "name": "bottom",
@@ -886,7 +922,8 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "right",
@@ -896,7 +933,8 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "backgroundPosition",
@@ -906,7 +944,8 @@
     "values": null,
     "type": "string",
     "default": "'left top'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "left",
@@ -916,7 +955,8 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "top",
@@ -926,7 +966,8 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "backgroundRepeat",
@@ -936,27 +977,30 @@
     "values": null,
     "type": "string",
     "default": "'repeat'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "textDecoration",
     "label": "Soulignement",
-    "description": "Décoration du texte.\n**Hérité**",
+    "description": "Décoration du texte.",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "fontStyle",
     "label": "Style",
-    "description": "Style du texte.\n**Hérité**",
+    "description": "Style du texte.",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "borderStyle",
@@ -966,17 +1010,19 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "fontSize",
     "label": "Taille",
-    "description": "Hauteur du texte.\n**Hérité**",
+    "description": "Hauteur du texte.",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "backgroundSize",
@@ -986,7 +1032,8 @@
     "values": null,
     "type": "string",
     "default": "'auto auto'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "transition",
@@ -996,7 +1043,8 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": false
    },
    {
     "name": "translateX",
@@ -1006,7 +1054,8 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "translateY",
@@ -1016,17 +1065,19 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    },
    {
     "name": "fontVariant",
     "label": "Variant",
-    "description": "Variant du texte.\n**Hérité**",
+    "description": "Variant du texte.",
     "section": "text",
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": true
    },
    {
     "name": "visible",
@@ -1036,7 +1087,8 @@
     "values": null,
     "type": "boolean",
     "default": "true",
-    "modifier": "Taille"
+    "modifier": "Taille",
+    "inheritable": false
    },
    {
     "name": "zIndex",
@@ -1046,7 +1098,8 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Style CSS"
+    "modifier": "Style CSS",
+    "inheritable": true
    }
   ],
   "fields": [
@@ -1644,7 +1697,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -1659,7 +1713,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -1672,7 +1727,8 @@
      ],
      "type": null,
      "default": "'vertical'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -1921,7 +1977,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -1936,7 +1993,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -2176,7 +2234,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -2191,7 +2250,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "viewType",
@@ -2204,7 +2264,8 @@
      ],
      "type": null,
      "default": "'visible'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -2449,7 +2510,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -2489,7 +2551,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -2529,7 +2592,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -2568,7 +2632,8 @@
      ],
      "type": null,
      "default": "'auto'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -2583,7 +2648,8 @@
      ],
      "type": null,
      "default": "'auto'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "sceneKey",
@@ -2593,7 +2659,8 @@
      "values": null,
      "type": "clé de scène",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -2686,7 +2753,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "allowForms",
@@ -2696,7 +2764,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "allowModals",
@@ -2706,7 +2775,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "allowPopups",
@@ -2716,7 +2786,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "allowScripts",
@@ -2726,7 +2797,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "allowDownloads",
@@ -2736,7 +2808,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "allowSameOrigin",
@@ -2746,7 +2819,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "url",
@@ -2756,7 +2830,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -2801,7 +2876,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -2816,7 +2892,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "compositeType",
@@ -2826,7 +2903,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -3070,7 +3148,8 @@
      "values": null,
      "type": "any[]",
      "default": "'[]'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "displayHeader",
@@ -3080,7 +3159,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dataRows",
@@ -3090,7 +3170,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "pageMax",
@@ -3100,7 +3181,8 @@
      "values": null,
      "type": "number",
      "default": "1",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayPaging",
@@ -3110,7 +3192,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "headerStyle",
@@ -3120,7 +3203,8 @@
      "values": null,
      "type": "string",
      "default": "'table-cell-string-header'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -3456,7 +3540,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "composite",
@@ -3466,7 +3551,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "datetimeFormat",
@@ -3476,7 +3562,8 @@
      "values": null,
      "type": "string",
      "default": "'DD/MM/YYYY HH:mm:ss'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "falseImage",
@@ -3486,7 +3573,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "trueImage",
@@ -3496,7 +3584,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "verticalPosition",
@@ -3510,7 +3599,8 @@
      ],
      "type": null,
      "default": "'center'",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "falseText",
@@ -3520,7 +3610,8 @@
      "values": null,
      "type": "string",
      "default": "'_table_cell_false_text'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "trueText",
@@ -3530,7 +3621,8 @@
      "values": null,
      "type": "string",
      "default": "'_table_cell_true_text'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -3545,7 +3637,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "type",
@@ -3561,7 +3654,8 @@
      ],
      "type": null,
      "default": "'string'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -3571,7 +3665,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -3905,7 +4000,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "content",
@@ -3915,7 +4011,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -3930,7 +4027,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -3950,7 +4048,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "outline",
@@ -3960,7 +4059,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "size",
@@ -3974,7 +4074,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -4039,7 +4140,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -4054,7 +4156,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -4064,7 +4167,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -4084,7 +4188,8 @@
      ],
      "type": null,
      "default": "'info'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "options",
@@ -4094,7 +4199,8 @@
      "values": null,
      "type": "string",
      "default": "'[]'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -4104,7 +4210,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -4118,7 +4225,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -4188,7 +4296,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "withTooltips",
@@ -4198,7 +4307,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "barBgColor",
@@ -4208,7 +4318,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "isSlideValued",
@@ -4218,7 +4329,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "barColor",
@@ -4228,7 +4340,8 @@
      "values": null,
      "type": "string",
      "default": "'#E0E0E0'",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "limit",
@@ -4238,7 +4351,8 @@
      "values": null,
      "type": "number ou null",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "margin",
@@ -4248,7 +4362,8 @@
      "values": null,
      "type": "number ou null",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "step",
@@ -4258,7 +4373,8 @@
      "values": null,
      "type": "number ou null",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "barPosition",
@@ -4272,7 +4388,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -4285,7 +4402,8 @@
      ],
      "type": null,
      "default": "'horizontal'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reverse",
@@ -4295,7 +4413,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -4305,7 +4424,8 @@
      "values": null,
      "type": "number",
      "default": "20",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value2",
@@ -4315,7 +4435,8 @@
      "values": null,
      "type": "number",
      "default": "80",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "max",
@@ -4325,7 +4446,8 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "min",
@@ -4335,7 +4457,8 @@
      "values": null,
      "type": "number",
      "default": "0",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isSingleValue",
@@ -4345,7 +4468,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -4406,7 +4530,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -4421,7 +4546,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -4431,7 +4557,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -4451,7 +4578,8 @@
      ],
      "type": null,
      "default": "'info'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "options",
@@ -4471,7 +4599,8 @@
      ],
      "type": null,
      "default": "'[]'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -4481,7 +4610,8 @@
      "values": null,
      "type": "string",
      "default": "'today'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -4495,7 +4625,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -4589,7 +4720,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "screenActorKey",
@@ -4599,7 +4731,8 @@
      "values": null,
      "type": "clé d'acteur",
      "default": "null",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "content",
@@ -4609,7 +4742,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -4624,7 +4758,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -4644,7 +4779,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "outline",
@@ -4654,7 +4790,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "displaySceneKey",
@@ -4664,7 +4801,8 @@
      "values": null,
      "type": "clé de scène",
      "default": "null",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "size",
@@ -4678,7 +4816,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -4758,7 +4897,8 @@
      "values": null,
      "type": "string",
      "default": "'inherit'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "groupColor",
@@ -4768,7 +4908,8 @@
      "values": null,
      "type": "string",
      "default": "'inherit'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "overflowX",
@@ -4783,7 +4924,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -4798,7 +4940,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "selectedScene",
@@ -4808,7 +4951,8 @@
      "values": null,
      "type": "clé de scène",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "styleBtnActive",
@@ -4818,7 +4962,8 @@
      "values": null,
      "type": "string",
      "default": "'menu-button-active'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "styleBtnInactive",
@@ -4828,7 +4973,8 @@
      "values": null,
      "type": "string",
      "default": "'menu-button-inactive'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -5058,7 +5204,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "overflowX",
@@ -5073,7 +5220,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -5088,7 +5236,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "isOpen",
@@ -5098,7 +5247,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "icon",
@@ -5108,7 +5258,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "picture",
@@ -5118,7 +5269,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "iconPosition",
@@ -5131,7 +5283,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "content",
@@ -5141,7 +5294,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -5410,7 +5564,8 @@
      "values": null,
      "type": "string",
      "default": "'inherit'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "groupBackgroundColorActive",
@@ -5420,7 +5575,8 @@
      "values": null,
      "type": "string",
      "default": "'inherit'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "groupColor",
@@ -5430,7 +5586,8 @@
      "values": null,
      "type": "string",
      "default": "'inherit'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "groupColorActive",
@@ -5440,7 +5597,8 @@
      "values": null,
      "type": "string",
      "default": "'#2A9FD6'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "overflowX",
@@ -5455,7 +5613,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "overflowY",
@@ -5470,7 +5629,8 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "isHover",
@@ -5480,7 +5640,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "selectedScene",
@@ -5490,7 +5651,8 @@
      "values": null,
      "type": "clé de scène",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "styleBtnActive",
@@ -5500,7 +5662,8 @@
      "values": null,
      "type": "string",
      "default": "'menu-button-navbar-active'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "styleBtnInactive",
@@ -5510,7 +5673,8 @@
      "values": null,
      "type": "string",
      "default": "'menu-button-navbar-inactive'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -5778,7 +5942,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "content",
@@ -5788,7 +5953,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -5803,7 +5969,8 @@
      ],
      "type": null,
      "default": "'truncate'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "icon",
@@ -5813,7 +5980,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "picture",
@@ -5823,7 +5991,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -5843,7 +6012,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "outline",
@@ -5853,7 +6023,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "iconPosition",
@@ -5868,7 +6039,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "sceneKey",
@@ -5878,7 +6050,8 @@
      "values": null,
      "type": "clé de scène",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -5892,7 +6065,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -5962,7 +6136,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "autocomplete",
@@ -5972,7 +6147,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "validationState",
@@ -5986,7 +6162,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "isReadOnly",
@@ -5996,7 +6173,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "maxLength",
@@ -6006,7 +6184,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "inputmode",
@@ -6026,7 +6205,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "options",
@@ -6036,7 +6216,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "step",
@@ -6046,7 +6227,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -6060,7 +6242,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "placeHolder",
@@ -6070,7 +6253,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "inputType",
@@ -6088,7 +6272,8 @@
      ],
      "type": null,
      "default": "'text'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -6098,7 +6283,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "max",
@@ -6108,7 +6294,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "min",
@@ -6118,7 +6305,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -6167,7 +6355,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "autocomplete",
@@ -6177,7 +6366,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "validationState",
@@ -6191,7 +6381,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "isReadOnly",
@@ -6201,7 +6392,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "maxLength",
@@ -6211,7 +6403,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "resize",
@@ -6226,7 +6419,8 @@
      ],
      "type": null,
      "default": "'vertical'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -6240,7 +6434,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "placeHolder",
@@ -6250,7 +6445,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -6260,7 +6456,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -6290,7 +6487,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -6304,7 +6502,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "validationState",
@@ -6318,7 +6517,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "size",
@@ -6332,7 +6532,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "content",
@@ -6342,7 +6543,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -6352,7 +6554,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -6397,7 +6600,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "withCheckAll",
@@ -6407,7 +6611,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -6422,7 +6627,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -6432,7 +6638,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "validationState",
@@ -6446,7 +6653,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isMultiSelect",
@@ -6456,7 +6664,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "options",
@@ -6466,7 +6675,8 @@
      "values": null,
      "type": "string",
      "default": "'[]'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "values",
@@ -6476,7 +6686,8 @@
      "values": null,
      "type": "string",
      "default": "'[]'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -6490,7 +6701,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "checkAllText",
@@ -6500,7 +6712,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "allIsNull",
@@ -6510,7 +6723,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -6616,7 +6830,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "validationState",
@@ -6630,7 +6845,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isReadOnly",
@@ -6640,7 +6856,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "options",
@@ -6650,7 +6867,8 @@
      "values": null,
      "type": "string",
      "default": "'[]'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -6660,7 +6878,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "size",
@@ -6674,7 +6893,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "emptyText",
@@ -6684,7 +6904,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "placeHolder",
@@ -6694,7 +6915,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "hasEmptyValue",
@@ -6704,7 +6926,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -6783,7 +7006,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -6793,7 +7017,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "validationState",
@@ -6807,7 +7032,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "options",
@@ -6817,7 +7043,8 @@
      "values": null,
      "type": "string",
      "default": "'[]'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -6827,7 +7054,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -6841,7 +7069,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -6911,7 +7140,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -6926,7 +7156,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "modeFalse",
@@ -6946,7 +7177,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "modeTrue",
@@ -6966,7 +7198,8 @@
      ],
      "type": null,
      "default": "'primary'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "outline",
@@ -6976,7 +7209,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "size",
@@ -6990,7 +7224,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "textFalse",
@@ -7000,7 +7235,8 @@
      "values": null,
      "type": "string",
      "default": "'Off'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "textTrue",
@@ -7010,7 +7246,8 @@
      "values": null,
      "type": "string",
      "default": "'On'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "value",
@@ -7020,7 +7257,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7056,7 +7294,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "imageFalse",
@@ -7066,7 +7305,8 @@
      "values": null,
      "type": "string ou null",
      "default": "null",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "imageTrue",
@@ -7076,7 +7316,8 @@
      "values": null,
      "type": "string ou null",
      "default": "null",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "textFalse",
@@ -7086,7 +7327,8 @@
      "values": null,
      "type": "string",
      "default": "'Off'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "textTrue",
@@ -7096,7 +7338,8 @@
      "values": null,
      "type": "string",
      "default": "'On'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "value",
@@ -7106,7 +7349,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7142,7 +7386,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isOn",
@@ -7152,7 +7397,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledColor",
@@ -7162,7 +7408,8 @@
      "values": null,
      "type": "string",
      "default": "'#00ff5b'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7186,7 +7433,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinkingFalse",
@@ -7196,7 +7444,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinkingTrue",
@@ -7206,7 +7455,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledColorFault",
@@ -7216,7 +7466,8 @@
      "values": null,
      "type": "string",
      "default": "'#ff1500'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledColorFalse",
@@ -7226,7 +7477,8 @@
      "values": null,
      "type": "string",
      "default": "'#00ff5b'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledColorTrue",
@@ -7236,7 +7488,8 @@
      "values": null,
      "type": "string",
      "default": "'#00ff5b'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isFault",
@@ -7246,7 +7499,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "pictureFault",
@@ -7256,7 +7510,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "pictureFalse",
@@ -7266,7 +7521,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "pictureTrue",
@@ -7276,7 +7532,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "ledIsOnFault",
@@ -7286,7 +7543,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledIsOnFalse",
@@ -7296,7 +7554,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledIsOnTrue",
@@ -7306,7 +7565,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayText",
@@ -7316,7 +7576,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "textFault",
@@ -7326,7 +7587,8 @@
      "values": null,
      "type": "string",
      "default": "'_ternary_fault_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "textFalse",
@@ -7336,7 +7598,8 @@
      "values": null,
      "type": "string",
      "default": "'_ternary_false_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "textTrue",
@@ -7346,7 +7609,8 @@
      "values": null,
      "type": "string",
      "default": "'_ternary_true_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "value",
@@ -7356,7 +7620,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7380,7 +7645,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "isBlinking1",
@@ -7390,7 +7656,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinking2",
@@ -7400,7 +7667,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinking3",
@@ -7410,7 +7678,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinking4",
@@ -7420,7 +7689,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinking5",
@@ -7430,7 +7700,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinking6",
@@ -7440,7 +7711,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinking7",
@@ -7450,7 +7722,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinking8",
@@ -7460,7 +7733,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "positionsCount",
@@ -7470,7 +7744,8 @@
      "values": null,
      "type": "number",
      "default": "4",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "picture1",
@@ -7480,7 +7755,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "picture2",
@@ -7490,7 +7766,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "picture3",
@@ -7500,7 +7777,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "picture4",
@@ -7510,7 +7788,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "picture5",
@@ -7520,7 +7799,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "picture6",
@@ -7530,7 +7810,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "picture7",
@@ -7540,7 +7821,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "picture8",
@@ -7550,7 +7832,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "position",
@@ -7560,7 +7843,8 @@
      "values": null,
      "type": "string",
      "default": "'1'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position1",
@@ -7570,7 +7854,8 @@
      "values": null,
      "type": "string",
      "default": "'1'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position2",
@@ -7580,7 +7865,8 @@
      "values": null,
      "type": "string",
      "default": "'2'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position3",
@@ -7590,7 +7876,8 @@
      "values": null,
      "type": "string",
      "default": "'3'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position4",
@@ -7600,7 +7887,8 @@
      "values": null,
      "type": "string",
      "default": "'4'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position5",
@@ -7610,7 +7898,8 @@
      "values": null,
      "type": "string",
      "default": "'5'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position6",
@@ -7620,7 +7909,8 @@
      "values": null,
      "type": "string",
      "default": "'6'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position7",
@@ -7630,7 +7920,8 @@
      "values": null,
      "type": "string",
      "default": "'7'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "position8",
@@ -7640,7 +7931,8 @@
      "values": null,
      "type": "string",
      "default": "'8'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "text1",
@@ -7650,7 +7942,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "text2",
@@ -7660,7 +7953,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "text3",
@@ -7670,7 +7964,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "text4",
@@ -7680,7 +7975,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "text5",
@@ -7690,7 +7986,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "text6",
@@ -7700,7 +7997,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "text7",
@@ -7710,7 +8008,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "text8",
@@ -7720,7 +8019,8 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7744,7 +8044,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -7757,7 +8058,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "status",
@@ -7772,7 +8074,8 @@
      ],
      "type": null,
      "default": "'stopped'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "burnerStatus",
@@ -7792,7 +8095,8 @@
      ],
      "type": null,
      "default": "'stopped'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7816,7 +8120,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isFault",
@@ -7826,7 +8131,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -7839,7 +8145,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "status",
@@ -7856,7 +8163,8 @@
      ],
      "type": null,
      "default": "'stopped'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7883,7 +8191,8 @@
      ],
      "type": null,
      "default": "'bride'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -7898,7 +8207,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isFault1",
@@ -7908,7 +8218,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isPump1Running",
@@ -7918,7 +8229,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isFault2",
@@ -7928,7 +8240,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isPump2Running",
@@ -7938,7 +8251,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "status",
@@ -7952,7 +8266,8 @@
      ],
      "type": null,
      "default": "'stopped'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -7981,7 +8296,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8009,7 +8325,8 @@
      ],
      "type": null,
      "default": "'blue'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "customColor",
@@ -8019,7 +8336,8 @@
      "values": null,
      "type": "string",
      "default": "'#cccccc'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8034,7 +8352,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -8044,7 +8363,8 @@
      "values": null,
      "type": "number",
      "default": "1",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "kind",
@@ -8061,7 +8381,8 @@
      ],
      "type": null,
      "default": "'straight'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8085,7 +8406,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isRunning",
@@ -8095,7 +8417,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8110,7 +8433,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8139,7 +8463,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8163,7 +8488,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8178,7 +8504,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "status",
@@ -8194,7 +8521,8 @@
      ],
      "type": null,
      "default": "'closed'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "type",
@@ -8207,7 +8535,8 @@
      ],
      "type": null,
      "default": "'shutoff'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -8217,7 +8546,8 @@
      "values": null,
      "type": "number",
      "default": "0",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8241,7 +8571,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8256,7 +8587,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "value",
@@ -8266,7 +8598,8 @@
      "values": null,
      "type": "number",
      "default": "0",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8290,7 +8623,8 @@
      "values": null,
      "type": "string",
      "default": "'#1ed760'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8305,7 +8639,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "arrowType",
@@ -8319,7 +8654,8 @@
      ],
      "type": null,
      "default": "'blue'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8347,7 +8683,8 @@
      ],
      "type": null,
      "default": "'red'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "customColor",
@@ -8357,7 +8694,8 @@
      "values": null,
      "type": "string",
      "default": "'#cccccc'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isDefault",
@@ -8367,7 +8705,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isRunning",
@@ -8377,7 +8716,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8392,7 +8732,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "type",
@@ -8405,7 +8746,8 @@
      ],
      "type": null,
      "default": "'air'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8434,7 +8776,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8458,7 +8801,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8473,7 +8817,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8497,7 +8842,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8512,7 +8858,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -8522,7 +8869,8 @@
      "values": null,
      "type": "number",
      "default": "1",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "type",
@@ -8536,7 +8884,8 @@
      ],
      "type": null,
      "default": "'straight'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8563,7 +8912,8 @@
      ],
      "type": null,
      "default": "'digital'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isOpen",
@@ -8573,7 +8923,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "opening",
@@ -8583,7 +8934,8 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8610,7 +8962,8 @@
      ],
      "type": null,
      "default": "'digital'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8625,7 +8978,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isOpen",
@@ -8635,7 +8989,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "opening",
@@ -8645,7 +9000,8 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8669,7 +9025,8 @@
      "values": null,
      "type": "string",
      "default": "'#00FF66'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dirtyColor",
@@ -8679,7 +9036,8 @@
      "values": null,
      "type": "string",
      "default": "'#FF0000'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8694,7 +9052,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isDirty",
@@ -8704,7 +9063,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8728,7 +9088,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isDefault",
@@ -8738,7 +9099,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8751,7 +9113,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8775,7 +9138,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isRunning",
@@ -8785,7 +9149,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8800,7 +9165,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8824,7 +9190,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isRunning",
@@ -8834,7 +9201,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -8847,7 +9215,8 @@
      ],
      "type": null,
      "default": "'digital'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8860,7 +9229,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "speed",
@@ -8870,7 +9240,8 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8894,7 +9265,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isRunning",
@@ -8904,7 +9276,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -8917,7 +9290,8 @@
      ],
      "type": null,
      "default": "'digital'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -8930,7 +9304,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "speed",
@@ -8940,7 +9315,8 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -8964,7 +9340,8 @@
      "values": null,
      "type": "string",
      "default": "'#F7FF00'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "colorBottomLeft",
@@ -8974,7 +9351,8 @@
      "values": null,
      "type": "string",
      "default": "'#15FF00'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "colorTopRight",
@@ -8984,7 +9362,8 @@
      "values": null,
      "type": "string",
      "default": "'#0095FF'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "colorTopLeft",
@@ -8994,7 +9373,8 @@
      "values": null,
      "type": "string",
      "default": "'#FF0004'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "flowDirection",
@@ -9009,7 +9389,8 @@
      ],
      "type": null,
      "default": "'bottom'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -9033,7 +9414,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -9046,7 +9428,8 @@
      ],
      "type": null,
      "default": "'digital'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "speed",
@@ -9056,7 +9439,8 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -9080,7 +9464,8 @@
      "values": null,
      "type": "string",
      "default": "'#C2C2C2'",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "gaugeStartColor",
@@ -9090,7 +9475,8 @@
      "values": null,
      "type": "string",
      "default": "'#0B04CF'",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "gaugeColor",
@@ -9100,7 +9486,8 @@
      "values": null,
      "type": "string",
      "default": "'#E0E0E0'",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "gaugeWidth",
@@ -9110,7 +9497,8 @@
      "values": null,
      "type": "number",
      "default": "3",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "gaugeType",
@@ -9120,7 +9508,8 @@
      "values": null,
      "type": "string",
      "default": "'gauge'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "gaugeAngle",
@@ -9130,7 +9519,8 @@
      "values": null,
      "type": "number",
      "default": "180",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "gaugeValue",
@@ -9140,7 +9530,8 @@
      "values": null,
      "type": "number",
      "default": "75",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "gaugeMaxValue",
@@ -9150,7 +9541,8 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "gaugeMinValue",
@@ -9160,7 +9552,8 @@
      "values": null,
      "type": "number",
      "default": "0",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -9184,7 +9577,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "resourceFilterPath",
@@ -9194,7 +9588,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "periodType",
@@ -9208,7 +9603,8 @@
      ],
      "type": null,
      "default": "'week'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "agendaPath",
@@ -9218,7 +9614,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -9242,7 +9639,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "showLegend",
@@ -9252,7 +9650,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "preparationLabel",
@@ -9262,7 +9661,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dataId",
@@ -9272,7 +9672,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "version",
@@ -9282,7 +9683,8 @@
      "values": null,
      "type": "string",
      "default": "'Latest'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -9306,7 +9708,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [],
@@ -9330,7 +9733,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -9345,7 +9749,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -9355,7 +9760,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "values",
@@ -9365,7 +9771,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isMultiSelect",
@@ -9375,7 +9782,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -9389,7 +9797,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -9485,7 +9894,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -9500,7 +9910,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -9510,7 +9921,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "values",
@@ -9520,7 +9932,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isMultiSelect",
@@ -9530,7 +9943,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -9544,7 +9958,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -9640,7 +10055,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -9655,7 +10071,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -9665,7 +10082,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "values",
@@ -9675,7 +10093,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isMultiSelect",
@@ -9685,7 +10104,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -9699,7 +10119,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -9795,7 +10216,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -9810,7 +10232,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -9820,7 +10243,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "values",
@@ -9830,7 +10254,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isMultiSelect",
@@ -9840,7 +10265,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -9854,7 +10280,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -9950,7 +10377,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -9965,7 +10393,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -9975,7 +10404,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "values",
@@ -9985,7 +10415,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isMultiSelect",
@@ -9995,7 +10426,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -10009,7 +10441,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -10105,7 +10538,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS"
+     "modifier": "Style CSS",
+     "inheritable": false
     },
     {
      "name": "textOverflow",
@@ -10120,7 +10554,8 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isInline",
@@ -10130,7 +10565,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "values",
@@ -10140,7 +10576,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "resourceFilterPath",
@@ -10150,7 +10587,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isMultiSelect",
@@ -10160,7 +10598,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -10174,7 +10613,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -10271,7 +10711,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "columns",
@@ -10281,7 +10722,8 @@
      "values": null,
      "type": "any[]",
      "default": "'[]'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -10291,7 +10733,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayHeader",
@@ -10301,7 +10744,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dataRows",
@@ -10311,7 +10755,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "pageMax",
@@ -10321,7 +10766,8 @@
      "values": null,
      "type": "number",
      "default": "1",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayPaging",
@@ -10331,7 +10777,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "label",
@@ -10341,7 +10788,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "headerStyle",
@@ -10351,7 +10799,8 @@
      "values": null,
      "type": "string",
      "default": "'table-cell-string-header'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "pageSize",
@@ -10361,7 +10810,8 @@
      "values": null,
      "type": "number",
      "default": "10",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -10851,7 +11301,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -10861,7 +11312,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "limit",
@@ -10871,7 +11323,8 @@
      "values": null,
      "type": "number",
      "default": "10",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -10884,7 +11337,8 @@
      ],
      "type": null,
      "default": "'auto'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "offset",
@@ -10894,7 +11348,8 @@
      "values": null,
      "type": "number",
      "default": "0",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "label",
@@ -10904,7 +11359,8 @@
      "values": null,
      "type": "string ou null",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -11136,7 +11592,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -11146,7 +11603,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "label",
@@ -11156,7 +11614,8 @@
      "values": null,
      "type": "string ou null",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -11169,7 +11628,8 @@
      ],
      "type": null,
      "default": "'manual'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -11365,7 +11825,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "columns",
@@ -11382,7 +11843,8 @@
      ],
      "type": null,
      "default": "'[\"icon\",\"name\",\"isForced\",\"state\"]'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -11392,7 +11854,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayHeader",
@@ -11402,7 +11865,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "collection",
@@ -11412,7 +11876,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "searchText",
@@ -11422,7 +11887,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "zone",
@@ -11432,7 +11898,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -11445,7 +11912,8 @@
      ],
      "type": null,
      "default": "'all'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayPaging",
@@ -11455,7 +11923,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "reflectType",
@@ -11471,7 +11940,8 @@
      ],
      "type": null,
      "default": "'all'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "enabled",
@@ -11481,7 +11951,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "pageSize",
@@ -11491,7 +11962,8 @@
      "values": null,
      "type": "number",
      "default": "10",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -11705,7 +12177,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -11715,7 +12188,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withLastRefreshDate",
@@ -11725,7 +12199,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "withIcon",
@@ -11735,7 +12210,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "withName",
@@ -11745,7 +12221,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "allowCommand",
@@ -11755,7 +12232,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -11765,7 +12243,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "submitMode",
@@ -11779,7 +12258,8 @@
      ],
      "type": null,
      "default": "'action'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -11789,7 +12269,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -11799,7 +12280,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "size",
@@ -11813,7 +12295,8 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu"
+     "modifier": "Rendu",
+     "inheritable": false
     },
     {
      "name": "isVertical",
@@ -11823,7 +12306,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     }
    ],
    "fields": [
@@ -12153,7 +12637,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "colorsFromClasses",
@@ -12163,7 +12648,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "columns",
@@ -12179,7 +12665,8 @@
      ],
      "type": null,
      "default": "'[\"icon\",\"date\",\"caption\",\"state\"]'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -12189,7 +12676,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dateFrom",
@@ -12199,7 +12687,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayHeader",
@@ -12209,7 +12698,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "collection",
@@ -12219,7 +12709,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "device",
@@ -12229,7 +12720,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "groups",
@@ -12239,7 +12731,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -12249,7 +12742,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "searchText",
@@ -12259,7 +12753,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "zone",
@@ -12269,7 +12764,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dateTo",
@@ -12279,7 +12775,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -12292,7 +12789,8 @@
      ],
      "type": null,
      "default": "'all'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayPaging",
@@ -12302,7 +12800,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "reflectType",
@@ -12318,7 +12817,8 @@
      ],
      "type": null,
      "default": "'all'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "pageSize",
@@ -12328,7 +12828,8 @@
      "values": null,
      "type": "number",
      "default": "10",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -12513,7 +13014,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "path",
@@ -12523,7 +13025,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -12533,7 +13036,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "writeOnChange",
@@ -12543,7 +13047,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -12556,7 +13061,8 @@
      ],
      "type": null,
      "default": "'relative'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -12748,7 +13254,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -12758,7 +13265,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dataReadMode",
@@ -12771,7 +13279,8 @@
      ],
      "type": null,
      "default": "'onetime'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -12998,7 +13507,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -13008,7 +13518,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinkingFault",
@@ -13018,7 +13529,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinkingFalse",
@@ -13028,7 +13540,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isBlinkingTrue",
@@ -13038,7 +13551,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledColorFault",
@@ -13048,7 +13562,8 @@
      "values": null,
      "type": "string",
      "default": "'#ff1500'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledColorFalse",
@@ -13058,7 +13573,8 @@
      "values": null,
      "type": "string",
      "default": "'#00ff5b'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledColorTrue",
@@ -13068,7 +13584,8 @@
      "values": null,
      "type": "string",
      "default": "'#00ff5b'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -13078,7 +13595,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withDetails",
@@ -13088,7 +13606,8 @@
      "values": null,
      "type": "string",
      "default": "'none'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "pictureFault",
@@ -13098,7 +13617,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "pictureFalse",
@@ -13108,7 +13628,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "pictureTrue",
@@ -13118,7 +13639,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "ledIsOnFault",
@@ -13128,7 +13650,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledIsOnFalse",
@@ -13138,7 +13661,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "ledIsOnTrue",
@@ -13148,7 +13672,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -13158,7 +13683,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -13168,7 +13694,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayText",
@@ -13178,7 +13705,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -13369,7 +13897,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -13379,7 +13908,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -13389,7 +13919,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withDetails",
@@ -13399,7 +13930,8 @@
      "values": null,
      "type": "string",
      "default": "'none'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -13412,7 +13944,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -13422,7 +13955,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -13432,7 +13966,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -13651,7 +14186,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -13661,7 +14197,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -13671,7 +14208,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withDetails",
@@ -13681,7 +14219,8 @@
      "values": null,
      "type": "string",
      "default": "'none'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -13694,7 +14233,8 @@
      ],
      "type": null,
      "default": "'left'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -13704,7 +14244,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -13714,7 +14255,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -13905,7 +14447,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -13915,7 +14458,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -13925,7 +14469,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withDetails",
@@ -13935,7 +14480,8 @@
      "values": null,
      "type": "string",
      "default": "'none'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -13950,7 +14496,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -13960,7 +14507,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -13970,7 +14518,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -14161,7 +14710,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -14171,7 +14721,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -14181,7 +14732,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withDetails",
@@ -14191,7 +14743,8 @@
      "values": null,
      "type": "string",
      "default": "'none'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -14206,7 +14759,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -14216,7 +14770,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -14226,7 +14781,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -14417,7 +14973,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -14427,7 +14984,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -14437,7 +14995,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withDetails",
@@ -14447,7 +15006,8 @@
      "values": null,
      "type": "string",
      "default": "'none'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -14462,7 +15022,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -14472,7 +15033,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -14482,7 +15044,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -14673,7 +15236,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "isAutonomous",
@@ -14683,7 +15247,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -14693,7 +15258,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "withDetails",
@@ -14703,7 +15269,8 @@
      "values": null,
      "type": "string",
      "default": "'none'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "orientation",
@@ -14718,7 +15285,8 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "reflectPath",
@@ -14728,7 +15296,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "requesterKey",
@@ -14738,7 +15307,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -14929,7 +15499,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "columns",
@@ -14945,7 +15516,8 @@
      ],
      "type": null,
      "default": "'[\"icon\",\"name\",\"state\"]'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -14955,7 +15527,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayHeader",
@@ -14965,7 +15538,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "collection",
@@ -14975,7 +15549,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "nodPath",
@@ -14985,7 +15560,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "searchText",
@@ -14995,7 +15571,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayPaging",
@@ -15005,7 +15582,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "enabled",
@@ -15015,7 +15593,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "pageSize",
@@ -15025,7 +15604,8 @@
      "values": null,
      "type": "number",
      "default": "10",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -15239,7 +15819,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "colorsFromClasses",
@@ -15249,7 +15830,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "columns",
@@ -15268,7 +15850,8 @@
      ],
      "type": null,
      "default": "'[\"ack\",\"icon\",\"date\",\"nod\",\"state\"]'",
-     "modifier": "Gabarit"
+     "modifier": "Gabarit",
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -15278,7 +15861,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dateFrom",
@@ -15288,7 +15872,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayHeader",
@@ -15298,7 +15883,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "collection",
@@ -15308,7 +15894,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "device",
@@ -15318,7 +15905,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "acquitted",
@@ -15332,7 +15920,8 @@
      ],
      "type": null,
      "default": "'all'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "groups",
@@ -15342,7 +15931,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "site",
@@ -15352,7 +15942,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "nodPath",
@@ -15362,7 +15953,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "zone",
@@ -15372,7 +15964,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dateTo",
@@ -15382,7 +15975,8 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -15395,7 +15989,8 @@
      ],
      "type": null,
      "default": "'all'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "displayPaging",
@@ -15405,7 +16000,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille"
+     "modifier": "Taille",
+     "inheritable": false
     },
     {
      "name": "pageSize",
@@ -15415,7 +16011,8 @@
      "values": null,
      "type": "number",
      "default": "10",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -15601,7 +16198,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "fieldName",
@@ -15611,7 +16209,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "path",
@@ -15621,7 +16220,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -15631,7 +16231,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "writeOnChange",
@@ -15641,7 +16242,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -15655,7 +16257,8 @@
      ],
      "type": null,
      "default": "'auto'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -15856,7 +16459,8 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "fieldName",
@@ -15866,7 +16470,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "path",
@@ -15876,7 +16481,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "autoRefreshDelay",
@@ -15886,7 +16492,8 @@
      "values": null,
      "type": "number",
      "default": "30",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "writeOnChange",
@@ -15896,7 +16503,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "mode",
@@ -15910,7 +16518,8 @@
      ],
      "type": null,
      "default": "'auto'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
@@ -16106,7 +16715,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "relativePath",
@@ -16116,7 +16726,8 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "relativeTo",
@@ -16126,7 +16737,8 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "writeOnChange",
@@ -16136,7 +16748,8 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     },
     {
      "name": "dataReadMode",
@@ -16149,7 +16762,8 @@
      ],
      "type": null,
      "default": "'onetime'",
-     "modifier": null
+     "modifier": null,
+     "inheritable": false
     }
    ],
    "fields": [
