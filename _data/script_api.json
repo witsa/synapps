@@ -1491,6 +1491,11 @@
     ]
    },
    {
+    "name": "onLeadActorDidRender",
+    "description": "Se produit une seule fois sur l'acteur principal d'une scène ou d'un composite, après son\npremier rendu, une fois les fournisseurs de données démarrés (déclenché par la scène ou le\ncomposite).",
+    "context": []
+   },
+   {
     "name": "onMouseDown",
     "description": "Se produit lorsque un bouton de la souris est appuyé au dessus de l'acteur .",
     "context": [
