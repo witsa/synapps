@@ -48,7 +48,7 @@ Types REDY : `analog`, `analog_thresholds` (avec seuils), `analog_Forced` (avec 
 
 {% include script_api/model_fields.md model="redy/ReflectAnalog" exclude="redy/ReflectBase" %}
 
-## Numérique
+## Digital
 
 {{ site.data.script_api.models["redy/ReflectDigital"].description }}
 
@@ -86,7 +86,7 @@ Types REDY : `agenda`, `agenda_App`.
 
 {% include script_api/model_fields.md model="redy/ReflectAgenda" exclude="redy/ReflectBase" %}
 
-## Régulation (PID)
+## PID
 
 {{ site.data.script_api.models["redy/ReflectPid"].description }}
 
@@ -94,7 +94,7 @@ Types REDY : `PID`, `PIDSVA`.
 
 {% include script_api/model_fields.md model="redy/ReflectPid" exclude="redy/ReflectBase" %}
 
-## Loi d'eau
+## Courbe de chauffe
 
 {{ site.data.script_api.models["redy/ReflectHeatingCurve"].description }}
 
@@ -142,7 +142,7 @@ Types REDY : `Boiler`.
 
 {% include script_api/model_fields.md model="redy/ReflectBoiler" exclude="redy/ReflectBase" %}
 
-## Type non reconnu
+## Inconnu
 
 {{ site.data.script_api.models["redy/ReflectUnknown"].description }}
 

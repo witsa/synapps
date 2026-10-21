@@ -64,19 +64,21 @@ Cette pratique permet de mutualiser les requête et d'optimiser les performances
 
 Voici la liste des types de reflets REDY que Synapps est capable de reconnaître et d'afficher en détail.
 
+Les champs de chaque type sont décrits dans le modèle [Reflet](../../data-models/redy/reflect.md).
+
 | Reflet dans Synapps | type Synapps | Reflets dans REDY |
 |---------------------|------| -------------------|
-| Agenda | `agenda` | - Reflet Agenda<br> - Reflet Agendapp |
-| Analogique | `analog` | - Reflet Analogique<br> - Reflet Analogique avec Seuils témoins<br> - Reflet Analogique avec Forçage |
-| Chaudière | `boiler` | Reflet Chaudière |
-| Bruleur | `burner` | Reflet Bruleur |
-| Digital | `digital` | - Reflet Digital<br> - Reflet Digital avec Forçage |
-| Courbe de chauffe | `heating-curve` | Reflet Courbe de chauffe |
-| Tableau de consignes | `setpoints-table` | Reflet Tableau de consignes |
-| PID | `pid` | Reflet PID |
-| Fil Pilote | `pilot-wire` | Reflet Fil Pilote |
-| Pompe | `pump` | Reflet Pompe |
-| Etat | `state` | Reflet Etat |
-| Texte | `text` | Reflet Texte |
-| Vanne | `valve` | Reflet Vanne |
-| Inconnu | `unknown` | Pour les reflet que Synapps ne connait pas encore. |
+| [Agenda](../../data-models/redy/reflect.md#agenda) | `agenda` | - Reflet Agenda<br> - Reflet Agendapp |
+| [Analogique](../../data-models/redy/reflect.md#analogique) | `analog` | - Reflet Analogique<br> - Reflet Analogique avec Seuils témoins<br> - Reflet Analogique avec Forçage |
+| [Chaudière](../../data-models/redy/reflect.md#chaudière) | `boiler` | Reflet Chaudière |
+| [Bruleur](../../data-models/redy/reflect.md#brûleur) | `burner` | Reflet Bruleur |
+| [Digital](../../data-models/redy/reflect.md#digital) | `digital` | - Reflet Digital<br> - Reflet Digital avec Forçage |
+| [Courbe de chauffe](../../data-models/redy/reflect.md#courbe-de-chauffe) | `heating-curve` | Reflet Courbe de chauffe |
+| [Tableau de consignes](../../data-models/redy/reflect.md#tableau-de-consignes) | `setpoints-table` | Reflet Tableau de consignes |
+| [PID](../../data-models/redy/reflect.md#pid) | `pid` | Reflet PID |
+| [Fil Pilote](../../data-models/redy/reflect.md#fil-pilote) | `pilot-wire` | Reflet Fil Pilote |
+| [Pompe](../../data-models/redy/reflect.md#pompe) | `pump` | Reflet Pompe |
+| [Etat](../../data-models/redy/reflect.md#état) | `state` | Reflet Etat |
+| [Texte](../../data-models/redy/reflect.md#texte) | `text` | Reflet Texte |
+| [Vanne](../../data-models/redy/reflect.md#vanne) | `valve` | Reflet Vanne |
+| [Inconnu](../../data-models/redy/reflect.md#inconnu) | `unknown` | Pour les reflet que Synapps ne connait pas encore. |

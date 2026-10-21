@@ -1877,7 +1877,7 @@
   },
   "redy/ReflectDigital": {
    "name": "ReflectDigital",
-   "description": "Reflet numérique : valeur logique vrai/faux avec ses textes « vrai » et « faux ».",
+   "description": "Reflet digital : valeur logique vrai/faux avec ses textes « vrai » et « faux ».",
    "fields": [
     {
      "name": "allowCommand",
@@ -2224,7 +2224,7 @@
   },
   "redy/ReflectHeatingCurve": {
    "name": "ReflectHeatingCurve",
-   "description": "Reflet de loi d'eau : points de la courbe, décalage réduit, température extérieure, consigne calculée, mode en cours et mode forcé (`1` : automatique).",
+   "description": "Reflet de courbe de chauffe (loi d'eau) : points de la courbe, décalage réduit, température extérieure, consigne calculée, mode en cours et mode forcé (`1` : automatique).",
    "fields": [
     {
      "name": "allowCommand",
@@ -2898,7 +2898,7 @@
   },
   "redy/ReflectPid": {
    "name": "ReflectPid",
-   "description": "Reflet de régulation (PID) : mesure, consigne, sortie en % et mode forcé (`1` : automatique).",
+   "description": "Reflet PID (régulation) : mesure, consigne, sortie en % et mode forcé (`1` : automatique).",
    "fields": [
     {
      "name": "allowCommand",
