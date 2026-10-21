@@ -1,11 +1,15 @@
 ---
 title: "Bouton"
-parent: "Intéraction"
+parent: "Boutons"
+grand_parent: "Intéraction"
+api_type: input/button
+nav_order: 1
+redirect_from:
+  - /script-api/Actor.Input.Button.html
+  - /script-api/Actor.Input.ButtonProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_button-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_button.js.html
 ---
-
-> 🚧 en cours de rédaction...
-
-{% include links_actor.md apiClass="Actor.Input.Button" %}
 
 # Bouton
 
@@ -13,40 +17,42 @@ Acteur bouton poussoir.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+{% include script_api/legend.md %}
 
-{% assign sorted = site.input_button_properties | sort: 'order' %}
+# Propriétés
+{: #proprietes }
 
-{% for property in sorted %}
+{% include script_api/properties.md type=page.api_type %}
 
-{% include actor_property.md property=property %}
+# Informations
+{: #informations }
 
-{% endfor %}
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-# Champs d'informations
+{% include script_api/fields.md type=page.api_type %}
 
-## Est Pressé ?
+# Événements
+{: #evenements }
 
-Le champ d'information *Est pressé?* est un booléen qui est `true` lorsque le bouton est pressé et repasse à `false` lorsque le bouton est relâché, après un petit délai de relaxation.
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-## Contenu complété
+{% include script_api/events.md type=page.api_type %}
 
-{% include field_completed_content.md %}
+# Hérite de
+{: #herite-de }
 
-# Évènements spécifiques
+{% include script_api/inherits.md type=page.api_type %}
 
-> 🚧 en cours de rédaction...
-
-# Variantes
+# Presets
 
 ## Icône
 
-La variante de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+Le preset de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
 
 Le contenu du bouton est complété par une additionnelle *icône* et une additionnelle *texte*.
 
 ## Écriture fournisseur
 
-Cette variation "Bouton d'Écriture Fournisseur" permet de déclencher manuellement le processus d'écriture des données vers un acteur fournisseur spécifique.
+Ce preset "Bouton d'Écriture Fournisseur" permet de déclencher manuellement le processus d'écriture des données vers un acteur fournisseur spécifique.
 
 Le contenu du bouton est complété par une additionnelle "Acteur fournisseur ciblé", qui permet de choisir l'acteur fournisseur vers lequel le bouton d'écriture est dirigé.

@@ -92,12 +92,12 @@ Une fenêtre s'ouvre et permet de renseigner une nouvelle clé pour le texte.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/popupChangeKeyText.PNG)
 
-> 📌 **REMARQUE**<br>
+{: .info }
 > Chaque clé doit être unique et ne peut pas être vide.<br>
 
 Afin de supprimmer un texte, il faut cliquer sur la corbeille sur la ligne correspondante au texte que l'on souhaite supprimer.
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 >  Lorsqu'un texte est supprimé, toutes ses traductions sont également supprimés.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/removeText.PNG)
@@ -123,7 +123,7 @@ La méthode principale pour utiliser les textes de la librairie est via les [lia
 
 Il faut définir une liaison de type Librairie/Texte sur une propriété d'un acteur. Dans la définition de la liaison, il faut sélectionner la clé du texte que l'on souhaite utiliser dans la liste déroulante.
 
-Une méthode alternative est l'utilisation via les scripts [⚡ Synapps.Synapp.html#text]({{ site.baseurl }}/script-api/Synapps.Synapp.html#texts){:target="_blank"}.
+Une méthode alternative est l'utilisation via les scripts [⚡ Synapp : `texts`](../scripts/reference/synapp.md#texts).
 
 ## Format de stockage des textes JSON
 

@@ -1,12 +1,15 @@
 ---
 title: "Écran"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+api_type: display/screen
+nav_order: 4
+redirect_from:
+  - /script-api/Actor.Display.Screen.html
+  - /script-api/Actor.Display.ScreenProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_screen-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_screen.js.html
 ---
-
-> 🚧 en cours de rédaction...
-
-{% include links_actor.md apiClass="Actor.Display.Screen" %}
 
 # Écran
 
@@ -14,29 +17,33 @@ Acteur qui permet d'afficher une autre scène.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+{% include script_api/legend.md %}
 
-{% assign sorted = site.display_screen_properties | sort: 'order' %}
+# Propriétés
+{: #proprietes }
 
-{% for property in sorted %}
+{% include script_api/properties.md type=page.api_type %}
 
-{% include actor_property.md property=property %}
+# Informations
+{: #informations }
 
-{% endfor %}
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-## Dépassement de contenu
+{% include script_api/fields.md type=page.api_type %}
 
-{% include property_overflow.md %}
+# Méthodes
+{: #methodes }
 
-> ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_screen/showHide.PNG)
+{% include script_api/methods.md type=page.api_type %}
 
-La valeur par défaut est **Défilement**
+# Événements
+{: #evenements }
 
-# Champ d'information
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-## Scène affichée
-La scène affichée par l'acteur écran est stockée dans la propriété `displayedScene` disponible par liaison et par script.
+{% include script_api/events.md type=page.api_type %}
 
-# évènements spécifiques
+# Hérite de
+{: #herite-de }
 
-> 🚧 en cours de rédaction...
+{% include script_api/inherits.md type=page.api_type %}

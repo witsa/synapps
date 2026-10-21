@@ -1,9 +1,13 @@
 ---
 title: "Jauge"
 parent: "Charts"
+api_type: charting/gauge-demo
+redirect_from:
+  - /script-api/Actor.Charting.GaugeDemo.html
+  - /script-api/Actor.Charting.GaugeDemoProperties.html
+  - /script-api/synapps-ui_addon_components_actors_charting_gauge-demo-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_charting_gauge-demo.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Charting.GaugeDemo" %}
 
 # Jauge
 
@@ -13,7 +17,19 @@ L'acteur jauge permet de représenter graphiquement par un arc de cercle coloré
 
 {% include table_of_content.html %}
 
-## Personnalisation
+{% include script_api/legend.md %}
+
+# Propriétés
+{: #proprietes }
+
+{% include script_api/properties.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}
+
+# Personnalisation
 
 Il est possible de la personnaliser en changeant les couleurs
 - de l'aiguille
@@ -21,14 +37,14 @@ Il est possible de la personnaliser en changeant les couleurs
 - de l'arc après l'aiguille.
 La personnalisation va plus loin en permettant de définir l'épaisseur de l'arc et sont étendue angulaire.
 
-## Quelques recommandations
+# Quelques recommandations
 
 - Ne sortez pas la valeur de l'intervalle définie par les bornes sous peine de dysfonctionnement de la jauge.
 - Fixez sa largeur et sa hauteur pour éviter les problèmes de redimensionnement. Éventuellement, placez la ensuite dans une [Boite à vue](../layout/view-box.md).
 
-## Quelques exemples
+# Quelques exemples
 
-### Jauge épaisse sans aiguille
+## Jauge épaisse sans aiguille
 
 <div class="code-example" markdown="1">
 
@@ -39,7 +55,7 @@ La personnalisation va plus loin en permettant de définir l'épaisseur de l'arc
 SYNAPPS-STUDIO-ACTOR|{"type":"charting/gauge-demo","key":"gauge-demo1","properties":{"height":"200px","width":"350px","gaugeColor":"rgba(224, 224, 224, 0)","gaugeStartColor":"rgba(4, 207, 4, 1)","gaugeWidth":10}}
 ```
 
-### Jauge annulaire fine sans aiguille
+## Jauge annulaire fine sans aiguille
 
 <div class="code-example" markdown="1">
 
@@ -50,7 +66,7 @@ SYNAPPS-STUDIO-ACTOR|{"type":"charting/gauge-demo","key":"gauge-demo1","properti
 SYNAPPS-STUDIO-ACTOR|{"type":"charting/gauge-demo","key":"gauge-demo2","properties":{"height":"200px","width":"350px","gaugeColor":"rgba(224, 224, 224, 0)","gaugeStartColor":"rgba(207, 92, 4, 1)","gaugeWidth":1,"gaugeBackgroundColor":"rgba(194, 194, 194, 0)","gaugeAngle":360,"gaugeValue":80}}
 ```
 
-### Jauge annulaire fine sans aiguille avec un texte à l'intérieur
+## Jauge annulaire fine sans aiguille avec un texte à l'intérieur
 
 <div class="code-example" markdown="1">
 

@@ -2,49 +2,30 @@
 title: "Filtre"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/filter
+nav_order: 8
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
 
-{% include table_of_content.html %}
-
 # Filtre
-
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
 
 L'acteur Filtre représente un filtre de CTA avec un capteur. L'état varie selon la propriété `isDirty` (sale/propre).
 
 ![Filtre CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-filter.gif)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Sale ?
+{% include script_api/legend.md %}
 
-- **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, le filtre et le capteur prennent la couleur correspondante à l'état sale.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.isDirty`
+{% include script_api/properties.md type=page.api_type %}
 
-### Couleur propre
+# Hérite de
+{: #herite-de }
 
-- **Type** : `CssColorString`
-- **Description** : Couleur utilisée lorsque le filtre est propre.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.cleanColor`
-
-### Couleur sale
-
-- **Type** : `CssColorString`
-- **Description** : Couleur utilisée lorsque le filtre est sale.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.dirtyColor`
-
-### Orientation
-
-- **Type** : `String`
-- **Description** : Définit l'orientation du filtre.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/inherits.md type=page.api_type %}

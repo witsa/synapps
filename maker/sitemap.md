@@ -41,4 +41,4 @@ search_exclude: true
 3. [En savoir plus sur les objets crées dans le REDY](redy/explore.md)
 
 ----
-[API Script](script-api/index.html)
+[API Script](../concepts/scripts/reference/index.md)

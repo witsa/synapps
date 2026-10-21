@@ -5,7 +5,7 @@ grand_parent: Documentation Maker
 search_exclude: true
 ---
 
-[Accueil](../../) / [Tutoriels](../index.md)
+[Accueil](../../README.md) / [Tutoriels](../index.md)
 
 # Tutoriel 2: les liaisons - **<span style='color:green'>Débutant</span>**
 

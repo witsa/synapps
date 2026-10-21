@@ -1,9 +1,15 @@
 ---
 title: "Toile"
 parent: "Disposition"
+grand_parent: "Types d'acteur"
+api_type: layout/canvas
+nav_order: 2
+redirect_from:
+  - /script-api/Actor.Layout.Canvas.html
+  - /script-api/Actor.Layout.CanvasProperties.html
+  - /script-api/synapps-ui_addon_components_actors_layout_canvas-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_layout_canvas.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Layout.Canvas" %}
 
 # Toile
 
@@ -11,22 +17,37 @@ Acteur qui permet de disposer des acteurs enfants suivant des coordonnées.
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Disposition
+{% include script_api/properties.md type=page.api_type %}
 
-Voir les règles de disposition avec les [propriétés de position (haute, basse, gauche et droite)](../../actor/category-disposition.md#catégorie-disposition-dans-une-toile)
+# Informations
+{: #informations }
 
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-## Dépassement de contenu
+{% include script_api/fields.md type=page.api_type %}
 
-{% include property_overflow.md %}
+# Méthodes
+{: #methodes }
 
-La valeur par défaut est **Caché**
-
-> ✔️ **CONSEIL**<br>
-> Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
+{% include script_api/methods.md type=page.api_type %}
 
 # Événements
+{: #evenements }
 
-{% include events_layout.md %}
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
+
+{% include script_api/events.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}
+
+# Disposition
+
+Voir les règles de disposition avec les [propriétés de position (haute, basse, gauche et droite)](../../actor/category-disposition.md#catégorie-disposition-dans-une-toile)

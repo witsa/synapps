@@ -1,9 +1,15 @@
 ---
 title: "Synoptique"
-parent: "REDY"
+parent: "Applications"
+grand_parent: "REDY"
+api_type: redy/synoptic
+nav_order: 3
+redirect_from:
+  - /script-api/REDY.Actor.Synoptic.html
+  - /script-api/REDY.Actor.SynopticProperties.html
+  - /script-api/synapps-ui-redy_addon_components_actors_synoptic-prototype-setup.js.html
+  - /script-api/synapps-ui-redy_addon_components_actors_synoptic.js.html
 ---
-
-{% include links_actor.md apiClass="REDY.Actor.Synoptic" %}
 
 # Synoptique
 
@@ -11,6 +17,16 @@ L'acteur *Synoptique* affiche un synoptique du REDY. Dans une phase de transitio
 
 > Placer un acteur synoptique dans une [boite à vue](../layout/view-box.md) est un bon moyen de l'afficher dans un écran de n'importe quelle taille.
 
-# Propriétés
+{% include table_of_content.html %}
 
-La propriété *Synoptique* permet de définir celui que vous désirez afficher dans l'acteur. La valeur attendue est le sous chemin du synoptique depuis `:easy.SYN`.
+{% include script_api/legend.md %}
+
+# Propriétés
+{: #proprietes }
+
+{% include script_api/properties.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

@@ -21,8 +21,6 @@ Les fichiers inclus sont soient *distants* soit *locaux*. Les fichiers distants 
 
 Vous pouvez gérer les inclusions dans la section *Projet/Inclusions*.
 
-> 🚧 en cours de rédaction...
-
 # Format des inclusions
 
 Il se compose de la liste des inclusions à charger. Chaque inclusion est définie par un objet JSON,

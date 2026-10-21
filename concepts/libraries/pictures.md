@@ -75,4 +75,4 @@ Il y a deux méthodes pour utiliser une donnée issue d'une librairie d'images a
 >- Accès grâce aux [liaisons](../binding.md).
 >- Accès via les [scripts](../scripts/index.md).
 >
->[⚡ Synapps.Synapp.html#pictures]({{ site.baseurl }}/script-api/Synapps.Synapp.html#pictures){:target="_blank"}
+>[⚡ Synapp : `pictures`](../scripts/reference/synapp.md#pictures)

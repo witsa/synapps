@@ -1,10 +1,15 @@
 ---
 title: "Texte"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+api_type: display/text
+nav_order: 1
+redirect_from:
+  - /script-api/Actor.Display.Text.html
+  - /script-api/Actor.Display.TextProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_text-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_text.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Display.Text" %}
 
 # Texte
 
@@ -12,20 +17,21 @@ Acteur de base pour afficher du texte.
 
 {% include table_of_content.html %}
 
-Son contenu est **jokerable**.
+{% include script_api/legend.md %}
 
-# Propriétés spécifiques
+# Propriétés
+{: #proprietes }
 
-{% assign sorted = site.display_text_properties | sort: 'order' %}
+{% include script_api/properties.md type=page.api_type %}
 
-{% for property in sorted %}
+# Informations
+{: #informations }
 
-{% include actor_property.md property=property %}
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-{% endfor %}
+{% include script_api/fields.md type=page.api_type %}
 
-# Champs d'informations
+# Hérite de
+{: #herite-de }
 
-## Contenu complété
-
-{% include field_completed_content.md %}
+{% include script_api/inherits.md type=page.api_type %}

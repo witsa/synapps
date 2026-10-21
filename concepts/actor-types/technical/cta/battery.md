@@ -2,18 +2,15 @@
 title: "Batterie"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/battery
+nav_order: 2
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
 
-{% include table_of_content.html %}
-
 # Batterie
-
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
 
 L'acteur Batterie représente une batterie de traitement d'air ou une batterie électrique. Il permet d'afficher un rendu coloré pour la batterie d'air et un indicateur LED pour la version électrique.
 La batterie d'air possède des sortie de tuyaux à sa base afin de connecter celle-ci aux acteurs tuyaux de la chaufferie.
@@ -24,46 +21,16 @@ La batterie d'air possède des sortie de tuyaux à sa base afin de connecter cel
 
 ![Batterie CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-battery.gif)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Orientation
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit l'orientation de la batterie.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/properties.md type=page.api_type %}
 
-### Type
+# Hérite de
+{: #herite-de }
 
-- **Type** : `String`
-- **Description** : Définit le type de batterie. Les valeurs possibles sont `air` ou `electric`.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.type`
-
-### Couleur de la batterie d'air (uniquement pour le type d'air)
-
-- **Type** : `String`
-- **Description** : Définit la couleur de la batterie d'air. Les valeurs possibles sont `rouge`, `bleu` ou `personnalisé`.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.airBatteryColor`
-
-### Couleur personnalisée (Uniquement pour le type d'air)
-
-- **Type** : `CssColorString`
-- **Description** : Couleur utilisée lorsque le type d'air est réglé sur `custom`.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.customColor`
-
-### En marche ? (Uniquement pour le type électrique)
-
-- **Type** : `Boolean`
-- **Description** : Indique si la batterie est considérée comme en fonctionnement (LED allumée / éteinte).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isRunning`
-
-### En défaut ? (Uniquement pour le type électrique)
-
-- **Type** : `Boolean`
-- **Description** : Indique si la batterie doit afficher son état de défaut. (LED rouge clignotante).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isDefault`
+{% include script_api/inherits.md type=page.api_type %}

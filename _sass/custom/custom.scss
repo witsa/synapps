@@ -1,0 +1,11 @@
+// Référence des scripts (includes script_api/*) : pictogramme de la sorte d'élément devant le
+// titre de chaque élément, ajouté par le style pour ne pas encombrer le sommaire ni les ancres.
+.api-property::before { content: "🔧 "; }
+.api-field::before { content: "ℹ️ "; }
+.api-method::before { content: "⚙️ "; }
+.api-event::before { content: "⚡ "; }
+
+
+// Ancres stables (#prop-…, #info-…, #meth-…) posées sur la ligne technique sous le titre : garder
+// le titre visible quand on arrive par un lien (ex. depuis l'inspecteur de Studio).
+[id^="prop-"], [id^="info-"], [id^="meth-"] { scroll-margin-top: 4rem; }

@@ -51,7 +51,7 @@ Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'
 >- Accès grâce aux [liaisons](../binding.md).
 >- Accès via les [scripts](../scripts/index.md).
 >
->[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#colors){:target="_blank"}
+>[⚡ Synapp : `colors`](../scripts/reference/synapp.md#colors)
 
 
 >Les variables sont stockés sous format JSON avec la syntaxe suivante pour chaque couleur :

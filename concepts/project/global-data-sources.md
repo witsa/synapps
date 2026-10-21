@@ -7,7 +7,7 @@ nav_order: 8
 
 # Fournisseurs de donnée
 
-Cette partie est dédiée à la définition d'acteurs [fournisseurs de ressource](../actor-types/redy/resource-source.md), [de variable](../actor-types/redy/wos-variable-source.md) et de [requêteur de reflet](../actor-types/redy-reflect-requester.md) qui seront utilisables dans tous le projet.
+Cette partie est dédiée à la définition d'acteurs [fournisseurs de ressource](../actor-types/redy/resource-source.md), [de variable](../actor-types/redy/wos-variable-source.md) et de [requêteur de reflet](../actor-types/redy/reflect-requester.md) qui seront utilisables dans tous le projet.
 
 Il sont disponibles :
 - par liaison de type *fournisseur de variable* ou *de reflet*
@@ -15,7 +15,7 @@ Il sont disponibles :
 
 Il sont repérables par le préfixe `global/` dans la liste des champ *Clé parent* ou *Requêteur*.
 
-![Synapp]({{ site.baseUrl }}\assets\concepts\project\global-data-sources\picture1.png)
+![Synapp]({{ site.baseurl }}/assets/concepts/project/global-data-sources/picture1.png)
 
 
 Un acteur fournisseur de variable est toujours défini à la création d'un projet. Il pointe sur `easy.RESS`. Il sert à faciliter la définition de liaisons de type *fournisseur de variable*.

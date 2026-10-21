@@ -1,64 +1,50 @@
 ---
 title: "Fournisseur d'instruction"
 parent: "REDY Pilot"
+api_type: redy/data-source/cursor-instruction
+since:
+  studio: 1.7.0
+  runtime: 2.8.0
+  redy_pilot: 1.0.0
 ---
 
 {% include table_of_content.html %}
 
 # Fournisseur d'instruction
 
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY Pilot **1.0.0**
-{: .label .label-green }
-
 Cet acteur permet de créer une source de curseur instructions pour le pilote REDY. Il consomme un curseur d'instruction, demande son exécution au pilote REDY suivant des éventuels paramètres, et fournit les résultats dans son champ de données `data`.
 
-## Propriétés spécifiques
+{% include script_api/legend.md %}
 
-### Requête SQL
+# Propriétés
+{: #proprietes }
 
-Le curseur d'instruction SQL à exécuter par le pilote REDY.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.label`.
-
-### Mode
-
-Le mode d'exécution de l'instruction.
-
-- Automatique : l'instruction est exécutée automatiquement à chaque modification des paramètres.
-- Manuel : l'instruction n'est exécutée que lorsque la fonction `refresh` ou `request` est déclenchée.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.mode`.
-
-### Auto rafraîchissement
-
-Si activé, l'instruction est automatiquement relancée à intervalle régulier.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.autoRefresh`.
-
-### Délai de rafraîchissement
-
-Le délai en secondes entre chaque rafraîchissement automatique de l'instruction.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.autoRefreshDelay`.
+{% include script_api/properties.md type=page.api_type %}
 
 ## Paramètres de l'instruction
 
 Si le curseur d'instruction SQL utilise des paramètres, Studio propose de créer des additionnels pour les fournir.
 
-## Événements spécifiques
+# Informations
+{: #informations }
 
-### ⚡ `onRequestDone`
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-Événement déclenché lorsque l'instruction est terminée et que les résultats sont disponibles.
+{% include script_api/fields.md type=page.api_type %}
 
-Dans `data`, vous trouverez un objet avec les propriétés suivantes :
+# Méthodes
+{: #methodes }
 
-| Propriété | Type   | Description                         |
-| --------- | ------ | ----------------------------------- |
-| totalRows | Nombre | Le nombre total de lignes impactées |
+{% include script_api/methods.md type=page.api_type %}
 
-En cas d'erreur, un champ `error` est présent dans l'objet de contexte avec les informations de l'erreur.
+# Événements
+{: #evenements }
+
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/actor/).
+
+{% include script_api/events.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

@@ -8,6 +8,9 @@ nav_order: 6
 
 # Liaisons
 
+> ⚡ Par script : [référence pour les scripts](./scripts/reference/binding.md)
+
+
 La liaison est un concept fort de la solution Synapps. En effet, grâce à elle, vous pouvez établir des comportements, des changements de propriété, simplement.
 En liant des propriétés d'objet de Synapps ensemble, vous pouvez automatiser des changements, utilisez des librairies, s'accorder avec les tailles de l'afficheur, etc.
 
@@ -21,18 +24,18 @@ Seules les propriétés des acteurs peuvent être cible de liaison. En revanche,
 - La [scène](./scene.md) ou le [composite](./composite.md) accueillant l'acteur cible
 - Un autre [acteur](./actor/index.md) ou lui-même
 - Un élément de librairie
-  - une [couleur](./librairies/colors.md)
-  - une [image](./librairies/pictures.md)
-  - une [constante](./librairies/constants.md)
-  - un [texte](./librairies/texts.md)
+  - une [couleur](./libraries/colors.md)
+  - une [image](./libraries/pictures.md)
+  - une [constante](./libraries/constants.md)
+  - un [texte](./libraries/texts.md)
 - Un [fournisseur de variable REDY](#la-liaison-de-type-de-source-fournisseur-de-variable)
 - Un [fournisseur de reflet REDY](#la-liaion-de-type-de-source-fournisseur-de-reflet)
 - Une [donnée de fournisseur](#la-liaison-de-type-de-source-donnée-de-fournisseur)
 - L'[hôte](./project/hosts.md)
 - La [session](./session.md)
 - L'[utilisateur](./user.md)
-- L'[afficheur](./user-agent.md)
-- Le [contexte de donnée](./data-context.md)
+- L'[afficheur](./scripts/reference/user-agent.md)
+- Le [contexte de donnée](./context.md)
 
 Exemple : *une liaison vers la **couleur A** de la librairie des couleurs définie sur la propriété **couleur de fond** d'un acteur*
 ![La liaison vers une couleur de la librairie](../assets/concepts/bindings/01.png)
@@ -137,6 +140,8 @@ Pour la cacher, cliquez sur *Cacher la valeur initiale* dans le menu d'options.
 
 Lorsque la valeur source est transmise à la cible, il est possible de lui appliquer un script de transformation. De la même façon, il est possible d'appliquer un script de transformation de la valeur cible lorsque l'écriture de la valeur source est activée. Voir ce dans la section [cycle de vie des acteurs](./scripts/actor-life-cycle.md#transformations-de-liaison).
 
+Les scripts de transformation et l'objet liaison accessible par script sont décrits dans la [référence pour les scripts](./scripts/reference/binding.md).
+
 ## La liaison de type de source *Fournisseur de variable*
 
 Ce type de source permet de lier une propriété à un champ d'une variable de REDY par l'intermédiaire d'un [fournisseur de variable](./actor-types/redy/wos-variable-source.md).
@@ -163,17 +168,17 @@ Indiquez ici si vous désirez que la donnée soit récupérée à chaque mise à
 
 ## La liaion de type de source *Fournisseur de reflet*
 
-> 🚧 en cours de rédaction...
+Ce type de source permet de lier une propriété à un reflet du REDY, par l'intermédiaire d'un requêteur de reflet désigné par sa clé. Comme pour la source *Fournisseur de variable*, un chemin relatif et un mode de récupération (à chaque mise à jour du requêteur ou seulement la première fois) complètent le paramétrage.
 
 ## La liaison de type de source *Donnée de fournisseur*
 
-> 🚧 en cours de rédaction...
+Ce type de source permet de lier une propriété à la donnée (`data`) d'un acteur fournisseur, désigné par sa clé : un fournisseur de la scène ou du composite, ou un fournisseur global. Le chemin indique la partie de la donnée à utiliser.
 
 ## La liaison de type de source *Contexte*
 
 Cette liaison, en réalité, ne définit pas comment aller cherche la source. Elle va donc uniquement tenter de se réaliser avec ce qu'elle va trouver dans son contexte de donnée.
 
-Voir la section [Contexte de donnée](./data-context) pour plus de détails.
+Voir la section [Contexte de donnée](./context.md) pour plus de détails.
 
 ## Changement de clé d'élément lié
 

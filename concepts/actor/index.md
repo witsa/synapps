@@ -5,11 +5,12 @@ has_children: true
 nav_order: 4
 ---
 
-> 🚧 en cours de rédaction...
-
 {% include table_of_content.html %}
 
 # Acteur
+
+> ⚡ Par script : [référence pour les scripts](../scripts/reference/actor.md)
+
 
 ## Définition
 
@@ -26,6 +27,12 @@ Les acteurs sont organisés sous forme d'arborescence pour constituer ce qu'on a
 Un acteur possède un type qui va déterminer son comportement.
 
 - voir [les types d'acteur](../actor-types/)
+
+### Presets
+
+Dans la palette d'ajout d'acteur, certains types proposent des _presets_ : le bouton à droite du type ouvre leur menu. Un preset crée un acteur du type d'origine, préconfiguré dès sa création (contenu, additionnelles, script…). Une fois créé, c'est un acteur ordinaire de ce type : ses propriétés se modifient comme les autres.
+
+Par exemple, le preset _Icône_ du [bouton](../actor-types/input/button.md#presets) crée un bouton complété par une additionnelle _icône_ et une additionnelle _texte_. Les presets disponibles sont décrits dans la section « Presets » de la page de chaque type d'acteur.
 
 ## Les Propriétés
 
@@ -73,19 +80,17 @@ Dans l'inspecteur, il est possible d'afficher la valeur héritée d'une proprié
 
 ### Évènement de modification
 
-Chaque propriété déclenche un évènement de modification lorsque sa valeur change. Il y a 4 types de modification :
+Chaque propriété déclenche un évènement de modification lorsque sa valeur change. Il y a 5 types de modification :
 
 - **Aucune** Pas de modification particulière
-- **Style** Modification qui entraîne un calcul des styles CSS de l'acteur.
+- **Style CSS** Modification qui entraîne un calcul des styles CSS de l'acteur.
 - **Rendu** Modification qui entraîne un nouveau rendu de l'acteur.
+- **Taille** Modification qui entraîne un nouveau calcul de la taille de l'acteur.
 - **Gabarit** Modification qui entraîne un nouveau calcul de gabarit et rendu de toute la hiérarchie de l'acteur.
 
 Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur.
 
 - Voir la partie dédiées aux [Scripts](../scripts/)
-  {% comment %}
-- Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="\_blank"}
-  {% endcomment %}
 
 ## Clé d'acteur
 
@@ -108,6 +113,7 @@ Un acteur va déclencher des évènements pendant toute sa durée de vie : de so
 Tous ces évènements sont autant d'occasions d'intervenir et d'ajouter des comportements par script.
 
 - En savoir plus sur le [cycle de vie d'un acteur](../scripts/actor-life-cycle.md)
+- Voir la [référence pour les scripts](../scripts/reference/actor.md) : informations, méthodes et évènements communs à tous les acteurs
 - En savoir plus sur les [Scripts](../scripts/)
 
 ## Les additionnelles
@@ -134,7 +140,12 @@ C'est une notion Avancée. Voir la section dédiée au [Ruissellement de context
 
 ## Les fournisseurs de donnée
 
-> 🚧 en cours de rédaction...
+Certains acteurs ne s'affichent pas : ce sont des fournisseurs de donnée. Ils récupèrent une donnée (une variable ou une ressource du REDY, le résultat d'une requête...) et la placent dans leur information *Donnée* (`data`), utilisable par liaison ou par script.
+
+- [Fournisseur de variable](../actor-types/redy/wos-variable-source.md), [de ressource](../actor-types/redy/resource-source.md) et [relatif de variable](../actor-types/redy/wos-relative-variable-source.md) ;
+- [Fournisseur de requête](../actor-types/redy-pilot/cursor-request-source.md) et [d'instruction](../actor-types/redy-pilot/cursor-instruction-source.md) du REDY Pilot.
+
+Les fournisseurs peuvent être créés dans une scène ou un composite, ou de manière globale pour toute la synapp : voir les [fournisseurs de donnée globaux](../project/global-data-sources.md).
 
 ## La recherche d'acteur
 

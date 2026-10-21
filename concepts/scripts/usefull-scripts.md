@@ -17,7 +17,7 @@ En effet, de nombreux concepts permettent de reppousser la limite avant que vous
 
 ## Les transformation de liaison
 
-Les scripts de transformation de liaison permettent de modifier la valueur de la source avant de l'assigner à la cible. Les deux types de transformation sont expliqués dans le [cycle de vie des acteurs](./scripts/actor-life-cycle.md#transformations-de-liaison)
+Les scripts de transformation de liaison permettent de modifier la valueur de la source avant de l'assigner à la cible. Les deux types de transformation sont expliqués dans le [cycle de vie des acteurs](./actor-life-cycle.md#transformations-de-liaison)
 
 ### Transformation de liaison simple
 
@@ -70,7 +70,7 @@ ou bien en ternaire
 return context.value === 0 ? "zero" : "not zero";
 ```
 
-On a utilisé ici une condition simple avec l'opérateur `===` pour comparer les valeurs. Voir plus bas pour les [opérateurs de comparaison](#les-opérateurs-de-comparaison).
+On a utilisé ici une condition simple avec l'opérateur `===` pour comparer les valeurs. Voir les [opérateurs de comparaison](./usefull-javascript.md#les-opérateurs-de-comparaison).
 
 #### Exemple 3 : Transformation de nombre en couleur en fonction d'un seuil
 
@@ -90,7 +90,7 @@ ou bien en ternaire :
 return context.value < 0 ? "red" : "green";
 ```
 
-On a utilisé ici une condition simple avec l'opérateur `<` pour comparer les valeurs. Voir plus bas pour les [opérateurs de comparaison](#les-opérateurs-de-comparaison).
+On a utilisé ici une condition simple avec l'opérateur `<` pour comparer les valeurs. Voir les [opérateurs de comparaison](./usefull-javascript.md#les-opérateurs-de-comparaison).
 
 #### Exemple 4 : Transformation de nombre en couleur par plage de valeurs
 
@@ -116,7 +116,7 @@ Ici, on va transformer un booléen en son inverse.
 return !context.value;
 ```
 
-Nous avons utilisé ici l'opérateur `!` pour inverser la valeur du booléen. Voir plus bas pour les [opérateurs logiques](#les-opérateurs-logiques).
+Nous avons utilisé ici l'opérateur `!` pour inverser la valeur du booléen. Voir les [opérateurs logiques](./usefull-javascript.md#les-opérateurs-logiques).
 
 ### Transformation de liaison multiple
 
@@ -124,7 +124,7 @@ Dans certain cas, une valeur doit être obtenue à partir de plusieurs sources. 
 
 Pour cela, nous allons utiliser l'évènement `onPropertyChange` de l'acteur. Cet évènement se déclenche à chaque fois qu'une propriété ou une additionnelle de l'acteur change. Nous allons donc devoir surveiller les propriétés/additionnelles de l'acteur, liées à la source pour mettre à jour la propriété cible.
 
-> Plus d'informations sur l'[évènement onPropertyChange](./scripts/actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur).
+> Plus d'informations sur l'[évènement onPropertyChange](./actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur).
 
 Imaginons le cas suivant : nous avons deux sources _source 1 _ qui apportera une première valeur booléenne et _source 2_ qui apportera une seconde valeur. Nous voullons qu'un acteur soit visible si les deux valeurs sont vraies.
 

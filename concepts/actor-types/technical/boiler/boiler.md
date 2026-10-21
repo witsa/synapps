@@ -1,19 +1,16 @@
 ---
 title: "Chaudière"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+api_type: technical/boiler
+nav_order: 1
+since:
+  studio: 1.6.0
+  runtime: 2.8.0
+  redy: 16.4.0
 ---
 
-{% include table_of_content.html %}
-
 # Chaudière
-
-Studio **1.6.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY **16.4.0**
-{: .label .label-green }
 
 L'acteur Chaudière permet de représenter l'état d'une chaudière industrielle et de son brûleur associé. Il représente visuellement les différents modes de fonctionnement comme la marche, l'arrêt ou un état de défaut.
 
@@ -29,53 +26,16 @@ Voici les différents états de la chaudière :
 | **Arrêt en cours**     | La chaudière est en train de s'éteindre.            | Clignotante | 🟩          |
 | **En défaut**          | La chaudière rencontre un problème.                 | Clignotante | 🟥          |
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Orientation
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit l'orientation de la chaudière. Les valeurs possibles sont `right` (droite) ou `left` (gauche).
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/properties.md type=page.api_type %}
 
-### Statut
+# Hérite de
+{: #herite-de }
 
-- **Type** : `String` (Lecture seule)
-- **Description** : Indique l'état de fonctionnement de la chaudière. Les valeurs possibles sont :
-
-| **Nom**            | **Clé**    | **Description**                        | **État du brûleur**                |
-| ------------------ | ---------- | -------------------------------------- | ---------------------------------- |
-| Arrêté             | `stopped`  | La chaudière est arrêtée               | Éteint                             |
-| En marche          | `running`  | La chaudière est en fonctionnement     | Synchronisé avec l'état du brûleur |
-| Démarrage en cours | `starting` | La chaudière est en phase de démarrage | Éteint                             |
-| Arrêt en cours     | `stopping` | La chaudière est en phase d'arrêt      | Éteint                             |
-
-> ⚡Chemin d’accès depuis l’acteur `properties.status`
-
-### En défaut?
-
-- **Type** : `Boolean` (Lecture seule)
-- **Description** : Indique si la chaudière est en état de défaut (`true`) ou non (`false`).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFault`
-
-### Statut du brûleur
-
-- **Type** : `String` (Lecture seule)
-- **Description** : Indique le statut du brûleur associé à la chaudière.
-
-Il existe 9 états possibles:
-
-| **Nom**                  | **Clé**        | **Description**                          | **État de la LED** | **État de la flamme** |
-| ------------------------ | -------------- | ---------------------------------------- | ------------------ | --------------------- |
-| Sans                     | `without`      | Sans brûleur                             | -                  | -                     |
-| Arrêté                   | `stopped`      | Brûleur arrêté                           | Éteinte            | Absente               |
-| En marche                | `running`      | Brûleur en marche                        | Allumée            | Présente              |
-| En veille                | `standby`      | Brûleur en veille                        | Clignotante        | Absente               |
-| Démarrage en cours       | `starting`     | Brûleur en démarrage                     | Clignotante        | Absente               |
-| Arrêt en cours           | `stopping`     | Brûleur en arrêt                         | Clignotante        | Présente              |
-| Initialisation           | `init`         | Brûleur en initialisation                | Clignotante        | Absente               |
-| Défaut                   | `fault`        | Brûleur en défaut                        | Rouge clignotante  | Absente               |
-| Défaut atteinte consigne | `faultReachSP` | Brûleur en défaut d'atteinte de consigne | Orange clignotante | Présente              |
-
-> ⚡Chemin d’accès depuis l’acteur `properties.burnerStatus`
+{% include script_api/inherits.md type=page.api_type %}

@@ -1,43 +1,31 @@
 ---
-title: "Registre"
+title: "Registre de ventilation"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/register
+nav_order: 7
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
 
-{% include table_of_content.html %}
-
-# Registre
-
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
+# Registre de ventilation
 
 L'acteur Registre représente un registre de ventilation. Son fonctionnement est très proche du bypass : le mode numérique alterne entre ouvert et fermé, tandis que le mode analogic expose un pourcentage d'ouverture.
 
 ![Registre CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-register.gif)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Mode
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogic`.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.mode`
+{% include script_api/properties.md type=page.api_type %}
 
-### Ouvert ?
+# Hérite de
+{: #herite-de }
 
-- **Type** : `Boolean`
-- **Description** : Utilisé lorsque le mode est `digital`. Si la valeur est `true`, le registre est affiché comme ouvert.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isOpen`
-
-### Ouverture (%)
-
-- **Type** : `Number`
-- **Description** : Utilisé lorsque le mode est `analogic`. La valeur représente le pourcentage d'ouverture affiché.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.opening`
+{% include script_api/inherits.md type=page.api_type %}

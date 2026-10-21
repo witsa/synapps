@@ -1,71 +1,42 @@
 ---
-title: "Multiposition"
+title: "Multi positions"
 parent: "Technique"
 grand_parent: "Types d'acteur"
+nav_order: 3
+api_type: technical/multi-position
+since:
+  studio: 1.6.0
+  runtime: 2.8.0
+  redy: 16.4.0
 ---
 
-{% include table_of_content.html %}
-
 # Acteur Multiposition
-
-Studio **1.6.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY **16.4.0**
-{: .label .label-green }
 
 L'acteur Multiposition permet d'afficher un état parmi une liste de "positions" configurables. C'est un composant idéal pour représenter un équipement ayant plusieurs modes de fonctionnement (ex: Arrêt, Manuel, Auto, Alarme).
 
 L'acteur peut gérer jusqu'à 8 positions. Par défaut, il est créé avec 4 positions, mais vous pouvez en ajouter ou en supprimer selon vos besoins.
 
-![Synapps](../../../synapps-studio-releases/notes/assets/1.6/multiposition.gif)
+![Synapps](../../../synapps-studio-releases/notes/assets/1.6/multi-position.gif)
 
+{% include table_of_content.html %}
 
-## Propriétés spécifiques
+{% include script_api/legend.md %}
 
-### Position
+# Propriétés
+{: #proprietes }
 
-- **Type** : `String`
-- **Description** : Sélectionne la position à afficher. Il faut utiliser la clé unique de la position (`positionKey`).
+{% include script_api/properties.md type=page.api_type %}
 
-> ⚡Chemin d’accès depuis l’acteur `properties.position`
+# Propriétés des positions
 
-### Afficher le texte
+Chaque position dans la liste est un objet configurable avec les propriétés suivantes, où `<n>` est l'index de la position (1 à 8) :
 
-- **Type** : `Boolean`
-- **Description** : Permet d'activer ou de désactiver l'affichage du texte pour la position actuellement visible.
+- **Position** `position<n>` : Une clé unique (ex: "mode_auto") pour identifier la position. Cette clé peut être utilisée pour activer la position via la propriété Position.
+- **Texte** `text<n>` : Le texte à afficher lorsque cette position est active.
+- **Image personnalisée** `picture<n>` : Le chemin d'accès ou l'URL de l'image à afficher pour cette position.
+- **Clignotant?** `isBlinking<n>` : Si `true`, l'image de cette position se mettra à clignoter.
 
-> ⚡Chemin d’accès depuis l’acteur `properties.displayText`
+# Hérite de
+{: #herite-de }
 
-## Propriétés des Positions
-
-Chaque position dans la liste est un objet configurable avec les propriétés suivantes :
-
-### Position
-
-- **Type** : `String`
-- **Description** : Une clé unique (ex: "mode_auto") pour identifier la position. Cette clé peut être utilisée pour activer la position via la propriété Position.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.positions<n>` où `<n>` est l'index de la position (1 à 8).
-
-### Texte
-
-- **Type** : `String`
-- **Description** : Le texte à afficher lorsque cette position est active.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.text<n>` où `<n>` est l'index de la position (1 à 8).
-
-### Image personnalisée
-
-- **Type** : `String` (Chemin/URL)
-- **Description** : Le chemin d'accès ou l'URL de l'image à afficher pour cette position.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.customImage<n>` où `<n>` est l'index de la position (1 à 8).
-
-### Clignotant?
-
-- **Type** : `Boolean`
-- **Description** : Si `true`, l'image de cette position se mettra à clignoter.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isBlinking<n>` où `<n>` est l'index de la position (1 à 8).
+{% include script_api/inherits.md type=page.api_type %}

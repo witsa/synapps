@@ -25,4 +25,4 @@ En effet, lorsqu'une scène ou un composite doit être affichée, l'arborescence
 
 ## liens connexes
 
-- [Cycle de vie d'un acteur](../actor/actor-life-cycle.md)
+- [Cycle de vie d'un acteur](./actor-life-cycle.md)

@@ -1,30 +1,42 @@
 ---
 title: "Curseur"
-parent: "Intéraction"
+parent: "Boutons"
+grand_parent: "Intéraction"
+api_type: input/cursor
+nav_order: 3
+redirect_from:
+  - /script-api/Actor.Input.Cursor.html
+  - /script-api/Actor.Input.CursorProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_cursor-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_cursor.js.html
 ---
-
-> 🚧 en cours de rédaction...
-
-{% include links_actor.md apiClass="Actor.Input.Cursor" %}
 
 # Curseur
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+{% include script_api/legend.md %}
 
-{% assign sorted = site.input_cursor_properties | sort: 'order' %}
+# Propriétés
+{: #proprietes }
 
-{% for property in sorted %}
-
-{% include actor_property.md property=property %}
-
-{% endfor %}
+{% include script_api/properties.md type=page.api_type %}
 
 # Informations
+{: #informations }
 
-> 🚧 en cours de rédaction...
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-# Évènements spécifiques
+{% include script_api/fields.md type=page.api_type %}
 
-> 🚧 en cours de rédaction...
+# Événements
+{: #evenements }
+
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
+
+{% include script_api/events.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

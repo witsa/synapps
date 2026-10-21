@@ -55,7 +55,7 @@ Pour l'instant, le bouton intérupteur est accessible pour tous les utilisateurs
 
 ## Etape 5 : Utiliser les champs d'accès utilisateur
 
-Nous allons utiliser les champs d'accès utilisateur qui se trouvent sur la ressource _Lumière_. En effet, comme expliqué [ici](../../concepts/actor-types/redy/wos-variable-source.md#champ-de-variable-redy), le champ _Ecriture?_ d'une ressource permet de savoir si l'utilisateur en cours a le droit d'écrire sur la variable.
+Nous allons utiliser les champs d'accès utilisateur qui se trouvent sur la ressource _Lumière_. En effet, comme expliqué [ici](../../concepts/actor-types/redy/wos-variable-source.md#champ), le champ _Ecriture?_ d'une ressource permet de savoir si l'utilisateur en cours a le droit d'écrire sur la variable.
 
 Créons donc une liaison vers le champ _Ecriture?_ de la ressource "Lumière" sur la propriété _Actif?_ du bouton intérupteur.
 

@@ -1,19 +1,16 @@
 ---
 title: "Pompe double"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+api_type: technical/double-pump
+nav_order: 3
+since:
+  studio: 1.6.0
+  runtime: 2.8.0
+  redy: 16.4.0
 ---
 
-{% include table_of_content.html %}
-
 # Pompe double
-
-Studio **1.6.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY **16.4.0**
-{: .label .label-green }
 
 L'acteur Pompe double représente un système de pompage avec deux moteurs. Chaque pompe peut être contrôlée et surveillée indépendamment pour son état de marche et de défaut.
 
@@ -30,39 +27,19 @@ Voici les différents états de la pompe double :
 | **Pompe 1 en défaut** | La pompe 1 rencontre un problème.                     | Allumée  | 🟥          |
 | **Pompe 2 en défaut** | La pompe 2 rencontre un problème.                     | Allumée  | 🟥          |
 
-## Propriétés spécifiques
-
-### orientation
-
-- **Type** : `String`
-- **Description** : Définit l'orientation du dessin des pompes.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
-
-### status
-
-- **Type** : `String`
-- **Description** : Contrôle l'état de fonctionnement des pompes.
-  - `stopped` : Les deux pompes sont à l'arrêt.
-  - `running1` : La pompe 1 est en marche.
-  - `running2` : La pompe 2 est en marche.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.status`
-
-### isFault1
-
-- **Type** : `Boolean`
-- **Description** : Si cette propriété est activée (`true`), la pompe 1 est en état de défaut. Son indicateur LED devient rouge et se met à clignoter.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFault1`
-
-### isFault2
-
-- **Type** : `Boolean`
-- **Description** : Si cette propriété est activée (`true`), la pompe 2 est en état de défaut. Son indicateur LED devient rouge et se met à clignoter.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFault2`
-
 {: .pin }
-
 > L'état de défaut de chaque pompe est indépendant et a la priorité sur son état de marche.
+
+{% include table_of_content.html %}
+
+{% include script_api/legend.md %}
+
+# Propriétés
+{: #proprietes }
+
+{% include script_api/properties.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

@@ -6,11 +6,14 @@ has_children: true
 
 # Scripts
 
+> ⚡ Par script : [contexte d'évènement](./reference/context.md), objet `context` passé à tous les scripts
+
+
 Synapps Studio offre un environnement de développement complètement programmables.
 
 Le langage utilisé est le `Javascript`. Une API est fournie pour manipuler et accéder en l'ensemble des objets de votre synapp.
 
-Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="_blank"}
+Voir la [référence des scripts](./reference/)
 
 ## Scripts dans les évènements
 

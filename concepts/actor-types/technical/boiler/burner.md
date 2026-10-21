@@ -1,19 +1,16 @@
 ---
 title: "Brûleur"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+api_type: technical/burner
+nav_order: 2
+since:
+  studio: 1.6.0
+  runtime: 2.8.0
+  redy: 16.4.0
 ---
 
-{% include table_of_content.html %}
-
 # Brûleur
-
-Studio **1.6.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY **16.4.0**
-{: .label .label-green }
 
 L'acteur Brûleur (Burner) représente l'état d'un brûleur. Il affiche visuellement les différents modes de fonctionnement tels que la marche, l'arrêt ou un état de défaut.
 
@@ -35,39 +32,14 @@ Voici les différents états du brûleur :
 
 {% include table_of_content.html %}
 
-## Propriétés spécifiques
+{% include script_api/legend.md %}
 
-### Orientation
+# Propriétés
+{: #proprietes }
 
-- **Type** : `String`
-- **Description** : Définit l'orientation du brûleur. Les valeurs possibles sont `right` (droite) ou `left` (gauche).
+{% include script_api/properties.md type=page.api_type %}
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+# Hérite de
+{: #herite-de }
 
-### Statut
-
-- **Type** : `String`
-- **Description** : Indique l'état de fonctionnement du brûleur. Les valeurs possibles sont :
-
-  - `stopped` : Arrêté, led éteinte, flamme absente
-  - `running` : En marche, led allumée, flamme présente
-  - `standby` : En veille, led clignotante, flamme absente
-  - `starting` : En démarrage, led clignotante, flamme absente
-  - `stopping` : En arrêt, led clignotante, flamme présente
-  - `init` : En initialisation, led clignotante, flamme absente
-
-> ⚡Chemin d’accès depuis l’acteur `properties.status`
-
-### En défaut ?
-
-- **Type** : `Boolean`
-- **Description** : Indique si le brûleur est en état de défaut (`true`) ou non (`false`).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFault`
-
-### En défaut atteinte consigne ?
-
-- **Type** : `Boolean`
-- **Description** : Indique si le brûleur est en défaut d'atteinte de consigne.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFaultReachSP`
+{% include script_api/inherits.md type=page.api_type %}

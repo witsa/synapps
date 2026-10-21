@@ -69,7 +69,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 5. **Sélectionner** l'acteur _Empilement_ **stack3** et **ajouter** un acteur enfant de type _Empilement_ **stack4** qui représentera la couleur dont l'opacité variera en fonction de l'intensité lumineuse:
 
     * définir la propriété _Aspect > Couleur de fond avec une couleur jaune ```#ffe583```
-    * ajouter cette couleur dans la librairie avec le nom ```colorLight```, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutoriel 2 sur les liaisons aux librairies](../tuto02/part6/index.md))
+    * ajouter cette couleur dans la librairie avec le nom ```colorLight```, pour une utilisation ultérieure, et lier la propriété ci-dessus (voir [tutoriel 2 sur les liaisons aux librairies](../tuto02/part6.md))
     ![Empilement](assets/part2_lightLibrary.png)
     * la propriété _Aspect > Bordure > Rayon bordure_ à ```50px```
     * la propriété _Position > Align. vertical_ à ```Etendre```
@@ -118,7 +118,7 @@ Créer une **nouvelle scène** dans la SynApp **tuto03** créée précédemment.
 
     * lier en _interne_ la propriété _Aspect > Opacité_ avec la propriété _Spécifiques > Valeur_ de l'acteur **slider5**
 ![Empilement](assets/part2_lightBind.png)
-    (voir [Tutoriel 2 sur les liaisons internes](../tuto02/part5/index.md))
+    (voir [Tutoriel 2 sur les liaisons internes](../tuto02/part5.md))
 ![Empilement](assets/part2_lightBind2.png)
 
 9. **Exécuter** la SynApp et vérifier que:

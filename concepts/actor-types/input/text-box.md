@@ -1,9 +1,15 @@
 ---
 title: Boite de saisie
-parent: "Intéraction"
+parent: "Formulaire"
+grand_parent: "Intéraction"
+api_type: input/text-box
+nav_order: 1
+redirect_from:
+  - /script-api/Actor.Input.TextBox.html
+  - /script-api/Actor.Input.TextBoxProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_text-box-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_text-box.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.TextBox" %}
 
 # Boite de saisie
 
@@ -11,48 +17,30 @@ L'acteur boite de saisie permet de créer des champs de saisies personnalisables
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+{% include script_api/legend.md %}
+
+# Propriétés
+{: #proprietes }
 
 L'acteur boite de saisie possède le champ `Type de saisie` qui va dicter le comportement de cet acteur en fonction du type sélectionné dont chaque choix sera détaillé plus bas.
 
-Cependant, l'acteur possède 7 champs de saisies qui possèdent toujours le même comportement peut importe le `Type de saisie` :
+Les propriétés ci-dessous ont toujours le même comportement, peu importe le `Type de saisie` ; celles qui en dépendent sont détaillées dans la section [Type de saisie](#type-de-saisie).
 
-**Taille**
+{% include script_api/properties.md type=page.api_type %}
 
-{% include property_size.md %}
+# Informations
+{: #informations }
 
-**Longueur Max**
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-Permet de limiter la taille de la chaine de caractère de `Valeur`.
+{% include script_api/fields.md type=page.api_type %}
 
->📌 *REMARQUE*<br>
->Le caractère vide 'espace' est comptabilisé comme tout autre caractère.
+# Hérite de
+{: #herite-de }
 
-**Mode de saisie**
+{% include script_api/inherits.md type=page.api_type %}
 
-Ce champ permet de conditionner le type de clavier qui s'affiche sur les appareils mobiles et tablettes.
-
-**Auto Completion?**
-
-Permet d'activer / désactiver la saisie automatique sur les navigateurs.
-
-Ce champ est inutile pour les `Type de saisie` suivants : Mot de passe / Curseur / Couleur.
-
-**Lecture seule?**
-
-Permet d'activer / désactiver la saisie de valeur dans le champ de saisie.
-
-Ce champ est inutile pour les `Type de saisie` suivants : Curseur / Couleur.
-
-**État de validation**
-
-Permet de donner une décoration prédéfinie au champ de saisie.
-
-**Actif**
-
-Permet d'activer / désactiver le champ de saisie.
-
-## Type de saisie
+# Type de saisie
 
 **TEXTE / MOT DE PASSE**
 

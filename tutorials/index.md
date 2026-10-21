@@ -4,8 +4,6 @@ has_children: true
 nav_order: 6
 ---
 
-> 🚧 en cours de rédaction...
-
 > Dernière mise à jour : 📅02/02/2026
 >
 

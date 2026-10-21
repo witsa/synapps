@@ -1,10 +1,16 @@
 ---
 title: "Empilement"
 parent: "Disposition"
+grand_parent: "Types d'acteur"
+api_type: layout/stack
+nav_order: 1
+redirect_from:
+  - /script-api/Actor.Layout.Stack.html
+  - /script-api/Actor.Layout.StackProperties.html
+  - /script-api/synapps-ui_addon_components_actors_layout_stack-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_layout_stack.js.html
 ---
 
-
-{% include links_actor.md apiClass="Actor.Layout.Stack" %}
 
 # Empilement
 
@@ -12,31 +18,40 @@ Acteur qui permet de disposer ses acteurs enfants en les empilant, soit vertical
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Orientation
+{% include script_api/properties.md type=page.api_type %}
 
-L'empilement va disposer ses acteurs enfants suivant la règle donnée par la propriété de même *Orientation* :
+# Informations
+{: #informations }
 
-- **Verticale** *(par défaut)* : Les acteurs enfants s'empilent les uns en dessous des autres, de haut en bas.
-- **Horizontale** : Les acteurs enfants s'empilent les uns à côté des autres, de gauche à droite.
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-## Disposition
+{% include script_api/fields.md type=page.api_type %}
 
-Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../../actor/category-disposition.md#catégorie-disposition-flexible)
+# Méthodes
+{: #methodes }
 
-## Dépassement de contenu
-
-{% include property_overflow.md %}
-
-La valeur par défaut est **Caché**
-
-> ✔️ **CONSEIL**<br>
-> Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
+{% include script_api/methods.md type=page.api_type %}
 
 # Événements
+{: #evenements }
 
-{% include events_layout.md %}
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
+
+{% include script_api/events.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}
+
+# Disposition
+
+Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../../actor/category-disposition.md#catégorie-disposition-flexible)
 
 # Usage
 

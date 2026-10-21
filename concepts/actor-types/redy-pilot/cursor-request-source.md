@@ -1,110 +1,55 @@
 ---
 title: "Fournisseur de requête"
 parent: "REDY Pilot"
+api_type: redy/data-source/cursor-request
+since:
+  studio: 1.7.0
+  runtime: 2.8.0
+  redy_pilot: 1.0.0
 ---
 
 {% include table_of_content.html %}
 
 # Fournisseur de requête
 
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY Pilot **1.0.0**
-{: .label .label-green }
-
 Cet acteur permet de créer une source de curseur requêtes pour le pilote REDY. Il consomme un curseur de requête, demande son exécution au pilote REDY suivant des éventuels paramètres, et fournit les résultats dans son champ de dosnnées `data`.
 
-## Propriétés spécifiques
+{% include script_api/legend.md %}
 
-### Requête SQL
+# Propriétés
+{: #proprietes }
 
-Le curseur de requête SQL à exécuter par le pilote REDY.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.label`.
-
-### Mode
-
-Le mode d'exécution de la requête.
-
-- Automatique : la requête est exécutée automatiquement à chaque modification des paramètres.
-- Manuel : la requête n'est exécutée que lorsque la fonction `refresh` ou `request` est déclenchée.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.mode`.
-
-### Auto rafraîchissement
-
-Si activé, la requête est automatiquement rafraîchie à intervalle régulier.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.autoRefresh`.
-
-### Délai de rafraîchissement
-
-Le délai en secondes entre chaque rafraîchissement automatique de la requête.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.autoRefreshDelay`.
-
-### Limite de résultats
-
-Le nombre maximum de résultats à retourner par la requête. Par défaut : `10`.
-
-{: note }
-
-> Placez la valeur `-1` pour ne pas appliquer de limite.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.limit`.
-
-### Décalage des résultats
-
-Le nombre de résultats à ignorer au début de la requête. Par défaut : `0`.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.offset`.
+{% include script_api/properties.md type=page.api_type %}
 
 ## Paramètres de requête
 
 Si le curseur de requête SQL utilise des paramètres, Studio propose de créer des additionnels pour les fournir.
 
-## Événements spécifiques
+# Informations
+{: #informations }
 
-### ⚡ `onRequestDone`
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-Événement déclenché lorsque la requête est terminée et que les données sont disponibles.
+{% include script_api/fields.md type=page.api_type %}
 
-Dans `data`, vous trouverez un objet avec les propriétés suivantes :
+# Méthodes
+{: #methodes }
 
-| Propriété | Type                | Description                                                                                                |
-| --------- | ------------------- | ---------------------------------------------------------------------------------------------------------- |
-| columns   | Tableau de Colonnes | Tableau contenant les définitions des colonnes                                                             |
-| rows      | Tableau de tableaux | Les lignes de résultats, chaque ligne étant un tableau de valeurs correspondant aux colonnes, dans l'ordre |
-| totalRows | Nombre              | Le nombre total de lignes disponibles (avant application de la limite et du décalage)                      |
+{% include script_api/methods.md type=page.api_type %}
 
-L'objet de Colonne contient les propriétés suivantes :
+# Événements
+{: #evenements }
 
-| Propriété | Type   | Description                      |
-| --------- | ------ | -------------------------------- |
-| key       | Chaîne | Le nom unique de la colonne      |
-| type      | Chaîne | Le type de données de la colonne |
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/actor/).
 
-En cas d'erreur, un champ `error` est présent dans l'objet de contexte avec les informations de l'erreur.
+{% include script_api/events.md type=page.api_type %}
 
-Exemple de données retournées :
+# Hérite de
+{: #herite-de }
 
-```json
-{
-  "columns": [
-    { "key": "id", "type": "Integer" },
-    { "key": "name", "type": "String" }
-  ],
-  "rows": [
-    [1, "Alice"],
-    [2, "Bob"]
-  ],
-  "totalRows": 50
-}
-```
+{% include script_api/inherits.md type=page.api_type %}
 
-## Usages
+# Usages
 
 Ce fournisseur de requête peut être utilisé avec des acteurs consommateurs de curseur. Un bon exemple est la [Liste de choix déroulante](../input/dropdown-list.md).
 
@@ -126,8 +71,7 @@ return context.getActor("<clé du fournisseur de requête>").getOptionsFromData(
 
 Cela remplira automatiquement la liste déroulante avec les utilisateurs de la base de données, en utilisant `id` comme valeur et `name` comme texte affiché.
 
-{: .note }
-
+{: .info }
 > Cela marche ici, parce que les colonnes de la requête SQL sont nommées `value` et `text`, ce qui correspond directement aux attentes de la liste déroulante pour ses options.
 >
 > Si la requête SQL n'a pas les bon noms de colonnes, dans la transformation, vous pouvez faire quelque chose comme ceci :

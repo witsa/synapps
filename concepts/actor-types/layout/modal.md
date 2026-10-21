@@ -1,10 +1,16 @@
 ---
 title: "Modale"
 parent: "Disposition"
+grand_parent: "Types d'acteur"
+api_type: layout/modal
+nav_order: 4
+redirect_from:
+  - /script-api/Actor.Layout.Modal.html
+  - /script-api/Actor.Layout.ModalProperties.html
+  - /script-api/synapps-ui_addon_components_actors_layout_modal-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_layout_modal.js.html
 ---
 
-
-{% include links_actor.md apiClass="Actor.Layout.Modal" %}
 
 # Modale
 
@@ -14,31 +20,38 @@ Acteur qui permet d'afficher une boite de dialogue ou un menu.
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Montrer ?
+{% include script_api/properties.md type=page.api_type %}
 
-La propriété *Montrer?* permet d'afficher/cacher la modale.²
+# Informations
+{: #informations }
 
-> 💡 **ASTUCE**<br>
-> Vous pouvez activer cette propriété dans le designer pour apercevoir le contenu de la modale ou pour régler son ancrage. Vous avez également la possibilité d'avoir un apperçu de la modale en cliquant sur le bouton "oeil" juste à coté :
->
-> ![aperçu](../../../assets/concepts/actor/layout_modal/image-01.png)
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
+{% include script_api/fields.md type=page.api_type %}
 
-## Ferme si on clique en ailleurs
+# Méthodes
+{: #methodes }
 
-Cette propriété autorise/interdit la modale de se fermer si l'utilisateur clique en dehors de la modale.
+{% include script_api/methods.md type=page.api_type %}
 
-> ⚠️ **ATTENTION**<br>
-> Si vous n'autorisez pas ce comportement, vous avez obligatoirement besoin de définir un bouton pour fermer la modale.
+# Événements
+{: #evenements }
 
-## Overlay transparent
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-Active/désactive la présence d'un fond transparent opalescent derrière la modale.
+{% include script_api/events.md type=page.api_type %}
 
+# Hérite de
+{: #herite-de }
 
-## Ancrage de la modale
+{% include script_api/inherits.md type=page.api_type %}
+
+# Ancrage de la modale
 
 Par défaut, la modale va s'afficher au centre de l'écran. Vous pouvez définir un ancrage complètement différent.
 
@@ -53,28 +66,14 @@ Dans l'exemple ci dessous, la <span style="color: red;">**modale**</span> est at
 
 
 
-## Dépassement de contenu
-
-{% include property_overflow.md %}
-
-La valeur par défaut est **Caché**
-
-> ✔️ **CONSEIL**<br>
-> Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
-
-
-# Événements
-
-{% include events_layout.md %}
-
 # Usage
 
 La modale est un acteur de disposition qui n'accepte qu'**un seul enfant**. En général, vous y placerez un empilement qui contiendra l'interface de dialogue.
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > Placez le plus souvent possible vos modales tout en bas de vos arborescence d'acteurs. Cela évitera que leur contenu gène l'affichage des autres acteurs dans le designer.
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 > N'oubliez pas de définir une taille pour votre modale. Sinon, elle ne s'affichera pas correctement.
 
 ## Montrer/Cacher la modale
@@ -87,7 +86,7 @@ Vous pouvez également utiliser un script dans un évènement. Par exemple, dans
 context.getActor('myModal').properties.isShown = true;
 ```
 
-Si vous n'êtes pas à l'aise avec les scripts, vous pouvez utiliser la variante **Modale au clic** qui est préconfigurée pour afficher/cacher la modale au clic sur un autre acteur.
+Si vous n'êtes pas à l'aise avec les scripts, vous pouvez utiliser le preset **Modale au clic** qui est préconfiguré pour afficher/cacher la modale au clic sur un autre acteur.
 
 # Réinitialisation des héritages de propriété
 
@@ -96,13 +95,13 @@ L'héritage des propriétés est brisé dans une modale. Il faudra redéfinir ce
 Par exemple, si vous définissez une taille de texte de 10px sur l'acteur principal d'une scène, cela ne sera pas appliqué à la modale.
 
 
-# Variantes
+# Presets
 
 ## Modale au clic
 
-Cette variante de modale est préconfigurée pour indiquer l'acteur qui lorsqu'on cliquera dessus déclenchera son affichage et l'acteur qui déclenchera sa fermeture.
+Ce preset de modale est préconfiguré pour indiquer l'acteur qui lorsqu'on cliquera dessus déclenchera son affichage et l'acteur qui déclenchera sa fermeture.
 
-Voici un exemple de scène qui emploie cette variante :
+Voici un exemple de scène qui emploie ce preset :
 
 {% raw %}
 ```

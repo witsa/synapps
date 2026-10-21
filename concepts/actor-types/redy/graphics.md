@@ -1,28 +1,25 @@
 ---
-title: "Graphiques"
-parent: "REDY"
+title: "Graphique"
+parent: "Applications"
+grand_parent: "REDY"
+api_type: redy/graphics
+nav_order: 2
 ---
-
-{% include links_actor.md apiClass="REDY.Actor.Graphics" %}
 
 # Graphique
 
 L'acteur Graphique affiche l'application de graphique du REDY.
 
+{% include table_of_content.html %}
+
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Préparation
+{% include script_api/properties.md type=page.api_type %}
 
-La propriété *Préparation* permet de définir celle que vous voulez afficher directement. C'est le *lebel* de la préparation qui est attendu ici.
+# Hérite de
+{: #herite-de }
 
-## Trace/Flux
-
-La propriété *Trace/Flux* permet de définir la trace ou le flux à afficher directement dans Graphique.
-
-## Edition Permise?
-
-Cette propriété permet d'activer ou de désactiver l'édition de préparation.
-
-## Montrer la légende?
-
-Cette propriété permet d'activer ou de désactiver la légende.
+{% include script_api/inherits.md type=page.api_type %}

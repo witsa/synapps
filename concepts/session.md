@@ -5,78 +5,41 @@ parent: Concepts
 
 # La session
 
+> ⚡ Par script : [référence pour les scripts](./scripts/reference/session.md)
+
+
 La session est un objet global qui représente la session en cours de l'utilisateur. Elle contient des informations sur l'état de la session créée sur le REDY.
 
 {% include table_of_content.html %}
 
-## L'identifiant de session
+## Ouverture
 
-- Champ : `sid`
-- Type : `string`
+Pour exécuter une synapp, l'utilisateur doit être authentifié sur le REDY qui l'héberge : c'est l'[hôte](./project/hosts.md) de la synapp.
 
-Chaque session possède un identifiant unique.
+- Quand la synapp est servie par le REDY, l'utilisateur saisit son identifiant et son mot de passe sur la page de connexion.
+- Dans Studio, la connexion utilise les identifiants enregistrés dans l'hôte actif du projet.
 
-{: .tip }
-> On le retrouve dans l'URL des REDY sous la forme `/WSID<sid>/easy/...`. C'est d'ailleurs grâce à cet identifiant qu'il est possible de construire des URL directes vers des éléments du REDY.
+Une fois l'authentification réussie, le REDY ouvre une session : un jeton, un identifiant de session, un délai d'expiration et l'[utilisateur](./user.md) connecté, avec son niveau d'accès.
 
-Exemple d'utilisation en liaison : Vous désirez afficher dans une iframe les tableaux de bord du REDY. Vous pouvez construire l'URL de l'iframe en utilisant un joker et une liaison vers le champ `sid` de la session.
+La session est mémorisée par le navigateur : recharger la page ou rouvrir la synapp ne demande pas de se reconnecter tant qu'elle n'a pas expiré.
 
-{% raw %}
+## Expiration
+
+La session expire au-delà d'un délai sans activité, fixé par le REDY. Chaque requête de la synapp vers le REDY (lecture d'une variable, d'un reflet...) repousse la date d'expiration de ce délai : tant que la synapp travaille, la session reste ouverte.
+
+## Déconnexion
+
+Un script peut déconnecter l'utilisateur et afficher la page de connexion :
+
+```javascript
+context.dataStores.redy.logout();
 ```
-/WSID{{sid}}/easy/dashboard
-```
-{% endraw %}
 
-Ensuite, sur l'additionnelle pour compléter l'URL, vous ajoutez une liaison vers le champ `sid` de la session.
+## Utiliser la session
 
-Exemple  de l'acteur :
-{% raw %}
-```
-SYNAPPS-STUDIO-ACTOR|{"type":"display/iframe","key":"iframe1","properties":{"url":"/WSID{{sid}}/easy/dashboard","height":"680px","width":"1280px"},"additionalDefs":{"sid":{"type":"text"}},"bindings":{"additionals.sid":{"sourceType":"session","path":"sid"}}}
-```
-{% endraw %}
+La session est accessible :
 
-## Délai d'expiration
+- **par liaison** : source de type *Session* ; par exemple, le champ `sid` (identifiant de session) permet de construire des URL vers les pages du REDY ;
+- **par script** : `context.dataStores.redy.session`, et l'utilisateur connecté par `context.dataStores.redy.session.user`.
 
-- Champ : `expirationTimeout`
-- Type : `number`
-
-Ce champ indique le délai d'expiration de la session en secondes.
-
-## Date d'expiration
-
-- Champ : `expirationDate`
-- Type : `MomentJS Date`
-
-Ce champ indique la date et l'heure d'expiration de la session au format MomentJS.
-
-{: .info }
-> Ce champ est mis à jour automatiquement en fonction de l'activité de requêtes :  à chaque requête, la date d'expiration est recalculée en fonction du délai d'expiration.
-
-## Authentifié ?
-
-- Champ : `isAuthenticated`
-- Type : `boolean`
-
-Ce champ indique si la session est authentifiée ou non.
-
-## Authentification en cours ?
-
-- Champ : `isAuthenticating`
-- Type : `boolean`
-
-Ce champ indique si la session est en cours d'authentification.
-
-## Utilisateur
-
-- Champ : `user`
-- Type : `User Object`
-
-Ce champ contient l'objet utilisateur associé à la session. Voir la page [Utilisateur](./user.md) pour plus de détails sur l'objet utilisateur.
-
-## Hôte
-
-- Champ : `host`
-- Type : `Host Object`
-
-Ce champ contient l'objet hôte associé à la session. Voir la page [Hôte](./project/hosts.md) pour plus de détails sur l'objet hôte.
+Son contenu (identifiant, dates, état d'authentification, utilisateur, hôte) est décrit dans la [référence pour les scripts](./scripts/reference/session.md).

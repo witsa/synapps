@@ -1,41 +1,46 @@
 ---
-title: "HTML"
+title: "Html"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+api_type: display/html
+nav_order: 2
+redirect_from:
+  - /script-api/Actor.Display.Html.html
+  - /script-api/Actor.Display.HtmlProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_html-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_html.js.html
 ---
 
-{% include links_actor.md apiClass="Actor.Display.Html" %}
-
-# HTML
-
+# Html
 L'acteur HTML permet d'intégrer du code HTML et CSS dans votre scène.
 
 C'est un acteur très pratique pour mettre en forme du texte, ou ajouter des classe CSS par exemple.
 
 {% include table_of_content.html %}
 
-Son contenu est **jokerable**.
+{% include script_api/legend.md %}
 
-## Propriétés spécifiques
+# Propriétés
+{: #proprietes }
 
-{% assign sorted = site.display_html_properties | sort: 'order' %}
+{% include script_api/properties.md type=page.api_type %}
 
-{% for property in sorted %}
+# Informations
+{: #informations }
 
-{% include actor_property.md property=property %}
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-{% endfor %}
+{% include script_api/fields.md type=page.api_type %}
 
-# Champs d'informations
+# Hérite de
+{: #herite-de }
 
-## Contenu complété
+{% include script_api/inherits.md type=page.api_type %}
 
-{% include field_completed_content.md %}
-
-# Variantes
+# Presets
 
 ## Icône
 
-Une variante de l'acteur HTML offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+Un preset de l'acteur HTML offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
 
 Le contenu de l'acteur est complété par une additionnelle *icône*.

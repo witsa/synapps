@@ -1,65 +1,52 @@
 ---
 title: "Journal des variables"
-parent: "REDY"
+parent: "Variable WOS"
+grand_parent: "REDY"
+nav_order: 2
+api_type: redy/wos-event-log
 ---
-
-{% include links_actor.md apiClass="REDY.Actor.WosEventLog" %}
 
 # Journal des variables
 
 L'acteur *Journal des variables* affiche un tableau contenant  les évènements de journaux du REDY.
 
+{% include table_of_content.html %}
+
+{% include script_api/legend.md %}
 
 # Propriétés
+{: #proprietes }
+
+{% include script_api/properties.md type=page.api_type %}
 
 ## Rafraîchissement
 
 Le journal est mis à jour suivant un délai qui est paramétrable. Ce rafraîchissement peut être désactivé.
 
-## Entête et pagination
-
-Dans l'entête du tableau vous trouverez les définitions des colonnes. La liste des colonnes est paramétrable. C'est pour l'instant un tableau de clé en JSON :
-
-```json
-["id", "ack", "icon", "date", "nod", "site", "state", "todo", "ackBy"]
-```
-
-| clé de colonne | Description |
-| ---- | ------|
-| `id` | Index de l'évènement |
-| `ack` | Acquittement |
-| `icon` | Icône de l'évènement |
-| `date` | Date de l'évènement |
-| `nod` | Variable à l'origine de l'évènement |
-| `site` | Site de l'élément à l'origine de l'évènement |
-| `state` | État de la ressource |
-| `todo` | ? |
-| `ackBy` | Identité de l'utilisateur ayant acquitté l'évènement |
-
-Laissez vide la propriété *Colonnes* pour les afficher toutes.
-
-Une propriété permet de faire disparaître l'entête.
-
-
-La liste des évènements est paginée, c'est-à-dire que seul un nombre paramétrable est affichée en même temps. Des boutons permettent de naviguer de page en page.
-
-Une propriété permet de faire disparaître les boutons de pagination.
-
 ## Les filtres
 
 Vous pouvez choisir de filtrer les évènements dans le temps, ne voir que les encours, par attributs (groupe, ensemble, zone, ...) ou même par variable.
 
+# Informations
+{: #informations }
+
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
+
+{% include script_api/fields.md type=page.api_type %}
+
+# Méthodes
+{: #methodes }
+
+{% include script_api/methods.md type=page.api_type %}
+
 # Événements
+{: #evenements }
 
-## `onRequestDone`
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-L'évènement `onRequestDone` est déclenché lorsque l'acteur a terminé une requête vers le REDY pour obtenir ou rafraîchir la liste à afficher.
+{% include script_api/events.md type=page.api_type %}
 
-> [⚡ `onRequestDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosEventLog.html#event:onSelected){:target="_blank"}
+# Hérite de
+{: #herite-de }
 
-# Exemples
-
-## Journal avec selection de période de temps :
-
-{: .info }
-> Des exemples pratiques seront ajoutés dans une prochaine mise à jour de la documentation.
+{% include script_api/inherits.md type=page.api_type %}

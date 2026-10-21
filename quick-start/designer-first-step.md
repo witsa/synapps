@@ -51,10 +51,10 @@ Ils sont organisés sous forme d'arborescence :
 
 ![SynApps](../assets/quick-start/designer-first-steps/04.png)
 
-Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type [**Empilement**](../concepts/actor-types/layout/tack.md).
+Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type [**Empilement**](../concepts/actor-types/layout/stack.md).
 
 C'est un acteur de disposition. Son role est de disposer, de placer sur l'interface, les acteurs qu'il va contenir. Dans le cas d'un empilement, il va empiler les acteurs verticalement par défaut.
-D'autres types de disposition existent _([voir doc](/synapps/concepts/actor-types/#layout))_.
+D'autres types de disposition existent _([voir doc](../concepts/actor-types/layout/))_.
 
 Nous allons ajouter un acteur [**Texte**](../concepts/actor-types/display/text.md) à l'empilement.
 
@@ -168,7 +168,7 @@ Nous allons maintenant changer la couleur du texte. Pour cela, nous allons nous 
 
 ![SynApps](../assets/quick-start/designer-first-steps/20.png).
 
-Ce champ attend une [couleur CSS](../script-api/global.html#CssColorString){:target="\_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Nous pouvons en essayer plusieurs et visualiser le résultat.
+Ce champ attend une [couleur CSS](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){:target="\_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Nous pouvons en essayer plusieurs et visualiser le résultat.
 
 ![SynApps](../assets/quick-start/designer-first-steps/26.png).
 

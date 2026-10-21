@@ -3,9 +3,11 @@ title: "Types d'acteur"
 parent: Concepts
 has_children: true
 nav_order: 5
+redirect_from:
+  - /script-api/Actor.Request.html
+  - /script-api/Actor.html
+  - /script-api/REDY.Actor.html
 ---
-
-> 🚧 en cours de rédaction...
 
 {% include table_of_content.html %}
 
@@ -39,7 +41,7 @@ Ces acteurs sont dédiés à la représentation graphique de donnée. Pour l'ins
 
 - **Composites**
 
-Les composites sont des acteurs que vous pouvez créer à partir d'autres acteurs. Voir la partie dédiée aux [composites](./composite.md).
+Les composites sont des acteurs que vous pouvez créer à partir d'autres acteurs. Voir la partie dédiée aux [composites](../composite.md).
 
 - **REDY**
 

@@ -2,18 +2,15 @@
 title: "Module adiabatique"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/adiabatic-module
+nav_order: 10
+since:
+  studio: 1.7.3-beta
+  runtime: 2.9.3
+  redy: 17.0.0
 ---
 
-{% include table_of_content.html %}
-
 # Module adiabatique
-
-Studio **1.7.3-beta**
-{: .label .label-yellow }
-Runtime **2.9.3**
-{: .label .label-yellow }
-REDY **17.0.0**
-{: .label .label-yellow }
 
 Un module adiabatique est un organe de CTA qui rafraîchit l'air par évaporation d'eau (refroidissement adiabatique) plutôt que par un échange thermique classique avec un fluide frigorigène.
 
@@ -21,25 +18,16 @@ L'acteur Module adiabatique représente ce composant au sein d'une CTA. Son affi
 
 ![Module adiabatique](../../../../synapps-studio-releases/notes/assets/1.7/cta-adiabatic-module.gif)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Orientation
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit l'orientation du module adiabatique.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/properties.md type=page.api_type %}
 
-### En marche ?
+# Hérite de
+{: #herite-de }
 
-- **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, le module adiabatique est considéré comme actif (LED verte).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isRunning`
-
-### En défaut ?
-
-- **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, l'indicateur LED passe en état de défaut (LED rouge clignotante).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isDefault`
+{% include script_api/inherits.md type=page.api_type %}

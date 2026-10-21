@@ -36,12 +36,12 @@ Pendant la phase d'initialisation, les acteurs sont parcouru en descendant dans 
 
 Dans cette phase l'acteur va initialiser ses propriétés, valoriser les propriétés définies dans son paramètre, créer ses éventuelles additionnelles et les valoriser.
 
-Un évènement est ensuite déclenché : [`onInit`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onInit){:target="_blank"}.
+Un évènement est ensuite déclenché : [`onInit`](./reference/actor.md#oninit).
 
 A ce moment, tous les acteurs définis dans la scène ou le composite ne sont pas encore présents ni disponibles.
 Les [liaisons](../binding.md) ne sont toujours pas réalisées.
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > C'est donc une phase privilégiée pour compléter l'initialisation de l'acteur. Par exemple, changer par script des valeurs de propriétés. En effet, on ne risque pas de perdre en performance à cause d'exécution de liaison et leur conséquences puisqu'elles ne sont pas encore effective.
 
 > C'est le meilleur moment également pour définir des logiques métiers à attacher à l'acteur ou à la scène / composite.
@@ -58,9 +58,9 @@ Une fois que tous l'arborescence est initialisée, le *Runtime* va exécuter la 
 
 Dans cette phase, l'acteur va placer l'élément DOM dans le flux HTML, créer ses liaisons, résoudre les sources de ces liaisons et les exécuter.
 
-Un évènement est ensuite déclenché : [`onPostInit`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onPostInit){:target="_blank"}.
+Un évènement est ensuite déclenché : [`onPostInit`](./reference/actor.md#onpostinit).
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > C'est le bon moment pour agir dans l'élément DOM. Mais attention, le style CSS de l'acteur n'est pas encore défini ni ces classes CSS. Ce n'est pas le moment d'agir sur ces élément.
 
 En revanche, tous les acteurs sont présents et disponibles mais certains acteurs ne sont pas encore post-initialisés.
@@ -75,22 +75,22 @@ Elle consiste à parcourir l'arborescence en descendant.
 
 Plusieurs étapes vont être réalisées :
 
-A chaque acteur correspond un élément DOM dan le flux HTML. Des classes CSS sont définies en fonction du type d'acteur et du [style d'acteur](../actor-style.md) qu'il utilise. Une [classe unique]({{ site.baseurl }}/script-api/Actor.BaseActor.html#uniqClass){:target="_blank"} est aussi définie en fonction de la clé de l'acteur et de l'endroit où il se trouve. Elle très utile pour identifier l'acteur dans le DOM. Enfin, les classes définies dans la propriété *Classes* de l'acteur sont ajoutées.
+A chaque acteur correspond un élément DOM dan le flux HTML. Des classes CSS sont définies en fonction du type d'acteur et du [style d'acteur](../actor-style.md) qu'il utilise. Une [classe unique](./reference/actor.md#uniqclass) est aussi définie en fonction de la clé de l'acteur et de l'endroit où il se trouve. Elle très utile pour identifier l'acteur dans le DOM. Enfin, les classes définies dans la propriété *Classes* de l'acteur sont ajoutées.
 
 Le style CSS de l'élément est renseigné grâce au propriétés de l'acteur ainsi que par le [style d'acteur](../actor-style.md) qu'il utilise.
 C'est dans cette phase que ce style CSS est construit et renseigné sur l'élément DOM.
 
-L'évènement [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"} est déclenché.
+L'évènement [`onCssStyling`](./reference/actor.md#oncssstyling) est déclenché.
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > C'est le moment de modifier le style CSS de l'élément DOM ou d'ajouter des classes CSS dessus par script.
 
 Ensuite, un premier calcul de gabarit est réalisé sur l'acteur. Certain acteur ont besoin de cette étape pour s'afficher correctement, comme par exemple la [boite à vue](../actor-types/layout/view-box.md).
 
-Enfin, l'évènement [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onRender){:target="_blank"} est déclenché. Dans le contexte de l'évènement, le champ `isFirstRender` est vrai. En effet, cette évènement est déclenché à chaque fois que l'acteur passe par l'étape de rendu, il est donc intéressant de savoir si c'est le premier rendu ou non.
+Enfin, l'évènement [`onRender`](./reference/actor.md#onrender) est déclenché. Dans le contexte de l'évènement, le champ `isFirstRender` est vrai. En effet, cette évènement est déclenché à chaque fois que l'acteur passe par l'étape de rendu, il est donc intéressant de savoir si c'est le premier rendu ou non.
 
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > Cet évènement est le moment propice pour agir sur l'élément DOM ou à l'intérieur.
 
 
@@ -114,7 +114,7 @@ Enfin, l'évènement [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.
 
 >📌*Remarque*
 >
-> L'acteur principal d'une scène possède un évènement supplémentaire : [`onLeadActorDidRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onLeadActorDidRender){:target="_blank"}. Cet évènement est déclenché une seule fois, lors du premier rendu de l'acteur principal, lorsque toute la scène sera rendue. Il ne sera pas déclenché lors des rendus suivants.
+> L'acteur principal d'une scène possède un évènement supplémentaire : [`onLeadActorDidRender`](./reference/actor.md#onleadactordidrender). Cet évènement est déclenché une seule fois, lors du premier rendu de l'acteur principal, lorsque toute la scène sera rendue. Il ne sera pas déclenché lors des rendus suivants.
 
 # Ajout d'un acteur dynamiquement
 
@@ -125,14 +125,14 @@ Lorsqu'un acteur est ajouté après l'affichage d'une scène ou d'un composite, 
 
 Une fois que l'acteur est rendu, il va se passer déclencher une cascade de changement de taille dans l'arborescence. Il faut donc s'attendre à l’exécution de l'évènement `onComputeLayout` sur une bonne partie de l'ascendance de l'acteur ajouté.
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > A cause de ce phénomène de recalcule des gabarits dû à l'insertion d'un acteur dynamiquement, dans le cas d'ajout massif, il est necessaire de prendre en compte ce temps voir le minimisé (ajout dans une toile, tailles du contenant fixes, délai entre chaque ajout, ajout d'acteurs en une seule fois).
 
 # Suppression d'un acteur
 
-Lors de la suppression d'un acteur par exemple lors d'un changement de scène, les liaisons vont être retirées, l'élément DOM va être retiré également du flux HTML. L'évènement [`onDestroy`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onDestroy){:target="_blank"} est déclenché.
+Lors de la suppression d'un acteur par exemple lors d'un changement de scène, les liaisons vont être retirées, l'élément DOM va être retiré également du flux HTML. L'évènement [`onDestroy`](./reference/actor.md#ondestroy) est déclenché.
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > C'est le bon moment pour retirer des évènements sur l'élément DOM que vous auriez ajouté manuellement.
 
 ![SynApps](../../assets/concepts/life-cycle/destroy.gif)
@@ -155,21 +155,21 @@ Lors d'un changement de valeur de propriété ou d'une additionnelle d'un acteur
 Avant de déclenchement de ses deux évènements, un changement de valeur peut déclencher ce qu'on appelle un modification.
 Il existe 4 modifications possibles :
 - Aucune modification : dans ce cas, rien ne se passe. C'est la modification par défaut des additionnelle.
-- **Styles CSS** : dans ce cas, le style CSS de l'élément DOM est recalculé. L'évènement [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"} est déclenché une nouvelle fois.
-- **Rendu** : dans ce cas, un nouveau rendu globale est réalisé. Les évènements [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"}, [`onComputeLayout`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onComputeLayout){:target="_blank"} et [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onRender){:target="_blank"} sont déclenchés.
-- **Gabarit** : dans ce dernier cas, le gabarit de toute la ligne d'arborescence est recalculé. Ce qui va entraîner une série d'exécution de l'évènement [`onComputeLayout`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onComputeLayout){:target="_blank"}.
+- **Styles CSS** : dans ce cas, le style CSS de l'élément DOM est recalculé. L'évènement [`onCssStyling`](./reference/actor.md#oncssstyling) est déclenché une nouvelle fois.
+- **Rendu** : dans ce cas, un nouveau rendu globale est réalisé. Les évènements [`onCssStyling`](./reference/actor.md#oncssstyling), [`onComputeLayout`](./reference/actor.md#oncomputelayout) et [`onRender`](./reference/actor.md#onrender) sont déclenchés.
+- **Gabarit** : dans ce dernier cas, le gabarit de toute la ligne d'arborescence est recalculé. Ce qui va entraîner une série d'exécution de l'évènement [`onComputeLayout`](./reference/actor.md#oncomputelayout).
 
 Les propriétés spécifiques d'un acteur possèdent chacune leur type de modification. C'est à vous de définir la modification qu’entraîne le changement de valeur sur une additionnelle.
 
 # Transformations de liaison
 
 Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une [liaison](../binding.md): <br>
-Lorsque la valeur source ou la source elle-même change, la valeur est lue pour être inscrite dans la propriété cible. L'évènement [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} se déclenche pour passer la valeur source par l'intermédiaire du champ `value` du contexte de l'évènement. Elle est, par défaut, directement retournée par l'évènement. Il est possible de modifier ce comportement et de transformer cette valeur afin d'écrire autre chose dans la propriété cible.
+Lorsque la valeur source ou la source elle-même change, la valeur est lue pour être inscrite dans la propriété cible. L'évènement [`onReadTransform`](./reference/actor.md#properties-nom-binding-onreadtransform) se déclenche pour passer la valeur source par l'intermédiaire du champ `value` du contexte de l'évènement. Elle est, par défaut, directement retournée par l'évènement. Il est possible de modifier ce comportement et de transformer cette valeur afin d'écrire autre chose dans la propriété cible.
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > Très pratique par exemple pour changer le type de valeur : passer d'une valeur booléenne à une couleur.
 
-De la même manière, si l'écriture est activée sur la liaison, un changement de valeur de la cible va déclencher l'écriture dans la valeur source. L'évènement [`onWriteTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onWriteTransform){:target="_blank"} se déclenche et permet d'intervenir sur la valeur transmise dans l'autre sens.
+De la même manière, si l'écriture est activée sur la liaison, un changement de valeur de la cible va déclencher l'écriture dans la valeur source. L'évènement [`onWriteTransform`](./reference/actor.md#properties-nom-binding-onwritetransform) se déclenche et permet d'intervenir sur la valeur transmise dans l'autre sens.
 
->⚠️ **ATTENTION**<br>
+{: .warning }
 > Dans le cas où vous réalisez une transformation en lecture sur une liaison dont l'écriture est activée, veillez à opérer la transformation inverse. Sinon quoi vous feriez entrer l'interface dans une boucle sans fin où l'écriture défait ce que fait la lecture.

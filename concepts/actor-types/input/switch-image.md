@@ -1,9 +1,15 @@
 ---
 title: "Images interrupteur"
-parent: "Intéraction"
+parent: "Interrupteur"
+grand_parent: "Intéraction"
+api_type: input/switch-image
+nav_order: 2
+redirect_from:
+  - /script-api/Actor.Input.SwitchImage.html
+  - /script-api/Actor.Input.SwitchImageProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_switch-image-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_switch-image.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.SwitchImage" %}
 
 # Images interrupteur
 
@@ -13,24 +19,24 @@ Acteur d'interaction qui permet d'afficher un interrupteur à deux états en aff
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Valeur
-
-Cette propriété permet de faire basculer l'interrupteur.
-
-## Texte pour vrai, texte pour faux
-
-Ces deux propriétés permettent de définir les textes qui s'affichent dans l'interrupteur correspondant à la valeur `true` et à la valeur `false`.
+{% include script_api/properties.md type=page.api_type %}
 
 # Événements
+{: #evenements }
 
-## `onSwitched`
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-L'évènement `onSwitched` est déclenché lorsque l'acteur est basculé.
+{% include script_api/events.md type=page.api_type %}
 
-> [⚡ `onSwitched`]({{ site.baseurl }}/script-api/Actor.Input.SwitchImage.html#event:onSwitched){:target="_blank"}
+# Hérite de
+{: #herite-de }
 
+{% include script_api/inherits.md type=page.api_type %}
 
 # Astuces
 

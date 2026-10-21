@@ -5,43 +5,30 @@ parent: Concepts
 
 # L'utilisateur
 
-{% include table_of_content.html %}
+> ⚡ Par script : [référence pour les scripts](./scripts/reference/user.md)
 
 L'utilisateur est un objet global qui représente l'utilisateur connecté au REDY. Il contient des informations sur l'utilisateur comme son identifiant, son nom, son adresse e-mail, etc.
 
+{% include table_of_content.html %}
 
-## Label
+## D'où vient l'utilisateur
 
-- Champ : `label`
-- Type : `string`
+L'utilisateur est le compte REDY avec lequel la [session](./session.md) a été ouverte : celui qui s'est connecté sur la page de connexion, ou celui enregistré dans l'hôte actif quand la synapp s'exécute dans Studio. Il change quand un autre utilisateur se connecte.
 
-Ce champ contient le label de l'utilisateur. C'est un identifiant unique pour chaque utilisateur dans le REDY.
+## Niveau d'accès
 
-## Nom
+Chaque utilisateur a un niveau d'accès défini dans le REDY : invité, exploitant, installateur ou administrateur. C'est le moyen le plus simple d'adapter une synapp à celui qui l'utilise : afficher, masquer ou désactiver des acteurs selon son niveau.
 
-- Champ : `name`
-- Type : `string`
+## Utiliser l'utilisateur
 
-Ce champ contient le nom complet de l'utilisateur.
+L'utilisateur est accessible :
 
-## Mail
+- **par liaison** : source de type *Utilisateur*, par exemple vers son niveau (`level`) ;
+- **par script** : `context.dataStores.redy.session.user`.
 
-- Champ : `email`
-- Type : `string`
+Son contenu (identifiant, label, nom, mail, niveau) est décrit dans la [référence pour les scripts](./scripts/reference/user.md).
 
-Ce champ contient l'adresse e-mail de l'utilisateur si elle a été renseignée.
+Tutoriels :
 
-## Niveau
-
-- Champ : `level`
-- Type : `1|2|3|4`
-
-Ce champ contient le niveau d'accès de l'utilisateur dans le REDY.
-
-- Niveau 1 : Invité
-- Niveau 2 : Exploitant
-- Niveau 3 : Installateur
-- Niveau 4 : Administrateur
-
-{: .info }
-> Ce champ est utile pour afficher ou masquer des éléments de l'interface en fonction du niveau d'accès de l'utilisateur.
+- [Droits d'accès en fonction du niveau utilisateur](../tutorials/user-rules/user-level.md)
+- [Droits d'accès en fonction du groupe de ressource](../tutorials/user-rules/user-goup.md)
