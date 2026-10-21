@@ -4016,7 +4016,7 @@
    "properties": [
     {
      "name": "positionModalHorizontal",
-     "label": "Ancrage horizontale de la modale",
+     "label": "Ancrage horizontal de la modale",
      "description": null,
      "section": "specifics",
      "values": [
@@ -4032,7 +4032,7 @@
     },
     {
      "name": "positionAttachedHorizontal",
-     "label": "Ancrage horizontale sur l'acteur attaché",
+     "label": "Ancrage horizontal sur l'acteur attaché",
      "description": null,
      "section": "specifics",
      "values": [
@@ -4048,7 +4048,7 @@
     },
     {
      "name": "positionModalVertical",
-     "label": "Ancrage verticale de la modale",
+     "label": "Ancrage vertical de la modale",
      "description": null,
      "section": "specifics",
      "values": [
@@ -4064,7 +4064,7 @@
     },
     {
      "name": "positionAttachedVertical",
-     "label": "Ancrage verticale sur l'acteur attaché",
+     "label": "Ancrage vertical sur l'acteur attaché",
      "description": null,
      "section": "specifics",
      "values": [

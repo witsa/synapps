@@ -92,20 +92,21 @@ Le contexte des évènements contient les informations suivantes :
 
 | Champ              | onWillCellRender | onCellContentTransform | onDidCellRender | onDidTableRender | Evènements souris |
 | ------------------ | ---------------- | ---------------------- | --------------- | ---------------- | ----------------- |
-| `isHeader`         | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `isCell`           | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `column`           | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `rowKey`           | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `columnKey`        | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `dataRow`          | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `dataRows`         | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `value`            | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `cell`             | ✔️               | ✔️                     | ✔️              | ✔️               | ✔️                |
-| `transformedValue` | ❌               | ❌                     | ✔️              | ✔️               | ✔️                |
-| `text`             | ❌               | ❌                     | ✔️              | ✔️               | ✔️                |
-| `content`          | ❌               | ❌                     | ✔️              | ✔️               | ✔️                |
-| `row`              | Pariellement     | Pariellement           | Partiellement   | ✔️               | ✔️                |
-| `rows`             | Pariellement     | Pariellement           | Partiellement   | ✔️               | ✔️                |
+| `isHeader` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `isCell` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `column` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `rowKey` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `columnKey` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `dataRow` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `dataRows` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `value` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `cell` | ✔️ | ✔️ | ✔️ | ❌ | ✔️ |
+| `transformedValue` | ❌ | ❌ | ✔️ | ❌ | ✔️ |
+| `text` | ❌ | ❌ | ✔️ | ❌ | ✔️ |
+| `content` | ❌ | ❌ | ✔️ | ❌ | ✔️ |
+| `row` | Partiellement | Partiellement | Partiellement | ❌ | ✔️ |
+| `rows` | Partiellement | Partiellement | Partiellement | ✔️ | ✔️ |
+| `headerRow` | ❌ | ❌ | ❌ | ✔️ | ❌ |
 
 # Hérite de
 {: #herite-de }

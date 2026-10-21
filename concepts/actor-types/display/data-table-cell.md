@@ -80,7 +80,7 @@ Ce style est utilisé pour les colonnes de type **Nombre**. Il permet de configu
 
 La propriété **Valeur** est un nombre.
 
-Par défaut l'alignement horizontal est à droite, mais il est possible de le modifier en utilisant la propriété **Alignement du texte** `textAlign` (gauche, centre, droite, justifié).
+Par défaut l'alignement horizontal est à droite, mais il est possible de le modifier en utilisant la propriété commune [**Alignement du texte**](../../actor/category-text.md#alignement-du-texte) `textAlign` (gauche, centre, droite, justifié).
 
 # Basé sur _Booléen_ `table-cell-boolean`
 
