@@ -10,7 +10,7 @@ nav_order: 3
 
 # Case à cocher
 
-Acteur d'interaction qui permet d'afficher une case à cocher. Le texte est **Jokerable**.
+Acteur d'interaction qui permet d'afficher une case à cocher.
 
 {% include table_of_content.html %}
 

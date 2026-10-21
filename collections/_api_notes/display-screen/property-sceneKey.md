@@ -1,12 +1,8 @@
 ---
-title: Scene
-section: specifics
-propName: sceneKey
-propPath: properties.sceneKey
-scriptApiClass: Actor.Display.ScreenProperties
-order: 1
+api_type: display/screen
+kind: property
+name: sceneKey
 ---
-
 La propriété `scène` permet donc de sélectionner celle que l'on souhaite visualiser au sein l'acteur.
 Pour se faire, il faut sélectionner une scène parmi la liste de scène présentes dans le projet.
 

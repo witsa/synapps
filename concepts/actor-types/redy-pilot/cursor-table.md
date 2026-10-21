@@ -70,15 +70,15 @@ Dans Studio, il est possible d'ajouter une ou toutes les colonnes automatiquemen
 
 ### En-tête ?
 
-C'est la même définition que la propriété [En-tête](../display/data-table.md#en-tête) pour le tableau de données classique.
+C'est la même définition que la propriété [En-tête](../display/data-table.md#en-tête-) pour le tableau de données classique.
 
 ### Pagination ?
 
-C'est la même définition que la propriété [Pagination](../display/data-table.md#pagination) pour le tableau de données classique.
+C'est la même définition que la propriété [Pagination](../display/data-table.md#pagination-) pour le tableau de données classique.
 
 ### Style d'acteur cellule d'en-tête
 
-C'est la même définition que la propriété [Style d'acteur cellule d'en-tête](../display/data-table.md#style-dacteur-cellule-den-tete) pour le tableau de données classique.
+C'est la même définition que la propriété [Style d'acteur cellule d'en-tête](../display/data-table.md#style-den-tête) pour le tableau de données classique.
 
 ## Évènements spécifiques
 
@@ -109,7 +109,7 @@ C'est la même définition que l'évènement [⚡onChangeDataPage](../display/da
 
 ### ⚡Evènements souris et tactile
 
-C'est la même définition que les [⚡Evènements souris et tactile](../display/data-table.md#évènements-souris-et-tactile) pour le tableau de données classique.
+C'est la même définition que les [⚡Evènements souris et tactile](../display/data-table.md#evènements-souris-et-tactile) pour le tableau de données classique.
 
 ## Champs d'informations
 

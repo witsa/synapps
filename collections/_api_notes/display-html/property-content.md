@@ -1,15 +1,8 @@
 ---
-title: Contenu
-section: specifics
-propName: content
-propPath: properties.content
-scriptApiClass: Actor.Display.HtmlProperties
-order: 7
+api_type: display/html
+kind: property
+name: content
 ---
-
-Jokerable
-{: .label }
-
 Cette propriété permet de définir du contenu HTML de l'acteur.
 
 **Exemple :**
@@ -48,6 +41,3 @@ Une additionnelle de clé `theColor` de type *couleur* remplacera le joker par s
 > 💡 **ASTUCE**<br>
 > S'il est possible d'ajouter du style CSS avec une balise HTML `<style>`, il n'est par contre pas possible d'ajouter du code Javascript.
 > Pour cela, il faut utiliser les évènements de l'acteur.
-
-**Pour vous aider :**
-La documentation concernant les jokers et leurs utilisations peut être trouvée [à cette adresse]().

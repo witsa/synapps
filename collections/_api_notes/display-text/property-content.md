@@ -1,15 +1,8 @@
 ---
-title: Contenu
-section: specifics
-propName: content
-propPath: properties.content
-scriptApiClass: Actor.Display.TextProperties
-order: 1
+api_type: display/text
+kind: property
+name: content
 ---
-
-Jokerable
-{: .label }
-
 
 La propriété spécifique `contenu` permet de rédiger du texte que l'acteur affichera dans la scène.
 
@@ -42,6 +35,3 @@ Résultat dans l'inspecteur avec l'ajout automatique d'une additionnelle renseig
 Résultat du contenu de l'acteur texte :
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_text/AddiT.PNG){: width="450" }
-
-**Pour vous aider :**
-La documentation concernant les jokers et leurs utilisations peut être trouvée [à cette adresse]().

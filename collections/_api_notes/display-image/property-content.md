@@ -1,10 +1,7 @@
 ---
-title: Image
-section: specifics
-propName: content
-propPath: properties.content
-scriptApiClass: Actor.Display.ImageProperties
-order: 1
+api_type: display/image
+kind: property
+name: content
 ---
 Cette propriété permet de définir l'image à afficher de l'acteur.
 

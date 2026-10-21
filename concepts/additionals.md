@@ -142,4 +142,10 @@ Permet de choisir un chemin de variable REDY. Plusieurs options permettent d'aff
 
 Dans certains types d'acteur, des additionnelles peuvent être utilisées pour compléter des définitions de propriétés. C'est le cas pas exemple des acteurs à contenu comme le [bouton](./actor-types/input/button.md) ou il est possible de compléter des jokers par les valeurs d'additionnelle.
 
+#### Jokers
+
+Certaines propriétés acceptent des jokers : un joker {% raw %}`{{clé}}`{% endraw %} placé dans leur valeur est remplacé par la valeur de l'additionnelle de même clé. Quand un joker est saisi dans l'inspecteur, Studio ajoute automatiquement l'additionnelle correspondante.
+
+Ces propriétés portent la mention *jokerable* dans la documentation de chaque type d'acteur : par exemple le contenu des acteurs [texte](./actor-types/display/text.md), [HTML](./actor-types/display/html.md), [bouton](./actor-types/input/button.md) et [case à cocher](./actor-types/input/checkbox.md), ou l'URL de l'acteur [IFrame](./actor-types/display/iframe.md).
+
 Les paramètres de scènes sont renseignés par des additionnelles également dans les acteur écran pour paramétrer la scène choisie.
