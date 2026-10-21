@@ -5372,7 +5372,7 @@
     {
      "name": "pageMax",
      "label": "Nombre de pages",
-     "description": null,
+     "description": "Nombre de pages de la pagination.",
      "section": "specifics",
      "values": null,
      "type": "number",
@@ -12597,18 +12597,6 @@
      "jokerable": false
     },
     {
-     "name": "gaugeType",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'gauge'",
-     "modifier": "Rendu",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
      "name": "gaugeAngle",
      "label": "Ouverture Angulaire",
      "description": "Angle d'étendue de la jauge en degré.",
@@ -13913,8 +13901,8 @@
     },
     {
      "name": "pageMax",
-     "label": null,
-     "description": null,
+     "label": "Nombre de pages",
+     "description": "Nombre de pages, calculé par l'acteur à partir de la taille de page.",
      "section": "specifics",
      "values": null,
      "type": "number",
@@ -15369,7 +15357,7 @@
     {
      "name": "reflectType",
      "label": null,
-     "description": null,
+     "description": "Filtre les reflets par type (`all` : tous les types). Absente de l'inspecteur : modifiable par script uniquement.",
      "section": "specifics",
      "values": [
       "all",
@@ -15735,22 +15723,6 @@
      "type": "string",
      "default": "''",
      "modifier": null,
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "size",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": [
-      "default",
-      "large",
-      "small"
-     ],
-     "type": null,
-     "default": "'default'",
-     "modifier": "Rendu",
      "inheritable": false,
      "jokerable": false
     },
@@ -16281,7 +16253,7 @@
     {
      "name": "reflectType",
      "label": null,
-     "description": null,
+     "description": "Filtre les reflets par type (`all` : tous les types). Absente de l'inspecteur : modifiable par script uniquement.",
      "section": "specifics",
      "values": [
       "all",
