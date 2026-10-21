@@ -5,19 +5,3 @@
 .api-method::before { content: "⚙️ "; }
 .api-event::before { content: "⚡ "; }
 
-// Repère « jokerable » d'une propriété : accolades d'un joker en badge de code, suivies du mot.
-.api-joker {
-  white-space: nowrap;
-}
-
-.api-joker-braces {
-  font-family: $mono-font-family;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  color: $purple-100;
-  background-color: $grey-lt-100;
-  border: 1px solid $grey-lt-300;
-  border-radius: 4px;
-  padding: 0 0.3em;
-  margin-right: 0.15em;
-}
