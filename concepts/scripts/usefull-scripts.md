@@ -70,7 +70,7 @@ ou bien en ternaire
 return context.value === 0 ? "zero" : "not zero";
 ```
 
-On a utilisé ici une condition simple avec l'opérateur `===` pour comparer les valeurs. Voir plus bas pour les [opérateurs de comparaison](#les-opérateurs-de-comparaison).
+On a utilisé ici une condition simple avec l'opérateur `===` pour comparer les valeurs. Voir les [opérateurs de comparaison](./usefull-javascript.md#les-opérateurs-de-comparaison).
 
 #### Exemple 3 : Transformation de nombre en couleur en fonction d'un seuil
 
@@ -90,7 +90,7 @@ ou bien en ternaire :
 return context.value < 0 ? "red" : "green";
 ```
 
-On a utilisé ici une condition simple avec l'opérateur `<` pour comparer les valeurs. Voir plus bas pour les [opérateurs de comparaison](#les-opérateurs-de-comparaison).
+On a utilisé ici une condition simple avec l'opérateur `<` pour comparer les valeurs. Voir les [opérateurs de comparaison](./usefull-javascript.md#les-opérateurs-de-comparaison).
 
 #### Exemple 4 : Transformation de nombre en couleur par plage de valeurs
 
@@ -116,7 +116,7 @@ Ici, on va transformer un booléen en son inverse.
 return !context.value;
 ```
 
-Nous avons utilisé ici l'opérateur `!` pour inverser la valeur du booléen. Voir plus bas pour les [opérateurs logiques](#les-opérateurs-logiques).
+Nous avons utilisé ici l'opérateur `!` pour inverser la valeur du booléen. Voir les [opérateurs logiques](./usefull-javascript.md#les-opérateurs-logiques).
 
 ### Transformation de liaison multiple
 
