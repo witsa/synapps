@@ -11,7 +11,7 @@ nav_order: 4
 
 # Acteur
 
-> ⚡ Par script : [référence pour les scripts](./script-reference.md)
+> ⚡ Par script : [référence pour les scripts](../scripts/reference/actor.md)
 
 
 ## Définition
@@ -112,7 +112,7 @@ Un acteur va déclencher des évènements pendant toute sa durée de vie : de so
 Tous ces évènements sont autant d'occasions d'intervenir et d'ajouter des comportements par script.
 
 - En savoir plus sur le [cycle de vie d'un acteur](../scripts/actor-life-cycle.md)
-- Voir la [référence pour les scripts](./script-reference.md) : informations, méthodes et évènements communs à tous les acteurs
+- Voir la [référence pour les scripts](../scripts/reference/actor.md) : informations, méthodes et évènements communs à tous les acteurs
 - En savoir plus sur les [Scripts](../scripts/)
 
 ## Les additionnelles

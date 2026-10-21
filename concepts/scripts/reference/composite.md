@@ -2,7 +2,7 @@
 title: "Composite"
 parent: "Référence"
 grand_parent: Scripts
-nav_order: 5
+nav_order: 7
 ---
 
 {% include table_of_content.html %}
@@ -11,7 +11,7 @@ nav_order: 5
 
 > 📖 Concept : [Composite](../../composite.md)
 
-Le composite est aussi un acteur : ses informations, méthodes et évènements communs sont décrits dans la [référence de l'acteur](../../actor/script-reference.md). Ne figurent ici que ceux qui lui sont propres.
+Le composite est aussi un acteur : ses informations, méthodes et évènements communs sont décrits dans la [référence de l'acteur](./actor.md). Ne figurent ici que ceux qui lui sont propres.
 
 {% include script_api/legend.md %}
 

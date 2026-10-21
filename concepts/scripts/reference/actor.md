@@ -1,22 +1,24 @@
 ---
-title: "Référence pour les scripts"
-parent: Acteur
-grand_parent: Concepts
-nav_order: 8
+title: "Acteur"
+parent: "Référence"
+grand_parent: Scripts
+nav_order: 3
+redirect_from:
+  - /concepts/actor/script-reference.html
 ---
 
 {% include table_of_content.html %}
 
-# Référence pour les scripts
+# Acteur
 
-> 📖 Concept : [Acteur](./index.md)
+> 📖 Concept : [Acteur](../../actor/index.md)
 
 Informations, méthodes et évènements communs à tous les acteurs, accessibles par script via
 `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur. Les
-propriétés communes sont décrites par catégorie dans les pages [Aspect](./category-aspect.md),
-[Texte](./category-text.md), [Disposition](./category-disposition.md), [Tailles](./category-size.md),
-[Espaces](./category-space.md), [Bordures](./category-border.md) et [Effets](./category-effects.md) ;
-celles propres à un type d'acteur, sur la page de ce [type d'acteur](../actor-types/index.md).
+propriétés communes sont décrites par catégorie dans les pages [Aspect](../../actor/category-aspect.md),
+[Texte](../../actor/category-text.md), [Disposition](../../actor/category-disposition.md), [Tailles](../../actor/category-size.md),
+[Espaces](../../actor/category-space.md), [Bordures](../../actor/category-border.md) et [Effets](../../actor/category-effects.md) ;
+celles propres à un type d'acteur, sur la page de ce [type d'acteur](../../actor-types/index.md).
 
 {% include script_api/legend.md %}
 
@@ -47,6 +49,6 @@ accès à chaque propriété ou additionnelle par son nom (`this.properties.widt
 {: #evenements-des-proprietes }
 
 Scripts définis dans l'inspecteur sur une propriété ou une additionnelle donnée (`<nom>` est son
-nom) : changement de valeur et transformations de [liaison](../binding-reference.md).
+nom) : changement de valeur et transformations de [liaison](./binding.md).
 
 {% include script_api/events.md type="common" list="property_events" %}
