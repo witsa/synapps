@@ -1,7 +1,9 @@
 ---
 title: "Liste de choix"
-parent: "Intéraction"
+parent: "Formulaire"
+grand_parent: "Intéraction"
 api_type: input/radio-list
+nav_order: 6
 ---
 
 {% include links_actor.md apiClass="Actor.Input.RadioList" %}

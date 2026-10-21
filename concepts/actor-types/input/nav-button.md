@@ -1,7 +1,9 @@
 ---
 title: "Bouton de Navigation"
-parent: "Intéraction"
+parent: "Navigation"
+grand_parent: "Intéraction"
 api_type: input/nav-button
+nav_order: 1
 ---
 
 {% include links_actor.md apiClass="Actor.Input.NavButton" %}

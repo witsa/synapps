@@ -1,7 +1,9 @@
 ---
 title: "Curseur"
-parent: "Intéraction"
+parent: "Boutons"
+grand_parent: "Intéraction"
 api_type: input/cursor
+nav_order: 3
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Cursor" %}

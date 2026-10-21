@@ -1,9 +1,11 @@
 ---
 title: "Menu de navigation"
-parent: "Intéraction"
+parent: "Navigation"
+grand_parent: "Intéraction"
 redirect_from:
   - /concepts/actor-types/layout/layout-nav-menu.html
 api_type: layout/nav-menu
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.NavMenu" %}

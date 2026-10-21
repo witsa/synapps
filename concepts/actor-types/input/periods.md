@@ -1,7 +1,9 @@
 ---
 title: "Périodes"
-parent: "Intéraction"
+parent: "Boutons"
+grand_parent: "Intéraction"
 api_type: input/period
+nav_order: 4
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Period" %}

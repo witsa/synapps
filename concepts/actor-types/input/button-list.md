@@ -1,7 +1,9 @@
 ---
 title: "Liste de bouton"
-parent: "Intéraction"
+parent: "Boutons"
+grand_parent: "Intéraction"
 api_type: input/button-list
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="Actor.Input.ButtonList" %}

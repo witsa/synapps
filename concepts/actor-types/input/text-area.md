@@ -1,7 +1,9 @@
 ---
 title: "Zone de texte"
-parent: "Intéraction"
+parent: "Formulaire"
+grand_parent: "Intéraction"
 api_type: input/text-area
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="Actor.Input.TextArea" %}

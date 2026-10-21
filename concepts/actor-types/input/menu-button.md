@@ -1,7 +1,9 @@
 ---
 title: "Bouton de menu"
-parent: "Intéraction"
+parent: "Navigation"
+grand_parent: "Intéraction"
 api_type: input/menu-button
+nav_order: 4
 ---
 
 {% include links_actor.md apiClass="Actor.Input.MenuButton" %}

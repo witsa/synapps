@@ -1,7 +1,9 @@
 ---
 title: Boite de saisie
-parent: "Intéraction"
+parent: "Formulaire"
+grand_parent: "Intéraction"
 api_type: input/text-box
+nav_order: 1
 ---
 
 {% include links_actor.md apiClass="Actor.Input.TextBox" %}

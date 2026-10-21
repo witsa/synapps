@@ -1,7 +1,9 @@
 ---
 title: "Images interrupteur"
-parent: "Intéraction"
+parent: "Interrupteur"
+grand_parent: "Intéraction"
 api_type: input/switch-image
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="Actor.Input.SwitchImage" %}

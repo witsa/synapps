@@ -1,9 +1,11 @@
 ---
 title: "Groupe de navigation"
-parent: "Intéraction"
+parent: "Navigation"
+grand_parent: "Intéraction"
 redirect_from:
   - /concepts/actor-types/layout/layout-nav-group.html
 api_type: layout/nav-group
+nav_order: 3
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.NavGroup" %}

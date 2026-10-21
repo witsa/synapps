@@ -1,7 +1,9 @@
 ---
 title: "Case à cocher"
-parent: "Intéraction"
+parent: "Formulaire"
+grand_parent: "Intéraction"
 api_type: input/checkbox
+nav_order: 3
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Checkbox" %}

@@ -1,7 +1,9 @@
 ---
 title: "Liste de choix déroulante"
-parent: "Intéraction"
+parent: "Formulaire"
+grand_parent: "Intéraction"
 api_type: input/dropdown-list
+nav_order: 5
 ---
 
 {% include links_actor.md apiClass="Actor.Input.DropdownList" %}

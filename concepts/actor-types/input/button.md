@@ -1,7 +1,9 @@
 ---
 title: "Bouton"
-parent: "Intéraction"
+parent: "Boutons"
+grand_parent: "Intéraction"
 api_type: input/button
+nav_order: 1
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Button" %}

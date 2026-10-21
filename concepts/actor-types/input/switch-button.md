@@ -1,7 +1,9 @@
 ---
 title: "Bouton interrupteur"
-parent: "Intéraction"
+parent: "Interrupteur"
+grand_parent: "Intéraction"
 api_type: input/switch-button
+nav_order: 1
 ---
 
 {% include links_actor.md apiClass="Actor.Input.SwitchButton" %}
