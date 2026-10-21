@@ -19,7 +19,7 @@ L'acteur boite de saisie permet de créer des champs de saisies personnalisables
 
 L'acteur boite de saisie possède le champ `Type de saisie` qui va dicter le comportement de cet acteur en fonction du type sélectionné dont chaque choix sera détaillé plus bas.
 
-Cependant, l'acteur possède 7 champs de saisies qui possèdent toujours le même comportement peut importe le `Type de saisie` :
+Les propriétés ci-dessous ont toujours le même comportement, peu importe le `Type de saisie` ; celles qui en dépendent sont détaillées dans la section [Type de saisie](#type-de-saisie).
 
 {% include script_api/properties.md type=page.api_type %}
 

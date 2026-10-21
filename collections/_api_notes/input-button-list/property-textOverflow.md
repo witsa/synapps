@@ -6,10 +6,11 @@ name: textOverflow
 La propriété spécifique `Dépassement de texte` permet de gérer l'affichage du texte dans le cas ou la taille du conteneur ne suffit pas à afficher l'entièreté du texte.
 
 
-Il existe donc trois options pour cette propriété :
+Il existe donc quatre options pour cette propriété :
 
 - Sans retour à la ligne.
 - Retour à la ligne.
+- Retour à la ligne (cassure).
 - Tronqué.
 
 Voici des exemples pour chacun des exemples :

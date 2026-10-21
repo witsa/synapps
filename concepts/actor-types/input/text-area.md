@@ -24,8 +24,3 @@ L'acteur Zone de texte permet de renseigner du texte, il est généralement util
 
 {% include script_api/inherits.md type=page.api_type %}
 
-# Usage
-
-**Mode de saisie**
-
-Ce champ permet de conditionner le type de clavier qui s'affiche sur les appareils mobiles et tablettes.

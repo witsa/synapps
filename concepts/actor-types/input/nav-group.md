@@ -1,6 +1,8 @@
 ---
 title: "Groupe de navigation"
-parent: "Disposition"
+parent: "Intéraction"
+redirect_from:
+  - /concepts/actor-types/layout/layout-nav-group.html
 api_type: layout/nav-group
 ---
 
@@ -49,4 +51,4 @@ Les évènements communs à tous les acteurs sont décrits avec l'[acteur de bas
 
 # Fonctionnement
 
-Le groupe calcule la hauteur de ses enfants (boutons de menu) afin d’animer l’ouverture et la fermeture. Lorsque l’entête est cliqué, la propriété **Groupe ouvert ?** est inversée et les enfants sont affichés ou masqués.
+Le groupe calcule la hauteur de ses enfants (boutons de menu) afin d’animer l’ouverture et la fermeture. Lorsque l’entête est cliqué, la propriété **Étendu?** est inversée et les enfants sont affichés ou masqués.

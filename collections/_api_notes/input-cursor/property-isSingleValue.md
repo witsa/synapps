@@ -13,7 +13,7 @@ Si un second curseur est présent, la propriété spécifique `Valeur` devient l
 
 Il est à noter que la borne inférieure ne peut pas dépasser la borne supérieure et inversement.
 
-Lorsque la propriété est activée, il apparaît également deux nouvelles propriétés spécifiques :
+Lorsque la propriété est désactivée, il apparaît également deux nouvelles propriétés spécifiques :
 <br>
 `Différence min.` : Permet de définir un écart minimal entre `Valeur` et `Valeur 2`
 <br>

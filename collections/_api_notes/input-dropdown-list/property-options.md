@@ -10,7 +10,7 @@ Une option est un object `JSON` qui possède les propriétés suivantes :
 | CHAMPS | DESCRIPTION | PAR DÉFAUT |
 |--------|-------------|------------|
 | `value` | La valeur de l'option. C'est son identifiant unique dans la liste. De préférence, la valeur est une chaîne de caractères. | - |
-| `text` | Le texte qui s'affiche à coté de la case à cocher. | - |
+| `text` | Le texte de l'option affiché dans la liste. | - |
 | `disabled` | Indique si l'option doit apparaître désactivée. | `false` |
 
 Exemple :

@@ -43,4 +43,4 @@ Une additionnelle de clé `theColor` de type *couleur* remplacera le joker par s
 > Pour cela, il faut utiliser les évènements de l'acteur.
 
 **Pour vous aider :**
-La documentation concernant les jokers et leurs utilisations peut être trouvée [à cette adresse]().
+La documentation concernant les jokers et leurs utilisations peut être trouvée [à cette adresse](../../additionals.md#additionnelles-de-complément).

@@ -12,7 +12,7 @@ L'acteur bouton de navigation permet, en plus de toutes les possibilités de l'[
 
 Ses propriétés sont similaires aux propriétés de l'acteur bouton et la documentation de ces propriétés peut être retrouvée à [cette adresse](./button.md).
 
-Ses propriétés supplémentaires sont listées ci-dessous.
+Ses propriétés, dont celles héritées du bouton, sont listées ci-dessous.
 
 {% include table_of_content.html %}
 

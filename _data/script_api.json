@@ -6320,7 +6320,7 @@
     },
     {
      "name": "value",
-     "label": "Selection",
+     "label": "Sélection",
      "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,
@@ -6483,6 +6483,20 @@
      "inheritable": false
     },
     {
+     "name": "orientation",
+     "label": "Orientation",
+     "description": "Orientation du curseur.",
+     "section": "specifics",
+     "values": [
+      "horizontal",
+      "vertical"
+     ],
+     "type": null,
+     "default": "'horizontal'",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
      "name": "step",
      "label": "Pas entre deux valeurs",
      "description": "Pas entre deux mouvements du curseur.",
@@ -6505,20 +6519,6 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "orientation",
-     "label": "Position de la barre",
-     "description": "Orientation du curseur.",
-     "section": "specifics",
-     "values": [
-      "horizontal",
-      "vertical"
-     ],
-     "type": null,
-     "default": "'horizontal'",
      "modifier": null,
      "inheritable": false
     },
@@ -6723,7 +6723,7 @@
     },
     {
      "name": "value",
-     "label": "Selection",
+     "label": "Sélection",
      "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,
@@ -7067,7 +7067,7 @@
     },
     {
      "name": "selectedScene",
-     "label": "Scène selectionnée",
+     "label": "Scène sélectionnée",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -7778,7 +7778,7 @@
     },
     {
      "name": "selectedScene",
-     "label": "Scène selectionnée",
+     "label": "Scène sélectionnée",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -8477,38 +8477,6 @@
      "inheritable": false
     },
     {
-     "name": "mode",
-     "label": "Mode",
-     "description": "Mode d'affichage du bouton.",
-     "section": "specifics",
-     "values": [
-      "primary",
-      "secondary",
-      "success",
-      "warning",
-      "danger",
-      "info",
-      "default",
-      "dark",
-      "link"
-     ],
-     "type": null,
-     "default": "'default'",
-     "modifier": "Rendu",
-     "inheritable": false
-    },
-    {
-     "name": "outline",
-     "label": "Outline?",
-     "description": "Indique si le mode d'affichage du bouton doit êre détouré.",
-     "section": "specifics",
-     "values": null,
-     "type": "boolean",
-     "default": "false",
-     "modifier": "Rendu",
-     "inheritable": false
-    },
-    {
      "name": "iconPosition",
      "label": "Position de l'image",
      "description": null,
@@ -8533,21 +8501,6 @@
      "type": "clé de scène",
      "default": "''",
      "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "size",
-     "label": "Taille",
-     "description": "Taille de l'acteur.",
-     "section": "specifics",
-     "values": [
-      "default",
-      "large",
-      "small"
-     ],
-     "type": null,
-     "default": "'default'",
-     "modifier": "Rendu",
      "inheritable": false
     }
    ],
@@ -9033,7 +8986,7 @@
     {
      "name": "value",
      "label": "Valeur",
-     "description": "La case est-est cochée ?",
+     "description": "La case est-elle cochée ?",
      "section": "specifics",
      "values": null,
      "type": "boolean",
@@ -9164,7 +9117,7 @@
     },
     {
      "name": "values",
-     "label": "Selection",
+     "label": "Sélection",
      "description": "Chaîne `JSON` contenant un tableau des valeurs sélectionnées `Array.<String>`.",
      "section": "specifics",
      "values": null,
@@ -9357,7 +9310,7 @@
     },
     {
      "name": "value",
-     "label": "Selection",
+     "label": "Sélection",
      "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,
@@ -9534,7 +9487,7 @@
     },
     {
      "name": "value",
-     "label": "Selection",
+     "label": "Sélection",
      "description": "Valeur de clé sélectionnée.",
      "section": "specifics",
      "values": null,

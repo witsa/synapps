@@ -6,11 +6,11 @@ api_type: input/radio-list
 
 {% include links_actor.md apiClass="Actor.Input.RadioList" %}
 
-# Liste de cases à cocher
+# Liste de choix
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_radio_list/sample01.gif)
 
-Acteur d'interaction qui permet d'afficher une liste de cases à cocher. Cette liste peut être une arborescence. L'acteur possède deux modes de sélection : simple et multiple.
+Acteur d'interaction qui permet d'afficher une liste d'options matérialisées par des boutons radio, empilés horizontalement ou verticalement. Une seule option peut être sélectionnée à la fois.
 
 {% include table_of_content.html %}
 

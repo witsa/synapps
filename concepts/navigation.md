@@ -35,8 +35,8 @@ Il est possible de paramétrer une scène visualisée dans un acteur écran. [vo
 
 - [Bouton de navigation](./actor-types/input/nav-button.md) : affiche une scène, dans la synapp ou dans un acteur écran, avec ses paramètres.
 - [Bouton de menu](./actor-types/input/menu-button.md) : bouton d'un menu de navigation, qui sélectionne une scène et prend le style actif quand elle est affichée.
-- [Menu de navigation](./actor-types/layout/layout-nav-menu.md) : conteneur d'un menu ; il porte la scène sélectionnée et distribue les styles actif et inactif à ses groupes et boutons.
-- [Groupe de navigation](./actor-types/layout/layout-nav-group.md) : section repliable d'un menu de navigation, qui regroupe des boutons de menu.
+- [Menu de navigation](./actor-types/input/nav-menu.md) : conteneur d'un menu ; il porte la scène sélectionnée et distribue les styles actif et inactif à ses groupes et boutons.
+- [Groupe de navigation](./actor-types/input/nav-group.md) : section repliable d'un menu de navigation, qui regroupe des boutons de menu.
 - [Écran](./actor-types/display/screen.md) : affiche une scène à l'intérieur d'une autre.
 
 ## Naviguer par script

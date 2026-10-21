@@ -7,7 +7,8 @@ La propriété `Selection` reflète la valeur sélectionnée en cours.
 
 La valeur attendue est la `value` de l'une des périodes de l'acteur parmi :
 
-| - | - | - |
+| Valeur | Période |
+| - | - |
 | `all` | Tout |
 | `today` | Aujourd'hui |
 | `last24` | Dernières 24H |

@@ -1,6 +1,8 @@
 ---
 title: "Menu de navigation"
-parent: "Disposition"
+parent: "Intéraction"
+redirect_from:
+  - /concepts/actor-types/layout/layout-nav-menu.html
 api_type: layout/nav-menu
 ---
 

@@ -172,7 +172,7 @@ Voici une scène complète avec un Menu de navigation fonctionnel :
 Voir aussi :
 
 - [Bouton de Menu](../concepts/actor-types/input/menu-button.md)
-- [Groupe de navigation](../concepts/actor-types/layout/layout-nav-group.md)
-- [Menu de navigation](../concepts/actor-types/layout/layout-nav-menu.md)
+- [Groupe de navigation](../concepts/actor-types/input/nav-group.md)
+- [Menu de navigation](../concepts/actor-types/input/nav-menu.md)
 - [Acteur Écran](../concepts/actor-types/display/screen.md)
 - [Navigation](../concepts/navigation.md)
