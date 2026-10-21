@@ -3,6 +3,13 @@ title: "Contexte d'évènement"
 parent: "Référence"
 grand_parent: Scripts
 nav_order: 2
+redirect_from:
+  - /script-api/Event.BaseContext.html
+  - /script-api/Event.BaseContextUtils.html
+  - /script-api/Event.PropertyChangedContext.html
+  - /script-api/Event.RequestDataContext.html
+  - /script-api/synapps-ui_addon_components_events-manager.js.html
+  - /script-api/synapps-ui_addon_tools_is-values-equal.js.html
 ---
 
 {% include table_of_content.html %}

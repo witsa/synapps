@@ -4,9 +4,12 @@ parent: "Formulaire"
 grand_parent: "Intéraction"
 api_type: input/dropdown-list
 nav_order: 5
+redirect_from:
+  - /script-api/Actor.Input.DropdownList.html
+  - /script-api/Actor.Input.DropdownListProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_dropdown-list-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_dropdown-list.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.DropdownList" %}
 
 # Liste de choix déroulante
 

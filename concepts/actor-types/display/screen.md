@@ -4,9 +4,12 @@ parent: "Affichage"
 grand_parent: "Types d'acteur"
 api_type: display/screen
 nav_order: 4
+redirect_from:
+  - /script-api/Actor.Display.Screen.html
+  - /script-api/Actor.Display.ScreenProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_screen-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_screen.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Display.Screen" %}
 
 # Écran
 

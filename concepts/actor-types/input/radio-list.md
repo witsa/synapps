@@ -4,9 +4,12 @@ parent: "Formulaire"
 grand_parent: "Intéraction"
 api_type: input/radio-list
 nav_order: 6
+redirect_from:
+  - /script-api/Actor.Input.RadioList.html
+  - /script-api/Actor.Input.RadioListProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_radio-list-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_radio-list.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.RadioList" %}
 
 # Liste de choix
 

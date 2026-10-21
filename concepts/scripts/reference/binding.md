@@ -5,6 +5,13 @@ grand_parent: Scripts
 nav_order: 4
 redirect_from:
   - /concepts/binding-reference.html
+  - /script-api/Binding.BasicBinding.html
+  - /script-api/Binding.InternalBinding.html
+  - /script-api/Binding.Setup.Actor.html
+  - /script-api/Binding.Setup.Relative.html
+  - /script-api/Binding.Setup.Stage.html
+  - /script-api/synapps-ui_addon_bindings_basic.js.html
+  - /script-api/synapps-ui_addon_bindings_internal.js.html
 ---
 
 {% include table_of_content.html %}

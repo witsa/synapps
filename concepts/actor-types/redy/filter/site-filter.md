@@ -4,6 +4,9 @@ parent: "Filtres"
 grand_parent: "REDY"
 api_type: redy/site-filter
 nav_order: 5
+redirect_from:
+  - /script-api/REDY.Actor.SiteFilter.html
+  - /script-api/synapps-ui-redy_addon_components_actors_filters_site-filter.js.html
 ---
 
 # Filtre de site

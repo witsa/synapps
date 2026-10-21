@@ -4,6 +4,11 @@ parent: "Filtres"
 grand_parent: "REDY"
 api_type: redy/collection-filter
 nav_order: 1
+redirect_from:
+  - /script-api/Actor.Input.BaseFilterProperties.html
+  - /script-api/REDY.Actor.CollectionFilter.html
+  - /script-api/synapps-ui-redy_addon_components_actors_filters_collection-filter.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_base-filter-prototype-setup.js.html
 ---
 
 # Filtre d'ensemble

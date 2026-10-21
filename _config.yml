@@ -22,7 +22,6 @@ title: Solution Synapps
 description: Construisez des apps standards, adaptatives et multi-plateformes connectées aux REDY.
 url: "https://witsa.github.io"
 baseurl: "/synapps"
-keep_files: [ script-api/ ]
 # Build settings
 theme: just-the-docs
 sass:
@@ -33,8 +32,8 @@ back_to_top: true
 back_to_top_text: "Vers le haut"
 # color_scheme: dark
 aux_links:
-  "⚡ Doc Script API":
-    - "/synapps/script-api/"
+  "⚡ Référence des scripts":
+    - "/synapps/concepts/scripts/reference/"
   "WIT.fr":
     - "https://www.wit.fr"
 

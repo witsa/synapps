@@ -6,8 +6,6 @@ nav_order: 2
 api_type: redy/wos-event-log
 ---
 
-{% include links_actor.md apiClass="REDY.Actor.WosEventLog" %}
-
 # Journal des variables
 
 L'acteur *Journal des variables* affiche un tableau contenant  les évènements de journaux du REDY.

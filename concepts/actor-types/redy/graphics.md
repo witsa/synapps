@@ -6,8 +6,6 @@ api_type: redy/graphics
 nav_order: 2
 ---
 
-{% include links_actor.md apiClass="REDY.Actor.Graphics" %}
-
 # Graphique
 
 L'acteur Graphique affiche l'application de graphique du REDY.

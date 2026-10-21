@@ -4,10 +4,13 @@ parent: "Disposition"
 grand_parent: "Types d'acteur"
 api_type: layout/stack
 nav_order: 1
+redirect_from:
+  - /script-api/Actor.Layout.Stack.html
+  - /script-api/Actor.Layout.StackProperties.html
+  - /script-api/synapps-ui_addon_components_actors_layout_stack-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_layout_stack.js.html
 ---
 
-
-{% include links_actor.md apiClass="Actor.Layout.Stack" %}
 
 # Empilement
 

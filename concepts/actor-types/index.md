@@ -3,6 +3,10 @@ title: "Types d'acteur"
 parent: Concepts
 has_children: true
 nav_order: 5
+redirect_from:
+  - /script-api/Actor.Request.html
+  - /script-api/Actor.html
+  - /script-api/REDY.Actor.html
 ---
 
 {% include table_of_content.html %}

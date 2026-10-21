@@ -8,8 +8,6 @@ api_type: layout/nav-menu
 nav_order: 2
 ---
 
-{% include links_actor.md apiClass="Actor.Layout.NavMenu" %}
-
 # Menu de navigation
 
 Le **Menu de navigation** est le conteneur principal qui gère l’état de la navigation. Il porte la scène sélectionnée et distribue les styles actif/inactif à ses enfants (groupes et boutons).

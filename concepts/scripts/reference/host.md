@@ -3,6 +3,11 @@ title: "Hôte"
 parent: "Référence"
 grand_parent: Scripts
 nav_order: 8
+redirect_from:
+  - /script-api/REDY.Synapps.RedyHost.html
+  - /script-api/Synapps.BaseHost.html
+  - /script-api/synapps-ui-redy_addon_redy-host.js.html
+  - /script-api/synapps-ui_addon_bases_host.js.html
 ---
 
 {% include table_of_content.html %}

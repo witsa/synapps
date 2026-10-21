@@ -4,9 +4,12 @@ parent: "Boutons"
 grand_parent: "Intéraction"
 api_type: input/button-list
 nav_order: 2
+redirect_from:
+  - /script-api/Actor.Input.ButtonList.html
+  - /script-api/Actor.Input.ButtonListProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_button-list-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_button-list.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.ButtonList" %}
 
 # Liste de boutons
 Liste de boutons pour faire un choix simple. La liste est construite dynamiquement à partir d'une liste d'[options](#options).

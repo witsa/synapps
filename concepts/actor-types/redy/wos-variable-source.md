@@ -4,9 +4,12 @@ parent: "Variable WOS"
 grand_parent: "REDY"
 api_type: redy/data-source/wos-variable
 nav_order: 4
+redirect_from:
+  - /script-api/REDY.Actor.WosVariableSource.html
+  - /script-api/REDY.Actor.WosVariableSourceProperties.html
+  - /script-api/synapps-ui-redy_addon_components_actors_wos_wos-variable-source-prototype-setup.js.html
+  - /script-api/synapps-ui-redy_addon_components_actors_wos_wos-variable-source.js.html
 ---
-
-{% include links_actor.md apiClass="REDY.Actor.WosVariableSource" %}
 
 # Fournisseur de variable
 

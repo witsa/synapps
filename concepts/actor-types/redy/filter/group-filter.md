@@ -4,6 +4,9 @@ parent: "Filtres"
 grand_parent: "REDY"
 api_type: redy/group-filter
 nav_order: 3
+redirect_from:
+  - /script-api/REDY.Actor.GroupFilter.html
+  - /script-api/synapps-ui-redy_addon_components_actors_filters_group-filter.js.html
 ---
 
 # Filtre de groupe

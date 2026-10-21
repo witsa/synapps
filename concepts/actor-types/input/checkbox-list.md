@@ -4,9 +4,12 @@ parent: "Formulaire"
 grand_parent: "Intéraction"
 api_type: input/checkbox-list
 nav_order: 4
+redirect_from:
+  - /script-api/Actor.Input.CheckboxList.html
+  - /script-api/Actor.Input.CheckboxListProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_checkbox-list-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_checkbox-list.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.CheckboxList" %}
 
 # Liste de cases à cocher
 

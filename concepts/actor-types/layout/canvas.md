@@ -4,9 +4,12 @@ parent: "Disposition"
 grand_parent: "Types d'acteur"
 api_type: layout/canvas
 nav_order: 2
+redirect_from:
+  - /script-api/Actor.Layout.Canvas.html
+  - /script-api/Actor.Layout.CanvasProperties.html
+  - /script-api/synapps-ui_addon_components_actors_layout_canvas-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_layout_canvas.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Layout.Canvas" %}
 
 # Toile
 

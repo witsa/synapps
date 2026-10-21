@@ -4,9 +4,12 @@ parent: "Applications"
 grand_parent: "REDY"
 api_type: redy/synoptic
 nav_order: 3
+redirect_from:
+  - /script-api/REDY.Actor.Synoptic.html
+  - /script-api/REDY.Actor.SynopticProperties.html
+  - /script-api/synapps-ui-redy_addon_components_actors_synoptic-prototype-setup.js.html
+  - /script-api/synapps-ui-redy_addon_components_actors_synoptic.js.html
 ---
-
-{% include links_actor.md apiClass="REDY.Actor.Synoptic" %}
 
 # Synoptique
 

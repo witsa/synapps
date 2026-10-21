@@ -4,9 +4,12 @@ parent: "Boutons"
 grand_parent: "Intéraction"
 api_type: input/period
 nav_order: 4
+redirect_from:
+  - /script-api/Actor.Input.Period.html
+  - /script-api/Actor.Input.PeriodProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_period-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_period.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.Period" %}
 
 # Périodes
 

@@ -4,10 +4,13 @@ parent: "Disposition"
 grand_parent: "Types d'acteur"
 api_type: layout/modal
 nav_order: 4
+redirect_from:
+  - /script-api/Actor.Layout.Modal.html
+  - /script-api/Actor.Layout.ModalProperties.html
+  - /script-api/synapps-ui_addon_components_actors_layout_modal-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_layout_modal.js.html
 ---
 
-
-{% include links_actor.md apiClass="Actor.Layout.Modal" %}
 
 # Modale
 

@@ -4,9 +4,12 @@ parent: "Affichage"
 grand_parent: "Types d'acteur"
 api_type: display/html
 nav_order: 2
+redirect_from:
+  - /script-api/Actor.Display.Html.html
+  - /script-api/Actor.Display.HtmlProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_html-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_html.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Display.Html" %}
 
 # Html
 L'acteur HTML permet d'intégrer du code HTML et CSS dans votre scène.

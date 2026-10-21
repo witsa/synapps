@@ -168,7 +168,7 @@ Nous allons maintenant changer la couleur du texte. Pour cela, nous allons nous 
 
 ![SynApps](../assets/quick-start/designer-first-steps/20.png).
 
-Ce champ attend une [couleur CSS](../script-api/global.html#CssColorString){:target="\_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Nous pouvons en essayer plusieurs et visualiser le résultat.
+Ce champ attend une [couleur CSS](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){:target="\_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Nous pouvons en essayer plusieurs et visualiser le résultat.
 
 ![SynApps](../assets/quick-start/designer-first-steps/26.png).
 

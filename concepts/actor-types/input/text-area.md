@@ -4,9 +4,12 @@ parent: "Formulaire"
 grand_parent: "Intéraction"
 api_type: input/text-area
 nav_order: 2
+redirect_from:
+  - /script-api/Actor.Input.TextArea.html
+  - /script-api/Actor.Input.TextAreaProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_text-area-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_text-area.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.TextArea" %}
 
 # Zone de texte
 

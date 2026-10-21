@@ -4,9 +4,12 @@ parent: "Formulaire"
 grand_parent: "Intéraction"
 api_type: input/text-box
 nav_order: 1
+redirect_from:
+  - /script-api/Actor.Input.TextBox.html
+  - /script-api/Actor.Input.TextBoxProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_text-box-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_text-box.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.TextBox" %}
 
 # Boite de saisie
 

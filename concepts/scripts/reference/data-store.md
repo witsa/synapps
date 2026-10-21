@@ -3,6 +3,9 @@ title: "Magasin REDY"
 parent: "Référence"
 grand_parent: Scripts
 nav_order: 12
+redirect_from:
+  - /script-api/REDY.Synapps.RedyStore.html
+  - /script-api/synapps-ui-redy_addon_services_data-stores_redy.js.html
 ---
 
 {% include table_of_content.html %}

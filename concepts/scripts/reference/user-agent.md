@@ -3,6 +3,8 @@ title: "Afficheur"
 parent: "Référence"
 grand_parent: Scripts
 nav_order: 11
+redirect_from:
+  - /script-api/Synapps.UserAgent.html
 ---
 
 {% include table_of_content.html %}

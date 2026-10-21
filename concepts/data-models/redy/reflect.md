@@ -4,6 +4,30 @@ parent: "Modèles REDY"
 grand_parent: "Modèles de données"
 api_model: redy/ReflectBase
 nav_order: 2
+redirect_from:
+  - /script-api/Synapps.Reflect.ReflectAgenda.html
+  - /script-api/Synapps.Reflect.ReflectAnalog.html
+  - /script-api/Synapps.Reflect.ReflectAnalogCommand.html
+  - /script-api/Synapps.Reflect.ReflectBase.html
+  - /script-api/Synapps.Reflect.ReflectBoiler.html
+  - /script-api/Synapps.Reflect.ReflectBoilerCommand.html
+  - /script-api/Synapps.Reflect.ReflectBurner.html
+  - /script-api/Synapps.Reflect.ReflectDigital.html
+  - /script-api/Synapps.Reflect.ReflectDigitalCommand.html
+  - /script-api/Synapps.Reflect.ReflectState.html
+  - /script-api/Synapps.Reflect.ReflectText.html
+  - /script-api/Synapps.Reflect.ReflectTextCommand.html
+  - /script-api/Synapps.Reflect.ReflectValve.html
+  - /script-api/Synapps.Reflect.ReflectValveCommand.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-agenda.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-analog.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-base.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-boiler.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-burner.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-digital.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-state.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-text.js.html
+  - /script-api/synapps-ui_addon_services_data-stores_models_reflect-valve.js.html
 ---
 
 {% include table_of_content.html %}

@@ -6,8 +6,6 @@ api_type: redy/agenda
 nav_order: 1
 ---
 
-{% include links_actor.md apiClass="REDY.Actor.Agenda" %}
-
 # Agenda
 
 L'acteur Agenda affiche l'application d'agenda du REDY.

@@ -3,6 +3,11 @@ title: "Composite"
 parent: "Référence"
 grand_parent: Scripts
 nav_order: 7
+redirect_from:
+  - /script-api/Actor.Composite.html
+  - /script-api/Actor.CompositeProperties.html
+  - /script-api/synapps-ui_addon_components_actors_composite-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_composite.js.html
 ---
 
 {% include table_of_content.html %}

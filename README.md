@@ -91,7 +91,6 @@ Essayez d'être le plus **exhaustif** possible et communiquez, quand c'est possi
 ├── collections/         # Collections Jekyll
 ├── concepts/            # Documentation des concepts
 ├── quick-start/         # Guide de démarrage rapide
-├── script-api/          # Documentation de l'API de script
 ├── tutorials/           # Tutoriels
 └── maker/               # Documentation de Synapps Maker (legacy)
 ```

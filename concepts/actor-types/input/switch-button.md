@@ -4,9 +4,12 @@ parent: "Interrupteur"
 grand_parent: "Intéraction"
 api_type: input/switch-button
 nav_order: 1
+redirect_from:
+  - /script-api/Actor.Input.SwitchButton.html
+  - /script-api/Actor.Input.SwitchButtonProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_switch-button-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_switch-button.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.SwitchButton" %}
 
 # Bouton interrupteur
 

@@ -3,6 +3,9 @@ title: "Scène"
 parent: "Référence"
 grand_parent: Scripts
 nav_order: 6
+redirect_from:
+  - /script-api/Synapps.Scene.html
+  - /script-api/synapps-ui_addon_components_scene.js.html
 ---
 
 {% include table_of_content.html %}

@@ -4,9 +4,12 @@ parent: "Interrupteur"
 grand_parent: "Intéraction"
 api_type: input/switch-image
 nav_order: 2
+redirect_from:
+  - /script-api/Actor.Input.SwitchImage.html
+  - /script-api/Actor.Input.SwitchImageProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_switch-image-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_switch-image.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.SwitchImage" %}
 
 # Images interrupteur
 

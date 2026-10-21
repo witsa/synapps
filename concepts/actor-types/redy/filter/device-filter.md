@@ -4,6 +4,9 @@ parent: "Filtres"
 grand_parent: "REDY"
 api_type: redy/device-filter
 nav_order: 2
+redirect_from:
+  - /script-api/REDY.Actor.DeviceFilter.html
+  - /script-api/synapps-ui-redy_addon_components_actors_filters_device-filter.js.html
 ---
 
 # Filtre d'équipement

@@ -5,6 +5,36 @@ grand_parent: Scripts
 nav_order: 3
 redirect_from:
   - /concepts/actor/script-reference.html
+  - /script-api/Accessory.BaseAccessory.html
+  - /script-api/Actor.BaseActor.html
+  - /script-api/Actor.BaseActorProperties.html
+  - /script-api/Behavior.DataContextual.html
+  - /script-api/Behavior.Destroyable.html
+  - /script-api/Behavior.Jokerable.html
+  - /script-api/Behavior.Parenthood.html
+  - /script-api/Behavior.SourceOfInternalBinding.html
+  - /script-api/Behavior.Stage.html
+  - /script-api/Behavior.WithAdditionals.html
+  - /script-api/Behavior.WithEvents.html
+  - /script-api/Behavior.WithProperties.html
+  - /script-api/REDY.Accessory.WosRelativeVariableAccessory.html
+  - /script-api/REDY.Behavior.WosRelativeVariableAble.html
+  - /script-api/Synapps.PrototypedBase.html
+  - /script-api/synapps-ui-redy_addon_accessories_wos-relative-variable.js.html
+  - /script-api/synapps-ui-redy_addon_behaviors_wos-relative-variable-able.js.html
+  - /script-api/synapps-ui_addon_accessories_base.js.html
+  - /script-api/synapps-ui_addon_bases_user-agent.js.html
+  - /script-api/synapps-ui_addon_bases_user.js.html
+  - /script-api/synapps-ui_addon_behaviors_data-contextual.js.html
+  - /script-api/synapps-ui_addon_behaviors_destroyable.js.html
+  - /script-api/synapps-ui_addon_behaviors_source-of-internal-binding.js.html
+  - /script-api/synapps-ui_addon_behaviors_with-additionals.js.html
+  - /script-api/synapps-ui_addon_behaviors_with-properties.js.html
+  - /script-api/synapps-ui_addon_components_behaviors_jokerable.js.html
+  - /script-api/synapps-ui_addon_components_behaviors_parenthood.js.html
+  - /script-api/synapps-ui_addon_components_behaviors_stage.js.html
+  - /script-api/synapps-ui_addon_components_behaviors_with-events.js.html
+  - /script-api/synapps-ui_addon_prototyped_base.js.html
 ---
 
 {% include table_of_content.html %}

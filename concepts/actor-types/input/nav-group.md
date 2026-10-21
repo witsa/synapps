@@ -8,8 +8,6 @@ api_type: layout/nav-group
 nav_order: 3
 ---
 
-{% include links_actor.md apiClass="Actor.Layout.NavGroup" %}
-
 # Groupe de navigation
 
 Le **Groupe de navigation** organise des boutons de menu sous une entête repliable. Il permet de structurer un menu en sections. Il se situe **obligatoirement** à l’intérieur d’un **Menu de navigation**.

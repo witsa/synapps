@@ -4,9 +4,12 @@ parent: "Affichage"
 grand_parent: "Types d'acteur"
 api_type: display/composite-view
 nav_order: 6
+redirect_from:
+  - /script-api/Actor.Display.CompositeView.html
+  - /script-api/Actor.Display.CompositeViewProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_composite-view-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_composite-view.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Display.CompositeView" %}
 
 # Vue de composite
 

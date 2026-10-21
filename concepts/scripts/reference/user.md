@@ -3,6 +3,8 @@ title: "Utilisateur"
 parent: "Référence"
 grand_parent: Scripts
 nav_order: 10
+redirect_from:
+  - /script-api/Synapps.BaseUser.html
 ---
 
 {% include table_of_content.html %}

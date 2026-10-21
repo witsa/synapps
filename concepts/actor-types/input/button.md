@@ -4,9 +4,12 @@ parent: "Boutons"
 grand_parent: "Intéraction"
 api_type: input/button
 nav_order: 1
+redirect_from:
+  - /script-api/Actor.Input.Button.html
+  - /script-api/Actor.Input.ButtonProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_button-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_button.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.Button" %}
 
 # Bouton
 

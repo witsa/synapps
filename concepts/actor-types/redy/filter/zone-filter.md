@@ -4,6 +4,9 @@ parent: "Filtres"
 grand_parent: "REDY"
 api_type: redy/zone-filter
 nav_order: 4
+redirect_from:
+  - /script-api/REDY.Actor.ZoneFilter.html
+  - /script-api/synapps-ui-redy_addon_components_actors_filters_zone-filter.js.html
 ---
 
 # Filtre de zone

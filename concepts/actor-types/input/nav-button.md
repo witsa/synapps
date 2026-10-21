@@ -4,9 +4,12 @@ parent: "Navigation"
 grand_parent: "Intéraction"
 api_type: input/nav-button
 nav_order: 1
+redirect_from:
+  - /script-api/Actor.Input.NavButton.html
+  - /script-api/Actor.Input.NavButtonProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_nav-button-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_nav-button.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.NavButton" %}
 
 # Bouton de navigation
 L'acteur bouton de navigation permet, en plus de toutes les possibilités de l'[acteur bouton](./button.md), de naviguer entre les scènes ainsi que de modifier la scène affichée dans un [acteur écran](../display/screen.md).

@@ -4,9 +4,12 @@ parent: "Boutons"
 grand_parent: "Intéraction"
 api_type: input/cursor
 nav_order: 3
+redirect_from:
+  - /script-api/Actor.Input.Cursor.html
+  - /script-api/Actor.Input.CursorProperties.html
+  - /script-api/synapps-ui_addon_components_actors_input_cursor-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_input_cursor.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Input.Cursor" %}
 
 # Curseur
 

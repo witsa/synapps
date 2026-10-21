@@ -4,9 +4,12 @@ parent: "Disposition"
 grand_parent: "Types d'acteur"
 api_type: layout/view-box
 nav_order: 3
+redirect_from:
+  - /script-api/Actor.Layout.ViewBox.html
+  - /script-api/Actor.Layout.ViewBoxProperties.html
+  - /script-api/synapps-ui_addon_components_actors_layout_view-box-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_layout_view-box.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Layout.ViewBox" %}
 
 # Boite à vue
 

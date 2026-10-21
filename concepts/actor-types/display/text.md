@@ -4,9 +4,12 @@ parent: "Affichage"
 grand_parent: "Types d'acteur"
 api_type: display/text
 nav_order: 1
+redirect_from:
+  - /script-api/Actor.Display.Text.html
+  - /script-api/Actor.Display.TextProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_text-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_text.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Display.Text" %}
 
 # Texte
 

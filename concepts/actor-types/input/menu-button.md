@@ -6,8 +6,6 @@ api_type: input/menu-button
 nav_order: 4
 ---
 
-{% include links_actor.md apiClass="Actor.Input.MenuButton" %}
-
 # Bouton de menu
 
 Le **Bouton de menu** est un bouton conçu pour fonctionner avec un **Menu de navigation**. Il met à jour la scène sélectionnée du menu et adapte son style en fonction de l’état actif/inactif. Le style actif est également le style appliqué au bouton au survol.

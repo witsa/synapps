@@ -4,9 +4,12 @@ parent: "Affichage"
 grand_parent: "Types d'acteur"
 api_type: display/iframe
 nav_order: 5
+redirect_from:
+  - /script-api/Actor.Display.Iframe.html
+  - /script-api/Actor.Display.IframeProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_iframe-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_iframe.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Display.Iframe" %}
 
 # IFrame
 

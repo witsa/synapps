@@ -2,9 +2,12 @@
 title: "Jauge"
 parent: "Charts"
 api_type: charting/gauge-demo
+redirect_from:
+  - /script-api/Actor.Charting.GaugeDemo.html
+  - /script-api/Actor.Charting.GaugeDemoProperties.html
+  - /script-api/synapps-ui_addon_components_actors_charting_gauge-demo-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_charting_gauge-demo.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Charting.GaugeDemo" %}
 
 # Jauge
 

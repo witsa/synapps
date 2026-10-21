@@ -4,9 +4,12 @@ parent: "Affichage"
 grand_parent: "Types d'acteur"
 api_type: display/image
 nav_order: 3
+redirect_from:
+  - /script-api/Actor.Display.Image.html
+  - /script-api/Actor.Display.ImageProperties.html
+  - /script-api/synapps-ui_addon_components_actors_display_image-prototype-setup.js.html
+  - /script-api/synapps-ui_addon_components_actors_display_image.js.html
 ---
-
-{% include links_actor.md apiClass="Actor.Display.Image" %}
 
 # Image
 
