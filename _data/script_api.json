@@ -12286,15 +12286,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "rows",
      "kind": "champ",
      "signature": "rows",
@@ -12481,6 +12472,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     }
    ],
@@ -12789,15 +12789,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "totalRows",
      "kind": "champ",
      "signature": "totalRows",
@@ -12851,6 +12842,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     }
    ],
@@ -13042,15 +13042,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "totalRows",
      "kind": "champ",
      "signature": "totalRows",
@@ -13086,6 +13077,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     }
    ],
@@ -13387,15 +13387,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "rows",
      "kind": "champ",
      "signature": "rows",
@@ -13431,6 +13422,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     },
     {
@@ -14258,15 +14258,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "rows",
      "kind": "champ",
      "signature": "rows",
@@ -14293,6 +14284,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     }
    ],
@@ -14481,15 +14481,6 @@
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
-    },
-    {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
     }
    ],
    "methods": [
@@ -14509,6 +14500,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     },
     {
@@ -14712,15 +14712,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -14747,6 +14738,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     },
     {
@@ -17046,15 +17046,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "ressources",
      "kind": "champ",
      "signature": "ressources",
@@ -17099,6 +17090,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     },
     {
@@ -17455,15 +17455,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
-    },
-    {
      "name": "rows",
      "kind": "champ",
      "signature": "rows",
@@ -17499,6 +17490,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     }
    ],
@@ -17700,15 +17700,6 @@
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
-    },
-    {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
     }
    ],
    "methods": [
@@ -17728,6 +17719,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     },
     {
@@ -17963,15 +17963,6 @@
      "readonly": true,
      "description": "Date de la dernière requête (ISO 8601), `null` avant la première.",
      "params": []
-    },
-    {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
-     "params": []
     }
    ],
    "methods": [
@@ -17991,6 +17982,15 @@
      "type": "Promise<Any>",
      "readonly": false,
      "description": "Effectue une requête.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée. Si une requête est déjà en cours, elle part à sa fin.",
      "params": []
     },
     {
