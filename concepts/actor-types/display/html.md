@@ -34,10 +34,10 @@ Accessibles par script, via `this` dans un script de l'acteur ou `context.getAct
 
 {% include script_api/inherits.md type=page.api_type %}
 
-# Variantes
+# Presets
 
 ## Icône
 
-Une variante de l'acteur HTML offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+Un preset de l'acteur HTML offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
 
 Le contenu de l'acteur est complété par une additionnelle *icône*.

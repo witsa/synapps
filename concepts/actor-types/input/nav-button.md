@@ -48,10 +48,10 @@ Les évènements communs à tous les acteurs sont décrits avec l'[acteur de bas
 
 {% include script_api/inherits.md type=page.api_type %}
 
-# Variantes
+# Presets
 
 ## Icône
 
-La variante de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+Le preset de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
 
 Le contenu du bouton est complété par une additionnelle *icône* et une additionnelle *texte*.

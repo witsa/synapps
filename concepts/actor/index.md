@@ -28,6 +28,12 @@ Un acteur possède un type qui va déterminer son comportement.
 
 - voir [les types d'acteur](../actor-types/)
 
+### Presets
+
+Dans la palette d'ajout d'acteur, certains types proposent des _presets_ : le bouton à droite du type ouvre leur menu. Un preset crée un acteur du type d'origine, préconfiguré dès sa création (contenu, additionnelles, script…). Une fois créé, c'est un acteur ordinaire de ce type : ses propriétés se modifient comme les autres.
+
+Par exemple, le preset _Icône_ du [bouton](../actor-types/input/button.md#presets) crée un bouton complété par une additionnelle _icône_ et une additionnelle _texte_. Les presets disponibles sont décrits dans la section « Presets » de la page de chaque type d'acteur.
+
 ## Les Propriétés
 
 Tous les acteurs partagent des propriétés. Chaque acteur possède des propriétés spécifiques à son type.

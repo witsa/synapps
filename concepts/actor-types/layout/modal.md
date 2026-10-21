@@ -83,7 +83,7 @@ Vous pouvez également utiliser un script dans un évènement. Par exemple, dans
 context.getActor('myModal').properties.isShown = true;
 ```
 
-Si vous n'êtes pas à l'aise avec les scripts, vous pouvez utiliser la variante **Modale au clic** qui est préconfigurée pour afficher/cacher la modale au clic sur un autre acteur.
+Si vous n'êtes pas à l'aise avec les scripts, vous pouvez utiliser le preset **Modale au clic** qui est préconfiguré pour afficher/cacher la modale au clic sur un autre acteur.
 
 # Réinitialisation des héritages de propriété
 
@@ -92,13 +92,13 @@ L'héritage des propriétés est brisé dans une modale. Il faudra redéfinir ce
 Par exemple, si vous définissez une taille de texte de 10px sur l'acteur principal d'une scène, cela ne sera pas appliqué à la modale.
 
 
-# Variantes
+# Presets
 
 ## Modale au clic
 
-Cette variante de modale est préconfigurée pour indiquer l'acteur qui lorsqu'on cliquera dessus déclenchera son affichage et l'acteur qui déclenchera sa fermeture.
+Ce preset de modale est préconfiguré pour indiquer l'acteur qui lorsqu'on cliquera dessus déclenchera son affichage et l'acteur qui déclenchera sa fermeture.
 
-Voici un exemple de scène qui emploie cette variante :
+Voici un exemple de scène qui emploie ce preset :
 
 {% raw %}
 ```

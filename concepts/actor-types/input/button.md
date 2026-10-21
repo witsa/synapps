@@ -40,16 +40,16 @@ Les évènements communs à tous les acteurs sont décrits avec l'[acteur de bas
 
 {% include script_api/inherits.md type=page.api_type %}
 
-# Variantes
+# Presets
 
 ## Icône
 
-La variante de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+Le preset de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
 
 Le contenu du bouton est complété par une additionnelle *icône* et une additionnelle *texte*.
 
 ## Écriture fournisseur
 
-Cette variation "Bouton d'Écriture Fournisseur" permet de déclencher manuellement le processus d'écriture des données vers un acteur fournisseur spécifique.
+Ce preset "Bouton d'Écriture Fournisseur" permet de déclencher manuellement le processus d'écriture des données vers un acteur fournisseur spécifique.
 
 Le contenu du bouton est complété par une additionnelle "Acteur fournisseur ciblé", qui permet de choisir l'acteur fournisseur vers lequel le bouton d'écriture est dirigé.
