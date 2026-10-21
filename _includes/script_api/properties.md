@@ -21,7 +21,7 @@ include.section (section de l'inspecteur, ex. text) et include.names (noms sépa
 {: .api-property }
 
 `this.properties.{{ property.name }}` · {% if property.values %}{% for value in property.values %}`'{{ value }}'`{% unless forloop.last %} \| {% endunless %}{% endfor %}{% else %}{{ property.type | escape }}{% endif %} · défaut `{{ property.default }}`{% if property.inheritable %} · [héritable]({{ site.baseurl }}/concepts/actor/#valeur-héritée){% endif %}{% if property.jokerable %} · <a href="{{ site.baseurl }}/concepts/additionals.html#jokers" title="Accepte des jokers : &#123;&#123;clé&#125;&#125; est remplacé par la valeur de l'additionnelle de même clé"><code>&#123;&#123;jokerable&#125;&#125;</code></a>{% endif %}{% if property.modifier %} · modifie : [{{ property.modifier }}]({{ site.baseurl }}/concepts/actor/#évènement-de-modification){% endif %}
-{: .fs-2 }
+{: .fs-2 #prop-{{ property.name }} }
 {% if property.description %}
 {{ property.description }}
 {% endif %}

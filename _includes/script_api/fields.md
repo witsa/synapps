@@ -22,7 +22,7 @@ alphabétique : include.type = type d'acteur ou « common », ou include.object 
 {: .api-field }
 
 `{{ include.prefix | default: "this" }}.{{ member.name }}`{% if member.readonly %} · 🔒 lecture seule{% endif %}{% if member.type %} · {{ member.type | escape }}{% endif %}
-{: .fs-2 }
+{: .fs-2 #info-{{ member.name }} }
 {% if member.description %}
 {{ member.description }}
 {% endif %}

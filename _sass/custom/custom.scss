@@ -5,3 +5,7 @@
 .api-method::before { content: "⚙️ "; }
 .api-event::before { content: "⚡ "; }
 
+
+// Ancres stables (#prop-…, #info-…, #meth-…) posées sur la ligne technique sous le titre : garder
+// le titre visible quand on arrive par un lien (ex. depuis l'inspecteur de Studio).
+[id^="prop-"], [id^="info-"], [id^="meth-"] { scroll-margin-top: 4rem; }
