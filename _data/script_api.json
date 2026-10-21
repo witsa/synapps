@@ -8017,7 +8017,7 @@
     "signature": "accessories",
     "type": "Object",
     "readonly": true,
-    "description": "Obtient la liste des accessoires.\n<br> Chaque accessoire est accessible par sa clé :\n```js\nthis.accessories.log.properties.onActorPropertyChanged = true;\n```\npour accéder à l'accessoire `log` préalablement créé et activer la journalisation au changement de propriété de l'acteur.\n <br> La gestion des accessoires s'effectue avec les méthodes : {@link Actor.BaseActorcreateAccessory } et {@link Actor.BaseActorremoveAccessory }",
+    "description": "Obtient la liste des accessoires.\n<br> Chaque accessoire est accessible par sa clé :\n```js\nthis.accessories.log.properties.onActorPropertyChanged = true;\n```\npour accéder à l'accessoire `log` préalablement créé et activer la journalisation au changement de propriété de l'acteur.\n <br> La gestion des accessoires s'effectue avec les méthodes : `Actor.BaseActor#createAccessory` et `Actor.BaseActor#removeAccessory`",
     "params": []
    },
    {
@@ -8161,7 +8161,7 @@
     "signature": "styleName",
     "type": "String",
     "readonly": true,
-    "description": "Le nom du style de l'acteur.\n<br>\nPour changer de style, il faut utiliser {@link Actor.BaseActorchangeStyleName }",
+    "description": "Le nom du style de l'acteur.\n<br>\nPour changer de style, il faut utiliser `Actor.BaseActor#changeStyleName`",
     "params": []
    },
    {
@@ -9255,7 +9255,7 @@
      "signature": "isInDesigner",
      "type": "boolean",
      "readonly": true,
-     "description": "Obtient vrai s'il le composites{@link Actor.Composite } ou la [scène est en mode **design** dans Synapps Studio.",
+     "description": "Obtient vrai s'il le composites`Actor.Composite` ou la [scène est en mode **design** dans Synapps Studio.",
      "params": []
     },
     {
@@ -9422,7 +9422,7 @@
      "signature": "isInDesigner",
      "type": "boolean",
      "readonly": true,
-     "description": "Obtient vrai s'il le composites{@link Actor.Composite } ou la [scène est en mode **design** dans Synapps Studio.",
+     "description": "Obtient vrai s'il le composites`Actor.Composite` ou la [scène est en mode **design** dans Synapps Studio.",
      "params": []
     },
     {
@@ -10108,7 +10108,7 @@
      "signature": "commandReflect(reflect, withRefreshAfter?)",
      "type": null,
      "readonly": false,
-     "description": "Envoie au REDY la commande (`command`) du reflet donné, puis recharge sa valeur par défaut ; échoue si le reflet n'est pas commandable.",
+     "description": "Envoie au REDY la commande (`command`) du reflet donné, puis, par défaut (`withRefreshAfter`), recharge sa valeur ; échoue si le reflet n'est pas commandable.",
      "params": []
     },
     {
@@ -10142,7 +10142,7 @@
     {
      "name": "getClasses",
      "kind": "méthode",
-     "signature": "getClasses({ classIds = [], disabled = false })",
+     "signature": "getClasses({ classIds = [], disabled = false }?)",
      "type": "Promise<Array.<Object>>",
      "readonly": false,
      "description": "Charge la liste des classes WOS.",
@@ -22667,7 +22667,7 @@
      "signature": "columns",
      "type": "Array<String>",
      "readonly": true,
-     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis `Actor.Request.BaseRequestListProperties#columns`.",
      "params": []
     },
     {
@@ -22748,7 +22748,7 @@
      "signature": "rows",
      "type": "Array",
      "readonly": true,
-     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
+     "description": "Ligne de la liste.\n\nC'est un alias de `Actor.Request.BaseRequest#data`.",
      "params": []
     },
     {
@@ -23551,7 +23551,7 @@
      "signature": "columns",
      "type": "Array<String>",
      "readonly": true,
-     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis `Actor.Request.BaseRequestListProperties#columns`.",
      "params": []
     },
     {
@@ -23632,7 +23632,7 @@
      "signature": "rows",
      "type": "Array",
      "readonly": true,
-     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
+     "description": "Ligne de la liste.\n\nC'est un alias de `Actor.Request.BaseRequest#data`.",
      "params": []
     }
    ],
@@ -26478,7 +26478,7 @@
      "signature": "columns",
      "type": "Array<String>",
      "readonly": true,
-     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis `Actor.Request.BaseRequestListProperties#columns`.",
      "params": []
     },
     {
@@ -26559,7 +26559,7 @@
      "signature": "rows",
      "type": "Array",
      "readonly": true,
-     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
+     "description": "Ligne de la liste.\n\nC'est un alias de `Actor.Request.BaseRequest#data`.",
      "params": []
     },
     {
@@ -26904,7 +26904,7 @@
      "signature": "columns",
      "type": "Array<String>",
      "readonly": true,
-     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis {@link Actor.Request.BaseRequestListPropertiescolumns }.",
+     "description": "Clés des colonnes à afficher.\n\nRécupérées depuis `Actor.Request.BaseRequestListProperties#columns`.",
      "params": []
     },
     {
@@ -26976,7 +26976,7 @@
      "signature": "rows",
      "type": "Array",
      "readonly": true,
-     "description": "Ligne de la liste.\n\nC'est un alias de {@link Actor.Request.BaseRequestdata }.",
+     "description": "Ligne de la liste.\n\nC'est un alias de `Actor.Request.BaseRequest#data`.",
      "params": []
     },
     {
