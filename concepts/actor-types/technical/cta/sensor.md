@@ -2,29 +2,30 @@
 title: "Capteur"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/sensor
 nav_order: 3
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
-
-{% include table_of_content.html %}
 
 # Capteur
 
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
-
-L'acteur Capteur représente un capteur de CTA. Il expose un mode de fonctionnement et une valeur numérique simple.
+L'acteur Capteur représente un capteur de CTA.
 
 ![Capteur CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-sensor.png)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Orientation
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit l'orientation du capteur. Les valeurs possibles suivent `OrientationEnum`.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/properties.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

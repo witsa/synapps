@@ -2,19 +2,15 @@
 title: "Vanne 3 voies"
 parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+api_type: technical/valve-3-ports
 nav_order: 9
+since:
+  studio: 1.6.0
+  runtime: 2.8.0
+  redy: 16.4.0
 ---
 
-{% include table_of_content.html %}
-
 # Vanne 3 voies
-
-Studio **1.6.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY **16.4.0**
-{: .label .label-green }
 
 L'acteur Vanne 3 voies représente une vanne de mélange ou de dérivation. Sa position est contrôlée par une valeur numérique.
 
@@ -23,25 +19,16 @@ L'acteur Vanne 3 voies représente une vanne de mélange ou de dérivation. Sa p
 La vanne 3 voies représente présente une poignée indiquant la position actuelle de la vanne, variant de **0%** à **100%**.
 Si la ressource est en défaut, la poignée de la vanne est remplacée par une LED rouge clignotante.
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Orientation
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit l'orientation du dessin de la vanne.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/properties.md type=page.api_type %}
 
-### Valeur
+# Hérite de
+{: #herite-de }
 
-- **Type** : `Number`
-- **Description** : Contrôle la position de la vanne avec un pourcentage (0-100). Une valeur de `0` positionne la vanne complètement dans une direction, et `100` la positionne complètement dans l'autre. Les valeurs intermédiaires représentent un état de mélange.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.value`
-
-### En défaut ?
-
-- **Type** : `Boolean`
-- **Description** : Représente l'état de défaut de la vanne, cette propriété a la priorité sur les autres états.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFault`
+{% include script_api/inherits.md type=page.api_type %}

@@ -10624,7 +10624,7 @@
     },
     {
      "name": "isBlinking1",
-     "label": null,
+     "label": "Clignotant 1?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10636,7 +10636,7 @@
     },
     {
      "name": "isBlinking2",
-     "label": null,
+     "label": "Clignotant 2?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10648,7 +10648,7 @@
     },
     {
      "name": "isBlinking3",
-     "label": null,
+     "label": "Clignotant 3?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10660,7 +10660,7 @@
     },
     {
      "name": "isBlinking4",
-     "label": null,
+     "label": "Clignotant 4?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10672,7 +10672,7 @@
     },
     {
      "name": "isBlinking5",
-     "label": null,
+     "label": "Clignotant 5?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10684,7 +10684,7 @@
     },
     {
      "name": "isBlinking6",
-     "label": null,
+     "label": "Clignotant 6?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10696,7 +10696,7 @@
     },
     {
      "name": "isBlinking7",
-     "label": null,
+     "label": "Clignotant 7?",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10708,13 +10708,109 @@
     },
     {
      "name": "isBlinking8",
-     "label": null,
+     "label": "Clignotant 8?",
      "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
      "default": "false",
      "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture1",
+     "label": "Image personnalisée 1",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture2",
+     "label": "Image personnalisée 2",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture3",
+     "label": "Image personnalisée 3",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture4",
+     "label": "Image personnalisée 4",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture5",
+     "label": "Image personnalisée 5",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture6",
+     "label": "Image personnalisée 6",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture7",
+     "label": "Image personnalisée 7",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "picture8",
+     "label": "Image personnalisée 8",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": "Gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -10727,102 +10823,6 @@
      "type": "number",
      "default": "4",
      "modifier": null,
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture1",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture2",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture3",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture4",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture5",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture6",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture7",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
-     "inheritable": false,
-     "jokerable": false
-    },
-    {
-     "name": "picture8",
-     "label": null,
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": "Gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -10840,7 +10840,7 @@
     },
     {
      "name": "position1",
-     "label": null,
+     "label": "Position 1",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10852,7 +10852,7 @@
     },
     {
      "name": "position2",
-     "label": null,
+     "label": "Position 2",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10864,7 +10864,7 @@
     },
     {
      "name": "position3",
-     "label": null,
+     "label": "Position 3",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10876,7 +10876,7 @@
     },
     {
      "name": "position4",
-     "label": null,
+     "label": "Position 4",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10888,7 +10888,7 @@
     },
     {
      "name": "position5",
-     "label": null,
+     "label": "Position 5",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10900,7 +10900,7 @@
     },
     {
      "name": "position6",
-     "label": null,
+     "label": "Position 6",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10912,7 +10912,7 @@
     },
     {
      "name": "position7",
-     "label": null,
+     "label": "Position 7",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10924,7 +10924,7 @@
     },
     {
      "name": "position8",
-     "label": null,
+     "label": "Position 8",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10936,7 +10936,7 @@
     },
     {
      "name": "text1",
-     "label": null,
+     "label": "Texte 1",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10948,7 +10948,7 @@
     },
     {
      "name": "text2",
-     "label": null,
+     "label": "Texte 2",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10960,7 +10960,7 @@
     },
     {
      "name": "text3",
-     "label": null,
+     "label": "Texte 3",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10972,7 +10972,7 @@
     },
     {
      "name": "text4",
-     "label": null,
+     "label": "Texte 4",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10984,7 +10984,7 @@
     },
     {
      "name": "text5",
-     "label": null,
+     "label": "Texte 5",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -10996,7 +10996,7 @@
     },
     {
      "name": "text6",
-     "label": null,
+     "label": "Texte 6",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -11008,7 +11008,7 @@
     },
     {
      "name": "text7",
-     "label": null,
+     "label": "Texte 7",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -11020,7 +11020,7 @@
     },
     {
      "name": "text8",
-     "label": null,
+     "label": "Texte 8",
      "description": null,
      "section": "specifics",
      "values": null,
@@ -11484,7 +11484,7 @@
    "properties": [
     {
      "name": "orientation",
-     "label": null,
+     "label": "Orientation",
      "description": null,
      "section": "specifics",
      "values": [

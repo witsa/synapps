@@ -6,11 +6,11 @@ api_type: technical/arrow
 nav_order: 1
 ---
 
-{% include table_of_content.html %}
-
 # Flèche
 
 Acteur technique qui représente une flèche.
+
+{% include table_of_content.html %}
 
 {% include script_api/legend.md %}
 

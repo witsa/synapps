@@ -2,43 +2,30 @@
 title: "Bypass"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/bypass
 nav_order: 6
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
 
-{% include table_of_content.html %}
-
 # Bypass
-
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
 
 L'acteur Bypass représente une connection entre deux gaines de la CTA avec un registre entre ces deux gaines. Il propose un mode digital, avec un état ouvert ou fermé, et un mode analogic, avec un pourcentage d'ouverture.
 
 ![Bypass CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-bypass.gif)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Mode
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit le mode de contrôle. Les valeurs possibles sont `digital` et `analogic`.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.mode`
+{% include script_api/properties.md type=page.api_type %}
 
-### Ouvert ? (Uniquement pour le mode digital)
+# Hérite de
+{: #herite-de }
 
-- **Type** : `Boolean`
-- **Description** : Affiche le volet comme ouvert ou fermé.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isOpen`
-
-### Ouverture (%) (Uniquement pour le mode analogic)
-
-- **Type** : `Number`
-- **Description** : La valeur représente le pourcentage d'ouverture affiché( 0 : fermé, 100 : ouvert).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.opening`
+{% include script_api/inherits.md type=page.api_type %}

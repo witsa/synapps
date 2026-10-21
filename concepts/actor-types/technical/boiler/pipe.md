@@ -6,11 +6,11 @@ api_type: technical/pipe
 nav_order: 5
 ---
 
-{% include table_of_content.html %}
-
 # Tuyau
 
 Acteur technique qui représente un tuyau.
+
+{% include table_of_content.html %}
 
 {% include script_api/legend.md %}
 

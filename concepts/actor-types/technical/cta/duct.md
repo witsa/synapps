@@ -2,36 +2,28 @@
 title: "Gaine de ventilation"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/duct
 nav_order: 5
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
 
-{% include table_of_content.html %}
-
 # Gaine de ventilation
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
 
 L'acteur Conduit représente une portion de gaine de ventilation. Il peut afficher un tronçon simple ou une extrémité selon sa configuration.
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Bord ?
+{% include script_api/legend.md %}
 
-- **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, le conduit affiche une extrémité à la fin de celui-ci.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.isEdge`
+{% include script_api/properties.md type=page.api_type %}
 
-### Taille
+# Hérite de
+{: #herite-de }
 
-- **Type** : `Number`
-- **Description** : Définit la taille visuelle du conduit. Plus la valeur est élevée, plus le tronçon affiché est long.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.size`
-
-{: .alert .alert-info }
-> La taille du conduit doit être ajustée pour contenir tout les éléments de CTA que l'on souhaite représenter dans ce conduit. Par exemple, si on souhaite représenter un moteur et un capteur dans le même conduit, il faudra s'assurer que la taille du conduit est suffisante pour contenir les deux éléments.
+{% include script_api/inherits.md type=page.api_type %}

@@ -2,43 +2,30 @@
 title: "Humidificateur"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/humidifier
 nav_order: 9
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
 
-{% include table_of_content.html %}
-
 # Humidificateur
-
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
 
 L'acteur Humidificateur représente un humidificateur de CTA. Son affichage change selon l'activation et l'état de défaut.
 
 ![Humidificateur CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-humidifier.gif)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Orientation
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit l'orientation de l'humidificateur.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/properties.md type=page.api_type %}
 
-### Actif ?
+# Hérite de
+{: #herite-de }
 
-- **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, l'humidificateur est considéré comme actif.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isActive`
-
-### En défaut ?
-
-- **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, l'indicateur LED passe en état de défaut.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isDefault`
+{% include script_api/inherits.md type=page.api_type %}

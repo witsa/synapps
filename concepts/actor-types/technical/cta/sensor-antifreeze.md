@@ -2,29 +2,30 @@
 title: "Capteur antigel"
 parent: "CTA"
 grand_parent: "Technique"
+api_type: technical/sensor-antifreeze
 nav_order: 4
+since:
+  studio: 1.7.0
+  runtime: 2.9.0
+  redy: 16.5.0
 ---
 
-{% include table_of_content.html %}
-
 # Capteur antigel
-
-Studio **1.7.0**
-{: .label .label-green }
-Runtime **2.9.0**
-{: .label .label-green }
-REDY **16.5.0**
-{: .label .label-green }
 
 L'acteur Capteur antigel représente un capteur de surveillance du risque de gel. Son affichage reste simple et met en avant un état de défaut visuel lorsque l'alarme est active.
 
 ![Capteur antigel CTA](../../../../synapps-studio-releases/notes/assets/1.7/cta-sensor-freeze.gif)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### En gel ?
+{% include script_api/legend.md %}
 
-- **Type** : `Boolean`
-- **Description** : Si la valeur est `true`, le capteur signale un état de gel.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.isFrozen`
+{% include script_api/properties.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

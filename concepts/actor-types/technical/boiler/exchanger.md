@@ -2,29 +2,30 @@
 title: "Échangeur"
 parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+api_type: technical/exchanger
 nav_order: 4
+since:
+  studio: 1.6.0
+  runtime: 2.8.0
+  redy: 16.4.0
 ---
 
-{% include table_of_content.html %}
-
 # Échangeur
-
-Studio **1.6.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY **16.4.0**
-{: .label .label-green }
 
 L'acteur Échangeur est un composant visuel simple représentant un échangeur thermique. Il est principalement utilisé pour la représentation graphique dans les schémas.
 
 ![Synapps](../../../../synapps-studio-releases/notes//assets/1.6/exchanger.png)
 
-## Propriétés spécifiques
+{% include table_of_content.html %}
 
-### Orientation
+{% include script_api/legend.md %}
 
-- **Type** : `String`
-- **Description** : Définit l'orientation du dessin de l'échangeur.
+# Propriétés
+{: #proprietes }
 
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
+{% include script_api/properties.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

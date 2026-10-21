@@ -2,19 +2,15 @@
 title: "Pompe simple"
 parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+api_type: technical/single-pump
 nav_order: 6
+since:
+  studio: 1.6.0
+  runtime: 2.8.0
+  redy: 16.4.0
 ---
 
-{% include table_of_content.html %}
-
 # Pompe simple
-
-Studio **1.6.0**
-{: .label .label-green }
-Runtime **2.8.0**
-{: .label .label-green }
-REDY **16.4.0**
-{: .label .label-green }
 
 L'acteur Pompe simple représente une pompe avec un seul moteur. Son état visuel (marche, arrêt, défaut) est déterminé par ses propriétés.
 
@@ -28,29 +24,19 @@ Voici les différents états de la pompe simple :
 | **En marche** | La pompe est allumée et fonctionne normalement. | Allumée  | 🟩          |
 | **En défaut** | La pompe rencontre un problème.                 | Allumée  | 🟥          |
 
-## Propriétés spécifiques
-
-### Orientation
-
-- **Type** : `String`
-- **Description** : Définit l'orientation du dessin de la pompe. Les valeurs possibles sont `up`, `down`, `right` (droite), ou `left` (gauche).
-
-> ⚡Chemin d’accès depuis l’acteur `properties.orientation`
-
-### En marche ?
-
-- **Type** : `Boolean`
-- **Description** : Si cette propriété est activée, la pompe est considérée comme en marche. L'indicateur LED devient vert et une animation de rotation est appliquée.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isRunning`
-
-### En défaut ?
-
-- **Type** : `Boolean`
-- **Description** : Si cette propriété est activée, la pompe est en état de défaut. L'indicateur LED devient rouge et se met à clignoter. L'état de défaut a la priorité sur l'état de marche.
-
-> ⚡Chemin d’accès depuis l’acteur `properties.isFault`
-
 {: .pin }
-
 > L'état de défaut de chaque pompe est indépendant et a la priorité sur son état de marche.
+
+{% include table_of_content.html %}
+
+{% include script_api/legend.md %}
+
+# Propriétés
+{: #proprietes }
+
+{% include script_api/properties.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}
