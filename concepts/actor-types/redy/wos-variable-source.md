@@ -16,7 +16,7 @@ Aussi, l'acteur permet de définir la manière avec laquelle la variable est ré
 
 La donnée récupérée est disponible pour les liaisons ou par script.
 
-L'acteur sert de fournisseur de base aux éventuels [fournisseurs de variable relative](./wos-relative-variable-source.md) ou liaisons de type [fournisseur de variable](../../binding.md#fournisseur-de-variable) qui pointeraient dessus.
+L'acteur sert de fournisseur de base aux éventuels [fournisseurs de variable relative](./wos-relative-variable-source.md) ou liaisons de type [fournisseur de variable](../../binding.md#la-liaison-de-type-de-source-fournisseur-de-variable) qui pointeraient dessus.
 
 {% include table_of_content.html %}
 
