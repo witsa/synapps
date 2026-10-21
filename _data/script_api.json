@@ -55,6 +55,16 @@
    "description": "Reflet d'agenda : consignes précédente, actuelle et suivante.\nIl se commande par son mode forcé (`modeForcedCmd`) et son retour automatique (`backToAutoCmd`).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -101,6 +111,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -155,6 +175,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -165,12 +195,32 @@
      "label": null
     },
     {
+     "name": "firstIndex",
+     "kind": "champ",
+     "signature": "firstIndex",
+     "type": null,
+     "readonly": true,
+     "description": "Index de la première consigne de la liste (`autoIndex` + 1).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "groupIDs",
      "kind": "champ",
      "signature": "groupIDs",
      "type": null,
      "readonly": false,
      "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -205,6 +255,16 @@
      "label": null
     },
     {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "isForced",
      "kind": "champ",
      "signature": "isForced",
@@ -231,6 +291,16 @@
      "type": "String",
      "readonly": true,
      "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
      "params": [],
      "label": null
     },
@@ -285,6 +355,16 @@
      "label": null
     },
     {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "nextIndex",
      "kind": "champ",
      "signature": "nextIndex",
@@ -311,6 +391,16 @@
      "type": "Number",
      "readonly": true,
      "description": "Valeur de la consigne suivante.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -415,6 +505,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -431,6 +531,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -502,6 +622,16 @@
    "description": "Reflet analogique : valeur numérique avec unité, décimales et bornes (avec seuils et valeur de forçage selon le type REDY).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -518,6 +648,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -582,6 +722,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -622,6 +772,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -638,6 +798,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -692,6 +862,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "max",
      "kind": "champ",
      "signature": "max",
@@ -728,6 +908,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -782,6 +982,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -798,6 +1008,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -899,6 +1129,16 @@
    "description": "Classe de base pour tous les reflets.",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -915,6 +1155,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -969,6 +1219,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -989,6 +1249,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -1005,6 +1275,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1039,6 +1319,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "mode",
      "kind": "champ",
      "signature": "mode",
@@ -1055,6 +1345,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1109,6 +1419,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -1125,6 +1445,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1176,6 +1516,16 @@
    "description": "Reflet de chaudière : état de marche, autorisation, erreur (type, étape) et mode forcé (`0` : pas de forçage).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -1202,6 +1552,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -1276,6 +1636,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -1296,6 +1666,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -1312,6 +1692,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1342,6 +1732,16 @@
      "type": "String",
      "readonly": true,
      "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
      "params": [],
      "label": null
     },
@@ -1392,6 +1792,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1466,6 +1886,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -1482,6 +1912,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1533,6 +1983,16 @@
    "description": "Reflet de brûleur : état de marche, défaut, autorisation et erreur (type, étape).\nNon commandable.",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -1559,6 +2019,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -1633,6 +2103,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -1663,6 +2143,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -1679,6 +2169,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1713,6 +2213,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "mode",
      "kind": "champ",
      "signature": "mode",
@@ -1729,6 +2239,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1813,6 +2343,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -1829,6 +2369,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -1880,6 +2440,16 @@
    "description": "Reflet digital : valeur logique vrai/faux avec ses textes « vrai » et « faux ».",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -1896,6 +2466,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -1950,6 +2530,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "falseText",
      "kind": "champ",
      "signature": "falseText",
@@ -1990,6 +2580,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -2006,6 +2606,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2060,6 +2670,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "mode",
      "kind": "champ",
      "signature": "mode",
@@ -2076,6 +2696,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2130,6 +2770,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -2146,6 +2796,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2227,6 +2897,16 @@
    "description": "Reflet de courbe de chauffe (loi d'eau) : points de la courbe, décalage réduit, température extérieure, consigne calculée, mode en cours et mode forcé (`1` : automatique).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -2243,6 +2923,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -2277,6 +2967,16 @@
      "label": null
     },
     {
+     "name": "consignText",
+     "kind": "champ",
+     "signature": "consignText",
+     "type": null,
+     "readonly": true,
+     "description": "Texte (HTML, avec icônes) de la température extérieure et de la consigne calculée.",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "coordCons",
      "kind": "champ",
      "signature": "coordCons",
@@ -2307,6 +3007,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -2317,12 +3027,32 @@
      "label": null
     },
     {
+     "name": "fullText",
+     "kind": "champ",
+     "signature": "fullText",
+     "type": null,
+     "readonly": true,
+     "description": "Texte complet (HTML) : libellé du mode en cours suivi de la consigne (`consignText`) hors du mode 0.",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "groupIDs",
      "kind": "champ",
      "signature": "groupIDs",
      "type": null,
      "readonly": false,
      "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2343,6 +3073,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2373,6 +3113,16 @@
      "type": "String",
      "readonly": true,
      "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
      "params": [],
      "label": null
     },
@@ -2443,6 +3193,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2547,6 +3317,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -2567,12 +3347,32 @@
      "label": null
     },
     {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "stop",
      "kind": "champ",
      "signature": "stop",
      "type": null,
      "readonly": false,
      "description": "Indique l'arrêt (valeur `stop` du REDY) ; le mode n'est alors pas commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2624,6 +3424,16 @@
    "description": "Reflet PID (régulation) : mesure, consigne, sortie en % et mode forcé (`1` : automatique).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -2640,6 +3450,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -2714,6 +3534,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -2734,6 +3564,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -2750,6 +3590,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2780,6 +3630,16 @@
      "type": "String",
      "readonly": true,
      "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
      "params": [],
      "label": null
     },
@@ -2830,6 +3690,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2924,6 +3804,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -2940,6 +3830,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -2991,6 +3901,16 @@
    "description": "Reflet de fil pilote : mode en cours et mode forcé (`-1` : pas de forçage), chacun avec son libellé.",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -3007,6 +3927,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -3061,6 +3991,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -3081,6 +4021,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -3097,6 +4047,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3127,6 +4087,16 @@
      "type": "String",
      "readonly": true,
      "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
      "params": [],
      "label": null
     },
@@ -3171,6 +4141,16 @@
      "label": null
     },
     {
+     "name": "modeStatusIcon",
+     "kind": "champ",
+     "signature": "modeStatusIcon",
+     "type": null,
+     "readonly": true,
+     "description": "Icône du mode en cours (`modeStatus`), `?` si inconnue.",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "modeStatusOptions",
      "kind": "champ",
      "signature": "modeStatusOptions",
@@ -3197,6 +4177,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3251,6 +4251,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -3267,6 +4277,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3318,6 +4348,16 @@
    "description": "Reflet de pompe simple ou double : marche et défaut de chaque pompe, et mode manuel (`0` : automatique).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -3334,6 +4374,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -3388,6 +4438,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -3428,6 +4488,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -3444,6 +4514,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3508,6 +4588,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "manual",
      "kind": "champ",
      "signature": "manual",
@@ -3554,6 +4644,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3638,6 +4748,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -3654,6 +4774,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3705,6 +4845,16 @@
    "description": "Reflet de tableau de consignes : la consigne sélectionnée par son index dans une liste (libellé et valeur).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -3721,6 +4871,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -3775,6 +4935,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -3791,6 +4961,16 @@
      "type": null,
      "readonly": false,
      "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3825,6 +5005,16 @@
      "label": null
     },
     {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "isForced",
      "kind": "champ",
      "signature": "isForced",
@@ -3855,6 +5045,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "mode",
      "kind": "champ",
      "signature": "mode",
@@ -3871,6 +5071,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -3935,6 +5155,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -3951,6 +5181,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4022,6 +5272,16 @@
    "description": "Reflet d'état : seulement l'état de la ressource, sans valeur propre.\nIl n'est pas commandable.",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -4038,6 +5298,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -4092,6 +5362,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -4112,6 +5392,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -4128,6 +5418,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4162,6 +5462,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "mode",
      "kind": "champ",
      "signature": "mode",
@@ -4178,6 +5488,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4232,6 +5562,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -4248,6 +5588,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4299,6 +5659,16 @@
    "description": "Reflet texte : valeur texte commandable.",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -4315,6 +5685,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -4369,6 +5749,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -4389,6 +5779,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -4405,6 +5805,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4439,6 +5849,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "mode",
      "kind": "champ",
      "signature": "mode",
@@ -4455,6 +5875,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4509,6 +5949,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -4525,6 +5975,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4586,6 +6056,16 @@
    "description": "Reflet d'un type non reconnu : pas de champ propre ; son texte d'état est construit à partir des valeurs brutes reçues.",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -4602,6 +6082,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -4656,6 +6146,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -4676,6 +6176,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -4692,6 +6202,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4726,6 +6246,16 @@
      "label": null
     },
     {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "mode",
      "kind": "champ",
      "signature": "mode",
@@ -4742,6 +6272,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4796,6 +6346,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -4812,6 +6372,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -4863,6 +6443,16 @@
    "description": "Reflet de vanne : état de marche, erreur (type, étape) et mode manuel (`0` : automatique).",
    "fields": [
     {
+     "name": "alarm",
+     "kind": "champ",
+     "signature": "alarm",
+     "type": null,
+     "readonly": true,
+     "description": "Alarme du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "allowCommand",
      "kind": "champ",
      "signature": "allowCommand",
@@ -4879,6 +6469,16 @@
      "type": null,
      "readonly": false,
      "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canSubmit",
+     "kind": "champ",
+     "signature": "canSubmit",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la commande préparée (`command`) peut être envoyée : elle diffère des valeurs actuelles et aucune commande n'est en cours.",
      "params": [],
      "label": null
     },
@@ -4953,6 +6553,16 @@
      "label": null
     },
     {
+     "name": "exchangeDate",
+     "kind": "champ",
+     "signature": "exchangeDate",
+     "type": null,
+     "readonly": true,
+     "description": "Date du dernier échange de données du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "fault",
      "kind": "champ",
      "signature": "fault",
@@ -4973,6 +6583,16 @@
      "label": null
     },
     {
+     "name": "hasPendingCommand",
+     "kind": "champ",
+     "signature": "hasPendingCommand",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une commande est en attente sur le reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "hasPendingEvent",
      "kind": "champ",
      "signature": "hasPendingEvent",
@@ -4989,6 +6609,16 @@
      "type": "Number ou string",
      "readonly": false,
      "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "infraId",
+     "kind": "champ",
+     "signature": "infraId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'infrastructure du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -5019,6 +6649,16 @@
      "type": "String",
      "readonly": true,
      "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastState",
+     "kind": "champ",
+     "signature": "lastState",
+     "type": null,
+     "readonly": true,
+     "description": "Dernier état brut reçu du serveur (utile pour lire les champs d'un reflet de type inconnu).",
      "params": [],
      "label": null
     },
@@ -5069,6 +6709,26 @@
      "type": "String",
      "readonly": true,
      "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextCall",
+     "kind": "champ",
+     "signature": "nextCall",
+     "type": null,
+     "readonly": true,
+     "description": "Date du prochain appel prévu (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nodeId",
+     "kind": "champ",
+     "signature": "nodeId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant du nœud du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -5153,6 +6813,16 @@
      "label": null
     },
     {
+     "name": "smartLocalUnitId",
+     "kind": "champ",
+     "signature": "smartLocalUnitId",
+     "type": null,
+     "readonly": true,
+     "description": "Identifiant de l'unité locale du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "state",
      "kind": "champ",
      "signature": "state",
@@ -5169,6 +6839,26 @@
      "type": "String",
      "readonly": true,
      "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "status",
+     "kind": "champ",
+     "signature": "status",
+     "type": null,
+     "readonly": true,
+     "description": "Statut du reflet (non renseigné avec un REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "tags",
+     "kind": "champ",
+     "signature": "tags",
+     "type": null,
+     "readonly": true,
+     "description": "Tags du reflet (non renseigné avec un REDY).",
      "params": [],
      "label": null
     },
@@ -6536,6 +8226,20 @@
     "params": []
    },
    {
+    "name": "getAdditional",
+    "kind": "méthode",
+    "signature": "getAdditional(key)",
+    "type": "any",
+    "readonly": false,
+    "description": "Obtient la valeur de l'additionnelle de clé `key` (comme `this.additionals[key]`).",
+    "params": [
+     {
+      "name": "key",
+      "description": "Clé de l'additionnelle."
+     }
+    ]
+   },
+   {
     "name": "getBinding",
     "kind": "méthode",
     "signature": "getBinding(targetValuePath)",
@@ -6546,6 +8250,20 @@
      {
       "name": "targetValuePath",
       "description": "Chemin de la cible ex.: `properties.content`"
+     }
+    ]
+   },
+   {
+    "name": "getProperty",
+    "kind": "méthode",
+    "signature": "getProperty(key)",
+    "type": "any",
+    "readonly": false,
+    "description": "Obtient la valeur de la propriété `key` (comme `this.properties[key]`).",
+    "params": [
+     {
+      "name": "key",
+      "description": "Nom de la propriété."
      }
     ]
    },
@@ -7629,6 +9347,20 @@
      ]
     },
     {
+     "name": "getAdditional",
+     "kind": "méthode",
+     "signature": "getAdditional(key)",
+     "type": "any",
+     "readonly": false,
+     "description": "Obtient la valeur de l'additionnelle de clé `key` (comme `this.additionals[key]`).",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'additionnelle."
+      }
+     ]
+    },
+    {
      "name": "navigate",
      "kind": "méthode",
      "signature": "navigate(sceneKey, additionals)",
@@ -8479,6 +10211,20 @@
      "readonly": false,
      "description": "Charge la liste des curseurs définis dans le REDY.",
      "params": []
+    },
+    {
+     "name": "loadWebFileBase64",
+     "kind": "méthode",
+     "signature": "loadWebFileBase64(path)",
+     "type": "Promise<String>",
+     "readonly": false,
+     "description": "Charge un fichier web du REDY et renvoie son contenu encodé en base64.",
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin du fichier sur le REDY."
+      }
+     ]
     },
     {
      "name": "loadWosEvents",
@@ -18380,6 +20126,15 @@
      "params": []
     },
     {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": true,
+     "description": "Options proposées par le filtre, en JSON (texte).",
+     "params": []
+    },
+    {
      "name": "selectedCount",
      "kind": "champ",
      "signature": "selectedCount",
@@ -18544,6 +20299,15 @@
      "type": "Array<BaseActor",
      "readonly": true,
      "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": true,
+     "description": "Options proposées par le filtre, en JSON (texte).",
      "params": []
     },
     {
@@ -18714,6 +20478,15 @@
      "params": []
     },
     {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": true,
+     "description": "Options proposées par le filtre, en JSON (texte).",
+     "params": []
+    },
+    {
      "name": "selectedCount",
      "kind": "champ",
      "signature": "selectedCount",
@@ -18881,6 +20654,15 @@
      "params": []
     },
     {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": true,
+     "description": "Options proposées par le filtre, en JSON (texte).",
+     "params": []
+    },
+    {
      "name": "selectedCount",
      "kind": "champ",
      "signature": "selectedCount",
@@ -19045,6 +20827,15 @@
      "type": "Array<BaseActor",
      "readonly": true,
      "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": true,
+     "description": "Options proposées par le filtre, en JSON (texte).",
      "params": []
     },
     {
@@ -19224,6 +21015,15 @@
      "type": "Array<BaseActor",
      "readonly": true,
      "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": true,
+     "description": "Options proposées par le filtre, en JSON (texte).",
      "params": []
     },
     {
@@ -22750,6 +24550,15 @@
      "type": null,
      "readonly": false,
      "description": "Obtient le requêteur de reflet source.",
+     "params": []
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": null,
+     "readonly": true,
+     "description": "État vrai/faux affiché, déduit du reflet selon son type : en marche (chaudière, vanne, brûleur, pompe), valeur ou valeur forcée (digital, analogique non nulle), sortie ou mode forcé (PID), mode autre que 3 (fil pilote) ; `false` sans reflet.",
      "params": []
     }
    ],
