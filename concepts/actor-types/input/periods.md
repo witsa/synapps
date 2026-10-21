@@ -1,6 +1,7 @@
 ---
 title: "Périodes"
 parent: "Intéraction"
+api_type: input/period
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Period" %}
@@ -15,58 +16,28 @@ L'acteur *Période* a beaucoup de similitudes avec l'acteur [*Liste de boutons*]
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Sélection
+{% include script_api/properties.md type=page.api_type %}
 
-La propriété `Selection` reflète la valeur sélectionnée en cours.
+# Informations
+{: #informations }
 
-La valeur attendue est la `value` de l'une des périodes de l'acteur parmi :
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-| - | - | - |
-| `all` | Tout |
-| `today` | Aujourd'hui |
-| `last24` | Dernières 24H |
-| `week` | Semaine en cours |
-| `weekprevious` | Semaine dernière |
-| `month` | Mois en cours |
-| `monthprevious` | Mois dernier |
-| `year` | Année en cours |
-| `yearprevious` | Année dernière |
-
-## Taille
-
-{% include property_size.md %}
-
-## Périodes présentes
-
-Cette propriété permet de définir les périodes présentes et leur ordre d'apparition dans l'acteur sous la forme d'un tableau `JSON` des valeurs possible. Par ex:
-```json
-[ "today", "last24", "week", "weekprevious", "month", "monthprevious", "year", "yearprevious" ]
-```
-
-# Champs d'information
-
-## Date de début
-
-Ce champ contient la date de début (format ISO) de la période sélectionnée. S'il n'y a pas de période sélectionnée, ou que par définition, elle n'a pas de début, la valeur est `null`.
-
-## Date de fin
-
-Ce champ contient la date de fin (format ISO) de la période sélectionnée. S'il n'y a pas de période sélectionnée, ou que par définition, elle n'a pas de fin, la valeur est `null`.
-
-## Texte sélectionné
-
-Le champ d'information *Texte sélectionné* contient le texte correspondant à l'option sélectionné.
-
-## Liste des options
-
-Le tableau des options est accessible dans le champ d'information *Liste des options*.
+{% include script_api/fields.md type=page.api_type %}
 
 # Événements
+{: #evenements }
 
-## `onSelected`
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-L'évènement `onSelected` est déclenché lorsque la sélection change.
+{% include script_api/events.md type=page.api_type %}
 
-> [⚡ `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.Period.html#event:onSelected){:target="_blank"}
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

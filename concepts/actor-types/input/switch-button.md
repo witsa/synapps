@@ -1,6 +1,7 @@
 ---
 title: "Bouton interrupteur"
 parent: "Intéraction"
+api_type: input/switch-button
 ---
 
 {% include links_actor.md apiClass="Actor.Input.SwitchButton" %}
@@ -13,28 +14,21 @@ Acteur d'interaction qui permet d'afficher un interrupteur à deux états.
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Valeur
-
-Cette propriété permet de faire basculer l'interrupteur.
-
-## Texte pour vrai, texte pour faux
-
-Ces deux propriétés permettent de définir les textes qui s'affichent dans l'interrupteur correspondant à la valeur `true` et à la valeur `false`.
-
-## Mode pour vrai, mode pour faux
-
-Ces deux propriétés permettent de définir le mode de couleur de l'interrupteur correspondant à la valeur `true` et à la valeur `false`. Ce sont les mêmes mode que pour l'acteur [*bouton*](./button.md). La propriété *Outline* permet aussi de gérer les variantes de couleur.
-
-## Taille
-
-{% include property_size.md %}
+{% include script_api/properties.md type=page.api_type %}
 
 # Événements
+{: #evenements }
 
-## `onSwitched`
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-L'évènement `onSwitched` est déclenché lorsque l'acteur est basculé.
+{% include script_api/events.md type=page.api_type %}
 
-> [⚡ `onSwitched`]({{ site.baseurl }}/script-api/Actor.Input.SwitchButton.html#event:onSwitched){:target="_blank"}
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

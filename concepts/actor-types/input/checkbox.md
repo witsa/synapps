@@ -1,6 +1,7 @@
 ---
 title: "Case à cocher"
 parent: "Intéraction"
+api_type: input/checkbox
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Checkbox" %}
@@ -11,30 +12,21 @@ Acteur d'interaction qui permet d'afficher une case à cocher. Le texte est **Jo
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Valeur
+{% include script_api/properties.md type=page.api_type %}
 
-Ce champ traduit l'état de la case à cocher.
+# Informations
+{: #informations }
 
-## Texte
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-Jokerable
-{: .label }
+{% include script_api/fields.md type=page.api_type %}
 
-Le texte qui accompagne la case à cocher.
+# Hérite de
+{: #herite-de }
 
-## État de validation
-
-{% include property_validation.md %}
-
-## Taille
-
-{% include property_size.md %}
-
-
-# Champs d'informations
-
-## Contenu complété : Texte
-
-{% include field_completed_content.md %}
+{% include script_api/inherits.md type=page.api_type %}

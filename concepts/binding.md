@@ -168,11 +168,11 @@ Indiquez ici si vous désirez que la donnée soit récupérée à chaque mise à
 
 ## La liaion de type de source *Fournisseur de reflet*
 
-> 🚧 en cours de rédaction...
+Ce type de source permet de lier une propriété à un reflet du REDY, par l'intermédiaire d'un requêteur de reflet désigné par sa clé. Comme pour la source *Fournisseur de variable*, un chemin relatif et un mode de récupération (à chaque mise à jour du requêteur ou seulement la première fois) complètent le paramétrage.
 
 ## La liaison de type de source *Donnée de fournisseur*
 
-> 🚧 en cours de rédaction...
+Ce type de source permet de lier une propriété à la donnée (`data`) d'un acteur fournisseur, désigné par sa clé : un fournisseur de la scène ou du composite, ou un fournisseur global. Le chemin indique la partie de la donnée à utiliser.
 
 ## La liaison de type de source *Contexte*
 

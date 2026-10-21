@@ -1,6 +1,7 @@
 ---
 title: "Bouton de menu"
 parent: "Intéraction"
+api_type: input/menu-button
 ---
 
 {% include links_actor.md apiClass="Actor.Input.MenuButton" %}
@@ -11,30 +12,33 @@ Le **Bouton de menu** est un bouton conçu pour fonctionner avec un **Menu de na
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Scène
+{% include script_api/properties.md type=page.api_type %}
 
-Définit la scène ciblée lorsque l’utilisateur clique sur le bouton. Cette valeur est comparée à la **Scène sélectionnée** du Menu pour appliquer le style actif.
+# Informations
+{: #informations }
 
-## Dépassement de texte
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-Contrôle l’affichage du texte si celui‑ci dépasse la largeur disponible :
+{% include script_api/fields.md type=page.api_type %}
 
-- **Pas de retour à la ligne**
-- **Retour à la ligne**
-- **Retour à la ligne (cassure)**
-- **Tronqué**
+# Événements
+{: #evenements }
 
-## Icône / Image
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-Permet d’afficher une icône ou une image dans le bouton. Si une image est définie, elle est prioritaire sur l’icône.
+{% include script_api/events.md type=page.api_type %}
 
-## Position de l’icône
+# Hérite de
+{: #herite-de }
 
-Choix entre **gauche** et **droite** par rapport au texte pour l’icône ou l’image.
+{% include script_api/inherits.md type=page.api_type %}
 
-## Comportement
+# Comportement
 
 - Au clic, le bouton met à jour la propriété **Scène sélectionnée** du **Menu de navigation** parent.
 - Le style actif/inactif est appliqué automatiquement en fonction de la scène sélectionnée.

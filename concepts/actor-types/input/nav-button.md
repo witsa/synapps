@@ -1,9 +1,8 @@
 ---
 title: "Bouton de Navigation"
 parent: "Intéraction"
+api_type: input/nav-button
 ---
-
-> 🚧 en cours de rédaction...
 
 {% include links_actor.md apiClass="Actor.Input.NavButton" %}
 
@@ -17,19 +16,36 @@ Ses propriétés supplémentaires sont listées ci-dessous.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+{% include script_api/legend.md %}
 
-{% assign sorted = site.input_nav_button_properties | sort: 'order' %}
+# Propriétés
+{: #proprietes }
 
-{% for property in sorted %}
+{% include script_api/properties.md type=page.api_type %}
 
-{% include actor_property.md property=property %}
+# Informations
+{: #informations }
 
-{% endfor %}
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-# Évènements spécifiques
+{% include script_api/fields.md type=page.api_type %}
 
-> 🚧 en cours de rédaction...
+# Méthodes
+{: #methodes }
+
+{% include script_api/methods.md type=page.api_type %}
+
+# Événements
+{: #evenements }
+
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
+
+{% include script_api/events.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}
 
 # Variantes
 

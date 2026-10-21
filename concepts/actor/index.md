@@ -5,8 +5,6 @@ has_children: true
 nav_order: 4
 ---
 
-> 🚧 en cours de rédaction...
-
 {% include table_of_content.html %}
 
 # Acteur
@@ -139,7 +137,12 @@ C'est une notion Avancée. Voir la section dédiée au [Ruissellement de context
 
 ## Les fournisseurs de donnée
 
-> 🚧 en cours de rédaction...
+Certains acteurs ne s'affichent pas : ce sont des fournisseurs de donnée. Ils récupèrent une donnée (une variable ou une ressource du REDY, le résultat d'une requête...) et la placent dans leur information *Donnée* (`data`), utilisable par liaison ou par script.
+
+- [Fournisseur de variable](../actor-types/redy/wos-variable-source.md), [de ressource](../actor-types/redy/resource-source.md) et [relatif de variable](../actor-types/redy/wos-relative-variable-source.md) ;
+- [Fournisseur de requête](../actor-types/redy-pilot/cursor-request-source.md) et [d'instruction](../actor-types/redy-pilot/cursor-instruction-source.md) du REDY Pilot.
+
+Les fournisseurs peuvent être créés dans une scène ou un composite, ou de manière globale pour toute la synapp : voir les [fournisseurs de donnée globaux](../project/global-data-sources.md).
 
 ## La recherche d'acteur
 

@@ -1,9 +1,8 @@
 ---
 title: "Bouton"
 parent: "Intéraction"
+api_type: input/button
 ---
-
-> 🚧 en cours de rédaction...
 
 {% include links_actor.md apiClass="Actor.Input.Button" %}
 
@@ -13,29 +12,31 @@ Acteur bouton poussoir.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+{% include script_api/legend.md %}
 
-{% assign sorted = site.input_button_properties | sort: 'order' %}
+# Propriétés
+{: #proprietes }
 
-{% for property in sorted %}
+{% include script_api/properties.md type=page.api_type %}
 
-{% include actor_property.md property=property %}
+# Informations
+{: #informations }
 
-{% endfor %}
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
 
-# Champs d'informations
+{% include script_api/fields.md type=page.api_type %}
 
-## Est Pressé ?
+# Événements
+{: #evenements }
 
-Le champ d'information *Est pressé?* est un booléen qui est `true` lorsque le bouton est pressé et repasse à `false` lorsque le bouton est relâché, après un petit délai de relaxation.
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-## Contenu complété
+{% include script_api/events.md type=page.api_type %}
 
-{% include field_completed_content.md %}
+# Hérite de
+{: #herite-de }
 
-# Évènements spécifiques
-
-> 🚧 en cours de rédaction...
+{% include script_api/inherits.md type=page.api_type %}
 
 # Variantes
 

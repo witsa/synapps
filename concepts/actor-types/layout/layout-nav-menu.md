@@ -1,6 +1,7 @@
 ---
 title: "Menu de navigation"
 parent: "Disposition"
+api_type: layout/nav-menu
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.NavMenu" %}
@@ -11,28 +12,37 @@ Le **Menu de navigation** est le conteneur principal qui gère l’état de la n
 
 {% include table_of_content.html %}
 
+{% include script_api/legend.md %}
+
 # Propriétés
+{: #proprietes }
 
-## Scène sélectionnée
-
-Définit la clé de la scène actuellement sélectionnée. Cette propriété est mise à jour automatiquement lorsqu’un **Bouton de menu** est cliqué.
-
-## Couleurs de groupe
-
-- **Couleur de fond du groupe** : couleur d’arrière‑plan des entêtes de groupes.
-- **Couleur du texte** : couleur du texte des entêtes de groupes.
-
-## Styles des boutons
-
-- **Style du bouton actif** : style appliqué au bouton correspondant à la scène sélectionnée.
-- **Style du bouton inactif** : style appliqué aux autres boutons.
+{% include script_api/properties.md type=page.api_type %}
 
 > 📌 **REMARQUE**<br>
 >
 > Les styles actif/inactif sont les styles définis sur l’acteur **Bouton de menu**.
 
+# Informations
+{: #informations }
+
+Accessibles par script, via `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur.
+
+{% include script_api/fields.md type=page.api_type %}
+
+# Méthodes
+{: #methodes }
+
+{% include script_api/methods.md type=page.api_type %}
+
 # Événements
+{: #evenements }
 
-## onMenuSceneSelected
+Les évènements communs à tous les acteurs sont décrits avec l'[acteur de base]({{ site.baseurl }}/concepts/scripts/reference/actor.html).
 
-Déclenché lorsque la propriété **Scène sélectionnée** change. L’événement expose la clé de scène sélectionnée.
+{% include script_api/events.md type=page.api_type %}
+
+# Hérite de
+{: #herite-de }
+
+{% include script_api/inherits.md type=page.api_type %}

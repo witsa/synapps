@@ -3113,12 +3113,12 @@
   }
  },
  "actors": {
-  "layout/canvas": {
-   "type": "layout/canvas",
+  "layout/stack": {
+   "type": "layout/stack",
    "name": "Empilement",
    "family": "layout",
    "note_types": [
-    "layout/canvas"
+    "layout/stack"
    ],
    "properties": [
     {
@@ -3398,9 +3398,280 @@
     }
    ]
   },
+  "layout/canvas": {
+   "type": "layout/canvas",
+   "name": "Toile",
+   "family": "layout",
+   "note_types": [
+    "layout/canvas"
+   ],
+   "properties": [
+    {
+     "name": "overflowX",
+     "label": "Dépassement Horizontal",
+     "description": "Comportement au dépassement horizontal.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Taille",
+     "inheritable": false
+    },
+    {
+     "name": "overflowY",
+     "label": "Dépassement Vertical",
+     "description": "Comportement au dépassement vertical.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Taille",
+     "inheritable": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "name": "onDidActorAdd",
+     "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur ajouté."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorRemove",
+     "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur retiré."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsAdd",
+     "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs ajoutés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsClear",
+     "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsRemove",
+     "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
+    }
+   ],
+   "lineage": [
+    {
+     "name": "LayoutBase",
+     "behavior": false,
+     "description": "Base pour les acteurs de disposition."
+    },
+    {
+     "name": "Parenthood",
+     "behavior": true,
+     "description": "Étend la classe pour permettre d'avoir des acteurs enfants."
+    }
+   ]
+  },
   "layout/view-box": {
    "type": "layout/view-box",
-   "name": "Toile",
+   "name": "Boite à vue",
    "family": "layout",
    "note_types": [
     "layout/view-box"
@@ -3436,6 +3707,20 @@
      "type": null,
      "default": "'hidden'",
      "modifier": "Taille",
+     "inheritable": false
+    },
+    {
+     "name": "viewType",
+     "label": "Type de vue",
+     "description": "Type de vue.",
+     "section": "specifics",
+     "values": [
+      "fill",
+      "visible"
+     ],
+     "type": null,
+     "default": "'visible'",
+     "modifier": "Gabarit",
      "inheritable": false
     }
    ],
@@ -3662,12 +3947,83 @@
   },
   "layout/modal": {
    "type": "layout/modal",
-   "name": "Boite à vue",
+   "name": "Modale",
    "family": "layout",
    "note_types": [
     "layout/modal"
    ],
    "properties": [
+    {
+     "name": "positionModalHorizontal",
+     "label": "Ancrage horizontale de la modale",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "left",
+      "right",
+      "middle"
+     ],
+     "type": null,
+     "default": "'middle'",
+     "modifier": "Rendu",
+     "inheritable": false
+    },
+    {
+     "name": "positionAttachedHorizontal",
+     "label": "Ancrage horizontale sur l'acteur attaché",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "left",
+      "right",
+      "middle"
+     ],
+     "type": null,
+     "default": "'middle'",
+     "modifier": "Rendu",
+     "inheritable": false
+    },
+    {
+     "name": "positionModalVertical",
+     "label": "Ancrage verticale de la modale",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "top",
+      "bottom",
+      "middle"
+     ],
+     "type": null,
+     "default": "'middle'",
+     "modifier": "Rendu",
+     "inheritable": false
+    },
+    {
+     "name": "positionAttachedVertical",
+     "label": "Ancrage verticale sur l'acteur attaché",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "top",
+      "bottom",
+      "middle"
+     ],
+     "type": null,
+     "default": "'middle'",
+     "modifier": "Rendu",
+     "inheritable": false
+    },
+    {
+     "name": "attachedActorKey",
+     "label": "Clé de l'acteur attaché",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "clé d'acteur",
+     "default": "null",
+     "modifier": "Rendu",
+     "inheritable": false
+    },
     {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
@@ -3701,17 +4057,36 @@
      "inheritable": false
     },
     {
-     "name": "viewType",
-     "label": "Type de vue",
-     "description": "Type de vue.",
+     "name": "clickOutsideToClose",
+     "label": "Ferme si clique ailleurs",
+     "description": null,
      "section": "specifics",
-     "values": [
-      "fill",
-      "visible"
-     ],
-     "type": null,
-     "default": "'visible'",
-     "modifier": "Gabarit",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "isShown",
+     "label": "Montrer?",
+     "description": "Commande l'affichage de la modale.",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": "Taille",
+     "inheritable": false
+    },
+    {
+     "name": "translucentOverlay",
+     "label": "Overlay transparent",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": null,
      "inheritable": false
     }
    ],
@@ -3933,6 +4308,272 @@
      "description": "Se produit lorsque la modale s'est ouverte.",
      "returns": null,
      "context": []
+    }
+   ],
+   "lineage": [
+    {
+     "name": "LayoutBase",
+     "behavior": false,
+     "description": "Base pour les acteurs de disposition."
+    },
+    {
+     "name": "Parenthood",
+     "behavior": true,
+     "description": "Étend la classe pour permettre d'avoir des acteurs enfants."
+    }
+   ]
+  },
+  "layout/slot": {
+   "type": "layout/slot",
+   "name": "Emplacement",
+   "family": "layout",
+   "note_types": [
+    "layout/slot"
+   ],
+   "properties": [
+    {
+     "name": "overflowX",
+     "label": "Dépassement Horizontal",
+     "description": "Comportement au dépassement horizontal.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Taille",
+     "inheritable": false
+    },
+    {
+     "name": "overflowY",
+     "label": "Dépassement Vertical",
+     "description": "Comportement au dépassement vertical.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Taille",
+     "inheritable": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "occupant",
+     "kind": "champ",
+     "signature": "occupant",
+     "type": "Actor.BaseActor",
+     "readonly": true,
+     "description": "Obtient l'acteur occupant l'emplacement.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup)",
+     "type": null,
+     "readonly": false,
+     "description": "Ajoute l'acteur décrit par le setup dans l'emplacement.",
+     "params": []
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire l'acteur de l'emplacement.",
+     "params": []
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "name": "onDidActorAdd",
+     "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur ajouté."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorRemove",
+     "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur retiré."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsAdd",
+     "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs ajoutés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsClear",
+     "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsRemove",
+     "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
     }
    ],
    "lineage": [
@@ -6362,12 +7003,12 @@
     }
    ]
   },
-  "layout/nav-group": {
-   "type": "layout/nav-group",
-   "name": "Groupe de navigation",
+  "layout/nav-menu": {
+   "type": "layout/nav-menu",
+   "name": "Menu de navigation",
    "family": "input",
    "note_types": [
-    "layout/nav-group"
+    "layout/nav-menu"
    ],
    "properties": [
     {
@@ -6454,6 +7095,372 @@
      "values": null,
      "type": "string",
      "default": "'menu-button-inactive'",
+     "modifier": null,
+     "inheritable": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    },
+    {
+     "name": "selectScene",
+     "kind": "méthode",
+     "signature": "selectScene(sceneKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Sélectionne une scène dans le menu.",
+     "params": [
+      {
+       "name": "sceneKey",
+       "description": "Clé de la scène."
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "name": "onDidActorAdd",
+     "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur ajouté."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorRemove",
+     "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur retiré."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsAdd",
+     "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs ajoutés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsClear",
+     "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsRemove",
+     "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
+    },
+    {
+     "name": "onMenuSceneSelected",
+     "description": null,
+     "returns": null,
+     "context": [
+      {
+       "name": "selectedSceneKey",
+       "type": null,
+       "description": null
+      }
+     ]
+    }
+   ],
+   "lineage": [
+    {
+     "name": "LayoutBase",
+     "behavior": false,
+     "description": "Base pour les acteurs de disposition."
+    },
+    {
+     "name": "Parenthood",
+     "behavior": true,
+     "description": "Étend la classe pour permettre d'avoir des acteurs enfants."
+    }
+   ]
+  },
+  "layout/nav-group": {
+   "type": "layout/nav-group",
+   "name": "Groupe de navigation",
+   "family": "input",
+   "note_types": [
+    "layout/nav-group"
+   ],
+   "properties": [
+    {
+     "name": "isHeaderDisplayed",
+     "label": "Avec en-têtes?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": "Gabarit",
+     "inheritable": false
+    },
+    {
+     "name": "overflowX",
+     "label": "Dépassement Horizontal",
+     "description": "Comportement au dépassement horizontal.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Taille",
+     "inheritable": false
+    },
+    {
+     "name": "overflowY",
+     "label": "Dépassement Vertical",
+     "description": "Comportement au dépassement vertical.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Taille",
+     "inheritable": false
+    },
+    {
+     "name": "isOpen",
+     "label": "Étendu?",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": "Gabarit",
+     "inheritable": false
+    },
+    {
+     "name": "icon",
+     "label": "Icône titre",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "''",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "picture",
+     "label": "Image titre",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "iconPosition",
+     "label": "Position de l'image du titre",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "left",
+      "right"
+     ],
+     "type": null,
+     "default": "'left'",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "content",
+     "label": "Titre du menu",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "''",
      "modifier": null,
      "inheritable": false
     }
@@ -6683,14 +7690,47 @@
    ],
    "properties": [
     {
-     "name": "isHeaderDisplayed",
-     "label": "Avec en-têtes?",
+     "name": "groupBackgroundColor",
+     "label": "Couleur de fond du groupe",
      "description": null,
      "section": "specifics",
      "values": null,
-     "type": "boolean",
-     "default": "true",
-     "modifier": "Gabarit",
+     "type": "string",
+     "default": "'inherit'",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "groupBackgroundColorActive",
+     "label": "Couleur de fond du groupe actif",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'inherit'",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "groupColor",
+     "label": "Couleur du texte du groupe",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'inherit'",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "groupColorActive",
+     "label": "Couleur du texte du groupe actif",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'#2A9FD6'",
+     "modifier": null,
      "inheritable": false
     },
     {
@@ -6726,60 +7766,46 @@
      "inheritable": false
     },
     {
-     "name": "isOpen",
-     "label": "Étendu?",
+     "name": "isHover",
+     "label": "Ouvrir au survol ?",
      "description": null,
      "section": "specifics",
      "values": null,
      "type": "boolean",
-     "default": "true",
-     "modifier": "Gabarit",
+     "default": "false",
+     "modifier": null,
      "inheritable": false
     },
     {
-     "name": "icon",
-     "label": "Icône titre",
+     "name": "selectedScene",
+     "label": "Scène selectionnée",
      "description": null,
      "section": "specifics",
      "values": null,
-     "type": "string",
+     "type": "clé de scène",
      "default": "''",
      "modifier": null,
      "inheritable": false
     },
     {
-     "name": "picture",
-     "label": "Image titre",
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "any",
-     "default": "null",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "iconPosition",
-     "label": "Position de l'image du titre",
-     "description": null,
-     "section": "specifics",
-     "values": [
-      "left",
-      "right"
-     ],
-     "type": null,
-     "default": "'left'",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "content",
-     "label": "Titre du menu",
+     "name": "styleBtnActive",
+     "label": "Style du bouton actif",
      "description": null,
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "''",
+     "default": "'menu-button-navbar-active'",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "styleBtnInactive",
+     "label": "Style du bouton inactif",
+     "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'menu-button-navbar-inactive'",
      "modifier": null,
      "inheritable": false
     }
@@ -7049,50 +8075,6 @@
    ],
    "properties": [
     {
-     "name": "groupBackgroundColor",
-     "label": "Couleur de fond du groupe",
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'inherit'",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "groupBackgroundColorActive",
-     "label": "Couleur de fond du groupe actif",
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'inherit'",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "groupColor",
-     "label": "Couleur du texte du groupe",
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'inherit'",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "groupColorActive",
-     "label": "Couleur du texte du groupe actif",
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "string",
-     "default": "'#2A9FD6'",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
      "name": "overflowX",
      "label": "Dépassement Horizontal",
      "description": "Comportement au dépassement horizontal.",
@@ -7125,46 +8107,49 @@
      "inheritable": false
     },
     {
-     "name": "isHover",
-     "label": "Ouvrir au survol ?",
+     "name": "icon",
+     "label": "Icône titre",
      "description": null,
      "section": "specifics",
      "values": null,
-     "type": "boolean",
-     "default": "false",
-     "modifier": null,
-     "inheritable": false
-    },
-    {
-     "name": "selectedScene",
-     "label": "Scène selectionnée",
-     "description": null,
-     "section": "specifics",
-     "values": null,
-     "type": "clé de scène",
+     "type": "string",
      "default": "''",
      "modifier": null,
      "inheritable": false
     },
     {
-     "name": "styleBtnActive",
-     "label": "Style du bouton actif",
+     "name": "picture",
+     "label": "Image titre",
      "description": null,
      "section": "specifics",
      "values": null,
-     "type": "string",
-     "default": "'menu-button-navbar-active'",
+     "type": "any",
+     "default": "null",
      "modifier": null,
      "inheritable": false
     },
     {
-     "name": "styleBtnInactive",
-     "label": "Style du bouton inactif",
+     "name": "iconPosition",
+     "label": "Position de l'image du titre",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "left",
+      "right"
+     ],
+     "type": null,
+     "default": "'left'",
+     "modifier": null,
+     "inheritable": false
+    },
+    {
+     "name": "content",
+     "label": "Titre du menu",
      "description": null,
      "section": "specifics",
      "values": null,
      "type": "string",
-     "default": "'menu-button-navbar-inactive'",
+     "default": "''",
      "modifier": null,
      "inheritable": false
     }

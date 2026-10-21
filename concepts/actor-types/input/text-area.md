@@ -1,6 +1,7 @@
 ---
 title: "Zone de texte"
 parent: "Intéraction"
+api_type: input/text-area
 ---
 
 {% include links_actor.md apiClass="Actor.Input.TextArea" %}
@@ -11,44 +12,20 @@ L'acteur Zone de texte permet de renseigner du texte, il est généralement util
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+{% include script_api/legend.md %}
 
-**Valeur**
+# Propriétés
+{: #proprietes }
 
-La propriété spécifique `Valeur` permet de définir la valeur actuelle de l'acteur.
+{% include script_api/properties.md type=page.api_type %}
 
-La valeur attendue est un une chaine de caractère.
+# Hérite de
+{: #herite-de }
 
->📌 *REMARQUE*<br>
-> Il n'est pas possible de décorer le texte au sein de cet acteur, pour ajouter de la décoration au texte il est préférable d'utiliser un acteur HTML.
+{% include script_api/inherits.md type=page.api_type %}
 
-**Taille**
-
-{% include property_size.md %}
-
-**Longueur Max**
-
-Permet de limiter la taille de la chaine de caractère de `Valeur`.
-
->📌 *REMARQUE*<br>
-> Le caractère vide 'espace' est comptabilisé comme tout autre caractère.
+# Usage
 
 **Mode de saisie**
 
 Ce champ permet de conditionner le type de clavier qui s'affiche sur les appareils mobiles et tablettes.
-
-**Auto Completion?**
-
-Permet d'activer / désactiver la saisie automatique sur les navigateurs.
-
-**Lecture seule?**
-
-Permet d'activer / désactiver la saisie de valeur dans le champ de saisie.
-
-**État de validation**
-
-Permet de donner une décoration prédéfinie au champ de saisie.
-
-**Actif**
-
-Permet d'activer / désactiver le champ de saisie.
