@@ -18,12 +18,12 @@ Le composite est aussi un acteur : ses informations, méthodes et évènements c
 # Informations
 {: #informations }
 
-{% include script_api/fields.md object="composite" %}
+{% include script_api/fields.md object="composite" prefix="composite" %}
 
 # Méthodes
 {: #methodes }
 
-{% include script_api/methods.md object="composite" %}
+{% include script_api/methods.md object="composite" prefix="composite" %}
 
 # Événements
 {: #evenements }

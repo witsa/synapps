@@ -18,16 +18,16 @@ Objet `context` passé à tous les scripts (évènements, transformations de lia
 # Informations
 {: #informations }
 
-{% include script_api/fields.md object="context" %}
+{% include script_api/fields.md object="context" prefix="context" %}
 
 # Méthodes
 {: #methodes }
 
-{% include script_api/methods.md object="context" %}
+{% include script_api/methods.md object="context" prefix="context" %}
 
 # Utilitaires
 {: #utilitaires }
 
 Fonctions accessibles par `context.utils`.
 
-{% include script_api/methods.md object="context-utils" %}
+{% include script_api/methods.md object="context-utils" prefix="context.utils" %}

@@ -2,7 +2,7 @@
 title: "Afficheur"
 parent: "Référence"
 grand_parent: Scripts
-nav_order: 9
+nav_order: 10
 ---
 
 {% include table_of_content.html %}
@@ -16,4 +16,4 @@ L'appareil qui affiche la synapp (taille de la fenêtre, orientation, écran tac
 # Informations
 {: #informations }
 
-{% include script_api/fields.md object="user-agent" %}
+{% include script_api/fields.md object="user-agent" prefix="context.synapp.userAgent" %}

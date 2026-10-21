@@ -2653,12 +2653,111 @@
      "params": []
     },
     {
+     "name": "hard",
+     "kind": "champ",
+     "signature": "hard",
+     "type": "string",
+     "readonly": true,
+     "description": "hard de l'ULI",
+     "params": []
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "string",
+     "readonly": true,
+     "description": "Nom de l'ULI",
+     "params": []
+    },
+    {
+     "name": "optAdds",
+     "kind": "champ",
+     "signature": "optAdds",
+     "type": "string",
+     "readonly": true,
+     "description": "Adds de l'ULI.",
+     "params": []
+    },
+    {
+     "name": "picture",
+     "kind": "champ",
+     "signature": "picture",
+     "type": "string",
+     "readonly": true,
+     "description": "Logo de l'ULI.",
+     "params": []
+    },
+    {
+     "name": "profil",
+     "kind": "champ",
+     "signature": "profil",
+     "type": "string",
+     "readonly": true,
+     "description": "Profil de l'ULI.",
+     "params": []
+    },
+    {
+     "name": "riaUrl",
+     "kind": "champ",
+     "signature": "riaUrl",
+     "type": "string",
+     "readonly": true,
+     "description": "URL des applications RIA qu'utilise l'ULI.",
+     "params": []
+    },
+    {
      "name": "session",
      "kind": "champ",
      "signature": "session",
-     "type": "REDY.Synapps.RedySession",
+     "type": "Session",
      "readonly": true,
      "description": "La session pour cet hôte.",
+     "params": []
+    },
+    {
+     "name": "type",
+     "kind": "champ",
+     "signature": "type",
+     "type": "string",
+     "readonly": true,
+     "description": "Type d'ULI",
+     "params": []
+    },
+    {
+     "name": "version",
+     "kind": "champ",
+     "signature": "version",
+     "type": "string",
+     "readonly": true,
+     "description": "Version d'ULI",
+     "params": []
+    },
+    {
+     "name": "versionDate",
+     "kind": "champ",
+     "signature": "versionDate",
+     "type": "string",
+     "readonly": true,
+     "description": "Date de version d'ULI. Format : Date ISO.",
+     "params": []
+    },
+    {
+     "name": "wid",
+     "kind": "champ",
+     "signature": "wid",
+     "type": "string",
+     "readonly": true,
+     "description": "WID de l'ULI",
+     "params": []
+    },
+    {
+     "name": "withLocalRia",
+     "kind": "champ",
+     "signature": "withLocalRia",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si l'ULI utilise les applications RIA locales.",
      "params": []
     }
    ],
@@ -2672,9 +2771,18 @@
      "name": "expirationDate",
      "kind": "champ",
      "signature": "expirationDate",
-     "type": "String",
+     "type": "moment",
      "readonly": true,
-     "description": "Obtient la date d'expiration de la session. Format : Date ISO.",
+     "description": "Ce champ indique la date et l'heure d'expiration de la session au format MomentJS.",
+     "params": []
+    },
+    {
+     "name": "expirationDelay",
+     "kind": "champ",
+     "signature": "expirationDelay",
+     "type": "number",
+     "readonly": true,
+     "description": "Ce champ indique le délai d'expiration de la session en secondes.",
      "params": []
     },
     {
@@ -2683,7 +2791,7 @@
      "signature": "host",
      "type": "Hôte",
      "readonly": true,
-     "description": "Obtient l'hôte.",
+     "description": "Ce champ contient l'objet hôte associé à la session.",
      "params": []
     },
     {
@@ -2692,14 +2800,41 @@
      "signature": "isAuthenticated",
      "type": "Boolean",
      "readonly": true,
-     "description": "Est authentifié?",
+     "description": "Ce champ indique si la session est authentifiée ou non.",
+     "params": []
+    },
+    {
+     "name": "isAuthenticating",
+     "kind": "champ",
+     "signature": "isAuthenticating",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Ce champ indique si la session est en cours d'authentification.",
+     "params": []
+    },
+    {
+     "name": "scope",
+     "kind": "champ",
+     "signature": "scope",
+     "type": "string",
+     "readonly": true,
+     "description": "Périmètre de session",
+     "params": []
+    },
+    {
+     "name": "sid",
+     "kind": "champ",
+     "signature": "sid",
+     "type": "string",
+     "readonly": true,
+     "description": "ID de session",
      "params": []
     },
     {
      "name": "token",
      "kind": "champ",
      "signature": "token",
-     "type": "Hôte",
+     "type": "string",
      "readonly": true,
      "description": "Obtient le jeton identifiant la session.",
      "params": []
@@ -2708,9 +2843,61 @@
      "name": "user",
      "kind": "champ",
      "signature": "user",
-     "type": "Synapps.BaseUser",
+     "type": "Utilisateur",
      "readonly": true,
-     "description": "L'utilisateur de la session.",
+     "description": "Ce champ contient l'objet utilisateur associé à la session.",
+     "params": []
+    }
+   ],
+   "methods": [],
+   "events": []
+  },
+  "user": {
+   "name": "Utilisateur",
+   "fields": [
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "string",
+     "readonly": true,
+     "description": "Identifiant de l'utilisateur dans le REDY.",
+     "params": []
+    },
+    {
+     "name": "label",
+     "kind": "champ",
+     "signature": "label",
+     "type": "string",
+     "readonly": true,
+     "description": "Ce champ contient le label de l'utilisateur. C'est un identifiant unique pour chaque utilisateur dans le REDY.",
+     "params": []
+    },
+    {
+     "name": "level",
+     "kind": "champ",
+     "signature": "level",
+     "type": "1 ou 2 ou 3 ou 4",
+     "readonly": true,
+     "description": "Ce champ contient le niveau d'accès de l'utilisateur dans le REDY.",
+     "params": []
+    },
+    {
+     "name": "mail",
+     "kind": "champ",
+     "signature": "mail",
+     "type": "string",
+     "readonly": true,
+     "description": "Ce champ contient l'adresse e-mail de l'utilisateur si elle a été renseignée.",
+     "params": []
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "string",
+     "readonly": true,
+     "description": "Ce champ contient le nom complet de l'utilisateur.",
      "params": []
     }
    ],

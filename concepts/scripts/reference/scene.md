@@ -18,9 +18,9 @@ La scène qui contient l'acteur (`context.scene`, `this.scene`) ; `context.rootS
 # Informations
 {: #informations }
 
-{% include script_api/fields.md object="scene" %}
+{% include script_api/fields.md object="scene" prefix="context.scene" %}
 
 # Méthodes
 {: #methodes }
 
-{% include script_api/methods.md object="scene" %}
+{% include script_api/methods.md object="scene" prefix="context.scene" %}
