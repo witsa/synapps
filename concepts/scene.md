@@ -5,6 +5,9 @@ nav_order: 3
 ---
 {% include table_of_content.html %}
 
+> ⚡ Par script : [référence pour les scripts](./scripts/reference/scene.md)
+
+
 
 La scène est l'objet qui va définir chaque interface de votre synapp.
 

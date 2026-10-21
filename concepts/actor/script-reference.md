@@ -9,6 +9,8 @@ nav_order: 8
 
 # Référence pour les scripts
 
+> 📖 Concept : [Acteur](./index.md)
+
 Informations, méthodes et évènements communs à tous les acteurs, accessibles par script via
 `this` dans un script de l'acteur ou `context.getActor('clé')` depuis un autre acteur. Les
 propriétés communes sont décrites par catégorie dans les pages [Aspect](./category-aspect.md),

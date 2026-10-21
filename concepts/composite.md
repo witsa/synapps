@@ -7,6 +7,9 @@ parent: Concepts
 
 # Composite
 
+> ⚡ Par script : [référence pour les scripts](./scripts/reference/composite.md)
+
+
 La solution permet de définir de nouveaux acteurs en réunissant et programmant d'autres acteurs. Ainsi assemblés ils forment ce qu'on appelle un *composite*.
 
 A la manière du jeu de lego où plusieurs pièces peuvent s’assembler pour en former une nouvelle, plus riche mais tout aussi simple à utiliser que les autres.

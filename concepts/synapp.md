@@ -4,6 +4,9 @@ parent: Concepts
 nav_order: 2
 ---
 
+> ⚡ Par script : [référence pour les scripts](./scripts/reference/synapp.md)
+
+
 La synapp est l'application IHM à proprement parler. Elle contient les définitions essentielles à son exécution.
 
 La synapp a une identité, un nom, une icône qui lui est propre.

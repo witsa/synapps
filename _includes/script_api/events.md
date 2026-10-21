@@ -18,6 +18,9 @@ alphabétique : include.type = type d'acteur ou « common » ; include.list = au
 {% if event.description %}
 {{ event.description }}
 {% endif %}
+
+`context` : [contexte d'évènement]({{ site.baseurl }}/concepts/scripts/reference/context.html){% if event.context.size > 0 %}, avec en plus :{% endif %}
+{: .fs-2 }
 {%- if event.context.size > 0 %}
 
 | Membre de `context` | Type | Description |

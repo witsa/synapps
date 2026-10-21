@@ -11,6 +11,9 @@ nav_order: 4
 
 # Acteur
 
+> ⚡ Par script : [référence pour les scripts](./script-reference.md)
+
+
 ## Définition
 
 L'acteur est la brique fondamentale de construction de l'interface. Les nombreux types d'acteur et leurs spécificités vont vous permettre d’articuler n’importe quel type d’interface, du formulaire au tableau de bord.

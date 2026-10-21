@@ -9,6 +9,8 @@ nav_order: 3
 
 # Synapp
 
+> 📖 Concept : [Synapp](../../synapp.md)
+
 La synapp en cours d'exécution, accessible par `context.synapp` ou `this.synapp` depuis un acteur.
 
 {% include script_api/legend.md %}

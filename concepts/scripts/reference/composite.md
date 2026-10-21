@@ -9,6 +9,8 @@ nav_order: 5
 
 # Composite
 
+> 📖 Concept : [Composite](../../composite.md)
+
 Le composite est aussi un acteur : ses informations, méthodes et évènements communs sont décrits dans la [référence de l'acteur](../../actor/script-reference.md). Ne figurent ici que ceux qui lui sont propres.
 
 {% include script_api/legend.md %}

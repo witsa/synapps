@@ -9,6 +9,8 @@ nav_order: 2
 
 # Contexte d'évènement
 
+> 📖 Concept : [Scripts](../index.md)
+
 Objet `context` passé à tous les scripts (évènements, transformations de liaison). Chaque évènement peut y ajouter ses propres membres : ils sont décrits avec l'évènement.
 
 {% include script_api/legend.md %}

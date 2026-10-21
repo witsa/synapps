@@ -9,6 +9,8 @@ nav_order: 6
 
 # Session
 
+> 📖 Concept : [Session](../../session.md), [Hôtes](../../project/hosts.md)
+
 La session de l'utilisateur connecté et l'hôte auquel la synapp est connectée.
 
 {% include script_api/legend.md %}

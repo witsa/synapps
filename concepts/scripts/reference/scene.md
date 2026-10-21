@@ -9,6 +9,8 @@ nav_order: 4
 
 # Scène
 
+> 📖 Concept : [Scène](../../scene.md)
+
 La scène qui contient l'acteur (`context.scene`, `this.scene`) ; `context.rootScene` est la scène principale affichée.
 
 {% include script_api/legend.md %}
