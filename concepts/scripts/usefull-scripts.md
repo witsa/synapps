@@ -17,7 +17,7 @@ En effet, de nombreux concepts permettent de reppousser la limite avant que vous
 
 ## Les transformation de liaison
 
-Les scripts de transformation de liaison permettent de modifier la valueur de la source avant de l'assigner à la cible. Les deux types de transformation sont expliqués dans le [cycle de vie des acteurs](./scripts/actor-life-cycle.md#transformations-de-liaison)
+Les scripts de transformation de liaison permettent de modifier la valueur de la source avant de l'assigner à la cible. Les deux types de transformation sont expliqués dans le [cycle de vie des acteurs](./actor-life-cycle.md#transformations-de-liaison)
 
 ### Transformation de liaison simple
 
@@ -124,7 +124,7 @@ Dans certain cas, une valeur doit être obtenue à partir de plusieurs sources. 
 
 Pour cela, nous allons utiliser l'évènement `onPropertyChange` de l'acteur. Cet évènement se déclenche à chaque fois qu'une propriété ou une additionnelle de l'acteur change. Nous allons donc devoir surveiller les propriétés/additionnelles de l'acteur, liées à la source pour mettre à jour la propriété cible.
 
-> Plus d'informations sur l'[évènement onPropertyChange](./scripts/actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur).
+> Plus d'informations sur l'[évènement onPropertyChange](./actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur).
 
 Imaginons le cas suivant : nous avons deux sources _source 1 _ qui apportera une première valeur booléenne et _source 2_ qui apportera une seconde valeur. Nous voullons qu'un acteur soit visible si les deux valeurs sont vraies.
 

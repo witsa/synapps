@@ -9,7 +9,7 @@ parent: Concepts
 
 ## Définition
 
-Les propriétés d'un [acteur](./actor.md) sont initialisées avec des valeurs par défaut. Ces dernières sont définies dans le style qu'utilise l'acteur.
+Les propriétés d'un [acteur](./actor/index.md) sont initialisées avec des valeurs par défaut. Ces dernières sont définies dans le style qu'utilise l'acteur.
 Au départ, un acteur utilise le style `default`. Mais il est possible d'établir d'autre style et changer les valeurs par défaut d'un acteur.
 
 ![SynApps](../assets/concepts/actor-style-01.png)

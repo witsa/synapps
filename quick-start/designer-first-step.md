@@ -51,7 +51,7 @@ Ils sont organisés sous forme d'arborescence :
 
 ![SynApps](../assets/quick-start/designer-first-steps/04.png)
 
-Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type [**Empilement**](../concepts/actor-types/layout/tack.md).
+Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type [**Empilement**](../concepts/actor-types/layout/stack.md).
 
 C'est un acteur de disposition. Son role est de disposer, de placer sur l'interface, les acteurs qu'il va contenir. Dans le cas d'un empilement, il va empiler les acteurs verticalement par défaut.
 D'autres types de disposition existent _([voir doc](../concepts/actor-types/layout/))_.

@@ -28,7 +28,7 @@ Les 5 scènes de l'application d'exploitation sont finalisées. Nous allons les 
 
     * définir la propriété de scène _Scène_ avec le texte ```sceneJournal```
 
-    _Remarque:_ pour rappel, les paramêtres de scène permettent de **piloter les scènes** et **définir des raccourcis** vers des scènes spécifiques. Voir [tutoriel 4 sur la navigation](../../tuto04/index.md)
+    _Remarque:_ pour rappel, les paramêtres de scène permettent de **piloter les scènes** et **définir des raccourcis** vers des scènes spécifiques. Voir [tutoriel 4 sur la navigation](../tuto04/index.md)
 
 2. **Modifier** la scène principale de la SynApp avec la scène ```Scène principale```
 

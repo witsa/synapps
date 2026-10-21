@@ -15688,7 +15688,7 @@
     },
     {
      "name": "submitMode",
-     "label": "Mode de commande?",
+     "label": "Mode de commande",
      "description": "Mode de validation de commande.\n\n- `'action'` (défaut) : des boutons s'afficheront en cas de modification de la commande pour choisir l'action à effectuer.\n- `'manual'` : la commande devra être envoyée manuellement, par script.\n- `'auto'` : la commande sera envoyée automatiquement dès modification ou dès la perte de focus.",
      "section": "specifics",
      "values": [
@@ -15990,25 +15990,25 @@
      "context": [
       {
        "name": "error",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "L'erreur éventuelle de la commande (`null` si elle a réussi)"
       },
       {
        "name": "data",
-       "type": null,
-       "description": null
+       "type": "any",
+       "description": "La réponse du REDY à la commande (absente en cas d'erreur)"
       }
      ]
     },
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },
@@ -17073,11 +17073,17 @@
     },
     {
      "name": "withDetails",
-     "label": "Détails de reflet au click?",
-     "description": null,
+     "label": "Détails de reflet au clic",
+     "description": "Affiche le détail du reflet dans une modale au clic sur l'acteur, ouverte du côté indiqué\n(`top`, `bottom`, `left` ou `right`) ; `none` : pas de modale.\nLorsque le reflet est commandable, ses commandes sont aussi disponibles dans la modale.",
      "section": "specifics",
-     "values": null,
-     "type": "string",
+     "values": [
+      "none",
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "type": null,
      "default": "'none'",
      "modifier": null,
      "inheritable": false,
@@ -17325,13 +17331,13 @@
    "events": [
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },
@@ -17412,11 +17418,17 @@
     },
     {
      "name": "withDetails",
-     "label": "Détails de reflet au click?",
-     "description": null,
+     "label": "Détails de reflet au clic",
+     "description": "Affiche le détail du reflet dans une modale au clic sur l'acteur, ouverte du côté indiqué\n(`top`, `bottom`, `left` ou `right`) ; `none` : pas de modale.\nLorsque le reflet est commandable, ses commandes sont aussi disponibles dans la modale.",
      "section": "specifics",
-     "values": null,
-     "type": "string",
+     "values": [
+      "none",
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "type": null,
      "default": "'none'",
      "modifier": null,
      "inheritable": false,
@@ -17618,13 +17630,13 @@
    "events": [
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },
@@ -17710,11 +17722,17 @@
     },
     {
      "name": "withDetails",
-     "label": "Détails de reflet au click?",
-     "description": null,
+     "label": "Détails de reflet au clic",
+     "description": "Affiche le détail du reflet dans une modale au clic sur l'acteur, ouverte du côté indiqué\n(`top`, `bottom`, `left` ou `right`) ; `none` : pas de modale.\nLorsque le reflet est commandable, ses commandes sont aussi disponibles dans la modale.",
      "section": "specifics",
-     "values": null,
-     "type": "string",
+     "values": [
+      "none",
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "type": null,
      "default": "'none'",
      "modifier": null,
      "inheritable": false,
@@ -17893,13 +17911,13 @@
    "events": [
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },
@@ -17980,11 +17998,17 @@
     },
     {
      "name": "withDetails",
-     "label": "Détails de reflet au click?",
+     "label": "Détails de reflet au clic",
      "description": null,
      "section": "specifics",
-     "values": null,
-     "type": "string",
+     "values": [
+      "none",
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "type": null,
      "default": "'none'",
      "modifier": null,
      "inheritable": false,
@@ -18165,13 +18189,13 @@
    "events": [
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },
@@ -18252,11 +18276,17 @@
     },
     {
      "name": "withDetails",
-     "label": "Détails de reflet au click?",
+     "label": "Détails de reflet au clic",
      "description": null,
      "section": "specifics",
-     "values": null,
-     "type": "string",
+     "values": [
+      "none",
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "type": null,
      "default": "'none'",
      "modifier": null,
      "inheritable": false,
@@ -18437,13 +18467,13 @@
    "events": [
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },
@@ -18524,11 +18554,17 @@
     },
     {
      "name": "withDetails",
-     "label": "Détails de reflet au click?",
+     "label": "Détails de reflet au clic",
      "description": null,
      "section": "specifics",
-     "values": null,
-     "type": "string",
+     "values": [
+      "none",
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "type": null,
      "default": "'none'",
      "modifier": null,
      "inheritable": false,
@@ -18709,13 +18745,13 @@
    "events": [
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },
@@ -18796,11 +18832,17 @@
     },
     {
      "name": "withDetails",
-     "label": "Détails de reflet au click?",
+     "label": "Détails de reflet au clic",
      "description": null,
      "section": "specifics",
-     "values": null,
-     "type": "string",
+     "values": [
+      "none",
+      "top",
+      "bottom",
+      "left",
+      "right"
+     ],
+     "type": null,
      "default": "'none'",
      "modifier": null,
      "inheritable": false,
@@ -18981,13 +19023,13 @@
    "events": [
     {
      "name": "onDidReflectChange",
-     "description": null,
+     "description": "Se produit lorsque l'acteur reçoit un reflet alors qu'il n'en avait pas encore\n(premier chargement, ou après une requête sans reflet) ; les mises à jour suivantes du\nmême reflet ne le déclenchent pas.",
      "returns": null,
      "context": [
       {
        "name": "reflect",
-       "type": null,
-       "description": null
+       "type": "Object ou null",
+       "description": "Le reflet reçu (`null` si la requête n'en a pas trouvé)"
       }
      ]
     },

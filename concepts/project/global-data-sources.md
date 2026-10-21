@@ -15,7 +15,7 @@ Il sont disponibles :
 
 Il sont repérables par le préfixe `global/` dans la liste des champ *Clé parent* ou *Requêteur*.
 
-![Synapp]({{ site.baseUrl }}\assets\concepts\project\global-data-sources\picture1.png)
+![Synapp]({{ site.baseurl }}/assets/concepts/project/global-data-sources/picture1.png)
 
 
 Un acteur fournisseur de variable est toujours défini à la création d'un projet. Il pointe sur `easy.RESS`. Il sert à faciliter la définition de liaisons de type *fournisseur de variable*.

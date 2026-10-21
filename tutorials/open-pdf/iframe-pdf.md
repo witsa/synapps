@@ -13,7 +13,7 @@ Nous utilisons le visualiseur de PDF inclut dans les navigateurs
 Par convention, les PDF dans le REDY se situent à l'adresse : <b> /WEB/IMG/nom-de-mon-pdf </b>
 
 {: .warning }
-> Les navigateurs Android et iOS ne permettent pas l'ouverture d'un PDF via une iFrame, il faut préférer l'ouverture du PDF via un [nouvel onglet](../tutorials/open-pdf/new-tab-pdf.md)
+> Les navigateurs Android et iOS ne permettent pas l'ouverture d'un PDF via une iFrame, il faut préférer l'ouverture du PDF via un [nouvel onglet](./new-tab-pdf.md)
 
 # Afficher un PDF dans une iframe
 
@@ -32,7 +32,7 @@ Nous allons avoir besoin de plusieurs informations afin de construire cette URL 
 - Le WSID de la session utilisateur qui permet à l'iFrame d'être identifiée auprès du REDY
 - Le nom du PDF dans le REDY
 
-Nous allons utiliser des [jokers](../tutorials/jokers-in-text.md) afin de construire l'URL dynamiquement.
+Nous allons utiliser des [jokers](../jokers-in-text.md) afin de construire l'URL dynamiquement.
 
 Le contenu de la propriété _url_ de l'iFrame est donc : <b> /WSID\{\{wsid\}\}/WEB/IMG/\{\{pdfName\}\} </b>
 

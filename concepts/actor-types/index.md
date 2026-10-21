@@ -37,7 +37,7 @@ Ces acteurs sont dédiés à la représentation graphique de donnée. Pour l'ins
 
 - **Composites**
 
-Les composites sont des acteurs que vous pouvez créer à partir d'autres acteurs. Voir la partie dédiée aux [composites](./composite.md).
+Les composites sont des acteurs que vous pouvez créer à partir d'autres acteurs. Voir la partie dédiée aux [composites](../composite.md).
 
 - **REDY**
 

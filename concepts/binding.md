@@ -24,18 +24,18 @@ Seules les propriétés des acteurs peuvent être cible de liaison. En revanche,
 - La [scène](./scene.md) ou le [composite](./composite.md) accueillant l'acteur cible
 - Un autre [acteur](./actor/index.md) ou lui-même
 - Un élément de librairie
-  - une [couleur](./librairies/colors.md)
-  - une [image](./librairies/pictures.md)
-  - une [constante](./librairies/constants.md)
-  - un [texte](./librairies/texts.md)
+  - une [couleur](./libraries/colors.md)
+  - une [image](./libraries/pictures.md)
+  - une [constante](./libraries/constants.md)
+  - un [texte](./libraries/texts.md)
 - Un [fournisseur de variable REDY](#la-liaison-de-type-de-source-fournisseur-de-variable)
 - Un [fournisseur de reflet REDY](#la-liaion-de-type-de-source-fournisseur-de-reflet)
 - Une [donnée de fournisseur](#la-liaison-de-type-de-source-donnée-de-fournisseur)
 - L'[hôte](./project/hosts.md)
 - La [session](./session.md)
 - L'[utilisateur](./user.md)
-- L'[afficheur](./user-agent.md)
-- Le [contexte de donnée](./data-context.md)
+- L'[afficheur](./scripts/reference/user-agent.md)
+- Le [contexte de donnée](./context.md)
 
 Exemple : *une liaison vers la **couleur A** de la librairie des couleurs définie sur la propriété **couleur de fond** d'un acteur*
 ![La liaison vers une couleur de la librairie](../assets/concepts/bindings/01.png)
@@ -178,7 +178,7 @@ Ce type de source permet de lier une propriété à la donnée (`data`) d'un act
 
 Cette liaison, en réalité, ne définit pas comment aller cherche la source. Elle va donc uniquement tenter de se réaliser avec ce qu'elle va trouver dans son contexte de donnée.
 
-Voir la section [Contexte de donnée](./data-context) pour plus de détails.
+Voir la section [Contexte de donnée](./context.md) pour plus de détails.
 
 ## Changement de clé d'élément lié
 
