@@ -20,7 +20,7 @@ include.section (section de l'inspecteur, ex. text) et include.names (noms sépa
 ## {{ api_title }}
 {: .api-property }
 
-`this.properties.{{ property.name }}` · {% if property.values %}{% for value in property.values %}`'{{ value }}'`{% unless forloop.last %} \| {% endunless %}{% endfor %}{% else %}{{ property.type | escape }}{% endif %} · défaut `{{ property.default }}`{% if property.inheritable %} · [héritable]({{ site.baseurl }}/concepts/actor/#valeur-héritée){% endif %}{% if property.jokerable %} · 🃏 [jokerable]({{ site.baseurl }}/concepts/additionals.html#jokers){% endif %}{% if property.modifier %} · modifie : [{{ property.modifier }}]({{ site.baseurl }}/concepts/actor/#évènement-de-modification){% endif %}
+`this.properties.{{ property.name }}` · {% if property.values %}{% for value in property.values %}`'{{ value }}'`{% unless forloop.last %} \| {% endunless %}{% endfor %}{% else %}{{ property.type | escape }}{% endif %} · défaut `{{ property.default }}`{% if property.inheritable %} · [héritable]({{ site.baseurl }}/concepts/actor/#valeur-héritée){% endif %}{% if property.jokerable %} · <a class="api-joker" href="{{ site.baseurl }}/concepts/additionals.html#jokers" title="Accepte des jokers : &#123;&#123;clé&#125;&#125; est remplacé par la valeur de l'additionnelle de même clé"><span class="api-joker-braces">&#123;&#123; &#125;&#125;</span> jokerable</a>{% endif %}{% if property.modifier %} · modifie : [{{ property.modifier }}]({{ site.baseurl }}/concepts/actor/#évènement-de-modification){% endif %}
 {: .fs-2 }
 {% if property.description %}
 {{ property.description }}
