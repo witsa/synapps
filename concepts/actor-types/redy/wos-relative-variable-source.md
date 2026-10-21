@@ -56,7 +56,7 @@ Les évènements communs à tous les acteurs sont décrits avec l'[acteur de bas
 
 # Usage
 
-Il est possible de créer des fournisseurs dans vos scènes ou composites. Vous pouvez également les créer de manière globale dans la sous-section [Projet / Fournisseurs de variable](../../project/variable-source.md) pour en faire profiter toute votre synapp.
+Il est possible de créer des fournisseurs dans vos scènes ou composites. Vous pouvez également les créer de manière globale dans la sous-section [Projet / Fournisseurs de variable](../../project/global-data-sources.md) pour en faire profiter toute votre synapp.
 
 
 ## Grouper des requêtes.

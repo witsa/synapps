@@ -120,7 +120,7 @@
      "signature": "reflectionID",
      "type": null,
      "readonly": false,
-     "description": "Identifiant du réflexe à l'origine de l'évènement.",
+     "description": "Identifiant du reflet à l'origine de l'évènement.",
      "params": [],
      "label": null
     },
@@ -15485,7 +15485,7 @@
      "signature": "reflects",
      "type": null,
      "readonly": false,
-     "description": "Réflexes de la page courante de la liste (lecture seule).",
+     "description": "Reflets de la page courante de la liste (lecture seule).",
      "params": []
     },
     {
@@ -15503,7 +15503,7 @@
      "signature": "selectedReflect",
      "type": null,
      "readonly": false,
-     "description": "Réflexe sélectionné dans la liste ; le modifier déclenche l'évènement onSelectChange.",
+     "description": "Reflet sélectionné dans la liste ; le modifier déclenche l'évènement onSelectChange.",
      "params": []
     }
    ],
@@ -15541,7 +15541,7 @@
      "signature": "selectReflect(reflect)",
      "type": null,
      "readonly": false,
-     "description": "Sélectionne le réflexe donné dans la liste.",
+     "description": "Sélectionne le reflet donné dans la liste.",
      "params": []
     }
    ],
@@ -15894,15 +15894,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -15961,6 +15952,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     },
     {
@@ -16369,7 +16369,7 @@
      "signature": "reflectEvents",
      "type": null,
      "readonly": false,
-     "description": "Évènements de réflexe de la page courante du journal (lecture seule).",
+     "description": "Évènements de reflet de la page courante du journal (lecture seule).",
      "params": []
     },
     {
@@ -17284,15 +17284,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -17319,6 +17310,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -17563,15 +17563,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -17612,6 +17603,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -17852,15 +17852,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -17887,6 +17878,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -18124,15 +18124,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -18159,6 +18150,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -18396,15 +18396,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -18431,6 +18422,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -18668,15 +18668,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -18703,6 +18694,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],
@@ -18940,15 +18940,6 @@
      "params": []
     },
     {
-     "name": "requestDebounce",
-     "kind": "champ",
-     "signature": "requestDebounce",
-     "type": null,
-     "readonly": true,
-     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
-     "params": []
-    },
-    {
      "name": "requesterSource",
      "kind": "champ",
      "signature": "requesterSource",
@@ -18975,6 +18966,15 @@
      "type": null,
      "readonly": false,
      "description": "Effectue une requête : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
+     "params": []
+    },
+    {
+     "name": "requestDebounce",
+     "kind": "méthode",
+     "signature": "requestDebounce()",
+     "type": "Promise<any>",
+     "readonly": false,
+     "description": "Effectue une requête retardée : celle de l'acteur s'il est autonome, sinon celle de son requêteur de reflet.",
      "params": []
     }
    ],

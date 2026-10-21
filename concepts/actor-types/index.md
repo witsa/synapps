@@ -5,8 +5,6 @@ has_children: true
 nav_order: 5
 ---
 
-> 🚧 en cours de rédaction...
-
 {% include table_of_content.html %}
 
 # Types d'acteur

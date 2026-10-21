@@ -5,8 +5,6 @@ parent: Concepts
 
 # Conseils, bonnes pratiques et Optimisations
 
-> **🚧 En cours de rédaction 🚧**
->
 > mise à jour : `2024-12-16 10:00`
 
 Nous vous proposons ici quelques conseils et bonnes pratiques pour la création de vos synapps, ainsi que des optimisations pour améliorer leurs performances.
