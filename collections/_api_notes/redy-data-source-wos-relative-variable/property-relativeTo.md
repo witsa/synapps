@@ -7,7 +7,7 @@ Cette propriété permet de renseigner le fournisseur parent de l'acteur par sa 
 
 Bien entendu, il sera tout a fait possible de choisir un autre fournisseur relatif de variable aussi.
 
-> 📌 **REMARQUE**<br>
-Quoi qu'il en soit, on trouvera un fournisseur normal en remontant dans l'ascendance des acteurs relatifs.
+{: .info }
+> Quoi qu'il en soit, on trouvera un fournisseur normal en remontant dans l'ascendance des acteurs relatifs.
 
 Si vous fournissez par liaison ou par script un fournisseur dans le contexte de donnée de l'acteur et que la clé du parent reste vide, ce fournisseur sera utilisé comme parent. C'est très utile pour paramétrer un composite qui contient un fournisseur relatif mais pas de normal.

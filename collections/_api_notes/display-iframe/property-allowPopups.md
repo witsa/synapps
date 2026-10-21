@@ -5,5 +5,5 @@ name: allowPopups
 ---
 Cette propriété permet d'activer / désactiver les popups lors de la navigation dans le site web de l'iFrame.
 
-> 📌 **REMARQUE**<br>
+{: .info }
 > Cela peut avoir pour effet de désactiver certains formulaires de connexion.

@@ -3,8 +3,8 @@ api_type: common
 kind: property
 name: backgroundPosition
 ---
-> ⚠️ **ATTENTION**<br>
-Afin de voir cette propriété, il faut qu'une image de fond soit présente.<br>
+{: .warning }
+> Afin de voir cette propriété, il faut qu'une image de fond soit présente.<br>
 
 Cette propriété définit la position de l'image de fond de l'acteur.
 

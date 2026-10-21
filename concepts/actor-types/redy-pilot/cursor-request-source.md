@@ -71,8 +71,7 @@ return context.getActor("<clé du fournisseur de requête>").getOptionsFromData(
 
 Cela remplira automatiquement la liste déroulante avec les utilisateurs de la base de données, en utilisant `id` comme valeur et `name` comme texte affiché.
 
-{: .note }
-
+{: .info }
 > Cela marche ici, parce que les colonnes de la requête SQL sont nommées `value` et `text`, ce qui correspond directement aux attentes de la liste déroulante pour ses options.
 >
 > Si la requête SQL n'a pas les bon noms de colonnes, dans la transformation, vous pouvez faire quelque chose comme ceci :

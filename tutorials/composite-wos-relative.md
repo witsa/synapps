@@ -34,7 +34,7 @@ Le composite utilisé contient deux acteurs fournisseurs de variable relative et
 Les deux acteurs fournisseurs de variables relatives ne possèdent pas de clé parent, nous allons utiliser le contexte de donnée afin de leur fournir un parent.
 Ceux-ci possèdent cependant un chemin relatif et un champ.
 <br>
->📌 **REMARQUE**<br>
+{: .info }
 >Le contexte de donnée peut être utilisé en ruissellement, nous pouvons ainsi fournir à l'instance du composite un acteur fournisseur de ressource et celui-ci ruissellera cet acteur vers tous ses enfants.<br><br>
 >Dans notre cas, les acteurs fournisseurs de variables relatives détecteront automatiquement la présence d'un acteur fournisseur de ressource dans leurs contextes de donnée et l'utiliseront comme parent.
 
@@ -81,8 +81,8 @@ A l'issue de ce tutoriel, nous devrions avoir :
 
 Au cours de ce tutoriel, nous avons appris à fournir à un composite un certain contexte de donnée et à valoriser ce contexte de donnée pour l'utilisation d'acteurs fournisseurs de variables relatives.<br>
 
-> 📌 **REMARQUE**<br>
-Il est tout à fait possible, d'agir sur la variable récupérée par le fournisseur relatif de variable (écriture, transformation, etc ...) .
+{: .info }
+> Il est tout à fait possible, d'agir sur la variable récupérée par le fournisseur relatif de variable (écriture, transformation, etc ...) .
 
 # Scène et composite du tutoriel
 

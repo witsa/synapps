@@ -26,8 +26,8 @@ Il y aura donc 2 additionnelles de type *texte* :
 - La première se nomme *wsid* et représente l'identifiant qui permet au REDY d'authentifier la provenance de la requête.
 - La seconde se nomme *pdfName* et représente le label du PDF dans le REDY.
 
-> 📌 **REMARQUE**<br>
-Le nom du PDF dans le REDY n'est <b> pas </b> le nom de fichier du PDF mais le label qui lui est attribué dans le REDY.
+{: .info }
+> Le nom du PDF dans le REDY n'est <b> pas </b> le nom de fichier du PDF mais le label qui lui est attribué dans le REDY.
 
 ![Synapps](../../assets/tutorials/pdf/button-additionals.png)
 

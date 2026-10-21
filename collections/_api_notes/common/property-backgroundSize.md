@@ -3,8 +3,8 @@ api_type: common
 kind: property
 name: backgroundSize
 ---
-> ⚠️ **ATTENTION**<br>
-Afin de voir cette propriété, il faut qu'une image de fond soit présente.<br>
+{: .warning }
+> Afin de voir cette propriété, il faut qu'une image de fond soit présente.<br>
 
 Cette propriété définit la taille de l'image de fond de l'acteur.
 

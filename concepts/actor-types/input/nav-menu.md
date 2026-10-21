@@ -23,7 +23,7 @@ Le **Menu de navigation** est le conteneur principal qui gère l’état de la n
 
 {% include script_api/properties.md type=page.api_type %}
 
-> 📌 **REMARQUE**<br>
+{: .info }
 >
 > Les styles actif/inactif sont les styles définis sur l’acteur **Bouton de menu**.
 

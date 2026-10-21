@@ -56,5 +56,5 @@ Les évènements communs à tous les acteurs sont décrits avec l'[acteur de bas
 Il est possible de créer des fournisseurs dans vos scènes ou composites. Vous pouvez également les créer de manière globale dans la sous-section [Projet / Fournisseurs de variable](../../project/variable-source.md) pour en faire profiter toute votre synapp.
 
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > Essayez de mutualiser les fournisseurs de variable dans vos scènes et composites. Rappelez-vous que des requêtes de données sont réalisées pour chaque fournisseur de variable. Ce qui est responsable d'un trafic de données qui pourrait être important pour l'équipement qui exécute votre synapp. Ceci est particulièrement sensible pour les équipements nomades comme les smartphones et tablettes.

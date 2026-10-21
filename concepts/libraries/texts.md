@@ -92,12 +92,12 @@ Une fenêtre s'ouvre et permet de renseigner une nouvelle clé pour le texte.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/popupChangeKeyText.PNG)
 
-> 📌 **REMARQUE**<br>
+{: .info }
 > Chaque clé doit être unique et ne peut pas être vide.<br>
 
 Afin de supprimmer un texte, il faut cliquer sur la corbeille sur la ligne correspondante au texte que l'on souhaite supprimer.
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 >  Lorsqu'un texte est supprimé, toutes ses traductions sont également supprimés.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/text/removeText.PNG)

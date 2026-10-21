@@ -37,5 +37,5 @@ SYNAPPS-STUDIO-SCENE|{"config":{"key":"scene1","name":"Scène 1","additionalDefs
 ```
 {% endraw %}
 
->⚠️ **ATTENTION**<br>
+{: .warning }
 > Si vous désirez commander les paramètres d'une scène à travers un acteur écran, n'oublier pas de créer les additionnelles correspondantes sur celui-ci également, sinon, aucune action ne sera transmise

@@ -12,7 +12,7 @@ nav_order: 6
 
 Cet acteur permet d'afficher un composite de manière dynamique.
 
-> 💡 **ASTUCE**<br>
+{: .tip }
 > Si vous désirez passer des informations au composite, il faut utiliser le [ruissellement de contexte de donnée](../../context.md).
 
 Il faut considérer cet acteur comme un "outil" pour dynamiquement, en fonction de données d'une liaison, ou bien par script, afficher le bon composite.

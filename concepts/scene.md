@@ -30,8 +30,8 @@ Bien entendu, il est possible de commander les affichages de scènes par liaison
 
 Une scène est identifiée par sa clé. Elle doit être unique dans une synapp.
 
-> ✔️ **CONSEIL**<br>
-Il est recommandé de donner définir la clé d'une scène qui correspond à ce qu'elle va afficher.
+{: .tip }
+> Il est recommandé de donner définir la clé d'une scène qui correspond à ce qu'elle va afficher.
 
 ## Nom
 
@@ -80,7 +80,7 @@ Ainsi vous pouvez coller cette scène, toujours grâce au menu, n'importe où :
 - dans un fichier pour l'archiver
 - ou, comme ici, en exemple.
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 > Vous copiez uniquement la scène, pas les éléments de librairie qu'elle utilise éventuellement.
 
 ## Ajouter un dossier

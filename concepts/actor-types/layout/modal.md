@@ -67,10 +67,10 @@ Dans l'exemple ci dessous, la <span style="color: red;">**modale**</span> est at
 
 La modale est un acteur de disposition qui n'accepte qu'**un seul enfant**. En général, vous y placerez un empilement qui contiendra l'interface de dialogue.
 
-> ✔️ **CONSEIL**<br>
+{: .tip }
 > Placez le plus souvent possible vos modales tout en bas de vos arborescence d'acteurs. Cela évitera que leur contenu gène l'affichage des autres acteurs dans le designer.
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 > N'oubliez pas de définir une taille pour votre modale. Sinon, elle ne s'affichera pas correctement.
 
 ## Montrer/Cacher la modale

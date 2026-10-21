@@ -18,9 +18,9 @@ Dans un premier temps, nous verrons comment ajouter une *image de fond* et un ac
 Pour commencer, nous allons ajouter nos **images** dans la librairie. Cela simplifie l'accès et optimise l'affichage.<br>
 Pour ajouter une **image** dans la librairie suivez ce [tutoriel]({{ site.baseurl }}/concepts/libraries/pictures.html)<br>
 
->📌 **REMARQUE**<br>
- Sauvegardez votre librairie après chaque modification ou ajout d'image.<br>
- Ceci évitera toute perte d'image et garantira la disponibilité de celle-ci lors de liaisons.
+{: .info }
+>  Sauvegardez votre librairie après chaque modification ou ajout d'image.<br>
+>  Ceci évitera toute perte d'image et garantira la disponibilité de celle-ci lors de liaisons.
 
 # Etape 2 : Utilisation des images avec les acteurs
 
@@ -62,18 +62,18 @@ Ensuite, il faut ajouter votre **image**, allez dans la caractéristique **Image
 
 Enfin, vous pouvez ajuster votre **image** selon vos besoins à l'aide de l'*Inspecteur* à votre droite.
 
-> 💡 **ASTUCE**<br>
-  Vous pouvez aussi ajouter une bordure comme sur le gif, il peut faire office de cadre.<br>
-  Explorez les différentes caractéristiques pour personnaliser votre image.<br>
-  Consultez cette [page]({{ site.baseurl }}/concepts/actor/) pour comprendre chaque fonctionnalité.
-<br>
+{: .tip }
+>   Vous pouvez aussi ajouter une bordure comme sur le gif, il peut faire office de cadre.<br>
+>   Explorez les différentes caractéristiques pour personnaliser votre image.<br>
+>   Consultez cette [page]({{ site.baseurl }}/concepts/actor/) pour comprendre chaque fonctionnalité.
+> <br>
 
 >![SynApps]( {{ site.baseurl }}/assets/tutorials/images/Inspecteur_de_l'acteur_image.gif)<br>
 >Exemple des caractéristiques que vous pouvez utliser
 
->📌 **REMARQUE**<br>
- N'oubliez pas de sauvegarder votre scène avant l'exécution.
-<br>
+{: .info }
+>  N'oubliez pas de sauvegarder votre scène avant l'exécution.
+> <br>
 
 Pour finir, pour voir le résultat vous pouvez exécuter votre *synapp*, pour l'exécuter suivez ce [tutoriel]({{ site.baseurl }}/quick-start/synapp-run.html).<br>
 

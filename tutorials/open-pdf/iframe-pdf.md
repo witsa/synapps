@@ -12,7 +12,7 @@ Nous utilisons le visualiseur de PDF inclut dans les navigateurs
 
 Par convention, les PDF dans le REDY se situent à l'adresse : <b> /WEB/IMG/nom-de-mon-pdf </b>
 
-> ⚠️ **ATTENTION**<br>
+{: .warning }
 > Les navigateurs Android et iOS ne permettent pas l'ouverture d'un PDF via une iFrame, il faut préférer l'ouverture du PDF via un [nouvel onglet](../tutorials/open-pdf/new-tab-pdf.md)
 
 # Afficher un PDF dans une iframe
@@ -39,8 +39,8 @@ Le contenu de la propriété _url_ de l'iFrame est donc : <b> /WSID\{\{wsid\}\}/
 
 Cette url est composée d'un joker  <b>_wsid_</b> afin de récupérer l'identifiant de la session de l'utilisateur et le second <b>_pdfName_</b> qui représente le label du PDF dans le REDY.
 
-> 📌 **REMARQUE**<br>
-Le nom du PDF dans le REDY n'est <b> pas </b> le nom de fichier du PDF mais le label qui lui est attribué dans le REDY.
+{: .info }
+> Le nom du PDF dans le REDY n'est <b> pas </b> le nom de fichier du PDF mais le label qui lui est attribué dans le REDY.
 
 ## Étape 3 - Renseigner les additionnelles
 
@@ -56,8 +56,8 @@ Il faut renseigner à l'additionnelle <b> _wsid_ </b> l'identifiant de session p
 La seconde additionnelle devra être renseignée pour correspondre au PDF que l'on souhaite ouvrir dans le REDY.
 Dans ce tutoriel, le fichier PDF a pour label *FILE0001~PDF*.
 
-> 📌 **REMARQUE**<br>
-Le nom du PDF dans le REDY n'est <b> pas </b> le nom de fichier du PDF mais le label qui lui est attribué dans le REDY.
+{: .info }
+> Le nom du PDF dans le REDY n'est <b> pas </b> le nom de fichier du PDF mais le label qui lui est attribué dans le REDY.
 
 ## Résultat
 
