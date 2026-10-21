@@ -3,6 +3,7 @@ title: "Variable WOS"
 parent: "Modèles REDY"
 grand_parent: "Modèles de données"
 api_model: redy/WosVariable
+nav_order: 1
 ---
 
 # Variable WOS

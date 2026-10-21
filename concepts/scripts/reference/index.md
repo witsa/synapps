@@ -19,6 +19,9 @@ Objets accessibles dans les scripts, générés depuis le code :
 - [Hôte](./host.md) : le REDY auquel la synapp est connectée (`context.dataStores.redy.host`) ;
 - [Session](./session.md) : la session de l'utilisateur (`context.dataStores.redy.session`) ;
 - [Utilisateur](./user.md) : l'utilisateur connecté (`context.dataStores.redy.session.user`) ;
-- [Afficheur](./user-agent.md) : l'appareil qui affiche la synapp (`context.synapp.userAgent`).
+- [Afficheur](./user-agent.md) : l'appareil qui affiche la synapp (`context.synapp.userAgent`) ;
+- [Magasin REDY](./data-store.md) : les données du REDY, chargées et écrites par script (`context.dataStores.redy`).
+
+Les objets renvoyés par le magasin (variable WOS, reflet, évènements) sont décrits dans les [modèles de données](../../data-models/index.md).
 
 Les membres propres à chaque type d'acteur sont décrits avec ce [type d'acteur](../../actor-types/index.md).

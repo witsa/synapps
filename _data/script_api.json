@@ -50,6 +50,5448 @@
   }
  ],
  "models": {
+  "redy/ReflectAgenda": {
+   "name": "ReflectAgenda",
+   "description": "Reflet d'agenda : consignes précédente, actuelle et suivante.\nIl se commande par son mode forcé (`modeForcedCmd`) et son retour automatique (`backToAutoCmd`).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "autoIndex",
+     "kind": "champ",
+     "signature": "autoIndex",
+     "type": null,
+     "readonly": true,
+     "description": "Valeur de `modeForced` correspondant au mode automatique (première option de `modeForcedOptions`, `0` sinon).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "backToAuto",
+     "kind": "champ",
+     "signature": "backToAuto",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le retour automatique est actif (« Retour auto » / « Retour manuel ») ; se commande par `command.backToAutoCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "begin",
+     "kind": "champ",
+     "signature": "begin",
+     "type": "DateISOString",
+     "readonly": false,
+     "description": "Date de début de la consigne actuelle.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "index",
+     "kind": "champ",
+     "signature": "index",
+     "type": "Number",
+     "readonly": false,
+     "description": "index de la consigne actuelle.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForced",
+     "kind": "champ",
+     "signature": "modeForced",
+     "type": null,
+     "readonly": false,
+     "description": "Mode forcé de l'agenda, valeur de `modeForcedOptions` ; vaut `autoIndex` en automatique. Se commande par `command.modeForcedCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForcedOptions",
+     "kind": "champ",
+     "signature": "modeForcedOptions",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des modes forcés possibles (`value`, `text`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextBegin",
+     "kind": "champ",
+     "signature": "nextBegin",
+     "type": "DateISOString",
+     "readonly": false,
+     "description": "Date de début de la consigne suivante.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextIndex",
+     "kind": "champ",
+     "signature": "nextIndex",
+     "type": "Number",
+     "readonly": false,
+     "description": "index de la consigne suivante.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextText",
+     "kind": "champ",
+     "signature": "nextText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte de la consigne suivante.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "nextValue",
+     "kind": "champ",
+     "signature": "nextValue",
+     "type": "Number",
+     "readonly": true,
+     "description": "Valeur de la consigne suivante.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": "Array",
+     "readonly": false,
+     "description": "Liste des options de la consigne.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "previousBegin",
+     "kind": "champ",
+     "signature": "previousBegin",
+     "type": "DateISOString",
+     "readonly": false,
+     "description": "Date de début de la consigne précédente.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "previousIndex",
+     "kind": "champ",
+     "signature": "previousIndex",
+     "type": "Number",
+     "readonly": false,
+     "description": "index de la consigne précédente.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "previousText",
+     "kind": "champ",
+     "signature": "previousText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte de la consigne précédente.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "previousValue",
+     "kind": "champ",
+     "signature": "previousValue",
+     "type": "Number",
+     "readonly": true,
+     "description": "Valeur de la consigne précédente.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte de la consigne actuelle.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "Number",
+     "readonly": true,
+     "description": "Valeur de la consigne actuelle.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectAnalog": {
+   "name": "ReflectAnalog",
+   "description": "Reflet analogique : valeur numérique avec unité, décimales et bornes (avec seuils et valeur de forçage selon le type REDY).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "decimals",
+     "kind": "champ",
+     "signature": "decimals",
+     "type": "number",
+     "readonly": true,
+     "description": "Nombre de décimales de la valeur, défini dans le REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "forcedValue",
+     "kind": "champ",
+     "signature": "forcedValue",
+     "type": "number",
+     "readonly": true,
+     "description": "Valeur de forçage (reflets forçables) ; se commande par `command.valueForcedCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasLimits",
+     "kind": "champ",
+     "signature": "hasLimits",
+     "type": "number",
+     "readonly": true,
+     "description": "Indique si le reflet a des bornes (`min` et `max` définis).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForcible",
+     "kind": "champ",
+     "signature": "isForcible",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet peut être forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isLinked",
+     "kind": "champ",
+     "signature": "isLinked",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si la valeur est liée (paramètre `isLinked` du REDY) : elle ne se commande alors pas directement (`valueCmd` n'est pas envoyé).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "max",
+     "kind": "champ",
+     "signature": "max",
+     "type": "number",
+     "readonly": true,
+     "description": "Borne maximale de la valeur ; `null` si le REDY donne 0 pour les deux bornes.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "min",
+     "kind": "champ",
+     "signature": "min",
+     "type": "number",
+     "readonly": true,
+     "description": "Borne minimale de la valeur ; `null` si le REDY donne 0 pour les deux bornes.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "unit",
+     "kind": "champ",
+     "signature": "unit",
+     "type": "string",
+     "readonly": true,
+     "description": "Unité de la valeur (chaîne vide sans unité).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "number",
+     "readonly": true,
+     "description": "Valeur analogique du reflet ; se commande par `command.valueCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "withWitness",
+     "kind": "champ",
+     "signature": "withWitness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet a des seuils témoins (`witnessMin`, `witnessMax`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witnessMax",
+     "kind": "champ",
+     "signature": "witnessMax",
+     "type": "number",
+     "readonly": true,
+     "description": "Seuil témoin maximal (reflets à seuils ou forçables) ; se commande par `command.maxValueCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witnessMin",
+     "kind": "champ",
+     "signature": "witnessMin",
+     "type": "number",
+     "readonly": true,
+     "description": "Seuil témoin minimal (reflets à seuils ou forçables) ; se commande par `command.minValueCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectBase": {
+   "name": "ReflectBase",
+   "description": "Classe de base pour tous les reflets.",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectBoiler": {
+   "name": "ReflectBoiler",
+   "description": "Reflet de chaudière : état de marche, autorisation, erreur (type, étape) et mode forcé (`0` : pas de forçage).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "authorize",
+     "kind": "champ",
+     "signature": "authorize",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si la chaudière est autorisée à fonctionner (valeur `authorize` du REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "errorStep",
+     "kind": "champ",
+     "signature": "errorStep",
+     "type": "string",
+     "readonly": true,
+     "description": "Étape de l'erreur en cours (chaîne vide sans erreur).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "errorType",
+     "kind": "champ",
+     "signature": "errorType",
+     "type": "string",
+     "readonly": true,
+     "description": "Type de l'erreur en cours (chaîne vide sans erreur).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForced",
+     "kind": "champ",
+     "signature": "modeForced",
+     "type": "number",
+     "readonly": true,
+     "description": "Mode forcé de la chaudière (`0` : pas de forçage), valeur de `modeForcedOptions` ; se commande par `command.modeForcedCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForcedOptions",
+     "kind": "champ",
+     "signature": "modeForcedOptions",
+     "type": "Array",
+     "readonly": false,
+     "description": "Liste des options de mode forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForcedText",
+     "kind": "champ",
+     "signature": "modeForcedText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte du mode forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runID",
+     "kind": "champ",
+     "signature": "runID",
+     "type": "number",
+     "readonly": true,
+     "description": "Code de l'état de marche de la chaudière ; son libellé est `runIDText`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runIDText",
+     "kind": "champ",
+     "signature": "runIDText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte du runID.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectBurner": {
+   "name": "ReflectBurner",
+   "description": "Reflet de brûleur : état de marche, défaut, autorisation et erreur (type, étape).\nNon commandable.",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "authorize",
+     "kind": "champ",
+     "signature": "authorize",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Indique si le brûleur est autorisé à fonctionner (valeur `authorize` du REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "errorStep",
+     "kind": "champ",
+     "signature": "errorStep",
+     "type": "string",
+     "readonly": true,
+     "description": "Étape de l'erreur en cours (chaîne vide sans erreur).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "errorType",
+     "kind": "champ",
+     "signature": "errorType",
+     "type": "string",
+     "readonly": true,
+     "description": "Type de l'erreur en cours (chaîne vide sans erreur).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Indique si le brûleur est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "faultReachSP",
+     "kind": "champ",
+     "signature": "faultReachSP",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Indique un défaut d'atteinte de la consigne (valeur `faultReachSP` du REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runID",
+     "kind": "champ",
+     "signature": "runID",
+     "type": "number",
+     "readonly": true,
+     "description": "Code de l'état de marche du brûleur ; son libellé est `runIDText`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runIDOptions",
+     "kind": "champ",
+     "signature": "runIDOptions",
+     "type": "Array",
+     "readonly": false,
+     "description": "Liste des options de runID.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runIDText",
+     "kind": "champ",
+     "signature": "runIDText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte du runID.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectDigital": {
+   "name": "ReflectDigital",
+   "description": "Reflet numérique : valeur logique vrai/faux avec ses textes « vrai » et « faux ».",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "falseText",
+     "kind": "champ",
+     "signature": "falseText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte à afficher lorsque la valeur du reflet est `false`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "forcedValue",
+     "kind": "champ",
+     "signature": "forcedValue",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Valeur de forçage (reflets forçables) ; se commande par `command.valueForcedCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForcible",
+     "kind": "champ",
+     "signature": "isForcible",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet peut être forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isLinked",
+     "kind": "champ",
+     "signature": "isLinked",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si la valeur est liée (paramètre `isLinked` du REDY) : elle ne se commande alors pas directement.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient le texte correspondant à la valeur du reflet.\nSoit falseText, soit trueText.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "trueText",
+     "kind": "champ",
+     "signature": "trueText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte à afficher lorsque la valeur du reflet est `true`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Valeur logique du reflet ; se commande par `command.valueCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectHeatingCurve": {
+   "name": "ReflectHeatingCurve",
+   "description": "Reflet de loi d'eau : points de la courbe, décalage réduit, température extérieure, consigne calculée, mode en cours et mode forcé (`1` : automatique).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "coordCons",
+     "kind": "champ",
+     "signature": "coordCons",
+     "type": null,
+     "readonly": false,
+     "description": "Points de la courbe au format du REDY (`x;y` séparés par `|`) ; se commande par `command.coordConsCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForced",
+     "kind": "champ",
+     "signature": "modeForced",
+     "type": null,
+     "readonly": false,
+     "description": "Mode forcé (`1` : automatique), valeur de `modeForcedOptions` ; se commande par `command.modeForcedCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForcedOptions",
+     "kind": "champ",
+     "signature": "modeForcedOptions",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des modes forcés possibles (`value`, `text`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeStatus",
+     "kind": "champ",
+     "signature": "modeStatus",
+     "type": null,
+     "readonly": false,
+     "description": "Mode en cours, valeur de `modeStatusOptions` ; son libellé est `modeStatusText`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeStatusOptions",
+     "kind": "champ",
+     "signature": "modeStatusOptions",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des modes possibles pour `modeStatus` (`value`, `text`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeStatusText",
+     "kind": "champ",
+     "signature": "modeStatusText",
+     "type": null,
+     "readonly": true,
+     "description": "Libellé du mode en cours (`modeStatus`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "outdoorTemp",
+     "kind": "champ",
+     "signature": "outdoorTemp",
+     "type": null,
+     "readonly": false,
+     "description": "Température extérieure (°C).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "points",
+     "kind": "champ",
+     "signature": "points",
+     "type": null,
+     "readonly": false,
+     "description": "Points de la courbe tirés de `coordCons` (`{ x, y }` : température extérieure, consigne), `null` pour un point non défini.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redOffset",
+     "kind": "champ",
+     "signature": "redOffset",
+     "type": null,
+     "readonly": false,
+     "description": "Décalage de consigne en mode réduit (°C) ; se commande par `command.redOffsetCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "reduced",
+     "kind": "champ",
+     "signature": "reduced",
+     "type": null,
+     "readonly": false,
+     "description": "Indique le fonctionnement en mode réduit (valeur `reduced` du REDY).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "setPoint",
+     "kind": "champ",
+     "signature": "setPoint",
+     "type": null,
+     "readonly": false,
+     "description": "Consigne de température calculée (°C).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stop",
+     "kind": "champ",
+     "signature": "stop",
+     "type": null,
+     "readonly": false,
+     "description": "Indique l'arrêt (valeur `stop` du REDY) ; le mode n'est alors pas commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectMultiBoilers": {
+   "name": "ReflectMultiBoilers",
+   "description": null,
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectPid": {
+   "name": "ReflectPid",
+   "description": "Reflet de régulation (PID) : mesure, consigne, sortie en % et mode forcé (`1` : automatique).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "consign",
+     "kind": "champ",
+     "signature": "consign",
+     "type": null,
+     "readonly": true,
+     "description": "Texte de la sortie : `outputText` en automatique, sinon `modeForcedText - outputText`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "decimals",
+     "kind": "champ",
+     "signature": "decimals",
+     "type": null,
+     "readonly": false,
+     "description": "Nombre de décimales de la sortie (`0` par défaut).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "measure",
+     "kind": "champ",
+     "signature": "measure",
+     "type": null,
+     "readonly": false,
+     "description": "Mesure de la régulation.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForced",
+     "kind": "champ",
+     "signature": "modeForced",
+     "type": null,
+     "readonly": false,
+     "description": "Mode forcé (`1` : automatique), valeur de `options` ; se commande par `command.modeForcedCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForcedText",
+     "kind": "champ",
+     "signature": "modeForcedText",
+     "type": null,
+     "readonly": true,
+     "description": "Libellé du mode forcé (`modeForced`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des modes forcés possibles (`value`, `text`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "output",
+     "kind": "champ",
+     "signature": "output",
+     "type": null,
+     "readonly": false,
+     "description": "Sortie de la régulation (en %).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "outputText",
+     "kind": "champ",
+     "signature": "outputText",
+     "type": null,
+     "readonly": true,
+     "description": "Sortie formatée en pourcentage avec `decimals` décimales (ex. `42%`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "setPoint",
+     "kind": "champ",
+     "signature": "setPoint",
+     "type": null,
+     "readonly": false,
+     "description": "Consigne de la régulation.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectPilotWire": {
+   "name": "ReflectPilotWire",
+   "description": "Reflet de fil pilote : mode en cours et mode forcé (`-1` : pas de forçage), chacun avec son libellé.",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForced",
+     "kind": "champ",
+     "signature": "modeForced",
+     "type": null,
+     "readonly": false,
+     "description": "Mode forcé (`-1` : pas de forçage), valeur de `modeForcedOptions` ; se commande par `command.modeForcedCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeForcedOptions",
+     "kind": "champ",
+     "signature": "modeForcedOptions",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des modes forcés possibles (`value`, `text`, `icon`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeStatus",
+     "kind": "champ",
+     "signature": "modeStatus",
+     "type": null,
+     "readonly": false,
+     "description": "Mode en cours du fil pilote, valeur de `modeStatusOptions`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeStatusOptions",
+     "kind": "champ",
+     "signature": "modeStatusOptions",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des modes possibles (`value`, `text`, `icon`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "modeStatusText",
+     "kind": "champ",
+     "signature": "modeStatusText",
+     "type": null,
+     "readonly": true,
+     "description": "Libellé du mode en cours (`modeStatus`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectPump": {
+   "name": "ReflectPump",
+   "description": "Reflet de pompe simple ou double : marche et défaut de chaque pompe, et mode manuel (`0` : automatique).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault1",
+     "kind": "champ",
+     "signature": "fault1",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si la pompe 1 est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault2",
+     "kind": "champ",
+     "signature": "fault2",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si la pompe 2 est en défaut (pompe double).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isDual",
+     "kind": "champ",
+     "signature": "isDual",
+     "type": null,
+     "readonly": false,
+     "description": "Indique s'il s'agit d'une pompe double (`run2` et `fault2` ne sont renseignés que dans ce cas).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isInFault",
+     "kind": "champ",
+     "signature": "isInFault",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si une des pompes est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isRunning",
+     "kind": "champ",
+     "signature": "isRunning",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si la pompe (ou une des deux pompes) est en marche.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "manual",
+     "kind": "champ",
+     "signature": "manual",
+     "type": null,
+     "readonly": false,
+     "description": "Mode manuel (`0` : automatique), valeur de `manualOptions` ; se commande par `command.manualCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "manualForcedText",
+     "kind": "champ",
+     "signature": "manualForcedText",
+     "type": null,
+     "readonly": true,
+     "description": "Libellé du mode manuel (`manual`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "manualOptions",
+     "kind": "champ",
+     "signature": "manualOptions",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des modes manuels possibles (`value`, `text`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "run1",
+     "kind": "champ",
+     "signature": "run1",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si la pompe 1 est en marche.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "run2",
+     "kind": "champ",
+     "signature": "run2",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si la pompe 2 est en marche (pompe double).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runningText",
+     "kind": "champ",
+     "signature": "runningText",
+     "type": null,
+     "readonly": true,
+     "description": "Texte de marche traduit (ex. « Pompe 1 en marche », « En arrêt »).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectSetpointsTable": {
+   "name": "ReflectSetpointsTable",
+   "description": "Reflet de tableau de consignes : la consigne sélectionnée par son index dans une liste (libellé et valeur).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "index",
+     "kind": "champ",
+     "signature": "index",
+     "type": null,
+     "readonly": false,
+     "description": "Index de la consigne sélectionnée, valeur de `options` ; se commande par `command.indexCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "options",
+     "kind": "champ",
+     "signature": "options",
+     "type": null,
+     "readonly": false,
+     "description": "Liste des consignes possibles (`value` : index, `text` : libellé, `info` : valeur).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "text",
+     "kind": "champ",
+     "signature": "text",
+     "type": null,
+     "readonly": true,
+     "description": "Libellé de la consigne sélectionnée.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": null,
+     "readonly": true,
+     "description": "Valeur de la consigne sélectionnée (`info` de l'option), `null` sans correspondance.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectState": {
+   "name": "ReflectState",
+   "description": "Reflet d'état : seulement l'état de la ressource, sans valeur propre.\nIl n'est pas commandable.",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectText": {
+   "name": "ReflectText",
+   "description": "Reflet texte : valeur texte commandable.",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "value",
+     "kind": "champ",
+     "signature": "value",
+     "type": "number",
+     "readonly": true,
+     "description": "Texte du reflet ; se commande par `command.valueCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectUnknown": {
+   "name": "ReflectUnknown",
+   "description": "Reflet d'un type non reconnu : pas de champ propre ; son texte d'état est construit à partir des valeurs brutes reçues.",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
+  "redy/ReflectValve": {
+   "name": "ReflectValve",
+   "description": "Reflet de vanne : état de marche, erreur (type, étape) et mode manuel (`0` : automatique).",
+   "fields": [
+    {
+     "name": "allowCommand",
+     "kind": "champ",
+     "signature": "allowCommand",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est commandable.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "canEvent",
+     "kind": "champ",
+     "signature": "canEvent",
+     "type": null,
+     "readonly": false,
+     "description": "Indique si le reflet lève des évènements dans le REDY (attribut `raiseEvents`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "classID",
+     "kind": "champ",
+     "signature": "classID",
+     "type": null,
+     "readonly": false,
+     "description": "ID de la classe REDY de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "collectionIDs",
+     "kind": "champ",
+     "signature": "collectionIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des ensembles de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "command",
+     "kind": "champ",
+     "signature": "command",
+     "type": null,
+     "readonly": true,
+     "description": "Objet de commande du reflet, créé avec les valeurs actuelles : ses champs (`valueCmd`, `modeForcedCmd`, `manualCmd`… selon le type) sont envoyés au REDY par la commande du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "description",
+     "kind": "champ",
+     "signature": "description",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la description du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "deviceID",
+     "kind": "champ",
+     "signature": "deviceID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de l'équipement de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "errorStep",
+     "kind": "champ",
+     "signature": "errorStep",
+     "type": "string",
+     "readonly": true,
+     "description": "Étape de l'erreur en cours (chaîne vide sans erreur).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "errorType",
+     "kind": "champ",
+     "signature": "errorType",
+     "type": "string",
+     "readonly": true,
+     "description": "Type de l'erreur en cours (chaîne vide sans erreur).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "fault",
+     "kind": "champ",
+     "signature": "fault",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est en défaut.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "groupIDs",
+     "kind": "champ",
+     "signature": "groupIDs",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiants REDY des groupes de la ressource du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "hasPendingEvent",
+     "kind": "champ",
+     "signature": "hasPendingEvent",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet possède un évènement en cours.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "id",
+     "kind": "champ",
+     "signature": "id",
+     "type": "Number ou string",
+     "readonly": false,
+     "description": "Clé primaire.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isForced",
+     "kind": "champ",
+     "signature": "isForced",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Indique si le reflet est forcé.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "isValorized",
+     "kind": "champ",
+     "signature": "isValorized",
+     "type": null,
+     "readonly": true,
+     "description": "Indique si le reflet a reçu au moins une valeur du REDY.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "lastRefreshDate",
+     "kind": "champ",
+     "signature": "lastRefreshDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de fraîcheur du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "manual",
+     "kind": "champ",
+     "signature": "manual",
+     "type": "Number",
+     "readonly": true,
+     "description": "Mode manuel (`0` : automatique), valeur de `manualOptions` ; se commande par `command.manualCmd`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "manualOptions",
+     "kind": "champ",
+     "signature": "manualOptions",
+     "type": "Array",
+     "readonly": false,
+     "description": "Liste des modes manuels possibles (`value`, `text`, `info`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "manualText",
+     "kind": "champ",
+     "signature": "manualText",
+     "type": "String",
+     "readonly": true,
+     "description": "Libellé du mode manuel (`manual`).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "mode",
+     "kind": "champ",
+     "signature": "mode",
+     "type": null,
+     "readonly": false,
+     "description": "Mode de la ressource transmis par le REDY (`auto`, `local`, `autoexception`, `autowarning`…) ; `isForced` en est déduit.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "name",
+     "kind": "champ",
+     "signature": "name",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "note",
+     "kind": "champ",
+     "signature": "note",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la note d'exploitation du reflet.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "path",
+     "kind": "champ",
+     "signature": "path",
+     "type": "String",
+     "readonly": true,
+     "description": "Chemin du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "pendingEventID",
+     "kind": "champ",
+     "signature": "pendingEventID",
+     "type": "Number ou null",
+     "readonly": true,
+     "description": "ID REDY de l'évènement en cours du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyID",
+     "kind": "champ",
+     "signature": "redyID",
+     "type": "Number",
+     "readonly": true,
+     "description": "ID REDY du reflet.\n<br>**REDY**",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "redyType",
+     "kind": "champ",
+     "signature": "redyType",
+     "type": null,
+     "readonly": false,
+     "description": "Type du reflet dans le REDY (ex. `analog_Forced`, `HVACPump`, `setpoint_list`), plus précis que `type`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runID",
+     "kind": "champ",
+     "signature": "runID",
+     "type": "number",
+     "readonly": true,
+     "description": "Code de l'état de marche de la vanne ; son libellé est `runIDText`.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runIDOptions",
+     "kind": "champ",
+     "signature": "runIDOptions",
+     "type": "Array",
+     "readonly": false,
+     "description": "Liste des options de runID.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "runIDText",
+     "kind": "champ",
+     "signature": "runIDText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte du runID.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "state",
+     "kind": "champ",
+     "signature": "state",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient l'état de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "stateText",
+     "kind": "champ",
+     "signature": "stateText",
+     "type": "String",
+     "readonly": true,
+     "description": "Texte d'état du reflet, construit selon son type (peut contenir du HTML).",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "valueDate",
+     "kind": "champ",
+     "signature": "valueDate",
+     "type": "String",
+     "readonly": true,
+     "description": "Obtient la date de valeur.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "witness",
+     "kind": "champ",
+     "signature": "witness",
+     "type": "Boolean",
+     "readonly": true,
+     "description": "Obtient le témoin de la ressource.",
+     "params": [],
+     "label": null
+    },
+    {
+     "name": "zoneID",
+     "kind": "champ",
+     "signature": "zoneID",
+     "type": null,
+     "readonly": false,
+     "description": "Identifiant REDY de la zone de la ressource du reflet.",
+     "params": [],
+     "label": null
+    }
+   ],
+   "methods": [
+    {
+     "name": "resetCommand",
+     "kind": "méthode",
+     "signature": "resetCommand()",
+     "type": null,
+     "readonly": false,
+     "description": "Réinitialise l'objet de commande aux valeurs actuelles du reflet.",
+     "params": []
+    }
+   ]
+  },
   "redy/ReflectEvent": {
    "name": "ReflectEvent",
    "description": null,
@@ -3159,6 +8601,295 @@
      "type": null,
      "readonly": false,
      "description": "Désactive la liaison. Il n'y aura plus d'observation de la valeur source.",
+     "params": []
+    }
+   ],
+   "events": []
+  },
+  "data-store": {
+   "name": "Magasin REDY",
+   "fields": [
+    {
+     "name": "host",
+     "kind": "champ",
+     "signature": "host",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient l'hôte.",
+     "params": []
+    },
+    {
+     "name": "session",
+     "kind": "champ",
+     "signature": "session",
+     "type": null,
+     "readonly": true,
+     "description": "Obtient la session.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "ackEvent",
+     "kind": "méthode",
+     "signature": "ackEvent(event)",
+     "type": null,
+     "readonly": false,
+     "description": "Acquitte l'évènement WOS donné (avec sa consigne `todo` si renseignée) et le renvoie mis à jour.",
+     "params": []
+    },
+    {
+     "name": "childrenOfVariable",
+     "kind": "méthode",
+     "signature": "childrenOfVariable(variable)",
+     "type": null,
+     "readonly": false,
+     "description": "Renvoie les enfants déjà chargés de la variable donnée.",
+     "params": []
+    },
+    {
+     "name": "commandReflect",
+     "kind": "méthode",
+     "signature": "commandReflect(reflect, withRefreshAfter?)",
+     "type": null,
+     "readonly": false,
+     "description": "Envoie au REDY la commande (`command`) du reflet donné, puis recharge sa valeur par défaut ; échoue si le reflet n'est pas commandable.",
+     "params": []
+    },
+    {
+     "name": "findWosVariable",
+     "kind": "méthode",
+     "signature": "findWosVariable(path)",
+     "type": "Promise<REDY.Synapps.WosVariable>",
+     "readonly": false,
+     "description": "Cherche ou charge une variable.",
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin vers la variable."
+      }
+     ]
+    },
+    {
+     "name": "findWosVariableByID",
+     "kind": "méthode",
+     "signature": "findWosVariableByID(ID)",
+     "type": "Promise<REDY.Synapps.WosVariable>",
+     "readonly": false,
+     "description": "Cherche ou charge une variable avec son identifiant.",
+     "params": [
+      {
+       "name": "id",
+       "description": "Chemin vers la variable."
+      }
+     ]
+    },
+    {
+     "name": "getClasses",
+     "kind": "méthode",
+     "signature": "getClasses({ classIds = [], disabled = false })",
+     "type": "Promise<Array.<Object>>",
+     "readonly": false,
+     "description": "Charge la liste des classes WOS.",
+     "params": [
+      {
+       "name": "params",
+       "description": "Paramètres."
+      }
+     ]
+    },
+    {
+     "name": "getCursor",
+     "kind": "méthode",
+     "signature": "getCursor(label)",
+     "type": null,
+     "readonly": false,
+     "description": "Charge la définition du curseur REDY de ce libellé.",
+     "params": []
+    },
+    {
+     "name": "getReflect",
+     "kind": "méthode",
+     "signature": "getReflect(path)",
+     "type": null,
+     "readonly": false,
+     "description": "Renvoie le reflet déjà chargé de ce chemin, sans le charger.",
+     "params": []
+    },
+    {
+     "name": "getReflectByRedyID",
+     "kind": "méthode",
+     "signature": "getReflectByRedyID(redyID)",
+     "type": null,
+     "readonly": false,
+     "description": "Renvoie le reflet déjà chargé de cet identifiant REDY, sans le charger.",
+     "params": []
+    },
+    {
+     "name": "getWosVariable",
+     "kind": "méthode",
+     "signature": "getWosVariable(path)",
+     "type": "REDY.Synapps.WosVariable ou null",
+     "readonly": false,
+     "description": "Cherche une variable. Si elle n'est pas déja chargée, on obtient `null`",
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin vers la variable."
+      }
+     ]
+    },
+    {
+     "name": "getWosVariableByredyID",
+     "kind": "méthode",
+     "signature": "getWosVariableByredyID(redyID)",
+     "type": null,
+     "readonly": false,
+     "description": "Cherche une variable déjà chargée par son identifiant REDY, sans la charger.",
+     "params": []
+    },
+    {
+     "name": "loadCursors",
+     "kind": "méthode",
+     "signature": "loadCursors()",
+     "type": null,
+     "readonly": false,
+     "description": "Charge la liste des curseurs définis dans le REDY.",
+     "params": []
+    },
+    {
+     "name": "loadWosEvents",
+     "kind": "méthode",
+     "signature": "loadWosEvents({\n    originPath,\n    sitePath,\n    originID,\n    dateMin,\n    dateMax,\n    sortedField = 'd',\n    isSortAscending = false,\n    groups,\n    equipment,\n    zone,\n    collection,\n    pendingOnly = false,\n    ack = 0,\n    take = 10,\n    skip = 0,\n  })",
+     "type": null,
+     "readonly": false,
+     "description": "Recherche des évènements WOS (filtres par origine, site, dates, groupes, équipement, zone, ensemble, acquittement, pagination) et renvoie `{ count, events }`.",
+     "params": []
+    },
+    {
+     "name": "loadWosVariable",
+     "kind": "méthode",
+     "signature": "loadWosVariable(path, options?)",
+     "type": null,
+     "readonly": false,
+     "description": "Charge une variable depuis le REDY (avec ses sous-variables `subPaths` si demandé) et la renvoie.",
+     "params": []
+    },
+    {
+     "name": "loadWosVariableByID",
+     "kind": "méthode",
+     "signature": "loadWosVariableByID(id, options?)",
+     "type": null,
+     "readonly": false,
+     "description": "Charge une variable depuis le REDY par son identifiant et la renvoie.",
+     "params": []
+    },
+    {
+     "name": "loadWosVariableChildren",
+     "kind": "méthode",
+     "signature": "loadWosVariableChildren(path, queryDepth?)",
+     "type": null,
+     "readonly": false,
+     "description": "Charge une variable et ses descendants (3 niveaux par défaut) et renvoie la variable.",
+     "params": []
+    },
+    {
+     "name": "logout",
+     "kind": "méthode",
+     "signature": "logout()",
+     "type": null,
+     "readonly": false,
+     "description": "Déconnecte la session puis affiche la page de déconnexion.",
+     "params": []
+    },
+    {
+     "name": "refreshWosVariable",
+     "kind": "méthode",
+     "signature": "refreshWosVariable(path, options?)",
+     "type": null,
+     "readonly": false,
+     "description": "Recharge les valeurs d'une variable déjà chargée et la renvoie.",
+     "params": []
+    },
+    {
+     "name": "refreshWosVariableChildren",
+     "kind": "méthode",
+     "signature": "refreshWosVariableChildren(path, queryDepth?)",
+     "type": null,
+     "readonly": false,
+     "description": "Recharge les valeurs d'une variable et de ses descendants et renvoie la variable.",
+     "params": []
+    },
+    {
+     "name": "runCursorInstruction",
+     "kind": "méthode",
+     "signature": "runCursorInstruction({ label, parameters })",
+     "type": null,
+     "readonly": false,
+     "description": "Exécute un curseur d'instruction avec ses paramètres et renvoie le résultat.",
+     "params": []
+    },
+    {
+     "name": "runCursorRequest",
+     "kind": "méthode",
+     "signature": "runCursorRequest({ label, parameters, limit = 10, offset = 0 })",
+     "type": null,
+     "readonly": false,
+     "description": "Exécute un curseur de requête avec ses paramètres et sa pagination (`limit`, `offset`) et renvoie le résultat.",
+     "params": []
+    },
+    {
+     "name": "searchReflectEvents",
+     "kind": "méthode",
+     "signature": "searchReflectEvents({\n    reflectPath,\n    dateFrom,\n    dateTo,\n    searchText,\n    reflectType,\n    isSortAscending = false,\n    groups,\n    equipment,\n    zone,\n    collection,\n    pendingOnly = false,\n    take = 10,\n    skip = 0,\n  })",
+     "type": null,
+     "readonly": false,
+     "description": "Recherche des évènements de reflets (filtres par reflet, dates, texte, type, groupes, équipement, zone, ensemble, pagination) et renvoie `{ count, events }`.",
+     "params": []
+    },
+    {
+     "name": "searchReflects",
+     "kind": "méthode",
+     "signature": "searchReflects({\n    ids,\n    searchText,\n    reflectType,\n    zone,\n    collection,\n    pendingOnly = false,\n    take = 10,\n    skip = 0,\n  })",
+     "type": null,
+     "readonly": false,
+     "description": "Recherche des reflets (filtres par identifiants, texte, type, zone, ensemble, pagination) et renvoie `{ count, reflects }`.",
+     "params": []
+    },
+    {
+     "name": "searchReflectValues",
+     "kind": "méthode",
+     "signature": "searchReflectValues({\n    ids,\n    searchText,\n    reflectType,\n    zone,\n    collection,\n    pendingOnly = false,\n    take = 10,\n    skip = 0,\n  })",
+     "type": null,
+     "readonly": false,
+     "description": "Charge les valeurs des reflets correspondant aux filtres (identifiants, texte, type, zone, ensemble, pagination).",
+     "params": []
+    },
+    {
+     "name": "searchRessources",
+     "kind": "méthode",
+     "signature": "searchRessources({\n    path,\n    name,\n    isClasses,\n    matchClasses,\n    collection,\n    // groups,\n    // equipment,\n    // zone,\n    take,\n    skip,\n  })",
+     "type": null,
+     "readonly": false,
+     "description": "Recherche des ressources (variables de classe ressource) sous un chemin et renvoie `{ count, variables }`.",
+     "params": []
+    },
+    {
+     "name": "searchWosVariables",
+     "kind": "méthode",
+     "signature": "searchWosVariables({\n    path,\n    name,\n    isClasses,\n    matchClasses,\n    collection,\n    depth = 0,\n    // groups,\n    // equipment,\n    // zone,\n    take,\n    skip,\n  })",
+     "type": null,
+     "readonly": false,
+     "description": "Recherche des variables WOS sous un chemin (filtres par nom, classes, ensemble, profondeur, pagination) et renvoie `{ count, variables }`.",
+     "params": []
+    },
+    {
+     "name": "writeWosVariableValue",
+     "kind": "méthode",
+     "signature": "writeWosVariableValue(path, params?)",
+     "type": null,
+     "readonly": false,
+     "description": "Écrit dans le REDY la valeur courante (`value`) d'une variable déjà chargée ; échoue si l'utilisateur ne peut pas l'écrire.",
      "params": []
     }
    ],
