@@ -12,8 +12,6 @@ since:
 
 # Fournisseur d'instruction
 
-{% include script_api/badges.md %}
-
 Cet acteur permet de créer une source de curseur instructions pour le pilote REDY. Il consomme un curseur d'instruction, demande son exécution au pilote REDY suivant des éventuels paramètres, et fournit les résultats dans son champ de données `data`.
 
 {% include script_api/legend.md %}

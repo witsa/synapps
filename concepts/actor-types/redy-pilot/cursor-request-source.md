@@ -12,8 +12,6 @@ since:
 
 # Fournisseur de requête
 
-{% include script_api/badges.md %}
-
 Cet acteur permet de créer une source de curseur requêtes pour le pilote REDY. Il consomme un curseur de requête, demande son exécution au pilote REDY suivant des éventuels paramètres, et fournit les résultats dans son champ de dosnnées `data`.
 
 {% include script_api/legend.md %}

@@ -11,6 +11,4 @@ since:
 
 # REDY PILOT
 
-{% include script_api/badges.md %}
-
 La suite d'acteurs REDY Pilot permet de créer des applications métiers connectées spécifique à un REDY Pilot.

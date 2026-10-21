@@ -9,7 +9,7 @@ nav_order: 6
 
 # Dans le Runtime
 
-> ⚡ Par script : [référence pour les scripts](../scripts/reference/session.md#hote)
+> ⚡ Par script : [référence pour les scripts](../scripts/reference/host.md)
 
 
 Dans la synapp, l'hôte est l'objet qui définit son hébergeur et qui contient les données exploitables.

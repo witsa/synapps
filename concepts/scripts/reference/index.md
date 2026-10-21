@@ -16,7 +16,8 @@ Objets accessibles dans les scripts, générés depuis le code :
 - [Synapp](./synapp.md) : `context.synapp` ;
 - [Scène](./scene.md) : `context.scene`, `context.rootScene` ;
 - [Composite](./composite.md) : le composite qui contient l'acteur ;
-- [Session](./session.md) : la session de l'utilisateur et l'hôte (`context.dataStores.redy.session`, `context.dataStores.redy.host`) ;
+- [Hôte](./host.md) : le REDY auquel la synapp est connectée (`context.dataStores.redy.host`) ;
+- [Session](./session.md) : la session de l'utilisateur (`context.dataStores.redy.session`) ;
 - [Utilisateur](./user.md) : l'utilisateur connecté (`context.dataStores.redy.session.user`) ;
 - [Afficheur](./user-agent.md) : l'appareil qui affiche la synapp (`context.synapp.userAgent`).
 

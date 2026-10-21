@@ -2,16 +2,16 @@
 title: "Session"
 parent: "Référence"
 grand_parent: Scripts
-nav_order: 8
+nav_order: 9
 ---
 
 {% include table_of_content.html %}
 
 # Session
 
-> 📖 Concept : [Session](../../session.md), [Hôtes](../../project/hosts.md), [Utilisateur](../../user.md)
+> 📖 Concept : [Session](../../session.md), [Utilisateur](../../user.md)
 
-La session de l'utilisateur connecté (`context.dataStores.redy.session`) et l'hôte auquel la synapp est connectée (`context.dataStores.redy.host`).
+La session de l'utilisateur connecté, accessible par `context.dataStores.redy.session` ou par l'[hôte](./host.md) (`host.session`).
 
 {% include script_api/legend.md %}
 
@@ -19,8 +19,3 @@ La session de l'utilisateur connecté (`context.dataStores.redy.session`) et l'h
 {: #informations }
 
 {% include script_api/fields.md object="session" prefix="session" %}
-
-# Hôte
-{: #hote }
-
-{% include script_api/fields.md object="host" prefix="host" %}
