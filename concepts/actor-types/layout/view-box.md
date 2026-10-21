@@ -1,6 +1,8 @@
 ---
 title: "Boite à vue"
 parent: "Disposition"
+grand_parent: "Types d'acteur"
+nav_order: 3
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.ViewBox" %}

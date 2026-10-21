@@ -1,7 +1,8 @@
 ---
 title: "Cellule de tableau de données"
 parent: "Affichage"
-nav_order: 2
+grand_parent: "Types d'acteur"
+nav_order: 8
 ---
 
 # Cellule de tableau de données

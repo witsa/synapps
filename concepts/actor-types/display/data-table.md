@@ -1,7 +1,8 @@
 ---
 title: "Tableau de données"
 parent: "Affichage"
-nav_order: 1
+grand_parent: "Types d'acteur"
+nav_order: 7
 ---
 
 {% include table_of_content.html %}

@@ -1,13 +1,13 @@
 ---
-title: "HTML"
+title: "Html"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Html" %}
 
-# HTML
-
+# Html
 L'acteur HTML permet d'intégrer du code HTML et CSS dans votre scène.
 
 C'est un acteur très pratique pour mettre en forme du texte, ou ajouter des classe CSS par exemple.

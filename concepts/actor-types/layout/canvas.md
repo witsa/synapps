@@ -1,6 +1,8 @@
 ---
 title: "Toile"
 parent: "Disposition"
+grand_parent: "Types d'acteur"
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.Canvas" %}

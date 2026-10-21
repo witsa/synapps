@@ -1,7 +1,8 @@
 ---
 title: "Vue de composite"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+nav_order: 6
 ---
 
 {% include links_actor.md apiClass="Actor.Display.CompositeView" %}

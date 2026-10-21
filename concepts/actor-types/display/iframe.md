@@ -1,7 +1,8 @@
 ---
 title: "IFrame"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+nav_order: 5
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Iframe" %}

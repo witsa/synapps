@@ -1,6 +1,8 @@
 ---
 title: "Empilement"
 parent: "Disposition"
+grand_parent: "Types d'acteur"
+nav_order: 1
 ---
 
 

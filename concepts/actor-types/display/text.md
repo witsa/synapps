@@ -1,7 +1,8 @@
 ---
 title: "Texte"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+nav_order: 1
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Text" %}

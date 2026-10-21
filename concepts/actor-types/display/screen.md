@@ -1,7 +1,8 @@
 ---
 title: "Écran"
 parent: "Affichage"
-nav_order: 0
+grand_parent: "Types d'acteur"
+nav_order: 4
 ---
 
 > 🚧 en cours de rédaction...
