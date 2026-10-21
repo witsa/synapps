@@ -10,7 +10,7 @@ parent: Concepts
 ## Définition
 
 Les propriétés d'un [acteur](./actor/index.md) sont initialisées avec des valeurs par défaut. Ces dernières sont définies dans le style qu'utilise l'acteur.
-Au départ, un acteur utilise le style `default`. Mais il est possible d'établir d'autre style et changer les valeurs par défaut d'un acteur.
+Au départ, un acteur utilise le style `default` (nommé **Défaut** dans Studio). Mais il est possible d'établir d'autres styles et changer les valeurs par défaut d'un acteur.
 
 ![SynApps](../assets/concepts/actor-style-01.png)
 
@@ -194,7 +194,7 @@ Regardez la couleur de fond :
 
 Elle est définie à sa valeur par défaut : aucune.
 
-Après avoir changé de style pour `pink`, la valeur affichée du champ est passée à `pink`. Mais, ne vous y trompez pas : c'est sa valeur par défaut qui a changé. Si une couleur autre que la celle par défaut avait été définie, elle aurait été conservée.
+Après avoir changé de style pour `pink`, la valeur affichée du champ est passée à `pink`. Mais, ne vous y trompez pas : c'est sa valeur par défaut qui a changé. Si une couleur autre que celle par défaut avait été définie, elle aurait été conservée.
 
 ![SynApps](../assets/concepts/actor-style-04.png)
 
@@ -218,63 +218,44 @@ Un nouveau style est créé pour le type de l'acteur et s'ouvre dans le designer
 
 ### Structure JSON d'un style
 
-La documentation de cette partie est à venir.
+Chaque style est enregistré dans le projet sous la forme d'un objet JSON : sa clé (`key`), son nom (`name`), le type d'acteur (`type`), le style sur lequel il est basé (`basedOn`, absent s'il est basé sur **Défaut**) et ses valeurs propres (`properties`).
 
-En attendant, ce qui suit présente la structure JSON d'un style.
-
-Voici un exemple de définition JSON de styles pour les empilements :
+Voici un exemple de deux styles pour les empilements :
 ```json
 {
-  "layout/stack": [
-    {
-      "name": "pink",
-      "definition": {
-        "backgroundColor": "pink",
-        "color": "brown"
-      }
-    },
-    {
-      "name": "green",
-      "definition": {
-        "backgroundColor": "lightGreen"
-      }
-    },
-    {
-      "name": "shadow",
-      "definition": {
-        "borderRadius": "5px",
-        "paddingTop": "1em",
-        "paddingBottom": "1em",
-        "paddingRight": "1em",
-        "paddingLeft": "1em",
-        "marginTop": "1em",
-        "marginBottom": "1em",
-        "marginRight": "1em",
-        "marginLeft": "1em",
-        "boxShadow": "0 0 5px 3px #888"
-      }
-    },
-    {
-      "name": "other-shadow",
-      "basedOn": "shadow",
-      "definition": {
-        "borderRadius": "15px",
-        "boxShadow": "0 0 15px 7px #888"
-      }
-    }
-  ]
+  "key": "shadow",
+  "name": "Ombre",
+  "type": "layout/stack",
+  "properties": {
+    "borderRadius": "5px",
+    "paddingTop": "1em",
+    "paddingBottom": "1em",
+    "paddingRight": "1em",
+    "paddingLeft": "1em",
+    "marginTop": "1em",
+    "marginBottom": "1em",
+    "marginRight": "1em",
+    "marginLeft": "1em",
+    "boxShadow": "0 0 5px 3px #888"
+  }
 }
+```
 
+```json
+{
+  "key": "other-shadow",
+  "name": "Autre ombre",
+  "type": "layout/stack",
+  "basedOn": "shadow",
+  "properties": {
+    "borderRadius": "15px",
+    "boxShadow": "0 0 15px 7px #888"
+  }
+}
 ```
 
 Vous remarquerez la définition de `other-shadow` basé sur `shadow` qui hérite des définitions du second tout en redéfinissant `borderRadius` et `boxShadow`.
 
-> A moyen terme, un designer sera dédié aux styles.
-
 ## Par script
-
-Le changement de style s'effectue par script. Consultez la [documentation de l'API Script](./scripts/index.md) pour plus de détails.
-
-La définition de style peut s'effectuer par script. Consultez la [documentation de l'API Script](./scripts/index.md) pour plus de détails.
 
 La méthode [`changeStyleName(styleName)`](./scripts/reference/actor.md#changestylenamestylename) d'un acteur lui applique le style de clé `styleName`, et l'information [`styleName`](./scripts/reference/actor.md#stylename) donne la clé du style qu'il utilise. Si la clé ne correspond à aucun style du type de l'acteur, ses propriétés reprennent les valeurs du style **Défaut**.
