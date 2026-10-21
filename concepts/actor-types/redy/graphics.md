@@ -1,6 +1,8 @@
 ---
-title: "Graphiques"
-parent: "REDY"
+title: "Graphique"
+parent: "Applications"
+grand_parent: "REDY"
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.Graphics" %}

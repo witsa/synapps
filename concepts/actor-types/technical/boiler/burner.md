@@ -1,7 +1,8 @@
 ---
 title: "Brûleur"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+nav_order: 2
 ---
 
 {% include table_of_content.html %}

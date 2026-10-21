@@ -1,7 +1,8 @@
 ---
 title: "Reflet Pompe double"
-parent: "Technique REDY"
+parent: "Chaufferie & ECS"
 grand_parent: "REDY"
+nav_order: 4
 ---
 
 {% include table_of_content.html %}

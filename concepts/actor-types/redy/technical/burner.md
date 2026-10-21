@@ -1,7 +1,8 @@
 ---
 title: "Reflet Brûleur"
-parent: "Technique REDY"
+parent: "Chaufferie & ECS"
 grand_parent: "REDY"
+nav_order: 2
 ---
 
 {% include table_of_content.html %}

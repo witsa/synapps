@@ -1,13 +1,14 @@
 ---
-title: "Chaufferie"
+title: "Chaufferie & ECS"
 parent: "Technique"
+grand_parent: "Types d'acteur"
 has_children: true
+nav_order: 4
 ---
 
 {% include table_of_content.html %}
 
-# Chaufferie
-
+# Chaufferie & ECS
 ![Résultat final de la scène de chaufferie](../../../../assets/tutorials/boiler-room/final_scene.gif)
 
 

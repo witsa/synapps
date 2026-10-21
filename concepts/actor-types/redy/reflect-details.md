@@ -1,6 +1,8 @@
 ---
 title: "Détails de reflet"
-parent: "REDY"
+parent: "Reflets"
+grand_parent: "REDY"
+nav_order: 2
 ---
 
 {% include table_of_content.html %}

@@ -1,6 +1,8 @@
 ---
 title: "Journal des variables"
-parent: "REDY"
+parent: "Variable WOS"
+grand_parent: "REDY"
+nav_order: 2
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.WosEventLog" %}

@@ -1,7 +1,8 @@
 ---
-title: "Multiposition"
+title: "Multi positions"
 parent: "Technique"
 grand_parent: "Types d'acteur"
+nav_order: 3
 ---
 
 {% include table_of_content.html %}

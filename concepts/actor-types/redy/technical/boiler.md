@@ -1,7 +1,8 @@
 ---
 title: "Reflet Chaudière"
-parent: "Technique REDY"
+parent: "Chaufferie & ECS"
 grand_parent: "REDY"
+nav_order: 1
 ---
 
 {% include table_of_content.html %}

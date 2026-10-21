@@ -1,6 +1,8 @@
 ---
 title: "Agenda"
-parent: "REDY"
+parent: "Applications"
+grand_parent: "REDY"
+nav_order: 1
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.Agenda" %}

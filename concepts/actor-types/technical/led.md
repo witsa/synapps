@@ -1,13 +1,13 @@
 ---
-title: "Led"
+title: "LED"
 parent: "Technique"
 grand_parent: "Types d'acteur"
+nav_order: 1
 ---
 
 {% include table_of_content.html %}
 
-# Led
-
+# LED
 Studio **1.6.0**
 {: .label .label-green }
 Runtime **2.8.0**

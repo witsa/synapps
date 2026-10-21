@@ -1,5 +1,5 @@
 ---
-title: "Bouton de Navigation"
+title: "Bouton de navigation"
 parent: "Navigation"
 grand_parent: "Intéraction"
 api_type: input/nav-button
@@ -8,8 +8,7 @@ nav_order: 1
 
 {% include links_actor.md apiClass="Actor.Input.NavButton" %}
 
-# Bouton de Navigation
-
+# Bouton de navigation
 L'acteur bouton de navigation permet, en plus de toutes les possibilités de l'[acteur bouton](./button.md), de naviguer entre les scènes ainsi que de modifier la scène affichée dans un [acteur écran](../display/screen.md).
 
 Ses propriétés sont similaires aux propriétés de l'acteur bouton et la documentation de ces propriétés peut être retrouvée à [cette adresse](./button.md).

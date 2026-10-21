@@ -1,7 +1,8 @@
 ---
 title: "Échangeur"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+nav_order: 4
 ---
 
 {% include table_of_content.html %}

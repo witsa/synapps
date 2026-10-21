@@ -1,7 +1,9 @@
 ---
 title: "Fournisseur de variable"
-parent: "REDY"
+parent: "Variable WOS"
+grand_parent: "REDY"
 api_type: redy/data-source/wos-variable
+nav_order: 4
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.WosVariableSource" %}

@@ -1,7 +1,8 @@
 ---
 title: "Échangeur"
 parent: "CTA"
-grand_parent: "Types d'acteur"
+grand_parent: "Technique"
+nav_order: 13
 ---
 
 {% include table_of_content.html %}

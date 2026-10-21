@@ -1,7 +1,8 @@
 ---
 title: "Vanne 2 voies"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+nav_order: 8
 ---
 
 {% include table_of_content.html %}

@@ -2,6 +2,7 @@
 title: "Ternaire"
 parent: "Technique"
 grand_parent: "Types d'acteur"
+nav_order: 2
 ---
 
 {% include table_of_content.html %}

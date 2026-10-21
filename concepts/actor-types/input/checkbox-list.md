@@ -1,5 +1,5 @@
 ---
-title: "Liste de Cases à cocher"
+title: "Liste de cases à cocher"
 parent: "Formulaire"
 grand_parent: "Intéraction"
 api_type: input/checkbox-list

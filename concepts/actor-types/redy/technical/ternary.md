@@ -1,7 +1,8 @@
 ---
-title: "Reflet Ternaire"
-parent: "Technique REDY"
+title: "Reflet ternaire"
+parent: "Technique"
 grand_parent: "REDY"
+nav_order: 1
 ---
 
 {% include table_of_content.html %}

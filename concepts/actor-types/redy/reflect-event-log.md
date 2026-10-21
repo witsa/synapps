@@ -1,6 +1,8 @@
 ---
 title: "Journal des reflets"
-parent: "REDY"
+parent: "Reflets"
+grand_parent: "REDY"
+nav_order: 3
 ---
 
 

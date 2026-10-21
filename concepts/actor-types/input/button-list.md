@@ -1,5 +1,5 @@
 ---
-title: "Liste de bouton"
+title: "Liste de boutons"
 parent: "Boutons"
 grand_parent: "Intéraction"
 api_type: input/button-list
@@ -8,8 +8,7 @@ nav_order: 2
 
 {% include links_actor.md apiClass="Actor.Input.ButtonList" %}
 
-# Liste de bouton
-
+# Liste de boutons
 Liste de boutons pour faire un choix simple. La liste est construite dynamiquement à partir d'une liste d'[options](#options).
 
 **NOTE**

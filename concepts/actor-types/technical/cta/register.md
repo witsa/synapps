@@ -1,13 +1,13 @@
 ---
-title: "Registre"
+title: "Registre de ventilation"
 parent: "CTA"
 grand_parent: "Technique"
+nav_order: 7
 ---
 
 {% include table_of_content.html %}
 
-# Registre
-
+# Registre de ventilation
 Studio **1.7.0**
 {: .label .label-green }
 Runtime **2.9.0**

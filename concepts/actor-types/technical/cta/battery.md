@@ -2,6 +2,7 @@
 title: "Batterie"
 parent: "CTA"
 grand_parent: "Technique"
+nav_order: 2
 ---
 
 {% include table_of_content.html %}

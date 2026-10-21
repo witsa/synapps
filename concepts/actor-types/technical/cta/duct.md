@@ -1,13 +1,13 @@
 ---
-title: "Conduit"
+title: "Gaine de ventilation"
 parent: "CTA"
 grand_parent: "Technique"
+nav_order: 5
 ---
 
 {% include table_of_content.html %}
 
-# Conduit
-
+# Gaine de ventilation
 Studio **1.7.0**
 {: .label .label-green }
 Runtime **2.9.0**

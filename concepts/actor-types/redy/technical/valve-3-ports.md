@@ -1,7 +1,8 @@
 ---
 title: "Reflet Vanne 3 voies"
-parent: "Technique REDY"
+parent: "Chaufferie & ECS"
 grand_parent: "REDY"
+nav_order: 6
 ---
 
 {% include table_of_content.html %}

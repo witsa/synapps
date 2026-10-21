@@ -1,7 +1,9 @@
 ---
 title: "Fournisseur de ressource"
-parent: "REDY"
+parent: "Variable WOS"
+grand_parent: "REDY"
 api_type: redy/data-source/resource
+nav_order: 3
 ---
 
 

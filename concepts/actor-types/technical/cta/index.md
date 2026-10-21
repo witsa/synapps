@@ -1,7 +1,9 @@
 ---
 title: "CTA"
 parent: "Technique"
+grand_parent: "Types d'acteur"
 has_children: true
+nav_order: 5
 ---
 
 {% include table_of_content.html %}

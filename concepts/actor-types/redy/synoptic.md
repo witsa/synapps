@@ -1,6 +1,8 @@
 ---
 title: "Synoptique"
-parent: "REDY"
+parent: "Applications"
+grand_parent: "REDY"
+nav_order: 3
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.Synoptic" %}

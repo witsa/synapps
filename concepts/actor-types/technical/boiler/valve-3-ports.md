@@ -1,7 +1,8 @@
 ---
 title: "Vanne 3 voies"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+nav_order: 9
 ---
 
 {% include table_of_content.html %}

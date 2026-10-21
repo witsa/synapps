@@ -1,7 +1,8 @@
 ---
 title: "Reflet Vanne 2 voies"
-parent: "Technique REDY"
+parent: "Chaufferie & ECS"
 grand_parent: "REDY"
+nav_order: 5
 ---
 
 {% include table_of_content.html %}

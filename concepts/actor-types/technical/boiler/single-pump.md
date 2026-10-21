@@ -1,7 +1,8 @@
 ---
 title: "Pompe simple"
-parent: "Chaufferie"
+parent: "Chaufferie & ECS"
 grand_parent: "Technique"
+nav_order: 6
 ---
 
 {% include table_of_content.html %}

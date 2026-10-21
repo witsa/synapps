@@ -1,6 +1,8 @@
 ---
 title: "Liste de reflets"
-parent: "REDY"
+parent: "Reflets"
+grand_parent: "REDY"
+nav_order: 1
 ---
 
 

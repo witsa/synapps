@@ -1,6 +1,8 @@
 ---
 title: "Liste d'états"
-parent: "REDY"
+parent: "Variable WOS"
+grand_parent: "REDY"
+nav_order: 1
 ---
 
 

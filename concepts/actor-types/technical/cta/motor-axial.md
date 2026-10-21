@@ -2,6 +2,7 @@
 title: "Moteur axial"
 parent: "CTA"
 grand_parent: "Technique"
+nav_order: 12
 ---
 
 {% include table_of_content.html %}
