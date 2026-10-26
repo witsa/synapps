@@ -9043,6 +9043,10 @@
       {
        "name": "params",
        "description": "Objet qui permet de récupérer le timeout créer pour avoir la possibilité d'annuler l'attente."
+      },
+      {
+       "name": "params.timeout",
+       "description": "Timeout créé."
       }
      ]
     }
@@ -10088,28 +10092,47 @@
      "name": "ackEvent",
      "kind": "méthode",
      "signature": "ackEvent(event)",
-     "type": null,
+     "type": "Promise<WosEvent>",
      "readonly": false,
      "description": "Acquitte l'évènement WOS donné (avec sa consigne `todo` si renseignée) et le renvoie mis à jour.",
-     "params": []
+     "params": [
+      {
+       "name": "event",
+       "description": "Évènement WOS à acquitter (obtenu par `loadWosEvents`)."
+      }
+     ]
     },
     {
      "name": "childrenOfVariable",
      "kind": "méthode",
      "signature": "childrenOfVariable(variable)",
-     "type": null,
+     "type": "Array.<REDY.Synapps.WosVariable>",
      "readonly": false,
      "description": "Renvoie les enfants déjà chargés de la variable donnée.",
-     "params": []
+     "params": [
+      {
+       "name": "variable",
+       "description": "Variable WOS parente."
+      }
+     ]
     },
     {
      "name": "commandReflect",
      "kind": "méthode",
      "signature": "commandReflect(reflect, withRefreshAfter?)",
-     "type": null,
+     "type": "Promise<ReflectBase>",
      "readonly": false,
      "description": "Envoie au REDY la commande (`command`) du reflet donné, puis, par défaut (`withRefreshAfter`), recharge sa valeur ; échoue si le reflet n'est pas commandable.",
-     "params": []
+     "params": [
+      {
+       "name": "reflect",
+       "description": "Reflet à commander, sa commande renseignée dans `command`."
+      },
+      {
+       "name": "withRefreshAfter",
+       "description": "Recharge la valeur du reflet après un court délai."
+      }
+     ]
     },
     {
      "name": "findWosVariable",
@@ -10117,11 +10140,11 @@
      "signature": "findWosVariable(path)",
      "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
-     "description": "Cherche ou charge une variable.",
+     "description": "Renvoie la variable si elle est déjà chargée, sinon la charge depuis le REDY (comme `loadWosVariable`, sans options).",
      "params": [
       {
        "name": "path",
-       "description": "Chemin vers la variable."
+       "description": "Chemin de la variable (ex. `:easy.Zone`)."
       }
      ]
     },
@@ -10131,25 +10154,33 @@
      "signature": "findWosVariableByID(ID)",
      "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
-     "description": "Cherche ou charge une variable avec son identifiant.",
+     "description": "Renvoie la variable de cet identifiant si elle est déjà chargée, sinon la charge depuis le REDY (comme `loadWosVariableByID`, sans options).",
      "params": [
       {
        "name": "id",
-       "description": "Chemin vers la variable."
+       "description": "Identifiant REDY de la variable."
       }
      ]
     },
     {
      "name": "getClasses",
      "kind": "méthode",
-     "signature": "getClasses({ classIds = [], disabled = false }?)",
+     "signature": "getClasses(params?)",
      "type": "Promise<Array.<Object>>",
      "readonly": false,
      "description": "Charge la liste des classes WOS.",
      "params": [
       {
        "name": "params",
-       "description": "Paramètres."
+       "description": "Filtres."
+      },
+      {
+       "name": "params.classIds",
+       "description": "Identifiants des classes voulues ; toutes les classes si vide."
+      },
+      {
+       "name": "params.disabled",
+       "description": "Filtre sur l'état désactivé des classes."
       }
      ]
     },
@@ -10157,28 +10188,43 @@
      "name": "getCursor",
      "kind": "méthode",
      "signature": "getCursor(label)",
-     "type": null,
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Charge la définition du curseur REDY de ce libellé.",
-     "params": []
+     "params": [
+      {
+       "name": "label",
+       "description": "Libellé du curseur."
+      }
+     ]
     },
     {
      "name": "getReflect",
      "kind": "méthode",
      "signature": "getReflect(path)",
-     "type": null,
+     "type": "ReflectBase ou null",
      "readonly": false,
      "description": "Renvoie le reflet déjà chargé de ce chemin, sans le charger.",
-     "params": []
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin du reflet."
+      }
+     ]
     },
     {
      "name": "getReflectByRedyID",
      "kind": "méthode",
      "signature": "getReflectByRedyID(redyID)",
-     "type": null,
+     "type": "ReflectBase ou null",
      "readonly": false,
      "description": "Renvoie le reflet déjà chargé de cet identifiant REDY, sans le charger.",
-     "params": []
+     "params": [
+      {
+       "name": "redyID",
+       "description": "Identifiant REDY du reflet."
+      }
+     ]
     },
     {
      "name": "getWosVariable",
@@ -10186,11 +10232,11 @@
      "signature": "getWosVariable(path)",
      "type": "REDY.Synapps.WosVariable ou null",
      "readonly": false,
-     "description": "Cherche une variable. Si elle n'est pas déja chargée, on obtient `null`",
+     "description": "Renvoie la variable déjà chargée de ce chemin, sans la charger : `null` si elle ne l'est pas.",
      "params": [
       {
        "name": "path",
-       "description": "Chemin vers la variable."
+       "description": "Chemin de la variable (ex. `:easy.Zone`)."
       }
      ]
     },
@@ -10198,16 +10244,21 @@
      "name": "getWosVariableByredyID",
      "kind": "méthode",
      "signature": "getWosVariableByredyID(redyID)",
-     "type": null,
+     "type": "REDY.Synapps.WosVariable ou null",
      "readonly": false,
      "description": "Cherche une variable déjà chargée par son identifiant REDY, sans la charger.",
-     "params": []
+     "params": [
+      {
+       "name": "redyID",
+       "description": "Identifiant REDY de la variable."
+      }
+     ]
     },
     {
      "name": "loadCursors",
      "kind": "méthode",
      "signature": "loadCursors()",
-     "type": null,
+     "type": "Promise<Array.<Object>>",
      "readonly": false,
      "description": "Charge la liste des curseurs définis dans le REDY.",
      "params": []
@@ -10216,51 +10267,159 @@
      "name": "loadWebFileBase64",
      "kind": "méthode",
      "signature": "loadWebFileBase64(path)",
-     "type": "Promise<String>",
+     "type": "Promise<string>",
      "readonly": false,
      "description": "Charge un fichier web du REDY et renvoie son contenu encodé en base64.",
      "params": [
       {
        "name": "path",
-       "description": "Chemin du fichier sur le REDY."
+       "description": "Chemin du fichier sur le REDY, commençant par `/` (relatif à l'adresse du REDY)."
       }
      ]
     },
     {
      "name": "loadWosEvents",
      "kind": "méthode",
-     "signature": "loadWosEvents({\n    originPath,\n    sitePath,\n    originID,\n    dateMin,\n    dateMax,\n    sortedField = 'd',\n    isSortAscending = false,\n    groups,\n    equipment,\n    zone,\n    collection,\n    pendingOnly = false,\n    ack = 0,\n    take = 10,\n    skip = 0,\n  })",
-     "type": null,
+     "signature": "loadWosEvents(params)",
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Recherche des évènements WOS (filtres par origine, site, dates, groupes, équipement, zone, ensemble, acquittement, pagination) et renvoie `{ count, events }`.",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Critères de recherche."
+      },
+      {
+       "name": "params.originPath",
+       "description": "Chemin de la variable à l'origine des évènements."
+      },
+      {
+       "name": "params.originID",
+       "description": "Identifiant REDY de la variable à l'origine des évènements."
+      },
+      {
+       "name": "params.sitePath",
+       "description": "Chemin du site."
+      },
+      {
+       "name": "params.dateMin",
+       "description": "Date de début, au format ISO 8601 (ex. `moment().subtract(1, 'day').toISOString()`)."
+      },
+      {
+       "name": "params.dateMax",
+       "description": "Date de fin, au format ISO 8601."
+      },
+      {
+       "name": "params.sortedField",
+       "description": "Champ de tri (`d` : date)."
+      },
+      {
+       "name": "params.isSortAscending",
+       "description": "Tri croissant ; par défaut, les plus récents d'abord."
+      },
+      {
+       "name": "params.groups",
+       "description": "Groupes : leurs noms (sous `:System.Attribute.Group`) ou leurs identifiants REDY ; les groupes introuvables sont ignorés (aucun résultat si aucun n'est trouvé)."
+      },
+      {
+       "name": "params.equipment",
+       "description": "Équipement : son nom (sous `:System.Attribute.Equipment`) ou son identifiant REDY. Équipement introuvable : aucun résultat."
+      },
+      {
+       "name": "params.zone",
+       "description": "Zone : son nom (sous `:System.Attribute.Zone`) ou son identifiant REDY. Zone introuvable : aucun résultat."
+      },
+      {
+       "name": "params.collection",
+       "description": "Ensemble : son nom (sous `:easy.Set`) ou son identifiant REDY. Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.pendingOnly",
+       "description": "Seulement les évènements en cours."
+      },
+      {
+       "name": "params.ack",
+       "description": "Acquittement : `0` tous, `1` non acquittés, `2` acquittés."
+      },
+      {
+       "name": "params.take",
+       "description": "Nombre maximal de résultats (taille de la page)."
+      },
+      {
+       "name": "params.skip",
+       "description": "Nombre de résultats à sauter (début de la page)."
+      }
+     ]
     },
     {
      "name": "loadWosVariable",
      "kind": "méthode",
      "signature": "loadWosVariable(path, options?)",
-     "type": null,
+     "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
      "description": "Charge une variable depuis le REDY (avec ses sous-variables `subPaths` si demandé) et la renvoie.",
-     "params": []
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin de la variable (ex. `:easy.Zone`)."
+      },
+      {
+       "name": "options",
+       "description": "Options du chargement."
+      },
+      {
+       "name": "options.subPaths",
+       "description": "Chemins complets de sous-variables (descendantes de `path`, ex. `:easy.Zone.Temperature`) à charger dans la même requête ; `*` remplace un libellé entier (ex. `:easy.Zone.*.Temperature`). S'il y en a, seules ces sous-variables sont chargées en plus de la variable, quel que soit leur niveau ; sinon, ses enfants directs le sont aussi."
+      },
+      {
+       "name": "options.withBlob",
+       "description": "Charge aussi les valeurs binaires (blob), renvoyées encodées en base64 (à décoder avec `atob`)."
+      }
+     ]
     },
     {
      "name": "loadWosVariableByID",
      "kind": "méthode",
      "signature": "loadWosVariableByID(id, options?)",
-     "type": null,
+     "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
      "description": "Charge une variable depuis le REDY par son identifiant et la renvoie.",
-     "params": []
+     "params": [
+      {
+       "name": "id",
+       "description": "Identifiant REDY de la variable."
+      },
+      {
+       "name": "options",
+       "description": "Options du chargement."
+      },
+      {
+       "name": "options.subPaths",
+       "description": "Chemins de sous-variables, RELATIFS à la variable (ex. `Temperature`, `Salon.Temperature` ou `*.Temperature`, `*` remplaçant un libellé entier), à charger dans la même requête. S'il y en a, seules ces sous-variables sont chargées en plus de la variable ; sinon, ses enfants directs le sont aussi."
+      },
+      {
+       "name": "options.withBlob",
+       "description": "Charge aussi les valeurs binaires (blob), renvoyées encodées en base64 (à décoder avec `atob`)."
+      }
+     ]
     },
     {
      "name": "loadWosVariableChildren",
      "kind": "méthode",
      "signature": "loadWosVariableChildren(path, queryDepth?)",
-     "type": null,
+     "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
      "description": "Charge une variable et ses descendants (3 niveaux par défaut) et renvoie la variable.",
-     "params": []
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin de la variable (ex. `:easy.Zone`)."
+      },
+      {
+       "name": "queryDepth",
+       "description": "Profondeur chargée : `0` tous les descendants, `1` les champs, `2` les champs et leurs propriétés, `3` champs et propriétés avec leurs enfants, etc."
+      }
+     ]
     },
     {
      "name": "logout",
@@ -10275,91 +10434,369 @@
      "name": "refreshWosVariable",
      "kind": "méthode",
      "signature": "refreshWosVariable(path, options?)",
-     "type": null,
+     "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
-     "description": "Recharge les valeurs d'une variable déjà chargée et la renvoie.",
-     "params": []
+     "description": "Recharge les valeurs d'une variable déjà chargée et la renvoie ; échoue si elle n'est pas chargée.",
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin de la variable (ex. `:easy.Zone`)."
+      },
+      {
+       "name": "options",
+       "description": "Options du rechargement."
+      },
+      {
+       "name": "options.subPaths",
+       "description": "Chemins complets de sous-variables (descendantes de `path`, ex. `:easy.Zone.Temperature`) à recharger dans la même requête ; `*` remplace un libellé entier (ex. `:easy.Zone.*.Temperature`). S'il y en a, seules ces sous-variables sont rechargées en plus de la variable, quel que soit leur niveau ; sinon, ses enfants directs le sont aussi."
+      },
+      {
+       "name": "options.withBlob",
+       "description": "Recharge aussi les valeurs binaires (blob), renvoyées encodées en base64 (à décoder avec `atob`)."
+      }
+     ]
     },
     {
      "name": "refreshWosVariableChildren",
      "kind": "méthode",
      "signature": "refreshWosVariableChildren(path, queryDepth?)",
-     "type": null,
+     "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
      "description": "Recharge les valeurs d'une variable et de ses descendants et renvoie la variable.",
-     "params": []
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin de la variable (ex. `:easy.Zone`)."
+      },
+      {
+       "name": "queryDepth",
+       "description": "Profondeur rechargée : `0` tous les descendants, `1` les champs, `2` les champs et leurs propriétés, `3` champs et propriétés avec leurs enfants, etc."
+      }
+     ]
     },
     {
      "name": "runCursorInstruction",
      "kind": "méthode",
-     "signature": "runCursorInstruction({ label, parameters })",
-     "type": null,
+     "signature": "runCursorInstruction(params)",
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Exécute un curseur d'instruction avec ses paramètres et renvoie le résultat.",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Exécution."
+      },
+      {
+       "name": "params.label",
+       "description": "Libellé du curseur."
+      },
+      {
+       "name": "params.parameters",
+       "description": "Valeurs des paramètres du curseur, par nom."
+      }
+     ]
     },
     {
      "name": "runCursorRequest",
      "kind": "méthode",
-     "signature": "runCursorRequest({ label, parameters, limit = 10, offset = 0 })",
-     "type": null,
+     "signature": "runCursorRequest(params)",
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Exécute un curseur de requête avec ses paramètres et sa pagination (`limit`, `offset`) et renvoie le résultat.",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Exécution."
+      },
+      {
+       "name": "params.label",
+       "description": "Libellé du curseur."
+      },
+      {
+       "name": "params.parameters",
+       "description": "Valeurs des paramètres du curseur, par nom."
+      },
+      {
+       "name": "params.limit",
+       "description": "Nombre maximal de lignes (taille de la page)."
+      },
+      {
+       "name": "params.offset",
+       "description": "Nombre de lignes à sauter (début de la page)."
+      }
+     ]
     },
     {
      "name": "searchReflectEvents",
      "kind": "méthode",
-     "signature": "searchReflectEvents({\n    reflectPath,\n    dateFrom,\n    dateTo,\n    searchText,\n    reflectType,\n    isSortAscending = false,\n    groups,\n    equipment,\n    zone,\n    collection,\n    pendingOnly = false,\n    take = 10,\n    skip = 0,\n  })",
-     "type": null,
+     "signature": "searchReflectEvents(params)",
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Recherche des évènements de reflets (filtres par reflet, dates, texte, type, groupes, équipement, zone, ensemble, pagination) et renvoie `{ count, events }`.",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Critères de recherche."
+      },
+      {
+       "name": "params.reflectPath",
+       "description": "Chemin du reflet (ex. `:easy.RESS.Chaudiere`)."
+      },
+      {
+       "name": "params.dateFrom",
+       "description": "Date de début."
+      },
+      {
+       "name": "params.dateTo",
+       "description": "Date de fin."
+      },
+      {
+       "name": "params.searchText",
+       "description": "Filtre sur le nom des reflets."
+      },
+      {
+       "name": "params.reflectType",
+       "description": "Type de reflet (ex. `analog`, `digital`, `state`, `agenda`)."
+      },
+      {
+       "name": "params.isSortAscending",
+       "description": "Tri croissant ; par défaut, les plus récents d'abord."
+      },
+      {
+       "name": "params.groups",
+       "description": "Groupes : leurs noms (sous `:System.Attribute.Group`) ; les groupes introuvables sont ignorés (aucun résultat si aucun n'est trouvé)."
+      },
+      {
+       "name": "params.equipment",
+       "description": "Équipement : son nom (sous `:System.Attribute.Equipment`). Équipement introuvable : aucun résultat."
+      },
+      {
+       "name": "params.zone",
+       "description": "Zone : son nom (sous `:System.Attribute.Zone`). Zone introuvable : aucun résultat."
+      },
+      {
+       "name": "params.collection",
+       "description": "Ensemble : son nom (sous `:easy.Set`). Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.pendingOnly",
+       "description": "Seulement les évènements en cours."
+      },
+      {
+       "name": "params.take",
+       "description": "Nombre maximal de résultats (taille de la page)."
+      },
+      {
+       "name": "params.skip",
+       "description": "Nombre de résultats à sauter (début de la page)."
+      }
+     ]
     },
     {
      "name": "searchReflects",
      "kind": "méthode",
-     "signature": "searchReflects({\n    ids,\n    searchText,\n    reflectType,\n    zone,\n    collection,\n    pendingOnly = false,\n    take = 10,\n    skip = 0,\n  })",
-     "type": null,
+     "signature": "searchReflects(params)",
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Recherche des reflets (filtres par identifiants, texte, type, zone, ensemble, pagination) et renvoie `{ count, reflects }`.",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Critères de recherche."
+      },
+      {
+       "name": "params.ids",
+       "description": "Identifiants REDY des reflets."
+      },
+      {
+       "name": "params.searchText",
+       "description": "Filtre sur le nom des reflets."
+      },
+      {
+       "name": "params.reflectType",
+       "description": "Type de reflet (ex. `analog`, `digital`, `state`, `agenda`)."
+      },
+      {
+       "name": "params.zone",
+       "description": "Zone : son nom (sous `:System.Attribute.Zone`). Zone introuvable : aucun résultat."
+      },
+      {
+       "name": "params.collection",
+       "description": "Ensemble : son nom (sous `:easy.Set`). Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.pendingOnly",
+       "description": "Seulement les reflets ayant un évènement en cours."
+      },
+      {
+       "name": "params.take",
+       "description": "Nombre maximal de résultats (taille de la page)."
+      },
+      {
+       "name": "params.skip",
+       "description": "Nombre de résultats à sauter (début de la page)."
+      }
+     ]
     },
     {
      "name": "searchReflectValues",
      "kind": "méthode",
-     "signature": "searchReflectValues({\n    ids,\n    searchText,\n    reflectType,\n    zone,\n    collection,\n    pendingOnly = false,\n    take = 10,\n    skip = 0,\n  })",
-     "type": null,
+     "signature": "searchReflectValues(params)",
+     "type": "Promise<Object>",
      "readonly": false,
-     "description": "Charge les valeurs des reflets correspondant aux filtres (identifiants, texte, type, zone, ensemble, pagination).",
-     "params": []
+     "description": "Charge les valeurs des reflets correspondant aux filtres (identifiants, texte, type, zone, ensemble, pagination) et renvoie `{ count, reflects }`.",
+     "params": [
+      {
+       "name": "params",
+       "description": "Critères de recherche."
+      },
+      {
+       "name": "params.ids",
+       "description": "Identifiants REDY des reflets."
+      },
+      {
+       "name": "params.searchText",
+       "description": "Filtre sur le nom des reflets."
+      },
+      {
+       "name": "params.reflectType",
+       "description": "Type de reflet (ex. `analog`, `digital`, `state`, `agenda`)."
+      },
+      {
+       "name": "params.zone",
+       "description": "Zone : son nom (sous `:System.Attribute.Zone`). Zone introuvable : aucun résultat."
+      },
+      {
+       "name": "params.collection",
+       "description": "Ensemble : son nom (sous `:easy.Set`). Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.pendingOnly",
+       "description": "Seulement les reflets ayant un évènement en cours."
+      },
+      {
+       "name": "params.take",
+       "description": "Nombre maximal de résultats (taille de la page)."
+      },
+      {
+       "name": "params.skip",
+       "description": "Nombre de résultats à sauter (début de la page)."
+      }
+     ]
     },
     {
      "name": "searchRessources",
      "kind": "méthode",
-     "signature": "searchRessources({\n    path,\n    name,\n    isClasses,\n    matchClasses,\n    collection,\n    // groups,\n    // equipment,\n    // zone,\n    take,\n    skip,\n  })",
-     "type": null,
+     "signature": "searchRessources(params)",
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Recherche des ressources (variables de classe ressource) sous un chemin et renvoie `{ count, variables }`.",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Critères de recherche."
+      },
+      {
+       "name": "params.path",
+       "description": "Chemin sous lequel chercher (ex. `:easy.RESS`)."
+      },
+      {
+       "name": "params.name",
+       "description": "Seulement les variables dont le nom contient ce texte (sans tenir compte de la casse)."
+      },
+      {
+       "name": "params.isClasses",
+       "description": "Identifiants de classes WOS, ajoutés à la classe ressource (62) : seulement les variables de ces classes ou de classes qui en héritent."
+      },
+      {
+       "name": "params.matchClasses",
+       "description": "Identifiants de classes WOS : seulement les variables de ces classes exactement (sans héritage)."
+      },
+      {
+       "name": "params.collection",
+       "description": "Ensemble : son nom (sous `:easy.Set`) ou son identifiant REDY. Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.take",
+       "description": "Nombre maximal de résultats (taille de la page)."
+      },
+      {
+       "name": "params.skip",
+       "description": "Nombre de résultats à sauter (début de la page)."
+      }
+     ]
     },
     {
      "name": "searchWosVariables",
      "kind": "méthode",
-     "signature": "searchWosVariables({\n    path,\n    name,\n    isClasses,\n    matchClasses,\n    collection,\n    depth = 0,\n    // groups,\n    // equipment,\n    // zone,\n    take,\n    skip,\n  })",
-     "type": null,
+     "signature": "searchWosVariables(params)",
+     "type": "Promise<Object>",
      "readonly": false,
      "description": "Recherche des variables WOS sous un chemin (filtres par nom, classes, ensemble, profondeur, pagination) et renvoie `{ count, variables }`.",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Critères de recherche."
+      },
+      {
+       "name": "params.path",
+       "description": "Chemin sous lequel chercher (ex. `:easy.RESS`)."
+      },
+      {
+       "name": "params.name",
+       "description": "Seulement les variables dont le nom contient ce texte (sans tenir compte de la casse)."
+      },
+      {
+       "name": "params.isClasses",
+       "description": "Identifiants de classes WOS : seulement les variables de ces classes ou de classes qui en héritent."
+      },
+      {
+       "name": "params.matchClasses",
+       "description": "Identifiants de classes WOS : seulement les variables de ces classes exactement (sans héritage)."
+      },
+      {
+       "name": "params.collection",
+       "description": "Ensemble : son nom (sous `:easy.Set`) ou son identifiant REDY. Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.depth",
+       "description": "Profondeur de la structure chargée pour chaque variable trouvée : `0` tous ses descendants, `1` ses champs, `2` ses champs et leurs propriétés, `3` ses champs et propriétés avec leurs enfants, etc."
+      },
+      {
+       "name": "params.take",
+       "description": "Nombre maximal de résultats (taille de la page)."
+      },
+      {
+       "name": "params.skip",
+       "description": "Nombre de résultats à sauter (début de la page)."
+      }
+     ]
     },
     {
      "name": "writeWosVariableValue",
      "kind": "méthode",
      "signature": "writeWosVariableValue(path, params?)",
-     "type": null,
+     "type": "Promise<REDY.Synapps.WosVariable>",
      "readonly": false,
      "description": "Écrit dans le REDY la valeur courante (`value`) d'une variable déjà chargée ; échoue si l'utilisateur ne peut pas l'écrire.",
-     "params": []
+     "params": [
+      {
+       "name": "path",
+       "description": "Chemin de la variable (ex. `:easy.Zone.Consigne`)."
+      },
+      {
+       "name": "params",
+       "description": "Options de l'écriture."
+      },
+      {
+       "name": "params.withBlob",
+       "description": "La valeur est binaire (blob) : elle est envoyée encodée en base64."
+      },
+      {
+       "name": "params.withoutReturnValue",
+       "description": "Le REDY ne renvoie pas la valeur écrite : `value` n'est pas mise à jour avec la valeur réellement enregistrée."
+      }
+     ]
     }
    ],
    "events": []
@@ -24129,11 +24566,20 @@
     {
      "name": "write",
      "kind": "méthode",
-     "signature": "write({ withRefreshAfter }?)",
-     "type": null,
+     "signature": "write(params?)",
+     "type": "Promise<Object|null>",
      "readonly": false,
      "description": "Envoie la commande du reflet si elle est autorisée (`data.allowCommand`), puis rafraîchit la donnée par défaut (`withRefreshAfter`).",
-     "params": []
+     "params": [
+      {
+       "name": "params",
+       "description": "Options de l'envoi ; sans elles, la donnée est rafraîchie."
+      },
+      {
+       "name": "params.withRefreshAfter",
+       "description": "Recharge la valeur du reflet après la commande. Si `params` est donné, elle n'est rechargée que si cette option vaut `true`."
+      }
+     ]
     }
    ],
    "events": [
