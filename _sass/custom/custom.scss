@@ -6,6 +6,8 @@
 .api-event::before { content: "⚡ "; }
 
 
-// Ancres stables (#prop-…, #info-…, #meth-…) posées sur la ligne technique sous le titre : garder
-// le titre visible quand on arrive par un lien (ex. depuis l'inspecteur de Studio).
-[id^="prop-"], [id^="info-"], [id^="meth-"] { scroll-margin-top: 4rem; }
+// Arrivée par une ancre : dégager l'en-tête collant (3.75rem, cf. my_default.html) avec un peu d'air.
+// Les ancres stables (#prop-…, #info-…, #meth-…) sont sur la ligne technique sous le titre : marge
+// plus grande pour garder le titre visible (ex. lien depuis l'inspecteur de Studio).
+h1, h2, h3, h4, h5, h6 { scroll-margin-top: 5.5rem; }
+[id^="prop-"], [id^="info-"], [id^="meth-"] { scroll-margin-top: 7.75rem; }
