@@ -16,7 +16,7 @@ Les [fournisseurs de donnée]({{ site.baseurl }}/concepts/actor/#les-fournisseur
 
 ## Accès par script
 
-Le magasin du REDY est accessible dans tout script par `context.dataStores.redy` (et, depuis un acteur, par `this.dataStores.redy`).
+Le magasin du REDY est accessible dans tout script par `context.dataStores.redy` (et, depuis un acteur, par `this.dataStores.redy`) : voir les [magasins de données](./reference/data-stores.md).
 
 {: .tip }
 > Pour afficher, lier ou écrire une donnée, préférez un fournisseur de donnée : il gère la requête, le rafraîchissement et l'écriture. Le magasin sert aux besoins ponctuels d'un script.

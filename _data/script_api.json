@@ -8042,9 +8042,9 @@
     "name": "dataStores",
     "kind": "champ",
     "signature": "dataStores",
-    "type": "REDY.Synapps.DataStores",
+    "type": "Magasins de données",
     "readonly": true,
-    "description": "Obtient les magasins de données de la synapp.",
+    "description": "Obtient les magasins de données de la synapp (`dataStores.redy` : le magasin REDY).",
     "params": []
    },
    {
@@ -8747,9 +8747,9 @@
      "name": "dataStores",
      "kind": "champ",
      "signature": "dataStores",
-     "type": "REDY.Synapps.DataStores",
+     "type": "Magasins de données",
      "readonly": true,
-     "description": "Magasins de données.",
+     "description": "Magasins de données de la synapp (`dataStores.redy` : le magasin REDY).",
      "params": []
     },
     {
@@ -9105,9 +9105,9 @@
      "name": "dataStores",
      "kind": "champ",
      "signature": "dataStores",
-     "type": "Object",
+     "type": "Magasins de données",
      "readonly": true,
-     "description": "Obtient les magasins de donnée.",
+     "description": "Obtient les magasins de données de la synapp (`dataStores.redy` : le magasin REDY).",
      "params": []
     },
     {
@@ -10063,6 +10063,22 @@
      "params": []
     }
    ],
+   "events": []
+  },
+  "data-stores": {
+   "name": "Magasins de données",
+   "fields": [
+    {
+     "name": "redy",
+     "kind": "champ",
+     "signature": "redy",
+     "type": "Magasin REDY",
+     "readonly": true,
+     "description": "Magasin de données du REDY : variables WOS, reflets, évènements et curseurs.",
+     "params": []
+    }
+   ],
+   "methods": [],
    "events": []
   },
   "data-store": {
