@@ -21,7 +21,7 @@ Pour exécuter une synapp, l'utilisateur doit être authentifié sur le REDY qui
 
 Une fois l'authentification réussie, le REDY ouvre une session : un jeton, un identifiant de session, un délai d'expiration et l'[utilisateur](./user.md) connecté, avec son niveau d'accès.
 
-La session est mémorisée par le navigateur : recharger la page ou rouvrir la synapp ne demande pas de se reconnecter tant qu'elle n'a pas expiré.
+La session est mémorisée par l'onglet du navigateur : recharger la page ne demande pas de se reconnecter tant qu'elle n'a pas expiré. Un nouvel onglet, ou la synapp rouverte après la fermeture du navigateur, demande une nouvelle connexion.
 
 ## Expiration
 
