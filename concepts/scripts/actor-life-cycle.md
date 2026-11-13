@@ -156,11 +156,11 @@ Avant le déclenchement de ces deux évènements, un changement de valeur peut d
 Il existe 5 modifications possibles. Le champ `modifier` du contexte des deux évènements contient sa valeur, indiquée entre parenthèses :
 - **Aucun** (`other`) : rien ne se passe. C'est la modification par défaut des additionnelles.
 - **Style seulement** (`css`) : le style CSS de l'élément DOM est recalculé. L'évènement [`onCssStyling`](./reference/actor.md#oncssstyling) est déclenché une nouvelle fois.
-- **Rendu sans gabarit** (`resize`) : un nouveau rendu est réalisé, sans recalcul des tailles. Les évènements [`onCssStyling`](./reference/actor.md#oncssstyling) et [`onRender`](./reference/actor.md#onrender) sont déclenchés. Malgré sa valeur, cette modification ne recalcule pas les tailles.
+- **Rendu sans gabarit** (`resize`) : un nouveau rendu est réalisé, sans recalcul des tailles. Les évènements [`onCssStyling`](./reference/actor.md#oncssstyling) et [`onRender`](./reference/actor.md#onrender) sont déclenchés. Malgré sa valeur, cette modification ne recalcule pas les tailles, sauf sous une [boîte à vue](../actor-types/layout/view-box.md) pour les marges, les marges intérieures, les alignements et les bordures.
 - **Gabarit de l'acteur** (`render`) : un nouveau rendu est réalisé, puis le gabarit de l'acteur est recalculé. Les évènements [`onCssStyling`](./reference/actor.md#oncssstyling), [`onComputeLayout`](./reference/actor.md#oncomputelayout) et [`onRender`](./reference/actor.md#onrender) sont déclenchés.
 - **Gabarit parent + enfants** (`layout`) : un nouveau rendu est réalisé, puis le gabarit de l'acteur, de son parent direct et de ses enfants directs est recalculé. L'évènement [`onComputeLayout`](./reference/actor.md#oncomputelayout) est donc déclenché sur chacun d'eux.
 
-Les propriétés spécifiques d'un acteur possèdent chacune leur type de modification. C'est à vous de définir la modification qu’entraîne le changement de valeur sur une additionnelle.
+Les propriétés spécifiques d'un acteur possèdent chacune leur type de modification. C'est à vous de définir la modification qu’entraîne le changement de valeur sur une additionnelle : Studio en propose quatre (toutes sauf **Rendu sans gabarit**).
 
 # Transformations de liaison
 
