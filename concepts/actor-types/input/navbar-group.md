@@ -42,3 +42,11 @@ Les évènements communs à tous les acteurs sont décrits avec l'[acteur de bas
 {: #herite-de }
 
 {% include script_api/inherits.md type=page.api_type %}
+
+# Fonctionnement
+
+Le menu du groupe s’ouvre au clic sur son titre, ou au survol si la barre a **Ouvrir au survol ?** activé. Il s’ouvre sous la barre ou au-dessus selon la **Position du menu des groupes** de la barre ; si la place manque, il s’ouvre de l’autre côté.
+
+Le titre prend les couleurs de **groupe actif** de la barre quand le groupe contient le bouton de la scène sélectionnée, quand il est survolé et tant que son menu est ouvert, comme un bouton de la barre prend son style actif au survol.
+
+La couleur du texte réglée sur la barre s’applique aux boutons du menu du groupe.
