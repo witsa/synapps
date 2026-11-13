@@ -7023,6 +7023,16 @@
      "label": null
     },
     {
+     "name": "ackBy",
+     "kind": "champ",
+     "signature": "ackBy",
+     "type": "String",
+     "readonly": true,
+     "description": "Nom de l'utilisateur qui a acquitté l'évènement, ou `null` s'il n'est pas acquitté.",
+     "params": [],
+     "label": null
+    },
+    {
      "name": "ackInfos",
      "kind": "champ",
      "signature": "ackInfos",
@@ -7369,14 +7379,14 @@
     ],
     "type": null,
     "default": "'inherit'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
    {
     "name": "horizontalAlignment",
     "label": "Alignement horizontal",
-    "description": "Alignement horizontale dans un acteur empilement ou acteur boite à vue.\n\n**Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`",
+    "description": "Alignement horizontal dans un acteur empilement, un acteur boite à vue ou un acteur grille.\n\n**Attention** aux largeurs fixées qui prennent le pas sur la valeur `'expand'`",
     "section": "layout",
     "values": [
      "auto",
@@ -7387,14 +7397,14 @@
     ],
     "type": null,
     "default": "'auto'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": false,
     "jokerable": false
    },
    {
     "name": "verticalAlignment",
     "label": "Alignement vertical",
-    "description": "Alignement verticale dans un acteur empilement ou boite à vue.\n\n**Attention** aux hauteurs fixées qui prennent le pas sur la valeur `'expand'`",
+    "description": "Alignement vertical dans un acteur empilement, un acteur boite à vue ou un acteur grille.\n\n**Attention** aux hauteurs fixées qui prennent le pas sur la valeur `'expand'`",
     "section": "layout",
     "values": [
      "auto",
@@ -7405,7 +7415,7 @@
     ],
     "type": null,
     "default": "'auto'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": false,
     "jokerable": false
    },
@@ -7417,7 +7427,7 @@
     "values": null,
     "type": "number",
     "default": "0",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": false,
     "jokerable": false
    },
@@ -7429,7 +7439,7 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": false,
     "jokerable": false
    },
@@ -7445,7 +7455,7 @@
     ],
     "type": null,
     "default": "'scroll'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7469,8 +7479,20 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Rendu",
+    "modifier": "Gabarit de l'acteur",
     "inheritable": false,
+    "jokerable": false
+   },
+   {
+    "name": "gridColumnStart",
+    "label": "Colonne",
+    "description": "Colonne où commence l'acteur dans un acteur grille :\n`'auto'` (placé à la suite des autres) ou un numéro de colonne (1 = la première).\n**Modificateur :** `css`.",
+    "section": "layout",
+    "values": null,
+    "type": "string",
+    "default": "'auto'",
+    "modifier": "Style seulement",
+    "inheritable": true,
     "jokerable": false
    },
    {
@@ -7481,7 +7503,7 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7493,7 +7515,7 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7505,7 +7527,7 @@
     "values": null,
     "type": "string",
     "default": "'currentColor'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7517,7 +7539,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7529,7 +7551,7 @@
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7541,7 +7563,7 @@
     "values": null,
     "type": "number",
     "default": "1",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": false,
     "jokerable": false
    },
@@ -7557,7 +7579,7 @@
     ],
     "type": null,
     "default": "'inherit'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7569,7 +7591,7 @@
     "values": null,
     "type": "string",
     "default": "'1px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7581,7 +7603,7 @@
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7593,7 +7615,7 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7605,7 +7627,7 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7617,7 +7639,7 @@
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7629,7 +7651,7 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7641,7 +7663,7 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7653,7 +7675,7 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7665,7 +7687,7 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7677,7 +7699,7 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7689,7 +7711,19 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
+    "inheritable": true,
+    "jokerable": false
+   },
+   {
+    "name": "gridRowStart",
+    "label": "Ligne",
+    "description": "Ligne où commence l'acteur dans un acteur grille :\n`'auto'` (placé à la suite des autres) ou un numéro de ligne (1 = la première).\n**Modificateur :** `css`.",
+    "section": "layout",
+    "values": null,
+    "type": "string",
+    "default": "'auto'",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7701,7 +7735,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7713,7 +7747,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7725,7 +7759,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7737,7 +7771,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7749,7 +7783,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7761,7 +7795,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7773,7 +7807,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7785,7 +7819,31 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
+    "inheritable": true,
+    "jokerable": false
+   },
+   {
+    "name": "gridColumnSpan",
+    "label": "Nombre de colonnes",
+    "description": "Nombre de colonnes occupées dans un acteur grille ;\n`0` = jusqu'à la dernière colonne.\n**Modificateur :** `css`.",
+    "section": "layout",
+    "values": null,
+    "type": "number",
+    "default": "1",
+    "modifier": "Style seulement",
+    "inheritable": true,
+    "jokerable": false
+   },
+   {
+    "name": "gridRowSpan",
+    "label": "Nombre de lignes",
+    "description": "Nombre de lignes occupées dans un acteur grille ;\n`0` = jusqu'à la dernière ligne.\n**Modificateur :** `css`.",
+    "section": "layout",
+    "values": null,
+    "type": "number",
+    "default": "1",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7797,7 +7855,7 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7809,7 +7867,7 @@
     "values": null,
     "type": "number",
     "default": "100",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": false,
     "jokerable": false
    },
@@ -7821,7 +7879,7 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7833,7 +7891,7 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7845,7 +7903,7 @@
     "values": null,
     "type": "string",
     "default": "'left top'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7857,7 +7915,7 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7869,7 +7927,7 @@
     "values": null,
     "type": "string",
     "default": "''",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7888,7 +7946,7 @@
     ],
     "type": null,
     "default": "'repeat'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7904,7 +7962,7 @@
     ],
     "type": null,
     "default": "'inherit'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7920,7 +7978,7 @@
     ],
     "type": null,
     "default": "'inherit'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7938,7 +7996,7 @@
     ],
     "type": null,
     "default": "'none'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7950,7 +8008,7 @@
     "values": null,
     "type": "string",
     "default": "'inherit'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -7962,7 +8020,7 @@
     "values": null,
     "type": "string",
     "default": "'auto auto'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7974,7 +8032,7 @@
     "values": null,
     "type": "string",
     "default": "'none'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": false,
     "jokerable": false
    },
@@ -7986,7 +8044,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -7998,7 +8056,7 @@
     "values": null,
     "type": "string",
     "default": "'0px'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    },
@@ -8015,7 +8073,7 @@
     ],
     "type": null,
     "default": "'inherit'",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": true,
     "jokerable": false
    },
@@ -8027,7 +8085,7 @@
     "values": null,
     "type": "boolean",
     "default": "true",
-    "modifier": "Taille",
+    "modifier": "Rendu sans gabarit",
     "inheritable": false,
     "jokerable": false
    },
@@ -8039,7 +8097,7 @@
     "values": null,
     "type": "string",
     "default": "'auto'",
-    "modifier": "Style CSS",
+    "modifier": "Style seulement",
     "inheritable": true,
     "jokerable": false
    }
@@ -10874,7 +10932,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -10891,7 +10949,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -10906,7 +10964,7 @@
      ],
      "type": null,
      "default": "'vertical'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     }
@@ -11162,7 +11220,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -11179,7 +11237,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     }
@@ -11435,7 +11493,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -11452,7 +11510,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -11467,7 +11525,7 @@
      ],
      "type": null,
      "default": "'visible'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     }
@@ -11713,7 +11771,7 @@
      ],
      "type": null,
      "default": "'middle'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -11729,7 +11787,7 @@
      ],
      "type": null,
      "default": "'middle'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -11745,7 +11803,7 @@
      ],
      "type": null,
      "default": "'middle'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -11761,7 +11819,7 @@
      ],
      "type": null,
      "default": "'middle'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -11773,7 +11831,7 @@
      "values": null,
      "type": "clé d'acteur",
      "default": "null",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -11790,7 +11848,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -11807,7 +11865,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -11831,7 +11889,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -12102,7 +12160,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -12119,7 +12177,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     }
@@ -12258,6 +12316,420 @@
      "readonly": false,
      "description": "Retire l'acteur de l'emplacement.",
      "params": []
+    },
+    {
+     "name": "removeActors",
+     "kind": "méthode",
+     "signature": "removeActors(...actorKeys)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire les acteurs enfants.",
+     "params": [
+      {
+       "name": "actorKeys",
+       "description": "Clés de l'acteur enfant à retirer."
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "name": "onDidActorAdd",
+     "description": "Se produit lorsque un acteur est ajouté.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur ajouté."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorRemove",
+     "description": "Se produit lorsque un acteur est retiré.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActor",
+       "type": "Actor.BaseActor",
+       "description": "Acteur retiré."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsAdd",
+     "description": "Se produit lorsque une collection d'acteurs est ajoutée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "addedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs ajoutés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsClear",
+     "description": "Se produit lorsque la collection d'acteurs est vidée.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
+    },
+    {
+     "name": "onDidActorsRemove",
+     "description": "Se produit lorsque des acteurs sont retirés.",
+     "returns": null,
+     "context": [
+      {
+       "name": "removedActors",
+       "type": "Array.<Actor.BaseActor>",
+       "description": "Acteurs retirés."
+      }
+     ]
+    }
+   ],
+   "lineage": [
+    {
+     "name": "LayoutBase",
+     "behavior": false,
+     "description": "Base pour les acteurs de disposition."
+    },
+    {
+     "name": "Parenthood",
+     "behavior": true,
+     "description": "Étend la classe pour permettre d'avoir des acteurs enfants."
+    }
+   ]
+  },
+  "layout/grid": {
+   "type": "layout/grid",
+   "name": "Grille",
+   "family": "layout",
+   "note_types": [
+    "layout/grid"
+   ],
+   "properties": [
+    {
+     "name": "contentHorizontalAlignment",
+     "label": "Alignement horizontal",
+     "description": "Alignement horizontal du contenu de la grille.",
+     "section": "specifics",
+     "values": [
+      "normal",
+      "stretch",
+      "left",
+      "center",
+      "right",
+      "space-between",
+      "space-around",
+      "space-evenly"
+     ],
+     "type": null,
+     "default": "'normal'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "itemsHorizontalAlignment",
+     "label": "Alignement horizontal",
+     "description": "Alignement horizontal des éléments de la grille.",
+     "section": "specifics",
+     "values": [
+      "normal",
+      "stretch",
+      "left",
+      "center",
+      "right"
+     ],
+     "type": null,
+     "default": "'normal'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "contentVerticalAlignment",
+     "label": "Alignement vertical",
+     "description": "Alignement vertical du contenu de la grille.",
+     "section": "specifics",
+     "values": [
+      "normal",
+      "stretch",
+      "flex-start",
+      "center",
+      "flex-end",
+      "space-between",
+      "space-around",
+      "space-evenly"
+     ],
+     "type": null,
+     "default": "'normal'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "itemsVerticalAlignment",
+     "label": "Alignement vertical",
+     "description": "Alignement vertical des éléments de la grille.",
+     "section": "specifics",
+     "values": [
+      "normal",
+      "stretch",
+      "flex-start",
+      "center",
+      "flex-end"
+     ],
+     "type": null,
+     "default": "'normal'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "columns",
+     "label": "Colonnes",
+     "description": "Colonnes de la grille définies par leur taille.",
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "overflowX",
+     "label": "Dépassement Horizontal",
+     "description": "Comportement au dépassement horizontal.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Rendu sans gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "overflowY",
+     "label": "Dépassement Vertical",
+     "description": "Comportement au dépassement vertical.",
+     "section": "specifics",
+     "values": [
+      "hidden",
+      "visible",
+      "scroll",
+      "auto"
+     ],
+     "type": null,
+     "default": "'hidden'",
+     "modifier": "Rendu sans gabarit",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "gap",
+     "label": "Espacement",
+     "description": "Espacement entre les éléments de la grille.",
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'0px'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "rows",
+     "label": "Lignes",
+     "description": "Lignes de la grille définies par leur taille.",
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'none'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "autoFlow",
+     "label": "Remplissage",
+     "description": "Sens de remplissage des éléments dans la grille.",
+     "section": "specifics",
+     "values": [
+      "row",
+      "column"
+     ],
+     "type": null,
+     "default": "'row'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "autoSize",
+     "label": "Taille automatique",
+     "description": "Taille automatique des éléments ajoutés en-dehors du template.",
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'auto'",
+     "modifier": "Gabarit de l'acteur",
+     "inheritable": false,
+     "jokerable": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "canAddActor",
+     "kind": "champ",
+     "signature": "canAddActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible d'ajouter un acteur.",
+     "params": []
+    },
+    {
+     "name": "canClearActors",
+     "kind": "champ",
+     "signature": "canClearActors",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer tous les acteurs.",
+     "params": []
+    },
+    {
+     "name": "canRemoveActor",
+     "kind": "champ",
+     "signature": "canRemoveActor",
+     "type": "boolean",
+     "readonly": true,
+     "description": "Pour savoir s'il est possible de retirer un acteur.",
+     "params": []
+    },
+    {
+     "name": "childActors",
+     "kind": "champ",
+     "signature": "childActors",
+     "type": "Array<BaseActor",
+     "readonly": true,
+     "description": "Obtiens la liste de tous les acteurs enfants.",
+     "params": []
+    }
+   ],
+   "methods": [
+    {
+     "name": "addActor",
+     "kind": "méthode",
+     "signature": "addActor(actorSetup, atIndex)",
+     "type": "Promise<Actor.BaseActor>",
+     "readonly": false,
+     "description": "Ajoute un acteur enfant.\nL'acteur est ajouté à la fin de la liste si `atIndex` n'est pas renseigné.\nNote: C'est le seul moyen de créer un acteur.",
+     "params": [
+      {
+       "name": "actorSetup",
+       "description": "Setup JSON de l'acteur à ajouter."
+      },
+      {
+       "name": "atIndex",
+       "description": "Position à laquelle l'acteur doit être ajouté."
+      }
+     ]
+    },
+    {
+     "name": "addActors",
+     "kind": "méthode",
+     "signature": "addActors(actorSetups, atIndexes?)",
+     "type": "Promise<Array.<Actor.BaseActor>>",
+     "readonly": false,
+     "description": "Ajoute une collection d'acteurs enfants.\nLes acteurs sont ajoutés à la fin de la liste si le tableau d'indexes n'est pas spécifié.",
+     "params": [
+      {
+       "name": "actorSetups",
+       "description": "Tableau des Setups JSON des acteurs à ajouter."
+      },
+      {
+       "name": "atIndexes",
+       "description": "Tableau des indexes où ajouter les acteurs."
+      }
+     ]
+    },
+    {
+     "name": "clearActors",
+     "kind": "méthode",
+     "signature": "clearActors()",
+     "type": null,
+     "readonly": false,
+     "description": "Retire  tous les acteurs enfants.",
+     "params": []
+    },
+    {
+     "name": "getActor",
+     "kind": "méthode",
+     "signature": "getActor(key)",
+     "type": "Actor.BaseActor",
+     "readonly": false,
+     "description": "Obtient un acteur enfant par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur à trouver."
+      }
+     ]
+    },
+    {
+     "name": "moveDownActor",
+     "kind": "méthode",
+     "signature": "moveDownActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le bas un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "moveUpActor",
+     "kind": "méthode",
+     "signature": "moveUpActor(key)",
+     "type": null,
+     "readonly": false,
+     "description": "Déplace vers le haut un acteur enfant obtenu par sa clé.",
+     "params": [
+      {
+       "name": "key",
+       "description": "Clé de l'acteur enfant à déplacer."
+      }
+     ]
+    },
+    {
+     "name": "removeActor",
+     "kind": "méthode",
+     "signature": "removeActor(actorKey)",
+     "type": null,
+     "readonly": false,
+     "description": "Retire un acteur enfant.",
+     "params": [
+      {
+       "name": "actorKey",
+       "description": "Clé de l'acteur enfant à retirer."
+      }
+     ]
     },
     {
      "name": "removeActors",
@@ -12490,7 +12962,7 @@
      ],
      "type": null,
      "default": "'auto'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -12507,7 +12979,7 @@
      ],
      "type": null,
      "default": "'auto'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -12701,7 +13173,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": true
     }
@@ -12748,7 +13220,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -12765,7 +13237,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -12777,7 +13249,7 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     }
@@ -13028,7 +13500,7 @@
      "values": null,
      "type": "any[]",
      "default": "'[]'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -13052,7 +13524,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -13088,7 +13560,7 @@
      "values": null,
      "type": "string",
      "default": "'table-cell-string-header'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -13683,7 +14155,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -13695,7 +14167,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -13712,7 +14184,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -13724,7 +14196,7 @@
      "values": null,
      "type": "string",
      "default": "'DD/MM/YYYY HH:mm:ss'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -13764,7 +14236,7 @@
      ],
      "type": null,
      "default": "'center'",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -13818,7 +14290,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -14159,7 +14631,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -14188,7 +14660,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14210,7 +14682,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14222,7 +14694,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14238,7 +14710,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -14307,7 +14779,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -14324,7 +14796,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14336,7 +14808,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -14358,7 +14830,7 @@
      ],
      "type": null,
      "default": "'info'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14398,7 +14870,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -14471,7 +14943,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -14495,7 +14967,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -14519,7 +14991,7 @@
      "values": null,
      "type": "string",
      "default": "'#E0E0E0'",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -14723,7 +15195,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -14740,7 +15212,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14752,7 +15224,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -14774,7 +15246,7 @@
      ],
      "type": null,
      "default": "'info'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14824,7 +15296,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -14921,7 +15393,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -14933,7 +15405,7 @@
      "values": null,
      "type": "clé d'acteur",
      "default": "null",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14962,7 +15434,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14984,7 +15456,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -14996,7 +15468,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -15008,7 +15480,7 @@
      "values": null,
      "type": "clé de scène",
      "default": "null",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -15024,7 +15496,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -15137,7 +15609,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -15154,7 +15626,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -15467,7 +15939,24 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "textOverflow",
+     "label": "Dépassement du titre",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "nowrap",
+      "break",
+      "wrap",
+      "truncate"
+     ],
+     "type": null,
+     "default": "'truncate'",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -15484,7 +15973,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -15501,7 +15990,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -15513,7 +16002,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -15854,7 +16343,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -15871,7 +16360,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -15883,6 +16372,21 @@
      "values": null,
      "type": "boolean",
      "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "menuPosition",
+     "label": "Position du menu des groupes",
+     "description": null,
+     "section": "specifics",
+     "values": [
+      "bottom",
+      "top"
+     ],
+     "type": null,
+     "default": "'bottom'",
      "modifier": null,
      "inheritable": false,
      "jokerable": false
@@ -16201,7 +16705,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -16218,7 +16722,7 @@
      ],
      "type": null,
      "default": "'hidden'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -16544,7 +17048,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -16573,7 +17077,7 @@
      ],
      "type": null,
      "default": "'truncate'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -16700,7 +17204,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -16728,7 +17232,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -16814,7 +17318,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -16858,7 +17362,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -16933,7 +17437,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -16961,7 +17465,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -17018,7 +17522,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17042,7 +17546,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     }
@@ -17074,7 +17578,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -17090,7 +17594,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17106,7 +17610,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17122,7 +17626,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17193,7 +17697,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -17205,7 +17709,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17222,7 +17726,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17234,7 +17738,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17250,7 +17754,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17302,7 +17806,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17314,7 +17818,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17435,7 +17939,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -17451,7 +17955,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17487,7 +17991,7 @@
      "values": null,
      "type": "string",
      "default": "null",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17503,7 +18007,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17621,7 +18125,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -17633,7 +18137,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17649,7 +18153,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17689,7 +18193,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -17762,7 +18266,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -17779,7 +18283,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17801,7 +18305,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17823,7 +18327,7 @@
      ],
      "type": null,
      "default": "'primary'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17835,7 +18339,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17851,7 +18355,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17863,7 +18367,7 @@
      "values": null,
      "type": "string",
      "default": "'Off'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17875,7 +18379,7 @@
      "values": null,
      "type": "string",
      "default": "'On'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17926,7 +18430,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -17938,7 +18442,7 @@
      "values": null,
      "type": "string ou null",
      "default": "null",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17950,7 +18454,7 @@
      "values": null,
      "type": "string ou null",
      "default": "null",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -17962,7 +18466,7 @@
      "values": null,
      "type": "string",
      "default": "'Off'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -17974,7 +18478,7 @@
      "values": null,
      "type": "string",
      "default": "'On'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -18159,7 +18663,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18171,7 +18675,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18183,7 +18687,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18243,7 +18747,7 @@
      "values": null,
      "type": "string",
      "default": "'_ternary_fault_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18255,7 +18759,7 @@
      "values": null,
      "type": "string",
      "default": "'_ternary_false_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18267,7 +18771,7 @@
      "values": null,
      "type": "string",
      "default": "'_ternary_true_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18305,7 +18809,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18413,7 +18917,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18425,7 +18929,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18437,7 +18941,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18449,7 +18953,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18461,7 +18965,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18473,7 +18977,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18485,7 +18989,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18497,7 +19001,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18629,7 +19133,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18641,7 +19145,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18653,7 +19157,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18665,7 +19169,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18677,7 +19181,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18689,7 +19193,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18701,7 +19205,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -18713,7 +19217,7 @@
      "values": null,
      "type": "string",
      "default": "'_multi_position_position_text'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     }
@@ -18985,6 +19489,78 @@
    "events": [],
    "lineage": []
   },
+  "technical/collector": {
+   "type": "technical/collector",
+   "name": "Collecteur",
+   "family": "technical",
+   "note_types": [
+    "technical/collector"
+   ],
+   "properties": [
+    {
+     "name": "kindColor",
+     "label": "Couleur du collecteur",
+     "description": "Couleur du collecteur : laiton, rouge, bleu ou personnalisée (voir customColor).",
+     "section": "specifics",
+     "values": [
+      "brass",
+      "red",
+      "blue",
+      "custom"
+     ],
+     "type": null,
+     "default": "'brass'",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "customColor",
+     "label": "Couleur du collecteur personnalisée",
+     "description": "Couleur CSS du collecteur quand kindColor vaut 'custom'.",
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "'#cccccc'",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "orientation",
+     "label": "Orientation",
+     "description": "Orientation du collecteur, en degrés.",
+     "section": "specifics",
+     "values": [
+      "0",
+      "90",
+      "180",
+      "270"
+     ],
+     "type": null,
+     "default": "'0'",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "size",
+     "label": "Taille",
+     "description": "Longueur du collecteur, en nombre d'unités de 100 px.",
+     "section": "specifics",
+     "values": null,
+     "type": "number",
+     "default": "1",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    }
+   ],
+   "fields": [],
+   "methods": [],
+   "events": [],
+   "lineage": []
+  },
   "technical/exchanger": {
    "type": "technical/exchanger",
    "name": "Échangeur",
@@ -19006,7 +19582,171 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
+     "inheritable": false,
+     "jokerable": false
+    }
+   ],
+   "fields": [],
+   "methods": [],
+   "events": [],
+   "lineage": []
+  },
+  "technical/energy-meter": {
+   "type": "technical/energy-meter",
+   "name": "Compteur d'énergie",
+   "family": "technical",
+   "note_types": [
+    "technical/energy-meter"
+   ],
+   "properties": [
+    {
+     "name": "withCom",
+     "label": "Avec communication?",
+     "description": "Compteur communicant : affiche un voyant d'état.",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isFault",
+     "label": "En défaut?",
+     "description": "Compteur en défaut : le voyant clignote en rouge (si withCom).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isRunning",
+     "label": "En marche?",
+     "description": "Compteur en marche : le voyant s'allume en vert (si withCom).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "orientation",
+     "label": "Orientation",
+     "description": "Orientation du compteur d'énergie, en degrés.",
+     "section": "specifics",
+     "values": [
+      "0",
+      "90",
+      "180",
+      "270"
+     ],
+     "type": null,
+     "default": "'0'",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    }
+   ],
+   "fields": [],
+   "methods": [],
+   "events": [],
+   "lineage": []
+  },
+  "technical/volume-meter": {
+   "type": "technical/volume-meter",
+   "name": "Compteur volumétrique",
+   "family": "technical",
+   "note_types": [
+    "technical/volume-meter"
+   ],
+   "properties": [
+    {
+     "name": "withCom",
+     "label": "Avec communication?",
+     "description": "Compteur communicant : affiche un voyant d'état.",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isFault",
+     "label": "En défaut?",
+     "description": "Compteur en défaut : le voyant clignote en rouge (si withCom).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isRunning",
+     "label": "En marche?",
+     "description": "Compteur en marche : le voyant s'allume en vert (si withCom).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "orientation",
+     "label": "Orientation",
+     "description": "Orientation du compteur volumétrique, en degrés.",
+     "section": "specifics",
+     "values": [
+      "0",
+      "90",
+      "180",
+      "270"
+     ],
+     "type": null,
+     "default": "'0'",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    }
+   ],
+   "fields": [],
+   "methods": [],
+   "events": [],
+   "lineage": []
+  },
+  "technical/hydraulic-separator": {
+   "type": "technical/hydraulic-separator",
+   "name": "Bouteille de découplage",
+   "family": "technical",
+   "note_types": [
+    "technical/hydraulic-separator"
+   ],
+   "properties": [
+    {
+     "name": "outputsCount",
+     "label": "Nombre de sorties",
+     "description": "Nombre de piquages du côté droit de la bouteille (moitié en haut, moitié en bas).",
+     "section": "specifics",
+     "values": [
+      "2",
+      "4",
+      "6"
+     ],
+     "type": null,
+     "default": "'2'",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     }
@@ -19096,7 +19836,7 @@
      ],
      "type": null,
      "default": "'straight'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     }
@@ -19170,6 +19910,42 @@
    ],
    "properties": [
     {
+     "name": "withThermometer",
+     "label": "Avec thermomètre?",
+     "description": "Afficher le thermomètre.",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isIn1",
+     "label": "Entrée 1",
+     "description": "Afficher le piquage d'entrée haut (entrée 1).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isIn2",
+     "label": "Entrée 2",
+     "description": "Afficher le piquage d'entrée bas (entrée 2).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
      "name": "orientation",
      "label": "Orientation",
      "description": null,
@@ -19182,7 +19958,31 @@
      ],
      "type": null,
      "default": "'0'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isOut1",
+     "label": "Sortie 1",
+     "description": "Afficher le piquage de sortie haut (sortie 1).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "isOut2",
+     "label": "Sortie 2",
+     "description": "Afficher le piquage de sortie bas (sortie 2).",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
+     "modifier": null,
      "inheritable": false,
      "jokerable": false
     }
@@ -20243,7 +21043,7 @@
      "values": null,
      "type": "string",
      "default": "'#C2C2C2'",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20255,7 +21055,7 @@
      "values": null,
      "type": "string",
      "default": "'#0B04CF'",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20267,7 +21067,7 @@
      "values": null,
      "type": "string",
      "default": "'#E0E0E0'",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20279,7 +21079,7 @@
      "values": null,
      "type": "number",
      "default": "3",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20291,7 +21091,7 @@
      "values": null,
      "type": "number",
      "default": "180",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20303,7 +21103,7 @@
      "values": null,
      "type": "number",
      "default": "75",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20315,7 +21115,7 @@
      "values": null,
      "type": "number",
      "default": "100",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20327,7 +21127,7 @@
      "values": null,
      "type": "number",
      "default": "0",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     }
@@ -20424,6 +21224,18 @@
      "jokerable": false
     },
     {
+     "name": "preparationFilter",
+     "label": "Filtre des préparations",
+     "description": "Texte qui filtre la liste des préparations (titre ou propriétaire qui le contient, sans tenir compte de la casse).",
+     "section": "specifics",
+     "values": null,
+     "type": "string",
+     "default": "''",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
      "name": "showLegend",
      "label": "Montrer la légende?",
      "description": null,
@@ -20431,6 +21243,18 @@
      "values": null,
      "type": "boolean",
      "default": "false",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "showPreparationFilter",
+     "label": "Montrer le filtre des préparations?",
+     "description": "Affiche le champ de filtre de la liste des préparations ; masqué, le filtre preparationFilter s'applique toujours.",
+     "section": "specifics",
+     "values": null,
+     "type": "boolean",
+     "default": "true",
      "modifier": null,
      "inheritable": false,
      "jokerable": false
@@ -20519,7 +21343,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20536,7 +21360,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -20548,7 +21372,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -20588,7 +21412,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -20695,7 +21519,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20712,7 +21536,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -20724,7 +21548,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -20764,7 +21588,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -20871,7 +21695,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -20888,7 +21712,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -20900,7 +21724,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -20940,7 +21764,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -21047,7 +21871,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -21064,7 +21888,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -21076,7 +21900,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -21116,7 +21940,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -21223,7 +22047,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -21240,7 +22064,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -21252,7 +22076,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -21292,7 +22116,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -21399,7 +22223,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Style CSS",
+     "modifier": "Style seulement",
      "inheritable": false,
      "jokerable": false
     },
@@ -21416,7 +22240,7 @@
      ],
      "type": null,
      "default": "'nowrap'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -21428,7 +22252,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -21480,7 +22304,7 @@
      ],
      "type": null,
      "default": "'default'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     }
@@ -21600,7 +22424,7 @@
      "values": null,
      "type": "any[]",
      "default": "'[]'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -21636,7 +22460,7 @@
      "values": null,
      "type": "string",
      "default": "''",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -21684,7 +22508,7 @@
      "values": null,
      "type": "string",
      "default": "'table-cell-string-header'",
-     "modifier": "Rendu",
+     "modifier": "Gabarit de l'acteur",
      "inheritable": false,
      "jokerable": false
     },
@@ -23004,7 +23828,7 @@
      ],
      "type": null,
      "default": "'[\"icon\",\"name\",\"isForced\",\"state\"]'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -23028,7 +23852,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -23091,7 +23915,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -23375,7 +24199,7 @@
      "values": null,
      "type": "boolean",
      "default": "false",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -23387,7 +24211,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -23399,7 +24223,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -23411,7 +24235,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -23475,7 +24299,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     }
@@ -23840,7 +24664,7 @@
      ],
      "type": null,
      "default": "'[\"icon\",\"date\",\"caption\",\"state\"]'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -23876,7 +24700,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -23987,7 +24811,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -24847,7 +25671,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -24859,7 +25683,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -24871,7 +25695,7 @@
      "values": null,
      "type": "any",
      "default": "null",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -26857,7 +27681,7 @@
      ],
      "type": null,
      "default": "'[\"icon\",\"name\",\"state\"]'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -26881,7 +27705,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -26929,7 +27753,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -27200,11 +28024,12 @@
       "nod",
       "site",
       "state",
-      "todo"
+      "todo",
+      "ackBy"
      ],
      "type": null,
      "default": "'[\"ack\",\"icon\",\"date\",\"nod\",\"state\"]'",
-     "modifier": "Gabarit",
+     "modifier": "Gabarit parent + enfants",
      "inheritable": false,
      "jokerable": false
     },
@@ -27240,7 +28065,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
@@ -27367,7 +28192,7 @@
      "values": null,
      "type": "boolean",
      "default": "true",
-     "modifier": "Taille",
+     "modifier": "Rendu sans gabarit",
      "inheritable": false,
      "jokerable": false
     },
