@@ -152,12 +152,13 @@ Lors d'un changement de valeur de propriété ou d'une additionnelle d'un acteur
  - `onValueChanged` qui est déclenché pour une propriété donnée de l'acteur. La nouvelle valeur `newValue` et l'ancienne `oldValue` sont présentes dans le contexte de l'évènement.
  - `onPropertyChanged` qui est déclenché pour n'importe quelle propriété ou additionnelle de l'acteur. En plus de l'ancienne et nouvelle valeur, les champ `name` et `propertyPath` sont présents dans le contexte pour identifié la propriété ou l'additionnelle qui a changé.
 
-Avant de déclenchement de ses deux évènements, un changement de valeur peut déclencher ce qu'on appelle un modification.
-Il existe 4 modifications possibles :
-- Aucune modification : dans ce cas, rien ne se passe. C'est la modification par défaut des additionnelle.
-- **Styles CSS** : dans ce cas, le style CSS de l'élément DOM est recalculé. L'évènement [`onCssStyling`](./reference/actor.md#oncssstyling) est déclenché une nouvelle fois.
-- **Rendu** : dans ce cas, un nouveau rendu globale est réalisé. Les évènements [`onCssStyling`](./reference/actor.md#oncssstyling), [`onComputeLayout`](./reference/actor.md#oncomputelayout) et [`onRender`](./reference/actor.md#onrender) sont déclenchés.
-- **Gabarit** : dans ce dernier cas, le gabarit de toute la ligne d'arborescence est recalculé. Ce qui va entraîner une série d'exécution de l'évènement [`onComputeLayout`](./reference/actor.md#oncomputelayout).
+Avant le déclenchement de ces deux évènements, un changement de valeur peut déclencher ce qu'on appelle une modification.
+Il existe 5 modifications possibles. Le champ `modifier` du contexte des deux évènements contient sa valeur, indiquée entre parenthèses :
+- **Aucun** (`other`) : rien ne se passe. C'est la modification par défaut des additionnelles.
+- **Style seulement** (`css`) : le style CSS de l'élément DOM est recalculé. L'évènement [`onCssStyling`](./reference/actor.md#oncssstyling) est déclenché une nouvelle fois.
+- **Rendu sans gabarit** (`resize`) : un nouveau rendu est réalisé, sans recalcul des tailles. Les évènements [`onCssStyling`](./reference/actor.md#oncssstyling) et [`onRender`](./reference/actor.md#onrender) sont déclenchés. Malgré sa valeur, cette modification ne recalcule pas les tailles.
+- **Gabarit de l'acteur** (`render`) : un nouveau rendu est réalisé, puis le gabarit de l'acteur est recalculé. Les évènements [`onCssStyling`](./reference/actor.md#oncssstyling), [`onComputeLayout`](./reference/actor.md#oncomputelayout) et [`onRender`](./reference/actor.md#onrender) sont déclenchés.
+- **Gabarit parent + enfants** (`layout`) : un nouveau rendu est réalisé, puis le gabarit de l'acteur, de son parent direct et de ses enfants directs est recalculé. L'évènement [`onComputeLayout`](./reference/actor.md#oncomputelayout) est donc déclenché sur chacun d'eux.
 
 Les propriétés spécifiques d'un acteur possèdent chacune leur type de modification. C'est à vous de définir la modification qu’entraîne le changement de valeur sur une additionnelle.
 
