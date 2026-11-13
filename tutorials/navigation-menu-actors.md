@@ -118,6 +118,7 @@ Lorsqu'un utilisateur clique sur un **Bouton de menu** :
 3. Chaque **Bouton de menu** compare sa propriété **Scène** avec la valeur de `selectedScene`
 4. Si elles correspondent : le bouton affiche le **style actif**
 5. Si elles ne correspondent pas : le bouton affiche le **style inactif**
+6. Si le bouton actif est dans un **Groupe de navigation** replié, le groupe s'ouvre
 
 ## Étape 4 — Lier selectedScene avec un acteur écran
 

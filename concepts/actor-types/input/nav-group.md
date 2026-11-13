@@ -52,3 +52,7 @@ Les évènements communs à tous les acteurs sont décrits avec l'[acteur de bas
 # Fonctionnement
 
 Le groupe calcule la hauteur de ses enfants (boutons de menu) afin d’animer l’ouverture et la fermeture. Lorsque l’entête est cliqué, la propriété **Étendu?** est inversée et les enfants sont affichés ou masqués.
+
+Un groupe replié s’ouvre de lui-même quand la scène sélectionnée du menu est celle d’un de ses boutons : le bouton actif n’est jamais caché.
+
+L’entête reprend le texte réglé sur le groupe (police, taille, épaisseur, style, alignement…). Les icônes, chevron compris, ne sont jamais soulignées ni mises en gras avec le texte.
