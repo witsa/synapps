@@ -8,7 +8,9 @@ nav_order: 3
 
 # Journal des reflets
 
-L'acteur *Journal des reflets* affiche, page par page, les évènements des reflets du REDY, filtrés selon ses propriétés (période, reflet, équipement, zone, ensemble, groupes, texte…).
+L'acteur *Journal des reflets* affiche, page par page, les évènements des reflets du REDY, filtrés selon ses propriétés (période, reflet, site, équipement, zone, ensemble, groupes, texte…).
+
+Le _Filtre site_ n'affiche que les évènements des reflets d'un site du REDY, choisi dans la liste des sites comme sur le [Journal des variables](./wos-event-log.md). Vide, le journal montre tous les sites. Par script, la propriété `site` prend le chemin du site, et un chemin qui ne correspond à aucun site n'affiche aucun évènement. Pour laisser l'utilisateur choisir le site, liez cette propriété à l'information `value` d'un [Filtre de site](./filter/site-filter.md) en sélection simple.
 
 {% include table_of_content.html %}
 
