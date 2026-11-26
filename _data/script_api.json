@@ -10640,7 +10640,7 @@
      "signature": "searchReflectEvents(params)",
      "type": "Promise<Object>",
      "readonly": false,
-     "description": "Recherche des évènements de reflets (filtres par reflet, dates, texte, type, groupes, équipement, zone, ensemble, pagination) et renvoie `{ count, events }`.",
+     "description": "Recherche des évènements de reflets (filtres par reflet, site, dates, texte, type, groupes, équipement, zone, ensemble, pagination) et renvoie `{ count, events }`.",
      "params": [
       {
        "name": "params",
@@ -10649,6 +10649,10 @@
       {
        "name": "params.reflectPath",
        "description": "Chemin du reflet (ex. `:easy.RESS.Chaudiere`)."
+      },
+      {
+       "name": "params.sitePath",
+       "description": "Chemin du site."
       },
       {
        "name": "params.dateFrom",
@@ -24744,6 +24748,18 @@
      "name": "reflectPath",
      "label": "Filtre reflet",
      "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "site",
+     "label": "Filtre site",
+     "description": "Filtre les évènements par site : chemin du site REDY (`null` : tous les sites).",
      "section": "specifics",
      "values": null,
      "type": "any",
