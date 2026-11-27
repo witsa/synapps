@@ -10710,7 +10710,7 @@
      "signature": "searchReflects(params)",
      "type": "Promise<Object>",
      "readonly": false,
-     "description": "Recherche des reflets (filtres par identifiants, texte, type, zone, ensemble, pagination) et renvoie `{ count, reflects }`.",
+     "description": "Recherche des reflets (filtres par identifiants, texte, type, zone, ensemble, site, pagination) et renvoie `{ count, reflects }`.",
      "params": [
       {
        "name": "params",
@@ -10735,6 +10735,10 @@
       {
        "name": "params.collection",
        "description": "Ensemble : son nom (sous `:easy.Set`). Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.sitePath",
+       "description": "Chemin du site. Chemin inconnu : aucun résultat."
       },
       {
        "name": "params.pendingOnly",
@@ -10756,7 +10760,7 @@
      "signature": "searchReflectValues(params)",
      "type": "Promise<Object>",
      "readonly": false,
-     "description": "Charge les valeurs des reflets correspondant aux filtres (identifiants, texte, type, zone, ensemble, pagination) et renvoie `{ count, reflects }`.",
+     "description": "Charge les valeurs des reflets correspondant aux filtres (identifiants, texte, type, zone, ensemble, site, pagination) et renvoie `{ count, reflects }`.",
      "params": [
       {
        "name": "params",
@@ -10781,6 +10785,10 @@
       {
        "name": "params.collection",
        "description": "Ensemble : son nom (sous `:easy.Set`). Ensemble introuvable : aucun résultat."
+      },
+      {
+       "name": "params.sitePath",
+       "description": "Chemin du site. Chemin inconnu : aucun résultat."
       },
       {
        "name": "params.pendingOnly",
@@ -23864,6 +23872,18 @@
      "name": "collection",
      "label": "Filtre ensemble",
      "description": null,
+     "section": "specifics",
+     "values": null,
+     "type": "any",
+     "default": "null",
+     "modifier": null,
+     "inheritable": false,
+     "jokerable": false
+    },
+    {
+     "name": "site",
+     "label": "Filtre site",
+     "description": "Filtre les reflets par site : chemin du site REDY (`null` : tous les sites).",
      "section": "specifics",
      "values": null,
      "type": "any",

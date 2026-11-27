@@ -10,6 +10,8 @@ nav_order: 1
 
 L'acteur *Liste de reflets* affiche, page par page, les reflets du REDY, filtrés selon ses propriétés. Le reflet sélectionné dans la liste est accessible par script ; sa modification déclenche l'évènement `onSelectChange`.
 
+Le _Filtre site_ n'affiche que les reflets d'un site du REDY, choisi dans la liste des sites. Vide, la liste montre tous les sites. Par script, la propriété `site` prend le chemin du site, et un chemin qui ne correspond à aucun site n'affiche aucun reflet. Pour laisser l'utilisateur choisir le site, liez cette propriété à l'information `value` d'un [Filtre de site](./filter/site-filter.md) en sélection simple.
+
 {% include table_of_content.html %}
 
 {% include script_api/legend.md %}
